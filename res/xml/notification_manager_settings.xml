@@ -25,6 +25,13 @@
             android:summaryOn="@string/summary_heads_up_enabled"
             android:summaryOff="@string/summary_heads_up_disabled" />
 
+    <!-- Halo -->
+    <PreferenceScreen
+            android:id="@+id/halo_settings"
+            android:title="@string/halo_settings_title"
+            android:fragment="com.android.settings.paranoid.Halo"
+            android:icon="@drawable/ic_settings_halo" />
+
     <!-- Zen Mode -->
     <PreferenceScreen
             android:key="zen_mode"
