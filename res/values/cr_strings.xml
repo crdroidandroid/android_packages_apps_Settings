@@ -38,4 +38,7 @@
     <string name="app_halo_label_black">Blacklist from HALO</string>
     <string name="app_halo_label_white">Whitelist from HALO</string>
 
+    <!-- QS Power menu -->
+    <string name="title_tile_power">Power Menu</string>      
+
 </resources>
