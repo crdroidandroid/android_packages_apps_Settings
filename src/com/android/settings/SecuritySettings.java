@@ -100,6 +100,11 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String KEY_SMS_SECURITY_CHECK_PREF = "sms_security_check_limit";
     private static final String SLIDE_LOCK_TIMEOUT_DELAY = "slide_lock_timeout_delay";
     private static final String SLIDE_LOCK_SCREENOFF_DELAY = "slide_lock_screenoff_delay";
+    private static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "quick_unlock_control";
+    private static final String CATEGORY_ADDITIONAL = "additional_options";
+    
+    // crDroid Additions
+    private static final String LOCK_NUMPAD_RANDOM = "lock_numpad_random";
 
     private PackageManager mPM;
     private DevicePolicyManager mDPM;
@@ -123,6 +128,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mToggleVerifyApps;
     private CheckBoxPreference mPowerButtonInstantlyLocks;
 
+    private ListPreference mLockNumpadRandom;
 
     private Preference mNotificationAccess;
 
@@ -293,6 +299,16 @@ public class SecuritySettings extends RestrictedSettingsFragment
                 securityCategory.removePreference(mVisibleErrorPattern);
                 securityCategory.removePreference(mVisibleDots);
             }
+        }
+
+	// Lock Numpad Random
+        mLockNumpadRandom = (ListPreference) root.findPreference(LOCK_NUMPAD_RANDOM);
+        if (mLockNumpadRandom != null) {
+            mLockNumpadRandom.setValue(String.valueOf(
+                    Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.LOCK_NUMPAD_RANDOM, 0)));
+            mLockNumpadRandom.setSummary(mLockNumpadRandom.getEntry());
+            mLockNumpadRandom.setOnPreferenceChangeListener(this);
         }
 
         // Append the rest of the settings
@@ -792,6 +808,12 @@ public class SecuritySettings extends RestrictedSettingsFragment
             Settings.System.putInt(getContentResolver(),
                     Settings.System.SCREEN_LOCK_SLIDE_SCREENOFF_DELAY, slideScreenOffDelay);
             updateSlideAfterScreenOffSummary();
+	} else if (preference == mLockNumpadRandom) {
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.LOCK_NUMPAD_RANDOM,
+                    Integer.valueOf((String) value));
+            mLockNumpadRandom.setValue(String.valueOf(value));
+            mLockNumpadRandom.setSummary(mLockNumpadRandom.getEntry());
         } else if (preference == mSmsSecurityCheck) {
             int smsSecurityCheck = Integer.valueOf((String) value);
             Settings.Global.putInt(getContentResolver(),
