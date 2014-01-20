@@ -45,10 +45,10 @@
                 android:entryValues="@array/expanded_desktop_values"
                 android:persistent="false" />
 
-        <CheckBoxPreference
+        <!--<CheckBoxPreference
                 android:key="expanded_desktop_no_navbar"
                 android:title="@string/power_menu_expanded_desktop"
-                android:persistent="true" />
+                android:persistent="true" />-->
 
         <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
                 android:key="expanded_desktop_system_bars_visibility"
