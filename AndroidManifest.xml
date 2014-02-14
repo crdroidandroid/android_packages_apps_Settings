@@ -1847,6 +1847,9 @@
                        android:resource="@id/notification_manager" />
         </activity-alias>
 
+        <!-- SystemApp Remover -->
+        <activity android:name="com.android.settings.crdroid.fragments.SystemappRemover" />
+
         <!-- Ambient display -->
         <activity android:name="Settings$AmbientSettingsActivity"
                 android:uiOptions="splitActionBarWhenNarrow"
