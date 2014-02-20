@@ -9,4 +9,7 @@
     <dimen name="navigation_bar_30">30dp</dimen>
     <dimen name="navigation_bar_24">24dp</dimen>
     <dimen name="navigation_bar_0">0dp</dimen>
+
+    <!-- Minimal notification row height used to calculate max notification count -->
+    <dimen name="notification_row_min_height">70dp</dimen>
 </resources>
