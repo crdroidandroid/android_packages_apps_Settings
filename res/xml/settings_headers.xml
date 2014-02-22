@@ -112,6 +112,14 @@
         android:fragment="com.android.settings.cyanogenmod.SystemUiSettings"
         android:title="@string/system_settings_title" />
 
+    <!-- Wakelock Blocker -->
+    <header
+        android:id="@+id/wakelock_blocker"
+        android:fragment="com.android.settings.crdroid.WakeLockBlocker"
+        android:icon="@drawable/ic_settings_wakelock_blocker"
+        android:layout="@layout/preference_wakelockblocker"
+        android:title="@string/wakelock_blocker" />
+
     <!-- HALO -->
     <header
         android:id="@+id/halo_settings"
