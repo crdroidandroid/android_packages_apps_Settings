@@ -48,6 +48,12 @@
          android:fragment="com.android.settings.crdroid.AnimationSettings"
          android:title="@string/animation_title"/>
 
+    <!-- Screen Recorder -->
+    <PreferenceScreen
+         android:key="screen_recorder"
+         android:title="@string/screen_recorder_title"
+         android:fragment="com.android.settings.crdroid.ScreenRecorderSettings" />
+
     <!-- Wakelock blocker -->
     <PreferenceScreen
          android:key="wakelock_blocker"
