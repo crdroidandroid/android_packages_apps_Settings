@@ -179,4 +179,8 @@
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
 
+    <!-- Volume pane timeout -->
+    <string name="volume_panel_timeout_title">Volume panel Timeout</string>
+    <string name="volume_panel_timeout_summary">Time until the volume panel to hide</string>
+
 </resources>
