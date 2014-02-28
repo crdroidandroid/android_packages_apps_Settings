@@ -297,6 +297,13 @@
         android:icon="@*android:drawable/ic_print"
         android:title="@string/print_settings" />
 
+    <!-- Advanced options -->
+    <header
+        android:id="@+id/advanced_options_settings"
+        android:fragment="com.android.settings.crdroid.AdvancedSettings"
+        android:icon="@drawable/ic_settings_advanced"
+        android:title="@string/advanced_options_settings_title" />
+
     <!-- Development -->
     <header
         android:id="@+id/development_settings"

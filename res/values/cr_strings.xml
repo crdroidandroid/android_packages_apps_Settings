@@ -11,6 +11,9 @@
     <string name="recents_panel_settings_title" >Recents panel settings</string>
     <string name="reset">Reset</string>
 
+    <!-- Advanced settings -->
+    <string name="advanced_options_settings_title">Advanced</string>
+
     <!-- Halo -->
     <string name="halo_settings_title">Halo</string>
     <string name="halo_behavior_title">Halo Behavior</string>
@@ -238,5 +241,11 @@
 
     <!-- Power menu screen recorder -->
     <string name="power_menu_screenrecord_title">Screen record</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">MediaScanner behavior on boot</string>
+    <string name="media_scanner_on_boot_enabled">Scan media</string>
+    <string name="media_scanner_on_boot_ask">Ask to scan (notification)</string>
+    <string name="media_scanner_on_boot_disabled">Do not scan media</string>
 
 </resources>
