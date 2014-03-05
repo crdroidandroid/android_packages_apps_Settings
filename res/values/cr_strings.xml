@@ -257,6 +257,14 @@
     <string name="noti_reminder_sound_looping">Until dismissed</string>
     <string name="noti_reminder_ringtone">Notify ringtone</string>
     <string name="noti_reminder_summary">Enter with a notification and set a reminder for the same</string>
+    <string name="noti_reminder_interval">Flip interval</string>
+    <string name="noti_reminder_interval_1s">1 second</string>
+    <string name="noti_reminder_interval_1dot5s">1.5 seconds</string>
+    <string name="noti_reminder_interval_2s">2 seconds</string>
+    <string name="noti_reminder_interval_2dot5s">2.5 seconds</string>
+    <string name="noti_reminder_interval_3s">3 seconds</string>
+    <string name="noti_reminder_interval_3dot5s">3.5 second</string>
+    <string name="noti_reminder_interval_4s">4 seconds</string>
 
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">Smart pulldown</string>
