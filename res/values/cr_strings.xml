@@ -258,4 +258,11 @@
     <string name="noti_reminder_ringtone">Notify ringtone</string>
     <string name="noti_reminder_summary">Enter with a notification and set a reminder for the same</string>
 
+    <!-- QuickSettings: Smart Pulldown -->
+    <string name="smart_pulldown_title">Smart pulldown</string>
+    <string name="smart_pulldown_summary">Open Quick Settings when there are no %1$s notifications present</string>
+    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_dismissable">Dismissable</string>
+    <string name="smart_pulldown_persistent">Persistent</string>
+
 </resources>

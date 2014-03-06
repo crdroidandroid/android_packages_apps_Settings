@@ -16,7 +16,9 @@
 
 package com.android.settings.cyanogenmod;
 
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
@@ -27,13 +29,17 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import android.preference.RingtonePreference;
 
+import com.android.internal.util.crdroid.DeviceUtils;
+
 public class NotificationDrawer extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "NotificationDrawer";
 
     private static final String UI_COLLAPSE_BEHAVIOUR = "notification_drawer_collapse_on_dismiss";
+    private static final String PRE_SMART_PULLDOWN = "smart_pulldown";
     
     private ListPreference mCollapseOnDismiss;
+    private ListPreference mSmartPulldown;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,6 +56,18 @@ public class NotificationDrawer extends SettingsPreferenceFragment implements
         mCollapseOnDismiss.setValue(String.valueOf(collapseBehaviour));
         mCollapseOnDismiss.setOnPreferenceChangeListener(this);
         updateCollapseBehaviourSummary(collapseBehaviour);
+
+        // Smart Pulldown
+        mSmartPulldown = (ListPreference) findPreference(PRE_SMART_PULLDOWN);
+        if (!DeviceUtils.isPhone(getActivity())) {
+            prefScreen.removePreference(mSmartPulldown);
+        } else {
+            mSmartPulldown.setOnPreferenceChangeListener(this);
+            int smartPulldown = Settings.System.getIntForUser(getContentResolver(),
+                    Settings.System.QS_SMART_PULLDOWN, 0, UserHandle.USER_CURRENT);
+            mSmartPulldown.setValue(String.valueOf(smartPulldown));
+            updateSmartPulldownSummary(smartPulldown);
+        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -58,6 +76,12 @@ public class NotificationDrawer extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_COLLAPSE_ON_DISMISS, value);
             updateCollapseBehaviourSummary(value);
+            return true;
+        } else if (preference == mSmartPulldown) {
+            int smartPulldown = Integer.valueOf((String) objValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.QS_SMART_PULLDOWN,
+                    smartPulldown);
+            updateSmartPulldownSummary(smartPulldown);
             return true;
         }
 
@@ -68,6 +92,20 @@ public class NotificationDrawer extends SettingsPreferenceFragment implements
         String[] summaries = getResources().getStringArray(
                 R.array.notification_drawer_collapse_on_dismiss_summaries);
         mCollapseOnDismiss.setSummary(summaries[setting]);
+    }
+
+    private void updateSmartPulldownSummary(int value) {
+        Resources res = getResources();
+
+        if (value == 0) {
+            // Smart pulldown deactivated
+            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_off));
+        } else {
+            String type = res.getString(value == 2
+                    ? R.string.smart_pulldown_persistent
+                    : R.string.smart_pulldown_dismissable);
+            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_summary, type));
+        }
     }
 
 }
