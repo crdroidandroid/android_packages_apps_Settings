@@ -128,6 +128,14 @@
             android:fragment="com.android.settings.crdroid.gestureanywhere.GestureAnywhereSettings"
             android:title="@string/gesture_anywhere_title" />
 
+        <!-- Toast Animation -->
+        <ListPreference
+            android:key="toast_animation"
+            android:title="@string/toast_animation_title"
+            android:entries="@array/toast_animation_entries"
+            android:entryValues="@array/toast_animation_values"
+            android:persistent="false" />
+
         <!-- Wakelock blocker -->
         <PreferenceScreen
             android:key="wakelock_blocker"
