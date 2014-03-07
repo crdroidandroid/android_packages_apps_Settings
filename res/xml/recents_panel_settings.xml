@@ -19,6 +19,12 @@
     android:title="@string/system_interface_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <CheckBoxPreference
+            android:key="custom_recent_mode"
+            android:title="@string/custom_recent_title"
+            android:summary="@string/custom_recent_summary"
+            android:persistent="false" />
+
     <PreferenceCategory
             android:key="category_recent_panel"
             android:title="@string/recents_clear_all_button"/>
