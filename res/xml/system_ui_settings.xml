@@ -109,6 +109,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="hw_keys_on_navbar"
         android:title="@string/hw_keys_title">
 
         <CheckBoxPreference

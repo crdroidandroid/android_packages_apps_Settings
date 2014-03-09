@@ -48,6 +48,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private static final String ENABLE_NAVIGATION_BAR = "enable_nav_bar";
 
     // Enable/disable hardware keys
+    private static final String KEY_HW_KEYS_ON_NAVBAR = "hw_keys_on_navbar";
     private static final String KEY_MENU_ENABLED = "key_menu_enabled";
     private static final String KEY_BACK_ENABLED = "key_back_enabled";
     private static final String KEY_HOME_ENABLED = "key_home_enabled";
@@ -55,6 +56,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
     private CheckBoxPreference mNavigationBarLeftPref;
+    // Enable/disable hardware keys
     private CheckBoxPreference mMenuKeyEnabled;
     private CheckBoxPreference mBackKeyEnabled;
     private CheckBoxPreference mHomeKeyEnabled;
@@ -114,7 +116,12 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         mMenuKeyEnabled = (CheckBoxPreference) findPreference(KEY_MENU_ENABLED);
         mBackKeyEnabled = (CheckBoxPreference) findPreference(KEY_BACK_ENABLED);
         mHomeKeyEnabled = (CheckBoxPreference) findPreference(KEY_HOME_ENABLED);       
-        
+        if(!getResources().getBoolean(com.android.internal.R.bool.config_hwKeysOnNavBar)) {
+            PreferenceCategory hwKeysOnNavBarOptions = (PreferenceCategory)
+                    getPreferenceScreen().findPreference(KEY_HW_KEYS_ON_NAVBAR);
+            getPreferenceScreen().removePreference(hwKeysOnNavBarOptions);
+        }
+
 	updateNavbarPreferences(enableNavigationBar);
 
         if (mEnableNavigationBar.isChecked()) {
