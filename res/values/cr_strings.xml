@@ -270,4 +270,10 @@
     <string name="smart_cover_wake_title">Smart cover wake</string>
     <string name="smart_cover_wake_summary">Wakeup device when smart cover opens</string>
 
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">Hardware Keys</string>
+    <string name="key_menu_enabled">Menu Key Enabled</string>
+    <string name="key_back_enabled">Back Key Enabled</string>
+    <string name="key_home_enabled">Home Key Enabled</string>
+
 </resources>
