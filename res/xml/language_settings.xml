@@ -74,6 +74,11 @@
             android:summary="@string/ime_switcher_notify_summary"
             android:defaultValue="true" />
 
+    <PreferenceScreen
+        android:key="keyboard_input_settings"
+        android:fragment="com.android.settings.crdroid.InputMethodsSettings"
+        android:title="@string/title_keyboard_input" />
+
     <PreferenceCategory android:key="voice_category"
             android:title="@string/voice_category" >
 
