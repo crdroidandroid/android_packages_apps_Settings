@@ -89,12 +89,12 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
             updateVolumeSteps(mVolumeStepsAlarm.getKey(),mAudioManager.getStreamMaxVolume(mAudioManager.STREAM_ALARM));
             mVolumeStepsAlarm.setOnPreferenceChangeListener(this);
 
-            if (isPhone){
+            if (isPhone) {
                 updateVolumeSteps(mVolumeStepsDTMF.getKey(),mAudioManager.getStreamMaxVolume(mAudioManager.STREAM_DTMF));
                 mVolumeStepsDTMF.setOnPreferenceChangeListener(this);
-            }
-            else
+            } else {
                 audioCat.removePreference(mVolumeStepsDTMF);
+            }
 
             updateVolumeSteps(mVolumeStepsMusic.getKey(),mAudioManager.getStreamMaxVolume(mAudioManager.STREAM_MUSIC));
             mVolumeStepsMusic.setOnPreferenceChangeListener(this);
@@ -102,22 +102,22 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
             updateVolumeSteps(mVolumeStepsNotification.getKey(),mAudioManager.getStreamMaxVolume(mAudioManager.STREAM_NOTIFICATION));
             mVolumeStepsNotification .setOnPreferenceChangeListener(this);
 
-            if (isPhone){
+            if (isPhone) {
                 updateVolumeSteps(mVolumeStepsRing.getKey(),mAudioManager.getStreamMaxVolume(mAudioManager.STREAM_RING));
                 mVolumeStepsRing .setOnPreferenceChangeListener(this);
-            }
-            else
+            } else {
                 audioCat.removePreference(mVolumeStepsRing);
+            }
 
             updateVolumeSteps(mVolumeStepsSystem.getKey(),mAudioManager.getStreamMaxVolume(mAudioManager.STREAM_SYSTEM));
             mVolumeStepsSystem .setOnPreferenceChangeListener(this);
 
-            if (isPhone){
+            if (isPhone) {
                 updateVolumeSteps(mVolumeStepsVoiceCall.getKey(),mAudioManager.getStreamMaxVolume(mAudioManager.STREAM_VOICE_CALL));
                 mVolumeStepsVoiceCall .setOnPreferenceChangeListener(this);
-            }
-            else
+            } else {
                 audioCat.removePreference(mVolumeStepsVoiceCall);
+            }
                 
         }
     }
@@ -125,18 +125,25 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mVolumeStepsAlarm) {
             updateVolumeSteps(preference.getKey(),Integer.parseInt(objValue.toString()));
+            return true;
         } else if (preference == mVolumeStepsDTMF) {
             updateVolumeSteps(preference.getKey(),Integer.parseInt(objValue.toString()));
+            return true;
         } else if (preference == mVolumeStepsMusic) {
             updateVolumeSteps(preference.getKey(),Integer.parseInt(objValue.toString()));
+            return true;
         } else if (preference == mVolumeStepsNotification) {
             updateVolumeSteps(preference.getKey(),Integer.parseInt(objValue.toString()));
+            return true;
         } else if (preference == mVolumeStepsRing) {
             updateVolumeSteps(preference.getKey(),Integer.parseInt(objValue.toString()));
+            return true;
         } else if (preference == mVolumeStepsSystem) {
             updateVolumeSteps(preference.getKey(),Integer.parseInt(objValue.toString()));
+            return true;
         } else if (preference == mVolumeStepsVoiceCall) {
             updateVolumeSteps(preference.getKey(),Integer.parseInt(objValue.toString()));
+            return true;
         }
 
         return false;
@@ -149,20 +156,21 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
     
     private void updateVolumeSteps(String settingsKey, int steps) {
         int streamType = -1;
-        if (settingsKey.equals(KEY_VOLUME_STEPS_ALARM))
+        if (settingsKey.equals(KEY_VOLUME_STEPS_ALARM)) {
             streamType = mAudioManager.STREAM_ALARM;
-        else if (settingsKey.equals(KEY_VOLUME_STEPS_DTMF))
+        } else if (settingsKey.equals(KEY_VOLUME_STEPS_DTMF)) {
             streamType = mAudioManager.STREAM_DTMF;
-        else if (settingsKey.equals(KEY_VOLUME_STEPS_MUSIC))
+        } else if (settingsKey.equals(KEY_VOLUME_STEPS_MUSIC)) {
             streamType = mAudioManager.STREAM_MUSIC;
-        else if (settingsKey.equals(KEY_VOLUME_STEPS_NOTIFICATION))
+        } else if (settingsKey.equals(KEY_VOLUME_STEPS_NOTIFICATION)) {
             streamType = mAudioManager.STREAM_NOTIFICATION;
-        else if (settingsKey.equals(KEY_VOLUME_STEPS_RING))
+        } else if (settingsKey.equals(KEY_VOLUME_STEPS_RING)) {
             streamType = mAudioManager.STREAM_RING;
-        else if (settingsKey.equals(KEY_VOLUME_STEPS_SYSTEM))
+        } else if (settingsKey.equals(KEY_VOLUME_STEPS_SYSTEM)) {
             streamType = mAudioManager.STREAM_SYSTEM;
-        else if (settingsKey.equals(KEY_VOLUME_STEPS_VOICE_CALL))
+        } else if (settingsKey.equals(KEY_VOLUME_STEPS_VOICE_CALL)) {
             streamType = mAudioManager.STREAM_VOICE_CALL;
+        }
 
         //Save the setting for next boot
         Settings.System.putInt(getContentResolver(), settingsKey, steps);
