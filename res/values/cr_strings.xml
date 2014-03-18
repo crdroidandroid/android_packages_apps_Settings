@@ -328,4 +328,7 @@
     <string name="recent_long_press_qs_panel">QS panel</string>
     <string name="recent_long_press_power_menu">Power menu</string>
 
+    <!-- Notifications light with screen on -->
+    <string name="notification_light_screen_on_title">Show when screen is on</string>
+
 </resources>

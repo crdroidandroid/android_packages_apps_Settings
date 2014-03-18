@@ -36,6 +36,12 @@
             android:title="@string/notification_light_use_custom"
             android:dependency="notification_light_pulse" />
 
+        <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+            android:key="notification_light_screen_on"
+            android:title="@string/notification_light_screen_on_title"
+            android:persistent="false"
+            android:dependency="notification_light_pulse" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
