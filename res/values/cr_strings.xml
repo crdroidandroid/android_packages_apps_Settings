@@ -331,4 +331,7 @@
     <!-- Notifications light with screen on -->
     <string name="notification_light_screen_on_title">Show when screen is on</string>
 
+    <!-- Brightness Slider -->
+    <string name="notification_drawer_brightness_slider_title">Brightness Slider</string>
+
 </resources>
