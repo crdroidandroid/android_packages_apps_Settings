@@ -157,6 +157,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
 
+    private static final String KILL_APP_LONGPRESS_TIMEOUT = "kill_app_longpress_timeout";
+
     private static final String TAG_CONFIRM_ENFORCE = "confirm_enforce";
 
     private static final String PACKAGE_MIME_TYPE = "application/vnd.android.package-archive";
@@ -226,6 +228,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private CheckBoxPreference mShowAllANRs;
     private CheckBoxPreference mKillAppLongpressBack;
+    private ListPreference mKillAppLongpressTimeout;
 
     private ListPreference mRootAccess;
     private Object mSelectedRootValue;
@@ -363,6 +366,14 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mResetCbPrefs.add(mShowAllANRs);
 
         mKillAppLongpressBack = findAndInitCheckboxPref(KILL_APP_LONGPRESS_BACK);
+
+        // Back long press timeout
+        mKillAppLongpressTimeout = addListPreference(KILL_APP_LONGPRESS_TIMEOUT);
+        int killAppLongpressTimeout = Settings.Secure.getInt(getActivity().getContentResolver(),
+                Settings.Secure.KILL_APP_LONGPRESS_TIMEOUT, 0);
+        mKillAppLongpressTimeout.setValue(String.valueOf(killAppLongpressTimeout));
+        mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntry());
+        mKillAppLongpressTimeout.setOnPreferenceChangeListener(this);
 
         Preference selectRuntime = findPreference(SELECT_RUNTIME_KEY);
         if (selectRuntime != null) {
@@ -1312,6 +1323,14 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         }
     }
 
+    private void writeKillAppLongpressTimeoutOptions(Object newValue) {
+        int index = mKillAppLongpressTimeout.findIndexOfValue((String) newValue);
+        int value = Integer.valueOf((String) newValue);
+        Settings.Secure.putInt(getActivity().getContentResolver(),
+                Settings.Secure.KILL_APP_LONGPRESS_TIMEOUT, value);
+        mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntries()[index]);
+    }
+
     private void writeShowAllANRsOptions() {
         Settings.Secure.putInt(getActivity().getContentResolver(),
                 Settings.Secure.ANR_SHOW_BACKGROUND,
@@ -1574,6 +1593,9 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             return true;
         } else if (preference == mAppProcessLimit) {
             writeAppProcessLimitOptions(newValue);
+            return true;
+        } else if (preference == mKillAppLongpressTimeout) {
+            writeKillAppLongpressTimeoutOptions(newValue);
             return true;
         } else if (preference == mRootAccess) {
             if ("0".equals(SystemProperties.get(ROOT_ACCESS_PROPERTY, "1"))
