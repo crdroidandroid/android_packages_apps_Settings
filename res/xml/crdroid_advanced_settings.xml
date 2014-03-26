@@ -23,6 +23,13 @@
         android:key="advanced_settings_options_prefs"
         android:title="@string/advanced_options_settings_title">
 
+        <!-- Wakelock Blocker -->
+        <PreferenceScreen
+            android:key="wakelock_blocker"
+            android:fragment="com.android.settings.crdroid.WakeLockBlocker"
+            android:title="@string/wakelock_blocker" />
+
+        <!-- Media scanner behavior on boot -->
         <ListPreference
             android:key="media_scanner_on_boot"
             android:title="@string/media_scanner_on_boot_title"
