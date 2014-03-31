@@ -68,6 +68,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private static final String LOCKSCREEN_BACKGROUND_STYLE = "lockscreen_background_style";
     private static final String KEY_LOCKSCREEN_MODLOCK_ENABLED = "lockscreen_modlock_enabled";
     private static final String LOCK_BEFORE_UNLOCK = "lock_before_unlock";
+    private static final String KEY_DISABLE_FRAME = "lockscreen_disable_frame";
 
     private static final String LOCKSCREEN_WALLPAPER_TEMP_NAME = ".lockwallpaper";
 
@@ -80,6 +81,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private ListPreference mLockBackground;
     private ListPreference mBatteryStatus;
     private CheckBoxPreference mLockBeforeUnlock;
+    private CheckBoxPreference mDisableFrame;
 
     private ChooseLockSettingsHelper mChooseLockSettingsHelper;
     private LockPatternUtils mLockUtils;
@@ -111,6 +113,9 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         if (mEnableModLock != null) {
             mEnableModLock.setOnPreferenceChangeListener(this);
         }
+
+        // Keyguard widget frame
+        mDisableFrame = (CheckBoxPreference) findPreference(KEY_DISABLE_FRAME);
 
         mBatteryStatus = (ListPreference) findPreference(KEY_BATTERY_STATUS);
         if (mBatteryStatus != null) {
@@ -200,6 +205,13 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
             mEnableModLock.setChecked(checked);
         }
 
+        // Lockscreen frame
+        if (mDisableFrame != null) {
+            mDisableFrame.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_WIDGET_FRAME_ENABLED, 0) == 1);
+            mDisableFrame.setOnPreferenceChangeListener(this);
+        }
+
         updateBackgroundPreference();
         updateAvailableModLockPreferences();
     }
@@ -265,6 +277,11 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
             // force it so update picks up correct values
             ((CheckBoxPreference) preference).setChecked(value);
             updateAvailableModLockPreferences();
+            return true;
+        } else if (preference == mDisableFrame) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_WIDGET_FRAME_ENABLED,
+                    (Boolean) objValue ? 1 : 0);
             return true;
         }
 

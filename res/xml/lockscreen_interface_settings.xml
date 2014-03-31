@@ -89,6 +89,11 @@
             android:summary="@string/lockscreen_maximize_widgets_summary"
             android:title="@string/lockscreen_maximize_widgets_title" />
 
+        <CheckBoxPreference
+            android:key="lockscreen_disable_frame"
+            android:title="@string/lockscreen_widget_frame_title"
+            android:summary="@string/lockscreen_widget_frame_summary" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

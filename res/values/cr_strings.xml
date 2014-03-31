@@ -357,4 +357,8 @@
     <string name="timeout_1000">1 second</string>
     <string name="timeout_500">0,5 second</string>
 
+    <!-- Keyguard widget frame -->
+    <string name="lockscreen_widget_frame_title">Disable widget frames</string>
+    <string name="lockscreen_widget_frame_summary">Disable widget background frames</string>
+
 </resources>
