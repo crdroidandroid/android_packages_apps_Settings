@@ -2,6 +2,10 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- About phone screen, crDroid version -->
+    <string name="crdroid_version_title">crDroid</string>
+    <string name="crdroid_version_default">Unknown</string>
+
     <!-- Halo -->
     <string name="halo_settings_title">Halo</string>
     <string name="halo_behavior_title">Halo Behavior</string>
