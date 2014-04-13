@@ -71,21 +71,35 @@
         android:key="navigation_bar"
         android:title="@string/navigation_bar_category" >
 
+	<CheckBoxPreference
+            android:key="enable_nav_bar"
+            android:title="@string/navbar_enable_bar"
+            android:summary="@string/navbar_enable_bar_summary" />
+
+	<PreferenceScreen
+            android:key="navbar_dimen_settings"
+            android:fragment="com.android.settings.crdroid.NavbarDimenSettings"
+            android:title="@string/navbar_style_dimen_title" 
+	    android:dependency="enable_nav_bar" />
+
         <PreferenceScreen
             android:key="navigation_bar"
             android:fragment="com.android.settings.cyanogenmod.NavBar"
-            android:title="@string/navigation_bar_title" />
+            android:title="@string/navigation_bar_title" 
+            android:dependency="enable_nav_bar" />
 
         <PreferenceScreen
             android:key="navigation_ring"
             android:fragment="com.android.settings.cyanogenmod.NavRing"
-            android:title="@string/navigation_ring_title" />
+            android:title="@string/navigation_ring_title" 
+	    android:dependency="enable_nav_bar" />
 
         <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
             android:key="navigation_bar_left"
             android:title="@string/navigation_bar_left_title"
             android:summary="@string/navigation_bar_left_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            android:dependency="enable_nav_bar" />
 
     </PreferenceCategory>
 
