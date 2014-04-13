@@ -7,6 +7,7 @@
     <string name="crdroid_version_default">Unknown</string>
 
     <!-- General strings -->
+    <string name="default_string">Default</string>
     <string name="recents_panel_settings_title" >Recents panel settings</string>
     <string name="reset">Reset</string>
 
