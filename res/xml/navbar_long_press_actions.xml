@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/navbar_long_press_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <ListPreference
+        android:key="recent_long_press"
+        android:defaultValue="0"
+        android:title="@string/recent_long_press_title"
+        android:entries="@array/recent_long_press_entries"
+        android:entryValues="@array/recent_long_press_values" />
+
+</PreferenceScreen>

@@ -93,6 +93,12 @@
             android:title="@string/navigation_bar_title" 
             android:dependency="enable_nav_bar" />
 
+        <Preference
+            android:fragment="com.android.settings.crdroid.NavBarLongPressActions"
+            android:key="navbar_custom_actions"
+            android:title="@string/navbar_long_press_title"
+            android:dependency="enable_nav_bar" />
+
         <PreferenceScreen
             android:key="navigation_ring"
             android:fragment="com.android.settings.cyanogenmod.NavRing"

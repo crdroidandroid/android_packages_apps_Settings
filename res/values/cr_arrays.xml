@@ -386,4 +386,25 @@
         <item>2</item>
     </string-array>
 
+    <!-- NavBar long press actions -->
+    <string-array name="recent_long_press_entries">
+        <item>@string/recent_long_press_none</item>
+        <item>@string/recent_long_press_last_app</item>
+        <item>@string/recent_long_press_screenshot</item>
+        <item>@string/recent_long_press_kill_app</item>
+        <item>@string/recent_long_press_notif_panel</item>
+        <item>@string/recent_long_press_qs_panel</item>
+        <item>@string/recent_long_press_power_menu</item>
+    </string-array>
+
+    <string-array name="recent_long_press_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
 </resources>

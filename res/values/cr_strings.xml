@@ -317,4 +317,15 @@
     <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
     <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge.</string>
 
+    <!-- NavBar long press actions -->
+    <string name="navbar_long_press_title">Long press actions</string>
+    <string name="recent_long_press_title">Recent long press actions</string>
+    <string name="recent_long_press_none">None</string>
+    <string name="recent_long_press_last_app">Last app</string>
+    <string name="recent_long_press_screenshot">Screenshot</string>
+    <string name="recent_long_press_kill_app">Kill app</string>
+    <string name="recent_long_press_notif_panel">Notifications panel</string>
+    <string name="recent_long_press_qs_panel">QS panel</string>
+    <string name="recent_long_press_power_menu">Power menu</string>
+
 </resources>
