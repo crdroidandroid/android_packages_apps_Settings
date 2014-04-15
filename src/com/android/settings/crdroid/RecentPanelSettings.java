@@ -15,6 +15,7 @@ import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -28,7 +29,7 @@ import com.android.settings.util.Helpers;
 
 import java.util.Date;
 
-public class RecentsPanelSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class RecentPanelSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String TAG = "RecentsPanelSettings";
 
@@ -39,6 +40,9 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements 
     private static final String RAM_BAR_COLOR_APP_MEM = "ram_bar_color_app_mem";
     private static final String RAM_BAR_COLOR_CACHE_MEM = "ram_bar_color_cache_mem";
     private static final String RAM_BAR_COLOR_TOTAL_MEM = "ram_bar_color_total_mem";
+    // Slim recent
+    private static final String RECENT_PANEL_LEFTY_MODE = "recent_panel_lefty_mode";
+    private static final String RECENT_PANEL_SCALE = "recent_panel_scale";
 
     private static final int MENU_RESET = Menu.FIRST;
     private static final int MENU_HELP = MENU_RESET + 1; 
@@ -54,6 +58,9 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements 
     private ColorPickerPreference mRamBarAppMemColor;
     private ColorPickerPreference mRamBarCacheMemColor;
     private ColorPickerPreference mRamBarTotalMemColor;
+    // Slim recent
+    private CheckBoxPreference mRecentPanelLeftyMode;
+    private ListPreference mRecentPanelScale;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -114,6 +121,12 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements 
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mRamBarTotalMemColor.setSummary(hexColor);
         mRamBarTotalMemColor.setNewPreviewColor(intColor);
+
+        // Slim recent
+        mRecentPanelLeftyMode = (CheckBoxPreference) findPreference(RECENT_PANEL_LEFTY_MODE);
+        mRecentPanelLeftyMode.setOnPreferenceChangeListener(this);
+        mRecentPanelScale = (ListPreference) findPreference(RECENT_PANEL_SCALE);
+        mRecentPanelScale.setOnPreferenceChangeListener(this);
 
         updateRecentsOptions();
         setHasOptionsMenu(true);
@@ -204,6 +217,16 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements 
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.RECENTS_RAM_BAR_MEM_COLOR, intHex);
             return true;
+        } else if (preference == mRecentPanelScale) {
+            int value = Integer.parseInt((String) newValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.RECENT_PANEL_SCALE_FACTOR, value);
+            return true;
+        } else if (preference == mRecentPanelLeftyMode) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.RECENT_PANEL_GRAVITY,
+                    ((Boolean) newValue) ? Gravity.LEFT : Gravity.RIGHT);
+            return true;
         }
         return false;
     }
@@ -233,6 +256,15 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements 
                Settings.System.RECENTS_RAM_BAR_MODE, 0);
         boolean recentsStyle = Settings.System.getBoolean(getActivity().getContentResolver(),
                Settings.System.CUSTOM_RECENT_TOGGLE, false);
+
+        // Slim recent
+        final boolean recentLeftyMode = Settings.System.getInt(getContentResolver(),
+                Settings.System.RECENT_PANEL_GRAVITY, Gravity.RIGHT) == Gravity.LEFT;
+        mRecentPanelLeftyMode.setChecked(recentLeftyMode);
+        final int recentScale = Settings.System.getInt(getContentResolver(),
+                Settings.System.RECENT_PANEL_SCALE_FACTOR, 100);
+        mRecentPanelScale.setValue(recentScale + "");
+
         if (recentsStyle) {
             mRecentClearAll.setEnabled(false);
             mRamBarMode.setEnabled(false);

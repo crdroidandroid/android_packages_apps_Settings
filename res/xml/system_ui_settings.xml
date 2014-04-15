@@ -35,9 +35,9 @@
         android:title="@string/notification_drawer_title" />
 
     <PreferenceScreen
-        android:key="recents_panel"
-        android:fragment="com.android.settings.crdroid.RecentsPanelSettings"
-        android:title="@string/recents_panel_settings_title" />
+        android:key="recent_panel"
+        android:fragment="com.android.settings.crdroid.RecentPanelSettings"
+        android:title="@string/recent_panel_settings_title" />
 
     <PreferenceCategory
             android:key="expanded_desktop_category"

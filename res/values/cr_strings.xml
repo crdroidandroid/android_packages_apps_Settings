@@ -8,7 +8,7 @@
 
     <!-- General strings -->
     <string name="default_string">Default</string>
-    <string name="recents_panel_settings_title" >Recents panel settings</string>
+    <string name="recent_panel_settings_title" >Recent panel settings</string>
     <string name="reset">Reset</string>
     <string name="enabled">Enabled</string>
     <string name="disabled">Disabled</string>
@@ -97,8 +97,8 @@
     <string name="lock_before_unlock_title">Show slider before secure unlock</string>
     <string name="lock_before_unlock_summary">Show slider lockscreen before secure unlock mechanism</string>
 
-    <!--  Recents clear all -->
-    <string name="recents_clear_all_button">Recents clear all button</string>
+    <!--  Recent clear all -->
+    <string name="recent_clear_all_button">Recent clear all button</string>
     <string name="show_recent_clear_all_button_title">Show clear all button</string>
     <string name="show_recent_clear_all_button_summary">Tick to show or untick to hide the clear all button within the recent applications screen</string>
     <string name="recent_clear_all_button_location_title">Clear all button position</string>
@@ -118,17 +118,17 @@
     <string name="set">Set</string>
     <string name="color_default">Default</string>
 
-    <!-- Recents Ram Bar -->
-    <string name="ram_bar">Recents RAM bar</string>
+    <!-- Recent Ram Bar -->
+    <string name="ram_bar">Recent RAM bar</string>
     <string name="ram_bar_note_title">Note</string>
     <string name="ram_bar_note_summary">This RAM bar shows the actual android memory (RAM) utilization. Please note that having cached apps helps your device open apps much faster.</string>
-    <string name="ram_bar_mode_title">Recents RAM bar mode</string>
-    <string name="ram_bar_mode_dialog_title">Show on recents RAM bar</string>
+    <string name="ram_bar_mode_title">Recent RAM bar mode</string>
+    <string name="ram_bar_mode_dialog_title">Show on recent RAM bar</string>
     <string name="ram_bar_none">None</string>
     <string name="ram_bar_apps">Applications</string>
     <string name="ram_bar_cache">Applications and cache</string>
     <string name="ram_bar_other">Applications, cache and other</string>
-    <string name="ram_bar_style_cat">Recents RAM bar style</string>
+    <string name="ram_bar_style_cat">Recent RAM bar style</string>
     <string name="ram_bar_color_app_mem_color">Applications RAM color</string>
     <string name="ram_bar_color_cache_mem_color">Cache RAM color</string>
     <string name="ram_bar_color_total_mem_color">Other RAM color</string>
@@ -297,13 +297,13 @@
     <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
     
     <!-- Custom Recent Settings -->
-    <string name="custom_recent_title">Switch Recents styles</string>
-    <string name="custom_recent_summary">Tick to Slim recents or untick for stock recents. TICKING OR UNTICKING THIS BOX WILL RESTART YOUR SYSTEMUI</string>
+    <string name="custom_recent_title">Switch Recent styles</string>
+    <string name="custom_recent_summary">Tick to Slim recent or untick for stock recent. TICKING OR UNTICKING THIS BOX WILL RESTART YOUR SYSTEMUI</string>
 
     <!-- Recent panel -->
-    <string name="recent_panel_category">Recent apps panel</string>
+    <string name="slim_recent_panel_category">Slim recent apps panel</string>
     <string name="recent_panel_scale_title">Size</string>
-    <string name="recent_panel_scale_summary">Recent apps panel size in percent.</string>
+    <string name="recent_panel_scale_summary">Recent apps panel size in percent</string>
     <string name="recent_panel_100">100% (default)</string>
     <string name="recent_panel_85">85%</string>
     <string name="recent_panel_70">70%</string>
