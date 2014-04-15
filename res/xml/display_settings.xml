@@ -126,4 +126,15 @@
 
         </PreferenceCategory>
 
+           <PreferenceCategory
+                android:key="smart_cover_category"
+                android:title="@string/smart_cover_category_title">
+
+           <CheckBoxPreference
+                android:key="smart_cover_wake"
+                android:title="@string/smart_cover_wake_title"
+                android:summary="@string/smart_cover_wake_summary" />
+
+        </PreferenceCategory>
+
 </PreferenceScreen>
