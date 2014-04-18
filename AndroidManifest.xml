@@ -1931,6 +1931,24 @@
                 android:value="com.android.settings.crdroid.RamBar" />
         </activity>
 
+        <!-- Telo -->
+        <activity android:name=".crdroid.TeloRadioSettings"
+            android:label="@string/telo_radio_settings_title"
+            android:launchMode="singleTask"
+            android:process="com.android.phone">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".crdroid.TeloRadioBoot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
                 android:label="@string/crypt_keeper_encrypt_title">

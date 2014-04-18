@@ -432,4 +432,21 @@
         <item>500</item>
     </string-array>
 
+    <!-- Telo Radio -->
+    <string-array name="telo_radio_2g_screenoff_values" translatable="false">
+        <item>180000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+        <item>1200000</item>
+    </string-array>
+
+    <string-array name="telo_radio_2g_screenoff_entries" translatable="false">
+        <item>@string/telo_radio_2g_3min</item>
+        <item>@string/telo_radio_2g_5min</item>
+        <item>@string/telo_radio_2g_10min</item>
+        <item>@string/telo_radio_2g_15min</item>
+        <item>@string/telo_radio_2g_20min</item>
+    </string-array>
+
 </resources>

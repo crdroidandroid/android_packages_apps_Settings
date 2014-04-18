@@ -295,6 +295,25 @@
     <string name="keyboard_rotation_dialog">Note: This feature forces auto-rotate to turn on temporarily while the keyboard is out.  It has no effect when auto-rotate is already enabled.</string>
     <string name="show_enter_key_title">Show enter key</string>
     <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
+
+    <!-- Telo Radio -->
+    <string name="telo_radio_settings_title">Connection manager</string>
+    <string name="telo_radio_options_category">Screen on configuration</string>
+    <string name="telo_radio_lte_title">LTE</string>
+    <string name="telo_radio_lte_summary">Select this option if you use LTE (4G).</string>
+    <string name="telo_radio_2g_wifi_title">2G on Wi-Fi</string>
+    <string name="telo_radio_2g_wifi_title_summary">When Wi-Fi is connected network mode is switched to 2G.</string>
+    <string name="telo_radio_2g_screenoff_category">Screen off configuration</string>
+    <string name="telo_radio_2g_screenoff_title">2G with screen off</string>
+    <string name="telo_radio_2g_screenoff_summary">The device will switch to 2G when the screen is off.</string>
+    <string name="telo_radio_2g_screenoff_timeout_title">Time to switch to 2G</string>
+    <string name="telo_radio_2g_3min">3 minutes</string>
+    <string name="telo_radio_2g_5min">5 minutes</string>
+    <string name="telo_radio_2g_10min">10 minutes</string>
+    <string name="telo_radio_2g_15min">15 minutes</string>
+    <string name="telo_radio_2g_20min">20 minutes</string>
+    <string name="telo_radio_go_3g_unlock_title">3G Unlock</string>
+    <string name="telo_radio_go_3g_unlock_summary">When device is unlocked network mode switches to 3G again.</string>
     
     <!-- Custom Recent Settings -->
     <string name="custom_recent_title">Switch Recent styles</string>
