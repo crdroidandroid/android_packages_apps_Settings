@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- General strings -->
+    <string name="default_string">Normal</string>
+    <string name="recent_panel_settings_title" >Configuração do painel de recentes</string>
+    <string name="reset">Restaurar</string>
+    <string name="enabled">Habilitado</string>
+    <string name="disabled">Desabilitado</string>
+
+    <!-- Advanced settings -->
+    <string name="advanced_options_settings_title">Avançado</string>
+
+    <!-- Halo -->
+    <string name="halo_settings_title">Halo</string>
+    <string name="halo_behavior_title">Comportamento do Halo</string>
+    <string name="halo_hide_title">Esconder o Halo após atividade</string>
+    <string name="halo_hide_summary">Halo irá aparecer para tarefas de entrada e irá esconder-se após um tempo</string>
+    <string name="halo_state_title">Política do Halo</string>
+    <string name="halo_state_summary">Habilitar lista branca/negra para notificações</string>
+    <string name="halo_state_black">Lista negra</string>
+    <string name="halo_state_white">Lista branca</string>
+    <string name="halo_pause_title">Pausar aplicativo ativo</string>
+    <string name="halo_pause_summary">Quando abrir um aplicativo com o halo o aplicativo subjacente será pausado</string>
+    <string name="halo_notification_msgbox_title">Habilitar mensagem pop-up</string>
+    <string name="halo_notification_msgbox_summary">Mostrar caixa de mensagens para notificações de entrada</string>
+    <string name="halo_unlock_ping_title">Mostar o halo ao desbloqueio da tela</string>
+    <string name="halo_unlock_ping_summary">Halo irá mostrar-se quando o dispositivo for desbloqueado se novas notificações estiverem sido recebidas</string>
+
+    <string name="halo_size_title">Tamanho do halo</string>
+    <string name="halo_size_summary">Defina qual será o tamanho do halo</string>
+    <string name="halo_size_miniscule">Minúsculo</string>
+    <string name="halo_size_small">Pequeno</string>
+    <string name="halo_size_default">Normal</string>
+    <string name="halo_size_large">Grande</string>
+    <string name="halo_size_gigantic">Gigante</string>
+    <string name="halo_size_monster">Monstro</string>
+
+    <string name="halo_notification_count_title">Contador de notificações</string>
+    <string name="halo_notification_count_summary">Mostar contador de notificações no halo</string>
+    <string name="halo_notification_count_none">Nenhum</string>
+    <string name="halo_notification_count_total">Total</string>
+    <string name="halo_notification_count_individual">Por aplicativo</string>
+    <string name="halo_notification_count_both">Ambos</string>
+
+    <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
+    <string name="app_halo_label_black">Lista negra pelo HALO</string>
+    <string name="app_halo_label_white">Lista branca pelo HALO</string>
+
+    <!-- QS and navring Power menu -->
+    <string name="title_tile_power">Menu de energia</string> 
+    <string name="navring_action_power_menu">Menu de energia</string>       
+
+    <!-- Navigation bar -->
+    <string name="navbar_enable_bar">Habilitar barra de navegação</string>
+    <string name="navbar_enable_bar_summary">Habilitar a barra de navegação</string>
+    <string name="navbar_style_dimen_title">Dimensões</string>
+    <string name="navbar_dimensions_reset_message">Restaurar todas as dimensões para o normal?</string>
+    <string name="navigation_bar_height_title">Altura da barra de navegação</string>
+    <string name="navigation_bar_height_summary">Altura da barra de navegação em modo retrato</string>
+    <string name="navigation_bar_width_title">Largura da barra de navegação</string>
+    <string name="navigation_bar_width_summary">Largura da barra de navegação se estiver ao longo de um dos ladods da tela</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (normal)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (normal)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (desligada)</string>
+
+    <!-- Low battery warning policy -->
+    <string name="pref_low_battery_warning_policy_title">Aviso de bateria baixa</string>
+    <string name="pref_low_battery_warning_policy_dialog_title">Indique a bateria baixa com</string>
+    <string name="low_battery_warning_policy_popup_sound">Pop-up e som</string>
+    <string name="low_battery_warning_policy_notif_sound">Notificação e som</string>
+    <string name="low_battery_warning_policy_popup">Somente diálogo pop-up</string>
+    <string name="low_battery_warning_policy_notif">Somente notificação</string>
+    <string name="low_battery_warning_policy_sound">Somente som</string>
+    <string name="battery_prefs_title">Opções</string>
+    <string name="battery_stats_title">Estatísticas</string>
+
+    <!-- Lockscreen pin shuffle -->
+    <string name="lock_numpad_random_title">Mudar a ordem das entradas PIN na lockscreen</string>
+    <string name="lock_numpad_random_dialog_title">Ordem randômica do PIN</string>
+    <string name="lock_numpad_random_off">Desabilitado</string>
+    <string name="lock_numpad_random_always">Sempre</string>
+    <string name="lock_numpad_random_on_request">À solicitação</string>
+
+    <!-- Lock before unlock -->
+    <string name="lock_before_unlock_title">Mostrar atalhos antes do desbloqueio seguro</string>
+    <string name="lock_before_unlock_summary">Mostar os atalhos deslizantes na tela de bloqueio antes do mecanismo de desbloqueio seguro</string>
+
+    <!--  Recent clear all -->
+    <string name="recent_clear_all_button">Botão de limpeza dos apps recentes</string>
+    <string name="show_recent_clear_all_button_title">Mostar o botão de limpeza</string>
+    <string name="show_recent_clear_all_button_summary">Marcar para mostrar ou desmarcar para esconder o botão de limpeza dos aplicativos no painle de recentes</string>
+    <string name="recent_clear_all_button_location_title">Posição do botão de limpeza</string>
+    <string name="recent_clear_all_button_location_summary">Escolher em qual dos cantos colocar o botão de limpeza dos aplicativos no painle de recentes</string>
+    <string name="recent_clear_all_button_location_top_left">Topo esquerdo</string>
+    <string name="recent_clear_all_button_location_top_right">Topo direito</string>
+    <string name="recent_clear_all_button_location_bottom_left">Fundo esquerdo</string>
+    <string name="recent_clear_all_button_location_bottom_right">Fundo direito</string>
+    
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Seletor de cor</string>
+    <string name="press_color_to_apply">Pressione a cor abaixo para aplicá-la</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Aplicar</string>
+    <string name="color_default">Normal</string>
+
+    <!-- Recent Ram Bar -->
+    <string name="ram_bar">Barra de memória RAM</string>
+    <string name="ram_bar_note_title">Observe</string>
+    <string name="ram_bar_note_summary">A barra de memória RAM mostra a utilização atual da memória Android. Por favor, observe que ter aplicativos em cache ajuda seu dispositivo a abrí-los com maior rapidez</string>
+    <string name="ram_bar_mode_title">Modo da barra de memória RAM</string>
+    <string name="ram_bar_mode_dialog_title">Mostrar na barra de memória RAM</string>
+    <string name="ram_bar_none">Nada</string>
+    <string name="ram_bar_apps">Aplicações</string>
+    <string name="ram_bar_cache">Aplicações e cache</string>
+    <string name="ram_bar_other">Aplicações, cache e outros</string>
+    <string name="ram_bar_style_cat">Estilo da barra de memória RAM</string>
+    <string name="ram_bar_color_app_mem_color">Cor das aplicações</string>
+    <string name="ram_bar_color_cache_mem_color">Cor do cache</string>
+    <string name="ram_bar_color_total_mem_color">Cor de outros</string>
+    <string name="ram_bar_color_enabled">Habilitado</string>
+    <string name="ram_bar_color_disabled">Desabilitado</string>
+    <string name="ram_bar_button_help">Ajuda</string>
+    <string name="ram_bar_button_reset">Restaurar cores</string>
+    <string name="ram_bar_reset">Restaurar</string>
+    <string name="ram_bar_reset_message">Restaurar o estilo da barra RAM para o normal?</string>
+
+    <!-- Notification drawer background -->
+    <string name="notification_style_title">Estilo do fundo</string>
+    <string name="notification_style_summary">Mudar o estilo do fundo do painel de notificações</string>
+    <string name="notification_wallpaper_title">Fundo</string>
+    <string name="notification_wallpaper_landscape_title">Fundo diferente em modo paisagem</string>
+    <string name="notification_background_color_fill">Cor cheia</string>
+    <string name="notification_background_custom_image">Imagem customizada</string>
+    <string name="notification_background_default_wallpaper">Fundo normal</string>
+    <string name="notification_drawer_custom_background_dialog_title">Escolha a cor</string>
+    <string name="notif_wallpaper_alpha_title">Transparência do fundo</string>
+    <string name="notif_alpha_title">Transparência das notificações</string>
+    <string name="shortcut_image_not_valid">O aplicativo escolhido não retornou um ícone válido ou não suporta corte de imagem. Use outro aplicativo</string>
+   
+    <!-- Status bar | Clock -->
+    <string name="status_bar_clock">Relógio e data</string>
+    <string name="status_bar_clock_title">Estilo do relógio e data</string>
+    <string name="clock_title_enable">Alinhamento</string>
+    <string name="clock_enabled">Habilitado</string>
+    <string name="clock_disabled">Desabilitado</string>
+    <string name="status_bar_show_clock_title">Mostrar relógio e data</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">Relógio 24-horas está habilitado</string>
+    <string name="enable_clock_weekday">Dia da semana</string>
+    <string name="enable_clock_weekday_summary">Dia da semana abreviado antes da hora</string>
+    <string name="right_clock">Relógio à direita</string>
+    <string name="center_clock">Relógio ao centro</string>
+    <string name="dont_show">Não mostrar</string>
+    <string name="clock_date_display">Data</string>
+    <string name="clock_date_display_summary">Mostrar data customizada antes do relógio</string>
+    <string name="clock_date_style">Estilo da data</string>
+    <string name="clock_date_format">Formato da data</string>
+    <string name="clock_date_string_edittext_title">Precisa estar no formato MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Entrar com a descrição</string>
+    <string name="am_pm_clock_normal">Tamanho normal da fonte</string>
+    <string name="am_pm_clock_small">Tamanho pequeno da fonte</string>
+    <string name="am_pm_clock_none">Não mostar</string>
+    <string name="clock_date_display_none">Não mostrar</string>
+    <string name="clock_date_display_small">Tamanho pequeno da fonte</string>
+    <string name="clock_date_display_normal">Tamanho normal da fonte</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Minúscula</string>
+    <string name="clock_date_style_uppercase">Maiúscula</string>
+    <string name="clock_date_format_custom">Formato customizado java</string>
+    <string name="status_bar_clock_style_reset_message">Restaurar cor do relógio?</string>
+
+    <!-- Volume pane timeout -->
+    <string name="volume_panel_timeout_title">Tempo do painle de volume</string>
+    <string name="volume_panel_timeout_summary">Tempo até o painel de volume esconder-se</string>
+  
+    <!-- Lockscreen Notifications -->
+    <string name="general">Geral</string>
+    <string name="layout">Layout</string>
+    <string name="privacy">Privacidade</string>
+    <string name="Lockscreen_notifications_header">Notificações na tela de bloqueio</string>
+    <string name="lockscreen_notifications">Notificações na tela de bloqueio</string>
+    <string name="lockscreen_notifications_summary">Mostar notificações pendentes na tela de bloqueio</string>
+    <string name="pocket_mode">Modo bolso</string>
+    <string name="pocket_mode_summary">Ligar a tela e mostrar todas as notificações quando o dispositivo for retirado do bolso. Desligar a tela quando o dispositivo for colocado novamente no bolso</string>
+    <string name="show_always">Sempre mostrar</string>
+    <string name="show_always_summary">Sempre ligar a tela quando retirado do bolso, mesmo não havendo notificações pendentes</string>
+    <string name="hide_low_priority">Esconder baixa prioridade</string>
+    <string name="hide_low_priority_summary">Esconder notificações de baixa prioridade como notificações de clima provenientes do google now</string>
+    <string name="hide_non_clearable">Esconder não elimináveis</string>
+    <string name="hide_non_clearable_summary">Esconder todas as notificações não elimináveis</string>
+    <string name="dismiss_all">Permitir limpar todas as notificações</string>
+    <string name="dismiss_all_summary">Permitir limpar mesmo notificações não elimináveis. Claro, elas serão somente removidas da tela de bloqueio a não do painel de notificações</string>
+    <string name="expanded_view">Visão expandida das notificações</string>
+    <string name="expanded_view_summary">Mostar notificações expandidas quando possível</string>
+    <string name="force_expanded_view">Forçar visão expandida</string>
+    <string name="force_expanded_view_summary">Mostrar notificações expandidas por normal. Ainda será possível mudar entre visão normal e expandida</string>
+    <string name="wake_on_notification">Acordar com notificações</string>
+    <string name="wake_on_notification_summary">Acordar o dispositivo quando notificação(ões) for(em) recebida(s)</string>
+    <string name="notifications_height">Contador de notificações</string>
+    <string name="notifications_height_summary">Número de notifiações mostradas de uma só vez</string>
+    <string name="offset_top">Deslocamento da parte superior da tela:</string>
+    <string name="privacy_mode">Modo privacidade</string>
+    <string name="privacy_mode_summary">Desabilitar as notificações de serem vistas e dispensadas. Desse jeito, será mostrado somente os ícones das notificações</string>
+    <string name="excluded_apps_title">Aplicações excluídas</string>
+    <string name="excluded_apps_summary">Aplicações excluídas não serão mostradas na tela de bloqueio</string>
+    <string name="notification_color">Cor do fundo das notificações</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker">Bloqueador de Wakelocks</string>
+    <string name="wakelock_blocker_title">Habilitado</string>
+    <string name="wakelock_blocker_summary">Ativar bloqueio para wakelocks marcados</string>
+    <string name="wakelock_blocker_save">Salvar</string>
+    <string name="wakelock_list_header">Wakelocks disponíveis</string>
+    <string name="wakelock_blocker_reload">Recarregar</string>
+    <string name="wakelock_blocker_warning_title">Proceder com cuidado</string>
+    <string name="wakelock_blocker_warning">Bloquear wakelocks têm o potêncial de causar instabilidade, quedas do sistema ou perda de dados</string>
+
+    <!-- Screen recorder -->
+    <string name="screen_recorder_title">Gravador de tela</string>
+    <string name="screen_recorder_summary">Ajustar as configurações do gravador de tela</string>
+    <string name="screen_recorder_video_dimensions_title">Tamanho do vídeo</string>
+    <string name="screen_recorder_video_bitrate_title">Taxa de bits</string>
+    <string name="screen_recorder_record_audio_title">Gravar áudio</string>
+    <string name="screen_recorder_record_audio_summary">Gravar áudio do microfone</string>
+
+    <!-- video sizes -->
+    <string name="screen_recorder_size_240x400">240x400</string>
+    <string name="screen_recorder_size_360x640">360x640</string>
+    <string name="screen_recorder_size_480x800">480x800</string>
+    <string name="screen_recorder_size_480x854">480x854</string>
+    <string name="screen_recorder_size_540x960">540x960</string>
+    <string name="screen_recorder_size_600x1024">600x1024</string>
+    <string name="screen_recorder_size_720x1280">720x1280</string>
+
+    <!-- frame rates -->
+    <string name="screen_recorder_bitrate_title_100000">100 kB/s</string>
+    <string name="screen_recorder_bitrate_title_250000">250 kB/s</string>
+    <string name="screen_recorder_bitrate_title_500000">500 kB/s</string>
+    <string name="screen_recorder_bitrate_title_1000000">1 MB/s</string>
+    <string name="screen_recorder_bitrate_title_2000000">2 MB/s</string>
+    <string name="screen_recorder_bitrate_title_3000000">3 MB/s</string>
+    <string name="screen_recorder_bitrate_title_4000000">4 MB/s</string>
+    <string name="screen_recorder_bitrate_title_5000000">5 MB/s</string>
+    <string name="screen_recorder_bitrate_title_10000000">10 MB/s</string>
+    <string name="screen_recorder_bitrate_title_20000000">20 MB/s</string>
+    <string name="screen_recorder_bitrate_title_50000000">50 MB/s</string>
+    <string name="screen_recorder_bitrate_title_100000000">100 MB/s</string>
+    <string name="screen_recorder_bitrate_100000">100000</string>
+    <string name="screen_recorder_bitrate_250000">250000</string>
+    <string name="screen_recorder_bitrate_500000">500000</string>
+    <string name="screen_recorder_bitrate_1000000">1000000</string>
+    <string name="screen_recorder_bitrate_2000000">2000000</string>
+    <string name="screen_recorder_bitrate_3000000">3000000</string>
+    <string name="screen_recorder_bitrate_4000000">4000000</string>
+    <string name="screen_recorder_bitrate_5000000">5000000</string>
+    <string name="screen_recorder_bitrate_10000000">10000000</string>
+    <string name="screen_recorder_bitrate_20000000">20000000</string>
+    <string name="screen_recorder_bitrate_50000000">50000000</string>
+    <string name="screen_recorder_bitrate_100000000">100000000</string>
+
+    <!-- Power menu screen recorder -->
+    <string name="power_menu_screenrecord_title">Gravador de tela</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">Comportamento do examinador de mídia na inicialização</string>
+    <string name="media_scanner_on_boot_enabled">Examiniar mídia</string>
+    <string name="media_scanner_on_boot_ask">Perguntar para examinar (notificação)</string>
+    <string name="media_scanner_on_boot_disabled">Não examinar mídia</string>
+
+    <!-- Notification Reminders -->
+    <string name="noti_reminder_title">Notificação de lembrete</string>
+    <string name="noti_reminder_enable_title">Habilitar notificação de lembrete</string>
+    <string name="noti_reminder_sound_title">Som da notificação</string>
+    <string name="noti_reminder_sound_looping">Até dispensada</string>
+    <string name="noti_reminder_ringtone">Toque da notificação</string>
+    <string name="noti_reminder_summary">Entrar com uma notificação e ajustar um lembrete para a mesma</string>
+    <string name="noti_reminder_interval">Intervalo de giro</string>
+    <string name="noti_reminder_interval_1s">1 segundo</string>
+    <string name="noti_reminder_interval_1dot5s">1.5 segundo</string>
+    <string name="noti_reminder_interval_2s">2 segundos</string>
+    <string name="noti_reminder_interval_2dot5s">2.5 segundos</string>
+    <string name="noti_reminder_interval_3s">3 segundos</string>
+    <string name="noti_reminder_interval_3dot5s">3.5 segundos</string>
+    <string name="noti_reminder_interval_4s">4 segundos</string>
+
+    <!-- QuickSettings: Smart Pulldown -->
+    <string name="smart_pulldown_title">Puxada para baixo inteligente</string>
+    <string name="smart_pulldown_summary">Abrir as configurações rápidas quando não tiver %1$s notificações presentes</string>
+    <string name="smart_pulldown_off">Desligado</string>
+    <string name="smart_pulldown_dismissable">Dispensável</string>
+    <string name="smart_pulldown_persistent">Persistente</string>
+
+    <!-- Lockscreen Lid Settings -->
+    <string name="smart_cover_category_title">Capa inteligente</string>
+    <string name="smart_cover_wake_title">Acordar com capa inteligente</string>
+    <string name="smart_cover_wake_summary">Acordar o dispositivo quando a capa inteligente for aberta</string>
+
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">Botões físicos</string>
+    <string name="key_menu_enabled">Botão menu habilitado</string>
+    <string name="key_back_enabled">Botão voltar habilitado</string>
+    <string name="key_home_enabled">Botão home habilitado</string>
+
+    <!-- Keyboard and Input ASS methods  -->
+    <string name="title_keyboard_input">Opções avançadas</string>
+    <string name="disable_fullscreen_keyboard_title">Desabilitar teclado em tela inteira</string>
+    <string name="disable_fullscreen_keyboard_summary">Teclado em modo paisagem nunca irá tomar toda a tela</string>
+    <string name="keyboard_rotation_toggle_title">Auto rotação do teclado</string>
+    <string name="keyboard_rotation_toggle_summary">Forçar auto-rotação quando o teclado for mostrado</string>
+    <string name="keyboard_rotation_timeout_title">Tempo de auto-rotação</string>
+    <string name="keyboard_rotation_timeout_summary">Desabilitar o sensor de auto-rotação <xliff:g id="rotate_timeout">%1$s</xliff:g> segundos após o teclado ser escondido</string>
+    <string name="keyboard_rotation_dialog">Observe: Essa função força temporariamente o ligamento da auto-rotação enquanto o teclado está ativo. Isso não terá efeito se a auto-rotação já estiver habilitada</string>
+    <string name="show_enter_key_title">Mostrar a tecla enter</string>
+    <string name="show_enter_key_summary">Forçar o teclado a mostrar a tecla entrer ao invés da tecla emotions</string>
+
+    <!-- Telo Radio -->
+    <string name="telo_radio_settings_title">Gerenciador de conexões</string>
+    <string name="telo_radio_options_category">Configuração com a tela ligada</string>
+    <string name="telo_radio_lte_title">LTE</string>
+    <string name="telo_radio_lte_summary">Selecionar essa opção se você usa LTE (4G).</string>
+    <string name="telo_radio_2g_wifi_title">2G no Wi-Fi</string>
+    <string name="telo_radio_2g_wifi_title_summary">Quando Wi-Fi está conectado a conexão muda automaticamente para 2G.</string>
+    <string name="telo_radio_2g_screenoff_category">Configuração com tela desligada</string>
+    <string name="telo_radio_2g_screenoff_title">2G com a tela desligada</string>
+    <string name="telo_radio_2g_screenoff_summary">O dispositivo irá mudar para 2G quando a tela for desligada</string>
+    <string name="telo_radio_2g_screenoff_timeout_title">Tempo de mudança para 2G</string>
+    <string name="telo_radio_2g_3min">3 minutos</string>
+    <string name="telo_radio_2g_5min">5 minutos</string>
+    <string name="telo_radio_2g_10min">10 minutos</string>
+    <string name="telo_radio_2g_15min">15 minutos</string>
+    <string name="telo_radio_2g_20min">20 minutos</string>
+    <string name="telo_radio_go_3g_unlock_title">Desbloqueio 3G</string>
+    <string name="telo_radio_go_3g_unlock_summary">Quando o dispositivo for desbloqueado a conexão muda para 3G novamente</string>
+    
+    <!-- Custom Recent Settings -->
+    <string name="custom_recent_title">Mudar estilo de tela de recentes</string>
+    <string name="custom_recent_summary">Marcar para recentes Slim ou desmarcar para recentes stock. MARCANDO OU DESMARCANDO ESSA OPÇÃO IRÁ REINICIAR O SYSTEMUI</string>
+
+    <!-- Recent panel -->
+    <string name="slim_recent_panel_category">Painel de recentes Slim</string>
+    <string name="recent_panel_scale_title">Tamanho</string>
+    <string name="recent_panel_scale_summary">Tamanho do painel em porcentagem</string>
+    <string name="recent_panel_100">100% (normal)</string>
+    <string name="recent_panel_85">85%</string>
+    <string name="recent_panel_70">70%</string>
+    <string name="recent_panel_expanded_mode_title">Modo expandido</string>
+    <string name="recent_panel_expanded_mode_summary">Modo de previsão expandido do painel de tarefas recentes</string>
+    <string name="recent_panel_expanded_mode_auto">Automático (normal)</string>
+    <string name="recent_panel_expanded_mode_always">Sempre</string>
+    <string name="recent_panel_expanded_mode_never">Nunca</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Mostar no lado esquerdo</string>
+    <string name="recent_panel_lefty_mode_summary">Mostrar o painel de recentes no lado esquerdo</string>
+
+    <!-- NavBar long press actions -->
+    <string name="navbar_long_press_title">Ações de pressionamento longo</string>
+    <string name="recent_long_press_title">Ações de pressionamento longo do botão recentes</string>
+    <string name="recent_long_press_none">Nada</string>
+    <string name="recent_long_press_last_app">Último aplicativo</string>
+    <string name="recent_long_press_screenshot">Captura de tela</string>
+    <string name="recent_long_press_kill_app">Matar aplicativo</string>
+    <string name="recent_long_press_notif_panel">Painel de notificações</string>
+    <string name="recent_long_press_qs_panel">Painel de configurações rápidas</string>
+    <string name="recent_long_press_power_menu">Menu de energia</string>
+
+    <!-- Notifications light with screen on -->
+    <string name="notification_light_screen_on_title">Mostrar com a tela ligada</string>
+
+    <!-- Brightness Slider -->
+    <string name="notification_drawer_brightness_slider_title">Barra de brilho</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Passos do volume</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+    <string name="volume_steps_alarm_title">Alarme</string>
+    <string name="volume_steps_dtmf_title">DTMF</string>
+    <string name="volume_steps_music_title">Música</string>
+    <string name="volume_steps_notification_title">Notificação</string>
+    <string name="volume_steps_ring_title">Toque</string>
+    <string name="volume_steps_system_title">Sistema</string>
+    <string name="volume_steps_voice_call_title">Chamada de voz</string>
+
+    <!-- long press back to kill configurable timeout -->
+    <string name="kill_app_longpress_timeout_title">Tempo de pressionamento longo</string>
+    <string name="timeout_2000">2 segundos (normal)</string>
+    <string name="timeout_1500">1,5 segundo</string>
+    <string name="timeout_1000">1 segundo</string>
+    <string name="timeout_500">0,5 segundo</string>
+
+    <!-- Keyguard widget frame -->
+    <string name="lockscreen_widget_frame_title">Desabilitar moldura dos widgets</string>
+    <string name="lockscreen_widget_frame_summary">Desabilitar moldura de fundo dos widgets</string>
+
+</resources>
