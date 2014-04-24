@@ -449,4 +449,17 @@
         <item>@string/telo_radio_2g_20min</item>
     </string-array>
 
+    <!-- QuickSettings tiles per row -->
+    <string-array name="tiles_per_row_entries" translatable="false">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="tiles_per_row_values" translatable="false">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>    
+
 </resources>
