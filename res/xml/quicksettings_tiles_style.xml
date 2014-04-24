@@ -6,6 +6,36 @@
     android:title="@string/quicksettings_tiles_style">
 
     <PreferenceCategory
+        android:title="@string/quicksettings_tiles_style">
+
+        <Preference
+             style="?android:preferenceInformationStyle"
+             android:title="@string/quick_tiles_bg_no_title"
+             android:summary="@string/quick_tiles_bg_summary"
+             android:selectable="false" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+             android:key="quick_tiles_bg_color"
+             android:title="@string/quick_tiles_bg_color_title"
+             android:defaultValue="0xff161616" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+             android:key="quick_tiles_bg_pressed_color"
+             android:title="@string/quick_tiles_bg_pressed_color_title"
+             android:defaultValue="0xff212121" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+             android:key="quick_tiles_text_color"
+             android:title="@string/quick_tiles_text_color_title"
+             android:defaultValue="0xffcccccc" />
+
+        <com.android.settings.crdroid.SeekBarPreference
+             android:key="quick_tiles_alpha"
+             android:title="@string/quick_tiles_alpha_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/quicksettings_tiles_style_additional_options">
 
         <ListPreference
