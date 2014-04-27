@@ -475,4 +475,12 @@
     <string name="lockscreen_widget_frame_title">Desabilitar moldura dos widgets</string>
     <string name="lockscreen_widget_frame_summary">Desabilitar moldura de fundo dos widgets</string>
 
+    <!-- QuickSettings style options -->
+    <string name="quicksettings_tiles_style">Estilo das configurações rápidas</string>
+    <string name="summary_quicksettings_tiles_style">Opções das configurações rápidas</string>
+    <string name="quicksettings_tiles_style_additional_options">Opções adicionais</string>
+    <string name="tiles_per_row_title">Tiles por linha</string>
+    <string name="tiles_per_row_duplicate_landscape_title">Escala quantidade em modo paisagem</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">Visão em modo paisagem irá dobrar a quantidades de tiles por linha</string>
+
 </resources>
