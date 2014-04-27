@@ -1881,6 +1881,8 @@
 
         <activity android:name=".cyanogenmod.ChangeLog" />
 
+        <activity android:name=".cyanogenmod.ContributorsCloud" />
+
         <activity android:name=".cyanogenmod.LockscreenInterface" />
 
         <activity android:name=".notificationlight.NotificationLightSettings" />
