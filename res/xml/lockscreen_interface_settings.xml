@@ -61,9 +61,9 @@
             android:title="@string/lockscreen_enable_modlock_title" />
 
         <PreferenceScreen
-            android:title="@string/lockscreen_notifications"
+            android:title="@string/notifications_on_lockscreen"
             android:fragment="com.android.settings.crdroid.LockscreenNotifications"
-            android:summary="@string/lockscreen_notifications_summary" />
+            android:summary="@string/notifications_on_lockscreen_summary" />
 
     </PreferenceCategory>
 
