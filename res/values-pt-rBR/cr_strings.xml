@@ -216,6 +216,14 @@
     <string name="excluded_apps_summary">Aplicações excluídas não serão mostradas na tela de bloqueio</string>
     <string name="notification_color">Cor do fundo das notificações</string>
 
+    <string name="notifications_on_lockscreen">Notificações na tela de bloqueio</string>
+    <string name="notifications_on_lockscreen_summary">Escolher qual forma mostrar as notificações na tela de bloqueio</string>
+    <string name="notifications_on_lockscreen_warning_summary">Cada uma dos serviços de notificações na tela de bloqueio abaixo (PEEK ou/e LOCKSCREEN NOTIFICATIONS) irá auto desabilitar a outra. Certifique-se de conferir, ao desabilitar qualquer uma delas, se você habilitou o serviço que deseja usar</string>
+
+    <!--Notification peek-->
+    <string name="notification_peek_title">Notificação peek</string>
+    <string name="notification_peek_summary">Mostar as últimas notificações após pegar seu dispositivo</string>
+
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker">Bloqueador de Wakelocks</string>
     <string name="wakelock_blocker_title">Habilitado</string>
@@ -482,5 +490,35 @@
     <string name="tiles_per_row_title">Tiles por linha</string>
     <string name="tiles_per_row_duplicate_landscape_title">Escala quantidade em modo paisagem</string>
     <string name="tiles_per_row_duplicate_landscape_summary">Visão em modo paisagem irá dobrar a quantidades de tiles por linha</string>
+
+    <!-- App sidebar -->
+    <string name="app_sidebar_title">Appbar</string>
+    <string name="app_sidebar_enable_title">Habilitar appbar</string>
+    <string name="app_sidebar_enable_summaryOn">\@appbar está habilitado</string>
+    <string name="app_sidebar_enable_summaryOff">\@appbar está desabilitado</string>
+    <string name="app_sidebar_setup_items_title">Configurar conteúdo Appbar</string>
+    <string name="app_sidebar_setup_items_summary">Adicionar, remover e posicionar itens no @ppbar</string>
+    <string name="app_sidebar_transparency_title">Transparência do appbar</string>
+    <string name="app_sidebar_transparency_summary">Ajustar o nível de transparência do appbar</string>
+    <string name="app_sidebar_position_title">Posição do appbar</string>
+    <string name="app_sidebar_position_summary">Posicionar o Appbar no lado esquerdo ou direito da tela</string>
+    <string name="app_sidebar_position_left">Esquerdo</string>
+    <string name="app_sidebar_position_right">Direito</string>
+    <string name="app_sidebar_hide_labels_title">Esconder rótulo dos ícones</string>
+    <string name="app_sidebar_hide_labels_summary">Esconder rótulo dos ícones</string>
+    <string name="tab_category">Guia visível</string>
+    <string name="use_tab_title">Mostrar guia</string>
+    <string name="use_tab_summary">Exibir uma guia visível no lado que irá exibir o @appbar quando tocado</string>
+    <string name="tab_position_title">Localização da guia</string>
+    <string name="tab_position_summary">Mostrar a aba na parte superior, meio ou inferior do lado da tela</string>
+    <string name="tab_size_title">Tamanho da guia</string>
+    <string name="tab_size_summary">Mudar o tamanho da guia visível</string>
+    <string name="trigger_category">Região do gatilho</string>
+    <string name="trigger_width_title">Largura do gatilho</string>
+    <string name="trigger_width_summary">Ajustar a largura da área do gatilho</string>
+    <string name="trigger_top_title">Posição do gatilho</string>
+    <string name="trigger_top_summary">Ajustar o posição vertical da área de gatilho</string>
+    <string name="trigger_bottom_title">Altura do gatilho</string>
+    <string name="trigger_bottom_summary">Ajustar a altura da área de acionamento</string>
 
 </resources>
