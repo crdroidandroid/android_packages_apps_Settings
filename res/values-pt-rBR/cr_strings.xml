@@ -223,6 +223,12 @@
     <!--Notification peek-->
     <string name="notification_peek_title">Notificação peek</string>
     <string name="notification_peek_summary">Mostar as últimas notificações após pegar seu dispositivo</string>
+    <string name="peek_pickup_timeout_title">Tempo limite de pegada</string>
+    <string name="peek_pickup_10seconds">10 segundos (normal)</string>
+    <string name="peek_pickup_30seconds">30 segundos</string>
+    <string name="peek_pickup_45seconds">45 segundos</string>
+    <string name="peek_pickup_60seconds">1 minuto</string>
+    <string name="peek_pickup_120seconds">2 minutos</string>
 
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker">Bloqueador de Wakelocks</string>
