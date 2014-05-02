@@ -169,4 +169,12 @@
         <attr name="showPercentString" format="boolean" />
         <attr name="thickness" format="dimension" />
     </declare-styleable>
+
+    <!-- For Animation Seekbar -->
+    <declare-styleable name="IntervalSeekBar">
+        <attr name="minI" format="float" />
+        <attr name="maxI" format="float" />
+        <attr name="defaultValuePure" format="float" />
+        <attr name="digits" format="integer" />
+    </declare-styleable>
 </resources>
