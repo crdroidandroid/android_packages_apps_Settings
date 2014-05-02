@@ -331,6 +331,8 @@
     <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
     <string name="unlock_set_unlock_mode_gesture">Gesture</string>
 
+    <!-- Extra display settings -->
+    <string name="extra_display_settings_title">Extra settings</string>
     <!-- Screen recorder -->
     <string name="screen_recorder_title">Screen recorder</string>
     <string name="screen_recorder_summary">Adjust screen recorder settings</string>
@@ -338,7 +340,6 @@
     <string name="screen_recorder_video_bitrate_title">Bitrate</string>
     <string name="screen_recorder_record_audio_title">Record audio</string>
     <string name="screen_recorder_record_audio_summary">Record audio from the microphone</string>
-
     <!-- video sizes -->
     <string name="screen_recorder_size_240x400">240x400</string>
     <string name="screen_recorder_size_360x640">360x640</string>
@@ -347,7 +348,6 @@
     <string name="screen_recorder_size_540x960">540x960</string>
     <string name="screen_recorder_size_600x1024">600x1024</string>
     <string name="screen_recorder_size_720x1280">720x1280</string>
-
     <!-- frame rates -->
     <string name="screen_recorder_bitrate_title_100000">100 kB/s</string>
     <string name="screen_recorder_bitrate_title_250000">250 kB/s</string>
@@ -373,6 +373,9 @@
     <string name="screen_recorder_bitrate_20000000">20000000</string>
     <string name="screen_recorder_bitrate_50000000">50000000</string>
     <string name="screen_recorder_bitrate_100000000">100000000</string>
+    <!-- Lockscreen Lid Settings -->
+    <string name="smart_cover_wake_title">Smart cover wake</string>
+    <string name="smart_cover_wake_summary">Wakeup device when smart cover opens</string>
 
     <!-- Power menu screen recorder -->
     <string name="power_menu_screenrecord_title">Screen record</string>
@@ -405,11 +408,6 @@
     <string name="smart_pulldown_off">Off</string>
     <string name="smart_pulldown_dismissable">Dismissable</string>
     <string name="smart_pulldown_persistent">Persistent</string>
-
-    <!-- Lockscreen Lid Settings -->
-    <string name="smart_cover_category_title">Smart cover</string>
-    <string name="smart_cover_wake_title">Smart cover wake</string>
-    <string name="smart_cover_wake_summary">Wakeup device when smart cover opens</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
     <string name="hw_keys_title">Hardware Keys</string>
