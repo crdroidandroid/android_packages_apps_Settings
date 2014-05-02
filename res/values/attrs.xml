@@ -178,4 +178,12 @@
     <attr name="ic_menu_moreoverflow" format="reference" />
     <attr name="side_margin" format="reference|dimension" />
     <attr name="wifi_signal_color" format="reference" />
+
+    <!-- Interval seekbar -->
+    <declare-styleable name="IntervalSeekBar">
+        <attr name="minI" format="float" />
+        <attr name="maxI" format="float" />
+        <attr name="defaultValuePure" format="float" />
+        <attr name="digits" format="integer" />
+    </declare-styleable>
 </resources>
