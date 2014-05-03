@@ -547,4 +547,8 @@
     <string name="trigger_bottom_title">Trigger height</string>
     <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
 
+    <!-- QuickSettings haptic feedback -->
+    <string name="haptic_qs_tiles_title">Vibrate on touch</string>
+    <string name="haptic_qs_tiles_summary">Vibrate when touching tiles</string>
+
 </resources>
