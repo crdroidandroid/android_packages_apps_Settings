@@ -44,6 +44,10 @@
     <string name="halo_notification_count_individual">Por aplicativo</string>
     <string name="halo_notification_count_both">Ambos</string>
 
+    <!-- HALO floating mode -->
+    <string name="floating_mode_title">Permitir janela flutuante</string>
+    <string name="floating_mode_summary">Controlar se as notificações via halo serão abertas em janela flutuante</string>
+
     <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_halo_label_black">Lista negra pelo HALO</string>
     <string name="app_halo_label_white">Lista branca pelo HALO</string>
