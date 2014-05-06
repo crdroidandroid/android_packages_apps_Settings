@@ -48,6 +48,10 @@
     <string name="halo_notification_count_total">Общее</string>
     <string name="halo_notification_count_individual">От приложений</string>
     <string name="halo_notification_count_both">Оба</string>
+    
+    <!-- HALO floating mode -->
+    <string name="floating_mode_title">Разрешить всплывающие окна</string>
+    <string name="floating_mode_summary">Открывать уведомления halo в режиме всплывающих окон</string>
 
     <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_halo_label_black">Черный список Halo</string>
@@ -243,6 +247,12 @@
     <!--Notification peek-->
     <string name="notification_peek_title">Peek-уведомления</string>
     <string name="notification_peek_summary">Показать последние уведомление после поднятия устройства</string>
+    <string name="peek_pickup_timeout_title">Тайм-аут срабатывания</string>
+    <string name="peek_pickup_10seconds">10 секунд (по умолчанию)</string>
+    <string name="peek_pickup_30seconds">30 секунд</string>
+    <string name="peek_pickup_45seconds">45 секунд</string>
+    <string name="peek_pickup_60seconds">1 минута</string>
+    <string name="peek_pickup_120seconds">2 минуты</string>
 
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker">Блокировка wakelock-ов</string>
@@ -540,5 +550,9 @@
     <string name="trigger_top_summary">Установите вертикальное расположение области вызова</string>
     <string name="trigger_bottom_title">Высота области вызова</string>
     <string name="trigger_bottom_summary">Установите высоту области вызова</string>
+    
+    <!-- QuickSettings haptic feedback -->
+    <string name="haptic_qs_tiles_title">Вибрация при нажатии</string>
+    <string name="haptic_qs_tiles_summary">Вибрация при нажатии плитки</string>
 
 </resources>
