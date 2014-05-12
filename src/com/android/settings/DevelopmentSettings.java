@@ -374,8 +374,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mKillAppLongpressTimeout = addListPreference(KILL_APP_LONGPRESS_TIMEOUT);
         int killAppLongpressTimeout = Settings.Secure.getInt(getActivity().getContentResolver(),
                 Settings.Secure.KILL_APP_LONGPRESS_TIMEOUT, 0);
-        mKillAppLongpressTimeout.setValue(String.valueOf(killAppLongpressTimeout));
-        mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntry());
         mKillAppLongpressTimeout.setOnPreferenceChangeListener(this);
 
         Preference selectRuntime = findPreference(SELECT_RUNTIME_KEY);
@@ -545,6 +543,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         }
 
         updateKillAppLongpressBackOptions();
+        updateKillAppLongpressTimeoutOptions();
     }
 
     void updateCheckBox(CheckBoxPreference checkBox, boolean value) {
@@ -1331,6 +1330,25 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         Settings.Secure.putInt(getActivity().getContentResolver(),
                 Settings.Secure.KILL_APP_LONGPRESS_TIMEOUT, value);
         mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntries()[index]);
+    }
+
+    private void updateKillAppLongpressTimeoutOptions() {
+        String value = Settings.Secure.getString(getActivity().getContentResolver(),
+                Settings.Secure.KILL_APP_LONGPRESS_TIMEOUT);
+        if (value == null) {
+            value = "";
+        }
+
+        CharSequence[] values = mKillAppLongpressTimeout.getEntryValues();
+        for (int i = 0; i < values.length; i++) {
+            if (value.contentEquals(values[i])) {
+                mKillAppLongpressTimeout.setValueIndex(i);
+                mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntries()[i]);
+                return;
+            }
+        }
+        mKillAppLongpressTimeout.setValueIndex(0);
+        mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntries()[0]);
     }
 
     private void writeShowAllANRsOptions() {
