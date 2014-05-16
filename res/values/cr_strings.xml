@@ -60,6 +60,8 @@
     <!-- QS and navring Power menu -->
     <string name="title_tile_power">Power Menu</string> 
     <string name="navring_action_power_menu">Power menu</string>       
+    <!-- QS and navring last app -->
+    <string name="navring_action_last_app">Last app</string>
 
     <!-- Navigation bar -->
     <string name="navbar_enable_bar">Enable navigation bar</string>
