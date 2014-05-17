@@ -54,7 +54,9 @@
 
     <!-- QS and navring Power menu -->
     <string name="title_tile_power">Menu de energia</string> 
-    <string name="navring_action_power_menu">Menu de energia</string>       
+    <string name="navring_action_power_menu">Menu de energia</string>
+    <!-- QS and navring last app -->
+    <string name="navring_action_last_app">Último aplicativo</string>
 
     <!-- Navigation bar -->
     <string name="navbar_enable_bar">Habilitar barra de navegação</string>
@@ -227,12 +229,18 @@
     <!--Notification peek-->
     <string name="notification_peek_title">Notificação peek</string>
     <string name="notification_peek_summary">Mostar as últimas notificações após pegar seu dispositivo</string>
+    <string name="peek_wake_timeout_title">Tempo limite de tela ligada</string>
     <string name="peek_pickup_timeout_title">Tempo limite de pegada</string>
     <string name="peek_pickup_10seconds">10 segundos (normal)</string>
     <string name="peek_pickup_30seconds">30 segundos</string>
     <string name="peek_pickup_45seconds">45 segundos</string>
     <string name="peek_pickup_60seconds">1 minuto</string>
     <string name="peek_pickup_120seconds">2 minutos</string>
+    <string name="peek_wake_3seconds">3 segundos</string>
+    <string name="peek_wake_5seconds">5 segundos (normal)</string>
+    <string name="peek_wake_10seconds">10 segundos</string>
+    <string name="peek_wake_20seconds">20 segundos</string>
+    <string name="peek_wake_30seconds">30 segundos</string>
 
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker">Bloqueador de Wakelocks</string>
@@ -530,5 +538,9 @@
     <string name="trigger_top_summary">Ajustar o posição vertical da área de gatilho</string>
     <string name="trigger_bottom_title">Altura do gatilho</string>
     <string name="trigger_bottom_summary">Ajustar a altura da área de acionamento</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="haptic_qs_tiles_title">Vibrar ao toque</string>
+    <string name="haptic_qs_tiles_summary">Vibrar ao tocar os tiles</string>
 
 </resources>
