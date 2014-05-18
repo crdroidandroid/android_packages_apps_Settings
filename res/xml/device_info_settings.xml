@@ -115,6 +115,12 @@
                 android:title="@string/model_number"
                 android:summary="@string/device_info_default"/>
                 
+        <!-- Mod version -->
+        <Preference android:key="mod_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/mod_version"
+                android:summary="@string/mod_version_default" />
+
         <!-- Device firmware version -->
         <Preference android:key="firmware_version" 
                 style="?android:preferenceInformationStyle"
@@ -157,7 +163,7 @@
                 android:title="@string/mod_version"
                 android:summary="@string/mod_version_default" />
 
-	<!-- crDroid version -->
+        <!-- crDroid version -->
         <Preference android:key="crdroid_version"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/crdroid_version_title"
