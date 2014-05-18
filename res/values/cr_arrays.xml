@@ -511,4 +511,21 @@
         <item>@string/peek_pickup_120seconds</item>
     </string-array>
 
+    <!-- PEEK wake timeout -->
+    <string-array name="peek_wake_timeout_values" translatable="false">
+        <item>3000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+    </string-array>
+
+    <string-array name="peek_wake_timeout_entries" translatable="false">
+        <item>@string/peek_wake_3seconds</item>
+        <item>@string/peek_wake_5seconds</item>
+        <item>@string/peek_wake_10seconds</item>
+        <item>@string/peek_wake_20seconds</item>
+        <item>@string/peek_wake_30seconds</item>
+    </string-array>
+
 </resources>
