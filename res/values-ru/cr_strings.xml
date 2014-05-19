@@ -59,7 +59,9 @@
 
     <!-- QS and navring Power menu -->
     <string name="title_tile_power">Меню кнопки питания</string> 
-    <string name="navring_action_power_menu">Меню кнопки питания</string>       
+    <string name="navring_action_power_menu">Меню кнопки питания</string>
+    <!-- QS and navring last app -->
+    <string name="navring_action_last_app">Последнее приложение</string>
 
     <!-- Navigation bar -->
     <string name="navbar_enable_bar">Включить панель навигации</string>
@@ -253,7 +255,13 @@
     <string name="peek_pickup_45seconds">45 секунд</string>
     <string name="peek_pickup_60seconds">1 минута</string>
     <string name="peek_pickup_120seconds">2 минуты</string>
-
+    <string name="peek_wake_timeout_title">Тайм-аут пробуждения</string>
+    <string name="peek_wake_3seconds">3 секунды</string>
+    <string name="peek_wake_5seconds">5 секунд (по умолчанию)</string>
+    <string name="peek_wake_10seconds">10 секунд</string>
+    <string name="peek_wake_20seconds">20 секунд</string>
+    <string name="peek_wake_30seconds">30 секунд</string>
+    
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker">Блокировка wakelock-ов</string>
     <string name="wakelock_blocker_title">Включить</string>
@@ -330,6 +338,9 @@
 
     <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
     <string name="unlock_set_unlock_mode_gesture">Жест</string>
+    
+    <!-- Extra display settings -->
+    <string name="extra_display_settings_title">Расширенные настройки</string>
 
     <!-- Screen recorder -->
     <string name="screen_recorder_title">Запись с экрана</string>
@@ -401,10 +412,11 @@
 
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">\"Умная\" панель уведомлений</string>
-    <string name="smart_pulldown_summary">Открывать быстрые настройки, если нет %1$s уведомлений</string>
+    <string name="smart_pulldown_summary">Открывать быстрые настройки при %1$s уведомлениях</string>
     <string name="smart_pulldown_off">Выкл</string>
-    <string name="smart_pulldown_dismissable">Удаляемые</string>
-    <string name="smart_pulldown_persistent">Постоянные</string>
+    <string name="smart_pulldown_dismissable">Без удаляемых</string>
+    <string name="smart_pulldown_persistent">Без постоянных</string>
+    <string name="smart_pulldown_all">Без удаляемых и постоянных</string>
 
     <!-- Lockscreen Lid Settings -->
     <string name="smart_cover_category_title">\"Умная\" обложка</string>
