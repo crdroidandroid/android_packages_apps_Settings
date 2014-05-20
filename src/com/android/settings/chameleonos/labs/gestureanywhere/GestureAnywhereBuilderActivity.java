@@ -111,6 +111,12 @@ public class GestureAnywhereBuilderActivity extends ListActivity
         registerForContextMenu(getListView());
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (mStoreFile.exists()) mStoreFile.setReadable(true, false);
+    }
+
     static GestureLibrary getStore() {
         return sStore;
     }

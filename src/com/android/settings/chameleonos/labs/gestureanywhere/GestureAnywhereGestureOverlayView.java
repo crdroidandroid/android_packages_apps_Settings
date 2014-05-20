@@ -31,6 +31,6 @@ public class GestureAnywhereGestureOverlayView extends GestureOverlayView {
 
     public GestureAnywhereGestureOverlayView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        mClearPerformedGesture = false;
+        //mClearPerformedGesture = false;
     }
 }
