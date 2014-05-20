@@ -12,4 +12,8 @@
 
     <!-- Minimal notification row height used to calculate max notification count -->
     <dimen name="notification_row_min_height">70dp</dimen>
+
+    <!-- Gesture Anywhere -->
+    <dimen name="ga_gesture_thumbnail_inset">8dip</dimen>
+    <dimen name="ga_gesture_thumbnail_size">64dip</dimen>
 </resources>
