@@ -19,8 +19,8 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
         <com.android.settings.BrightnessPreference
-                android:title="@string/brightness"
-                android:persistent="false"/>
+                    android:title="@string/brightness"
+                    android:persistent="false"/>
 
         <PreferenceCategory
             android:key="display_prefs"
