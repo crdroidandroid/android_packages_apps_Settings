@@ -1,8 +1,25 @@
+/*
+ * Copyright (C) 2012 Slimroms
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.android.settings.crdroid;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.ActivityNotFoundException;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -19,6 +36,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import com.android.internal.util.slim.DeviceUtils;
+
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 
@@ -32,8 +51,9 @@ public class NavbarDimenSettings extends SettingsPreferenceFragment implements
 
     private static final int MENU_RESET = Menu.FIRST;
 
+    private static final int DLG_RESET = 0;
+
     ListPreference mNavigationBarHeight;
-    ListPreference mNavigationBarHeightLandscape;
     ListPreference mNavigationBarWidth;
 
     @Override
@@ -43,15 +63,47 @@ public class NavbarDimenSettings extends SettingsPreferenceFragment implements
         // Load the preferences from an XML resource
         addPreferencesFromResource(R.xml.navbar_dimen_settings);
 
+        PreferenceScreen prefSet = getPreferenceScreen();
+
         mNavigationBarHeight =
             (ListPreference) findPreference(PREF_NAVIGATION_BAR_HEIGHT);
         mNavigationBarHeight.setOnPreferenceChangeListener(this);
 
         mNavigationBarWidth =
             (ListPreference) findPreference(PREF_NAVIGATION_BAR_WIDTH);
-        mNavigationBarWidth.setOnPreferenceChangeListener(this);
+        if (!DeviceUtils.isPhone(getActivity())) {
+            prefSet.removePreference(mNavigationBarWidth);
+            mNavigationBarWidth = null;
+        } else {
+            mNavigationBarWidth.setOnPreferenceChangeListener(this);
+        }
+
+        updateDimensionValues();
 
         setHasOptionsMenu(true);
+    }
+
+    private void updateDimensionValues() {
+        int navigationBarHeight = Settings.System.getInt(getContentResolver(),
+                Settings.System.NAVIGATION_BAR_HEIGHT, -2);
+        if (navigationBarHeight == -2) {
+            navigationBarHeight = (int) (getResources().getDimension(
+                    com.android.internal.R.dimen.navigation_bar_height)
+                    / getResources().getDisplayMetrics().density);
+        }
+        mNavigationBarHeight.setValue(String.valueOf(navigationBarHeight));
+
+        if (mNavigationBarWidth == null) {
+            return;
+        }
+        int navigationBarWidth = Settings.System.getInt(getContentResolver(),
+                            Settings.System.NAVIGATION_BAR_WIDTH, -2);
+        if (navigationBarWidth == -2) {
+            navigationBarWidth = (int) (getResources().getDimension(
+                    com.android.internal.R.dimen.navigation_bar_width)
+                    / getResources().getDisplayMetrics().density);
+        }
+        mNavigationBarWidth.setValue(String.valueOf(navigationBarWidth));
 
     }
 
@@ -66,76 +118,29 @@ public class NavbarDimenSettings extends SettingsPreferenceFragment implements
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case MENU_RESET:
-                resetToDefault();
+                showDialogInner(DLG_RESET);
                 return true;
              default:
                 return super.onContextItemSelected(item);
         }
     }
 
-    private void resetToDefault() {
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
-        alertDialog.setTitle(R.string.reset);
-        alertDialog.setMessage(R.string.navbar_dimensions_reset_message);
-        alertDialog.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                int height = mapChosenDpToPixels(48);
-                height = mapChosenDpToPixels(48);
-                Settings.System.putInt(getContentResolver(),
-                        Settings.System.NAVIGATION_BAR_HEIGHT,
-                        height);
-                height = mapChosenDpToPixels(42);
-                Settings.System.putInt(getContentResolver(),
-                        Settings.System.NAVIGATION_BAR_WIDTH,
-                        height);
-                mNavigationBarHeight.setValue("48");
-                mNavigationBarWidth.setValue("42");
-            }
-        });
-        alertDialog.setNegativeButton(R.string.cancel, null);
-        alertDialog.create().show();
-    }
-
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-	if (preference == mNavigationBarWidth) {
+        if (preference == mNavigationBarWidth) {
             String newVal = (String) newValue;
-            int dp = Integer.parseInt(newVal);
-            int width = mapChosenDpToPixels(dp);
-            Settings.System.putInt(getContentResolver(), Settings.System.NAVIGATION_BAR_WIDTH,
-                    width);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_WIDTH,
+                    Integer.parseInt(newVal));
             return true;
         } else if (preference == mNavigationBarHeight) {
             String newVal = (String) newValue;
-            int dp = Integer.parseInt(newVal);
-            int height = mapChosenDpToPixels(dp);
-            Settings.System.putInt(getContentResolver(), Settings.System.NAVIGATION_BAR_HEIGHT,
-                    height);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_HEIGHT,
+                    Integer.parseInt(newVal));
             return true;
         }
         return false;
-    }
-
-    public int mapChosenDpToPixels(int dp) {
-        switch (dp) {
-            case 48:
-                return getResources().getDimensionPixelSize(R.dimen.navigation_bar_48);
-            case 44:
-                return getResources().getDimensionPixelSize(R.dimen.navigation_bar_44);
-            case 42:
-                return getResources().getDimensionPixelSize(R.dimen.navigation_bar_42);
-            case 40:
-                return getResources().getDimensionPixelSize(R.dimen.navigation_bar_40);
-            case 36:
-                return getResources().getDimensionPixelSize(R.dimen.navigation_bar_36);
-            case 30:
-                return getResources().getDimensionPixelSize(R.dimen.navigation_bar_30);
-            case 24:
-                return getResources().getDimensionPixelSize(R.dimen.navigation_bar_24);
-            case 0:
-                return 0;
-        }
-        return -1;
     }
 
     @Override
@@ -143,4 +148,53 @@ public class NavbarDimenSettings extends SettingsPreferenceFragment implements
         super.onResume();
     }
 
+    private void showDialogInner(int id) {
+        DialogFragment newFragment = MyAlertDialogFragment.newInstance(id);
+        newFragment.setTargetFragment(this, 0);
+        newFragment.show(getFragmentManager(), "dialog " + id);
+    }
+
+    public static class MyAlertDialogFragment extends DialogFragment {
+
+        public static MyAlertDialogFragment newInstance(int id) {
+            MyAlertDialogFragment frag = new MyAlertDialogFragment();
+            Bundle args = new Bundle();
+            args.putInt("id", id);
+            frag.setArguments(args);
+            return frag;
+        }
+
+        NavbarDimenSettings getOwner() {
+            return (NavbarDimenSettings) getTargetFragment();
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            int id = getArguments().getInt("id");
+            switch (id) {
+                case DLG_RESET:
+                    return new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.reset)
+                    .setMessage(R.string.navbar_dimensions_reset_message)
+                    .setNegativeButton(R.string.cancel, null)
+                    .setPositiveButton(R.string.dlg_ok,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            Settings.System.putInt(getActivity().getContentResolver(),
+                                    Settings.System.NAVIGATION_BAR_HEIGHT, -2);
+                            Settings.System.putInt(getActivity().getContentResolver(),
+                                    Settings.System.NAVIGATION_BAR_WIDTH, -2);
+                            getOwner().updateDimensionValues();
+                        }
+                    })
+                    .create();
+            }
+            throw new IllegalArgumentException("unknown id " + id);
+        }
+
+        @Override
+        public void onCancel(DialogInterface dialog) {
+
+        }
+    }
 }
