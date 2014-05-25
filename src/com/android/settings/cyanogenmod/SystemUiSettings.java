@@ -43,6 +43,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private static final String CATEGORY_NAVBAR = "navigation_bar";
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
+    private static final String KEY_PIE_SETTINGS = "pie_settings";
 
     // Enable/disable nav bar	
     private static final String ENABLE_NAVIGATION_BAR = "enable_nav_bar";
@@ -56,6 +57,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
     private CheckBoxPreference mNavigationBarLeftPref;
+    private PreferenceScreen mPieSettings;
     // Enable/disable hardware keys
     private CheckBoxPreference mMenuKeyEnabled;
     private CheckBoxPreference mBackKeyEnabled;
@@ -130,6 +132,22 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
             resetKeys();
         }
 
+        // Pie
+        mPieSettings = (PreferenceScreen) findPreference(KEY_PIE_SETTINGS);
+        enablePieSettings();
+
+    }
+
+    // Update if pie will be accessible or not
+    // observing nav bar on/off state
+    public void enablePieSettings() {
+        boolean enableNavBar = Settings.System.getBoolean(getActivity().getContentResolver(),
+               Settings.System.NAVIGATION_BAR_SHOW, false);
+        if (enableNavBar) {
+            mPieSettings.setEnabled(false);
+        } else {
+            mPieSettings.setEnabled(true);
+        }
     }
 
     // Enable/disbale nav bar
@@ -179,6 +197,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
                     Settings.System.NAVIGATION_BAR_SHOW,
                     ((Boolean) objValue) ? 1 : 0);
             updateNavbarPreferences((Boolean) value);
+            enablePieSettings();
             if (value) {
                 enableKeysPrefs();
             } else {
