@@ -543,4 +543,231 @@
     <string name="haptic_qs_tiles_title">Vibrar ao toque</string>
     <string name="haptic_qs_tiles_summary">Vibrar ao tocar os tiles</string>
 
+    <!-- Gesture Anywhere -->
+    <string name="gesture_anywhere_title">Gestos em qualquer lugar</string>
+    <string name="gesture_anywhere_enabled_title">Gestos em qualquer lugar</string>
+    <string name="gesture_anywhere_enabled_summary">Habilitar gestos em qualquer lugar</string>
+    <string name="gesture_anywhere_position_title">Loclização</string>
+    <string name="gesture_anywhere_position_left">Lado esquerdo</string>
+    <string name="gesture_anywhere_position_right">Lado direito</string>
+    <string name="gesture_anywhere_gestures_title">Gestos</string>
+    <string name="gesture_anywhere_gestures_summary">Acrescentar, remover e editar gestos</string>
+    <!-- Label, button used to add a gesture -->
+    <string name="ga_button_add">Acrescentar gestos</string>
+    <!-- Label, button used to reload all gestures -->
+    <string name="ga_button_reload">Recarregar</string>
+    <!-- Label, button used to cancel the operation of adding a gesture -->
+    <string name="ga_button_discard">Descartar</string>
+    <!-- Label, button used to save a gesture newly created -->
+    <string name="ga_button_done">Feito</string>
+    <!-- Label, prompt asking the user to enter the name of the gesture -->
+    <string name="ga_prompt_gesture_name">Nome</string>
+    <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+    <string name="ga_error_missing_name">Você precisa entar com um nome</string>
+    <!-- success message, tells the user where the gesture was saved -->
+    <string name="ga_save_success">Gesto salvo em %s</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_rename_action">OK</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_cancel_action">Cancelar</string>
+    <!-- Message displayed when the user opens the gestures settings screen -->
+    <string name="ga_gestures_loading">Carregando gestos...</string>
+    <!-- Message displayed when the user has no gestures -->
+    <string name="ga_gestures_empty">Nenhum gesto</string>
+    <!-- Title of the screen used to view/manage gestures -->
+    <string name="ga_gestures_activity">Gestos</string>
+    <!-- Noun, menu item used to edit a gesture -->
+    <string name="ga_gestures_edit">Editar</string>
+    <!-- Noun, menu item used to remove a gesture -->
+    <string name="ga_gestures_delete">Apagar</string>
+    <!-- Message displayed when a gesture is successfully deleted -->
+    <string name="ga_gestures_delete_success">Gesto apagado</string>
+    <!-- Title of dialog box -->
+    <string name="ga_gestures_rename_title">Renomear gesto</string>
+    <!-- Label of gesture name field in Rename gesture dialog box -->
+    <string name="ga_gestures_rename_label">Nome do gesto</string>
+    <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
+    <string name="ga_gestures_error_loading">Não pôde ser carregado %s. Certifique-se de ter espaço de armazenamento disponível</string>
+
+    <!-- Pie Control -->
+    <string name="pie_navigation_title">Navegação pie</string>
+    <string name="pie_control_title">Pie</string>
+    <string name="pie_control_summary">Habilitar controles pie</string>
+    <string name="pie_control_size">Tamanho de navegação</string>
+    <string name="pie_control_trigger_positions">Opções de gatilho</string>
+    <string name="pie_control_trigger_left">Gatilho no borda esquerda da tela</string>
+    <string name="pie_control_trigger_bottom">Gatilho no fundo da tela</string>
+    <string name="pie_control_trigger_right">Gatilho no borda direita da tela</string>
+    <string name="pie_control_trigger_top">Gatilho no topo da tela</string>
+    <string name="pie_control_trigger_top_summary">Pie no topo não mostra status e informações de hora</string>
+    <string name="pie_button_style">Estilo dos botões</string>
+    <string name="pie_button_color_title">Cor dos botões</string>
+    <string name="pie_button_alpha_title">Transparência dos botões</string>
+    <string name="pie_button_outline_color_title">Cor da linha externa dos botões</string>
+    <string name="pie_button_pressed_color_title">Cor dos botões pressionados</string>
+    <string name="pie_button_long_pressed_color_title">Cor dos botões ao longo clique</string>
+    <string name="pie_button_pressed_alpha_title">Transparência dos botões pressionados</string>
+    <string name="pie_icon_style">Estilo do ícone nos botões</string>
+    <string name="pie_icon_color_title">Cor do ícone nos botões</string>
+    <string name="pie_icon_color_mode_title">Modo de cor dos ícones nos botões</string>
+    <string name="pie_icon_color_mode_dialog_title">Colorir</string>
+    <string name="pie_icon_color_mode_summary">Mudar o modo de cor dos ícones nos botões</string>
+    <string name="pie_trigger_note_title">Observar</string>
+    <string name="pie_trigger_note_summary">Para evitar conflitos com a barra de status ou barra de navegação, os gatilhos sobre estas bordas são automaticamente desligado se um ou ambos estão disponíveis</string>
+    <string name="pie_background_color_title">Cor do fundo</string>
+    <string name="pie_snap_color_title">Cor dos pontos de transferência</string>
+    <string name="pie_text_color_title">Cor do texto</string>
+    <string name="pie_background_alpha_title">Transparência do fundo</string>
+    <string name="pie_mirror_right_title">Espelhar pie à direita</string>
+    <string name="pie_mirror_right_summary">Espelhar pie à direita no eixo horizontal</string>
+    <string name="pie_style">Estilo e dimensões</string>
+    <string name="pie_style_title">Estilo</string>
+    <string name="pie_dimens_title">Dimensões</string>
+    <string name="pie_additional_options">Opções adicionais</string>
+    <string name="pie_show_snap_title">Mostrar pontos de transferência</string>
+    <string name="pie_show_snap_summary">Mostrar pontos de transferência para mudar o lado do gatilho dinâmicamente</string>
+    <string name="pie_show_text_title">Mostrar status e relógio</string>
+    <string name="pie_show_text_summary">Mostrar status do dispositivo, hora e informações da data</string>
+    <string name="pie_show_background_title">Mostrar fundo</string>
+    <string name="pie_show_background_summary">Habilitar tela de fundo</string>
+    <string name="pie_button">Botões</string>
+    <string name="pie_button_second_layer">Botões da segunda camada</string>
+    <string name="pie_button_second_layer_summary">Mudar botões da segunda camada</string>
+    <string name="pie_button_style_summary">Mudar estilo dos botões</string>
+    <string name="pie_style_reset_message">Retornar as configurações ao modo normal?</string>
+    <string name="title_pref_menu_display">Visibilidade do botão menu</string>
+    <string name="summary_pref_menu_display">Como e quando você quer que o botão menu seja mostrado?</string>
+    <string name="navigation_menu_default_jb_behavior">Mostrar quando solicitado (normal)</string>
+    <string name="navigation_menu_never_show">Nunca mostrar</string>
+    <string name="navigation_menu_always_show">Sempre mostrar</string>
+    <string name="default_string">Normal</string>
+    <string name="reset_message">Retornar as configurações ao modo normal?</string>
+    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Removendo cada %1$s da lista irá desabilitar a segunda camada</string>
+
+    <!-- Button shorcut actions -->
+    <string name="shortcut_action_app">Aplicativo customizado</string>
+    <string name="shortcut_action_home">Home</string>
+    <string name="shortcut_action_back">Voltar</string>
+    <string name="shortcut_action_recent">Recentes</string>
+    <string name="shortcut_action_lastapp">Último aplicativo</string>
+    <string name="shortcut_action_search">Pesquisa</string>
+    <string name="shortcut_action_screenshot">Captura de tela</string>
+    <string name="shortcut_action_menu">Menu</string>
+    <string name="shortcut_action_menu_big">Menu</string>
+    <string name="shortcut_action_ime">Abir seletor IME</string>
+    <string name="shortcut_action_kill">Matar aplicativo</string>
+    <string name="shortcut_action_power_menu">Menu de energia</string>
+    <string name="shortcut_action_power">Desligar tela</string>
+    <string name="shortcut_action_notifications">Notificações</string>
+    <string name="shortcut_action_none">Nada</string>
+    <string name="shortcut_action_qs">Configurações rápidas</string>
+    <string name="shortcut_action_torch">Lanterna</string>
+    <string name="shortcut_action_longpress">Longo clique:</string>
+    <string name="shortcut_action_select_action_longpress">Escolher ações de longo clique:</string>
+    <string name="shortcut_action_select_action">Escolher ação:</string>
+    <string name="shortcut_action_select_action_newbutton">Escolher novo botão:</string>
+    <string name="shortcut_action_reset">Resete</string>
+    <string name="shortcut_action_add">Adicionar</string>
+    <string name="shortcut_action_reset_message">Retornar as configurações ao modo normal?</string>
+    <string name="shortcut_action_max">Tamanho máximo de entradas foi atingido</string>
+    <string name="shortcut_action_warning">Aviso</string>
+    <string name="shortcut_action_warning_message">Não é possível apagar a última entrada</string>
+    <string name="shortcut_action_disable_message">Desabilitado\nAdicionar uma entrada para habilitar essa função</string>
+    <string name="shortcut_image_not_valid">O aplicativo escolhido não retornou um ícone válido ou não suporta recorte de imagem. Use outro aplicativo</string>
+    <string name="shortcut_duplicate_entry">A ação selecionada não pode ser adicionada em duplicidade</string>
+
+    <string name="shortcut_action_help_shortcut">atalho</string>
+    <string name="shortcut_action_help_button">botão</string>
+    <string name="shortcut_action_help_icon">, ao selecionar, o ícone trará opções de personalização</string>
+    <string name="shortcut_action_help_main">Para adicionar um %1$s, selecione o ícone de ADICIONAR.  Assim que um %1$s é adicionado, selecionando a linha vai mudar o alvo%2$s\n\nPara remover um %1$s, deslize a linha horizontalmente para esquerda ou direita.  Re-ordenar um %1$s na lista arrastando verticalmente para a esquerda.\n\nPara limpar ou retornar ao normal, selecione o ícone Resete</string>
+    <string name="shortcut_action_help_delete_last_entry">Removendo cada %1$s na lista irá desabilitar a função</string>
+    <string name="shortcut_action_help">Ajuda</string>
+
+    <string name="icon_picker_type">Selecionar o tipo de ícone:</string>
+    <string name="icon_default">Normal</string>
+    <string name="icon_presets">Ícones do sistema</string>
+    <string name="icon_custom">Galeria</string>
+    <string name="shortcuts_icon_picker_alarm">Alarme</string>
+    <string name="shortcuts_icon_picker_andy">Andy</string>
+    <string name="shortcuts_icon_picker_battery">Bateria</string>
+    <string name="shortcuts_icon_picker_browser">Navegador</string>
+    <string name="shortcuts_icon_picker_calendar">Calendário</string>
+    <string name="shortcuts_icon_picker_camera">Câmera</string>
+    <string name="shortcuts_icon_picker_cloud">Núvem</string>
+    <string name="shortcuts_icon_picker_contact">Contato</string>
+    <string name="shortcuts_icon_picker_directdial">Ligação direta</string>
+    <string name="shortcuts_icon_picker_directmessage">Menssagem direta</string>
+    <string name="shortcuts_icon_picker_drive">Drive</string>
+    <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
+    <string name="shortcuts_icon_picker_email">Email</string>
+    <string name="shortcuts_icon_picker_email2">Email alternativo</string>
+    <string name="shortcuts_icon_picker_evernote">Evernote</string>
+    <string name="shortcuts_icon_picker_facebook">Facebook</string>
+    <string name="shortcuts_icon_picker_favorite">Favorito</string>
+    <string name="shortcuts_icon_picker_file_browser">Arquivo navegador</string>
+    <string name="shortcuts_icon_picker_file_browser2">Aqrquivo navegador alternativo</string>
+    <string name="shortcuts_icon_picker_fitness">Fitness</string>
+    <string name="shortcuts_icon_picker_gallery">Galeria</string>
+    <string name="shortcuts_icon_picker_gears">Gears</string>
+    <string name="shortcuts_icon_picker_google_small">Google</string>
+    <string name="shortcuts_icon_picker_gplus">Google Plus</string>
+    <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
+    <string name="shortcuts_icon_picker_help">Ajuda</string>
+    <string name="shortcuts_icon_picker_joystick">Joystick</string>
+    <string name="shortcuts_icon_picker_key">Chaves/contas</string>
+    <string name="shortcuts_icon_picker_laptop">Laptop</string>
+    <string name="shortcuts_icon_picker_notes">Notas</string>
+    <string name="shortcuts_icon_picker_luggage">Viagem</string>
+    <string name="shortcuts_icon_picker_maps">Mapas</string>
+    <string name="shortcuts_icon_picker_market">Market</string>
+    <string name="shortcuts_icon_picker_movie">Filmes</string>
+    <string name="shortcuts_icon_picker_music">Musica</string>
+    <string name="shortcuts_icon_picker_nav">Navegação</string>
+    <string name="shortcuts_icon_picker_phone">Telefone</string>
+    <string name="shortcuts_icon_picker_package">Pacote</string>
+    <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
+    <string name="shortcuts_icon_picker_play">Tocar</string>
+    <string name="shortcuts_icon_picker_pocket">Bolso</string>
+    <string name="shortcuts_icon_picker_quicksettings">Configurações rápidas</string>
+    <string name="shortcuts_icon_picker_rss">RSS Feed</string>
+    <string name="shortcuts_icon_picker_sdcard">SDCard</string>
+    <string name="shortcuts_icon_picker_search">Pesquisa</string>
+    <string name="shortcuts_icon_picker_sms">Mensagem</string>
+    <string name="shortcuts_icon_picker_tasks">Tarefas</string>
+    <string name="shortcuts_icon_picker_terminal">Terminal</string>
+    <string name="shortcuts_icon_picker_transit">Trânsito</string>
+    <string name="shortcuts_icon_picker_tv">TV</string>
+    <string name="shortcuts_icon_picker_twitter">Twitter</string>
+    <string name="shortcuts_icon_picker_unlock">Desbloquear</string>
+
+    <string name="icon_color_mode_all_icons">Todos os ícones</string>
+    <string name="icon_color_mode_system_icons">Ícones do sistema</string>
+    <string name="icon_color_mode_system_custom_icons">Ícones customizados e do sistema</string>
+    <string name="icon_picker_choose_icon_title">Escolher ícone</string>
+    <string name="group_applications">Aplicações</string>
+    <string name="select_custom_app_title">Selecionar aplicação customizada</string>
+    <string name="shortcuts_color_title">Cor do ícone de atalho</string>
+    <string name="shortcuts_color_summary">Colorir o ícone de atalho</string>
+    <string name="shortcuts_color_mode_title">Mode de cor do ícone</string>
+    <string name="shortcuts_color_mode_summary">Mudar o modo de cor do ícone de atalho</string>
+
+    <string name="icon_picker_type">Selecionar tipo do ícone:</string>
+    <string name="icon_default">Normal</string>
+    <string name="icon_presets">Ícones do sistems</string>
+    <string name="icon_custom">Galeria</string>
+    <string name="icon_pack">Pacote de ícones</string>
+    <string name="icon_picker_choose_icon_title">Escolher ícone</string>
+    <string name="icon_color_mode_all_icons">Todos os ícones</string>
+    <string name="icon_color_mode_system_icons">Ícones do sistema</string>
+    <string name="icon_color_mode_system_custom_icons">Ícones customizados e do sistema</string>
+    <string name="group_applications">Aplicações</string>
+    <string name="select_custom_app_title">Selecionar aplicação customizada</string>
+    <string name="shortcuts_text_color_title">Cor do texto</string>
+    <string name="shortcuts_color_title">Cor do ícone</string>
+    <string name="shortcuts_color_mode_title">Modo de cor do ícone</string>
+    <string name="shortcuts_color_mode_summary">Mudar o modo de cor dos ícones de atalho</string>
+
+    <!-- Power menu nav bar -->
+    <string name="power_menu_navbar_title">Barra de navegação</string>
+
 </resources>
