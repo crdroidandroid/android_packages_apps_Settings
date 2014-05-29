@@ -64,14 +64,14 @@
     <string name="navring_action_last_app">Последнее приложение</string>
 
     <!-- Navigation bar -->
-    <string name="navbar_enable_bar">Включить панель навигации</string>
-    <string name="navbar_enable_bar_summary">Включает панель навигации</string>
+    <string name="navbar_enable_bar">Включить строку навигации</string>
+    <string name="navbar_enable_bar_summary">Включает строку навигации</string>
     <string name="navbar_style_dimen_title">Размеры</string>
     <string name="navbar_dimensions_reset_message">Сбросить все размеры на значения по умолчанию?</string>
-    <string name="navigation_bar_height_title">Высота панели навигации</string>
-    <string name="navigation_bar_height_summary">Высота панели навигации в портретном режиме.</string>
-    <string name="navigation_bar_width_title">Ширина панели навигации</string>
-    <string name="navigation_bar_width_summary">Или высота, если панель находится сбоку.</string>
+    <string name="navigation_bar_height_title">Высота строки навигации</string>
+    <string name="navigation_bar_height_summary">Высота строки навигации в портретном режиме.</string>
+    <string name="navigation_bar_width_title">Ширина строки навигации</string>
+    <string name="navigation_bar_width_summary">Или высота, если строка находится сбоку.</string>
     <string name="navigation_bar_size_42_dp_default">42 dp (По умолчанию)</string>
     <string name="navigation_bar_size_36_dp">36 dp</string>
     <string name="navigation_bar_size_30_dp">30 dp</string>
@@ -310,7 +310,7 @@
     <string name="lockgesture_settings_enable_title">Требовать жест</string>
     <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
     <string name="lockgesture_settings_enable_summary">Нужно нарисовать жест, чтобы разблокировать экран</string>
-	<!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
+    <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
     <string name="lockgesture_settings_enable_visible_pattern_title">Сделать жест видимым</string>
     <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
     <string name="lockgesture_settings_enable_power_button_instantly_locks">Мгновенная блокировка кнопкой питания</string>
@@ -341,7 +341,6 @@
     
     <!-- Extra display settings -->
     <string name="extra_display_settings_title">Расширенные настройки</string>
-
     <!-- Screen recorder -->
     <string name="screen_recorder_title">Запись с экрана</string>
     <string name="screen_recorder_summary">Параметры записи</string>
@@ -419,7 +418,6 @@
     <string name="smart_pulldown_all">Без удаляемых и постоянных</string>
 
     <!-- Lockscreen Lid Settings -->
-    <string name="smart_cover_category_title">\"Умная\" обложка</string>
     <string name="smart_cover_wake_title">Пробуждение \"умной\" обложкой</string>
     <string name="smart_cover_wake_summary">Пробуждение устройства при открытии \"умной\" обложки</string>
 
@@ -461,7 +459,7 @@
     <string name="telo_radio_go_3g_unlock_summary">Когда устройство разблокируется, режим сети переключается снова на 3G</string>
     
     <!-- Custom Recent Settings -->
-    <string name="custom_recent_title">Стиль \"Недавних приложений\"</string>
+    <string name="custom_recent_title">Переключить стиль</string>
     <string name="custom_recent_summary">Установите \"галочку\" для выбора стиля от \"Slim\" или снимите, для возврата в стоковое состояние. ЛЮБОЕ ДЕЙСТВИЕ В ЭТОМ ПОЛЕ ПЕРЕЗАГРУЗИТ СИСТЕМНЫЙ UI</string>
 
     <!-- Recent panel -->
@@ -483,7 +481,7 @@
 
     <!-- NavBar long press actions -->
     <string name="navbar_long_press_title">Действия при долгом нажатии</string>
-    <string name="recent_long_press_title">Действия при долгом нажатии в \"Недавних приложениях\"</string>
+    <string name="recent_long_press_title">Долгое нажатие кнопки \"Недавних приложений\"</string>
     <string name="recent_long_press_none">Ничего</string>
     <string name="recent_long_press_last_app">Последнее приложение</string>
     <string name="recent_long_press_screenshot">Снимок экрана</string>
@@ -535,7 +533,7 @@
     
     <!-- App sidebar -->
     <string name="app_sidebar_title">Панель приложений</string>
-    <string name="app_sidebar_enable_title">Включить \"Панель приложений\"</string>
+    <string name="app_sidebar_enable_title">Включить</string>
     <string name="app_sidebar_enable_summaryOn">\"Панель приложений\" включена</string>
     <string name="app_sidebar_enable_summaryOff">\"Панель приложений\" отключена</string>
     <string name="app_sidebar_setup_items_title">Настройка содержимого \"Панели приложений\"</string>
@@ -566,5 +564,51 @@
     <!-- QuickSettings haptic feedback -->
     <string name="haptic_qs_tiles_title">Вибрация при нажатии</string>
     <string name="haptic_qs_tiles_summary">Вибрация при нажатии плитки</string>
+	
+    <!-- Gesture Anywhere -->
+    <string name="gesture_anywhere_title">\"Жест везде\"</string>
+    <string name="gesture_anywhere_enabled_title">\"Жест везде\"</string>
+    <string name="gesture_anywhere_enabled_summary">Включить функцию \"Жест везде\"</string>
+    <string name="gesture_anywhere_position_title">Расположение</string>
+    <string name="gesture_anywhere_position_left">По левому краю</string>
+    <string name="gesture_anywhere_position_right">По правому краю</string>
+    <string name="gesture_anywhere_gestures_title">Жесты</string>
+    <string name="gesture_anywhere_gestures_summary">Добавление, удаление и редактирование жестов</string>
+    <!-- Label, button used to add a gesture -->
+    <string name="ga_button_add">Добавить жест</string>
+    <!-- Label, button used to reload all gestures -->
+    <string name="ga_button_reload">Обновить</string>
+    <!-- Label, button used to cancel the operation of adding a gesture -->
+    <string name="ga_button_discard">Сброс</string>
+    <!-- Label, button used to save a gesture newly created -->
+    <string name="ga_button_done">Готово</string>
+    <!-- Label, prompt asking the user to enter the name of the gesture -->
+    <string name="ga_prompt_gesture_name">Название</string>
+    <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+    <string name="ga_error_missing_name">Вы должны ввести название</string>
+    <!-- success message, tells the user where the gesture was saved -->
+    <string name="ga_save_success">Жест сохранён в %s</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_rename_action">OK</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_cancel_action">Отмена</string>
+    <!-- Message displayed when the user opens the gestures settings screen -->
+    <string name="ga_gestures_loading">Загрузка жестов...</string>
+    <!-- Message displayed when the user has no gestures -->
+    <string name="ga_gestures_empty">Нет жестов</string>
+    <!-- Title of the screen used to view/manage gestures -->
+    <string name="ga_gestures_activity">Жесты</string>
+    <!-- Noun, menu item used to edit a gesture -->
+    <string name="ga_gestures_edit">Редактировать</string>
+    <!-- Noun, menu item used to remove a gesture -->
+    <string name="ga_gestures_delete">Удалить</string>
+    <!-- Message displayed when a gesture is successfully deleted -->
+    <string name="ga_gestures_delete_success">Жест удалён</string>
+    <!-- Title of dialog box -->
+    <string name="ga_gestures_rename_title">Переименовать жест</string>
+    <!-- Label of gesture name field in Rename gesture dialog box -->
+    <string name="ga_gestures_rename_label">Название жеста</string>
+    <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
+    <string name="ga_gestures_error_loading">Не удалось загрузить %s. Убедитесь, что у вас есть доступ к SD-карте</string>
 
 </resources>
