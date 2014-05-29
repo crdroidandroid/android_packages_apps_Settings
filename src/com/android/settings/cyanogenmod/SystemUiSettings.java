@@ -18,8 +18,11 @@ package com.android.settings.cyanogenmod;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
+import android.database.ContentObserver;
 import android.os.Bundle;
 import android.os.RemoteException;
+import android.os.Handler;
+import android.os.UserHandle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -32,6 +35,8 @@ import android.view.WindowManagerGlobal;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+
+import com.android.internal.util.slim.SlimActions;
 
 public class SystemUiSettings extends SettingsPreferenceFragment  implements
         Preference.OnPreferenceChangeListener {
@@ -63,6 +68,26 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
  
     // Enable/disable nav bar
     private CheckBoxPreference mEnableNavigationBar;
+
+    private SettingsObserver mSettingsObserver = new SettingsObserver(new Handler());
+    private final class SettingsObserver extends ContentObserver {
+        SettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+            ContentResolver resolver = getActivity().getContentResolver();
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.NAVIGATION_BAR_SHOW), false, this,
+                    UserHandle.USER_ALL);
+        }
+
+        @Override
+        public void onChange(boolean selfChange) {
+            super.onChange(selfChange);
+            updateSettings();
+        }
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -122,14 +147,35 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
             getPreferenceScreen().removePreference(hwKeysOnNavBarOptions);
         }
 
-	updateNavbarPreferences(enableNavigationBar);
+	updateSettings();
 
         if (mEnableNavigationBar.isChecked()) {
             enableKeysPrefs();
         } else {
             resetKeys();
         }
+    }
 
+    @Override
+      public void onResume() {
+        super.onResume();
+        updateSettings();
+        mSettingsObserver.observe();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        getActivity().getContentResolver().unregisterContentObserver(mSettingsObserver);
+    }
+
+    private void updateSettings() {
+        boolean enableNavigationBar = Settings.System.getInt(getContentResolver(),
+                Settings.System.NAVIGATION_BAR_SHOW,
+                SlimActions.isNavBarDefault(getActivity()) ? 1 : 0) == 1;
+        mEnableNavigationBar.setChecked(enableNavigationBar);
+
+        updateNavbarPreferences(enableNavigationBar);
     }
 
     // Enable/disbale nav bar

@@ -786,4 +786,6 @@
     <string name="shortcuts_color_mode_title">Icon color mode</string>
     <string name="shortcuts_color_mode_summary">Change the shorcuts icon color mode</string>
 
+    <!-- Power menu nav bar -->
+    <string name="power_menu_navbar_title">Navigation bar</string>
 </resources>
