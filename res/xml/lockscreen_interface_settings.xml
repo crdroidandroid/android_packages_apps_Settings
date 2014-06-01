@@ -76,6 +76,12 @@
             android:title="@string/lockscreen_custom_widgets_title" />
 
         <CheckBoxPreference
+            android:key="lockscreen_all_widgets"
+            android:dependency="keyguard_enable_widgets"
+            android:title="@string/lockscreen_allow_all_title"
+            android:summary="@string/lockscreen_allow_all_summary" />
+
+        <CheckBoxPreference
                 android:key="keyguard_enable_camera"
                 android:title="@string/lockscreen_enable_camera_title" />
 

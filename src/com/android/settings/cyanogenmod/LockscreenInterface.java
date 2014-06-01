@@ -17,8 +17,12 @@
 package com.android.settings.cyanogenmod;
 
 import android.app.admin.DevicePolicyManager;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.hardware.Camera;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
@@ -37,8 +41,11 @@ import com.android.settings.Utils;
 public class LockscreenInterface extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String TAG = "LockscreenInterface";
+
     private static final String LOCKSCREEN_GENERAL_CATEGORY = "lockscreen_general_category";
     private static final String LOCKSCREEN_WIDGETS_CATEGORY = "lockscreen_widgets_category";
+    private static final String KEY_LOCKSCREEN_ALL_WIDGETS = "lockscreen_all_widgets";
     private static final String KEY_BATTERY_STATUS = "lockscreen_battery_status";
     private static final String KEY_LOCKSCREEN_BUTTONS = "lockscreen_buttons";
     private static final String KEY_ENABLE_WIDGETS = "keyguard_enable_widgets";
@@ -50,7 +57,10 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private static final String LOCK_BEFORE_UNLOCK = "lock_before_unlock";
     private static final String KEY_DISABLE_FRAME = "lockscreen_disable_frame";
 
+    private static final int DLG_ALL_WIDGETS = 0;
+
     private CheckBoxPreference mEnableKeyguardWidgets;
+    private CheckBoxPreference mAllWidgets;
     private CheckBoxPreference mEnableCameraWidget;
     private CheckBoxPreference mEnableModLock;
     private CheckBoxPreference mEnableMaximizeWidgets;
@@ -80,6 +90,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
 
         // Find preferences
         mEnableKeyguardWidgets = (CheckBoxPreference) findPreference(KEY_ENABLE_WIDGETS);
+        mAllWidgets = (CheckBoxPreference) findPreference(KEY_LOCKSCREEN_ALL_WIDGETS);
         mEnableCameraWidget = (CheckBoxPreference) findPreference(KEY_ENABLE_CAMERA);
         mEnableMaximizeWidgets = (CheckBoxPreference) findPreference(KEY_ENABLE_MAXIMIZE_WIGETS);
         mLockscreenTargets = findPreference(KEY_LOCKSCREEN_TARGETS);
@@ -105,6 +116,11 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         // Enable or disable lockscreen widgets based on policy
         checkDisabledByPolicy(mEnableKeyguardWidgets,
                 DevicePolicyManager.KEYGUARD_DISABLE_WIDGETS_ALL);
+
+        // Enable all widgets
+        mAllWidgets.setChecked(Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.ALLOW_ALL_LOCKSCREEN_WIDGETS, 0) == 1);
+        mAllWidgets.setOnPreferenceChangeListener(this);
 
         // Lock before Unlock
         mLockBeforeUnlock = (CheckBoxPreference) findPreference(LOCK_BEFORE_UNLOCK);
@@ -250,6 +266,15 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
                     Settings.System.LOCKSCREEN_WIDGET_FRAME_ENABLED,
                     (Boolean) objValue ? 1 : 0);
             return true;
+        } else if (preference == mAllWidgets) {
+            final boolean checked = (Boolean) objValue;
+            if (checked) {
+                showDialogInner(DLG_ALL_WIDGETS);
+            } else {
+                Settings.Secure.putInt(getContentResolver(),
+                        Settings.Secure.ALLOW_ALL_LOCKSCREEN_WIDGETS, 0);
+            }
+            return true;
         }
 
         return false;
@@ -291,4 +316,70 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         return (mDPM.getKeyguardDisabledFeatures(null) & feature) != 0;
     }
 
+    private void showDialogInner(int id) {
+        DialogFragment newFragment = MyAlertDialogFragment.newInstance(id);
+        newFragment.setTargetFragment(this, 0);
+        newFragment.show(getFragmentManager(), "dialog " + id);
+    }
+
+    public static class MyAlertDialogFragment extends DialogFragment {
+
+        public static MyAlertDialogFragment newInstance(int id) {
+            MyAlertDialogFragment frag = new MyAlertDialogFragment();
+            Bundle args = new Bundle();
+            args.putInt("id", id);
+            frag.setArguments(args);
+            return frag;
+        }
+
+        LockscreenInterface getOwner() {
+            return (LockscreenInterface) getTargetFragment();
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            int id = getArguments().getInt("id");
+            switch (id) {
+                case DLG_ALL_WIDGETS:
+                    return new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.lockscreen_allow_all_title)
+                    .setMessage(R.string.lockscreen_allow_all_warning)
+                    .setNegativeButton(R.string.cancel,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            disableSetting();
+                        }
+                    })
+                    .setPositiveButton(R.string.dlg_ok,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            Settings.Secure.putInt(getActivity().getContentResolver(),
+                                    Settings.Secure.ALLOW_ALL_LOCKSCREEN_WIDGETS, 1);
+                        }
+                    })
+                    .create();
+            }
+            throw new IllegalArgumentException("unknown id " + id);
+        }
+
+        @Override
+        public void onCancel(DialogInterface dialog) {
+            int id = getArguments().getInt("id");
+            switch (id) {
+                case DLG_ALL_WIDGETS:
+                    disableSetting();
+                    break;
+                default:
+                    // None for now
+            }
+        }
+
+        private void disableSetting() {
+            if (getOwner().mAllWidgets != null) {
+                Settings.Secure.putInt(getActivity().getContentResolver(),
+                        Settings.Secure.ALLOW_ALL_LOCKSCREEN_WIDGETS, 0);
+                getOwner().mAllWidgets.setChecked(false);
+            }
+        }
+    }
 }

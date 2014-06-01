@@ -788,4 +788,10 @@
 
     <!-- Power menu nav bar -->
     <string name="power_menu_navbar_title">Navigation bar</string>
+
+    <!-- Lockscreen all widgets -->
+    <string name="lockscreen_allow_all_title">Allow all widgets</string>
+    <string name="lockscreen_allow_all_summary">Allow legacy widgets that don\'t natively support lock screen placement</string>
+    <string name="lockscreen_allow_all_warning">Some widgets may not behave as expected when placed on the lock screen.  Other widgets may expose your personal data to anyone who accesses your device.  Please be mindful of these warnings before continuing.</string>
+
 </resources>
