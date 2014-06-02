@@ -7,6 +7,7 @@
     <string name="crdroid_version_default">Unknown</string>
 
     <!-- General strings -->
+    <string name="attention">Attention</string>
     <string name="default_string">Default</string>
     <string name="recent_panel_settings_title" >Recent panel settings</string>
     <string name="reset">Reset</string>
@@ -788,6 +789,10 @@
 
     <!-- Power menu nav bar -->
     <string name="power_menu_navbar_title">Navigation bar</string>
+    <string name="navigation_bar_warning_no_navigation_present">No other navigation is currently enabled. Turning off the navigation bar can result in an unusable device. Do you want to enable pie controls instead?</string>
+    <string name="pie_warning_no_navigation_present">No other navigation is currently enabled. Turning off pie controls can result in an unusable device. Do you want to enable navigation bar instead?</string>
+    <string name="pie_trigger_warning">Minimum one of the main triggers (bottom, left or right) needs to be enabled.</string>
+
 
     <!-- Lockscreen all widgets -->
     <string name="lockscreen_allow_all_title">Allow all widgets</string>
