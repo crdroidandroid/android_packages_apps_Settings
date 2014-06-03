@@ -41,6 +41,8 @@ public class PieTriggerSettings extends SettingsPreferenceFragment
     // This equals EdgeGesturePosition.LEFT.FLAG
     private static final int DEFAULT_POSITION = 1 << 0;
 
+    private static final String PREF_PIE_DISABLE_IME_TRIGGERS = "pie_disable_ime_triggers";
+
     private static final String[] TRIGGER = {
         "pie_control_trigger_left",
         "pie_control_trigger_bottom",
@@ -49,6 +51,7 @@ public class PieTriggerSettings extends SettingsPreferenceFragment
     };
 
     private CheckBoxPreference[] mTrigger = new CheckBoxPreference[4];
+    private CheckBoxPreference mDisableImeTriggers;
 
     private ContentObserver mPieTriggerObserver = new ContentObserver(new Handler()) {
         @Override
@@ -69,28 +72,37 @@ public class PieTriggerSettings extends SettingsPreferenceFragment
             mTrigger[i] = (CheckBoxPreference) prefSet.findPreference(TRIGGER[i]);
             mTrigger[i].setOnPreferenceChangeListener(this);
         }
+
+        mDisableImeTriggers = (CheckBoxPreference) findPreference(PREF_PIE_DISABLE_IME_TRIGGERS);
+        mDisableImeTriggers.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         int triggerSlots = 0;
         int counter = 0;
-        for (int i = 0; i < mTrigger.length; i++) {
-            boolean checked = preference == mTrigger[i]
-                    ? (Boolean) newValue : mTrigger[i].isChecked();
-            if (checked) {
-                if (!TRIGGER[i].equals("pie_control_trigger_top")) {
-                    counter++;
+        if (preference == mDisableImeTriggers) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.PIE_IME_CONTROL,
+                    (Boolean) newValue ? 1 : 0);
+        } else {
+            for (int i = 0; i < mTrigger.length; i++) {
+                boolean checked = preference == mTrigger[i]
+                        ? (Boolean) newValue : mTrigger[i].isChecked();
+                if (checked) {
+                    if (!TRIGGER[i].equals("pie_control_trigger_top")) {
+                        counter++;
+                    }
+                    triggerSlots |= 1 << i;
                 }
-                triggerSlots |= 1 << i;
             }
+            if (counter == 0) {
+                showDialogInner(DLG_WARNING);
+                return true;
+            }
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.PIE_GRAVITY, triggerSlots);
         }
-        if (counter == 0) {
-            showDialogInner(DLG_WARNING);
-            return true;
-        }
-        Settings.System.putInt(getContentResolver(),
-                Settings.System.PIE_GRAVITY, triggerSlots);
         updatePieTriggers();
         return true;
     }
@@ -123,6 +135,9 @@ public class PieTriggerSettings extends SettingsPreferenceFragment
                 mTrigger[i].setChecked(false);
             }
         }
+
+        mDisableImeTriggers.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.PIE_IME_CONTROL, 1) == 1);
     }
 
     private void showDialogInner(int id) {

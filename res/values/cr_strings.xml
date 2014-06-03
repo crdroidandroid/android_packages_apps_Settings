@@ -655,6 +655,8 @@
     <string name="pie_button_second_layer_summary">Change second layer buttons</string>
     <string name="pie_button_style_summary">Change pie button style</string>
     <string name="pie_style_reset_message">Reset style entries to default?</string>
+    <string name="pie_disable_ime_triggers_title">Reduce trigger size on keyboard</string>
+    <string name="pie_disable_ime_triggers_summary">Reduces left and right trigger size if keyboard is active</string>
     <string name="title_pref_menu_display">Menu visibility</string>
     <string name="summary_pref_menu_display">How and when do you want the menu buttons to appear?</string>
     <string name="navigation_menu_default_jb_behavior">Show on request (default)</string>
