@@ -55,8 +55,8 @@
     <string name="floating_mode_summary">Controls whether open halo notifications on floating window mode</string>
 
     <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
-    <string name="app_halo_label_black">Blacklist from HALO</string>
-    <string name="app_halo_label_white">Whitelist from HALO</string>
+    <string name="app_halo_label_black">Blacklist from Halo</string>
+    <string name="app_halo_label_white">Whitelist from Halo</string>
 
     <!-- QS and navring Power menu -->
     <string name="title_tile_power">Power Menu</string> 
@@ -800,5 +800,10 @@
     <string name="lockscreen_allow_all_title">Allow all widgets</string>
     <string name="lockscreen_allow_all_summary">Allow legacy widgets that don\'t natively support lock screen placement</string>
     <string name="lockscreen_allow_all_warning">Some widgets may not behave as expected when placed on the lock screen.  Other widgets may expose your personal data to anyone who accesses your device.  Please be mindful of these warnings before continuing.</string>
+
+    <!--Blacklist peek and floating mode-->
+    <string name="blacklist_button_title">Blacklist</string>
+    <string name="peek_blacklist_label">Blacklist from Peek</string>
+    <string name="floating_blacklist_label">Blacklist from Floating Mode</string>
 
 </resources>
