@@ -357,7 +357,6 @@
     <string name="screen_recorder_size_540x960">540x960</string>
     <string name="screen_recorder_size_600x1024">600x1024</string>
     <string name="screen_recorder_size_720x1280">720x1280</string>
-
     <!-- frame rates -->
     <string name="screen_recorder_bitrate_title_100000">100 кБ/с</string>
     <string name="screen_recorder_bitrate_title_250000">250 кБ/с</string>
@@ -383,7 +382,10 @@
     <string name="screen_recorder_bitrate_20000000">20000000</string>
     <string name="screen_recorder_bitrate_50000000">50000000</string>
     <string name="screen_recorder_bitrate_100000000">100000000</string>
-
+    <!-- Lockscreen Lid Settings -->
+    <string name="smart_cover_wake_title">Пробуждение \"умной\" обложкой</string>
+    <string name="smart_cover_wake_summary">Пробуждение устройства при открытии \"умной\" обложки</string>
+    
     <!-- Power menu screen recorder -->
     <string name="power_menu_screenrecord_title">Запись с экрана</string>
 
@@ -416,10 +418,6 @@
     <string name="smart_pulldown_dismissable">Без удаляемых</string>
     <string name="smart_pulldown_persistent">Без постоянных</string>
     <string name="smart_pulldown_all">Без удаляемых и постоянных</string>
-
-    <!-- Lockscreen Lid Settings -->
-    <string name="smart_cover_wake_title">Пробуждение \"умной\" обложкой</string>
-    <string name="smart_cover_wake_summary">Пробуждение устройства при открытии \"умной\" обложки</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
     <string name="hw_keys_title">Аппаратные кнопки</string>
@@ -610,5 +608,181 @@
     <string name="ga_gestures_rename_label">Название жеста</string>
     <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
     <string name="ga_gestures_error_loading">Не удалось загрузить %s. Убедитесь, что у вас есть доступ к SD-карте</string>
+    
+    <!-- Pie Control -->
+    <string name="pie_navigation_title">Управление pie</string>
+    <string name="pie_control_title">Pie</string>
+    <string name="pie_control_summary">Включить управление pie</string>
+    <string name="pie_control_size">Размер pie</string>
+    <string name="pie_control_trigger_positions">Параметры переключения</string>
+    <string name="pie_control_trigger_left">Включать по левой границе экрана</string>
+    <string name="pie_control_trigger_bottom">Включать по нижней границе экрана</string>
+    <string name="pie_control_trigger_right">Включать по правой границе экрана</string>
+    <string name="pie_control_trigger_top">Включать по верхней границе экрана</string>
+    <string name="pie_control_trigger_top_summary">Сверху будет показываться только pie</string>
+    <string name="pie_button_style">Стиль кнопок</string>
+    <string name="pie_button_color_title">Цвет кнопок</string>
+    <string name="pie_button_alpha_title">Прозрачность кнопок</string>
+    <string name="pie_button_outline_color_title">Цвет окантовки кнопок</string>
+    <string name="pie_button_pressed_color_title">Цвет нажатой кнопки</string>
+    <string name="pie_button_long_pressed_color_title">Цвет кнопки при долгом нажатии</string>
+    <string name="pie_button_pressed_alpha_title">Прозрачность нажатой кнопки</string>
+    <string name="pie_icon_style">Стиль значков кнопок</string>
+    <string name="pie_icon_color_title">Цвет значков кнопок</string>
+    <string name="pie_icon_color_mode_title">Цветовой режим значков кнопок</string>
+    <string name="pie_icon_color_mode_dialog_title">Установить цвет</string>
+    <string name="pie_icon_color_mode_summary">Изменить цветовой режим значков кнопок</string>
+    <string name="pie_trigger_note_title">Примечание</string>
+    <string name="pie_trigger_note_summary">Во избежание конфликтов со строкой состояния или строкой навигации области срабатывания сверху и снизу выключаются автоматически, если какая-либо из панелей видима</string>
+    <string name="pie_background_color_title">Цвет фона</string>
+    <string name="pie_snap_color_title">Цвет точек привязки</string>
+    <string name="pie_text_color_title">Цвет текста</string>
+    <string name="pie_background_alpha_title">Цвет фона</string>
+    <string name="pie_mirror_right_title">Зеркальный pie справа</string>
+    <string name="pie_mirror_right_summary">Зеркально отражать правый pie по вертикали</string>
+    <string name="pie_style">Стиль и размеры</string>
+    <string name="pie_style_title">Стиль</string>
+    <string name="pie_dimens_title">Размеры</string>
+    <string name="pie_additional_options">Дополнительные настройки</string>
+    <string name="pie_show_snap_title">Показывать точки привязки</string>
+    <string name="pie_show_snap_summary">Показывать точки привязки, к которым можно перетащить pie, сделав областью срабатывания</string>
+    <string name="pie_show_text_title">Показывать состояние и часы</string>
+    <string name="pie_show_text_summary">Показывать состояние телефона, дату и время</string>
+    <string name="pie_show_background_title">Показывать фон</string>
+    <string name="pie_show_background_summary">Включить фон экрана для pie</string>
+    <string name="pie_button">Кнопки</string>
+    <string name="pie_button_second_layer">Второй уровень кнопок</string>
+    <string name="pie_button_second_layer_summary">Изменить второй уровень кнопок</string>
+    <string name="pie_button_style_summary">Изменить стиль кнопок</string>
+    <string name="pie_style_reset_message">Сбросить стили к значениям по умолчанию?</string>
+    <string name="pie_disable_ime_triggers_title">Отключить срабатывание на клавиатуре</string>
+    <string name="pie_disable_ime_triggers_summary">Отключает или уменьшает размер области срабатывания в зоне клавиатуры, когда клавиатура открыта</string>
+    <string name="title_pref_menu_display">Видимость меню</string>
+    <string name="summary_pref_menu_display">Как и когда появляться кнопкам меню</string>
+    <string name="navigation_menu_default_jb_behavior">Показывать по запросу (по умолчанию)</string>
+    <string name="navigation_menu_never_show">Не показывать</string>
+    <string name="navigation_menu_always_show">Всегда показывать</string>
+    <string name="default_string">По умолчанию</string>
+    <string name="reset_message">Сбросить все настройки по умолчанию?</string>
+    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Удаление последнего %1$s отключит весь второй уровень pie.</string>
+    
+    <!-- Button shorcut actions -->
+    <string name="shortcut_action_app">Заданное приложение</string>
+    <string name="shortcut_action_home">Домой</string>
+    <string name="shortcut_action_back">Назад</string>
+    <string name="shortcut_action_recent">Недавние</string>
+    <string name="shortcut_action_lastapp">Предыдущее приложение</string>
+    <string name="shortcut_action_search">Поиск</string>
+    <string name="shortcut_action_screenshot">Снимок экрана</string>
+    <string name="shortcut_action_menu">Меню</string>
+    <string name="shortcut_action_menu_big">Меню</string>
+    <string name="shortcut_action_ime">Открыть переключатель IME</string>
+    <string name="shortcut_action_kill">Завершить приложение</string>
+    <string name="shortcut_action_power_menu">Меню кнопки питания</string>
+    <string name="shortcut_action_power">Потушить экран</string>
+    <string name="shortcut_action_notifications">Уведомления</string>
+    <string name="shortcut_action_none">Нет</string>
+    <string name="shortcut_action_qs">Панель быстрых настроек</string>
+    <string name="shortcut_action_torch">Фонарик</string>
+    <string name="shortcut_action_longpress">Долгое нажатие:</string>
+    <string name="shortcut_action_select_action_longpress">Выберите действие для долгого нажатия:</string>
+    <string name="shortcut_action_select_action">Выберите действие:</string>
+    <string name="shortcut_action_select_action_newbutton">Выбрать новую кнопку:</string>
+    <string name="shortcut_action_reset">Сбросить</string>
+    <string name="shortcut_action_add">Добавить</string>
+    <string name="shortcut_action_reset_message">Сбросить все параметры на значения по умолчанию?</string>
+    <string name="shortcut_action_max">Выбрано максимальное количество параметров</string>
+    <string name="shortcut_action_warning">Внимание</string>
+    <string name="shortcut_action_warning_message">Невозможно удалить последний параметр</string>
+    <string name="shortcut_action_disable_message">Отключено\nДобавьте параметр, чтобы включить</string>
+    <string name="shortcut_image_not_valid">Выранное приложение не вернуло правильный значок или не поддерживает обрезку изображения. Используйте другое приложение</string>
+    <string name="shortcut_duplicate_entry">Выбранное приложение не может быть добавлено дважды</string>
+
+    <string name="shortcut_action_help_shortcut">ярлык</string>
+    <string name="shortcut_action_help_button">кнопка</string>
+    <string name="shortcut_action_help_icon">, в процессе выбора значка покажет настройки модификации</string>
+    <string name="shortcut_action_help_main">Чтобы добавить %1$s, нажмите значок \&quot;Добавить\&quot;.  Когда %1$s добавлено, выбором ряда, можно изменить цель%2$s\n\nЧтобы удалить %1$s, сдвиньте ряд горизонтально.  Переопределить %1$s в списке можно вертикальным перетаскиванием привязки слева.\n\nЧтобы сбросить все к значениям по умолчанию, нажмите значок сброса.</string>
+    <string name="shortcut_action_help_delete_last_entry">Удаление последнего %1$s в списке отключит эту возможность.</string>
+    <string name="shortcut_action_help">Помощь</string>
+
+    <string name="icon_picker_type">Выбрать тип значка:</string>
+    <string name="icon_default">По умолчанию</string>
+    <string name="icon_presets">Системные значки</string>
+    <string name="icon_custom">Галерея</string>
+    <string name="shortcuts_icon_picker_alarm">Часы</string>
+    <string name="shortcuts_icon_picker_andy">Andy</string>
+    <string name="shortcuts_icon_picker_battery">Батарея</string>
+    <string name="shortcuts_icon_picker_browser">Браузер</string>
+    <string name="shortcuts_icon_picker_calendar">Календарь</string>
+    <string name="shortcuts_icon_picker_camera">Камера</string>
+    <string name="shortcuts_icon_picker_cloud">Cloud</string>
+    <string name="shortcuts_icon_picker_contact">Контакт</string>
+    <string name="shortcuts_icon_picker_directdial">Быстрый набор</string>
+    <string name="shortcuts_icon_picker_directmessage">Быстрое сообщение</string>
+    <string name="shortcuts_icon_picker_drive">Drive</string>
+    <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
+    <string name="shortcuts_icon_picker_email">Email</string>
+    <string name="shortcuts_icon_picker_email2">Альтернативный Email</string>
+    <string name="shortcuts_icon_picker_evernote">Evernote</string>
+    <string name="shortcuts_icon_picker_facebook">Facebook</string>
+    <string name="shortcuts_icon_picker_favorite">Избранный</string>
+    <string name="shortcuts_icon_picker_file_browser">Файловый менеджер</string>
+    <string name="shortcuts_icon_picker_file_browser2">Альтернативный файловый менеджер</string>
+    <string name="shortcuts_icon_picker_fitness">Fitness</string>
+    <string name="shortcuts_icon_picker_gallery">Gallery</string>
+    <string name="shortcuts_icon_picker_gears">Gears</string>
+    <string name="shortcuts_icon_picker_google_small">Google</string>
+    <string name="shortcuts_icon_picker_gplus">Google Plus</string>
+    <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
+    <string name="shortcuts_icon_picker_help">Справка</string>
+    <string name="shortcuts_icon_picker_joystick">Джойстик</string>
+    <string name="shortcuts_icon_picker_key">Ключи/Учетные записи</string>
+    <string name="shortcuts_icon_picker_laptop">Ноутбук</string>
+    <string name="shortcuts_icon_picker_notes">Заметки</string>
+    <string name="shortcuts_icon_picker_luggage">Путешествия</string>
+    <string name="shortcuts_icon_picker_maps">Карты</string>
+    <string name="shortcuts_icon_picker_market">Market</string>
+    <string name="shortcuts_icon_picker_movie">Видео</string>
+    <string name="shortcuts_icon_picker_music">Музыка</string>
+    <string name="shortcuts_icon_picker_nav">Навигация</string>
+    <string name="shortcuts_icon_picker_phone">Телефон</string>
+    <string name="shortcuts_icon_picker_package">Package</string>
+    <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
+    <string name="shortcuts_icon_picker_play">Play</string>
+    <string name="shortcuts_icon_picker_pocket">Pocket</string>
+    <string name="shortcuts_icon_picker_quicksettings">Быстрые настройки</string>
+    <string name="shortcuts_icon_picker_rss">Подписка RSS</string>
+    <string name="shortcuts_icon_picker_sdcard">SDCard</string>
+    <string name="shortcuts_icon_picker_search">Поиск</string>
+    <string name="shortcuts_icon_picker_sms">Сообщения</string>
+    <string name="shortcuts_icon_picker_tasks">Задания</string>
+    <string name="shortcuts_icon_picker_terminal">Терминал</string>
+    <string name="shortcuts_icon_picker_transit">Транзит</string>
+    <string name="shortcuts_icon_picker_tv">TV</string>
+    <string name="shortcuts_icon_picker_twitter">Twitter</string>
+    <string name="shortcuts_icon_picker_unlock">Разблокировка</string>
+
+    <string name="icon_color_mode_all_icons">Все значки</string>
+    <string name="icon_color_mode_system_icons">Системные значки</string>
+    <string name="icon_color_mode_system_custom_icons">Системные и свои значки</string>
+    <string name="icon_picker_choose_icon_title">Выбрать значок</string>
+    <string name="group_applications">Приложения</string>
+    <string name="select_custom_app_title">Выбрать собственное приложение</string>
+    <string name="shortcuts_color_title">Цвет значка</string>
+    <string name="shortcuts_color_summary">Выбрать цвет значка</string>
+    <string name="shortcuts_color_mode_title">Режим цвета значка</string>
+    <string name="shortcuts_color_mode_summary">Изменить режим цвета значка ярлыка</string>
+
+    <!-- Power menu nav bar -->
+    <string name="power_menu_navbar_title">Строка навигации</string>
+    <string name="navigation_bar_warning_no_navigation_present">Не включено никакой навигации. Отключение строки навигации может сделать использование аппарата невозможным. Стоит ли включить управление pie?</string>
+    <string name="pie_warning_no_navigation_present">Не включено никакой навигации. Отключение pie может сделать использование аппарата невозможным. Стоит ли включить строку навигации?</string>
+    <string name="pie_trigger_warning">Должна быть включена как минимум одна основная точка привязки (внизу, слева или справа).</string>
+
+
+    <!-- Lockscreen all widgets -->
+    <string name="lockscreen_allow_all_title">Разрешить все виджеты</string>
+    <string name="lockscreen_allow_all_summary">Разрешить также виджеты, которые изначально не поддерживают расположение на экране блокировки</string>
+    <string name="lockscreen_allow_all_warning">Некоторые виджеты на экране блокировки могут работать не так, как ожидается. Некоторые могут показать ваши личные данные лицам, имеющим доступ к вашему аппарату. Пожалуйста, будтье внимательны, включая эту возможность.</string>
 
 </resources>
