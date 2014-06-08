@@ -50,10 +50,6 @@
     <string name="halo_notification_count_individual">Per app</string>
     <string name="halo_notification_count_both">Both</string>
 
-    <!-- HALO floating mode -->
-    <string name="floating_mode_title">Allow floating windows</string>
-    <string name="floating_mode_summary">Controls whether open halo notifications on floating window mode</string>
-
     <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_halo_label_black">Blacklist from Halo</string>
     <string name="app_halo_label_white">Whitelist from Halo</string>
