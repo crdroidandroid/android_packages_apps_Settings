@@ -49,6 +49,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="category_general"
         android:title="@string/lockscreen_notifications" >
         <CheckBoxPreference
             android:key="lockscreen_notifications"
