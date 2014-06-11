@@ -34,6 +34,12 @@
             android:summary="@string/summary_collapse_panel" />
 
         <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+            android:key="qs_small_icons"
+            android:title="@string/title_qs_small_icons"
+            android:defaultValue="false"
+            android:summary="@string/summary_qs_small_icons" />
+
+        <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
             android:key="quick_settings_tiles_vibrate"
             android:title="@string/haptic_qs_tiles_title"
             android:summary="@string/haptic_qs_tiles_summary"
