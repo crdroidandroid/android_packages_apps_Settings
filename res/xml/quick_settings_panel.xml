@@ -21,12 +21,6 @@
         android:key="pref_general_settings"
         android:title="@string/title_general" >
 
-        <PreferenceScreen
-            android:key="quicksettings_tiles_style"
-            android:fragment="com.android.settings.crdroid.QuickSettingsTilesStyle"
-            android:title="@string/quicksettings_tiles_style"
-            android:summary="@string/summary_quicksettings_tiles_style" />  
-
         <ListPreference
             android:key="quick_pulldown"
             android:title="@string/title_quick_pulldown"
