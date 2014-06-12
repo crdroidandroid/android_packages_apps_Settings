@@ -778,5 +778,6 @@
     <string name="blacklist_button_title">Blacklist</string>
     <string name="peek_blacklist_label">Blacklist from Peek</string>
     <string name="floating_blacklist_label">Blacklist from Floating Mode</string>
+    <string name="hover_blacklist_label">Blacklist from Hover</string>
 
 </resources>
