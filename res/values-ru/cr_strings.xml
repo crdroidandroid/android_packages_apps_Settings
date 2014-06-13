@@ -17,46 +17,6 @@
     <!-- Advanced settings -->
     <string name="advanced_options_settings_title">Расширенные настройки</string>
 
-    <!-- Halo -->
-    <string name="halo_settings_title">Halo</string>
-    <string name="halo_behavior_title">Поведение Halo</string>
-    <string name="halo_hide_title">Скрыть Halo после деятельности</string>
-    <string name="halo_hide_summary">Halo будет отображаться для входящих задач и скроется через некоторое время</string>
-    <string name="halo_state_title">Политика Halo</string>
-    <string name="halo_state_summary">Включает чёрный и белый списки</string>
-    <string name="halo_state_black">Чёрный список</string>
-    <string name="halo_state_white">Белый список</string>
-    <string name="halo_pause_title">Приостановить активное приложение</string>
-    <string name="halo_pause_summary">При открытии приложения из Halo, основное приложение будет приостановлено</string>
-    <string name="halo_notification_msgbox_title">Включить всплывающие уведомления</string>
-    <string name="halo_notification_msgbox_summary">Показать окно сообщения для входящих уведомлений</string>
-    <string name="halo_unlock_ping_title">Пинг при разблокировке</string>
-    <string name="halo_unlock_ping_summary">Halo пропингует, когда устройство разблокируется, если были получены новые уведомления</string>
-
-    <string name="halo_size_title">Размер Halo</string>
-    <string name="halo_size_summary">Определяет, каким большим будет Halo</string>
-    <string name="halo_size_miniscule">Миниатюрный</string>
-    <string name="halo_size_small">Маленький</string>
-    <string name="halo_size_default">Нормальный (по умолчанию)</string>
-    <string name="halo_size_large">Большой</string>
-    <string name="halo_size_gigantic">Гигантский</string>
-    <string name="halo_size_monster">Огромный</string>
-
-    <string name="halo_notification_count_title">Количество уведомлений</string>
-    <string name="halo_notification_count_summary">Показывает количество уведомлений в halo</string>
-    <string name="halo_notification_count_none">Не показывать</string>
-    <string name="halo_notification_count_total">Общее</string>
-    <string name="halo_notification_count_individual">От приложений</string>
-    <string name="halo_notification_count_both">Оба</string>
-    
-    <!-- HALO floating mode -->
-    <string name="floating_mode_title">Разрешить всплывающие окна</string>
-    <string name="floating_mode_summary">Открывать уведомления halo в режиме всплывающих окон</string>
-
-    <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
-    <string name="app_halo_label_black">Черный список Halo</string>
-    <string name="app_halo_label_white">Белый список Halo</string>
-
     <!-- QS and navring Power menu -->
     <string name="title_tile_power">Меню кнопки питания</string> 
     <string name="navring_action_power_menu">Меню кнопки питания</string>
@@ -610,9 +570,9 @@
     <string name="ga_gestures_error_loading">Не удалось загрузить %s. Убедитесь, что у вас есть доступ к SD-карте</string>
     
     <!-- Pie Control -->
-    <string name="pie_navigation_title">Управление pie</string>
+    <string name="pie_navigation_title">Pie навигация</string>
     <string name="pie_control_title">Pie</string>
-    <string name="pie_control_summary">Включить управление pie</string>
+    <string name="pie_control_summary">Включить Pie навигацию</string>
     <string name="pie_control_size">Размер pie</string>
     <string name="pie_control_trigger_positions">Параметры переключения</string>
     <string name="pie_control_trigger_left">Включать по левой границе экрана</string>
@@ -775,14 +735,19 @@
 
     <!-- Power menu nav bar -->
     <string name="power_menu_navbar_title">Строка навигации</string>
-    <string name="navigation_bar_warning_no_navigation_present">Не включено никакой навигации. Отключение строки навигации может сделать использование аппарата невозможным. Стоит ли включить управление pie?</string>
-    <string name="pie_warning_no_navigation_present">Не включено никакой навигации. Отключение pie может сделать использование аппарата невозможным. Стоит ли включить строку навигации?</string>
+    <string name="navigation_bar_warning_no_navigation_present">Не включено никакой навигации. Отключение строки навигации может сделать использование аппарата невозможным. Может стоит включить Pie навигацию?</string>
+    <string name="pie_warning_no_navigation_present">Не включено никакой навигации. Отключение pie может сделать использование аппарата невозможным. Может стоит включить строку навигации?</string>
     <string name="pie_trigger_warning">Должна быть включена как минимум одна основная точка привязки (внизу, слева или справа).</string>
-
 
     <!-- Lockscreen all widgets -->
     <string name="lockscreen_allow_all_title">Разрешить все виджеты</string>
     <string name="lockscreen_allow_all_summary">Разрешить также виджеты, которые изначально не поддерживают расположение на экране блокировки</string>
     <string name="lockscreen_allow_all_warning">Некоторые виджеты на экране блокировки могут работать не так, как ожидается. Некоторые могут показать ваши личные данные лицам, имеющим доступ к вашему аппарату. Пожалуйста, будтье внимательны, включая эту возможность.</string>
+
+    <!--Blacklist peek and floating mode-->
+    <string name="blacklist_button_title">Чёрный список</string>
+    <string name="peek_blacklist_label">Чёрный список от Peek</string>
+    <string name="floating_blacklist_label">Чёрный список от Плавающего режима</string>
+    <string name="hover_blacklist_label">Черный список от Hover</string>
 
 </resources>
