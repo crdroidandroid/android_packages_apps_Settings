@@ -137,6 +137,13 @@
         android:icon="@drawable/ic_settings_halo" 
         android:title="@string/halo_settings_title" />
 
+    <!-- Hover -->
+    <header
+        android:id="@+id/hover_settings"
+        android:icon="@drawable/ic_settings_hover"
+        android:fragment="com.android.settings.crdroid.HoverSettings"
+        android:title="@string/hover_settings_title" />
+
     <!-- DEVICE -->
     <header android:id="@+id/device_section"
         android:title="@string/header_category_device" />
