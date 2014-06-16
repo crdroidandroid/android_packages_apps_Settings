@@ -4,10 +4,12 @@
 
     <!-- General strings -->
     <string name="default_string">Normal</string>
+    <string name="default_string">Normal</string>
     <string name="recent_panel_settings_title" >Configuração do painel de recentes</string>
     <string name="reset">Restaurar</string>
     <string name="enabled">Habilitado</string>
     <string name="disabled">Desabilitado</string>
+    <string name="note">OBSERVE</string>
 
     <!-- Advanced settings -->
     <string name="advanced_options_settings_title">Avançado</string>
@@ -769,5 +771,20 @@
 
     <!-- Power menu nav bar -->
     <string name="power_menu_navbar_title">Barra de navegação</string>
+    <string name="navigation_bar_warning_no_navigation_present">Nenhum outro modo de navegação está habilitado. Desabilitar a barra de navegação pode tornar seu aparelho inutilizável. Deseja habilitar o controle pie?</string>
+    <string name="pie_warning_no_navigation_present">Nenhum outro modo de navegação está habilitado. Desabilitar o controle pie pode tornar seu aparelho inutilizável. Deseja habilitar a barra de navegação?</string>
+    <string name="pie_trigger_warning">Mínimo de uma área de gatilho principal (fundo, esquerda or direita) precisa estar habilitado.</string>
+
+
+    <!-- Lockscreen all widgets -->
+    <string name="lockscreen_allow_all_title">Permitir todos os widgets</string>
+    <string name="lockscreen_allow_all_summary">Permitir Widgets que não tenham suporte nativo para a colocação na tela de bloqueio</string>
+    <string name="lockscreen_allow_all_warning">Alguns widgets podem não se comportar conforme o esperado quando colocado na tela de bloqueio. Outros widgets podem expor seus dados pessoais a qualquer um que acessa o dispositivo. Por favor, esteja atento destas advertências antes de continuar.</string>
+
+    <!--Blacklist peek and floating mode-->
+    <string name="blacklist_button_title">Lista negra</string>
+    <string name="peek_blacklist_label">Peek lista negra</string>
+    <string name="floating_blacklist_label">Modo flutuante lista negra</string>
+    <string name="hover_blacklist_label">Hover lista negra</string>
 
 </resources>
