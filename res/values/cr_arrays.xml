@@ -710,4 +710,21 @@
         <item>**null**</item>
     </string-array>
 
+    <!-- Hover long fade out delay -->
+    <string-array name="hover_long_fadeout_entries" translatable="false">
+        <item>@string/hover_long_fadeout_3seconds</item>
+        <item>@string/hover_long_fadeout_5seconds</item>
+        <item>@string/hover_long_fadeout_7seconds</item>
+        <item>@string/hover_long_fadeout_10seconds</item>
+        <item>@string/hover_long_fadeout_15seconds</item>
+    </string-array>
+
+    <string-array name="hover_long_fadeout_values" translatable="false">
+        <item>3000</item>
+        <item>5000</item>
+        <item>7000</item>
+        <item>10000</item>
+        <item>15000</item>
+    </string-array>
+
 </resources>

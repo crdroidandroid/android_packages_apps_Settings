@@ -5,6 +5,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/hover_settings_title">
 
+    <ListPreference
+        android:key="hover_long_fade_out_delay"
+        android:title="@string/hover_long_fadeout_title"
+        android:persistent="false"
+        android:entries="@array/hover_long_fadeout_entries"
+        android:entryValues="@array/hover_long_fadeout_values" />
+
     <CheckBoxPreference
         android:key="hover_require_fullscreen_mode"
         android:title="@string/hover_require_fullscreen_mode_title"

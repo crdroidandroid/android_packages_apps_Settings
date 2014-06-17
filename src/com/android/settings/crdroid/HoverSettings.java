@@ -26,10 +26,12 @@ public class HoverSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "HoverSettings";
 
+    private static final String PREF_HOVER_LONG_FADE_OUT_DELAY = "hover_long_fade_out_delay";
     private static final String PREF_HOVER_EXCLUDE_NON_CLEARABLE = "hover_exclude_non_clearable";
     private static final String PREF_HOVER_EXCLUDE_LOW_PRIORITY = "hover_exclude_low_priority";
     private static final String PREF_HOVER_REQUIRE_FULLSCREEN_MODE = "hover_require_fullscreen_mode";
 
+    ListPreference mHoverLongFadeOutDelay;
     CheckBoxPreference mHoverExcludeNonClearable;
     CheckBoxPreference mHoverExcludeNonLowPriority;
     CheckBoxPreference mHoverRequireFullScreenMode;
@@ -40,6 +42,13 @@ public class HoverSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.hover_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        mHoverLongFadeOutDelay = (ListPreference) prefSet.findPreference(PREF_HOVER_LONG_FADE_OUT_DELAY);
+        int hoverLongFadeOutDelay = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.HOVER_LONG_FADE_OUT_DELAY, 5000, UserHandle.USER_CURRENT);
+        mHoverLongFadeOutDelay.setValue(String.valueOf(hoverLongFadeOutDelay));
+        mHoverLongFadeOutDelay.setSummary(mHoverLongFadeOutDelay.getEntry());
+        mHoverLongFadeOutDelay.setOnPreferenceChangeListener(this);
 
         mHoverExcludeNonClearable = (CheckBoxPreference) findPreference(PREF_HOVER_EXCLUDE_NON_CLEARABLE);
         mHoverExcludeNonClearable.setChecked(Settings.System.getIntForUser(getContentResolver(),
@@ -74,7 +83,15 @@ public class HoverSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mHoverExcludeNonClearable) {
+        if (preference == mHoverLongFadeOutDelay) {
+            int index = mHoverLongFadeOutDelay.findIndexOfValue((String) objValue);
+            int hoverLongFadeOutDelay = Integer.valueOf((String) objValue);
+            Settings.System.putIntForUser(getContentResolver(),
+                Settings.System.HOVER_LONG_FADE_OUT_DELAY,
+                    hoverLongFadeOutDelay, UserHandle.USER_CURRENT);
+            mHoverLongFadeOutDelay.setSummary(mHoverLongFadeOutDelay.getEntries()[index]);
+            return true;
+        } else if (preference == mHoverExcludeNonClearable) {
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.HOVER_EXCLUDE_NON_CLEARABLE,
                     (Boolean) objValue ? 1 : 0, UserHandle.USER_CURRENT);
