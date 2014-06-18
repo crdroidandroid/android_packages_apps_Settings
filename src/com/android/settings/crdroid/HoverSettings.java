@@ -30,11 +30,13 @@ public class HoverSettings extends SettingsPreferenceFragment implements
     private static final String PREF_HOVER_EXCLUDE_NON_CLEARABLE = "hover_exclude_non_clearable";
     private static final String PREF_HOVER_EXCLUDE_LOW_PRIORITY = "hover_exclude_low_priority";
     private static final String PREF_HOVER_REQUIRE_FULLSCREEN_MODE = "hover_require_fullscreen_mode";
+    private static final String PREF_HOVER_EXCLUDE_TOPMOST = "hover_exclude_topmost";
 
     ListPreference mHoverLongFadeOutDelay;
     CheckBoxPreference mHoverExcludeNonClearable;
     CheckBoxPreference mHoverExcludeNonLowPriority;
     CheckBoxPreference mHoverRequireFullScreenMode;
+    CheckBoxPreference mHoverExcludeTopmost;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,6 +66,11 @@ public class HoverSettings extends SettingsPreferenceFragment implements
         mHoverRequireFullScreenMode.setChecked(Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.HOVER_REQUIRE_FULLSCREEN_MODE, 0, UserHandle.USER_CURRENT) == 1);
         mHoverRequireFullScreenMode.setOnPreferenceChangeListener(this);
+
+        mHoverExcludeTopmost = (CheckBoxPreference) findPreference(PREF_HOVER_EXCLUDE_TOPMOST);
+        mHoverExcludeTopmost.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.HOVER_EXCLUDE_TOPMOST, 0, UserHandle.USER_CURRENT) == 1);
+        mHoverExcludeTopmost.setOnPreferenceChangeListener(this);
 
         UpdateSettings();
     }
@@ -104,6 +111,11 @@ public class HoverSettings extends SettingsPreferenceFragment implements
         } else if (preference == mHoverRequireFullScreenMode) {
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.HOVER_REQUIRE_FULLSCREEN_MODE,
+                    (Boolean) objValue ? 1 : 0, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mHoverExcludeTopmost) {
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.HOVER_EXCLUDE_TOPMOST,
                     (Boolean) objValue ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
         }

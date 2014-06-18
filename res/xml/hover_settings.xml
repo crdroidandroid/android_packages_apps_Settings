@@ -30,4 +30,10 @@
         android:summary="@string/hover_exclude_low_priority_summary"
         android:defaultValue="false" />
 
+    <CheckBoxPreference
+        android:key="hover_exclude_topmost"
+        android:title="@string/hover_exclude_topmost_title"
+        android:summary="@string/hover_exclude_topmost_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
