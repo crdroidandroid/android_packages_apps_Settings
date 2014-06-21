@@ -1,13 +1,28 @@
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ * Modifications Copyright (C) 2012-2014 CyanogenMod
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.android.settings;
 
 import android.app.Activity;
 import android.app.admin.DevicePolicyManager;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.UserInfo;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserManager;
 import android.preference.*;
@@ -41,10 +56,6 @@ public class LockscreenSecuritySettings extends RestrictedSettingsFragment
     private static final int CONFIRM_EXISTING_FOR_BIOMETRIC_WEAK_IMPROVE_REQUEST = 124;
     private static final int CONFIRM_EXISTING_FOR_BIOMETRIC_WEAK_LIVELINESS_OFF = 125;
 
-    // CM Attirbutes
-    private static final String SLIDE_LOCK_TIMEOUT_DELAY = "slide_lock_timeout_delay";
-    private static final String SLIDE_LOCK_SCREENOFF_DELAY = "slide_lock_screenoff_delay";
-
     // crDroid Additions
     private static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "quick_unlock_control";
     private static final String CATEGORY_ADDITIONAL = "additional_options";
@@ -64,9 +75,6 @@ public class LockscreenSecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mVisibleDots;
 
     private CheckBoxPreference mPowerButtonInstantlyLocks;
-
-    private ListPreference mSlideLockTimeoutDelay;
-    private ListPreference mSlideLockScreenOffDelay;
 
     private ListPreference mLockNumpadRandom;
     private CheckBoxPreference mVisibleGesture;
@@ -92,16 +100,6 @@ public class LockscreenSecuritySettings extends RestrictedSettingsFragment
         }
         addPreferencesFromResource(R.xml.security_settings);
         root = getPreferenceScreen();
-
-        // CM - allows for calling the settings screen with stock or cm view
-        boolean isCmSecurity = false;
-        Bundle args = getArguments();
-        if (args != null) {
-            isCmSecurity = args.getBoolean("cm_security");
-        }
-
-        final ContentResolver resolver = getContentResolver();
-        final Resources res = getResources();
 
         // Add package manager to check if features are available
         PackageManager pm = getPackageManager();
@@ -147,31 +145,6 @@ public class LockscreenSecuritySettings extends RestrictedSettingsFragment
         if (mLockAfter != null) {
             setupLockAfterPreference();
             updateLockAfterPreferenceSummary();
-        } else if (!mLockPatternUtils.isLockScreenDisabled() && isCmSecurity) {
-            addPreferencesFromResource(R.xml.security_settings_slide_delay_cyanogenmod);
-
-            mSlideLockTimeoutDelay = (ListPreference) root
-                    .findPreference(SLIDE_LOCK_TIMEOUT_DELAY);
-            int slideTimeoutDelay = android.provider.Settings.System.getInt(resolver,
-                    android.provider.Settings.System.SCREEN_LOCK_SLIDE_TIMEOUT_DELAY, 5000);
-            mSlideLockTimeoutDelay.setValue(String.valueOf(slideTimeoutDelay));
-            updateSlideAfterTimeoutSummary();
-            mSlideLockTimeoutDelay.setOnPreferenceChangeListener(this);
-
-            mSlideLockScreenOffDelay = (ListPreference) root
-                    .findPreference(SLIDE_LOCK_SCREENOFF_DELAY);
-            int slideScreenOffDelay = android.provider.Settings.System.getInt(resolver,
-                    android.provider.Settings.System.SCREEN_LOCK_SLIDE_SCREENOFF_DELAY, 0);
-            mSlideLockScreenOffDelay.setValue(String.valueOf(slideScreenOffDelay));
-            updateSlideAfterScreenOffSummary();
-            mSlideLockScreenOffDelay.setOnPreferenceChangeListener(this);
-        }
-
-        if (isCmSecurity) {
-            // lock instantly on power key press
-            mPowerButtonInstantlyLocks = (CheckBoxPreference) root.findPreference(
-                    KEY_POWER_INSTANTLY_LOCKS);
-            checkPowerInstantLockDependency();
         }
 
         // biometric weak liveliness
@@ -228,38 +201,6 @@ public class LockscreenSecuritySettings extends RestrictedSettingsFragment
         return root;
     }
 
-    private void updateSlideAfterTimeoutSummary() {
-        // Update summary message with current value
-        long currentTimeout = android.provider.Settings.System.getInt(getContentResolver(),
-                android.provider.Settings.System.SCREEN_LOCK_SLIDE_TIMEOUT_DELAY, 5000);
-        final CharSequence[] entries = mSlideLockTimeoutDelay.getEntries();
-        final CharSequence[] values = mSlideLockTimeoutDelay.getEntryValues();
-        int best = 0;
-        for (int i = 0; i < values.length; i++) {
-            long timeout = Long.valueOf(values[i].toString());
-            if (currentTimeout >= timeout) {
-                best = i;
-            }
-        }
-        mSlideLockTimeoutDelay.setSummary(entries[best]);
-    }
-
-    private void updateSlideAfterScreenOffSummary() {
-        // Update summary message with current value
-        long currentTimeout = android.provider.Settings.System.getInt(getContentResolver(),
-                Settings.System.SCREEN_LOCK_SLIDE_SCREENOFF_DELAY, 0);
-        final CharSequence[] entries = mSlideLockScreenOffDelay.getEntries();
-        final CharSequence[] values = mSlideLockScreenOffDelay.getEntryValues();
-        int best = 0;
-        for (int i = 0; i < values.length; i++) {
-            long timeout = Long.valueOf(values[i].toString());
-            if (currentTimeout >= timeout) {
-                best = i;
-            }
-        }
-        mSlideLockScreenOffDelay.setSummary(entries[best]);
-    }
-
     private void updateLockAfterPreferenceSummary() {
         // Update summary message with current value
         long currentTimeout = Settings.Secure.getLong(getContentResolver(),
@@ -274,18 +215,6 @@ public class LockscreenSecuritySettings extends RestrictedSettingsFragment
             }
         }
         mLockAfter.setSummary(getString(R.string.lock_after_timeout_summary, entries[best]));
-    }
-
-    private void checkPowerInstantLockDependency() {
-        if (mPowerButtonInstantlyLocks != null) {
-            long timeout = Settings.Secure.getLong(getContentResolver(),
-                    Settings.Secure.LOCK_SCREEN_LOCK_AFTER_TIMEOUT, 5000);
-            if (timeout == 0) {
-                mPowerButtonInstantlyLocks.setEnabled(false);
-            } else {
-                mPowerButtonInstantlyLocks.setEnabled(true);
-            }
-        }
     }
 
     private void disableUnusableTimeouts(long maxTimeout) {
@@ -460,17 +389,6 @@ public class LockscreenSecuritySettings extends RestrictedSettingsFragment
                 Log.e("SecuritySettings", "could not persist lockAfter timeout setting", e);
             }
             updateLockAfterPreferenceSummary();
-            checkPowerInstantLockDependency();
-        } else if (preference == mSlideLockTimeoutDelay) {
-            int slideTimeoutDelay = Integer.valueOf((String) value);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.SCREEN_LOCK_SLIDE_TIMEOUT_DELAY, slideTimeoutDelay);
-            updateSlideAfterTimeoutSummary();
-        } else if (preference == mSlideLockScreenOffDelay) {
-            int slideScreenOffDelay = Integer.valueOf((String) value);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.SCREEN_LOCK_SLIDE_SCREENOFF_DELAY, slideScreenOffDelay);
-            updateSlideAfterScreenOffSummary();
         } else if (preference == mLockNumpadRandom) {
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.LOCK_NUMPAD_RANDOM,
