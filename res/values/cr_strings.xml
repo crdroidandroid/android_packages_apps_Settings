@@ -19,6 +19,10 @@
     <string name="advanced_options_settings_title">Advanced</string>
 
     <!-- Halo -->
+    <!-- Halo enable/disable -->
+    <string name="halo_active_title">Halo switch</string>
+    <string name="halo_active_summary">Check to enable or un-check to disable halo</string>
+
     <string name="halo_settings_title">Halo</string>
     <string name="halo_behavior_title">Halo Behavior</string>
     <string name="halo_hide_title">Hide Halo after activity</string>
