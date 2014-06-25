@@ -456,6 +456,10 @@
     <!-- Sound & notification > Sound section: Title for the option defining the default notification ringtone. [CHAR LIMIT=30] -->
     <string name="notification_ringtone_title_cm">Notification tone</string>
 
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">High touch sensitivity</string>
+    <string name="high_touch_sensitivity_summary">Increase touchscreen sensitivity so it can be used while wearing gloves</string>
+
     <!-- App ops -->
     <string name="app_ops_summaries_coarse_location">coarse location</string>
     <string name="app_ops_summaries_fine_location">fine location</string>
