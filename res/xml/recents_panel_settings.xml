@@ -44,6 +44,13 @@
             android:persistent="false"
             android:dependency="custom_recent_mode" />
 
+        <CheckBoxPreference
+            android:key="recent_panel_show_topmost"
+            android:title="@string/recent_panel_show_topmost_title"
+            android:summary="@string/recent_panel_show_topmost_summary"
+            android:persistent="false"
+            android:dependency="custom_recent_mode" />
+
         <ListPreference
             android:key="recent_panel_scale"
             android:entries="@array/recent_panel_scale_entries"
