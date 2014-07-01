@@ -193,7 +193,13 @@
                 android:title="@string/screen_recorder_title"
                 android:fragment="com.android.settings.crdroid.ScreenRecorderSettings" />
 
-            <CheckBoxPreference
+         </PreferenceCategory>
+
+         <PreferenceCategory
+             android:key="smart_cover_category"
+             android:title="@string/smart_cover_category_title">
+
+             <CheckBoxPreference
                 android:key="smart_cover_wake"
                 android:title="@string/smart_cover_wake_title"
                 android:summary="@string/smart_cover_wake_summary" />
