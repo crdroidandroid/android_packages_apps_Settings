@@ -89,6 +89,13 @@
             android:defaultValue="false"
             android:dependency="enable_nav_bar" />
 
+        <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+            android:key="navigation_bar_menu_arrow_keys"
+            android:title="@string/navigation_bar_arrow_keys_title"
+            android:summary="@string/navigation_bar_arrow_keys_summary"
+            android:defaultValue="true"
+            android:dependency="enable_nav_bar" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
