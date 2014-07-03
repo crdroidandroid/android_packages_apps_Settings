@@ -7,6 +7,7 @@
     <string name="crdroid_version_default">Неизвестно</string>
 
     <!-- General strings -->
+    <string name="attention">Внимание</string>
     <string name="default_string">По умолчанию</string>
     <string name="recent_panel_settings_title" >Недавние приложения</string>
     <string name="reset">Сброс</string>
@@ -16,6 +17,46 @@
 
     <!-- Advanced settings -->
     <string name="advanced_options_settings_title">Расширенные настройки</string>
+
+    <!-- Halo -->
+    <!-- Halo enable/disable -->
+    <string name="halo_active_title">Включить Halo</string>
+    <string name="halo_active_summary">Установите галочку,чтобы включить Halo, или снимите, чтобы отключить его.</string>
+
+    <string name="halo_settings_title">Halo</string>
+    <string name="halo_behavior_title">Поведение Halo</string>
+    <string name="halo_hide_title">Скрыть Halo после деятельности</string>
+    <string name="halo_hide_summary">Halo будет отображаться для входящих задач и скроется через некоторое время.</string>
+    <string name="halo_state_title">Политика Halo</string>
+    <string name="halo_state_summary">Включает чёрный и белый списки</string>
+    <string name="halo_state_black">Чёрный список</string>
+    <string name="halo_state_white">Белый список</string>
+    <string name="halo_pause_title">Приостановить активное приложение</string>
+    <string name="halo_pause_summary">При открытии приложения из Halo, основное приложение будет приостановлено.</string>
+    <string name="halo_notification_msgbox_title">Включить всплывающие уведомления</string>
+    <string name="halo_notification_msgbox_summary">Показать окно сообщения для входящих уведомлений.</string>
+    <string name="halo_unlock_ping_title">Пинг при разблокировке</string>
+    <string name="halo_unlock_ping_summary">Halo пропингует, когда устройство разблокируется, если были получены новые уведомления.</string>
+
+    <string name="halo_size_title">Размер Halo</string>
+    <string name="halo_size_summary">Определяет, каким большим будет Halo</string>
+    <string name="halo_size_miniscule">Миниатюрный</string>
+    <string name="halo_size_small">Маленький</string>
+    <string name="halo_size_default">Нормальный (по умолчанию)</string>
+    <string name="halo_size_large">Большой</string>
+    <string name="halo_size_gigantic">Гигантский</string>
+    <string name="halo_size_monster">Огромный</string>
+
+    <string name="halo_notification_count_title">Количество уведомлений</string>
+    <string name="halo_notification_count_summary">Показывает количество уведомлений в Halo</string>
+    <string name="halo_notification_count_none">Не показывать</string>
+    <string name="halo_notification_count_total">Общее</string>
+    <string name="halo_notification_count_individual">От приложений</string>
+    <string name="halo_notification_count_both">Оба</string>
+
+    <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
+    <string name="app_halo_label_black">Черный список Halo</string>
+    <string name="app_halo_label_white">Белый список Halo</string>
 
     <!-- QS and navring Power menu -->
     <string name="title_tile_power">Меню кнопки питания</string> 
@@ -63,21 +104,6 @@
     <!-- Lock before unlock -->
     <string name="lock_before_unlock_title">Показывать слайдер перед безопасной разблокировкой</string>
     <string name="lock_before_unlock_summary">Показывать стандартный слайдер разблокировки до безопасной разблокировки</string>
-
-    <!-- QuickSettings style options -->
-    <string name="quick_tiles_bg_no_title">Примечание</string>
-    <string name="quick_tiles_bg_summary">Все изменения в цветах и фоне будут отражаться непосредственно ленте быстрых настроек</string>
-    <string name="quicksettings_tiles_style">Стиль быстрых настроек</string>
-    <string name="summary_quicksettings_tiles_style">Просмотреть/изменить установки стиля быстрых настроек</string>
-    <string name="quicksettings_tiles_style_additional_options">Дополнительные настройки</string>
-    <string name="tiles_per_row_title">Плиток в ряд</string>
-    <string name="tiles_per_row_duplicate_landscape_title">Изменять количество в ландшафтном режиме</string>
-    <string name="tiles_per_row_duplicate_landscape_summary">В ландшафтном режиме количество плиток в ряду удваивается</string>
-    <string name="quick_tiles_bg_color_title">Цвет фона плиток</string>
-    <string name="quick_tiles_bg_pressed_color_title">Цвет фона нажатых плиток</string>
-    <string name="quick_tiles_text_color_title">Цвет текста плиток</string>
-    <string name="quick_tiles_alpha_title">Прозрачность фона плиток</string>
-    <string name="qs_style_reset_message">Сбросить все цвета к значениям по умолчанию?</string>
 
     <!--  Recent clear all -->
     <string name="recent_clear_all_button">Кнопка \"Очистить всё\"</string>
@@ -308,7 +334,6 @@
     <string name="screen_recorder_video_bitrate_title">Битрейт</string>
     <string name="screen_recorder_record_audio_title">Запись звука</string>
     <string name="screen_recorder_record_audio_summary">Записывать звук с микрофона</string>
-
     <!-- video sizes -->
     <string name="screen_recorder_size_240x400">240x400</string>
     <string name="screen_recorder_size_360x640">360x640</string>
@@ -342,7 +367,9 @@
     <string name="screen_recorder_bitrate_20000000">20000000</string>
     <string name="screen_recorder_bitrate_50000000">50000000</string>
     <string name="screen_recorder_bitrate_100000000">100000000</string>
+    
     <!-- Lockscreen Lid Settings -->
+    <string name="smart_cover_category_title">\"Умная\" обложка</string>
     <string name="smart_cover_wake_title">Пробуждение \"умной\" обложкой</string>
     <string name="smart_cover_wake_summary">Пробуждение устройства при открытии \"умной\" обложки</string>
     
@@ -432,6 +459,8 @@
     <string name="recent_panel_expanded_mode_auto">Авто (по умолчанию)</string>
     <string name="recent_panel_expanded_mode_always">Всегда</string>
     <string name="recent_panel_expanded_mode_never">Никогда</string>
+    <string name="recent_panel_show_topmost_title">Показывать последнее приложение</string>
+    <string name="recent_panel_show_topmost_summary">Показывать последнее приложение в списке недавних</string>
 
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Показывать у левого края</string>
@@ -480,14 +509,6 @@
     <!-- Keyguard widget frame -->
     <string name="lockscreen_widget_frame_title">Отключить рамки виджетов</string>
     <string name="lockscreen_widget_frame_summary">Отключить фоновые рамки виджетов</string>
-
-    <!-- QuickSettings style options -->
-    <string name="quicksettings_tiles_style">Стиль быстрых настроек</string>
-    <string name="summary_quicksettings_tiles_style">Просмотреть/изменить установки стиля быстрых настроек</string>
-    <string name="quicksettings_tiles_style_additional_options">Дополнительные настройки</string>
-    <string name="tiles_per_row_title">Плиток в ряд</string>
-    <string name="tiles_per_row_duplicate_landscape_title">Изменять количество в ландшафтном режиме</string>
-    <string name="tiles_per_row_duplicate_landscape_summary">В ландшафтном режиме количество плиток в ряду удваивается</string>
     
     <!-- App sidebar -->
     <string name="app_sidebar_title">Панель приложений</string>
@@ -521,7 +542,7 @@
     
     <!-- QuickSettings haptic feedback -->
     <string name="haptic_qs_tiles_title">Вибрация при нажатии</string>
-    <string name="haptic_qs_tiles_summary">Вибрация при нажатии плитки</string>
+    <string name="haptic_qs_tiles_summary">Вибрировать при нажатии на плитку</string>
 	
     <!-- Gesture Anywhere -->
     <string name="gesture_anywhere_title">\"Жест везде\"</string>
@@ -749,5 +770,30 @@
     <string name="peek_blacklist_label">Чёрный список от Peek</string>
     <string name="floating_blacklist_label">Чёрный список от Плавающего режима</string>
     <string name="hover_blacklist_label">Черный список от Hover</string>
+    
+    <!-- Hover settings -->
+    <string name="hover_settings_title">Hover</string>
+    <string name="hover_require_fullscreen_mode_title">Требовать полноэкранный режим</string>
+    <string name="hover_require_fullscreen_mode_summary">Только, когда строка состояния скрыта</string>
+    <string name="hover_exclude_low_priority_title">Исключить низкий приоритет</string>
+    <string name="hover_exclude_low_priority_summary">Исключить уведомления, имеющие низкий приоритет</string>
+    <string name="hover_exclude_non_clearable_title">Исключить неудаляемые</string>
+    <string name="hover_exclude_non_clearable_summary">Исключить неудаляемые уведомления</string>
+
+    <!-- Hover long fade out delay -->
+    <string name="hover_long_fadeout_title">Таймаут уведомлений Hover</string>
+    <string name="hover_long_fadeout_3seconds">3 секунды</string>
+    <string name="hover_long_fadeout_5seconds">5 секунд (по умолчанию)</string>
+    <string name="hover_long_fadeout_7seconds">7 секунд</string>
+    <string name="hover_long_fadeout_10seconds">10 секунд</string>
+    <string name="hover_long_fadeout_15seconds">15 секунд</string>
+
+    <!-- Hover exclude topmost app -->
+    <string name="hover_exclude_topmost_title">Исключить текущее приложение</string>
+    <string name="hover_exclude_topmost_summary">Исключить уведомления от приложения, работающего в данный момент.</string>
+
+    <!-- Hover no notif in insecure lockscreen -->
+    <string name="hover_exclude_from_insecure_lock_screen_title">Исключить экран блокировки</string>
+    <string name="hover_exclude_from_insecure_lock_screen_summary">Не показывать уведомления Hover на незащищенном экране блокировки</string>
 
 </resources>
