@@ -215,7 +215,7 @@
     <!-- Lights settings screen, notification light settings -->
     <string name="display_lights_settings_title">Display &amp; lights</string>
     <string name="lights_category_title">Lights</string>
-    <string name="notification_pulse_title">Notification light</string>
+    <string name="notification_light_title">Notification light</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_applist_title">Apps</string>
     <string name="notification_light_phonelist_title">Phone</string>
@@ -1236,4 +1236,22 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="menu_hidden_apps_reset_lock">Reset pattern lock</string>
     <string name="protected_apps">Protected apps</string>
     <string name="saving_protected_components">Saving component state\u2026</string>
+
+    <!-- Stay Awake while plugged in -->
+    <string name="keep_screen_on_summary_cm">Screen will never sleep while plugged in</string>
+
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from enabling development settings.</item>
+        <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from enabling development settings.</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_cm">You have enabled development settings!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_cm">No need, you have already enabled development settings.</string>
+
+    <!-- Setting checkbox title for Whether to enable Android debugging support on the phone. -->
+    <string name="enable_adb_cm">Android debugging</string>
+    <!-- Setting checkbox summary for Whether to enable Android debugging support on the phone -->
+    <string name="enable_adb_summary_cm">Enable the Android Debug Bridge (adb) interface</string>
 </resources>

@@ -641,7 +641,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     public static void restoreKeyDisabler(Context context) {
-        if (!KeyDisabler.isSupported()) {
+        if (!isKeyDisablerSupported()) {
             return;
         }
 
@@ -698,6 +698,15 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    private static boolean isKeyDisablerSupported() {
+        try {
+            return KeyDisabler.isSupported();
+        } catch (NoClassDefFoundError e) {
+            // Hardware abstraction framework not installed
+            return false;
+        }
     }
 
     private void handleTogglePowerButtonEndsCallPreferenceClick() {
