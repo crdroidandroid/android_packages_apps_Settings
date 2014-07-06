@@ -55,6 +55,7 @@ public class SearchPopulator extends IntentService {
     private static final String TAG = SearchPopulator.class.getSimpleName();
 
     public static final String EXTRA_NOTIFIER = "notifier";
+    public static final String EXTRA_PREF_KEY = "pref_key";
 
     protected static final String LAST_PACKAGE_HASH = "last_package_hash";
     private ResultReceiver mNotifier;
@@ -282,6 +283,8 @@ public class SearchPopulator extends IntentService {
                     }
                 }
 
+                String key = sa.getString(com.android.internal.R.styleable.Preference_key);
+
                 boolean excludeFromSearch = se.getBoolean(
                         com.android.settings.R.styleable.SearchableInfo_excludeFromSearch, false);
                 if (excludeFromSearch) {
@@ -296,13 +299,13 @@ public class SearchPopulator extends IntentService {
                     populateFromXml(subXmlId, null, level + 1, header.iconRes,
                             fragment, title.resourceId);
                     dbHelper.insertEntry(preferenceTitle, level, fragment,
-                            header.iconRes, titleRes);
+                            header.iconRes, titleRes, key);
                 } else if (header != null) {
                     header.title = preferenceTitle;
-                    dbHelper.insertHeader(header, titleRes);
+                    dbHelper.insertHeader(header, titleRes, key);
                 } else {
                     dbHelper.insertEntry(preferenceTitle, level, prefFragment,
-                            iconRes, titleRes);
+                            iconRes, titleRes, key);
                 }
 
                 sa.recycle();
@@ -326,24 +329,22 @@ public class SearchPopulator extends IntentService {
             int iconIndex = c.getColumnIndex(DatabaseContract.Settings.ACTION_ICON);
             int parentIndex = c.getColumnIndex(DatabaseContract.Settings.ACTION_PARENT_TITLE);
             int headerIndex = c.getColumnIndex(DatabaseContract.Settings.ACTION_HEADER);
-
+            int keyIndex = c.getColumnIndex(DatabaseContract.Settings.ACTION_KEY);
             while (c.moveToNext()) {
                 byte[] data = c.getBlob(headerIndex);
-                SearchInfo info = new SearchInfo();
+                Header header = null;
                 if (data != null) {
                     Parcel p = Parcel.obtain();
                     p.setDataPosition(0);
                     p.unmarshall(data, 0, data.length);
                     p.setDataPosition(0);
-                    Header h = new Header();
-                    h.readFromParcel(p);
-                    info.header = h;
+                    header = new Header();
+                    header.readFromParcel(p);
                 }
-                info.level = c.getInt(levelIndex);
-                info.fragment = c.getString(fragmentIndex);
-                info.title = c.getString(titleIndex);
-                info.iconRes = c.getInt(iconIndex);
-                info.parentTitle = c.getInt(parentIndex);
+
+                SearchInfo info = new SearchInfo(header,
+                        c.getInt(levelIndex), c.getString(fragmentIndex), c.getString(titleIndex),
+                        c.getInt(iconIndex), c.getInt(parentIndex), c.getString(keyIndex));
                 infos.add(info);
             }
             c.close();
