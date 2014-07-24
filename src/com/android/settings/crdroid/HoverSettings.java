@@ -27,6 +27,7 @@ public class HoverSettings extends SettingsPreferenceFragment implements
     private static final String TAG = "HoverSettings";
 
     private static final String PREF_HOVER_LONG_FADE_OUT_DELAY = "hover_long_fade_out_delay";
+    private static final String PREF_HOVER_MICRO_FADE_OUT_DELAY = "hover_micro_fade_out_delay";
     private static final String PREF_HOVER_EXCLUDE_NON_CLEARABLE = "hover_exclude_non_clearable";
     private static final String PREF_HOVER_EXCLUDE_LOW_PRIORITY = "hover_exclude_low_priority";
     private static final String PREF_HOVER_REQUIRE_FULLSCREEN_MODE = "hover_require_fullscreen_mode";
@@ -34,6 +35,7 @@ public class HoverSettings extends SettingsPreferenceFragment implements
     private static final String PREF_HOVER_EXCLUDE_FROM_INSECURE_LOCK_SCREEN = "hover_exclude_from_insecure_lock_screen";
 
     ListPreference mHoverLongFadeOutDelay;
+    ListPreference mHoverMicroFadeOutDelay;
     CheckBoxPreference mHoverExcludeNonClearable;
     CheckBoxPreference mHoverExcludeNonLowPriority;
     CheckBoxPreference mHoverRequireFullScreenMode;
@@ -53,6 +55,13 @@ public class HoverSettings extends SettingsPreferenceFragment implements
         mHoverLongFadeOutDelay.setValue(String.valueOf(hoverLongFadeOutDelay));
         mHoverLongFadeOutDelay.setSummary(mHoverLongFadeOutDelay.getEntry());
         mHoverLongFadeOutDelay.setOnPreferenceChangeListener(this);
+
+        mHoverMicroFadeOutDelay = (ListPreference) prefSet.findPreference(PREF_HOVER_MICRO_FADE_OUT_DELAY);
+        int hoverMicroFadeOutDelay = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.HOVER_MICRO_FADE_OUT_DELAY, 1250, UserHandle.USER_CURRENT);
+        mHoverMicroFadeOutDelay.setValue(String.valueOf(hoverMicroFadeOutDelay));
+        mHoverMicroFadeOutDelay.setSummary(mHoverMicroFadeOutDelay.getEntry());
+        mHoverMicroFadeOutDelay.setOnPreferenceChangeListener(this);
 
         mHoverExcludeNonClearable = (CheckBoxPreference) findPreference(PREF_HOVER_EXCLUDE_NON_CLEARABLE);
         mHoverExcludeNonClearable.setChecked(Settings.System.getIntForUser(getContentResolver(),
@@ -104,6 +113,14 @@ public class HoverSettings extends SettingsPreferenceFragment implements
                 Settings.System.HOVER_LONG_FADE_OUT_DELAY,
                     hoverLongFadeOutDelay, UserHandle.USER_CURRENT);
             mHoverLongFadeOutDelay.setSummary(mHoverLongFadeOutDelay.getEntries()[index]);
+            return true;
+        } else if (preference == mHoverMicroFadeOutDelay) {
+            int index = mHoverMicroFadeOutDelay.findIndexOfValue((String) objValue);
+            int hoverMicroFadeOutDelay = Integer.valueOf((String) objValue);
+            Settings.System.putIntForUser(getContentResolver(),
+                Settings.System.HOVER_MICRO_FADE_OUT_DELAY,
+                    hoverMicroFadeOutDelay, UserHandle.USER_CURRENT);
+            mHoverMicroFadeOutDelay.setSummary(mHoverMicroFadeOutDelay.getEntries()[index]);
             return true;
         } else if (preference == mHoverExcludeNonClearable) {
             Settings.System.putIntForUser(getContentResolver(),

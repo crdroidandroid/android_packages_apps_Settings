@@ -805,6 +805,11 @@
     <string name="hover_long_fadeout_10seconds">10 seconds</string>
     <string name="hover_long_fadeout_15seconds">15 seconds</string>
 
+    <!-- Hover instant fade out delay -->
+    <string name="hover_micro_fadeout_title">Hover touch to hide</string>
+    <string name="hover_micro_fadeout_stock">Normal</string>
+    <string name="hover_micro_fadeout_instant">Instant</string>
+
     <!-- Hover exclude topmost app -->
     <string name="hover_exclude_topmost_title">Exclude topmost app</string>
     <string name="hover_exclude_topmost_summary">Exclude notifications from the app running in foreground</string>

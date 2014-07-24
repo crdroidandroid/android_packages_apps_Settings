@@ -727,4 +727,14 @@
         <item>15000</item>
     </string-array>
 
+    <!-- Hover micro fade out delay -->
+    <string-array name="hover_micro_fadeout_entries" translatable="false">
+        <item>@string/hover_micro_fadeout_stock</item>
+        <item>@string/hover_micro_fadeout_instant</item>
+    </string-array>
+
+    <string-array name="hover_micro_fadeout_values" translatable="false">
+        <item>1250</item>
+        <item>200</item>
+    </string-array>
 </resources>

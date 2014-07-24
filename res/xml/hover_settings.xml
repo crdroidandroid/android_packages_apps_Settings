@@ -12,6 +12,13 @@
         android:entries="@array/hover_long_fadeout_entries"
         android:entryValues="@array/hover_long_fadeout_values" />
 
+    <ListPreference
+        android:key="hover_micro_fade_out_delay"
+        android:title="@string/hover_micro_fadeout_title"
+        android:persistent="false"
+        android:entries="@array/hover_micro_fadeout_entries"
+        android:entryValues="@array/hover_micro_fadeout_values" />
+
     <CheckBoxPreference
         android:key="hover_require_fullscreen_mode"
         android:title="@string/hover_require_fullscreen_mode_title"
