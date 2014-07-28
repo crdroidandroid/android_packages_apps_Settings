@@ -818,4 +818,7 @@
     <string name="hover_exclude_from_insecure_lock_screen_title">Exclude insecure lockscreen</string>
     <string name="hover_exclude_from_insecure_lock_screen_summary">Check to exclude hover notifications from insecure lockscreen</string>
 
+    <!-- Heads-up floating window -->
+    <string name="heads_up_floating_window">Launch in floating window</string>
+
 </resources>
