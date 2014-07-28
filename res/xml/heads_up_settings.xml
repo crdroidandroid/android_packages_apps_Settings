@@ -21,6 +21,13 @@
             android:key="heads_up_floating_window"
             android:title="@string/heads_up_floating_window"
             android:defaultValue="false" />
+
+       <ListPreference
+            android:key="heads_up_time_out"
+            android:title="@string/heads_up_time_out_title"
+            android:entries="@array/heads_up_time_out_entries"
+            android:entryValues="@array/heads_up_time_out_values"
+            android:persistent="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
