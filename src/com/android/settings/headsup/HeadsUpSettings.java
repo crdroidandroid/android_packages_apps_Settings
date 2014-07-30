@@ -29,6 +29,8 @@ import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.UserHandle;
+import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -63,6 +65,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
     private static final int DIALOG_BLACKLIST_APPS = 1;
 
     private static final String PREF_HEADS_UP_TIME_OUT = "heads_up_time_out";
+    private static final String PREF_HEADS_UP_EXPANDED = "heads_up_expanded";
 
     private PackageListAdapter mPackageAdapter;
     private PackageManager mPackageManager;
@@ -71,6 +74,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
     private Preference mAddDndPref;
     private Preference mAddBlacklistPref;
     private ListPreference mHeadsUpTimeOut;
+    private CheckBoxPreference mHeadsUpExpanded;
 
     private String mDndPackageList;
     private String mBlacklistPackageList;
@@ -129,6 +133,11 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
                 Settings.System.HEADS_UP_NOTIFCATION_DECAY, defaultTimeOut);
         mHeadsUpTimeOut.setValue(String.valueOf(headsUpTimeOut));
         updateHeadsUpTimeOutSummary(headsUpTimeOut);
+
+        mHeadsUpExpanded = (CheckBoxPreference) findPreference(PREF_HEADS_UP_EXPANDED);
+        mHeadsUpExpanded.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.HEADS_UP_EXPANDED, 0, UserHandle.USER_CURRENT) == 1);
+        mHeadsUpExpanded.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -218,6 +227,11 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
                     Settings.System.HEADS_UP_NOTIFCATION_DECAY,
                     headsUpTimeOut);
             updateHeadsUpTimeOutSummary(headsUpTimeOut);
+            return true;
+        } else if (preference == mHeadsUpExpanded) {
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.HEADS_UP_EXPANDED,
+                    (Boolean) newValue ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
         }
         return false;
