@@ -19,6 +19,13 @@
         android:persistent="false"
         android:defaultValue="false" />
 
+    <CheckBoxPreference
+        android:key="heads_up_gravity"
+        android:title="@string/heads_up_gravity_title"
+        android:summary="@string/heads_up_gravity_summary"
+        android:persistent="false"
+        android:defaultValue="false" />
+
     <ListPreference
         android:key="heads_up_snooze_time"
         android:title="@string/heads_up_snooze_title"
