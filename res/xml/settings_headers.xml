@@ -149,6 +149,13 @@
         android:fragment="com.android.settings.crdroid.HoverSettings"
         android:title="@string/hover_settings_title" />
 
+    <!-- Heads up -->
+    <header
+        android:id="@+id/heads_up_settings"
+        android:icon="@drawable/ic_settings_heads_up"
+        android:fragment="com.android.settings.crdroid.HeadsUpSettings"
+        android:title="@string/heads_up_title" />
+
     <!-- DEVICE -->
     <header android:id="@+id/device_section"
         android:title="@string/header_category_device" />

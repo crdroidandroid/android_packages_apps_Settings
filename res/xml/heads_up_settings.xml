@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/heads_up_settings_title">
+
+    <CheckBoxPreference
+        android:key="heads_up_expanded"
+        android:title="@string/heads_up_expanded_title"
+        android:summary="@string/heads_up_expanded_summary"
+        android:persistent="false"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="heads_up_show_update"
+        android:title="@string/heads_up_show_updates_title"
+        android:summary="@string/heads_up_show_updates_summary"
+        android:persistent="false"
+        android:defaultValue="false" />
+
+    <ListPreference
+        android:key="heads_up_snooze_time"
+        android:title="@string/heads_up_snooze_title"
+        android:entries="@array/heads_up_snooze_entries"
+        android:entryValues="@array/heads_up_snooze_values"
+        android:persistent="false" />
+
+    <ListPreference
+        android:key="heads_up_time_out"
+        android:title="@string/heads_up_time_out_title"
+        android:entries="@array/heads_up_time_out_entries"
+        android:entryValues="@array/heads_up_time_out_values"
+        android:persistent="false" />
+
+</PreferenceScreen>

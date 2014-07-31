@@ -72,6 +72,7 @@
     <uses-permission android:name="android.permission.CHANGE_PRIVACY_GUARD_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_BLACKLIST" />
     <uses-permission android:name="android.permission.CHANGE_PHONE_BLACKLIST" />
+    <uses-permission android:name="android.permission.CHANGE_HEADS_UP_STATE" />
 
     <permission
         android:name="android.permission.REQUEST_SUPERUSER"
