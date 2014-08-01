@@ -1,0 +1,24 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/crdroid_notifications_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <!-- Heads up -->
+    <PreferenceScreen
+        android:key="heads_up_settings"
+        android:fragment="com.android.settings.crdroid.HeadsUpSettings"
+        android:title="@string/heads_up_title" />
+
+    <!-- Hover -->
+    <PreferenceScreen
+        android:key="hover_settings"
+        android:fragment="com.android.settings.crdroid.HoverSettings"
+        android:title="@string/hover_settings_title" />
+
+    <!-- HALO -->
+    <PreferenceScreen
+        android:key="halo_settings"
+        android:fragment="com.android.settings.crdroid.Halo"
+        android:title="@string/halo_settings_title" />
+
+</PreferenceScreen>
