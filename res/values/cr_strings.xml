@@ -34,6 +34,10 @@
     <string name="default_string">Default</string>
     <string name="help">Help</string>
 
+    <!-- Performance Misc -->
+    <string name="misc_title">crDroid misc</string>
+    <string name="pref_force_fast_charge_title">Force fast charge</string>
+
     <!-- crDroid custom settings -->
     <string name="crdroid_custom_title">crDroid custom</string>
     <string name="status_bar_title">Status bar</string>

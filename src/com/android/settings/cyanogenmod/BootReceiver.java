@@ -41,6 +41,7 @@ public class BootReceiver extends BroadcastReceiver {
     private static final String TAG = "BootReceiver";
     private static final String CPU_SETTINGS_PROP = "sys.cpufreq.restored";
     private static final String IOSCHED_SETTINGS_PROP = "sys.iosched.restored";
+    private static final String CHARGE_SETTINGS_PROP = "sys.charge.restored";
 
     private static final String ENCRYPTED_STATE = "1";
 
@@ -63,6 +64,17 @@ public class BootReceiver extends BroadcastReceiver {
                 configureIOSched(ctx);
             } else {
                 SystemProperties.set(IOSCHED_SETTINGS_PROP, "false");
+            }
+        }
+
+        /* Performance Misc crDroid */
+        if (PerformanceSettings.FAST_CHARGE_PATH != null) {
+            if (SystemProperties.getBoolean(CHARGE_SETTINGS_PROP, false) == false
+                    && intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
+                SystemProperties.set(CHARGE_SETTINGS_PROP, "true");
+                configureCharge(ctx);
+            } else {
+                SystemProperties.set(CHARGE_SETTINGS_PROP, "false");
             }
         }
 
@@ -147,5 +159,15 @@ public class BootReceiver extends BroadcastReceiver {
             }
             Log.d(TAG, "I/O scheduler settings restored.");
         }
+    }
+
+    /* Performance Misc crDroid */
+    private void configureCharge(Context ctx) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
+
+        boolean charge = prefs.getBoolean(PerformanceSettings.KEY_FORCE_FAST_CHARGE, false);
+
+        Utils.fileWriteOneLine(PerformanceSettings.FAST_CHARGE_PATH, charge ? "1" : "0");
+        Log.d(TAG, "Fast Charge settings restored.");
     }
 }

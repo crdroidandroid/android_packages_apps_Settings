@@ -38,6 +38,7 @@ import android.provider.Settings;
 import com.android.settings.DevelopmentSettings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 /**
  * Performance Settings
@@ -49,6 +50,7 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_PROFILES = "perf_profile_prefs";
     private static final String CATEGORY_SYSTEM = "perf_system_prefs";
     private static final String CATEGORY_GRAPHICS = "perf_graphics_prefs";
+    private static final String CATEGORY_MISC = "perf_misc_prefs";
 
     private static final String CATEGORY_PROCESSOR = "processor";
 
@@ -62,6 +64,10 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
 
     private ListPreference mPerfProfilePref;
     private SwitchPreference mForceHighEndGfx;
+    private SwitchPreference mForceFastCharge;
+
+    public static final String KEY_FORCE_FAST_CHARGE = "pref_force_fast_charge";
+    public static final String FAST_CHARGE_PATH = fastchargePath();
 
     private String[] mPerfProfileEntries;
     private String[] mPerfProfileValues;
@@ -139,6 +145,15 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
             prefSet.removePreference(category);
         }
 
+        /* Performance Misc crDroid */
+        category = (PreferenceCategory) prefSet.findPreference(CATEGORY_MISC);
+        mForceFastCharge = (SwitchPreference) prefSet.findPreference(KEY_FORCE_FAST_CHARGE);
+        if (FAST_CHARGE_PATH != null) {
+            mForceFastCharge.setChecked("1".equals(Utils.fileReadOneLine(FAST_CHARGE_PATH)));
+        } else {
+            prefSet.removePreference(category);
+        }
+
         mPerformanceProfileObserver = new PerformanceProfileObserver(new Handler());
     }
 
@@ -195,6 +210,9 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
         if (preference == mForceHighEndGfx) {
             SystemProperties.set(FORCE_HIGHEND_GFX_PERSIST_PROP,
                     mForceHighEndGfx.isChecked() ? "true" : "false");
+        } else if (preference == mForceFastCharge) {
+            Utils.fileWriteOneLine(FAST_CHARGE_PATH,
+                    mForceFastCharge.isChecked() ? "1" : "0");
         } else {
             // If we didn't handle it, let preferences handle it.
             return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -236,5 +254,18 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
         }
         mPerfProfilePref.setValue(mPowerManager.getPowerProfile());
         setCurrentPerfProfileSummary();
+    }
+
+    /* Performance Misc crDroid */
+    private static String fastchargePath() {
+        if (Utils.fileExists("/sys/kernel/fast_charge/force_fast_charge")) {
+            return "/sys/kernel/fast_charge/force_fast_charge";
+        } else if (Utils.fileExists("/sys/module/msm_otg/parameters/fast_charge")) {
+            return "/sys/module/msm_otg/parameters/fast_charge";
+        } else if (Utils.fileExists("/sys/devices/platform/htc_battery/fast_charge")) {
+            return "/sys/devices/platform/htc_battery/fast_charge";
+        } else {
+            return null;
+        }
     }
 }

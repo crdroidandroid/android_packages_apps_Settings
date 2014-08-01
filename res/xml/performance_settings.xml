@@ -61,4 +61,13 @@
             android:summary="@string/pref_force_highend_gfx_summary" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="perf_misc_prefs"
+        android:title="@string/misc_title">
+
+        <SwitchPreference
+            android:key="pref_force_fast_charge"
+            android:title="@string/pref_force_fast_charge_title" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
