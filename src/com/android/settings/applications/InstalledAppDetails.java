@@ -492,12 +492,8 @@ public class InstalledAppDetails extends Fragment
     private void initHeadsUpButton() {
         boolean enabled = mPm.getHeadsUpSetting(mAppEntry.info.packageName);
         mHeadsUpSwitch.setChecked(enabled);
-        if (isThisASystemPackage() || !mNotificationSwitch.isChecked()) {
-            mHeadsUpSwitch.setEnabled(false);
-        } else {
-            mHeadsUpSwitch.setEnabled(true);
-            mHeadsUpSwitch.setOnCheckedChangeListener(this);
-        }
+        mHeadsUpSwitch.setEnabled(true);
+        mHeadsUpSwitch.setOnCheckedChangeListener(this);
     }
 
     /** Called when the activity is first created. */
