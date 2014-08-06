@@ -851,4 +851,7 @@
     <!-- Heads-up floating window -->
     <string name="heads_up_floating_window">Launch in floating window</string>
 
+    <!-- Heads-up disable on lockscreen -->
+    <string name="heads_up_exclude_from_lock_screen">Disable on lockscreen</string>
+
 </resources>
