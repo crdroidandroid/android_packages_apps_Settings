@@ -11,6 +11,7 @@
     <string name="default_string">Default</string>
     <string name="recent_panel_settings_title" >Recent panel settings</string>
     <string name="reset">Reset</string>
+    <string name="ok">OK</string>
     <string name="enabled">Enabled</string>
     <string name="disabled">Disabled</string>
     <string name="note">NOTE</string>
@@ -148,7 +149,7 @@
     <string name="ram_bar_button_help">Help</string>
     <string name="ram_bar_button_reset">Reset colors</string>
     <string name="ram_bar_reset">Reset</string>
-    <string name="ram_bar_reset_message">Reset RAM bar style to default?</string>
+    <string name="ram_bar_reset_message">Reset RAM bar and Slim recent panel colors to default?</string>
 
     <!-- Notification drawer background -->
     <string name="notification_style_title">Background style</string>
@@ -464,6 +465,7 @@
     <string name="recent_panel_expanded_mode_never">Never</string>
     <string name="recent_panel_show_topmost_title">Show topmost task</string>
     <string name="recent_panel_show_topmost_summary">Don\'t exclude the topmost task in recents view</string>
+    <string name="recent_panel_bg_color_title">Background color</string>
 
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
