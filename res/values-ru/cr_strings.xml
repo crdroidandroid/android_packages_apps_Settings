@@ -368,11 +368,6 @@
     <string name="screen_recorder_bitrate_50000000">50000000</string>
     <string name="screen_recorder_bitrate_100000000">100000000</string>
     
-    <!-- Lockscreen Lid Settings -->
-    <string name="smart_cover_category_title">\"Умная\" обложка</string>
-    <string name="smart_cover_wake_title">Пробуждение \"умной\" обложкой</string>
-    <string name="smart_cover_wake_summary">Пробуждение устройства при открытии \"умной\" обложки</string>
-    
     <!-- Power menu screen recorder -->
     <string name="power_menu_screenrecord_title">Запись с экрана</string>
 

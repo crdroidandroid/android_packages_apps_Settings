@@ -396,11 +396,6 @@
     <string name="smart_pulldown_dismissable">Dispensável</string>
     <string name="smart_pulldown_persistent">Persistente</string>
 
-    <!-- Lockscreen Lid Settings -->
-    <string name="smart_cover_category_title">Capa inteligente</string>
-    <string name="smart_cover_wake_title">Acordar com capa inteligente</string>
-    <string name="smart_cover_wake_summary">Acordar o dispositivo quando a capa inteligente for aberta</string>
-
     <!-- Ability to disable hardware keys via nav bar settings -->
     <string name="hw_keys_title">Botões físicos</string>
     <string name="key_menu_enabled">Botão menu habilitado</string>
