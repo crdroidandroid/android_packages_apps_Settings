@@ -23,6 +23,11 @@
         android:key="clock_style_pref"
         android:title="@string/status_bar_clock" />
 
+    <PreferenceScreen
+        android:fragment="com.android.settings.crdroid.StatusBarNetworkTraffic"
+        android:key="status_bar_network_traffic"
+        android:title="@string/network_traffic_title" />
+
     <ListPreference
         android:key="status_bar_battery"
         android:dialogTitle="@string/status_bar_battery_title"
