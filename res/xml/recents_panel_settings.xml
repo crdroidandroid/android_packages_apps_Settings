@@ -65,7 +65,21 @@
             android:title="@string/recent_panel_bg_color_title"
             android:defaultValue="0x00ffffff"
             alphaSlider="true"
-            android:dependency="custom_recent_mode" />>
+            android:dependency="custom_recent_mode" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="recent_card_bg_color"
+            android:title="@string/recent_card_bg_color_title"
+            android:defaultValue="0x00ffffff"
+            alphaSlider="true"
+            android:dependency="custom_recent_mode" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="recent_card_text_color"
+            android:title="@string/recent_card_text_color_title"
+            android:defaultValue="0x00ffffff"
+            alphaSlider="true"
+            android:dependency="custom_recent_mode" />
 
     <PreferenceCategory
         android:key="category_recent_panel"
