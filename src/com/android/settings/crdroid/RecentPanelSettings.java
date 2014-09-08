@@ -327,7 +327,12 @@ public class RecentPanelSettings extends SettingsPreferenceFragment implements O
         Settings.System.putInt(getContentResolver(),
                 Settings.System.RECENT_PANEL_BG_COLOR, DEFAULT_BACKGROUND_COLOR);
         mRecentPanelBgColor.setNewPreviewColor(DEFAULT_BACKGROUND_COLOR);
-        //mRecentPanelBgColor.setSummary("TRDS default");
+        Settings.System.putInt(getContentResolver(),
+                Settings.System.RECENT_CARD_BG_COLOR, DEFAULT_BACKGROUND_COLOR);
+        mRecentCardBgColor.setNewPreviewColor(DEFAULT_BACKGROUND_COLOR);
+        Settings.System.putInt(getContentResolver(),
+                Settings.System.RECENT_CARD_TEXT_COLOR, DEFAULT_BACKGROUND_COLOR);
+        mRecentCardTextColor.setNewPreviewColor(DEFAULT_BACKGROUND_COLOR);
     }
 
     private void ramBarColorReset() {
