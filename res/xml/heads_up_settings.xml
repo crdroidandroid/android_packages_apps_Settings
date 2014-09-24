@@ -5,15 +5,29 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/heads_up_settings_title">
 
+    <CheckBoxPreference
+        android:key="heads_up_master_switch"
+        android:title="@string/heads_up_master_switch"
+        android:persistent="false"
+        android:defaultValue="false" />
+
+    <Preference
+        style="?android:preferenceInformationStyle"
+        android:title="@string/heads_up_note_title"
+        android:summary="@string/heads_up_note_summary"
+        android:selectable="false" />
+
     <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
         android:key="heads_up_floating_window"
         android:title="@string/heads_up_floating_window"
+        android:dependency="heads_up_master_switch"
         android:defaultValue="false" />
 
     <CheckBoxPreference
         android:key="heads_up_exclude_from_lock_screen"
         android:title="@string/heads_up_exclude_from_lock_screen"
         android:persistent="false"
+        android:dependency="heads_up_master_switch"
         android:defaultValue="false" />
 
     <CheckBoxPreference
@@ -21,6 +35,7 @@
         android:title="@string/heads_up_expanded_title"
         android:summary="@string/heads_up_expanded_summary"
         android:persistent="false"
+        android:dependency="heads_up_master_switch"
         android:defaultValue="false" />
 
     <CheckBoxPreference
@@ -28,6 +43,7 @@
         android:title="@string/heads_up_show_updates_title"
         android:summary="@string/heads_up_show_updates_summary"
         android:persistent="false"
+        android:dependency="heads_up_master_switch"
         android:defaultValue="false" />
 
     <CheckBoxPreference
@@ -35,6 +51,7 @@
         android:title="@string/heads_up_gravity_title"
         android:summary="@string/heads_up_gravity_summary"
         android:persistent="false"
+        android:dependency="heads_up_master_switch"
         android:defaultValue="false" />
 
     <ListPreference
@@ -42,6 +59,7 @@
         android:title="@string/heads_up_snooze_title"
         android:entries="@array/heads_up_snooze_entries"
         android:entryValues="@array/heads_up_snooze_values"
+        android:dependency="heads_up_master_switch"
         android:persistent="false" />
 
     <ListPreference
@@ -49,6 +67,7 @@
         android:title="@string/heads_up_time_out_title"
         android:entries="@array/heads_up_time_out_entries"
         android:entryValues="@array/heads_up_time_out_values"
+        android:dependency="heads_up_master_switch"
         android:persistent="false" />
 
 </PreferenceScreen>

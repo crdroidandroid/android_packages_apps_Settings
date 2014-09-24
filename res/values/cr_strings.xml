@@ -823,6 +823,7 @@
     <!-- Heads up -->
     <string name="heads_up_title">Heads up</string>
     <string name="heads_up_settings_title">Heads up notification</string>
+    <string name="heads_up_master_switch">Heads up master switch</string>
     <string name="heads_up_expanded_title">Always expanded</string>
     <string name="heads_up_expanded_summary">Show heads up notification always expanded</string>
     <string name="heads_up_show_updates_title">Show updates</string>
@@ -846,6 +847,8 @@
     <string name="heads_up_time_out_10sec">10 seconds</string>
     <string name="heads_up_time_out_never">Never</string>
     <string name="heads_up_switch_label">Enable heads up notification</string>
+    <string name="heads_up_note_title">Important</string>
+    <string name="heads_up_note_summary">The checkbox above will enable Heads Up but you need to go into Settings -> Apps and pick each application that will receive notifications through Heads Up mode</string>
 
     <!-- Heads-up floating window -->
     <string name="heads_up_floating_window">Launch in floating window</string>
