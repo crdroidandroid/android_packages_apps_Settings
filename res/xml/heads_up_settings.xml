@@ -70,4 +70,16 @@
         android:dependency="heads_up_master_switch"
         android:persistent="false" />
 
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="heads_up_bg_color"
+        android:title="@string/heads_up_bg_color_title"
+        android:defaultValue="0x00ffffff"
+        alphaSlider="true" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="heads_up_text_color"
+        android:title="@string/heads_up_text_color_title"
+        android:defaultValue="0"
+        alphaSlider="true" />
+
 </PreferenceScreen>
