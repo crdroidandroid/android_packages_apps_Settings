@@ -91,6 +91,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_DISPLAY_GAMMA = "gamma_tuning";
     private static final String KEY_SCREEN_COLOR_SETTINGS = "screencolor_settings";
 
+    private static final String CATEGORY_ANIMATION = "animation_settings_category";
+
+    // Animations
+    private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
+    private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
+
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
     private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
@@ -120,6 +126,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mSunlightEnhancement;
     private CheckBoxPreference mColorEnhancement;
     private CheckBoxPreference mTapToWake;
+
+    private ListPreference mListViewAnimation;
+    private ListPreference mListViewInterpolator;
 
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
@@ -314,6 +323,24 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         } else {
             getPreferenceScreen().removePreference(lightPrefs);
         }
+
+        // Animations
+        PreferenceCategory animationPrefs = (PreferenceCategory) findPreference(CATEGORY_ANIMATION);
+
+        mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
+        int listviewanimation = Settings.System.getInt(getContentResolver(),
+                Settings.System.LISTVIEW_ANIMATION, 0);
+        mListViewAnimation.setValue(String.valueOf(listviewanimation));
+        mListViewAnimation.setSummary(mListViewAnimation.getEntry());
+        mListViewAnimation.setOnPreferenceChangeListener(this);
+
+        mListViewInterpolator = (ListPreference) findPreference(KEY_LISTVIEW_INTERPOLATOR);
+        int listviewinterpolator = Settings.System.getInt(getContentResolver(),
+                Settings.System.LISTVIEW_INTERPOLATOR, 0);
+        mListViewInterpolator.setValue(String.valueOf(listviewinterpolator));
+        mListViewInterpolator.setSummary(mListViewInterpolator.getEntry());
+        mListViewInterpolator.setOnPreferenceChangeListener(this);
+        mListViewInterpolator.setEnabled(listviewanimation > 0);
     }
 
     private void updateDisplayRotationPreferenceDescription() {
@@ -651,6 +678,23 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist screen animation style setting", e);
             }
+        }
+        if (KEY_LISTVIEW_ANIMATION.equals(key)) {
+            int value = Integer.parseInt((String) objValue);
+            int index = mListViewAnimation.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.LISTVIEW_ANIMATION,
+                    value);
+            mListViewAnimation.setSummary(mListViewAnimation.getEntries()[index]);
+            mListViewInterpolator.setEnabled(value > 0);
+        }
+        if (KEY_LISTVIEW_INTERPOLATOR.equals(key)) {
+            int value = Integer.parseInt((String) objValue);
+            int index = mListViewInterpolator.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.LISTVIEW_INTERPOLATOR,
+                    value);
+            mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
         }
         return true;
     }
