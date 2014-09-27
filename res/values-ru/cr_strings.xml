@@ -11,12 +11,18 @@
     <string name="default_string">По умолчанию</string>
     <string name="recent_panel_settings_title" >Недавние приложения</string>
     <string name="reset">Сброс</string>
+    <string name="reset_colors">Сбросить все цвета по умолчанию?</string>
+    <string name="reset_default_message">Восстановить значения по умолчанию</string>
+    <string name="ok">ОК</string>    
     <string name="enabled">Включено</string>
     <string name="disabled">Отключено</string>
     <string name="note">Примечание</string>
 
     <!-- Advanced settings -->
     <string name="advanced_options_settings_title">Расширенные настройки</string>
+    
+    <!-- crDroid notifications -->
+    <string name="crdroid_notifications_title">Виды уведомлений</string>
 
     <!-- Halo -->
     <!-- Halo enable/disable -->
@@ -145,7 +151,7 @@
     <string name="ram_bar_button_help">Справка</string>
     <string name="ram_bar_button_reset">Сброс цвета</string>
     <string name="ram_bar_reset">Сброс</string>
-    <string name="ram_bar_reset_message">Сбросить стиль строки использования ОЗУ по умолчанию?</string>
+    <string name="ram_bar_reset_message">Сбросить стиль строки использования ОЗУ и цвета \"Недавних приложений\" от Slim по умолчанию?</string>
 
     <!-- Notification drawer background -->
     <string name="notification_style_title">Стиль панели уведомления</string>
@@ -456,6 +462,9 @@
     <string name="recent_panel_expanded_mode_never">Никогда</string>
     <string name="recent_panel_show_topmost_title">Показывать последнее приложение</string>
     <string name="recent_panel_show_topmost_summary">Показывать последнее приложение в списке недавних</string>
+    <string name="recent_panel_bg_color_title">Цвет фона панели</string>
+    <string name="recent_card_bg_color_title">Цвет фона карточки</string>
+    <string name="recent_card_text_color_title">Цвет текста карточки</string>
 
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Показывать у левого края</string>
@@ -763,7 +772,7 @@
     <!--Blacklist peek and floating mode-->
     <string name="blacklist_button_title">Чёрный список</string>
     <string name="peek_blacklist_label">Чёрный список от Peek</string>
-    <string name="floating_blacklist_label">Чёрный список от Плавающего режима</string>
+    <string name="floating_blacklist_label">Чёрный список от Оконного режима</string>
     <string name="hover_blacklist_label">Черный список от Hover</string>
     
     <!-- Hover settings -->
@@ -782,6 +791,11 @@
     <string name="hover_long_fadeout_7seconds">7 секунд</string>
     <string name="hover_long_fadeout_10seconds">10 секунд</string>
     <string name="hover_long_fadeout_15seconds">15 секунд</string>
+    
+    <!-- Hover instant fade out delay -->
+    <string name="hover_micro_fadeout_title">Коснитесь Hover, чтобы скрыть его</string>
+    <string name="hover_micro_fadeout_stock">Обычно</string>
+    <string name="hover_micro_fadeout_instant">Мгновенно</string>
 
     <!-- Hover exclude topmost app -->
     <string name="hover_exclude_topmost_title">Исключить текущее приложение</string>
@@ -790,5 +804,86 @@
     <!-- Hover no notif in insecure lockscreen -->
     <string name="hover_exclude_from_insecure_lock_screen_title">Исключить экран блокировки</string>
     <string name="hover_exclude_from_insecure_lock_screen_summary">Не показывать уведомления Hover на незащищенном экране блокировки</string>
+
+    <!-- Heads up -->
+    <string name="heads_up_title">Heads up</string>
+    <string name="heads_up_settings_title">Всплывающие уведомления</string>
+    <string name="heads_up_master_switch">Включить всплывающие уведомления</string>
+    <string name="heads_up_expanded_title">Всегда развернуты</string>
+    <string name="heads_up_expanded_summary">Показывать всплывающие уведомления всегда развернутыми</string>
+    <string name="heads_up_show_updates_title">Показывать изменения</string>
+    <string name="heads_up_show_updates_summary">Показывать обновившиеся фоновые всплывающие уведомления</string>
+    <string name="heads_up_gravity_title">Показывать внизу</string>
+    <string name="heads_up_gravity_summary">Показывать уведомления \"поверх\" в нижней части экрана</string>
+    <string name="heads_up_snooze_title">Длительность \"отложить\"</string>
+    <string name="heads_up_snooze_summary">При нажатии кнопки \"Отложить\" всплывающие уведомления будут приостановлены на <xliff:g id="number">%d</xliff:g> минут.</string>
+    <string name="heads_up_snooze_disabled_summary">Функция \"Отложить\" отключена.</string>
+    <string name="heads_up_snooze_3min">3 минуты</string>
+    <string name="heads_up_snooze_5min">5 минут</string>
+    <string name="heads_up_snooze_10min">10 минут</string>
+    <string name="heads_up_snooze_15min">15 минут</string>
+    <string name="heads_up_snooze_20min">20 минут</string>
+    <string name="heads_up_time_out_title">Длительность</string>
+    <string name="heads_up_time_out_summary">Всплывающее уведомление будет показываться в течение <xliff:g id="number">%d</xliff:g> секунд.</string>
+    <string name="heads_up_time_out_never_summary">Всплывающее уведомление будет показываться, пока не будет закрыто.</string>
+    <string name="heads_up_time_out_4sec">4 секунды</string>
+    <string name="heads_up_time_out_6sec">6 секунд</string>
+    <string name="heads_up_time_out_8sec">8 секунд</string>
+    <string name="heads_up_time_out_10sec">10 секунд</string>
+    <string name="heads_up_time_out_never">Никогда</string>
+    <string name="heads_up_switch_label">Включить всплывающие уведомления</string>
+    <string name="heads_up_note_title">ВАЖНО</string>
+    <string name="heads_up_note_summary">Галочка выше включает всплывающие уведомления, однако вам нужно также включить \"Всплывающие уведомления\" для каждого приложения, для которых вы хотите их использовать.Включается тут \"Настройки -> Приложения\". ПРИМЕЧАНИЕ: при полном отключении \"Всплывающих уведомлений\" будут отключены всплывающие уведомления о Звонках и MMS, даже, если вы их снова активируете</string>
+    <string name="heads_up_bg_color_title">Цвет фона</string>
+    <string name="heads_up_text_color_title">Цвет текста</string>
+    
+    <!-- Heads-up floating window -->
+    <string name="heads_up_floating_window">Открыть в оконном режиме</string>
+    
+    <!-- Heads-up disable on lockscreen -->
+    <string name="heads_up_exclude_from_lock_screen">Отключить на экране блокировки</string>
+    
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Индикатор сетевого трафика</string>
+    <string name="show_network_traffic_state">Показывать скорость передачи данных</string>
+    <string name="show_network_traffic_unit">Единицы измерения</string>
+    <string name="show_network_traffic_frequency">Частота обновления</string>
+    <string name="show_network_traffic_disable">Отключен</string>
+    <string name="show_network_traffic_up">Исходящий</string>
+    <string name="show_network_traffic_down">Входящий</string>
+    <string name="show_network_traffic_all">Исходящий и входящий</string>
+    <string name="show_network_traffic_bit">Бит в секунду</string>
+    <string name="show_network_traffic_byte">Байт в секунду</string>
+    <string name="show_network_traffic_500">500 мс</string>
+    <string name="show_network_traffic_1000">1000 мс</string>
+    <string name="show_network_traffic_1500">1500 мс</string>
+    <string name="show_network_traffic_2000">2000 мс</string>
+    
+    <!-- Animation settings -->
+    <string name="animation_settings_title">Анимация</string>
+    <!-- ListView animation -->
+    <string name="interface_settings_animation_title">Настройки анимации</string>
+    <string name="listview_animation_title">Анимация списков</string>
+    <string name="listview_off">По умолчанию</string>
+    <string name="listview_wave_left">Волна (слева)</string>
+    <string name="listview_wave_right">Волна (справа)</string>
+    <string name="listview_alpha">Проявление</string>
+    <string name="listview_scale">Увеличение</string>
+    <string name="listview_stack_top">Стек (сверху)</string>
+    <string name="listview_stack_bottom">Стек (снизу)</string>
+    <string name="listview_unfold">Развернуть</string>
+    <string name="listview_fold">Свернуть</string>
+    <string name="listview_translate_left">Сдвиг (слева)</string>
+    <string name="listview_translate_right">Сдвиг (справа)</string>
+
+    <!-- ListView interpolator -->
+    <string name="listview_interpolator_title">Эффекты анимации списков</string>
+    <string name="listview_accelerate_interpolator">Усилить</string>
+    <string name="listview_decelerate_interpolator">Ослабить</string>
+    <string name="listview_accelerate_decelerate_interpolator">Усилить и ослабить</string>
+    <string name="listview_anticipate_interpolator">Ускорить</string>
+    <string name="listview_overshoot_interpolator">Проскочить</string>
+    <string name="listview_anticipate_overshoot_interpolator">Ускорить и проскочить</string>
+    <string name="listview_bounce_interpolator">Отскакивать</string>
 
 </resources>
