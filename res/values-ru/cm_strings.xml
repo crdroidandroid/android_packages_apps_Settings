@@ -375,7 +375,7 @@
   <string name="quiet_hours_ringer_mute_all">Отключить звук для всех</string>
   <string name="start_time_title">Начало</string>
   <string name="end_time_title">Конец</string>
-  <string name="mod_version">Версия CyanogenMod</string>
+  <string name="mod_version">Версия crDroid</string>
   <string name="mod_version_default">Неизвестно</string>
   <string name="build_date">Дата сборки</string>
   <string name="cpu_info">Процессор</string>

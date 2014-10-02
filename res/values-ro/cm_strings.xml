@@ -382,7 +382,7 @@ două pentru a adăuga puncte de control adiționale. „Ștergere” elimină l
   <string name="quiet_hours_ringer_mute_all">Oprește soneria pentru apelanți</string>
   <string name="start_time_title">Start</string>
   <string name="end_time_title">Sfârșit</string>
-  <string name="mod_version">versiunea CyanogenMod</string>
+  <string name="mod_version">versiunea crDroid</string>
   <string name="mod_version_default">Necunoscut</string>
   <string name="build_date">Dată compilare</string>
   <string name="cpu_info">CPU</string>

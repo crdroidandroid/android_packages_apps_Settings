@@ -374,7 +374,7 @@ Každý riadok v zozname jasu zodpovedá jednému <i>riadiacemu bodu</i> krivky 
   <string name="quiet_hours_ringer_mute_all">Stíšiť zvonenie pri všetkých volajúcich</string>
   <string name="start_time_title">Začiatok</string>
   <string name="end_time_title">Koniec</string>
-  <string name="mod_version">Verzia CyanogenModu</string>
+  <string name="mod_version">Verzia crDroid</string>
   <string name="mod_version_default">Neznáme</string>
   <string name="build_date">Dátum zostavy</string>
   <string name="cpu_info">CPU</string>

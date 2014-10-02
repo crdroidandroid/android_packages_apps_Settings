@@ -392,7 +392,7 @@
   <string name="quiet_hours_ringer_mute_all">Ανενεργός για όλους τους καλούντες</string>
   <string name="start_time_title">Έναρξη</string>
   <string name="end_time_title">Λήξη</string>
-  <string name="mod_version">Έκδοση CyanogenMod</string>
+  <string name="mod_version">Έκδοση crDroid</string>
   <string name="mod_version_default">Άγνωστη</string>
   <string name="build_date">Ημερομηνία έκδοσης</string>
   <string name="cpu_info">CPU</string>

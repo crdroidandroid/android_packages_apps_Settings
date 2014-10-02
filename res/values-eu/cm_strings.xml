@@ -368,7 +368,7 @@ Denbora luzez lerro bakoitza ikutuz ezarpen osagarriak erakutsiko dira. \u00ABEd
   <string name="quiet_hours_ringer_mute_all">Dei guztiak isildu</string>
   <string name="start_time_title">Hasiera</string>
   <string name="end_time_title">Amaiera</string>
-  <string name="mod_version">CyanogenMod bertsioa</string>
+  <string name="mod_version">crDroid bertsioa</string>
   <string name="mod_version_default">Ezezaguna</string>
   <string name="build_date">Konpilatze data</string>
   <string name="cpu_info">CPU</string>

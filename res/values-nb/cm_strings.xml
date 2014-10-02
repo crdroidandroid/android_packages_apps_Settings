@@ -366,7 +366,7 @@
   <string name="quiet_hours_ringer_mute_all">Demp ringer fra alle oppringere</string>
   <string name="start_time_title">Start</string>
   <string name="end_time_title">Stopp</string>
-  <string name="mod_version">CyanogenMod versjon</string>
+  <string name="mod_version">crDroid versjon</string>
   <string name="mod_version_default">Ukjent</string>
   <string name="build_date">Bygge dato</string>
   <string name="cpu_info">CPU</string>

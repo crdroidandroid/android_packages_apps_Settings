@@ -388,7 +388,7 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="quiet_hours_ringer_mute_all">Nie klingeln</string>
   <string name="start_time_title">Beginn</string>
   <string name="end_time_title">Ende</string>
-  <string name="mod_version">CyanogenMod-Version</string>
+  <string name="mod_version">crDroid-Version</string>
   <string name="mod_version_default">Unbekannt</string>
   <string name="build_date">Build-Datum</string>
   <string name="cpu_info">Prozessor</string>

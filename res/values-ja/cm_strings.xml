@@ -383,7 +383,7 @@
   <string name="quiet_hours_ringer_mute_all">すべての着信で着信音をミュートにする</string>
   <string name="start_time_title">開始</string>
   <string name="end_time_title">終了</string>
-  <string name="mod_version">CyanogenModバージョン</string>
+  <string name="mod_version">crDroidバージョン</string>
   <string name="mod_version_default">不明</string>
   <string name="build_date">ビルド日時</string>
   <string name="cpu_info">CPU</string>

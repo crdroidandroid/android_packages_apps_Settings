@@ -374,7 +374,7 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="quiet_hours_ringer_mute_all">Gør alle opkald lydløse</string>
   <string name="start_time_title">Start</string>
   <string name="end_time_title">Slut</string>
-  <string name="mod_version">CyanogenMod-version</string>
+  <string name="mod_version">crDroid-version</string>
   <string name="mod_version_default">Ukendt</string>
   <string name="build_date">Kørselsdato</string>
   <string name="cpu_info">CPU</string>

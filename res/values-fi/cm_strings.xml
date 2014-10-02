@@ -375,7 +375,7 @@ Lisää asetuksia on saaavilla painamalla riviä pitkään. Valitsemalla \'Muokk
   <string name="quiet_hours_ringer_mute_all">Mykistä kaikki yhteystiedot</string>
   <string name="start_time_title">Alkaa</string>
   <string name="end_time_title">Loppuu</string>
-  <string name="mod_version">CyanogenMod-versio</string>
+  <string name="mod_version">crDroid-versio</string>
   <string name="mod_version_default">Tuntematon</string>
   <string name="build_date">Luontipäivä</string>
   <string name="cpu_info">Prosessori</string>

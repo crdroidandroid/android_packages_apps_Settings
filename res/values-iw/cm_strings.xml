@@ -387,7 +387,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="quiet_hours_ringer_mute_all">השתק צלצול עבור על המתקשרים</string>
   <string name="start_time_title">זמן התחלה</string>
   <string name="end_time_title">זמן סיום</string>
-  <string name="mod_version">גרסת CyanogenMod</string>
+  <string name="mod_version">גרסת crDroid</string>
   <string name="mod_version_default">לא ידוע</string>
   <string name="build_date">תאריך בנייה</string>
   <string name="cpu_info">CPU</string>

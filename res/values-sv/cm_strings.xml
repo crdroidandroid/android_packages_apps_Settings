@@ -386,7 +386,7 @@ två för att kunna infoga ytterligare kontrollpunkter. \"Ta bort\" raderar den 
   <string name="quiet_hours_ringer_mute_all">Tysta ringsignal för alla samtal</string>
   <string name="start_time_title">Start</string>
   <string name="end_time_title">Slut</string>
-  <string name="mod_version">CyanogenMod-version</string>
+  <string name="mod_version">crDroid-version</string>
   <string name="mod_version_default">Okänd</string>
   <string name="build_date">Byggdatum</string>
   <string name="cpu_info">CPU</string>

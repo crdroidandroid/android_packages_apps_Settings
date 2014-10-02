@@ -377,7 +377,7 @@ ten einde om bykomende kontrolepunte by te voeg . \'Verwyder\' verwyder die geko
   <string name="quiet_hours_ringer_mute_all">Geen luitoon vir alle oproepe</string>
   <string name="start_time_title">Begin</string>
   <string name="end_time_title">Eindig</string>
-  <string name="mod_version">CyanogenMod weergawe</string>
+  <string name="mod_version">crDroid weergawe</string>
   <string name="mod_version_default">Onbekend</string>
   <string name="build_date">Bou datum</string>
   <string name="cpu_info">SVE</string>

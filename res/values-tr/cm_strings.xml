@@ -389,7 +389,7 @@ parlaklık seviyesini ayarlayabilir hem de istediğiniz parlaklık düzeyini ell
   <string name="quiet_hours_ringer_mute_all">Hiçbir arama için çalma</string>
   <string name="start_time_title">Başlangıç</string>
   <string name="end_time_title">Son</string>
-  <string name="mod_version">CyanogenMod sürümü</string>
+  <string name="mod_version">crDroid sürümü</string>
   <string name="mod_version_default">Bilinmeyen</string>
   <string name="build_date">İnşa tarihi</string>
   <string name="cpu_info">İşlemci</string>

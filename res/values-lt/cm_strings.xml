@@ -387,7 +387,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="quiet_hours_ringer_mute_all">Nutildyti skambutį visiems skambintojams</string>
   <string name="start_time_title">Pradžia</string>
   <string name="end_time_title">Pabaiga</string>
-  <string name="mod_version">„CyanogenMod“ versija</string>
+  <string name="mod_version">„crDroid“ versija</string>
   <string name="mod_version_default">Nežinoma</string>
   <string name="build_date">Surinkimo data</string>
   <string name="cpu_info">Procesorius</string>

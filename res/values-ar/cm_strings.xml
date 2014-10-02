@@ -365,7 +365,7 @@
   <string name="quiet_hours_ringer_mute_all">كتم النغمة لجميع المتصلين</string>
   <string name="start_time_title">البداية</string>
   <string name="end_time_title">نهاية</string>
-  <string name="mod_version">إصدار CyanogenMod</string>
+  <string name="mod_version">إصدار crDroid</string>
   <string name="mod_version_default">غير معروف</string>
   <string name="build_date">تاريخ الإصدار</string>
   <string name="cpu_info">وحدة المعالجة المركزية</string>

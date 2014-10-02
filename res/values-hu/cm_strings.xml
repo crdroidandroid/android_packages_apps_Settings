@@ -385,7 +385,7 @@ Az \"Eltávolítás\" törli a kiválasztott sort.</string>
   <string name="quiet_hours_ringer_mute_all">Összes hívás némítása</string>
   <string name="start_time_title">Kezdete</string>
   <string name="end_time_title">Vége</string>
-  <string name="mod_version">CyanogenMod verzió</string>
+  <string name="mod_version">crDroid verzió</string>
   <string name="mod_version_default">Ismeretlen</string>
   <string name="build_date">Build dátuma</string>
   <string name="cpu_info">Processzor</string>

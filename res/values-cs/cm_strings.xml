@@ -383,7 +383,7 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. „Odstranit“ s
   <string name="quiet_hours_ringer_mute_all">Nevyzvánět</string>
   <string name="start_time_title">Začátek</string>
   <string name="end_time_title">Konec</string>
-  <string name="mod_version">CyanogenMod verze</string>
+  <string name="mod_version">crDroid verze</string>
   <string name="mod_version_default">Neznámá</string>
   <string name="build_date">Datum sestavení</string>
   <string name="cpu_info">CPU</string>

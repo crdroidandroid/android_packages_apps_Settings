@@ -374,7 +374,7 @@
   <string name="quiet_hours_ringer_mute_all">所有来电静音</string>
   <string name="start_time_title">起始</string>
   <string name="end_time_title">结束</string>
-  <string name="mod_version">CyanogenMod 版本</string>
+  <string name="mod_version">crDroid 版本</string>
   <string name="mod_version_default">未知</string>
   <string name="build_date">编译日期</string>
   <string name="cpu_info">处理器</string>

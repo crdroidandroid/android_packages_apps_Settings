@@ -373,7 +373,7 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="quiet_hours_ringer_mute_all">Diamkan dering untuk semua panggilan</string>
   <string name="start_time_title">Mulai</string>
   <string name="end_time_title">Selesai</string>
-  <string name="mod_version">Versi CyanogenMod</string>
+  <string name="mod_version">Versi crDroid</string>
   <string name="mod_version_default">Tidak diketahui</string>
   <string name="build_date">Tanggal pembuatan</string>
   <string name="cpu_info">CPU</string>

@@ -374,7 +374,7 @@ Des options supplémentaires sont disponibles en appuyant longtemps sur une lign
   <string name="quiet_hours_ringer_mute_all">Sonnerie muette pour tous les appelants</string>
   <string name="start_time_title">Début</string>
   <string name="end_time_title">Fin</string>
-  <string name="mod_version">Version CyanogenMod</string>
+  <string name="mod_version">Version crDroid</string>
   <string name="mod_version_default">Inconnue</string>
   <string name="build_date">Date de compilation</string>
   <string name="cpu_info">CPU</string>

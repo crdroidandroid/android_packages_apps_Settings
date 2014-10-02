@@ -374,7 +374,7 @@ Dodatkowe opcje są dostępne przez długie przytrzymanie linii. Wybierając opc
   <string name="quiet_hours_ringer_mute_all">Wycisz dzwonek dla wszystkich połączeń</string>
   <string name="start_time_title">Początek</string>
   <string name="end_time_title">Koniec</string>
-  <string name="mod_version">Wersja CyanogenMod</string>
+  <string name="mod_version">Wersja crDroid</string>
   <string name="mod_version_default">Nieznana</string>
   <string name="build_date">Data kompilacji</string>
   <string name="cpu_info">Procesor</string>

@@ -386,7 +386,7 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
   <string name="quiet_hours_ringer_mute_all">Silenzioso per tutti i chiamanti</string>
   <string name="start_time_title">Inizio</string>
   <string name="end_time_title">Fine</string>
-  <string name="mod_version">Versione CyanogenMod</string>
+  <string name="mod_version">Versione crDroid</string>
   <string name="mod_version_default">Sconosciuto</string>
   <string name="build_date">Data build</string>
   <string name="cpu_info">CPU</string>

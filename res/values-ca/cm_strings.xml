@@ -376,7 +376,7 @@ Hi ha disponibles opcions addicionals apretant llargament sobre la línia. Selec
   <string name="quiet_hours_ringer_mute_all">Silenci per totes les trucades</string>
   <string name="start_time_title">Inici</string>
   <string name="end_time_title">Fi</string>
-  <string name="mod_version">CyanogenMod versió</string>
+  <string name="mod_version">crDroid versió</string>
   <string name="mod_version_default">Desconegut</string>
   <string name="build_date">Data d\'elaboració</string>
   <string name="cpu_info">CPU</string>

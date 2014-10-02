@@ -508,7 +508,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="end_time_title">End</string>
 
     <!-- About phone screen,  setting option name -->
-    <string name="mod_version">CyanogenMod version</string>
+    <string name="mod_version">crDroid version</string>
     <string name="mod_version_default">Unknown</string>
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Build date</string>

@@ -379,7 +379,7 @@
   <string name="quiet_hours_ringer_mute_all">Утишај звоно за све позиве</string>
   <string name="start_time_title">Почетак</string>
   <string name="end_time_title">Крај</string>
-  <string name="mod_version">CyanogenMod верзија</string>
+  <string name="mod_version">crDroid верзија</string>
   <string name="mod_version_default">Непознато</string>
   <string name="build_date">Датум израде</string>
   <string name="cpu_info">CPU</string>

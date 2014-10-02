@@ -374,7 +374,7 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="quiet_hours_ringer_mute_all">Não tocar para todas chamadas</string>
   <string name="start_time_title">Início</string>
   <string name="end_time_title">Fim</string>
-  <string name="mod_version">Versão CyanogenMod</string>
+  <string name="mod_version">Versão crDroid</string>
   <string name="mod_version_default">Desconhecida</string>
   <string name="build_date">Data de compilação</string>
   <string name="cpu_info">CPU</string>

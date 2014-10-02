@@ -367,7 +367,7 @@
   <string name="quiet_hours_ringer_mute_all">ปิดเสียงสายเข้าจากทุกผู้ติดต่อ</string>
   <string name="start_time_title">เริ่มต้น</string>
   <string name="end_time_title">สิ้นสุด</string>
-  <string name="mod_version">รุ่นของ CyanogenMod</string>
+  <string name="mod_version">รุ่นของ crDroid</string>
   <string name="mod_version_default">ไม่ทราบ</string>
   <string name="build_date">วันที่บิวด์</string>
   <string name="cpu_info">หน่วยประมวลผล</string>
