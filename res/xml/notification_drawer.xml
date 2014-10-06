@@ -26,6 +26,12 @@
         android:entries="@array/notification_drawer_collapse_on_dismiss_entries"
         android:entryValues="@array/notification_drawer_collapse_on_dismiss_values" />
 
+    <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+        android:key="force_expanded_notifications"
+        android:title="@string/notification_force_expand_title"
+        android:summary="@string/notification_force_expand_summary"
+        android:defaultValue="false" />
+
     <PreferenceScreen
         settings:includeXmlForSearch="@xml/quick_settings_panel"
         android:key="quick_settings_panel"
