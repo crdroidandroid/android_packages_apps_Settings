@@ -37,6 +37,12 @@
             android:entries="@array/lockscreen_battery_status_entries"
             android:entryValues="@array/lockscreen_battery_status_values"
             android:defaultValue="0" />
+
+        <CheckBoxPreference
+            android:key="lockscreen_enable_power_menu"
+            android:title="@string/lockscreen_enable_power_menu_title"
+            android:summary="@string/lockscreen_enable_power_menu_summary"
+            android:persistent="false" />
         
         <Preference
             android:fragment="com.android.settings.cyanogenmod.LockscreenTargets"
