@@ -23,6 +23,11 @@
                 android:selectable="false"
                 android:layout="@layout/crdroid_logo" />
 
+        <!-- Devices and Maintainers -->
+        <PreferenceScreen android:key="devices"
+                android:title="@string/device_maintainers_title"
+                android:fragment="com.android.settings.crdroid.Devices" />
+
         <!-- crDroid Updates -->
         <PreferenceScreen android:key="cr_updates"
                 android:title="@string/crupdate_settings_title"
@@ -31,6 +36,11 @@
                     android:targetPackage="com.crdroid.crdroidota"
                     android:targetClass="com.crdroid.crdroidota.activities.SettingsActivity" />
         </PreferenceScreen>
+
+        <!-- Changelog -->
+        <PreferenceScreen android:key="changelog"
+                android:title="@string/changelog_crdroid_title"
+                android:fragment="com.android.settings.crdroid.Changelog" />
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"

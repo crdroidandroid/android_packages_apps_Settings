@@ -78,10 +78,4 @@
          android:fragment="com.android.settings.crdroid.WakeLockBlocker"
          android:title="@string/wakelock_blocker_title" />
 
-    <!-- Devices and Maintainers -->
-    <PreferenceScreen
-         android:key="devices"
-         android:title="@string/device_maintainers_title"
-         android:fragment="com.android.settings.crdroid.Devices" />
-
 </PreferenceScreen>

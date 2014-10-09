@@ -47,6 +47,10 @@
     <string name="device_maintainers_title">Devices and Maintainers</string>
     <string name="device_maintainers_title_summary">List of devices and their crDroid ROM maintainers</string>
 
+    <!-- Changelog -->
+    <string name="changelog_crdroid_title">Changelog</string>
+    <string name="changelog_crdroid_error">Unable to load changelog</string>
+
     <!-- Performance Misc -->
     <string name="misc_title">crDroid misc</string>
     <string name="pref_force_fast_charge_title">Force fast charge</string>
