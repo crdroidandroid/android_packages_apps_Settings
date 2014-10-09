@@ -396,12 +396,6 @@
     <string name="smart_pulldown_dismissable">Dispensável</string>
     <string name="smart_pulldown_persistent">Persistente</string>
 
-    <!-- Ability to disable hardware keys via nav bar settings -->
-    <string name="hw_keys_title">Botões físicos</string>
-    <string name="key_menu_enabled">Botão menu habilitado</string>
-    <string name="key_back_enabled">Botão voltar habilitado</string>
-    <string name="key_home_enabled">Botão home habilitado</string>
-
     <!-- Keyboard and Input ASS methods  -->
     <string name="title_keyboard_input">Opções avançadas</string>
     <string name="disable_fullscreen_keyboard_title">Desabilitar teclado em tela inteira</string>

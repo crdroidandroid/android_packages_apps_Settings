@@ -99,27 +99,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="hw_keys_on_navbar"
-        android:title="@string/hw_keys_title">
-
-        <CheckBoxPreference
-            android:key="key_back_enabled"
-            android:title="@string/key_back_enabled"
-            android:defaultValue="true" />
-
-        <CheckBoxPreference
-            android:key="key_menu_enabled"
-            android:title="@string/key_menu_enabled"
-            android:defaultValue="true" />
-
-        <CheckBoxPreference
-            android:key="key_home_enabled"
-            android:title="@string/key_home_enabled"
-            android:defaultValue="true" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="pie_navigation"
         android:title="@string/pie_navigation_title">
 

@@ -403,12 +403,6 @@
     <string name="smart_pulldown_persistent">No persistent</string>
     <string name="smart_pulldown_all">No dismissable or persistent</string>
 
-    <!-- Ability to disable hardware keys via nav bar settings -->
-    <string name="hw_keys_title">Hardware Keys</string>
-    <string name="key_menu_enabled">Menu Key Enabled</string>
-    <string name="key_back_enabled">Back Key Enabled</string>
-    <string name="key_home_enabled">Home Key Enabled</string>
-
     <!-- Keyboard and Input ASS methods  -->
     <string name="title_keyboard_input">Advanced options</string>
     <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>

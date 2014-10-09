@@ -403,12 +403,6 @@
     <string name="smart_pulldown_persistent">Без постоянных</string>
     <string name="smart_pulldown_all">Без удаляемых и постоянных</string>
 
-    <!-- Ability to disable hardware keys via nav bar settings -->
-    <string name="hw_keys_title">Аппаратные кнопки</string>
-    <string name="key_menu_enabled">Кнопка \"Меню\" включена</string>
-    <string name="key_back_enabled">Кнопка \"Назад\" включена</string>
-    <string name="key_home_enabled">Кнопка \"Домой\" включена</string>
-
     <!-- Keyboard and Input ASS methods  -->
     <string name="title_keyboard_input">Дополнительные настройки</string>
     <string name="disable_fullscreen_keyboard_title">Отключить полноэкранную клавиатуру</string>
