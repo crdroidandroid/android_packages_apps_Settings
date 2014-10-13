@@ -51,7 +51,7 @@ public class LockscreenNotifications extends SettingsPreferenceFragment implemen
     private static final String KEY_EXCLUDED_APPS = "excluded_apps";
     private static final String KEY_NOTIFICATION_COLOR = "notification_color";
 
-    private static final String PEEK_APPLICATION = "com.jedga.peek";
+    private static final String PEEK_APPLICATION = "com.jedga.peek.free";
 
     private CheckBoxPreference mNotificationPeek;
     private ListPreference mPeekPickupTimeout;
