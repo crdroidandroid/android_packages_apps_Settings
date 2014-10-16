@@ -26,6 +26,7 @@ public class HoverSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "HoverSettings";
 
+    private static final String PREF_HOVER_MASTER_SWITCH = "hover_state";
     private static final String PREF_HOVER_LONG_FADE_OUT_DELAY = "hover_long_fade_out_delay";
     private static final String PREF_HOVER_MICRO_FADE_OUT_DELAY = "hover_micro_fade_out_delay";
     private static final String PREF_HOVER_EXCLUDE_NON_CLEARABLE = "hover_exclude_non_clearable";
@@ -34,6 +35,7 @@ public class HoverSettings extends SettingsPreferenceFragment implements
     private static final String PREF_HOVER_EXCLUDE_TOPMOST = "hover_exclude_topmost";
     private static final String PREF_HOVER_EXCLUDE_FROM_INSECURE_LOCK_SCREEN = "hover_exclude_from_insecure_lock_screen";
 
+    CheckBoxPreference mHoverMasterSwitch;
     ListPreference mHoverLongFadeOutDelay;
     ListPreference mHoverMicroFadeOutDelay;
     CheckBoxPreference mHoverExcludeNonClearable;
@@ -48,6 +50,11 @@ public class HoverSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.hover_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        mHoverMasterSwitch = (CheckBoxPreference) prefSet.findPreference(PREF_HOVER_MASTER_SWITCH);
+        mHoverMasterSwitch.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.HOVER_STATE, 0, UserHandle.USER_CURRENT) == 1);
+        mHoverMasterSwitch.setOnPreferenceChangeListener(this);
 
         mHoverLongFadeOutDelay = (ListPreference) prefSet.findPreference(PREF_HOVER_LONG_FADE_OUT_DELAY);
         int hoverLongFadeOutDelay = Settings.System.getIntForUser(getContentResolver(),
@@ -106,7 +113,12 @@ public class HoverSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mHoverLongFadeOutDelay) {
+        if (preference == mHoverMasterSwitch) {
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.HOVER_STATE,
+                    (Boolean) objValue ? 1 : 0, UserHandle.USER_CURRENT);
+             return true;
+        } else if (preference == mHoverLongFadeOutDelay) {
             int index = mHoverLongFadeOutDelay.findIndexOfValue((String) objValue);
             int hoverLongFadeOutDelay = Integer.valueOf((String) objValue);
             Settings.System.putIntForUser(getContentResolver(),

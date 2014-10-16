@@ -782,7 +782,10 @@
     <string name="floating_blacklist_label">Blacklist from Floating Mode</string>
     <string name="hover_blacklist_label">Blacklist from Hover</string>
 
-    <!-- Hover settings -->
+    <!-- Hover enable/disable -->
+    <string name="hover_master_switch_title">Hover master switch</string>
+    <string name="hover_master_switch_summary">Check to enable or un-check to disable hover</string>
+
     <string name="hover_settings_title">Hover</string>
     <string name="hover_require_fullscreen_mode_title">Require Fullscreen-Mode</string>
     <string name="hover_require_fullscreen_mode_summary">Only show up when StatusBar is hidden</string>
