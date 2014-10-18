@@ -99,6 +99,18 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="hw_keys_pref"
+        android:title="@string/hw_keys_title">
+
+        <CheckBoxPreference
+            android:key="hw_keys_enabled"
+            android:title="@string/hw_keys_title"
+            android:summary="@string/hw_keys_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="pie_navigation"
         android:title="@string/pie_navigation_title">
 

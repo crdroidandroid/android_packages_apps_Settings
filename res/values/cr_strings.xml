@@ -903,5 +903,9 @@
     <!-- Force expand notifications -->
     <string name="notification_force_expand_title">Force expanded notification</string>
     <string name="notification_force_expand_summary">Force expanded notifications if supported</string>
+
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">Hardware keys option</string>
+    <string name="hw_keys_summary">Check to enable or un-check to disable hardware keys</string>
     
 </resources>
