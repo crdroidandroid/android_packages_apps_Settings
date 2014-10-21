@@ -407,7 +407,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                Settings.System.HW_KEYS_ENABLED, enabled ? 1 : 0);
 
         if (isKeyDisablerSupported()) {
-            KeyDisabler.setActive(enabled);
+            KeyDisabler.setActive(!enabled);
         }
 
         /* Save/restore button timeouts to disable them in softkey mode */
