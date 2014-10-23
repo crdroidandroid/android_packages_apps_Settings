@@ -908,4 +908,15 @@
     <string name="hw_keys_title">Hardware keys option</string>
     <string name="hw_keys_summary">Check to enable or un-check to disable hardware keys</string>
     
+    <!-- Dynamic system bars -->
+    <string name="dynamic_system_bars_title">Dynamic system bars</string>
+    <string name="dynamic_status_bar_title">Dynamic status bar</string>
+    <string name="dynamic_status_bar_summary">Automatically update the background of the status bar</string>
+    <string name="dynamic_navigation_bar_title">Dynamic navigation bar</string>
+    <string name="dynamic_navigation_bar_summary">Automatically update the background of the navigation bar</string>
+    <string name="dynamic_system_bars_gradient_title">System bar gradient</string>
+    <string name="dynamic_system_bars_gradient_summary">Overlay a gradient on the system bars</string>
+    <string name="dynamic_status_bar_filter_title">Darker status bar</string>
+    <string name="dynamic_status_bar_filter_summary">Overlay a darkening filter on the status bar</string>
+
 </resources>
