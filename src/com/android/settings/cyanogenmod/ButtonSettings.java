@@ -348,9 +348,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mEnableNavigationBar.setChecked(enableNavigationBar);
         mEnableNavigationBar.setOnPreferenceChangeListener(this);
 
+        boolean hwKeysEnabled = Settings.System.getInt(getContentResolver(),
+                Settings.System.HW_KEYS_ENABLED, 1) == 1;
         mHwKeysEnabled = (CheckBoxPreference) findPreference(KEY_HW_KEYS_ENABLED);
-        mHwKeysEnabled.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.HW_KEYS_ENABLED, 0) == 1);
+        mHwKeysEnabled.setChecked(hwKeysEnabled);
         mHwKeysEnabled.setOnPreferenceChangeListener(this);
         if(!getResources().getBoolean(com.android.internal.R.bool.config_hwKeysPref)) {
             PreferenceCategory hwKeysPref = (PreferenceCategory)
@@ -434,7 +435,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
     private void updateDisableHwkeysOption() {
         boolean enabled = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.HW_KEYS_ENABLED, 0) != 0;
+                Settings.System.HW_KEYS_ENABLED, 1) == 1;
 
         mHwKeysEnabled.setChecked(enabled);
 
@@ -479,7 +480,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
 
         updateHwKeysPreferences(context, Settings.System.getInt(context.getContentResolver(),
-                Settings.System.HW_KEYS_ENABLED, 0) != 0);
+                Settings.System.HW_KEYS_ENABLED, 1) == 1);
     }
 
     private ListPreference initActionList(String key, int value) {
@@ -557,7 +558,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mHwKeysEnabled) {
             boolean hWkeysValue = (Boolean) newValue;
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.HW_KEYS_ENABLED, ((Boolean) newValue) ? 1 : 0);
+                    Settings.System.HW_KEYS_ENABLED, hWkeysValue ? 1 : 0);
             updateHwKeysPreferences(getActivity(), hWkeysValue);
             updateDisableHwkeysOption();
             return true;
