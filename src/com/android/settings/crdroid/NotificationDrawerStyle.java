@@ -37,7 +37,7 @@ import android.util.Log;
 import android.view.Display;
 import android.widget.Toast;
 
-import com.android.internal.util.crdroid.DeviceUtils;
+import com.android.internal.util.slim.DeviceUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
