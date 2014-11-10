@@ -3,6 +3,8 @@ package com.android.settings.crdroid;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
+import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.EditTextPreference;
@@ -69,6 +71,15 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.status_bar_clock_style);
         prefSet = getPreferenceScreen();
 
+        PackageManager pm = getPackageManager();
+        Resources systemUiResources;
+        try {
+           systemUiResources = pm.getResourcesForApplication("com.android.systemui");
+        } catch (Exception e) {
+            Log.e(TAG, "can't access systemui resources",e);
+            return null;
+        }
+
         mClockStyle = (ListPreference) findPreference(PREF_ENABLE);
         mClockStyle.setOnPreferenceChangeListener(this);
         mClockStyle.setValue(Integer.toString(Settings.System.getInt(getActivity()
@@ -81,7 +92,13 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
         mClockAmPmStyle.setValue(Integer.toString(Settings.System.getInt(getActivity()
                 .getContentResolver(), Settings.System.STATUSBAR_CLOCK_AM_PM_STYLE,
                 0)));
-        mClockAmPmStyle.setSummary(mClockAmPmStyle.getEntry());
+        boolean is24hour = DateFormat.is24HourFormat(getActivity());
+        if (is24hour) {
+            mClockAmPmStyle.setSummary(R.string.status_bar_am_pm_info);
+        } else {
+            mClockAmPmStyle.setSummary(mClockAmPmStyle.getEntry());
+        }
+        mClockAmPmStyle.setEnabled(!is24hour);
 
         mClockDateDisplay = (ListPreference) findPreference(PREF_CLOCK_DATE_DISPLAY);
         mClockDateDisplay.setOnPreferenceChangeListener(this);
@@ -110,15 +127,6 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
                 getActivity().getApplicationContext().getContentResolver(),
                 Settings.System.STATUS_BAR_CLOCK, 1) == 1));
         mStatusBarClock.setOnPreferenceChangeListener(this);
-
-        try {
-            if (Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.TIME_12_24) == 24) {
-                mClockAmPmStyle.setEnabled(false);
-                mClockAmPmStyle.setSummary(R.string.status_bar_am_pm_info);
-            }
-        } catch (SettingNotFoundException e ) {
-        }
 
         boolean mClockDateToggle = Settings.System.getInt(getActivity().getContentResolver(),
                     Settings.System.STATUSBAR_CLOCK_DATE_DISPLAY, 0) != 0;
