@@ -26,6 +26,12 @@
                     android:targetClass="com.android.settings.deviceinfo.Status" />
         </PreferenceScreen>
 
+        <!-- crDroid Share -->
+        <Preference
+            android:key="share"
+            android:title="@string/share_crdroid_title"
+            android:summary="@string/share_crdroid_summary" />
+
         <!-- Legal Information -->
         <PreferenceScreen
                 android:key="container"
