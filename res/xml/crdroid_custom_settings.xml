@@ -60,6 +60,12 @@
          android:fragment="com.android.settings.crdroid.AnimationSettings"
          android:title="@string/animation_settings_title"/>
 
+    <!-- Ad Blocker -->
+    <PreferenceScreen
+        android:key="hfm_settings"
+        android:title="@string/hfm_pref_screen_title"
+        android:fragment="com.android.settings.crdroid.hfm.HfmSettings" />
+
     <!-- Screen Recorder -->
     <PreferenceScreen
          android:key="screen_recorder"
