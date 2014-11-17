@@ -117,6 +117,13 @@
                 android:persistent="false"
                 android:fragment="com.android.settings.notification.NotificationAccessSettings" />
 
+        <!-- Advanced options -->
+        <PreferenceScreen
+                android:key="advanced_sound_settings"
+                android:title="@string/advanced_sound_title"
+                android:persistent="false"
+                android:fragment="com.android.settings.crdroid.SoundSettings" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
