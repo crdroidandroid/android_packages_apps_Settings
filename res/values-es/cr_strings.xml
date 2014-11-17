@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2012-2014 The crDroid Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen, crDroid version -->
+    <string name="mod_version">Version crDroid</string>
+    <string name="mod_version_default">Descaonocida</string>
+
+    <!-- About phone screen, build date -->
+    <string name="build_date">Fecha construcción</string>
+    <string name="build_date_default">2014-01-01-0000</string>
+
+    <!-- Sound settings -->
+    <string name="advanced_sound_title">Opciones avanzadas</string>
+    <string name="sound_title">Sonido</string>
+
+    <!-- Less Notification sounds -->
+    <string name="notifications_category_title">Notificaciones</string>
+    <string name="less_notification_sounds_title">Sonidos de notificación menos frecuentes</string>
+    <string name="less_notification_sounds_summary">Limite los sonidos de notificación de cada aplicación para sonar una sola vez por un período de tiempo</string>
+    <string name="less_notification_sounds_default">Comportamiento predeterminado</string>
+    <string name="less_notification_sounds_3s">3 segundos</string>
+    <string name="less_notification_sounds_5s">5 segundos</string>
+    <string name="less_notification_sounds_10s">10 segundos</string>
+    <string name="less_notification_sounds_15s">15 segundos</string>
+    <string name="less_notification_sounds_30s">30 segundos</string>
+    <string name="less_notification_sounds_45s">45 segundos</string>
+    <string name="less_notification_sounds_1m">1 minuto</string>
+    <string name="less_notification_sounds_2m">2 minutos</string>
+    <string name="less_notification_sounds_5m">5 minutos</string>
+
+</resources>
