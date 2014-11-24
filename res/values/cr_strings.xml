@@ -93,4 +93,10 @@
     <string name="recents_clear_all_location_right">Top right</string>
     <string name="recents_clear_all_location_left">Top left</string>
 
+    <!-- Notifications on keyguard -->
+    <string name="app_notification_show_on_keyguard_title">Show on lockscreen</string>
+    <string name="app_notification_show_on_keyguard_summary">Show notifications from this app on the lockscreen</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Disable ongoing on lockscreen</string>
+    <string name="app_notification_no_ongoing_on_keyguard_summary">Never show ongoing notifications from this app on the lockscreen</string>
+
 </resources>
