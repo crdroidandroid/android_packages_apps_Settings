@@ -24,6 +24,9 @@
     <string name="build_date">Build date</string>
     <string name="build_date_default">2014-01-01-0000</string>
 
+    <!-- Dashboard header -->
+    <string name="header_category_personalization">Personalization</string>
+
     <!-- General strings -->
     <string name="attention">Attention</string>
     
@@ -69,5 +72,13 @@
     <string name="timeout_1500">1,5 seconds</string>
     <string name="timeout_1000">1 second</string>
     <string name="timeout_500">0,5 second</string>
+
+    <!-- crDroid custom settings -->
+    <string name="crdroid_custom_title">crDroid custom</string>
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+
+    <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Right edge of the status bar pulls down Quick Settings</string>
 
 </resources>
