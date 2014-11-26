@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2012-2014 The crDroid Android Project
+     Copyright (C) 2014 crDroid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -29,6 +29,11 @@
 
     <!-- General strings -->
     <string name="attention">Attention</string>
+
+    <!-- crDroid custom settings -->
+    <string name="crdroid_custom_title">crDroid custom</string>
+    <string name="status_bar_settings">Status bar settings</string>
+    <string name="recents_panel_settings">Recents panel settings</string>
     
     <!-- Sound settings -->
     <string name="advanced_sound_title">Advanced options</string>
@@ -73,12 +78,19 @@
     <string name="timeout_1000">1 second</string>
     <string name="timeout_500">0,5 second</string>
 
-    <!-- crDroid custom settings -->
-    <string name="crdroid_custom_title">crDroid custom</string>
+    <!-- Brightness adjust -->
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
+    <!-- Quick pulldown -->
     <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
     <string name="status_bar_quick_qs_pulldown_summary">Right edge of the status bar pulls down Quick Settings</string>
+
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Clear all recents button</string>
+    <string name="show_clear_all_recents_button_summary">Show clear all button on recents panel</string>
+    <string name="recents_clear_all_location_title">Clear all recents location</string>
+    <string name="recents_clear_all_location_right">Top right</string>
+    <string name="recents_clear_all_location_left">Top left</string>
 
 </resources>

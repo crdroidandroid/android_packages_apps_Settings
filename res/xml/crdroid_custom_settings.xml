@@ -18,16 +18,41 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/status_bar_title">
 
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-        android:key="status_bar_brightness_control"
-        android:title="@string/status_bar_toggle_brightness"
-        android:summary="@string/status_bar_toggle_brightness_summary"
-        android:defaultValue="false" />
+    <PreferenceCategory
+        android:key="status_bar"
+        android:title="@string/status_bar_settings" >
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="status_bar_brightness_control"
+            android:title="@string/status_bar_toggle_brightness"
+            android:summary="@string/status_bar_toggle_brightness_summary"
+            android:defaultValue="false" />
 
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-        android:key="status_bar_quick_qs_pulldown"
-        android:title="@string/status_bar_quick_qs_pulldown_title"
-        android:summary="@string/status_bar_quick_qs_pulldown_summary"
-        android:defaultValue="true" />
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="status_bar_quick_qs_pulldown"
+            android:title="@string/status_bar_quick_qs_pulldown_title"
+            android:summary="@string/status_bar_quick_qs_pulldown_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="recents_panel"
+        android:title="@string/recents_panel_settings" >
+
+        <SwitchPreference
+            android:key="show_clear_all_recents"
+            android:title="@string/show_clear_all_recents_button_title"
+            android:summary="@string/show_clear_all_recents_button_summary"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="recents_clear_all_location"
+            android:title="@string/recents_clear_all_location_title"
+            android:entries="@array/recents_clear_all_location_entries"
+            android:entryValues="@array/recents_clear_all_location_values"
+            android:defaultValue="0"
+            android:dependency="show_clear_all_recents" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
