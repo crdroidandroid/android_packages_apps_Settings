@@ -61,4 +61,8 @@
     <string name="su_indicator_summary_on">Superuser indicator is visible when a session is active</string>
     <string name="su_indicator_summary_off">Toggle to show superuser indicator when a session is active</string>
 
+    <!-- About device screen, CPU and RAM info. -->
+    <string name="cpu_info">CPU</string>
+    <string name="mem_info">RAM</string>
+
 </resources>
