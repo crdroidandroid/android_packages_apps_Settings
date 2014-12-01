@@ -89,6 +89,20 @@
                 settings:allowDividerAbove="true"
                 settings:allowDividerBelow="true"/>
 
+        <!-- Device mem info -->
+        <Preference android:key="device_memory"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/mem_info"
+                android:summary="@string/device_info_default"/>
+
+        <!-- Device soc processor -->
+        <Preference android:key="device_processor"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/processor_info"
+                android:summary="@string/device_info_default"/>
+
         <!-- Device firmware version -->
         <Preference android:key="firmware_version"
                 android:enabled="false"
