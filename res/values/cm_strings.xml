@@ -362,7 +362,7 @@
     <string name="notification_light_voicemail_title">Voicemail</string>
 
     <!-- Sound & notification > Sound section: Title for the option defining the default notification ringtone. [CHAR LIMIT=30] -->
-    <string name="notification_ringtone_title_cm">Notification ringtone</string>
+    <string name="notification_ringtone_title_cm">Notification tone</string>
 
     <!-- App ops -->
     <string name="app_ops_summaries_coarse_location">coarse location</string>
