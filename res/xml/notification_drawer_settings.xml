@@ -67,6 +67,11 @@
             android:summary="@string/qs_advanced_location_summary"
             android:defaultValue="false" />
 
+        <SwitchPreference
+            android:key="block_on_secure_keyguard"
+            android:title="@string/block_on_secure_keyguard_title"
+            android:summary="@string/block_on_secure_keyguard_summary" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
