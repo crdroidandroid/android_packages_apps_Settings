@@ -44,12 +44,17 @@ public class LockcrDroid extends SettingsPreferenceFragment
 
     private static final String TAG = "LockcrDroid";
 
+    private static final String KEY_LOCKCLOCK = "lock_clock";
+    public static final String LOCKCLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
+
     private static final String KEY_LOCKSCREEN_CAMERA_WIDGET_HIDE = "camera_widget_hide";
     private static final String KEY_LOCKSCREEN_DIALER_WIDGET_HIDE = "dialer_widget_hide";
 
     private PreferenceScreen mLockScreen;
     private SwitchPreference mCameraWidgetHide;
     private SwitchPreference mDialerWidgetHide;
+
+    private Preference mLockClock;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -83,6 +88,12 @@ public class LockcrDroid extends SettingsPreferenceFragment
         mDialerWidgetHide.setOnPreferenceChangeListener(this);
         if (!Utils.isVoiceCapable(getActivity())){
             mLockScreen.removePreference(mDialerWidgetHide);
+        }
+
+        // cLock app check
+        mLockClock = (Preference) prefSet.findPreference(KEY_LOCKCLOCK);
+        if (!Helpers.isPackageInstalled(LOCKCLOCK_PACKAGE_NAME, pm)) {
+            prefSet.removePreference(mLockClock);
         }
     }
 
