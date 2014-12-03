@@ -25,22 +25,34 @@ import android.content.res.Resources;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
+import android.preference.ListPreference;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SwitchPreference;
+import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.util.Helpers;
+import com.android.settings.Utils;
 
 public class LockcrDroid extends SettingsPreferenceFragment
-        implements OnSharedPreferenceChangeListener {
+        implements OnSharedPreferenceChangeListener,
+        Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "LockcrDroid";
+
+    private static final String KEY_LOCKCLOCK = "lock_clock";
+    public static final String LOCKCLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
 
     private static final String KEY_LOCKSCREEN_CAMERA_WIDGET_HIDE = "camera_widget_hide";
 
     private PreferenceScreen mLockScreen;
     private SwitchPreference mCameraWidgetHide;
+
+    private Preference mLockClock;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -48,6 +60,7 @@ public class LockcrDroid extends SettingsPreferenceFragment
 
         addPreferencesFromResource(R.xml.crdroid_lockscreen);
 
+        ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
         PackageManager pm = getPackageManager();
         Resources res = getResources();
@@ -64,6 +77,12 @@ public class LockcrDroid extends SettingsPreferenceFragment
         }
         if (mCameraDisabled){
             mLockScreen.removePreference(mCameraWidgetHide);
+        }
+
+        // cLock app check
+        mLockClock = (Preference) prefSet.findPreference(KEY_LOCKCLOCK);
+        if (!Helpers.isPackageInstalled(LOCKCLOCK_PACKAGE_NAME, pm)) {
+            prefSet.removePreference(mLockClock);
         }
     }
 
