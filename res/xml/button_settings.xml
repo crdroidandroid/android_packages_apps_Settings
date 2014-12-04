@@ -30,6 +30,18 @@
         android:dependency="enable_nav_bar" />
 
     <PreferenceCategory
+        android:key="hw_keys"
+        android:title="@string/hw_keys_title">
+
+        <SwitchPreference
+            android:key="enable_hw_keys"
+            android:title="@string/hw_keys_title"
+            android:summary="@string/hw_keys_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="power_key"
         android:title="@string/hardware_keys_power_key_title" >
 
