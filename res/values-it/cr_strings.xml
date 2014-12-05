@@ -29,7 +29,8 @@
 
     <!-- General strings -->
     <string name="attention">Attenzione</string>
-
+    <string name="reset">Ripristina</string>
+    
     <!-- crDroid custom settings -->
     <string name="crdroid_custom_title">Modifiche crDroid</string>
     <string name="status_bar_settings">Opzioni Barra di Stato</string>
@@ -98,5 +99,32 @@
     <string name="app_notification_show_on_keyguard_summary">Mostra le notifiche della app nella schermata di blocco</string>
     <string name="app_notification_no_ongoing_on_keyguard_title">Disabilita nella schermata di blocco</string>
     <string name="app_notification_no_ongoing_on_keyguard_summary">Nascondi le notifiche della app nella schermata di blocco</string>
+
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="title_quick_pulldown">Impostazioni Veloci</string>
+    <string name="summary_quick_pulldown">In alto a %1$s della barra di stato scende la tendina delle Impostazioni Veloci</string>
+    <string name="quick_pulldown_off">Spento</string>
+    <string name="quick_pulldown_left">Sinistra</string>
+    <string name="quick_pulldown_right">Destra</string>
+    <string name="block_on_secure_keyguard_title">Disattiva nella schermata di blocco</string>
+    <string name="block_on_secure_keyguard_summary">Disattiva  le Impostazioni Veloci nella schermata di blocco</string>
+    <!-- Navigation bar -->
+    <string name="navbar_enable_bar_title">Attiva Barra di Navigazione a schermo</string>
+    <string name="navbar_enable_bar_summary">Attiva la Barra di Navigazione a schermoe disattiva i pulsanti fisici</string>
+    <string name="navbar_style_dimen_title">Dimensioni Barra</string>
+    <string name="navbar_dimensions_reset_message">Ripristinare le dimensioni originarie?</string>
+    <string name="navigation_bar_height_title">Altezza</string>
+    <string name="navigation_bar_height_summary"Altezza della barra di navigazione in modalità ritratto</string>
+    <string name="navigation_bar_width_title">Larghezza</string>
+    <string name="navigation_bar_width_summary">Dimensione della barra di navigazione, disposta sul lato lungo</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (predefinito)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (predefinito)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (spenta)</string>
 
 </resources>
