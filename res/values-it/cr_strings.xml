@@ -114,7 +114,7 @@
     <string name="navbar_style_dimen_title">Dimensioni Barra</string>
     <string name="navbar_dimensions_reset_message">Ripristinare le dimensioni originarie?</string>
     <string name="navigation_bar_height_title">Altezza</string>
-    <string name="navigation_bar_height_summary"Altezza della barra di navigazione in modalità ritratto</string>
+    <string name="navigation_bar_height_summary">Altezza della barra di navigazione in modalità ritratto</string>
     <string name="navigation_bar_width_title">Larghezza</string>
     <string name="navigation_bar_width_summary">Dimensione della barra di navigazione, disposta sul lato lungo</string>
     <string name="navigation_bar_size_42_dp_default">42 dp (predefinito)</string>
