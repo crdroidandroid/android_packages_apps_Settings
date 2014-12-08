@@ -27,7 +27,7 @@ import android.util.Log;
 import com.android.settings.DisplaySettings;
 import com.android.settings.R;
 import com.android.settings.Utils;
-import com.android.settings.ButtonSettings;
+import com.android.settings.cyanogenmod.ButtonSettings;
 import com.android.settings.hardware.DisplayColor;
 import com.android.settings.hardware.DisplayGamma;
 import com.android.settings.hardware.VibratorIntensity;
