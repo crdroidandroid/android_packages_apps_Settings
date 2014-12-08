@@ -113,8 +113,8 @@
 
     <!-- Navigation bar -->
     <string name="nav_bar_title">Navigation bar</string>
-    <string name="navbar_enable_bar_title">Enable on-screen nav bar</string>
-    <string name="navbar_enable_bar_summary">Enable on-screen nav bar and disable hardware buttons</string>
+    <string name="navbar_enable_bar_title">Navigation bar buttons</string>
+    <string name="navbar_enable_bar_summary">Enable on-screen nav bar buttons</string>
     <string name="navbar_style_dimen_title">Nav bar dimensions</string>
     <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
     <string name="navigation_bar_height_title">Navigation bar height</string>
