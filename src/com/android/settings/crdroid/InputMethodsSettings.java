@@ -45,7 +45,6 @@ public class InputMethodsSettings extends SettingsPreferenceFragment implements
 
     private static final String PREF_DISABLE_FULLSCREEN_KEYBOARD = "disable_fullscreen_keyboard";
     private static final String KEY_IME_SWITCHER = "status_bar_ime_switcher";
-    private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
     private static final String KEYBOARD_ROTATION_TOGGLE = "keyboard_rotation_toggle";
     private static final String KEYBOARD_ROTATION_TIMEOUT = "keyboard_rotation_timeout";
     private static final String SHOW_ENTER_KEY = "show_enter_key";
@@ -54,7 +53,6 @@ public class InputMethodsSettings extends SettingsPreferenceFragment implements
 
     private SwitchPreference mDisableFullscreenKeyboard;
     private SwitchPreference mStatusBarImeSwitcher;
-    private ListPreference mVolumeKeyCursorControl;
     private SwitchPreference mKeyboardRotationToggle;
     private ListPreference mKeyboardRotationTimeout;
     private SwitchPreference mShowEnterKey;
@@ -80,14 +78,6 @@ public class InputMethodsSettings extends SettingsPreferenceFragment implements
                 mStatusBarImeSwitcher = (SwitchPreference) keyImeSwitcherPref;
                 mStatusBarImeSwitcher.setOnPreferenceChangeListener(this);
             }
-        }
-
-        mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
-        if(mVolumeKeyCursorControl != null) {
-            mVolumeKeyCursorControl.setValue(Integer.toString(Settings.System.getInt(
-                    getContentResolver(), Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0)));
-            mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntry());
-            mVolumeKeyCursorControl.setOnPreferenceChangeListener(this);
         }
 
         mKeyboardRotationToggle = (SwitchPreference) findPreference(KEYBOARD_ROTATION_TOGGLE);
@@ -129,15 +119,7 @@ public class InputMethodsSettings extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mVolumeKeyCursorControl) {
-            String volumeKeyCursorControl = (String) objValue;
-            int val = Integer.parseInt(volumeKeyCursorControl);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.VOLUME_KEY_CURSOR_CONTROL, val);
-            int index = mVolumeKeyCursorControl.findIndexOfValue(volumeKeyCursorControl);
-            mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntries()[index]);
-            return true;
-        } else if (preference == mDisableFullscreenKeyboard) {
+        if (preference == mDisableFullscreenKeyboard) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.DISABLE_FULLSCREEN_KEYBOARD,  (Boolean) objValue ? 1 : 0);
             return true;
