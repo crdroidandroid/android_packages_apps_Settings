@@ -30,11 +30,14 @@
     <!-- General strings -->
     <string name="attention">Attenzione</string>
     <string name="reset">Ripristina</string>
-    
+    <string name="default_string">Predefinite</string>
+    <string name="help">Aiuto</string>
+
     <!-- crDroid custom settings -->
     <string name="crdroid_custom_title">Modifiche crDroid</string>
     <string name="status_bar_settings">Opzioni Barra di Stato</string>
     <string name="recents_panel_settings">Opzioni Pannello Recenti</string>
+    <string name="reset_message">Ripristinare i valori predefiniti?</string>
     
     <!-- Sound settings -->
     <string name="advanced_sound_title">Opzioni avanzate</string>
@@ -59,9 +62,6 @@
     <string name="title_keyboard_input">Opzioni Avanzate</string>
     <string name="disable_fullscreen_keyboard_title">Disabilita tastiera a schermo intero</string>
     <string name="disable_fullscreen_keyboard_summary">La tastiera in modalità panorama non occuperà tutto lo schermo</string>
-    <string name="volume_key_cursor_control_title">Controllo cursore coi tasti volume</string>
-    <string name="volume_key_cursor_control_on">Volume su/giù sposta il cursore a sinistra/destra</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume su/giù sposta il cursore a destra/sinistra</string>
     <string name="keyboard_rotation_toggle_title">Rotazione Automatica tastiera</string>
     <string name="keyboard_rotation_toggle_summary">Forza la rotazione automatica quando usi la tastiera</string>
     <string name="keyboard_rotation_timeout_title">Timeout rotazione automatica</string>
@@ -106,9 +106,12 @@
     <string name="quick_pulldown_off">Spento</string>
     <string name="quick_pulldown_left">Sinistra</string>
     <string name="quick_pulldown_right">Destra</string>
+    
     <string name="block_on_secure_keyguard_title">Disattiva nella schermata di blocco</string>
     <string name="block_on_secure_keyguard_summary">Disattiva  le Impostazioni Veloci nella schermata di blocco</string>
+    
     <!-- Navigation bar -->
+    <string name="nav_bar_title">Barra di Navigazione</string>
     <string name="navbar_enable_bar_title">Attiva Barra di Navigazione a schermo</string>
     <string name="navbar_enable_bar_summary">Attiva la Barra di Navigazione a schermoe disattiva i pulsanti fisici</string>
     <string name="navbar_style_dimen_title">Dimensioni Barra</string>
@@ -126,5 +129,19 @@
     <string name="navigation_bar_size_40_dp">40 dp</string>
     <string name="navigation_bar_size_42_dp">42 dp</string>
     <string name="navigation_bar_size_0_dp">0 dp (spenta)</string>
+    
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">Tasti Fisici</string>
+    <string name="hw_keys_summary">Abilita i tasti fisici</string>
+    
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Selettore Colore</string>
+    <string name="press_color_to_apply">Premi un colore per applicare</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Ok</string>
+    <string name="color_default">Predefinito</string>
 
-</resources>
+    </resources>
