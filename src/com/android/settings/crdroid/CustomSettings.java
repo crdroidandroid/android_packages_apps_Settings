@@ -49,6 +49,7 @@ public class CustomSettings extends SettingsPreferenceFragment implements
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String KEY_STATUS_BAR_TICKER = "status_bar_ticker_enabled";
+    private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
 
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
@@ -56,6 +57,7 @@ public class CustomSettings extends SettingsPreferenceFragment implements
     private ListPreference mSmartPulldown;
     private SwitchPreference mBlockOnSecureKeyguard;
     private SwitchPreference mTicker;
+    private ListPreference mStatusBarBattery;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -119,6 +121,13 @@ public class CustomSettings extends SettingsPreferenceFragment implements
         mTicker.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_TICKER_ENABLED, tickerEnabled ? 1 : 0) == 1);
         mTicker.setOnPreferenceChangeListener(this);
+
+        mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
+        int batteryStyle = Settings.System.getInt(
+                resolver, Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0);
+        mStatusBarBattery.setValue(String.valueOf(batteryStyle));
+        mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
+        mStatusBarBattery.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -161,6 +170,13 @@ public class CustomSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_TICKER_ENABLED,
                     (Boolean) objValue ? 1 : 0);
+            return true;
+        } else if (preference == mStatusBarBattery) {
+            int batteryStyle = Integer.valueOf((String) objValue);
+            int index = mStatusBarBattery.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, batteryStyle);
+            mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
             return true;
         }
         return false;

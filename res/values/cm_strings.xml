@@ -202,7 +202,6 @@
     <string name="color_enhancement_title">Color enhancement</string>
     <string name="color_enhancement_summary">Dynamically enhance the color of the display</string>
 
-    <string name="show_battery_percent_title">Show battery percentage</string>
     <string name="app_security_title">App security</string>
 
     <!-- Blacklist preferences -->

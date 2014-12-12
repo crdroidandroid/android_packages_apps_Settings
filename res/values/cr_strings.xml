@@ -327,4 +327,11 @@
     <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Enabled</string>
 
+    <!-- Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Show battery percentage</string>
+    <string name="status_bar_battery_percentage_dialog_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+
 </resources>
