@@ -132,13 +132,6 @@
                 android:persistent="false"
                 android:fragment="com.android.settings.notification.NotificationAccessSettings" />
 
-        <!-- Advanced options -->
-        <PreferenceScreen
-                android:key="advanced_sound_settings"
-                android:title="@string/advanced_sound_title"
-                android:persistent="false"
-                android:fragment="com.android.settings.crdroid.SoundSettings" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -158,6 +151,19 @@
                 android:entries="@array/heads_up_time_out_entries"
                 android:entryValues="@array/heads_up_time_out_values"
                 android:persistent="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="advanced"
+        android:title="@string/advanced_title" >
+
+        <!-- Advanced options -->
+        <PreferenceScreen
+                android:key="advanced_sound_settings"
+                android:title="@string/advanced_sound_title"
+                android:persistent="false"
+                android:fragment="com.android.settings.crdroid.SoundSettings" />
 
     </PreferenceCategory>
 

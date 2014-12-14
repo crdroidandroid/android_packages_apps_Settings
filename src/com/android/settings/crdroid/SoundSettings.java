@@ -20,6 +20,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
@@ -32,6 +33,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SoundSettings";
 
+    private static final String CATEGORY_ADVANCED = "advanced";
     private static final String PREF_LESS_NOTIFICATION_SOUNDS = "less_notification_sounds";
 
     private ListPreference mAnnoyingNotifications;
@@ -41,6 +43,11 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.crdroid_sound_settings);
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        final PreferenceCategory advancedCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_ADVANCED);
 
         mAnnoyingNotifications = (ListPreference) findPreference(PREF_LESS_NOTIFICATION_SOUNDS);
         int notificationThreshold = Settings.System.getInt(getContentResolver(),

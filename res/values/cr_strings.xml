@@ -39,8 +39,9 @@
     <string name="recents_panel_settings">Recents panel settings</string>
     <string name="reset_message">Reset all entries to default?</string>
     
-    <!-- Sound settings -->
-    <string name="advanced_sound_title">Advanced options</string>
+    <!-- Advanced sound settings -->
+    <string name="advanced_title">Advanced options</string>
+    <string name="advanced_sound_title">Advanced</string>
     <string name="sound_title">Sound</string>
 
     <!-- Less Notification sounds -->
