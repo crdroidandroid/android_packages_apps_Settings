@@ -64,4 +64,10 @@
         android:summary="@string/su_indicator_summary"
         android:defaultValue="true" />
 
+    <PreferenceScreen
+        android:key="network_traffic_state"
+        android:fragment="com.android.settings.crdroid.NetworkTraffic"
+	android:summary="@string/network_traffic_summary"
+	android:title="@string/network_traffic_title" />
+
 </PreferenceScreen>
