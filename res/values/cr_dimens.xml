@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Gesture Anywhere -->
+    <dimen name="ga_gesture_thumbnail_inset">8dip</dimen>
+    <dimen name="ga_gesture_thumbnail_size">64dip</dimen>
+    <dimen name="shortcut_picker_left_padding">70dip</dimen>
+
+</resources>
