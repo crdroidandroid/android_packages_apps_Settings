@@ -27,6 +27,12 @@
             android:fragment="com.android.settings.crdroid.StatusBarClockStyle"
             android:title="@string/status_bar_clock" />
 
+        <PreferenceScreen
+            android:key="network_traffic_state"
+            android:fragment="com.android.settings.crdroid.NetworkTraffic"
+	    android:summary="@string/network_traffic_summary"
+	    android:title="@string/network_traffic_title" />
+
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="status_bar_brightness_control"
             android:title="@string/status_bar_toggle_brightness"

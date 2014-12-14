@@ -15,6 +15,7 @@
 -->
 
 <resources>
+
      <!-- For DSLV -->
     <declare-styleable name="DragSortListView">
         <attr name="collapsedHeight" format="dimension" />
@@ -43,4 +44,12 @@
         <attr name="clickRemoveId" format="integer" />
         <attr name="useDefaultController" format="boolean" />
     </declare-styleable>
+
+    <!-- SeekBar -->
+    <declare-styleable name="SeekBarPreference">
+        <attr name="interval" format="integer" />
+        <attr name="unitsLeft" format="string" />
+        <attr name="unitsRight" format="string" />
+    </declare-styleable>
+
 </resources>
