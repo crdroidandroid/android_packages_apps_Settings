@@ -40,7 +40,8 @@
     <string name="reset_message">Ripristinare i valori predefiniti?</string>
     
     <!-- Sound settings -->
-    <string name="advanced_sound_title">Opzioni avanzate</string>
+    <string name="advanced_title">Opzioni avanzate</string>
+    <string name="advanced_sound_title">Avanzate</string>
     <string name="sound_title">Suoni</string>
 
     <!-- Less Notification sounds -->
@@ -143,5 +144,82 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Ok</string>
     <string name="color_default">Predefinito</string>
+    
+     <!-- Status bar | Clock -->
+     <string name="status_bar_clock">Data e Ora</string>
+     <string name="status_bar_clock_title">Stile data e ora</string>
+     <string name="clock_title_enable">Allineamento</string>
+     <string name="clock_enabled">Abilitato</string>
+     <string name="clock_disabled">Disabilitato</string>
+     <string name="clock_color_title">Colore</string>
+     <string name="status_bar_clock_style_reset">Ripristina colore</string>
+     <string name="status_bar_show_clock_title">Mostra ora e data</string>
+     <string name="status_bar_am_pm_title">AM/PM</string>
+     <string name="status_bar_am_pm_info">Modalità 24 ore attivata</string>
+     <string name="enable_clock_weekday">Giorno della settimana</string>
+     <string name="enable_clock_weekday_summary">Nome del giorno abbreviato accanto alle ore</string>
+     <string name="right_clock">Mostra le ore a destra</string>
+     <string name="center_clock">Mostra le ore centrate</string>
+     <string name="dont_show">Nascondi</string>
+     <string name="clock_date_display">Data</string>
+     <string name="clock_date_display_summary">Mostra la data personalizzata prima dell\'ora</string>
+     <string name="clock_date_style">Stile data</string>
+     <string name="clock_date_format">Formato data</string>
+     <string name="clock_date_string_edittext_title">deve essere nel formato Data es. dd/MM/yy</string>
+     <string name="clock_date_string_edittext_summary">Inserisci testo</string>
+     <string name="am_pm_clock_normal">Dimensione font normale</string>
+     <string name="am_pm_clock_small">Dimensione font piccola</string>
+     <string name="am_pm_clock_none">Nascondi</string>
+     <string name="clock_date_display_none">Nascondi</string>
+     <string name="clock_date_display_small">Dimensione font piccola</string>
+     <string name="clock_date_display_normal">Dimensione font normale</string>
+     <string name="clock_date_style_normal">Normale</string>
+     <string name="clock_date_style_lowercase">Usa minuscolo</string>
+     <string name="clock_date_style_uppercase">Usa Maiuscolo</string>
+     <string name="clock_date_format_custom">Formato personalizzato</string>
+     <string name="status_bar_clock_style_reset_message">Reimpostare colore ore?</string>
 
-    </resources>
+     <!-- QuickSettings: Smart Pulldown -->
+     <string name="smart_pulldown_title">Tendina Smart</string>
+     <string name="smart_pulldown_summary">Apri le Impostazioni Veloci quando le notifiche non sono %1$s</string>
+     <string name="smart_pulldown_off">Attivate</string>
+     <string name="smart_pulldown_dismissable">eliminabili</string>
+     <string name="smart_pulldown_persistent">persistenti</string>
+     <string name="smart_pulldown_all">eliminabili o persistenti</string>
+
+     <!-- Status bar ticker -->
+     <string name="status_bar_ticker_title">Notifiche animate</string>
+     <string name="status_bar_ticker_summary">Testo di notifica animato nella barra di stato</string>
+
+     <!--Quick unlock -->
+     <string name="unlock_quick_unlock_control_title">Sblocco Rapido</string>
+     <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando vengono inseriti correttamente PIN/password</string>
+
+     <!-- Lockscreen pin shuffle -->
+     <string name="lock_numpad_random_title">Cambia l\'ordine dei numeri sul PIN pad</string>
+     <string name="lock_numpad_random_dialog_title">Ordina i numeri del PIN pad a random</string>
+     <string name="lock_numpad_random_off">Disattivato</string>
+     <string name="lock_numpad_random_always">Sempre</string>
+     <string name="lock_numpad_random_on_request">A richiesta</string>
+     
+     <!-- Slim lockscreen shortcuts -->
+     <string name="shortcut_action_none">Nessuno</string>
+     <string name="shortcut_action_app">App personalizzata</string>
+     <string name="shortcut_action_home">Home</string>
+     <string name="shortcut_action_back">Indietro</string>
+     <string name="shortcut_action_menu">Menu</string>
+     <string name="shortcut_action_ime">Apri IME Switcher</string>
+     <string name="shortcut_action_power_menu">Menu pulsante di accensione</string>
+     <string name="shortcut_action_recent">Recenti</string>
+     <string name="shortcut_action_power">Spegni schermo</string>
+     <string name="shortcut_action_search">Cerca tra le app</string>
+     <string name="shortcut_action_ring_vib">Suona/Vibra</string>
+     <string name="shortcut_action_ring_silent">Suona/Silenzioso</string>
+     <string name="shortcut_action_ring_vib_silent">Suona/Vibra/Silenzioso</string>
+     <string name="shortcut_action_camera">Fotocamera</string>
+     <string name="shortcut_action_media_next">Musica - traccia succ.</string>
+     <string name="shortcut_action_media_play_pause">Musica - avvia/pausa</string>
+     <string name="shortcut_action_media_previous">Music - traccia prec.</string>
+     <string name="shortcut_action_wake_device">Risveglia dispositivo</string>
+     
+     </resources>
