@@ -35,7 +35,7 @@
 
     <!-- crDroid custom settings -->
     <string name="crdroid_custom_title">crDroid custom</string>
-    <string name="extras_crdroid_settings">crDroid extras</string>
+    <string name="extras_crdroid_settings">Extras</string>
     <string name="status_bar_settings">Status bar settings</string>
     <string name="recents_panel_settings">Recents panel settings</string>
     <string name="reset_message">Reset all entries to default?</string>
