@@ -69,6 +69,7 @@ public class CustomSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mBlockOnSecureKeyguard;
     private SwitchPreference mTicker;
     private ListPreference mStatusBarBattery;
+    private ListPreference mStatusBarBatteryShowPercent;
 
     @Override
     public void onCreate(Bundle icicle) {
