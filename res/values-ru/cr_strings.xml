@@ -35,12 +35,14 @@
 
     <!-- crDroid custom settings -->
     <string name="crdroid_custom_title">Настройки crDroid</string>
+    <string name="extras_crdroid_settings">Дополнительно</string>
     <string name="status_bar_settings">Настройки строки состояния</string>
     <string name="recents_panel_settings">Настройки \"Недавних приложений\"</string>
     <string name="reset_message">Сбросить все параметры на значения по умолчанию?</string>
-    
-    <!-- Sound settings -->
-    <string name="advanced_sound_title">Расширенные настройки</string>
+
+    <!-- Advanced sound settings -->
+    <string name="advanced_title">Расширенные настройки</string>
+    <string name="advanced_sound_title">Расширенные</string
     <string name="sound_title">Звук</string>
 
     <!-- Less Notification sounds -->
@@ -325,5 +327,171 @@
     <string name="backlight_summary_disabled">Выключена</string>
     <string name="backlight_summary_enabled_with_timeout">Включена <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Включена всегда</string>
+    
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Стиль индикатора батареи</string>
+    <string name="status_bar_battery_style_icon_portrait">Вертикальная иконка</string>
+    <string name="status_bar_battery_style_icon_landscape">Горизонтальная иконка</string>
+    <string name="status_bar_battery_style_circle">Круг</string>
+    <string name="status_bar_battery_style_text">Текст</string>
+    <string name="status_bar_battery_style_hidden">Не показывать</string>
+
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Показывать проценты батареи</string>
+    <string name="status_bar_battery_percentage_dialog_title">Проценты батареи</string>
+    <string name="status_bar_battery_percentage_default">Скрыты (по умолчанию)</string>
+    <string name="status_bar_battery_percentage_text_inside">Внутри иконки</string>
+    <string name="status_bar_battery_percentage_text_next">Около иконки</string>
+    
+    <!-- About device screen, CPU and RAM info. -->
+    <string name="cpu_info">Процессор</string>
+    <string name="mem_info">Память</string>
+    
+    <!-- Heads up -->
+    <string name="heads_up_title">Уведомления \"поверх\"</string>
+    <string name="app_notification_enable_heads_up_title">Показывать уведомления \"поверх\"</string>
+    <string name="app_notification_enable_heads_up_summary">Показывать уведомления от этого приложения как уведомления \"поверх\"</string>
+    <string name="heads_up_snooze_title">Длительность \"отложить\"</string>
+    <string name="heads_up_snooze_summary">При нажатии кнопки \"Отложить\" уведомления \"поверх\" будут приостановлены на <xliff:g id="number">%d</xliff:g> минут</string>
+    <string name="heads_up_snooze_disabled_summary">Функция \"Отложить\" отключена</string>
+    <string name="heads_up_snooze_3min">3 минуты</string>
+    <string name="heads_up_snooze_5min">5 минут</string>
+    <string name="heads_up_snooze_10min">10 минут</string>
+    <string name="heads_up_snooze_15min">15 минут</string>
+    <string name="heads_up_snooze_20min">20 минут</string>
+    <string name="heads_up_time_out_title">Длительность</string>
+    <string name="heads_up_time_out_summary">Уведомление \"поверх\" будет показываться в течение <xliff:g id="number">%d</xliff:g> секунд</string>
+    <string name="heads_up_time_out_never_summary">Уведомление \"поверх\" будет показываться, пока не будет закрыто</string>
+    <string name="heads_up_time_out_4sec">4 секунды</string>
+    <string name="heads_up_time_out_6sec">6 секунд</string>
+    <string name="heads_up_time_out_8sec">8 секунд</string>
+    <string name="heads_up_time_out_10sec">10 секунд</string>
+    <string name="heads_up_time_out_never">Никогда</string>
+    
+    <!-- Unaccounted and overcounted battery stats -->
+    <string name="show_unac_and_overcounted_stats_title">Показывать неучтенные (прочие) данные статистики батареи</string>
+    <string name="show_unac_and_overcounted_stats_summary">Показывать данные статистики батареи, которые не относятся ни к чему конкретному и обычно попадают в прочее</string>
+    
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Индикатор сетевого трафика</string>
+    <string name="show_network_traffic_state">Показывать скорость передачи данных</string>
+    <string name="network_traffic_summary">Настройка индикатора сетевого трафика в строке состояния</string>
+    <string name="show_network_traffic_unit">Единицы измерения</string>
+    <string name="show_network_traffic_frequency">Частота обновления</string>
+    <string name="show_network_traffic_disable">Отключено</string>
+    <string name="show_network_traffic_up">Исходящий</string>
+    <string name="show_network_traffic_down">Входящий</string>
+    <string name="show_network_traffic_all">Исходящий и входящий</string>
+    <string name="show_network_traffic_bit">Бит в секунду</string>
+    <string name="show_network_traffic_byte">Байт в секунду</string>
+    <string name="show_network_traffic_500">500 мс</string>
+    <string name="show_network_traffic_1000">1000 мс</string>
+    <string name="show_network_traffic_1500">1500 мс</string>
+    <string name="show_network_traffic_2000">2000 мс</string>
+    <string name="network_traffic_autohide">Скрывать автоматически</string>
+    <string name="network_traffic_autohide_summary">Скрывать индикатор сетевого трафика, когда сеть неактивна</string>
+    <string name="network_traffic_autohide_threshold">Порог неактивности</string>
+    
+    <!-- Battery saver -->
+    <string name="battery_saver_title">Цвет предупреждения</string>
+    <string name="battery_saver_style_reset_message">Сбросить цвет предупреждения о режиме энергосбережения?</string>
+    
+    <!-- Lock Gesture settings -->
+    <string name="lockgesture_change_lock_pattern_label">Изменить жест разблокировки</string>
+    <string name="lockgesture_change_lock_pin_label">Изменить PIN разблокировки</string>
+    <string name="lockgesture_need_to_unlock">Подтвердите сохранение жеста</string>
+    <string name="lockgesture_need_to_unlock_wrong">Попробуйте еще раз:</string>
+    <string name="lockgesture_recording_intro_header">Нарисуйте жест разблокировки:</string>
+    <string name="lockgesture_recording_intro_footer">Нажмите \"Меню\" для помощи.</string>
+    <string name="lockgesture_recording_inprogress">Отпустите палец, когда закончите.</string>
+    <string name="lockgesture_pattern_entered_header">Жест записан.</string>
+    <string name="lockgesture_need_to_confirm">Нарисуйте жест еще раз для подтверждения:</string>
+    <string name="lockgesture_pattern_confirmed_header">Ваш новый жест разблокировки:</string>
+    <string name="lockgesture_confirm_button_text">Подтвердить</string>
+    <string name="lockgesture_restart_button_text">Перерисовать</string>
+    <string name="lockgesture_retry_button_text">Повторить</string>
+    <string name="lockgesture_continue_button_text">Продолжить</string>
+    <string name="lockgesture_settings_title">Жест разблокировки</string>
+    <string name="lockgesture_settings_enable_title">Требовать жест</string>
+    <string name="lockgesture_settings_enable_summary">Нужно нарисовать жест, чтобы разблокировать экран</string>
+    <string name="lockgesture_settings_enable_visible_pattern_title">Сделать жест видимым</string>
+    <string name="lockgesture_settings_enable_power_button_instantly_locks">Мгновенная блокировка кнопкой питания</string>
+    <string name="lockgesture_settings_choose_lock_pattern">Установить жест разблокировки</string>
+    <string name="lockgesture_settings_change_lock_pattern">Изменить жест разблокировки</string>
+    <string name="lockgesture_settings_help_how_to_record">Как нарисовать жест разблокировки</string>
+    <string name="lockgesture_too_many_failed_confirmation_attempts_header">Слишком много неудачных попыток!</string>
+    <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Повторите попытку через <xliff:g id="number">%d</xliff:g> секунд.</string>
+    <string name="lockpassword_gesture_set_toast">Жест установлен</string>
+    <string name="lockpassword_confirm_your_gesture_header">Подтвердите свой жест</string>
+    <string name="lockpassword_choose_your_gesture_header">Нарисуйте свой жест</string>
+    <string name="unlock_set_unlock_gesture_title">Жест</string>
+    <string name="unlock_set_unlock_gesture_summary">Низкая безопасность, экспериментальная</string>
+    <string name="unlock_set_unlock_mode_gesture">Жест</string>
+    
+    <!-- Gesture Anywhere -->
+    <string name="gesture_anywhere_title">\"Жест везде\"</string>
+    <string name="gesture_anywhere_enabled_title">\"Жест везде\"</string>
+    <string name="gesture_anywhere_enabled_summary">Включить функцию \"Жест везде\"</string>
+    <string name="gesture_anywhere_position_title">Расположение</string>
+    <string name="gesture_anywhere_position_left">По левому краю</string>
+    <string name="gesture_anywhere_position_right">По правому краю</string>
+    <string name="gesture_anywhere_gestures_title">Жесты</string>
+    <string name="gesture_anywhere_gestures_summary">Добавление, удаление и редактирование жестов</string>
+    <!-- Label, button used to add a gesture -->
+    <string name="ga_button_add">Добавить жест</string>
+    <!-- Label, button used to reload all gestures -->
+    <string name="ga_button_reload">Обновить</string>
+    <!-- Label, button used to cancel the operation of adding a gesture -->
+    <string name="ga_button_discard">Сброс</string>
+    <!-- Label, button used to save a gesture newly created -->
+    <string name="ga_button_done">Готово</string>
+    <!-- Label, prompt asking the user to enter the name of the gesture -->
+    <string name="ga_prompt_gesture_name">Название</string>
+    <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+    <string name="ga_error_missing_name">Вы должны ввести название</string>
+    <!-- success message, tells the user where the gesture was saved -->
+    <string name="ga_save_success">Жест сохранён в %s</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_rename_action">OK</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_cancel_action">Отмена</string>
+    <!-- Message displayed when the user opens the gestures settings screen -->
+    <string name="ga_gestures_loading">Загрузка жестов...</string>
+    <!-- Message displayed when the user has no gestures -->
+    <string name="ga_gestures_empty">Нет жестов</string>
+    <!-- Title of the screen used to view/manage gestures -->
+    <string name="ga_gestures_activity">Жесты</string>
+    <!-- Noun, menu item used to edit a gesture -->
+    <string name="ga_gestures_edit">Редактировать</string>
+    <!-- Noun, menu item used to remove a gesture -->
+    <string name="ga_gestures_delete">Удалить</string>
+    <!-- Message displayed when a gesture is successfully deleted -->
+    <string name="ga_gestures_delete_success">Жест удалён</string>
+    <!-- Title of dialog box -->
+    <string name="ga_gestures_rename_title">Переименовать жест</string>
+    <!-- Label of gesture name field in Rename gesture dialog box -->
+    <string name="ga_gestures_rename_label">Название жеста</string>
+    <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
+    <string name="ga_gestures_error_loading">Не удалось загрузить %s. Убедитесь, что у вас есть доступ к SD-карте</string>
+    <string name="trigger_category">Область вызова</string>
+    <string name="trigger_width_title">Ширина области вызова</string>
+    <string name="trigger_width_summary">Установите ширину области вызова</string>
+    <string name="trigger_top_title">Позиция области вызова</string>
+    <string name="trigger_top_summary">Установите вертикальное расположение области вызова</string>
+    <string name="trigger_bottom_title">Высота области вызова</string>
+    <string name="trigger_bottom_summary">Установите высоту области вызова</string>
+    <string name="picker_activities">Действия</string>
+    <string name="select_custom_app_title">Выбрать собственное приложение</string>
+    <string name="select_custom_activity_title">Выбрать собственное действие</string>
+    <string name="profile_applist_title">Приложения</string>
+    
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker_title">Блокировка Wakelock-ов</string>
+    <string name="wakelock_blocker_summary">Блокировать системные Wakelock-и</string>
+    <string name="wakelock_blocker_save">Сохранить</string>
+    <string name="wakelock_list_header">Доступные вейклоки</string>
+    <string name="wakelock_blocker_reload">Перезагрузить</string>
+    <string name="wakelock_blocker_warning_title">Действуйте осторожно</string>
+    <string name="wakelock_blocker_warning">Блокирование Wakelock-ов потенциально может привести к нестабильной работе устройства, сбою или потере данных</string>
 
 </resources>
