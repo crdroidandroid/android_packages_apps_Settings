@@ -21,8 +21,6 @@ import android.content.ContentResolver;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.database.ContentObserver;
-import android.net.Uri;
-import android.os.Handler;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -30,13 +28,9 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
-import android.provider.Settings.SettingNotFoundException;
 import android.text.TextUtils;
 import android.view.View;
 import android.util.Log;
-
-//import android.telephony.MSimTelephonyManager;
-import com.android.settings.Utils;
 
 import com.android.internal.widget.LockPatternUtils;
 
