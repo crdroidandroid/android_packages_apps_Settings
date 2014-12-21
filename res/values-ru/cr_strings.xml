@@ -42,7 +42,7 @@
 
     <!-- Advanced sound settings -->
     <string name="advanced_title">Расширенные настройки</string>
-    <string name="advanced_sound_title">Расширенные</string
+    <string name="advanced_sound_title">Расширенные</string>
     <string name="sound_title">Звук</string>
 
     <!-- Less Notification sounds -->
