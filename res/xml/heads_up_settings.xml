@@ -9,7 +9,7 @@
         android:key="heads_up_master_switch"
         android:title="@string/heads_up_master_switch"
         android:persistent="false"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
 
     <Preference
         style="?android:preferenceInformationStyle"
