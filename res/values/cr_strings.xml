@@ -842,7 +842,7 @@
     <string name="heads_up_time_out_never">Never</string>
     <string name="heads_up_switch_label">Enable heads up notification</string>
     <string name="heads_up_note_title">IMPORTANT</string>
-    <string name="heads_up_note_summary">The checkbox above enable Heads Up but you still need to go into Settings -> Apps and pick each application that will receive notifications through Heads Up mode. NOTE: with Heads up globaly disabled CALL UI and MMS will stop receive notifications through it in case you enabled them</string>
+    <string name="heads_up_note_summary">The checkbox above will enable Heads Up notifications. You need to go into Settings -> Apps and pick each application you want receive notifications through Heads Up mode. Disabling Heads Up will auto turn off "Show as heads up" in Dialer app and "Heads up mode" in mms app.</string>
     <string name="heads_up_bg_color_title">Background color</string>
     <string name="heads_up_text_color_title">Text color</string>
 
