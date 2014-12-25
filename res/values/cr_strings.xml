@@ -22,8 +22,8 @@
 
     <!-- Halo -->
     <!-- Halo enable/disable -->
-    <string name="halo_active_title">Halo switch</string>
-    <string name="halo_active_summary">Check to enable or un-check to disable halo</string>
+    <string name="halo_active_title">Halo master switch</string>
+    <string name="halo_active_summary">Enable halo</string>
 
     <string name="halo_settings_title">Halo</string>
     <string name="halo_behavior_title">Halo Behavior</string>
@@ -67,8 +67,8 @@
     <string name="navring_action_last_app">Last app</string>
 
     <!-- Navigation bar -->
-    <string name="navbar_enable_bar">Enable navigation bar</string>
-    <string name="navbar_enable_bar_summary">Enable the navigation bar</string>
+    <string name="navbar_enable_bar">Navigation bar</string>
+    <string name="navbar_enable_bar_summary">Enable navigation bar</string>
     <string name="navbar_style_dimen_title">Dimensions</string>
     <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
     <string name="navigation_bar_height_title">Navigation bar height</string>
@@ -104,13 +104,13 @@
     <string name="lock_numpad_random_on_request">On request</string>
 
     <!-- Lock before unlock -->
-    <string name="lock_before_unlock_title">Show slider before secure unlock</string>
-    <string name="lock_before_unlock_summary">Show slider lockscreen before secure unlock mechanism</string>
+    <string name="lock_before_unlock_title">Slider before secure unlock</string>
+    <string name="lock_before_unlock_summary">Show slider shortcuts before secure unlock mechanism</string>
 
     <!--  Recent clear all -->
     <string name="recent_clear_all_button">Recent clear all button</string>
-    <string name="show_recent_clear_all_button_title">Show clear all button</string>
-    <string name="show_recent_clear_all_button_summary">Tick to show or untick to hide the clear all button within the recent applications screen</string>
+    <string name="show_recent_clear_all_button_title">Clear all button</string>
+    <string name="show_recent_clear_all_button_summary">Show clear all button within the recent applications screen</string>
     <string name="recent_clear_all_button_location_title">Clear all button position</string>
     <string name="recent_clear_all_button_location_summary">Choose in which corner the clear all recent apps button is shown</string>
     <string name="recent_clear_all_button_location_top_left">Top left</string>
@@ -435,7 +435,7 @@
     
     <!-- Custom Recent Settings -->
     <string name="custom_recent_title">Switch Recent styles</string>
-    <string name="custom_recent_summary">Tick to Slim recent or untick for stock recent. TICKING OR UNTICKING THIS BOX WILL RESTART YOUR SYSTEMUI</string>
+    <string name="custom_recent_summary">Click to use Slim recent or unclick to use stock recent panel. CLICKING OR UNCLICKING THE CHECK BOX WILL RESTART YOUR SYSTEMUI</string>
 
     <!-- Recent panel -->
     <string name="slim_recent_panel_category">Slim recent apps panel</string>
@@ -783,7 +783,7 @@
 
     <!-- Hover enable/disable -->
     <string name="hover_master_switch_title">Hover master switch</string>
-    <string name="hover_master_switch_summary">Check to enable or un-check to disable hover</string>
+    <string name="hover_master_switch_summary">Enable hover</string>
 
     <string name="hover_settings_title">Hover</string>
     <string name="hover_require_fullscreen_mode_title">Require Fullscreen-Mode</string>
@@ -904,8 +904,8 @@
     <string name="notification_force_expand_summary">Force expanded notifications if supported</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
-    <string name="hw_keys_title">Hardware keys option</string>
-    <string name="hw_keys_summary">Check to enable or un-check to disable hardware keys</string>
+    <string name="hw_keys_title">Hardware keys</string>
+    <string name="hw_keys_summary">Enable hardware keys</string>
     
     <!-- Dynamic system bars -->
     <string name="dynamic_system_bars_title">Dynamic system bars</string>
