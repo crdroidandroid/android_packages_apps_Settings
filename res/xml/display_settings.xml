@@ -205,33 +205,4 @@
 
         </PreferenceCategory>
 
-        <PreferenceCategory
-            android:key="extra_display_settings_category"
-            android:title="@string/extra_display_settings_title">
-
-            <!-- Recent panel -->
-            <PreferenceScreen
-                android:key="recent_panel"
-                android:fragment="com.android.settings.crdroid.RecentPanelSettings"
-                android:title="@string/recent_panel_settings_title" />
-
-            <!-- App sidebar -->
-            <PreferenceScreen
-                android:key="app_sidebar"
-                android:fragment="com.android.settings.crdroid.AppSidebar"
-                android:title="@string/app_sidebar_title"/>
-
-            <!-- Gesture anywhere -->
-            <PreferenceScreen
-                android:key="gesture_anywhere"
-                android:fragment="com.android.settings.chameleonos.labs.gestureanywhere.GestureAnywhereSettings"
-                android:title="@string/gesture_anywhere_title" />
-
-            <PreferenceScreen
-                android:key="screen_recorder"
-                android:title="@string/screen_recorder_title"
-                android:fragment="com.android.settings.crdroid.ScreenRecorderSettings" />
-
-         </PreferenceCategory>
-
 </PreferenceScreen>

@@ -20,6 +20,8 @@
     <!-- crDroid notifications -->
     <string name="crdroid_notifications_title">Notification services</string>
 
+    <string name="custom_settings_title">crDroid custom</string>
+
     <!-- Halo -->
     <!-- Halo enable/disable -->
     <string name="halo_active_title">Halo master switch</string>

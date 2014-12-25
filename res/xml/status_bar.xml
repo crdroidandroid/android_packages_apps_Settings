@@ -28,12 +28,6 @@
         android:key="status_bar_network_traffic"
         android:title="@string/network_traffic_title" />
 
-    <!-- Dynamic system bars -->
-    <PreferenceScreen
-        android:fragment="com.android.settings.crdroid.DSBSettings"
-        android:key="dynamic_system_bars"
-        android:title="@string/dynamic_system_bars_title" />
-
     <ListPreference
         android:key="status_bar_battery"
         android:dialogTitle="@string/status_bar_battery_title"
@@ -65,11 +59,5 @@
         android:title="@string/status_bar_notif_count_title"
         android:summary="@string/status_bar_notif_count_summary"
         android:defaultValue="false" />
-
-    <!-- Notifications (Halo, Hover and Heads up) -->
-    <PreferenceScreen
-        android:fragment="com.android.settings.crdroid.crDroidNotifications"
-        android:key="crdroid_notifications"
-        android:title="@string/crdroid_notifications_title" />
 
 </PreferenceScreen>
