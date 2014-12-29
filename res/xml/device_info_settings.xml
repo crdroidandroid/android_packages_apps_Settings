@@ -17,6 +17,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
+        <!-- crDroid logo -->
+        <PreferenceScreen android:key="crdroid_logo"
+                android:enabled="false"
+                android:layout="@layout/crdroid_logo" />
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status" 
