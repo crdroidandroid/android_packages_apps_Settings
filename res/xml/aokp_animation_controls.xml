@@ -19,11 +19,6 @@
     android:title="@string/aokp_animation_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <SwitchPreference
-            android:key="animation_no_override"
-            android:title="@string/title_animation_no_override"
-            android:summary="@string/summary_animation_no_override" />
-
         <ListPreference
             android:key="activity_open"
             android:title="@string/activity_open_title" />
