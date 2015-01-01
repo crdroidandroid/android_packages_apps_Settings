@@ -80,6 +80,7 @@ public class BacklightTimeoutSeekBar extends SeekBar {
         return progress + 1;
     }
 
+    @Override
     protected int updateTouchProgress(int lastProgress, int newProgress) {
         if (newProgress < mMax) {
             return newProgress;

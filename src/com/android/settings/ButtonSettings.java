@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cyanogenmod;
+package com.android.settings;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -41,6 +41,7 @@ import android.view.WindowManagerGlobal;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settings.cyanogenmod.ButtonBacklightBrightness;
 
 import org.cyanogenmod.hardware.KeyDisabler;
 
@@ -50,6 +51,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SystemSettings";
 
+    private static final String KEY_BUTTON_BACKLIGHT = "button_backlight";
     private static final String KEY_HOME_LONG_PRESS = "hardware_keys_home_long_press";
     private static final String KEY_HOME_DOUBLE_TAP = "hardware_keys_home_double_tap";
     private static final String KEY_MENU_PRESS = "hardware_keys_menu_press";
@@ -65,8 +67,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
     private static final String KEY_POWER_END_CALL = "power_end_call";
     private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
-
-    private static final String KEY_BUTTON_BACKLIGHT = "button_backlight";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -519,6 +519,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
            off if enabling */
         if (backlight != null) {
             backlight.setEnabled(enabled);
+            backlight.updateSummary();
         }
 
         /* Toggle hardkey control availability depending on navbar state */

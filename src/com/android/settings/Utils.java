@@ -73,7 +73,7 @@ import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.TabWidget;
 
-import com.android.settings.cyanogenmod.ButtonSettings;
+import com.android.settings.ButtonSettings;
 
 import com.android.internal.util.ImageUtils;
 import com.android.internal.util.UserIcons;
