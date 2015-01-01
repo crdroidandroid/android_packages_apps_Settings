@@ -574,6 +574,8 @@
     <!-- AOKP custom system animations -->  
     <string name="aokp_animation_title">System animations</string>
     <string name="aokp_animation_summary">AOKP custom animation</string>
+    <string name="animation_exit_only_title">Enter only animation</string>
+    <string name="animation_reverse_exit_title">Reverse exit animation</string>
     <string name="activity_open_title">Activity open animation</string>
     <string name="activity_close_title">Activity close animation</string>
     <string name="task_open_title">Task open animation</string>
