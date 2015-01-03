@@ -40,7 +40,7 @@
     <string name="status_bar_settings">Status bar settings</string>
     <string name="recents_panel_title">Recents panel</string>
     <string name="recents_panel_settings">Recents panel settings</string>
-    <string name="animation_title">Animation</string>
+    <string name="animation_title">Animations</string>
     <string name="animation_settings">Animation settings</string>
     <string name="reset_message">Reset all entries to default?</string>
     
@@ -147,7 +147,7 @@
     <string name="hw_keys_summary">Enable hardware keys</string>
 
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
+    <string name="dialog_color_picker">Color picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
@@ -192,14 +192,14 @@
 
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">Smart pulldown</string>
-    <string name="smart_pulldown_summary">Open Quick Settings when there are %1$s notifications present</string>
+    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications present</string>
     <string name="smart_pulldown_off">Off</string>
     <string name="smart_pulldown_dismissable">No dismissable</string>
     <string name="smart_pulldown_persistent">No persistent</string>
     <string name="smart_pulldown_all">No dismissable or persistent</string>
 
     <!-- Status bar ticker -->
-    <string name="status_bar_ticker_title">Notification Ticker</string>
+    <string name="status_bar_ticker_title">Notification ticker</string>
     <string name="status_bar_ticker_summary">Notification text animation in the statusbar</string>
 
     <!--Quick unlock -->
@@ -458,9 +458,9 @@
     <string name="unlock_set_unlock_mode_gesture">Gesture</string>
 
     <!-- Gesture Anywhere -->
-    <string name="gesture_anywhere_title">Gesture Anywhere</string>
-    <string name="gesture_anywhere_enabled_title">Gesture Anywhere</string>
-    <string name="gesture_anywhere_enabled_summary">Enable the Gesture Anywhere feature</string>
+    <string name="gesture_anywhere_title">Gesture anywhere</string>
+    <string name="gesture_anywhere_enabled_title">Gesture anywhere</string>
+    <string name="gesture_anywhere_enabled_summary">Enable the gesture anywhere feature</string>
     <string name="gesture_anywhere_position_title">Location</string>
     <string name="gesture_anywhere_position_left">Left edge</string>
     <string name="gesture_anywhere_position_right">Right edge</string>
@@ -573,7 +573,7 @@
 
     <!-- AOKP custom system animations -->  
     <string name="aokp_animation_title">System animations</string>
-    <string name="aokp_animation_summary">AOKP custom animation</string>
+    <string name="aokp_animation_summary">AOKP custom animations</string>
     <string name="animation_exit_only_title">Enter only animation</string>
     <string name="animation_reverse_exit_title">Reverse exit animation</string>
     <string name="activity_open_title">Activity open animation</string>
@@ -630,7 +630,7 @@
     <string name="screen_recorder_power_menu_summary">Add a Screen Record entry in the power menu</string>
 
     <!-- SearchBar Switcher -->
-    <string name="recents_show_searchbar">Show Search Bar in Recents</string>
+    <string name="recents_show_searchbar">Show search bar in recents</string>
     <string name="recents_show_searchbar_summary">Enable or disable the Google search bar in the recents menu</string>
 
 </resources>
