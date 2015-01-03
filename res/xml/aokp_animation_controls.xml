@@ -75,8 +75,9 @@
             android:key="task_open_behind"
             android:title="@string/task_open_behind_title" />
 
-        <com.android.settings.crdroid.AnimBarPreference
+        <SlimSeekBarPreference
             android:key="animation_duration"
-            android:title="@string/animation_duration_title" />
+            android:title="@string/animation_duration_title"
+            android:persistent="false" />
 
 </PreferenceScreen>
