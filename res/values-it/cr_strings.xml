@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
-     Copyright (C) 2012-2014 The crDroid Android Project
+     Copyright (C) 2014 crDroid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -156,233 +157,234 @@
     <string name="set">Ok</string>
     <string name="color_default">Predefinito</string>
     
-     <!-- Status bar | Clock -->
-     <string name="status_bar_clock">Data e Ora</string>
-     <string name="status_bar_clock_title">Stile data e ora</string>
-     <string name="clock_title_enable">Allineamento</string>
-     <string name="clock_enabled">Abilitato</string>
-     <string name="clock_disabled">Disabilitato</string>
-     <string name="clock_color_title">Colore</string>
-     <string name="status_bar_clock_style_reset">Ripristina colore</string>
-     <string name="status_bar_show_clock_title">Mostra ora e data</string>
-     <string name="status_bar_am_pm_title">AM/PM</string>
-     <string name="status_bar_am_pm_info">Modalità 24 ore attivata</string>
-     <string name="enable_clock_weekday">Giorno della settimana</string>
-     <string name="enable_clock_weekday_summary">Nome del giorno abbreviato accanto alle ore</string>
-     <string name="right_clock">Mostra le ore a destra</string>
-     <string name="center_clock">Mostra le ore centrate</string>
-     <string name="dont_show">Nascondi</string>
-     <string name="clock_date_display">Data</string>
-     <string name="clock_date_display_summary">Mostra la data personalizzata prima dell\'ora</string>
-     <string name="clock_date_style">Stile data</string>
-     <string name="clock_date_format">Formato data</string>
-     <string name="clock_date_string_edittext_title">deve essere nel formato Data es. dd/MM/yy</string>
-     <string name="clock_date_string_edittext_summary">Inserisci testo</string>
-     <string name="am_pm_clock_normal">Dimensione font normale</string>
-     <string name="am_pm_clock_small">Dimensione font piccola</string>
-     <string name="am_pm_clock_none">Nascondi</string>
-     <string name="clock_date_display_none">Nascondi</string>
-     <string name="clock_date_display_small">Dimensione font piccola</string>
-     <string name="clock_date_display_normal">Dimensione font normale</string>
-     <string name="clock_date_style_normal">Normale</string>
-     <string name="clock_date_style_lowercase">Usa minuscolo</string>
-     <string name="clock_date_style_uppercase">Usa Maiuscolo</string>
-     <string name="clock_date_format_custom">Formato personalizzato</string>
-     <string name="status_bar_clock_style_reset_message">Reimpostare colore ore?</string>
+    <!-- Status bar | Clock -->
+    <string name="status_bar_clock">Data e Ora</string>
+    <string name="status_bar_clock_title">Stile data e ora</string>
+    <string name="clock_title_enable">Allineamento</string>
+    <string name="clock_enabled">Abilitato</string>
+    <string name="clock_disabled">Disabilitato</string>
+    <string name="clock_color_title">Colore</string>
+    <string name="status_bar_clock_style_reset">Ripristina colore</string>
+    <string name="status_bar_show_clock_title">Mostra ora e data</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">Modalità 24 ore attivata</string>
+    <string name="enable_clock_weekday">Giorno della settimana</string>
+    <string name="enable_clock_weekday_summary">Nome del giorno abbreviato accanto alle ore</string>
+    <string name="right_clock">Mostra le ore a destra</string>
+    <string name="center_clock">Mostra le ore centrate</string>
+    <string name="dont_show">Nascondi</string>
+    <string name="clock_date_display">Data</string>
+    <string name="clock_date_display_summary">Mostra la data personalizzata prima dell\'ora</string>
+    <string name="clock_date_style">Stile data</string>
+    <string name="clock_date_format">Formato data</string>
+    <string name="clock_date_string_edittext_title">deve essere nel formato Data es. dd/MM/yy</string>
+    <string name="clock_date_string_edittext_summary">Inserisci testo</string>
+    <string name="am_pm_clock_normal">Dimensione font normale</string>
+    <string name="am_pm_clock_small">Dimensione font piccola</string>
+    <string name="am_pm_clock_none">Nascondi</string>
+    <string name="clock_date_display_none">Nascondi</string>
+    <string name="clock_date_display_small">Dimensione font piccola</string>
+    <string name="clock_date_display_normal">Dimensione font normale</string>
+    <string name="clock_date_style_normal">Normale</string>
+    <string name="clock_date_style_lowercase">Usa minuscolo</string>
+    <string name="clock_date_style_uppercase">Usa Maiuscolo</string>
+    <string name="clock_date_format_custom">Formato personalizzato</string>
+    <string name="status_bar_clock_style_reset_message">Reimpostare colore ore?</string>
 
-     <!-- QuickSettings: Smart Pulldown -->
-     <string name="smart_pulldown_title">Tendina Smart</string>
-     <string name="smart_pulldown_summary">Apri le Impostazioni Veloci quando le notifiche non sono %1$s</string>
-     <string name="smart_pulldown_off">Attivate</string>
-     <string name="smart_pulldown_dismissable">eliminabili</string>
-     <string name="smart_pulldown_persistent">persistenti</string>
-     <string name="smart_pulldown_all">eliminabili o persistenti</string>
+    <!-- QuickSettings: Smart Pulldown -->
+    <string name="smart_pulldown_title">Tendina Smart</string>
+    <string name="smart_pulldown_summary">Apri le Impostazioni Veloci quando le notifiche non sono %1$s</string>
+    <string name="smart_pulldown_off">Attivate</string>
+    <string name="smart_pulldown_dismissable">eliminabili</string>
+    <string name="smart_pulldown_persistent">persistenti</string>
+    <string name="smart_pulldown_all">eliminabili o persistenti</string>
 
-     <!-- Status bar ticker -->
-     <string name="status_bar_ticker_title">Notifiche animate</string>
-     <string name="status_bar_ticker_summary">Testo di notifica animato nella barra di stato</string>
+    <!-- Status bar ticker -->
+    <string name="status_bar_ticker_title">Notifiche animate</string>
+    <string name="status_bar_ticker_summary">Testo di notifica animato nella barra di stato</string>
 
-     <!--Quick unlock -->
-     <string name="unlock_quick_unlock_control_title">Sblocco Rapido</string>
-     <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando vengono inseriti correttamente PIN/password</string>
+    <!--Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Sblocco Rapido</string>
+    <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando vengono inseriti correttamente PIN/password</string>
 
-     <!-- Lockscreen pin shuffle -->
-     <string name="lock_numpad_random_title">Cambia l\'ordine dei numeri sul PIN pad</string>
-     <string name="lock_numpad_random_dialog_title">Ordina i numeri del PIN pad a random</string>
-     <string name="lock_numpad_random_off">Disattivato</string>
-     <string name="lock_numpad_random_always">Sempre</string>
-     <string name="lock_numpad_random_on_request">A richiesta</string>
-     
-     <!-- Slim lockscreen shortcuts -->
-     <string name="shortcut_action_none">Nessuno</string>
-     <string name="shortcut_action_app">App personalizzata</string>
-     <string name="shortcut_action_home">Home</string>
-     <string name="shortcut_action_back">Indietro</string>
-     <string name="shortcut_action_menu">Menu</string>
-     <string name="shortcut_action_ime">Apri IME Switcher</string>
-     <string name="shortcut_action_power_menu">Menu pulsante di accensione</string>
-     <string name="shortcut_action_recent">Recenti</string>
-     <string name="shortcut_action_power">Spegni schermo</string>
-     <string name="shortcut_action_search">Cerca tra le app</string>
-     <string name="shortcut_action_ring_vib">Suona/Vibra</string>
-     <string name="shortcut_action_ring_silent">Suona/Silenzioso</string>
-     <string name="shortcut_action_ring_vib_silent">Suona/Vibra/Silenzioso</string>
-     <string name="shortcut_action_camera">Fotocamera</string>
-     <string name="shortcut_action_media_next">Musica - traccia succ.</string>
-     <string name="shortcut_action_media_play_pause">Musica - avvia/pausa</string>
-     <string name="shortcut_action_media_previous">Music - traccia prec.</string>
-     <string name="shortcut_action_wake_device">Risveglia dispositivo</string>
-     <string name="shortcut_action_longpress">Pressione Prolungata:</string>
-     <string name="shortcut_action_select_action_longpress">Scegli l\'azione per la pressione prolungata:</string>
-     <string name="shortcut_action_select_action">Azione:</string>
-     <string name="shortcut_action_select_action_newaction">Scegli la nuova azione:</string>
-     <string name="shortcut_action_reset">Reimposta</string>
-     <string name="shortcut_action_add">Aggiungi</string>
-     <string name="shortcut_action_reset_message">Ripristinare le azioni predefinite?</string>
-     <string name="shortcut_action_max">Raggiunto il massimo numero di azioni consentite</string>
-     <string name="shortcut_action_warning">Attenzione</string>
-     <string name="shortcut_action_warning_message">Non è possibile cancellare l\'ultima aggiunta</string>
-     <string name="shortcut_action_disable_message">Disattivato\nAggiungere una azione per attivare</string>
-     <string name="shortcut_image_not_valid">L\'app scelta non ha icona o non supporta il ritaglio dell\'immagine. Usa un\'altra app.</string>
-     <string name="shortcut_duplicate_entry">L\'azione scelta non può essere aggiunta due volte</string>
-     <string name="shortcut_action_help_shortcut">Collegamento</string>
-     <string name="shortcut_action_help_button">Pulsante</string>
-     <string name="shortcut_action_help_app">app</string>
-     <string name="shortcut_action_help_icon">, selezionando l\'icona verranno mostrate le opzioni di personalizzazione</string>
-     <string name="shortcut_action_help_main">Per aggiungere un %1$s, seleziona l\'icona aggiungi. Dopo aver aggiunto %1$s, la selezione della riga cambierà l\'obbiettivo%2$s\n\nPer rimuovere un %1$s, far scorrere la riga in orizzontale verso destra o sinistra. Riordinare un %1$s nella lista spostando l\'ancoraggio in alto verso il basso.\n\nPer cancellare o ripristinare, seleziona l\'opzione di ripristino.</string>
-     <string name="shortcut_action_help_delete_last_entry">Rimuovendo ogni %1$s si disattiverà la funzione.</string>
-     <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Rimuovendo ogni %1$s nella lista si disattiverà il secondo livello di controlli PIE.</string>
-     <string name="shortcuts_applications">Applicazioni</string>
-     <string name="shortcuts_select_custom_app_title">Seleziona l\'app</string>
-     <string name="shortcuts_icon_picker_type">Seleziona l\'icona:</string>
-     <string name="shortcuts_icon_default">Predefinita</string>
-     <string name="shortcuts_icon_presets">Icona di Sistema</string>
-     <string name="shortcuts_icon_custom">Galleria</string>
-     <string name="shortcuts_icon_picker_choose_icon_title">Scegli icona</string>
-     <string name="shortcuts_icon_picker_alarm">Sveglia</string>
-     <string name="shortcuts_icon_picker_andy">Andy</string>
-     <string name="shortcuts_icon_picker_battery">Batteria</string>
-     <string name="shortcuts_icon_picker_browser">Browser</string>
-     <string name="shortcuts_icon_picker_calendar">Calendario</string>
-     <string name="shortcuts_icon_picker_camera">Fotocamera</string>
-     <string name="shortcuts_icon_picker_cloud">Cloud</string>
-     <string name="shortcuts_icon_picker_contact">Contatto</string>
-     <string name="shortcuts_icon_picker_directdial">Chiamata Diretta</string>
-     <string name="shortcuts_icon_picker_directmessage">SMS Diretto</string>
-     <string name="shortcuts_icon_picker_drive">Drive</string>
-     <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
-     <string name="shortcuts_icon_picker_email">Email</string>
-     <string name="shortcuts_icon_picker_email2">Email Alternativa</string>
-     <string name="shortcuts_icon_picker_evernote">Evernote</string>
-     <string name="shortcuts_icon_picker_facebook">Facebook</string>
-     <string name="shortcuts_icon_picker_favorite">Preferiti</string>
-     <string name="shortcuts_icon_picker_file_browser">File Browser</string>
-     <string name="shortcuts_icon_picker_file_browser2">File Browser Alternativo</string>
-     <string name="shortcuts_icon_picker_fitness">Fitness</string>
-     <string name="shortcuts_icon_picker_gallery">Galleria</string>
-     <string name="shortcuts_icon_picker_gears">Gears</string>
-     <string name="shortcuts_icon_picker_google_small">Google</string>
-     <string name="shortcuts_icon_picker_gplus">Google Plus</string>
-     <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
-     <string name="shortcuts_icon_picker_help">Aiuto</string>
-     <string name="shortcuts_icon_picker_joystick">Joystick</string>
-     <string name="shortcuts_icon_picker_key">Chiavi/Account</string>
-     <string name="shortcuts_icon_picker_laptop">Laptop</string>
-     <string name="shortcuts_icon_picker_notes">Note</string>
-     <string name="shortcuts_icon_picker_luggage">Viaggi</string>
-     <string name="shortcuts_icon_picker_maps">Mappe</string>
-     <string name="shortcuts_icon_picker_market">Market</string>
-     <string name="shortcuts_icon_picker_movie">Film</string>
-     <string name="shortcuts_icon_picker_music">Musica</string>
-     <string name="shortcuts_icon_picker_nav">Navigazione</string>
-     <string name="shortcuts_icon_picker_phone">Telefono</string>
-     <string name="shortcuts_icon_picker_package">Pacchetti</string>
-     <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
-     <string name="shortcuts_icon_picker_play">Play</string>
-     <string name="shortcuts_icon_picker_pocket">Pocket</string>
-     <string name="shortcuts_icon_picker_quicksettings">Impostazioni Veloci</string>
-     <string name="shortcuts_icon_picker_rss">RSS Feed</string>
-     <string name="shortcuts_icon_picker_sdcard">SDCard</string>
-     <string name="shortcuts_icon_picker_search">Cerca</string>
-     <string name="shortcuts_icon_picker_sms">Messagi</string>
-     <string name="shortcuts_icon_picker_tasks">Operazioni</string>
-     <string name="shortcuts_icon_picker_terminal">Terminale</string>
-     <string name="shortcuts_icon_picker_transit">Transit</string>
-     <string name="shortcuts_icon_picker_tv">TV</string>
-     <string name="shortcuts_icon_picker_twitter">Twitter</string>
-     <string name="shortcuts_icon_picker_unlock">Sblocco</string>
-     
-     <!-- Lockscreen Shortcuts -->
-     <string name="lockscreen_shortcuts_title">Scorciatoie</string>
-     <string name="lockscreen_shortcuts_summary">Cambia le scorciatoie della schermata di blocco</string>
-     <string name="lockscreen_shorcuts_longpress_title">Pressione Prolungata</string>
-     <string name="lockscreen_shorcuts_longpress_summary">Apre una scorciatoia personalizzata tramite la pressione prolungata</string>
-     
-     <!-- Status bar - Battery -->
-     <string name="status_bar_battery_style_title">Stile Indicatore Batteria</string>
-     <string name="status_bar_battery_style_icon_portrait">Icona in modalità verticale</string>
-     <string name="status_bar_battery_style_icon_landscape">Icona in modalità orizzontale</string>
-     <string name="status_bar_battery_style_circle">Cerchio</string>
-     <string name="status_bar_battery_style_text">Testo</string>
-     <string name="status_bar_battery_style_hidden">Nascosta</string>
-     
-     <!-- Status bar - Battery percentage -->
-     <string name="status_bar_battery_percentage_title">Mostra percentuale batteria</string>
-     <string name="status_bar_battery_percentage_dialog_title">Percentuale batteria</string>
-     <string name="status_bar_battery_percentage_default">Nascosta (default)</string>
-     <string name="status_bar_battery_percentage_text_inside">Nell\'icona</string>
-     <string name="status_bar_battery_percentage_text_next">A fianco dell\'icona</string>
-     
-     <!-- About device screen, CPU and RAM info. -->
-     <string name="cpu_info">CPU</string>
-     <string name="mem_info">RAM</string>
-     
-     <!-- Heads up -->
-     <string name="heads_up_title">Notifiche Heads up</string>
-     <string name="app_notification_enable_heads_up_title">Mostra heads up</string>
-     <string name="app_notification_enable_heads_up_summary">Mostra notifiche di questa app come heads up</string>
-     <string name="heads_up_snooze_title">Durata sospensione</string>
-     <string name="heads_up_snooze_summary">Alla pressione del pulsante di sospensione, disattiva gli heads up per <xliff:g id="number">%d</xliff:g> minuti</string>
-     <string name="heads_up_snooze_disabled_summary">La sospensione è disattivata</string>
-     <string name="heads_up_snooze_3min">3 minuti</string>
-     <string name="heads_up_snooze_5min">5 minuti</string>
-     <string name="heads_up_snooze_10min">10 minuti</string>
-     <string name="heads_up_snooze_15min">15 minuti</string>
-     <string name="heads_up_snooze_20min">20 minuti</string>
-     <string name="heads_up_time_out_title">Tempo Scaduto</string>
-     <string name="heads_up_time_out_summary">Mostra Heads up per <xliff:g id="number">%d</xliff:g> secondi</string>
-     <string name="heads_up_time_out_never_summary">Le notifiche Heads up rimarranno fino alla lettura</string>
-     <string name="heads_up_time_out_4sec">4 secondi</string>
-     <string name="heads_up_time_out_6sec">6 secondi</string>
-     <string name="heads_up_time_out_8sec">8 secondi</string>
-     <string name="heads_up_time_out_10sec">10 secondi</string>
-     <string name="heads_up_time_out_never">Mai</string>
-     
-     <!-- Unaccounted and overcounted battery stats -->
-     <string name="show_unac_and_overcounted_stats_title">Mostra statistiche</string>
-     <string name="show_unac_and_overcounted_stats_summary">Mostra nelle statistiche batteria dati ridondanti e non</string>
-     
-     <!-- Network traffic -->
-     <string name="network_traffic_title">Traffico di Rete</string>
-     <string name="show_network_traffic_state">Barra di Stato del traffico di rete</string>
-     <string name="network_traffic_summary">Abilita varie opzioni nella barra di stato relative al traffico di Rete</string>
-     <string name="show_network_traffic_unit">Mostra unità</string>
-     <string name="show_network_traffic_frequency">Intervallo di aggiornamento</string>
-     <string name="show_network_traffic_disable">Disattivato</string>
-     <string name="show_network_traffic_up">In uscita</string>
-     <string name="show_network_traffic_down">In entrata</string>
-     <string name="show_network_traffic_all">In uscita e in entrata</string>
-     <string name="show_network_traffic_bit">Bit per secondo</string>
-     <string name="show_network_traffic_byte">Byte per secondo</string>
-     <string name="show_network_traffic_500">500 ms</string>
-     <string name="show_network_traffic_1000">1000 ms</string>
-     <string name="show_network_traffic_1500">1500 ms</string>
-     <string name="show_network_traffic_2000">2000 ms</string>
-     <string name="network_traffic_autohide">Auto nascondi</string>
-     <string name="network_traffic_autohide_summary">Nasconde la barra del traffico di rete quando non in uso</string>
-     <string name="network_traffic_autohide_threshold">Soglia di Inattività</string>
-     <!-- Battery saver -->
-     <string name="battery_saver_title">Warning color</string>
-     <string name="battery_saver_style_reset_message">Reset battery saver warning color?</string>
-     
-     </resources>
+    <!-- Lockscreen pin shuffle -->
+    <string name="lock_numpad_random_title">Cambia l\'ordine dei numeri sul PIN pad</string>
+    <string name="lock_numpad_random_dialog_title">Ordina i numeri del PIN pad a random</string>
+    <string name="lock_numpad_random_off">Disattivato</string>
+    <string name="lock_numpad_random_always">Sempre</string>
+    <string name="lock_numpad_random_on_request">A richiesta</string>
+
+    <!-- Slim lockscreen shortcuts -->
+    <string name="shortcut_action_none">Nessuno</string>
+    <string name="shortcut_action_app">App personalizzata</string>
+    <string name="shortcut_action_home">Home</string>
+    <string name="shortcut_action_back">Indietro</string>
+    <string name="shortcut_action_menu">Menu</string>
+    <string name="shortcut_action_ime">Apri IME Switcher</string>
+    <string name="shortcut_action_power_menu">Menu pulsante di accensione</string>
+    <string name="shortcut_action_recent">Recenti</string>
+    <string name="shortcut_action_power">Spegni schermo</string>
+    <string name="shortcut_action_search">Cerca tra le app</string>
+    <string name="shortcut_action_ring_vib">Suona/Vibra</string>
+    <string name="shortcut_action_ring_silent">Suona/Silenzioso</string>
+    <string name="shortcut_action_ring_vib_silent">Suona/Vibra/Silenzioso</string>
+    <string name="shortcut_action_camera">Fotocamera</string>
+    <string name="shortcut_action_media_next">Musica - traccia succ.</string>
+    <string name="shortcut_action_media_play_pause">Musica - avvia/pausa</string>
+    <string name="shortcut_action_media_previous">Music - traccia prec.</string>
+    <string name="shortcut_action_wake_device">Risveglia dispositivo</string>
+    <string name="shortcut_action_longpress">Pressione Prolungata:</string>
+    <string name="shortcut_action_select_action_longpress">Scegli l\'azione per la pressione prolungata:</string>
+    <string name="shortcut_action_select_action">Azione:</string>
+    <string name="shortcut_action_select_action_newaction">Scegli la nuova azione:</string>
+    <string name="shortcut_action_reset">Reimposta</string>
+    <string name="shortcut_action_add">Aggiungi</string>
+    <string name="shortcut_action_reset_message">Ripristinare le azioni predefinite?</string>
+    <string name="shortcut_action_max">Raggiunto il massimo numero di azioni consentite</string>
+    <string name="shortcut_action_warning">Attenzione</string>
+    <string name="shortcut_action_warning_message">Non è possibile cancellare l\'ultima aggiunta</string>
+    <string name="shortcut_action_disable_message">Disattivato\nAggiungere una azione per attivare</string>
+    <string name="shortcut_image_not_valid">L\'app scelta non ha icona o non supporta il ritaglio dell\'immagine. Usa un\'altra app.</string>
+    <string name="shortcut_duplicate_entry">L\'azione scelta non può essere aggiunta due volte</string>
+    <string name="shortcut_action_help_shortcut">Collegamento</string>
+    <string name="shortcut_action_help_button">Pulsante</string>
+    <string name="shortcut_action_help_app">app</string>
+    <string name="shortcut_action_help_icon">, selezionando l\'icona verranno mostrate le opzioni di personalizzazione</string>
+    <string name="shortcut_action_help_main">Per aggiungere un %1$s, seleziona l\'icona aggiungi. Dopo aver aggiunto %1$s, la selezione della riga cambierà l\'obbiettivo%2$s\n\nPer rimuovere un %1$s, far scorrere la riga in orizzontale verso destra o sinistra. Riordinare un %1$s nella lista spostando l\'ancoraggio in alto verso il basso.\n\nPer cancellare o ripristinare, seleziona l\'opzione di ripristino.</string>
+    <string name="shortcut_action_help_delete_last_entry">Rimuovendo ogni %1$s si disattiverà la funzione.</string>
+    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Rimuovendo ogni %1$s nella lista si disattiverà il secondo livello di controlli PIE.</string>
+    <string name="shortcuts_applications">Applicazioni</string>
+    <string name="shortcuts_select_custom_app_title">Seleziona l\'app</string>
+    <string name="shortcuts_icon_picker_type">Seleziona l\'icona:</string>
+    <string name="shortcuts_icon_default">Predefinita</string>
+    <string name="shortcuts_icon_presets">Icona di Sistema</string>
+    <string name="shortcuts_icon_custom">Galleria</string>
+    <string name="shortcuts_icon_picker_choose_icon_title">Scegli icona</string>
+    <string name="shortcuts_icon_picker_alarm">Sveglia</string>
+    <string name="shortcuts_icon_picker_andy">Andy</string>
+    <string name="shortcuts_icon_picker_battery">Batteria</string>
+    <string name="shortcuts_icon_picker_browser">Browser</string>
+    <string name="shortcuts_icon_picker_calendar">Calendario</string>
+    <string name="shortcuts_icon_picker_camera">Fotocamera</string>
+    <string name="shortcuts_icon_picker_cloud">Cloud</string>
+    <string name="shortcuts_icon_picker_contact">Contatto</string>
+    <string name="shortcuts_icon_picker_directdial">Chiamata Diretta</string>
+    <string name="shortcuts_icon_picker_directmessage">SMS Diretto</string>
+    <string name="shortcuts_icon_picker_drive">Drive</string>
+    <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
+    <string name="shortcuts_icon_picker_email">Email</string>
+    <string name="shortcuts_icon_picker_email2">Email Alternativa</string>
+    <string name="shortcuts_icon_picker_evernote">Evernote</string>
+    <string name="shortcuts_icon_picker_facebook">Facebook</string>
+    <string name="shortcuts_icon_picker_favorite">Preferiti</string>
+    <string name="shortcuts_icon_picker_file_browser">File Browser</string>
+    <string name="shortcuts_icon_picker_file_browser2">File Browser Alternativo</string>
+    <string name="shortcuts_icon_picker_fitness">Fitness</string>
+    <string name="shortcuts_icon_picker_gallery">Galleria</string>
+    <string name="shortcuts_icon_picker_gears">Gears</string>
+    <string name="shortcuts_icon_picker_google_small">Google</string>
+    <string name="shortcuts_icon_picker_gplus">Google Plus</string>
+    <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
+    <string name="shortcuts_icon_picker_help">Aiuto</string>
+    <string name="shortcuts_icon_picker_joystick">Joystick</string>
+    <string name="shortcuts_icon_picker_key">Chiavi/Account</string>
+    <string name="shortcuts_icon_picker_laptop">Laptop</string>
+    <string name="shortcuts_icon_picker_notes">Note</string>
+    <string name="shortcuts_icon_picker_luggage">Viaggi</string>
+    <string name="shortcuts_icon_picker_maps">Mappe</string>
+    <string name="shortcuts_icon_picker_market">Market</string>
+    <string name="shortcuts_icon_picker_movie">Film</string>
+    <string name="shortcuts_icon_picker_music">Musica</string>
+    <string name="shortcuts_icon_picker_nav">Navigazione</string>
+    <string name="shortcuts_icon_picker_phone">Telefono</string>
+    <string name="shortcuts_icon_picker_package">Pacchetti</string>
+    <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
+    <string name="shortcuts_icon_picker_play">Play</string>
+    <string name="shortcuts_icon_picker_pocket">Pocket</string>
+    <string name="shortcuts_icon_picker_quicksettings">Impostazioni Veloci</string>
+    <string name="shortcuts_icon_picker_rss">RSS Feed</string>
+    <string name="shortcuts_icon_picker_sdcard">SDCard</string>
+    <string name="shortcuts_icon_picker_search">Cerca</string>
+    <string name="shortcuts_icon_picker_sms">Messagi</string>
+    <string name="shortcuts_icon_picker_tasks">Operazioni</string>
+    <string name="shortcuts_icon_picker_terminal">Terminale</string>
+    <string name="shortcuts_icon_picker_transit">Transit</string>
+    <string name="shortcuts_icon_picker_tv">TV</string>
+    <string name="shortcuts_icon_picker_twitter">Twitter</string>
+    <string name="shortcuts_icon_picker_unlock">Sblocco</string>
+
+    <!-- Lockscreen Shortcuts -->
+    <string name="lockscreen_shortcuts_title">Scorciatoie</string>
+    <string name="lockscreen_shortcuts_summary">Cambia le scorciatoie della schermata di blocco</string>
+    <string name="lockscreen_shorcuts_longpress_title">Pressione Prolungata</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Apre una scorciatoia personalizzata tramite la pressione prolungata</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Stile Indicatore Batteria</string>
+    <string name="status_bar_battery_style_icon_portrait">Icona in modalità verticale</string>
+    <string name="status_bar_battery_style_icon_landscape">Icona in modalità orizzontale</string>
+    <string name="status_bar_battery_style_circle">Cerchio</string>
+    <string name="status_bar_battery_style_text">Testo</string>
+    <string name="status_bar_battery_style_hidden">Nascosta</string>
+
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Mostra percentuale batteria</string>
+    <string name="status_bar_battery_percentage_dialog_title">Percentuale batteria</string>
+    <string name="status_bar_battery_percentage_default">Nascosta (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Nell\'icona</string>
+    <string name="status_bar_battery_percentage_text_next">A fianco dell\'icona</string>
+
+    <!-- About device screen, CPU and RAM info. -->
+    <string name="cpu_info">CPU</string>
+    <string name="mem_info">RAM</string>
+
+    <!-- Heads up -->
+    <string name="heads_up_title">Notifiche Heads up</string>
+    <string name="app_notification_enable_heads_up_title">Mostra heads up</string>
+    <string name="app_notification_enable_heads_up_summary">Mostra notifiche di questa app come heads up</string>
+    <string name="heads_up_snooze_title">Durata sospensione</string>
+    <string name="heads_up_snooze_summary">Alla pressione del pulsante di sospensione, disattiva gli heads up per <xliff:g id="number">%d</xliff:g> minuti</string>
+    <string name="heads_up_snooze_disabled_summary">La sospensione è disattivata</string>
+    <string name="heads_up_snooze_3min">3 minuti</string>
+    <string name="heads_up_snooze_5min">5 minuti</string>
+    <string name="heads_up_snooze_10min">10 minuti</string>
+    <string name="heads_up_snooze_15min">15 minuti</string>
+    <string name="heads_up_snooze_20min">20 minuti</string>
+    <string name="heads_up_time_out_title">Tempo Scaduto</string>
+    <string name="heads_up_time_out_summary">Mostra Heads up per <xliff:g id="number">%d</xliff:g> secondi</string>
+    <string name="heads_up_time_out_never_summary">Le notifiche Heads up rimarranno fino alla lettura</string>
+    <string name="heads_up_time_out_4sec">4 secondi</string>
+    <string name="heads_up_time_out_6sec">6 secondi</string>
+    <string name="heads_up_time_out_8sec">8 secondi</string>
+    <string name="heads_up_time_out_10sec">10 secondi</string>
+    <string name="heads_up_time_out_never">Mai</string>
+
+    <!-- Unaccounted and overcounted battery stats -->
+    <string name="show_unac_and_overcounted_stats_title">Mostra statistiche</string>
+    <string name="show_unac_and_overcounted_stats_summary">Mostra nelle statistiche batteria dati ridondanti e non</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Traffico di Rete</string>
+    <string name="show_network_traffic_state">Barra di Stato del traffico di rete</string>
+    <string name="network_traffic_summary">Abilita varie opzioni nella barra di stato relative al traffico di Rete</string>
+    <string name="show_network_traffic_unit">Mostra unità</string>
+    <string name="show_network_traffic_frequency">Intervallo di aggiornamento</string>
+    <string name="show_network_traffic_disable">Disattivato</string>
+    <string name="show_network_traffic_up">In uscita</string>
+    <string name="show_network_traffic_down">In entrata</string>
+    <string name="show_network_traffic_all">In uscita e in entrata</string>
+    <string name="show_network_traffic_bit">Bit per secondo</string>
+    <string name="show_network_traffic_byte">Byte per secondo</string>
+    <string name="show_network_traffic_500">500 ms</string>
+    <string name="show_network_traffic_1000">1000 ms</string>
+    <string name="show_network_traffic_1500">1500 ms</string>
+    <string name="show_network_traffic_2000">2000 ms</string>
+    <string name="network_traffic_autohide">Auto nascondi</string>
+    <string name="network_traffic_autohide_summary">Nasconde la barra del traffico di rete quando non in uso</string>
+    <string name="network_traffic_autohide_threshold">Soglia di Inattività</string>
+
+    <!-- Battery saver -->
+    <string name="battery_saver_title">Colore avvertimento</string>
+    <string name="battery_saver_style_reset_message">Ripristina colore avvertimento di risparmio batteria?</string>
+
+</resources>
