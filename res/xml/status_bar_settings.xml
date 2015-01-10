@@ -78,6 +78,13 @@
         android:entries="@array/status_bar_battery_style_entries"
         android:entryValues="@array/status_bar_battery_style_values" />
 
+    <!-- Battery Bar -->
+    <PreferenceScreen
+        android:key="battery_bar"
+        android:fragment="com.android.settings.crdroid.BatteryBar"
+        android:title="@string/battery_bar"       
+        />
+
     <ListPreference
         android:key="status_bar_show_battery_percent"
         android:title="@string/status_bar_battery_percentage_title"
