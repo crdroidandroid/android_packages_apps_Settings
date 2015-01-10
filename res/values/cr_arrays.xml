@@ -184,6 +184,8 @@
     </string-array>
 
     <string-array name="shortcut_action_entries">
+        <item>@string/shortcut_action_kill</item>
+        <item>@string/shortcut_action_lastapp</item>
         <item>@string/shortcut_action_back</item>-
         <item>@string/shortcut_action_app</item>-
         <item>@string/shortcut_action_home</item>-
@@ -193,10 +195,14 @@
         <item>@string/shortcut_action_recent</item>
         <item>@string/shortcut_action_power</item>
         <item>@string/shortcut_action_search</item>
+        <item>@string/shortcut_action_screenshot</item>
+        <item>@string/shortcut_action_torch</item>
         <item>@string/shortcut_action_none</item>
     </string-array>
 
     <string-array name="shortcut_action_values" translatable="false">
+        <item>**kill**</item>
+        <item>**lastapp**</item>
         <item>**back**</item>
         <item>**app**</item>
         <item>**home**</item>
@@ -206,6 +212,8 @@
         <item>**recents**</item>
         <item>**power**</item>
         <item>**search**</item>
+        <item>**screenshot**</item>
+        <item>**torch**</item>
         <item>**null**</item>
     </string-array>
 
@@ -233,6 +241,34 @@
         <item>**ring_vib_silent**</item>
         <item>**wake_device**</item>
         <item>**null**</item>
+    </string-array>
+
+    <!-- Pie control -->
+    <string-array name="icon_color_mode_entries">
+        <item>@string/icon_color_mode_all_icons</item>
+        <item>@string/icon_color_mode_system_icons</item>
+        <item>@string/icon_color_mode_system_custom_icons</item>
+        <item>@string/disabled</item>
+    </string-array>
+
+    <string-array name="icon_color_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- Navigation bar visibility -->
+    <string-array name="pref_menu_display_entries">
+        <item>@string/navigation_menu_always_show</item>
+        <item>@string/navigation_menu_never_show</item>
+        <item>@string/navigation_menu_default_jb_behavior</item>
+    </string-array>
+
+    <string-array name="pref_menu_display_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
 
 </resources>
