@@ -404,36 +404,6 @@
         <item>**null**</item>
     </string-array>
 
-    <!-- Battery icon -->
-    <string-array name="status_bar_battery_style_entries" translatable="false">
-        <item>@string/status_bar_battery_style_icon_portrait</item>
-        <item>@string/status_bar_battery_style_icon_landscape</item>
-        <item>@string/status_bar_battery_style_circle</item>
-        <item>@string/status_bar_battery_style_text</item>
-        <item>@string/status_bar_battery_style_hidden</item>
-    </string-array>
-
-    <string-array name="status_bar_battery_style_values" translatable="false">
-        <item>0</item>
-        <item>5</item>
-        <item>2</item>
-        <item>6</item>
-        <item>4</item>
-    </string-array>
-
-    <!-- Battery text mode -->
-    <string-array name="status_bar_battery_percentage_entries" translatable="false">
-        <item>@string/status_bar_battery_percentage_default</item>
-        <item>@string/status_bar_battery_percentage_text_inside</item>
-        <item>@string/status_bar_battery_percentage_text_next</item>
-    </string-array>
-
-    <string-array name="status_bar_battery_percentage_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
     <!-- Heads up -->
     <string-array name="heads_up_snooze_entries">
         <item>@string/disabled</item>
