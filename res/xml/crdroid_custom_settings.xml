@@ -42,6 +42,12 @@
          android:fragment="com.android.settings.crdroid.gestureanywhere.GestureAnywhereSettings"
          android:title="@string/gesture_anywhere_title" />
 
+    <!-- crDroid lockscreen -->
+    <PreferenceScreen
+         android:key="lock_crdroid"
+         android:title="@string/crdroid_lock_title"
+         android:fragment="com.android.settings.crdroid.LockcrDroid" />
+
     <!-- Animation settings -->
     <PreferenceScreen
          android:key="animation"
