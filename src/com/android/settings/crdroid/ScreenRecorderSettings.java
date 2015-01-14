@@ -38,12 +38,10 @@ public class ScreenRecorderSettings extends SettingsPreferenceFragment implement
     private static final String KEY_VIDEO_SIZE = "screen_recorder_size";
     private static final String KEY_VIDEO_BITRATE = "screen_recorder_bitrate";
     private static final String KEY_RECORD_AUDIO = "screen_recorder_record_audio";
-    private static final String KEY_SCREENRECORD = "power_menu_screenrecord";
 
     private ListPreference mVideoSizePref;
     private ListPreference mVideoBitratePref;
     private SwitchPreference mRecordAudioPref;
-    private SwitchPreference mScreenrecordPref;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -69,10 +67,6 @@ public class ScreenRecorderSettings extends SettingsPreferenceFragment implement
         mRecordAudioPref.setOnPreferenceChangeListener(this);
         if (!hasMicrophone()) getPreferenceScreen().removePreference(mRecordAudioPref);
 
-        mScreenrecordPref = (SwitchPreference) findPreference(KEY_SCREENRECORD);
-        mScreenrecordPref.setChecked(Settings.System.getInt(resolver,
-                Settings.System.POWER_MENU_SCREENRECORD_ENABLED, 0) == 1);
-        mScreenrecordPref.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -91,11 +85,6 @@ public class ScreenRecorderSettings extends SettingsPreferenceFragment implement
         } else if (preference == mRecordAudioPref) {
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.SCREEN_RECORDER_RECORD_AUDIO,
-                    Boolean.TRUE.equals((Boolean)o) ? 1 : 0);
-            return true;
-        } else if (preference == mScreenrecordPref) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.POWER_MENU_SCREENRECORD_ENABLED,
                     Boolean.TRUE.equals((Boolean)o) ? 1 : 0);
             return true;
         }

@@ -639,10 +639,8 @@
     <string name="screen_recorder_bitrate_5000000">5000000</string>
     <string name="screen_recorder_bitrate_10000000">10000000</string>
     <string name="screen_recorder_bitrate_20000000">20000000</string>
-    <string name="power_menu_screenrecord_title">Screen record</string>
     <string name="screen_recorder_record_audio_title">External audio</string>
     <string name="screen_recorder_record_audio_summary">Record audio from the microphone</string>
-    <string name="screen_recorder_power_menu_summary">Add a Screen Record entry in the power menu</string>
 
     <!-- SearchBar Switcher -->
     <string name="recents_show_searchbar">Show search bar in recents</string>

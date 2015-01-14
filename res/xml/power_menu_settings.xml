@@ -35,6 +35,11 @@
         android:defaultValue="false" />
 
     <CheckBoxPreference
+        android:key="screenrecorder"
+        android:title="@string/power_menu_screen_recorder_title"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
         android:key="profile"
         android:title="@string/power_menu_profiles_title"
         android:defaultValue="false" />
