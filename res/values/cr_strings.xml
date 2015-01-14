@@ -50,7 +50,7 @@
     <string name="reset_message">Reset all entries to default?</string>
 
     <!-- crDroid lockscreen -->
-    <string name="crdroid_lock_title">Lockscreen crDroid</string>
+    <string name="crdroid_lock_title">Lockscreen</string>
     <string name="lockscreen_category">Lockscreen settings</string>
     
     <!-- Advanced sound settings -->
@@ -660,6 +660,10 @@
 
     <!-- Camera lockscreen swipe -->
     <string name="camera_widget_hide">Disable lockscreen camera</string>
-    <string name="camera_widget_hide_summary">Allows you to disable swipe to open camera in lockscreen</string>
+    <string name="camera_widget_hide_summary">Allows you to disable swipe to open camera in lockscreen.</string>
+
+    <!-- Dialer lockscreen swipe -->
+    <string name="dialer_widget_hide">Disable lockscreen dialer</string>
+    <string name="dialer_widget_hide_summary">Allows you to disable swipe to open dialer in lockscreen.\n<b>SystemUI will restart</b></string>
 
 </resources>
