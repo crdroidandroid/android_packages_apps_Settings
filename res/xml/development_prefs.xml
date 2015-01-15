@@ -27,6 +27,11 @@
                 android:targetClass="com.android.development.Development" />
     </PreferenceScreen>
 
+    <com.android.settings.BugreportPreference
+            android:key="bugreport"
+            android:title="@*android:string/bugreport_title"
+            android:dialogTitle="@*android:string/bugreport_title" />
+
     <SwitchPreference
         android:key="advanced_reboot"
         android:title="@string/advanced_reboot_title"
@@ -121,6 +126,11 @@
             android:key="enable_terminal"
             android:title="@string/enable_terminal_title"
             android:summary="@string/enable_terminal_summary" />
+
+        <SwitchPreference
+            android:key="bugreport_in_power"
+            android:title="@string/bugreport_in_power"
+            android:summary="@string/bugreport_in_power_summary"/>
 
         <SwitchPreference
             android:key="allow_mock_location"
