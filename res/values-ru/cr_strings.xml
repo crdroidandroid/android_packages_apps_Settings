@@ -33,6 +33,11 @@
     <string name="reset">Сброс</string>
     <string name="default_string">По умолчанию</string>
     <string name="help">Справка</string>
+    <string name="ok">ОК</string>
+    
+    <!-- Performance Misc -->
+    <string name="misc_title">Прочее crDroid</string>
+    <string name="pref_force_fast_charge_title">Принудительный режим быстрой зарядки</string>
 
     <!-- crDroid custom settings -->
     <string name="crdroid_custom_title">Настройки crDroid</string>
@@ -113,8 +118,13 @@
     <string name="recents_clear_all_dismiss_all_summary">Выберите, нужно ли очищать все задачи или игнорировать текущие</string>
 
     <!-- OmniSwitch -->
-    <string name="omniswitch_settings_title">Настройки OmniSwitch</string>
-    <string name="omniswitch_settings_summary">Включить и настроить OmniSwitch</string>
+    <string name="omniswitch_settings_title">OmniSwitch</string>
+    <string name="recents_use_omniswitch_title">Использовать как \"Недавние приложения\"</string>
+    <string name="recents_use_omniswitch_summary">Использовать OmniSwitch вместо стандартных \"Недавних приложений\"</string>
+    <string name="omniswitch_start_settings_title">Настройки</string>
+    <string name="omniswitch_start_settings_summary">Открыть настройки OmniSwitch</string>
+    <string name="omniswitch_first_time_title">Информация</string>
+    <string name="omniswitch_first_time_message">Убедитесь, что вы включили OmniSwitch. Это можно сделать с помощью настроек снизу</string>
 
     <!-- Notifications on keyguard -->
     <string name="app_notification_show_on_keyguard_title">Отобразить на экране блокировки</string>
