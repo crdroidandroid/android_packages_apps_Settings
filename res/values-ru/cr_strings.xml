@@ -19,6 +19,7 @@
     <!-- About phone screen, crDroid version -->
     <string name="mod_version">Версия crDroid</string>
     <string name="mod_version_default">Неизвестно</string>
+    <string name="model_name">Название модели</string>
 
     <!-- About phone screen, build date -->
     <string name="build_date">Дата сборки</string>
@@ -35,15 +36,28 @@
 
     <!-- crDroid custom settings -->
     <string name="crdroid_custom_title">Настройки crDroid</string>
-    <string name="extras_crdroid_settings">Дополнительно</string>
+    <string name="status_bar_title">Строка состояния</string>
     <string name="status_bar_settings">Настройки строки состояния</string>
+    <string name="recents_panel_title">Недавние приложения</string>
     <string name="recents_panel_settings">Настройки \"Недавних приложений\"</string>
+    <string name="animation_title">Анимация</string>
+    <string name="animation_settings">Настройки анимации</string>
     <string name="reset_message">Сбросить все параметры на значения по умолчанию?</string>
+
+    <!-- crDroid lockscreen -->
+    <string name="crdroid_lock_title">Экран блокировки</string>
+    <string name="lockscreen_category">Настройки экрана блокировки</string>
 
     <!-- Advanced sound settings -->
     <string name="advanced_title">Расширенные настройки</string>
     <string name="advanced_sound_title">Расширенные</string>
     <string name="sound_title">Звук</string>
+    
+    <!-- Share crDroid -->
+    <string name="share_crdroid_title">Поделиться crDroid</string>
+    <string name="share_crdroid_summary">Позвольте другим узнать о crDroid</string>
+    <string name="share_message">Ознакомьтесь с тем, что такое #crDroid по ссылке @ https://plus.google.com/u/0/communities/118297646046960923906</string>
+    <string name="share_chooser_title">Поделиться crDroid</string>
 
     <!-- Less Notification sounds -->
     <string name="notifications_category_title">Уведомления</string>
@@ -95,6 +109,12 @@
     <string name="recents_clear_all_location_title">Расположение кнопки \"Очистить всё\"</string>
     <string name="recents_clear_all_location_right">Вверху справа</string>
     <string name="recents_clear_all_location_left">Вверху слева</string>
+    <string name="recents_clear_all_dismiss_all_title">Очищать все задачи</string>
+    <string name="recents_clear_all_dismiss_all_summary">Выберите, нужно ли очищать все задачи или игнорировать текущие</string>
+
+    <!-- OmniSwitch -->
+    <string name="omniswitch_settings_title">Настройки OmniSwitch</string>
+    <string name="omniswitch_settings_summary">Включить и настроить OmniSwitch</string>
 
     <!-- Notifications on keyguard -->
     <string name="app_notification_show_on_keyguard_title">Отобразить на экране блокировки</string>
@@ -138,9 +158,8 @@
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Выбор цвета</string>
-    <string name="press_color_to_apply">Нажмите на цвет внизу, чтобы применить его</string>
+    <string name="press_color_to_apply">Нажмите на цвет справа, чтобы применить его</string>
     <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
     <string name="set">Задать</string>
@@ -311,23 +330,6 @@
     <string name="lockscreen_shorcuts_longpress_title">Долгое нажатие на ярлык</string>
     <string name="lockscreen_shorcuts_longpress_summary">Открывать выбранные ярлыки экрана блокировки по долгому нажатию</string>
 
-    <!-- Hardware tunables - Key backlight -->
-    <!-- will be here for a temporary time until cm merge this feature back -->
-    <string name="button_backlight_title">Подсветка</string>
-    <string name="button_backlight_enabled">Подсветка кнопок</string>
-    <string name="keyboard_backlight_enabled">Подсветка клавиатуры</string>
-    <string name="button_backlight_seekbar_title">Яркость кнопок</string>
-    <string name="keyboard_backlight_seekbar_title">Яркость клавиатуры</string>
-    <string name="backlight_timeout_title">Длительность подсветки</string>
-    <string name="backlight_timeout_unlimited">Не выключать</string>
-    <plurals name="backlight_timeout_time">
-        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> сек.</item>
-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> сек.</item>
-    </plurals>
-    <string name="backlight_summary_disabled">Выключена</string>
-    <string name="backlight_summary_enabled_with_timeout">Включена <xliff:g id="timeout">%s</xliff:g></string>
-    <string name="backlight_summary_enabled">Включена всегда</string>
-    
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Стиль индикатора батареи</string>
     <string name="status_bar_battery_style_icon_portrait">Вертикальная иконка</string>
@@ -493,5 +495,133 @@
     <string name="wakelock_blocker_reload">Перезагрузить</string>
     <string name="wakelock_blocker_warning_title">Действуйте осторожно</string>
     <string name="wakelock_blocker_warning">Блокирование Wakelock-ов потенциально может привести к нестабильной работе устройства, сбою или потере данных</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="options_settings_title">Настройки</string>
+    <string name="media_scanner_on_boot_title">Поведение MediaScanner при загрузке</string>
+    <string name="media_scanner_on_boot_enabled">Сканировать медиа</string>
+    <string name="media_scanner_on_boot_ask">По запросу (уведомление)</string>
+    <string name="media_scanner_on_boot_disabled">Не сканировать медиа</string>
+
+    <!-- App Circle sidebar -->
+    <string name="category_app_circle_bar_title">Панель приложений</string>
+    <string name="app_circle_bar_title">Круговая панель приложений</string>
+    <string name="app_circle_bar_summary">Показывать круговую панель приложений при касании правой части экрана</string>
+    <string name="app_circle_bar_included_apps_title">Включенные приложения</string>
+    <string name="app_circle_bar_included_apps_summary">Приложения, которые отображаются в круговой панели</string>
+    <string name="trigger_width_title">Ширина триггера</string>
+    <string name="trigger_width_summary">Установите ширину триггера</string>
+    <string name="trigger_top_title">Положение триггера</string>
+    <string name="trigger_top_summary">Установите положение триггера</string>
+    <string name="trigger_bottom_title">Высота триггера</string>
+    <string name="trigger_bottom_summary">Установите высоту триггера</string>
+
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">Анимация всплывающих уведомлений</string>
+    <string name="toast_none_animation">Нет</string>
+    <string name="toast_default_animation">По умолчанию</string>
+    <string name="toast_fade_animation">Затухание</string>
+    <string name="toast_SlideRight_animation">Сдвиг справа</string>
+    <string name="toast_SlideLeft_animation">Сдвиг слева</string>
+    <string name="toast_Xylon_animation">Анимация Xylon</string>
+    <string name="toast_Toko_animation">Анимация Toko</string>
+    <string name="toast_Tn_animation">Анимация Tn</string>
+    <string name="toast_Honami_animation">Анимация Honami</string>
+    <string name="toast_FastFade_animation">Быстрое затухание</string>
+    <string name="toast_GrowFade_animation">Растущее затухание</string>
+    <string name="toast_GrowFadeCenter_animation">Растущее затухание из центра</string>
+    <string name="toast_GrowFadeBottom_animation">Растущее затухание снизу</string>
+    <string name="toast_Translucent_animation">Полупрозрачная</string>
+    <string name="toast_SlideLeftRight_animation">Скольжение слева направо</string>
+    <string name="toast_SlideRightLeft_animation">Скольжение справа налево</string>
+    
+    <!-- Navigation Bar on the left -->
+    <string name="navigation_bar_left_title">Режим левши</string>
+    <string name="navigation_bar_left_summary">Отображает панель навигации на левой стороне экрана в ландшафтном режиме</string>
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Показать информацию о процессоре</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Экран наложения показывает текущую информацию о процессоре</string>
+
+    <!-- AOKP custom system animations -->  
+    <string name="aokp_animation_title">Системные анимации</string>
+    <string name="aokp_animation_summary">Настройка анимации от AOKP</string>
+    <string name="animation_exit_only_title">Только анимация входа</string>
+    <string name="animation_reverse_exit_title">Обратная анимация выхода</string>
+    <string name="activity_open_title">Анимация открытия раздела</string>
+    <string name="activity_close_title">Анимация закрытия раздела</string>
+    <string name="task_open_title">Анимация открытия задачи</string>
+    <string name="task_close_title">Анимация закрытия задачи</string>
+    <string name="task_move_to_front_title">Анимация перехода на передний план</string>
+    <string name="task_move_to_back_title">Анимация возврата на задний план</string>
+    <string name="wallpaper_open_title">Анимация открытия обоев</string>
+    <string name="wallpaper_close_title">Анимация закрытия обоев</string>
+    <string name="wallpaper_intra_open_title">Анимация открытия меню запущеных приложений</string>
+    <string name="wallpaper_intra_close_title">Анимация закрытия меню запущеных приложений</string>
+    <string name="task_open_behind_title">Анимация фонового открытия приложения</string>
+    <string name="animation_duration_title">Продолжительность анимации</string>
+    <string name="animation_duration_default">По умолчанию</string>
+
+    <!-- Screen recorder -->
+    <string name="screen_recorder_title">Запись экрана</string>
+    <string name="screen_recorder_summary">Параметры записи</string>
+    <string name="screen_recorder_video_dimensions_title">Размер видео</string>
+    <string name="screen_recorder_video_bitrate_title">Битрейт</string>
+    <!-- video sizes -->
+    <string name="screen_recorder_size_240x400">240x400</string>
+    <string name="screen_recorder_size_360x640">360x640</string>
+    <string name="screen_recorder_size_480x800">480x800</string>
+    <string name="screen_recorder_size_480x854">480x854</string>
+    <string name="screen_recorder_size_540x960">540x960</string>
+    <string name="screen_recorder_size_600x1024">600x1024</string>
+    <string name="screen_recorder_size_720x1280">720x1280</string>
+    <!-- frame rates -->
+    <string name="screen_recorder_bitrate_title_100000">100 кБ/с</string>
+    <string name="screen_recorder_bitrate_title_250000">250 кБ/с</string>
+    <string name="screen_recorder_bitrate_title_500000">500 кБ/с</string>
+    <string name="screen_recorder_bitrate_title_1000000">1 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_2000000">2 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_3000000">3 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_4000000">4 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_5000000">5 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_10000000">10 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_20000000">20 МБ/с</string>
+    <string name="screen_recorder_bitrate_100000">100000</string>
+    <string name="screen_recorder_bitrate_250000">250000</string>
+    <string name="screen_recorder_bitrate_500000">500000</string>
+    <string name="screen_recorder_bitrate_1000000">1000000</string>
+    <string name="screen_recorder_bitrate_2000000">2000000</string>
+    <string name="screen_recorder_bitrate_3000000">3000000</string>
+    <string name="screen_recorder_bitrate_4000000">4000000</string>
+    <string name="screen_recorder_bitrate_5000000">5000000</string>
+    <string name="screen_recorder_bitrate_10000000">10000000</string>
+    <string name="screen_recorder_bitrate_20000000">20000000</string>
+    <string name="screen_recorder_record_audio_title">Запись звука</string>
+    <string name="screen_recorder_record_audio_summary">Записывать звук с микрофона</string>
+
+    <!-- SearchBar Switcher -->
+    <string name="recents_show_searchbar">Строка поиска в \"Недавних приложениях\"</string>
+    <string name="recents_show_searchbar_summary">Показывать строку поиска Google в панели \"Недавних приложений\"</string>
+
+    <!-- Superuser indicator on status bar -->
+    <string name="su_indicator">Индикатор суперпользователя</string>
+    <string name="su_indicator_summary">Показывать индикатор суперпользователя во время активной сессии</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Вибрировать при нажатии</string>
+    <string name="quick_settings_vibrate_summary">Вибрация при нажатии на плитку</string>
+
+    <!-- Camera lockscreen swipe -->
+    <string name="camera_widget_hide">Отключить камеру на экране блокировки</string>
+    <string name="camera_widget_hide_summary">Позволяет отключить жест вызова камеры на экране блокировки</string>
+    
+    <!-- Dialer lockscreen swipe -->
+    <string name="dialer_widget_hide">Отключить номеронабиратель на экране блокировки</string>
+    <string name="dialer_widget_hide_summary">Позволяет отключить жест вызова номеронабирателя на экране блокировки\n<b>SystemUI будет перезагружен</b></string>
+    
+    <!-- LockClocK -->
+    <string name="lock_clock_title">Настройки cLock</string>
+    <string name="lock_clock_summary">Настройки отображения виджета \'cLock\'</string>
 
 </resources>
