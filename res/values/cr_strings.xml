@@ -50,7 +50,7 @@
     <string name="reset_message">Reset all entries to default?</string>
 
     <!-- crDroid lockscreen -->
-    <string name="crdroid_lock_title">Lockscreen crDroid</string>
+    <string name="crdroid_lock_title">Lockscreen</string>
     <string name="lockscreen_category">Lockscreen settings</string>
     
     <!-- Advanced sound settings -->
