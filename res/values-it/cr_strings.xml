@@ -319,21 +319,6 @@
     <string name="lockscreen_shorcuts_longpress_title">Pressione Prolungata</string>
     <string name="lockscreen_shorcuts_longpress_summary">Apre una scorciatoia personalizzata tramite la pressione prolungata</string>
 
-    <!-- Status bar - Battery -->
-    <string name="status_bar_battery_style_title">Stile Indicatore Batteria</string>
-    <string name="status_bar_battery_style_icon_portrait">Icona in modalità verticale</string>
-    <string name="status_bar_battery_style_icon_landscape">Icona in modalità orizzontale</string>
-    <string name="status_bar_battery_style_circle">Cerchio</string>
-    <string name="status_bar_battery_style_text">Testo</string>
-    <string name="status_bar_battery_style_hidden">Nascosta</string>
-
-    <!-- Status bar - Battery percentage -->
-    <string name="status_bar_battery_percentage_title">Mostra percentuale batteria</string>
-    <string name="status_bar_battery_percentage_dialog_title">Percentuale batteria</string>
-    <string name="status_bar_battery_percentage_default">Nascosta (default)</string>
-    <string name="status_bar_battery_percentage_text_inside">Nell\'icona</string>
-    <string name="status_bar_battery_percentage_text_next">A fianco dell\'icona</string>
-
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">CPU</string>
     <string name="mem_info">RAM</string>
