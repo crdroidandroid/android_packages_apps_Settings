@@ -610,11 +610,7 @@
     <!-- Camera lockscreen swipe -->
     <string name="camera_widget_hide">Отключить камеру на экране блокировки</string>
     <string name="camera_widget_hide_summary">Позволяет отключить жест вызова камеры на экране блокировки</string>
-    
-    <!-- Dialer lockscreen swipe -->
-    <string name="dialer_widget_hide">Отключить номеронабиратель на экране блокировки</string>
-    <string name="dialer_widget_hide_summary">Позволяет отключить жест вызова номеронабирателя на экране блокировки\n<b>SystemUI будет перезагружен</b></string>
-    
+
     <!-- LockClocK -->
     <string name="lock_clock_title">Настройки cLock</string>
     <string name="lock_clock_summary">Настройки отображения виджета \'cLock\'</string>
