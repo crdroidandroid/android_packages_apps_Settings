@@ -169,7 +169,7 @@
     <!-- Color Picker -->
     <string name="dialog_color_picker">Выбор цвета</string>
     <string name="press_color_to_apply">Нажмите на цвет справа, чтобы применить его</string>
-    <string name="arrow_right">></string>
+    <string name="arrow_right">→</string>
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
     <string name="set">Задать</string>
