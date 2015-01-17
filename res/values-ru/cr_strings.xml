@@ -340,21 +340,6 @@
     <string name="lockscreen_shorcuts_longpress_title">Долгое нажатие на ярлык</string>
     <string name="lockscreen_shorcuts_longpress_summary">Открывать выбранные ярлыки экрана блокировки по долгому нажатию</string>
 
-    <!-- Status bar - Battery -->
-    <string name="status_bar_battery_style_title">Стиль индикатора батареи</string>
-    <string name="status_bar_battery_style_icon_portrait">Вертикальная иконка</string>
-    <string name="status_bar_battery_style_icon_landscape">Горизонтальная иконка</string>
-    <string name="status_bar_battery_style_circle">Круг</string>
-    <string name="status_bar_battery_style_text">Текст</string>
-    <string name="status_bar_battery_style_hidden">Не показывать</string>
-
-    <!-- Status bar - Battery percentage -->
-    <string name="status_bar_battery_percentage_title">Показывать проценты батареи</string>
-    <string name="status_bar_battery_percentage_dialog_title">Проценты батареи</string>
-    <string name="status_bar_battery_percentage_default">Скрыты (по умолчанию)</string>
-    <string name="status_bar_battery_percentage_text_inside">Внутри иконки</string>
-    <string name="status_bar_battery_percentage_text_next">Около иконки</string>
-    
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">Процессор</string>
     <string name="mem_info">Память</string>
