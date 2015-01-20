@@ -41,6 +41,7 @@ import android.content.res.Resources.NotFoundException;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.LinkProperties;
@@ -98,6 +99,8 @@ import java.util.Locale;
 
 public final class Utils {
     private static final String TAG = "Settings";
+
+    public static final String SYSTEM_UI_PACKAGE_NAME = "com.android.systemui";
 
     /**
      * Set the preference's title to the matching activity's label.
@@ -1090,4 +1093,17 @@ public final class Utils {
     public static boolean isPackageInstalled(Context context, String pkg) {
         return isPackageInstalled(context, pkg, true);
     }
+
+    public static Drawable getNamedDrawableFromSystemUI(Resources res, String name) {
+        if (res == null) {
+            return null;
+        }
+        int resId = res.getIdentifier(name, "drawable", SYSTEM_UI_PACKAGE_NAME);
+        if (resId > 0) {
+            Drawable d = res.getDrawable(resId);
+            return d;
+        }
+        return null;
+    }
+
 }
