@@ -13,11 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package com.android.settings.crdroid;
 
 import android.app.ActivityManagerNative;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.DialogFragment;
 import android.app.IActivityManager;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -43,7 +45,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private static final String TAG = "DisplaySettings";
 
-    private static final int DIALOG_DENSITY = 101;
+    private static final int DIALOG_DENSITY = 0;
+    private static final int DIALOG_DENSITY_WARNING = 1;
 
     private static final String KEY_LCD_DENSITY = "lcd_density";
 
@@ -110,12 +113,21 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     }
 
     public void writeLcdDensityPreference(int value) {
+        // Set the value clicked on the list
         try {
             SystemProperties.set("persist.sys.lcd_density", Integer.toString(value));
         }
         catch (Exception e) {
             Log.w(TAG, "Unable to save LCD density");
         }
+        // Show a dialog before restart
+        // and let the user know of it
+        showDialogInner(DIALOG_DENSITY_WARNING);
+
+    }
+
+    // Restart the system to apply changes
+    static void systemRestart() {
         try {
             final IActivityManager am = ActivityManagerNative.asInterface(ServiceManager.checkService("activity"));
             if (am != null) {
@@ -132,44 +144,90 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         switch (dialogId) {
             case DIALOG_DENSITY:
-                final View textEntryView = factory.inflate(
-                        R.layout.alert_dialog_text_entry, null);
+                final View textEntryView = factory.inflate(R.layout.alert_dialog_text_entry, null);
                 return new AlertDialog.Builder(getActivity())
-                        .setTitle(R.string.custom_density_dialog_title)
-                        .setMessage(getResources().getString(R.string.custom_density_dialog_summary))
-                        .setView(textEntryView)
-                        .setPositiveButton(getResources().getString(R.string.set_custom_density_set), new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int whichButton) {
-                                EditText dpi = (EditText) textEntryView.findViewById(R.id.dpi_edit);
-                                Editable text = dpi.getText();
-                                Log.i(TAG, text.toString());
-                                String editText = dpi.getText().toString();
+                .setTitle(R.string.custom_density_dialog_title)
+                .setMessage(getResources().getString(R.string.custom_density_dialog_summary))
+                .setView(textEntryView)
+                .setPositiveButton(getResources().getString(R.string.set_custom_density_set), new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        EditText dpi = (EditText) textEntryView.findViewById(R.id.dpi_edit);
+                        Editable text = dpi.getText();
+                        Log.i(TAG, text.toString());
+                        String editText = dpi.getText().toString();
+                        // Set the value of the text box
+                        try {
+                            SystemProperties.set("persist.sys.lcd_density", editText);
+                        }
+                        catch (Exception e) {
+                            Log.w(TAG, "Unable to save LCD density");
+                        }
+                        // Show a dialog before restart
+                        // and let the user know of it
+                        showDialogInner(DIALOG_DENSITY_WARNING);
 
-                                try {
-                                    SystemProperties.set("persist.sys.lcd_density", editText);
-                                }
-                                catch (Exception e) {
-                                    Log.w(TAG, "Unable to save LCD density");
-                                }
-                                try {
-                                    final IActivityManager am = ActivityManagerNative.asInterface(ServiceManager.checkService("activity"));
-                                    if (am != null) {
-                                        am.restart();
-                                    }
-                                }
-                                catch (RemoteException e) {
-                                    Log.e(TAG, "Failed to restart");
-                                }
-                            }
+                    }
 
-                        })
-                        .setNegativeButton(getResources().getString(R.string.cancel), new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int whichButton) {
-
-                                dialog.dismiss();
-                            }
-                        }).create();
+                })
+                .setNegativeButton(getResources().getString(R.string.cancel), new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        dialog.dismiss();
+                    }
+                })
+                .create();
         }
         return null;
+    }
+
+    private void showDialogInner(int id) {
+        DialogFragment newFragment = MyAlertDialogFragment.newInstance(id);
+        newFragment.setTargetFragment(this, 0);
+        newFragment.show(getFragmentManager(), "dialog " + id);
+    }
+
+    public static class MyAlertDialogFragment extends DialogFragment {
+
+        public static MyAlertDialogFragment newInstance(int id) {
+            MyAlertDialogFragment frag = new MyAlertDialogFragment();
+            Bundle args = new Bundle();
+            args.putInt("id", id);
+            frag.setArguments(args);
+            return frag;
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            int id = getArguments().getInt("id");
+            switch (id) {
+                case DIALOG_DENSITY_WARNING:
+                    return new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.attention)
+                    .setMessage(R.string.custom_density_warning)
+                    .setNegativeButton(R.string.dialog_cancel,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            // If canceled, set the density value to null avoiding
+                            // the storage of the clicked value and forward change
+                            // to it in a next restart of the system 
+                            try {
+                                SystemProperties.set("persist.sys.lcd_density", null);
+                            } catch (Exception e) {
+                                Log.w(TAG, "Unable to save LCD density");
+                            }
+
+                            dialog.cancel();
+                        }
+                    })
+                    .setPositiveButton(R.string.dialog_restart,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            // If resatrt is the choosen one do it and apply the value
+                            systemRestart();
+                        }
+                    })
+                    .create();
+            }
+            throw new IllegalArgumentException("unknown id " + id);
+        }
     }
 }
