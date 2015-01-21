@@ -23,11 +23,6 @@
         android:key="status_bar"
         android:title="@string/status_bar_settings" >
 
-        <PreferenceScreen
-            android:key="clock_style_pref"
-            android:fragment="com.android.settings.crdroid.StatusBarClockStyle"
-            android:title="@string/status_bar_clock" />
-
         <ListPreference
             android:key="status_bar_battery_style"
             android:title="@string/status_bar_battery_style_title"
