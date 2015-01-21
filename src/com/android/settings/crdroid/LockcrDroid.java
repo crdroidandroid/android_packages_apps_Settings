@@ -21,22 +21,16 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.os.Bundle;
-import android.os.UserHandle;
+import android.preference.SwitchPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
-import android.preference.ListPreference;
-import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.SwitchPreference;
-import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.util.Helpers;
-import com.android.settings.Utils;
 
 public class LockcrDroid extends SettingsPreferenceFragment
         implements OnSharedPreferenceChangeListener {
@@ -59,10 +53,8 @@ public class LockcrDroid extends SettingsPreferenceFragment
 
         addPreferencesFromResource(R.xml.crdroid_lockscreen);
 
-        ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
         PackageManager pm = getPackageManager();
-        Resources res = getResources();
 
         mLockScreen = (PreferenceScreen) findPreference("lock_screen");
 
