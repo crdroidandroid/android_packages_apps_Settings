@@ -28,6 +28,12 @@
             android:title="@string/changelog_crdroid_title"
             android:fragment="com.android.settings.crdroid.Changelog" />
 
+        <!-- Devices and Maintainers -->
+        <PreferenceScreen
+            android:key="devices"
+            android:title="@string/device_maintainers_title"
+            android:fragment="com.android.settings.crdroid.Devices" />
+
         <!-- crDroid Share -->
         <Preference
             android:key="share"

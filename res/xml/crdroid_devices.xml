@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Copyright (C) 2015 crDroid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/device_maintainers_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <Preference
+        style="?android:preferenceInformationStyle"
+        android:title="@string/device_maintainers_title"
+        android:summary="@string/device_maintainers_title_summary"
+        android:selectable="false" />
+
+        <PreferenceCategory
+             android:key="device_category_google"
+             android:title="@string/device_category_google_title" >
+
+             <Preference
+                 android:key="device_google_n5"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_google_n5"
+                 android:summary="@string/device_google_n5_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+             android:key="device_category_sony"
+             android:title="@string/device_category_sony_title" >
+
+             <Preference
+                 android:key="device_sony_zu"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_z1u"
+                 android:summary="@string/device_sony_zu_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_sony_z1"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_z1"
+                 android:summary="@string/device_sony_z1_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_sony_z1c"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_z1c"
+                 android:summary="@string/device_sony_z1c_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_sony_z2"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_z2"
+                 android:summary="@string/device_sony_z2_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_sony_z3"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_z3"
+                 android:summary="@string/device_sony_z3_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_sony_z3c"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_z3c"
+                 android:summary="@string/device_sony_z3c_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
+</PreferenceScreen> 

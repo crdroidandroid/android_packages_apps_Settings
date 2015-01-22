@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     Copyright (C) 2015 crDroid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Phone brand -->
+    <string name="device_category_google_title">GOOGLE</string>
+    <string name="device_category_sony_title">SONY</string>
+    <string name="device_category_samsung_title">SAMSUNG</string>
+    <string name="device_category_lg_title">LG</string>
+    <string name="device_category_htc_title">HTC</string>
+    <string name="device_category_motorola_title">MOTOROLA</string>
+    <string name="device_category_oneplus_title">ONE PLUS</string>
+
+    <!-- Devices and Maintainers -->
+    <!-- Google devices -->
+    <string name="device_google_n5">Google Nexus 5</string>
+    <string name="device_google_n5_summary">Hammerhead \nMaintainer - Cristiano Matos</string>
+
+    <!-- Sony devices -->
+    <string name="device_sony_zu">Sony Xperia Z Ultra</string>
+    <string name="device_sony_zu_summary">Togari \nMaintainer - David Viteri</string>
+    <string name="device_sony_z1">Sony Xperia Z1</string>
+    <string name="device_sony_z1_summary">Honami \nMaintainer - David Viteri</string>
+    <string name="device_sony_z1c">Sony Xperia Z1 Compact</string>
+    <string name="device_sony_z1c_summary">Amami \nMaintainer - David Viteri</string>
+    <string name="device_sony_z2">Sony Xperia Z2</string>
+    <string name="device_sony_z2_summary">Sirius \nMaintainer - David Viteri</string>
+    <string name="device_sony_z3">Sony Xperia Z3</string>
+    <string name="device_sony_z3_summary">Leo \nMaintainer - David Viteri</string>
+    <string name="device_sony_z3c">Sony Xperia Z3 Compact</string>
+    <string name="device_sony_z3c_summary">Aries \nMaintainer - David Viteri</string>
+
+</resources>

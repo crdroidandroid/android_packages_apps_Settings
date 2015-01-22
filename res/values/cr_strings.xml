@@ -60,6 +60,10 @@
     <string name="crdroid_google_plus_title">Google+</string>
     <string name="crdroid_google_plus_summary">Visit our G+ page for support and news</string>
 
+    <!-- Devices and Maintainers -->
+    <string name="device_maintainers_title">Devices and Maintainers</string>
+    <string name="device_maintainers_title_summary">List of Supported devices by crDroid maintainers</string>
+
     <!-- Navigation bar -->
     <string name="navbar_enable_bar_title">Enable on-screen nav bar</string>
     <string name="navbar_enable_bar_summary">Enable on-screen nav bar and disable hardware buttons</string>
