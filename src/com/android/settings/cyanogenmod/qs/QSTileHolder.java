@@ -153,6 +153,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_battery_saver_on";
                 stringId = R.string.qs_battery_saver_tile;
                 break;
+            case QSConstants.TILE_BRIGHTNESS:
+                resourceName = "ic_qs_brightness_auto_off";
+                stringId = R.string.qs_brightness_tile;
+                break;
             default:
                 return null;
         }
