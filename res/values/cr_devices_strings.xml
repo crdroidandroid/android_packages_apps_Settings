@@ -28,9 +28,43 @@
     <string name="device_category_oneplus_title">ONE PLUS</string>
 
     <!-- Devices and Maintainers -->
+    <!-- Google devices -->
+    <string name="device_google_n4">Google Nexus 4</string>
+    <string name="device_google_n4_summary">Mako \nMaintainer - Cristiano Matos</string>
     <string name="device_google_n5">Google Nexus 5</string>
-    <string name="device_google_n5_summary">D820-D821 \nMaintainer - Cristiano Matos</string>
+    <string name="device_google_n5_summary">Hammerhead \nMaintainer - Cristiano Matos</string>
+    <string name="device_google_n6">Google Nexus 6</string>
+    <string name="device_google_n6_summary">Shamu \nMaintainer - Hildo Boerboom</string>
 
+    <!-- Htc devices -->
+    <string name="device_htc_m8">Htc One M8</string>
+    <string name="device_htc_m8_summary">M8 \nMaintainer - Hildo Boerboom</string>
+    <string name="device_htc_endeavoru">Htc One X</string>
+    <string name="device_htc_endeavoru_summary">Endeavoru \nMaintainer - Hildo Boerboom</string>
+
+    <!-- Lg devices -->
+    <string name="device_lg_g3">Lg G3</string>
+    <string name="device_lg_g3_summary">D850-D851-D852 \nMaintainer - Hildo Boerboom</string>
+
+    <!-- Motorola devices -->
+    <string name="device_motorola_ghost">Motorola X first gen</string>
+    <string name="device_motorola_ghost_summary">Ghost \nMaintainer - Hildo Boerboom</string>
+
+    <!-- Samsung devices -->
+    <string name="device_samsung_note2">Samsung Galaxy Note 2</string>
+    <string name="device_samsung_note2_summary">N7100 \nMaintainer - Nick Janssen</string>
+    <string name="device_samsung_note3">Samsung Galaxy Note 3</string>
+    <string name="device_samsung_note3_summary">Hlte \nMaintainer - Hildo Boerboom</string>
+    <string name="device_samsung_note4qcom">Samsung Galaxy Note 4 (Snapdragon)</string>
+    <string name="device_samsung_note4qcom_summary">N910F-N910G \nMaintainer - Hildo Boerboom</string>
+    <string name="device_samsung_s3">Samsung Galaxy S 3</string>
+    <string name="device_samsung_s3_summary">GT-I9300 \nMaintainer - Cristiano Matos</string>
+    <string name="device_samsung_s5">Samsung Galaxy S 5</string>
+    <string name="device_samsung_s5_summary">Klte \nMaintainer - Hildo Boerboom</string>
+    <string name="device_samsung_tab2">Samsung Galaxy Tab 2</string>
+    <string name="device_samsung_tab2_summary">P3110 \nMaintainer - Nick Janssen</string>
+
+    <!-- Sony devices -->
     <string name="device_sony_z1">Sony Xperia Z1</string>
     <string name="device_sony_z1_summary">Honami \nMaintainer - David Viteri</string>
 

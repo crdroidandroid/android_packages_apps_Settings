@@ -26,30 +26,144 @@
         android:summary="@string/device_maintainers_title_summary"
         android:selectable="false" />
 
+        <!-- Google devices -->
         <PreferenceCategory
-             android:id="@+id/device_category_google"
+             android:key="device_category_google"
              android:title="@string/device_category_google_title" >
 
              <Preference
-                 android:id="@+id/device_google_n5"
+                 android:key="device_google_n4"
                  android:icon="@drawable/cr_devices"
+                 android:title="@string/device_google_n4"
+                 android:summary="@string/device_google_n4_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_google_n5"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_google_n5"
                  android:summary="@string/device_google_n5_summary"
-                 android:selectable="false" 
-                 android:title="@string/device_google_n5" />
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_google_n6"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_google_n6"
+                 android:summary="@string/device_google_n6_summary"
+                 android:selectable="false" />
 
         </PreferenceCategory>
 
+        <!-- Htc devices -->
         <PreferenceCategory
-             android:id="@+id/device_category_sony"
+             android:key="device_category_htc"
+             android:title="@string/device_category_htc_title" >
+
+             <Preference
+                 android:key="device_htc_m8"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_htc_m8"
+                 android:summary="@string/device_htc_m8_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_htc_endeavoru"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_htc_endeavoru"
+                 android:summary="@string/device_htc_endeavoru_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
+        <!-- Lg devices -->
+        <PreferenceCategory
+             android:key="device_category_lg"
+             android:title="@string/device_category_lg_title" >
+
+             <Preference
+                 android:key="device_lg_g3"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_lg_g3"
+                 android:summary="@string/device_lg_g3_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
+        <!-- Motorola devices -->
+        <PreferenceCategory
+             android:key="device_category_motorola"
+             android:title="@string/device_category_motorola_title" >
+
+             <Preference
+                 android:key="device_motorola_ghost"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_motorola_ghost"
+                 android:summary="@string/device_motorola_ghost_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
+        <!-- Samsung devices -->
+        <PreferenceCategory
+             android:key="device_category_samsung"
+             android:title="@string/device_category_samsung_title" >
+
+             <Preference
+                 android:key="device_samsung_note2"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_samsung_note2"
+                 android:summary="@string/device_samsung_note2_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_samsung_note3"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_samsung_note3"
+                 android:summary="@string/device_samsung_note3_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_samsung_note4qcom"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_samsung_note4qcom"
+                 android:summary="@string/device_samsung_note4qcom_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_samsung_s3"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_samsung_s3"
+                 android:summary="@string/device_samsung_s3_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_samsung_s5"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_samsung_s5"
+                 android:summary="@string/device_samsung_s5_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_samsung_tab2"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_samsung_tab2"
+                 android:summary="@string/device_samsung_tab2_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
+        <!-- Sony devices -->
+        <PreferenceCategory
+             android:key="device_category_sony"
              android:title="@string/device_category_sony_title" >
 
              <Preference
-                 android:id="@+id/device_sony_z1"
+                 android:key="device_sony_z1"
                  android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_z1"
                  android:summary="@string/device_sony_z1_summary"
-                 android:selectable="false" 
-                 android:title="@string/device_sony_z1" />
+                 android:selectable="false" />
 
         </PreferenceCategory>
 
-</PreferenceScreen> 
+</PreferenceScreen>
