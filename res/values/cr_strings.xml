@@ -665,6 +665,7 @@
     <string name="qs_four_columns_title">Show four tiles per row</string>
     <string name="qs_sync_tile">Sync</string>
     <string name="qs_power_menu_tile">Power menu</string>
+    <string name="qs_battery_saver_tile">Battery saver</string>
 
     <!-- Heads Up -->
     <string name="category_heads_up">Heads up notifications</string>
