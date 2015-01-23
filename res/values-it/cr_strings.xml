@@ -71,7 +71,7 @@
     <string name="less_notification_sounds_2m">2 minuti</string>
     <string name="less_notification_sounds_5m">5 minuti</string>
 
-    <!-- Keyboard and Input ASS methods  -->
+    <!-- Keyboard and Input ASS methods -->
     <string name="title_keyboard_input">Opzioni Avanzate</string>
     <string name="disable_fullscreen_keyboard_title">Disabilita tastiera a schermo intero</string>
     <string name="disable_fullscreen_keyboard_summary">La tastiera in modalità panorama non occuperà tutto lo schermo</string>
@@ -79,7 +79,7 @@
     <string name="keyboard_rotation_toggle_summary">Forza la rotazione automatica quando usi la tastiera</string>
     <string name="keyboard_rotation_timeout_title">Timeout rotazione automatica</string>
     <string name="keyboard_rotation_timeout_summary">Disattiva la rotazione <xliff:g id="rotate_timeout">%1$s</xliff:g> secondi dopo la scomparsa della tastiera</string>
-    <string name="keyboard_rotation_dialog">Questa caratteristica forza la rotazione automatica quando la tastiera è in uso.  Non ha effetto se la rotazione automatica è già attiva.</string>
+    <string name="keyboard_rotation_dialog">Questa caratteristica forza la rotazione automatica quando la tastiera è in uso. Non ha effetto se la rotazione automatica è già attiva.</string>
     <string name="show_enter_key_title">Mostra il tasto Invio</string>
     <string name="show_enter_key_summary">Forza la presenza del tasto Invio al posto delle emoticon</string>
     <string name="ime_switcher_notify">Notifica Selettore</string>
@@ -121,7 +121,7 @@
     <string name="quick_pulldown_right">Destra</string>
     
     <string name="block_on_secure_keyguard_title">Disattiva nella schermata di blocco</string>
-    <string name="block_on_secure_keyguard_summary">Disattiva  le Impostazioni Veloci nella schermata di blocco</string>
+    <string name="block_on_secure_keyguard_summary">Disattiva le Impostazioni Veloci nella schermata di blocco</string>
     
     <!-- Navigation bar -->
     <string name="nav_bar_title">Barra di Navigazione</string>
@@ -371,5 +371,234 @@
     <!-- Battery saver -->
     <string name="battery_saver_title">Colore avvertimento</string>
     <string name="battery_saver_style_reset_message">Ripristina colore avvertimento di risparmio batteria?</string>
+    <!-- Lock Gesture settings -->
+    <!-- Security & location settings screen, setting option name -->
+    <string name="lockgesture_change_lock_pattern_label">Cambia Gesto di sblocco</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture". We first ask the user toe nter the current pattern, and this is the message seen -->
+    <string name="lockgesture_change_lock_pin_label">Cambia PIN di sblocco</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture". We first ask the user toe nter the current pattern, and this is the message seen -->
+    <string name="lockgesture_need_to_unlock">Conferma Gesto</string>
+    <!-- Do not translate. -->
+    <string name="lockgesture_need_to_unlock_footer" />
+    <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
+    <string name="lockgesture_need_to_unlock_wrong">Riprova:</string>
+    <!-- Do not translate. -->
+    <string name="lockgesture_need_to_unlock_wrong_footer" />
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen. This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
+    <string name="lockgesture_recording_intro_header">Disegna un gesto:</string>
+    <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen. We are telling them to press the menu button to see more options or help. -->
+    <string name="lockgesture_recording_intro_footer">Premi menu per aiuto.</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
+    <string name="lockgesture_recording_inprogress">Stacca il dito quando hai fatto.</string>
+    <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
+    <string name="lockgesture_pattern_entered_header">Gesto registrato.</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
+    <string name="lockgesture_need_to_confirm">Disegna il gesto per confermare:</string>
+    <string name="lockgesture_pattern_confirmed_header">Il tuo nuovo gesto:</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. After they draw a gesture and release their finger, we display the pattern so they remember. When they are ready to draw it once again to confirm it, they press this button. -->
+    <string name="lockgesture_confirm_button_text">Conferma</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. After they draw a gesture and release their finger, we display the pattern so they remember. If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
+    <string name="lockgesture_restart_button_text">Ridisegna</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
+    <string name="lockgesture_retry_button_text">Riprova</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
+    <string name="lockgesture_continue_button_text">Continua</string>
+    <!-- Security & location settings screen, unlock screen activity title -->
+    <string name="lockgesture_settings_title">Gesto di sblocco</string>
+    <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
+    <string name="lockgesture_settings_enable_title">Richiedi gesto</string>
+    <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
+    <string name="lockgesture_settings_enable_summary">Devi disegnare un gesto per sbloccare</string>
+   <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern. If checked, this line is drawn. If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
+    <string name="lockgesture_settings_enable_visible_pattern_title">Traccia gesto visibile</string>
+    <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
+    <string name="lockgesture_settings_enable_power_button_instantly_locks">Blocco immediato col pulsante di accensione</string>
+    <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
+    <string name="lockgesture_settings_choose_lock_pattern">Imposta gesto di sblocco</string>
+    <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
+    <string name="lockgesture_settings_change_lock_pattern">Cambia gesto di sblocco</string>
+    <!-- Security & location settings screen, the help instructions (an animation) caption -->
+    <string name="lockgesture_settings_help_how_to_record">Come disegnare un gesto di sblocco</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
+    <string name="lockgesture_too_many_failed_confirmation_attempts_header">Troppi tentativi errati!</string>
+    <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
+    <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Prova ancora tra <xliff:g id="number">%d</xliff:g> seconds.</string>
+    <!-- Toast shown if setting gesture was successful -->
+    <string name="lockpassword_gesture_set_toast">Gesto impostato</string>
+    <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
+    <string name="lockpassword_confirm_your_gesture_header">Conferma il gesto</string>
+    <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
+    <string name="lockpassword_choose_your_gesture_header">Disegna il tuo gesto</string>
+
+    <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
+    <string name="unlock_set_unlock_gesture_title">Gesti</string>
+    <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_gesture_summary">Sicurezza bassa, sperimentale</string>
+
+    <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_mode_gesture">Gesti</string>
+
+    <!-- Gesture Anywhere -->
+    <string name="gesture_anywhere_title">Gesti ovunque</string>
+    <string name="gesture_anywhere_enabled_title">Gesti ovunque</string>
+    <string name="gesture_anywhere_enabled_summary">Attiva i gesti ovunque</string>
+    <string name="gesture_anywhere_position_title">Posizione</string>
+    <string name="gesture_anywhere_position_left">Bordo Sinistro</string>
+    <string name="gesture_anywhere_position_right">Bordo Destro</string>
+    <string name="gesture_anywhere_gestures_title">Gesti</string>
+    <string name="gesture_anywhere_gestures_summary">Aggiungi, rimuovi, edita gesti</string>
+    <!-- Label, button used to add a gesture -->
+    <string name="ga_button_add">Agg Gesto</string>
+    <!-- Label, button used to reload all gestures -->
+    <string name="ga_button_reload">Ricarica</string>
+    <!-- Label, button used to cancel the operation of adding a gesture -->
+    <string name="ga_button_discard">Scarta</string>
+    <!-- Label, button used to save a gesture newly created -->
+    <string name="ga_button_done">Fatto</string>
+    <!-- Label, prompt asking the user to enter the name of the gesture -->
+    <string name="ga_prompt_gesture_name">Nome</string>
+    <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+    <string name="ga_error_missing_name">Devi inserire un nome</string>
+    <!-- success message, tells the user where the gesture was saved -->
+    <string name="ga_save_success">Gesto salvato in %s</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_rename_action">OK</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_cancel_action">Annulla</string>
+    <!-- Message displayed when the user opens the gestures settings screen -->
+    <string name="ga_gestures_loading">Caricamento gesti...</string>
+    <!-- Message displayed when the user has no gestures -->
+    <string name="ga_gestures_empty">Nessun gesto</string>
+    <!-- Title of the screen used to view/manage gestures -->
+    <string name="ga_gestures_activity">Gesti</string>
+    <!-- Noun, menu item used to edit a gesture -->
+    <string name="ga_gestures_edit">Edita</string>
+    <!-- Noun, menu item used to remove a gesture -->
+    <string name="ga_gestures_delete">Cancella</string>
+    <!-- Message displayed when a gesture is successfully deleted -->
+    <string name="ga_gestures_delete_success">Gesto cancellato</string>
+    <!-- Title of dialog box -->
+    <string name="ga_gestures_rename_title">Rinomina gesto</string>
+    <!-- Label of gesture name field in Rename gesture dialog box -->
+    <string name="ga_gestures_rename_label">Nome gesto</string>
+    <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures. CHAR LIMIT=80 -->
+    <string name="ga_gestures_error_loading">Impossibile caricare %s. Assicurati di avere spazio a disposizione.</string>
+    <string name="trigger_category">Regione di attivazione</string>
+    <string name="trigger_width_title">Largezza</string>
+    <string name="trigger_width_summary">Aggiusta la larghezza dell\'area di attivazione</string>
+    <string name="trigger_top_title">Posizione area di attivazione</string>
+    <string name="trigger_top_summary">Aggiusta la posizione verticale dell\'area di attivazione</string>
+    <string name="trigger_bottom_title">Altezza area di attivazione</string>
+    <string name="trigger_bottom_summary">Aggiusta l\'altezza dell\'area di attivazione</string>
+    <string name="picker_activities">Attività</string>
+    <string name="select_custom_app_title">Seleziona app personalizzata</string>
+    <string name="select_custom_activity_title">Seleziona attività personalizzata</string>
+    <string name="profile_applist_title">Applicazioni</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker_title">Wakelock blocker</string>
+    <string name="wakelock_blocker_summary">Blocca i risvegli di sistema</string>
+    <string name="wakelock_blocker_save">Salva</string>
+    <string name="wakelock_list_header">Wakelocks possibili</string>
+    <string name="wakelock_blocker_reload">Ricarica</string>
+    <string name="wakelock_blocker_warning_title">Procedi con cautela</string>
+    <string name="wakelock_blocker_warning">Bloccare i risvegli può causare danni, crash o perdita di dati</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="options_settings_title">Opzioni</string>
+    <string name="media_scanner_on_boot_title">Comportamento MediaScanner all\'avvio</string>
+    <string name="media_scanner_on_boot_enabled">Cerca media</string>
+    <string name="media_scanner_on_boot_ask">Chiedi se cercare (notifica)</string>
+    <string name="media_scanner_on_boot_disabled">Non cercare media</string>
+
+    <!-- App Circle sidebar -->
+    <string name="category_app_circle_bar_title">App launcher</string>
+    <string name="app_circle_bar_title">Barra App circolare</string>
+    <string name="app_circle_bar_summary">Mostra app launcher circolare toccando la parte destra dello schermo</string>
+    <string name="app_circle_bar_included_apps_title">App incluse</string>
+    <string name="app_circle_bar_included_apps_summary">Le app verranno mostrate nella barra circolare</string>
+    <string name="trigger_width_title">Larghezza area di attivazione</string>
+    <string name="trigger_width_summary">Aggiusta la larghezza dell\'area di attivazione</string>
+    <string name="trigger_top_title">Posizione area di attivazione</string>
+    <string name="trigger_top_summary">Aggiusta la posizione verticale dell\'area di attivazione</string>
+    <string name="trigger_bottom_title">Altezza area di attivazione</string>
+    <string name="trigger_bottom_summary">Aggiusta l\'altezza dell\'area di attivazione</string>
+
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">Animazioni Toast</string>
+    <string name="toast_none_animation">Nessuna</string>
+    <string name="toast_default_animation">Default</string>
+    <string name="toast_fade_animation">Scomparsa</string>
+    <string name="toast_SlideRight_animation">Scorri a destra</string>
+    <string name="toast_SlideLeft_animation">Scorri a sinistra</string>
+    <string name="toast_Xylon_animation">Xylon</string>
+    <string name="toast_Toko_animation">Toko</string>
+    <string name="toast_Tn_animation">Tn</string>
+    <string name="toast_Honami_animation">Honami</string>
+    <string name="toast_FastFade_animation">Dissolvenza veloce</string>
+    <string name="toast_GrowFade_animation">Dissolvenza crescente</string>
+    <string name="toast_GrowFadeCenter_animation">Dissolvenza crescente al centro</string>
+    <string name="toast_GrowFadeBottom_animation">Dissolvenza crescente in basso</string>
+    <string name="toast_Translucent_animation">Traslucido</string>
+    <string name="toast_SlideLeftRight_animation">Scorri da sinistra a destra</string>
+    <string name="toast_SlideRightLeft_animation">Scorri da destra a sinistra</string>
+
+    <!-- Navigation Bar on the left -->
+    <string name="navigation_bar_left_title">Modalità mancina</string>
+    <string name="navigation_bar_left_summary">Sposta la barra di navigazione a sinistra con schermo in orizzontale</string>
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Mostra info CPU</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Sovrappone a schermo le info sulla CPU</string>
+
+    <!-- Screen recorder -->
+    <string name="screen_recorder_title">Registra schermo</string>
+    <string name="screen_recorder_summary">Modifica opzioni di registrazione</string>
+    <string name="screen_recorder_video_dimensions_title">Dimensioni video</string>
+    <string name="screen_recorder_video_bitrate_title">Bitrate</string>
+    <!-- video sizes -->
+    <string name="screen_recorder_size_240x400">240x400</string>
+    <string name="screen_recorder_size_360x640">360x640</string>
+    <string name="screen_recorder_size_480x800">480x800</string>
+    <string name="screen_recorder_size_480x854">480x854</string>
+    <string name="screen_recorder_size_540x960">540x960</string>
+    <string name="screen_recorder_size_600x1024">600x1024</string>
+    <string name="screen_recorder_size_720x1280">720x1280</string>
+    <!-- frame rates -->
+    <string name="screen_recorder_bitrate_title_100000">100 kB/s</string>
+    <string name="screen_recorder_bitrate_title_250000">250 kB/s</string>
+    <string name="screen_recorder_bitrate_title_500000">500 kB/s</string>
+    <string name="screen_recorder_bitrate_title_1000000">1 MB/s</string>
+    <string name="screen_recorder_bitrate_title_2000000">2 MB/s</string>
+    <string name="screen_recorder_bitrate_title_3000000">3 MB/s</string>
+    <string name="screen_recorder_bitrate_title_4000000">4 MB/s</string>
+    <string name="screen_recorder_bitrate_title_5000000">5 MB/s</string>
+    <string name="screen_recorder_bitrate_title_10000000">10 MB/s</string>
+    <string name="screen_recorder_bitrate_title_20000000">20 MB/s</string>
+    <string name="screen_recorder_bitrate_100000">100000</string>
+    <string name="screen_recorder_bitrate_250000">250000</string>
+    <string name="screen_recorder_bitrate_500000">500000</string>
+    <string name="screen_recorder_bitrate_1000000">1000000</string>
+    <string name="screen_recorder_bitrate_2000000">2000000</string>
+    <string name="screen_recorder_bitrate_3000000">3000000</string>
+    <string name="screen_recorder_bitrate_4000000">4000000</string>
+    <string name="screen_recorder_bitrate_5000000">5000000</string>
+    <string name="screen_recorder_bitrate_10000000">10000000</string>
+    <string name="screen_recorder_bitrate_20000000">20000000</string>
+    <string name="screen_recorder_record_audio_title">Audio esterno</string>
+    <string name="screen_recorder_record_audio_summary">Registra audio da microfono</string>
+
+    <!-- SearchBar Switcher -->
+    <string name="recents_show_searchbar">Barra di ricerca recenti</string>
+    <string name="recents_show_searchbar_summary">Attiva o disattiva la barra di ricerca google nei recenti</string>
+
+    <!-- Superuser indicator on status bar -->
+    <string name="su_indicator">Indicatore Superuser</string>
+    <string name="su_indicator_summary">Mostra l\'indicatore di Superuser in una sessione attiva</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibra al tocco</string>
+    <string name="quick_settings_vibrate_summary">Vibra al tocco delle tessere</string>
 
 </resources>
