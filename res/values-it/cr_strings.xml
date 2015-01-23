@@ -15,6 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, crDroid version -->
@@ -34,6 +35,21 @@
     <string name="reset">Ripristina</string>
     <string name="default_string">Predefinite</string>
     <string name="help">Aiuto</string>
+    <string name="ok">Ok</string>
+    <string name="dialog_restart">Riavvia</string>
+    <string name="dialog_cancel">Annulla</string>
+
+    <!-- crDroid Updater -->
+    <string name="crupdate_settings_title">Aggiornamenti crDroid</string>
+    <string name="crupdate_settings_summary">Scarica gli ultimi aggiornamenti della ROM crDroid e Gapps PA per il tuo dispositivo</string>
+
+    <!-- Devices and Maintainers -->
+    <string name="device_maintainers_title">Dispositivi e Mantenitori</string>
+    <string name="device_maintainers_title_summary">Lista dei dispositivi e mantenitori ROM crDroid</string>
+
+    <!-- Performance Misc -->
+    <string name="misc_title">crDroid miscellanea</string>
+    <string name="pref_force_fast_charge_title">Forza carica rapida</string>
 
     <!-- crDroid custom settings -->
     <string name="crdroid_custom_title">Modifiche crDroid</string>
@@ -43,6 +59,8 @@
     <string name="recents_panel_settings">Opzioni Pannello Recenti</string>
     <string name="animation_title">Animazioni</string>
     <string name="animation_settings">Opzioni Animazioni</string>
+    <string name="display_settings">Display</string>
+    <string name="display_settings_title">Opzioni Display</string>
     <string name="reset_message">Ripristinare i valori predefiniti?</string>
     
     <!-- Advanced Sound settings -->
@@ -106,6 +124,17 @@
     <string name="recents_clear_all_location_title">Posizione pulsante Cancella tutto</string>
     <string name="recents_clear_all_location_right">In alto a destra</string>
     <string name="recents_clear_all_location_left">In alto a sinistra</string>
+    <string name="recents_clear_all_dismiss_all_title">Cancella tutti i compiti</string>
+    <string name="recents_clear_all_dismiss_all_summary">Scegli quando cancellare tutti i compiti o ignorare quello in primo piano</string>
+
+    <!-- OmniSwitch -->
+    <string name="omniswitch_settings_title">OmniSwitch</string>
+    <string name="recents_use_omniswitch_title">Usa nei recenti</string>
+    <string name="recents_use_omniswitch_summary">Usa OmniSwitch al posto della vista predefinita recenti</string>
+    <string name="omniswitch_start_settings_title">Impostazioni</string>
+    <string name="omniswitch_start_settings_summary">Apre le impostazioni OmniSwitch</string>
+    <string name="omniswitch_first_time_title">Informazioni</string>
+    <string name="omniswitch_first_time_message">Assicurati di aver attivo OmniSwitch. Puoi farlo usando le \"Impostazioni\" seguenti</string>
 
     <!-- Notifications on keyguard -->
     <string name="app_notification_show_on_keyguard_title">Mostra nella schermata di blocco</string>
