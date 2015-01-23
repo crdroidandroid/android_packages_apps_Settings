@@ -616,6 +616,6 @@
     <string name="custom_density_dialog_title">ATTENZIONE!</string>
     <string name="custom_density_dialog_summary">Cambiare la densità DPI può causare instabilità e/o rendere incompatibili alcune app sul play store col tuo dispositivo"</string>
     <string name="dpi">DPI</string>
-    <string name="custom_density_warning">Riavviare per applicare le modifiche?</string>
+    <string name="custom_density_warning">Riavviare per applicare la densità modificata?</string>
 
 </resources>
