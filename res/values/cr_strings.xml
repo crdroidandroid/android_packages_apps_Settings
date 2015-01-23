@@ -58,10 +58,6 @@
     <string name="display_settings">Display</string>
     <string name="display_settings_title">Display settings</string>
     <string name="reset_message">Reset all entries to default?</string>
-
-    <!-- crDroid lockscreen -->
-    <string name="crdroid_lock_title">Lockscreen</string>
-    <string name="lockscreen_category">Lockscreen settings</string>
     
     <!-- Advanced sound settings -->
     <string name="advanced_title">Advanced options</string>
@@ -622,14 +618,6 @@
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
     <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string>
-
-    <!-- Camera lockscreen swipe -->
-    <string name="camera_widget_hide">Disable lockscreen camera</string>
-    <string name="camera_widget_hide_summary">Allows you to disable swipe to open camera in lockscreen</string>
-
-    <!-- LockClocK -->
-    <string name="lock_clock_title">cLock settings</string>
-    <string name="lock_clock_summary">View or change how the \'cLock\' widget will be displayed</string>
 
     <!-- [CHAR LIMIT=40] Sound & display settings screen, title of dialog for picking LCD density -->
     <!-- crdroid display settings screen, setting option name to change LCD density -->
