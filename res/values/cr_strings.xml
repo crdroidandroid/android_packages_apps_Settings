@@ -39,6 +39,10 @@
     <string name="dialog_restart">Restart</string>
     <string name="dialog_cancel">Cancel</string>
 
+    <!-- crDroid Updater -->
+    <string name="crupdate_settings_title">crDroid updates</string>
+    <string name="crupdate_settings_summary">Download latest available build of crDroid Rom and PA Gapps for your device</string>
+
     <!-- Devices and Maintainers -->
     <string name="device_maintainers_title">Devices and Maintainers</string>
     <string name="device_maintainers_title_summary">List of devices and their crDroid ROM maintainers</string>

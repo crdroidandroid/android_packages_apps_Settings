@@ -20,7 +20,17 @@
         <!-- crDroid logo -->
         <PreferenceScreen android:key="crdroid_logo"
                 android:enabled="false"
+                android:selectable="false"
                 android:layout="@layout/crdroid_logo" />
+
+        <!-- crDroid Updates -->
+        <PreferenceScreen android:key="cr_updates"
+                android:title="@string/crupdate_settings_title"
+                android:summary="@string/crupdate_settings_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.crdroid.crdroidota"
+                    android:targetClass="com.crdroid.crdroidota.activities.SettingsActivity" />
+        </PreferenceScreen>
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
@@ -97,12 +107,14 @@
         <Preference android:key="device_model" 
                 style="?android:preferenceInformationStyle"
                 android:title="@string/model_name"
+                android:selectable="false"
                 android:summary="@string/device_info_default"/>
 
         <!-- crDroid Mod version -->
         <Preference android:key="mod_version"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/mod_version"
+                android:selectable="false"
                 android:summary="@string/mod_version_default" />
                 
         <!-- Device firmware version -->
@@ -121,30 +133,35 @@
         <Preference android:key="baseband_version" 
                 style="?android:preferenceInformationStyle"
                 android:title="@string/baseband_version"
+                android:selectable="false"
                 android:summary="@string/device_info_default"/>
         
         <!-- Device Kernel version -->
         <Preference android:key="kernel_version" 
                 style="?android:preferenceInformationStyle"
                 android:title="@string/kernel_version"
+                android:selectable="false"
                 android:summary="@string/device_info_default"/>
 
         <!-- crDroid build date -->
         <Preference android:key="build_date"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/build_date"
+                android:selectable="false"
                 android:summary="@string/build_date_default" />
 
         <!-- Device cpu info -->
         <Preference android:key="device_cpu"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/cpu_info"
+                android:selectable="false"
                 android:summary="@string/device_info_default"/>
 
         <!-- Device mem info -->
         <Preference android:key="device_memory"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/mem_info"
+                android:selectable="false"
                 android:summary="@string/device_info_default"/>
 
         <!-- Detailed build version -->
@@ -157,6 +174,7 @@
         <Preference android:key="selinux_status"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/selinux_status"
+                android:selectable="false"
                 android:summary="@string/selinux_status_enforcing"/>
 
 </PreferenceScreen>
