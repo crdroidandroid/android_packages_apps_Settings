@@ -601,4 +601,21 @@
     <string name="quick_settings_vibrate_title">Vibra al tocco</string>
     <string name="quick_settings_vibrate_summary">Vibra al tocco delle tessere</string>
 
+    <!-- [CHAR LIMIT=40] Sound & display settings screen, title of dialog for picking LCD density -->
+    <!-- crdroid display settings screen, setting option name to change LCD density -->
+    <string name="lcd_density">Densità LCD</string>
+    <string name="dialog_title_lcd_density">Densità LCD</string>
+    <!-- crdroid display settings screen, setting option summary to change LCD density -->
+    <string name="lcd_density_summary">xxx DPI</string>
+    <string name="custom_density_title">Cambia in ciò che vuoi</string>
+    <string name="custom_density_summary">Per evitare problemi di compatibilità con il play store, assicurati di avere installato un play store multi DPI</string>
+    <string name="custom_density_summary_invalid">"Densità NON VALIDA!"</string>
+    <string name="custom_density">Personalizzata</string>
+    <string name="set_custom_density_title">Imposta la densità</string>
+    <string name="set_custom_density_set">Imposta</string>
+    <string name="custom_density_dialog_title">ATTENZIONE!</string>
+    <string name="custom_density_dialog_summary">Cambiare la densità DPI può causare instabilità e/o rendere incompatibili alcune app sul play store col tuo dispositivo"</string>
+    <string name="dpi">DPI</string>
+    <string name="custom_density_warning">Riavviare per applicare le modifiche?</string>
+
 </resources>
