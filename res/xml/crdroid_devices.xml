@@ -152,6 +152,20 @@
 
         </PreferenceCategory>
 
+        <!-- OnePlus devices -->
+        <PreferenceCategory
+             android:key="device_category_oneplus"
+             android:title="@string/device_category_oneplus_title" >
+
+             <Preference
+                 android:key="device_oneplus_bacon"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_oneplus_bacon"
+                 android:summary="@string/device_oneplus_bacon_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
         <!-- Sony devices -->
         <PreferenceCategory
              android:key="device_category_sony"

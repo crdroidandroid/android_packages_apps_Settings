@@ -64,6 +64,10 @@
     <string name="device_samsung_tab2">Samsung Galaxy Tab 2</string>
     <string name="device_samsung_tab2_summary">P3110 \nMaintainer - Nick Janssen</string>
 
+    <!-- OnePlus devices -->
+    <string name="device_oneplus_bacon">Oneplus One</string>
+    <string name="device_oneplus_bacon_summary">Bacon \nMaintainer - Cristiano Matos</string>
+
     <!-- Sony devices -->
     <string name="device_sony_z1">Sony Xperia Z1</string>
     <string name="device_sony_z1_summary">Honami \nMaintainer - David Viteri</string>
