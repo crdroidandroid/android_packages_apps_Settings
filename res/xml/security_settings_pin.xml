@@ -41,11 +41,6 @@
             android:key="power_button_instantly_locks"
             android:title="@string/lockpattern_settings_enable_power_button_instantly_locks"/>
 
-        <PreferenceScreen
-            android:key="lockscreen_shortcuts_settings"
-            android:fragment="com.android.settings.cyanogenmod.LockscreenShortcuts"
-            android:title="@string/lockscreen_targets_message" />
-
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="quick_unlock_control"
             android:title="@string/unlock_quick_unlock_control_title"
@@ -58,18 +53,6 @@
             android:title="@string/lock_numpad_random_title"
             android:dialogTitle="@string/lock_numpad_random_dialog_title"
             android:persistent="false"/>
-
-        <PreferenceScreen
-                 android:key="lockscreen_shortcuts"
-                 android:fragment="com.android.settings.crdroid.dslv.ActionListViewSettings"
-                 android:summary="@string/lockscreen_shortcuts_summary"
-                 android:title="@string/lockscreen_shortcuts_title">
-             <extra android:name="actionMode" android:value="4" />
-             <extra android:name="maxAllowedActions" android:value="5" />
-             <extra android:name="disableLongpress" android:value="true" />
-             <extra android:name="useAppPickerOnly" android:value="true" />
-             <extra android:name="fragment" android:value="com.android.settings.crdroid.fragments.LockscreenShortcutFragment" />
-        </PreferenceScreen>
 
         <PreferenceScreen
             android:key="owner_info_settings"

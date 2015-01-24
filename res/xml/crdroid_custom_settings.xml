@@ -30,6 +30,12 @@
          android:fragment="com.android.settings.crdroid.RecentsPanelSettings"
          android:title="@string/recents_panel_title"/>
 
+    <!-- crDroid lockscreen -->
+    <PreferenceScreen
+         android:key="lockscreen_crdroid"
+         android:fragment="com.android.settings.crdroid.LockScreenSettings"
+         android:title="@string/crdroid_lockscreen_title" />
+
     <!-- Display -->
     <PreferenceScreen
          android:key="display_settings"

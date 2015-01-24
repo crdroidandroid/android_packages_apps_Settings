@@ -62,7 +62,7 @@
     <string name="display_settings">Display</string>
     <string name="display_settings_title">Display settings</string>
     <string name="reset_message">Reset all entries to default?</string>
-    
+
     <!-- Advanced sound settings -->
     <string name="advanced_title">Advanced options</string>
     <string name="advanced_sound_title">Advanced</string>
@@ -315,11 +315,18 @@
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Unlock</string>
 
-    <!-- Lockscreen Shortcuts -->
-    <string name="lockscreen_shortcuts_title">Shortcuts</string>
-    <string name="lockscreen_shortcuts_summary">View or change custom lock screen shortcuts</string>
+    <!-- crDroid lockscreen -->
+    <string name="crdroid_lockscreen_title">Lockscreen</string>
+    <string name="crdroid_lockscreen_category">Lockscreen settings</string>
+    <string name="crdroid_lockscreen_shortcuts_category">Shortcuts</string>
+    <!-- CM lockscreen shortcuts -->
+    <string name="cm_lockscreen_shortcuts_title">Bottom corners shortcuts</string>
+    <string name="cm_lockscreen_shortcuts_summary">View or change custom bottom corners lockscreen shortcuts</string>
+    <!-- Slim lockscreen shortcuts -->
+    <string name="lockscreen_shortcuts_title">Middle screen shortcuts</string>
+    <string name="lockscreen_shortcuts_summary">View or change custom middle screen lockscreen shortcuts</string>
     <string name="lockscreen_shorcuts_longpress_title">Shortcuts longpress</string>
-    <string name="lockscreen_shorcuts_longpress_summary">Open custom lock screen shortcuts on longpress</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Open custom lockscreen shortcuts on longpress</string>
 
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">CPU</string>
