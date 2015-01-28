@@ -268,6 +268,7 @@
     <string name="shortcuts_icon_picker_browser">Browser</string>
     <string name="shortcuts_icon_picker_calendar">Calendar</string>
     <string name="shortcuts_icon_picker_camera">Camera</string>
+    <string name="shortcuts_icon_picker_chrome">Google Chrome</string>
     <string name="shortcuts_icon_picker_cloud">Cloud</string>
     <string name="shortcuts_icon_picker_contact">Contact</string>
     <string name="shortcuts_icon_picker_directdial">Direct Dial</string>
@@ -284,6 +285,7 @@
     <string name="shortcuts_icon_picker_fitness">Fitness</string>
     <string name="shortcuts_icon_picker_gallery">Gallery</string>
     <string name="shortcuts_icon_picker_gears">Gears</string>
+    <string name="shortcuts_icon_picker_github">Github</string>
     <string name="shortcuts_icon_picker_google_small">Google</string>
     <string name="shortcuts_icon_picker_gplus">Google Plus</string>
     <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
@@ -292,14 +294,17 @@
     <string name="shortcuts_icon_picker_key">Keys/Accounts</string>
     <string name="shortcuts_icon_picker_laptop">Laptop</string>
     <string name="shortcuts_icon_picker_notes">Notes</string>
+    <string name="shortcuts_icon_picker_office">Office Suite</string>
     <string name="shortcuts_icon_picker_luggage">Travel</string>
     <string name="shortcuts_icon_picker_maps">Maps</string>
     <string name="shortcuts_icon_picker_market">Market</string>
+    <string name="shortcuts_icon_picker_messenger">Messenger</string>
     <string name="shortcuts_icon_picker_movie">Movies</string>
     <string name="shortcuts_icon_picker_music">Music</string>
     <string name="shortcuts_icon_picker_nav">Navigation</string>
     <string name="shortcuts_icon_picker_phone">Phone</string>
     <string name="shortcuts_icon_picker_package">Package</string>
+    <string name="shortcuts_icon_picker_paypal">Paypal</string>
     <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
     <string name="shortcuts_icon_picker_play">Play</string>
     <string name="shortcuts_icon_picker_pocket">Pocket</string>
@@ -308,12 +313,15 @@
     <string name="shortcuts_icon_picker_sdcard">SDCard</string>
     <string name="shortcuts_icon_picker_search">Search</string>
     <string name="shortcuts_icon_picker_sms">Messaging</string>
+    <string name="shortcuts_icon_picker_tapatalk">Tapatalk</string>
     <string name="shortcuts_icon_picker_tasks">Tasks</string>
     <string name="shortcuts_icon_picker_terminal">Terminal</string>
     <string name="shortcuts_icon_picker_transit">Transit</string>
     <string name="shortcuts_icon_picker_tv">TV</string>
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Unlock</string>
+    <string name="shortcuts_icon_picker_whatsapp">Whatsapp</string>
+    <string name="shortcuts_icon_picker_youtube">Youtube</string>
 
     <!-- crDroid lockscreen -->
     <string name="crdroid_lockscreen_title">Lockscreen</string>
