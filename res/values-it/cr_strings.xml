@@ -341,10 +341,19 @@
     <string name="shortcuts_icon_picker_tv">TV</string>
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Sblocco</string>
+    <string name="shortcuts_icon_picker_whatsapp">Whatsapp</string>
+    <string name="shortcuts_icon_picker_youtube">Youtube</string>
 
-    <!-- Lockscreen Shortcuts -->
+    <!-- crDroid lockscreen -->
+    <string name="crdroid_lockscreen_title">Schermata di blocco</string>
+    <string name="crdroid_lockscreen_category">Impostazioni schermata di blocco</string>
+    <string name="crdroid_lockscreen_shortcuts_category">Scorciatoie</string>
+    <!-- CM lockscreen shortcuts -->
+    <string name="cm_lockscreen_shortcuts_title">Scorciatoie angoli inferiori</string>
+    <string name="cm_lockscreen_shortcuts_summary">Mostra o cambia le scorciatoie angoli inferiori</string>
+    <!-- Slim lockscreen shortcuts -->
     <string name="lockscreen_shortcuts_title">Scorciatoie</string>
-    <string name="lockscreen_shortcuts_summary">Cambia le scorciatoie della schermata di blocco</string>
+    <string name="lockscreen_shortcuts_summary">Mostra o cambia le scorciatoie della schermata di blocco</string>
     <string name="lockscreen_shorcuts_longpress_title">Pressione Prolungata</string>
     <string name="lockscreen_shorcuts_longpress_summary">Apre una scorciatoia personalizzata tramite la pressione prolungata</string>
 
