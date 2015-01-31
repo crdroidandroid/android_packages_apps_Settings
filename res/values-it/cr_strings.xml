@@ -646,5 +646,28 @@
     <string name="custom_density_dialog_summary">Cambiare la densità DPI può causare instabilità e/o rendere incompatibili alcune app sul play store col tuo dispositivo"</string>
     <string name="dpi">DPI</string>
     <string name="custom_density_warning">Riavviare per applicare la densità modificata?</string>
+    
+    <!-- Privacy guard notification -->
+    <string name="privacy_guard_notification_title">Notifica</string>
+    <string name="privacy_guard_notifiation_summary">Mostra una notifica se è attivo il servizio per la tutela della privacy</string>
+
+    <!-- Doze pulse (ambient display) notification timeout -->
+    <string name="doze_timeout_title">Intervallo notifiche ambientali</string>
+    <string name="doze_timeout_summary">Il tempo di accensione dello schermo per le notifiche a impulso</string>
+
+    <!-- Doze (ambient display) preference category -->
+    <string name="display_category_doze_options_title">Opzioni notifiche ambientali</string>
+
+    <!-- Host File Manager -->
+    <string name="hfm_disable_ads_title">Disattiva Ads</string>
+    <string name="hfm_disable_ads_summary">Cambia il file hosts per disabilitare gli ads</string>
+    <string name="hfm_pref_screen_title">Blocca Ads</string>
+    <string name="hfm_update_hosts">Aggiorna file hosts</string>
+    <string name="hfm_update_hosts_summary">Scarica e applica i nuovi hosts</string>
+    <string name="hfm_dialog_wait">Attendere prego...</string>
+    <string name="hfm_dialog_failed">Aggiornamento fallito. Per cortesia riprova.</string>
+    <string name="hfm_dialog_success">/4 hosts applicati!</string>
+    <string name="hfm_dialog_conn_error">Errore: Nessuna connessione di rete</string>
+    <string name="hfm_dialog_title">Avanzamento aggiornamento hosts</string>
 
 </resources>
