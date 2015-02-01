@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
-     Copyright (C) 2014 crDroid Android
+     Copyright (C) 2014-2015 crDroid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,6 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, crDroid version -->
@@ -34,7 +36,17 @@
     <string name="default_string">По умолчанию</string>
     <string name="help">Справка</string>
     <string name="ok">ОК</string>
-    
+    <string name="dialog_restart">Перезагрузить</string>
+    <string name="dialog_cancel">Отмена</string>
+
+    <!-- crDroid Updater -->
+    <string name="crupdate_settings_title">Обновления crDroid</string>
+    <string name="crupdate_settings_summary">Скачать последнюю версию прошивки crDroid и PA Gapps для вашего устройства</string>
+
+    <!-- Devices and Maintainers -->
+    <string name="device_maintainers_title">Устройства и Сопровождающие</string>
+    <string name="device_maintainers_title_summary">Список устройств и их сопровождающие в crDroid ROM</string>
+
     <!-- Performance Misc -->
     <string name="misc_title">Прочее crDroid</string>
     <string name="pref_force_fast_charge_title">Принудительный режим быстрой зарядки</string>
@@ -45,13 +57,11 @@
     <string name="status_bar_settings">Настройки строки состояния</string>
     <string name="recents_panel_title">Недавние приложения</string>
     <string name="recents_panel_settings">Настройки \"Недавних приложений\"</string>
-    <string name="animation_title">Анимация</string>
+    <string name="animation_settings_title">Анимация</string>
     <string name="animation_settings">Настройки анимации</string>
+    <string name="display_settings">Экран</string>
+    <string name="display_settings_title">Настройки экрана</string>
     <string name="reset_message">Сбросить все параметры на значения по умолчанию?</string>
-
-    <!-- crDroid lockscreen -->
-    <string name="crdroid_lock_title">Экран блокировки</string>
-    <string name="lockscreen_category">Настройки экрана блокировки</string>
 
     <!-- Advanced sound settings -->
     <string name="advanced_title">Расширенные настройки</string>
@@ -175,39 +185,9 @@
     <string name="set">Задать</string>
     <string name="color_default">По умолчанию</string>
 
-    <!-- Status bar | Clock -->
-    <string name="status_bar_title">Строка состояния</string>
-    <string name="status_bar_style_title">Стиль</string>
-    <string name="clock_title_enable">Выравнивание часов</string>
-    <string name="clock_enabled">Включено</string>
-    <string name="clock_disabled">Отключено</string>
-    <string name="clock_color_title">Цвет часов</string>
-    <string name="status_bar_clock_style_reset">Сбросить цвет</string>
-    <string name="status_bar_show_clock_title">Показывать часы и дату</string>
-    <string name="status_bar_am_pm_title">Показывать AM/PM</string>
-    <string name="status_bar_am_pm_info">24-часовой формат часов активирован</string>
-    <string name="enable_clock_weekday">День недели</string>
-    <string name="enable_clock_weekday_summary">Сокращенный день недели перед часами</string>
-    <string name="right_clock">Часы справа</string>
-    <string name="center_clock">Часы по центру</string>
-    <string name="dont_show">Не показывать</string>
-    <string name="clock_date_display">Дата</string>
-    <string name="clock_date_display_summary">Отображать дату перед часами</string>
-    <string name="clock_date_style">Стиль даты</string>
-    <string name="clock_date_format">Формат даты</string>
-    <string name="clock_date_string_edittext_title">Формат даты: ММ/дд/гг</string>
-    <string name="clock_date_string_edittext_summary">Введите строку</string>
-    <string name="am_pm_clock_normal">Обычный размер шрифта</string>
-    <string name="am_pm_clock_small">Малый размер шрифта</string>
-    <string name="am_pm_clock_none">Не показывать</string>
-    <string name="clock_date_display_none">Не показывать</string>
-    <string name="clock_date_display_small">Малый размер шрифта</string>
-    <string name="clock_date_display_normal">Обычный размер шрифта</string>
-    <string name="clock_date_style_normal">Обычные</string>
-    <string name="clock_date_style_lowercase">Строчные</string>
-    <string name="clock_date_style_uppercase">ПРОПИСНЫЕ</string>
-    <string name="clock_date_format_custom">Свой Java-формат</string>
-    <string name="status_bar_clock_style_reset_message">Сбросить цвет часов?</string>
+    <!-- Clock -->
+    <string name="status_bar_clock">Часы</string>
+    <string name="status_bar_clock_title">Стиль часов</string>
 
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">\"Умная\" панель уведомлений</string>
@@ -287,6 +267,7 @@
     <string name="shortcuts_icon_picker_browser">Браузер</string>
     <string name="shortcuts_icon_picker_calendar">Календарь</string>
     <string name="shortcuts_icon_picker_camera">Камера</string>
+    <string name="shortcuts_icon_picker_chrome">Google Chrome</string>
     <string name="shortcuts_icon_picker_cloud">Облако</string>
     <string name="shortcuts_icon_picker_contact">Контакт</string>
     <string name="shortcuts_icon_picker_directdial">Быстрый набор</string>
@@ -303,6 +284,7 @@
     <string name="shortcuts_icon_picker_fitness">Фитнес</string>
     <string name="shortcuts_icon_picker_gallery">Галерея</string>
     <string name="shortcuts_icon_picker_gears">Gears</string>
+    <string name="shortcuts_icon_picker_github">Github</string>
     <string name="shortcuts_icon_picker_google_small">Google</string>
     <string name="shortcuts_icon_picker_gplus">Google Plus</string>
     <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
@@ -311,14 +293,17 @@
     <string name="shortcuts_icon_picker_key">Ключи/Учетные записи</string>
     <string name="shortcuts_icon_picker_laptop">Ноутбук</string>
     <string name="shortcuts_icon_picker_notes">Заметки</string>
+    <string name="shortcuts_icon_picker_office">Офисный пакет</string>
     <string name="shortcuts_icon_picker_luggage">Путешествия</string>
     <string name="shortcuts_icon_picker_maps">Карты</string>
     <string name="shortcuts_icon_picker_market">Market</string>
+    <string name="shortcuts_icon_picker_messenger">Чат</string>
     <string name="shortcuts_icon_picker_movie">Видео</string>
     <string name="shortcuts_icon_picker_music">Музыка</string>
     <string name="shortcuts_icon_picker_nav">Навигация</string>
     <string name="shortcuts_icon_picker_phone">Телефон</string>
     <string name="shortcuts_icon_picker_package">Пакет</string>
+    <string name="shortcuts_icon_picker_paypal">Paypal</string>
     <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
     <string name="shortcuts_icon_picker_play">Play</string>
     <string name="shortcuts_icon_picker_pocket">Pocket</string>
@@ -327,16 +312,26 @@
     <string name="shortcuts_icon_picker_sdcard">SD-карта</string>
     <string name="shortcuts_icon_picker_search">Поиск</string>
     <string name="shortcuts_icon_picker_sms">Сообщения</string>
+    <string name="shortcuts_icon_picker_tapatalk">Tapatalk</string>
     <string name="shortcuts_icon_picker_tasks">Задачи</string>
     <string name="shortcuts_icon_picker_terminal">Терминал</string>
     <string name="shortcuts_icon_picker_transit">Транзит</string>
     <string name="shortcuts_icon_picker_tv">TV</string>
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Разблокировка</string>
+    <string name="shortcuts_icon_picker_whatsapp">Whatsapp</string>
+    <string name="shortcuts_icon_picker_youtube">Youtube</string>
 
-    <!-- Lockscreen Shortcuts -->
-    <string name="lockscreen_shortcuts_title">Ярлыки</string>
-    <string name="lockscreen_shortcuts_summary">Просмотреть/изменить ярлыки экрана блокировки</string>
+    <!-- crDroid lockscreen -->
+    <string name="crdroid_lockscreen_title">Экран блокировки</string>
+    <string name="crdroid_lockscreen_category">Настройки экрана блокировки</string>
+    <string name="crdroid_lockscreen_shortcuts_category">Ярлыки</string>
+    <!-- CM lockscreen shortcuts -->
+    <string name="cm_lockscreen_shortcuts_title">Ярлыки в нижних углах</string>
+    <string name="cm_lockscreen_shortcuts_summary">Посмотреть или изменить ярлыки в нижних углах экрана блокировки</string>
+    <!-- Slim lockscreen shortcuts -->
+    <string name="lockscreen_shortcuts_title">Ярлыки посередине экрана</string>
+    <string name="lockscreen_shortcuts_summary">Посмотреть или изменить ярлыки посередине экрана блокировки</string>
     <string name="lockscreen_shorcuts_longpress_title">Долгое нажатие на ярлык</string>
     <string name="lockscreen_shorcuts_longpress_summary">Открывать выбранные ярлыки экрана блокировки по долгому нажатию</string>
 
@@ -614,5 +609,45 @@
     <!-- LockClocK -->
     <string name="lock_clock_title">Настройки cLock</string>
     <string name="lock_clock_summary">Настройки отображения виджета \'cLock\'</string>
+
+    <!-- [CHAR LIMIT=40] Sound & display settings screen, title of dialog for picking LCD density -->
+    <!-- crdroid display settings screen, setting option name to change LCD density -->
+    <string name="lcd_density">Плотность экрана</string>
+    <string name="dialog_title_lcd_density">Плотность экрана</string>
+    <!-- crdroid display settings screen, setting option summary to change LCD density -->
+    <string name="lcd_density_summary">xxx DPI</string>
+    <string name="custom_density_title">Задайте своё значение</string>
+    <string name="custom_density_summary">При любых проблемах с совместимостью Play Store, убедитесь, что у вас установлена Multi-DPI версия Play Store</string>
+    <string name="custom_density_summary_invalid">\"НЕДОПУСТИМОЕ ЗНАЧЕНИЕ DPI!\"</string>
+    <string name="custom_density">Пользовательская</string>
+    <string name="set_custom_density_title">Задать своё значение DPI</string>
+    <string name="set_custom_density_set">Задать</string>
+    <string name="custom_density_dialog_title">ВНИМАНИЕ!</string>
+    <string name="custom_density_dialog_summary">Изменение стандартной плотности экрана может приводить к некорректной работе некоторых приложений, и/или в Play Store будет писать, что некоторые программы несовместимы с вашим устройством.</string>
+    <string name="dpi">DPI</string>
+    <string name="custom_density_warning">Перезагрузить систему и применить выбранное значение DPI?</string>
+
+    <!-- Privacy guard notification -->
+    <string name="privacy_guard_notification_title">Уведомление</string>
+    <string name="privacy_guard_notifiation_summary">Показывать уведомление, когда защищённый режим активен</string>
+
+    <!-- Doze pulse (ambient display) notification timeout -->
+    <string name="doze_timeout_title">Длительность работы \"Активного экрана\"</string>
+    <string name="doze_timeout_summary">Время, в течение которого экран будет включен для показа уведомления</string>
+
+    <!-- Doze (ambient display) preference category -->
+    <string name="display_category_doze_options_title">Настройки \"Активного экрана\"</string>
+
+    <!-- Host File Manager -->
+    <string name="hfm_disable_ads_title">Отключение рекламы</string>
+    <string name="hfm_disable_ads_summary">Изменить файл hosts для отключения рекламы</string>
+    <string name="hfm_pref_screen_title">Блокировщик рекламы</string>
+    <string name="hfm_update_hosts">Обновить файл hosts</string>
+    <string name="hfm_update_hosts_summary">Скачать и применить свежий файл hosts</string>
+    <string name="hfm_dialog_wait">В процессе! Пожалуйста, подождите...</string>
+    <string name="hfm_dialog_failed">Обновление файла hosts не удалось. Пожалуйста, попробуйте снова.</string>
+    <string name="hfm_dialog_success">Новый файл hosts успешно применён!</string>
+    <string name="hfm_dialog_conn_error">Ошибка: Нет подключения к сети</string>
+    <string name="hfm_dialog_title">Процесс обновления файла hosts</string>
 
 </resources>
