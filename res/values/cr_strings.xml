@@ -682,4 +682,7 @@
     <string name="hfm_dialog_conn_error">Error: No network connectivity</string>
     <string name="hfm_dialog_title">Hosts update progress</string>
 
+    <!-- QuickSettings 4 columns -->
+    <string name="qs_four_columns_title">Show four tiles per row</string>
+
 </resources>
