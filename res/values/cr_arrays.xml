@@ -351,41 +351,6 @@
         <item>**null**</item>
     </string-array>
 
-    <!-- Heads up -->
-    <string-array name="heads_up_snooze_entries">
-        <item>@string/disabled</item>
-        <item>@string/heads_up_snooze_3min</item>
-        <item>@string/heads_up_snooze_5min</item>
-        <item>@string/heads_up_snooze_10min</item>
-        <item>@string/heads_up_snooze_15min</item>
-        <item>@string/heads_up_snooze_20min</item>
-    </string-array>
-
-    <string-array name="heads_up_snooze_values" translatable="false">
-        <item>0</item>
-        <item>180000</item>
-        <item>300000</item>
-        <item>600000</item>
-        <item>900000</item>
-        <item>1200000</item>
-    </string-array>
-
-    <string-array name="heads_up_time_out_entries">
-        <item>@string/heads_up_time_out_never</item>
-        <item>@string/heads_up_time_out_4sec</item>
-        <item>@string/heads_up_time_out_6sec</item>
-        <item>@string/heads_up_time_out_8sec</item>
-        <item>@string/heads_up_time_out_10sec</item>
-    </string-array>
-
-    <string-array name="heads_up_time_out_values" translatable="false">
-        <item>0</item>
-        <item>4000</item>
-        <item>6000</item>
-        <item>8000</item>
-        <item>10000</item>
-    </string-array>
-
     <!-- Network Traffic Display States -->
     <string-array name="show_network_traffic_state_entries" translatable="false">
         <item>@string/show_network_traffic_disable</item>
@@ -526,6 +491,19 @@
         <item>@string/screen_recorder_bitrate_5000000</item>
         <item>@string/screen_recorder_bitrate_10000000</item>
         <item>@string/screen_recorder_bitrate_20000000</item>
+    </string-array>
+
+    <!-- Battery text mode -->
+    <string-array name="status_bar_battery_percentage_entries" translatable="false">
+        <item>@string/status_bar_battery_percentage_default</item>
+        <item>@string/status_bar_battery_percentage_text_inside</item>
+        <item>@string/status_bar_battery_percentage_text_next</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_percentage_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
 
 </resources>

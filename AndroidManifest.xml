@@ -71,10 +71,6 @@
     <uses-permission android:name="android.permission.OEM_UNLOCK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
-    <!-- Heads up -->
-    <uses-permission android:name="android.permission.CHANGE_HEADS_UP_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
-
     <permission
         android:name="cyanogenmod.permission.PROTECTED_APP"
         android:protectionLevel="signatureOrSystem" />
