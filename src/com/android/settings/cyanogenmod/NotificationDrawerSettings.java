@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2015 crDroid Android
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +16,7 @@
  */
 package com.android.settings.cyanogenmod;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -27,15 +29,21 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.View;
 
+import android.provider.SearchIndexableResource;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.cyanogenmod.qs.QSTiles;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 
 import com.android.internal.widget.LockPatternUtils;
 
 import java.util.Locale;
 
-public class NotificationDrawerSettings extends SettingsPreferenceFragment implements
+import java.util.ArrayList;
+import java.util.List;
+
+public class NotificationDrawerSettings extends SettingsPreferenceFragment implements Indexable,
         Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "NotificationDrawerSettings";
@@ -161,4 +169,25 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
             mQuickPulldown.setSummary(res.getString(R.string.summary_quick_pulldown, direction));
         }
     }
+
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                            boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.notification_drawer_settings;
+                    result.add(sir);
+
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    return new ArrayList<String>();
+                }
+            };
 }
