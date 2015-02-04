@@ -69,12 +69,6 @@
             android:summary="@string/su_indicator_summary"
             android:defaultValue="true" />
 
-        <SwitchPreference
-            android:key="status_bar_ticker_enabled"
-            android:title="@string/status_bar_ticker_title"
-            android:summary="@string/status_bar_ticker_summary"
-            android:defaultValue="true" />
-
         <PreferenceScreen
             android:key="network_traffic_state"
             android:fragment="com.android.settings.crdroid.NetworkTraffic"

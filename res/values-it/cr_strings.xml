@@ -228,10 +228,6 @@
     <string name="smart_pulldown_persistent">persistenti</string>
     <string name="smart_pulldown_all">eliminabili o persistenti</string>
 
-    <!-- Status bar ticker -->
-    <string name="status_bar_ticker_title">Notifiche animate</string>
-    <string name="status_bar_ticker_summary">Testo di notifica animato nella barra di stato</string>
-
     <!--Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Sblocco Rapido</string>
     <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando vengono inseriti correttamente PIN/password</string>
@@ -360,27 +356,6 @@
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">CPU</string>
     <string name="mem_info">RAM</string>
-
-    <!-- Heads up -->
-    <string name="heads_up_title">Notifiche Heads up</string>
-    <string name="app_notification_enable_heads_up_title">Mostra heads up</string>
-    <string name="app_notification_enable_heads_up_summary">Mostra notifiche di questa app come heads up</string>
-    <string name="heads_up_snooze_title">Durata sospensione</string>
-    <string name="heads_up_snooze_summary">Alla pressione del pulsante di sospensione, disattiva gli heads up per <xliff:g id="number">%d</xliff:g> minuti</string>
-    <string name="heads_up_snooze_disabled_summary">La sospensione è disattivata</string>
-    <string name="heads_up_snooze_3min">3 minuti</string>
-    <string name="heads_up_snooze_5min">5 minuti</string>
-    <string name="heads_up_snooze_10min">10 minuti</string>
-    <string name="heads_up_snooze_15min">15 minuti</string>
-    <string name="heads_up_snooze_20min">20 minuti</string>
-    <string name="heads_up_time_out_title">Tempo Scaduto</string>
-    <string name="heads_up_time_out_summary">Mostra Heads up per <xliff:g id="number">%d</xliff:g> secondi</string>
-    <string name="heads_up_time_out_never_summary">Le notifiche Heads up rimarranno fino alla lettura</string>
-    <string name="heads_up_time_out_4sec">4 secondi</string>
-    <string name="heads_up_time_out_6sec">6 secondi</string>
-    <string name="heads_up_time_out_8sec">8 secondi</string>
-    <string name="heads_up_time_out_10sec">10 secondi</string>
-    <string name="heads_up_time_out_never">Mai</string>
 
     <!-- Unaccounted and overcounted battery stats -->
     <string name="show_unac_and_overcounted_stats_title">Mostra statistiche</string>
@@ -678,5 +653,15 @@
     <string name="hfm_dialog_success">/4 hosts applicati!</string>
     <string name="hfm_dialog_conn_error">Errore: Nessuna connessione di rete</string>
     <string name="hfm_dialog_title">Avanzamento aggiornamento hosts</string>
+
+    <!-- Heads up Timeout -->
+    <string name="heads_up_time_out_title">Tempo Scaduto</string>
+    <string name="heads_up_time_out_summary">Mostra Heads up per <xliff:g id="number">%d</xliff:g> secondi</string>
+    <string name="heads_up_time_out_never_summary">Le notifiche Heads up rimarranno fino alla lettura</string>
+    <string name="heads_up_time_out_4sec">4 secondi</string>
+    <string name="heads_up_time_out_6sec">6 secondi</string>
+    <string name="heads_up_time_out_8sec">8 secondi</string>
+    <string name="heads_up_time_out_10sec">10 secondi</string>
+    <string name="heads_up_time_out_never">Mai</string>
 
 </resources>
