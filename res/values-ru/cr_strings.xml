@@ -339,27 +339,6 @@
     <string name="cpu_info">Процессор</string>
     <string name="mem_info">Память</string>
     
-    <!-- Heads up -->
-    <string name="heads_up_title">Уведомления \"поверх\"</string>
-    <string name="app_notification_enable_heads_up_title">Показывать уведомления \"поверх\"</string>
-    <string name="app_notification_enable_heads_up_summary">Показывать уведомления от этого приложения как уведомления \"поверх\"</string>
-    <string name="heads_up_snooze_title">Длительность \"отложить\"</string>
-    <string name="heads_up_snooze_summary">При нажатии кнопки \"Отложить\" уведомления \"поверх\" будут приостановлены на <xliff:g id="number">%d</xliff:g> минут</string>
-    <string name="heads_up_snooze_disabled_summary">Функция \"Отложить\" отключена</string>
-    <string name="heads_up_snooze_3min">3 минуты</string>
-    <string name="heads_up_snooze_5min">5 минут</string>
-    <string name="heads_up_snooze_10min">10 минут</string>
-    <string name="heads_up_snooze_15min">15 минут</string>
-    <string name="heads_up_snooze_20min">20 минут</string>
-    <string name="heads_up_time_out_title">Длительность</string>
-    <string name="heads_up_time_out_summary">Уведомление \"поверх\" будет показываться в течение <xliff:g id="number">%d</xliff:g> секунд</string>
-    <string name="heads_up_time_out_never_summary">Уведомление \"поверх\" будет показываться, пока не будет закрыто</string>
-    <string name="heads_up_time_out_4sec">4 секунды</string>
-    <string name="heads_up_time_out_6sec">6 секунд</string>
-    <string name="heads_up_time_out_8sec">8 секунд</string>
-    <string name="heads_up_time_out_10sec">10 секунд</string>
-    <string name="heads_up_time_out_never">Никогда</string>
-    
     <!-- Unaccounted and overcounted battery stats -->
     <string name="show_unac_and_overcounted_stats_title">Показывать неучтенные (прочие) данные статистики батареи</string>
     <string name="show_unac_and_overcounted_stats_summary">Показывать данные статистики батареи, которые не относятся ни к чему конкретному и обычно попадают в прочее</string>
