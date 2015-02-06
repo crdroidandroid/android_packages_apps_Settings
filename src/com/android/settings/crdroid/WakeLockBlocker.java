@@ -102,12 +102,6 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Log.d("maxwen", "running");
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         mInflater = inflater;
@@ -268,8 +262,8 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
         switch (item.getItemId()) {
             case MENU_RELOAD:
                 if (mEnabled){
-			reload();
-		}
+                    reload();
+                }
                 return true;
             case MENU_SAVE:
                 if (mEnabled){
