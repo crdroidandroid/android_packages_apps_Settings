@@ -145,6 +145,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_screen_timeout_vector";
                 stringId = R.string.qs_tile_screen_timeout;
                 break;
+            case QSConstants.TILE_POWER_MENU:
+                resourceName = "ic_qs_power_menu";
+                stringId = R.string.qs_power_menu_tile;
+                break;
             default:
                 return null;
         }
