@@ -136,12 +136,6 @@
     <string name="omniswitch_first_time_title">Informazioni</string>
     <string name="omniswitch_first_time_message">Assicurati di aver attivo OmniSwitch. Puoi farlo usando le \"Impostazioni\" seguenti</string>
 
-    <!-- Notifications on keyguard -->
-    <string name="app_notification_show_on_keyguard_title">Mostra nella schermata di blocco</string>
-    <string name="app_notification_show_on_keyguard_summary">Mostra le notifiche della app nella schermata di blocco</string>
-    <string name="app_notification_no_ongoing_on_keyguard_title">Disabilita nella schermata di blocco</string>
-    <string name="app_notification_no_ongoing_on_keyguard_summary">Nascondi le notifiche della app nella schermata di blocco</string>
-
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Impostazioni Veloci</string>
     <string name="summary_quick_pulldown">In alto a %1$s della barra di stato scende la tendina delle Impostazioni Veloci</string>

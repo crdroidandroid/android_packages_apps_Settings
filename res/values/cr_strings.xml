@@ -140,12 +140,6 @@
     <string name="omniswitch_first_time_title">Information</string>
     <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
 
-    <!-- Notifications on keyguard -->
-    <string name="app_notification_show_on_keyguard_title">Show on lockscreen</string>
-    <string name="app_notification_show_on_keyguard_summary">Show notifications from this app on the lockscreen</string>
-    <string name="app_notification_no_ongoing_on_keyguard_title">Disable ongoing on lockscreen</string>
-    <string name="app_notification_no_ongoing_on_keyguard_summary">Never show ongoing notifications from this app on the lockscreen</string>
-
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Quick pulldown</string>
     <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>

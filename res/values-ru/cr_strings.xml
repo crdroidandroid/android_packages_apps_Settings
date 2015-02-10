@@ -136,12 +136,6 @@
     <string name="omniswitch_first_time_title">Информация</string>
     <string name="omniswitch_first_time_message">Убедитесь, что вы включили OmniSwitch. Это можно сделать с помощью настроек снизу</string>
 
-    <!-- Notifications on keyguard -->
-    <string name="app_notification_show_on_keyguard_title">Отобразить на экране блокировки</string>
-    <string name="app_notification_show_on_keyguard_summary">Отображать уведомления от этого приложения на экране блокировки</string>
-    <string name="app_notification_no_ongoing_on_keyguard_title">Отключить текущие уведомления на экране блокировки</string>
-    <string name="app_notification_no_ongoing_on_keyguard_summary">Никогда не отображать текущие уведомления от этого приложения на экране блокировки</string>
-
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Быстрый доступ</string>
     <string name="summary_quick_pulldown">%1$s угол строки состояния при опускании вниз открывает панель быстрых настроек</string>
