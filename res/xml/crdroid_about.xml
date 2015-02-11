@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2015 crDroid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/about_crdroid"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <PreferenceCategory
+        android:key="about"
+        android:title="@string/about_crdroid">
+
+        <!-- Changelog -->
+        <PreferenceScreen
+            android:key="changelog"
+            android:title="@string/changelog_crdroid_title"
+            android:fragment="com.android.settings.crdroid.Changelog" />
+
+        <!-- crDroid Share -->
+        <Preference
+            android:key="share"
+            android:title="@string/share_crdroid_title"
+            android:summary="@string/share_crdroid_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="sites"
+        android:title="@string/sites_crdroid">
+
+        <!-- crDroid Website -->
+        <Preference
+            android:key="crdroid_website"
+            android:title="@string/crdroid_website_title"
+            android:summary="@string/crdroid_website_summary" />
+
+        <!-- crDroid Github -->
+        <Preference
+            android:key="crdroid_source"
+            android:title="@string/crdroid_source_title"
+            android:summary="@string/crdroid_source_summary" />
+
+        <!-- crDroid GooglePlus -->
+        <Preference
+            android:key="crdroid_google_plus"
+            android:title="@string/crdroid_google_plus_title"
+            android:summary="@string/crdroid_google_plus_summary" />
+
+        <!-- crDroid Translation -->
+        <Preference
+            android:key="crdroid_translation"
+            android:title="@string/crdroid_translation_title"
+            android:summary="@string/crdroid_translation_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="themes"
+        android:title="@string/themes_crdroid">
+
+        <!-- crDroid Evolved -->
+        <Preference
+            android:key="crdroid_theme_evolved"
+            android:title="@string/crdroid_theme_evolved_title"
+            android:summary="@string/crdroid_theme_evolved_summary" />
+
+        <!-- crDroid Not Only Red -->
+        <Preference
+            android:key="crdroid_theme_nor"
+            android:title="@string/crdroid_theme_nor_title"
+            android:summary="@string/crdroid_theme_nor_summary" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
