@@ -15,8 +15,10 @@
  */
 package com.android.settings.crdroid;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
@@ -32,6 +34,8 @@ import java.util.Collections;
 public class About extends SettingsPreferenceFragment {
 
     public static final String TAG = "About";
+
+    private static final String KEY_CRDROID_SHARE = "share";
 
     Preference mSiteUrl;
     Preference mSourceUrl;
@@ -57,6 +61,13 @@ public class About extends SettingsPreferenceFragment {
             launchUrl("https://github.com/crdroidandroid");
         } else if (preference == mGoogleUrl) {
             launchUrl("https://plus.google.com/u/0/communities/118297646046960923906");
+        } else if (preference.getKey().equals(KEY_CRDROID_SHARE)) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, String.format(
+                getActivity().getString(R.string.share_message), Build.MODEL));
+        startActivity(Intent.createChooser(intent, getActivity().getString(R.string.share_chooser_title)));
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);

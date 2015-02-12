@@ -57,8 +57,6 @@ import java.io.InputStreamReader;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.android.settings.R;
-
 public class DeviceInfoSettings extends SettingsPreferenceFragment implements Indexable {
 
     private static final String LOG_TAG = "DeviceInfoSettings";
@@ -89,7 +87,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         private static final String KEY_DEVICE_CPU = "device_cpu";
     private static final String KEY_DEVICE_MEMORY = "device_memory";
     private static final String KEY_MOD_VERSION = "mod_version";
-    private static final String KEY_CRDROID_SHARE = "share";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_CR_UPDATES = "cr_updates";
 
@@ -279,13 +276,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             }
         } else if (preference.getKey().equals(KEY_DEVICE_FEEDBACK)) {
             sendFeedback();
-        } else if (preference.getKey().equals(KEY_CRDROID_SHARE)) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_SEND);
-        intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_TEXT, String.format(
-                getActivity().getString(R.string.share_message), Build.MODEL));
-        startActivity(Intent.createChooser(intent, getActivity().getString(R.string.share_chooser_title)));
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }

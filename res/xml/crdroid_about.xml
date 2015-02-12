@@ -22,21 +22,42 @@
         android:key="about"
         android:title="@string/about_crdroid">
 
+        <!-- crDroid Website -->
         <Preference
             android:key="crdroid_website"
             android:title="@string/crdroid_website_title"
             android:summary="@string/crdroid_website_summary" />
 
+        <!-- crDroid Github -->
         <Preference
             android:key="crdroid_source"
             android:title="@string/crdroid_source_title"
             android:summary="@string/crdroid_source_summary" />
-			
+
+        <!-- crDroid GooglePlus -->
         <Preference
             android:key="crdroid_google_plus"
             android:title="@string/crdroid_google_plus_title"
             android:summary="@string/crdroid_google_plus_summary" />
-			
+
+        <!-- Devices and Maintainers -->
+        <PreferenceScreen
+            android:key="devices"
+            android:title="@string/device_maintainers_title"
+            android:fragment="com.android.settings.crdroid.Devices" />
+
+        <!-- Changelog -->
+        <PreferenceScreen
+            android:key="changelog"
+            android:title="@string/changelog_crdroid_title"
+            android:fragment="com.android.settings.crdroid.Changelog" />
+
+        <!-- crDroid Share -->
+        <Preference
+            android:key="share"
+            android:title="@string/share_crdroid_title"
+            android:summary="@string/share_crdroid_summary" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

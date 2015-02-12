@@ -29,12 +29,12 @@
 
     <!-- About crDroid -->
     <string name="about_crdroid">About crDroid</string>
-    <string name="crdroid_website_title">Website crDroid</string>
+    <string name="crdroid_website_title">Website</string>
     <string name="crdroid_website_summary">Visit our website</string>
-    <string name="crdroid_source_title">Github crDroid</string>
+    <string name="crdroid_source_title">Github</string>
     <string name="crdroid_source_summary">Visit our source git team</string>
-    <string name="crdroid_google_plus_title">Google+ crDroid</string>
-    <string name="crdroid_google_plus_summary">Visit our G+ site for support and news</string>
+    <string name="crdroid_google_plus_title">Google+</string>
+    <string name="crdroid_google_plus_summary">Visit our G+ page for support and news</string>
 
     <!-- Dashboard header -->
     <string name="header_category_personalization">Personalization</string>
