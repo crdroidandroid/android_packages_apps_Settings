@@ -37,6 +37,7 @@ import android.os.UserManager;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -84,13 +85,18 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
-        private static final String KEY_DEVICE_CPU = "device_cpu";
+    private static final String KEY_DEVICE_CPU = "device_cpu";
     private static final String KEY_DEVICE_MEMORY = "device_memory";
     private static final String KEY_MOD_VERSION = "mod_version";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_CR_UPDATES = "cr_updates";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
+
+    public static final String PREFS_FILE = "device";
+    public static final String KEY_ADVANCED_MODE = "advanced_mode";
+
+    SwitchPreference mAdvancedSettings;
 
     long[] mHits = new long[3];
     int mDevHitCountdown;
@@ -206,11 +212,13 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 getPreferenceScreen().removePreference(pref);
             }
         }
+        mAdvancedSettings = (SwitchPreference) findPreference(KEY_ADVANCED_MODE);
     }
 
     @Override
     public void onResume() {
         super.onResume();
+        mAdvancedSettings.setChecked(SettingsActivity.showAdvancedPreferences(getActivity()));
         mDevHitCountdown = getActivity().getSharedPreferences(DevelopmentSettings.PREF_FILE,
                 Context.MODE_PRIVATE).getBoolean(DevelopmentSettings.PREF_SHOW,
                         android.os.Build.TYPE.equals("eng")) ? -1 : TAPS_TO_BE_A_DEVELOPER;
@@ -276,6 +284,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             }
         } else if (preference.getKey().equals(KEY_DEVICE_FEEDBACK)) {
             sendFeedback();
+        } else if (preference.getKey().equals(KEY_ADVANCED_MODE)) {
+            final boolean isEnabled = mAdvancedSettings.isChecked();
+            getActivity().getSharedPreferences(PREFS_FILE, 0)
+                    .edit()
+                    .putBoolean(KEY_ADVANCED_MODE, isEnabled)
+                    .apply();
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }

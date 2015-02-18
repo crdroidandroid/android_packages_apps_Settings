@@ -76,7 +76,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
     private static final String KEY_POWER_END_CALL = "power_end_call";
     private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
-    private static final String KEY_BLUETOOTH_INPUT_SETTINGS = "bluetooth_input_settings";
     private static final String NAVIGATION_BAR_TINT = "navigation_bar_tint";
     private static final String KEY_VOLUME_ANSWER_CALL = "volume_answer_call";
 
@@ -141,7 +140,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.button_settings);
 
-        final PreferenceScreen prefScreen = getPreferenceScreen();
+        mHandler = new Handler();
 
         // Power button ends calls.
         mPowerEndCall = (SwitchPreference) findPreference(KEY_POWER_END_CALL);
@@ -153,22 +152,22 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mVolumeAnswerCall = (SwitchPreference) findPreference(KEY_VOLUME_ANSWER_CALL);
         mVolumeAnswerCall.setOnPreferenceChangeListener(this);
 
-        mHandler = new Handler();
+        // Navigation bar category
+        final PreferenceCategory navBarCategory = (PreferenceCategory) findPreference(CATEGORY_NAVBAR);
 
-        // Navigation bar category.
-        final PreferenceCategory navBarCategory =
-                (PreferenceCategory) prefScreen.findPreference(CATEGORY_NAVBAR);
-        // Enable/disable navigation bar
+        // Navigation bar keys switxh
+        mEnableNavigationBar = (SwitchPreference) findPreference(KEY_ENABLE_NAVIGATION_BAR);
+
+        // Navigation bar left
+        mNavigationBarLeftPref = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_LEFT);
+
+        // Internal bool to check if the device have a navbar by default or not!
         boolean hasNavBarByDefault = getResources().getBoolean(
                 com.android.internal.R.bool.config_showNavigationBar);
         boolean enableNavigationBar = Settings.System.getInt(getContentResolver(),
                 Settings.System.NAVIGATION_BAR_SHOW, hasNavBarByDefault ? 1 : 0) == 1;
-        mEnableNavigationBar = (SwitchPreference) prefScreen.findPreference(KEY_ENABLE_NAVIGATION_BAR);
         mEnableNavigationBar.setChecked(enableNavigationBar);
         mEnableNavigationBar.setOnPreferenceChangeListener(this);
-
-        // Navigation bar left
-        mNavigationBarLeftPref = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_LEFT);
 
         // Navigation bar button color
         mNavbarButtonTint = (ColorPickerPreference) findPreference(NAVIGATION_BAR_TINT);
@@ -219,13 +218,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
             int swapVolumeKeys = Settings.System.getInt(getContentResolver(),
                     Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION, 0);
-            mSwapVolumeButtons = (SwitchPreference)
-                    prefScreen.findPreference(KEY_SWAP_VOLUME_BUTTONS);
-            mSwapVolumeButtons.setChecked(swapVolumeKeys > 0);
+            mSwapVolumeButtons = (SwitchPreference) findPreference(KEY_SWAP_VOLUME_BUTTONS);
+            if (mSwapVolumeButtons != null) {
+                mSwapVolumeButtons.setChecked(swapVolumeKeys > 0);
+            }
         }
-
-        Utils.updatePreferenceToSpecificActivityFromMetaDataOrRemove(getActivity(),
-                getPreferenceScreen(), KEY_BLUETOOTH_INPUT_SETTINGS);
 
         updateDisableHwKeysOption();
         updateNavBarSettings();
@@ -420,13 +417,17 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (incallHomeBehavior == Settings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER);
             mHomeAnswerCall.setChecked(homeButtonAnswersCall);
         }
+
         // Volume button answers calls.
-        mVolumeAnswerCall.setChecked((Settings.System.getInt(getContentResolver(),
-                  Settings.System.ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER, 0) == 1));
+        if (mVolumeAnswerCall != null) {
+            mVolumeAnswerCall.setChecked((Settings.System.getInt(getContentResolver(),
+                    Settings.System.ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER, 0) == 1));
+        }
     }
 
     private ListPreference initActionList(String key, int value) {
         ListPreference list = (ListPreference) getPreferenceScreen().findPreference(key);
+        if (list == null) return null;
         list.setValue(Integer.toString(value));
         list.setSummary(list.getEntry());
         list.setOnPreferenceChangeListener(this);
@@ -667,14 +668,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     ArrayList<String> result = new ArrayList<String>();
-
-                    Intent intent =
-                            new Intent("com.cyanogenmod.action.LAUNCH_BLUETOOTH_INPUT_SETTINGS");
-                    intent.setClassName("com.cyanogenmod.settings.device",
-                            "com.cyanogenmod.settings.device.BluetoothInputSettings");
-                    if (!Utils.doesIntentResolve(context, intent)) {
-                        result.add(KEY_BLUETOOTH_INPUT_SETTINGS);
-                    }
 
                     Map<String, String> items = getPreferencesToRemove(null, context);
                     for (String key : items.keySet()) {

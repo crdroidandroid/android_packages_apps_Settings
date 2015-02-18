@@ -43,8 +43,7 @@ import com.android.settings.Utils;
 /**
  * Performance Settings
  */
-public class PerformanceSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+public class PerformanceSettings extends SettingsPreferenceFragment {
     private static final String TAG = "PerformanceSettings";
 
     private static final String CATEGORY_PROFILES = "perf_profile_prefs";
@@ -54,41 +53,19 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
 
     private static final String CATEGORY_PROCESSOR = "processor";
 
-    private static final String PERF_PROFILE_PREF = "pref_perf_profile";
-
     private static final String FORCE_HIGHEND_GFX_PREF = "pref_force_highend_gfx";
     private static final String FORCE_HIGHEND_GFX_PERSIST_PROP = "persist.sys.force_highendgfx";
 
     // Don't nag the user with the dragons ahead warning every time
     private static final String KEY_DRAGONS_ARE_AWESOME = "pref_dragons_awesome";
 
-    private ListPreference mPerfProfilePref;
     private SwitchPreference mForceHighEndGfx;
     private SwitchPreference mForceFastCharge;
 
     public static final String KEY_FORCE_FAST_CHARGE = "pref_force_fast_charge";
     public static final String FAST_CHARGE_PATH = fastchargePath();
 
-    private String[] mPerfProfileEntries;
-    private String[] mPerfProfileValues;
-    private String mPerfProfileDefaultEntry;
-
     private AlertDialog mAlertDialog;
-
-    private PowerManager mPowerManager;
-
-    private ContentObserver mPerformanceProfileObserver = null;
-
-    private class PerformanceProfileObserver extends ContentObserver {
-        public PerformanceProfileObserver(Handler handler) {
-            super(handler);
-        }
-
-        @Override
-        public void onChange(boolean selfChange, Uri uri) {
-            setCurrentValue();
-        }
-    }
 
     private SharedPreferences mDevelopmentPreferences;
 
@@ -96,17 +73,8 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mPowerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
-
         mDevelopmentPreferences = getActivity().getSharedPreferences(
                 DevelopmentSettings.PREF_FILE, Context.MODE_PRIVATE);
-
-        mPerfProfileDefaultEntry = getString(
-                com.android.internal.R.string.config_perf_profile_default_entry);
-        mPerfProfileEntries = getResources().getStringArray(
-                com.android.internal.R.array.perf_profile_entries);
-        mPerfProfileValues = getResources().getStringArray(
-                com.android.internal.R.array.perf_profile_values);
 
         addPreferencesFromResource(R.xml.performance_settings);
 
@@ -117,19 +85,6 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
         // 3. never show individual processor control if profiles enabled
 
         PreferenceCategory category = (PreferenceCategory) prefSet.findPreference(CATEGORY_PROFILES);
-
-        mPerfProfilePref = (ListPreference)prefSet.findPreference(PERF_PROFILE_PREF);
-        if (mPerfProfilePref != null && !mPowerManager.hasPowerProfiles()) {
-            prefSet.removePreference(category);
-            mPerfProfilePref = null;
-        } else {
-            mPerfProfilePref.setEntries(mPerfProfileEntries);
-            mPerfProfilePref.setEntryValues(mPerfProfileValues);
-            setCurrentValue();
-            mPerfProfilePref.setOnPreferenceChangeListener(this);
-            ((PreferenceCategory)prefSet.findPreference(CATEGORY_SYSTEM)).removePreference(
-                    prefSet.findPreference(CATEGORY_PROCESSOR));
-        }
 
         category = (PreferenceCategory) prefSet.findPreference(CATEGORY_SYSTEM);
         if (!showAdvancedPerfSettings()) {
@@ -154,7 +109,6 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
             prefSet.removePreference(category);
         }
 
-        mPerformanceProfileObserver = new PerformanceProfileObserver(new Handler());
     }
 
     private boolean showAdvancedPerfSettings() {
@@ -167,13 +121,6 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
     @Override
     public void onResume() {
         super.onResume();
-
-        if (mPerfProfilePref != null) {
-            setCurrentValue();
-            ContentResolver resolver = getActivity().getContentResolver();
-            resolver.registerContentObserver(Settings.Secure.getUriFor(
-                    Settings.Secure.PERFORMANCE_PROFILE), false, mPerformanceProfileObserver);
-        }
 
         boolean warned = mDevelopmentPreferences.getBoolean(KEY_DRAGONS_ARE_AWESOME, false);
 
@@ -199,10 +146,6 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
     @Override
     public void onPause() {
         super.onPause();
-        if (mPerfProfilePref != null) {
-            ContentResolver resolver = getActivity().getContentResolver();
-            resolver.unregisterContentObserver(mPerformanceProfileObserver);
-        }
     }
 
     @Override
@@ -219,41 +162,6 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
         }
 
         return true;
-    }
-
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (newValue != null) {
-            if (preference == mPerfProfilePref) {
-                mPowerManager.setPowerProfile(String.valueOf(newValue));
-                setCurrentPerfProfileSummary();
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private void setCurrentPerfProfileSummary() {
-        String value = mPowerManager.getPowerProfile();
-        String summary = "";
-        int count = mPerfProfileValues.length;
-        for (int i = 0; i < count; i++) {
-            try {
-                if (mPerfProfileValues[i].equals(value)) {
-                    summary = mPerfProfileEntries[i];
-                }
-            } catch (IndexOutOfBoundsException ex) {
-                // Ignore
-            }
-        }
-        mPerfProfilePref.setSummary(String.format("%s", summary));
-    }
-
-    private void setCurrentValue() {
-        if (mPerfProfilePref == null) {
-            return;
-        }
-        mPerfProfilePref.setValue(mPowerManager.getPowerProfile());
-        setCurrentPerfProfileSummary();
     }
 
     /* Performance Misc crDroid */

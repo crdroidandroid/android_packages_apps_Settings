@@ -76,9 +76,7 @@
     <string name="display_settings_title">Display settings</string>
     <string name="reset_message">Reset all entries to default?</string>
 
-    <!-- Advanced sound settings -->
-    <string name="advanced_title">Advanced options</string>
-    <string name="advanced_sound_title">Advanced</string>
+    <!-- Sound settings -->
     <string name="sound_title">Sound</string>
 
     <!-- Share crDroid -->
