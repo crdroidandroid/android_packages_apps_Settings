@@ -236,8 +236,7 @@
 
     <PreferenceCategory
         android:key="volume_keys"
-        android:title="@string/hardware_keys_volume_keys_title"
-        settings:advanced="true">
+        android:title="@string/hardware_keys_volume_keys_title">
 
         <SwitchPreference
             android:key="volume_answer_call"
@@ -250,14 +249,16 @@
             android:title="@string/button_wake_title"
             android:summary="@string/button_wake_summary"
             android:defaultValue="false"
-            android:disableDependentsState="true"/>
+            android:disableDependentsState="true"
+            settings:advanced="true"/>
 
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="volbtn_music_controls"
             android:title="@string/volbtn_music_controls_title"
             android:summary="@string/volbtn_music_controls_summary"
             android:defaultValue="true"
-            android:dependency="volume_wake_screen"/>
+            android:dependency="volume_wake_screen"
+            settings:advanced="true"/>
 
         <ListPreference
             android:key="volume_key_cursor_control"
@@ -265,12 +266,14 @@
             android:title="@string/volbtn_cursor_control_title"
             android:entries="@array/volbtn_cursor_control_entries"
             android:entryValues="@array/volbtn_cursor_control_values"
-            android:persistent="false"/>
+            android:persistent="false"
+            settings:advanced="true"/>
 
         <SwitchPreference
             android:key="swap_volume_buttons"
             android:title="@string/swap_volume_buttons_title"
-            android:summary="@string/swap_volume_buttons_summary" />
+            android:summary="@string/swap_volume_buttons_summary"
+            settings:advanced="true"/>
 
     </PreferenceCategory>
 
