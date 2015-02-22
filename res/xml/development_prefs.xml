@@ -198,7 +198,7 @@
             android:defaultValue="false" />
 
         <com.android.settings.crdroid.GlobalSettingSwitchPreference
-            android:key="captive_portal_detection_enabled "
+            android:key="captive_portal_detection_enabled"
             android:title="@string/captive_portal_detection"
             android:summary="@string/captive_portal_detection_summary" />
 
