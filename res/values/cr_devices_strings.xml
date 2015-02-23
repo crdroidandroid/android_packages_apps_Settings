@@ -37,6 +37,8 @@
     <string name="device_google_n6_summary">Shamu \nMaintainer - Hildo Boerboom</string>
 
     <!-- Htc devices -->
+    <string name="device_htc_m7">Htc One M7</string>
+    <string name="device_htc_m7_summary">M7 \nMaintainer - Hildo Boerboom</string>
     <string name="device_htc_m8">Htc One M8</string>
     <string name="device_htc_m8_summary">M8 \nMaintainer - Hildo Boerboom</string>
     <string name="device_htc_endeavoru">Htc One X</string>
@@ -44,11 +46,17 @@
 
     <!-- Lg devices -->
     <string name="device_lg_g3">Lg G3</string>
-    <string name="device_lg_g3_summary">D850-D851-D852 \nMaintainer - Hildo Boerboom</string>
+    <string name="device_lg_g3_summary">D850-D851-D852-D855-LS990-VS985 \nMaintainer - Hildo Boerboom</string>
 
     <!-- Motorola devices -->
     <string name="device_motorola_ghost">Motorola X first gen</string>
     <string name="device_motorola_ghost_summary">Ghost \nMaintainer - Hildo Boerboom</string>
+    <string name="device_motorola_peregrine">Motorola G 4G</string>
+    <string name="device_motorola_peregrine_summary">Peregrine \nMaintainer - Hildo Boerboom</string>
+    <string name="device_motorola_victara">Motorola X 2014</string>
+    <string name="device_motorola_victara_summary">Victara \nMaintainer - Hildo Boerboom</string>
+    <string name="device_motorola_titan">Motorola G 2014</string>
+    <string name="device_motorola_titan_summary">Titan \nMaintainer - Hildo Boerboom</string>
 
     <!-- Samsung devices -->
     <string name="device_samsung_note2">Samsung Galaxy Note 2</string>
@@ -59,6 +67,8 @@
     <string name="device_samsung_note4qcom_summary">N910F-N910G \nMaintainer - Hildo Boerboom</string>
     <string name="device_samsung_s3">Samsung Galaxy S 3</string>
     <string name="device_samsung_s3_summary">GT-I9300 \nMaintainer - Cristiano Matos</string>
+    <string name="device_samsung_s4">Samsung Galaxy S 4</string>
+    <string name="device_samsung_s4_summary">Jflte \nMaintainer - Hildo Boerboom</string>
     <string name="device_samsung_s5">Samsung Galaxy S 5</string>
     <string name="device_samsung_s5_summary">Klte \nMaintainer - Hildo Boerboom</string>
     <string name="device_samsung_tab2">Samsung Galaxy Tab 2</string>
