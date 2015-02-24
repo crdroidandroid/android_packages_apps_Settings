@@ -257,7 +257,6 @@
             android:title="@string/button_wake_title"
             android:summary="@string/button_wake_summary"
             android:defaultValue="false"
-            android:disableDependentsState="true"
             settings:advanced="true"/>
 
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
@@ -265,7 +264,6 @@
             android:title="@string/volbtn_music_controls_title"
             android:summary="@string/volbtn_music_controls_summary"
             android:defaultValue="true"
-            android:dependency="volume_wake_screen"
             settings:advanced="true"/>
 
         <ListPreference
