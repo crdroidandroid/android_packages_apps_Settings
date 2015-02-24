@@ -525,4 +525,8 @@
     <string name="recents_show_membar_title">RAM memory bar</string>
     <string name="recents_show_membar_summary">Show a bar with the device\'s available RAM memory</string>
 
+    <!-- Statusbar crDroid logo -->
+    <string name="status_bar_crdroid_logo_title">crDroid logo</string>
+    <string name="status_bar_crdroid_logo_summary">Enable to show crDroid logo on statusbar</string>
+
 </resources>
