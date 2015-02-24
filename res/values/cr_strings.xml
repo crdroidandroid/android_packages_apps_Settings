@@ -718,4 +718,8 @@
     <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
     <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
 
+    <!-- Statusbar crDroid logo -->
+    <string name="status_bar_crdroid_logo_title">crDroid logo</string>
+    <string name="status_bar_crdroid_logo_summary">Enable to show crDroid logo on statusbar</string>
+
 </resources>
