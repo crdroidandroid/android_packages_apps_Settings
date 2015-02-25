@@ -49,7 +49,7 @@
     <string name="device_lg_g3_summary">D850-D851-D852-D855-LS990-VS985 \nMaintainer - Hildo Boerboom</string>
 
     <!-- Motorola devices -->
-    <string name="device_motorola_ghost">Motorola X first gen</string>
+    <string name="device_motorola_ghost">Motorola X 2013</string>
     <string name="device_motorola_ghost_summary">Ghost \nMaintainer - Hildo Boerboom</string>
     <string name="device_motorola_peregrine">Motorola G 4G</string>
     <string name="device_motorola_peregrine_summary">Peregrine \nMaintainer - Hildo Boerboom</string>
