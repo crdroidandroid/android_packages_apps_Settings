@@ -26,6 +26,15 @@
     <!-- About phone screen, build date -->
     <string name="build_date">Дата сборки</string>
     <string name="build_date_default">2014-01-01-0000</string>
+    
+    <!-- About crDroid -->
+    <string name="about_crdroid">Про crDroid</string>
+    <string name="crdroid_website_title">Сайт</string>
+    <string name="crdroid_website_summary">Посетите наш веб-сайт</string>
+    <string name="crdroid_source_title">Github</string>
+    <string name="crdroid_source_summary">Посетите наши git-репозитории</string>
+    <string name="crdroid_google_plus_title">Google+</string>
+    <string name="crdroid_google_plus_summary">Заходите к нам в Google+ за поддержкой и последними новостями</string>
 
     <!-- Dashboard header -->
     <string name="header_category_personalization">Персонализация</string>
@@ -44,8 +53,12 @@
     <string name="crupdate_settings_summary">Скачать последнюю версию прошивки crDroid и PA Gapps для вашего устройства</string>
 
     <!-- Devices and Maintainers -->
-    <string name="device_maintainers_title">Устройства и Сопровождающие</string>
+    <string name="device_maintainers_title">Устройства и их сопровождающие</string>
     <string name="device_maintainers_title_summary">Список устройств и их сопровождающие в crDroid ROM</string>
+    
+    <!-- Changelog -->
+    <string name="changelog_crdroid_title">Список изменений</string>
+    <string name="changelog_crdroid_error">Не удаётся загрузить список изменений</string>
 
     <!-- Performance Misc -->
     <string name="misc_title">Прочее crDroid</string>
@@ -63,11 +76,9 @@
     <string name="display_settings_title">Настройки экрана</string>
     <string name="reset_message">Сбросить все параметры на значения по умолчанию?</string>
 
-    <!-- Advanced sound settings -->
-    <string name="advanced_title">Расширенные настройки</string>
-    <string name="advanced_sound_title">Расширенные</string>
+    <!-- Sound settings -->
     <string name="sound_title">Звук</string>
-    
+
     <!-- Share crDroid -->
     <string name="share_crdroid_title">Поделиться crDroid</string>
     <string name="share_crdroid_summary">Позвольте другим узнать о crDroid</string>
@@ -165,6 +176,9 @@
     <string name="navigation_bar_size_40_dp">40 dp</string>
     <string name="navigation_bar_size_42_dp">42 dp</string>
     <string name="navigation_bar_size_0_dp">0 dp (выкл)</string>
+    
+    <!-- Navigation bar button color -->
+    <string name="navbar_button_tint_title">Цвет кнопок панели навигации</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
     <string name="hw_keys_title">Аппаратные кнопки</string>
@@ -179,10 +193,6 @@
     <string name="set">Задать</string>
     <string name="color_default">По умолчанию</string>
 
-    <!-- Clock -->
-    <string name="status_bar_clock">Часы</string>
-    <string name="status_bar_clock_title">Стиль часов</string>
-
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">\"Умная\" панель уведомлений</string>
     <string name="smart_pulldown_summary">Открыть Быстрые настройки при %1$s уведомлениях</string>
@@ -190,10 +200,6 @@
     <string name="smart_pulldown_dismissable">Без удаляемых</string>
     <string name="smart_pulldown_persistent">Без постоянных</string>
     <string name="smart_pulldown_all">Без удаляемых и постоянных</string>
-
-    <!-- Status bar ticker -->
-    <string name="status_bar_ticker_title">Показ уведомлений</string>
-    <string name="status_bar_ticker_summary">Анимация текста уведомления в строке состояния</string>
 
     <!--Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
@@ -604,12 +610,13 @@
     <string name="privacy_guard_notification_title">Уведомление</string>
     <string name="privacy_guard_notifiation_summary">Показывать уведомление, когда защищённый режим активен</string>
 
-    <!-- Doze pulse (ambient display) notification timeout -->
+    <!-- Doze options -->
+    <string name="display_category_doze_options_title">Настройки \"Активного экрана\"</string>
     <string name="doze_timeout_title">Длительность работы \"Активного экрана\"</string>
     <string name="doze_timeout_summary">Время, в течение которого экран будет включен для показа уведомления</string>
-
-    <!-- Doze (ambient display) preference category -->
-    <string name="display_category_doze_options_title">Настройки \"Активного экрана\"</string>
+    <string name="doze_trigger_motion_title">Датчики активации</string>
+    <string name="doze_trigger_motion_summary_on">Включение дисплея, когда берёшь его в руки и при непросмотренных уведомлениях</string>
+    <string name="doze_trigger_motion_summary_off">Включение дисплея при непросмотренных уведомлениях</string>
 
     <!-- Host File Manager -->
     <string name="hfm_disable_ads_title">Отключение рекламы</string>
@@ -622,5 +629,61 @@
     <string name="hfm_dialog_success">Новый файл hosts успешно применён!</string>
     <string name="hfm_dialog_conn_error">Ошибка: Нет подключения к сети</string>
     <string name="hfm_dialog_title">Процесс обновления файла hosts</string>
+    
+    <!-- QS Tiles -->
+    <string name="qs_main_tiles_summary_off2">Три или четыре плитки в каждом ряду</string>
+    <string name="qs_four_columns_title">Отображать по четыре плитки в ряду</string>
+    <string name="qs_sync_tile">Синхронизация</string>
+    <string name="qs_power_menu_tile">Меню кнопки питания</string>
+    <string name="qs_battery_saver_tile">Энергосбережение</string>
+    <string name="qs_brightness_tile">Яркость</string>
+
+    <!-- Heads Up -->
+    <string name="category_heads_up">Всплывающие уведомления</string>
+    <string name="summary_heads_up_enabled">\"Всплывающие уведомления\" включены</string>
+    <string name="summary_heads_up_disabled">\"Всплывающие уведомления\" выключены</string>
+    <string name="add_heads_up_package">Добавить приложение</string>
+    <string name="add_heads_up_dnd_summary">Не показывать всплывающие уведомления при работе с этими приложениями</string>
+    <string name="add_heads_up_blacklist_summary">Не показывать всплывающие уведомления от этих приложений</string>
+    <string name="heads_up_dnd_title">Не беспокоить</string>
+    <string name="heads_up_blacklist_title">Чёрный список</string>
+    <string name="heads_up_disabled_notice">\"Всплывающие уведомления\" позволяют отображать интерактивные уведомления от приложений во всплывающем окне.</string>
+    <string name="heads_up_dismiss_on_remove_title">Поведение при свайпе</string>
+    <string name="heads_up_dismiss_on_remove_summary_enabled">Скрывать уведомление вместо удаления</string>
+    <string name="heads_up_dismiss_on_remove_summary_disabled">Скрывать и удалять уведомление</string>
+    
+    <!-- Heads up timeout -->
+    <string name="heads_up_time_out_title">Длительность</string>
+    <string name="heads_up_time_out_summary">\"Всплывающее уведомление\" будет показываться в течение <xliff:g id="number">%d</xliff:g> секунд.</string>
+    <string name="heads_up_time_out_never_summary">\"Всплывающее уведомление\" будет показываться опр. время, пока не будет закрыто.</string>
+    <string name="heads_up_time_out_2sec">2 секунды</string>
+    <string name="heads_up_time_out_4sec">4 секунды</string>
+    <string name="heads_up_time_out_6sec">6 секунд</string>
+    <string name="heads_up_time_out_8sec">8 секунд</string>
+    <string name="heads_up_time_out_10sec">10 секунд</string>
+    <string name="heads_up_time_out_never">Никогда</string>
+    
+    <!-- Heads up touch outside -->
+    <string name="heads_up_touch_outside_title">Поведение при внешнем нажатии</string>
+    <string name="heads_up_touch_outside_summary_enabled">Скрывать уведомление при нажатии за пределами уведомления или при нажатии кнопки \"Домой\"</string>
+    <string name="heads_up_touch_outside_summary_disabled">НЕ скрывать уведомление при нажатии за пределами уведомления или при нажатии кнопки \"Домой\"</string>
+    
+    <!-- Captive Portal -->
+    <string name="captive_portal_detection">Принудительное обнаружение сервера</string>
+    <string name="captive_portal_detection_summary">Если отключено, то соединение с серверами Google не требуется для того, чтобы обнаружить передачу данных.</string>
+
+    <!-- The volume key answer -->
+    <string name="volume_answer_call_title">Ответ кнопкой громкости</string>
+    <string name="volume_answer_call_summary">Ответ кнопкой увеличения громкости</string>
+    
+    <!-- Volume pane timeout -->
+    <string name="category_panel_time_out">Таймаут панели</string>
+    <string name="volume_panel_time_out_title">Длительность показа панели громкости</string>
+    <string name="volume_panel_time_out_summary">Скрыть после <xliff:g id="number">%d</xliff:g> сек. Автоматически скрывать при внешнем нажатии</string>
+    <string name="volume_panel_time_out_3sec">3 секунды (по умолчанию)</string>
+    <string name="volume_panel_time_out_5sec">5 секунд</string>
+    <string name="volume_panel_time_out_8sec">8 секунд</string>
+    <string name="volume_panel_time_out_12sec">12 секунд</string>
+    <string name="volume_panel_time_out_15sec">15 секунд</string>
 
 </resources>
