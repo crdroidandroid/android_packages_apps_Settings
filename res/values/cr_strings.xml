@@ -125,10 +125,6 @@
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
-    <!-- Quick pulldown -->
-    <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Right edge of the status bar pulls down Quick Settings</string>
-
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Clear all recents button</string>
     <string name="show_clear_all_recents_button_summary">Show clear all button on recents panel</string>
@@ -147,13 +143,7 @@
     <string name="omniswitch_first_time_title">Information</string>
     <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
 
-    <!-- QuickSettings: Quick Pulldown -->
-    <string name="title_quick_pulldown">Quick pulldown</string>
-    <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="quick_pulldown_off">Off</string>
-    <string name="quick_pulldown_left">Left</string>
-    <string name="quick_pulldown_right">Right</string>
-
+    <!-- QS on secure lockscreen -->
     <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
     <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen</string>
 

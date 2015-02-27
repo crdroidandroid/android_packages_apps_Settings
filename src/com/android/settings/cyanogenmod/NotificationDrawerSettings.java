@@ -59,8 +59,8 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
     private SwitchPreference mBlockOnSecureKeyguard;
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.notification_drawer_settings);
 
         PreferenceScreen prefSet = getPreferenceScreen();
@@ -97,6 +97,21 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
     }
 
     @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        PreferenceScreen prefSet = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver();
+        mQuickPulldown = (ListPreference) prefSet.findPreference(PREF_QUICK_PULLDOWN);
+
+        mQuickPulldown.setOnPreferenceChangeListener(this);
+        int quickPulldownValue = Settings.System.getIntForUser(resolver,
+                Settings.System.QS_QUICK_PULLDOWN, 0, UserHandle.USER_CURRENT);
+        mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
+        updatePulldownSummary(quickPulldownValue);
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
 
@@ -105,52 +120,41 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
                     qsTileCount, qsTileCount));
     }
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getContentResolver();
         if (preference == mQuickPulldown) {
-            int statusQuickPulldown = Integer.valueOf((String) objValue);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
-                    statusQuickPulldown);
-            updateQuickPulldownSummary(statusQuickPulldown);
+            int quickPulldownValue = Integer.valueOf((String) newValue);
+            Settings.System.putIntForUser(resolver, Settings.System.QS_QUICK_PULLDOWN,
+                    quickPulldownValue, UserHandle.USER_CURRENT);
+            updatePulldownSummary(quickPulldownValue);
             return true;
         } else if (preference == mSmartPulldown) {
-            int smartPulldown = Integer.valueOf((String) objValue);
-            Settings.System.putInt(getContentResolver(),
+            int smartPulldown = Integer.valueOf((String) newValue);
+            Settings.System.putInt(resolver,
                     Settings.System.QS_SMART_PULLDOWN,
                     smartPulldown);
             updateSmartPulldownSummary(smartPulldown);
             return true;
         } else if (preference == mBlockOnSecureKeyguard) {
-            Settings.Secure.putInt(getContentResolver(),
+            Settings.Secure.putInt(resolver,
                     Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD,
-                    (Boolean) objValue ? 1 : 0);
+                    (Boolean) newValue ? 1 : 0);
             return true;
         }
         return false;
     }
 
-    private void updateSmartPulldownSummary(int value) {
+    private void updatePulldownSummary(int value) {
         Resources res = getResources();
 
         if (value == 0) {
-            // Smart pulldown deactivated
-            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_off));
+            // quick pulldown deactivated
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_off));
         } else {
-            String type = null;
-            switch (value) {
-                case 1:
-                    type = res.getString(R.string.smart_pulldown_dismissable);
-                    break;
-                case 2:
-                    type = res.getString(R.string.smart_pulldown_persistent);
-                    break;
-                default:
-                    type = res.getString(R.string.smart_pulldown_all);
-                    break;
-            }
-            // Remove title capitalized formatting
-            type = type.toLowerCase();
-            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_summary, type));
+            String direction = res.getString(value == 2
+                    ? R.string.quick_pulldown_summary_left
+                    : R.string.quick_pulldown_summary_right);
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary, direction));
         }
     }
 
