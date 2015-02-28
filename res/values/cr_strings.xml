@@ -29,12 +29,6 @@
 
     <!-- About crDroid -->
     <string name="about_crdroid">About crDroid</string>
-    <string name="crdroid_website_title">Website</string>
-    <string name="crdroid_website_summary">Visit our website</string>
-    <string name="crdroid_source_title">Github</string>
-    <string name="crdroid_source_summary">Visit our source git team</string>
-    <string name="crdroid_google_plus_title">Google+</string>
-    <string name="crdroid_google_plus_summary">Visit our G+ page for support and news</string>
 
     <!-- Dashboard header -->
     <string name="header_category_personalization">Personalization</string>
@@ -59,6 +53,20 @@
     <!-- Changelog -->
     <string name="changelog_crdroid_title">Changelog</string>
     <string name="changelog_crdroid_error">Unable to load changelog</string>
+
+    <!-- Themes crDroid -->
+    <string name="themes_crdroid">Themes by crDroid team (Sale or free in PlayStore)</string>
+    <string name="crdroid_theme_evolved_title">Evolved Theme</string>
+    <string name="crdroid_theme_evolved_summary">By Cristiano Matos</string>
+
+    <!-- Sites crDroid -->
+    <string name="sites_crdroid">WebSites crDroid</string>
+    <string name="crdroid_website_title">Website</string>
+    <string name="crdroid_website_summary">Visit our website</string>
+    <string name="crdroid_source_title">Github</string>
+    <string name="crdroid_source_summary">Visit our source git team</string>
+    <string name="crdroid_google_plus_title">Google+</string>
+    <string name="crdroid_google_plus_summary">Visit our G+ page for support and news</string>
 
     <!-- Performance Misc -->
     <string name="misc_title">crDroid misc</string>

@@ -40,17 +40,17 @@ public class About extends SettingsPreferenceFragment {
     Preference mSiteUrl;
     Preference mSourceUrl;
     Preference mGoogleUrl;
+    Preference mEvolvedUrl;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.crdroid_about);
 
         mSiteUrl = findPreference("crdroid_website");
         mSourceUrl = findPreference("crdroid_source");
         mGoogleUrl = findPreference("crdroid_google_plus");
-
+        mEvolvedUrl = findPreference("crdroid_theme_evolved");
     }
 
     @Override
@@ -61,6 +61,8 @@ public class About extends SettingsPreferenceFragment {
             launchUrl("https://github.com/crdroidandroid");
         } else if (preference == mGoogleUrl) {
             launchUrl("https://plus.google.com/u/0/communities/118297646046960923906");
+        } else if (preference == mEvolvedUrl) {
+            launchUrl("https://play.google.com/store/apps/details?id=com.cristianomatos.themecm12.evolved");
         } else if (preference.getKey().equals(KEY_CRDROID_SHARE)) {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);
@@ -69,7 +71,6 @@ public class About extends SettingsPreferenceFragment {
                 getActivity().getString(R.string.share_message), Build.MODEL));
         startActivity(Intent.createChooser(intent, getActivity().getString(R.string.share_chooser_title)));
         }
-
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 

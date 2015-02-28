@@ -22,6 +22,30 @@
         android:key="about"
         android:title="@string/about_crdroid">
 
+        <!-- Changelog -->
+        <PreferenceScreen
+            android:key="changelog"
+            android:title="@string/changelog_crdroid_title"
+            android:fragment="com.android.settings.crdroid.Changelog" />
+
+        <!-- Devices and Maintainers -->
+        <PreferenceScreen
+            android:key="devices"
+            android:title="@string/device_maintainers_title"
+            android:fragment="com.android.settings.crdroid.Devices" />
+
+        <!-- crDroid Share -->
+        <Preference
+            android:key="share"
+            android:title="@string/share_crdroid_title"
+            android:summary="@string/share_crdroid_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="sites"
+        android:title="@string/sites_crdroid">
+
         <!-- crDroid Website -->
         <Preference
             android:key="crdroid_website"
@@ -40,23 +64,17 @@
             android:title="@string/crdroid_google_plus_title"
             android:summary="@string/crdroid_google_plus_summary" />
 
-        <!-- Devices and Maintainers -->
-        <PreferenceScreen
-            android:key="devices"
-            android:title="@string/device_maintainers_title"
-            android:fragment="com.android.settings.crdroid.Devices" />
+    </PreferenceCategory>
 
-        <!-- Changelog -->
-        <PreferenceScreen
-            android:key="changelog"
-            android:title="@string/changelog_crdroid_title"
-            android:fragment="com.android.settings.crdroid.Changelog" />
+    <PreferenceCategory
+        android:key="themes"
+        android:title="@string/themes_crdroid">
 
-        <!-- crDroid Share -->
+        <!-- crDroid Evolved -->
         <Preference
-            android:key="share"
-            android:title="@string/share_crdroid_title"
-            android:summary="@string/share_crdroid_summary" />
+            android:key="crdroid_theme_evolved"
+            android:title="@string/crdroid_theme_evolved_title"
+            android:summary="@string/crdroid_theme_evolved_summary" />
 
     </PreferenceCategory>
 
