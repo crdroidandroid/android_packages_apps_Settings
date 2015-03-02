@@ -114,10 +114,6 @@
     <string name="status_bar_toggle_brightness">Controllo Luminosità</string>
     <string name="status_bar_toggle_brightness_summary">Controlla la luminosità scorrendo lungo la barra di stato</string>
 
-    <!-- Quick pulldown -->
-    <string name="status_bar_quick_qs_pulldown_title">Tendina Impostazioni Veloci</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Posiziona sul bordo destro della barra di stato la tendina delle Impostazioni Veloci</string>
-
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Pulsante Cancella tutto nei recenti</string>
     <string name="show_clear_all_recents_button_summary">Mostra il pulsante Cancella tutto nel pannello recenti</string>
@@ -136,16 +132,9 @@
     <string name="omniswitch_first_time_title">Informazioni</string>
     <string name="omniswitch_first_time_message">Assicurati di aver attivo OmniSwitch. Puoi farlo usando le \"Impostazioni\" seguenti</string>
 
-    <!-- QuickSettings: Quick Pulldown -->
-    <string name="title_quick_pulldown">Impostazioni Veloci</string>
-    <string name="summary_quick_pulldown">In alto a %1$s della barra di stato scende la tendina delle Impostazioni Veloci</string>
-    <string name="quick_pulldown_off">Spento</string>
-    <string name="quick_pulldown_left">Sinistra</string>
-    <string name="quick_pulldown_right">Destra</string>
-    
     <string name="block_on_secure_keyguard_title">Disattiva nella schermata di blocco</string>
     <string name="block_on_secure_keyguard_summary">Disattiva le Impostazioni Veloci nella schermata di blocco</string>
-    
+
     <!-- Navigation bar -->
     <string name="nav_bar_title">Barra di Navigazione</string>
     <string name="navbar_enable_bar_title">Attiva Barra di Navigazione a schermo</string>
@@ -165,11 +154,11 @@
     <string name="navigation_bar_size_40_dp">40 dp</string>
     <string name="navigation_bar_size_42_dp">42 dp</string>
     <string name="navigation_bar_size_0_dp">0 dp (spenta)</string>
-    
+
     <!-- Ability to disable hardware keys via nav bar settings -->
     <string name="hw_keys_title">Tasti Fisici</string>
     <string name="hw_keys_summary">Abilita i tasti fisici</string>
-    
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Selettore Colore</string>
     <string name="press_color_to_apply">Premi un colore per applicare</string>
@@ -179,7 +168,7 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Ok</string>
     <string name="color_default">Predefinito</string>
-    
+
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Data e Ora</string>
     <string name="status_bar_clock_title">Stile data e ora</string>

@@ -125,10 +125,6 @@
     <string name="status_bar_toggle_brightness">Управление яркостью</string>
     <string name="status_bar_toggle_brightness_summary">Изменять яркость, проводя по строке состояния</string>
 
-    <!-- Quick pulldown -->
-    <string name="status_bar_quick_qs_pulldown_title">Быстрый доступ</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Правый угол строки состояния при опускании вниз открывает панель быстрых настроек</string>
-
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Показывать кнопку \"Очистить всё\"</string>
     <string name="show_clear_all_recents_button_summary">Показывать кнопку \"Очистить всё\" в \"Недавних приложениях\"</string>
@@ -146,13 +142,6 @@
     <string name="omniswitch_start_settings_summary">Открыть настройки OmniSwitch</string>
     <string name="omniswitch_first_time_title">Информация</string>
     <string name="omniswitch_first_time_message">Убедитесь, что вы включили OmniSwitch. Это можно сделать с помощью настроек снизу</string>
-
-    <!-- QuickSettings: Quick Pulldown -->
-    <string name="title_quick_pulldown">Быстрый доступ</string>
-    <string name="summary_quick_pulldown">%1$s угол строки состояния при опускании вниз открывает панель быстрых настроек</string>
-    <string name="quick_pulldown_off">Выкл</string>
-    <string name="quick_pulldown_left">Левый</string>
-    <string name="quick_pulldown_right">Правый</string>
 
     <string name="block_on_secure_keyguard_title">Отключить на экране блокировки</string>
     <string name="block_on_secure_keyguard_summary">Отключить быстрые настройки на экране блокировки.</string>
