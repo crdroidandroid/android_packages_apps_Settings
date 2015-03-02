@@ -94,4 +94,10 @@
         android:summaryOff="@string/su_indicator_summary_off"
         android:defaultValue="true" />
 
+    <!-- Force Expanded Notifications -->
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="force_expanded_notifications"
+        android:title="@string/force_expanded_notifications_title"
+        android:summary="@string/force_expanded_notifications_summary" />
+
 </PreferenceScreen>
