@@ -20,6 +20,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.content.ContentResolver;
 import android.content.res.Resources;
+import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -83,10 +84,10 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
 
         // Quick Pulldown
         mQuickPulldown.setOnPreferenceChangeListener(this);
-        int statusQuickPulldown = Settings.System.getInt(resolver,
-                Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
-        mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
-        updateQuickPulldownSummary(statusQuickPulldown);
+        int quickPulldownValue = Settings.System.getIntForUser(resolver,
+                Settings.System.QS_QUICK_PULLDOWN, 0, UserHandle.USER_CURRENT);
+        mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
+        updatePulldownSummary(quickPulldownValue);
 
         // Smart Pulldown
         mSmartPulldown.setOnPreferenceChangeListener(this);
@@ -158,19 +159,28 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
         }
     }
 
-    private void updateQuickPulldownSummary(int value) {
+    private void updateSmartPulldownSummary(int value) {
         Resources res = getResources();
 
         if (value == 0) {
-            // quick pulldown deactivated
-            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_off));
+            // Smart pulldown deactivated
+            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_off));
         } else {
-            Locale l = Locale.getDefault();
-            boolean isRtl = TextUtils.getLayoutDirectionFromLocale(l) == View.LAYOUT_DIRECTION_RTL;
-            String direction = res.getString(value == 2
-                    ? (isRtl ? R.string.quick_pulldown_right : R.string.quick_pulldown_left)
-                    : (isRtl ? R.string.quick_pulldown_left : R.string.quick_pulldown_right));
-            mQuickPulldown.setSummary(res.getString(R.string.summary_quick_pulldown, direction));
+            String type = null;
+            switch (value) {
+                case 1:
+                    type = res.getString(R.string.smart_pulldown_dismissable);
+                    break;
+                case 2:
+                    type = res.getString(R.string.smart_pulldown_persistent);
+                    break;
+                default:
+                    type = res.getString(R.string.smart_pulldown_all);
+                    break;
+            }
+            // Remove title capitalized formatting
+            type = type.toLowerCase();
+            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_summary, type));
         }
     }
 
