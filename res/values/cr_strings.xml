@@ -721,4 +721,8 @@
     <string name="status_bar_crdroid_logo_title">crDroid logo</string>
     <string name="status_bar_crdroid_logo_summary">Enable to show crDroid logo on statusbar</string>
 
+    <!-- Force expand notifications -->
+    <string name="notification_force_expand_title">Force expanded notification</string>
+    <string name="notification_force_expand_summary">Force expanded notifications on all apps that support it</string>
+
 </resources>
