@@ -88,8 +88,8 @@ public class NavBarDimensions extends SettingsPreferenceFragment implements
     }
 
     private void updateDimensionValues() {
-        int navigationBarHeight = Settings.System.getInt(getContentResolver(),
-                Settings.System.NAVIGATION_BAR_HEIGHT, -2);
+        int navigationBarHeight = Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.NAVIGATION_BAR_HEIGHT, -2);
         if (navigationBarHeight == -2) {
             navigationBarHeight = (int) (getResources().getDimension(
                     com.android.internal.R.dimen.navigation_bar_height)
@@ -100,8 +100,8 @@ public class NavBarDimensions extends SettingsPreferenceFragment implements
         if (mNavigationBarWidth == null) {
             return;
         }
-        int navigationBarWidth = Settings.System.getInt(getContentResolver(),
-                            Settings.System.NAVIGATION_BAR_WIDTH, -2);
+        int navigationBarWidth = Settings.Secure.getInt(getContentResolver(),
+                            Settings.Secure.NAVIGATION_BAR_WIDTH, -2);
         if (navigationBarWidth == -2) {
             navigationBarWidth = (int) (getResources().getDimension(
                     com.android.internal.R.dimen.navigation_bar_width)
@@ -133,14 +133,14 @@ public class NavBarDimensions extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mNavigationBarWidth) {
             String newVal = (String) newValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_WIDTH,
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.NAVIGATION_BAR_WIDTH,
                     Integer.parseInt(newVal));
             return true;
         } else if (preference == mNavigationBarHeight) {
             String newVal = (String) newValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_HEIGHT,
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.NAVIGATION_BAR_HEIGHT,
                     Integer.parseInt(newVal));
             return true;
         }
@@ -179,10 +179,10 @@ public class NavBarDimensions extends SettingsPreferenceFragment implements
                     .setPositiveButton(R.string.dlg_ok,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            Settings.System.putInt(getActivity().getContentResolver(),
-                                    Settings.System.NAVIGATION_BAR_HEIGHT, -2);
-                            Settings.System.putInt(getActivity().getContentResolver(),
-                                    Settings.System.NAVIGATION_BAR_WIDTH, -2);
+                            Settings.Secure.putInt(getActivity().getContentResolver(),
+                                    Settings.Secure.NAVIGATION_BAR_HEIGHT, -2);
+                            Settings.Secure.putInt(getActivity().getContentResolver(),
+                                    Settings.Secure.NAVIGATION_BAR_WIDTH, -2);
                             getOwner().updateDimensionValues();
                         }
                     })
