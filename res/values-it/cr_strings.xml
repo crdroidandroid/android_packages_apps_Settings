@@ -637,6 +637,28 @@
     <string name="hfm_dialog_conn_error">Errore: Nessuna connessione di rete</string>
     <string name="hfm_dialog_title">Avanzamento aggiornamento hosts</string>
 
+    <!-- QS Tiles -->
+    <string name="qs_main_tiles_summary_off2">Tre o quattro piastrelle per riga</string>
+    <string name="qs_four_columns_title">Mostra quattro piastrelle per riga</string>
+    <string name="qs_sync_tile">Sinc</string>
+    <string name="qs_power_menu_tile">Menu pulsante accensione</string>
+    <string name="qs_battery_saver_tile">Risparmio energetico</string>
+    <string name="qs_brightness_tile">Luminosità</string>
+
+    <!-- Heads Up -->
+    <string name="category_heads_up">Notifiche Heads Up</string>
+    <string name="summary_heads_up_enabled">Le notifiche Pop-up sono attivate</string>
+    <string name="summary_heads_up_disabled">Le notifiche Pop-up sono disattivate</string>
+    <string name="add_heads_up_package">Aggiungi app</string>
+    <string name="add_heads_up_dnd_summary">Non mostrare heads up in queste app</string>
+    <string name="add_heads_up_blacklist_summary">Non mostrare heads up da queste app</string>
+    <string name="heads_up_dnd_title">Non disturbare</string>
+    <string name="heads_up_blacklist_title">Lista nera</string>
+    <string name="heads_up_disabled_notice">Per consentire alle app di mostrare notifiche interattive, abilita Heads up</string>
+    <string name="heads_up_dismiss_on_remove_title">Swipe</string>
+    <string name="heads_up_dismiss_on_remove_summary_enabled">Nasconde la notifica invece di rimuoverla</string>
+    <string name="heads_up_dismiss_on_remove_summary_disabled">Nasconde e rimuove la notifica</string>
+
     <!-- Heads up Timeout -->
     <string name="heads_up_time_out_title">Tempo Scaduto</string>
     <string name="heads_up_time_out_summary">Mostra Heads up per <xliff:g id="number">%d</xliff:g> secondi</string>
