@@ -646,5 +646,41 @@
     <string name="heads_up_time_out_8sec">8 secondi</string>
     <string name="heads_up_time_out_10sec">10 secondi</string>
     <string name="heads_up_time_out_never">Mai</string>
+    
+    <!-- Heads up touch outside -->
+    <string name="heads_up_touch_outside_title">Comportamento tocco esterno</string>
+    <string name="heads_up_touch_outside_summary_enabled">Nasconde la notifica toccando l\'esterno senza premere il pulsante home</string>
+    <string name="heads_up_touch_outside_summary_disabled">Non nasconde la notifica toccando l\'esterno o premendo il pulsante home</string>
+
+    <!-- Captive Portal -->
+    <string name="captive_portal_detection">Rilevazione captive portal</string>
+    <string name="captive_portal_detection_summary">Se disattivata, non è necessaria la connessione ai server di google per rilevare la connessione dati.</string>
+
+    <!-- The volume key answer -->
+    <string name="volume_answer_call_title">Tasto volume risposta</string>
+    <string name="volume_answer_call_summary">Tasto volume su in ricezione</string>
+
+    <!-- Volume pane timeout -->
+    <string name="category_panel_time_out">Timeout pannello</string>
+    <string name="volume_panel_time_out_title">Timeout pannello volume</string>
+    <string name="volume_panel_time_out_summary">Nascondi per <xliff:g id="number">%d</xliff:g> secondo/i. Nascondi automaticamente con tocco esterno</string>
+    <string name="volume_panel_time_out_1sec">1 secondo</string>
+    <string name="volume_panel_time_out_3sec">3 secondi (default)</string>
+    <string name="volume_panel_time_out_5sec">5 secondi</string>
+    <string name="volume_panel_time_out_8sec">8 secondi</string>
+    <string name="volume_panel_time_out_12sec">12 secondi</string>
+    <string name="volume_panel_time_out_15sec">15 secondi</string>
+
+    <!-- Double Tap Navbar to Sleep -->
+    <string name="double_tap_sleep_nav_bar_title">Doppio tap per sospendere</string>
+    <string name="double_tap_sleep_nav_bar_summary">Esegui un doppio tap sulla barra di navigazione per sospendere il dispositivo</string>
+
+    <!-- Statusbar crDroid logo -->
+    <string name="status_bar_crdroid_logo_title">Logo crDroid</string>
+    <string name="status_bar_crdroid_logo_summary">Attiva il logo crDroid nella barra di stato</string>
+
+    <!-- Force expand notifications -->
+    <string name="notification_force_expand_title">Forza le notifiche espanse</string>
+    <string name="notification_force_expand_summary">Forza le notifiche espanse per tutte le app che lo consentono</string>
 
 </resources>
