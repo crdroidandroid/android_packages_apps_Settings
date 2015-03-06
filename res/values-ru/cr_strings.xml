@@ -624,7 +624,6 @@
     <string name="qs_four_columns_title">Отображать по четыре плитки в ряду</string>
     <string name="qs_sync_tile">Синхронизация</string>
     <string name="qs_power_menu_tile">Меню кнопки питания</string>
-    <string name="qs_battery_saver_tile">Энергосбережение</string>
     <string name="qs_brightness_tile">Яркость</string>
 
     <!-- Heads Up -->
