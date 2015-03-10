@@ -723,4 +723,7 @@
     <string name="notification_force_expand_title">Force expanded notification</string>
     <string name="notification_force_expand_summary">Force expanded notifications on all apps that support it</string>
 
+    <!-- Battery -->
+    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+
 </resources>
