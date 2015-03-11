@@ -28,6 +28,11 @@
             android:key="low_power"
             android:title="@string/battery_saver"/>
 
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="battery_saver_color"
+            android:title="@string/battery_saver_title"
+            android:defaultValue="0xf4511e" />
+
     <PreferenceCategory
             android:title="@string/power_usage_history_title"
             settings:keywords="@string/keywords_battery"
