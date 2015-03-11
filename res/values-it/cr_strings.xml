@@ -366,7 +366,7 @@
 
     <!-- Battery saver -->
     <string name="battery_saver_title">Colore avvertimento</string>
-    <string name="battery_saver_style_reset_message">Ripristina colore avvertimento di risparmio batteria?</string>
+
     <!-- Lock Gesture settings -->
     <!-- Security & location settings screen, setting option name -->
     <string name="lockgesture_change_lock_pattern_label">Cambia Gesto di sblocco</string>

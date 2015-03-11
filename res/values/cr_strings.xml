@@ -363,7 +363,7 @@
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
 
     <!-- Battery saver -->
-    <string name="battery_saver_title">Warning color (stock value 0xf4511e)</string>
+    <string name="battery_saver_title">Warning color</string>
 
     <!-- Lock Gesture settings -->
     <!-- Security & location settings screen, setting option name -->

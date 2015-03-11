@@ -327,11 +327,11 @@
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">Процессор</string>
     <string name="mem_info">Память</string>
-    
+
     <!-- Unaccounted and overcounted battery stats -->
     <string name="show_unac_and_overcounted_stats_title">Показывать неучтенные (прочие) данные статистики батареи</string>
     <string name="show_unac_and_overcounted_stats_summary">Показывать данные статистики батареи, которые не относятся ни к чему конкретному и обычно попадают в прочее</string>
-    
+
     <!-- Network traffic -->
     <string name="network_traffic_title">Индикатор сетевого трафика</string>
     <string name="show_network_traffic_state">Показывать скорость передачи данных</string>
@@ -351,11 +351,10 @@
     <string name="network_traffic_autohide">Скрывать автоматически</string>
     <string name="network_traffic_autohide_summary">Скрывать индикатор сетевого трафика, когда сеть неактивна</string>
     <string name="network_traffic_autohide_threshold">Порог неактивности</string>
-    
+
     <!-- Battery saver -->
     <string name="battery_saver_title">Цвет предупреждения</string>
-    <string name="battery_saver_style_reset_message">Сбросить цвет предупреждения о режиме энергосбережения?</string>
-    
+
     <!-- Lock Gesture settings -->
     <string name="lockgesture_change_lock_pattern_label">Изменить жест разблокировки</string>
     <string name="lockgesture_change_lock_pin_label">Изменить PIN разблокировки</string>
@@ -387,7 +386,7 @@
     <string name="unlock_set_unlock_gesture_title">Жест</string>
     <string name="unlock_set_unlock_gesture_summary">Низкая безопасность, экспериментальная</string>
     <string name="unlock_set_unlock_mode_gesture">Жест</string>
-    
+
     <!-- Gesture Anywhere -->
     <string name="gesture_anywhere_title">\"Жест везде\"</string>
     <string name="gesture_anywhere_enabled_title">\"Жест везде\"</string>
@@ -444,7 +443,7 @@
     <string name="select_custom_app_title">Выбрать собственное приложение</string>
     <string name="select_custom_activity_title">Выбрать собственное действие</string>
     <string name="profile_applist_title">Приложения</string>
-    
+
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Блокировка Wakelock-ов</string>
     <string name="wakelock_blocker_summary">Блокировать системные Wakelock-и</string>
