@@ -64,6 +64,12 @@
             android:title="@string/crdroid_google_plus_title"
             android:summary="@string/crdroid_google_plus_summary" />
 
+        <!-- crDroid Translation -->
+        <Preference
+            android:key="crdroid_translation"
+            android:title="@string/crdroid_translation_title"
+            android:summary="@string/crdroid_translation_summary" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

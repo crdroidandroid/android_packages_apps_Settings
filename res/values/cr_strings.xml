@@ -59,6 +59,10 @@
     <string name="crdroid_theme_evolved_title">Evolved Theme</string>
     <string name="crdroid_theme_evolved_summary">By Cristiano Matos</string>
 
+    <!-- Translation crDroid -->
+    <string name="crdroid_translation_title">Translations</string>
+    <string name="crdroid_translation_summary">Help us with translations in your language</string>
+
     <!-- Sites crDroid -->
     <string name="sites_crdroid">WebSites crDroid</string>
     <string name="crdroid_website_title">Website</string>
