@@ -49,6 +49,11 @@
         android:summary="@string/notification_force_expand_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+        android:key="qs_tiles_vibrate"
+        android:title="@string/qs_tiles_vibrate_title"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:title="@string/qs_category_title">
 
@@ -79,12 +84,6 @@
             android:title="@string/qs_advanced_location_title"
             android:summary="@string/qs_advanced_location_summary"
             android:defaultValue="false" />
-
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-            android:key="quick_settings_vibrate"
-            android:title="@string/quick_settings_vibrate_title"
-            android:summary="@string/quick_settings_vibrate_summary"
-            android:defaultValue="false"/>
 
     </PreferenceCategory>
 

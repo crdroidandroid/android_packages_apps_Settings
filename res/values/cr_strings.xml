@@ -614,9 +614,8 @@
     <string name="su_indicator">Superuser indicator</string>
     <string name="su_indicator_summary">Show superuser indicator on status bar when a session is active</string>
 
-    <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
-    <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string>
+    <!-- Quick settings -->
+    <string name="qs_tiles_vibrate_title">Vibrate on touch</string>
 
     <!-- [CHAR LIMIT=40] Sound & display settings screen, title of dialog for picking LCD density -->
     <!-- crdroid display settings screen, setting option name to change LCD density -->
