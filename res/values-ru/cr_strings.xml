@@ -565,9 +565,8 @@
     <string name="su_indicator">Индикатор суперпользователя</string>
     <string name="su_indicator_summary">Показывать индикатор суперпользователя во время активной сессии</string>
 
-    <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Вибрировать при нажатии</string>
-    <string name="quick_settings_vibrate_summary">Вибрация при нажатии на плитку</string>
+    <!-- Quick settings -->
+    <string name="qs_tiles_vibrate_title">Вибрировать при нажатии</string>
 
     <!-- Camera lockscreen swipe -->
     <string name="camera_widget_hide">Отключить камеру на экране блокировки</string>

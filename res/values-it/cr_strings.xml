@@ -593,9 +593,8 @@
     <string name="su_indicator">Indicatore Superuser</string>
     <string name="su_indicator_summary">Mostra l\'indicatore di Superuser in una sessione attiva</string>
 
-    <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibra al tocco</string>
-    <string name="quick_settings_vibrate_summary">Vibra al tocco delle tessere</string>
+    <!-- Quick settings -->
+    <string name="qs_tiles_vibrate_title">Vibra al tocco</string>
 
     <!-- [CHAR LIMIT=40] Sound & display settings screen, title of dialog for picking LCD density -->
     <!-- crdroid display settings screen, setting option name to change LCD density -->
