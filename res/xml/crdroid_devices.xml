@@ -201,18 +201,4 @@
 
         </PreferenceCategory>
 
-        <!-- Sony devices -->
-        <PreferenceCategory
-             android:key="device_category_sony"
-             android:title="@string/device_category_sony_title" >
-
-             <Preference
-                 android:key="device_sony_z1"
-                 android:icon="@drawable/cr_devices"
-                 android:title="@string/device_sony_z1"
-                 android:summary="@string/device_sony_z1_summary"
-                 android:selectable="false" />
-
-        </PreferenceCategory>
-
 </PreferenceScreen>

@@ -78,8 +78,4 @@
     <string name="device_oneplus_bacon">Oneplus One</string>
     <string name="device_oneplus_bacon_summary">Bacon \nMaintainer - Cristiano Matos</string>
 
-    <!-- Sony devices -->
-    <string name="device_sony_z1">Sony Xperia Z1</string>
-    <string name="device_sony_z1_summary">Honami \nMaintainer - David Viteri</string>
-
 </resources>
