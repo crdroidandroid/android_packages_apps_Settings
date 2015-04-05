@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/screen_and_animations_title">
+
+    <PreferenceCategory
+        android:key="screen_and_animations"
+        android:title="@string/screen_and_animations_title" >
+
+        <!-- Toast Animation -->
+        <ListPreference
+            android:key="toast_animation"
+            android:title="@string/toast_animation_title"
+            android:entries="@array/toast_animation_entries"
+            android:entryValues="@array/toast_animation_values"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
