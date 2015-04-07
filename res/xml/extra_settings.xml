@@ -47,4 +47,10 @@
                 android:title="@string/status_bar_title"
                 android:fragment="com.android.settings.cyanogenmod.StatusBarSettings" />
 
+        <!-- Gesture anywhere -->
+        <PreferenceScreen
+                android:key="gesture_anywhere"
+                android:fragment="com.android.settings.crdroid.gestureanywhere.GestureAnywhereSettings"
+                android:title="@string/gesture_anywhere_title" />
+
 </PreferenceScreen>
