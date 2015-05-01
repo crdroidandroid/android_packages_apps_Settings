@@ -21,6 +21,14 @@
     android:title="@string/header_category_extra"
     settings:keywords="@string/header_category_extra">
 
+        <!-- Buttons -->
+        <PreferenceScreen
+                android:id="@+id/button_settings"
+                android:key="button_settings"
+                android:title="@string/button_pref_title"
+                settings:keywords="@string/button_pref_title"
+                android:fragment="com.android.settings.ButtonSettings" />
+
         <!-- Display -->
         <PreferenceCategory
                 android:key="display_settings"
