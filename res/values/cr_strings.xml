@@ -36,5 +36,6 @@
 
     <!-- Tiles -->
     <string name="qs_navbar_tile">Navigation Bar</string>
+    <string name="qs_power_menu_tile">Power menu</string>
 
 </resources>
