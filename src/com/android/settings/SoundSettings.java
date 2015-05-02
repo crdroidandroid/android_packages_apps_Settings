@@ -38,6 +38,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.os.Vibrator;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
@@ -64,7 +65,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-public class SoundSettings extends SettingsPreferenceFragment implements Indexable {
+public class SoundSettings extends SettingsPreferenceFragment implements Indexable,
+        Preference.OnPreferenceChangeListener {
     private static final String TAG = SoundSettings.class.getSimpleName();
 
     private static final String KEY_SOUND = "sounds";
@@ -84,6 +86,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
     private static final String KEY_INCREASING_RING_VOLUME = "increasing_ring_volume";
     private static final String KEY_VIBRATION_INTENSITY = "vibration_intensity";
     private static final String KEY_VIBRATE_ON_TOUCH = "vibrate_on_touch";
+    private static final String KEY_VOLUME_PANEL_TIMEOUT = "volume_panel_time_out";
 
     private static final int SAMPLE_CUTOFF = 2000;  // manually cap sample playback at 2 seconds
 
@@ -120,6 +123,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
     private ComponentName mSuppressor;
     private int mRingerMode = -1;
     private SwitchPreference mVolumeLinkNotificationSwitch;
+
+    private ListPreference mVolumePanelTimeOut;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -164,6 +169,13 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
             }
         }
 
+        mVolumePanelTimeOut = (ListPreference) findPreference(KEY_VOLUME_PANEL_TIMEOUT);
+        int volumePanelTimeOut = Settings.System.getInt(getContentResolver(),
+                Settings.System.VOLUME_PANEL_TIMEOUT, 3000);
+        mVolumePanelTimeOut.setValue(String.valueOf(volumePanelTimeOut));
+        mVolumePanelTimeOut.setOnPreferenceChangeListener(this);
+        updateVolumePanelTimeOutSummary(volumePanelTimeOut);
+
         initRingtones(sounds);
         initIncreasingRing(sounds);
         initVibrateWhenRinging(vibrate);
@@ -200,6 +212,25 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mVolumePanelTimeOut) {
+            int volumePanelTimeOut = Integer.valueOf((String) objValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.VOLUME_PANEL_TIMEOUT,
+                    volumePanelTimeOut);
+            updateVolumePanelTimeOutSummary(volumePanelTimeOut);
+            return true;
+        }
+        return false;
+    }
+
+    private void updateVolumePanelTimeOutSummary(int value) {
+        String summary = getResources().getString(R.string.volume_panel_time_out_summary,
+                value / 1000);
+        mVolumePanelTimeOut.setSummary(summary);
     }
 
     // === Volumes ===

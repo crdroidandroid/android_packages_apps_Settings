@@ -55,6 +55,14 @@
                 android:title="@string/notification_volume_option_title"
                 settings:advanced="true"/>
 
+        <!-- Volume panel timeout -->
+        <ListPreference
+                android:key="volume_panel_time_out"
+                android:title="@string/volume_panel_time_out_title"
+                android:entries="@array/volume_panel_time_out_entries"
+                android:entryValues="@array/volume_panel_time_out_values"
+                android:persistent="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
