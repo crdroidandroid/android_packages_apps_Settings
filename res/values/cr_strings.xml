@@ -34,4 +34,7 @@
     <string name="navigation_bar_size_40_dp">40 dp</string>
     <string name="navigation_bar_size_42_dp">42 dp</string>
 
+    <!-- Tiles -->
+    <string name="qs_navbar_tile">Navigation Bar</string>
+
 </resources>
