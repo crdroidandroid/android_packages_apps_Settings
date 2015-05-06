@@ -16,12 +16,11 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Heads up -->
-    <com.android.settings.cyanogenmod.GlobalSettingSwitchPreference
-            android:key="heads_up_notifications_enabled"
-            android:title="@string/heads_up_notifications"
-            android:summaryOn="@string/summary_heads_up_enabled"
-            android:summaryOff="@string/summary_heads_up_disabled" />
+    <!-- Heads up notifications -->
+    <Preference
+            android:key="heads_up_enabled"
+            android:fragment="com.android.settings.crdroid.HeadsUpSettings"
+            android:title="@string/category_heads_up" />
 
     <!-- When device is locked -->
     <com.android.settings.notification.DropDownPreference

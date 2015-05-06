@@ -1793,6 +1793,9 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
+        <!-- Custom activities Start -->
+        <activity android:name=".headsup.HeadsUpSettings" />
+
         <!-- CyanogenMod activities Start -->
         <activity android:name="Settings$ProfilesSettingsActivity"
                 android:label="@string/profile_settings"
