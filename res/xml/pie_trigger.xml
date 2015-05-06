@@ -48,6 +48,12 @@
             android:summary="@string/pie_control_trigger_top_summary"
             android:defaultValue="false" />
 
+        <SwitchPreference
+            android:key="pie_disable_ime_triggers"
+            android:title="@string/pie_disable_ime_triggers_title"
+            android:summary="@string/pie_disable_ime_triggers_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

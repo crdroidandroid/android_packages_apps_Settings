@@ -199,6 +199,8 @@
     <string name="pie_icon_color_mode_summary">Change the button icon color mode</string>
     <string name="pie_trigger_note_title">Note</string>
     <string name="pie_trigger_note_summary">To avoid conflicts with status bar or navigation bar, the triggers on these edges are automatically turned off if one or both are available</string>
+    <string name="pie_disable_ime_triggers_title">Reduce trigger size on keyboard</string>
+    <string name="pie_disable_ime_triggers_summary">Reduces left and right trigger size if keyboard is active</string>
     <string name="pie_background_color_title">Background color</string>
     <string name="pie_snap_color_title">Snap point color</string>
     <string name="pie_text_color_title">Text color</string>
