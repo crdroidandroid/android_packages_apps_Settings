@@ -92,6 +92,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         // Get launch-able applications
         addPreferencesFromResource(R.xml.heads_up_settings);
         mPackageManager = getPackageManager();
@@ -154,7 +155,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         super.onStart();
         final SettingsActivity activity = (SettingsActivity) getActivity();
         mEnabledSwitch = new BaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
-                Settings.System.HEADS_UP_NOTIFICATION, false, this);
+                Settings.System.HEADS_UP_USER_ENABLED, true, this);
     }
 
     @Override
@@ -423,7 +424,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
 
     private void updateEnabledState() {
         boolean enabled = Settings.System.getInt(getContentResolver(),
-        Settings.System.HEADS_UP_NOTIFICATION, 1) != 0;
+                Settings.System.HEADS_UP_USER_ENABLED, Settings.System.HEADS_UP_USER_ON) != 0;
         mPrefsContainer.setVisibility(enabled ? View.VISIBLE : View.GONE);
         mDisabledText.setVisibility(enabled ? View.GONE : View.VISIBLE);
     }
@@ -431,7 +432,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
     @Override
     public void onEnablerChanged(boolean isEnabled) {
         mLastEnabledState = Settings.System.getInt(getContentResolver(),
-                Settings.System.HEADS_UP_NOTIFICATION, 1) != 0;
+                Settings.System.HEADS_UP_USER_ENABLED, Settings.System.HEADS_UP_USER_ON) != 0;
         updateEnabledState();
     }
 
