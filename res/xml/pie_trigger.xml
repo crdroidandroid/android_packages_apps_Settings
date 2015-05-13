@@ -54,6 +54,13 @@
             android:summary="@string/pie_disable_ime_triggers_summary"
             android:defaultValue="true" />
 
+        <com.android.settings.crdroid.SeekBarPreference
+            android:key="pie_trigger_sensitivity"
+            android:title="@string/pie_trigger_sensitivity_title"
+            android:summary="@string/pie_trigger_sensitivity_summary"
+            android:max="10"
+            android:defaultValue="10" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
