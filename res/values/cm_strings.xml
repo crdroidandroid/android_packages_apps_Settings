@@ -1046,7 +1046,7 @@
     <string name="qs_tile_screen_timeout">Screen timeout</string>
     <string name="qs_tile_usb_tether">USB tethering</string>
     <string name="qs_tile_heads_up">Heads up</string>
-    <string name="qs_ambient_display">Ambient Display</string>
+    <string name="qs_tile_ambient_display">Ambient display</string>
 
     <string name="qs_main_tiles_title">Enlarge first row</string>
     <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
@@ -1171,7 +1171,7 @@
 
     <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
     <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
-    <string name="none_is_silent_title">None is Silent mode</string>
+    <string name="none_is_silent_title">Never mute alarms</string>
     <string name="none_is_silent_summary">Silent mode always sounds alarms</string>
     <string name="allow_lights_title">Allow notification lights</string>
 
@@ -1231,4 +1231,6 @@
     <string name="lock_to_cyanogen_create_account_msg">Your device uses the Cyanogen OS account password to protect your device even in the event of a factory reset. You will need to create a Cyanogen OS account.</string>
     <string name="lock_to_cyanogen_disable_msg">Disabling this feature will allow unauthorized users to reset your phone to factory defaults if it is stolen. Your personal data may not be protected. Do you want to disable this feature?</string>
     <string name="lock_to_cyanogen_master_clear_warning">Device Protection is enabled. Please disable to continue resetting your device.</string>
+
+    <string name="bluetooth_pan_profile_summary_use_for_error">Connection error; is Bluetooth tethering enabled on this device?</string>
 </resources>
