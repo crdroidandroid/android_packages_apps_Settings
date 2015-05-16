@@ -6,8 +6,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	android-support-v4 \
 	android-support-v7-cardview \
 	android-support-v13 \
-	jsr305 \
-        libGoogleAnalyticsV3
+	jsr305
 
 LOCAL_MODULE_TAGS := optional
 
