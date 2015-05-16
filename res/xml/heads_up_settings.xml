@@ -18,6 +18,12 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="heads_up_show_status_button"
+        android:title="@string/show_headsup_button_title"
+        android:summary="@string/show_headsup_button_summary"
+        android:defaultValue="false" />
+
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="heads_up_dismiss_on_remove"
         android:title="@string/heads_up_dismiss_on_remove_title"
         android:summaryOn="@string/heads_up_dismiss_on_remove_summary_enabled"

@@ -249,6 +249,8 @@
     <string name="heads_up_dismiss_on_remove_title">Swipe behavior</string>
     <string name="heads_up_dismiss_on_remove_summary_enabled">Hide notification instead of dismiss</string>
     <string name="heads_up_dismiss_on_remove_summary_disabled">Hide and dismiss notification</string>
+    <string name="show_headsup_button_title">Show quick access button</string>
+    <string name="show_headsup_button_summary">Show a quick access button in the status bar header</string>
 
     <!-- Heads up timeout -->
     <string name="heads_up_time_out_title">Time out</string>
