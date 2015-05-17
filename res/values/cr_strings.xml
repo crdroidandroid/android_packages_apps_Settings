@@ -13,6 +13,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- About phone screen, crDroid version -->
+    <string name="crdroid_mod_version">crDroid version</string>
+    <string name="crdroid_mod_version_default">Unknown</string>
+
+    <!-- About phone screen, build date -->
+    <string name="crdroid_build_date">Build date</string>
+    <string name="crdroid_build_date_default">2014-01-01-0000</string>
+
     <!-- General strings -->
     <string name="reset">Reset</string>
     <string name="default_string">Default</string>
