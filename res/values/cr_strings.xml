@@ -291,4 +291,11 @@
     <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
     <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
 
+    <!-- SU indicator -->
+    <string name="su_indicator_title">Superuser indicator</string>
+    <string name="su_indicator_summary">Superuser indicator when su session is active</string>
+    <string name="su_indicator_icon">Statusbar Icon</string>
+    <string name="su_indicator_notification">Notification</string>
+    <string name="su_indicator_none">No indicator</string>
+
 </resources>
