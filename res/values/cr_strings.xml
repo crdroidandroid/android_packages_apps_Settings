@@ -316,4 +316,8 @@
     <string name="timeout_1000">1 second</string>
     <string name="timeout_500">0,5 second</string>
 
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">Hardware keys</string>
+    <string name="hw_keys_summary">Enable hardware keys</string>
+
 </resources>
