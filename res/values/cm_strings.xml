@@ -889,7 +889,7 @@
 
     <string name="usb_sdcard_title">Mass storage (UMS)</string>
     <string name="usb_sdcard_summary">Lets you transfer files between your computer and SD card by mounting it as a flash device</string>
-    <string name="usb_not_connected">USB not connected</string>
+    <string name="usb_not_connected">USB is now disconnected</string>
 
     <string name="external_storage_turn_on">External storage has been turned on</string>
     <string name="external_storage_turn_off">External storage has been turned off</string>
@@ -1042,6 +1042,7 @@
     <string name="qs_tile_usb_tether">USB tethering</string>
     <string name="qs_tile_heads_up">Heads up</string>
     <string name="qs_tile_ambient_display">Ambient display</string>
+    <string name="qs_tile_sync">Sync</string>
 
     <string name="qs_main_tiles_title">Enlarge first row</string>
     <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
@@ -1153,7 +1154,7 @@
     <string name="category_interface">Interface</string>
     <string name="category_calibration">Calibration</string>
     <string name="display_and_lights">Display &amp; lights</string>
-    <string name="notification_manager">Notification manager</string>
+    <string name="notification_manager">Notifications</string>
     <string name="lockscreen_settings">Lock screen</string>
     <string name="category_lights">Lights</string>
     <string name="power_usage_history_title">Battery usage</string>
