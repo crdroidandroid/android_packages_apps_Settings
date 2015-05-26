@@ -320,4 +320,8 @@
     <string name="hw_keys_title">Hardware keys</string>
     <string name="hw_keys_summary">Enable hardware keys</string>
 
+    <!-- Changelog -->
+    <string name="changelog_crdroid_title">Changelog</string>
+    <string name="changelog_crdroid_error">Unable to load changelog</string>
+
 </resources>
