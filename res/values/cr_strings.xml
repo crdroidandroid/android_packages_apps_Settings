@@ -27,6 +27,9 @@
     <string name="help">Help</string>
     <string name="reset_message">Reset all entries to default?</string>
 
+    <!-- About crDroid -->
+    <string name="about_crdroid">About crDroid</string>
+
     <!-- Changelog -->
     <string name="changelog_crdroid_title">Changelog</string>
     <string name="changelog_crdroid_error">Unable to load changelog</string>
@@ -37,6 +40,12 @@
     <string name="crdroid_theme_evolved_summary">By Cristiano Matos</string>
     <string name="crdroid_theme_nor_title">Not Only Red Theme</string>
     <string name="crdroid_theme_nor_summary">By Cristiano Matos</string>
+
+    <!-- Share crDroid -->
+    <string name="share_crdroid_title">Share crDroid</string>
+    <string name="share_crdroid_summary">Let others know about crDroid</string>
+    <string name="share_message">Check out what #crDroid is all about @ https://plus.google.com/u/0/communities/118297646046960923906</string>
+    <string name="share_chooser_title">Share crDroid</string>
 
     <!-- Translation crDroid -->
     <string name="crdroid_translation_title">Translations</string>
