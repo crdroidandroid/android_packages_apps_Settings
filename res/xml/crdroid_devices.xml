@@ -46,7 +46,7 @@
              <Preference
                  android:key="device_sony_zu"
                  android:icon="@drawable/cr_devices"
-                 android:title="@string/device_sony_z1u"
+                 android:title="@string/device_sony_zu"
                  android:summary="@string/device_sony_zu_summary"
                  android:selectable="false" />
 
