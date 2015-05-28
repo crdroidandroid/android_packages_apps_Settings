@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 Slimroms
+ * Copyright (C) 2013-2015 Slimroms
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,11 @@
 
 package com.android.settings.crdroid;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.ContentResolver;
+import android.content.DialogInterface;
 import android.database.ContentObserver;
 import android.os.Bundle;
 import android.os.Handler;
@@ -33,8 +37,11 @@ import com.android.settings.crdroid.SeekBarPreference;
 public class PieTriggerSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
+    private static final int DLG_WARNING = 0;
+
     // This equals EdgeGesturePosition.LEFT.FLAG
     private static final int DEFAULT_POSITION = 1 << 0;
+
     private static final String PREF_PIE_DISABLE_IME_TRIGGERS = "pie_disable_ime_triggers";
     private static final String PIE_TRIGGER_SENSITIVITY = "pie_trigger_sensitivity";
 
@@ -71,7 +78,7 @@ public class PieTriggerSettings extends SettingsPreferenceFragment
 
         mDisableImeTriggers = (SwitchPreference) findPreference(PREF_PIE_DISABLE_IME_TRIGGERS);
         mDisableImeTriggers.setOnPreferenceChangeListener(this);
-        
+
         mSensitivity = (SeekBarPreference) findPreference(PIE_TRIGGER_SENSITIVITY);
         mSensitivity.setValue(Settings.System.getInt(getContentResolver(),
                 Settings.System.PIE_TRIGGER_SENSITIVITY, 5));
@@ -81,6 +88,7 @@ public class PieTriggerSettings extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         int triggerSlots = 0;
+        int counter = 0;
         if (preference == mDisableImeTriggers) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.PIE_IME_CONTROL,
@@ -94,8 +102,15 @@ public class PieTriggerSettings extends SettingsPreferenceFragment
                 boolean checked = preference == mTrigger[i]
                         ? (Boolean) newValue : mTrigger[i].isChecked();
                 if (checked) {
+                    if (!TRIGGER[i].equals("pie_control_trigger_top")) {
+                        counter++;
+                    }
                     triggerSlots |= 1 << i;
                 }
+            }
+            if (counter == 0) {
+                showDialogInner(DLG_WARNING);
+                return true;
             }
             Settings.System.putInt(getContentResolver(),
                     Settings.System.PIE_GRAVITY, triggerSlots);
@@ -132,7 +147,58 @@ public class PieTriggerSettings extends SettingsPreferenceFragment
                 mTrigger[i].setChecked(false);
             }
         }
+
         mDisableImeTriggers.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.PIE_IME_CONTROL, 1) == 1);
+    }
+
+    private void showDialogInner(int id) {
+        DialogFragment newFragment = MyAlertDialogFragment.newInstance(id);
+        newFragment.setTargetFragment(this, 0);
+        newFragment.show(getFragmentManager(), "dialog " + id);
+    }
+
+    public static class MyAlertDialogFragment extends DialogFragment {
+
+        public static MyAlertDialogFragment newInstance(int id) {
+            MyAlertDialogFragment frag = new MyAlertDialogFragment();
+            Bundle args = new Bundle();
+            args.putInt("id", id);
+            frag.setArguments(args);
+            return frag;
+        }
+
+        PieTriggerSettings getOwner() {
+            return (PieTriggerSettings) getTargetFragment();
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            int id = getArguments().getInt("id");
+            switch (id) {
+                case DLG_WARNING:
+                    return new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.attention)
+                    .setMessage(R.string.pie_trigger_warning)
+                    .setPositiveButton(R.string.dlg_ok,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            getOwner().updatePieTriggers();
+                        }
+                    })
+                    .create();
+            }
+            throw new IllegalArgumentException("unknown id " + id);
+        }
+
+        @Override
+        public void onCancel(DialogInterface dialog) {
+            int id = getArguments().getInt("id");
+            switch (id) {
+                case DLG_WARNING:
+                    getOwner().updatePieTriggers();
+                    break;
+            }
+        }
     }
 }

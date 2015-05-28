@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 Slimroms
+ * Copyright (C) 2013-2015 Slimroms
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -125,7 +125,7 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.add(0, MENU_RESET, 0, R.string.reset)
-                .setIcon(R.drawable.ic_settings_backup) // use the backup icon
+                .setIcon(R.drawable.ic_settings_reset) // use the reset icon
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
 
@@ -147,6 +147,7 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
                 Settings.System.PIE_SNAP_COLOR, -2);
         Settings.System.putInt(getActivity().getContentResolver(),
                 Settings.System.PIE_TEXT_COLOR, -2);
+
         Settings.System.putFloat(getActivity().getContentResolver(),
                 Settings.System.PIE_BACKGROUND_ALPHA, 0.3f);
     }
