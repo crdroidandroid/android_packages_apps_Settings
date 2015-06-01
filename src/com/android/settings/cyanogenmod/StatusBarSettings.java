@@ -49,7 +49,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
-    private static final String SU_INDICATOR_KEY = "su_indicator";
+    private static final String SU_INDICATOR = "su_indicator";
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
@@ -70,8 +70,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarClock = (ListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
         mStatusBarAmPm = (ListPreference) findPreference(STATUS_BAR_AM_PM);
         mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
-        mStatusBarBatteryShowPercent =
-                (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
+        mStatusBarBatteryShowPercent = (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
+        mSuIndicator = (ListPreference) findPreference(SU_INDICATOR);
 
         int clockStyle = Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_CLOCK, 1);
@@ -103,7 +103,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         enableStatusBarBatteryDependents(batteryStyle);
         mStatusBarBatteryShowPercent.setOnPreferenceChangeListener(this);
 
-        mSuIndicator = (ListPreference) findPreference(SU_INDICATOR_KEY);
+        int suIndicator = Settings.System.getIntForUser(resolver,
+                Settings.System.SU_INDICATOR, 0, UserHandle.USER_CURRENT);
+        mSuIndicator.setValue(String.valueOf(suIndicator));
+        mSuIndicator.setSummary(mSuIndicator.getEntry());
         mSuIndicator.setOnPreferenceChangeListener(this);
 
         if (TelephonyManager.getDefault().getPhoneCount() <= 1) {
@@ -160,7 +163,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             int suIndicator = Integer.parseInt((String) newValue);
             int index = mSuIndicator.findIndexOfValue((String) newValue);
             Settings.System.putIntForUser(
-                    resolver, SU_INDICATOR_KEY, suIndicator,
+                    resolver, SU_INDICATOR, suIndicator,
                     UserHandle.USER_CURRENT);
             mSuIndicator.setSummary(mSuIndicator.getEntries()[index]);
             return true;
