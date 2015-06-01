@@ -109,9 +109,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mSuIndicator.setSummary(mSuIndicator.getEntry());
         mSuIndicator.setOnPreferenceChangeListener(this);
 
-        if (TelephonyManager.getDefault().getPhoneCount() <= 1) {
-            removePreference(Settings.System.STATUS_BAR_MSIM_SHOW_EMPTY_ICONS);
-        }
     }
 
     @Override
