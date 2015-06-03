@@ -365,4 +365,7 @@
     <string name="hw_keys_title">Hardware keys</string>
     <string name="hw_keys_summary">Enable hardware keys</string>
 
+    <!-- Notification tile -->
+    <string name="qs_notifications_tile">Notifications</string>
+
 </resources>
