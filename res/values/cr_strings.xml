@@ -430,4 +430,7 @@
     <string name="shake_pulse_mode">Shake and pulse</string>
     <string name="pulse_only_mode">Pulse (default)</string>
 
+    <string name="doze_brightness_title">Doze brightness level</string>
+    <string name="doze_brightness_summary">Brightness level of doze pulse screen (% of max allowed brightness)</string>
+
 </resources>

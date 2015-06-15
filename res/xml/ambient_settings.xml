@@ -52,6 +52,11 @@
         android:defaultValue="true"
         android:dependency="doze_overwrite_value" />
 
+    <SlimSeekBarPreference
+        android:key="doze_brightness"
+        android:title="@string/doze_brightness_title"
+        android:summary="@string/doze_brightness_summary" />
+
     <PreferenceCategory
         android:key="doze_pulse_category"
         android:title="@string/doze_pulse_title" >

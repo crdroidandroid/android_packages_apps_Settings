@@ -25,6 +25,7 @@ import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.res.Resources;
 import android.database.ContentObserver;
 import android.os.Build;
 import android.os.Bundle;
@@ -34,6 +35,7 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceScreen;
 import android.preference.PreferenceCategory;
+import android.preference.SlimSeekBarPreference;
 import android.preference.SwitchPreference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
@@ -62,6 +64,7 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
     private static final String KEY_DOZE_SHAKE_CATEGORY = "doze_shake_category";
     private static final String KEY_DOZE_SHAKE_THRESHOLD = "doze_shake_threshold";
     private static final String KEY_DOZE_TIME_MODE = "doze_time_mode";
+    private static final String KEY_DOZE_BRIGHTNESS = "doze_brightness";
 
     private int mAccValue;
     private int mOldAccValue;
@@ -73,13 +76,19 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
     private ListPreference mDozeShakeThreshold;
     private SwitchPreference mDozeTimeMode;
     private ShakeSensorManager mShakeSensorManager;
+    private SlimSeekBarPreference mDozeBrightness;
     private AlertDialog mDialog;
     private Button mShakeFoundButton;
+
+    private float mBrightnessScale;
+    private float mDefaultBrightnessScale;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final Activity activity = getActivity();
+
+        Resources res = getResources();
 
         addPreferencesFromResource(R.xml.ambient_settings);
 
@@ -111,6 +120,17 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
             removePreference(KEY_DOZE_SHAKE_THRESHOLD);
             removePreference(KEY_DOZE_SHAKE_CATEGORY);
         }
+
+        // Doze brightness
+        mDefaultBrightnessScale =
+                (float) res.getInteger(
+                com.android.internal.R.integer.config_screenBrightnessDoze) / res.getInteger(
+                com.android.internal.R.integer.config_screenBrightnessSettingMaximum);
+        float defaultBrightness = (mDefaultBrightnessScale * 100);
+        mDozeBrightness = (SlimSeekBarPreference) findPreference(KEY_DOZE_BRIGHTNESS);
+        mDozeBrightness.setDefault((int) defaultBrightness);
+        mDozeBrightness.setInterval(1);
+        mDozeBrightness.setOnPreferenceChangeListener(this);
 
         updateDozeListMode();
         updateDozeOptions();
@@ -358,6 +378,11 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
                 mDozeShakeThreshold.setSummary(mDozeShakeThreshold.getEntries()[index]);
             }
         }
+        if (mDozeBrightness != null) {
+            mBrightnessScale = Settings.System.getFloat(getContentResolver(),
+                    Settings.System.DOZE_BRIGHTNESS, mDefaultBrightnessScale);
+            mDozeBrightness.setInitValue((int) (mBrightnessScale * 100));
+        }
     }
 
     @Override
@@ -434,6 +459,11 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
             updateDozeListModeValue(dozeListMode);
             int index = mDozeListMode.findIndexOfValue((String) objValue);
             mDozeListMode.setSummary(mDozeListMode.getEntries()[index]);
+        }
+        if (preference == mDozeBrightness) {
+            float valNav = Float.parseFloat((String) objValue);
+            Settings.System.putFloat(getContentResolver(),
+                    Settings.System.DOZE_BRIGHTNESS, valNav / 100);
         }
         return true;
     }
