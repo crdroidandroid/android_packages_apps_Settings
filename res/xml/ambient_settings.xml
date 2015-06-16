@@ -39,6 +39,11 @@
         android:summary="@string/doze_time_mode_summary"
         android:dependency="doze" />
 
+    <SlimSeekBarPreference
+        android:key="doze_brightness"
+        android:title="@string/doze_brightness_title"
+        android:summary="@string/doze_brightness_summary" />
+
     <SwitchPreference
         android:key="doze_overwrite_value"
         android:title="@string/doze_overwrite_value_title"
@@ -51,11 +56,6 @@
         android:summary="@string/doze_pulse_on_notifications_summary"
         android:defaultValue="true"
         android:dependency="doze_overwrite_value" />
-
-    <SlimSeekBarPreference
-        android:key="doze_brightness"
-        android:title="@string/doze_brightness_title"
-        android:summary="@string/doze_brightness_summary" />
 
     <PreferenceCategory
         android:key="doze_pulse_category"
@@ -80,8 +80,8 @@
             android:dependency="doze_overwrite_value" />
 
         <ListPreference
-            android:entries="@array/doze_pulse_duration_in_entries"
-            android:entryValues="@array/doze_pulse_duration_in_values"
+            android:entries="@array/doze_pulse_duration_out_entries"
+            android:entryValues="@array/doze_pulse_duration_out_values"
             android:key="doze_pulse_out"
             android:title="@string/doze_pulse_duration_out_title"
             android:summary="@string/doze_pulse_duration_out_summary"

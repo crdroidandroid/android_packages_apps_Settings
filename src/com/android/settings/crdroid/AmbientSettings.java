@@ -25,6 +25,7 @@ import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.database.ContentObserver;
 import android.os.Build;
@@ -40,6 +41,7 @@ import android.preference.SwitchPreference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.text.TextUtils;
+import android.util.Log;
 import android.widget.Button;
 
 import com.android.settings.R;
@@ -65,6 +67,8 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
     private static final String KEY_DOZE_SHAKE_THRESHOLD = "doze_shake_threshold";
     private static final String KEY_DOZE_TIME_MODE = "doze_time_mode";
     private static final String KEY_DOZE_BRIGHTNESS = "doze_brightness";
+
+    private static final String SYSTEMUI_METADATA_NAME = "com.android.systemui";
 
     private int mAccValue;
     private int mOldAccValue;
@@ -342,9 +346,11 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
     }
 
     private void updateDozeOptions() {
+        final Activity activity = getActivity();
+
         if (mDozePulseIn != null) {
             final int statusDozePulseIn = Settings.System.getInt(getContentResolver(),
-                    Settings.System.DOZE_PULSE_DURATION_IN, 1000);
+                    Settings.System.DOZE_PULSE_DURATION_IN, dozePulseInDefault(activity));
             mDozePulseIn.setValue(String.valueOf(statusDozePulseIn));
             int index = mDozePulseIn.findIndexOfValue(String.valueOf(statusDozePulseIn));
             if (index != -1) {
@@ -353,7 +359,7 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
         }
         if (mDozePulseVisible != null) {
             final int statusDozePulseVisible = Settings.System.getInt(getContentResolver(),
-                    Settings.System.DOZE_PULSE_DURATION_VISIBLE, 3000);
+                    Settings.System.DOZE_PULSE_DURATION_VISIBLE, dozePulseVisibleDefault(activity));
             mDozePulseVisible.setValue(String.valueOf(statusDozePulseVisible));
             int index = mDozePulseVisible.findIndexOfValue(String.valueOf(statusDozePulseVisible));
             if (index != -1) {
@@ -362,7 +368,7 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
         }
         if (mDozePulseOut != null) {
             final int statusDozePulseOut = Settings.System.getInt(getContentResolver(),
-                    Settings.System.DOZE_PULSE_DURATION_OUT, 1000);
+                    Settings.System.DOZE_PULSE_DURATION_OUT, dozePulseOutDefault(activity));
             mDozePulseOut.setValue(String.valueOf(statusDozePulseOut));
             int index = mDozePulseOut.findIndexOfValue(String.valueOf(statusDozePulseOut));
             if (index != -1) {
@@ -471,6 +477,43 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceClick(Preference preference) {
         return false;
+    }
+
+    // Get de default configs form SyatemUi
+    private static int dozePulseInDefault(Context context) {
+        return getConfigInteger(context, "doze_pulse_duration_in");
+    }
+
+    private static int dozePulseVisibleDefault(Context context) {
+        return getConfigInteger(context, "doze_pulse_duration_visible");
+    }
+
+    private static int dozePulseOutDefault(Context context) {
+        return getConfigInteger(context, "doze_pulse_duration_out");
+    }
+
+    private static Integer getConfigInteger(Context context, String configIntegerName) {
+        int resId = -1;
+        Integer i = 1;
+        PackageManager pm = context.getPackageManager();
+        if (pm == null) {
+            return null;
+        }
+
+        Resources systemUiResources;
+        try {
+            systemUiResources = pm.getResourcesForApplication(SYSTEMUI_METADATA_NAME);
+        } catch (Exception e) {
+            Log.e("DozeSettings:", "can't access systemui resources",e);
+            return null;
+        }
+
+        resId = systemUiResources.getIdentifier(
+            SYSTEMUI_METADATA_NAME + ":integer/" + configIntegerName, null, null);
+        if (resId > 0) {
+            i = systemUiResources.getInteger(resId);
+        }
+        return i;
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

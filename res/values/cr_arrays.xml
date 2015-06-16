@@ -354,43 +354,61 @@
 
     <!-- Ambient display as active display -->
     <string-array name="doze_pulse_duration_in_entries" translatable="false">
-        <item>@string/twohundred_ms</item>
-        <item>@string/fivehundred_ms</item>
-        <item>@string/one_second_default</item>
+        <item>@string/threehundred_ms</item>
+        <item>@string/sixhundred_ms</item>
+        <item>@string/ninehundred_ms_default</item>
         <item>@string/onehalf_second</item>
         <item>@string/two_second</item>
     </string-array>
 
     <string-array name="doze_pulse_duration_in_values" translatable="false">
-        <item>200</item>
-        <item>500</item>
-        <item>1000</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+
+    <string-array name="doze_pulse_duration_out_entries" translatable="false">
+        <item>@string/threehundred_ms</item>
+        <item>@string/sixhundred_ms_default</item>
+        <item>@string/ninehundred_ms</item>
+        <item>@string/onehalf_second</item>
+        <item>@string/two_second</item>
+    </string-array>
+
+    <string-array name="doze_pulse_duration_out_values" translatable="false">
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
         <item>1500</item>
         <item>2000</item>
     </string-array>
 
     <string-array name="doze_pulse_duration_visible_entries" translatable="false">
         <item>@string/one_second</item>
-        <item>@string/onehalf_second</item>
         <item>@string/two_second</item>
-        <item>@string/twohalf_second</item>
         <item>@string/three_second_default</item>
-        <item>@string/threehalf_second</item>
         <item>@string/four_second</item>
-        <item>@string/fourhalf_second</item>
         <item>@string/five_second</item>
+        <item>@string/six_second</item>
+        <item>@string/seven_second</item>
+        <item>@string/eight_second</item>
+        <item>@string/nine_second</item>
+        <item>@string/ten_second</item>
     </string-array>
 
     <string-array name="doze_pulse_duration_visible_values" translatable="false">
         <item>1000</item>
-        <item>1500</item>
         <item>2000</item>
-        <item>2500</item>
         <item>3000</item>
-        <item>3500</item>
         <item>4000</item>
-        <item>4500</item>
         <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+        <item>8000</item>
+        <item>9000</item>
+        <item>10000</item>
     </string-array>
 
     <string-array name="doze_shake_acc_threshold_entries" translatable="false">
