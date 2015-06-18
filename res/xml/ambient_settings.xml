@@ -42,20 +42,14 @@
     <SlimSeekBarPreference
         android:key="doze_brightness"
         android:title="@string/doze_brightness_title"
-        android:summary="@string/doze_brightness_summary" />
+        android:summary="@string/doze_brightness_summary"
+        android:dependency="doze" />
 
     <SwitchPreference
         android:key="doze_overwrite_value"
         android:title="@string/doze_overwrite_value_title"
         android:summary="@string/doze_overwrite_value_summary"
         android:dependency="doze" />
-
-    <SwitchPreference
-        android:key="doze_pulse_on_notifications"
-        android:title="@string/doze_pulse_on_notifications_title"
-        android:summary="@string/doze_pulse_on_notifications_summary"
-        android:defaultValue="true"
-        android:dependency="doze_overwrite_value" />
 
     <PreferenceCategory
         android:key="doze_pulse_category"
@@ -102,6 +96,7 @@
             android:summary="@string/doze_shake_acc_threshold_summary"
             android:persistent="false"
             android:dependency="doze" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
