@@ -337,12 +337,6 @@
     <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
     <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
 
-    <!-- SU indicator -->
-    <string name="su_indicator_title">Superuser indicator</string>
-    <string name="su_indicator_icon">Statusbar Icon</string>
-    <string name="su_indicator_notification">Notification</string>
-    <string name="su_indicator_none">No indicator</string>
-
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Clear all recents button</string>
     <string name="show_clear_all_recents_button_summary">Show clear all button on recents panel</string>

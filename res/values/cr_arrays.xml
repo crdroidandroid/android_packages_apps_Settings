@@ -313,19 +313,6 @@
         <item>10000</item>
     </string-array>
 
-    <!-- SU indicator -->
-    <string-array name="su_indicator_entries">
-        <item>@string/su_indicator_icon</item>
-        <item>@string/su_indicator_notification</item>
-        <item>@string/su_indicator_none</item>
-    </string-array>
-
-    <string-array name="su_indicator_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
     <!-- clear all recents button location -->
     <string-array name="recents_clear_all_location_entries">
         <item>@string/recents_clear_all_location_right</item>

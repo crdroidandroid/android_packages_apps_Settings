@@ -58,10 +58,4 @@
         android:summary="@string/status_bar_notif_count_summary"
         android:defaultValue="false" />
 
-    <ListPreference
-        android:key="su_indicator"
-        android:title="@string/su_indicator_title"
-        android:entries="@array/su_indicator_entries"
-        android:entryValues="@array/su_indicator_values" />
-
 </PreferenceScreen>

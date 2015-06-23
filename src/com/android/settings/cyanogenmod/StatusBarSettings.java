@@ -20,7 +20,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -49,7 +48,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
-    private static final String SU_INDICATOR = "su_indicator";
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
@@ -58,7 +56,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private ListPreference mStatusBarAmPm;
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
-    private ListPreference mSuIndicator;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -71,7 +68,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarAmPm = (ListPreference) findPreference(STATUS_BAR_AM_PM);
         mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
         mStatusBarBatteryShowPercent = (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
-        mSuIndicator = (ListPreference) findPreference(SU_INDICATOR);
 
         int clockStyle = Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_CLOCK, 1);
@@ -102,13 +98,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntry());
         enableStatusBarBatteryDependents(batteryStyle);
         mStatusBarBatteryShowPercent.setOnPreferenceChangeListener(this);
-
-        int suIndicator = Settings.System.getIntForUser(resolver,
-                Settings.System.SU_INDICATOR, 0, UserHandle.USER_CURRENT);
-        mSuIndicator.setValue(String.valueOf(suIndicator));
-        mSuIndicator.setSummary(mSuIndicator.getEntry());
-        mSuIndicator.setOnPreferenceChangeListener(this);
-
     }
 
     @Override
@@ -155,14 +144,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                     resolver, Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, batteryShowPercent);
             mStatusBarBatteryShowPercent.setSummary(
                     mStatusBarBatteryShowPercent.getEntries()[index]);
-            return true;
-        } else if (preference == mSuIndicator) {
-            int suIndicator = Integer.parseInt((String) newValue);
-            int index = mSuIndicator.findIndexOfValue((String) newValue);
-            Settings.System.putIntForUser(
-                    resolver, SU_INDICATOR, suIndicator,
-                    UserHandle.USER_CURRENT);
-            mSuIndicator.setSummary(mSuIndicator.getEntries()[index]);
             return true;
         }
         return false;
