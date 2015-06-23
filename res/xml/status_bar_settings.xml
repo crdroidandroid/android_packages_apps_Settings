@@ -58,4 +58,10 @@
         android:summary="@string/status_bar_notif_count_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="show_su_indicator"
+        android:title="@string/su_indicator"
+        android:summary="@string/su_indicator_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
