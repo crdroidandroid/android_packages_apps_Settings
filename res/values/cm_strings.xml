@@ -1040,6 +1040,11 @@
     <string name="qs_tile_ambient_display">Ambient display</string>
     <string name="qs_tile_sync">Sync</string>
 
+    <string name="qs_dynamic_tile_next_alarm">Next alarm</string>
+    <string name="qs_dynamic_tile_ime_selector">IME selector</string>
+    <string name="qs_dynamic_tile_su">Root access</string>
+    <string name="qs_dynamic_tile_adb" translatable="false">ADB</string>
+
     <string name="qs_main_tiles_title">Enlarge first row</string>
     <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
     <string name="qs_main_tiles_summary_off">Three tiles on each row</string>
@@ -1065,6 +1070,9 @@
     <string name="wifi_ibss_freq_title">Channel / Frequency</string>
     <string name="wifi_channel">Channel</string>
     <string name="wifi_mhz">MHz</string>
+
+    <!-- WiFi auto-configure priorities -->
+    <string name="wifi_auto_config_priorities">Automatic priority</string>
 
     <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
     <string name="regulatory_information_dialog_title" translatable="false">@string/regulatory_information</string>
@@ -1244,4 +1252,12 @@
     <string name="factory_reset_erase_sd_card_summary">Erase all data on the SD card, including music and photos</string>
     <string name="factory_reset_warning_text_reset_now">RESET NOW</string>
     <string name="factory_reset_warning_text_message">All your accounts, apps, app data, and system settings will be removed from this device. This cannot be reversed.</string>
+
+    <!-- Wi-Fi region code -->
+    <string name="wifi_setting_countrycode_title">Wi\u2011Fi region code</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_countrycode_summary">Specify the region code for Wi\u2011Fi</string>
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_countrycode_error">There was a problem setting the region code.</string>
+
 </resources>
