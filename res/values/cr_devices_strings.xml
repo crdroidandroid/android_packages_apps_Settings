@@ -26,13 +26,46 @@
     <string name="device_category_htc_title">HTC</string>
     <string name="device_category_motorola_title">MOTOROLA</string>
     <string name="device_category_oneplus_title">ONE PLUS</string>
+    <string name="device_category_oppo_title">OPPO</string>
 
     <!-- Devices and Maintainers -->
     <!-- Google devices -->
     <string name="device_google_n5">Google Nexus 5</string>
     <string name="device_google_n5_summary">Hammerhead \nMaintainer - Cristiano Matos</string>
 
+    <!-- Htc devices -->
+    <string name="device_htc_m7">Htc M7</string>
+    <string name="device_htc_m7_summary">M7 \nMaintainer - Benoit Grain</string>
+
+    <!-- Motorola devices -->
+    <string name="device_motorola_g2013">Motorola Moto G (2013)</string>
+    <string name="device_motorola_g2013_summary">Falcon \nMaintainer - Shawn Wahi</string>
+    <string name="device_motorola_g2014">Motorola Moto G (2014)</string>
+    <string name="device_motorola_g2014_summary">Titan \nMaintainer - Shawn Wahi</string>
+
+    <!-- One plus devices -->
+    <string name="device_oneplus_bacon">One Plus One</string>
+    <string name="device_oneplus_bacon_summary">Bacon \nMaintainer - Shawn Wahi</string>
+
+    <!-- Oppo devices -->
+    <string name="device_oppo_find5">Oppo Find 5</string>
+    <string name="device_oppo_find5_summary">Find5 \nMaintainer - Jerome Genevrois</string>
+    <string name="device_oppo_find7">Oppo Find 7/s</string>
+    <string name="device_oppo_find7_summary">Find7/s \nMaintainer - Jerome Genevrois</string>
+
+    <!-- Samsung devices -->
+    <string name="device_samsung_s3">Samsung Galaxy S3</string>
+    <string name="device_samsung_s3_summary">I9300 \nMaintainer - Cristiano Matos</string>
+
     <!-- Sony devices -->
+    <string name="device_sony_e3">Sony Xperia E3</string>
+    <string name="device_sony_e3_summary">Flamingo \nMaintainer - David Viteri</string>
+    <string name="device_sony_m2">Sony Xperia M2</string>
+    <string name="device_sony_m2_summary">Eagle \nMaintainer - David Viteri</string>
+    <string name="device_sony_t2u">Sony Xperia T2 Ultra</string>
+    <string name="device_sony_t2u_summary">Tianchi \nMaintainer - David Viteri</string>
+    <string name="device_sony_t3">Sony Xperia T3</string>
+    <string name="device_sony_t3_summary">Seagull \nMaintainer - David Viteri</string>
     <string name="device_sony_zu">Sony Xperia Z Ultra</string>
     <string name="device_sony_zu_summary">Togari \nMaintainer - David Viteri</string>
     <string name="device_sony_z1">Sony Xperia Z1</string>

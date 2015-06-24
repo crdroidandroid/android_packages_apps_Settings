@@ -26,6 +26,7 @@
         android:summary="@string/device_maintainers_title_summary"
         android:selectable="false" />
 
+        <!-- Google devices -->
         <PreferenceCategory
              android:key="device_category_google"
              android:title="@string/device_category_google_title" >
@@ -39,9 +40,122 @@
 
         </PreferenceCategory>
 
+        <!-- Htc devices -->
+        <PreferenceCategory
+             android:key="device_category_htc"
+             android:title="@string/device_category_htc_title" >
+
+             <Preference
+                 android:key="device_htc_m7"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_htc_m7"
+                 android:summary="@string/device_htc_m7_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
+        <!-- Motorola devices -->
+        <PreferenceCategory
+             android:key="device_category_motorola"
+             android:title="@string/device_category_motorola_title" >
+
+             <Preference
+                 android:key="device_motorola_g2013"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_motorola_g2013"
+                 android:summary="@string/device_motorolad_g2013_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_motorola_g2014"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_motorola_g2014"
+                 android:summary="@string/device_motorolad_g2014_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
+        <!-- One plus devices -->
+        <PreferenceCategory
+             android:key="device_category_oneplus"
+             android:title="@string/device_category_oneplus_title" >
+
+             <Preference
+                 android:key="device_oneplus_bacon"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_oneplus_bacon"
+                 android:summary="@string/device_oneplus_bacon_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
+        <!-- Oppo devices -->
+        <PreferenceCategory
+             android:key="device_category_oppo"
+             android:title="@string/device_category_oppo_title" >
+
+             <Preference
+                 android:key="device_oppo_find5"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_oppo_find5"
+                 android:summary="@string/device_oppo_find5_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_oppo_find7"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_oppo_find7"
+                 android:summary="@string/device_oppo_find7_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
+        <!-- Samsung devices -->
+        <PreferenceCategory
+             android:key="device_category_samsung"
+             android:title="@string/device_category_samsung_title" >
+
+             <Preference
+                 android:key="device_samsung_s3"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_samsung_s3"
+                 android:summary="@string/device_samsung_s3_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
+        <!-- Sony devices -->
         <PreferenceCategory
              android:key="device_category_sony"
              android:title="@string/device_category_sony_title" >
+
+             <Preference
+                 android:key="device_sony_e3"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_e3"
+                 android:summary="@string/device_sony_e3_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_sony_m2"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_m2"
+                 android:summary="@string/device_sony_m2_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_sony_t2u"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_t2u"
+                 android:summary="@string/device_sony_t2u_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_sony_t3"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_t3"
+                 android:summary="@string/device_sony_t3_summary"
+                 android:selectable="false" />
 
              <Preference
                  android:key="device_sony_zu"
