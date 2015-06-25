@@ -63,14 +63,14 @@
                  android:key="device_motorola_g2013"
                  android:icon="@drawable/cr_devices"
                  android:title="@string/device_motorola_g2013"
-                 android:summary="@string/device_motorolad_g2013_summary"
+                 android:summary="@string/device_motorola_g2013_summary"
                  android:selectable="false" />
 
              <Preference
                  android:key="device_motorola_g2014"
                  android:icon="@drawable/cr_devices"
                  android:title="@string/device_motorola_g2014"
-                 android:summary="@string/device_motorolad_g2014_summary"
+                 android:summary="@string/device_motorola_g2014_summary"
                  android:selectable="false" />
 
         </PreferenceCategory>
