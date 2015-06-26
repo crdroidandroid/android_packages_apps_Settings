@@ -80,6 +80,8 @@ import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
+import com.android.settings.crdroid.AmbientSettings;
+import com.android.settings.crdroid.ExtraSettings;
 import com.android.settings.crdroid.HeadsUpSettings;
 import com.android.settings.cyanogenmod.DisplayRotation;
 import com.android.settings.dashboard.DashboardCategory;
@@ -237,9 +239,6 @@ public class SettingsActivity extends Activity
             R.id.device_section,
             R.id.sound_settings,
             R.id.display_and_lights_settings,
-            R.id.lockscreen_settings,
-            R.id.notification_manager,
-            R.id.button_settings,
             R.id.storage_settings,
             R.id.application_settings,
             R.id.battery_settings,
@@ -255,9 +254,8 @@ public class SettingsActivity extends Activity
             R.id.accessibility_settings,
             R.id.print_settings,
             R.id.home_settings,
-            R.id.status_bar_settings,
             R.id.dashboard,
-            R.id.privacy_settings_cyanogenmod
+            R.id.extra_settings
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
@@ -328,7 +326,9 @@ public class SettingsActivity extends Activity
             LockScreenSettings.class.getName(),
             LiveDisplay.class.getName(),
             DisplayRotation.class.getName(),
-            HeadsUpSettings.class.getName()
+            HeadsUpSettings.class.getName(),
+            ExtraSettings.class.getName(),
+            AmbientSettings.class.getName()
     };
 
 
@@ -1199,9 +1199,7 @@ public class SettingsActivity extends Activity
                 DashboardTile tile = category.getTile(n);
                 boolean removeTile = false;
                 id = (int) tile.id;
-                if (id == R.id.operator_settings || id == R.id.manufacturer_settings
-                        || id == R.id.device_specific_gesture_settings
-                        || id == R.id.oclick) {
+                if (id == R.id.operator_settings || id == R.id.manufacturer_settings) {
                     if (!Utils.updateTileToSpecificActivityFromMetaDataOrRemove(this, tile)) {
                         removeTile = true;
                     }

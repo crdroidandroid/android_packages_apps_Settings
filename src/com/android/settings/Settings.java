@@ -109,5 +109,6 @@ public class Settings extends SettingsActivity {
     public static class AnonymousStatsActivity extends Settings { /* empty */ }
     public static class NotificationManagerActivity extends SettingsActivity { /* empty */ }
     public static class HeadsUpSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class AmbientSettingsActivity extends SettingsActivity { /* empty */ }
 }
 

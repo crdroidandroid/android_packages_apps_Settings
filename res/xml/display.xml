@@ -57,12 +57,6 @@
                 android:title="@string/accelerometer_title"
                 settings:advanced="false"/>
 
-        <!-- Doze // Ambient display -->
-        <PreferenceScreen
-                android:key="doze_fragment"
-                android:title="@string/doze_title"
-                android:fragment="com.android.settings.crdroid.AmbientSettings" />
-
         <!-- Lift to wake -->
         <SwitchPreference
                 android:key="lift_to_wake"
@@ -144,29 +138,6 @@
                 settings:keywords="@string/keywords_display_font_size"
                 android:summary="@string/summary_font_size"
                 android:dialogTitle="@string/dialog_title_font_size" />
-
-        <!-- Search in Recents -->
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-                android:key="recents_show_search_bar"
-                android:title="@string/recents_show_searchbar"
-                settings:keywords="@string/keywords_recents_show_searchbar"
-                android:defaultValue="true"
-                settings:advanced="true" />
-
-        <!-- Clear all button in recents -->
-        <SwitchPreference
-                android:key="show_clear_all_recents"
-                android:title="@string/show_clear_all_recents_button_title"
-                android:summary="@string/show_clear_all_recents_button_summary"
-                android:defaultValue="true" />
-
-        <ListPreference
-                android:key="recents_clear_all_location"
-                android:title="@string/recents_clear_all_location_title"
-                android:entries="@array/recents_clear_all_location_entries"
-                android:entryValues="@array/recents_clear_all_location_values"
-                android:defaultValue="0"
-                android:dependency="show_clear_all_recents" />
 
     </PreferenceCategory>
 

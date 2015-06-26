@@ -1783,7 +1783,8 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
-        <!-- Custom activities Start -->
+        <!-- crDroid activities start -->
+        <!-- Heads Up -->
         <activity android:name="Settings$HeadsUpSettingsActivity"
                 android:uiOptions="splitActionBarWhenNarrow"
                 android:label="@string/category_heads_up"
@@ -1795,7 +1796,7 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.crdroid.HeadsUpSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/security_settings" />
+                android:resource="@id/notification_manager" />
         </activity>
 
         <activity-alias android:name=".crdroid.HeadsUpSettings"
@@ -1807,8 +1808,36 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                        android:value="com.android.settings.crdroid.HeadsUpSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                       android:resource="@id/security_settings" />
+                       android:resource="@id/notification_manager" />
         </activity-alias>
+
+        <!-- Ambient display -->
+        <activity android:name="Settings$AmbientSettingsActivity"
+                android:uiOptions="splitActionBarWhenNarrow"
+                android:label="@string/doze_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.crdroid.AmbientSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/ambient_display" />
+        </activity>
+
+        <activity-alias android:name=".crdroid.AmbientSettings"
+                android:taskAffinity="com.android.settings"
+                android:label="@string/doze_title"
+                android:targetActivity="Settings$AmbientSettingsActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.android.settings.crdroid.AmbientSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                       android:resource="@id/ambient_display" />
+        </activity-alias>
+        <!-- crDroid activities end -->
 
         <!-- CyanogenMod activities Start -->
         <activity android:name="Settings$ProfilesSettingsActivity"
