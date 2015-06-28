@@ -342,7 +342,8 @@
     <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
 
     <!-- Recents panel settings -->
-    <string name="recents_panel_settings">Recents Panel</string>
+    <string name="recents_panel_settings">Recents panel</string>
+    <string name="stock_recents_category">Stock recents app panel</string>
     <string name="show_clear_all_recents_button_title">Clear all recents button</string>
     <string name="show_clear_all_recents_button_summary">Show clear all button on recents panel</string>
     <string name="recents_clear_all_location_title">Clear all recents location</string>
@@ -456,5 +457,26 @@
     <string name="hfm_dialog_success">/4 hosts sources successfully applied!</string>
     <string name="hfm_dialog_conn_error">Error: No network connectivity</string>
     <string name="hfm_dialog_title">Hosts update progress</string>
+
+    <!-- Recent panel -->
+    <string name="slim_recents_category">Slim recents app panel</string>
+    <string name="use_slim_recents_title">Slim recents</string>
+    <string name="show_running_tasks_title">Only show running apps</string>
+    <string name="recents_max_apps_title">Max allowed apps</string>
+    <string name="recent_panel_scale_title">Size</string>
+    <string name="recent_panel_expanded_mode_title">Expanded mode</string>
+    <string name="recent_panel_expanded_mode_summary">Recent tasks expanded preview mode</string>
+    <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
+    <string name="recent_panel_expanded_mode_always">Always</string>
+    <string name="recent_panel_expanded_mode_never">Never</string>
+    <string name="recent_panel_show_topmost_title">Show topmost task</string>
+    <string name="recent_panel_show_topmost_summary">Don\'t exclude the topmost task in recents view</string>
+    <string name="recent_panel_bg_color_title">Panel background color</string>
+    <string name="recent_card_bg_color_title">Card background color</string>
+    <string name="recent_card_text_color_title">Card text color</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
+    <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
 
 </resources>

@@ -20,29 +20,118 @@
       android:title="@string/recents_panel_settings"
       settings:keywords="@string/recents_panel_settings">
 
-    <!-- Search in Recents -->
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-        android:key="recents_show_search_bar"
-        android:title="@string/recents_show_searchbar"
-        settings:keywords="@string/keywords_recents_show_searchbar"
-        android:defaultValue="true"
-        settings:advanced="true" />
 
-    <!-- Clear all button in recents -->
-    <SwitchPreference
-        android:key="show_clear_all_recents"
-        android:title="@string/show_clear_all_recents_button_title"
-        android:summary="@string/show_clear_all_recents_button_summary"
-        settings:keywords="@string/show_clear_all_recents_button_title"
-        android:defaultValue="true" />
+    <PreferenceCategory
+        android:key="slim_recents_category"
+        android:title="@string/slim_recents_category"
+        settings:keywords="@string/slim_recents_category" >
 
-    <ListPreference
-        android:key="recents_clear_all_location"
-        android:title="@string/recents_clear_all_location_title"
-        android:entries="@array/recents_clear_all_location_entries"
-        android:entryValues="@array/recents_clear_all_location_values"
-        settings:keywords="@string/recents_clear_all_location_title"
-        android:defaultValue="0"
-        android:dependency="show_clear_all_recents" />
+        <SwitchPreference
+            android:key="use_slim_recents"
+            android:title="@string/use_slim_recents_title"
+            settings:keywords="@string/use_slim_recents_title"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="only_show_running_tasks"
+            android:title="@string/show_running_tasks_title"
+            settings:keywords="@string/show_running_tasks_title"
+            android:dependency="use_slim_recents"
+            android:defaultValue="false" />
+
+        <SlimSeekBarPreference
+            android:key="max_apps"
+            android:title="@string/recents_max_apps_title"
+            settings:keywords="@string/recents_max_apps_title"
+            android:dependency="use_slim_recents" />
+
+        <ListPreference
+            android:key="recent_panel_expanded_mode"
+            android:entries="@array/recent_panel_expanded_mode_entries"
+            android:entryValues="@array/recent_panel_expanded_mode_values"
+            android:title="@string/recent_panel_expanded_mode_title"
+            settings:keywords="@string/recent_panel_expanded_mode_title"
+            android:summary="@string/recent_panel_expanded_mode_summary"
+            android:dependency="use_slim_recents"
+            android:persistent="false" />
+
+        <SwitchPreference
+            android:key="recent_panel_lefty_mode"
+            android:title="@string/recent_panel_lefty_mode_title"
+            settings:keywords="@string/recent_panel_lefty_mode_title"
+            android:summary="@string/recent_panel_lefty_mode_summary"
+            android:dependency="use_slim_recents"
+            android:persistent="false" />
+
+        <SwitchPreference
+            android:key="recent_panel_show_topmost"
+            android:title="@string/recent_panel_show_topmost_title"
+            settings:keywords="@string/recent_panel_show_topmost_title"
+            android:summary="@string/recent_panel_show_topmost_summary"
+            android:dependency="use_slim_recents"
+            android:persistent="false" />
+
+        <SlimSeekBarPreference
+            android:key="recent_panel_scale"
+            android:title="@string/recent_panel_scale_title"
+            settings:keywords="@string/recent_panel_scale_title"
+            android:dependency="use_slim_recents" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="recent_panel_bg_color"
+            android:title="@string/recent_panel_bg_color_title"
+            settings:keywords="@string/recent_panel_bg_color_title"
+            android:defaultValue="0x00ffffff"
+            android:dependency="use_slim_recents"
+            alphaSlider="true" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="recent_card_bg_color"
+            android:title="@string/recent_card_bg_color_title"
+            settings:keywords="@string/recent_card_bg_color_title"
+            android:defaultValue="0x00ffffff"
+            android:dependency="use_slim_recents"
+            alphaSlider="true" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="recent_card_text_color"
+            android:title="@string/recent_card_text_color_title"
+            settings:keywords="@string/recent_card_text_color_title"
+            android:defaultValue="0x00ffffff"
+            android:dependency="use_slim_recents"
+            alphaSlider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="stock_recents"
+        android:title="@string/stock_recents_category" >
+
+        <!-- Search in Recents -->
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="recents_show_search_bar"
+            android:title="@string/recents_show_searchbar"
+            settings:keywords="@string/keywords_recents_show_searchbar"
+            android:defaultValue="true"
+            settings:advanced="true" />
+
+        <!-- Clear all button in recents -->
+        <SwitchPreference
+            android:key="show_clear_all_recents"
+            android:title="@string/show_clear_all_recents_button_title"
+            android:summary="@string/show_clear_all_recents_button_summary"
+            settings:keywords="@string/show_clear_all_recents_button_title"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="recents_clear_all_location"
+            android:title="@string/recents_clear_all_location_title"
+            android:entries="@array/recents_clear_all_location_entries"
+            android:entryValues="@array/recents_clear_all_location_values"
+            settings:keywords="@string/recents_clear_all_location_title"
+            android:defaultValue="0"
+            android:dependency="show_clear_all_recents" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
