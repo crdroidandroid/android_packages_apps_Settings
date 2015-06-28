@@ -1837,6 +1837,33 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/ambient_display" />
         </activity-alias>
+
+        <!-- Navigation bar toggle -->
+        <activity android:name="Settings$ButtonSettingsActivity"
+                android:uiOptions="splitActionBarWhenNarrow"
+                android:label="@string/button_pref_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.ButtonSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/button_settings" />
+        </activity>
+
+        <activity-alias android:name=".ButtonSettings"
+                android:taskAffinity="com.android.settings"
+                android:label="@string/button_pref_title"
+                android:targetActivity="Settings$ButtonSettingsActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.android.settings.ButtonSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                       android:resource="@id/button_settings" />
+        </activity-alias>
         <!-- crDroid activities end -->
 
         <!-- CyanogenMod activities Start -->

@@ -328,7 +328,8 @@ public class SettingsActivity extends Activity
             DisplayRotation.class.getName(),
             HeadsUpSettings.class.getName(),
             ExtraSettings.class.getName(),
-            AmbientSettings.class.getName()
+            AmbientSettings.class.getName(),
+            ButtonSettings.class.getName()
     };
 
 
