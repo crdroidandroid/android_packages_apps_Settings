@@ -103,8 +103,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_NOTIFICATION_LIGHT = "notification_light";
     private static final String KEY_BATTERY_LIGHT = "battery_light";
 
-    private static final String KEY_DOZE_FRAGMENT = "doze_fragment";
-
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
     private ListPreference mLcdDensityPreference;
@@ -120,7 +118,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mAutoBrightnessPreference;
     private SwitchPreference mTapToWake;
     private SwitchPreference mWakeWhenPluggedOrUnplugged;
-    private PreferenceScreen mDozeFragement;
 
     private CmHardwareManager mCmHardwareManager;
 
@@ -234,11 +231,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 displayPrefs.removePreference(mLiftToWakePreference);
                 mLiftToWakePreference = null;
             }
-        }
-
-        mDozeFragement = (PreferenceScreen) findPreference(KEY_DOZE_FRAGMENT);
-        if (!Utils.isDozeAvailable(activity)) {
-            getPreferenceScreen().removePreference(mDozeFragement);
         }
 
         mTapToWake = (SwitchPreference) findPreference(KEY_TAP_TO_WAKE);
@@ -725,9 +717,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     }
                     if (!isLiftToWakeAvailable(context)) {
                         result.add(KEY_LIFT_TO_WAKE);
-                    }
-                    if (!Utils.isDozeAvailable(context)) {
-                        result.add(KEY_DOZE_FRAGMENT);
                     }
                     return result;
                 }
