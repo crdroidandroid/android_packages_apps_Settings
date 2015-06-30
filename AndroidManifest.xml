@@ -1231,6 +1231,7 @@
         <activity android:name="ChooseLockPatternSize" android:exported="false"/>
 
         <activity android:name="ChooseLockPattern" android:exported="false"/>
+        <activity android:name="ManageFingerprints" android:exported="false"/>
 
         <activity android:name="SetupChooseLockPassword"
             android:exported="false"
