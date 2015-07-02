@@ -87,11 +87,16 @@
 
     </PreferenceCategory>
 
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-            android:key="status_bar_ime_switcher"
-            android:title="@string/ime_switcher_notify"
-            android:summary="@string/ime_switcher_notify_summary"
-            android:defaultValue="true" />
+    <PreferenceCategory
+            android:key="advanced_category"
+            android:title="@string/advanced_category" >
+
+        <PreferenceScreen
+                android:key="keyboard_input_settings"
+                android:fragment="com.android.settings.crdroid.InputMethodsSettings"
+                android:title="@string/title_keyboard_input" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
             android:key="voice_category"
