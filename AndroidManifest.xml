@@ -1866,6 +1866,12 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/button_settings" />
         </activity-alias>
+
+        <receiver android:name="com.android.settings.crdroid.util.OnBoot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
         <!-- crDroid activities end -->
 
         <!-- CyanogenMod activities Start -->

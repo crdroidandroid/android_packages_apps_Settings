@@ -479,4 +479,9 @@
     <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
     <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
 
+    <!-- Selinux switch -->
+    <string name="selinux_title">SELinux Mode</string>
+    <string name="selinux_permissive_title">Permissive</string>
+    <string name="selinux_enforcing_title">Enforcing</string>
+
 </resources>
