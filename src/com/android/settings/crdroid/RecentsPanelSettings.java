@@ -384,7 +384,7 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_STOCK_RECENTS);
 
         if (stockRecentsCategory != null) {
-            stockRecentsCategory.setEnabled(enabled);
+            stockRecentsCategory.setEnabled(!enabled);
         }
     }
 
