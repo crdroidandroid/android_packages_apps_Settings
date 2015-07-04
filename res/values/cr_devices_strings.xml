@@ -42,8 +42,8 @@
     <string name="device_htc_m7_summary">M7 \nMaintainer - Benoit Grain</string>
     <string name="device_htc_m8">Htc M8</string>
     <string name="device_htc_m8_summary">M8 \nMaintainer - Hildo Boerboom</string>
-    <string name="device_htc_one-x">Htc One X</string>
-    <string name="device_htc_one-x_summary">Endeavoru \nMaintainer - Hildo Boerboom</string>
+    <string name="device_htc_one_x">Htc One X</string>
+    <string name="device_htc_one_x_summary">Endeavoru \nMaintainer - Hildo Boerboom</string>
 
     <!-- LG devices -->
     <string name="device_lg_g2">LG g2</string>

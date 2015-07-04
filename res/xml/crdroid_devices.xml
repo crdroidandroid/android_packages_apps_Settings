@@ -76,8 +76,8 @@
              <Preference
                  android:key="device_htc_one-x"
                  android:icon="@drawable/cr_devices"
-                 android:title="@string/device_htc_one-x"
-                 android:summary="@string/device_htc_one-x_summary"
+                 android:title="@string/device_htc_one_x"
+                 android:summary="@string/device_htc_one_x_summary"
                  android:selectable="false" />
 
         </PreferenceCategory>
