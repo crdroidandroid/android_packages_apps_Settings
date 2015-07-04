@@ -34,8 +34,8 @@
     <string name="device_google_n4_summary">Mako \nMaintainer - Hildo Boerboom</string>
     <string name="device_google_n5">Google Nexus 5</string>
     <string name="device_google_n5_summary">Hammerhead \nMaintainer - Cristiano Matos</string>
-    <string name="device_motorola_n6">Google Nexus 6</string>
-    <string name="device_motorola_n6_summary">Shamu \nMaintainer - Hildo Boerboom</string>
+    <string name="device_google_n6">Google Nexus 6</string>
+    <string name="device_google_n6_summary">Shamu \nMaintainer - Hildo Boerboom</string>
 
     <!-- Htc devices -->
     <string name="device_htc_m7">Htc M7</string>

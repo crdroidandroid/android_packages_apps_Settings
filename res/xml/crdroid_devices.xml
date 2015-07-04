@@ -101,6 +101,8 @@
                  android:summary="@string/device_lg_g3_summary"
                  android:selectable="false" />
 
+        </PreferenceCategory>
+
         <!-- Motorola devices -->
         <PreferenceCategory
              android:key="device_category_motorola"
