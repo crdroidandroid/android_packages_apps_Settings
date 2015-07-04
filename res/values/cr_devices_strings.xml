@@ -30,18 +30,34 @@
 
     <!-- Devices and Maintainers -->
     <!-- Google devices -->
+    <string name="device_google_n4">Google Nexus 4</string>
+    <string name="device_google_n4_summary">Mako \nMaintainer - Hildo Boerboom</string>
     <string name="device_google_n5">Google Nexus 5</string>
     <string name="device_google_n5_summary">Hammerhead \nMaintainer - Cristiano Matos</string>
+    <string name="device_motorola_n6">Google Nexus 6</string>
+    <string name="device_motorola_n6_summary">Shamu \nMaintainer - Hildo Boerboom</string>
 
     <!-- Htc devices -->
     <string name="device_htc_m7">Htc M7</string>
     <string name="device_htc_m7_summary">M7 \nMaintainer - Benoit Grain</string>
+    <string name="device_htc_m8">Htc M8</string>
+    <string name="device_htc_m8_summary">M8 \nMaintainer - Hildo Boerboom</string>
+    <string name="device_htc_one-x">Htc One X</string>
+    <string name="device_htc_one-x_summary">Endeavoru \nMaintainer - Hildo Boerboom</string>
+
+    <!-- LG devices -->
+    <string name="device_lg_g2">LG g2</string>
+    <string name="device_lg_g2_summary">d80x,ls980,vs980 \nMaintainer - Hildo Boerboom</string>
+    <string name="device_lg_g3">LG g3</string>
+    <string name="device_lg_g3_summary">d85x,ls990,vs985 \nMaintainer - Hildo Boerboom</string>
 
     <!-- Motorola devices -->
     <string name="device_motorola_g2013">Motorola Moto G (2013)</string>
     <string name="device_motorola_g2013_summary">Falcon \nMaintainer - Shawn Wahi</string>
     <string name="device_motorola_g2014">Motorola Moto G (2014)</string>
     <string name="device_motorola_g2014_summary">Titan \nMaintainer - Shawn Wahi</string>
+    <string name="device_motorola_x2014">Motorola Moto X (2014)</string>
+    <string name="device_motorola_x2014_summary">Victara \nMaintainer - Hildo Boerboom</string>
 
     <!-- One plus devices -->
     <string name="device_oneplus_bacon">One Plus One</string>
@@ -56,6 +72,14 @@
     <!-- Samsung devices -->
     <string name="device_samsung_s3">Samsung Galaxy S3</string>
     <string name="device_samsung_s3_summary">I9300 \nMaintainer - Cristiano Matos</string>
+    <string name="device_samsung_s4">Samsung Galaxy S4</string>
+    <string name="device_samsung_s4_summary">Jfltexx \nMaintainer - Jerome Genevrois</string>
+    <string name="device_samsung_s5">Samsung Galaxy S5</string>
+    <string name="device_samsung_s5_summary">Klte \nMaintainer - Shawn Wahi</string>
+    <string name="device_samsung_note3">Samsung Galaxy Note 3</string>
+    <string name="device_samsung_note3_summary">Hlte \nMaintainer - Hildo Boerboom</string>
+    <string name="device_samsung_note4">Samsung Galaxy Note 4</string>
+    <string name="device_samsung_note4_summary">Trltexx \nMaintainer - Hildo Boerboom</string>
 
     <!-- Sony devices -->
     <string name="device_sony_e3">Sony Xperia E3</string>
