@@ -214,31 +214,10 @@
              android:title="@string/device_category_sony_title" >
 
              <Preference
-                 android:key="device_sony_e3"
+                 android:key="device_sony_m"
                  android:icon="@drawable/cr_devices"
-                 android:title="@string/device_sony_e3"
-                 android:summary="@string/device_sony_e3_summary"
-                 android:selectable="false" />
-
-             <Preference
-                 android:key="device_sony_m2"
-                 android:icon="@drawable/cr_devices"
-                 android:title="@string/device_sony_m2"
-                 android:summary="@string/device_sony_m2_summary"
-                 android:selectable="false" />
-
-             <Preference
-                 android:key="device_sony_t2u"
-                 android:icon="@drawable/cr_devices"
-                 android:title="@string/device_sony_t2u"
-                 android:summary="@string/device_sony_t2u_summary"
-                 android:selectable="false" />
-
-             <Preference
-                 android:key="device_sony_t3"
-                 android:icon="@drawable/cr_devices"
-                 android:title="@string/device_sony_t3"
-                 android:summary="@string/device_sony_t3_summary"
+                 android:title="@string/device_sony_m"
+                 android:summary="@string/device_sony_m_summary"
                  android:selectable="false" />
 
              <Preference
@@ -270,6 +249,20 @@
                  android:selectable="false" />
 
              <Preference
+                 android:key="device_sony_z2t"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_z2t"
+                 android:summary="@string/device_sony_z2t_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_sony_z2tw"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_z2tw"
+                 android:summary="@string/device_sony_z2tw_summary"
+                 android:selectable="false" />
+
+             <Preference
                  android:key="device_sony_z3"
                  android:icon="@drawable/cr_devices"
                  android:title="@string/device_sony_z3"
@@ -281,6 +274,20 @@
                  android:icon="@drawable/cr_devices"
                  android:title="@string/device_sony_z3c"
                  android:summary="@string/device_sony_z3c_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_sony_z3t"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_z3t"
+                 android:summary="@string/device_sony_z3t_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_sony_z3tw"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_z3tw"
+                 android:summary="@string/device_sony_z3tw_summary"
                  android:selectable="false" />
 
         </PreferenceCategory>

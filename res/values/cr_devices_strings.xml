@@ -82,14 +82,8 @@
     <string name="device_samsung_note4_summary">Trltexx \nMaintainer - Hildo Boerboom</string>
 
     <!-- Sony devices -->
-    <string name="device_sony_e3">Sony Xperia E3</string>
-    <string name="device_sony_e3_summary">Flamingo \nMaintainer - David Viteri</string>
-    <string name="device_sony_m2">Sony Xperia M2</string>
-    <string name="device_sony_m2_summary">Eagle \nMaintainer - David Viteri</string>
-    <string name="device_sony_t2u">Sony Xperia T2 Ultra</string>
-    <string name="device_sony_t2u_summary">Tianchi \nMaintainer - David Viteri</string>
-    <string name="device_sony_t3">Sony Xperia T3</string>
-    <string name="device_sony_t3_summary">Seagull \nMaintainer - David Viteri</string>
+    <string name="device_sony_m">Sony Xperia M</string>
+    <string name="device_sony_m_summary">Nicki \nMaintainer - David Viteri</string>
     <string name="device_sony_zu">Sony Xperia Z Ultra</string>
     <string name="device_sony_zu_summary">Togari \nMaintainer - David Viteri</string>
     <string name="device_sony_z1">Sony Xperia Z1</string>
@@ -98,9 +92,17 @@
     <string name="device_sony_z1c_summary">Amami \nMaintainer - David Viteri</string>
     <string name="device_sony_z2">Sony Xperia Z2</string>
     <string name="device_sony_z2_summary">Sirius \nMaintainer - David Viteri</string>
+    <string name="device_sony_z2t">Sony Xperia Z2 Tablet</string>
+    <string name="device_sony_z2t_summary">Castor \nMaintainer - David Viteri</string>
+    <string name="device_sony_z2tw">Sony Xperia Z2 Tablet Wifi</string>
+    <string name="device_sony_z2tw_summary">Castor_Windy \nMaintainer - David Viteri</string>
     <string name="device_sony_z3">Sony Xperia Z3</string>
     <string name="device_sony_z3_summary">Leo \nMaintainer - David Viteri</string>
     <string name="device_sony_z3c">Sony Xperia Z3 Compact</string>
     <string name="device_sony_z3c_summary">Aries \nMaintainer - David Viteri</string>
+    <string name="device_sony_z3t">Sony Xperia Z3 Tablet Compact</string>
+    <string name="device_sony_z3t_summary">Scorpion \nMaintainer - David Viteri</string>
+    <string name="device_sony_z3tw">Sony Xperia Z3 Tablet Compact Wifi </string>
+    <string name="device_sony_z3tw_summary">Scorpion_Windy \nMaintainer - David Viteri</string>
 
 </resources>
