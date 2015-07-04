@@ -18,6 +18,7 @@
 package com.android.settings;
 
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.app.ActivityManagerNative;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -144,6 +145,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private static final String ANIMATOR_DURATION_SCALE_KEY = "animator_duration_scale";
     private static final String OVERLAY_DISPLAY_DEVICES_KEY = "overlay_display_devices";
     private static final String DEBUG_DEBUGGING_CATEGORY_KEY = "debug_debugging_category";
+    private static final String DEBUG_DRAWING_CATEGORY_KEY = "debug_drawing_category";
     private static final String DEBUG_APPLICATIONS_CATEGORY_KEY = "debug_applications_category";
     private static final String WIFI_DISPLAY_CERTIFICATION_KEY = "wifi_display_certification";
     private static final String WIFI_VERBOSE_LOGGING_KEY = "wifi_verbose_logging";
@@ -152,6 +154,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private static final String SELECT_LOGD_SIZE_KEY = "select_logd_size";
     private static final String SELECT_LOGD_SIZE_PROPERTY = "persist.logd.size";
     private static final String SELECT_LOGD_DEFAULT_SIZE_PROPERTY = "ro.logd.size";
+
+    private static final String FORCE_HIGHEND_GFX_KEY = "pref_force_highend_gfx";
+    private static final String FORCE_HIGHEND_GFX_PERSIST_PROP = "persist.sys.force_highendgfx";
 
     private static final String OPENGL_TRACES_KEY = "enable_opengl_traces";
 
@@ -267,6 +272,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private SwitchPreference mAdvancedReboot;
 
+    private SwitchPreference mForceHighEndGfx;
+
     private SwitchPreference mDevelopmentShortcut;
 
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
@@ -344,6 +351,14 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mAdvancedReboot = findAndInitSwitchPref(ADVANCED_REBOOT_KEY);
         mDevelopmentShortcut = findAndInitSwitchPref(DEVELOPMENT_SHORTCUT_KEY);
 
+        final PreferenceGroup debugDrawingCategory = (PreferenceGroup)
+                findPreference(DEBUG_DRAWING_CATEGORY_KEY);
+
+        mForceHighEndGfx = findAndInitSwitchPref(FORCE_HIGHEND_GFX_KEY);
+        if (!ActivityManager.isLowRamDeviceStatic()) {
+            debugDrawingCategory.removePreference(mForceHighEndGfx);
+            mForceHighEndGfx = null;
+        }
 
         if (!android.os.Process.myUserHandle().equals(UserHandle.OWNER)) {
             disableForUser(mEnableAdb);
@@ -640,6 +655,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateRootAccessOptions();
         updateAdvancedRebootOptions();
         updateDevelopmentShortcutOptions();
+        if (mForceHighEndGfx != null) {
+            updateHighEndGfxOptions();
+        }
     }
 
     private void writeAdvancedRebootOptions() {
@@ -1539,6 +1557,18 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 .show();
     }
 
+    private void updateHighEndGfxOptions() {
+        updateSwitchPreference(mForceHighEndGfx,
+                SystemProperties.getBoolean(FORCE_HIGHEND_GFX_PERSIST_PROP,
+                false));
+    }
+
+    private void writeHighEndGfxOptions() {
+        SystemProperties.set(FORCE_HIGHEND_GFX_PERSIST_PROP,
+                mForceHighEndGfx.isChecked() ? "true" : "false");
+        pokeSystemProperties();
+    }
+
     @Override
     public void onSwitchChanged(Switch switchView, boolean isChecked) {
         if (switchView != mSwitchBar.getSwitch()) {
@@ -1735,6 +1765,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             writeDevelopmentShortcutOptions();
         } else if (preference == mKillAppLongpressBack) {
             writeKillAppLongpressBackOptions();
+        } else if (preference == mForceHighEndGfx) {
+            writeHighEndGfxOptions();
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
