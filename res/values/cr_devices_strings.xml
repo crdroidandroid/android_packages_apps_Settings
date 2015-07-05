@@ -46,10 +46,10 @@
     <string name="device_htc_one_x_summary">Endeavoru \nMaintainer - Hildo Boerboom</string>
 
     <!-- LG devices -->
-    <string name="device_lg_g2">LG g2</string>
-    <string name="device_lg_g2_summary">d80x,ls980,vs980 \nMaintainer - Hildo Boerboom</string>
-    <string name="device_lg_g3">LG g3</string>
-    <string name="device_lg_g3_summary">d85x,ls990,vs985 \nMaintainer - Hildo Boerboom</string>
+    <string name="device_lg_g2">LG G2</string>
+    <string name="device_lg_g2_summary">D80X - ls980 - vs980 \nMaintainer - Hildo Boerboom</string>
+    <string name="device_lg_g3">LG G3</string>
+    <string name="device_lg_g3_summary">D85X - ls990 - vs985 \nMaintainer - Hildo Boerboom</string>
 
     <!-- Motorola devices -->
     <string name="device_motorola_g2013">Motorola Moto G (2013)</string>
@@ -66,8 +66,8 @@
     <!-- Oppo devices -->
     <string name="device_oppo_find5">Oppo Find 5</string>
     <string name="device_oppo_find5_summary">Find5 \nMaintainer - Jerome Genevrois</string>
-    <string name="device_oppo_find7">Oppo Find 7/s</string>
-    <string name="device_oppo_find7_summary">Find7/s \nMaintainer - Jerome Genevrois</string>
+    <string name="device_oppo_find7">Oppo Find 7</string>
+    <string name="device_oppo_find7_summary">Find7 - Find7s \nMaintainer - Jerome Genevrois</string>
 
     <!-- Samsung devices -->
     <string name="device_samsung_s3">Samsung Galaxy S3</string>
@@ -93,16 +93,12 @@
     <string name="device_sony_z2">Sony Xperia Z2</string>
     <string name="device_sony_z2_summary">Sirius \nMaintainer - David Viteri</string>
     <string name="device_sony_z2t">Sony Xperia Z2 Tablet</string>
-    <string name="device_sony_z2t_summary">Castor \nMaintainer - David Viteri</string>
-    <string name="device_sony_z2tw">Sony Xperia Z2 Tablet Wifi</string>
-    <string name="device_sony_z2tw_summary">Castor_Windy \nMaintainer - David Viteri</string>
+    <string name="device_sony_z2t_summary">Castor - Castor_Windy \nMaintainer - David Viteri</string>
     <string name="device_sony_z3">Sony Xperia Z3</string>
     <string name="device_sony_z3_summary">Leo \nMaintainer - David Viteri</string>
     <string name="device_sony_z3c">Sony Xperia Z3 Compact</string>
     <string name="device_sony_z3c_summary">Aries \nMaintainer - David Viteri</string>
     <string name="device_sony_z3t">Sony Xperia Z3 Tablet Compact</string>
-    <string name="device_sony_z3t_summary">Scorpion \nMaintainer - David Viteri</string>
-    <string name="device_sony_z3tw">Sony Xperia Z3 Tablet Compact Wifi </string>
-    <string name="device_sony_z3tw_summary">Scorpion_Windy \nMaintainer - David Viteri</string>
+    <string name="device_sony_z3t_summary">Scorpion - Scorpion_Windy \nMaintainer - David Viteri</string>
 
 </resources>
