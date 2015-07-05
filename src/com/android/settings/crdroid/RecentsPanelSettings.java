@@ -372,7 +372,7 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
 
     private void updateDisableStockRecents() {
         boolean enabled = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.USE_SLIM_RECENTS, 1) == 1;
+                Settings.System.USE_SLIM_RECENTS, 0) == 1;
 
         updateRecentsOptions(!enabled);
     }
@@ -384,7 +384,7 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_STOCK_RECENTS);
 
         if (stockRecentsCategory != null) {
-            stockRecentsCategory.setEnabled(!enabled);
+            stockRecentsCategory.setEnabled(enabled);
         }
     }
 
