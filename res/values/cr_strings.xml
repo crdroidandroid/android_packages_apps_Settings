@@ -517,4 +517,8 @@
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
 
+    <!-- RAM bar -->
+    <string name="recents_show_membar_title">RAM memory bar</string>
+    <string name="recents_show_membar_summary">Show a bar with the device\'s available RAM memory</string>
+
 </resources>
