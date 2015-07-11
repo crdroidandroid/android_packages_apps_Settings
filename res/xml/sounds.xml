@@ -55,6 +55,12 @@
                 android:title="@string/notification_volume_option_title"
                 settings:advanced="true"/>
 
+        <!-- Volume Steps -->
+        <PreferenceScreen
+                android:key="volume_steps"
+                android:title="@string/volume_steps_title"
+                android:fragment="com.android.settings.crdroid.VolumeSteps" />
+
         <!-- Volume panel timeout -->
         <ListPreference
                 android:key="volume_panel_time_out"
