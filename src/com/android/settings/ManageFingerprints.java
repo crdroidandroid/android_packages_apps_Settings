@@ -28,6 +28,7 @@ import android.content.res.Resources;
 import android.hardware.fingerprint.Fingerprint;
 import android.os.Bundle;
 import android.service.fingerprint.FingerprintManager;
+import android.service.fingerprint.FingerprintManagerReceiver;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,7 +42,6 @@ import android.widget.TextView;
 
 import com.android.internal.widget.LockPatternUtils;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -88,7 +88,7 @@ public class ManageFingerprints extends SettingsActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        CharSequence msg = getText(R.string.lockpassword_choose_your_password_header);
+        CharSequence msg = getText(R.string.fingerprint_item_add_new_fingerprint);
         setTitle(msg);
 
         final boolean confirmCredentials = getIntent().getBooleanExtra(CONFIRM_CREDENTIALS, true);
@@ -113,13 +113,7 @@ public class ManageFingerprints extends SettingsActivity {
         boolean setFallback = getIntent().getBooleanExtra(
                 LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, false);
         if (setFallback) {
-            Intent fallBackIntent = new Intent().setClass(this,
-                    ChooseLockGeneric.InternalActivity.class);
-            fallBackIntent.putExtra(LockPatternUtils.LOCKSCREEN_BIOMETRIC_WEAK_FALLBACK, true);
-            fallBackIntent.putExtra(CONFIRM_CREDENTIALS, false);
-            fallBackIntent.putExtra(EXTRA_SHOW_FRAGMENT_TITLE,
-                    R.string.backup_lock_settings_picker_title);
-            fallBackIntent.putExtra(LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, true);
+            Intent fallBackIntent = createFallbackIntent();
             startActivityForResult(fallBackIntent, SET_FALLBACK);
         }
     }
@@ -149,11 +143,23 @@ public class ManageFingerprints extends SettingsActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
+    protected Intent createFallbackIntent() {
+        Intent fallBackIntent = new Intent().setClass(this,
+                ChooseLockGeneric.InternalActivity.class);
+        fallBackIntent.putExtra(LockPatternUtils.LOCKSCREEN_BIOMETRIC_WEAK_FALLBACK, true);
+        fallBackIntent.putExtra(LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, true);
+        fallBackIntent.putExtra(CONFIRM_CREDENTIALS, false);
+        fallBackIntent.putExtra(EXTRA_SHOW_FRAGMENT_TITLE,
+                R.string.backup_lock_settings_picker_title);
+        return fallBackIntent;
+    }
+
     public static class FingerprintListFragment extends Fragment {
         public static final int MAX_NUM_FINGERPRINTS = 5;
 
         private FingerprintAdapter mAdapter;
         private ListView mFingerList;
+        private TextView mManageFingerprintsTitle;
         private FingerprintManager mFpManager;
 
         // required constructor for fragments
@@ -169,15 +175,18 @@ public class ManageFingerprints extends SettingsActivity {
 
             mFpManager = (FingerprintManager) getActivity()
                     .getSystemService(Context.FINGERPRINT_SERVICE);
+            startListening();
         }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View v = inflater.inflate(R.layout.fingerprint_list, container, false);
+            View v = inflater.inflate(getLayoutResource(), container, false);
             mFingerList = (ListView) v.findViewById(R.id.list);
             mAdapter = new FingerprintAdapter(getActivity());
             mFingerList.setAdapter(mAdapter);
+            mFingerList.addFooterView(inflater.inflate(R.layout.fingerprint_list_footer,
+                    mFingerList, false), null, false);
             mFingerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -189,7 +198,23 @@ public class ManageFingerprints extends SettingsActivity {
                     }
                 }
             });
+            mManageFingerprintsTitle = (TextView) v.findViewById(R.id.manage_fingerprints);
+            updateTitle();
             return v;
+        }
+
+        @Override
+        public void onDestroy() {
+            mFpManager.stopListening();
+            super.onDestroy();
+        }
+
+        protected int getLayoutResource() {
+            return R.layout.fingerprint_list;
+        }
+
+        protected Intent getEnrollmentIntent() {
+            return EnrollFingerprint.createIntent(getActivity());
         }
 
         private void addFinger() {
@@ -198,9 +223,39 @@ public class ManageFingerprints extends SettingsActivity {
                 DialogFragment dialogFragment = MaxNumFingerprintsDialog.newInstance();
                 dialogFragment.show(getChildFragmentManager(), "MaxFingers");
             } else {
-
+                Intent intent = getEnrollmentIntent();
+                startActivity(intent);
             }
         }
+
+        private void startListening() {
+            mFpManager.startListening(new FingerprintManagerReceiver() {
+                @Override
+                public void onRemoved(int fingerprintId) {
+                    super.onRemoved(fingerprintId);
+                    if (mAdapter != null) {
+                        mAdapter.notifyDataSetChanged();
+                        updateTitle();
+                    }
+                }
+
+                @Override
+                public void onEnrollResult(int fingerprintId, int remaining) {
+                    super.onEnrollResult(fingerprintId, remaining);
+                    if (mAdapter != null && remaining == 0) {
+                        mAdapter.notifyDataSetChanged();
+                        updateTitle();
+                    }
+                }
+            });
+        }
+
+        private void updateTitle() {
+            mManageFingerprintsTitle.setText(
+                    String.format(getString(R.string.fingerprint_title_manage_fingerprints),
+                            mAdapter.getNumFingerprints(), MAX_NUM_FINGERPRINTS));
+        }
+
         public void doRename(Fingerprint fingerprint, String name) {
             mFpManager.setFingerprintName(fingerprint.getFingerId(), name);
             mAdapter.notifyDataSetChanged();
@@ -298,7 +353,7 @@ public class ManageFingerprints extends SettingsActivity {
                 }
                 Holder holder = (Holder) convertView.getTag();
                 holder.mName.setText(R.string.fingerprint_item_add_new_fingerprint);
-                holder.mImage.setImageResource(R.drawable.ic_add_black_18dp);
+                holder.mImage.setImageResource(R.drawable.ic_add_fingerprint);
 
                 if (mFingerprints.size() == FingerprintListFragment.MAX_NUM_FINGERPRINTS) {
                     holder.mImage.setAlpha(0.5f);
@@ -311,6 +366,10 @@ public class ManageFingerprints extends SettingsActivity {
             }
 
             return convertView;
+        }
+
+        public int getNumFingerprints() {
+            return mFingerprints.size();
         }
 
         private View createFingerprintView(ViewGroup parent) {
