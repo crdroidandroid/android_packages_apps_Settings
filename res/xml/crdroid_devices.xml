@@ -221,6 +221,13 @@
                  android:selectable="false" />
 
              <Preference
+                 android:key="device_sony_sp"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_sp"
+                 android:summary="@string/device_sony_sp_summary"
+                 android:selectable="false" />
+
+             <Preference
                  android:key="device_sony_zt"
                  android:icon="@drawable/cr_devices"
                  android:title="@string/device_sony_zt"
