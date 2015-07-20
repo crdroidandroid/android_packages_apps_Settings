@@ -28,6 +28,10 @@
     <string name="changelog_crdroid_title">Changelog</string>
     <string name="changelog_crdroid_error">Unable to load changelog</string>
 
+    <!-- Donation -->
+    <string name="crdroid_donation_title">Donations</string>
+    <string name="crdroid_donation_summary">If you like crDroid teamwork and you are considering a donation please click here</string>
+
     <!-- Maintainers -->
     <string name="maintainers_crdroid_title">crDroid maintainers</string>
     <string name="maintainers_crdroid_error">Unable to load maintainers list</string>
