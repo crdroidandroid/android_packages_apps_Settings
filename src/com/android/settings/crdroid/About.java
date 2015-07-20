@@ -41,6 +41,7 @@ public class About extends SettingsPreferenceFragment {
     Preference mSourceUrl;
     Preference mGoogleUrl;
     Preference mTranslationUrl;
+    Preference mDonationUrl;
     Preference mEvolvedUrl;
     Preference mNoRUrl;
 
@@ -53,6 +54,7 @@ public class About extends SettingsPreferenceFragment {
         mSourceUrl = findPreference("crdroid_source");
         mGoogleUrl = findPreference("crdroid_google_plus");
         mTranslationUrl = findPreference("crdroid_translation");
+        mDonationUrl = findPreference("crdroid_donation");
         mEvolvedUrl = findPreference("crdroid_theme_evolved");
         mNoRUrl = findPreference("crdroid_theme_nor");
     }
@@ -67,6 +69,8 @@ public class About extends SettingsPreferenceFragment {
             launchUrl("https://plus.google.com/u/0/communities/118297646046960923906");
         } else if (preference == mTranslationUrl) {
             launchUrl("https://oszgcaj.oneskyapp.com/collaboration");
+        } else if (preference == mDonationUrl) {
+            launchUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4ZFWHZX6HCSAQ");
         } else if (preference == mEvolvedUrl) {
             launchUrl("https://play.google.com/store/apps/details?id=com.cristianomatos.themecm12.evolved");
         } else if (preference == mNoRUrl) {

@@ -59,6 +59,10 @@
     <string name="crdroid_translation_title">Translations</string>
     <string name="crdroid_translation_summary">Help us with translations in your language</string>
 
+    <!-- Donation -->
+    <string name="crdroid_donation_title">Donations</string>
+    <string name="crdroid_donation_summary">If you like crDroid teamwork and you are considering a donation please click here</string>
+
     <!-- Sites crDroid -->
     <string name="sites_crdroid">WebSites crDroid</string>
     <string name="crdroid_website_title">Website</string>
