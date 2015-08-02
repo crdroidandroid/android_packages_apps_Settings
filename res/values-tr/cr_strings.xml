@@ -48,6 +48,9 @@
     <!-- Translation crDroid -->
     <string name="crdroid_translation_title">Çeviriler</string>
     <string name="crdroid_translation_summary">Kendi dilinizde çevirilerde bize yardımcı olun</string>
+    <!-- Donation -->
+    <string name="crdroid_donation_title">Bağışlar</string>
+    <string name="crdroid_donation_summary">Eğer crDroid takımını beğendiyseniz ve bir bağış yapmayı düşünüyorsanız lütfen buraya tıklayınız</string>
     <!-- Sites crDroid -->
     <string name="sites_crdroid">crDroid Web Sitesi</string>
     <string name="crdroid_website_title">Web Site</string>
@@ -458,4 +461,7 @@
     <string name="network_traffic_autohide">Otomatik gizle</string>
     <string name="network_traffic_autohide_summary">Herhangi bir etkinlik olmadığında trafik monitörü gizle</string>
     <string name="network_traffic_autohide_threshold">Hareketsizlik eşiği</string>
+    <!-- RAM bar -->
+    <string name="recents_show_membar_title">RAM belleği çubuğu</string>
+    <string name="recents_show_membar_summary">Cihazın kullanılabilir RAM belleğine ait bir çubuk göster</string>
 </resources>
