@@ -141,6 +141,7 @@
     <PreferenceScreen
         android:key="wakelock_blocker"
         android:fragment="com.android.settings.crdroid.WakeLockBlocker"
-        android:title="@string/wakelock_blocker_title" />
+        android:title="@string/wakelock_blocker_title"
+        android:icon="@drawable/ic_settings_battery" />
 
 </PreferenceScreen>
