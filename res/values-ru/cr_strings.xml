@@ -464,4 +464,6 @@
     <!-- RAM bar -->
     <string name="recents_show_membar_title">Панель ОЗУ</string>
     <string name="recents_show_membar_summary">Отображать панель со свободной ОЗУ</string>
+    <!-- Statusbar crDroid logo -->
+    <!-- Wakelock blocker -->
 </resources>

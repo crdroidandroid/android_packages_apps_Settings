@@ -28,7 +28,7 @@
     <string name="header_category_extra">Extra crDroid</string>
     <string name="category_extra">Paramètres avancés</string>
     <!-- Navigation warning -->
-    <string name="navigation_bar_warning_no_navigation_present">Aucun système de navigation est activé. si vous désactivez la barre de navigation ceci peut rendre votre téléphone inutilisable. Voulez vous plutôt activez le contrôle Pie?</string>
+    <string name="navigation_bar_warning_no_navigation_present">Aucun système de navigation est activé. si vous désactivez la barre de navigation ceci peut rendre votre téléphone inutilisable. Voulez vous plutôt activez les contrôles Pie?</string>
     <!-- About crDroid -->
     <string name="about_crdroid">A propos de crDroid</string>
     <!-- Changelog -->
@@ -70,7 +70,7 @@
     <string name="navigation_bar_height_title">Hauteur barre de navigation</string>
     <string name="navigation_bar_height_summary">Hauteur barre de navigation en mode portrait</string>
     <string name="navigation_bar_width_title">Largeur barre de navigation</string>
-    <string name="navigation_bar_width_summary">Largeur barre de navigation en mode portrait</string>
+    <string name="navigation_bar_width_summary">Largeur barre de navigation en mode paysage</string>
     <string name="navigation_bar_size_42_dp_default">42 dp (par défaut)</string>
     <string name="navigation_bar_size_36_dp">36 dp</string>
     <string name="navigation_bar_size_30_dp">30 dp</string>
@@ -346,8 +346,10 @@
     <string name="doze_pulse_duration_visible_title">Durée de visibilité</string>
     <string name="doze_pulse_duration_out_title">Temps d\'extinction</string>
     <string name="doze_pulse_on_notifications_title">Clignotement pour les notifications</string>
+    <string name="doze_pulse_on_notifications_summary">Seuil d\'activation pendant les notifications</string>
     <string name="doze_shake_title">Paramètres de secouage</string>
     <string name="doze_shake_mode_title">Mode secouer</string>
+    <string name="doze_shake_mode_summary">Utiliser les capteurs de mouvements pour le seuil d\'activation</string>
     <string name="doze_shake_mode_test_summary">Voulez vous tester le capteur de mouvements?</string>
     <string name="doze_shake_mode_test_result">Appliquer la valeur actuelle?</string>
     <string name="doze_shake_test">Secoue ton téléphone maintenant</string>
@@ -387,19 +389,22 @@
     <string name="shake_pulse_mode">Secouer et clignotement</string>
     <string name="pulse_only_mode">Clignotement (par défaut)</string>
     <string name="doze_brightness_title">Niveau de luminosité des impulsions</string>
+    <string name="doze_brightness_summary">Niveau de luminosité des impulsions de l\'écran (% du maximum autorisé)</string>
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">CPU</string>
     <string name="mem_info">RAM</string>
     <!-- Superuser indicator on status bar -->
     <string name="su_indicator">Indicateur Superuser</string>
-    <string name="su_indicator_summary">Affiche l\'indicateur superuser dans la statut barre quand une session est active</string>
+    <string name="su_indicator_summary">Affiche l\'indicateur superuser dans la barre d\'état quand une session est active</string>
     <!-- Host File Manager -->
     <string name="hfm_disable_ads_title">Désactiver Ads</string>
+    <string name="hfm_disable_ads_summary">Changer le fichier host pour désactiver les annonces</string>
     <string name="hfm_pref_screen_title">Ad Blocker</string>
     <string name="hfm_update_hosts">Mettre à jour le fichier hosts</string>
     <string name="hfm_update_hosts_summary">Télécharger et appliquer le nouveau fichier hosts</string>
     <string name="hfm_dialog_wait">En cours, patientez svp...</string>
     <string name="hfm_dialog_failed">La mise à jour du fichier hosts à échoué. Recommencer l\'opération s\'il vous plaît.</string>
+    <string name="hfm_dialog_success">/4 sources de l\'hôte appliqué avec succés</string>
     <string name="hfm_dialog_conn_error">Erreur: Pas de connection réseau</string>
     <string name="hfm_dialog_title">Mise à jour de hosts en cours</string>
     <!-- Recent panel -->
@@ -409,6 +414,7 @@
     <string name="recents_max_apps_title">Maximum d\'applications autorisées</string>
     <string name="recent_panel_scale_title">Taille</string>
     <string name="recent_panel_expanded_mode_title">Mode étendu</string>
+    <string name="recent_panel_expanded_mode_summary">Prévisualisation des tâches récentes en mode élargie</string>
     <string name="recent_panel_expanded_mode_auto">Automatique (par défaut)</string>
     <string name="recent_panel_expanded_mode_always">Toujours</string>
     <string name="recent_panel_expanded_mode_never">Jamais</string>
@@ -428,6 +434,7 @@
     <string name="advanced_category">Avancé</string>
     <string name="title_keyboard_input">Options avancés</string>
     <string name="disable_fullscreen_keyboard_title">Désactiver le clavier en mode plein écran</string>
+    <string name="disable_fullscreen_keyboard_summary">Le clavier en mode paysage ne prendra pas tout l\'écran</string>
     <string name="keyboard_rotation_toggle_title">Rotation automatique du clavier</string>
     <string name="keyboard_rotation_toggle_summary">Forcer rotation automatique quand le clavier est visible</string>
     <string name="keyboard_rotation_timeout_title">Délai avant rotation automatique</string>
@@ -457,4 +464,15 @@
     <!-- RAM bar -->
     <string name="recents_show_membar_title">Barre utilisation mémoire RAM</string>
     <string name="recents_show_membar_summary">Affiche une barre indiquant la mémoire RAM du téléphone disponible</string>
+    <!-- Statusbar crDroid logo -->
+    <string name="status_bar_crdroid_logo_title">Logo crDroid</string>
+    <string name="status_bar_crdroid_logo_summary">Activé pour voir le logo crDroid dans la barre d\'état</string>
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker_title">Bloqueur de Wakelock</string>
+    <string name="wakelock_blocker_summary">Bloqué les Wakelocks système</string>
+    <string name="wakelock_blocker_save">Sauvegarder</string>
+    <string name="wakelock_list_header">Wakelocks disponibles</string>
+    <string name="wakelock_blocker_reload">Recharger</string>
+    <string name="wakelock_blocker_warning_title">Procéder avec prudence</string>
+    <string name="wakelock_blocker_warning">Bloquer des Wakelocks peut provoquer des instabilités, plantage du système ou perte de données</string>
 </resources>
