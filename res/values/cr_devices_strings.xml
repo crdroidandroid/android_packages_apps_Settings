@@ -27,6 +27,7 @@
     <string name="device_category_motorola_title">MOTOROLA</string>
     <string name="device_category_oneplus_title">ONE PLUS</string>
     <string name="device_category_oppo_title">OPPO</string>
+    <string name="device_category_yu_title">YU</string>
 
     <!-- Devices and Maintainers -->
     <!-- Google devices -->
@@ -104,5 +105,9 @@
     <string name="device_sony_z3c_summary">Aries \nMaintainer - David Viteri</string>
     <string name="device_sony_z3t">Sony Xperia Z3 Tablet Compact</string>
     <string name="device_sony_z3t_summary">Scorpion - Scorpion_Windy \nMaintainer - David Viteri</string>
+  
+       <!-- YU devices -->
+    <string name="device_yu_tomato">YU Yureka</string>
+    <string name="device_yu_tomato_summary">Tomato \nMaintainer - Devesh Negi</string>    
 
 </resources>
