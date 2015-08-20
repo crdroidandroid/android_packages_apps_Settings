@@ -109,6 +109,13 @@
              android:title="@string/device_category_motorola_title" >
 
              <Preference
+                 android:key="device_motorola_e"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_motorola_e"
+                 android:summary="@string/device_motorola_e_summary"
+                 android:selectable="false" />
+
+             <Preference
                  android:key="device_motorola_g2013"
                  android:icon="@drawable/cr_devices"
                  android:title="@string/device_motorola_g2013"
@@ -288,6 +295,27 @@
                  android:icon="@drawable/cr_devices"
                  android:title="@string/device_sony_z3t"
                  android:summary="@string/device_sony_z3t_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
+        <!-- YU devices -->
+        <PreferenceCategory
+             android:key="device_category_yu"
+             android:title="@string/device_category_yu_title" >
+
+             <Preference
+                 android:key="device_yu_yureka"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_yu_yureka"
+                 android:summary="@string/device_yu_yureka_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_yu_yuphoria"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_yu_yuphoria"
+                 android:summary="@string/device_yu_yuphoria_summary"
                  android:selectable="false" />
 
         </PreferenceCategory>

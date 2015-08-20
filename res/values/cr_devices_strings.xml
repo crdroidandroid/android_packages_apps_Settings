@@ -27,6 +27,7 @@
     <string name="device_category_motorola_title">MOTOROLA</string>
     <string name="device_category_oneplus_title">ONE PLUS</string>
     <string name="device_category_oppo_title">OPPO</string>
+    <string name="device_category_yu_title">YU</string>
 
     <!-- Devices and Maintainers -->
     <!-- Google devices -->
@@ -52,6 +53,8 @@
     <string name="device_lg_g3_summary">D85X - ls990 - vs985 \nMaintainer - Hildo Boerboom</string>
 
     <!-- Motorola devices -->
+    <string name="device_motorola_e">Motorola Moto E</string>
+    <string name="device_motorola_e_summary">Condor \nMaintainer - Vatsal Koradia</string>
     <string name="device_motorola_g2013">Motorola Moto G (2013)</string>
     <string name="device_motorola_g2013_summary">Falcon \nMaintainer - Shawn Wahi</string>
     <string name="device_motorola_g2014">Motorola Moto G (2014)</string>
@@ -104,5 +107,11 @@
     <string name="device_sony_z3c_summary">Aries \nMaintainer - David Viteri</string>
     <string name="device_sony_z3t">Sony Xperia Z3 Tablet Compact</string>
     <string name="device_sony_z3t_summary">Scorpion - Scorpion_Windy \nMaintainer - David Viteri</string>
+
+    <!-- YU devices -->
+    <string name="device_yu_yureka">YU Yureka</string>
+    <string name="device_yu_yureka_summary">Tomato \nMaintainer - Devesh Negi</string>
+    <string name="device_yu_yuphoria">YU Yuphoria</string>
+    <string name="device_yu_yuphoria_summary">Lettuce \nMaintainer - Aniruddh Chandratre</string>
 
 </resources>
