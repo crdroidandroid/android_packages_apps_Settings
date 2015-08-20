@@ -292,4 +292,19 @@
 
         </PreferenceCategory>
 
+        <!-- YU devices -->
+        <PreferenceCategory
+             android:key="device_category_yu"
+             android:title="@string/device_category_yu_title" >
+
+             <Preference
+                 android:key="device_yu_tomato"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_yu_tomato"
+                 android:summary="@string/device_yu_tomato_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
+
 </PreferenceScreen> 
