@@ -34,15 +34,19 @@
     <string name="device_google_n4">Google Nexus 4</string>
     <string name="device_google_n4_summary">Mako \nMaintainer - Hildo Boerboom</string>
     <string name="device_google_n5">Google Nexus 5</string>
-    <string name="device_google_n5_summary">Hammerhead \nMaintainer - Cristiano Matos</string>
+    <string name="device_google_n5_summary">Hammerhead \nMaintainer - Hildo Boerboom</string>
     <string name="device_google_n6">Google Nexus 6</string>
-    <string name="device_google_n6_summary">Shamu \nMaintainer - Hildo Boerboom</string>
+    <string name="device_google_n6_summary">Shamu \nMaintainer - Jerome Genevrois</string>
 
     <!-- Htc devices -->
     <string name="device_htc_m7">Htc M7</string>
     <string name="device_htc_m7_summary">M7 \nMaintainer - Benoit Grain</string>
     <string name="device_htc_m8">Htc M8</string>
     <string name="device_htc_m8_summary">M8 \nMaintainer - Hildo Boerboom</string>
+    <string name="device_htc_m9">Htc M9</string>
+    <string name="device_htc_m9_summary">Himaul \nMaintainer - Hildo Boerboom</string>
+    <string name="device_htc_desire_eye">Htc Desire Eye</string>
+    <string name="device_htc_desire_eye_summary">Eyeul \nMaintainer - Hildo Boerboom</string>
     <string name="device_htc_one_x">Htc One X</string>
     <string name="device_htc_one_x_summary">Endeavoru \nMaintainer - Hildo Boerboom</string>
 
@@ -57,14 +61,18 @@
     <string name="device_motorola_e_summary">Condor \nMaintainer - Vatsal Koradia</string>
     <string name="device_motorola_g2013">Motorola Moto G (2013)</string>
     <string name="device_motorola_g2013_summary">Falcon \nMaintainer - Shawn Wahi</string>
+    <string name="device_motorola_g2013_4g">Motorola Moto G4G (2013)</string>
+    <string name="device_motorola_g2013_4g_summary">Peregrine \nMaintainer - Hildo Boerboom</string>
     <string name="device_motorola_g2014">Motorola Moto G (2014)</string>
     <string name="device_motorola_g2014_summary">Titan \nMaintainer - Shawn Wahi</string>
+    <string name="device_motorola_x2013">Motorola Moto X (2013)</string>
+    <string name="device_motorola_x2013_summary">Ghost \nMaintainer - Hildo Boerboom</string>
     <string name="device_motorola_x2014">Motorola Moto X (2014)</string>
     <string name="device_motorola_x2014_summary">Victara \nMaintainer - Hildo Boerboom</string>
 
     <!-- One plus devices -->
     <string name="device_oneplus_bacon">One Plus One</string>
-    <string name="device_oneplus_bacon_summary">Bacon \nMaintainer - Shawn Wahi</string>
+    <string name="device_oneplus_bacon_summary">Bacon \nMaintainer - Jerome Genevrois</string>
 
     <!-- Oppo devices -->
     <string name="device_oppo_find5">Oppo Find 5</string>
@@ -75,10 +83,12 @@
     <!-- Samsung devices -->
     <string name="device_samsung_s3">Samsung Galaxy S3</string>
     <string name="device_samsung_s3_summary">I9300 \nMaintainer - Cristiano Matos</string>
-    <string name="device_samsung_s4">Samsung Galaxy S4</string>
-    <string name="device_samsung_s4_summary">Jfltexx \nMaintainer - Jerome Genevrois</string>
+    <string name="device_samsung_s4_i9505">Samsung Galaxy S4 i9505</string>
+    <string name="device_samsung_s4_i9505_summary">Jfltexx \nMaintainer - Jerome Genevrois</string>
+    <string name="device_samsung_s4_i9500">Samsung Galaxy S4 i9500</string>
+    <string name="device_samsung_s4_i9500_summary">I9500 \nMaintainer - Hildo Boerboom</string>
     <string name="device_samsung_s5">Samsung Galaxy S5</string>
-    <string name="device_samsung_s5_summary">Klte \nMaintainer - Shawn Wahi</string>
+    <string name="device_samsung_s5_summary">Klte \nMaintainer - Hildo Boerboom</string>
     <string name="device_samsung_note3">Samsung Galaxy Note 3</string>
     <string name="device_samsung_note3_summary">Hlte \nMaintainer - Hildo Boerboom</string>
     <string name="device_samsung_note4">Samsung Galaxy Note 4</string>

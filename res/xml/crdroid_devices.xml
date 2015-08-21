@@ -74,6 +74,20 @@
                  android:selectable="false" />
 
              <Preference
+                 android:key="device_htc_m9"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_htc_m9"
+                 android:summary="@string/device_htc_m9_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_htc_desire_eye"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_htc_desire_eye"
+                 android:summary="@string/device_htc_desire_eye_summary"
+                 android:selectable="false" />
+
+             <Preference
                  android:key="device_htc_one-x"
                  android:icon="@drawable/cr_devices"
                  android:title="@string/device_htc_one_x"
@@ -123,10 +137,24 @@
                  android:selectable="false" />
 
              <Preference
+                 android:key="device_motorola_g2013_4g"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_motorola_g2013_4g"
+                 android:summary="@string/device_motorola_g2013_4g_summary"
+                 android:selectable="false" />
+
+             <Preference
                  android:key="device_motorola_g2014"
                  android:icon="@drawable/cr_devices"
                  android:title="@string/device_motorola_g2014"
                  android:summary="@string/device_motorola_g2014_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_motorola_x2013"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_motorola_x2013"
+                 android:summary="@string/device_motorola_x2013_summary"
                  android:selectable="false" />
 
              <Preference
@@ -186,10 +214,17 @@
                  android:selectable="false" />
 
              <Preference
-                 android:key="device_samsung_s4"
+                 android:key="device_samsung_s4_i9505"
                  android:icon="@drawable/cr_devices"
-                 android:title="@string/device_samsung_s4"
-                 android:summary="@string/device_samsung_s4_summary"
+                 android:title="@string/device_samsung_s4_i9505"
+                 android:summary="@string/device_samsung_s4_i9505_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_samsung_s4_i9500"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_samsung_s4_i9500"
+                 android:summary="@string/device_samsung_s4_i9500_summary"
                  android:selectable="false" />
 
              <Preference
