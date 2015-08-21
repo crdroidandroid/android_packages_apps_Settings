@@ -89,6 +89,8 @@
     <string name="device_sony_m_summary">Nicki \nMaintainer - David Viteri</string>
     <string name="device_sony_sp">Sony Xperia SP</string>
     <string name="device_sony_sp_summary">Huashan \nMaintainer - David Viteri</string>
+    <string name="device_sony_z">Sony Xperia Z</string>
+    <string name="device_sony_z_summary">Yuga \nMaintainer - David Viteri</string>
     <string name="device_sony_zt">Sony Xperia Z Tablet</string>
     <string name="device_sony_zt_summary">Pollux - Pollux_Windy \nMaintainer - David Viteri</string>
     <string name="device_sony_zu">Sony Xperia Z Ultra</string>
