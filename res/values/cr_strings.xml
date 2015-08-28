@@ -97,4 +97,8 @@
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
 
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Toast icon</string>
+    <string name="toast_icon_summary">Choice if show or not apps icon on toast</string>
+
 </resources>
