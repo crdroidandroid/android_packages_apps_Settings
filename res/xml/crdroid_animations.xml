@@ -24,6 +24,12 @@
         android:key="crdroid_animations"
         android:title="@string/crdroid_animations_title" >
 
+        <!-- Toast icon switcher -->
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:defaultValue="true" />
+
         <!-- Toast Animation -->
         <ListPreference
             android:key="toast_animation"

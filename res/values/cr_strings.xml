@@ -602,4 +602,7 @@
     <string name="system_app_remover">System App Remover</string>
     <string name="systemappremover_summary">Remove system apps by your own risk</string>
 
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Toast icon</string>
+
 </resources>
