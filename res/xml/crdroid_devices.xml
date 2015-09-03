@@ -137,6 +137,13 @@
                  android:selectable="false" />
 
              <Preference
+                 android:key="device_motorola_g2014"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_motorola_g2014"
+                 android:summary="@string/device_motorola_g2014_summary"
+                 android:selectable="false" />
+
+             <Preference
                  android:key="device_motorola_g2013_4g"
                  android:icon="@drawable/cr_devices"
                  android:title="@string/device_motorola_g2013_4g"
@@ -144,10 +151,10 @@
                  android:selectable="false" />
 
              <Preference
-                 android:key="device_motorola_g2014"
+                 android:key="device_motorola_g2014_4g"
                  android:icon="@drawable/cr_devices"
-                 android:title="@string/device_motorola_g2014"
-                 android:summary="@string/device_motorola_g2014_summary"
+                 android:title="@string/device_motorola_g2014_4g"
+                 android:summary="@string/device_motorola_g2014_4g_summary"
                  android:selectable="false" />
 
              <Preference

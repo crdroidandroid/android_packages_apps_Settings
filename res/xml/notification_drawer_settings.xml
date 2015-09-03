@@ -37,6 +37,12 @@
         android:summary="@string/notification_force_expand_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="status_bar_custom_header"
+        android:title="@string/status_bar_custom_header_title"
+        android:summary="@string/status_bar_custom_header_summary"
+        android:defaultValue="false"/>
+
     <PreferenceCategory
         android:title="@string/qs_category_title">
 
@@ -84,12 +90,6 @@
             android:key="block_on_secure_keyguard"
             android:title="@string/block_on_secure_keyguard_title"
             android:summary="@string/block_on_secure_keyguard_summary" />
-
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-            android:key="status_bar_custom_header"
-            android:title="@string/status_bar_custom_header_title"
-            android:summary="@string/status_bar_custom_header_summary"
-            android:defaultValue="false"/>
 
     </PreferenceCategory>
 
