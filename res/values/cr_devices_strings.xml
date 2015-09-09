@@ -57,12 +57,16 @@
     <string name="device_lg_g3_summary">D85X - ls990 - vs985 \nMaintainer - Hildo Boerboom</string>
 
     <!-- Motorola devices -->
-    <string name="device_motorola_e">Motorola Moto E</string>
-    <string name="device_motorola_e_summary">Condor \nMaintainer - Vatsal Koradia</string>
+    <string name="device_motorola_e2014">Motorola Moto E (2014)</string>
+    <string name="device_motorola_e2014_summary">Condor \nMaintainer - Vatsal Koradia</string>
+    <string name="device_motorola_e2015">Motorola Moto E (2015)</string>
+    <string name="device_motorola_e2015_summary">Otus \nMaintainer - Vatsal Koradia</string>
     <string name="device_motorola_g2013">Motorola Moto G (2013)</string>
-    <string name="device_motorola_g2013_summary">Falcon \nMaintainer - Shawn Wahi</string>
+    <string name="device_motorola_g2013_summary">Falcon \nMaintainer - Benoit Grain</string>
     <string name="device_motorola_g2014">Motorola Moto G (2014)</string>
-    <string name="device_motorola_g2014_summary">Titan \nMaintainer - Shawn Wahi</string>
+    <string name="device_motorola_g2014_summary">Titan \nMaintainer - Vatsal Koradia</string>
+    <string name="device_motorola_g2015">Motorola Moto G (2015)</string>
+    <string name="device_motorola_g2015_summary">Osprey \nMaintainer - Vatsal Koradia</string>
     <string name="device_motorola_g2013_4g">Motorola Moto G 4G (2013)</string>
     <string name="device_motorola_g2013_4g_summary">Peregrine \nMaintainer - Hildo Boerboom</string>
     <string name="device_motorola_g2014_4g">Motorola Moto G 4G (2014)</string>
