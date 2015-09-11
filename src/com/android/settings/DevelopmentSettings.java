@@ -1966,6 +1966,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 mSwitchBar.setChecked(false);
             }
             mEnableDialog = null;
+        } else if (dialog == mRootDialog) {
+            updateRootAccessOptions();
+            mRootDialog = null;
         }
     }
 
