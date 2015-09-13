@@ -126,13 +126,12 @@
     <!-- Button shorcut actions -->
     <string name="shortcut_action_back">Back</string>
     <string name="shortcut_action_app">Custom app</string>
-    <string name="shortcut_action_expanded_desktop">Expanded desktop</string>
     <string name="shortcut_action_home">Home</string>
     <string name="shortcut_action_kill">Kill app</string>
     <string name="shortcut_action_lastapp">Last app</string>
     <string name="shortcut_action_navbar">Navigation bar</string>
     <string name="shortcut_action_notifications">Notifications</string>
-    <string name="shortcut_action_menu_big">Menu</string>
+    <string name="shortcut_action_menu_big">Menu Big</string>
     <string name="shortcut_action_ime">Open IME Switcher</string>
     <string name="shortcut_action_power_menu">Power menu</string>
     <string name="shortcut_action_qs">Quicksettings panel</string>
@@ -145,7 +144,6 @@
     <string name="shortcut_action_screenshot">Screenshot</string>
     <string name="shortcut_action_assist">Search</string>
     <string name="shortcut_action_search">Search in app</string>
-    <string name="shortcut_action_theme_switch">Theme switcher</string>
     <string name="shortcut_action_torch">Torch</string>
     <string name="shortcut_action_voice_search">Voice search</string>
     <string name="shortcut_action_none">None</string>
