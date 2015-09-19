@@ -46,18 +46,6 @@
             android:summary="@string/navbar_enable_bar_summary"
             android:defaultValue="false" />
 
-        <PreferenceScreen
-            android:key="navbar_dimensions"
-            android:fragment="com.android.settings.crdroid.NavBarDimensions"
-            android:title="@string/navbar_style_dimen_title"
-            android:dependency="enable_nav_bar" />
-
-        <PreferenceScreen
-            android:key="slim_dim"
-            android:fragment="com.android.settings.crdroid.SlimDim"
-            android:title="@string/dim_nav_buttons_category"
-            android:dependency="enable_nav_bar" />
-
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="navigation_bar_left"
             android:title="@string/navigation_bar_left_title"
@@ -71,6 +59,18 @@
             android:summary="@string/navigation_bar_arrow_keys_summary"
             android:defaultValue="false"
             settings:advanced="true"
+            android:dependency="enable_nav_bar" />
+
+        <PreferenceScreen
+            android:key="navbar_dimensions"
+            android:fragment="com.android.settings.crdroid.NavBarDimensions"
+            android:title="@string/navbar_style_dimen_title"
+            android:dependency="enable_nav_bar" />
+
+        <PreferenceScreen
+            android:key="slim_dim"
+            android:fragment="com.android.settings.crdroid.SlimDim"
+            android:title="@string/dim_nav_buttons_category"
             android:dependency="enable_nav_bar" />
 
         <PreferenceScreen
