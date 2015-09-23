@@ -298,6 +298,20 @@
                  android:selectable="false" />
 
              <Preference
+                 android:key="device_sony_zl"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_zl"
+                 android:summary="@string/device_sony_zl_summary"
+                 android:selectable="false" />
+
+             <Preference
+                 android:key="device_sony_zr"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_zr"
+                 android:summary="@string/device_sony_zr_summary"
+                 android:selectable="false" />
+
+             <Preference
                  android:key="device_sony_zt"
                  android:icon="@drawable/cr_devices"
                  android:title="@string/device_sony_zt"
