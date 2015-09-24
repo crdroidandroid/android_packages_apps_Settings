@@ -52,12 +52,6 @@
         android:key="sites"
         android:title="@string/sites_crdroid">
 
-        <!-- crDroid Website -->
-        <Preference
-            android:key="crdroid_website"
-            android:title="@string/crdroid_website_title"
-            android:summary="@string/crdroid_website_summary" />
-
         <!-- crDroid Github -->
         <Preference
             android:key="crdroid_source"

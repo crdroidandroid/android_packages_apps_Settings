@@ -37,7 +37,6 @@ public class About extends SettingsPreferenceFragment {
 
     private static final String KEY_CRDROID_SHARE = "share";
 
-    Preference mSiteUrl;
     Preference mSourceUrl;
     Preference mGoogleUrl;
     Preference mTranslationUrl;
@@ -50,7 +49,6 @@ public class About extends SettingsPreferenceFragment {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.crdroid_about);
 
-        mSiteUrl = findPreference("crdroid_website");
         mSourceUrl = findPreference("crdroid_source");
         mGoogleUrl = findPreference("crdroid_google_plus");
         mTranslationUrl = findPreference("crdroid_translation");
@@ -61,9 +59,7 @@ public class About extends SettingsPreferenceFragment {
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mSiteUrl) {
-            launchUrl("http://www.crdroid.org/");
-        } else if (preference == mSourceUrl) {
+        if (preference == mSourceUrl) {
             launchUrl("https://github.com/crdroidandroid");
         } else if (preference == mGoogleUrl) {
             launchUrl("https://plus.google.com/u/0/communities/118297646046960923906");

@@ -65,8 +65,6 @@
 
     <!-- Sites crDroid -->
     <string name="sites_crdroid">WebSites crDroid</string>
-    <string name="crdroid_website_title">Website</string>
-    <string name="crdroid_website_summary">Visit our website</string>
     <string name="crdroid_source_title">Github</string>
     <string name="crdroid_source_summary">Visit our source git team</string>
     <string name="crdroid_google_plus_title">Google+</string>
