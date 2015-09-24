@@ -31,7 +31,7 @@ import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 
-import com.android.internal.util.crdroid.Action;
+import com.android.internal.util.slim.Action;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;

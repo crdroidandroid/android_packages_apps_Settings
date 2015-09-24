@@ -51,7 +51,7 @@ import android.view.WindowManagerGlobal;
 
 import com.android.internal.util.cm.ScreenType;
 import com.android.internal.util.crdroid.CrUtils;
-import com.android.internal.util.crdroid.Action;
+import com.android.internal.util.slim.Action;
 
 import com.android.settings.cyanogenmod.ButtonBacklightBrightness;
 
