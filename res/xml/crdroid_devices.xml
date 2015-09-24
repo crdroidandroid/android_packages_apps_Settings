@@ -277,6 +277,13 @@
              android:title="@string/device_category_sony_title" >
 
              <Preference
+                 android:key="device_sony_l"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_sony_l"
+                 android:summary="@string/device_sony_l_summary"
+                 android:selectable="false" />
+
+             <Preference
                  android:key="device_sony_m"
                  android:icon="@drawable/cr_devices"
                  android:title="@string/device_sony_m"

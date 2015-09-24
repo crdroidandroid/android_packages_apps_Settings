@@ -101,6 +101,8 @@
     <string name="device_samsung_note4_summary">Trltexx \nMaintainer - Hildo Boerboom</string>
 
     <!-- Sony devices -->
+    <string name="device_sony_l">Sony Xperia L</string>
+    <string name="device_sony_l_summary">Taoshan \nMaintainer - David Viteri</string>
     <string name="device_sony_m">Sony Xperia M</string>
     <string name="device_sony_m_summary">Nicki \nMaintainer - David Viteri</string>
     <string name="device_sony_sp">Sony Xperia SP</string>
