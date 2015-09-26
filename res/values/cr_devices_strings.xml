@@ -37,6 +37,8 @@
     <string name="device_google_n5_summary">Hammerhead \nMaintainer - Hildo Boerboom</string>
     <string name="device_google_n6">Google Nexus 6</string>
     <string name="device_google_n6_summary">Shamu \nMaintainer - Jerome Genevrois</string>
+    <string name="device_google_sprout4">Android One 1st Generation 4GB</string>
+    <string name="device_google_sprout4_summary">Sprout4 \nMaintainer - akhilnarang</string>
 
     <!-- Htc devices -->
     <string name="device_htc_m7">Htc M7</string>
