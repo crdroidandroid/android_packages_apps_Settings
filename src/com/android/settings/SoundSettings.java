@@ -49,7 +49,6 @@ import android.provider.MediaStore;
 import android.provider.OpenableColumns;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
@@ -334,9 +333,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
     // === Phone & notification ringtone ===
 
     private void initRingtones(PreferenceCategory root) {
+        boolean isOwner = Utils.isUserOwner();
         DefaultRingtonePreference phoneRingtonePreference =
                 (DefaultRingtonePreference) root.findPreference(KEY_PHONE_RINGTONE);
-        if (phoneRingtonePreference != null && !mVoiceCapable) {
+        if (phoneRingtonePreference != null && (!mVoiceCapable || !isOwner)) {
             root.removePreference(phoneRingtonePreference);
             mPhoneRingtonePreferences = null;
         } else {
@@ -468,7 +468,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
             Log.i(TAG, "Preference not found: " + KEY_VIBRATE_WHEN_RINGING);
             return;
         }
-        if (!mVoiceCapable) {
+        if (!mVoiceCapable || !Utils.isUserOwner()) {
             root.removePreference(mVibrateWhenRinging);
             mVibrateWhenRinging = null;
             return;
