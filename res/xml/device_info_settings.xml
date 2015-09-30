@@ -18,7 +18,7 @@
         android:title="@string/about_settings">
 
         <!-- Advanced mode -->
-        <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+        <com.android.settings.cyanogenmod.CMSecureSettingSwitchPreference
             android:key="advanced_mode"
             android:title="@string/advanced_mode_title"
             android:summary="@string/advanced_mode_summary" />
