@@ -613,4 +613,8 @@
     <string name="heads_up_time_out_10sec">10 seconds</string>
     <string name="heads_up_time_out_never">Never</string>
 
+    <!-- Ticker -->
+    <string name="status_bar_ticker_title">Notification Ticker</string>
+    <string name="status_bar_ticker_summary">Notification text animation in the statusbar</string>
+
 </resources>
