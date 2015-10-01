@@ -16,6 +16,13 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <ListPreference
+            android:key="heads_up_global_switch"
+            android:title="@string/heads_up_global_switch_title"
+            android:entries="@array/heads_up_global_switch_entries"
+            android:entryValues="@array/heads_up_global_switch_values"
+            android:persistent="false" />
+
     <PreferenceCategory
         android:key="heads_up_notification"
         android:title="@string/heads_up_title" >

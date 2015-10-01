@@ -588,4 +588,16 @@
         <item>10000</item>
     </string-array>
 
+    <string-array name="heads_up_global_switch_entries">
+        <item>@string/heads_up_global_switch_disabled</item>
+        <item>@string/heads_up_global_switch_perapp</item>
+        <item>@string/heads_up_global_switch_forced</item>
+    </string-array>
+
+    <string-array name="heads_up_global_switch_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 </resources>

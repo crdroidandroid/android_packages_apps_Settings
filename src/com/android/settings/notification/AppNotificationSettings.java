@@ -144,7 +144,11 @@ public class AppNotificationSettings extends SettingsPreferenceFragment {
         mSensitive = (SwitchPreference) findPreference(KEY_SENSITIVE);
         mShowOnKeyguard = (SwitchPreference) findPreference(KEY_SHOW_ON_KEYGUARD);
         mShowNoOngoingOnKeyguard = (SwitchPreference) findPreference(KEY_NO_ONGOING_ON_KEYGUARD);
+
+        final int headsUpGlobalSwitch = Settings.System.getInt(getContentResolver(),
+                Settings.System.HEADS_UP_GLOBAL_SWITCH, 1);
         mHeadsUp = (SwitchPreference) findPreference(KEY_HEADS_UP);
+        updateHeadsUpSummary(headsUpGlobalSwitch);
 
         final boolean secure = new LockPatternUtils(getActivity()).isSecure();
         final boolean enabled = getLockscreenNotificationsEnabled();
@@ -290,5 +294,29 @@ public class AppNotificationSettings extends SettingsPreferenceFragment {
             }
         }
         return null;
+    }
+
+    private void updateHeadsUpSummary(int value) {
+        String summary;
+        Boolean enabled;
+        switch (value) {
+            case 0:     enabled = false;
+                        summary = getResources().getString(
+                                    R.string.app_notification_enable_heads_up_global_disabled_summary);
+                        break;
+            case 1:     enabled = true;
+                        summary = getResources().getString(
+                                    R.string.app_notification_enable_heads_up_summary);
+                        break;
+            case 2:     enabled = false;
+                        summary = getResources().getString(
+                                    R.string.app_notification_enable_heads_up_global_forced_summary);
+                        break;
+            default:    enabled = true;
+                        summary = "";
+                        break;
+        }
+        mHeadsUp.setEnabled(enabled);
+        mHeadsUp.setSummary(summary);
     }
 }

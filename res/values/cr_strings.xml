@@ -594,8 +594,17 @@
 
     <!-- Heads up -->
     <string name="heads_up_title">Heads up notification</string>
+    <string name="heads_up_global_switch_title">Headsup notifications mode</string>
+    <string name="heads_up_global_switch_summary_disabled">Headsup notifications are disabled</string>
+    <string name="heads_up_global_switch_summary_perapp">Headsup notifications are en-/disabled on a per app basis</string>
+    <string name="heads_up_global_switch_summary_forced">Headsup notifications are force enabled for all apps</string>
+    <string name="heads_up_global_switch_disabled">Never show headsup notifications</string>
+    <string name="heads_up_global_switch_perapp">Show headsup notifications on a per app basis</string>
+    <string name="heads_up_global_switch_forced">Always show headsup notifications</string>
     <string name="app_notification_enable_heads_up_title">Show heads up</string>
     <string name="app_notification_enable_heads_up_summary">Show notifications from this app as heads up</string>
+    <string name="app_notification_enable_heads_up_global_disabled_summary">Heads up are currently globally disabled in notification settings</string>
+    <string name="app_notification_enable_heads_up_global_forced_summary">Heads up are currently globally enabled in notification settings</string>
     <string name="heads_up_snooze_title">Snooze timer</string>
     <string name="heads_up_snooze_summary">If snooze button is pressed, disable heads up for <xliff:g id="number">%d</xliff:g> minutes</string>
     <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
