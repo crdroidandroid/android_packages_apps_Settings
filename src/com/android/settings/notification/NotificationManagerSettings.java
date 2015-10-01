@@ -17,7 +17,9 @@
 package com.android.settings.notification;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
@@ -39,12 +41,15 @@ public class NotificationManagerSettings extends SettingsPreferenceFragment
     private static final String TAG = NotificationManagerSettings.class.getSimpleName();
 
     private static final String KEY_LOCK_SCREEN_NOTIFICATIONS = "lock_screen_notifications";
-    private static final String KEY_HEADS_UP_SETTINGS = "heads_up_enabled";
+    private static final String PREF_HEADS_UP_SNOOZE_TIME = "heads_up_snooze_time";
+    private static final String PREF_HEADS_UP_TIME_OUT = "heads_up_time_out";
 
     private boolean mSecure;
     private int mLockscreenSelectedValue;
     private DropDownPreference mLockscreen;
-    private Preference mHeadsUp;
+
+    private ListPreference mHeadsUpSnoozeTime;
+    private ListPreference mHeadsUpTimeOut;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -54,17 +59,55 @@ public class NotificationManagerSettings extends SettingsPreferenceFragment
         mSecure = new LockPatternUtils(getActivity()).isSecure();
         initLockscreenNotifications();
 
-        mHeadsUp = findPreference(KEY_HEADS_UP_SETTINGS);
+        Resources systemUiResources;
+        try {
+            systemUiResources =
+                    getPackageManager().getResourcesForApplication("com.android.systemui");
+        } catch (Exception e) {
+            return;
+        }
+
+        mHeadsUpSnoozeTime = (ListPreference) findPreference(PREF_HEADS_UP_SNOOZE_TIME);
+        mHeadsUpSnoozeTime.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                int headsUpSnoozeTime = Integer.valueOf((String) newValue);
+                updateHeadsUpSnoozeTimeSummary(headsUpSnoozeTime);
+                return Settings.System.putInt(getContentResolver(),
+                        Settings.System.HEADS_UP_SNOOZE_TIME,
+                        headsUpSnoozeTime);
+            }
+        });
+        final int defaultSnoozeTime = systemUiResources.getInteger(systemUiResources.getIdentifier(
+                    "com.android.systemui:integer/heads_up_snooze_time", null, null));
+        final int headsUpSnoozeTime = Settings.System.getInt(getContentResolver(),
+                Settings.System.HEADS_UP_SNOOZE_TIME, defaultSnoozeTime);
+        mHeadsUpSnoozeTime.setValue(String.valueOf(headsUpSnoozeTime));
+        updateHeadsUpSnoozeTimeSummary(headsUpSnoozeTime);
+
+        mHeadsUpTimeOut = (ListPreference) findPreference(PREF_HEADS_UP_TIME_OUT);
+        mHeadsUpTimeOut.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                int headsUpTimeOut = Integer.valueOf((String) newValue);
+                updateHeadsUpTimeOutSummary(headsUpTimeOut);
+                return Settings.System.putInt(getContentResolver(),
+                        Settings.System.HEADS_UP_NOTIFCATION_DECAY,
+                        headsUpTimeOut);
+            }
+        });
+        final int defaultTimeOut = systemUiResources.getInteger(systemUiResources.getIdentifier(
+                    "com.android.systemui:integer/heads_up_notification_decay", null, null));
+        final int headsUpTimeOut = Settings.System.getInt(getContentResolver(),
+                Settings.System.HEADS_UP_NOTIFCATION_DECAY, defaultTimeOut);
+        mHeadsUpTimeOut.setValue(String.valueOf(headsUpTimeOut));
+        updateHeadsUpTimeOutSummary(headsUpTimeOut);
+
     }
 
     @Override
     public void onResume() {
         super.onResume();
-
-        boolean headsUpEnabled = Settings.System.getInt(
-                getContentResolver(), Settings.System.HEADS_UP_USER_ENABLED, Settings.System.HEADS_UP_USER_ON) != 0;
-        mHeadsUp.setSummary(headsUpEnabled
-                ? R.string.summary_heads_up_enabled : R.string.summary_heads_up_disabled);
     }
 
     // === Lockscreen (public / private) notifications ===
@@ -125,6 +168,24 @@ public class NotificationManagerSettings extends SettingsPreferenceFragment
     private boolean getLockscreenAllowPrivateNotifications() {
         return Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.LOCK_SCREEN_ALLOW_PRIVATE_NOTIFICATIONS, 0) != 0;
+    }
+
+    private void updateHeadsUpSnoozeTimeSummary(int value) {
+        String summary = value != 0
+                ? getResources().getString(R.string.heads_up_snooze_summary, value / 60 / 1000)
+                : getResources().getString(R.string.heads_up_snooze_disabled_summary);
+        mHeadsUpSnoozeTime.setSummary(summary);
+    }
+
+    private void updateHeadsUpTimeOutSummary(int value) {
+        String summary = getResources().getString(R.string.heads_up_time_out_summary,
+                value / 1000);
+        if (value == 0) {
+            mHeadsUpTimeOut.setSummary(
+                    getResources().getString(R.string.heads_up_time_out_never_summary));
+        } else {
+            mHeadsUpTimeOut.setSummary(summary);
+        }
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
