@@ -1819,6 +1819,9 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
+        <!-- Heads up -->
+        <uses-permission android:name="android.permission.CHANGE_HEADS_UP_STATE" />
+
         <!-- SystemApp Remover -->
         <activity android:name="com.android.settings.crdroid.fragments.SystemappRemover" />
 
