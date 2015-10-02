@@ -152,10 +152,6 @@ public class QSTileHolder {
                 resourceName = "ic_qs_usb_tether_on";
                 stringId = R.string.qs_tile_usb_tether;
                 break;
-            case QSConstants.TILE_HEADS_UP:
-                resourceName = "ic_qs_heads_up_on";
-                stringId = R.string.qs_tile_heads_up;
-                break;
             case QSConstants.TILE_AMBIENT_DISPLAY:
                 resourceName = "ic_qs_ambientdisplay_on";
                 stringId = R.string.qs_tile_ambient_display;
