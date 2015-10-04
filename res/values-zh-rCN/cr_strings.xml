@@ -48,10 +48,11 @@
     <!-- Translation crDroid -->
     <string name="crdroid_translation_title">翻译</string>
     <string name="crdroid_translation_summary">帮助我们翻译成你所使用的语言</string>
+    <!-- Donation -->
+    <string name="crdroid_donation_title">捐献</string>
+    <string name="crdroid_donation_summary">倘若您喜欢crDroid团队的作品，并想继续支持我们，欢迎到此处捐献</string>
     <!-- Sites crDroid -->
     <string name="sites_crdroid">crDroid 网站</string>
-    <string name="crdroid_website_title">网站</string>
-    <string name="crdroid_website_summary">访问我们的网站</string>
     <string name="crdroid_source_title">Github</string>
     <string name="crdroid_source_summary">访问我们的Git源码团队</string>
     <string name="crdroid_google_plus_title">Google+</string>
@@ -87,19 +88,27 @@
     <string name="volume_panel_time_out_8sec">8秒</string>
     <string name="volume_panel_time_out_12sec">12秒</string>
     <string name="volume_panel_time_out_15sec">15秒</string>
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">音量级别</string>
+    <string name="volume_steps_alarm_title">音量级别：响铃</string>
+    <string name="volume_steps_dtmf_title">音量级别：DTMF</string>
+    <string name="volume_steps_music_title">音量级别：音乐</string>
+    <string name="volume_steps_notification_title">音量级别：通知</string>
+    <string name="volume_steps_ring_title">音量级别：来电铃声</string>
+    <string name="volume_steps_system_title">音量级别：系统</string>
+    <string name="volume_steps_voice_call_title">音量级别：语音通话</string>
     <!-- Button shorcut actions -->
     <string name="shortcut_action_back">返回</string>
     <string name="shortcut_action_app">自定义应用</string>
-    <string name="shortcut_action_expanded_desktop">扩展桌面</string>
     <string name="shortcut_action_home">主屏幕</string>
     <string name="shortcut_action_kill">关闭应用</string>
     <string name="shortcut_action_lastapp">上一个应用</string>
     <string name="shortcut_action_navbar">导航栏</string>
     <string name="shortcut_action_notifications">通知栏</string>
-    <string name="shortcut_action_menu_big">菜单</string>
+    <string name="shortcut_action_menu_big">大菜单</string>
     <string name="shortcut_action_ime">输入法切换器</string>
     <string name="shortcut_action_power_menu">电源菜单</string>
-    <string name="shortcut_action_qs">快速设置面板</string>
+    <string name="shortcut_action_qs">快捷设置面板</string>
     <string name="shortcut_action_smart">智能下拉</string>
     <string name="shortcut_action_recent">最近应用</string>
     <string name="shortcut_action_ring_vib">响铃/振动</string>
@@ -109,7 +118,6 @@
     <string name="shortcut_action_screenshot">屏幕截图</string>
     <string name="shortcut_action_assist">搜索</string>
     <string name="shortcut_action_search">应用内搜索</string>
-    <string name="shortcut_action_theme_switch">主题选择器</string>
     <string name="shortcut_action_torch">手电筒</string>
     <string name="shortcut_action_voice_search">声音搜索</string>
     <string name="shortcut_action_none">无</string>
@@ -154,7 +162,7 @@
     <string name="shortcuts_icon_picker_contact">联系人</string>
     <string name="shortcuts_icon_picker_directdial">直接拨打电话</string>
     <string name="shortcuts_icon_picker_directmessage">直接发送短信</string>
-    <string name="shortcuts_icon_picker_drive">Drive</string>
+    <string name="shortcuts_icon_picker_drive">驱动</string>
     <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
     <string name="shortcuts_icon_picker_email">电子邮件</string>
     <string name="shortcuts_icon_picker_email2">备选电子邮件</string>
@@ -163,7 +171,7 @@
     <string name="shortcuts_icon_picker_favorite">收藏</string>
     <string name="shortcuts_icon_picker_file_browser">文件管理器</string>
     <string name="shortcuts_icon_picker_file_browser2">备选文件管理器</string>
-    <string name="shortcuts_icon_picker_fitness">Fitness</string>
+    <string name="shortcuts_icon_picker_fitness">适应值</string>
     <string name="shortcuts_icon_picker_gallery">图库</string>
     <string name="shortcuts_icon_picker_gears">Gears</string>
     <string name="shortcuts_icon_picker_google_small">Google</string>
@@ -171,7 +179,7 @@
     <string name="shortcuts_icon_picker_gtalk">环聊</string>
     <string name="shortcuts_icon_picker_help">帮助</string>
     <string name="shortcuts_icon_picker_joystick">Joystick</string>
-    <string name="shortcuts_icon_picker_key">Keys/Accounts</string>
+    <string name="shortcuts_icon_picker_key">密码/帐号</string>
     <string name="shortcuts_icon_picker_laptop">笔记本电脑</string>
     <string name="shortcuts_icon_picker_notes">笔记</string>
     <string name="shortcuts_icon_picker_luggage">Travel</string>
@@ -181,18 +189,18 @@
     <string name="shortcuts_icon_picker_music">音乐</string>
     <string name="shortcuts_icon_picker_nav">导航</string>
     <string name="shortcuts_icon_picker_phone">手机</string>
-    <string name="shortcuts_icon_picker_package">Package</string>
+    <string name="shortcuts_icon_picker_package">包装</string>
     <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
     <string name="shortcuts_icon_picker_play">Play</string>
-    <string name="shortcuts_icon_picker_pocket">Pocket</string>
-    <string name="shortcuts_icon_picker_quicksettings">快速设置</string>
+    <string name="shortcuts_icon_picker_pocket">钱包</string>
+    <string name="shortcuts_icon_picker_quicksettings">快捷设置</string>
     <string name="shortcuts_icon_picker_rss">RSS订阅</string>
     <string name="shortcuts_icon_picker_sdcard">SD卡</string>
     <string name="shortcuts_icon_picker_search">搜索</string>
-    <string name="shortcuts_icon_picker_sms">Messaging</string>
-    <string name="shortcuts_icon_picker_tasks">Tasks</string>
-    <string name="shortcuts_icon_picker_terminal">Terminal</string>
-    <string name="shortcuts_icon_picker_transit">Transit</string>
+    <string name="shortcuts_icon_picker_sms">通知</string>
+    <string name="shortcuts_icon_picker_tasks">任务</string>
+    <string name="shortcuts_icon_picker_terminal">终端</string>
+    <string name="shortcuts_icon_picker_transit">通过</string>
     <string name="shortcuts_icon_picker_tv">TV</string>
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">解锁</string>
@@ -213,7 +221,7 @@
     <string name="set">设置</string>
     <string name="color_default">默认</string>
     <!-- Pie control -->
-    <string name="pie_navigation_title">Pie controls</string>
+    <string name="pie_navigation_title">Pie 控制</string>
     <string name="pie_control_title">Pie</string>
     <string name="pie_control_summary">启用 pie controls</string>
     <string name="pie_control_size">导航尺寸</string>
@@ -268,48 +276,18 @@
     <string name="navigation_menu_default_jb_behavior">需要时显示（默认）</string>
     <string name="navigation_menu_never_show">从不显示</string>
     <string name="navigation_menu_always_show">总是显示</string>
+    <string name="title_pref_menu_display">菜单能见度</string>
     <string name="summary_pref_menu_display">您需要菜单键在何时以及怎样显示？</string>
-    <!-- Heads Up -->
-    <string name="category_heads_up">浮动通知</string>
-    <string name="summary_heads_up_enabled">弹出通知已启用</string>
-    <string name="summary_heads_up_disabled">弹出通知已禁用</string>
-    <string name="add_heads_up_package">添加应用</string>
-    <string name="add_heads_up_dnd_summary">在这些应用中不显示浮动通知</string>
-    <string name="add_heads_up_blacklist_summary">不显示来自这些应用中的浮动通知</string>
-    <string name="heads_up_dnd_title">勿扰</string>
-    <string name="heads_up_blacklist_title">黑名单</string>
-    <string name="heads_up_disabled_notice">请启用浮动通知以允许应用程序在您的屏幕上显示可交互的弹出通知</string>
-    <string name="heads_up_dismiss_on_remove_title">滑动行为</string>
-    <string name="heads_up_dismiss_on_remove_summary_enabled">隐藏而不是清除通知</string>
-    <string name="heads_up_dismiss_on_remove_summary_disabled">隐藏并且清除通知</string>
-    <string name="show_headsup_button_title">显示快速进入按键</string>
-    <string name="show_headsup_button_summary">在状态栏显示快速进入按键</string>
-    <!-- Heads up timeout -->
-    <string name="heads_up_time_out_title">超时</string>
-    <string name="heads_up_time_out_summary">通知会显示<xliff:g id="number">%d</xliff:g>秒</string>
-    <string name="heads_up_time_out_never_summary">通知在被清除前会一直显示</string>
-    <string name="heads_up_time_out_2sec">2秒</string>
-    <string name="heads_up_time_out_3sec">3秒</string>
-    <string name="heads_up_time_out_4sec">4秒</string>
-    <string name="heads_up_time_out_5sec">5秒</string>
-    <string name="heads_up_time_out_6sec">6秒</string>
-    <string name="heads_up_time_out_7sec">7秒</string>
-    <string name="heads_up_time_out_8sec">8秒</string>
-    <string name="heads_up_time_out_9sec">9秒</string>
-    <string name="heads_up_time_out_10sec">10秒</string>
-    <string name="heads_up_time_out_never">永不</string>
-    <!-- Heads up touch outside -->
-    <string name="heads_up_touch_outside_title">点击通知以外区域时的行为</string>
-    <string name="heads_up_touch_outside_summary_enabled">点击通知以外区域或点击Home键时隐藏通知</string>
-    <string name="heads_up_touch_outside_summary_disabled">点击通知以外区域或点击Home键时不隐藏通知</string>
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">每行显示四个瓷块</string>
+    <!-- QS Info -->
+    <string name="qs_main_tiles_summary_off2">每行三或四个瓷块</string>
     <!-- Force expand notifications -->
     <string name="notification_force_expand_title">强制展开通知</string>
     <string name="notification_force_expand_summary">对所有支持的应用强制展开其通知</string>
     <!-- Block QS on secure lockscreen -->
     <string name="block_on_secure_keyguard_title">锁屏时禁用</string>
-    <string name="block_on_secure_keyguard_summary">安全锁屏时禁用快速设置</string>
+    <string name="block_on_secure_keyguard_summary">安全锁屏时禁用快捷设置</string>
     <!-- Recents panel settings -->
     <string name="recents_panel_settings">最近任务面板</string>
     <string name="stock_recents_category">原生最近任务面板</string>
@@ -402,9 +380,10 @@
     <string name="hfm_dialog_failed">更新hosts文件失败，请重试。</string>
     <string name="hfm_dialog_success">/4 hosts源应用成功。</string>
     <string name="hfm_dialog_conn_error">错误：没有连接网络</string>
+    <string name="hfm_dialog_title">Hosts 处于更新中</string>
     <!-- Recent panel -->
     <string name="slim_recents_category">Slim recents 面板</string>
-    <string name="use_slim_recents_title">Slim recents</string>
+    <string name="use_slim_recents_title">Slim 最近任务</string>
     <string name="show_running_tasks_title">只显示正在运行的应用</string>
     <string name="recents_max_apps_title">最大允许应用数</string>
     <string name="recent_panel_scale_title">尺寸</string>
@@ -456,4 +435,130 @@
     <string name="network_traffic_autohide">自动隐藏</string>
     <string name="network_traffic_autohide_summary">当没有活动连接是自动隐藏指示器</string>
     <string name="network_traffic_autohide_threshold">静态阈值</string>
+    <!-- RAM bar -->
+    <string name="recents_show_membar_title">内存管理条</string>
+    <string name="recents_show_membar_summary">使用用条形显示设备可用的RAM内存</string>
+    <!-- Statusbar crDroid logo -->
+    <string name="status_bar_crdroid_logo_title">crDroid 标志</string>
+    <string name="status_bar_crdroid_logo_summary">允许在状态栏显示crDroid标志</string>
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker_title">唤醒锁阻挡器</string>
+    <string name="wakelock_blocker_summary">阻挡系统唤醒锁</string>
+    <string name="wakelock_blocker_save">保存</string>
+    <string name="wakelock_list_header">当前可用唤醒锁</string>
+    <string name="wakelock_blocker_reload">刷新</string>
+    <string name="wakelock_blocker_warning_title">慎重考虑是否执行</string>
+    <string name="wakelock_blocker_warning">阻挡唤醒锁有可能会造成系统不稳定，崩溃或资料丢失</string>
+    <!-- Animation Control -->
+    <string name="crdroid_animations_title">动画控制</string>
+    <!-- Toast animations -->
+    <string name="toast_animation_title">土司（Toast）动画</string>
+    <string name="toast_animation_summary">选择和预览系统土司（Toast）动画</string>
+    <string name="toast_none_animation">无</string>
+    <string name="toast_default_animation">默认</string>
+    <string name="toast_fade_animation">渐显动画</string>
+    <string name="toast_SlideRight_animation">右滑行</string>
+    <string name="toast_SlideLeft_animation">左滑行</string>
+    <string name="toast_Xylon_animation">木质动画</string>
+    <string name="toast_Toko_animation">Toko 动画</string>
+    <string name="toast_Tn_animation">Tn 动画</string>
+    <string name="toast_Honami_animation">Honami 动画</string>
+    <string name="toast_FastFade_animation">快渐显</string>
+    <string name="toast_GrowFade_animation">扩展渐显</string>
+    <string name="toast_GrowFadeCenter_animation">中心扩展渐显</string>
+    <string name="toast_GrowFadeBottom_animation">底部扩展渐显</string>
+    <string name="toast_Translucent_animation">半透明动画</string>
+    <string name="toast_SlideLeftRight_animation">左到右滑行</string>
+    <string name="toast_SlideRightLeft_animation">右到左滑行</string>
+    <!-- Time-context headers in notification header -->
+    <string name="status_bar_custom_header_title">自定义标题头部图案</string>
+    <string name="status_bar_custom_header_summary">允许通知面板标题头部图案</string>
+    <!-- SlimSizer  -->
+    <string name="listsystem">清单</string>
+    <string name="sizer_title">应用程序移除</string>
+    <string name="caution">注意</string>
+    <string name="sizer_message_startup">这工具允许你删除系统程序，请小心使用，并确保只是删除能够被安全移除的程序</string>
+    <string name="cancel">取消</string>
+    <string name="sizer_message_delete">你确定要删除此程序？</string>
+    <string name="btn_delete">立即删除被选择的应用程序</string>
+    <string name="delete_progress_title">删除中</string>
+    <string name="delete_progress">被选择的文件已被删除</string>
+    <string name="delete_success">已删除</string>
+    <string name="delete_fail">无法删除</string>
+    <string name="btn_profile">情景</string>
+    <string name="sizer_message_sdnowrite">无法写到SD卡</string>
+    <string name="sizer_message_sdnoread">无法读取SD卡</string>
+    <string name="sizer_message_filesuccess">添加情景</string>
+    <string name="sizer_message_filefail">添加情景失败</string>
+    <string name="sizer_message_noselect">无选择</string>
+    <string name="system_app_remover">系统程式移除</string>
+    <string name="systemappremover_summary">移除系统程序需自己承担一切风险</string>
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">土司（Toast）图标</string>
+    <!-- SlimDim -->
+    <string name="dim_nav_buttons_category">Slim昏暗</string>
+    <string name="dim_nav_buttons_title">无工作时，按键变昏暗</string>
+    <string name="dim_nav_buttons_summary">在一定时间内不与导览栏互动，导览栏按键变昏暗</string>
+    <string name="dim_nav_buttons_timeout_title">逾时前变昏暗</string>
+    <string name="dim_nav_buttons_timeout_summary">按键变昏暗前，需等待的时间（毫秒）</string>
+    <string name="dim_nav_buttons_alpha_title">昏暗透明度</string>
+    <string name="dim_nav_buttons_alpha_summary">昏暗按键的透明度</string>
+    <string name="dim_nav_buttons_animate_title">昏暗动画</string>
+    <string name="dim_nav_buttons_animate_summary">透明渐显动画</string>
+    <string name="dim_nav_buttons_animate_duration_title">动画时限</string>
+    <string name="dim_nav_buttons_animate_duration_summary">透明动画的时限（毫秒）</string>
+    <string name="dim_nav_buttons_touch_anywhere_title">在全屏荧幕听取触碰</string>
+    <string name="dim_nav_buttons_touch_anywhere_summary_on">触碰荧幕的任意位置使按键变明亮</string>
+    <string name="dim_nav_buttons_touch_anywhere_summary_off">只有触碰导览栏会使按键变明亮</string>
+    <!-- QuickSettings: Smart Pulldown -->
+    <string name="smart_pulldown_title">智能下拉</string>
+    <string name="smart_pulldown_summary">开启快捷设置当 %1$s 有通知提示</string>
+    <string name="smart_pulldown_off">关闭</string>
+    <string name="smart_pulldown_dismissable">无忽略</string>
+    <string name="smart_pulldown_persistent">无持续</string>
+    <string name="smart_pulldown_all">无忽略或持续</string>
+    <!-- Heads up -->
+    <string name="heads_up_snooze_title">休眠计时器</string>
+    <string name="heads_up_snooze_summary">倘若休眠按键被按下，将禁止浮动通知 <xliff:g id="number">%d</xliff:g> 分钟</string>
+    <string name="heads_up_snooze_disabled_summary">禁用休眠计时器</string>
+    <string name="heads_up_snooze_3min">3分钟</string>
+    <string name="heads_up_snooze_5min">5分钟</string>
+    <string name="heads_up_snooze_10min">10分钟</string>
+    <string name="heads_up_snooze_15min">15分钟</string>
+    <string name="heads_up_snooze_20min">20分钟</string>
+    <string name="heads_up_time_out_title">超时</string>
+    <string name="heads_up_time_out_summary">通知会显示<xliff:g id="number">%d</xliff:g>秒</string>
+    <string name="heads_up_time_out_never_summary">通知在被清除前会一直显示</string>
+    <string name="heads_up_time_out_4sec">4秒</string>
+    <string name="heads_up_time_out_6sec">6秒</string>
+    <string name="heads_up_time_out_8sec">8秒</string>
+    <string name="heads_up_time_out_10sec">10秒</string>
+    <string name="heads_up_time_out_never">永不</string>
+    <!-- Ticker -->
+    <string name="heads_up_touch_outside_title">点击通知以外区域时的行为</string>
+    <string name="heads_up_touch_outside_summary_enabled">点击通知以外区域或点击Home键时隐藏通知</string>
+    <string name="heads_up_touch_outside_summary_disabled">点击通知以外区域或点击Home键时不隐藏通知</string>
+    <string name="category_heads_up">浮动通知</string>
+    <string name="summary_heads_up_enabled">弹出通知已启用</string>
+    <string name="summary_heads_up_disabled">弹出通知已禁用</string>
+    <string name="add_heads_up_package">添加应用</string>
+    <string name="add_heads_up_dnd_summary">在这些应用中不显示浮动通知</string>
+    <string name="add_heads_up_blacklist_summary">不显示来自这些应用中的浮动通知</string>
+    <string name="heads_up_dnd_title">勿扰</string>
+    <string name="heads_up_blacklist_title">黑名单</string>
+    <string name="heads_up_disabled_notice">请启用浮动通知以允许应用程序在您的屏幕上显示可交互的弹出通知</string>
+    <string name="heads_up_dismiss_on_remove_title">滑动行为</string>
+    <string name="heads_up_dismiss_on_remove_summary_enabled">隐藏而不是清除通知</string>
+    <string name="heads_up_dismiss_on_remove_summary_disabled">隐藏并且清除通知</string>
+    <string name="show_headsup_button_title">显示快捷进入按键</string>
+    <string name="show_headsup_button_summary">在状态栏显示快捷进入按键</string>
+    <string name="heads_up_time_out_2sec">2秒</string>
+    <string name="heads_up_time_out_3sec">3秒</string>
+    <string name="heads_up_time_out_5sec">5秒</string>
+    <string name="heads_up_time_out_7sec">7秒</string>
+    <string name="heads_up_time_out_9sec">9秒</string>
+    <string name="crdroid_website_title">网站</string>
+    <string name="crdroid_website_summary">访问我们的网站</string>
+    <string name="shortcut_action_expanded_desktop">扩展桌面</string>
+    <string name="shortcut_action_theme_switch">主题选择器</string>
 </resources>
