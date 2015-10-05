@@ -42,11 +42,13 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
     private static final String QUICK_PULLDOWN = "quick_pulldown";
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
+    private static final String ENABLE_TASK_MANAGER = "enable_task_manager";
 
     private ListPreference mQuickPulldown;
     private SwitchPreference mBlockOnSecureKeyguard;
     private ListPreference mSmartPulldown;
     private Preference mQSTiles;
+    private SwitchPreference mEnableTaskManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -77,6 +79,10 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
                 Settings.System.QS_SMART_PULLDOWN, 0);
         mSmartPulldown.setValue(String.valueOf(smartPulldown));
         updateSmartPulldownSummary(smartPulldown);
+
+        mEnableTaskManager = (SwitchPreference) findPreference(ENABLE_TASK_MANAGER);
+        mEnableTaskManager.setChecked((Settings.System.getInt(resolver,
+                Settings.System.ENABLE_TASK_MANAGER, 0) == 1));
 
         final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
         mBlockOnSecureKeyguard = (SwitchPreference) findPreference(PREF_BLOCK_ON_SECURE_KEYGUARD);
@@ -120,6 +126,17 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
             return true;
         }
         return false;
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if  (preference == mEnableTaskManager) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.ENABLE_TASK_MANAGER, checked ? 1:0);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     private void updatePulldownSummary(int value) {
