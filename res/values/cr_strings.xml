@@ -622,6 +622,11 @@
     <string name="heads_up_time_out_10sec">10 seconds</string>
     <string name="heads_up_time_out_never">Never</string>
 
+    <!-- Heads up touch outside -->
+    <string name="heads_up_touch_outside_title">Touch outside behavior</string>
+    <string name="heads_up_touch_outside_summary_enabled">Hide heads up on touch outside and on home button press</string>
+    <string name="heads_up_touch_outside_summary_disabled">Do not hide heads up on touch outside or on home button press</string>
+
     <!-- Ticker -->
     <string name="status_bar_ticker_title">Notification Ticker</string>
     <string name="status_bar_ticker_summary">Notification text animation in the statusbar</string>

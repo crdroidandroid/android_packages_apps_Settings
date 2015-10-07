@@ -23,6 +23,7 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
+import android.preference.SwitchPreference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.util.Log;
@@ -36,7 +37,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NotificationManagerSettings extends SettingsPreferenceFragment
-        implements Indexable {
+        implements Indexable, OnPreferenceChangeListener {
 
     private static final String TAG = NotificationManagerSettings.class.getSimpleName();
 
@@ -44,6 +45,7 @@ public class NotificationManagerSettings extends SettingsPreferenceFragment
     private static final String PREF_HEADS_UP_GLOBAL_SWITCH = "heads_up_global_switch";
     private static final String PREF_HEADS_UP_SNOOZE_TIME = "heads_up_snooze_time";
     private static final String PREF_HEADS_UP_TIME_OUT = "heads_up_time_out";
+    private static final String PREF_HEADS_UP_TOUCH_OUTSIDE = "heads_up_touch_outside";
 
     private boolean mSecure;
     private int mLockscreenSelectedValue;
@@ -52,6 +54,7 @@ public class NotificationManagerSettings extends SettingsPreferenceFragment
     private ListPreference mHeadsUpGlobalSwitch;
     private ListPreference mHeadsUpSnoozeTime;
     private ListPreference mHeadsUpTimeOut;
+    private SwitchPreference mHeadsUpTouchOutside;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -95,6 +98,10 @@ public class NotificationManagerSettings extends SettingsPreferenceFragment
         final int headsUpGlobalSwitch = Settings.System.getInt(getContentResolver(),
                 Settings.System.HEADS_UP_GLOBAL_SWITCH, 1);
         mHeadsUpGlobalSwitch.setValue(String.valueOf(headsUpGlobalSwitch));
+
+        // Heads up touch outside
+        mHeadsUpTouchOutside = (SwitchPreference) findPreference(PREF_HEADS_UP_TOUCH_OUTSIDE);
+        mHeadsUpTouchOutside.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -119,6 +126,11 @@ public class NotificationManagerSettings extends SettingsPreferenceFragment
             Settings.System.putInt(getActivity().getContentResolver(),
                 Settings.System.HEADS_UP_GLOBAL_SWITCH, value);
                 updateHeadsUpGlobalSwitchSummary(value);
+            return true;
+        } else if (preference == mHeadsUpTouchOutside) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.HEADS_UP_TOUCH_OUTSIDE,
+                    ((Boolean) newValue) ? 1 : 0);
             return true;
         }
         return false;
@@ -191,16 +203,19 @@ public class NotificationManagerSettings extends SettingsPreferenceFragment
                                     R.string.heads_up_global_switch_summary_disabled);
                         mHeadsUpSnoozeTime.setEnabled(false);
                         mHeadsUpTimeOut.setEnabled(false);
+                        mHeadsUpTouchOutside.setEnabled(false);
                         break;
             case 1:     summary = getResources().getString(
                                     R.string.heads_up_global_switch_summary_perapp);
                         mHeadsUpSnoozeTime.setEnabled(true);
                         mHeadsUpTimeOut.setEnabled(true);
+                        mHeadsUpTouchOutside.setEnabled(true);
                         break;
             case 2:     summary = getResources().getString(
                                     R.string.heads_up_global_switch_summary_forced);
                         mHeadsUpSnoozeTime.setEnabled(true);
                         mHeadsUpTimeOut.setEnabled(true);
+                        mHeadsUpTouchOutside.setEnabled(true);
                         break;
             default:    summary = "";
                         break;
