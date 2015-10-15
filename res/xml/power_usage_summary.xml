@@ -24,6 +24,13 @@
             android:title="@string/perf_profile_title"
             android:persistent="false" />
 
+    <!-- Bar color -->
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="battery_save_mode_color"
+            android:title="@string/battery_saver_color_title"
+            android:summary="@string/battery_saver_color_summary"
+            android:defaultValue="true" />
+
     <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
             android:key="app_perf_profiles_enabled"
             android:title="@string/autoperf_title"
