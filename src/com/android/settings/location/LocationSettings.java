@@ -145,6 +145,7 @@ public class LocationSettings extends LocationSettingsBase
         mSwitchBar = activity.getSwitchBar();
         mSwitch = mSwitchBar.getSwitch();
         mSwitchBar.show();
+        setHasOptionsMenu(true);
     }
 
     @Override
