@@ -644,4 +644,6 @@
     <string name="battery_saver_color_title">Warning color</string>
     <string name="battery_saver_color_summary">Enable orange status and navigation bars when battery saver is activated</string>
 
+    <string name="general_notifications_title">General notifications</string>
+
 </resources>
