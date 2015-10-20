@@ -627,6 +627,11 @@
     <string name="heads_up_touch_outside_summary_enabled">Hide heads up on touch outside and on home button press</string>
     <string name="heads_up_touch_outside_summary_disabled">Do not hide heads up on touch outside or on home button press</string>
 
+    <!-- Heads up dismiss on remove -->
+    <string name="heads_up_dismiss_on_remove_title">Swipe behavior</string>
+    <string name="heads_up_dismiss_on_remove_summary_enabled">Hide notification instead of dismiss</string>
+    <string name="heads_up_dismiss_on_remove_summary_disabled">Hide and dismiss notification</string>
+
     <!-- Ticker -->
     <string name="status_bar_ticker_title">Notification Ticker</string>
     <string name="status_bar_ticker_summary">Notification text animation in the statusbar</string>
