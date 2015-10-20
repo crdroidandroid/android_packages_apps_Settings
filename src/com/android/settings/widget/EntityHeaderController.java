@@ -25,6 +25,7 @@ import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.os.UserHandle;
 import android.text.TextUtils;
@@ -81,6 +82,7 @@ public class EntityHeaderController {
     // Required for hearing aid devices.
     private CharSequence mSecondSummary;
     private String mPackageName;
+    private String mPackageNameReal;
     private Intent mAppNotifPrefIntent;
     @UserIdInt
     private int mUid = UserHandle.USER_NULL;
@@ -145,6 +147,7 @@ public class EntityHeaderController {
      */
     public EntityHeaderController setIcon(ApplicationsState.AppEntry appEntry) {
         mIcon = Utils.getBadgedIcon(mAppContext, appEntry.info);
+        mPackageNameReal = appEntry.info.packageName;
         return this;
     }
 
@@ -251,6 +254,18 @@ public class EntityHeaderController {
         if (iconView != null) {
             iconView.setImageDrawable(mIcon);
             iconView.setContentDescription(mIconContentDescription);
+            if (mPackageNameReal != null) {
+                iconView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        PackageManager pm = v.getContext().getPackageManager();
+                        Intent intent = pm.getLaunchIntentForPackage(mPackageNameReal);
+                        if (intent == null)
+                            return;
+                        v.getContext().startActivity(intent);
+                    }
+                });
+            }
         }
         setText(R.id.entity_header_title, mLabel);
         setText(R.id.entity_header_summary, mSummary);
