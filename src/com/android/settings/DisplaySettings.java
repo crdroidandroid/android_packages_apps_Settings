@@ -29,6 +29,7 @@ import com.android.internal.view.RotationPolicy;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
+import static android.provider.Settings.Secure.DOZE_ENABLED;
 import static android.provider.Settings.Secure.WAKE_GESTURE_ENABLED;
 import static android.provider.Settings.System.SCREEN_BRIGHTNESS_MODE;
 import static android.provider.Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC;
@@ -74,7 +75,6 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.android.settings.R;
 import com.android.settings.cyanogenmod.DisplayRotation;
 import com.android.settings.Utils;
 
@@ -96,6 +96,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_SCREEN_SAVER = "screensaver";
     private static final String KEY_LIFT_TO_WAKE = "lift_to_wake";
+    private static final String KEY_DOZE = "doze";
     private static final String KEY_AUTO_BRIGHTNESS = "auto_brightness";
     private static final String KEY_TAP_TO_WAKE = "double_tap_wake_gesture";
     private static final String KEY_PROXIMITY_WAKE = "proximity_on_wake";
@@ -116,6 +117,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private Preference mScreenSaverPreference;
     private SwitchPreference mAccelerometer;
     private SwitchPreference mLiftToWakePreference;
+    private SwitchPreference mDozePreference;
     private SwitchPreference mAutoBrightnessPreference;
     private SwitchPreference mTapToWake;
     private SwitchPreference mWakeWhenPluggedOrUnplugged;
@@ -239,6 +241,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         }
 
+        mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
+        if (mDozePreference != null && Utils.isDozeAvailable(activity)) {
+            mDozePreference.setOnPreferenceChangeListener(this);
+        } else {
+            if (displayPrefs != null && mDozePreference != null) {
+                displayPrefs.removePreference(mDozePreference);
+            }
+        }
+
         mTapToWake = (SwitchPreference) findPreference(KEY_TAP_TO_WAKE);
         if (displayPrefs != null && mTapToWake != null
                 && !mHardware.isSupported(FEATURE_TAP_TO_WAKE)) {
@@ -262,7 +273,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 (SwitchPreference) findPreference(KEY_WAKE_WHEN_PLUGGED_OR_UNPLUGGED);
 
         initPulse((PreferenceCategory) findPreference(KEY_CATEGORY_LIGHTS));
-
     }
 
     private int getDefaultDensity() {
@@ -503,6 +513,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mLiftToWakePreference.setChecked(value != 0);
         }
 
+        // Update doze if it is available.
+        if (mDozePreference != null) {
+            int value = Settings.Secure.getInt(getContentResolver(), DOZE_ENABLED, 1);
+            mDozePreference.setChecked(value != 0);
+        }
+
         // Update proximity wake if it is available.
         if (mProximityWakePreference != null) {
             boolean defaultValue = getResources().getBoolean(
@@ -653,6 +669,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.Secure.putInt(getContentResolver(), WAKE_GESTURE_ENABLED, value ? 1 : 0);
         }
+        if (preference == mDozePreference) {
+            boolean value = (Boolean) objValue;
+            Settings.Secure.putInt(getContentResolver(), DOZE_ENABLED, value ? 1 : 0);
+        }
         if (preference == mProximityWakePreference) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getContentResolver(), Settings.System.PROXIMITY_ON_WAKE,
@@ -740,8 +760,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     if (!isLiftToWakeAvailable(context)) {
                         result.add(KEY_LIFT_TO_WAKE);
                     }
+                    if (!Utils.isDozeAvailable(context)) {
+                        result.add(KEY_DOZE);
+                    }
                     return result;
                 }
             };
-
 }

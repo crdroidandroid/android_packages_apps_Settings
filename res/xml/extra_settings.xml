@@ -54,15 +54,6 @@
         settings:keywords="@string/notification_manager"
         android:icon="@drawable/ic_settings_notifications" />
 
-    <!-- Ambient display -->
-    <PreferenceScreen
-        android:id="@+id/ambient_display"
-        android:key="doze_fragment"
-        android:title="@string/doze_title"
-        settings:keywords="@string/doze_title"
-        android:fragment="com.android.settings.crdroid.AmbientSettings"
-        android:icon="@drawable/ic_settings_ambient" />
-
     <!-- Themes -->
     <!-- NOTE: Intent.parseIntent looks for "categories" tag and not "category" -->
     <PreferenceScreen
