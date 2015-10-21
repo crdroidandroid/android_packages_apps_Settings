@@ -53,7 +53,7 @@ import com.android.settings.wifi.AdvancedWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 
-import com.android.settings.crdroid.AmbientSettings;
+import com.android.settings.crdroid.fragments.DozeSettingsFragment;
 import com.android.settings.crdroid.ExtraSettings;
 import com.android.settings.crdroid.RecentsPanelSettings;
 
@@ -308,11 +308,11 @@ public final class SearchIndexableResources {
                         R.drawable.ic_settings_privacy));
 
         // crDroid additions
-        sResMap.put(AmbientSettings.class.getName(),
+        sResMap.put(DozeSettingsFragment.class.getName(),
                 new SearchIndexableResource(
-                        Ranking.getRankForClassName(AmbientSettings.class.getName()),
+                        Ranking.getRankForClassName(DozeSettingsFragment.class.getName()),
                         NO_DATA_RES_ID,
-                        AmbientSettings.class.getName(),
+                        DozeSettingsFragment.class.getName(),
                         R.drawable.ic_settings_display));
 
         sResMap.put(ExtraSettings.class.getName(),

@@ -1827,8 +1827,8 @@
         <!-- SystemApp Remover -->
         <activity android:name="com.android.settings.crdroid.fragments.SystemappRemover" />
 
-        <!-- Ambient display -->
-        <activity android:name="Settings$AmbientSettingsActivity"
+        <!-- Doze -->
+        <activity android:name="Settings$DozeSettingsFragmentActivity"
                 android:uiOptions="splitActionBarWhenNarrow"
                 android:label="@string/doze_title"
                 android:excludeFromRecents="true">
@@ -1837,21 +1837,21 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.crdroid.AmbientSettings" />
+                android:value="com.android.settings.crdroid.fragments.DozeSettingsFragment" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/ambient_display" />
+                android:resource="@id/doze" />
         </activity>
 
-        <activity-alias android:name=".crdroid.AmbientSettings"
+        <activity-alias android:name=".crdroid.fragments.DozeSettingsFragment"
                 android:taskAffinity="com.android.settings"
                 android:label="@string/doze_title"
-                android:targetActivity="Settings$AmbientSettingsActivity"
+                android:targetActivity="Settings$DozeSettingsFragmentActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.crdroid.AmbientSettings" />
+                       android:value="com.android.settings.crdroid.fragments.DozeSettingsFragment" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                       android:resource="@id/ambient_display" />
+                       android:resource="@id/doze" />
         </activity-alias>
 
         <!-- Navigation bar toggle -->

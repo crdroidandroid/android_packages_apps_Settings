@@ -57,13 +57,6 @@
                 android:title="@string/accelerometer_title"
                 settings:advanced="false"/>
 
-        <!-- Doze // Ambient display -->
-        <SwitchPreference
-                android:key="doze"
-                android:title="@string/doze_title"
-                android:summary="@string/doze_summary"
-                android:persistent="false" />
-
         <!-- Lift to wake -->
         <SwitchPreference
                 android:key="lift_to_wake"

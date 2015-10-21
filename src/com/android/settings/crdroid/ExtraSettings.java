@@ -17,6 +17,7 @@ package com.android.settings.crdroid;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.SearchIndexableResource;
 
@@ -34,15 +35,26 @@ public class ExtraSettings extends SettingsPreferenceFragment
 
     private static final String TAG = ExtraSettings.class.getSimpleName();
 
+    private static final String KEY_CATEGORY_EXTRA_CRDROID = "extra_crdroid";
     private static final String KEY_GESTURE_SETTINGS = "gesture_settings";
     private static final String KEY_OCLICK = "oclick";
+    private static final String KEY_DOZE = "doze";
+
+    private PreferenceScreen mDoze;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.extra_settings);
-        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        PreferenceScreen dozePref = (PreferenceScreen)
+                findPreference(KEY_DOZE);
+
+        mDoze = (PreferenceScreen) findPreference(KEY_DOZE);
+        if (mDoze == null) {
+            dozePref.removePreference(mDoze);
+        }
 
         // Show gestures only if supported
         Utils.updatePreferenceToSpecificActivityFromMetaDataOrRemove(getActivity(),

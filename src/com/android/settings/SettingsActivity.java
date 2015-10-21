@@ -81,7 +81,7 @@ import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
-import com.android.settings.crdroid.AmbientSettings;
+import com.android.settings.crdroid.fragments.DozeSettingsFragment;
 import com.android.settings.crdroid.ExtraSettings;
 import com.android.settings.cyanogenmod.DisplayRotation;
 import com.android.settings.dashboard.DashboardCategory;
@@ -329,7 +329,7 @@ public class SettingsActivity extends Activity
             LiveDisplay.class.getName(),
             DisplayRotation.class.getName(),
             ExtraSettings.class.getName(),
-            AmbientSettings.class.getName(),
+            DozeSettingsFragment.class.getName(),
             ButtonSettings.class.getName()
     };
 
