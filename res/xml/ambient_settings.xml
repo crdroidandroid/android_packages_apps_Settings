@@ -34,6 +34,14 @@
         android:dependency="doze" />
 
     <SwitchPreference
+        android:key="doze_schedule"
+        android:title="@string/doze_schedule_title"
+        android:summaryOn="@string/doze_schedule_summary_on"
+        android:summaryOff="@string/doze_schedule_summary_off"
+        android:persistent="false"
+        android:dependency="doze" />
+
+    <SwitchPreference
         android:key="doze_time_mode"
         android:title="@string/doze_time_mode_title"
         android:summary="@string/doze_time_mode_summary"
@@ -45,44 +53,14 @@
         android:summary="@string/doze_brightness_summary"
         android:dependency="doze" />
 
-    <SwitchPreference
-        android:key="doze_overwrite_value"
-        android:title="@string/doze_overwrite_value_title"
-        android:summary="@string/doze_overwrite_value_summary"
+    <ListPreference
+        android:entries="@array/doze_pulse_duration_visible_entries"
+        android:entryValues="@array/doze_pulse_duration_visible_values"
+        android:key="doze_pulse_visible"
+        android:title="@string/doze_pulse_duration_visible_title"
+        android:summary="@string/doze_pulse_duration_visible_summary"
+        android:persistent="false"
         android:dependency="doze" />
-
-    <PreferenceCategory
-        android:key="doze_pulse_category"
-        android:title="@string/doze_pulse_title" >
-
-        <ListPreference
-            android:entries="@array/doze_pulse_duration_in_entries"
-            android:entryValues="@array/doze_pulse_duration_in_values"
-            android:key="doze_pulse_in"
-            android:title="@string/doze_pulse_duration_in_title"
-            android:summary="@string/doze_pulse_duration_in_summary"
-            android:persistent="false"
-            android:dependency="doze_overwrite_value" />
-
-        <ListPreference
-            android:entries="@array/doze_pulse_duration_visible_entries"
-            android:entryValues="@array/doze_pulse_duration_visible_values"
-            android:key="doze_pulse_visible"
-            android:title="@string/doze_pulse_duration_visible_title"
-            android:summary="@string/doze_pulse_duration_visible_summary"
-            android:persistent="false"
-            android:dependency="doze_overwrite_value" />
-
-        <ListPreference
-            android:entries="@array/doze_pulse_duration_out_entries"
-            android:entryValues="@array/doze_pulse_duration_out_values"
-            android:key="doze_pulse_out"
-            android:title="@string/doze_pulse_duration_out_title"
-            android:summary="@string/doze_pulse_duration_out_summary"
-            android:persistent="false"
-            android:dependency="doze_overwrite_value" />
-
-    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="doze_shake_category"

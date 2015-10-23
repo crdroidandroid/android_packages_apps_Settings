@@ -326,38 +326,6 @@
     </string-array>
 
     <!-- Ambient display as active display -->
-    <string-array name="doze_pulse_duration_in_entries" translatable="false">
-        <item>@string/threehundred_ms</item>
-        <item>@string/sixhundred_ms</item>
-        <item>@string/ninehundred_ms_default</item>
-        <item>@string/onehalf_second</item>
-        <item>@string/two_second</item>
-    </string-array>
-
-    <string-array name="doze_pulse_duration_in_values" translatable="false">
-        <item>300</item>
-        <item>600</item>
-        <item>900</item>
-        <item>1500</item>
-        <item>2000</item>
-    </string-array>
-
-    <string-array name="doze_pulse_duration_out_entries" translatable="false">
-        <item>@string/threehundred_ms</item>
-        <item>@string/sixhundred_ms_default</item>
-        <item>@string/ninehundred_ms</item>
-        <item>@string/onehalf_second</item>
-        <item>@string/two_second</item>
-    </string-array>
-
-    <string-array name="doze_pulse_duration_out_values" translatable="false">
-        <item>300</item>
-        <item>600</item>
-        <item>900</item>
-        <item>1500</item>
-        <item>2000</item>
-    </string-array>
-
     <string-array name="doze_pulse_duration_visible_entries" translatable="false">
         <item>@string/one_second</item>
         <item>@string/two_second</item>
