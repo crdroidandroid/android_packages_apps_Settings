@@ -81,7 +81,7 @@ public class PieTriggerSettings extends SettingsPreferenceFragment
 
         mSensitivity = (SeekBarPreference) findPreference(PIE_TRIGGER_SENSITIVITY);
         mSensitivity.setValue(Settings.System.getInt(getContentResolver(),
-                Settings.System.PIE_TRIGGER_SENSITIVITY, 5));
+                Settings.System.PIE_TRIGGER_SENSITIVITY, 8));
         mSensitivity.setOnPreferenceChangeListener(this);
     }
 
