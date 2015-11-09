@@ -129,7 +129,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_MBN_VERSION,
                 PROPERTY_MBN_VERSION);
         findPreference(KEY_MOD_VERSION).setSummary(
-                cyanogenmod.os.Build.CYANOGENMOD_DISPLAY_VERSION);
+                "ro.crdroid.display.version");
         findPreference(KEY_MOD_VERSION).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
         setExplicitValueSummary(KEY_MOD_API_LEVEL, constructApiLevelString());

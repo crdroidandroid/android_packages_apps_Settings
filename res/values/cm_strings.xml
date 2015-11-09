@@ -42,8 +42,8 @@
     <string name="root_appops_summary">View and control the root rules</string>
 
     <!-- About phone screen, CyanogenMod version -->
-    <string name="mod_version">CyanogenMod version</string>
-    <string name="mod_version_default">Unknown</string>
+    <!--<string name="mod_version">CyanogenMod version</string>
+    <string name="mod_version_default">Unknown</string>-->
 
     <!-- About phone screen, CyanogenMod Api Level -->
     <string name="mod_api_level">CyanogenMod API level</string>
