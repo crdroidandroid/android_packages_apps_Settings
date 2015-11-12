@@ -21,15 +21,11 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.Preference;
-import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 
+import com.android.internal.logging.MetricsLogger;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 
 public class About extends SettingsPreferenceFragment {
 
@@ -44,8 +40,8 @@ public class About extends SettingsPreferenceFragment {
     Preference mNoRUrl;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
         addPreferencesFromResource(R.xml.crdroid_about);
 
         mSourceUrl = findPreference("crdroid_source");
@@ -56,13 +52,19 @@ public class About extends SettingsPreferenceFragment {
     }
 
     @Override
+    protected int getMetricsCategory() {
+        // todo add a constant in MetricsLogger.java
+        return MetricsLogger.MAIN_SETTINGS;
+    }
+
+    @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mSourceUrl) {
             launchUrl("https://github.com/crdroidandroid");
         } else if (preference == mGoogleUrl) {
             launchUrl("https://plus.google.com/u/0/communities/118297646046960923906");
         } else if (preference == mTranslationUrl) {
-            launchUrl("https://oslt9io.oneskyapp.com/collaboration/");
+            launchUrl("https://oszgcaj.oneskyapp.com/collaboration");
         } else if (preference == mEvolvedUrl) {
             launchUrl("https://play.google.com/store/apps/details?id=com.cristianomatos.themecm12.evolved");
         } else if (preference == mNoRUrl) {
@@ -80,7 +82,8 @@ public class About extends SettingsPreferenceFragment {
 
     private void launchUrl(String url) {
         Uri uriUrl = Uri.parse(url);
-        Intent donate = new Intent(Intent.ACTION_VIEW, uriUrl);
-        getActivity().startActivity(donate);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uriUrl);
+        getActivity().startActivity(intent);
     }
+
 }
