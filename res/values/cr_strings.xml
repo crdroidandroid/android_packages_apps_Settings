@@ -20,4 +20,24 @@
     <string name="mod_version">crDroid version</string>
     <string name="mod_version_default">Unknown</string>
 
+    <!-- Changelog -->
+    <string name="changelog_crdroid_title">Changelog</string>
+    <string name="changelog_crdroid_error">Unable to load changelog</string>
+
+    <!-- About crDroid -->
+    <string name="about_crdroid">About crDroid</string>
+
+    <!-- Share crDroid -->
+    <string name="share_crdroid_title">Share crDroid</string>
+    <string name="share_crdroid_summary">Let others know about crDroid</string>
+    <string name="share_message">Check out what #crDroid is all about @ https://plus.google.com/u/0/communities/118297646046960923906</string>
+    <string name="share_chooser_title">Share crDroid</string>
+
+    <!-- Sites crDroid -->
+    <string name="crdroid_on_web">crDroid on web</string>
+    <string name="crdroid_source_title">Github</string>
+    <string name="crdroid_source_summary">Visit our source git team</string>
+    <string name="crdroid_google_plus_title">Google+</string>
+    <string name="crdroid_google_plus_summary">Visit our G+ page for support and news</string>
+
 </resources>

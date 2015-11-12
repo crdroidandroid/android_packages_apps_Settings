@@ -32,6 +32,11 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </PreferenceScreen>
 
+        <!-- About crDroid -->
+        <PreferenceScreen android:key="about"
+                android:title="@string/about_crdroid"
+                android:fragment="com.android.settings.crdroid.About" />
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
