@@ -56,4 +56,9 @@
     <string name="status_bar_crdroid_logo_summary_on">crDroid logo is visible</string>
     <string name="status_bar_crdroid_logo_summary_off">Toggle to show crDroid logo on statusbar</string>
 
+    <!-- Superuser indicator on status bar -->
+    <string name="su_indicator">Superuser indicator</string>
+    <string name="su_indicator_summary_on">Superuser indicator is visible when a session is active</string>
+    <string name="su_indicator_summary_off">Toggle to show superuser indicator when a session is active</string>
+
 </resources>
