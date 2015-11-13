@@ -78,6 +78,7 @@ import android.widget.TextView;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.fuelgauge.InactiveApps;
+import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.widget.SwitchBar;
@@ -180,6 +181,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
 
+    private static final String KILL_APP_LONGPRESS_TIMEOUT = "kill_app_longpress_timeout";
+
     private static final String PACKAGE_MIME_TYPE = "application/vnd.android.package-archive";
 
     private static final String TERMINAL_APP_PACKAGE = "com.android.terminal";
@@ -274,6 +277,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private SwitchPreference mShowAllANRs;
     private SwitchPreference mKillAppLongpressBack;
+    private ListPreference mKillAppLongpressTimeout;
 
     private ListPreference mRootAccess;
     private Object mSelectedRootValue;
@@ -446,6 +450,10 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
         mKillAppLongpressBack = findAndInitSwitchPref(KILL_APP_LONGPRESS_BACK);
 
+        // Back long press timeout
+        mKillAppLongpressTimeout = addListPreference(KILL_APP_LONGPRESS_TIMEOUT);
+        mKillAppLongpressTimeout.setOnPreferenceChangeListener(this);
+
         Preference hdcpChecking = findPreference(HDCP_CHECKING_KEY);
         if (hdcpChecking != null) {
             mAllPrefs.add(hdcpChecking);
@@ -588,6 +596,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         }
         mSwitchBar.show();
         updateKillAppLongpressBackOptions();
+        updateKillAppLongpressTimeoutOptions();
 
         if (mColorModePreference != null) {
             mColorModePreference.startListening();
@@ -868,6 +877,33 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private void updateKillAppLongpressBackOptions() {
         mKillAppLongpressBack.setChecked(CMSettings.Secure.getInt(
             getActivity().getContentResolver(), CMSettings.Secure.KILL_APP_LONGPRESS_BACK, 0) != 0);
+    }
+
+    private void writeKillAppLongpressTimeoutOptions(Object newValue) {
+        int index = mKillAppLongpressTimeout.findIndexOfValue((String) newValue);
+        int value = Integer.valueOf((String) newValue);
+        Settings.Secure.putInt(getActivity().getContentResolver(),
+                Settings.Secure.KILL_APP_LONGPRESS_TIMEOUT, value);
+        mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntries()[index]);
+    }
+
+    private void updateKillAppLongpressTimeoutOptions() {
+        String value = Settings.Secure.getString(getActivity().getContentResolver(),
+                Settings.Secure.KILL_APP_LONGPRESS_TIMEOUT);
+        if (value == null) {
+            value = "";
+        }
+
+        CharSequence[] values = mKillAppLongpressTimeout.getEntryValues();
+        for (int i = 0; i < values.length; i++) {
+            if (value.contentEquals(values[i])) {
+                mKillAppLongpressTimeout.setValueIndex(i);
+                mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntries()[i]);
+                return;
+            }
+        }
+        mKillAppLongpressTimeout.setValueIndex(0);
+        mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntries()[0]);
     }
 
     private void updatePasswordSummary() {
@@ -2023,6 +2059,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             return true;
         } else if (preference == mKeepScreenOn) {
             writeStayAwakeOptions(newValue);
+            return true;
+        } else if (preference == mKillAppLongpressTimeout) {
+            writeKillAppLongpressTimeoutOptions(newValue);
             return true;
         }
         return false;
