@@ -1208,11 +1208,10 @@
             </intent-filter>
         </activity>
 
-        <!--
         <activity android:name="Settings$AppOpsSummaryActivity"
                 android:label="@string/app_ops_settings"
-                android:taskAffinity=""
-                android:enabled="false">
+                android:taskAffinity="com.android.settings"
+                android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.settings.APP_OPS_SETTINGS" />
@@ -1223,7 +1222,14 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.applications.AppOpsSummary" />
         </activity>
-        -->
+
+        <activity-alias android:name=".applications.AppOpsSummary"
+                  android:label="@string/app_ops_settings"
+                  android:exported="true"
+                  android:targetActivity="Settings$AppOpsSummaryActivity">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.applications.AppOpsSummary" />
+        </activity-alias>
 
         <activity android:name="Settings$BackgroundCheckSummaryActivity"
                 android:label="@string/background_check_title"
