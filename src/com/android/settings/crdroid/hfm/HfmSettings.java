@@ -32,6 +32,7 @@ import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.view.View;
 
+import com.android.internal.logging.MetricsLogger;
 import com.android.settings.crdroid.hfm.FetchHosts;
 import com.android.settings.crdroid.hfm.HfmHelpers;
 import com.android.settings.R;
@@ -72,6 +73,12 @@ public class HfmSettings extends SettingsPreferenceFragment {
         mHfmDisableAds.setChecked((Settings.System.getInt(resolver,
             Settings.System.HFM_DISABLE_ADS, 0) == 1));
         mHfmUpdateHosts = prefScreen.findPreference("hfm_update_hosts");
+    }
+
+    @Override
+    protected int getMetricsCategory() {
+        // todo add a constant in MetricsLogger.java
+        return MetricsLogger.MAIN_SETTINGS;
     }
 
     @Override
