@@ -21,9 +21,10 @@
         <PreferenceScreen android:key="system_update_settings"
                 android:title="@string/system_update_settings_list_item_title"
                 android:summary="@string/system_update_settings_list_item_summary">
-            <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
+            <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"
+                    android:targetPackage="com.cyngn.fota"
+                    android:targetClass="com.cyngn.fota.SystemUpdateActivity" />
         </PreferenceScreen>
-
 
         <PreferenceScreen android:key="additional_system_update_settings"
                           android:title="@string/additional_system_update_settings_list_item_title">
@@ -36,6 +37,16 @@
         <PreferenceScreen android:key="about"
                 android:title="@string/about_crdroid"
                 android:fragment="com.android.settings.crdroid.About" />
+        </PreferenceScreen>
+
+        <!-- CyanogenMod Updates -->
+        <PreferenceScreen android:key="cm_updates"
+                android:title="@string/cmupdate_settings_title"
+                android:summary="@string/system_update_settings_list_item_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.cyanogenmod.updater"
+                    android:targetClass="com.cyanogenmod.updater.UpdatesSettings" />
+        </PreferenceScreen>
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
@@ -51,6 +62,14 @@
                 android:key="manual"
                 android:title="@string/manual">
             <intent android:action="android.settings.SHOW_MANUAL" />
+        </PreferenceScreen>
+
+        <!-- Anonymous statistics - (CMStats) -->
+        <PreferenceScreen
+            android:key="cmstats"
+            android:title="@string/anonymous_statistics_title"
+            android:summary="@string/anonymous_statistics_summary"
+            android:fragment="com.android.settings.cmstats.AnonymousStats" >
         </PreferenceScreen>
 
         <!-- Legal Information -->
