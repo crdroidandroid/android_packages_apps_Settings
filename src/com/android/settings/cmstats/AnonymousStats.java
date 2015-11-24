@@ -20,26 +20,19 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
-import android.os.UserHandle;
-import android.preference.Preference;
-import android.preference.PreferenceScreen;
-import android.preference.SwitchPreference;
+import android.util.ArraySet;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import cyanogenmod.providers.CMSettings;
+
+import java.util.Set;
 
 public class AnonymousStats extends SettingsPreferenceFragment {
-
     private static final String PREF_FILE_NAME = "CMStats";
     /* package */ static final String ANONYMOUS_OPT_IN = "pref_anonymous_opt_in";
     /* package */ static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
 
-    /* package */ static final String KEY_LAST_JOB_ID = "last_job_id";
+    /* package */ static final String KEY_JOB_QUEUE = "pref_job_queue";
     /* package */ static final int QUEUE_MAX_THRESHOLD = 1000;
-
-    public static final String KEY_STATS = "stats_collection";
-
-    SwitchPreference mStatsSwitch;
 
     public static SharedPreferences getPreferences(Context context) {
         return context.getSharedPreferences(PREF_FILE_NAME, 0);
@@ -49,51 +42,62 @@ public class AnonymousStats extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.anonymous_stats);
-        mStatsSwitch = (SwitchPreference) findPreference(KEY_STATS);
     }
 
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mStatsSwitch) {
-            boolean checked = mStatsSwitch.isChecked();
-            if (checked) {
-                // clear opt out flags
-                CMSettings.Secure.putIntForUser(getContentResolver(),
-                        CMSettings.Secure.STATS_COLLECTION_REPORTED, 0, UserHandle.USER_OWNER);
-            }
-            // will initiate opt out sequence if necessary
-            ReportingServiceManager.setAlarm(getActivity());
-            return true;
-        }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    public static Set<String> getJobQueue(Context context) {
+        return getPreferences(context).getStringSet(KEY_JOB_QUEUE, new ArraySet<String>());
     }
 
-    public static void updateLastSynced(Context context) {
+    public static void clearJobQueue(Context context) {
         getPreferences(context)
                 .edit()
-                .putLong(ANONYMOUS_LAST_CHECKED,System.currentTimeMillis())
+                .remove(KEY_JOB_QUEUE)
                 .commit();
     }
 
-    private static int getLastJobId(Context context) {
-        return getPreferences(context).getInt(KEY_LAST_JOB_ID, 0);
-    }
+    public static void addJob(Context context, int jobId) {
+        Set<String> jobQueue = getJobQueue(context);
+        jobQueue.add(String.valueOf(jobId));
 
-    private static void setLastJobId(Context context, int id) {
         getPreferences(context)
                 .edit()
-                .putInt(KEY_LAST_JOB_ID, id)
+                .putStringSet(KEY_JOB_QUEUE, jobQueue)
                 .commit();
     }
 
+    public static void removeJob(Context context, int jobId) {
+        Set<String> jobQueue = getJobQueue(context);
+        jobQueue.remove(String.valueOf(jobId));
+        getPreferences(context)
+                .edit()
+                .remove(KEY_JOB_QUEUE)
+                .commit();
+
+        getPreferences(context)
+                .edit()
+                .putStringSet(KEY_JOB_QUEUE, jobQueue)
+                .commit();
+    }
+
+    /**
+     * @param context context to use to get prefs
+     * @return Returns the next unused int in the job queue, up until {@link #QUEUE_MAX_THRESHOLD}
+     * is reached, then it will return -1
+     */
     public static int getNextJobId(Context context) {
-        int lastId = getLastJobId(context);
-        if (lastId >= QUEUE_MAX_THRESHOLD) {
-            lastId = 1;
+        Set<String> currentQueue = getJobQueue(context);
+
+        if (currentQueue == null) {
+            return 1;
+        } else if (currentQueue.size() >= QUEUE_MAX_THRESHOLD) {
+            return -1;
         } else {
-            lastId += 1;
+            int i = 1;
+            while (currentQueue.contains(String.valueOf(i))) {
+                i++;
+            }
+            return i;
+
         }
-        setLastJobId(context, lastId);
-        return lastId;
     }
 }
