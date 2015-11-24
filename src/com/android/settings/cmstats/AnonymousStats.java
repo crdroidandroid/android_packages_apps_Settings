@@ -24,7 +24,6 @@ import android.os.UserHandle;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
-import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import cyanogenmod.providers.CMSettings;
@@ -96,10 +95,5 @@ public class AnonymousStats extends SettingsPreferenceFragment {
         }
         setLastJobId(context, lastId);
         return lastId;
-    }
-
-    @Override
-    protected int getMetricsCategory() {
-        return MetricsLogger.DONT_TRACK_ME_BRO;
     }
 }
