@@ -40,6 +40,5 @@
             android:title="@string/hfm_pref_screen_title"
             android:summary="@string/hfm_disable_ads_summary"
             android:fragment="com.android.settings.crdroid.hfm.HfmSettings" />
-        </PreferenceScreen>
 
 </PreferenceScreen>
