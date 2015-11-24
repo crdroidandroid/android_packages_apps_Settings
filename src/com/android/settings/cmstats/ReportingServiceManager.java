@@ -89,9 +89,8 @@ public class ReportingServiceManager extends BroadcastReceiver {
             setAlarm(context, 0);
             return;
         }
-        long timeElapsed = System.currentTimeMillis() - lastSynced;
-        if (timeElapsed < UPDATE_INTERVAL) {
-            long timeLeft = UPDATE_INTERVAL - timeElapsed;
+        long timeLeft = System.currentTimeMillis() - lastSynced;
+        if (timeLeft < UPDATE_INTERVAL) {
             Log.d(ReportingService.TAG, "Waiting for next sync : " + timeLeft / MILLIS_PER_HOUR + " hours");
             return;
         }
