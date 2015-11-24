@@ -29,7 +29,6 @@ import com.android.settings.Settings;
 
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;
-import com.google.analytics.tracking.android.MapBuilder;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -41,7 +40,6 @@ import org.apache.http.message.BasicNameValuePair;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class ReportingService extends Service {
     /* package */ static final String TAG = "CMStats";
@@ -83,9 +81,9 @@ public class ReportingService extends Service {
             Log.d(TAG, "SERVICE: Carrier ID=" + deviceCarrierId);
 
             // report to google analytics
-            Tracker tracker = GoogleAnalytics.getInstance(ReportingService.this)
-                    .getTracker(getString(R.string.ga_trackingId));
-            tracker.send(createMap(deviceName, deviceVersion,deviceCountry));
+            GoogleAnalytics ga = GoogleAnalytics.getInstance(ReportingService.this);
+            Tracker tracker = ga.getTracker(getString(R.string.ga_trackingId));
+            tracker.sendEvent(deviceName, deviceVersion, deviceCountry, null);
 
             // this really should be set at build time...
             // format of version should be:
@@ -99,8 +97,9 @@ public class ReportingService extends Service {
             }
 
             if (deviceVersionNoDevice != null) {
-                tracker.send(createMap("checkin", deviceName, deviceVersionNoDevice));
+                tracker.sendEvent("checkin", deviceName, deviceVersionNoDevice, null);
             }
+            tracker.close();
 
             // report to the cmstats service
             HttpClient httpClient = new DefaultHttpClient();
@@ -146,13 +145,5 @@ public class ReportingService extends Service {
             ReportingServiceManager.setAlarm(context, interval);
             stopSelf();
         }
-    }
-
-    private Map<String, String> createMap(String category, String action, String label) {
-        return MapBuilder.createEvent(category,     // Event category (required)
-                action,                     // Event action (required)
-                label,                      // Event label
-                        null)                       // Event value
-                .build();
     }
 }
