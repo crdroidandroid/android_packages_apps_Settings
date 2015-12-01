@@ -40,10 +40,6 @@
     <string name="share_message">Check out what #crDroid is all about @ https://plus.google.com/u/0/communities/118297646046960923906</string>
     <string name="share_chooser_title">Share crDroid</string>
 
-    <!-- Translation crDroid -->
-    <string name="crdroid_translation_title">Translations</string>
-    <string name="crdroid_translation_summary">Help us with translations in your language</string>
-
     <!-- Sites crDroid -->
     <string name="crdroid_on_web">crDroid on web</string>
     <string name="crdroid_source_title">Github</string>

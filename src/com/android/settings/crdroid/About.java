@@ -35,7 +35,6 @@ public class About extends SettingsPreferenceFragment {
 
     Preference mSourceUrl;
     Preference mGoogleUrl;
-    Preference mTranslationUrl;
     Preference mEvolvedUrl;
     Preference mNoRUrl;
 
@@ -46,7 +45,6 @@ public class About extends SettingsPreferenceFragment {
 
         mSourceUrl = findPreference("crdroid_source");
         mGoogleUrl = findPreference("crdroid_google_plus");
-        mTranslationUrl = findPreference("crdroid_translation");
         mEvolvedUrl = findPreference("crdroid_theme_evolved");
         mNoRUrl = findPreference("crdroid_theme_nor");
     }
@@ -63,8 +61,6 @@ public class About extends SettingsPreferenceFragment {
             launchUrl("https://github.com/crdroidandroid");
         } else if (preference == mGoogleUrl) {
             launchUrl("https://plus.google.com/u/0/communities/118297646046960923906");
-        } else if (preference == mTranslationUrl) {
-            launchUrl("https://oszgcaj.oneskyapp.com/collaboration");
         } else if (preference == mEvolvedUrl) {
             launchUrl("https://play.google.com/store/apps/details?id=com.cristianomatos.themecm12.evolved");
         } else if (preference == mNoRUrl) {
