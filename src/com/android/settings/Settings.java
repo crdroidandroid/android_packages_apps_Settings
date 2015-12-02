@@ -121,4 +121,5 @@ public class Settings extends SettingsActivity {
     public static class LiveDisplayActivity extends SettingsActivity { /* empty */ }
     public static class DisplayRotationActivity extends SettingsActivity { /* empty */ }
     public static class BlacklistSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class ContributorsCloudActivity extends SettingsActivity { /* empty */ }
 }
