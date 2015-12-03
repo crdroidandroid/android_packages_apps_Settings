@@ -53,4 +53,10 @@
                 android:fragment="com.android.settings.crdroid.gestureanywhere.GestureAnywhereSettings"
                 android:title="@string/gesture_anywhere_title" />
 
+        <!-- App circlebar -->
+        <PreferenceScreen
+                android:key="app_circle_bar"
+                android:fragment="com.android.settings.crdroid.fragments.AppCircleBar"
+                android:title="@string/app_circle_bar_title" />
+
 </PreferenceScreen>
