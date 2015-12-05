@@ -17,6 +17,13 @@
             android:entryValues="@array/toast_animation_values"
             android:persistent="false" />
 
+        <!-- Toast Icons -->
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:summary="@string/toast_icon_summary"
+            android:title="@string/toast_icon_title"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
