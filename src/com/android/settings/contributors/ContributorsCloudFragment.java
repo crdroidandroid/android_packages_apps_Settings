@@ -95,6 +95,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
     private String mContributorName;
     private String mContributorNick;
     private int mContributorCommits;
+    private int mContributorRank;
 
     private MenuItem mSearchMenuItem;
     private MenuItem mContributorInfoMenuItem;
@@ -650,8 +651,9 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
 
         // Total contributors
         String[] args = new String[]{String.valueOf(mSelectedContributor)};
-        Cursor c = db.rawQuery("select m1.name, m1.username, m1.commits " +
-                               "from metadata as m1 where m1.id = ?;", args);
+        Cursor c = db.rawQuery("select m1.name, m1.username, m1.commits," +
+                "(select  count(*)+1  from metadata as m2 where " +
+                "m2.commits > m1.commits) as rank from metadata as m1 where m1.id = ?;", args);
         if (c == null || !c.moveToFirst()) {
             // We don't have a valid cursor reference
             return;
@@ -659,6 +661,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         mContributorName = c.getString(0);
         mContributorNick = c.getString(1);
         mContributorCommits = c.getInt(2);
+        mContributorRank = c.getInt(3);
     }
 
     private void showUserInfo(Context context) {
@@ -666,11 +669,12 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         String name = mContributorName != null ? mContributorName : "-";
         String nick = mContributorNick != null ? mContributorNick : "-";
         String commits = mContributorName != null ? nf.format(mContributorCommits) : "-";
+        String rank = mContributorName != null ? "#" + String.valueOf(mContributorRank) : "-";
 
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle(R.string.contributor_info_menu);
         builder.setMessage(Html.fromHtml(getString(R.string.contributor_info_msg,
-                name, nick, commits)));
+                name, nick, commits, rank)));
         builder.setPositiveButton(android.R.string.ok, null);
         AlertDialog dialog = builder.create();
         dialog.show();
