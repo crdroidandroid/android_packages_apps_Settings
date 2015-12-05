@@ -21,6 +21,7 @@ import android.os.Bundle;
 import android.preference.PreferenceScreen;
 import android.provider.SearchIndexableResource;
 
+import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -42,6 +43,12 @@ public class ExtraSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.extra_settings);
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
+    }
+
+    @Override
+    protected int getMetricsCategory() {
+        // todo add a constant in MetricsLogger.java
+        return MetricsLogger.MAIN_SETTINGS;
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
