@@ -82,6 +82,21 @@
 
     </dashboard-category>
 
+    <!-- EXTRA CRDROID -->
+    <dashboard-category
+            android:id="@+id/extra_section"
+            android:title="@string/header_category_extra" >
+
+        <!-- Extra settings -->
+        <dashboard-tile
+                android:id="@+id/extra_settings"
+                android:title="@string/category_extra"
+                android:fragment="com.android.settings.crdroid.ExtraSettings"
+                android:icon="@drawable/ic_settings_system"
+                />
+
+    </dashboard-category>
+
     <!-- DEVICE -->
     <dashboard-category
             android:id="@+id/device_section"

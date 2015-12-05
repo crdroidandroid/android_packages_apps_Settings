@@ -53,6 +53,8 @@ import com.android.settings.wifi.AdvancedWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 
+import com.android.settings.crdroid.ExtraSettings;
+
 import java.util.Collection;
 import java.util.HashMap;
 
@@ -294,6 +296,13 @@ public final class SearchIndexableResources {
                         R.xml.wifi_calling_settings,
                         WifiCallingSettings.class.getName(),
                         R.drawable.ic_settings_wireless));
+
+        sResMap.put(ExtraSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(ExtraSettings.class.getName()),
+                        NO_DATA_RES_ID,
+                        ExtraSettings.class.getName(),
+                        R.drawable.ic_settings_system));
     }
 
     private SearchIndexableResources() {

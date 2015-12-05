@@ -130,12 +130,6 @@
                     settings:keywords="@string/keywords_display_wallpaper"
                     android:fragment="com.android.settings.WallpaperTypeSettings" />
 
-            <!-- Screen and animations -->
-            <PreferenceScreen
-                    android:key="screen_and_animations"
-                    android:fragment="com.android.settings.crdroid.ScreenAndAnimations"
-                    android:title="@string/screen_and_animations_title"/>
-
             <!-- expanded desktop -->
             <PreferenceScreen
                     android:key="expanded_desktop"
