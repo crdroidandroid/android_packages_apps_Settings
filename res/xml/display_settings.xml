@@ -142,14 +142,6 @@
                     android:title="@string/recents_show_searchbar"
                     android:defaultValue="true" />
 
-            <!-- RAM Memory bar -->
-            <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-                    android:key="systemui_recents_mem_display"
-                    android:title="@string/recents_show_membar_title"
-                    android:summaryOn="@string/recents_show_membar_summary_on"
-                    android:summaryOff="@string/recents_show_membar_summary_off"
-                    android:defaultValue="false" />
-
             <com.android.settings.FontDialogPreference
                     android:key="font_size"
                     android:title="@string/title_font_size"
