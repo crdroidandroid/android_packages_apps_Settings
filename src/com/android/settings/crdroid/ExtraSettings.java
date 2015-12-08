@@ -18,6 +18,7 @@ package com.android.settings.crdroid;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.SearchIndexableResource;
 

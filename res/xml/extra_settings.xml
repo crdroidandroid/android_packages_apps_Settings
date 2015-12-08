@@ -21,25 +21,68 @@
     android:title="@string/header_category_extra"
     settings:keywords="@string/header_category_extra">
 
-        <!-- Screen and animations -->
-        <PreferenceScreen
-                android:key="screen_and_animations"
-                android:fragment="com.android.settings.crdroid.ScreenAndAnimations"
-                android:title="@string/screen_and_animations_title"/>
+        <!-- Display -->
+        <PreferenceCategory
+                android:key="display_settings"
+                android:title="@string/display_settings">
 
-        <!-- RAM Memory bar -->
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-                android:key="systemui_recents_mem_display"
-                android:title="@string/recents_show_membar_title"
-                android:summaryOn="@string/recents_show_membar_summary_on"
-                android:summaryOff="@string/recents_show_membar_summary_off"
-                android:defaultValue="false" />
+                <!-- Screen and animations -->
+                <PreferenceScreen
+                        android:key="screen_and_animations"
+                        android:fragment="com.android.settings.crdroid.ScreenAndAnimations"
+                        android:title="@string/screen_and_animations_title"/>
 
-        <!--Network traffic -->
-        <PreferenceScreen
-                android:key="network_traffic_state"
-                android:fragment="com.android.settings.crdroid.NetworkTraffic"
-                android:summary="@string/network_traffic_summary"
-                android:title="@string/network_traffic_title" />
+        </PreferenceCategory>
+
+        <!-- Recents -->
+        <PreferenceCategory
+                android:key="recents_settings"
+                android:title="@string/recents_settings">
+
+                <!-- Search in Recents -->
+                <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
+                        android:key="recents_show_search_bar"
+                        android:title="@string/recents_show_searchbar"
+                        android:defaultValue="true" />
+
+                <!-- RAM Memory bar -->
+                <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+                        android:key="systemui_recents_mem_display"
+                        android:title="@string/recents_show_membar_title"
+                        android:summaryOn="@string/recents_show_membar_summary_on"
+                        android:summaryOff="@string/recents_show_membar_summary_off"
+                        android:defaultValue="false" />
+
+        </PreferenceCategory>
+
+        <!-- Status Bar -->
+        <PreferenceCategory
+                android:key="status_bar"
+                android:title="@string/status_bar_title">
+
+                <!--Network traffic -->
+                <PreferenceScreen
+                        android:key="network_traffic_state"
+                        android:fragment="com.android.settings.crdroid.NetworkTraffic"
+                        android:summary="@string/network_traffic_summary"
+                        android:title="@string/network_traffic_title" />
+
+                <!-- crDroid logo -->
+                <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+                        android:key="status_bar_crdroid_logo"
+                        android:title="@string/status_bar_crdroid_logo_title"
+                        android:summaryOn="@string/status_bar_crdroid_logo_summary_on"
+                        android:summaryOff="@string/status_bar_crdroid_logo_summary_off"
+                        android:defaultValue="false" />
+
+               <!-- SU StatusBar -->
+               <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+                        android:key="show_su_indicator"
+                        android:title="@string/su_indicator"
+                        android:summaryOn="@string/su_indicator_summary_on"
+                        android:summaryOff="@string/su_indicator_summary_off"
+                        android:defaultValue="true" />
+
+        </PreferenceCategory>
 
 </PreferenceScreen>
