@@ -39,19 +39,11 @@
                 android:key="recents_settings"
                 android:title="@string/recents_settings">
 
-                <!-- Search in Recents -->
-                <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
-                        android:key="recents_show_search_bar"
-                        android:title="@string/recents_show_searchbar"
-                        android:defaultValue="true" />
-
-                <!-- RAM Memory bar -->
-                <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-                        android:key="systemui_recents_mem_display"
-                        android:title="@string/recents_show_membar_title"
-                        android:summaryOn="@string/recents_show_membar_summary_on"
-                        android:summaryOff="@string/recents_show_membar_summary_off"
-                        android:defaultValue="false" />
+                <!-- Recent panel settings -->
+                <PreferenceScreen
+                        android:key="recents_panel"
+                        android:title="@string/recents_panel_title"
+                        android:fragment="com.android.settings.crdroid.RecentsPanelSettings"/>
 
                 <!-- Recents OmniSwitch -->
                 <PreferenceScreen
