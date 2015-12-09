@@ -53,6 +53,13 @@
                         android:summaryOff="@string/recents_show_membar_summary_off"
                         android:defaultValue="false" />
 
+                <!-- Recents OmniSwitch -->
+                <PreferenceScreen
+                        android:key="omniswitch"
+                        android:id="@+id/omniswitch"
+                        android:title="@string/omniswitch_settings_title"
+                        android:fragment="com.android.settings.crdroid.OmniSwitch" />
+
         </PreferenceCategory>
 
         <!-- Status Bar -->
