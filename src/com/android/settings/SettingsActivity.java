@@ -95,6 +95,7 @@ import com.android.settings.fuelgauge.PowerUsageDetail;
 import com.android.settings.fuelgauge.PowerUsageSummary;
 import com.android.settings.livedisplay.LiveDisplay;
 import com.android.settings.profiles.NFCProfileTagCallback;
+import com.android.settings.profiles.ProfilesSettings;
 import com.android.settings.search.DynamicIndexableContentMonitor;
 import com.android.settings.search.Index;
 import com.android.settings.inputmethod.InputMethodAndLanguageSettings;
@@ -369,6 +370,7 @@ public class SettingsActivity extends Activity
             com.android.settings.cyanogenmod.DisplayRotation.class.getName(),
             com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
             BlacklistSettings.class.getName(),
+            ProfilesSettings.class.getName(),
             NotificationManagerSettings.class.getName()
     };
 
