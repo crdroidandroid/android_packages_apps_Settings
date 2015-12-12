@@ -56,6 +56,12 @@
     <string name="build_date">Build date</string>
     <string name="build_date_default" translatable="false">2015-01-01-0000</string>
 
+    <!-- Settings switch for updating Cyanogen recovery -->
+    <string name="update_recovery_title">Update Cyanogen recovery</string>
+    <string name="update_recovery_summary">Update recovery with system updates</string>
+    <string name="update_recovery_on_warning">NOTICE: When this feature is enabled, your installed recovery will be replaced by one included with the current version of the running OS.\n\nYour recovery will be updated along with upgrades to your system, helping to ensure compatibility with future versions.\n\nWould you like to enable this feature?</string>
+    <string name="update_recovery_off_warning">WARNING: When this feature is disabled, your installed recovery will not be updated with OS upgrades.\n\nFuture OS updates may not install with outdated or custom recovery versions.\n\nDo you really want to disable this feature?</string>
+
     <!-- Themes Settings -->
     <!-- Settings main menu entry -->
     <string name="themes_settings_title">Themes</string>
@@ -312,7 +318,6 @@
     <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Notification light</string>
     <string name="notification_light_general_title">General</string>
-    <string name="notification_light_advanced_title">Advanced</string>
     <string name="notification_light_applist_title">Apps</string>
     <string name="notification_light_phonelist_title">Phone</string>
     <string name="notification_light_use_custom">Use custom values</string>
@@ -828,7 +833,6 @@
 
     <string name="category_sounds">Sounds</string>
     <string name="notification_manager">Notifications</string>
-    <string name="lockscreen_settings">Lock screen</string>
     <string name="lockscreen_settings">Lock screen</string>
     <string name="category_lights">Lights</string>
     <string name="category_volume">Volume</string>
