@@ -29,74 +29,22 @@
                 settings:keywords="@string/button_pref_title"
                 android:fragment="com.android.settings.ButtonSettings" />
 
-        <!-- Display -->
-        <PreferenceCategory
-                android:key="display_settings"
-                android:title="@string/display_settings">
+        <!-- Recent panel settings -->
+        <PreferenceScreen
+                android:key="recents_panel"
+                android:title="@string/recents_panel_title"
+                android:fragment="com.android.settings.crdroid.RecentsPanelSettings" />
 
-                <!-- Screen and animations -->
-                <PreferenceScreen
-                        android:key="screen_and_animations"
-                        android:fragment="com.android.settings.crdroid.ScreenAndAnimations"
-                        android:title="@string/screen_and_animations_title"/>
+        <!-- Screen and animations -->
+        <PreferenceScreen
+                android:key="screen_and_animations"
+                android:fragment="com.android.settings.crdroid.ScreenAndAnimations"
+                android:title="@string/screen_and_animations_title" />
 
-        </PreferenceCategory>
-
-        <!-- Recents -->
-        <PreferenceCategory
-                android:key="recents_settings"
-                android:title="@string/recents_settings">
-
-                <!-- Recent panel settings -->
-                <PreferenceScreen
-                        android:key="recents_panel"
-                        android:title="@string/recents_panel_title"
-                        android:fragment="com.android.settings.crdroid.RecentsPanelSettings"/>
-
-                <!-- Recents OmniSwitch -->
-                <PreferenceScreen
-                        android:key="omniswitch"
-                        android:id="@+id/omniswitch"
-                        android:title="@string/omniswitch_settings_title"
-                        android:fragment="com.android.settings.crdroid.OmniSwitch" />
-
-        </PreferenceCategory>
-
-        <!-- Status Bar -->
-        <PreferenceCategory
-                android:key="status_bar"
-                android:title="@string/status_bar_title">
-
-                <!--Network traffic -->
-                <PreferenceScreen
-                        android:key="network_traffic_state"
-                        android:fragment="com.android.settings.crdroid.NetworkTraffic"
-                        android:summary="@string/network_traffic_summary"
-                        android:title="@string/network_traffic_title" />
-
-                <!-- time-context headers -->
-                <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-                        android:key="status_bar_custom_header"
-                        android:title="@string/status_bar_custom_header_title"
-                        android:summary="@string/status_bar_custom_header_summary"
-                        android:defaultValue="false"/>
-
-                <!-- crDroid logo -->
-                <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-                        android:key="status_bar_crdroid_logo"
-                        android:title="@string/status_bar_crdroid_logo_title"
-                        android:summaryOn="@string/status_bar_crdroid_logo_summary_on"
-                        android:summaryOff="@string/status_bar_crdroid_logo_summary_off"
-                        android:defaultValue="false" />
-
-               <!-- SU StatusBar -->
-               <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-                        android:key="show_su_indicator"
-                        android:title="@string/su_indicator"
-                        android:summaryOn="@string/su_indicator_summary_on"
-                        android:summaryOff="@string/su_indicator_summary_off"
-                        android:defaultValue="true" />
-
-        </PreferenceCategory>
+        <!-- Status bar -->
+        <PreferenceScreen
+                android:id="@+id/status_bar_settings"
+                android:title="@string/status_bar_title"
+                android:fragment="com.android.settings.cyanogenmod.StatusBarSettings" />
 
 </PreferenceScreen>
