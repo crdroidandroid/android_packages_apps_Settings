@@ -101,18 +101,22 @@ public class SystemappRemover extends Fragment {
         safetyList.add("Superuser");
         safetyList.add("TelephonyProvider");
         // priv-app
+        safetyList.add("CMSettingsProvider");
         safetyList.add("ContactsProvider");
+        safetyList.add("CyanogenSetupWizard");
         safetyList.add("DefaultContainerService");
         safetyList.add("Dialer");
         safetyList.add("DownloadProvider");
         safetyList.add("FusedLocation");
         safetyList.add("Keyguard");
         safetyList.add("MediaProvider");
+        safetyList.add("OmniSwitch");
         safetyList.add("ProxyHandler");
         safetyList.add("Settings");
         safetyList.add("SettingsProvider");
         safetyList.add("SystemUI");
         safetyList.add("TeleService");
+        safetyList.add("TimeKeep");
 
         // create arraylist from /system/app and /system/priv-app content
         File system = new File(systemPath);
