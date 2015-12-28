@@ -19,7 +19,6 @@ package com.android.settings.profiles;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.NotificationGroup;
-import cyanogenmod.app.ProfileManager;
 import android.content.DialogInterface;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -42,6 +41,8 @@ import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import cyanogenmod.app.ProfileManager;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
@@ -81,6 +82,10 @@ public class AppGroupConfig extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (savedInstanceState != null) {
+            mPackageToDelete = savedInstanceState.getString("package_delete");
+        }
 
         mProfileManager = ProfileManager.getInstance(getActivity());
         addPreferencesFromResource(R.xml.application_list);
@@ -318,5 +323,11 @@ public class AppGroupConfig extends SettingsPreferenceFragment
     private void doDelete() {
         mNotificationGroup.removePackage(mPackageToDelete);
         updatePackages();
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle in) {
+        super.onSaveInstanceState(in);
+        in.putString("package_delete", mPackageToDelete);
     }
 }

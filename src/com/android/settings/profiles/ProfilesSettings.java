@@ -16,11 +16,9 @@
 
 package com.android.settings.profiles;
 
-import android.app.ActionBar;
+import android.annotation.Nullable;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -28,37 +26,34 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.provider.Settings;
-import android.support.v4.view.ViewPager;
-import android.support.v13.app.FragmentStatePagerAdapter;
+import android.preference.Preference;
+import android.preference.PreferenceScreen;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.Switch;
+import android.widget.FrameLayout;
+import android.widget.ListView;
 import android.widget.TextView;
-
-import com.android.internal.logging.MetricsLogger;
-
-import com.android.settings.R;
-import com.android.settings.SettingsActivity;
-import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.SubSettings;
-import com.android.settings.cyanogenmod.CMBaseSystemSettingSwitchBar;
 
 import cyanogenmod.app.Profile;
 import cyanogenmod.app.ProfileManager;
 import cyanogenmod.providers.CMSettings;
 
-import org.cyanogenmod.internal.util.ScreenType;
+import com.android.internal.logging.MetricsLogger;
+import com.android.settings.R;
+import com.android.settings.SettingsActivity;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.cyanogenmod.CMBaseSystemSettingSwitchBar;
 
 import java.util.UUID;
 
 public class ProfilesSettings extends SettingsPreferenceFragment
-        implements CMBaseSystemSettingSwitchBar.SwitchBarChangeCallback {
+        implements CMBaseSystemSettingSwitchBar.SwitchBarChangeCallback,
+        Preference.OnPreferenceChangeListener {
     private static final String TAG = "ProfilesSettings";
 
     public static final String EXTRA_PROFILE = "Profile";
@@ -73,9 +68,6 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     private ProfileManager mProfileManager;
     private CMBaseSystemSettingSwitchBar mProfileEnabler;
 
-    private ViewPager mViewPager;
-    private TextView mEmptyText;
-    private ProfilesPagerAdapter mAdapter;
     private View mAddProfileFab;
     private boolean mEnabled;
 
@@ -101,14 +93,42 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
-        mContainer = container;
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+        addPreferencesFromResource(R.xml.profiles_settings);
+    }
 
-        View view = inflater.inflate(R.layout.profile_tabs, container, false);
-        mViewPager = (ViewPager) view.findViewById(R.id.pager);
-        mEmptyText = (TextView) view.findViewById(R.id.empty);
-        mAddProfileFab = view.findViewById(R.id.floating_action_button);
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = super.onCreateView(inflater, container, savedInstanceState);
+        FrameLayout frameLayout = new FrameLayout(getActivity());
+        mContainer = frameLayout;
+        frameLayout.addView(view);
+        return frameLayout;
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        // Add a footer to avoid a situation where the FAB would cover the last
+        // item's options in a non-scrollable listview.
+        ListView listView = getListView();
+        View footer = LayoutInflater.from(getActivity())
+                .inflate(R.layout.empty_list_entry_footer, listView, false);
+        listView.addFooterView(footer);
+        listView.setFooterDividersEnabled(false);
+        footer.setOnClickListener(null);
+
+        View v = LayoutInflater.from(getActivity())
+                .inflate(R.layout.empty_textview, (ViewGroup) view, true);
+
+        TextView emptyTextView = (TextView) v.findViewById(R.id.empty);
+        listView.setEmptyView(emptyTextView);
+
+        View fab = LayoutInflater.from(getActivity())
+                .inflate(R.layout.fab, mContainer, true);
+        mAddProfileFab = fab.findViewById(R.id.floating_action_button);
         mAddProfileFab.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -116,11 +136,6 @@ public class ProfilesSettings extends SettingsPreferenceFragment
                         addProfile();
                     }
                 });
-
-        mAdapter = new ProfilesPagerAdapter(getChildFragmentManager());
-        mViewPager.setAdapter(mAdapter);
-
-        return view;
     }
 
     @Override
@@ -145,11 +160,6 @@ public class ProfilesSettings extends SettingsPreferenceFragment
 
         // check if we are enabled
         updateProfilesEnabledState();
-
-        // If running on a phone, remove padding around tabs
-        if (!ScreenType.isTablet(getActivity())) {
-            mContainer.setPadding(0, 0, 0, 0);
-        }
     }
 
     @Override
@@ -223,6 +233,9 @@ public class ProfilesSettings extends SettingsPreferenceFragment
                         mProfileManager.resetAll();
                         mProfileManager.setActiveProfile(
                                 mProfileManager.getActiveProfile().getUuid());
+                        dialog.dismiss();
+                        refreshList();
+
                     }
                 })
                 .setNegativeButton(R.string.cancel, null)
@@ -237,8 +250,11 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         activity.invalidateOptionsMenu();
 
         mAddProfileFab.setVisibility(mEnabled ? View.VISIBLE : View.GONE);
-        mViewPager.setVisibility(mEnabled ? View.VISIBLE : View.GONE);
-        mEmptyText.setVisibility(mEnabled ? View.GONE : View.VISIBLE);
+        if (!mEnabled) {
+            getPreferenceScreen().removeAll(); // empty it
+        } else {
+            refreshList();
+        }
     }
 
     @Override
@@ -251,32 +267,49 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         getActivity().sendBroadcast(intent);
     }
 
-    class ProfilesPagerAdapter extends FragmentStatePagerAdapter {
-        Fragment[] frags = { new ProfilesList() };
-        String[] titles = { getString(R.string.profile_profiles_manage) };
+    public void refreshList() {
+        PreferenceScreen plist = getPreferenceScreen();
+        plist.removeAll();
 
-        ProfilesPagerAdapter(FragmentManager fm) {
-            super(fm);
+        // Get active profile, if null
+        Profile prof = mProfileManager.getActiveProfile();
+        String selectedKey = prof != null ? prof.getUuid().toString() : null;
+
+        for (Profile profile : mProfileManager.getProfiles()) {
+            Bundle args = new Bundle();
+            args.putParcelable(ProfilesSettings.EXTRA_PROFILE, profile);
+            args.putBoolean(ProfilesSettings.EXTRA_NEW_PROFILE, false);
+
+            ProfilesPreference ppref = new ProfilesPreference(this, args);
+            ppref.setKey(profile.getUuid().toString());
+            ppref.setTitle(profile.getName());
+            ppref.setPersistent(false);
+            ppref.setOnPreferenceChangeListener(this);
+            ppref.setSelectable(true);
+            ppref.setEnabled(true);
+
+            if (TextUtils.equals(selectedKey, ppref.getKey())) {
+                ppref.setChecked(true);
+            }
+
+            plist.addPreference(ppref);
         }
+    }
 
-        @Override
-        public Fragment getItem(int position) {
-            return frags[position];
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (newValue instanceof String) {
+            setSelectedProfile((String) newValue);
+            refreshList();
         }
+        return true;
+    }
 
-        @Override
-        public int getCount() {
-            return frags.length;
+    private void setSelectedProfile(String key) {
+        try {
+            UUID selectedUuid = UUID.fromString(key);
+            mProfileManager.setActiveProfile(selectedUuid);
+        } catch (IllegalArgumentException ex) {
+            ex.printStackTrace();
         }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return titles[position];
-        }
-
-        public void refreshProfiles() {
-            ((ProfilesList) frags[0]).refreshList();
-        }
-
     }
 }
