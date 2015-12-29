@@ -17,8 +17,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, crDroid version -->
-    <string name="mod_version">crDroid version</string>
-    <string name="mod_version_default">Unknown</string>
+    <string name="crdroid_mod_version">crDroid version</string>
+    <string name="crdroid_mod_version_default">Unknown</string>
 
     <!-- General strings -->
     <string name="ok">ok</string>
@@ -231,7 +231,7 @@
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Disable FC Notifications</string>
-    <string name="disable_fc_notifications_summary">This will hide all force close notificaitons</string>
+    <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
 
     <!-- Force expanded notifications -->
     <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
