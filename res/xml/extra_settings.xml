@@ -53,5 +53,11 @@
                 android:title="@string/system_app_remover"
                 android:summary="@string/systemappremover_summary"
                 android:fragment="com.android.settings.crdroid.fragments.SystemappRemover" />
+                
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="disable_fc_notifications"
+        android:title="@string/disable_fc_notifications_title"
+        android:summary="@string/disable_fc_notifications_summary"
+        android:defaultValue="false" />
 
 </PreferenceScreen>
