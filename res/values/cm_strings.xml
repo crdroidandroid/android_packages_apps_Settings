@@ -802,6 +802,10 @@
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
+    <!-- Status bar - icon blacklist -->
+    <string name="status_bar_icons_title">Status bar icons</string>
+    <string name="status_bar_icons_summary">Control which status bar icons are shown</string>
+
     <!-- EdgeGesture service -->
     <string name="edge_gesture_service_title">Block gesture touch events</string>
     <string name="edge_gesture_service_summary">Don\'t send touch events for navigation and status bar gestures to apps</string>
@@ -985,6 +989,13 @@
 
     <string name="primary_sub_select_title">Default 3G/LTE subscription</string>
     <string name="select_sim_card">Select SIM card</string>
+
+    <!-- MSIM SIM status -->
+    <string name="sim_card_status_title">SIM %d status</string>
+    <string name="sim_card_lock_settings_title">SIM %d lock settings</string>
+    <string name="sim_card_summary_empty">SIM not inserted</string>
+    <string name="sim_mobile_network_settings_category_title">Mobile network settings</string>
+    <string name="sim_mobile_network_settings_title">SIM %d settings</string>
 
     <!-- Zen mode allowed event setting summary items -->
     <!-- [CHAR LIMIT=50] Like zen_mode_reminders, but part of a list, so lower case if needed-->
