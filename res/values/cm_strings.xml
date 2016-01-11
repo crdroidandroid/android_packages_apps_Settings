@@ -890,6 +890,7 @@
     <string name="voice_wakeup_retrain_title">Retrain your voice</string>
     <string name="voice_wakeup_activity_title">Activity to launch</string>
     <string name="voice_wakeup_default_activity">Google Now</string>
+    <string name="voice_wakeup_needs_dial_permission_warning">Voice Wakeup needs to have phone call permissions to select a Direct Dial contact.</string>
 
     <string name="picker_activities">Activities</string>
     <string name="select_custom_app_title">Select custom app</string>
@@ -965,7 +966,7 @@
     <string name="title_general">General</string>
     <string name="advanced">Advanced</string>
     <string name="link_volume_option_title">Link ringtone &amp; notification volumes</string>
-    <string name="lcd_density_prompt_message">Some apps may not function at non-standard dpi.\n\nThis will restart your phone.</string>
+    <string name="lcd_density_prompt_message">Some apps may not function at non-standard DPI.\n\nThis will restart your device.</string>
 
     <!-- Edit access point labels: PPP number -->
     <string name="apn_ppp_number">APN PPP phone number</string>
