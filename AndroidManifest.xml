@@ -149,9 +149,6 @@
             </intent-filter>
         </activity>
 
-        <!-- SystemApp Remover -->
-        <activity android:name="com.android.settings.crdroid.fragments.SystemappRemover" />
-
         <!-- Wireless Controls -->
 
         <activity android:name="Settings$WirelessSettingsActivity"

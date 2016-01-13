@@ -47,11 +47,4 @@
                 android:title="@string/status_bar_title"
                 android:fragment="com.android.settings.cyanogenmod.StatusBarSettings" />
 
-        <!-- SlimSizer -->
-        <PreferenceScreen
-                android:key="system_app_remover"
-                android:title="@string/system_app_remover"
-                android:summary="@string/systemappremover_summary"
-                android:fragment="com.android.settings.crdroid.fragments.SystemappRemover" />
-
 </PreferenceScreen>
