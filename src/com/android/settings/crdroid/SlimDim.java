@@ -71,7 +71,7 @@ public class SlimDim extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return CMMetricsLogger.DONT_TRACK_ME_BRO;
+        return CMMetricsLogger.MAIN_SETTINGS;
     }
 
     @Override
