@@ -34,8 +34,9 @@ import android.provider.Settings.SettingNotFoundException;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.MetricsLogger;
 import com.android.settings.Utils;
+
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
 public class RecentsPanelSettings extends SettingsPreferenceFragment implements
              Preference.OnPreferenceChangeListener {
@@ -107,7 +108,7 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
+        return CMMetricsLogger.APPLICATION;
     }
 
     @Override

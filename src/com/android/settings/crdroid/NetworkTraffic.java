@@ -29,7 +29,6 @@ import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 
 import com.android.settings.R;
-import com.android.internal.logging.MetricsLogger;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.crdroid.SeekBarPreference;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -37,6 +36,8 @@ import com.android.settings.search.Indexable;
 
 import java.util.List;
 import java.util.ArrayList;
+
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
 public class NetworkTraffic extends SettingsPreferenceFragment
     implements OnPreferenceChangeListener, Indexable {
@@ -124,7 +125,7 @@ public class NetworkTraffic extends SettingsPreferenceFragment
     @Override
     protected int getMetricsCategory() {
         // todo add a constant in MetricsLogger.java
-        return MetricsLogger.MAIN_SETTINGS;
+        return CMMetricsLogger.MAIN_SETTINGS;
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {

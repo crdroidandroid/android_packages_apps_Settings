@@ -23,9 +23,10 @@ import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 
-import com.android.internal.logging.MetricsLogger;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
+
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
 public class About extends SettingsPreferenceFragment {
 
@@ -54,7 +55,7 @@ public class About extends SettingsPreferenceFragment {
     @Override
     protected int getMetricsCategory() {
         // todo add a constant in MetricsLogger.java
-        return MetricsLogger.MAIN_SETTINGS;
+        return CMMetricsLogger.MAIN_SETTINGS;
     }
 
     @Override

@@ -22,7 +22,6 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.SearchIndexableResource;
 
-import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -31,6 +30,8 @@ import com.android.settings.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
 public class ExtraSettings extends SettingsPreferenceFragment
         implements Indexable {
@@ -49,7 +50,7 @@ public class ExtraSettings extends SettingsPreferenceFragment
     @Override
     protected int getMetricsCategory() {
         // todo add a constant in MetricsLogger.java
-        return MetricsLogger.MAIN_SETTINGS;
+        return CMMetricsLogger.MAIN_SETTINGS;
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
