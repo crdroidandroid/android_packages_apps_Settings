@@ -193,10 +193,10 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
 
         if (value == 0) {
             Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, 0);
-            summary = R.string.recents_clear_all_location_top_right;
+            summary = R.string.recents_clear_all_location_bottom_right;
         } else if (value == 1) {
             Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, 1);
-            summary = R.string.recents_clear_all_location_top_left;
+            summary = R.string.recents_clear_all_location_bottom_left;
         }
         if (mRecentsClearAllLocation != null && summary != -1) {
             mRecentsClearAllLocation.setSummary(res.getString(summary));
