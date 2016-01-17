@@ -41,6 +41,7 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settings.crdroid.SeekBarPreference;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
@@ -66,6 +67,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
+    private static final String PREF_QS_TRANSPARENT_SHADE = "qs_transparent_shade";
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
@@ -83,6 +85,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private ListPreference mStatusBarBatteryShowPercent;
 
     private SwitchPreference mBlockOnSecureKeyguard;
+    private SeekBarPreference mQSShadeAlpha;
     private static final int MY_USER_ID = UserHandle.myUserId();
 
     @Override
@@ -162,6 +165,15 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         } else if (mBlockOnSecureKeyguard != null) {
             prefSet.removePreference(mBlockOnSecureKeyguard);
         }
+
+        // QS shade alpha
+        mQSShadeAlpha =
+                (SeekBarPreference) prefSet.findPreference(PREF_QS_TRANSPARENT_SHADE);
+        int qSShadeAlpha = Settings.System.getInt(resolver,
+                Settings.System.QS_TRANSPARENT_SHADE, 255);
+        mQSShadeAlpha.setValue(qSShadeAlpha / 1);
+        mQSShadeAlpha.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -277,6 +289,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         } else if (preference == mBlockOnSecureKeyguard) {
             Settings.Secure.putInt(resolver, Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD,
                     (Boolean) newValue ? 1 : 0);
+            return true;
+        } else if (preference == mQSShadeAlpha) {
+            int alpha = (Integer) newValue;
+            Settings.System.putInt(resolver, Settings.System.QS_TRANSPARENT_SHADE, alpha * 1);
             return true;
         }
         return false;
