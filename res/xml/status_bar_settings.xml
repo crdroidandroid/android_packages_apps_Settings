@@ -16,6 +16,7 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/status_bar_title">
 
     <!--Network traffic -->
@@ -150,7 +151,7 @@
         android:key="qs_transparent_shade"
         android:title="@string/qs_transparent_shade"
         android:max="255"
-        settings:minimum="0"
+        settings:min="0"
         settings:unitsLeft=""
         settings:unitsRight=""
         android:persistent="false" />
@@ -160,7 +161,7 @@
         android:key="qs_transparent_header"
         android:title="@string/qs_transparent_header"
         android:max="255"
-        settings:minimum="0"
+        settings:min="0"
         settings:unitsLeft=""
         settings:unitsRight=""
         android:persistent="false" />
