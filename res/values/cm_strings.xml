@@ -953,6 +953,7 @@
     <string name="menu_hidden_apps_delete">Reset</string>
     <string name="menu_hidden_apps_reset_lock">Reset pattern lock</string>
     <string name="protected_apps">Protected apps</string>
+    <string name="protected_apps_summary">Manage which applications are hidden behind a secure lock</string>
     <string name="saving_protected_components">Saving component state\u2026</string>
 
     <string name="pa_login_username_hint">Username (email)</string>
@@ -960,6 +961,7 @@
     <string name="pa_login_submit_button">Sign in</string>
     <string name="pa_login_checking_password">Checking account\u2026</string>
     <string name="pa_login_incorrect_login">Login was incorrect</string>
+    <string name="pa_pattern_or_fingerprint_header">Must draw pattern or use fingerprint to unlock</string>
 
     <string name="category_sounds">Sounds</string>
     <string name="notification_manager">Notifications</string>
@@ -1025,4 +1027,11 @@
     <string name="ic_code_full">IC: %1$s</string>
 
     <string name="sim_ringtone_title">SIM %d ringtone</string>
+
+    <!-- label for application name -->
+    <string name="app_name_label_cm">App:</string>
+    <!-- label for last time used -->
+    <string name="last_time_used_label_cm">Last time used:</string>
+    <!-- label for usage time -->
+    <string name="usage_time_label_cm">Usage time:</string>
 </resources>
