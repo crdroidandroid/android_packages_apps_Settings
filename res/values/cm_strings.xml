@@ -691,6 +691,9 @@
     <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
     <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
 
+    <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
+    <string name="bluetooth_accept_all_files">Accept all file types</string>
+
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">High touch sensitivity</string>
     <string name="high_touch_sensitivity_summary">Increase touchscreen sensitivity so it can be used while wearing gloves</string>
@@ -1059,4 +1062,25 @@
     <string name="factory_reset_erase_sd_card_summary">Erase all data on the SD card, including music and photos</string>
     <string name="factory_reset_warning_text_reset_now">RESET NOW</string>
     <string name="factory_reset_warning_text_message">All your accounts, apps, app data, and system settings will be removed from this device. This cannot be reversed.</string>
+
+    <!-- Tethering & portable hotspot other category -->
+    <string name="tethering_other_category_text">Other</string>
+    <!-- Wi-Fi tethering inactivity timeout -->
+    <string name="hotstpot_inactivity_timeout_text">Wi\u2011Fi hotspot timeout</string>
+    <string name="hotstpot_inactivity_timeout_never">Never</string>
+    <string name="hotstpot_inactivity_timeout_1_minute">1 minute</string>
+    <string name="hotstpot_inactivity_timeout_5_minutes">5 minutes</string>
+    <string name="hotstpot_inactivity_timeout_10_minutes">10 minutes</string>
+    <string name="hotstpot_inactivity_timeout_never_summary_text">Portable Wi\u2011Fi hotspot timeout never</string>
+    <string name="hotstpot_inactivity_timeout_summary_text">Portable Wi\u2011Fi hotspot timeout after <xliff:g id="timeout">%1$s</xliff:g></string>
+
+    <!-- Live lock screen -->
+    <!-- Live lock screen title -->
+    <string name="live_lock_screen_title">Live lock screen</string>
+    <!-- Live lock screen summary -->
+    <string name="live_lock_screen_summary">Enable and configure Live lock screens</string>
+    <!-- Live lock screen settings content description -->
+    <string name="live_lock_screen_settings_button">Settings</string>
+    <!-- Live lock screen settings screen, caption for when live lock screens are disabled -->
+    <string name="live_lock_screen_settings_disabled_prompt">To view available Live lock screens, turn Live lock screens on.</string>
 </resources>
