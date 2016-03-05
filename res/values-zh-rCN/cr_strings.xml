@@ -38,7 +38,7 @@
     <string name="crdroid_donation_summary">倘若您喜欢crDroid团队的作品，并想继续支持我们，欢迎到此处捐赠</string>
 
     <!-- Maintainers -->
-    <string name="maintainers_crdroid_title">crDroid维护人员</string>
+    <string name="maintainers_crdroid_title">crDroid 维护人员</string>
     <string name="maintainers_crdroid_error">无法加载维护人员列表</string>
 
     <!-- About crDroid -->
@@ -53,13 +53,13 @@
     <string name="crdroid_theme_nor_summary">由 Cristiano Matos 开发</string>
 
     <!-- Share crDroid -->
-    <string name="share_crdroid_title">分享crDroid</string>
+    <string name="share_crdroid_title">分享 crDroid</string>
     <string name="share_crdroid_summary">让其他人知道 crDroid</string>
     <string name="share_message">来Google+上查看#crDroid社群：@ https://plus.google.com/u/0/communities/118297646046960923906</string>
-    <string name="share_chooser_title">分享crDroid</string>
+    <string name="share_chooser_title">分享 crDroid</string>
 
     <!-- Sites crDroid -->
-    <string name="crdroid_on_web">crDroid官网</string>
+    <string name="crdroid_on_web">crDroid 官网</string>
     <string name="crdroid_source_title">Github</string>
     <string name="crdroid_source_summary">访问我们的Git源码团队</string>
     <string name="crdroid_google_plus_title">Google+</string>
@@ -78,12 +78,12 @@
     <string name="recents_clear_all_location_bottom_left">左下角</string>
 
     <!-- Recents OmniSwitch -->
-    <string name="omniswitch_recents_title">OmniSwitch最近任务</string>
+    <string name="omniswitch_recents_title">OmniSwitch 最近任务</string>
     <string name="omniswitch_title">OmniSwitch</string>
-    <string name="recents_use_omniswitch_title">激活OmniSwitch</string>
+    <string name="recents_use_omniswitch_title">激活 OmniSwitch</string>
     <string name="recents_use_omniswitch_summary">使用OmniSwitch来替代默认最近任务预览</string>
-    <string name="omniswitch_start_settings_summary">OmniSwitch设置</string>
-    <string name="omniswitch_first_time_title">Information</string>
+    <string name="omniswitch_start_settings_summary">OmniSwitch 设置</string>
+    <string name="omniswitch_first_time_title">信息</string>
     <string name="omniswitch_first_time_message">确保您启用了OmniSwitch。你可以通过下面的\"设置\"开启。</string>
 
     <!-- Statusbar crDroid logo -->
@@ -92,7 +92,7 @@
     <string name="status_bar_crdroid_logo_summary_off">crDroid图标在状态栏处于禁用状态</string>
 
     <!-- Superuser indicator on status bar -->
-    <string name="su_indicator">超级用户指示器Superuser indicator</string>
+    <string name="su_indicator">超级用户指示器</string>
     <string name="su_indicator_summary_on">当使用ROOT权限时，状态栏将会启用#图标</string>
     <string name="su_indicator_summary_off">当使用ROOT权限时，状态栏将会禁用#图标</string>
 
