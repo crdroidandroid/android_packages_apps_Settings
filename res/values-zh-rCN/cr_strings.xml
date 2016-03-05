@@ -209,11 +209,11 @@
     <string name="selinux_enforcing_title">强制</string>
 
     <!-- Text for forcing expanded notifications -->
-    <string name="disable_fc_notifications_title">禁用FC提示Disable FC Notifications</string>
+    <string name="disable_fc_notifications_title">禁用强行停止提示</string>
     <string name="disable_fc_notifications_summary">这将会隐藏所有强行停止的提示</string>
 
     <!-- Force expanded notifications -->
-    <string name="force_expanded_notifications_title">强制扩展通知Force Expanded Notifications</string>
+    <string name="force_expanded_notifications_title">强制扩展通知</string>
     <string name="force_expanded_notifications_summary">只有支持扩展通知的应用程序可用</string>
 
     <!-- Disabling immersive mode messages -->
