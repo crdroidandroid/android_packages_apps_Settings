@@ -269,6 +269,7 @@ public final class BluetoothSettings extends DeviceListPreferenceFragment implem
     @Override
     public void onPause() {
         super.onPause();
+        mPairedDevicesCategory.removeAll();
         if (mBluetoothEnabler != null) {
             mBluetoothEnabler.pause();
         }
