@@ -23,6 +23,7 @@
         <item>@string/app_ops_cat_messaging</item>
         <item>@string/app_ops_cat_media</item>
         <item>@string/app_ops_cat_device</item>
+        <item>@string/app_ops_cat_bootup</item>
     </string-array>
 
     <!-- User display names for app ops codes -->
@@ -166,6 +167,8 @@
         <!--OP_INSTANT_APP_START_FOREGROUND -->
         <item>@string/app_ops_app_start_foreground</item>
         <!--OP_ANSWER_PHONE_CALLS -->
-        <item>@string/app_ops_answer_phone_calls</item>	
+        <item>@string/app_ops_answer_phone_calls</item>
+        <!-- OP_BOOT_COMPLETED -->
+        <item>@string/app_ops_boot_completed</item>
     </string-array>
 </resources>
