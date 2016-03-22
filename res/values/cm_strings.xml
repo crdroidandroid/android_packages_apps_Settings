@@ -183,6 +183,7 @@
     <string name="toggleData">Data connection</string>
     <string name="toggleSync">Auto-sync data</string>
     <string name="toggle2g3g4g">Preferred network type</string>
+    <string name="toggle2g3g4g_msim">Preferred network type (%1$s)</string>
     <string name="toggleNfc">NFC</string>
 
     <!-- Wi-Fi region code -->
@@ -959,7 +960,7 @@
     <string name="menu_hidden_apps_delete">Reset</string>
     <string name="menu_hidden_apps_reset_lock">Reset pattern lock</string>
     <string name="protected_apps">Protected apps</string>
-    <string name="protected_apps_summary">Manage which applications are hidden behind a secure lock</string>
+    <string name="protected_apps_summary">Manage which apps are hidden behind a secure lock</string>
     <string name="saving_protected_components">Saving component state\u2026</string>
 
     <string name="pa_login_username_hint">Username (email)</string>
@@ -1101,4 +1102,10 @@
     <string name="battery_info_status_charging_dock_ac">Charging on dock AC</string>
     <!-- [CHAR_LIMIT=20] Battery use screen. Battery status shown in chart label when charging over Dock USB. -->
     <string name="battery_info_status_charging_dock_usb">Charging over dock USB</string>
+
+    <string name="restrict_app_wlan_title">Disable app Wi\u2011Fi usage</string>
+    <string name="restrict_app_wlan_summary">Prevent app from using Wi\u2011Fi data connection</string>
+    <string name="restrict_app_cellular_title">Disable app cellular usage</string>
+    <string name="restrict_app_cellular_summary">Prevent app from using cellular data connection</string>
+    <string name="privacy_guard_internet_category">Internet</string>
 </resources>
