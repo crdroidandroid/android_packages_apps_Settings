@@ -653,6 +653,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
+    private static void writeDisableHwKeysOption(Context context, boolean enabled) {
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        final int defaultBrightness = context.getResources().getInteger(
+                com.android.internal.R.integer.config_buttonBrightnessSettingDefault);
+    }
+
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
         CMSettings.Secure.putInt(context.getContentResolver(),
                 CMSettings.Secure.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
