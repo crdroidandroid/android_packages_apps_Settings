@@ -76,6 +76,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
+import static cyanogenmod.content.Intent.ACTION_OPEN_LIVE_LOCKSCREEN_SETTINGS;
 
 import com.android.settings.crdroid.util.CMDProcessor;
 
@@ -360,12 +361,16 @@ public class SecuritySettings extends SettingsPreferenceFragment
             PreferenceGroup generalCategory = (PreferenceGroup)
                     root.findPreference(KEY_GENERAL_CATEGORY);
             if (pm.hasSystemFeature(LIVE_LOCK_SCREEN_FEATURE) && generalCategory != null) {
+                boolean moveToTop = getResources().getBoolean(
+                        R.bool.config_showLiveLockScreenSettingsFirst);
+
+                PreferenceGroup groupToAddTo = moveToTop ? root : generalCategory;
                 Preference liveLockPreference = new Preference(getContext(), null);
-                liveLockPreference.setFragment(LiveLockScreenSettings.class.getCanonicalName());
-                liveLockPreference.setOrder(0);
+                liveLockPreference.setIntent(new Intent(ACTION_OPEN_LIVE_LOCKSCREEN_SETTINGS));
+                liveLockPreference.setOrder(-1);
                 liveLockPreference.setTitle(R.string.live_lock_screen_title);
                 liveLockPreference.setSummary(R.string.live_lock_screen_summary);
-                generalCategory.addPreference(liveLockPreference);
+                groupToAddTo.addPreference(liveLockPreference);
             }
         }
 
