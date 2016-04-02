@@ -220,10 +220,6 @@
     <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
     <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
 
-    <!-- Quick settings disable on lockscreen -->
-    <string name="block_on_secure_keyguard_title">Disable quick settings on lockscreen</string>
-    <string name="block_on_secure_keyguard_summary">Disables quick settings in the keyguard for a secure lock only</string>
-
     <!--Status bar date -->
     <string name="status_bar_clock_category">Clock</string>
     <string name="status_bar_date_title">Date</string>

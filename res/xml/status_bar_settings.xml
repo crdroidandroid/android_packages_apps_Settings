@@ -138,14 +138,6 @@
         android:title="@string/disable_immersive_message_title"
         android:summary="@string/disable_immersive_message_summary" />
 
-    <!-- Quick settings disable on lockscreen -->
-    <SwitchPreference
-        android:key="block_on_secure_keyguard"
-        android:title="@string/block_on_secure_keyguard_title"
-        android:summary="@string/block_on_secure_keyguard_summary"
-        android:persistent="false"
-        android:defaultValue="true"/>
-
     <!-- QS shade transparency -->
     <com.android.settings.crdroid.SeekBarPreference
         android:key="qs_transparent_shade"
