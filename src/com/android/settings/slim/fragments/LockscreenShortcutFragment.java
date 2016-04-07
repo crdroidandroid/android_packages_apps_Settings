@@ -29,6 +29,7 @@ import android.widget.ListView;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.logging.MetricsLogger;
 
 public class LockscreenShortcutFragment extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
@@ -37,6 +38,11 @@ public class LockscreenShortcutFragment extends SettingsPreferenceFragment imple
             "lockscreen_shortcuts_longpress";
 
     private SwitchPreference mLockscreenShortcutsLongpress;
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.APPLICATION;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
