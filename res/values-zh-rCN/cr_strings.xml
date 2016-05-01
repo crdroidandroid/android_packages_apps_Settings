@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 crDroid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen, crDroid version -->
+    <string name="crdroid_mod_version">crDroid 版本</string>
+    <string name="crdroid_mod_version_default">未知</string>
+
+    <!-- General strings -->
+    <string name="ok">确定</string>
+    <string name="reset">重置</string>
+    <string name="reset_message">将所有选项重置为默认值？</string>
+
+    <!-- crDroid extra settings -->
+    <string name="header_category_extra">crDroid 增强设置</string>
+    <string name="category_extra">增强设置</string>
+
+    <!-- Changelog -->
+    <string name="changelog_crdroid_title">更新日志</string>
+    <string name="changelog_crdroid_error">无法加载更新日志</string>
+
+    <!-- Donation -->
+    <string name="crdroid_donation_title">捐赠</string>
+    <string name="crdroid_donation_summary">倘若您喜欢crDroid团队的作品，并想继续支持我们，欢迎到此处捐赠</string>
+
+    <!-- Maintainers -->
+    <string name="maintainers_crdroid_title">crDroid 维护人员</string>
+    <string name="maintainers_crdroid_error">无法加载维护人员列表</string>
+
+    <!-- About crDroid -->
+    <string name="about_crdroid">关于crDroid</string>
+    <string name="screen_and_animations_title">屏幕与动画</string>
+
+    <!-- Themes crDroid -->
+    <string name="themes_crdroid">crDroid 团队开发的主题（免费/付费）</string>
+    <string name="crdroid_theme_evolved_title">Evolved 主题</string>
+    <string name="crdroid_theme_evolved_summary">由 Cristiano Matos 开发</string>
+    <string name="crdroid_theme_nor_title">Not Only Red 主题</string>
+    <string name="crdroid_theme_nor_summary">由 Cristiano Matos 开发</string>
+
+    <!-- Share crDroid -->
+    <string name="share_crdroid_title">分享 crDroid</string>
+    <string name="share_crdroid_summary">让其他人知道 crDroid</string>
+    <string name="share_message">来Google+上查看#crDroid社群：@ https://plus.google.com/u/0/communities/118297646046960923906</string>
+    <string name="share_chooser_title">分享 crDroid</string>
+
+    <!-- Sites crDroid -->
+    <string name="crdroid_on_web">crDroid 官网</string>
+    <string name="crdroid_source_title">Github</string>
+    <string name="crdroid_source_summary">访问我们的Git源码团队</string>
+    <string name="crdroid_google_plus_title">Google+</string>
+    <string name="crdroid_google_plus_summary">访问我们的G+页面来获取帮助和新动态</string>
+
+    <!-- Recents crDroid -->
+    <string name="recents_settings">最近任务</string>
+
+    <!-- Recents -->
+    <string name="recents_panel_title">最近任务面板</string>
+    <string name="recents_panel_settings">最近任务面板设置</string>
+    <string name="show_clear_all_recents_button_title">清除所有最近任务按钮</string>
+    <string name="show_clear_all_recents_button_summary">在最近任务面板显示清理按钮</string>
+    <string name="recents_clear_all_location_title">清除按钮位置</string>
+    <string name="recents_clear_all_location_bottom_right">右下角</string>
+    <string name="recents_clear_all_location_bottom_left">左下角</string>
+
+    <!-- Recents OmniSwitch -->
+    <string name="omniswitch_recents_title">OmniSwitch 最近任务</string>
+    <string name="omniswitch_title">OmniSwitch</string>
+    <string name="recents_use_omniswitch_title">激活 OmniSwitch</string>
+    <string name="recents_use_omniswitch_summary">使用OmniSwitch来替代默认最近任务预览</string>
+    <string name="omniswitch_start_settings_summary">OmniSwitch 设置</string>
+    <string name="omniswitch_first_time_title">信息</string>
+    <string name="omniswitch_first_time_message">确保您启用了OmniSwitch。你可以通过下面的\"设置\"开启。</string>
+
+    <!-- Statusbar crDroid logo -->
+    <string name="status_bar_crdroid_logo_title">crDroid图标</string>
+    <string name="status_bar_crdroid_logo_summary_on">crDroid图标在状态栏处于显示状态</string>
+    <string name="status_bar_crdroid_logo_summary_off">crDroid图标在状态栏处于禁用状态</string>
+
+    <!-- Superuser indicator on status bar -->
+    <string name="su_indicator">超级用户指示器</string>
+    <string name="su_indicator_summary_on">当使用ROOT权限时，状态栏将会启用#图标</string>
+    <string name="su_indicator_summary_off">当使用ROOT权限时，状态栏将会禁用#图标</string>
+
+    <!-- About device screen, CPU and RAM info. -->
+    <string name="cpu_info">CPU</string>
+    <string name="mem_info">RAM</string>
+
+    <!-- long press back to kill configurable timeout -->
+    <string name="kill_app_longpress_timeout_title">长按返回按钮延时</string>
+    <string name="timeout_2000">2秒(默认)</string>
+    <string name="timeout_1500">1.5秒</string>
+    <string name="timeout_1000">1秒</string>
+    <string name="timeout_500">0.5秒</string>
+
+    <!-- Battery saver color -->
+    <string name="battery_saver_color_title">警告颜色</string>
+    <string name="battery_saver_color_summary">当省电助手开启时，启用橘红色状态栏及导航键</string>
+
+    <!-- RAM bar -->
+    <string name="recents_show_membar_title">RAM内存状态条</string>
+    <string name="recents_show_membar_summary_on">打开最近任务面板时，启用RAM内存状态条</string>
+    <string name="recents_show_membar_summary_off">打开最近任务面板时，禁用RAM内存状态条</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">网速指示器</string>
+    <string name="network_traffic_summary">在状态栏显示网络流量</string>
+    <string name="show_network_traffic_state">在状态栏启用网速指示器</string>
+    <string name="show_network_traffic_unit">显示单位</string>
+    <string name="show_network_traffic_frequency">更新时间间隔</string>
+    <string name="show_network_traffic_disable">关闭</string>
+    <string name="show_network_traffic_up">发送</string>
+    <string name="show_network_traffic_down">接收</string>
+    <string name="show_network_traffic_all">发送与接收</string>
+    <string name="show_network_traffic_bit">Bit/s</string>
+    <string name="show_network_traffic_byte">Byte/s</string>
+    <string name="show_network_traffic_500">500 毫秒</string>
+    <string name="show_network_traffic_1000">1000 毫秒</string>
+    <string name="show_network_traffic_1500">1500 毫秒</string>
+    <string name="show_network_traffic_2000">2000 毫秒</string>
+    <string name="network_traffic_autohide">自动隐藏</string>
+    <string name="network_traffic_autohide_summary">当没有活动连接是自动隐藏指示器</string>
+    <string name="network_traffic_autohide_threshold">静态阈值</string>
+
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Toast 图标</string>
+    <string name="toast_icon_summary">选择在Toast上显示应用图标或否</string>
+
+    <!-- Toast animations -->
+    <string name="toast_animation_title">Toast 动画</string>
+    <string name="toast_animation_summary">选择并预览Toast动画</string>
+    <string name="toast_none_animation">无</string>
+    <string name="toast_default_animation">默认</string>
+    <string name="toast_fade_animation">渐显动画</string>
+    <string name="toast_SlideRight_animation">右滑行</string>
+    <string name="toast_SlideLeft_animation">左滑行</string>
+    <string name="toast_Xylon_animation">木质动画</string>
+    <string name="toast_Toko_animation">Toko 动画</string>
+    <string name="toast_Tn_animation">Tn 动画</string>
+    <string name="toast_Honami_animation">Honami 动画</string>
+    <string name="toast_FastFade_animation">快渐显</string>
+    <string name="toast_GrowFade_animation">扩展渐显</string>
+    <string name="toast_GrowFadeCenter_animation">中心扩展渐显</string>
+    <string name="toast_GrowFadeBottom_animation">底部扩展渐显</string>
+    <string name="toast_Translucent_animation">半透明动画</string>
+    <string name="toast_SlideLeftRight_animation">左到右滑行</string>
+    <string name="toast_SlideRightLeft_animation">右到左滑行</string>
+
+    <!-- Time-context headers in notification header -->
+    <string name="status_bar_custom_header_title">自定义标题头部图案</string>
+    <string name="status_bar_custom_header_summary">允许通知面板标题头部图案</string>
+
+    <!-- SlimDim -->
+	<string name="dim_nav_buttons_category">Slim昏暗</string>
+    <string name="dim_nav_buttons_title">无工作时，按键变昏暗</string>
+    <string name="dim_nav_buttons_summary">在一定时间内不触摸导航栏，导航栏按键将变昏暗</string>
+    <string name="dim_nav_buttons_timeout_title">逾时前变昏暗</string>
+    <string name="dim_nav_buttons_timeout_summary">按键变昏暗前，需等待的时间(毫秒)</string>
+    <string name="dim_nav_buttons_alpha_title">昏暗透明度</string>
+    <string name="dim_nav_buttons_alpha_summary">昏暗按键的透明度</string>
+    <string name="dim_nav_buttons_animate_title">昏暗动画</string>
+    <string name="dim_nav_buttons_animate_summary">透明渐显动画</string>
+    <string name="dim_nav_buttons_animate_duration_title">动画时限</string>
+    <string name="dim_nav_buttons_animate_duration_summary">透明动画时限(毫秒)</string>
+    <string name="dim_nav_buttons_touch_anywhere_title">在整个荧幕接受触碰</string>
+    <string name="dim_nav_buttons_touch_anywhere_summary_on">触碰荧幕的任意位置使按键变明亮</string>
+    <string name="dim_nav_buttons_touch_anywhere_summary_off">只有触碰导航栏会使按键变明亮</string>
+
+    <!-- Navigation bar -->
+    <string name="nav_bar_title">导航栏</string>
+    <string name="navbar_enable_bar_title">启用导航栏</string>
+    <string name="navbar_enable_bar_summary">启用导航栏并且禁用物理按键</string>
+    <string name="navbar_style_dimen_title">导航栏尺寸</string>
+    <string name="navbar_dimensions_reset_message">将所有选项重置为默认值？</string>
+    <string name="navigation_bar_height_title">导航栏高度</string>
+    <string name="navigation_bar_height_summary">横屏时导航栏高度</string>
+    <string name="navigation_bar_width_title">导航栏宽度</string>
+    <string name="navigation_bar_width_summary">导航栏在侧面时的高度</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (默认)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (默认)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">物理按键</string>
+    <string name="hw_keys_summary">启用物理按键</string>
+
+    <!-- Selinux switch -->
+    <string name="selinux_title">SELinux 模式</string>
+    <string name="selinux_permissive_title">许可</string>
+    <string name="selinux_enforcing_title">强制</string>
+
+    <!-- Text for forcing expanded notifications -->
+    <string name="disable_fc_notifications_title">禁用强行停止提示</string>
+    <string name="disable_fc_notifications_summary">这将会隐藏所有强行停止的提示</string>
+
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">强制扩展通知</string>
+    <string name="force_expanded_notifications_summary">只有支持扩展通知的应用程序可用</string>
+
+    <!-- Disabling immersive mode messages -->
+    <string name="disable_immersive_message_title">禁用沉浸模式信息</string>
+    <string name="disable_immersive_message_summary">这将会隐藏所有沉浸模式信息</string>
+
+</resources>
