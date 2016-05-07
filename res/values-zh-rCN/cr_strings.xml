@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015 crDroid Android
-
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -23,6 +20,8 @@
     <!-- General strings -->
     <string name="ok">确定</string>
     <string name="reset">重置</string>
+    <string name="default_string">默认</string>
+    <string name="help">帮助</string>
     <string name="reset_message">将所有选项重置为默认值？</string>
 
     <!-- crDroid extra settings -->
@@ -42,7 +41,7 @@
     <string name="maintainers_crdroid_error">无法加载维护人员列表</string>
 
     <!-- About crDroid -->
-    <string name="about_crdroid">关于crDroid</string>
+    <string name="about_crdroid">关于 crDroid</string>
     <string name="screen_and_animations_title">屏幕与动画</string>
 
     <!-- Themes crDroid -->
@@ -219,5 +218,258 @@
     <!-- Disabling immersive mode messages -->
     <string name="disable_immersive_message_title">禁用沉浸模式信息</string>
     <string name="disable_immersive_message_summary">这将会隐藏所有沉浸模式信息</string>
+    
+    <!--Status bar date -->
+    <string name="status_bar_clock_category">时钟</string>
+    <string name="status_bar_date_title">日期</string>
+    <string name="status_bar_date_none">隐藏 (默认)</string>
+    <string name="status_bar_date_small">小</string>
+    <string name="status_bar_date_normal">正常</string>
+    <string name="status_bar_date_format_title">日期格式</string>
+    <string name="status_bar_date_style">日期样式</string>
+    <string name="status_bar_date_style_normal">正常</string>
+    <string name="status_bar_date_style_lowercase">小写字母</string>
+    <string name="status_bar_date_style_uppercase">大写字母</string>
+    <string name="status_bar_date_format_custom">自定义Java格式</string>
+    <string name="status_bar_date_string_edittext_title">必须使用例如MM/dd/yy的日期格式</string>
+    <string name="status_bar_date_string_edittext_summary">输入字符串</string>
+
+    <!-- QS shade transparency -->
+    <string name="qs_transparent_shade">快捷设置阴影透明度</string>
+
+    <!-- QS header transparency -->
+    <string name="qs_transparent_header">快捷设置头部透明度</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">音量级别</string>
+    <string name="volume_steps_alarm_title">音量级别：响铃</string>
+    <string name="volume_steps_dtmf_title">音量级别：DTMF</string>
+    <string name="volume_steps_music_title">音量级别：音乐</string>
+    <string name="volume_steps_notification_title">音量级别：通知</string>
+    <string name="volume_steps_ring_title">音量级别：来电铃声</string>
+    <string name="volume_steps_system_title">音量级别：系统</string>
+    <string name="volume_steps_voice_call_title">音量级别：语音通话</string>
+    <string name="volume_steps_reset">重置</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+
+    <!-- Slim DSLV -->
+    <string name="help">帮助</string>
+    <string name="reset_message">将所有选项重置为默认值？</string>
+    <string name="attention">注意</string>
+    <string name="reset">重置</string>
+    <string name="shortcut_action_none">无</string>
+    <string name="shortcut_action_app">自定义应用</string>
+    <string name="shortcut_action_home">主页</string>
+    <string name="shortcut_action_back">返回</string>
+    <string name="shortcut_action_menu">菜单</string>
+    <string name="shortcut_action_ime">打开输入法切换器</string>
+    <string name="shortcut_action_power_menu">电源键</string>
+    <string name="shortcut_action_recent">最近应用</string>
+    <string name="shortcut_action_power">关闭屏幕</string>
+    <string name="shortcut_action_search">应用内搜索</string>
+    <string name="shortcut_action_ring_vib">响铃/振动</string>
+    <string name="shortcut_action_ring_silent">响铃/静音</string>
+    <string name="shortcut_action_ring_vib_silent">响铃/振动/静音</string>
+    <string name="shortcut_action_camera">相机</string>
+    <string name="shortcut_action_media_next">音乐 - 下一曲</string>
+    <string name="shortcut_action_media_play_pause">音乐 - 播放/暂停</string>
+    <string name="shortcut_action_media_previous">音乐 - 前一曲</string>
+    <string name="shortcut_action_wake_device">唤醒设备</string>
+
+    <string name="shortcut_action_longpress">长按：</string>
+    <string name="shortcut_action_select_action_longpress">选择长按操作：</string>
+    <string name="shortcut_action_select_action">选择操作：</string>
+    <string name="shortcut_action_select_action_newaction">选择新操作：</string>
+    <string name="shortcut_action_reset">重置</string>
+    <string name="shortcut_action_add">添加</string>
+    <string name="shortcut_action_reset_message">将所有选项重置为默认值？</string>
+    <string name="shortcut_action_max">条目数已达到上限</string>
+    <string name="shortcut_action_warning">警告</string>
+    <string name="shortcut_action_warning_message">最后一项不能被删除</string>
+    <string name="shortcut_action_disable_message">禁用\n添加一个条目来启用此功能</string>
+    <string name="shortcut_image_not_valid">所选择的应用没有返回一个有效的图标或不支持图像裁剪，请使用其他应用。</string>
+    <string name="shortcut_duplicate_entry">所选择的操作不能被添加两次</string>
+    <string name="shortcut_action_help_shortcut">快捷方式</string>
+    <string name="shortcut_action_help_button">按键</string>
+    <string name="shortcut_action_help_app">应用</string>
+    <string name="shortcut_action_help_icon">，选择该图标时会给出自定义选项。</string>
+    <string name="shortcut_action_help_main">使用添加图标来添加 %1$s ；当 %1$s 已经被添加过时，选中该行会改变目标 %2$s 。\n\n从每一行的左边或右边水平滑动来移除 %1$s ，垂直拖拽左边的锚定器对 %1$s 进行重新排序。\n\n使用重置图标来清空或重置为默认值。</string>
+    <string name="shortcut_action_help_delete_last_entry">删除列表中的每个 %1$s 将完全禁用该功能。</string>
+    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">删除列表中的每个 %1$s 将完全禁用第二层pie 。</string>
+
+
+    <string name="shortcuts_applications">应用程序</string>
+    <string name="shortcuts_select_custom_app_title">选择自定义程序</string>
+    <string name="shortcuts_icon_picker_type">选择图标类型：</string>
+    <string name="shortcuts_icon_default">默认</string>
+    <string name="shortcuts_icon_presets">系统图标</string>
+    <string name="shortcuts_icon_custom">图库</string>
+    <string name="shortcuts_icon_picker_choose_icon_title">选择图标</string>
+
+    <string name="shortcuts_icon_picker_alarm">闹钟</string>
+    <string name="shortcuts_icon_picker_andy">Andy</string>
+    <string name="shortcuts_icon_picker_battery">电池</string>
+    <string name="shortcuts_icon_picker_browser">浏览器</string>
+    <string name="shortcuts_icon_picker_calendar">日历</string>
+    <string name="shortcuts_icon_picker_camera">相机</string>
+    <string name="shortcuts_icon_picker_cloud">云</string>
+    <string name="shortcuts_icon_picker_contact">联系人</string>
+    <string name="shortcuts_icon_picker_directdial">直接拨打电话</string>
+    <string name="shortcuts_icon_picker_directmessage">直接发送短信</string>
+    <string name="shortcuts_icon_picker_drive">驱动</string>
+    <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
+    <string name="shortcuts_icon_picker_email">电子邮件</string>
+    <string name="shortcuts_icon_picker_email2">备选电子邮件</string>
+    <string name="shortcuts_icon_picker_evernote">印象笔记</string>
+    <string name="shortcuts_icon_picker_facebook">Facebook</string>
+    <string name="shortcuts_icon_picker_favorite">收藏</string>
+    <string name="shortcuts_icon_picker_file_browser">文件管理器</string>
+    <string name="shortcuts_icon_picker_file_browser2">备选文件管理器</string>
+    <string name="shortcuts_icon_picker_fitness">适应值</string>
+    <string name="shortcuts_icon_picker_gallery">图库</string>
+    <string name="shortcuts_icon_picker_gears">Gears</string>
+    <string name="shortcuts_icon_picker_google_small">Google</string>
+    <string name="shortcuts_icon_picker_gplus">Google Plus</string>
+    <string name="shortcuts_icon_picker_gtalk">环聊</string>
+    <string name="shortcuts_icon_picker_help">帮助</string>
+    <string name="shortcuts_icon_picker_joystick">Joystick</string>
+    <string name="shortcuts_icon_picker_key">密码/帐号</string>
+    <string name="shortcuts_icon_picker_laptop">笔记本电脑</string>
+    <string name="shortcuts_icon_picker_notes">笔记</string>
+    <string name="shortcuts_icon_picker_luggage">Travel</string>
+    <string name="shortcuts_icon_picker_maps">地图</string>
+    <string name="shortcuts_icon_picker_market">应用市场</string>
+    <string name="shortcuts_icon_picker_movie">电影</string>
+    <string name="shortcuts_icon_picker_music">音乐</string>
+    <string name="shortcuts_icon_picker_nav">导航</string>
+    <string name="shortcuts_icon_picker_phone">手机</string>
+    <string name="shortcuts_icon_picker_package">包装</string>
+    <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
+    <string name="shortcuts_icon_picker_play">Play</string>
+    <string name="shortcuts_icon_picker_pocket">钱包</string>
+    <string name="shortcuts_icon_picker_quicksettings">快捷设置</string>
+    <string name="shortcuts_icon_picker_rss">RSS订阅</string>
+    <string name="shortcuts_icon_picker_sdcard">SD卡</string>
+    <string name="shortcuts_icon_picker_search">搜索</string>
+    <string name="shortcuts_icon_picker_sms">通知</string>
+    <string name="shortcuts_icon_picker_tasks">任务</string>
+    <string name="shortcuts_icon_picker_terminal">终端</string>
+    <string name="shortcuts_icon_picker_transit">通过</string>
+    <string name="shortcuts_icon_picker_tv">TV</string>
+    <string name="shortcuts_icon_picker_twitter">Twitter</string>
+    <string name="shortcuts_icon_picker_unlock">解锁</string>
+
+    <!-- Lockscreen Shortcuts -->
+    <string name="lockscreen_shortcuts_title">快捷方式</string>
+    <string name="lockscreen_shortcuts_summary">浏览或改变锁屏自定义快捷方式</string>
+    <string name="lockscreen_shorcuts_launch_type_title">快捷方式点击类型</string>
+    <string name="lockscreen_shortcuts_single_tap">单击</string>
+    <string name="lockscreen_shortcuts_double_tap">双击</string>
+    <string name="lockscreen_shortcuts_longpress">长按</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">拾色器</string>
+    <string name="press_color_to_apply">应用前颜色长按</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">设置</string>
+    <string name="color_default">默认</string>
+
+    <!-- Lock screen wallpaper -->
+    <string name="lockscreen_category_title">锁屏</string>
+    <string name="lockscreen_wallpaper_title">锁屏壁纸</string>
+    <string name="lockscreen_wallpaper_set_title">设置新的壁纸</string>
+    <string name="lockscreen_wallpaper_clear_title">使用默认</string>
+    <string name="reset_lockscreen_wallpaper">锁屏壁纸已设置回默认</string>
+
+    <!-- Battery Bar -->
+    <string name="battery_icon">电池图标样式</string>
+    <string name="battery_not_title">通知中电池图标</string>
+    <string name="battery_not_summary">电池图标会在“清除所有”按钮出现时出现</string>
+    <string name="battery_bar_location">电池条位置</string>
+    <string name="battery_bar_color">电池条颜色</string>
+    <string name="battery_bar">电池条</string>
+    <string name="battery_bar_summary">电池条位置和颜色定制</string>
+    <string name="battery_bar_style_title">电池条样式</string>
+    <string name="battery_bar_thickness_title">电池条宽度</string>
+    <string name="battery_bar_animate_title">充电动画</string>
+    <string name="battery_bar_animate_summary">充电动画可能会导致糟糕的用户体验。使自行抉择。</string>
+
+    <!-- Gesture Anywhere -->
+    <string name="gesture_anywhere_title">自由手势</string>
+    <string name="gesture_anywhere_enabled_title">自由手势</string>
+    <string name="gesture_anywhere_enabled_summary">启用自由手势特性</string>
+    <string name="gesture_anywhere_position_title">位置</string>
+    <string name="gesture_anywhere_position_left">左边缘</string>
+    <string name="gesture_anywhere_position_right">右边缘</string>
+    <string name="gesture_anywhere_gestures_title">手势</string>
+    <string name="gesture_anywhere_gestures_summary">添加，删除或编辑手势</string>
+    <!-- Label, button used to add a gesture -->
+    <string name="ga_button_add">添加手势</string>
+    <!-- Label, button used to reload all gestures -->
+    <string name="ga_button_reload">重新加载</string>
+    <!-- Label, button used to cancel the operation of adding a gesture -->
+    <string name="ga_button_discard">丢弃</string>
+    <!-- Label, button used to save a gesture newly created -->
+    <string name="ga_button_done">完成</string>
+    <!-- Label, prompt asking the user to enter the name of the gesture -->
+    <string name="ga_prompt_gesture_name">名称</string>
+    <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+    <string name="ga_error_missing_name">您必须输入一个名称</string>
+    <!-- success message, tells the user where the gesture was saved -->
+    <string name="ga_save_success">手势已保存至 %s</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_rename_action">确定</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_cancel_action">取消</string>
+    <!-- Message displayed when the user opens the gestures settings screen -->
+    <string name="ga_gestures_loading">加载手势中...</string>
+    <!-- Message displayed when the user has no gestures -->
+    <string name="ga_gestures_empty">没有手势</string>
+    <!-- Title of the screen used to view/manage gestures -->
+    <string name="ga_gestures_activity">手势</string>
+    <!-- Noun, menu item used to edit a gesture -->
+    <string name="ga_gestures_edit">编辑</string>
+    <!-- Noun, menu item used to remove a gesture -->
+    <string name="ga_gestures_delete">删除</string>
+    <!-- Message displayed when a gesture is successfully deleted -->
+    <string name="ga_gestures_delete_success">手势已删除</string>
+    <!-- Title of dialog box -->
+    <string name="ga_gestures_rename_title">重命名手势</string>
+    <!-- Label of gesture name field in Rename gesture dialog box -->
+    <string name="ga_gestures_rename_label">手势名称</string>
+    <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
+    <string name="ga_gestures_error_loading">无法加载 %s。请确保您有可用的存储。</string>
+    <string name="trigger_category">触发区域</string>
+    <string name="trigger_width_title">触发宽度</string>
+    <string name="trigger_width_summary">调整触发区域的宽度</string>
+    <string name="trigger_top_title">触发位置</string>
+    <string name="trigger_top_summary">调整触发区域的垂直位置</string>
+    <string name="trigger_bottom_title">触发高度</string>
+    <string name="trigger_bottom_summary">调整触发区域的高度</string>
+    <string name="picker_activities">活动</string>
+    <string name="select_custom_app_title">选择自定义应用</string>
+    <string name="select_custom_activity_title">选择自定义活动</string>
+    <string name="profile_applist_title">应用程序</string>
+
+    <!-- Circle app bar -->
+    <string name="category_app_circle_bar_title">应用启动器</string>
+    <string name="app_circle_bar_title">圆环应用启动器</string>
+    <string name="app_circle_bar_summary">在点击屏幕右侧后显示圆环应用启动器</string>
+    <string name="app_circle_bar_included_apps_title">包含应用</string>
+    <string name="app_circle_bar_included_apps_summary">应用将被显示在圆环启动器中</string>
+    <string name="trigger_width_title">触发宽度</string>
+    <string name="trigger_width_summary">调整触发区域的宽度</string>
+    <string name="trigger_top_title">触发位置</string>
+    <string name="trigger_top_summary">调整触发区域的垂直位置</string>
+    <string name="trigger_bottom_title">触发高度</string>
+    <string name="trigger_bottom_summary">调整触发区域的高度</string>
 
 </resources>
