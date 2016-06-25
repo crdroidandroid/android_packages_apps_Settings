@@ -894,6 +894,8 @@
   <string name="weather_settings_general_settings_title">Všeobecné</string>
   <!-- Label for settings shortcut: carrier selection -->
   <!-- title for lock screen blur preference -->
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">Zobraziť počasie</string>
   <!-- Per app controls for LP keyguard notifications -->
   <string name="app_notification_show_on_keyguard_title">Zobraziť na obrazovke uzamknutia</string>
   <string name="app_notification_show_on_keyguard_summary">Zobraziť oznámenia z tejto aplikácie na uzamknutej obrazovke</string>
@@ -901,4 +903,5 @@
   <string name="app_notification_no_ongoing_on_keyguard_summary">Nezobrazovať trvalé oznámenia z tejto aplikácie na obrazovke uzamknutia</string>
   <!-- CmRadioInfo -->
   <!-- Radio Control (IMS/MBN etc.) -->
+  <!-- Lock screen wallpaper -->
 </resources>

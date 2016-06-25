@@ -1006,6 +1006,8 @@
   <string name="weather_settings_general_settings_title">सामान्य</string>
   <!-- Label for settings shortcut: carrier selection -->
   <!-- title for lock screen blur preference -->
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">हवामान दर्शवा</string>
   <!-- Per app controls for LP keyguard notifications -->
   <string name="app_notification_show_on_keyguard_title">लॉक स्क्रीनवर दर्शवा</string>
   <string name="app_notification_show_on_keyguard_summary">या अनुप्रयोगाकडूनच्या सूचना लॉक स्क्रीनवर दर्शवा</string>
@@ -1013,4 +1015,5 @@
   <string name="app_notification_no_ongoing_on_keyguard_summary">या अनुप्रयोगाकडूनच्या सातत्यपूर्ण सूचना लॉक स्क्रीनवर कधीही दाखवू नका</string>
   <!-- CmRadioInfo -->
   <!-- Radio Control (IMS/MBN etc.) -->
+  <!-- Lock screen wallpaper -->
 </resources>
