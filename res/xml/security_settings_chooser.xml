@@ -39,11 +39,6 @@
             android:summary="@string/owner_info_settings_summary"/>
 
         <PreferenceScreen
-            android:key="lockscreen_wallpaper_changer"
-            android:title="@string/lockscreen_wallpaper_title"
-            android:fragment="com.android.settings.crdroid.LockscreenSettings" />
-
-        <PreferenceScreen
             android:key="lockscreen_shortcuts_settings"
             android:title="@string/lockscreen_targets_message" >
             <intent
