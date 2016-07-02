@@ -34,6 +34,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.UserInfo;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -51,6 +52,7 @@ import com.android.settings.DeviceAdminAdd;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 import com.android.settings.applications.manageapplications.ManageApplications;
 import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
@@ -87,6 +89,7 @@ public class AppInfoDashboardFragment extends DashboardFragment
     @VisibleForTesting
     static final int UNINSTALL_UPDATES = 2;
     static final int INSTALL_INSTANT_APP_MENU = 3;
+    public static final int PLAY_STORE = 4;
 
     // Result code identifiers
     @VisibleForTesting
@@ -334,6 +337,9 @@ public class AppInfoDashboardFragment extends DashboardFragment
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
+        menu.add(0, PLAY_STORE, 0, R.string.app_play_store)
+                .setIcon(R.drawable.ic_menu_play_store)
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
         menu.add(0, UNINSTALL_UPDATES, 0, R.string.app_factory_reset)
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
         menu.add(0, UNINSTALL_ALL_USERS_MENU, 1, R.string.uninstall_all_users_text)
@@ -357,6 +363,10 @@ public class AppInfoDashboardFragment extends DashboardFragment
             RestrictedLockUtils.setMenuItemAsDisabledByAdmin(getActivity(),
                     uninstallUpdatesItem, mAppsControlDisallowedAdmin);
         }
+        // Utils.isSystemPackage doesn't include all aosp built apps, like Contacts etc. Add them
+        // and grab the Google Play Store itself (com.android.vending) in the process
+        menu.findItem(PLAY_STORE).setVisible(!Utils.isSystemPackage(getContext().getResources(), mPm, mPackageInfo)
+                && !isAospOrStore(mAppEntry.info.packageName));
     }
 
     @Override
@@ -367,6 +377,9 @@ public class AppInfoDashboardFragment extends DashboardFragment
                 return true;
             case UNINSTALL_UPDATES:
                 uninstallPkg(mAppEntry.info.packageName, false, false);
+                return true;
+            case PLAY_STORE:
+                openPlayStore(mAppEntry.info.packageName);
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -520,6 +533,17 @@ public class AppInfoDashboardFragment extends DashboardFragment
                         .create();
         }
         return mInstantAppButtonPreferenceController.createDialog(id);
+    }
+
+    private void openPlayStore(String packageName) {
+        // Launch an intent to the play store entry
+        String playURL = "https://play.google.com/store/apps/details?id=" + packageName;
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(playURL));
+        startActivity(i);
+    }
+     private boolean isAospOrStore(String packageName) {
+        return packageName.contains("com.android");
     }
 
     private void uninstallPkg(String packageName, boolean allUsers, boolean andDisable) {
