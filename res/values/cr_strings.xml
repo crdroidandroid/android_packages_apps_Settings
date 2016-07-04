@@ -36,4 +36,9 @@
     <string name="pulse_settings">Pulse</string>
     <string name="choose_action_title">Choose action</string>
     <string name="icon_pack_picker_dialog_title">Icon packs</string>
+
+   <!-- Manage applications: show substratum overlays -->
+   <string name="filter_substratum_apps">Substratum overlays</string>
+   <string name="menu_show_substratum">Show overlays</string>
+   <string name="menu_hide_substratum">Hide overlays</string>
 </resources>
