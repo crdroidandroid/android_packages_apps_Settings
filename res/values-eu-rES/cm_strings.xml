@@ -173,6 +173,18 @@
   <string name="wifi_setting_countrycode_summary">Zehaztu Wi\u2011Fi lurralde kodea</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">Arazo bat egon da lurralde kodea ezartzean.</string>
+  <string name="wifi_countrycode_us">Estatu Batuak</string>
+  <string name="wifi_countrycode_ca">Kanada, Taiwan</string>
+  <string name="wifi_countrycode_de">Alemania</string>
+  <string name="wifi_countrycode_gb">Europa</string>
+  <string name="wifi_countrycode_jp">Japonia, Errusia</string>
+  <string name="wifi_countrycode_au">Australia</string>
+  <string name="wifi_countrycode_cn">Txina</string>
+  <string name="wifi_countrycode_kr">Korea</string>
+  <string name="wifi_countrycode_tr">Hego Afrika, Turkia</string>
+  <string name="wifi_countrycode_sg">Israel, Singapur</string>
+  <string name="wifi_countrycode_br">Brasil</string>
+  <string name="wifi_countrycode_in">India</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Ezabatu</string>
   <string name="profile_action_none">Laga aldatu gabe</string>
@@ -254,7 +266,7 @@
   <string name="notification_light_missed_call_title">Dei galdua</string>
   <string name="notification_light_voicemail_title">Ahots postontzia</string>
   <string name="notification_light_screen_on">Argitu pantaila piztean</string>
-  <string name="notification_light_zen_mode">Ez eten moduko argiak</string>
+  <string name="notification_light_zen_mode">Argiak ez eten moduan</string>
   <string name="notification_light_use_multiple_leds">Hainbat LED</string>
   <string name="keywords_lights_brightness_level">ilundu LEDaren argitasuna</string>
   <string name="notification_light_automagic">Hautatu koloreak automatikoki</string>
@@ -574,6 +586,9 @@
   <string name="saturation_str">Saturazioa:<xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">Kontrastea:<xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">Intentsitatea:<xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">Estandarra</string>
+  <string name="screen_color_vivid">Bizia</string>
+  <string name="screen_color_custom">Lehenetsia</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimizatu zure pantaila eguneko orduaren eta inguruneko baldintzen arabera irakurgarritasuna hobetzeko eta begien nekea gutxiagotzeko</string>
   <string name="live_display_mode">Pantaila modua</string>
@@ -603,6 +618,8 @@
   <string name="live_display_color_profile_photography_summary">Kolore erreprodukzio perfektua argazkietarako</string>
   <string name="live_display_color_profile_basic_title">Oinarrizkoa</string>
   <string name="live_display_color_profile_basic_summary">Erabili pantaila kalibratu gabe</string>
+  <string name="live_display_color_profile_adaptive_title">Moldakorra</string>
+  <string name="live_display_color_profile_adaptive_summary">Koloreak inguruko baldintzetara moldatzen dira</string>
   <!-- Whether to display IME switcher notifcation -->
   <string name="ime_switcher_notify">Hautaketa ikonoa</string>
   <string name="ime_switcher_notify_summary">Bistaratu sarrera metodoa hautatzeko ikonoa</string>
@@ -1000,6 +1017,14 @@
   <string name="weather_settings_title">Eguraldia</string>
   <string name="weather_settings_no_services_prompt">Ez da eguraldi hornitzailerik instalatu</string>
   <string name="weather_settings_button">Hornitzailearen ezarpenak</string>
+  <string name="weather_settings_activity_not_found">Ezin izan da hornitzaile honen ezarpen menua abiatu</string>
+  <string name="weather_settings_add_weather_provider">Gehitu eguraldi hornitzailea</string>
+  <string name="weather_settings_general_settings_title">Orokorra</string>
+  <string name="weather_settings_providers_title">Hornitzaileak</string>
+  <string name="weather_settings_temp_units_title">Tenperatura unitatea</string>
+  <string name="weather_settings_temp_celsius">Celsius</string>
+  <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
+  <string name="weather_settings_keyword">eguraldia</string>
   <string name="background_data_access">Bigarren planoko datuetara sarbidea</string>
   <string name="allow_background_both">Datu mugikorrak eta Wi\u2011Fi bidez</string>
   <string name="allow_background_wlan">Wi\u2011Fi bidez besterik ez</string>
@@ -1017,4 +1042,38 @@
   <string name="restrict_cellular_access_dialog_summary">Ezaugarri honek sareko datuak behar dituen aplikazio batek ez funtzionatzea eragin dezake sare mugikorrak besterik ez daudenean eskuragarri.\n\nAplikazioaren aukeretan datu erabileraren kontrol egokiagoak aurkitu ditzakezu.</string>
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">Sare operadoreak</string>
+  <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">Lausotu atzealtea</string>
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">Bistaratu eguraldia</string>
+  <!-- Per app controls for LP keyguard notifications -->
+  <string name="app_notification_show_on_keyguard_title">Bistaratu blokeo-pantailan</string>
+  <string name="app_notification_show_on_keyguard_summary">Bistaratu aplikazio honen jakinarazpenak blokeo-pantailan</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">Ezgaitu jakinarazpen iraunkorra blokeo-pantailan</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">Ez bistaratu inoiz aplikazio honen jakinarazpen iraunkorrak blokeo-pantailan</string>
+  <!-- CmRadioInfo -->
+  <string name="cm_radio_info_label">Irrati kontrol hobetua</string>
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <string name="cm_radio_info_mbn_auto_load_on_label">Ezgaitu MBN deskarga automatikoa</string>
+  <string name="cm_radio_info_mbn_auto_load_off_label">Gaitu MBN deskarga automatikoa</string>
+  <string name="cm_radio_info_volte_avail_ovr_on_label">Ezgaitu VoLTE debug</string>
+  <string name="cm_radio_info_volte_avail_ovr_off_label">Gaitu VoLTE debug</string>
+  <string name="cm_radio_info_vt_avail_ovr_on_label">Ezgaitu VT debug</string>
+  <string name="cm_radio_info_vt_avail_ovr_off_label">Gaitu VT debug</string>
+  <string name="cm_radio_info_wfc_avail_ovr_on_label">Ezgaitu WFC debug</string>
+  <string name="cm_radio_info_wfc_avail_ovr_off_label">Gaitu WFC debug</string>
+  <string name="cm_radio_info_adb_log_on_label">Ezgaitu ADB irrati egunkaria</string>
+  <string name="cm_radio_info_adb_log_off_label">Gaitu ADB irrati egunkaria</string>
+  <string name="cm_radio_info_diag_log_on_label">Ezgaitu Diag egunkaria</string>
+  <string name="cm_radio_info_diag_log_off_label">Gaitu Diag egunkaria</string>
+  <!-- Lock screen wallpaper -->
+  <string name="lockscreen_wallpaper_title">Horma-papera</string>
+  <string name="not_available_with_app">Ez dago eskuragarri %1$s aplikazioarekin</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Kokatu hatz-marken sentsorea zure telefonoaren <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">atzealdean</string>
+  <string name="security_settings_fingerprint_sensor_location_front">aurrealdean</string>
+  <string name="security_settings_fingerprint_sensor_location_left">ezkerraldean</string>
+  <string name="security_settings_fingerprint_sensor_location_right">eskuinaldean</string>
 </resources>

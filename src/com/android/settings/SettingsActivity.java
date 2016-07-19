@@ -41,6 +41,7 @@ import android.nfc.Tag;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.os.Process;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.preference.Preference;
@@ -295,7 +296,6 @@ public class SettingsActivity extends Activity
             R.id.home_settings,
             R.id.dashboard,
             R.id.privacy_settings_cyanogenmod,
-            R.id.button_settings
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
@@ -639,7 +639,7 @@ public class SettingsActivity extends Activity
                     1 /* one home activity by default */);
         } else {
             if (!mIsShowingDashboard) {
-                mDisplaySearch = true;
+                mDisplaySearch = Process.myUid() == Process.SYSTEM_UID;
                 // UP will be shown only if it is a sub settings
                 if (mIsShortcut) {
                     mDisplayHomeAsUpEnabled = isSubSettings;
@@ -1329,8 +1329,11 @@ public class SettingsActivity extends Activity
                         removeTile = true;
                     }
                 } else if (id == R.id.weather_settings) {
+                    final boolean showWeatherMenu = getResources()
+                            .getBoolean(R.bool.config_showWeatherMenu);
+
                     if (!getPackageManager().hasSystemFeature(
-                            CMContextConstants.Features.WEATHER_SERVICES)) {
+                            CMContextConstants.Features.WEATHER_SERVICES) || !showWeatherMenu) {
                         removeTile = true;
                     }
                 }

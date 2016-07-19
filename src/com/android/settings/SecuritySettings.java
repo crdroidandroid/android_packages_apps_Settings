@@ -135,6 +135,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private static final String KEY_SMS_SECURITY_CHECK_PREF = "sms_security_check_limit";
     private static final String KEY_GENERAL_CATEGORY = "general_category";
     private static final String KEY_LIVE_LOCK_SCREEN = "live_lock_screen";
+    private static final String KEY_LOCK_SCREEN_BLUR = CMSettings.Secure.LOCK_SCREEN_BLUR_ENABLED;
 
     // These switch preferences need special handling since they're not all stored in Settings.
     private static final String SWITCH_PREFERENCE_KEYS[] = { KEY_LOCK_AFTER_TIMEOUT,
@@ -207,7 +208,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
         Bundle extras = getActivity().getIntent().getExtras();
         // Even uglier hack to make cts verifier expectations make sense.
-        if (extras.get(SettingsActivity.EXTRA_SHOW_FRAGMENT_ARGUMENTS) != null &&
+        if (extras != null && extras.get(SettingsActivity.EXTRA_SHOW_FRAGMENT_ARGUMENTS) != null &&
                 extras.get(SettingsActivity.EXTRA_SHOW_FRAGMENT_AS_SHORTCUT) == null) {
             mFilterType = TYPE_EXTERNAL_RESOLUTION;
         }
@@ -360,7 +361,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
             // Add live lock screen preference if supported
             PreferenceGroup generalCategory = (PreferenceGroup)
                     root.findPreference(KEY_GENERAL_CATEGORY);
-            if (pm.hasSystemFeature(LIVE_LOCK_SCREEN_FEATURE) && generalCategory != null) {
+            if (pm.hasSystemFeature(LIVE_LOCK_SCREEN_FEATURE) && generalCategory != null && Utils.isUserOwner()) {
                 boolean moveToTop = getResources().getBoolean(
                         R.bool.config_showLiveLockScreenSettingsFirst);
 
@@ -368,9 +369,16 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 Preference liveLockPreference = new Preference(getContext(), null);
                 liveLockPreference.setIntent(new Intent(ACTION_OPEN_LIVE_LOCKSCREEN_SETTINGS));
                 liveLockPreference.setOrder(-1);
-                liveLockPreference.setTitle(R.string.live_lock_screen_title);
-                liveLockPreference.setSummary(R.string.live_lock_screen_summary);
+                setLiveLockScreenPreferenceTitleAndSummary(liveLockPreference);
                 groupToAddTo.addPreference(liveLockPreference);
+            }
+
+            // only show blur setting for devices that support it
+            boolean blurSupported = getResources().getBoolean(
+                    com.android.internal.R.bool.config_ui_blur_enabled);
+            if (!blurSupported && generalCategory != null) {
+                Preference blurEnabledPref = generalCategory.findPreference(KEY_LOCK_SCREEN_BLUR);
+                if (blurEnabledPref != null) generalCategory.removePreference(blurEnabledPref);
             }
         }
 
@@ -905,6 +913,46 @@ public class SecuritySettings extends SettingsPreferenceFragment
     }
 
     /**
+     * Loads the title and summary for live lock screen preference.  If an external package supports
+     * the {@link cyanogenmod.content.Intent#ACTION_OPEN_LIVE_LOCKSCREEN_SETTINGS} we attempt to
+     * load the title and summary from that package and use defaults if those cannot be loaded or
+     * no other package is found to support the action.
+     * @param pref
+     */
+    private void setLiveLockScreenPreferenceTitleAndSummary(Preference pref) {
+        String title = getString(R.string.live_lock_screen_title);
+        String summary = getString(R.string.live_lock_screen_summary);
+        PackageManager pm = getPackageManager();
+        List<ResolveInfo> infos = pm.queryIntentActivities(
+                new Intent(ACTION_OPEN_LIVE_LOCKSCREEN_SETTINGS), 0);
+        if (infos != null && infos.size() > 1) {
+            for (ResolveInfo info : infos) {
+                if (!getActivity().getPackageName().equals(info.activityInfo.packageName)) {
+                    try {
+                        final Context ctx = getActivity().createPackageContext(
+                                info.activityInfo.packageName, 0);
+                        final Resources res = ctx.getResources();
+                        int titleId = res.getIdentifier("live_lock_screen_title", "string",
+                                info.activityInfo.packageName);
+                        int summaryId = res.getIdentifier("live_lock_screen_summary", "string",
+                                info.activityInfo.packageName);
+                        if (titleId !=0 && summaryId != 0) {
+                            title = res.getString(titleId);
+                            summary = res.getString(summaryId);
+                        }
+                    } catch (PackageManager.NameNotFoundException e) {
+                        /* ignore and use defaults */
+                    }
+                    break;
+                }
+            }
+        }
+
+        pref.setTitle(title);
+        pref.setSummary(summary);
+    }
+
+    /**
      * For Search. Please keep it in sync when updating "createPreferenceHierarchy()"
      */
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
@@ -994,20 +1042,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 result.add(data);
             }
 
-            // Advanced
-            final LockPatternUtils lockPatternUtils = new LockPatternUtils(context);
-            if (lockPatternUtils.isSecure(MY_USER_ID)) {
-                ArrayList<TrustAgentComponentInfo> agents =
-                        getActiveTrustAgents(context.getPackageManager(), lockPatternUtils,
-                                context.getSystemService(DevicePolicyManager.class));
-                for (int i = 0; i < agents.size(); i++) {
-                    final TrustAgentComponentInfo agent = agents.get(i);
-                    data = new SearchIndexableRaw(context);
-                    data.title = agent.title;
-                    data.screenTitle = screenTitle;
-                    result.add(data);
-                }
-            }
+
             return result;
         }
 
@@ -1016,8 +1051,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
             final List<String> keys = new ArrayList<String>();
 
             LockPatternUtils lockPatternUtils = new LockPatternUtils(context);
-            // Add options for lock/unlock screen
-            int resId = getResIdForLockUnlockScreen(context, lockPatternUtils);
 
             // Do not display SIM lock for devices without an Icc card
             TelephonyManager tm = TelephonyManager.getDefault();

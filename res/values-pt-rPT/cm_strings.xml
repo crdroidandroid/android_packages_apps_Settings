@@ -80,7 +80,7 @@
   <string name="profile_write_success">A etiqueta foi escrita com sucesso</string>
   <string name="profile_write_failed">Ocorreu um problema ao escrever na etiqueta!</string>
   <string name="profile_selected">Perfil selecionado: %1$s</string>
-  <string name="profile_nfc_text">Escrever um perfil numa etiqueta NFC permite que, com um toque na etiqueta, selecione esse perfil. Tocar uma segunda vez selecionará o perfil anteriormente ativado.</string>
+  <string name="profile_nfc_text">Escrever um perfil numa etiqueta NFC permite que, com um toque na etiqueta, selecione esse perfil. Tocar uma segunda vez selecionará o perfil anteriormente ativo.</string>
   <string name="profile_unknown_nfc_tag">Perfil desconhecido</string>
   <string name="profile_add_nfc_text">Esta etiqueta NFC refere-se a um perfil desconhecido. Anexar esta etiqueta NFC num perfil existente permitirá selecionar o perfil no futuro.</string>
   <string name="profile_select">Selecionar perfil</string>
@@ -173,6 +173,18 @@
   <string name="wifi_setting_countrycode_summary">Especificar o código de região do Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">Ocorreu um problema a definir o código de região.</string>
+  <string name="wifi_countrycode_us">Estados Unidos</string>
+  <string name="wifi_countrycode_ca">Canadá, Taiwan</string>
+  <string name="wifi_countrycode_de">Alemanha</string>
+  <string name="wifi_countrycode_gb">Europa</string>
+  <string name="wifi_countrycode_jp">Japão, Rússia</string>
+  <string name="wifi_countrycode_au">Austrália</string>
+  <string name="wifi_countrycode_cn">China</string>
+  <string name="wifi_countrycode_kr">Coreia</string>
+  <string name="wifi_countrycode_tr">África do Sul, Turquia</string>
+  <string name="wifi_countrycode_sg">Israel, Singapura</string>
+  <string name="wifi_countrycode_br">Brasil</string>
+  <string name="wifi_countrycode_in">Índia</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Eliminar</string>
   <string name="profile_action_none">Deixar inalterado</string>
@@ -199,7 +211,7 @@
   <string name="profile_appgroup_name_title">Nome</string>
   <string name="duplicate_appgroup_name">Este nome já existe!</string>
   <string name="profile_app_delete_confirm">Remover esta aplicação?</string>
-  <string name="no_bluetooth_triggers">Não há dispositivos bluetooth emparelhados.\nToque para emparelhar um dispositivo bluetooth antes de configurar os atuadores.</string>
+  <string name="no_bluetooth_triggers">Não há dispositivos bluetooth emparelhados.\nToque para emparelhar um dispositivo Bluetooth antes de configurar os atuadores.</string>
   <string name="no_wifi_triggers">Não há pontos de acesso Wi\u2011Fi configurados.\nToque para conectar o Wi\u2011Fi antes de configurar os atuadores.</string>
   <string name="no_triggers_configured">Não há atuadores configurados. Toque para adicionar.</string>
   <string name="no_triggers_configured_nfc">Toque para establecer um novo atuador NFC.</string>
@@ -248,7 +260,7 @@
   <string name="notification_light_title">Luz de notificação</string>
   <string name="notification_light_general_title">Geral</string>
   <string name="notification_light_applist_title">Aplicações</string>
-  <string name="notification_light_phonelist_title">Telemóvel</string>
+  <string name="notification_light_phonelist_title">Telefone</string>
   <string name="notification_light_use_custom">Utilizar valores personalizados</string>
   <string name="notification_light_default_value">Padrão</string>
   <string name="notification_light_missed_call_title">Chamada perdida</string>
@@ -322,7 +334,7 @@
   <string name="app_ops_summaries_media_volume">volume de multimédia</string>
   <string name="app_ops_summaries_alarm_volume">volume do alarme</string>
   <string name="app_ops_summaries_notification_volume">volume de notificações</string>
-  <string name="app_ops_summaries_bluetooth_volume">volume bluetooth</string>
+  <string name="app_ops_summaries_bluetooth_volume">volume do bluetooth</string>
   <string name="app_ops_summaries_keep_awake">manter o ecrã ligado</string>
   <string name="app_ops_summaries_monitor_location">vigiar a localização</string>
   <string name="app_ops_summaries_monitor_high_power_location">vigiar a localização de potência alta</string>
@@ -347,7 +359,7 @@
   <string name="app_ops_summaries_turn_screen_on">ligar o ecrã</string>
   <string name="app_ops_summaries_get_accounts">obter contas</string>
   <string name="app_ops_summaries_toggle_wifi">alternar o estado do Wi-Fi</string>
-  <string name="app_ops_summaries_toggle_bluetooth">alternar o estado do bluetooth</string>
+  <string name="app_ops_summaries_toggle_bluetooth">ligar/desligar o bluetooth</string>
   <string name="app_ops_summaries_start_at_boot">iniciar no arranque</string>
   <string name="app_ops_summaries_toggle_nfc">alternar o estado do NFC</string>
   <string name="app_ops_summaries_toggle_mobile_data">alternar o estado dos dados móveis</string>
@@ -417,7 +429,7 @@
   <string name="app_ops_labels_turn_screen_on">Ligar o ecrã</string>
   <string name="app_ops_labels_get_accounts">Obter contas</string>
   <string name="app_ops_labels_toggle_wifi">Alternar o estado do Wi-Fi</string>
-  <string name="app_ops_labels_toggle_bluetooth">Alternar o estado do bluetooth</string>
+  <string name="app_ops_labels_toggle_bluetooth">Ligar/Desligar o bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Iniciar no arranque</string>
   <string name="app_ops_labels_toggle_nfc">Alternar o estado do NFC</string>
   <string name="app_ops_labels_toggle_mobile_data">Alternar o estado dos dados móveis</string>
@@ -574,6 +586,9 @@
   <string name="saturation_str">Saturação: <xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">Contraste: <xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">Intensidade: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">Padrão</string>
+  <string name="screen_color_vivid">Brilhante</string>
+  <string name="screen_color_custom">Personalizado</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Otimiza o ecrã com base na hora do dia e condições do ambiente para melhorar a legibilidade e reduzir a fadiga ocular</string>
   <string name="live_display_mode">Modo de exibição</string>
@@ -603,6 +618,8 @@
   <string name="live_display_color_profile_photography_summary">Melhor reprodução de cor para fotos</string>
   <string name="live_display_color_profile_basic_title">Básico</string>
   <string name="live_display_color_profile_basic_summary">Utilizar o ecrã não calibrado</string>
+  <string name="live_display_color_profile_adaptive_title">Adaptável</string>
+  <string name="live_display_color_profile_adaptive_summary">As cores adaptam-se às condições ambientais</string>
   <!-- Whether to display IME switcher notifcation -->
   <string name="ime_switcher_notify">Ícone de seleção</string>
   <string name="ime_switcher_notify_summary">Mostrar ícone de seleção de método de entrada</string>
@@ -998,8 +1015,16 @@
   <string name="privacy_guard_internet_category">Internet</string>
   <!-- Weather -->
   <string name="weather_settings_title">Meteorologia</string>
-  <string name="weather_settings_no_services_prompt">Não há serviços de provedor de meteorologia instalados</string>
-  <string name="weather_settings_button">Definições do provedor</string>
+  <string name="weather_settings_no_services_prompt">Não há serviços de fornecedor de meteorologia instalados</string>
+  <string name="weather_settings_button">Definições do fornecedor</string>
+  <string name="weather_settings_activity_not_found">Não é possível iniciar o menu de definições deste fornecedor</string>
+  <string name="weather_settings_add_weather_provider">Adicionar fornecedor de meteorologia</string>
+  <string name="weather_settings_general_settings_title">Geral</string>
+  <string name="weather_settings_providers_title">Fornecedores</string>
+  <string name="weather_settings_temp_units_title">Unidade de temperatura</string>
+  <string name="weather_settings_temp_celsius">Celsius</string>
+  <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
+  <string name="weather_settings_keyword">meteorologia</string>
   <string name="background_data_access">Acesso aos dados em 2º plano</string>
   <string name="allow_background_both">Através dos dados móveis e Wi\u2011Fi</string>
   <string name="allow_background_wlan">Apenas através de Wi\u2011Fi</string>
@@ -1016,4 +1041,39 @@
   <string name="restrict_cellular_access_dialog_title">Restringir o acesso de dados móveis?</string>
   <string name="restrict_cellular_access_dialog_summary">Este recurso pode fazer com que uma aplicação que dependa de acesso à rede deixe de responder quando só estiverem disponíveis redes móveis.\n\nPoderá encontrar ferramentas mais apropriadas para o controlo de dados nas definições disponíveis na aplicação.</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <string name="shortcut_carrier_title">Operadores de rede</string>
+  <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">Desfocar fundo</string>
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">Mostrar o tempo</string>
+  <!-- Per app controls for LP keyguard notifications -->
+  <string name="app_notification_show_on_keyguard_title">Mostrar no ecrã de bloqueio</string>
+  <string name="app_notification_show_on_keyguard_summary">Mostrar notificações desta aplicação no ecrã de bloqueio</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">Desativar as notificações persistentes no ecrã de bloqueio</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">Nunca mostrar as notificações persistentes desta aplicação no ecrã de bloqueio</string>
+  <!-- CmRadioInfo -->
+  <string name="cm_radio_info_label">Controlo avançado de rádio</string>
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <string name="cm_radio_info_mbn_auto_load_on_label">Desativar o carregamento automático de MBN</string>
+  <string name="cm_radio_info_mbn_auto_load_off_label">Ativar o carregamento automático de MBN</string>
+  <string name="cm_radio_info_volte_avail_ovr_on_label">Desativar o depurador VoLTE</string>
+  <string name="cm_radio_info_volte_avail_ovr_off_label">Ativar o depurador VoLTE</string>
+  <string name="cm_radio_info_vt_avail_ovr_on_label">Desativar o depurador VT</string>
+  <string name="cm_radio_info_vt_avail_ovr_off_label">Ativar o depurador VT</string>
+  <string name="cm_radio_info_wfc_avail_ovr_on_label">Desativar o depurador WFC</string>
+  <string name="cm_radio_info_wfc_avail_ovr_off_label">Ativar o depurador WFC</string>
+  <string name="cm_radio_info_adb_log_on_label">Desativar os registos de rádio ADB</string>
+  <string name="cm_radio_info_adb_log_off_label">Ativar os registos de rádio ADB</string>
+  <string name="cm_radio_info_diag_log_on_label">Desativar os registos de Diag</string>
+  <string name="cm_radio_info_diag_log_off_label">Ativar os registos de Diag</string>
+  <!-- Lock screen wallpaper -->
+  <string name="lockscreen_wallpaper_title">Imagem de fundo</string>
+  <string name="not_available_with_app">Não disponível com %1$s</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Localize o sensor de impressões digitais na <xliff:g id="sensor_location">%1$s</xliff:g> do seu telefone.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">traseira</string>
+  <string name="security_settings_fingerprint_sensor_location_front">parte frontal</string>
+  <string name="security_settings_fingerprint_sensor_location_left">lateral esquerda</string>
+  <string name="security_settings_fingerprint_sensor_location_right">lateral direita</string>
 </resources>

@@ -173,6 +173,18 @@
   <string name="wifi_setting_countrycode_summary">Angiv regionskoden for Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">Der opstod et problem med indstillingen af regionskoden.</string>
+  <string name="wifi_countrycode_us">USA</string>
+  <string name="wifi_countrycode_ca">Canada, Taiwan</string>
+  <string name="wifi_countrycode_de">Tyskland</string>
+  <string name="wifi_countrycode_gb">Europa</string>
+  <string name="wifi_countrycode_jp">Japan, Rusland</string>
+  <string name="wifi_countrycode_au">Australien</string>
+  <string name="wifi_countrycode_cn">Kina</string>
+  <string name="wifi_countrycode_kr">Korea</string>
+  <string name="wifi_countrycode_tr">Sydafrika, Tyrkiet</string>
+  <string name="wifi_countrycode_sg">Israel, Singapore</string>
+  <string name="wifi_countrycode_br">Brasilien</string>
+  <string name="wifi_countrycode_in">Indien</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Slet</string>
   <string name="profile_action_none">Efterlad uændret</string>
@@ -568,6 +580,9 @@
   <string name="saturation_str">Farvemætning: <xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">Kontrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">Intensitet: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">Standard</string>
+  <string name="screen_color_vivid">Levende</string>
+  <string name="screen_color_custom">Egen</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimér din skærm baseret på tidspunktet på dagen, samt omgivelserne, for at forbedre læsbarheden og nedsætte anstrengelsen af øjnene</string>
   <string name="live_display_mode">Visningstilstand</string>
@@ -984,10 +999,52 @@
   <!-- Weather -->
   <string name="weather_settings_title">Vejr</string>
   <string name="weather_settings_button">Udbyderindstillinger</string>
+  <string name="weather_settings_add_weather_provider">Tilføj vejrudbyder</string>
+  <string name="weather_settings_general_settings_title">Generelt</string>
+  <string name="weather_settings_providers_title">Udbydere</string>
+  <string name="weather_settings_temp_units_title">Temperaturenhed</string>
+  <string name="weather_settings_temp_celsius">Celsius</string>
+  <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
+  <string name="weather_settings_keyword">vejr</string>
+  <string name="allow_background_wlan">Kun via Wi\u2011Fi</string>
   <string name="allow_background_none">Ingen adgang</string>
   <string name="mobile_data_alert">Mobildata alarm</string>
+  <string name="data_usage_menu_enable_data_alerts">Aktiver advarsler for dataforbrug</string>
+  <string name="data_usage_menu_disable_data_alerts">Desktiver advarsler for dataforbrug</string>
   <string name="data_usage_menu_reset_stats">Nulstil datastatistik</string>
   <string name="reset_stats_confirm">Bekræft</string>
+  <string name="restrict_cellular_access_title">Begræns adgang for mobildata</string>
   <string name="restrict_cellular_access_summary">Deaktiver adgang til data på mobilnetværk</string>
+  <string name="restrict_cellular_access_dialog_title">Begræns adgang for mobildata?</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <string name="shortcut_carrier_title">Netværksoperatører</string>
+  <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">Sløring af baggrund</string>
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">Vis vejr</string>
+  <!-- Per app controls for LP keyguard notifications -->
+  <string name="app_notification_show_on_keyguard_title">Vis på låseskærmen</string>
+  <string name="app_notification_show_on_keyguard_summary">Vis meddelelser fra denne app på låseskærmen</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">Deaktivere vedvarende meddelelser på låseskærmen</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">Vis aldrig vedvarende meddelelser fra denne app på låseskærmen</string>
+  <!-- CmRadioInfo -->
+  <string name="cm_radio_info_label">Udvidet radiokontrol</string>
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <string name="cm_radio_info_mbn_auto_load_on_label">Slå MBN auto load fra</string>
+  <string name="cm_radio_info_mbn_auto_load_off_label">Slå MBN auto load til</string>
+  <string name="cm_radio_info_volte_avail_ovr_on_label">Slå VoLTE debug fra</string>
+  <string name="cm_radio_info_volte_avail_ovr_off_label">Slå VoLTE debug til</string>
+  <string name="cm_radio_info_vt_avail_ovr_on_label">Slå VT debug fra</string>
+  <string name="cm_radio_info_vt_avail_ovr_off_label">Slå VT debug til</string>
+  <string name="cm_radio_info_wfc_avail_ovr_on_label">Slå WFC debug fra</string>
+  <string name="cm_radio_info_wfc_avail_ovr_off_label">Slå WFC debug til</string>
+  <string name="cm_radio_info_adb_log_on_label">Slå ADB radio log fra</string>
+  <string name="cm_radio_info_adb_log_off_label">Slå ADB radio log til</string>
+  <string name="cm_radio_info_diag_log_on_label">Slå Diag log fra</string>
+  <string name="cm_radio_info_diag_log_off_label">Slå Diag log til</string>
+  <!-- Lock screen wallpaper -->
+  <string name="lockscreen_wallpaper_title">Baggrund</string>
+  <string name="not_available_with_app">Ikke tilgængelig med %1$s</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

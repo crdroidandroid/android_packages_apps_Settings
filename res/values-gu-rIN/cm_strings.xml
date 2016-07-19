@@ -173,6 +173,18 @@
   <string name="wifi_setting_countrycode_summary">Wi\u2011Fi માટે પ્રાંત કોડ વિશિષ્ટપણે જણાવો</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">પ્રાંત કોડ સેટ કરવામાં સમસ્યા થઈ.</string>
+  <string name="wifi_countrycode_us">યુનાઇટેડ સ્ટેટ્સ</string>
+  <string name="wifi_countrycode_ca">કૅનેડા, તાઇવાન</string>
+  <string name="wifi_countrycode_de">જર્મની</string>
+  <string name="wifi_countrycode_gb">યુરોપ</string>
+  <string name="wifi_countrycode_jp">જાપાન, રશિયા</string>
+  <string name="wifi_countrycode_au">ઓસ્ટ્રેલિયા</string>
+  <string name="wifi_countrycode_cn">ચીન</string>
+  <string name="wifi_countrycode_kr">કોરિયા</string>
+  <string name="wifi_countrycode_tr">દક્ષિણ આફ્રિકા, તુર્કી</string>
+  <string name="wifi_countrycode_sg">ઇઝરાયલ, સિંગાપોર</string>
+  <string name="wifi_countrycode_br">બ્રાઝીલ</string>
+  <string name="wifi_countrycode_in">ભારત</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">હટાવો</string>
   <string name="profile_action_none">અપરિવર્તિત રહેવા દો</string>
@@ -572,6 +584,9 @@
   <string name="saturation_str">સંતૃપ્તિ: <xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">કૉન્ટ્રાસ્ટ: <xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">ઉત્કટતા: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">પ્રમાણભૂત</string>
+  <string name="screen_color_vivid">વિવિધ</string>
+  <string name="screen_color_custom">કસ્ટમ</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">વાંચન ક્ષમતામાં સુધારો લાવવા અને આંખો પરનો તાણ ઘટાડવા દિવસનો સમય અને વ્યાપક હવામાનનાં આધારે તમારા સ્ક્રીનને અનુકૂળ બનાવો</string>
   <string name="live_display_mode">પ્રદર્શન મોડ</string>
@@ -990,5 +1005,19 @@
   <string name="battery_info_status_charging_dock_usb">ડૉક USB પર ચાર્જિંગ થાય છે</string>
   <string name="privacy_guard_internet_category">ઈન્ટરનેટ</string>
   <!-- Weather -->
+  <string name="weather_settings_general_settings_title">સામાન્ય</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <!-- title for lock screen blur preference -->
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">હવામાન દર્શાવો</string>
+  <!-- Per app controls for LP keyguard notifications -->
+  <string name="app_notification_show_on_keyguard_title">લૉક ચાલુ સ્ક્રીન દર્શાવો</string>
+  <string name="app_notification_show_on_keyguard_summary">લૉક સ્ક્રીન પર આ ઍપમાંથી સૂચનાઓ દર્શાવો</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">લૉક સ્ક્રીન પર નિરંતર સૂચનાઓ અક્ષમ કરો</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">લૉક સ્ક્રીન પર આ ઍપમાંથી નિરંતર સૂચનાઓ ક્યારેય દર્શાવવા નહીં</string>
+  <!-- CmRadioInfo -->
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <!-- Lock screen wallpaper -->
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

@@ -56,6 +56,7 @@ public class ProtectedAppsActivity extends Activity {
     private static final int REQ_RESET_PATTERN = 2;
 
     private static final String NEEDS_UNLOCK = "needs_unlock";
+    private static final String TARGET_INTENT = "target_intent";
 
     private ListView mListView;
 
@@ -71,6 +72,7 @@ public class ProtectedAppsActivity extends Activity {
     private boolean mWaitUserAuth = false;
     private boolean mUserIsAuth = false;
     private Intent mTargetIntent;
+    private int mOrientation;
 
     private HashSet<ComponentName> mProtectedApps = new HashSet<ComponentName>();
 
@@ -100,24 +102,28 @@ public class ProtectedAppsActivity extends Activity {
 
         if (savedInstanceState != null) {
             mUserIsAuth = savedInstanceState.getBoolean(NEEDS_UNLOCK);
-        }
-
-        if (!mUserIsAuth) {
-            // Require unlock
-            Intent lockPattern = new Intent(this, LockPatternActivity.class);
-            startActivityForResult(lockPattern, REQ_ENTER_PATTERN);
+            mTargetIntent = savedInstanceState.getParcelable(TARGET_INTENT);
         } else {
-            //LAUNCH
-            if (mTargetIntent != null) {
-                launchTargetActivityInfoAndFinish();
+            if (!mUserIsAuth) {
+                // Require unlock
+                mWaitUserAuth = true;
+                Intent lockPattern = new Intent(this, LockPatternActivity.class);
+                startActivityForResult(lockPattern, REQ_ENTER_PATTERN);
+            } else {
+                //LAUNCH
+                if (mTargetIntent != null) {
+                    launchTargetActivityInfoAndFinish();
+                }
             }
         }
+        mOrientation = getResources().getConfiguration().orientation;
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putBoolean(NEEDS_UNLOCK, mUserIsAuth);
+        outState.putParcelable(TARGET_INTENT, mTargetIntent);
     }
 
     @Override
@@ -164,8 +170,10 @@ public class ProtectedAppsActivity extends Activity {
     public void onPause() {
         super.onPause();
 
-        // Don't stick around
-        if (mWaitUserAuth && !mUserIsAuth) {
+        // Close this app to prevent unauthorized access when
+        // 1) not waiting for authorization and
+        // 2) there is no portrait/landscape mode switching
+        if (!mWaitUserAuth && (mOrientation == getResources().getConfiguration().orientation)) {
             finish();
         }
     }
@@ -178,7 +186,7 @@ public class ProtectedAppsActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
             case REQ_ENTER_PATTERN:
-                mWaitUserAuth = true;
+                mWaitUserAuth = false;
                 switch (resultCode) {
                     case RESULT_OK:
                         //Nothing to do, proceed!
@@ -194,7 +202,7 @@ public class ProtectedAppsActivity extends Activity {
                 }
                 break;
             case REQ_RESET_PATTERN:
-                mWaitUserAuth = true;
+                mWaitUserAuth = false;
                 mUserIsAuth = false;
         }
     }
@@ -241,7 +249,7 @@ public class ProtectedAppsActivity extends Activity {
     }
 
     private void resetLock() {
-        mWaitUserAuth = false;
+        mWaitUserAuth = true;
         Intent lockPattern = new Intent(LockPatternActivity.RECREATE_PATTERN, null,
                 this, LockPatternActivity.class);
         startActivityForResult(lockPattern, REQ_RESET_PATTERN);

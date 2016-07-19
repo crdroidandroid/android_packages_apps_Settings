@@ -383,6 +383,7 @@
   <string name="saturation_str">Piesātinājums: <xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">Kontrasts: <xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">Spilgtums: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_custom">Pielāgots</string>
   <!-- LiveDisplay -->
   <!-- Whether to display IME switcher notifcation -->
   <!-- Heads up -->
@@ -548,5 +549,14 @@
   <!-- [CHAR_LIMIT=20] Battery use screen. Battery status shown in chart label when charging on Dock AC. -->
   <!-- [CHAR_LIMIT=20] Battery use screen. Battery status shown in chart label when charging over Dock USB. -->
   <!-- Weather -->
+  <string name="weather_settings_general_settings_title">Vispārīgi</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <!-- title for lock screen blur preference -->
+  <!-- title for lock screen weather preference -->
+  <!-- Per app controls for LP keyguard notifications -->
+  <!-- CmRadioInfo -->
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <!-- Lock screen wallpaper -->
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

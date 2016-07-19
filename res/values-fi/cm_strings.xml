@@ -173,6 +173,18 @@
   <string name="wifi_setting_countrycode_summary">Aseta Wi\u2011Fin aluekoodi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">Ongelma aluekoodia asetettaessa.</string>
+  <string name="wifi_countrycode_us">Yhdysvallat</string>
+  <string name="wifi_countrycode_ca">Kanada, Taiwan</string>
+  <string name="wifi_countrycode_de">Saksa</string>
+  <string name="wifi_countrycode_gb">Eurooppa</string>
+  <string name="wifi_countrycode_jp">Japani, Venäjä</string>
+  <string name="wifi_countrycode_au">Australia</string>
+  <string name="wifi_countrycode_cn">Kiina</string>
+  <string name="wifi_countrycode_kr">Korea</string>
+  <string name="wifi_countrycode_tr">Etelä-Afrikka, Turkki</string>
+  <string name="wifi_countrycode_sg">Israel, Singapore</string>
+  <string name="wifi_countrycode_br">Brasilia</string>
+  <string name="wifi_countrycode_in">Intia</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Poista</string>
   <string name="profile_action_none">Ei muutoksia</string>
@@ -574,6 +586,9 @@
   <string name="saturation_str">Kylläisyys: <xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">Kontrasti: <xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">Intensiteetti: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">Standardi</string>
+  <string name="screen_color_vivid">Eloisa</string>
+  <string name="screen_color_custom">Mukautettu</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimoi näyttösi kellonajan ja ympäristöolosuhteiden perusteella parantaaksesi luettavuutta ja vähentääksesi silmien rasitusta</string>
   <string name="live_display_mode">Näyttötila</string>
@@ -603,6 +618,8 @@
   <string name="live_display_color_profile_photography_summary">Täydellinen värintoisto kuviin</string>
   <string name="live_display_color_profile_basic_title">Perus</string>
   <string name="live_display_color_profile_basic_summary">Käytä näyttöä kalibroimatta</string>
+  <string name="live_display_color_profile_adaptive_title">Mukautuva</string>
+  <string name="live_display_color_profile_adaptive_summary">Värit sopeutuu ympäristön mukaan</string>
   <!-- Whether to display IME switcher notifcation -->
   <string name="ime_switcher_notify">Syöttötavan valinnan kuvake</string>
   <string name="ime_switcher_notify_summary">Näytä syöttötavan valinnan kuvake</string>
@@ -1001,6 +1018,13 @@
   <string name="weather_settings_no_services_prompt">Säätarjoajapalveluita ei asennettu</string>
   <string name="weather_settings_button">Tarjoajan asetukset</string>
   <string name="weather_settings_activity_not_found">Tämän palveluntarjoajan asetusvalikon avaaminen ei onnistu</string>
+  <string name="weather_settings_add_weather_provider">Lisää sääpalveluntarjoaja</string>
+  <string name="weather_settings_general_settings_title">Yleiset</string>
+  <string name="weather_settings_providers_title">Palveluntarjoajat</string>
+  <string name="weather_settings_temp_units_title">Lämpötilan yksikkö</string>
+  <string name="weather_settings_temp_celsius">Celsius</string>
+  <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
+  <string name="weather_settings_keyword">sää</string>
   <string name="background_data_access">Taustatiedonsiirron käyttö</string>
   <string name="allow_background_both">Mobiiliverkon &amp; Wi\u2011Fin yli</string>
   <string name="allow_background_wlan">Vain Wi\u2011Fin yli</string>
@@ -1018,4 +1042,38 @@
   <string name="restrict_cellular_access_dialog_summary">Tämä ominaisuus voi aiheuttaa verkkoyhteydestä riippuvaisen sovelluksen toiminnan lakkaamisen kun vain mobiilidataverkko on käytettävissä.\n\nLöydät lisää tiedonsiirron hallintaominaisuuksia sovelluksesta.</string>
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">Verkko-operaattorit</string>
+  <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">Sumennettu tausta</string>
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">Näytä sää</string>
+  <!-- Per app controls for LP keyguard notifications -->
+  <string name="app_notification_show_on_keyguard_title">Näytä lukitusnäytöllä</string>
+  <string name="app_notification_show_on_keyguard_summary">Näytä tämän sovelluksen ilmoitukset lukitusnäytöllä</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">Älä näytä pysyviä ilmoituksia lukitusnäytöllä</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">Älä koskaan näytä pysyviä ilmoituksia tästä sovelluksesta lukitusnäytöllä</string>
+  <!-- CmRadioInfo -->
+  <string name="cm_radio_info_label">Parannettu radion ohjaus</string>
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <string name="cm_radio_info_mbn_auto_load_on_label">Poista MBN auto load käytöstä</string>
+  <string name="cm_radio_info_mbn_auto_load_off_label">Ota MBN auto load käyttöön</string>
+  <string name="cm_radio_info_volte_avail_ovr_on_label">Poista VoLTE debug käytöstä</string>
+  <string name="cm_radio_info_volte_avail_ovr_off_label">Ota VoLTE debug käyttöön</string>
+  <string name="cm_radio_info_vt_avail_ovr_on_label">Poista VT debug käytöstä</string>
+  <string name="cm_radio_info_vt_avail_ovr_off_label">Ota VT debug käyttöön</string>
+  <string name="cm_radio_info_wfc_avail_ovr_on_label">Poista WFC debug käytöstä</string>
+  <string name="cm_radio_info_wfc_avail_ovr_off_label">Ota WFC debug käyttöön</string>
+  <string name="cm_radio_info_adb_log_on_label">Poista ADB radio log käytöstä</string>
+  <string name="cm_radio_info_adb_log_off_label">Ota ADB radio log käyttöön</string>
+  <string name="cm_radio_info_diag_log_on_label">Poista Diag log käytöstä</string>
+  <string name="cm_radio_info_diag_log_off_label">Ota Diag log käyttöön</string>
+  <!-- Lock screen wallpaper -->
+  <string name="lockscreen_wallpaper_title">Taustakuva</string>
+  <string name="not_available_with_app">Ei käytettävissä sovelluksessa %1$s</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Etsi sormenjälkitunnistin puhelimen <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">takaa</string>
+  <string name="security_settings_fingerprint_sensor_location_front">edestä</string>
+  <string name="security_settings_fingerprint_sensor_location_left">vasemmasta reunasta</string>
+  <string name="security_settings_fingerprint_sensor_location_right">oikeasta reunasta</string>
 </resources>

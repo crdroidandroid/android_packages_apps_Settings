@@ -485,6 +485,9 @@
   <string name="saturation_str">Saturation: <xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">Contrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">Intensity: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">Standard</string>
+  <string name="screen_color_vivid">Vivid</string>
+  <string name="screen_color_custom">Custom</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimize your screen based on time of day and ambient conditions to improve readability and reduce eyestrain</string>
   <string name="live_display_mode">Display mode</string>
@@ -761,5 +764,19 @@
   <!-- [CHAR_LIMIT=20] Battery use screen. Battery status shown in chart label when charging on Dock AC. -->
   <!-- [CHAR_LIMIT=20] Battery use screen. Battery status shown in chart label when charging over Dock USB. -->
   <!-- Weather -->
+  <string name="weather_settings_general_settings_title">General</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <!-- title for lock screen blur preference -->
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">Show weather</string>
+  <!-- Per app controls for LP keyguard notifications -->
+  <string name="app_notification_show_on_keyguard_title">Show on lock screen</string>
+  <string name="app_notification_show_on_keyguard_summary">Show notifications from this app on the lock screen</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">Disable persistent notification on lock screen</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">Never show persistent notifications from this app on the lock screen</string>
+  <!-- CmRadioInfo -->
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <!-- Lock screen wallpaper -->
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

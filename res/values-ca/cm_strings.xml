@@ -173,6 +173,18 @@
   <string name="wifi_setting_countrycode_summary">Especifica el codi de regió per al Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">Hi ha un problema al establir el codi de regió.</string>
+  <string name="wifi_countrycode_us">Estats Units</string>
+  <string name="wifi_countrycode_ca">Canadà, Taiwan</string>
+  <string name="wifi_countrycode_de">Alemanya</string>
+  <string name="wifi_countrycode_gb">Europa</string>
+  <string name="wifi_countrycode_jp">Japan, Rússia</string>
+  <string name="wifi_countrycode_au">Austràlia</string>
+  <string name="wifi_countrycode_cn">Xina</string>
+  <string name="wifi_countrycode_kr">Corea</string>
+  <string name="wifi_countrycode_tr">Sud-àfrica, Turquia</string>
+  <string name="wifi_countrycode_sg">Israel, Singapur</string>
+  <string name="wifi_countrycode_br">Brasil</string>
+  <string name="wifi_countrycode_in">Índia</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Esborra</string>
   <string name="profile_action_none">Deixa sense canvis</string>
@@ -519,7 +531,7 @@
   <string name="disable_navkeys_title">Habilita bar nav en pantalla</string>
   <string name="disable_navkeys_summary">Habilita la barra de navegació en pantalla y deshabilitar els botons físics</string>
   <!-- tap-to-wake -->
-  <string name="double_tap_to_wake_title">Pica doblement per encendre</string>
+  <string name="double_tap_to_wake_title">Pica dues vegades per encendre</string>
   <string name="double_tap_to_wake_summary">Pica dues vegades a la pantalla per encendre la pantalla</string>
   <!-- tap-to-sleep -->
   <string name="double_tap_to_sleep_title">Pica dues vegades per posar en repòs</string>
@@ -574,6 +586,9 @@
   <string name="saturation_str">Saturació: <xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">Contrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">Intensitat: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">Estàndard</string>
+  <string name="screen_color_vivid">Viva</string>
+  <string name="screen_color_custom">Personalitzat</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimitza la teva pantalla basant-se en l\'hora del dia i les condicions ambientals per millorar la llegibilitat i reduir la fatiga ocular</string>
   <string name="live_display_mode">Mode de pantalla</string>
@@ -603,6 +618,8 @@
   <string name="live_display_color_profile_photography_summary">Reproducció del color perfecte per a fotos</string>
   <string name="live_display_color_profile_basic_title">Bàsic</string>
   <string name="live_display_color_profile_basic_summary">Utilitza la pantalla sense calibrar</string>
+  <string name="live_display_color_profile_adaptive_title">Adaptativa</string>
+  <string name="live_display_color_profile_adaptive_summary">Els colors s\'adapten a les condicions ambientals</string>
   <!-- Whether to display IME switcher notifcation -->
   <string name="ime_switcher_notify">Selector d\'icona</string>
   <string name="ime_switcher_notify_summary">Mostra la icona del selector de mètode d\'entrada</string>
@@ -842,7 +859,7 @@
   <string name="anonymous_statistics_warning">Optant a les estadístiques de CyanogenMod permetràs que dades no-personals siguin transmeses als desenvolupadors de CyanogenMod per rastrejar les intal·lacions individuals a través dels dispositius. La informació transmesa inclou un identificador únic, que no compromet la privacitat o les dades personals. Les dades son transmeses durant cada arrancada.\n\nPer un exemple de les dades transmeses, pica a vista prèvia de Dades.</string>
   <string name="enable_reporting_title">Activa els informes</string>
   <string name="preview_data_title">Vista prèvia de Dades</string>
-  <string name="view_stats_title">Mostra estadístiques</string>
+  <string name="view_stats_title">Veure estadístiques</string>
   <string name="anonymous_learn_more">Aprèn més</string>
   <!-- Anonymous Statistics - Preview -->
   <string name="preview_id_title">ID únic</string>
@@ -1000,6 +1017,14 @@
   <string name="weather_settings_title">El temps</string>
   <string name="weather_settings_no_services_prompt">No hi ha cap servei de proveïdor de temps instal·lat</string>
   <string name="weather_settings_button">Configuració del proveïdor</string>
+  <string name="weather_settings_activity_not_found">No s\'ha pogut iniciar el menú de configuració d\'aquest proveïdor</string>
+  <string name="weather_settings_add_weather_provider">Afegeix proveïdor meteorològic</string>
+  <string name="weather_settings_general_settings_title">General</string>
+  <string name="weather_settings_providers_title">Proveïdors</string>
+  <string name="weather_settings_temp_units_title">Unitat de temperatura</string>
+  <string name="weather_settings_temp_celsius">Celsius</string>
+  <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
+  <string name="weather_settings_keyword">el temps</string>
   <string name="background_data_access">Accés a les dades en segon pla</string>
   <string name="allow_background_both">Sobre dades mòbils &amp; Wi\u2011Fi</string>
   <string name="allow_background_wlan">Només sobre Wi\u2011Fi</string>
@@ -1017,4 +1042,38 @@
   <string name="restrict_cellular_access_dialog_summary">Aquesta característica podria provocar que una aplicació que depèn de l\'accés a la xarxa deixi de funcionar quan només les xarxes mòbils estiguin disponibles.\n\nPots trobar els controls d\'ús de dades més adequats a la configuració disponible dins de l\'aplicació.</string>
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">Operadors de xarxa</string>
+  <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">Desenfoca el fons</string>
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">Mostra el temps</string>
+  <!-- Per app controls for LP keyguard notifications -->
+  <string name="app_notification_show_on_keyguard_title">Mostra a la pantalla de bloqueig</string>
+  <string name="app_notification_show_on_keyguard_summary">Mostra les notificacions d\'aquesta aplicació a la pantalla de bloqueig</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">Deshabilita les notificacions persistents a la pantalla de bloqueig</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">No mostris mai notificacions persistents d\'aquesta aplicació a la pantalla de bloqueig</string>
+  <!-- CmRadioInfo -->
+  <string name="cm_radio_info_label">Control millorat de la ràdio</string>
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <string name="cm_radio_info_mbn_auto_load_on_label">Desactiva la càrrega automàtica del MBN</string>
+  <string name="cm_radio_info_mbn_auto_load_off_label">Activa la càrrega automàtica del MBN</string>
+  <string name="cm_radio_info_volte_avail_ovr_on_label">Desactiva el depurador VoLTE</string>
+  <string name="cm_radio_info_volte_avail_ovr_off_label">Activa el depurador VoLTE</string>
+  <string name="cm_radio_info_vt_avail_ovr_on_label">Desactiva el depurador VT</string>
+  <string name="cm_radio_info_vt_avail_ovr_off_label">Activa el depurador VT</string>
+  <string name="cm_radio_info_wfc_avail_ovr_on_label">Desactiva el depurador WFC</string>
+  <string name="cm_radio_info_wfc_avail_ovr_off_label">Activa el depurador WFC</string>
+  <string name="cm_radio_info_adb_log_on_label">Desactiva el registre ADB de la ràdio</string>
+  <string name="cm_radio_info_adb_log_off_label">Activa el registre ADB de la ràdio</string>
+  <string name="cm_radio_info_diag_log_on_label">Desactiva el registre Diag</string>
+  <string name="cm_radio_info_diag_log_off_label">Activa el registre Diag</string>
+  <!-- Lock screen wallpaper -->
+  <string name="lockscreen_wallpaper_title">Fons de pantalla</string>
+  <string name="not_available_with_app">No disponible amb %1$s</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Localitza el sensor d\'empremtes digitals al <xliff:g id="sensor_location">%1$s</xliff:g> del teu telèfon.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">darrera</string>
+  <string name="security_settings_fingerprint_sensor_location_front">davant</string>
+  <string name="security_settings_fingerprint_sensor_location_left">costat esquerre</string>
+  <string name="security_settings_fingerprint_sensor_location_right">costat dret</string>
 </resources>

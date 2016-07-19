@@ -175,6 +175,18 @@
   <string name="wifi_setting_countrycode_summary">Določite območno kodo za Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">Pri nastavitvi območne kode je prišlo do težave.</string>
+  <string name="wifi_countrycode_us">Združene države</string>
+  <string name="wifi_countrycode_ca">Kanada, Tajvan</string>
+  <string name="wifi_countrycode_de">Nemčija</string>
+  <string name="wifi_countrycode_gb">Evropa</string>
+  <string name="wifi_countrycode_jp">Japonska, Rusija</string>
+  <string name="wifi_countrycode_au">Avstralija</string>
+  <string name="wifi_countrycode_cn">Kitajska</string>
+  <string name="wifi_countrycode_kr">Koreja</string>
+  <string name="wifi_countrycode_tr">Južna Afrika, Turčija</string>
+  <string name="wifi_countrycode_sg">Izrael, Singapur</string>
+  <string name="wifi_countrycode_br">Brazilija</string>
+  <string name="wifi_countrycode_in">Indija</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Izbriši</string>
   <string name="profile_action_none">Pusti nespremenjeno</string>
@@ -450,7 +462,7 @@
   <string name="hardware_keys_home_key_title">Gumb Domov</string>
   <string name="hardware_keys_back_key_title">Gumb Nazaj</string>
   <string name="hardware_keys_menu_key_title">Gumb Meni</string>
-  <string name="hardware_keys_assist_key_title">Gumb Iskanje</string>
+  <string name="hardware_keys_assist_key_title">Gumb Išči</string>
   <string name="hardware_keys_appswitch_key_title">Gumb Nedavno</string>
   <string name="hardware_keys_camera_key_title">Gumb fotoaparata</string>
   <string name="hardware_keys_volume_keys_title">Gumba za glasnost</string>
@@ -493,7 +505,7 @@
   <string name="color_enhancement_title">Izboljšanje barv</string>
   <string name="color_enhancement_summary">Dinamično izboljšaj barve zaslona</string>
   <!-- Key backlight -->
-  <string name="button_backlight_title">Svetlost ozadja</string>
+  <string name="button_backlight_title">Osvetljeno ozadje</string>
   <string name="button_backlight_enabled">Osvetli gumbe</string>
   <string name="keyboard_backlight_enabled">Osvetli tipkovnico</string>
   <string name="button_backlight_seekbar_title">Svetlost gumbov</string>
@@ -576,6 +588,9 @@
   <string name="saturation_str">Nasičenost: <xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">Kontrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">Jakost: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">Običajno</string>
+  <string name="screen_color_vivid">Živahno</string>
+  <string name="screen_color_custom">Po meri</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimiziraj zaslon glede na čas dneva in pogoje okolice, da se izboljša berljivost in zmanjša obremenitev oči</string>
   <string name="live_display_mode">Način prikaza</string>
@@ -605,6 +620,8 @@
   <string name="live_display_color_profile_photography_summary">Popolna izvedba barv za fotografije</string>
   <string name="live_display_color_profile_basic_title">Osnoven</string>
   <string name="live_display_color_profile_basic_summary">Uporabi neumerjen zaslon</string>
+  <string name="live_display_color_profile_adaptive_title">Prilagodljiv</string>
+  <string name="live_display_color_profile_adaptive_summary">Barve se prilagajajo pogojem okolice</string>
   <!-- Whether to display IME switcher notifcation -->
   <string name="ime_switcher_notify">Ikona izbirnika</string>
   <string name="ime_switcher_notify_summary">Prikaži ikono izbirnika metode za vnos</string>
@@ -644,7 +661,7 @@
   <string name="gestures_action_home">Domov</string>
   <string name="gestures_action_back">Nazaj</string>
   <string name="gestures_action_menu">Meni</string>
-  <string name="gestures_action_search">Začni z iskanjem</string>
+  <string name="gestures_action_search">Začni iskati</string>
   <string name="gestures_action_recent">Nedavne aplikacije</string>
   <!-- Stylus gestures -->
   <string name="stylus_app_not_installed">%s ni nameščen</string>
@@ -1005,6 +1022,13 @@
   <string name="weather_settings_no_services_prompt">Ni nameščene storitve ponudnika vremena</string>
   <string name="weather_settings_button">Nastavitve ponudnika</string>
   <string name="weather_settings_activity_not_found">Menija nastavitev za tega ponudnika ni mogoče zagnati</string>
+  <string name="weather_settings_add_weather_provider">Dodaj ponudnika vremena</string>
+  <string name="weather_settings_general_settings_title">Splošno</string>
+  <string name="weather_settings_providers_title">Ponudniki</string>
+  <string name="weather_settings_temp_units_title">Enote za temperaturo</string>
+  <string name="weather_settings_temp_celsius">Celzij</string>
+  <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
+  <string name="weather_settings_keyword">vreme</string>
   <string name="background_data_access">Dostop do podatkov v ozadju</string>
   <string name="allow_background_both">Preko mobilnih podatkov in omr. Wi\u2011Fi</string>
   <string name="allow_background_wlan">Samo preko omr. Wi\u2011Fi</string>
@@ -1022,4 +1046,38 @@
   <string name="restrict_cellular_access_dialog_summary">Ta značilnost lahko povzroči, da aplikacija, ki je odvisna od dostopa do omrežja, preneha delovati, ko so na voljo samo mob. omrežja.\n\nPrimernejše nastavitve nadzora porabe podatkov lahko najdete v aplikaciji.</string>
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">Omrežni operaterji</string>
+  <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">Zamegli ozadje</string>
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">Prikaži vreme</string>
+  <!-- Per app controls for LP keyguard notifications -->
+  <string name="app_notification_show_on_keyguard_title">Prikaži na zaslonu za zakl.</string>
+  <string name="app_notification_show_on_keyguard_summary">Na zaklenjenem zaslonu prikaži obvestila iz te aplikacije</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">Onem. vztr. obv. na zas. za zakl.</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">Nikoli ne prikaži vztrajnih obvestil iz te aplikacije na zaklenjenem zaslonu</string>
+  <!-- CmRadioInfo -->
+  <string name="cm_radio_info_label">Izboljšan nadzor oddajnika</string>
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <string name="cm_radio_info_mbn_auto_load_on_label">Izklopi samodejno nalaganje MBN-a</string>
+  <string name="cm_radio_info_mbn_auto_load_off_label">Vklopi samodejno nalaganje MBN-a</string>
+  <string name="cm_radio_info_volte_avail_ovr_on_label">Izklopi razhroščevanje VoLTE</string>
+  <string name="cm_radio_info_volte_avail_ovr_off_label">Vklopi razhroščevanje VoLTE</string>
+  <string name="cm_radio_info_vt_avail_ovr_on_label">Izklopi razhroščevanje VT</string>
+  <string name="cm_radio_info_vt_avail_ovr_off_label">Vklopi razhroščevanje VT</string>
+  <string name="cm_radio_info_wfc_avail_ovr_on_label">Izklopi razhroščevanje WFC</string>
+  <string name="cm_radio_info_wfc_avail_ovr_off_label">Vklopi razhroščevanje WFC</string>
+  <string name="cm_radio_info_adb_log_on_label">Izklopi dnevnik oddajnika ADB</string>
+  <string name="cm_radio_info_adb_log_off_label">Vklopi dnevnik oddajnika ADB</string>
+  <string name="cm_radio_info_diag_log_on_label">Izklopi dnevnik prepoz. težav</string>
+  <string name="cm_radio_info_diag_log_off_label">Vklopi dnevnik prepoz. težav</string>
+  <!-- Lock screen wallpaper -->
+  <string name="lockscreen_wallpaper_title">Slika ozadja</string>
+  <string name="not_available_with_app">Ni na voljo s/z %1$s</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Poiščite tipalo za prstne odtise na <xliff:g id="sensor_location">%1$s</xliff:g> vašega telefona.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">zadnji strani</string>
+  <string name="security_settings_fingerprint_sensor_location_front">sprednji strani</string>
+  <string name="security_settings_fingerprint_sensor_location_left">levi strani</string>
+  <string name="security_settings_fingerprint_sensor_location_right">desni strani</string>
 </resources>

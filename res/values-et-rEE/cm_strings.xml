@@ -169,6 +169,18 @@
   <string name="wifi_setting_countrycode_summary">Täpsusta  Wi\u2011Fi regioonikoodi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">Ilmnes probleem piirkonna koodi salvestamisel.</string>
+  <string name="wifi_countrycode_us">Ameerika Ühendriigid</string>
+  <string name="wifi_countrycode_ca">Kanada, Taiwan</string>
+  <string name="wifi_countrycode_de">Saksamaa</string>
+  <string name="wifi_countrycode_gb">Euroopa</string>
+  <string name="wifi_countrycode_jp">Jaapan, Venemaa</string>
+  <string name="wifi_countrycode_au">Austraalia</string>
+  <string name="wifi_countrycode_cn">Hiina</string>
+  <string name="wifi_countrycode_kr">Korea</string>
+  <string name="wifi_countrycode_tr">Lõuna-Aafrika, Türgi</string>
+  <string name="wifi_countrycode_sg">Iisrael, Singapur</string>
+  <string name="wifi_countrycode_br">Brasiilia</string>
+  <string name="wifi_countrycode_in">India</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Kustuta</string>
   <string name="profile_action_none">Jäta muutmata</string>
@@ -506,6 +518,9 @@
   <string name="saturation_str">Küllastus: <xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">Kontrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">Intensiivsus: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">Standard</string>
+  <string name="screen_color_vivid">Ergas</string>
+  <string name="screen_color_custom">Kohandatud</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimiseeri oma ekraan vastavalt päeva ajale ja ümbritsevatele tingimustele, et parandada loetavust ning vähendada silmade pinget</string>
   <string name="live_display_mode">Ekraani režiim</string>
@@ -868,5 +883,19 @@ mis ei ohusta sinu privaatsust ega isiklikku infot. Teave saadetakse peale igat 
   <!-- [CHAR_LIMIT=20] Battery use screen. Battery status shown in chart label when charging over Dock USB. -->
   <string name="battery_info_status_charging_dock_usb">Laen üle doki USB</string>
   <!-- Weather -->
+  <string name="weather_settings_general_settings_title">Üldine</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <!-- title for lock screen blur preference -->
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">Näita Ilmateadet</string>
+  <!-- Per app controls for LP keyguard notifications -->
+  <string name="app_notification_show_on_keyguard_title">Kuva lukustusekraanil</string>
+  <string name="app_notification_show_on_keyguard_summary">Kuva selle rakenduse teavitusi lukustusekraanil</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">Keela püsivad teavitused lukustusekraanil</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">Ära kunagi näita püsivaid teavitusi sellelt rakenduselt lukustuskuval</string>
+  <!-- CmRadioInfo -->
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <!-- Lock screen wallpaper -->
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

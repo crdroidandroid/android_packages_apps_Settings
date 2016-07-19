@@ -86,6 +86,7 @@ import com.android.settings.search.Indexable;
 import com.android.settings.widget.SwitchBar;
 import cyanogenmod.providers.CMSettings;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -210,6 +211,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private static final int[] MOCK_LOCATION_APP_OPS = new int[] {AppOpsManager.OP_MOCK_LOCATION};
 
     private static final String MULTI_WINDOW_SYSTEM_PROPERTY = "persist.sys.debug.multi_window";
+
+    private static final String SUPERUSER_BINARY_PATH = "/system/xbin/su";
+
     private IWindowManager mWindowManager;
     private IBackupManager mBackupManager;
     private DevicePolicyManager mDpm;
@@ -475,6 +479,13 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mRootAccess = (ListPreference) findPreference(ROOT_ACCESS_KEY);
         mRootAccess.setOnPreferenceChangeListener(this);
         if (!removeRootOptionsIfRequired()) {
+            if (isRootForAppsAvailable()) {
+                mRootAccess.setEntries(R.array.root_access_entries);
+                mRootAccess.setEntryValues(R.array.root_access_values);
+            } else {
+                mRootAccess.setEntries(R.array.root_access_entries_adb);
+                mRootAccess.setEntryValues(R.array.root_access_values_adb);
+            }
             mAllPrefs.add(mRootAccess);
         }
 
@@ -830,6 +841,17 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mRootAccess.setValue(value);
         mRootAccess.setSummary(getResources()
                 .getStringArray(R.array.root_access_entries)[Integer.valueOf(value)]);
+    }
+
+    private boolean isRootForAppsAvailable() {
+        boolean exists = false;
+        try {
+            File f = new File(SUPERUSER_BINARY_PATH);
+            exists = f.exists();
+        } catch (SecurityException e) {
+            // Ignore
+        }
+        return exists;
     }
 
     public static boolean isRootForAppsEnabled() {
@@ -1785,10 +1807,12 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     }
 
     private void confirmEnableOemUnlock() {
-        DialogInterface.OnClickListener onConfirmListener = new DialogInterface.OnClickListener() {
+        DialogInterface.OnClickListener onEnableOemListener = new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Utils.setOemUnlockEnabled(getActivity(), true);
+                if (which == DialogInterface.BUTTON_POSITIVE) {
+                    Utils.setOemUnlockEnabled(getActivity(), true);
+                }
                 updateAllOptions();
             }
         };
@@ -1796,8 +1820,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         new AlertDialog.Builder(getActivity())
                 .setTitle(R.string.confirm_enable_oem_unlock_title)
                 .setMessage(R.string.confirm_enable_oem_unlock_text)
-                .setPositiveButton(R.string.enable_text, onConfirmListener)
-                .setNegativeButton(android.R.string.cancel, null)
+                .setPositiveButton(R.string.enable_text, onEnableOemListener)
+                .setNegativeButton(android.R.string.cancel, onEnableOemListener)
+                .setCancelable(false)
                 .create()
                 .show();
     }
@@ -1816,6 +1841,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 .setMessage(R.string.confirm_enable_multi_window_text)
                 .setPositiveButton(R.string.enable_text, onConfirmListener)
                 .setNegativeButton(android.R.string.cancel, onConfirmListener)
+                .setCancelable(false)
                 .create()
                 .show();
     }

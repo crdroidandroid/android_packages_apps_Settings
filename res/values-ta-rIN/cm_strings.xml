@@ -172,6 +172,18 @@
   <string name="wifi_setting_countrycode_summary">Wi\u2011Fiக்கான பிராந்திய குறியீட்டை குறிப்பிடு</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">பிராந்திய குறியீட்டை அமைப்பதில் ஒரு பிரச்சனை உள்ளது.</string>
+  <string name="wifi_countrycode_us">யுனைட்டெட் ஸ்டேட்ஸ்</string>
+  <string name="wifi_countrycode_ca">கனடா, தாய்வான்</string>
+  <string name="wifi_countrycode_de">ஜெர்மனி</string>
+  <string name="wifi_countrycode_gb">ஐரோப்பா</string>
+  <string name="wifi_countrycode_jp">ஜப்பான், ரஷ்யா</string>
+  <string name="wifi_countrycode_au">ஆஸ்திரேலியா</string>
+  <string name="wifi_countrycode_cn">சீனா</string>
+  <string name="wifi_countrycode_kr">கொரியா</string>
+  <string name="wifi_countrycode_tr">தென் ஆப்பிரிக்கா, துருக்கி</string>
+  <string name="wifi_countrycode_sg">இஸ்ரவேல், சிங்கப்பூர்</string>
+  <string name="wifi_countrycode_br">பிரேசில்</string>
+  <string name="wifi_countrycode_in">இந்தியா</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">நீக்கு</string>
   <string name="profile_action_none">மாற்றாமல் விடு</string>
@@ -571,6 +583,9 @@
   <string name="saturation_str">சாச்சுரேசன்: <xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">கான்டிராஸ்ட்: <xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">இன்டென்சிட்டி: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">நிலையான</string>
+  <string name="screen_color_vivid">தெளிவு</string>
+  <string name="screen_color_custom">தனிப்பயன்</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">வாசிக்கும்தன்மையை மேம்படுத்தவும் கண்ணுக்கு சிரமத்தை குறைக்கவும் நாளின் நேரத்தையும் சுற்றுச்சூழல் நிலைமைகளையும் பொருத்து உங்கள் திரையை உகந்ததாக்குங்கள்</string>
   <string name="live_display_mode">காட்சி முறை</string>
@@ -988,5 +1003,19 @@
   <!-- [CHAR_LIMIT=20] Battery use screen. Battery status shown in chart label when charging over Dock USB. -->
   <string name="battery_info_status_charging_dock_usb">டாக் USB மீது சார்ஜ் செய்கிறது</string>
   <!-- Weather -->
+  <string name="weather_settings_general_settings_title">பொது</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <!-- title for lock screen blur preference -->
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">வானிலையை காட்டு</string>
+  <!-- Per app controls for LP keyguard notifications -->
+  <string name="app_notification_show_on_keyguard_title">லாக் திரையில் காட்டு</string>
+  <string name="app_notification_show_on_keyguard_summary">லாக் திரையில் இந்த பயன்பாடு-இல் இருந்து அறிவுறுத்தல்களை காட்டு</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">பூட்டுத் திரையில் விடாப்பிடியான அறிவுறுத்தலை முடக்கு</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">இந்த பயன்பாடு-இல் இருந்து  விடாப்பிடியான அறிவுறுத்தலை பூட்டுத் திரையில் எப்போதும் காட்டாதே</string>
+  <!-- CmRadioInfo -->
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <!-- Lock screen wallpaper -->
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

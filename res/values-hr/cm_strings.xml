@@ -174,6 +174,18 @@
   <string name="wifi_setting_countrycode_summary">Navedite šifru regije za Wi‑Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">Došlo je do problema prilikom postavljanja regionalnog koda.</string>
+  <string name="wifi_countrycode_us">Sjedinjene Američke Države</string>
+  <string name="wifi_countrycode_ca">Kanada, Tajvan</string>
+  <string name="wifi_countrycode_de">Njemačka</string>
+  <string name="wifi_countrycode_gb">Europa</string>
+  <string name="wifi_countrycode_jp">Japan, Rusija</string>
+  <string name="wifi_countrycode_au">Australija</string>
+  <string name="wifi_countrycode_cn">Kina</string>
+  <string name="wifi_countrycode_kr">Koreja</string>
+  <string name="wifi_countrycode_tr">Južna Afrika, Turska</string>
+  <string name="wifi_countrycode_sg">Izrael, Singapur</string>
+  <string name="wifi_countrycode_br">Brazil</string>
+  <string name="wifi_countrycode_in">Indija</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Obriši</string>
   <string name="profile_action_none">Ostavi nepromijenjeno</string>
@@ -575,6 +587,9 @@
   <string name="saturation_str">Zasićenost: <xliff:g id="saturation_value">%1$s </xliff:g></string>
   <string name="contrast_str">Kontrast: <xliff:g id="contrast_value">%1$s </xliff:g></string>
   <string name="intensity_str">Intenzitet: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">Standardno</string>
+  <string name="screen_color_vivid">Živopisno</string>
+  <string name="screen_color_custom">Prilagođeno</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Prilagodi zaslon prema dobu dana i okolini za poboljšanje čitljivosti i smanjenju naprezanja očiju</string>
   <string name="live_display_mode">Način prikaza</string>
@@ -1001,6 +1016,14 @@
   <string name="weather_settings_title">Vrijeme</string>
   <string name="weather_settings_no_services_prompt">Nema instaliranih usluga davatelja vremenske prognoze</string>
   <string name="weather_settings_button">Postavke davatelja</string>
+  <string name="weather_settings_activity_not_found">Nije moguće otvoriti izbornik postavki ovog davatelja usluga</string>
+  <string name="weather_settings_add_weather_provider">Dodaj pružatelja vremenske prognoze</string>
+  <string name="weather_settings_general_settings_title">Općenito</string>
+  <string name="weather_settings_providers_title">Pružatelji</string>
+  <string name="weather_settings_temp_units_title">Jedinica temperature</string>
+  <string name="weather_settings_temp_celsius">Celzij</string>
+  <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
+  <string name="weather_settings_keyword">vrijeme</string>
   <string name="background_data_access">Pristup pozadinskim podacima</string>
   <string name="allow_background_both">Preko mobilnih mreža i Wi-Fi-ja</string>
   <string name="allow_background_wlan">Samo preko Wi-Fi-ja</string>
@@ -1017,4 +1040,39 @@
   <string name="restrict_cellular_access_dialog_title">Ograničiti pristup mobilnim podacima?</string>
   <string name="restrict_cellular_access_dialog_summary">Ova značajka može uzrokovati da aplikacija koja je ovisna o pristupu mreži prestane raditi kada je samo mobilna veza dostupna.\n\nPrimjerenije postavke kontrole potrošnje podataka možete naći u aplikaciji.</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <string name="shortcut_carrier_title">Mrežni operateri</string>
+  <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">Zamagli pozadinu</string>
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">Pokaži prognozu</string>
+  <!-- Per app controls for LP keyguard notifications -->
+  <string name="app_notification_show_on_keyguard_title">Prikaži na zaključanom zaslonu</string>
+  <string name="app_notification_show_on_keyguard_summary">Prikaži obavijesti iz ove aplikacije na zaključanom zaslonu</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">Onemogući trajne obavijesti na zaključanom zaslonu</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">Nikad ne prikazuj trajne obavijesti ove aplikacije na zaključanom zaslonu</string>
+  <!-- CmRadioInfo -->
+  <string name="cm_radio_info_label">Poboljšana radio kontrola</string>
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <string name="cm_radio_info_mbn_auto_load_on_label">Isključi MBN auto opterećenje</string>
+  <string name="cm_radio_info_mbn_auto_load_off_label">Uključi MBN auto opterećenje</string>
+  <string name="cm_radio_info_volte_avail_ovr_on_label">Isključi VoLTE ispravljanje pogrešaka</string>
+  <string name="cm_radio_info_volte_avail_ovr_off_label">Uključi VoLTE ispravljanje pogrešaka</string>
+  <string name="cm_radio_info_vt_avail_ovr_on_label">Isključi VT ispravljanje pogrešaka</string>
+  <string name="cm_radio_info_vt_avail_ovr_off_label">Uključi VT ispravljanje pogrešaka</string>
+  <string name="cm_radio_info_wfc_avail_ovr_on_label">Isključi WFC ispravljanje pogrešaka</string>
+  <string name="cm_radio_info_wfc_avail_ovr_off_label">Uključi WFC ispravljanje pogrešaka</string>
+  <string name="cm_radio_info_adb_log_on_label">Isključi ADB radio zapisnik</string>
+  <string name="cm_radio_info_adb_log_off_label">Uključi ADB radio zapisnik</string>
+  <string name="cm_radio_info_diag_log_on_label">Isključi Diag zapisnik</string>
+  <string name="cm_radio_info_diag_log_off_label">Uključi Diag zapisnik</string>
+  <!-- Lock screen wallpaper -->
+  <string name="lockscreen_wallpaper_title">Slika Pozadine</string>
+  <string name="not_available_with_app">Nije dostupno sa %1$s</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Pronađite senzor otiska prsta na <xliff:g id="sensor_location">%1$s</xliff:g> vašeg telefona.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">stražnjoj strani</string>
+  <string name="security_settings_fingerprint_sensor_location_front">prednjoj strani</string>
+  <string name="security_settings_fingerprint_sensor_location_left">lijevoj strani</string>
+  <string name="security_settings_fingerprint_sensor_location_right">desnoj strani</string>
 </resources>

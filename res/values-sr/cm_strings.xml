@@ -174,6 +174,18 @@
   <string name="wifi_setting_countrycode_summary">Одреди регионални код за Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">Дошло је до проблема подешавања регионалног кода.</string>
+  <string name="wifi_countrycode_us">Сједињене Државе</string>
+  <string name="wifi_countrycode_ca">Канада, Тајван</string>
+  <string name="wifi_countrycode_de">Немачка</string>
+  <string name="wifi_countrycode_gb">Европа</string>
+  <string name="wifi_countrycode_jp">Јапан, Русија</string>
+  <string name="wifi_countrycode_au">Аустралија</string>
+  <string name="wifi_countrycode_cn">Кина</string>
+  <string name="wifi_countrycode_kr">Кореа</string>
+  <string name="wifi_countrycode_tr">Јужна Африка, Турска</string>
+  <string name="wifi_countrycode_sg">Израел, Сингапур</string>
+  <string name="wifi_countrycode_br">Бразил</string>
+  <string name="wifi_countrycode_in">Индија</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Избриши</string>
   <string name="profile_action_none">Остави непромењено</string>
@@ -262,6 +274,7 @@
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Поставке светла</string>
   <string name="led_notification_text">LED светло омогућено помоћу поставки</string>
+  <string name="notification_light_no_apps_summary">Да додаш контролу по апликацији, активирај \'%1$s\' и притисни \'\u002b\' на траци са менијима</string>
   <!-- Setting checkbox title for Whether to enable Android debugging support on the phone. -->
   <string name="enable_adb_cm">Android отклањање грешака</string>
   <!-- Setting checkbox summary for Whether to enable Android debugging support on the phone -->
@@ -324,7 +337,7 @@
   <string name="app_ops_summaries_notification_volume">јачина обавештења</string>
   <string name="app_ops_summaries_bluetooth_volume">Јачина bluetooth-а</string>
   <string name="app_ops_summaries_keep_awake">остани будан</string>
-  <string name="app_ops_summaries_monitor_location">локација монитора</string>
+  <string name="app_ops_summaries_monitor_location">праћење локације</string>
   <string name="app_ops_summaries_monitor_high_power_location">високо напајање локације монитора</string>
   <string name="app_ops_summaries_get_usage_stats">добиј статистику коришћења</string>
   <string name="app_ops_summaries_mute_unmute_microphone">укључи/искључи микрофон</string>
@@ -574,6 +587,9 @@
   <string name="saturation_str">Засићење: <xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">Контраст: <xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">Интензитет: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">Стандардно</string>
+  <string name="screen_color_vivid">Живописно</string>
+  <string name="screen_color_custom">Прилагођено</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Оптимизуј екран у складу са дневним и просторним приликама да побољшаш читљивост и умањиш замарање очију</string>
   <string name="live_display_mode">Режим екрана</string>
@@ -1000,5 +1016,63 @@
   <string name="weather_settings_title">Време</string>
   <string name="weather_settings_no_services_prompt">Нема инсталираног добављача услуга временске прогнозе</string>
   <string name="weather_settings_button">Поставке добављача</string>
+  <string name="weather_settings_activity_not_found">Није могуће покренути подешавање менија овог добављача</string>
+  <string name="weather_settings_add_weather_provider">Додај добављача временске услуге</string>
+  <string name="weather_settings_general_settings_title">Опште</string>
+  <string name="weather_settings_providers_title">Добављачи</string>
+  <string name="weather_settings_temp_units_title">Јединица температуре</string>
+  <string name="weather_settings_temp_celsius">Целзијуси</string>
+  <string name="weather_settings_temp_fahrenheit">Фаренхајти</string>
+  <string name="weather_settings_keyword">време</string>
+  <string name="background_data_access">Приступ подацима у позадини</string>
+  <string name="allow_background_both">Преко мрежних података &amp; Wi\u2011Fi</string>
+  <string name="allow_background_wlan">Само преко Wi\u2011Fi</string>
+  <string name="allow_background_none">Нема приступа</string>
+  <string name="mobile_data_alert">Упозорење мрежних података</string>
+  <string name="mobile_data_alert_summary">Упозори када апликација користи значајну количину података</string>
+  <string name="data_usage_menu_enable_data_alerts">Омогући упозорење за коришћење података</string>
+  <string name="data_usage_menu_disable_data_alerts">Онемогући упозорење за податке</string>
+  <string name="data_usage_menu_reset_stats">Ресетуј статистику података</string>
+  <string name="reset_data_stats_msg">Ово ће обрисати све прошле и садашње информације о праћењу података</string>
+  <string name="reset_stats_confirm">Потврди</string>
+  <string name="restrict_cellular_access_title">Ограничи приступ мрежним подацима</string>
+  <string name="restrict_cellular_access_summary">Онемогући приступ подацима на мобилним мрежама</string>
+  <string name="restrict_cellular_access_dialog_title">Ограничи приступ мрежним подацима?</string>
+  <string name="restrict_cellular_access_dialog_summary">Ова функција може узроковати да апликација која зависи од мрежног приступа престане радити када су само мобилне мрежа доступне.\n\nМожеш наћи више одговарајућих контрола у подешавању апликације.</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <string name="shortcut_carrier_title">Оператор мреже</string>
+  <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">Замућење позадине</string>
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">Прикажи време</string>
+  <!-- Per app controls for LP keyguard notifications -->
+  <string name="app_notification_show_on_keyguard_title">Прикажи на закључаном екрану</string>
+  <string name="app_notification_show_on_keyguard_summary">Прикажи обавештење ове апликације на закључаном екрану</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">Онемогућити трајна обавештења на закључаном екрану</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">Никад не приказуј трајна обавештења ове апликације на закључаном екрану</string>
+  <!-- CmRadioInfo -->
+  <string name="cm_radio_info_label">Проширена радио контрола</string>
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <string name="cm_radio_info_mbn_auto_load_on_label">Искључи MBN ауто учитавање</string>
+  <string name="cm_radio_info_mbn_auto_load_off_label">Укључи MBN ауто учитавање</string>
+  <string name="cm_radio_info_volte_avail_ovr_on_label">Искључи VoLTE отклањање грешака</string>
+  <string name="cm_radio_info_volte_avail_ovr_off_label">Укључи VoLTE отклањање грешака</string>
+  <string name="cm_radio_info_vt_avail_ovr_on_label">Искључи VT отклањање грешака</string>
+  <string name="cm_radio_info_vt_avail_ovr_off_label">Укључи VT отклањање грешака</string>
+  <string name="cm_radio_info_wfc_avail_ovr_on_label">Искључи WFC отклањање грешака</string>
+  <string name="cm_radio_info_wfc_avail_ovr_off_label">Укључи WFC отклањање грешака</string>
+  <string name="cm_radio_info_adb_log_on_label">Искључи ADB радио евиденцију</string>
+  <string name="cm_radio_info_adb_log_off_label">Укључи ADB радио евиденцију</string>
+  <string name="cm_radio_info_diag_log_on_label">Искључи евиденцију дијагностике</string>
+  <string name="cm_radio_info_diag_log_off_label">Укључи евиденцију дијагностике</string>
+  <!-- Lock screen wallpaper -->
+  <string name="lockscreen_wallpaper_title">Тапет</string>
+  <string name="not_available_with_app">Није доступно са %1$s</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Нађи сензор отиска прста <xliff:g id="sensor_location">%1$s</xliff:g> твог телефона.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">иза</string>
+  <string name="security_settings_fingerprint_sensor_location_front">испред</string>
+  <string name="security_settings_fingerprint_sensor_location_left">на левој страни</string>
+  <string name="security_settings_fingerprint_sensor_location_right">на десној страни</string>
 </resources>

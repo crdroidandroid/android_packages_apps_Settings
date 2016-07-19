@@ -193,6 +193,19 @@
     <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
     <string name="wifi_setting_countrycode_error">There was a problem setting the region code.</string>
 
+    <string name="wifi_countrycode_us">United States</string>
+    <string name="wifi_countrycode_ca">Canada, Taiwan</string>
+    <string name="wifi_countrycode_de">Germany</string>
+    <string name="wifi_countrycode_gb">Europe</string>
+    <string name="wifi_countrycode_jp">Japan, Russia</string>
+    <string name="wifi_countrycode_au">Australia</string>
+    <string name="wifi_countrycode_cn">China</string>
+    <string name="wifi_countrycode_kr">Korea</string>
+    <string name="wifi_countrycode_tr">South Africa, Turkey</string>
+    <string name="wifi_countrycode_sg">Israel, Singapore</string>
+    <string name="wifi_countrycode_br">Brazil</string>
+    <string name="wifi_countrycode_in">India</string>
+
     <!-- Profiles -->
     <string name="profile_menu_delete_title">Delete</string>
     <string name="profile_action_none">Leave unchanged</string>
@@ -640,6 +653,10 @@
     <string name="contrast_str">Contrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
     <string name="intensity_str">Intensity: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
 
+    <string name="screen_color_standard">Standard</string>
+    <string name="screen_color_vivid">Vivid</string>
+    <string name="screen_color_custom">Custom</string>
+
     <!-- LiveDisplay -->
     <string name="live_display_title" translatable="false">LiveDisplay</string>
     <string name="live_display_summary">Optimize your screen based on time of day and ambient conditions to improve readability and reduce eyestrain</string>
@@ -670,6 +687,8 @@
     <string name="live_display_color_profile_photography_summary">Perfect color reproduction for photos</string>
     <string name="live_display_color_profile_basic_title">Basic</string>
     <string name="live_display_color_profile_basic_summary">Use the display uncalibrated</string>
+    <string name="live_display_color_profile_adaptive_title">Adaptive</string>
+    <string name="live_display_color_profile_adaptive_summary">Colors adapt to ambient conditions</string>
 
     <!-- Whether to display IME switcher notifcation -->
     <string name="ime_switcher_notify">Selector icon</string>
@@ -1113,6 +1132,15 @@
     <string name="weather_settings_no_services_prompt">No weather provider services installed</string>
     <string name="weather_settings_button">Provider settings</string>
     <string name="weather_settings_activity_not_found">Unable to launch the settings menu of this provider</string>
+    <string name="weather_settings_add_weather_provider">Add weather provider</string>
+    <string name="weather_settings_play_store_market_url" translatable="false">market://search?q=cyanogenmodweatherprovider&amp;c=apps</string>
+    <string name="weather_settings_play_store_http_url" translatable="false">http://play.google.com/store/search?q=cyanogenmodweatherprovider&amp;c=apps</string>
+    <string name="weather_settings_general_settings_title">General</string>
+    <string name="weather_settings_providers_title">Providers</string>
+    <string name="weather_settings_temp_units_title">Temperature unit</string>
+    <string name="weather_settings_temp_celsius">Celsius</string>
+    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
+    <string name="weather_settings_keyword">weather</string>
 
     <string name="background_data_access">Background data access</string>
     <string name="allow_background_both">Over cellular data &amp; Wi\u2011Fi</string>
@@ -1133,4 +1161,47 @@
 
     <!-- Label for settings shortcut: carrier selection -->
     <string name="shortcut_carrier_title">Network operators</string>
+
+    <!-- title for lock screen blur preference -->
+    <string name="lockscreen_blur_enabled_title">Blur background</string>
+    <!-- title for lock screen weather preference -->
+    <string name="lockscreen_weather_enabled_title">Show weather</string>
+
+    <!-- Per app controls for LP keyguard notifications -->
+    <string name="app_notification_show_on_keyguard_title">Show on lock screen</string>
+    <string name="app_notification_show_on_keyguard_summary">Show notifications from this app on the lock screen</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Disable persistent notification on lock screen</string>
+    <string name="app_notification_no_ongoing_on_keyguard_summary">Never show persistent notifications from this app on the lock screen</string>
+
+    <!-- CmRadioInfo -->
+    <string name="cm_radio_info_label">Enhanced radio control</string>
+
+    <!-- Radio Control (IMS/MBN etc.) -->
+    <string name="cm_radio_info_mbn_auto_load_on_label">Turn off MBN auto load</string>
+    <string name="cm_radio_info_mbn_auto_load_off_label">Turn on MBN auto load</string>
+    <string name="cm_radio_info_volte_avail_ovr_on_label">Turn off VoLTE debug</string>
+    <string name="cm_radio_info_volte_avail_ovr_off_label">Turn on VoLTE debug</string>
+    <string name="cm_radio_info_vt_avail_ovr_on_label">Turn off VT debug</string>
+    <string name="cm_radio_info_vt_avail_ovr_off_label">Turn on VT debug</string>
+    <string name="cm_radio_info_wfc_avail_ovr_on_label">Turn off WFC debug</string>
+    <string name="cm_radio_info_wfc_avail_ovr_off_label">Turn on WFC debug</string>
+    <string name="cm_radio_info_adb_log_on_label">Turn off ADB radio log</string>
+    <string name="cm_radio_info_adb_log_off_label">Turn on ADB radio log</string>
+    <string name="cm_radio_info_diag_log_on_label">Turn off Diag log</string>
+    <string name="cm_radio_info_diag_log_off_label">Turn on Diag log</string>
+
+    <!-- Lock screen wallpaper -->
+    <string name="lockscreen_wallpaper_title">Wallpaper</string>
+
+    <string name="not_available_with_app">Not available with %1$s</string>
+    <string name="blacklist_country_code_plus" translatable="false">+</string>
+
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Locate the fingerprint sensor on the <xliff:g id="sensor_location">%1$s</xliff:g> of your phone.</string>
+
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">back</string>
+    <string name="security_settings_fingerprint_sensor_location_front">front</string>
+    <string name="security_settings_fingerprint_sensor_location_left">left side</string>
+    <string name="security_settings_fingerprint_sensor_location_right">right side</string>
 </resources>

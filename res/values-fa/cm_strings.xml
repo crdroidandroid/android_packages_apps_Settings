@@ -18,6 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_cm">
+    <item quantity="one">شما اکنون <xliff:g id="step_count">%1$d</xliff:g> ضربه با فعال‌سازی ابزارهای توسعه فاصله دارید.</item>
     <item quantity="other">شما اکنون <xliff:g id="step_count">%1$d</xliff:g> ضربه با فعال‌سازی ابزارهای توسعه فاصله دارید.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
@@ -169,6 +170,18 @@
   <string name="wifi_setting_countrycode_summary">تعیین کد منطقه‌ای برای وای‌فای</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">مشکلی در تنظیم کد منطقه‌ای وجود داشت.</string>
+  <string name="wifi_countrycode_us">ایالات متحده آمریکا</string>
+  <string name="wifi_countrycode_ca">کانادا، تایوان</string>
+  <string name="wifi_countrycode_de">آلمان</string>
+  <string name="wifi_countrycode_gb">اروپا</string>
+  <string name="wifi_countrycode_jp">ژاپن، روسیه</string>
+  <string name="wifi_countrycode_au">استرالیا</string>
+  <string name="wifi_countrycode_cn">چین</string>
+  <string name="wifi_countrycode_kr">کره جنوبی</string>
+  <string name="wifi_countrycode_tr">آفریقای جنوبی، ترکیه</string>
+  <string name="wifi_countrycode_sg">اسرائیل، سنگاپور</string>
+  <string name="wifi_countrycode_br">برزیل</string>
+  <string name="wifi_countrycode_in">هند</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">حذف</string>
   <string name="profile_action_none">تغییر ندادن</string>
@@ -507,6 +520,9 @@
   <string name="saturation_str">اشباع: <xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">کنتراست: <xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">شدت رنگ: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">استاندارد</string>
+  <string name="screen_color_vivid">واضح</string>
+  <string name="screen_color_custom">شخصی</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">بهینه کردن صفحه بر اساس ساعات روز و شرایط محیطی برای افزایش خوانایی و کاهش خستگی چشم</string>
   <string name="live_display_mode">حالت نمایش</string>
@@ -876,5 +892,19 @@
   <!-- [CHAR_LIMIT=20] Battery use screen. Battery status shown in chart label when charging over Dock USB. -->
   <string name="battery_info_status_charging_dock_usb">در حال شارژ در داک یواس‌بی</string>
   <!-- Weather -->
+  <string name="weather_settings_general_settings_title">عمومي</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <!-- title for lock screen blur preference -->
+  <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">نمایش آب و هوا</string>
+  <!-- Per app controls for LP keyguard notifications -->
+  <string name="app_notification_show_on_keyguard_title">نمایش در قفل صفحه</string>
+  <string name="app_notification_show_on_keyguard_summary">نمایش اعلان‌های این برنامه در قفل صفحه</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">غیرفعال کردن اعلان‌های پایدار در قفل صفحه</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">اعلان‌های پایدار این برنامه هرگز در قفل صفحه نشان داده نشود</string>
+  <!-- CmRadioInfo -->
+  <!-- Radio Control (IMS/MBN etc.) -->
+  <!-- Lock screen wallpaper -->
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>
