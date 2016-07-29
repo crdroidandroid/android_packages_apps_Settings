@@ -103,12 +103,6 @@
             android:title="@string/category_misc"
             android:persistent="false">
 
-        <!-- SELinux changer -->
-        <SwitchPreference
-                android:key="selinux"
-                android:title="@string/selinux_title"
-                android:defaultValue="false" />
-
         <ListPreference
                 android:key="sms_security_check_limit"
                 android:dialogTitle="@string/sms_security_check_limit_title"

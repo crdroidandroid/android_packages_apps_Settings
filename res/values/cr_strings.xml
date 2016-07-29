@@ -202,11 +202,6 @@
     <string name="hw_keys_title">Hardware keys</string>
     <string name="hw_keys_summary">Enable hardware keys</string>
 
-    <!-- Selinux switch -->
-    <string name="selinux_title">SELinux Mode</string>
-    <string name="selinux_permissive_title">Permissive</string>
-    <string name="selinux_enforcing_title">Enforcing</string>
-
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Disable FC Notifications</string>
     <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>

@@ -2199,14 +2199,6 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
-        <!-- crDroid activities start -->
-        <receiver android:name="com.android.settings.crdroid.util.OnBoot">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-            </intent-filter>
-        </receiver>
-        <!-- crDroid activities end -->
-
         <!-- CyanogenMod activities Start -->
         <activity android:name="Settings$ProfilesSettingsActivity"
                 android:label="@string/profile_settings"
