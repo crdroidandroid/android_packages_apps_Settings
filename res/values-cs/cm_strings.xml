@@ -550,7 +550,6 @@
   <string name="volume_adjust_sounds_title">Zvuk při změně hlasitosti</string>
   <!-- Hardware tunables - Vibrator intensity -->
   <string name="vibrator_intensity_title">Intenzita vibrací</string>
-  <string name="vibrator_warning">Nedoporučuje se použít hodnoty větší než %1$d</string>
   <!-- Hardware tunables - Color calibration -->
   <string name="color_calibration_title">Barevná kalibrace</string>
   <string name="color_calibration_summary">Kalibrovat barvy obrazovky</string>
@@ -1076,4 +1075,5 @@
   <string name="security_settings_fingerprint_sensor_location_front">přední</string>
   <string name="security_settings_fingerprint_sensor_location_left">levá strana</string>
   <string name="security_settings_fingerprint_sensor_location_right">pravá strana</string>
+  <!-- SIM status format string -->
 </resources>

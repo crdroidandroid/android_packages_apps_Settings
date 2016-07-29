@@ -544,7 +544,6 @@
   <string name="volume_adjust_sounds_title">Dźwięk regulacji głośności</string>
   <!-- Hardware tunables - Vibrator intensity -->
   <string name="vibrator_intensity_title">Siła wibracji</string>
-  <string name="vibrator_warning">Wartości wyższe niż %1$d nie są zalecane</string>
   <!-- Hardware tunables - Color calibration -->
   <string name="color_calibration_title">Kalibracja kolorów</string>
   <string name="color_calibration_summary">Kalibruje wyświetlane kolory</string>
@@ -1061,6 +1060,12 @@
   <string name="cm_radio_info_diag_log_off_label">Wł. diagnostyczne logowanie</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_wallpaper_title">Tapeta</string>
+  <string name="not_available_with_app">Niedostępne z %1$s</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">tył</string>
+  <string name="security_settings_fingerprint_sensor_location_front">przód</string>
+  <string name="security_settings_fingerprint_sensor_location_left">lewa strona</string>
+  <string name="security_settings_fingerprint_sensor_location_right">prawa strona</string>
+  <!-- SIM status format string -->
 </resources>

@@ -608,7 +608,7 @@
 
     <!-- Hardware tunables - Vibrator intensity -->
     <string name="vibrator_intensity_title">Vibrator intensity</string>
-    <string name="vibrator_warning">Values higher than %1$d are not recommended</string>
+    <string name="vibrator_warning">Values higher than %1$d%% are not recommended</string>
 
     <!-- Hardware tunables - Color calibration -->
     <string name="color_calibration_title">Color calibration</string>
@@ -1204,4 +1204,7 @@
     <string name="security_settings_fingerprint_sensor_location_front">front</string>
     <string name="security_settings_fingerprint_sensor_location_left">left side</string>
     <string name="security_settings_fingerprint_sensor_location_right">right side</string>
+
+    <!-- SIM status format string -->
+    <string name="sim_status_format_string">Voice: <xliff:g id="voice_status">%1$s</xliff:g> / Data: <xliff:g id="data_status">%2$s</xliff:g></string>
 </resources>

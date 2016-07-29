@@ -549,7 +549,6 @@
   <string name="volume_adjust_sounds_title">Volum justeringslyd</string>
   <!-- Hardware tunables - Vibrator intensity -->
   <string name="vibrator_intensity_title">Vibrator intensitet</string>
-  <string name="vibrator_warning">Verdier høyere enn %1$d er ikke anbefalt</string>
   <!-- Hardware tunables - Color calibration -->
   <string name="color_calibration_title">Fargekalibrering</string>
   <string name="color_calibration_summary">Kalibrere skjermens farger</string>
@@ -1076,4 +1075,5 @@
   <string name="security_settings_fingerprint_sensor_location_front">forsiden</string>
   <string name="security_settings_fingerprint_sensor_location_left">venstre siden</string>
   <string name="security_settings_fingerprint_sensor_location_right">høyre siden</string>
+  <!-- SIM status format string -->
 </resources>
