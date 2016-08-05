@@ -110,10 +110,16 @@ public abstract class ConfirmDeviceCredentialBaseActivity extends SettingsActivi
     }
 
     public void prepareEnterAnimation() {
-        getFragment().prepareEnterAnimation();
+        final ConfirmDeviceCredentialBaseFragment f = getFragment();
+        if (f != null) {
+            f.prepareEnterAnimation();
+        }
     }
 
     public void startEnterAnimation() {
-        getFragment().startEnterAnimation();
+        final ConfirmDeviceCredentialBaseFragment f = getFragment();
+        if (f != null) {
+            f.startEnterAnimation();
+        }
     }
 }
