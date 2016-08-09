@@ -19,6 +19,8 @@
     <!-- Halo -->
     <string name="halo_settings_title">Halo</string>
     <string name="halo_behavior_title">Halo Behavior</string>
+    <string name="halo_active_title">Toggle Halo</string>
+    <string name="halo_active_summary">Disable Halo on switch off</string>
     <string name="halo_hide_title">Hide Halo after activity</string>
     <string name="halo_hide_summary">Halo will appear for incoming tasks and scroll out of sight after a while</string>
     <string name="halo_pause_title">Pause active app</string>
