@@ -89,6 +89,11 @@
         android:title="@string/disable_fc_notifications_title"
         android:summary="@string/disable_fc_notifications_summary" />
 
+    <Preference
+        android:key="root_appops"
+        android:title="@string/root_appops_title"
+        android:summary="@string/root_appops_summary" />
+
     <com.android.settings.ColorModePreference
         android:key="color_mode"
         android:title="@string/picture_color_mode"

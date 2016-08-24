@@ -38,6 +38,7 @@
   <string name="root_access_apps">Només aplicacions</string>
   <string name="root_access_adb">Només ADB</string>
   <string name="root_access_all">Aplicacions i ADB</string>
+  <!-- Preference link for root appops -->
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
@@ -549,6 +550,7 @@
   <string name="volume_adjust_sounds_title">Sons d\'ajust del volum</string>
   <!-- Hardware tunables - Vibrator intensity -->
   <string name="vibrator_intensity_title">Intensitat del vibrador</string>
+  <string name="vibrator_warning">No es recomanen valors superiors a %1$d%%</string>
   <!-- Hardware tunables - Color calibration -->
   <string name="color_calibration_title">Calibració de color</string>
   <string name="color_calibration_summary">Calibra els colors de la pantalla</string>
@@ -571,23 +573,6 @@
   <string name="display_rotation_90_title">90 graus</string>
   <string name="display_rotation_180_title">180 graus</string>
   <string name="display_rotation_270_title">270 graus</string>
-  <!-- Display settings.  Screen color. -->
-  <string name="screencolor">Color de la pantalla</string>
-  <string name="screencolor_summary">Ajusta el matís, la saturació, el contrast o la intensitat de la pantalla</string>
-  <string name="custom_screencolor">Color de pantalla personalitzat</string>
-  <string name="screencolor_save">Desa</string>
-  <string name="screencolor_cancel">Cancel·la</string>
-  <string name="restore_preview">Mostra la imatge per defecte</string>
-  <string name="selectnewfile_menu">Mostra una nova imatge des de la galeria</string>
-  <string name="selectfile_menu">Mostra una imatge des de la galeria</string>
-  <string name="restore_default_str">Reinicia</string>
-  <string name="hue_str">Matís: <xliff:g id="hue_value">%1$s</xliff:g></string>
-  <string name="saturation_str">Saturació: <xliff:g id="saturation_value">%1$s</xliff:g></string>
-  <string name="contrast_str">Contrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
-  <string name="intensity_str">Intensitat: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
-  <string name="screen_color_standard">Estàndard</string>
-  <string name="screen_color_vivid">Viva</string>
-  <string name="screen_color_custom">Personalitzat</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimitza la teva pantalla basant-se en l\'hora del dia i les condicions ambientals per millorar la llegibilitat i reduir la fatiga ocular</string>
   <string name="live_display_mode">Mode de pantalla</string>
@@ -619,6 +604,13 @@
   <string name="live_display_color_profile_basic_summary">Utilitza la pantalla sense calibrar</string>
   <string name="live_display_color_profile_adaptive_title">Adaptativa</string>
   <string name="live_display_color_profile_adaptive_summary">Els colors s\'adapten a les condicions ambientals</string>
+  <!-- LiveDisplay : Picture Adjustment -->
+  <string name="picture_adjustment_title">Ajustament d\'image</string>
+  <string name="picture_adjustment_summary">Ajusta la tonalitat, intensitat, i contrast</string>
+  <string name="adj_hue_title">Tonalitat</string>
+  <string name="adj_saturation_title">Saturació</string>
+  <string name="adj_intensity_title">Intensitat</string>
+  <string name="adj_contrast_title">Contrast</string>
   <!-- Whether to display IME switcher notifcation -->
   <string name="ime_switcher_notify">Selector d\'icona</string>
   <string name="ime_switcher_notify_summary">Mostra la icona del selector de mètode d\'entrada</string>
@@ -1076,4 +1068,5 @@
   <string name="security_settings_fingerprint_sensor_location_left">costat esquerre</string>
   <string name="security_settings_fingerprint_sensor_location_right">costat dret</string>
   <!-- SIM status format string -->
+  <string name="sim_status_format_string">Veu: <xliff:g id="voice_status">%1$s</xliff:g> / Dades: <xliff:g id="data_status">%2$s</xliff:g></string>
 </resources>

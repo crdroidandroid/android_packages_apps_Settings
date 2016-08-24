@@ -38,6 +38,7 @@
   <string name="root_access_apps">Alleen apps</string>
   <string name="root_access_adb">Alleen ADB</string>
   <string name="root_access_all">Apps en ADB</string>
+  <!-- Preference link for root appops -->
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
@@ -570,23 +571,6 @@
   <string name="display_rotation_90_title">90 graden</string>
   <string name="display_rotation_180_title">180 graden</string>
   <string name="display_rotation_270_title">270 graden</string>
-  <!-- Display settings.  Screen color. -->
-  <string name="screencolor">Schermkleur</string>
-  <string name="screencolor_summary">Tint, verzadiging, contrast en intensiteit van het scherm aanpassen</string>
-  <string name="custom_screencolor">Aangepaste schermkleur</string>
-  <string name="screencolor_save">Opslaan</string>
-  <string name="screencolor_cancel">Annuleren</string>
-  <string name="restore_preview">Standaardfoto bekijken</string>
-  <string name="selectnewfile_menu">Nieuwe foto uit Galerij bekijken</string>
-  <string name="selectfile_menu">Foto uit Galerij bekijken</string>
-  <string name="restore_default_str">Opnieuw instellen</string>
-  <string name="hue_str">Tint: <xliff:g id="hue_value">%1$s</xliff:g></string>
-  <string name="saturation_str">Verzadiging: <xliff:g id="saturation_value">%1$s</xliff:g></string>
-  <string name="contrast_str">Contrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
-  <string name="intensity_str">Intensiteit: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
-  <string name="screen_color_standard">Standaard</string>
-  <string name="screen_color_vivid">Levendig</string>
-  <string name="screen_color_custom">Aangepast</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Uw scherm optimaliseren aan de hand van tijdstip op de dag en lichtomstandigheden om de leesbaarheid te verbeteren en oogvermoeidheid te verminderen</string>
   <string name="live_display_mode">Weergavemodus</string>
@@ -616,6 +600,12 @@
   <string name="live_display_color_profile_photography_summary">Perfecte kleurweergave voor foto\'s</string>
   <string name="live_display_color_profile_basic_title">Basis</string>
   <string name="live_display_color_profile_basic_summary">Scherm ongekalibreerd gebruiken</string>
+  <!-- LiveDisplay : Picture Adjustment -->
+  <string name="picture_adjustment_summary">Tint, verzadiging, intensiteit en contrast aanpassen</string>
+  <string name="adj_hue_title">Tint</string>
+  <string name="adj_saturation_title">Verzadiging</string>
+  <string name="adj_intensity_title">Intensiteit</string>
+  <string name="adj_contrast_title">Contrast</string>
   <!-- Whether to display IME switcher notifcation -->
   <string name="ime_switcher_notify">Melding invoermethode</string>
   <string name="ime_switcher_notify_summary">Invoermethodepictogram weergeven</string>
@@ -1007,6 +997,7 @@
   <string name="privacy_guard_internet_category">Internet</string>
   <!-- Weather -->
   <string name="weather_settings_title">Weer</string>
+  <string name="weather_settings_activity_not_found">Kan instellingenmenu van deze aanbieder niet openen</string>
   <string name="weather_settings_general_settings_title">Algemeen</string>
   <string name="weather_settings_temp_celsius">Celsius</string>
   <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
@@ -1025,7 +1016,9 @@
   <!-- CmRadioInfo -->
   <!-- Radio Control (IMS/MBN etc.) -->
   <!-- Lock screen wallpaper -->
+  <string name="lockscreen_wallpaper_title">Achtergrond</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- SIM status format string -->
+  <string name="sim_status_format_string">Spraak: <xliff:g id="voice_status">%1$s</xliff:g> / Gegevens: <xliff:g id="data_status">%2$s</xliff:g></string>
 </resources>

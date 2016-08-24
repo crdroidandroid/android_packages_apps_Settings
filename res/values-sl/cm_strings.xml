@@ -40,6 +40,9 @@
   <string name="root_access_apps">Samo aplikacije</string>
   <string name="root_access_adb">Samo ADB</string>
   <string name="root_access_all">Aplikacije in ADB</string>
+  <!-- Preference link for root appops -->
+  <string name="root_appops_title">Upravljaj s skrbniškimi dostopi</string>
+  <string name="root_appops_summary">Ogled in nadzor skrbniških pravil</string>
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
@@ -574,23 +577,6 @@
   <string name="display_rotation_90_title">90 stopinj</string>
   <string name="display_rotation_180_title">180 stopinj</string>
   <string name="display_rotation_270_title">270 stopinj</string>
-  <!-- Display settings.  Screen color. -->
-  <string name="screencolor">Barva zaslona</string>
-  <string name="screencolor_summary">Naravnajte odtenek, nasičenost, kontrast in jakost zaslona</string>
-  <string name="custom_screencolor">Barva zaslona po meri</string>
-  <string name="screencolor_save">Shrani</string>
-  <string name="screencolor_cancel">Prekliči</string>
-  <string name="restore_preview">Pokaži privzeto sliko</string>
-  <string name="selectnewfile_menu">Pokaži novo sliko iz galerije</string>
-  <string name="selectfile_menu">Pokaži sliko iz galerije</string>
-  <string name="restore_default_str">Ponastavi</string>
-  <string name="hue_str">Odtenek: <xliff:g id="hue_value">%1$s</xliff:g></string>
-  <string name="saturation_str">Nasičenost: <xliff:g id="saturation_value">%1$s</xliff:g></string>
-  <string name="contrast_str">Kontrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
-  <string name="intensity_str">Jakost: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
-  <string name="screen_color_standard">Običajno</string>
-  <string name="screen_color_vivid">Živahno</string>
-  <string name="screen_color_custom">Po meri</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimiziraj zaslon glede na čas dneva in pogoje okolice, da se izboljša berljivost in zmanjša obremenitev oči</string>
   <string name="live_display_mode">Način prikaza</string>
@@ -622,6 +608,13 @@
   <string name="live_display_color_profile_basic_summary">Uporabi neumerjen zaslon</string>
   <string name="live_display_color_profile_adaptive_title">Prilagodljiv</string>
   <string name="live_display_color_profile_adaptive_summary">Barve se prilagajajo pogojem okolice</string>
+  <!-- LiveDisplay : Picture Adjustment -->
+  <string name="picture_adjustment_title">Prilagoditev slike</string>
+  <string name="picture_adjustment_summary">Prilagodi odtenek, nasičenost, jakost in kontrast</string>
+  <string name="adj_hue_title">Odtenek</string>
+  <string name="adj_saturation_title">Nasičenost</string>
+  <string name="adj_intensity_title">Jakost</string>
+  <string name="adj_contrast_title">Kontrast</string>
   <!-- Whether to display IME switcher notifcation -->
   <string name="ime_switcher_notify">Ikona izbirnika</string>
   <string name="ime_switcher_notify_summary">Prikaži ikono izbirnika metode za vnos</string>
@@ -902,6 +895,11 @@
         <![CDATA[<b>Skupaj sodelavcev:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Skupaj prispevkov:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Zadnja posodobitev:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+  <string name="contributions_info_menu">Podatki o sodelavcih</string>
+  <string name="contributions_info_msg">
+        <![CDATA[<b>Skupaj sodelavcev:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Skupaj prispevkov:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Zadnja posodobitev:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
   <string name="category_sounds">Zvoki</string>
   <string name="notification_manager">Obvestila</string>
   <string name="lockscreen_settings">Zaklepanje zaslona</string>
@@ -1081,4 +1079,5 @@
   <string name="security_settings_fingerprint_sensor_location_left">levi strani</string>
   <string name="security_settings_fingerprint_sensor_location_right">desni strani</string>
   <!-- SIM status format string -->
+  <string name="sim_status_format_string">Glas: <xliff:g id="voice_status">%1$s</xliff:g> / Podatki: <xliff:g id="data_status">%2$s</xliff:g></string>
 </resources>
