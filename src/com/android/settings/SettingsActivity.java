@@ -1237,7 +1237,7 @@ public class SettingsActivity extends SettingsDrawerActivity
                 getResources().getBoolean(R.bool.config_profilemgrmain_enabled), isAdmin, pm);
 
         final boolean showDev = mDevelopmentPreferences.getBoolean(
-                    DevelopmentSettings.PREF_SHOW, android.os.Build.TYPE.equals("eng"))
+                    DevelopmentSettings.PREF_SHOW, android.os.Build.TYPE.equals("eng") || android.os.Build.TYPE.equals("userdebug"))
                 && !um.hasUserRestriction(UserManager.DISALLOW_DEBUGGING_FEATURES);
         setTileEnabled(new ComponentName(packageName,
                         Settings.DevelopmentSettingsActivity.class.getName()),
