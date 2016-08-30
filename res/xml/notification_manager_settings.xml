@@ -29,8 +29,7 @@
     <PreferenceScreen
             android:id="@+id/halo_settings"
             android:title="@string/halo_settings_title"
-            android:fragment="com.android.settings.paranoid.Halo"
-            android:icon="@drawable/ic_settings_halo" />
+            android:fragment="com.android.settings.paranoid.Halo" />
 
     <!-- Zen Mode -->
     <PreferenceScreen
