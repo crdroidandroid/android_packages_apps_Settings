@@ -16,6 +16,7 @@
 package com.android.settings.dashboard;
 
 import android.content.ComponentName;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
@@ -101,12 +102,23 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
     }
 
     public List<Tile> getSuggestions() {
-        return mSuggestions;
+        if ((Settings.System.getInt(mContext.getContentResolver(),
+                    Settings.System.DISABLE_SETTINGS_SUGGESTIONS, 0) == 1)) {
+             return null;
+        } else {
+             return mSuggestions;
+        }
     }
 
     public void setSuggestions(List<Tile> suggestions) {
-        mSuggestions = suggestions;
-        recountItems();
+        if ((Settings.System.getInt(mContext.getContentResolver(),
+                    Settings.System.DISABLE_SETTINGS_SUGGESTIONS, 0) == 1)) {
+             mSuggestions = null;
+             recountItems();
+        } else {
+             mSuggestions = suggestions;
+             recountItems();
+        }
     }
 
     public Tile getTile(ComponentName component) {
