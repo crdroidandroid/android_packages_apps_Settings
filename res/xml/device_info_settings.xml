@@ -15,7 +15,6 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:cm="http://schemas.android.com/apk/res/cyanogenmod.platform"
         android:title="@string/about_settings">
 
         <!-- System update settings - launches activity -->
@@ -32,17 +31,6 @@
                     android:targetPackage="@string/additional_system_update"
                     android:targetClass="@string/additional_system_update_menu" />
         </PreferenceScreen>
-
-        <!-- CyanogenMod Updates -->
-        <cyanogenmod.preference.SelfRemovingPreference android:key="cm_updates"
-                android:title="@string/cmupdate_settings_title"
-                android:summary="@string/system_update_settings_list_item_summary"
-                cm:requiresOwner="true"
-                cm:requiresPackage="com.cyanogenmod.updater">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.cyanogenmod.updater"
-                    android:targetClass="com.cyanogenmod.updater.UpdatesSettings" />
-        </cyanogenmod.preference.SelfRemovingPreference>
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
