@@ -20,4 +20,8 @@
     <string name="processor_info">Processor</string>
     <!-- RAM: Memory Info -->
     <string name="mem_info">RAM</string>
+
+    <!-- crDroid Settings -->
+    <string name="crdroid_settings_title">crDroid Settings</string>
+    <string name="header_category_crdroid">crDroid</string>
 </resources>

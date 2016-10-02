@@ -2561,7 +2561,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         }
     }
 
-    private static boolean isPackageInstalled(Context context, String packageName) {
+    public static boolean isPackageInstalled(Context context, String packageName) {
         try {
             return context.getPackageManager().getPackageInfo(packageName, 0) != null;
         } catch (NameNotFoundException e) {
