@@ -229,6 +229,10 @@
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
 
+    <!-- crDroid Settings -->
+    <string name="crdroid_settings_title">Personalization</string>
+    <string name="header_category_crdroid">crDroid options</string>
+
     <string name="ok">OK</string>
 
     <!-- Lights settings -->
