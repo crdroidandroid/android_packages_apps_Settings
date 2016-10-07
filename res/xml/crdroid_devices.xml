@@ -51,6 +51,13 @@
                  android:title="@string/device_google_n6"
                  android:summary="@string/device_google_n6_summary"
                  android:selectable="false" />
+                 
+             <Preference
+                 android:key="device_google_sprout4"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_google_sprout4"
+                 android:summary="@string/device_google_sprout4_summary"
+                 android:selectable="false" />
 
         </PreferenceCategory>
 
