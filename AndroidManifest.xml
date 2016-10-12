@@ -139,6 +139,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.crdroid.settings.fragments.HAFRAppListActivity" />
+
         <activity android:name=".Settings$crDroidSettings"
             android:label="@string/header_category_crdroid">
             <intent-filter android:priority="4">
