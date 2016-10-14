@@ -40,4 +40,13 @@
     <string name="crdroid_google_plus_title">Google+</string>
     <string name="crdroid_google_plus_summary">Visit our G+ page for support and news</string>
 
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Show CPU info</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+
+    <!-- crDroid Settings -->
+    <string name="crdroid_settings_title">crDroid Settings</string>
+    <string name="header_category_crdroid">crDroid</string>
+
 </resources>
