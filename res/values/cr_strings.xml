@@ -53,4 +53,11 @@
    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
+    <!-- DUI -->
+    <string name="navigation_category">Navigation</string>
+    <string name="smartbar_settings_title">Smartbar settings</string>
+    <string name="fling_settings">Fling settings</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="choose_action_title">Choose action</string>
+    <string name="icon_pack_picker_dialog_title">Icon packs</string>
 </resources>
