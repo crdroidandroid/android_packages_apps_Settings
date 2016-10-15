@@ -138,6 +138,10 @@ import com.android.settingslib.drawer.Tile;
 
 import com.crdroid.settings.crDroidSettings;
 import com.crdroid.settings.crDroidSettingsLayout;
+import com.crdroid.settings.fragments.FlingSettings;
+import com.crdroid.settings.fragments.NavbarSettings;
+import com.crdroid.settings.fragments.SmartbarSettings;
+import com.crdroid.settings.fragments.PulseSettings;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -374,7 +378,11 @@ public class SettingsActivity extends SettingsDrawerActivity
             MasterClear.class.getName(),
             NightDisplaySettings.class.getName(),
             ManageDomainUrls.class.getName(),
-            AutomaticStorageManagerSettings.class.getName()
+            AutomaticStorageManagerSettings.class.getName(),
+            NavbarSettings.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName(),
+            PulseSettings.class.getName()
     };
 
 
