@@ -3060,7 +3060,7 @@
             android:label="@string/navigation_category"
             android:icon="@drawable/crdroid_navbar_icon"
             android:taskAffinity="">
-            <intent-filter android:priority="2">
+            <intent-filter>
                 <action android:name="com.crdroid.settings.fragments.NavbarSettings" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -3070,15 +3070,11 @@
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
                 <category android:name="com.android.settings.SHORTCUT" />
             </intent-filter>
-            <intent-filter android:priority="9">
+            <intent-filter>
                 <action android:name="com.android.settings.action.SETTINGS" />
             </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                android:value="com.android.settings.category.device" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.crdroid.settings.fragments.NavbarSettings" />
-            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                android:value="true" />
         </activity>
 
         <!-- Smartbar settings activity. -->
