@@ -28,18 +28,50 @@ import com.android.settings.R;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
+
 public class About extends SettingsPreferenceFragment {
 
     public static final String TAG = "About";
+
+    private static final String KEY_CRDROID_SHARE = "share";
+
+    Preference mSourceUrl;
+    Preference mGoogleUrl;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.crdroid_about);
+
+        mSourceUrl = findPreference("crdroid_source");
+        mGoogleUrl = findPreference("crdroid_google_plus");
     }
 
     @Override
     protected int getMetricsCategory() {
         return MetricsEvent.MAIN_SETTINGS;
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mSourceUrl) {
+            launchUrl("https://github.com/crdroidandroid");
+        } else if (preference == mGoogleUrl) {
+            launchUrl("https://plus.google.com/u/0/communities/118297646046960923906");
+        } else if (preference.getKey().equals(KEY_CRDROID_SHARE)) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, String.format(
+                getActivity().getString(R.string.share_message), Build.MODEL));
+        startActivity(Intent.createChooser(intent, getActivity().getString(R.string.share_chooser_title)));
+        }
+        return super.onPreferenceTreeClick(preference);
+    }
+
+    private void launchUrl(String url) {
+        Uri uriUrl = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uriUrl);
+        getActivity().startActivity(intent);
     }
 }

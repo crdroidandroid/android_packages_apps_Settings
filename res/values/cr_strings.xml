@@ -34,11 +34,14 @@
     <string name="share_chooser_title">Share crDroid</string>
 
     <!-- Sites crDroid -->
-    <string name="crdroid_on_web">crDroid on web</string>
     <string name="crdroid_source_title">Github</string>
     <string name="crdroid_source_summary">Visit our source git team</string>
     <string name="crdroid_google_plus_title">Google+</string>
     <string name="crdroid_google_plus_summary">Visit our G+ page for support and news</string>
+
+    <!-- Maintainers -->
+    <string name="maintainers_crdroid_title">crDroid maintainers</string>
+    <string name="maintainers_crdroid_error">Unable to load maintainers list</string>
 
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Show CPU info</string>
