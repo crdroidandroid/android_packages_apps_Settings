@@ -86,11 +86,6 @@
                 android:key="lift_to_wake"
                 android:title="@string/lift_to_wake_title" />
 
-        <SwitchPreference
-                android:key="doze"
-                android:title="@string/doze_title"
-                android:summary="@string/doze_summary" />
-
         <cyanogenmod.preference.RemotePreference
                 android:key="doze_device_settings"
                 android:title="@string/doze_title"
