@@ -47,4 +47,7 @@
     <color name="linear_color_bar_left">@*android:color/material_deep_teal_500</color>
     <color name="linear_color_bar_middle">@*android:color/material_deep_teal_500</color>
     <color name="linear_color_bar_right">#ffced7db</color>
+
+    <!-- Gesture settings switchbar background -->
+    <color name="gestures_switchbar_color">@android:color/white</color>
 </resources>
