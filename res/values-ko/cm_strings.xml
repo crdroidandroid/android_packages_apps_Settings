@@ -36,7 +36,7 @@
   <string name="root_access_all">애플리케이션과 ADB</string>
   <!-- Preference link for root appops -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod 버전</string>
+  <string name="mod_version">crDroid 버전</string>
   <string name="mod_version_default">알 수 없음</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">장치 모델</string>

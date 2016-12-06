@@ -38,7 +38,7 @@
   <string name="root_appops_title">ルートアクセスを管理</string>
   <string name="root_appops_summary">ルートの規則を表示またはコントロールする</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenModバージョン</string>
+  <string name="mod_version">crDroidバージョン</string>
   <string name="mod_version_default">不明</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">端末モデル</string>

@@ -41,7 +41,7 @@
   <string name="root_appops_title">Upravljaj s skrbniškimi dostopi</string>
   <string name="root_appops_summary">Ogled in nadzor skrbniških pravil</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Različica CyanogenMod</string>
+  <string name="mod_version">Različica crDroid</string>
   <string name="mod_version_default">Neznano</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model naprave</string>

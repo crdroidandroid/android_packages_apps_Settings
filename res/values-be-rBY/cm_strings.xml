@@ -38,7 +38,7 @@
   <string name="root_access_all">Для дадаткаў і ADB</string>
   <!-- Preference link for root appops -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Версія CyanogenMod</string>
+  <string name="mod_version">Версія crDroid</string>
   <string name="mod_version_default">Невядома</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Мадэль прылады</string>

@@ -39,7 +39,7 @@
   <string name="root_appops_title">Διαχείριση προσβάσεων root</string>
   <string name="root_appops_summary">Προβολή και έλεγχος των κανόνων root</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Έκδοση CyanogenMod</string>
+  <string name="mod_version">Έκδοση crDroid</string>
   <string name="mod_version_default">Άγνωστη</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Μοντέλο συσκευής</string>

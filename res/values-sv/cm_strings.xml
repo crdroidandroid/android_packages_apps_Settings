@@ -38,7 +38,7 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Hantera root-åtkomster</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod-version</string>
+  <string name="mod_version">crDroid-version</string>
   <string name="mod_version_default">Okänd</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Enhetsmodell</string>

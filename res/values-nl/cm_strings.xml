@@ -39,7 +39,7 @@
   <string name="root_appops_title">Root-toegang beheren</string>
   <string name="root_appops_summary">Root-instellingen bekijken en beheren</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod-versie</string>
+  <string name="mod_version">crDroid-versie</string>
   <string name="mod_version_default">Onbekend</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model</string>

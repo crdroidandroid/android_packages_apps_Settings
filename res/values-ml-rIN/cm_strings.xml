@@ -37,7 +37,7 @@
   <string name="root_access_all">അപ്ലിക്കേഷനുകളും ADB യും</string>
   <!-- Preference link for root appops -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod പതിപ്പ്</string>
+  <string name="mod_version">crDroid പതിപ്പ്</string>
   <string name="mod_version_default">അജ്ഞാതം</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">ഉപകരണ മോഡൽ</string>

@@ -39,7 +39,7 @@
   <string name="root_appops_title">Kudeatu root sarbideak</string>
   <string name="root_appops_summary">Ikusi eta kontrolatu root arauak</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod bertsioa</string>
+  <string name="mod_version">crDroid bertsioa</string>
   <string name="mod_version_default">Ezezaguna</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Gailuaren modeloa</string>

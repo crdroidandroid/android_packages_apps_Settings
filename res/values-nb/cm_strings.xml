@@ -39,7 +39,7 @@
   <string name="root_appops_title">Administrer root tilganger</string>
   <string name="root_appops_summary">Se over og endre root reglene</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod versjon</string>
+  <string name="mod_version">crDroid versjon</string>
   <string name="mod_version_default">Ukjent</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Enhetsmodell</string>

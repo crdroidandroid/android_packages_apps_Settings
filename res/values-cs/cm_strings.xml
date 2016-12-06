@@ -40,7 +40,7 @@
   <string name="root_appops_title">Spravovat přístupy root</string>
   <string name="root_appops_summary">Zobrazit a zpravovat pravidla přístupů root</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod verze</string>
+  <string name="mod_version">crDroid verze</string>
   <string name="mod_version_default">Neznámá</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model</string>

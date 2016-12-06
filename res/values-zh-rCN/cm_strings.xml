@@ -38,7 +38,7 @@
   <string name="root_appops_title">管理 Root 访问</string>
   <string name="root_appops_summary">查看和控制 Root 规则</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod 版本</string>
+  <string name="mod_version">crDroid 版本</string>
   <string name="mod_version_default">未知</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">设备型号</string>

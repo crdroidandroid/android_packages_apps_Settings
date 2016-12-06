@@ -39,7 +39,7 @@
   <string name="root_appops_title">Gestione accesso root</string>
   <string name="root_appops_summary">Visualizza e controlla l\'utilizzo dei permessi root</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Versione CyanogenMod</string>
+  <string name="mod_version">Versione crDroid</string>
   <string name="mod_version_default">Sconosciuto</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modello dispositivo</string>

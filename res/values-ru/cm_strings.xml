@@ -40,7 +40,7 @@
   <string name="root_appops_title">Права суперпользователя</string>
   <string name="root_appops_summary">Просмотр и управление разрешениями для прав суперпользователя</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Версия CyanogenMod</string>
+  <string name="mod_version">Версия crDroid</string>
   <string name="mod_version_default">Неизвестно</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Модель устройства</string>

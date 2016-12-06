@@ -39,7 +39,7 @@
   <string name="root_appops_title">Hallitse root-oikeuksia</string>
   <string name="root_appops_summary">Tarkastele ja hallinnoi root-sääntöjä</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod-versio</string>
+  <string name="mod_version">crDroid-versio</string>
   <string name="mod_version_default">Tuntematon</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Laitteen malli</string>

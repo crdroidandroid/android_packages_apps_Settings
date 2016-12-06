@@ -39,7 +39,7 @@
   <string name="root_appops_title">Administra els accessos de superusuari</string>
   <string name="root_appops_summary">Mostra i controla les regles de superusuari</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod versió</string>
+  <string name="mod_version">crDroid versió</string>
   <string name="mod_version_default">Desconegut</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model del dispositiu</string>

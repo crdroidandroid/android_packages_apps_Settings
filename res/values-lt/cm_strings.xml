@@ -38,7 +38,7 @@
   <string name="root_access_all">Programos ir „Android“ derinimas</string>
   <!-- Preference link for root appops -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">„CyanogenMod“ versija</string>
+  <string name="mod_version">„crDroid“ versija</string>
   <string name="mod_version_default">Nežinoma</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Įrenginio modelis</string>

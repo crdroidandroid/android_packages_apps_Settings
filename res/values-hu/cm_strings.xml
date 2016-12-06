@@ -39,7 +39,7 @@
   <string name="root_appops_title">Root hozzáférések kezelése</string>
   <string name="root_appops_summary">Root szabályok megtekintése és kezelése</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod verzió</string>
+  <string name="mod_version">crDroid verzió</string>
   <string name="mod_version_default">Ismeretlen</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Eszköz modellje</string>

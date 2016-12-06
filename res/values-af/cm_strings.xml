@@ -39,7 +39,7 @@
   <string name="root_appops_title">Bestuur root toegang</string>
   <string name="root_appops_summary">Kyk na en beheer die root reëls</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod weergawe</string>
+  <string name="mod_version">crDroid weergawe</string>
   <string name="mod_version_default">Onbekend</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Toestel tipe</string>

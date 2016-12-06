@@ -40,7 +40,7 @@
   <string name="root_appops_title">Управљај приступом руту</string>
   <string name="root_appops_summary">Види и контролиши правила рута</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod верзија</string>
+  <string name="mod_version">crDroid верзија</string>
   <string name="mod_version_default">Непознато</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Модел уређаја</string>
