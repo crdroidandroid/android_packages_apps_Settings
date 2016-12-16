@@ -19,6 +19,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Phone brand -->
+    <string name="device_category_asus_title">ASUS</string>
     <string name="device_category_google_title">GOOGLE</string>
     <string name="device_category_sony_title">SONY</string>
     <string name="device_category_samsung_title">SAMSUNG</string>
@@ -30,6 +31,11 @@
     <string name="device_category_yu_title">YU</string>
 
     <!-- Devices and Maintainers -->
+	
+    <!-- Asus devices -->
+    <string name="device_asus_zenfone2">Asus Zenfone 2"</string>
+    <string name="device_asus_zenfone2_summary">Z00A - Z008\nMaintainer - Calin Neamtu"</string>
+
     <!-- Google devices -->
     <string name="device_google_n4">Google Nexus 4</string>
     <string name="device_google_n4_summary">Mako \nMaintainer - Hildo Boerboom</string>

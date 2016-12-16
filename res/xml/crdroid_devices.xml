@@ -26,6 +26,20 @@
         android:summary="@string/device_maintainers_title_summary"
         android:selectable="false" />
 
+        <!-- Asus devices -->
+        <PreferenceCategory
+             android:key="device_category_asus"
+             android:title="@string/device_category_asus_title" >
+
+             <Preference
+                 android:key="device_asus_zenfone2"
+                 android:icon="@drawable/cr_devices"
+                 android:title="@string/device_asus_zenfone2"
+                 android:summary="@string/device_asus_zenfone2_summary"
+                 android:selectable="false" />
+
+        </PreferenceCategory>
+
         <!-- Google devices -->
         <PreferenceCategory
              android:key="device_category_google"
