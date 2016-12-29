@@ -40,7 +40,7 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <string name="root_appops_title">Gérer les accès root</string>
   <string name="root_appops_summary">Visualiser et contrôler les règles root</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Version crDroid</string>
+  <string name="mod_version">Version CyanogenMod</string>
   <string name="mod_version_default">Inconnue</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modèle de l\'appareil</string>
