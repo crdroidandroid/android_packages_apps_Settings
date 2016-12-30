@@ -117,7 +117,7 @@
                 android:title="@string/mod_version"
                 android:summary="@string/mod_version_default" />
 
-        <!-- CyanogenMod API Version -->
+        <!-- CyanogenMod API Version
         <com.android.settings.DividerPreference
                 android:key="mod_api_level"
                 android:enabled="false"
@@ -126,7 +126,7 @@
                 android:title="@string/mod_api_level"
                 android:summary="@string/mod_api_level_default"
                 settings:allowDividerAbove="true"
-                settings:allowDividerBelow="true" />
+                asettings:allowDividerBelow="true" /> -->
 
         <!-- Security patch level -->
         <PreferenceScreen android:key="security_patch"
