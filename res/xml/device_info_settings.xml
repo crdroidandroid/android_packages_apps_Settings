@@ -117,12 +117,12 @@
                 android:title="@string/mod_version"
                 android:summary="@string/mod_version_default" />
 
-        <!-- CyanogenMod API Version -->
+        <!-- CyanogenMod API Version
         <Preference android:key="mod_api_level"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/mod_api_level"
-                android:summary="@string/mod_api_level_default" />
+                android:summary="@string/mod_api_level_default" /> -->
 
         <!-- Security patch level -->
         <PreferenceScreen android:key="security_patch"
