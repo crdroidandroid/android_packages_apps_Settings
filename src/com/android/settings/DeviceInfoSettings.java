@@ -90,7 +90,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DEVICE_MEMORY = "device_memory";
     private static final String KEY_DEVICE_PROCESSOR = "device_processor";
 
-    static final int TAPS_TO_BE_A_DEVELOPER = 7;
+    static final int TAPS_TO_BE_A_DEVELOPER = -1;
 
     long[] mHits = new long[3];
     int mDevHitCountdown;
