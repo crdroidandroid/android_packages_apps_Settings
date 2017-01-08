@@ -22,4 +22,7 @@
     <color name="storage_private_3">#fff2a600</color>
     <color name="storage_private_4">#ffec407a</color>
     <color name="storage_private_5">#ffc0ca33</color>
+
+    <!-- Settings switchbar background -->
+    <color name="switchbar_background_color">?android:attr/colorSecondary</color>
 </resources>
