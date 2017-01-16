@@ -236,7 +236,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
         String prefKey = preference.getKey();
-        if (prefKey.equals(KEY_FIRMWARE_VERSION)) {
+        if (prefKey.equals(KEY_FIRMWARE_VERSION)
+                || prefKey.equals(KEY_MOD_VERSION)) {
             System.arraycopy(mHits, 1, mHits, 0, mHits.length-1);
             mHits[mHits.length-1] = SystemClock.uptimeMillis();
             if (mHits[0] >= (SystemClock.uptimeMillis()-500)) {
@@ -250,6 +251,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 }
 
                 Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.putExtra("is_lineage", prefKey.equals(KEY_MOD_VERSION));
                 intent.setClassName("android",
                         com.android.internal.app.PlatLogoActivity.class.getName());
                 try {
@@ -258,7 +260,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                     Log.e(LOG_TAG, "Unable to start activity " + intent.toString());
                 }
             }
-        } else if (preference.getKey().equals(KEY_BUILD_NUMBER)) {
+        } else if (prefKey.equals(KEY_BUILD_NUMBER)) {
             // Don't enable developer options for secondary users.
             if (!mUm.isAdminUser()) return true;
 
@@ -311,38 +313,24 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                         Toast.LENGTH_LONG);
                 mDevHitToast.show();
             }
-        } else if (preference.getKey().equals(KEY_SECURITY_PATCH)) {
+        } else if (prefKey.equals(KEY_SECURITY_PATCH)) {
             if (getPackageManager().queryIntentActivities(preference.getIntent(), 0).isEmpty()) {
                 // Don't send out the intent to stop crash
                 Log.w(LOG_TAG, "Stop click action on " + KEY_SECURITY_PATCH + ": "
                         + "queryIntentActivities() returns empty" );
                 return true;
             }
-        } else if (preference.getKey().equals(KEY_DEVICE_FEEDBACK)) {
+        } else if (prefKey.equals(KEY_DEVICE_FEEDBACK)) {
             sendFeedback();
         } else if (prefKey.equals(KEY_KERNEL_VERSION)) {
             setStringSummary(KEY_KERNEL_VERSION, getKernelVersion());
             return true;
-        } else if(preference.getKey().equals(KEY_SYSTEM_UPDATE_SETTINGS)) {
+        } else if(prefKey.equals(KEY_SYSTEM_UPDATE_SETTINGS)) {
             CarrierConfigManager configManager =
                     (CarrierConfigManager) getSystemService(Context.CARRIER_CONFIG_SERVICE);
             PersistableBundle b = configManager.getConfig();
             if (b != null && b.getBoolean(CarrierConfigManager.KEY_CI_ACTION_ON_SYS_UPDATE_BOOL)) {
                 ciActionOnSysUpdate(b);
-            }
-        } else if (preference.getKey().equals(KEY_MOD_VERSION)) {
-            System.arraycopy(mHits, 1, mHits, 0, mHits.length-1);
-            mHits[mHits.length-1] = SystemClock.uptimeMillis();
-            if (mHits[0] >= (SystemClock.uptimeMillis()-500)) {
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.putExtra("is_cm", true);
-                intent.setClassName("android",
-                        com.android.internal.app.PlatLogoActivity.class.getName());
-                try {
-                    startActivity(intent);
-                } catch (Exception e) {
-                    Log.e(LOG_TAG, "Unable to start activity " + intent.toString());
-                }
             }
         }
         return super.onPreferenceTreeClick(preference);
