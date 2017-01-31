@@ -35,11 +35,6 @@
             android:key="charging_sounds"
             android:title="@string/charging_sounds_title" />
 
-    <!-- Custom charging sounds -->
-    <org.cyanogenmod.internal.cmparts.CMPartsPreference
-            android:key="charging_sounds_settings"
-            lineage:replacesKey="charging_sounds" />
-
     <!-- Docking sounds -->
     <SwitchPreference
             android:key="docking_sounds"
