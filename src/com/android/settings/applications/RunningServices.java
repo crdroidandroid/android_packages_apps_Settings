@@ -110,6 +110,12 @@ public class RunningServices extends SettingsPreferenceFragment {
         boolean showingBackground = mRunningProcessesView.mAdapter.getShowBackground();
         mOptionsMenu.findItem(SHOW_RUNNING_SERVICES).setVisible(showingBackground);
         mOptionsMenu.findItem(SHOW_BACKGROUND_PROCESSES).setVisible(!showingBackground);
+
+        if (!showingBackground) {
+            getActivity().setTitle(com.android.settingslib.R.string.runningservices_settings_title);
+        } else {
+            getActivity().setTitle(R.string.background_processes_settings_title);
+        }
     }
 
     @Override
