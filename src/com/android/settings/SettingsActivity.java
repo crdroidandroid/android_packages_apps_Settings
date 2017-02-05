@@ -135,7 +135,9 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
+
 import com.crdroid.settings.crDroidSettings;
+import com.crdroid.settings.crDroidSettingsLayout;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -293,6 +295,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             UserDictionarySettings.class.getName(),
             HomeSettings.class.getName(),
             crDroidSettings.class.getName(),
+            crDroidSettingsLayout.class.getName(),
             DisplaySettings.class.getName(),
             DeviceInfoSettings.class.getName(),
             ManageApplications.class.getName(),

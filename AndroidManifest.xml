@@ -971,28 +971,26 @@
         </activity>
 
         <activity android:name="Settings$crDroidSettingsActivity"
-            android:label="@string/crdroid_settings_title"
-            android:icon="@drawable/ic_settings_crdroid"
-            android:taskAffinity="">
-            <intent-filter android:priority="1">
-                <action android:name="crdroid.settings.crDroidSettings" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:label="@string/crdroid_settings_title">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.crdroid.settings.crDroidSettings" />
+        </activity>
+
+        <activity android:name="Settings$crDroidSettingsLayoutActivity"
+                android:label="@string/crdroid_settings_title"
+                android:icon="@drawable/ic_settings_crdroid"
+                android:taskAffinity="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.VOICE_LAUNCH" />
                 <category android:name="com.android.settings.SHORTCUT" />
             </intent-filter>
-            <intent-filter android:priority="9">
+            <intent-filter android:priority="3">
                 <action android:name="com.android.settings.action.SETTINGS" />
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
                 android:value="com.android.settings.category.crdroid" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.crdroid.settings.crDroidSettings" />
-            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                android:value="true" />
+                android:value="com.crdroid.settings.crDroidSettingsLayout" />
         </activity>
 
         <activity android:name="Settings$DisplaySettingsActivity"
