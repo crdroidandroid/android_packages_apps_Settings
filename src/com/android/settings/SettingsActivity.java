@@ -62,10 +62,6 @@ import com.android.settings.accounts.AccountSettings;
 import com.android.settings.accounts.AccountSyncSettings;
 import com.android.settings.accounts.ChooseAccountActivity;
 import com.android.settings.accounts.ManagedProfileSettings;
-import com.crdroid.settings.fragments.FlingSettings;
-import com.crdroid.settings.fragments.NavbarSettings;
-import com.crdroid.settings.fragments.SmartbarSettings;
-import com.crdroid.settings.fragments.PulseSettings;
 import com.android.settings.applications.AdvancedAppSettings;
 import com.android.settings.applications.DrawOverlayDetails;
 import com.android.settings.applications.InstalledAppDetails;
@@ -139,7 +135,13 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
+
 import com.crdroid.settings.crDroidSettings;
+import com.crdroid.settings.crDroidSettingsLayout;
+import com.crdroid.settings.fragments.FlingSettings;
+import com.crdroid.settings.fragments.NavbarSettings;
+import com.crdroid.settings.fragments.SmartbarSettings;
+import com.crdroid.settings.fragments.PulseSettings;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -297,6 +299,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             UserDictionarySettings.class.getName(),
             HomeSettings.class.getName(),
             crDroidSettings.class.getName(),
+            crDroidSettingsLayout.class.getName(),
             DisplaySettings.class.getName(),
             DeviceInfoSettings.class.getName(),
             ManageApplications.class.getName(),
