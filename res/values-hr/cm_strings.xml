@@ -353,6 +353,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 minuta</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">Prijenosni Wi-Fi hotspot bez vremenskog ograničenja</string>
   <string name="hotstpot_inactivity_timeout_summary_text">Prijenosni Wi-Fi hotspot s vremenskim ograničenjem od <xliff:g id="timeout">%1$s</xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Wi‑Fi regija</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Navedite šifru regije za Wi‑Fi</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Došlo je do problema prilikom postavljanja regionalnog koda.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Buđenje pri priključivanju</string>
   <string name="wake_when_plugged_or_unplugged_summary">Uključite zaslon prilikom spajanja ili odspajanja izvora napajanja</string>
@@ -371,4 +377,7 @@
   <!-- Update recovery -->
   <string name="update_recovery_on_warning">Napomena: Kada je ova značajka omogućena, instalirani oporavak će biti zamijenjen onim koji se nalazi u trenutnoj verziji OS-a.\n\nVaš oporavak će se obnoviti uz nadogradnju sustava, čime se osigurava kompatibilnost s budućim verzijama.\n\nŽelite li omogućiti ovu značajku?</string>
   <string name="update_recovery_off_warning">Upozorenje: Kada je ova mogućnost onemogućena, instalirani se oporavak neće ažurirati sa OS nadogradnjama.\n\nBuduća OS ažuriranja možda se neće instalirati s zastarjelim ili prilagođenim verzijama oporavka.\n\nŽelite li isključiti ovu mogućnost?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Dvostruki dodir za spavanje</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Dvaput dodirnite statusnu traku za isključivanje zaslona</string>
 </resources>

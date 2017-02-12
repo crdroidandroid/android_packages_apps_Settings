@@ -291,6 +291,12 @@
   <!-- Tethering & portable hotspot other category -->
   <!-- Wi-Fi tethering inactivity timeout -->
   <string name="hotstpot_inactivity_timeout_never">Ni</string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">WLAN-Lännercode</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">WLAN-Lännercode festleeën</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Beim Festleeë vum WLAN-Lännercode ass e Problem opgetrueden.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Beim Astieche waakreg maachen</string>
   <string name="wake_when_plugged_or_unplugged_summary">De Schierm uschalte wann eng Stroumquell ugeschloss oder getrennt gëtt</string>
@@ -307,4 +313,7 @@
   <!-- Update recovery -->
   <string name="update_recovery_on_warning">HIWÄIS: Wann dës Funktioun aktivéiert ass, gëtt däin installéierte Recuperatiounssystem duerch dat an der aktueller Versioun vum Betribssystem ersat.\n\nDäi Recuperatiounssystem gëtt zesumme mat de Systemaktualiséierungen aktualiséiert, sou kann d\'Kompatibilitéit mat zukünftege Versiounen garantéiert ginn.\n\nWëlls du dës Funktioun aktivéieren?</string>
   <string name="update_recovery_off_warning">WARNUNG: Wann dës Funktioun desaktivéiert ass, gëtt däin installéierte Recovery-Programm net mat dengem System aktualiséiert.\n\nZukünfteg System-Aktualiséierunge loosse sech mat veraalten oder eegene Recovery-Programmer eventuell net installéierne.\n\nWëlls du dës Funktioun sécher desaktivéieren?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Zweemol drécke fir auszemaachen</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Zweemol drécken op der Statusläischt mécht de Schierm aus</string>
 </resources>

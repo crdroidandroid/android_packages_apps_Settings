@@ -353,6 +353,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 minuti</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">Hotspot Wi\u2011Fi portatile mai in timeout</string>
   <string name="hotstpot_inactivity_timeout_summary_text">Timeout hotspot Wi\u2011Fi portatile dopo <xliff:g id="timeout">%1$s</xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Codice regione Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Specifica il codice regione per il Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Problema nell\'impostazione del codice regione.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Risveglia al collegamento</string>
   <string name="wake_when_plugged_or_unplugged_summary">Accendi lo schermo quando si collega o si scollega l\'alimentazione</string>
@@ -382,6 +388,11 @@
   <string name="headset_connect_player_title">Avvia il lettore musicale</string>
   <string name="headset_connect_player_summary">Avvia il lettore musicale predefinito quando vengono connesse le cuffie</string>
   <!-- Update recovery -->
+  <string name="update_recovery_title">Aggiorna recovery</string>
+  <string name="update_recovery_summary">Aggiorna la recovery integrata con gli aggiornamenti del sistema</string>
   <string name="update_recovery_on_warning">AVVISO: Quando questa funzionalità è attiva, la recovery installata sarà sostituita da una inclusa con la versione corrente del sistema.\n\nLa vostra recovery attuale verrà aggiornata con gli aggiornamenti di sistema, contribuendo a garantire la compatibilità con le future versioni.\n\nAttivare questa funzione?</string>
   <string name="update_recovery_off_warning">Attenzione: Quando questa funzionalità è disattivata, la recovery installata non verrà aggiornata con il sistema.\n\nFuturi aggiornamenti potrebbero non installarsi con recovery personalizzate o vecchie.\n\nDisattivare questa funzione?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Sospensione con doppio tocco</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per spegnere il display</string>
 </resources>

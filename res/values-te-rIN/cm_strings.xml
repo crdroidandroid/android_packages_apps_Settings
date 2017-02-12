@@ -317,6 +317,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 నిమిషాలు</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">పోర్టబుల్ Wifi\u2011Fi హాట్స్పాట్ ఎప్పుడూ గడువు ముగియడానికి ఉంటుంది</string>
   <string name="hotstpot_inactivity_timeout_summary_text">పోర్టబుల్ Wifi\u2011Fi హాట్స్పాట్ <xliff:g id="timeout">%1$s</xliff:g> తరువాత గడువు ముగియడానికి ఉంటుంది </string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Wi\u2011Fi ప్రాంతం కోడ్</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Wi\u2011Fiకు ప్రాంతం కోడును పేర్కొనుము</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">ప్రాంతం కోడును సెట్ చేయడంలో సమస్య ఉంది.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">మేల్కొలుపు ప్లగ్</string>
   <string name="wake_when_plugged_or_unplugged_summary">విద్యుత్ ఆధారాన్ని అనుసంధానం చేసేటప్పుడు లేదా తొలిగించేటప్పుడు స్క్రీనును ఆన్ చేయండి</string>
@@ -333,4 +339,7 @@
   <!-- Update recovery -->
   <string name="update_recovery_on_warning">గమనిక: ఈ విశేషాంశాన్ని అమలు చేసినప్పుడు, అప్పుడు నడుస్తున్న OS యొక్క ప్రస్తుత సంస్కరణతో పాటుగా చేర్చబడిన దానితో మీ యొక్క ఇన్స్టాల్డ్ మెమరీ భర్తీ చేయబడుతుంది. \n\nభవిష్యత్ సంస్కరణలతో సరితూగేలా ఉండేందుకై మీ పునరుద్ధరణ మీ యొక్క సిస్టమ్ ఆధునీకరణలతో అప్ గ్రేడ్  చేయబడుతుంది.  \n\nమీరు ఈ విశేషాంశం అమలు చేయాలనుకుంటున్నారా?</string>
   <string name="update_recovery_off_warning">హెచ్చ్జరిక: ఈ లక్షణం నిలిపివేయబడినప్పుడు, మీ యొక్క వ్యవస్థాపించబడిన పునరుద్ధరణ OS ఉన్నతీకరణలతో నవీకరించబడదు.\n\nభవిష్యత్ OS నవీకరణలు కాలంచెల్లిన లేదా అనుకూల పునరుద్దరణ సంస్కరణలతో వ్యవస్థాపించకబడపోవచ్చు.\n\nమీరి నిజంగా ఈ లక్షణాన్ని నిలిపివేయాలని అనుకుంటున్నారా?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">నిర్వీర్యం చేయడానికి రెండుసార్లు ట్యాప్ చేయండి</string>
+  <string name="status_bar_double_tap_to_sleep_summary">డిస్ప్లేను ఆపివేయడానికి స్టేటస్ బార్ పైన రెండుసార్లు ట్యాప్ చేయండి</string>
 </resources>

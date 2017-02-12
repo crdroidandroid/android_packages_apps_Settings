@@ -352,6 +352,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 minutu</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">Wi\u2011Fi gune eramangarriak ez du denbora mugarik</string>
   <string name="hotstpot_inactivity_timeout_summary_text">Wi\u2011Fi gune eramangarriaren denbora muga: <xliff:g id="timeout">%1$s</xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Wi\u2011Fi lurralde kodea</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Zehaztu Wi\u2011Fi lurralde kodea</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Arazo bat egon da lurralde kodea ezartzean.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Esnatu kargadorearekin</string>
   <string name="wake_when_plugged_or_unplugged_summary">Piztu pantaila kargadorea konektatu edo deskonektatzean</string>
@@ -370,4 +376,7 @@
   <!-- Update recovery -->
   <string name="update_recovery_on_warning">OHARRA: Ezaugarri hau gaitzean, instalatutako berreskuratze irudia oraingo sistema eragilearen bertsio bera duen batekin ordeztuko da.\n\nZure berreskuratze irudia sistemaren eguneraketekin batera eguneratuko da, etorkizuneko bertsioekin bateragarritasuna bermatzea lagunduz.\n\nEzaugarri hau gaitu nahi duzu?</string>
   <string name="update_recovery_off_warning">KONTUZ: Ezaugarri hau ezgaitzean, instalatutako berreskuratze irudia ez da eguneratuko sistema eragilearekin batera.\n\nEtorkizuneko sistema eragilearen eguneraketak agian ezin izango dira instalatu zaharkitutako edo pertsonalizatutako berreskuratze irudietan.\n\n Ziur ezaugarri hau ezgaitu nahi duzula?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Birritan sakatu lokartzeko</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Birritan sakatu egoera barran pantaila itzaltzeko</string>
 </resources>

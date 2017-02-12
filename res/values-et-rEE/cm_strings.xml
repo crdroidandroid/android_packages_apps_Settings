@@ -251,6 +251,12 @@
   <!-- Tethering & portable hotspot other category -->
   <!-- Wi-Fi tethering inactivity timeout -->
   <string name="hotstpot_inactivity_timeout_never">Mitte kunagi</string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Wi\u2011Fi regioonikood</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Täpsusta  Wi\u2011Fi regioonikoodi</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Ilmnes probleem piirkonna koodi salvestamisel.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Ärka laadija ühendamisel</string>
   <string name="wake_when_plugged_or_unplugged_summary">Lülita ekraan sisse kui ühendatakse või eemaldatakse toite allikas</string>
@@ -267,4 +273,7 @@
   <!-- Update recovery -->
   <string name="update_recovery_on_warning">TEADE: Kui see funktsioon on lubatud, siis teie installitud Recovery asendatakse praeguses OS versioonis kaasas olevaga.\n\nSinu Recovery uuendatakse koos süsteemi uuendustega, et tagada ühilduvus tulevaste versioonidega.\n\nKas soovite funktsiooni aktiveerida?</string>
   <string name="update_recovery_off_warning">HOIATUS: Kui see funktsioon on keelatud, siis teie installitud Recovery ei ajakohastata OS uuendamisel.\n\nTulevased OS ajakohastamised ei pruugi paigalduda vananenud või kohandatud Recovery kasutamisel.\n\nKas soovite funktsiooni keelata?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Topelt koputus ekraani väljalülitamiseks</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Topeltpuudutage olekuriba ekraani väljalülitamiseks</string>
 </resources>

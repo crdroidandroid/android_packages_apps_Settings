@@ -339,6 +339,12 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <string name="hotstpot_inactivity_timeout_10_minutes">10 minutes</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">Délai de réponse du point d\'accès Wi\u2011Fi n\'expirera jamais</string>
   <string name="hotstpot_inactivity_timeout_summary_text">Le délai de réponse du point d\'accès Wi\u2011Fi portable expirera après <xliff:g id="timeout">%1$s </xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Code région Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Indiquer le code région pour le Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Problème lors du réglage du code région.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
   <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lors du branchement ou du débranchement d\'une source d\'alimentation</string>
@@ -355,4 +361,7 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <!-- Update recovery -->
   <string name="update_recovery_on_warning">REMARQUE : Lorsque cette fonction est activée, la récupération installée sera remplacée par celle du système d\'exploitation.\n\nVotre récupération sera mise à jour lors des mises à niveau du système d\'exploitation, assurant ainsi la compatibilité avec les futures versions.\n\nVoulez-vous activer cette fonction ?</string>
   <string name="update_recovery_off_warning">AVERTISSEMENT : Lorsque cette fonction est désactivée, votre récupération ne sera pas mise à jour lors des mises à niveau du système d\'exploitation.\n\nLes futures mises à jour du système d\'exploitation peuvent ne pas être installées en cas de versions obsolètes ou personnalisées de la récupération.\n\nVoulez-vous vraiment désactiver cette fonction ?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Appui double pour mettre en veille</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Appui double sur la barre d\'état pour éteindre l\'écran</string>
 </resources>

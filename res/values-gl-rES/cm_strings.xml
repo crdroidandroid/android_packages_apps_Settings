@@ -353,6 +353,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 minutos</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">O punto de aceso portable Wi\u2011Fi non se apagará nunca</string>
   <string name="hotstpot_inactivity_timeout_summary_text">O punto de aceso portable Wi\u2011Fi apagaráse despois de <xliff:g id="timeout">%1$s</xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Código de rexión Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Especificar o código de rexión para o Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Produciuse un problema ao definir o código de rexión.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Acender ao enchufar</string>
   <string name="wake_when_plugged_or_unplugged_summary">Acende a pantalla ao contectarse e desconectarse dunha fonte de enerxía</string>
@@ -382,6 +388,11 @@
   <string name="headset_connect_player_title">Iniciar aplicación de música</string>
   <string name="headset_connect_player_summary">Iniciar a aplicación de música por defecto ao conectar auriculares</string>
   <!-- Update recovery -->
+  <string name="update_recovery_title">Actualizar recovery</string>
+  <string name="update_recovery_summary">Actualizar o recovery coas actualizacións do sistema</string>
   <string name="update_recovery_on_warning">AVISO: Se ten esta funcionalidade activada, a recuperación instalada substituirase por unha incluída na versión actual que se está a utilizar no sistema.\n\nA recuperación actualizarase xunta as actualizacións do sistema, para asegurar a compatibilidade coas versións futuras.\n\nQuere activar esta funcionalidade?</string>
   <string name="update_recovery_off_warning">AVISO: Con esta funcionalidade desactivada, a recuperación instalada non se actualizará coas actualizacións do sistema.\n\nAs futuras actualizacións do sistema poderían non instalarse con versións de recuperación non actualizadas ou personalizadas.\n\nConfirma a desactivación desta funcionalidade?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Doble toque para apagar a pantalla</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Toque dúas veces na barra de estado para apagar a visualización</string>
 </resources>

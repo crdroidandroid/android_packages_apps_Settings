@@ -301,7 +301,7 @@
   <string name="adb_notify_summary">Mostrar una notificación cuando esté activada la depuración por USB o red</string>
   <!-- Android debugging over network -->
   <string name="adb_over_network">ADB sobre red</string>
-  <string name="adb_over_network_summary">Activar la depuración TCP/IP sobre las interfaces de red (Wi\u2011Fi, redes USB). Esta configuración se restablece al reiniciar el dispositivo</string>
+  <string name="adb_over_network_summary">Activar la depuración TCP/IP sobre las interfaces de red (Wi\u2011Fi, redes USB). Este ajuste se restablece al reiniciar el dispositivo</string>
   <string name="adb_over_network_warning">ADVERTENCIA: Cuando ADB sobre red está activado, el dispositivo está abierto para intrusiones en todas las redes conectadas.\n\nUtiliza esta función solamente cuando estés conectado a redes de confianza.\n\n¿Realmente deseas activar esta función?</string>
   <!-- Hostname setting -->
   <string name="device_hostname">Nombre del dispositivo</string>
@@ -353,6 +353,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 minutos</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">El punto de acceso portátil Wi\u2011Fi no se apagará nunca</string>
   <string name="hotstpot_inactivity_timeout_summary_text">El punto de acceso portátil Wi\u2011Fi se apagará después de <xliff:g id="timeout">%1$s</xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Código de región Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Especificar el código de región para Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Ocurrió un error al establecer el código de región.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Activar con cargador</string>
   <string name="wake_when_plugged_or_unplugged_summary">Encender la pantalla al conectar o desconectar el cargador</string>
@@ -382,7 +388,12 @@
   <string name="headset_connect_player_title">Iniciar el reproductor de música</string>
   <string name="headset_connect_player_summary">Iniciar el reproductor de música predeterminado al conectar los auriculares</string>
   <!-- Update recovery -->
+  <string name="update_recovery_title">Actualizar recovery</string>
+  <string name="update_recovery_summary">Actualizar recovery en conjunto con el sistema</string>
   <string name="update_recovery_on_warning">AVISO: Con esta característica activada, la recuperación instalada se reemplazará por la incluida en la versión actual del sistema.\n\nLa recuperación se actualizará junto con algunas mejoras en el sistema, lo que garantiza la compatibilidad con versiones futuras.\n\n¿Quieres activar esta característica?</string>
   <string name="update_recovery_off_warning">ADVERTENCIA: Con esta característica desactivada, la recuperación instalada no se actualizará con las actualizaciones del sistema.\n\nQuizás no sea posible instalar versiones futuras del sistema con una recuperación no actualizada o no compatible.\n\n¿Quieres desactivar esta característica?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Doble toque para suspender</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Apagar la pantalla mediante un doble toque sobre la barra de estado</string>
 </resources>
 

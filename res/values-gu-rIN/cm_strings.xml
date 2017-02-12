@@ -317,6 +317,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 મિનીટ્સ</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">પોર્ટેબલ Wi\u2011Fi હોટસ્પોટ સમય સમાપ્ત ક્યારેય નહીં થાય</string>
   <string name="hotstpot_inactivity_timeout_summary_text">પોર્ટેબલ Wi\u2011Fi હોટસ્પોટ પછી સમય સમાપ્ત કરશે <xliff:g id="timeout">%1$s</xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Wi\u2011Fi પ્રાંત કોડ</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Wi\u2011Fi માટે પ્રાંત કોડ વિશિષ્ટપણે જણાવો</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">પ્રાંત કોડ સેટ કરવામાં સમસ્યા થઈ.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">વેક ઑન પ્લગ</string>
   <string name="wake_when_plugged_or_unplugged_summary">પાવર સ્ત્રોત જોડો અથવા પરવાનગીું પાડો ત્યારે સ્ક્રીન ચાલુ કરો</string>
@@ -333,4 +339,7 @@
   <!-- Update recovery -->
   <string name="update_recovery_on_warning">સૂચના: જ્યારે આ લક્ષણ સક્ષમ કરવામાં આવે ત્યારે તમારી ઇન્સ્ટૉલ કરેલી રિકવરીની અવેજીમાં તે મૂકાશે જેમાં રનિંગ OS.\n\n ના વર્તમાન સંસ્કરણનો સમાવેશ હશે તમારી સિસ્ટમના અપગ્રેડની સાથે તમારી રિકવરી અપડેટ કરાશે જેથી ભાવિ સંસ્કરણો સાથેની સુસંગતતાની ખાતરી રહે.\n\nશું તમારે આ લક્ષણ સક્ષમ કરવું છે?</string>
   <string name="update_recovery_off_warning">ચેતવણી: જ્યારે આ લક્ષણ અક્ષમ કરવામાં આવે ત્યારે તમારી ઇન્સ્ટૉલ કરેલ રિકવરી OS અપગ્રેડથી અપડેટ કરાશે નહીં.\n\nભાવિ OS અપડેટ વખતે આઉટડેટ થયેલ અથવા કસ્ટમ રિકવરી સંસ્કરણોથી ઇન્સ્ટૉલ થશે નહીં.\n\nશું તમારે ખરેખર આ લક્ષણ અક્ષમ કરવું છે?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">સ્લીપ માટે ડબલ-ટૅપ કરો</string>
+  <string name="status_bar_double_tap_to_sleep_summary">પ્રદર્શન બંધ કરવા સ્ટેટસ બાર પર ડબલ-ટૅપ કરો</string>
 </resources>

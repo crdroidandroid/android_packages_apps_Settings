@@ -354,6 +354,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 minute</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">Hotspotul portabil Wi\u2011Fi nu va expira niciodată</string>
   <string name="hotstpot_inactivity_timeout_summary_text">Hotspotul portabil Wi\u2011Fi va expira după <xliff:g id="timeout">%1$s</xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Codul de regiune Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Specificați codul de regiune pentru Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">A intervenit o problemă la setarea codului de regiune.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Trezire la alimentare</string>
   <string name="wake_when_plugged_or_unplugged_summary">Aprinde ecranul când se conectează sau deconectează sursa de alimentare</string>
@@ -383,6 +389,11 @@
   <string name="headset_connect_player_title">Lansează aplicația muzică</string>
   <string name="headset_connect_player_summary">Lansează aplicația implicită de muzică când se conectează casca audio</string>
   <!-- Update recovery -->
+  <string name="update_recovery_title">Actualizați meniul de recuperare</string>
+  <string name="update_recovery_summary">Actualizați meniul de recuperare inclus odată cu actualizările de sistem</string>
   <string name="update_recovery_on_warning">ANUNŢ: Atunci când această caracteristică este activată, meniul de recuperare instalat va fi înlocuit cu unul inclus în versiunea curentă a Sistemului de Operare.\n\nMeniul dvs. de recuperare va fi actualizat împreună cu upgrade-urile sistemului dvs., ajutând la asigurarea compatibilității cu viitoarele versiuni.\n\nAți vrea să activați această caracteristică?</string>
   <string name="update_recovery_off_warning">ATENŢIE: Atunci când această caracteristică este dezactivată, meniul de recuperare instalat nu va fi actualizat odată cu upgrade-urile Sistemului de Operare.\n\nActualizările viitoare ale Sistemului de Operare s-ar putea să nu se instaleze cu versiuni expirate sau personalizate ale meniului de recuperare.\n\nDoriţi într-adevăr să dezactivaţi această caracteristică?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Dublă-apăsare pentru stand-by</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Atingeți de două ori bara de stare pentru a dezactiva afișarea</string>
 </resources>

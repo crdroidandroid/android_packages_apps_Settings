@@ -324,6 +324,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 хвілін</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">Не адключаць ніколі Wi\u2011Fi</string>
   <string name="hotstpot_inactivity_timeout_summary_text">Адключыць праз <xliff:g id="timeout">%1$s</xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Код рэгіёну Wi-Fi</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Пакажыце код рэгіёну Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Пры наладзе кода рэгіёна Wi-Fi паўстала памылка.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Улучэнне пры зарадцы</string>
   <string name="wake_when_plugged_or_unplugged_summary">Улучаць экран пры падлучэнні ці адключэнні крыніцы сілкавання</string>
@@ -340,4 +346,7 @@
   <!-- Update recovery -->
   <string name="update_recovery_on_warning">Калі гэта функцыя ўключана, усталяваная прашыўка рэжыму аднаўлення будзе перазапісана той, якая адпавядае бягучай версіі АС.\n\n Рэжым аднаўлення будзе абнаўляцца разам з абнаўленнямі сістэмы, забяспечваючы сумяшчальнасць з будучымі версіямі.\n\nУключыць выкарыстанне гэтай функцыі?</string>
   <string name="update_recovery_off_warning">Калі гэта функцыя адключана, прашыўка рэжыму аднаўлення заўсёды будзе заставацца нязменнай.\n\nНекаторыя абнаўленні АС могуць не ўсталёўвацца пры выкарыстанні састарэлых ці карыстальніцкіх версій падзелу Recovery.\n\nАдключыць выкарыстанне гэтай функцыі?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Вымыкаць экран пры падвойным націсканні</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Двойчы дакраніцеся радка стану, каб перавесці прыладу ў спячы рэжым</string>
 </resources>

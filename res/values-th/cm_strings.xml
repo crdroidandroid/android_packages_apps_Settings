@@ -317,6 +317,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 นาที</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">สัญญาณ Wi\u2011Fi แบบพกพาจะไม่หมดเวลา</string>
   <string name="hotstpot_inactivity_timeout_summary_text">สัญญาณ Wi\u2011Fi แบบพกพาจะหมดเวลาหลังจาก <xliff:g id="timeout">%1$s</xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">รหัสภูมิภาค Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">ระบุรหัสภูมิภาคสำหรับ Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">มีปัญหาขณะตั้งรหัสภูมิภาค</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">ตื่นเมื่อเสียบปลั๊ก</string>
   <string name="wake_when_plugged_or_unplugged_summary">เปิดหน้าจอเมื่อเชื่อมต่อหรือตัดการเชื่อมต่อกับแหล่งจ่ายไฟ</string>
@@ -333,4 +339,7 @@
   <!-- Update recovery -->
   <string name="update_recovery_on_warning">คำเตือน: เมื่อเปิดใช้งานคุณสมบัตินี้ recovery ที่ติดตั้งจะถูกแทนที่ด้วย recovery รุ่นปัจจุบันของระบบที่ใช้งาน\n\n recovery ของคุณจะได้รับการอัปเดตไปพร้อมกับการอัพเกรดระบบ ซึ่งช่วยให้แน่ใจได้ว่าจะสามารถเข้าได้กับรุ่นต่าง ๆ ในอนาคต\n\nต้องการใช้คุณสมบัตินี้หรือไม่</string>
   <string name="update_recovery_off_warning">คำเตือน: เมื่อปิดการใช้งานคุณสมบัตินี้ recovery ที่ติดตั้งจะไม่ได้รับการอัปเดตไปกับการอัพเกรดระบบ\n\nการอัปเดตระบบในอนาคตอาจไม่ติดตั้งรุ่น recovery ที่ล้าสมัยหรือที่กำหนดเอง\n\nต้องการปิดใช้คุณสมบัตินี้แน่นอนหรือไม่</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">แตะสองครั้งเพื่อปิดจอ</string>
+  <string name="status_bar_double_tap_to_sleep_summary">แตะสองครั้งที่แถบสถานะเพื่อปิดหน้าจอ</string>
 </resources>

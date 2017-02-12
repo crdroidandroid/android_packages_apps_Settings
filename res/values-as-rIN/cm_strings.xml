@@ -317,6 +317,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 মিনিট</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">প’ৰ্টেবল ৱাই\u2011ফাই হটস্পট কেতিয়াও টাইমআউট নহয়</string>
   <string name="hotstpot_inactivity_timeout_summary_text">প’ৰ্টেবল ৱাই\u2011ফাই হটস্পট <xliff:g id="timeout">%1$s</xliff:g> পিছত টাইমআউট হ\'ব</string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">ৱাই\u2011ফাই অঞ্চল কোড</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">ৱাই\u2011ফাই ৰ বাবে অঞ্চল কোড নিৰ্দিষ্ট কৰক</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">অঞ্চল কোড ছেটিং কৰাত এটা সমস্যা হৈছিল</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">প্লাগ কৰিলে ৱেক কৰক</string>
   <string name="wake_when_plugged_or_unplugged_summary">পাৱাৰ উৎসৰ সৈতে সংযোগ কৰিলে বা সংযোগহীন কৰিলে স্ক্ৰীণ অন কৰক</string>
@@ -333,4 +339,7 @@
   <!-- Update recovery -->
   <string name="update_recovery_on_warning">জাননী: এই বৈশিষ্ট্যটো সক্ষম কৰিলে, আপোনাৰ ইনষ্টল থকা পুনৰুদ্ধাৰ এই চলি থকা OS-ৰ সাম্প্ৰতিক সংস্কৰণত অন্তৰ্ভুক্ত এটাৰ দ্বাৰা পৰিবৰ্তিত হ\'ব।\n\nআপোনাৰ পুনৰুদ্ধাৰ আপোনাৰ ছিষ্টেমৰ সৈতে আপগ্ৰেডৰ সৈতে আপডেট কৰা হ\'ব, যাতে ভৱিষ্যৎ সংস্কৰণসমূহৰ সৈতে সুসমতা নিশ্চিত কৰাত সহায় হয়।\n\nআপুনি এই বৈশিষ্ট্যটো সক্ষম কৰিব বিচাৰে নে?</string>
   <string name="update_recovery_off_warning">সকীয়নি: যেতিয়া বৈশিষ্ট্যটো অক্ষম কৰা হয়, আপোনাৰ ইনষ্টল কৰা পুনৰুদ্ধাৰ OS আপগ্ৰেডৰ সৈতে আপডেট কৰা নহ\'ব।\n\nভৱিষ্যৎ OS আপডেটবোৰ পুৰণি বা কাষ্টম পুনৰুদ্ধাৰ সংস্কৰণৰ সৈতে ইনষ্টল নহ\'ব পাৰে।\n\nআপুনি সঁচাই এই বৈশিষ্ট্যটো অক্ষম কৰিব বিচাৰে নে?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">সুপ্ত কৰিবলৈ দুবাৰ টেপ কৰক</string>
+  <string name="status_bar_double_tap_to_sleep_summary">প্রদর্শন অফ কৰিবলৈ ষ্টেটাছ বাৰত দুবাৰ ক্লিক কৰক</string>
 </resources>

@@ -322,6 +322,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 دقائق</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">لن تنتهي مهلة Wi\u2011Fi الحث الساخن المتنقل أبداً</string>
   <string name="hotstpot_inactivity_timeout_summary_text">سوف تنتهي مهلة الحث الساخن المتنقل Wi\u2011Fi بعد <xliff:g id="timeout">%1$s</xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">رمز الواي فاي للمنطقة</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">تحديد رمز الواي فاي للمنطقة</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">هناك مشكلة في تحديد رمز المنطقة.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">الإيقاظ عند التوصيل</string>
   <string name="wake_when_plugged_or_unplugged_summary">تشغيل الشاشة عند الاتصال أو قطع الاتصال بمصدر الطاقة</string>
@@ -338,4 +344,7 @@
   <!-- Update recovery -->
   <string name="update_recovery_on_warning">ملحوظة: عندما يتم تمكين هذه الميزة، سيتم استبدال النسخة المستعادة المثبتة بأخرى مضمنة مع الإصدار الحالي من برنامج التشغيل العامل.\n\nوسيتم تحديث نسختك المستعادة مع ترقيات النظام، مما يساعد على ضمان التوافق مع الإصدارات المستقبلية. \n\nهل ترغب في تمكين هذه الميزة؟</string>
   <string name="update_recovery_off_warning">تحذير: عندما يتم تعطيل هذه الميزة، لن يتم تحديث نسختك المستعادة المثبتة بترقيات النظام.\n\n كما أن ترقيات نظام التشغيل الجديدة قد لا يمكن تثبيتها مع النسخ المستعادة القديمة أو المخصصة. \n\nهل ترغب في تعطيل هذه الميزة؟</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">المس مرتين لبدء وضع السكون</string>
+  <string name="status_bar_double_tap_to_sleep_summary">الضغط مرتين فوق شريط الحالة لإطفاء الشاشة</string>
 </resources>

@@ -354,6 +354,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 minút</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">Prenosný Wi\u2011Fi hotspot nemá žiadny časový limit</string>
   <string name="hotstpot_inactivity_timeout_summary_text">Prenosný Wi\u2011Fi hotspot vyprší po <xliff:g id="timeout">%1$s </xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Kód oblasti Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Zadať kód oblasti pre Wi\u2011Fi</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Vyskytol sa problém pri nastavovaní kódu oblasti.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Prebudiť po pripojení</string>
   <string name="wake_when_plugged_or_unplugged_summary">Zapnúť obrazovku pri pripojení alebo odpojení zdroja nabíjania</string>
@@ -383,6 +389,11 @@
   <string name="headset_connect_player_title">Spustiť aplikáciu na prehrávanie hudby</string>
   <string name="headset_connect_player_summary">Spustiť predvolenú aplikáciu na prehrávanie hudby po pripojení slúchadiel</string>
   <!-- Update recovery -->
+  <string name="update_recovery_title">Aktualizovať recovery</string>
+  <string name="update_recovery_summary">Aktualizovať recovery so systémovými aktualizáciami</string>
   <string name="update_recovery_on_warning">UPOZORNENIE: Ak je táto funkcia povolená, vaša nainštalovaná recovery bude nahradená verziou, ktorá je súčasťou aktuálneho operačného systému.\n\nVaša recovery sa bude aktualizovať spolu so systémom, čím sa zaisťuje kompatibilita s budúcim verziami.\n\nChcete povoliť túto funkciu?</string>
   <string name="update_recovery_off_warning">VAROVANIE: Ak je táto funkcia zakázaná, vaša nainštalovaná recovery nebude nahradená s aktualizáciami operačného systému.\n\nBudúce aktualizácie operačného systému sa nemusia nainštalovať kvôli zastaraným alebo vlastným verziám recovery.\n\nChcete zakázať túto funkciu?</string>
+  <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Uspať dvojitým poklepaním</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Vypnúť displej dvojitým poklepaním na stavový riadok</string>
 </resources>
