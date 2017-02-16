@@ -34,17 +34,6 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </PreferenceScreen>
 
-        <!-- LineageOS Updates -->
-        <cyanogenmod.preference.SelfRemovingPreference android:key="cm_updates"
-                android:title="@string/cmupdate_settings_title"
-                android:summary="@string/system_update_settings_list_item_summary"
-                cm:requiresOwner="true"
-                cm:requiresPackage="org.lineageos.updater">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="org.lineageos.updater"
-                    android:targetClass="com.cyanogenmod.updater.UpdatesActivity" />
-        </cyanogenmod.preference.SelfRemovingPreference>
-
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
@@ -81,10 +70,6 @@
         <PreferenceScreen android:key="device_feedback"
                 android:title="@string/device_feedback">
         </PreferenceScreen>
-
-        <!-- Contributors cloud -->
-        <org.cyanogenmod.internal.cmparts.CMPartsPreference
-                android:key="contributors" />
 
         <!-- Device name -->
         <Preference android:key="device_name"
