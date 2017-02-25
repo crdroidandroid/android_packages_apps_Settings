@@ -141,6 +141,7 @@ import com.crdroid.settings.crDroidSettingsLayout;
 import com.crdroid.settings.fragments.FlingSettings;
 import com.crdroid.settings.fragments.NavbarSettings;
 import com.crdroid.settings.fragments.SmartbarSettings;
+import com.crdroid.settings.fragments.OmniJawsSettings;
 import com.crdroid.settings.fragments.PulseSettings;
 
 import java.net.URISyntaxException;
@@ -382,7 +383,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             NavbarSettings.class.getName(),
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
-            PulseSettings.class.getName()
+            PulseSettings.class.getName(),
+            OmniJawsSettings.class.getName()
     };
 
 
