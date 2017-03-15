@@ -118,7 +118,7 @@ public class AppOpsDetails extends InstrumentedPreferenceFragment {
                         entry.getTimeText(res, true));
                 Switch sw = (Switch)view.findViewById(R.id.switchWidget);
                 final int switchOp = AppOpsManager.opToSwitch(firstOp.getOp());
-                sw.setChecked(mAppOps.checkOp(switchOp, entry.getPackageOps().getUid(),
+                sw.setChecked(mAppOps.checkOpNoThrow(switchOp, entry.getPackageOps().getUid(),
                         entry.getPackageOps().getPackageName()) == AppOpsManager.MODE_ALLOWED);
                 sw.setOnCheckedChangeListener(new Switch.OnCheckedChangeListener() {
                     @Override
