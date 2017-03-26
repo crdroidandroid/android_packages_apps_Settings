@@ -553,7 +553,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mRootAppops.setOnPreferenceClickListener(this);
 
         if (!removeRootOptionsIfRequired()) {
-            if (FileUtils.fileExists("/system/xbin/su")) {
+            if (FileUtils.fileExists("/system/xbin/su") ||
+                    FileUtils.fileExists("/system/app/MagiskManager/MagiskManager.apk")) {
                 mRootAccess.setEntries(R.array.root_access_entries);
                 mRootAccess.setEntryValues(R.array.root_access_values);
             } else {
