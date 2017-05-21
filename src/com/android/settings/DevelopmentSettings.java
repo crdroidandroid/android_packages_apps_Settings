@@ -2576,7 +2576,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                     return context.getSharedPreferences(DevelopmentSettings.PREF_FILE,
                             Context.MODE_PRIVATE).getBoolean(
                                     DevelopmentSettings.PREF_SHOW,
-                                    android.os.Build.TYPE.equals("eng"));
+                                    true);
                 }
 
                 @Override
