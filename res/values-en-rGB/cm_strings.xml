@@ -350,7 +350,7 @@
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Power notification controls</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS legal</string>
+  <string name="cmlicense_title">crDroid legal</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Locate the fingerprint sensor on the <xliff:g id="sensor_location">%1$s</xliff:g> of your phone.</string>
   <!-- Fingerprint sensor locations -->
