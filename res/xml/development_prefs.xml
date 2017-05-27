@@ -117,6 +117,12 @@
         android:title="@string/color_temperature"
         android:summary="@string/color_temperature_desc" />
 
+    <PreferenceScreen
+        android:key="demo_mode"
+        android:title="@string/demo_mode">
+        <intent android:action="com.android.settings.action.DEMO_MODE" />
+    </PreferenceScreen>
+
     <SwitchPreference
         android:key="update_recovery"
         android:title="@string/update_recovery_title"
