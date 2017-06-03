@@ -50,7 +50,7 @@ public class ProcStatsData {
 
     private static final String TAG = "ProcStatsManager";
 
-    private static final boolean DEBUG = ProcessStatsUi.DEBUG;
+    private static final boolean DEBUG = false;
 
     private static ProcessStats sStatsXfer;
 
@@ -266,7 +266,7 @@ public class ProcStatsData {
     private ArrayList<ProcStatsEntry> getProcs(ProcessDataCollection bgTotals,
             ProcessDataCollection runTotals) {
         final ArrayList<ProcStatsEntry> procEntries = new ArrayList<>();
-        if (DEBUG) Log.d(TAG, "-------------------- PULLING PROCESSES");
+        //if (DEBUG) Log.d(TAG, "-------------------- PULLING PROCESSES");
 
         final ProcessMap<ProcStatsEntry> entriesMap = new ProcessMap<ProcStatsEntry>();
         for (int ipkg = 0, N = mStats.mPackages.getMap().size(); ipkg < N; ipkg++) {
@@ -281,8 +281,8 @@ public class ProcStatsData {
                         final ProcessState proc = mStats.mProcesses.get(pkgProc.getName(),
                                 pkgProc.getUid());
                         if (proc == null) {
-                            Log.w(TAG, "No process found for pkg " + st.mPackageName
-                                    + "/" + st.mUid + " proc name " + pkgProc.getName());
+                            //Log.w(TAG, "No process found for pkg " + st.mPackageName
+                            //        + "/" + st.mUid + " proc name " + pkgProc.getName());
                             continue;
                         }
                         ProcStatsEntry ent = entriesMap.get(proc.getName(), proc.getUid());
@@ -307,7 +307,7 @@ public class ProcStatsData {
             }
         }
 
-        if (DEBUG) Log.d(TAG, "-------------------- MAPPING SERVICES");
+        //if (DEBUG) Log.d(TAG, "-------------------- MAPPING SERVICES");
 
         // Add in service info.
         for (int ip = 0, N = mStats.mPackages.getMap().size(); ip < N; ip++) {
@@ -328,8 +328,8 @@ public class ProcStatsData {
                                             + " to proc " + ss.getProcessName());
                                 ent.addService(ss);
                             } else {
-                                Log.w(TAG, "No process " + ss.getProcessName() + "/"
-                                        + uids.keyAt(iu) + " for service " + ss.getName());
+                                //Log.w(TAG, "No process " + ss.getProcessName() + "/"
+                                //        + uids.keyAt(iu) + " for service " + ss.getName());
                             }
                         }
                     }
