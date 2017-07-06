@@ -30,7 +30,7 @@
     <integer name="maximum_user_dictionary_word_length" translatable="false">48</integer>
 
     <!-- Dashboard number of columns -->
-    <integer name="dashboard_num_columns">1</integer>
+    <integer name="dashboard_num_columns">2</integer>
 
     <!-- Whether to hide IMS and DUN Apns -->
     <bool name="config_regional_hide_ims_and_dun_apns">false</bool>
