@@ -146,7 +146,6 @@
         </activity>
 
         <activity android:name="com.crdroid.settings.fragments.HAFRAppListActivity" />
-        <activity android:name="com.crdroid.settings.fragments.WakelockBlockerFragment" />
 
         <activity android:name=".Settings$crDroidSettings"
             android:label="@string/header_category_crdroid">
