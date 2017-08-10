@@ -37,7 +37,7 @@
     <string name="theme_title">Color engine</string>
     <string name="theme_summary">Select different colors for your current theme</string>
     <string name="theme_accent_color">Accent color</string>
-    <string name="theme_primary_color">Primary color</string>
+    <string name="theme_primary_color">Primary/background color</string>
     <string name="theme">Theme</string>
     <string name="oms_enabled">Theme modes unavailable because a Substratum theme overlay is currently installed</string>
     <string name="red">Red</string>
