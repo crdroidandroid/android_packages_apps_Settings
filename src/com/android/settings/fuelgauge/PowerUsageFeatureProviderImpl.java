@@ -37,6 +37,8 @@ import java.util.Set;
 /** Implementation of {@code PowerUsageFeatureProvider} */
 public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider {
 
+    private static final String ADDITIONAL_BATTERY_INFO_ACTION = "com.google.android.apps.turbo.SHOW_ADDITIONAL_BATTERY_INFO";
+    private static final String ADDITIONAL_BATTERY_INFO_PACKAGE = "com.google.android.apps.turbo";
     private static final String PACKAGE_CALENDAR_PROVIDER = "com.android.providers.calendar";
     private static final String PACKAGE_MEDIA_PROVIDER = "com.android.providers.media";
     private static final String[] PACKAGES_SYSTEM = {PACKAGE_MEDIA_PROVIDER,
@@ -102,7 +104,8 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
 
     @Override
     public Intent getAdditionalBatteryInfoIntent() {
-        return null;
+        Intent intent = new Intent(ADDITIONAL_BATTERY_INFO_ACTION);
+        return intent.setPackage(ADDITIONAL_BATTERY_INFO_PACKAGE);
     }
 
     @Override
