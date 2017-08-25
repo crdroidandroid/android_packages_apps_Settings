@@ -7916,9 +7916,6 @@
     <!-- Toast message letting the user know the how to trigger telephony monitor -->
     <string name="telephony_monitor_toast">To apply telephony monitor change, reboot device</string>
 
-    <!-- Name of the setting to disable the automatic update -->
-    <string name="ota_disable_automatic_update">Automatic system updates</string>
-
     <!-- Label for category for data usage [CHAR LIMIT=30] -->
     <string name="usage">Usage</string>
 
