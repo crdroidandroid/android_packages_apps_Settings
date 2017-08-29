@@ -55,7 +55,7 @@ public class DevelopmentSettingsEnabler implements LifecycleObserver, OnResume {
 
     private void updateEnabledState() {
         mLastEnabledState = Settings.Global.getInt(mContext.getContentResolver(),
-                Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 0) != 0;
+                Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 1) != 0;
     }
 
     public boolean getLastEnabledState() {
