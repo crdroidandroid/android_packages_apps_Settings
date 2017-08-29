@@ -47,7 +47,7 @@ public class SystemUpdatePreferenceController extends PreferenceController {
 
     @Override
     public boolean isAvailable() {
-        return mUm.isAdminUser();
+        return false;
     }
 
     @Override
