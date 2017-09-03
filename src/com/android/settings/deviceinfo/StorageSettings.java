@@ -176,6 +176,7 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
         Collections.sort(volumes, VolumeInfo.getDescriptionComparator());
 
         int[] colorPrivate = getColorPrivate(getResources());
+        long primaryPhysicalTotalSpace = PrivateStorageInfo.getPrimaryPhysicalTotalSpace(volumes);
         for (VolumeInfo vol : volumes) {
             if (vol.getType() == VolumeInfo.TYPE_PRIVATE) {
                 final long volumeTotalBytes = PrivateStorageInfo.getTotalSize(vol,
