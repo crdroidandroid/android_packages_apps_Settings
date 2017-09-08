@@ -229,6 +229,15 @@
         android:order="-90"
         android:key="top_level_account_category"
         android:layout="@layout/settingslib_preference_category_no_title">
+
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="com.crdroid.settings.crDroidSettingsLayout"
+            android:icon="@drawable/ic_settings_cogs_filled"
+            android:key="top_level_crdroid"
+            android:order="-50"
+            android:title="@string/crdroid_settings_title"
+            android:summary="@string/crdroid_settings_summary"
+            settings:controller="com.crdroid.settings.TopLevelSettingsPreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory
