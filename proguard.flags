@@ -10,6 +10,7 @@
 -keep public class com.android.settings*.** extends androidx.fragment.app.Fragment {
     void <init>();
 }
+-keep class com.crdroid.settings.**
 
 # Keep all preference controllers needed by slice and DashboardFragment.
 -keep class * extends com.android.settings.core.BasePreferenceController {
