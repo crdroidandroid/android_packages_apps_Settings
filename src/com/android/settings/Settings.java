@@ -583,4 +583,6 @@ public class Settings extends SettingsActivity {
     public static class MagnificationActivity extends SettingsActivity { /* empty */ }
     public static class FlashNotificationsActivity extends SettingsActivity { /* empty */ }
     public static class NotificationBundlesActivity extends SettingsActivity { /* empty */ }
+
+    public static class crDroidSettingsLayoutActivity extends SettingsActivity {}
 }
