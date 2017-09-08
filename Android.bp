@@ -44,7 +44,18 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: [
+           "src/**/*.java",
+           "src/**/*.kt",
+           "crDroidSettings/src/**/*.java",
+           "crDroidSettings/src/**/*.kt",
+    ],
+
+    aaptflags: ["--extra-packages com.crdroid.settings"],
+
+    resource_dirs: ["res",
+                    "crDroidSettings/res"
+    ],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -83,6 +94,9 @@ android_library {
         "ims-common",
         "app-compat-annotations",
     ],
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 platform_compat_config {
