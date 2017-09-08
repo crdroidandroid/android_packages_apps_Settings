@@ -55,6 +55,16 @@
         android:order="-120"
         android:key="top_level_personalize_category"
         android:layout="@layout/settingslib_expressive_untitled_preference_category">
+
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="com.crdroid.settings.crDroidSettingsLayout"
+            android:icon="@drawable/ic_settings_cogs_filled"
+            android:key="top_level_crdroid"
+            android:order="-50"
+            android:title="@string/crdroid_settings_title"
+            android:summary="@string/crdroid_settings_summary"
+            settings:controller="com.crdroid.settings.TopLevelSettingsPreferenceController"/>
+
         <com.android.settings.widget.HomepagePreference
             android:fragment="com.android.settings.applications.AppDashboardFragment"
             android:icon="@drawable/ic_apps_filled"
