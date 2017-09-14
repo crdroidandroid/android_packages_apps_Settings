@@ -19,4 +19,8 @@
     <string name="twilight_mode_location_dialog">Location disabled</string>
     <string name="twilight_mode_location_disabled">Location access is disabled</string>
     <string name="twilight_mode_location_enable">Enable</string>
+
+    <!-- crDroid Settings -->
+    <string name="crdroid_settings_title">crDroid Settings</string>
+    <string name="crdroid_settings_summary">Open Goodness</string>
 </resources>
