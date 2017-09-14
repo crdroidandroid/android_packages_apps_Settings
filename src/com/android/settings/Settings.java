@@ -178,4 +178,5 @@ public class Settings extends SettingsActivity {
     public static class SystemDashboardActivity extends SettingsActivity {}
     public static class SupportDashboardActivity extends SettingsActivity {}
 
+    public static class crDroidSettingsLayoutActivity extends SettingsActivity {}
 }
