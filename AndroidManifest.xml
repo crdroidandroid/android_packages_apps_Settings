@@ -82,6 +82,7 @@
     <uses-permission android:name="android.permission.MANAGE_NOTIFICATIONS"/>
     <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
     <uses-permission android:name="android.permission.MANAGE_APP_OPS_RESTRICTIONS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application android:label="@string/settings_label"
             android:icon="@drawable/ic_launcher_settings"
@@ -3121,5 +3122,15 @@
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/crdroid_settings_summary"/>
         </activity>
+        <service android:name="com.crdroid.settings.fragments.about.ota.scheduler.OTAService" />
+        <receiver android:name="com.commonsware.cwac.wakeful.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="com.commonsware.cwac.wakeful"
+                android:resource="@xml/wakeful"/>
+        </receiver>
     </application>
 </manifest>
