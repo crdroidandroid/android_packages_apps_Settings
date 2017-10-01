@@ -19,6 +19,7 @@ LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../crDroidSettings/src)
+LOCAL_ASSET_DIR := packages/apps/crDroidSettings/assets
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-support-v4 \
@@ -42,7 +43,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 
 LOCAL_STATIC_JAVA_LIBRARIES += \
     android-support-v7-cardview \
-    android-support-design
+    android-support-design \
+    libcwac
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/design/res \
@@ -75,6 +77,12 @@ include frameworks/opt/setupwizard/library/common-gingerbread.mk
 include frameworks/base/packages/SettingsLib/common.mk
 
 include $(BUILD_PACKAGE)
+
+include $(CLEAR_VARS)
+
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES += libcwac:../crDroidSettings/libs/cwac-wakeful-1.1.0.jar
+
+include $(BUILD_MULTI_PREBUILT)
 
 # Use the following include to make our test apk.
 ifeq (,$(ONE_SHOT_MAKEFILE))
