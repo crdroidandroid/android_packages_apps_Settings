@@ -19,4 +19,5 @@
     <!-- crDroid Settings -->
     <string name="crdroid_settings_title">crDroid Settings</string>
     <string name="crdroid_settings_summary">Open Goodness</string>
+    <string name="crdroid_ota_title">Updates</string>
 </resources>

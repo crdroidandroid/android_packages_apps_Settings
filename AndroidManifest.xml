@@ -3129,6 +3129,17 @@
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/crdroid_settings_summary"/>
         </activity>
+        <activity
+            android:name="com.crdroid.settings.crDroidOTA"
+            android:label="@string/crdroid_ota_title"
+            android:icon="@drawable/ic_settings_crdroid">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.crdroid.settings.crDroidOTA" />
+        </activity>
         <service android:name="com.crdroid.settings.fragments.about.ota.scheduler.OTAService" />
         <receiver android:name="com.commonsware.cwac.wakeful.AlarmReceiver">
             <intent-filter>
