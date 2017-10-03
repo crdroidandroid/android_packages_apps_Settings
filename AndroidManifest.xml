@@ -3132,10 +3132,9 @@
         <activity
             android:name="com.crdroid.settings.crDroidOTA"
             android:label="@string/crdroid_ota_title"
-            android:icon="@drawable/ic_settings_crdroid">
+            android:icon="@drawable/ic_ota">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.crdroid.settings.crDroidOTA" />
