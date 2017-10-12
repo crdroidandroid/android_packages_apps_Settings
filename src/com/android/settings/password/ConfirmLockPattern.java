@@ -156,7 +156,7 @@ public class ConfirmLockPattern extends ConfirmDeviceCredentialBaseActivity {
                 //              ensuring it's safe to do so. (Note that ConfirmLockPassword
                 //              doesn't have this).
                 if (!mFrp && !mLockPatternUtils.isLockPatternEnabled(mEffectiveUserId)) {
-                    getActivity().setResult(Activity.RESULT_OK);
+                    getActivity().setResult(Activity.RESULT_OK, new Intent());
                     getActivity().finish();
                 }
             }
