@@ -56,6 +56,7 @@ public class AmbientDisplaySettings extends DashboardFragment {
         use(AmbientDisplayNotificationsPreferenceController.class).setConfig(getConfig(context));
         use(DoubleTapScreenPreferenceController.class).setConfig(getConfig(context));
         use(PickupGesturePreferenceController.class).setConfig(getConfig(context));
+        addPreferenceController(new AmbientDisplayCustomPreferenceController(context));
     }
 
     @Override
