@@ -134,6 +134,10 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.crdroid.settings.crDroidSettings;
 import com.crdroid.settings.crDroidSettingsLayout;
+import com.crdroid.settings.fragments.NavBar;
+import com.crdroid.settings.fragments.navbar.Fling;
+import com.crdroid.settings.fragments.navbar.Pulse;
+import com.crdroid.settings.fragments.navbar.Smartbar;
 
 public class SettingsGateway {
 
@@ -258,6 +262,10 @@ public class SettingsGateway {
             DataUsageList.class.getName(),
             crDroidSettings.class.getName(),
             crDroidSettingsLayout.class.getName(),
+            NavBar.class.getName(),
+            Fling.class.getName(),
+            Pulse.class.getName(),
+            Smartbar.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -298,5 +306,9 @@ public class SettingsGateway {
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.crDroidSettingsActivity.class.getName(),
             Settings.crDroidSettingsLayoutActivity.class.getName(),
+            Settings.NavigationSettingsActivity.class.getName(),
+            Settings.FlingSettingsActivity.class.getName(),
+            Settings.PulseSettingsActivity.class.getName(),
+            Settings.SmartbarSettingsActivity.class.getName(),
     };
 }
