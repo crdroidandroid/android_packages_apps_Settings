@@ -23,6 +23,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.hardware.usb.UsbManager;
 import android.os.SystemProperties;
+import android.os.UserHandle;
+import android.provider.Settings;
 
 import android.util.Log;
 
@@ -46,6 +48,9 @@ public class UsbModeChooserReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         String action = intent.getAction();
 
+        boolean mAutoModeEnabled = Settings.System.getIntForUser(context.getContentResolver(),
+                Settings.System.AUTO_USB_MODE_CHOOSER, 0, UserHandle.USER_CURRENT) == 1;
+
         if(action != null) {
             if (UsbManager.ACTION_USB_STATE.equals(action)) {
                 boolean plugged = intent.getBooleanExtra(UsbManager.USB_CONNECTED, false);
@@ -57,7 +62,7 @@ public class UsbModeChooserReceiver extends BroadcastReceiver {
                     //Since system is not ready to show the dialog during boot up phase.
                     //Don't show dialog before boot up is completed.
                     //Don't show the dialog when AOA is automatically enabled.
-                    if (!mSoftSwitch
+                    if (mAutoModeEnabled && !mSoftSwitch
                             && SystemProperties.getBoolean(PROPERTY_SYS_BOOT_COMPLETE, false)
                             && SystemProperties.getBoolean(PROPERTY_DEV_BOOT_COMPLETE, false)
                             && !intent.getBooleanExtra(UsbManager.USB_FUNCTION_AUDIO_SOURCE, false)
