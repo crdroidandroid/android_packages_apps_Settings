@@ -100,6 +100,6 @@ public class AmbientDisplayAlwaysOnPreferenceController extends
 
         return new InlineSwitchPayload(Settings.Secure.DOZE_ALWAYS_ON,
                 ResultPayload.SettingsSource.SECURE, ON /* onValue */, intent, isAvailable(),
-                ON /* defaultValue */);
+                OFF /* defaultValue */);
     }
 }
