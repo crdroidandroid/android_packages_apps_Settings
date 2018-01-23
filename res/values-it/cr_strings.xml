@@ -1,0 +1,118 @@
+    <?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016-2017 crDroid Android Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="twilight_mode_location_dialog">Posizione disabilitata</string>
+    <string name="twilight_mode_location_disabled">L\'accesso alla posizione è disabilitata</string>
+    <string name="twilight_mode_location_enable">Abilita</string>
+
+    <!-- crDroid Settings -->
+    <string name="crdroid_settings_title">Impostazioni crDroid</string>
+    <string name="crdroid_settings_summary">Apri le impostazioni</string>
+    <string name="crdroid_ota_title">Aggiornamenti</string>
+
+    <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">Posizione</string>
+    <string name="app_ops_cat_personal">Personale</string>
+    <string name="app_ops_cat_messaging">Messaggistica</string>
+    <string name="app_ops_cat_media">Multimediale</string>
+    <string name="app_ops_cat_device">Dispositivo</string>
+    <string name="app_ops_cat_bootup">Avvio</string>
+		
+    <!-- App ops labels -->
+	  <string name="app_ops_access_camera">camera</string>
+    <string name="app_ops_access_location">posizione</string>
+    <string name="app_ops_access_notifications">notifiche</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">avvio automatico</string>
+    <string name="app_ops_delete_call_log">elimina registro chiamate</string>
+    <string name="app_ops_delete_contacts">elimina contatti</string>
+    <string name="app_ops_delete_mms">elimina MMS</string>
+    <string name="app_ops_delete_sms">elimina SMS</string>
+    <string name="app_ops_draw_on_top">disegna sulla parte superiore</string>
+    <string name="app_ops_get_usage_stats">otteni le statistiche di utilizzo</string>
+    <string name="app_ops_keep_device_awake">tieni sveglio</string>
+    <string name="app_ops_make_phone_call">effettua una chiamata</string>
+    <string name="app_ops_modify_calendar">aggiornamento calendario</string>
+    <string name="app_ops_modify_call_log">aggiornamento registro chiamate</string>
+    <string name="app_ops_modify_clipboard">modifica appunti</string>
+    <string name="app_ops_modify_contacts">aggiornamento contatti</string>
+    <string name="app_ops_modify_settings">aggiornamento impostazioni</string>
+    <string name="app_ops_mute_unmute_microphone">muto/attiva microfono</string>
+    <string name="app_ops_play_audio">riproduzione audio</string>
+    <string name="app_ops_post_notification">posticipa notifica</string>
+    <string name="app_ops_project_media">progetto multimediale</string>
+    <string name="app_ops_read_calendar">leggi calendario</string>
+    <string name="app_ops_read_call_log">leggi registro chiamate</string>
+    <string name="app_ops_read_clipboard">leggi appunti</string>
+    <string name="app_ops_read_contacts">leggi contatti</string>
+    <string name="app_ops_read_mms">leggi MMS</string>
+    <string name="app_ops_read_sms">leggi SMS</string>
+    <string name="app_ops_receive_sms">ricezione SMS</string>
+    <string name="app_ops_record_audio">registra audio</string>
+    <string name="app_ops_send_mms">invia MMS</string>
+    <string name="app_ops_send_sms">invia SMS</string>
+    <string name="app_ops_toast_window">messaggi toast</string>
+    <string name="app_ops_use_alarm_volume">volume allarmi</string>
+    <string name="app_ops_use_audio_focus">audio focus</string>
+    <string name="app_ops_use_bluetooth_volume">volume bluetooth</string>
+    <string name="app_ops_use_master_volume">volume principale</string>
+    <string name="app_ops_use_media_buttons">pulsanti multimediali</string>
+    <string name="app_ops_use_media_volume">volume multimediale</string>
+    <string name="app_ops_use_notification_volume">volume notifica</string>
+    <string name="app_ops_use_ring_volume">volume suoneria</string>
+    <string name="app_ops_use_vibrate">vibrazione al tocco</string>
+    <string name="app_ops_use_voice_volume">volume chiamata vocale</string>
+    <string name="app_ops_write_mms">scrivi MMS</string>
+    <string name="app_ops_write_sms">scrivi SMS</string>
+    <string name="app_ops_use_fingerprint">impronta digitale</string>
+    <string name="app_ops_add_voicemail">segreteria</string>
+    <string name="app_ops_read_phone_state">accesso stato telefono</string>
+    <string name="app_ops_scan_wifi">Scansione reti WiFi</string>
+    <string name="app_ops_change_wallpaper">cambia sfondo</string>
+    <string name="app_ops_assist_structure">assistenza struttura</string>
+    <string name="app_ops_assist_screenshot">screenshot</string>
+    <string name="app_ops_use_body_sensors">sensori corporei</string>
+    <string name="app_ops_read_cell_broadcasts">trasmissioni cella</string>
+    <string name="app_ops_mock_location">simulazione posizione</string>
+    <string name="app_ops_read_external_storage">leggi mem. est.</string>
+    <string name="app_ops_write_external_storage">scrivi mem. est.</string>
+    <string name="app_ops_turn_on_screen">attiva schermo</string>
+    <string name="app_ops_get_accounts">account dispositivo</string>
+    <string name="app_ops_run_in_background">esegui in background</string>
+    <string name="app_ops_accessibility_volume">volume accessibilità</string>
+    <string name="app_ops_read_phone_numbers">leggi numeri tel.</string>
+    <string name="app_ops_request_install_packages">installa pacchetti</string>
+    <string name="app_ops_picture_in_picture">pip</string>
+    <string name="app_ops_app_start_foreground">esegui in primo piano</string>
+    <string name="app_ops_answer_phone_calls">rispondi alle chiamate</string>
+    <string name="app_ops_boot_completed">avvio automatico</string>
+    
+    <!-- App ops detail -->
+    <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (used <xliff:g id="count">%2$s</xliff:g>)</string>
+    <string name="app_ops_allowed_count">Permetti <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_ignored_count">Nega <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_both_count">Consenti <xliff:g id="count">%1$s</xliff:g>, denied <xliff:g id="count">%2$s</xliff:g></string>
+    <!-- App ops menu options -->
+    <string name="app_ops_show_user_apps">Mostra app utente</string>
+    <string name="app_ops_show_system_apps">Mostra app integrate</string>
+    <string name="app_ops_reset_counters">Resettare i contatori permetti/nega</string>
+    <string name="app_ops_reset_confirm_title">Conferma il ripristino dei contatori</string>
+    <string name="app_ops_reset_confirm_mesg">Sei sicuro di voler ripristinare i contatori?</string>
+
+    <!-- Quick unlock -->
+   <string name="unlock_quick_unlock_control_title">Sblocco rapido</string>
+   <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando viene inserito il PIN/password corretta</string>
+
+    <string name="background_processes_settings_title">Processi in background</string>
