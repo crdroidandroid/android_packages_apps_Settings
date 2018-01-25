@@ -200,7 +200,7 @@ public final class DeviceProfilesSettings extends InstrumentedDialogFragment imp
 
         final MapProfile mapProfile = mManager.getProfileManager().getMapProfile();
         final int mapPermission = mCachedDevice.getMessagePermissionChoice();
-        if (mapPermission != CachedBluetoothDevice.ACCESS_UNKNOWN) {
+        if ((mapProfile != null) && (mapPermission != CachedBluetoothDevice.ACCESS_UNKNOWN)) {
             CheckBox mapPreference = createProfilePreference(mapProfile);
             mProfileContainer.addView(mapPreference);
         }
