@@ -216,29 +216,23 @@ public class ApnEditor extends SettingsPreferenceFragment
         mReadOnlyApnTypes = null;
         mReadOnlyApnFields = null;
 
-        CarrierConfigManager configManager = (CarrierConfigManager)
-                getSystemService(Context.CARRIER_CONFIG_SERVICE);
-        if (configManager != null) {
-            PersistableBundle b = configManager.getConfig();
-            if (b != null) {
-                mReadOnlyApnTypes = b.getStringArray(
-                        CarrierConfigManager.KEY_READ_ONLY_APN_TYPES_STRING_ARRAY);
-                if (!ArrayUtils.isEmpty(mReadOnlyApnTypes)) {
-                    for (String apnType : mReadOnlyApnTypes) {
-                        Log.d(TAG, "onCreate: read only APN type: " + apnType);
-                    }
-                }
-                mReadOnlyApnFields = b.getStringArray(
-                        CarrierConfigManager.KEY_READ_ONLY_APN_FIELDS_STRING_ARRAY);
-            }
-        }
-
         if (action.equals(Intent.ACTION_EDIT)) {
             Uri uri = intent.getData();
             if (!uri.isPathPrefixMatch(Telephony.Carriers.CONTENT_URI)) {
                 Log.e(TAG, "Edit request not for carrier table. Uri: " + uri);
                 finish();
                 return;
+            }
+            CarrierConfigManager configManager = (CarrierConfigManager)
+                    getSystemService(Context.CARRIER_CONFIG_SERVICE);
+            if (configManager != null) {
+                PersistableBundle b = configManager.getConfig();
+                if (b != null) {
+                    mReadOnlyApnTypes = b.getStringArray(
+                            CarrierConfigManager.KEY_READ_ONLY_APN_TYPES_STRING_ARRAY);
+                    mReadOnlyApnFields = b.getStringArray(
+                            CarrierConfigManager.KEY_READ_ONLY_APN_FIELDS_STRING_ARRAY);
+                }
             }
             mUri = uri;
         } else if (action.equals(Intent.ACTION_INSERT)) {
@@ -281,7 +275,7 @@ public class ApnEditor extends SettingsPreferenceFragment
 
         mTelephonyManager = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
 
-        Log.d(TAG, "onCreate: EDITED " + mCursor.getInt(EDITED_INDEX));
+/*        Log.d(TAG, "onCreate: EDITED " + mCursor.getInt(EDITED_INDEX));
         // if it's not a USER_EDITED apn, check if it's read-only
         if (mCursor.getInt(EDITED_INDEX) != Telephony.Carriers.USER_EDITED &&
                 (mCursor.getInt(USER_EDITABLE_INDEX) == 0 ||
@@ -291,7 +285,7 @@ public class ApnEditor extends SettingsPreferenceFragment
             disableAllFields();
         } else if (!ArrayUtils.isEmpty(mReadOnlyApnFields)) {
             disableFields(mReadOnlyApnFields);
-        }
+        }*/
 
         for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
             getPreferenceScreen().getPreference(i).setOnPreferenceChangeListener(this);
@@ -310,7 +304,7 @@ public class ApnEditor extends SettingsPreferenceFragment
      * @param apnTypes array of APN types. "*" indicates all types.
      * @return true if all apn types are included in the array, false otherwise
      */
-    static boolean hasAllApns(String[] apnTypes) {
+    private boolean hasAllApns(String[] apnTypes) {
         if (ArrayUtils.isEmpty(apnTypes)) {
             return false;
         }
@@ -744,7 +738,7 @@ public class ApnEditor extends SettingsPreferenceFragment
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         // If it's a new APN, then cancel will delete the new entry in onPause
-        if (!mNewApn && !mReadOnlyApn) {
+        if (!mNewApn) {
             menu.add(0, MENU_DELETE, 0, R.string.menu_delete)
                 .setIcon(R.drawable.ic_menu_delete);
         }
@@ -1069,25 +1063,6 @@ public class ApnEditor extends SettingsPreferenceFragment
             errorMsg = mRes.getString(R.string.error_mcc_not3);
         } else if ((mnc.length() & 0xFFFE) != 2) {
             errorMsg = mRes.getString(R.string.error_mnc_not23);
-        }
-
-        if (errorMsg == null) {
-            // if carrier does not allow editing certain apn types, make sure type does not include
-            // those
-            if (!ArrayUtils.isEmpty(mReadOnlyApnTypes)
-                    && apnTypesMatch(mReadOnlyApnTypes, getUserEnteredApnType())) {
-                StringBuilder stringBuilder = new StringBuilder();
-                for (String type : mReadOnlyApnTypes) {
-                    stringBuilder.append(type).append(", ");
-                    Log.d(TAG, "getErrorMsg: appending type: " + type);
-                }
-                // remove last ", "
-                if (stringBuilder.length() >= 2) {
-                    stringBuilder.delete(stringBuilder.length() - 2, stringBuilder.length());
-                }
-                errorMsg = String.format(mRes.getString(R.string.error_adding_apn_type),
-                        stringBuilder);
-            }
         }
 
         return errorMsg;
