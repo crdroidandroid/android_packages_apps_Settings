@@ -53,17 +53,17 @@
         android:summary="@string/summary_placeholder"
         android:ringtoneType="notification" />
 
-    <!-- Battery light -->
+    <!-- Battery light
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="battery_lights"
         lineage:requiresConfig="@*lineageos.platform:integer/config_deviceLightCapabilities"
-        lineage:requiresConfigMask="64" />
+        lineage:requiresConfigMask="64" /> -->
 
-    <!-- Notification lights -->
+    <!-- Notification lights
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="notification_lights"
         lineage:requiresConfig="@*android:bool/config_intrusiveNotificationLed"
-        lineage:replacesKey="notification_pulse" />
+        lineage:replacesKey="notification_pulse" /> -->
 
     <Preference
         android:key="gesture_swipe_down_fingerprint_notifications"
