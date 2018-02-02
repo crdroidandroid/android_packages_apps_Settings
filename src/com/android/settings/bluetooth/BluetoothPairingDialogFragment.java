@@ -20,6 +20,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputFilter;
@@ -321,14 +322,24 @@ public class BluetoothPairingDialogFragment extends InstrumentedDialogFragment i
      * not require user input.
      */
     private View createView() {
+
+        Context context = getActivity();
+
         View view = getActivity().getLayoutInflater().inflate(R.layout.bluetooth_pin_confirm, null);
         TextView pairingViewCaption = (TextView) view.findViewById(R.id.pairing_caption);
         TextView pairingViewContent = (TextView) view.findViewById(R.id.pairing_subhead);
         TextView messagePairing = (TextView) view.findViewById(R.id.pairing_code_message);
+
+        pairingViewCaption.setTextColor(getNormalTextColor(context));
+        pairingViewContent.setTextColor(getNormalTextColor(context));
+        messagePairing.setTextColor(getNormalTextColor(context));
+
         CheckBox contactSharing = (CheckBox) view.findViewById(
                 R.id.phonebook_sharing_message_confirm_pin);
         contactSharing.setText(getString(R.string.bluetooth_pairing_shares_phonebook,
                 mPairingController.getDeviceName()));
+
+        contactSharing.setTextColor(getNormalTextColor(context));
 
         contactSharing.setVisibility(
                 mPairingController.isProfileReady() ? View.GONE : View.VISIBLE);
@@ -346,4 +357,10 @@ public class BluetoothPairingDialogFragment extends InstrumentedDialogFragment i
         return view;
     }
 
+    private int getNormalTextColor(Context context) {
+        TypedArray array = context.obtainStyledAttributes(new int[]{android.R.attr.textColorPrimary});
+        int color = array.getColor(0, 0);
+        array.recycle();
+        return color;
+    }
 }
