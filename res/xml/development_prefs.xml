@@ -19,6 +19,18 @@
         android:key="development_prefs_screen"
         android:title="@string/development_settings_title">
 
+    <ListPreference
+        android:key="root_access"
+        android:icon="@drawable/ic_hash"
+        android:title="@string/root_access"
+        android:persistent="false" />
+
+    <Preference
+        android:key="root_appops"
+        android:icon="@drawable/ic_hash"
+        android:title="@string/root_appops_title"
+        android:summary="@string/root_appops_summary" />
+
     <PreferenceScreen
             android:key="development_tools"
             android:title="@string/development_tools_title"
@@ -120,16 +132,6 @@
             android:targetPackage="com.android.settings"
             android:targetClass="com.android.settings.qstile.DevelopmentTileConfigActivity" />
     </Preference>
-
-    <ListPreference
-        android:key="root_access"
-        android:title="@string/root_access"
-        android:persistent="false" />
-
-    <Preference
-        android:key="root_appops"
-        android:title="@string/root_appops_title"
-        android:summary="@string/root_appops_summary" />
 
     <PreferenceCategory android:key="debug_debugging_category"
             android:title="@string/debug_debugging_category">
