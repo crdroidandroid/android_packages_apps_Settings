@@ -69,7 +69,7 @@ public class DisplaySettings extends DashboardFragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        mProgressiveDisclosureMixin.setTileLimit(4);
+        mProgressiveDisclosureMixin.setTileLimit(8);
     }
 
     @Override
