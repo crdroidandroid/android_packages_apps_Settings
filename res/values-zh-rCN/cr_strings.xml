@@ -16,15 +16,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="twilight_mode_location_dialog">Location disabled</string>
-  <string name="twilight_mode_location_disabled">Location access is disabled</string>
-  <string name="twilight_mode_location_enable">Enable</string>
+  <string name="twilight_mode_location_dialog">位置已禁用</string>
+  <string name="twilight_mode_location_disabled">位置权限已被禁用</string>
+  <string name="twilight_mode_location_enable">启用</string>
   <!-- crDroid Settings -->
-  <string name="crdroid_settings_title">crDroid Settings</string>
-  <string name="crdroid_settings_summary">Open Goodness</string>
-  <string name="crdroid_ota_title">Updates</string>
+  <string name="crdroid_settings_title">crDroid 设置</string>
+  <string name="crdroid_settings_summary">个性化您的设备</string>
+  <string name="crdroid_ota_title">更新</string>
   <!-- Quick unlock -->
-  <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-  <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
-  <string name="background_processes_settings_title">Background processes</string>
+  <string name="unlock_quick_unlock_control_title">快速解锁</string>
+  <string name="unlock_quick_unlock_control_summary">当输入正确的PIN或密码时，自动解锁设备</string>
+  <string name="background_processes_settings_title">后台程序</string>
 </resources>
