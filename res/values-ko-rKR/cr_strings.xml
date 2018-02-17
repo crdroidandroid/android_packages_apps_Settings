@@ -16,15 +16,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="twilight_mode_location_dialog">Location disabled</string>
-  <string name="twilight_mode_location_disabled">Location access is disabled</string>
-  <string name="twilight_mode_location_enable">Enable</string>
+  <string name="twilight_mode_location_dialog">뤼치 비활성화 됨</string>
+  <string name="twilight_mode_location_disabled">위치 접근이 비활성화 됨</string>
+  <string name="twilight_mode_location_enable">활성화</string>
   <!-- crDroid Settings -->
-  <string name="crdroid_settings_title">crDroid Settings</string>
-  <string name="crdroid_settings_summary">Open Goodness</string>
-  <string name="crdroid_ota_title">Updates</string>
+  <string name="crdroid_settings_title">crDroid 설정</string>
+  <string name="crdroid_settings_summary">안녕하세요</string>
+  <string name="crdroid_ota_title">업데이트</string>
   <!-- Quick unlock -->
-  <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-  <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
-  <string name="background_processes_settings_title">Background processes</string>
+  <string name="unlock_quick_unlock_control_title">빠른 잠금해제</string>
+  <string name="unlock_quick_unlock_control_summary">PIN/비밀번호를 올바르게 입력하면 자동으로 잠금을 해제합니다</string>
+  <string name="background_processes_settings_title">백그라운드 프로세스</string>
 </resources>
