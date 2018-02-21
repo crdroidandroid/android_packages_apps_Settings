@@ -3373,7 +3373,7 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.crdroid.settings.crDroidOTA" />
         </activity>
-        <service android:name="com.crdroid.settings.fragments.about.ota.scheduler.OTAService" />
+        <service android:name="com.crdroid.settings.fragments.about.update.scheduler.OTAService" />
         <receiver android:name="com.commonsware.cwac.wakeful.AlarmReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
