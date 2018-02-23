@@ -16,15 +16,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="twilight_mode_location_dialog">Location disabled</string>
-  <string name="twilight_mode_location_disabled">Location access is disabled</string>
-  <string name="twilight_mode_location_enable">Enable</string>
+  <string name="twilight_mode_location_dialog">Розташування вимкнуто</string>
+  <string name="twilight_mode_location_disabled">Доступ до розташування вимкнуто</string>
+  <string name="twilight_mode_location_enable">Ввімкнено</string>
   <!-- crDroid Settings -->
-  <string name="crdroid_settings_title">crDroid Settings</string>
-  <string name="crdroid_settings_summary">Open Goodness</string>
-  <string name="crdroid_ota_title">Updates</string>
+  <string name="crdroid_settings_title">Параметри crDroid</string>
+  <string name="crdroid_settings_summary">Відкрити</string>
+  <string name="crdroid_ota_title">Оновлення</string>
   <!-- Quick unlock -->
-  <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-  <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
-  <string name="background_processes_settings_title">Background processes</string>
+  <string name="unlock_quick_unlock_control_title">Швидке розблокування</string>
+  <string name="unlock_quick_unlock_control_summary">Автоматичне розблокування при введенні правильного пароля чи PIN-коду</string>
+  <string name="background_processes_settings_title">Фонові процеси</string>
 </resources>
