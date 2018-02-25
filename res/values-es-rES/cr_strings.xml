@@ -27,4 +27,6 @@
   <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
   <string name="unlock_quick_unlock_control_summary">Desbloquee automáticamente cuando se introduce el PIN y la contraseña correcta</string>
   <string name="background_processes_settings_title">Procesos en segundo plano</string>
+  <!-- App details: open play store link if app is user installed -->
+  <string name="app_play_store">Google Play</string>
 </resources>

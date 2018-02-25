@@ -27,4 +27,6 @@
   <string name="unlock_quick_unlock_control_title">Schnelles Entsperren</string>
   <string name="unlock_quick_unlock_control_summary">Automatisch entsperren, wenn die korrekte PIN/Passwort eingegeben wird</string>
   <string name="background_processes_settings_title">Hintergrundprozesse</string>
+  <!-- App details: open play store link if app is user installed -->
+  <string name="app_play_store">Google Play</string>
 </resources>

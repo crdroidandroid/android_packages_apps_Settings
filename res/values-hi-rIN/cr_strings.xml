@@ -27,4 +27,6 @@
   <string name="unlock_quick_unlock_control_title">त्वरित अनलॉक</string>
   <string name="unlock_quick_unlock_control_summary">जब सही पिन / पासवर्ड दर्ज किया गया है, तो स्वचालित रूप से अनलॉक करें</string>
   <string name="background_processes_settings_title">पृष्ठभूमि प्रक्रियाएं</string>
+  <!-- App details: open play store link if app is user installed -->
+  <string name="app_play_store">Google Play</string>
 </resources>
