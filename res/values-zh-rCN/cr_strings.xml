@@ -21,7 +21,7 @@
   <string name="twilight_mode_location_enable">启用</string>
   <!-- crDroid Settings -->
   <string name="crdroid_settings_title">crDroid 设置</string>
-  <string name="crdroid_settings_summary">迎接美好</string>
+  <string name="crdroid_settings_summary">个性化设置</string>
   <string name="crdroid_ota_title">更新</string>
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">快速解锁</string>
