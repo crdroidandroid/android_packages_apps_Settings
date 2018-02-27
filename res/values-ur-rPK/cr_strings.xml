@@ -16,17 +16,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="twilight_mode_location_dialog">Location disabled</string>
-  <string name="twilight_mode_location_disabled">Location access is disabled</string>
-  <string name="twilight_mode_location_enable">Enable</string>
+  <string name="twilight_mode_location_dialog">جگہ غیر فعال کر دی گئی</string>
+  <string name="twilight_mode_location_disabled">جگہ کی رسائی غیر فعال ہے</string>
+  <string name="twilight_mode_location_enable">فعال کرنا</string>
   <!-- crDroid Settings -->
-  <string name="crdroid_settings_title">crDroid Settings</string>
-  <string name="crdroid_settings_summary">Open Goodness</string>
-  <string name="crdroid_ota_title">Updates</string>
+  <string name="crdroid_settings_title">crDroid کی ترتیبات</string>
+  <string name="crdroid_settings_summary">کھلی اچھائی</string>
+  <string name="crdroid_ota_title">تازہ ترین</string>
   <!-- Quick unlock -->
-  <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-  <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
-  <string name="background_processes_settings_title">Background processes</string>
+  <string name="unlock_quick_unlock_control_title">فوری غیر مقفل</string>
+  <string name="unlock_quick_unlock_control_summary">صحیح پن/پاس ورڈ کو داخل کیےجابے پہ خود بخود غیر مقفل ہو جاتا ہے</string>
+  <string name="background_processes_settings_title">پس منظر کے عوامل</string>
   <!-- App details: open play store link if app is user installed -->
-  <string name="app_play_store">Google Play</string>
+  <string name="app_play_store">گوگل پلے</string>
 </resources>
