@@ -191,7 +191,7 @@ public final class BluetoothEnabler implements SwitchWidgetController.OnSwitchCh
             return false;
         }
 
-        if (mLocalAdapter != null) {
+        if (mLocalAdapter != null && mSwitch != null) {
             // disable switch, enable it again after BT state is changed
             mSwitch.setEnabled(false);
         }
@@ -203,7 +203,7 @@ public final class BluetoothEnabler implements SwitchWidgetController.OnSwitchCh
             // If we cannot toggle it ON then reset the UI assets:
             // a) The switch should be OFF but it should still be togglable (enabled = True)
             // b) The switch bar should have OFF text.
-            if (isChecked && !status) {
+            if (isChecked && !status && mSwitch != null) {
                 mSwitch.setChecked(false);
                 mSwitch.setEnabled(true);
                 mSwitchWidget.updateTitle(false);
