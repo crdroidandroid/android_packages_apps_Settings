@@ -48,7 +48,7 @@
   <string name="device_model">Model naprave</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Ime naprave</string>
-  <!-- About phone screen, LineageOS Api Level -->
+  <!-- About phone screen, crDroid Api Level -->
   <string name="mod_api_level">Raven crDroid API-ja</string>
   <string name="mod_api_level_default">Neznano</string>
   <!-- About phone screen, build date -->
