@@ -114,9 +114,6 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
 
         final Context context = getActivity();
 
-        int accentColor = Utils.getColorAttr(context, android.R.attr.colorAccent);
-        COLOR_PRIVATE[0] = accentColor;
-
         mStorageManager = context.getSystemService(StorageManager.class);
         mStorageManager.registerListener(mStorageListener);
 
