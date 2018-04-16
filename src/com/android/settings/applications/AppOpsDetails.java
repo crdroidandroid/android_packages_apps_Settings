@@ -1,6 +1,6 @@
 /**
  * Copyright (C) 2013 The Android Open Source Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy
@@ -98,9 +98,14 @@ public class AppOpsDetails extends SettingsPreferenceFragment {
     private static HashMap<Integer, Integer> OP_ICONS = new HashMap<>();
 
     static {
+        OP_ICONS.put(AppOpsManager.OP_ACTIVATE_VPN, R.drawable.ic_perm_vpn);
+        OP_ICONS.put(AppOpsManager.OP_AUDIO_ALARM_VOLUME, R.drawable.ic_perm_alarm);
+        OP_ICONS.put(AppOpsManager.OP_AUDIO_MEDIA_VOLUME, R.drawable.ic_perm_audio);
+        OP_ICONS.put(AppOpsManager.OP_BLUETOOTH_CHANGE, R.drawable.ic_perm_bluetooth);
         OP_ICONS.put(AppOpsManager.OP_BOOT_COMPLETED, R.drawable.ic_perm_boot);
         OP_ICONS.put(AppOpsManager.OP_CHANGE_WIFI_STATE, R.drawable.ic_perm_wifi);
         OP_ICONS.put(AppOpsManager.OP_DATA_CONNECT_CHANGE, R.drawable.ic_perm_data);
+        OP_ICONS.put(AppOpsManager.OP_GET_USAGE_STATS, R.drawable.ic_perm_data);
         OP_ICONS.put(AppOpsManager.OP_GPS, R.drawable.ic_perm_location);
         OP_ICONS.put(AppOpsManager.OP_MUTE_MICROPHONE, R.drawable.ic_perm_microphone);
         OP_ICONS.put(AppOpsManager.OP_NFC_CHANGE, R.drawable.ic_perm_nfc);
@@ -110,6 +115,8 @@ public class AppOpsDetails extends SettingsPreferenceFragment {
         OP_ICONS.put(AppOpsManager.OP_SU, R.drawable.ic_perm_su);
         OP_ICONS.put(AppOpsManager.OP_SYSTEM_ALERT_WINDOW, R.drawable.ic_perm_drawontop);
         OP_ICONS.put(AppOpsManager.OP_TAKE_AUDIO_FOCUS, R.drawable.ic_perm_audio);
+        OP_ICONS.put(AppOpsManager.OP_TOAST_WINDOW, R.drawable.ic_perm_notifications);
+        OP_ICONS.put(AppOpsManager.OP_TURN_SCREEN_ON, R.drawable.ic_perm_turnscreenon);
         OP_ICONS.put(AppOpsManager.OP_VIBRATE, R.drawable.ic_perm_vibrate);
         OP_ICONS.put(AppOpsManager.OP_WAKE_LOCK, R.drawable.ic_perm_nosleep);
         OP_ICONS.put(AppOpsManager.OP_WIFI_SCAN, R.drawable.ic_perm_wifi);
@@ -170,27 +177,20 @@ public class AppOpsDetails extends SettingsPreferenceFragment {
         mPreferenceScreen.removeAll();
         setAppHeader(mPackageInfo);
 
-        boolean isPlatformSigned = isPlatformSigned();
-        for (AppOpsState.OpsTemplate tpl : AppOpsState.ALL_TEMPLATES) {
-            /* If we are platform signed, only show the root switch, this
-             * one is safe to toggle while other permission-based ones could
-             * certainly cause system-wide problems
-             */
-            if (isPlatformSigned && tpl != AppOpsState.SU_TEMPLATE) {
-                 continue;
-            }
+        AppOpsState.OpsTemplate[] allTemplates = getTemplates();
+        for (AppOpsState.OpsTemplate tpl : allTemplates) {
             List<AppOpsState.AppOpEntry> entries = mState.buildState(tpl,
                     mPackageInfo.applicationInfo.uid, mPackageInfo.packageName, true);
             for (final AppOpsState.AppOpEntry entry : entries) {
                 String perm = null;
-                int op = 0;
+                int op = -1;
                 // Find the first permission with a known name
                 for (int i = 0; i < entry.getNumOpEntry() && perm == null; i++) {
                     op = entry.getOpEntry(i).getOp();
                     perm = AppOpsManager.opToPermission(op);
                 }
                 Drawable icon = getIconByPermission(perm);
-                if (icon == null && op != 0 && OP_ICONS.containsKey(op)) {
+                if (icon == null && op != -1 && OP_ICONS.containsKey(op)) {
                     icon = getActivity().getDrawable(OP_ICONS.get(op));
                 }
 
@@ -214,6 +214,31 @@ public class AppOpsDetails extends SettingsPreferenceFragment {
         }
 
         return true;
+    }
+
+    private AppOpsState.OpsTemplate[] getTemplates() {
+        /* If we are platform signed, only show the root switch, this
+         * one is safe to toggle while other permission-based ones could
+         * certainly cause system-wide problems
+         */
+        if (isPlatformSigned()) {
+            return new AppOpsState.OpsTemplate[]{ AppOpsState.SU_TEMPLATE };
+        }
+
+        int length = AppOpsState.ALL_PERMS_TEMPLATES.length;
+        AppOpsState.OpsTemplate[] allTemplates = new AppOpsState.OpsTemplate[length];
+        // Loop all existing templates and set the visibility of each perm to true
+        for (int i = 0; i < length; i++) {
+            AppOpsState.OpsTemplate tpl = AppOpsState.ALL_PERMS_TEMPLATES[i];
+            for (int j = 0; j < tpl.ops.length; j++) {
+                // we only want to use the template's orderings, not the visibility
+                tpl.showPerms[j] = true;
+            }
+
+            allTemplates[i] = tpl;
+        }
+
+        return allTemplates;
     }
 
     private Drawable getIconByPermission(String perm) {
