@@ -263,9 +263,6 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
 
     @Override
     public boolean onPreferenceTreeClick(Preference pref) {
-        if (pref == null) {
-            return false;
-        }
         final String key = pref.getKey();
         if (pref instanceof StorageVolumePreference) {
             // Picked a normal volume
