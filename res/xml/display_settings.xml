@@ -92,9 +92,9 @@
         android:key="density"
         android:title="@string/developer_smallest_width" />
 
-    <org.lineageos.internal.lineageparts.LineagePartsPreference
+    <!--<org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="long_screen_settings"
-        lineage:requiresConfig="@*lineageos.platform:bool/config_haveHigherAspectRatioScreen" />
+        lineage:requiresConfig="@*lineageos.platform:bool/config_haveHigherAspectRatioScreen" />-->
 
     <Preference
         android:key="screensaver"
