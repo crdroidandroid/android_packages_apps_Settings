@@ -729,7 +729,6 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new WebViewAppPreferenceController(context));
         controllers.add(new WebViewDevUiPreferenceController(context));
         controllers.add(new CoolColorTemperaturePreferenceController(context));
-        controllers.add(new DisableAutomaticUpdatesPreferenceController(context));
         controllers.add(new SelectDSUPreferenceController(context));
         controllers.add(new AdbPreferenceController(context, fragment));
         controllers.add(new ClearAdbKeysPreferenceController(context, fragment));
