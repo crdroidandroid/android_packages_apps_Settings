@@ -3333,5 +3333,6 @@
         <service android:name="com.crdroid.settings.fragments.ui.doze.DozeService"
                 android:permission="crDroidDozeService">
         </service>
+        <activity android:name="com.crdroid.settings.fragments.misc.HAFRAppListActivity" />
     </application>
 </manifest>
