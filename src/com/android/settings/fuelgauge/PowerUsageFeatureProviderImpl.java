@@ -32,8 +32,11 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
     private static final String PACKAGE_CALENDAR_PROVIDER = "com.android.providers.calendar";
     private static final String PACKAGE_MEDIA_PROVIDER = "com.android.providers.media";
     private static final String PACKAGE_SYSTEMUI = "com.android.systemui";
+    private static final String PACKAGE_GMS = "com.google.android.gms";
+    private static final String PACKAGE_GCS = "com.google.android.apps.gcs";
     private static final String[] PACKAGES_SYSTEM = {PACKAGE_MEDIA_PROVIDER,
             PACKAGE_CALENDAR_PROVIDER, PACKAGE_SYSTEMUI};
+    private static final String[] PACKAGES_SERVICE = {PACKAGE_GMS, PACKAGE_GCS};
 
     protected PackageManager mPackageManager;
     protected Context mContext;
@@ -45,6 +48,16 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
 
     @Override
     public boolean isTypeService(BatterySipper sipper) {
+        final int uid = sipper.uidObj == null ? -1 : sipper.getUid();
+        sipper.mPackages = mPackageManager.getPackagesForUid(uid);
+        if (sipper.mPackages != null) {
+            for (final String packageName : sipper.mPackages) {
+                if (ArrayUtils.contains(PACKAGES_SERVICE, packageName)) {
+                    return true;
+                }
+            }
+        }
+
         return false;
     }
 
