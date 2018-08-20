@@ -55,22 +55,6 @@
         android:title="@string/emergency_info_title"
         android:summary="@string/summary_placeholder"/>
 
-    <!-- Legal information -->
-    <Preference
-        android:key="legal_container"
-        android:order="5"
-        android:title="@string/legal_information"
-        android:fragment="com.android.settings.LegalSettings"
-        settings:allowDividerAbove="true"/>
-
-    <!-- Regulatory labels -->
-    <Preference
-        android:key="regulatory_info"
-        android:order="6"
-        android:title="@string/regulatory_labels">
-        <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
-    </Preference>
-
     <!-- SIM status -->
     <Preference
         android:key="sim_status"
