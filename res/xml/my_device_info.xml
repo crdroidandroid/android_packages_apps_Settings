@@ -45,47 +45,12 @@
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
 
-    <!-- Phone number -->
-    <Preference
-        android:key="phone_number"
-        android:order="3"
-        android:title="@string/status_number"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
-        settings:enableCopying="true"/>
-
     <Preference
         android:key="emergency_info"
         android:order="14"
         android:title="@string/emergency_info_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
-
-    <!-- Legal information -->
-    <Preference
-        android:key="legal_container"
-        android:order="15"
-        android:title="@string/legal_information"
-        android:fragment="com.android.settings.LegalSettings"
-        settings:allowDividerAbove="true"
-        settings:searchable="false"/>
-
-    <!-- Regulatory labels -->
-    <Preference
-        android:key="regulatory_info"
-        android:order="16"
-        android:title="@string/regulatory_labels">
-        <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
-    </Preference>
-
-    <!-- Safety & regulatory manual -->
-    <Preference
-        android:key="safety_info"
-        android:order="17"
-        android:title="@string/safety_and_regulatory_info">
-        <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO"/>
-    </Preference>
 
     <!-- SIM status -->
     <Preference
@@ -105,15 +70,6 @@
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
         settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
-
-    <!-- IMEI -->
-    <Preference
-        android:key="imei_info"
-        android:order="32"
-        android:title="@string/status_imei"
-        settings:keywords="@string/keywords_imei_info"
-        android:summary="@string/summary_placeholder"
-        settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
 
     <!-- Android version -->
     <Preference
@@ -159,21 +115,6 @@
         android:title="@string/status_up_time"
         android:summary="@string/summary_placeholder"
         android:selectable="false"/>
-
-    <!-- Manual -->
-    <Preference
-        android:key="manual"
-        android:order="50"
-        android:title="@string/manual">
-        <intent android:action="android.settings.SHOW_MANUAL"/>
-    </Preference>
-
-    <!-- Feedback on the device -->
-    <Preference
-        android:key="device_feedback"
-        android:order="51"
-        android:title="@string/device_feedback"
-        settings:keywords="@string/keywords_device_feedback"/>
 
     <!-- Device FCC equipment id -->
     <Preference
