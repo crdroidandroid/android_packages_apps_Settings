@@ -25,6 +25,7 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Process;
+import android.text.TextUtils;
 import android.util.SparseIntArray;
 
 import com.android.internal.os.BatterySipper;
@@ -233,7 +234,34 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
 
     @Override
     public boolean getEarlyWarningSignal(Context context, String id) {
-        return false;
+        // Build early warning URI and create a cursor to read it
+        Uri.Builder builder = new Uri.Builder().scheme("content")
+                                            .authority("com.google.android.apps.turbo.estimated_time_remaining")
+                                            .appendPath("early_warning")
+                                            .appendPath("id");
+        if (TextUtils.isEmpty(id)) {
+            builder.appendPath(context.getPackageName());
+        } else {
+            builder.appendPath(id);
+        }
+        Cursor cursor = context.getContentResolver().query(builder.build(), null, null, null, null);
+
+        // Return null if cursor is null or empty
+        if (cursor == null || !cursor.moveToFirst())
+            return false;
+
+        // Check if early warning is available
+        boolean earlyWarningAvailable  = cursor.getInt(cursor.getColumnIndex(IS_EARLY_WARNING_COL)) == 1;
+
+        // Cleanup
+        try {
+            cursor.close();
+        }
+        catch (NullPointerException nullPointerException) {
+            // We already checked if cursor is null, so it shouldn't be dereferenced yet.
+        }
+
+        return earlyWarningAvailable;
     }
 
     @Override
