@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <TextView
+        <!--<TextView
             style="@style/device_info_dialog_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
         <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionTextView
             style="@style/device_info_dialog_value"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"/>-->
 
         <TextView
             style="@style/device_info_dialog_label"
