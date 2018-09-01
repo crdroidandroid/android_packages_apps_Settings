@@ -40,6 +40,8 @@ import com.android.settings.security.SecuritySettings;
 import com.android.settings.system.SystemDashboardFragment;
 import com.android.settingslib.drawer.CategoryKey;
 
+import com.crdroid.settings.crDroidSettingsLayout;
+
 import java.util.Map;
 
 /**
@@ -103,6 +105,8 @@ public class DashboardFragmentRegistry {
             CategoryKey.CATEGORY_NIGHT_DISPLAY);
 
         CATEGORY_KEY_TO_PARENT_MAP = new ArrayMap<>(PARENT_TO_CATEGORY_KEY_MAP.size());
+        PARENT_TO_CATEGORY_KEY_MAP.put(crDroidSettingsLayout.class.getName(),
+                CategoryKey.CATEGORY_SYSTEM_DEVELOPMENT);
 
         for (Map.Entry<String, String> parentToKey : PARENT_TO_CATEGORY_KEY_MAP.entrySet()) {
             CATEGORY_KEY_TO_PARENT_MAP.put(parentToKey.getValue(), parentToKey.getKey());
