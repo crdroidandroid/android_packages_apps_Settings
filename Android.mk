@@ -19,6 +19,8 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
+LOCAL_SRC_FILES += $(call all-java-files-under, ../crDroidSettings/src)
+LOCAL_ASSET_DIR := packages/apps/crDroidSettings/assets
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-slices-builders \
@@ -46,7 +48,26 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     settings-logtags \
     org.lineageos.platform.internal
 
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+    frameworks/support/design/res \
+    frameworks/support/v7/preference/res \
+    frameworks/support/v14/preference/res \
+    frameworks/support/v7/appcompat/res \
+    frameworks/support/v7/recyclerview/res \
+    frameworks/support/v7/cardview/res \
+    packages/apps/crDroidSettings/res
+
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
+
+LOCAL_AAPT_FLAGS := --auto-add-overlay \
+    --extra-packages android.support.v7.preference \
+    --extra-packages android.support.v14.preference \
+    --extra-packages android.support.v17.preference \
+    --extra-packages android.support.v7.appcompat \
+    --extra-packages android.support.v7.recyclerview \
+    --extra-packages android.support.v7.cardview \
+    --extra-packages android.support.design \
+    --extra-packages com.crdroid.settings
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
