@@ -3473,5 +3473,15 @@
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/crdroid_settings_summary"/>
         </activity>
+        <activity android:name="Settings$OmniJawsSettingsActivity"
+                  android:label="@string/omnijaws_settings_title"
+                  android:taskAffinity="com.android.settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.crdroid.settings.fragments.ui.OmniJawsSettings" />
+        </activity>
     </application>
 </manifest>
