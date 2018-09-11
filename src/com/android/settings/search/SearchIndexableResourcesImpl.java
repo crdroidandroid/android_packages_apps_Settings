@@ -98,6 +98,18 @@ import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.wifi.ConfigureWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 
+import com.crdroid.settings.fragments.About;
+import com.crdroid.settings.fragments.Buttons;
+import com.crdroid.settings.fragments.LockScreen;
+import com.crdroid.settings.fragments.Miscellaneous;
+import com.crdroid.settings.fragments.Navigation;
+import com.crdroid.settings.fragments.Notifications;
+import com.crdroid.settings.fragments.QuickSettings;
+import com.crdroid.settings.fragments.Recents;
+import com.crdroid.settings.fragments.Sound;
+import com.crdroid.settings.fragments.StatusBar;
+import com.crdroid.settings.fragments.UserInterface;
+
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -191,6 +203,17 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(RecentLocationRequestSeeAllFragment.class);
         addIndex(PreviouslyConnectedDeviceDashboardFragment.class);
         addIndex(BluetoothDashboardFragment.class);
+        addIndex(About.class);
+        addIndex(Buttons.class);
+        addIndex(LockScreen.class);
+        addIndex(Miscellaneous.class);
+        addIndex(Navigation.class);
+        addIndex(Notifications.class);
+        addIndex(QuickSettings.class);
+        addIndex(Recents.class);
+        addIndex(Sound.class);
+        addIndex(StatusBar.class);
+        addIndex(UserInterface.class);
     }
 
     @Override
