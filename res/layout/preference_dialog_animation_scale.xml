@@ -41,8 +41,8 @@
                 android:padding="8dp"
                 android:layout_below="@+id/container"
                 settings:minI="0"
-                settings:maxI="1.5"
-                settings:defaultValue="1.0"
-                settings:digits="1" />
+                settings:maxI="1.50"
+                settings:defaultValue="1.00"
+                settings:digits="2" />
 
 </RelativeLayout>
