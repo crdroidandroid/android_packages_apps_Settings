@@ -1,0 +1,3 @@
+<WakefulIntentService
+    listener="com.crdroid.settings.fragments.about.update.scheduler.OTAListener"
+    />
