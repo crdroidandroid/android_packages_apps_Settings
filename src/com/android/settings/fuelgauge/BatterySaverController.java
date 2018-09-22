@@ -120,5 +120,6 @@ public class BatterySaverController extends BasePreferenceController
 
     @Override
     public void onBatteryChanged(boolean pluggedIn) {
+        mBatterySaverPref.setEnabled(!pluggedIn);
     }
 }
