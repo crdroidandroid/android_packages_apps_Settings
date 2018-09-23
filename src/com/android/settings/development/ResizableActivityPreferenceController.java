@@ -40,6 +40,11 @@ public class ResizableActivityPreferenceController extends DeveloperOptionsPrefe
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     public String getPreferenceKey() {
         return FORCE_RESIZABLE_KEY;
     }
