@@ -93,7 +93,7 @@ public class ValidatedEditTextPreference extends CustomEditTextPreference {
             textView.setInputType(
                     InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
         } else {
-            textView.setInputType(InputType.TYPE_CLASS_TEXT);
+            textView.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
         }
     }
 
