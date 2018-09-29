@@ -20,4 +20,14 @@
         <item name="android:textColor">@color/primary_dark_material_light</item>
         <item name="android:lineSpacingMultiplier">1.2</item>
     </style>
+	
+	<style name="BatteryGauage_TextView">
+        <item name="android:fontFamily">@font/google_sans_bold</item>
+    </style>
+    <style name="BatteryGauage_TextView_Light">
+        <item name="android:fontFamily">@font/google_sans</item>
+    </style>
+	<declare-styleable name="Themes">
+        <attr name="waveViewStyle" format="reference"/>
+    </declare-styleable>
 </resources>
