@@ -97,6 +97,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RESTART_UI"/>
     <uses-permission android:name="android.permission.CHANGE_OVERLAY_PACKAGES" />
+    <uses-permission android:name="android.permission.NAVIGATION_EDITOR" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
@@ -3440,6 +3441,53 @@
 	<service android:name="com.crdroid.settings.fragments.ui.DozeService"
                  android:permission="crDroidDozeService">
         </service>
+        <activity android:name="Settings$PulseSettingsActivity"
+                android:label="@string/pulse_settings"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.crdroid.settings.fragments.navigation.smartnav.PulseSettings" />
+        </activity>
 
+        <!-- System action picker -->
+        <activity android:name="com.crdroid.settings.fragments.navigation.smartnav.ActionPickerDialogActivity"
+                android:theme="@style/Theme.SmartBar.Dialog"
+                android:label="@string/choose_action_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Icon pack picker -->
+        <activity android:name="com.crdroid.settings.fragments.navigation.smartnav.IconPickerActivity"
+                android:theme="@style/Theme.SmartBar.Dialog"
+                android:label="@string/icon_pack_picker_dialog_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Icon picker proxy for gallery -->
+        <activity android:name="com.crdroid.settings.fragments.navigation.smartnav.IconPickerGallery"
+            android:theme="@style/Theme.SmartBar.Dialog"
+            android:label="@string/icon_pack_picker_dialog_title"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Icon pack grid -->
+        <activity android:name="com.crdroid.settings.fragments.navigation.smartnav.IconPackGridActivity"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>
