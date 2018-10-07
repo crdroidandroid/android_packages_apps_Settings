@@ -22,6 +22,7 @@ LOCAL_USE_AAPT2 := true
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../crDroidSettings/src)
 LOCAL_ASSET_DIR := packages/apps/crDroidSettings/assets
+LOCAL_SRC_FILES += $(call all-java-files-under, ../SmartNavSettings/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-slices-builders \
@@ -55,6 +56,8 @@ LOCAL_STATIC_JAVA_LIBRARIES += \
     android-support-design \
     libcwac
 
+LOCAL_FULL_LIBS_MANIFEST_FILES += $(LOCAL_PATH)/AndroidManifest-SmartNav.xml
+
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/design/res \
     frameworks/support/v7/preference/res \
@@ -62,7 +65,8 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v7/appcompat/res \
     frameworks/support/v7/recyclerview/res \
     frameworks/support/v7/cardview/res \
-    packages/apps/crDroidSettings/res
+    packages/apps/crDroidSettings/res \
+    packages/apps/SmartNavSettings/res
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
