@@ -26,11 +26,11 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </Preference>
 
-        <!-- LineageOS updates -->
+        <!-- LineageOS updates
         <org.lineageos.internal.preference.deviceinfo.LineageUpdatesPreference
                 android:key="lineage_updates"
                 lineage:requiresOwner="true"
-                lineage:requiresPackage="org.lineageos.updater" />
+                lineage:requiresPackage="org.lineageos.updater" /> -->
 
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"
@@ -86,9 +86,9 @@
         <org.lineageos.internal.preference.deviceinfo.LineageVersionPreference
                 android:key="lineage_version" />
 
-        <!-- LineageOS API version -->
+        <!-- LineageOS API version
         <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionPreference
-                android:key="lineage_api_level" />
+                android:key="lineage_api_level" /> -->
 
         <!-- Security patch level -->
         <Preference android:key="security_patch"
