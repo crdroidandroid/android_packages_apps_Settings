@@ -49,8 +49,6 @@ public class LegalSettings extends SettingsPreferenceFragment implements Indexab
 /*
     private static final String KEY_WALLPAPER_ATTRIBUTIONS = "wallpaper_attributions";
 */
-    private static final String PROPERTY_LINEAGELICENSE_URL = "ro.lineagelegal.url";
-    private static final String KEY_LINEAGE_LICENSE = "lineagelicense";
 
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -67,22 +65,6 @@ public class LegalSettings extends SettingsPreferenceFragment implements Indexab
                 Utils.UPDATE_PREFERENCE_FLAG_SET_TITLE_TO_MATCHING_ACTIVITY);
         Utils.updatePreferenceToSpecificActivityOrRemove(act, parentPreference, KEY_WEBVIEW_LICENSE,
                 Utils.UPDATE_PREFERENCE_FLAG_SET_TITLE_TO_MATCHING_ACTIVITY);
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(Preference preference) {
-        if (preference.getKey().equals(KEY_LINEAGE_LICENSE)) {
-            String userLineageLicenseUrl = SystemProperties.get(PROPERTY_LINEAGELICENSE_URL);
-            final Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.addCategory(Intent.CATEGORY_DEFAULT);
-            intent.setData(Uri.parse(userLineageLicenseUrl));
-            try {
-                startActivity(intent);
-            } catch (Exception e) {
-                Log.e(LOG_TAG, "Unable to start activity " + intent.toString());
-            }
-        }
-        return super.onPreferenceTreeClick(preference);
     }
 
     @Override
