@@ -21,13 +21,13 @@
     android:title="@string/header_category_system"
     settings:initialExpandedChildrenCount="8">
 
-    <Preference
+    <!--<Preference
         android:key="gesture_settings"
         android:title="@string/gesture_preference_title"
         android:icon="@drawable/ic_settings_gestures"
         android:order="-250"
         android:fragment="com.android.settings.gestures.GestureSettings"
-        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/>
+        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/>-->
 
     <!-- Backup -->
     <Preference
