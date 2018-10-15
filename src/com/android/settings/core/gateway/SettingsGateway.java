@@ -24,6 +24,7 @@ import com.android.settings.MasterClear;
 import com.android.settings.PrivacySettings;
 import com.android.settings.Settings;
 import com.android.settings.Settings.FlingSettingsActivity;
+import com.android.settings.Settings.PieSettingsActivity;
 import com.android.settings.Settings.PulseSettingsActivity;
 import com.android.settings.Settings.SmartbarSettingsActivity;
 import com.android.settings.TestingSettings;
@@ -271,6 +272,7 @@ public class SettingsGateway {
             crDroidSettingsLayout.class.getName(),
             SmartbarSettingsActivity.class.getName(),
             FlingSettingsActivity.class.getName(),
+            PieSettingsActivity.class.getName(),
             PulseSettingsActivity.class.getName()
     };
 
@@ -312,7 +314,8 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.crDroidSettingsLayoutActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
-            Settings.FlingSettingsActivity.class.getName(), 
+            Settings.FlingSettingsActivity.class.getName(),
+            Settings.PieSettingsActivity.class.getName(),
             Settings.PulseSettingsActivity.class.getName()
     };
 }

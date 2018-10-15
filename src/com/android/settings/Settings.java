@@ -180,4 +180,6 @@ public class Settings extends SettingsActivity {
     public static class SmartbarSettingsActivity extends SettingsActivity {}
     public static class FlingSettingsActivity extends SettingsActivity {}
     public static class PulseSettingsActivity extends SettingsActivity {}
+
+    public static class PieSettingsActivity extends SettingsActivity {}
 }

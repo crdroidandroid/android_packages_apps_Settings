@@ -3491,5 +3491,17 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+
+        <!-- Pie Settings -->
+        <activity android:name="Settings$PieSettingsActivity"
+                android:label="@string/pie_settings"
+                android:taskAffinity="com.android.settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.crdroid.settings.fragments.navigation.PieSettings" />
+        </activity>
     </application>
 </manifest>
