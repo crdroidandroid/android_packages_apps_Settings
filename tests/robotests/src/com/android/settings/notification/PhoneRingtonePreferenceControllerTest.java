@@ -18,6 +18,7 @@ package com.android.settings.notification;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import android.content.Context;
@@ -29,6 +30,10 @@ import android.platform.test.annotations.EnableFlags;
 import android.platform.test.flag.junit.SetFlagsRule;
 import android.telephony.TelephonyManager;
 
+import androidx.preference.PreferenceScreen;
+
+import com.android.settings.DefaultRingtonePreference;
+import com.android.settings.R;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -50,6 +55,12 @@ public class PhoneRingtonePreferenceControllerTest {
     @Mock
     private Resources mMockResources;
 
+    @Mock
+    private PreferenceScreen mPreferenceScreen;
+
+    @Mock
+    private DefaultRingtonePreference mPreference;
+
     private PhoneRingtonePreferenceController mController;
 
     @Rule
@@ -61,7 +72,21 @@ public class PhoneRingtonePreferenceControllerTest {
         when(mMockContext.getResources()).thenReturn(mMockResources);
         when(mMockContext.getSystemService(
                 Context.TELEPHONY_SERVICE)).thenReturn(mTelephonyManager);
+        when(mMockContext.getString(R.string.ringtone_title)).thenReturn("Phone ringtone");
+        when(mMockContext.getString(R.string.sim_card_number_title)).thenReturn("SIM %1$d");
         mController = new PhoneRingtonePreferenceController(mMockContext);
+    }
+
+    @Test
+    public void displayPreference_shouldUpdateTitle_for_MultiSimDevice() {
+        when(mTelephonyManager.isMultiSimEnabled()).thenReturn(true);
+        when(mTelephonyManager.hasIccCard(0)).thenReturn(true);
+        when(mPreferenceScreen.findPreference(mController.getPreferenceKey()))
+                .thenReturn(mPreference);
+        mController.displayPreference(mPreferenceScreen);
+
+        verify(mPreference).setTitle(mMockContext.getString(R.string.ringtone_title) + " - " +
+            String.format(mMockContext.getString(R.string.sim_card_number_title), 1));
     }
 
     @Test
