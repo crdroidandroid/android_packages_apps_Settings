@@ -1,0 +1,137 @@
+/*
+ * Copyright (C) 2018 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.android.settings.notification;
+
+import static com.google.common.truth.Truth.assertThat;
+
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.media.RingtoneManager;
+import android.media.audio.Flags;
+import android.platform.test.annotations.DisableFlags;
+import android.platform.test.flag.junit.SetFlagsRule;
+import android.telephony.TelephonyManager;
+
+import androidx.preference.PreferenceScreen;
+
+import com.android.settings.DefaultRingtonePreference;
+import com.android.settings.R;
+
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.robolectric.RobolectricTestRunner;
+
+@RunWith(RobolectricTestRunner.class)
+public class PhoneRingtone2PreferenceControllerTest {
+
+    @Mock
+    private TelephonyManager mTelephonyManager;
+
+    @Mock
+    private Context mMockContext;
+
+    @Mock
+    private Resources mMockResources;
+
+    @Mock
+    private PreferenceScreen mPreferenceScreen;
+
+    @Mock
+    private DefaultRingtonePreference mPreference;
+
+    private PhoneRingtone2PreferenceController mController;
+
+    @Rule
+    public final SetFlagsRule mSetFlagsRule = new SetFlagsRule();
+
+    @Before
+    public void setUp() {
+        MockitoAnnotations.initMocks(this);
+        when(mMockContext.getResources()).thenReturn(mMockResources);
+        when(mMockContext.getSystemService(
+                Context.TELEPHONY_SERVICE)).thenReturn(mTelephonyManager);
+        when(mMockResources.getIntArray(com.android.internal.R.array.non_removable_euicc_slots))
+                .thenReturn(new int[]{});
+        when(mMockContext.getString(R.string.ringtone_title)).thenReturn("Phone ringtone");
+        when(mMockContext.getString(R.string.sim_card_number_title)).thenReturn("SIM %1$d");
+        mController = new PhoneRingtone2PreferenceController(mMockContext);
+    }
+
+    @Test
+    public void displayPreference_shouldSetSlotId() {
+        when(mPreferenceScreen.findPreference(mController.getPreferenceKey()))
+                .thenReturn(mPreference);
+        when(mTelephonyManager.hasIccCard(1)).thenReturn(true);
+        mController.displayPreference(mPreferenceScreen);
+
+        verify(mPreference).setSlotId(1);
+    }
+
+    @Test
+    @DisableFlags(Flags.FLAG_ENABLE_RINGTONE_HAPTICS_CUSTOMIZATION)
+    public void isAvailable_notVoiceCapable_shouldReturnFalse() {
+        when(mMockResources
+                .getBoolean(com.android.internal.R.bool.config_ringtoneVibrationSettingsSupported))
+                .thenReturn(false);
+        when(mMockResources.getBoolean(com.android.settings.R.bool.config_show_sim_info))
+                .thenReturn(true);
+        when(mTelephonyManager.isDeviceVoiceCapable()).thenReturn(false);
+        when(mTelephonyManager.isMultiSimEnabled()).thenReturn(true);
+
+        assertThat(mController.isAvailable()).isFalse();
+    }
+
+    @Test
+    @DisableFlags(Flags.FLAG_ENABLE_RINGTONE_HAPTICS_CUSTOMIZATION)
+    public void isAvailable_notMultiSimEnabled_shouldReturnFalse() {
+        when(mMockResources
+                .getBoolean(com.android.internal.R.bool.config_ringtoneVibrationSettingsSupported))
+                .thenReturn(false);
+        when(mMockResources.getBoolean(com.android.settings.R.bool.config_show_sim_info))
+                .thenReturn(true);
+        when(mTelephonyManager.isDeviceVoiceCapable()).thenReturn(true);
+        when(mTelephonyManager.isMultiSimEnabled()).thenReturn(false);
+
+        assertThat(mController.isAvailable()).isFalse();
+    }
+
+    @Test
+    @DisableFlags(Flags.FLAG_ENABLE_RINGTONE_HAPTICS_CUSTOMIZATION)
+    public void isAvailable_VoiceCapable_and_MultiSimEnabled_shouldReturnTrue() {
+        when(mMockResources
+                .getBoolean(com.android.internal.R.bool.config_ringtoneVibrationSettingsSupported))
+                .thenReturn(false);
+        when(mMockResources.getBoolean(com.android.settings.R.bool.config_show_sim_info))
+                .thenReturn(true);
+        when(mTelephonyManager.isDeviceVoiceCapable()).thenReturn(true);
+        when(mTelephonyManager.isMultiSimEnabled()).thenReturn(true);
+
+        assertThat(mController.isAvailable()).isTrue();
+    }
+
+    @Test
+    public void getRingtoneType_shouldReturnRingtone() {
+        assertThat(mController.getRingtoneType()).isEqualTo(RingtoneManager.TYPE_RINGTONE);
+    }
+}
