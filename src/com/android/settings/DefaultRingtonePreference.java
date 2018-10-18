@@ -70,7 +70,8 @@ public class DefaultRingtonePreference extends RingtonePreference {
 
     @VisibleForTesting
     void setActualDefaultRingtoneUri(Uri ringtoneUri) {
-        RingtoneManager.setActualDefaultRingtoneUri(mUserContext, getRingtoneType(), ringtoneUri);
+        RingtoneManager.setActualDefaultRingtoneUriBySlot(mUserContext, getRingtoneType(),
+                ringtoneUri, getSlotId());
     }
 
     @Override
@@ -86,7 +87,8 @@ public class DefaultRingtonePreference extends RingtonePreference {
         }
 
         // Fallback to the global default if the flag is off or no specific URI exists
-        return RingtoneManager.getActualDefaultRingtoneUri(mUserContext, getRingtoneType());
+        return RingtoneManager.getActualDefaultRingtoneUriBySlot(mUserContext, getRingtoneType(),
+                getSlotId());
     }
 
 }
