@@ -56,6 +56,7 @@ public class BatteryMeterView extends ImageView {
                 context.getColor(R.color.battery_icon_color_error), PorterDuff.Mode.SRC_IN);
 
         mDrawable = new BatteryMeterDrawable(context, frameColor);
+        mDrawable.setMeterStyle(BatteryMeterDrawableBase.BATTERY_STYLE_PORTRAIT);
         mDrawable.setShowPercent(false);
         mDrawable.setBatteryColorFilter(mAccentColorFilter);
         mDrawable.setWarningColorFilter(
