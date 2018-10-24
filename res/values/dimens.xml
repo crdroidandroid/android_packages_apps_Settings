@@ -82,7 +82,7 @@
     <dimen name="caption_preview_text_size">48dp</dimen>
 
     <!-- ActionBar height -->
-    <dimen name="actionbar_size">56dip</dimen>
+    <dimen name="actionbar_size">72dip</dimen>
 
     <!-- ActionBar contentInsetStart -->
     <dimen name="actionbar_contentInsetStart">16dp</dimen>

@@ -62,16 +62,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            app:cardBackgroundColor="?android:attr/colorBackground"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="1dp">
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
 
             <Toolbar
                 android:id="@+id/search_action_bar"
                 android:layout_width="match_parent"
-                android:layout_height="52dp"
-				android:alpha="0.85"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_height="50dp"
+				android:background="@drawable/rounded_outline_bg"
+				android:clickable="true"
+                android:clipChildren="true"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:contentInsetStartWithNavigation="64dp"
                 android:navigationIcon="@drawable/ic_search_24dp"
                 android:theme="?android:attr/actionBarTheme">
@@ -79,6 +80,7 @@
                 <TextView
                     android:id="@+id/search_action_bar_title"
                     style="@style/TextAppearance.SearchBar"
+					android:alpha="0.8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/search_menu" />
