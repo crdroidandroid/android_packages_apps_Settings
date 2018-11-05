@@ -59,22 +59,5 @@ public class SearchMenuController implements LifecycleObserver, OnCreateOptionsM
         if (menu == null) {
             return;
         }
-        final Bundle arguments = mHost.getArguments();
-        if (arguments != null && !arguments.getBoolean(NEED_SEARCH_ICON_IN_ACTION_BAR, true)) {
-            return;
-        }
-        final MenuItem searchItem = menu.add(Menu.NONE, Menu.NONE, 0 /* order */,
-                R.string.search_menu);
-        searchItem.setIcon(R.drawable.ic_search_24dp);
-        searchItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-
-        searchItem.setOnMenuItemClickListener(target -> {
-            final Intent intent = SearchFeatureProvider.SEARCH_UI_INTENT;
-            intent.setPackage(FeatureFactory.getFactory(mHost.getContext())
-                    .getSearchFeatureProvider().getSettingsIntelligencePkgName());
-
-            mHost.startActivityForResult(intent, 0 /* requestCode */);
-            return true;
-        });
     }
 }
