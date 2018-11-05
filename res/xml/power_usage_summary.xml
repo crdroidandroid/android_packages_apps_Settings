@@ -50,12 +50,6 @@
         android:key="perf_profile_settings"
         lineage:replacesKey="battery_saver_summary" />
 
-    <SwitchPreference
-        android:key="battery_percentage"
-        android:title="@string/battery_percentage"
-        android:summary="@string/battery_percentage_description" />
-
-
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="last_full_charge"
         android:title="@string/battery_last_full_charge"
