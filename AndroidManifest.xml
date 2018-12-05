@@ -98,6 +98,7 @@
     <uses-permission android:name="android.permission.RESTART_UI"/>
     <uses-permission android:name="android.permission.CHANGE_OVERLAY_PACKAGES" />
     <uses-permission android:name="android.permission.NAVIGATION_EDITOR" />
+    <uses-permission android:name="android.permission.ACCESS_FONT_MANAGER" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
