@@ -18,11 +18,14 @@ package com.android.settings.widget;
 
 import static com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 
+import android.app.ActivityManager;
 import android.content.Context;
+import android.content.om.IOverlayManager;
 import android.content.res.TypedArray;
 import android.graphics.Rect;
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.os.ServiceManager;
 import android.support.annotation.ColorInt;
 import android.support.annotation.StringRes;
 import android.support.annotation.VisibleForTesting;
@@ -38,6 +41,8 @@ import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import com.android.internal.statusbar.ThemeAccentUtils;
 
 import com.android.settings.R;
 import com.android.settings.overlay.FeatureFactory;
@@ -88,6 +93,9 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
     private EnforcedAdmin mEnforcedAdmin = null;
     private String mMetricsTag;
 
+    private IOverlayManager mOverlayManager;
+    private int mCurrentUserId;
+
 
     public SwitchBar(Context context) {
         this(context, null);
@@ -105,6 +113,10 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
         super(context, attrs, defStyleAttr, defStyleRes);
 
         LayoutInflater.from(context).inflate(R.layout.switch_bar, this);
+
+        mOverlayManager = IOverlayManager.Stub.asInterface(
+                ServiceManager.getService(Context.OVERLAY_SERVICE));
+        mCurrentUserId = ActivityManager.getCurrentUser();
 
         final TypedArray a = context.obtainStyledAttributes(attrs, XML_ATTRIBUTES);
         int switchBarMarginStart = (int) a.getDimension(0, 0);
@@ -126,6 +138,8 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
         lp = (MarginLayoutParams) mSwitch.getLayoutParams();
         lp.setMarginEnd(switchBarMarginEnd);
         setBackgroundColor(mBackgroundColor);
+
+        setTextColor();
 
         setSwitchBarText(R.string.switch_on_text, R.string.switch_off_text);
 
@@ -158,6 +172,7 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
     public void setTextViewLabelAndBackground(boolean isChecked) {
         mLabel = getResources().getString(isChecked ? mOnTextId : mOffTextId);
         setBackgroundColor(isChecked ? mBackgroundActivatedColor : mBackgroundColor);
+        setTextColor();
         updateText();
     }
 
@@ -367,5 +382,25 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
         mSwitch.setOnCheckedChangeListener(ss.visible ? this : null);
 
         requestLayout();
+    }
+
+    private void setTextColor() {
+        if (ThemeAccentUtils.isUsingAccent(mOverlayManager, mCurrentUserId, 13)) {
+            mTextView.setTextColor(getResources().getColor(android.R.color.black));
+        } else if (ThemeAccentUtils.isUsingAccent(mOverlayManager, mCurrentUserId, 14)) {
+            mTextView.setTextColor(getResources().getColor(android.R.color.black));
+        } else if (ThemeAccentUtils.isUsingAccent(mOverlayManager, mCurrentUserId, 18)) {
+            mTextView.setTextColor(getResources().getColor(android.R.color.black));
+        } else if (ThemeAccentUtils.isUsingAccent(mOverlayManager, mCurrentUserId, 21)) {
+            mTextView.setTextColor(getResources().getColor(android.R.color.black));
+        } else if (ThemeAccentUtils.isUsingAccent(mOverlayManager, mCurrentUserId, 25)) {
+            mTextView.setTextColor(getResources().getColor(android.R.color.black));
+        } else if (ThemeAccentUtils.isUsingAccent(mOverlayManager, mCurrentUserId, 26)) {
+            mTextView.setTextColor(getResources().getColor(android.R.color.black));
+        } else if (ThemeAccentUtils.isUsingAccent(mOverlayManager, mCurrentUserId, 28)) {
+            mTextView.setTextColor(getResources().getColor(android.R.color.black));
+        } else {
+            mTextView.setTextColor(getResources().getColor(android.R.color.white));
+        }
     }
 }
