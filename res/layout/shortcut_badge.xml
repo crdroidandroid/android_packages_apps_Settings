@@ -28,7 +28,7 @@
         android:id="@android:id/icon"
         android:layout_width="@dimen/shortcut_size"
         android:layout_height="@dimen/shortcut_size"
-        android:tint="@color/icon_accent"
+        android:tint="@*android:color/accent_device_default_light"
         android:padding="12dp"
         android:scaleType="fitXY" />
 
