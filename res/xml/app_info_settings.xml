@@ -72,6 +72,16 @@
         android:title="@string/time_spent_in_app_pref_title"
         settings:controller="com.android.settings.applications.appinfo.TimeSpentInAppPreferenceController" />
 
+    <ListPreference
+        android:key="thermal_control_per_app"
+        android:dialogTitle="@string/thermal_control_per_app"
+        android:title="@string/thermal_control_per_app"
+        android:summary="%s"
+        android:entries="@array/thermal_control_per_app_entries"
+        android:entryValues="@array/thermal_control_per_app_values"
+        android:defaultValue="0"
+        settings:controller="com.android.settings.applications.appinfo.ThermalControlPerAppPreferenceController" />
+
     <Preference
         android:key="battery"
         android:title="@string/power_usage_summary_title"

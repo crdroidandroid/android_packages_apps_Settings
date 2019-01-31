@@ -3503,5 +3503,16 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.crdroid.settings.fragments.navigation.PieSettings" />
         </activity>
+
+        <provider
+            android:name="com.crdroid.settings.fragments.misc.thermal.PreferencesProvider"
+            android:authorities="com.crdroid.settings.fragments.misc.thermal"
+            android:exported="true" />
+
+        <receiver android:name="com.crdroid.settings.fragments.misc.thermal.ThermalBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTIVE_PACKAGE_CHANGED" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>
