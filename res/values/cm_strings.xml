@@ -371,4 +371,14 @@
     <!-- Whether the keyguard will directly show the lock entry -->
     <string name="directly_show_lock">Direct unlock</string>
     <string name="directly_show_lock_summary">Skip the swipe to unlock screen and immediately begin key entry</string>
+
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Optimization profile</string>
+    <string name="thermal_control_per_app_default">None</string>
+    <string name="thermal_control_per_app_benchmark">Performance</string>
+    <string name="thermal_control_per_app_games">Games</string>
+    <string name="thermal_control_per_app_browser">Browser</string>
+    <string name="thermal_control_per_app_video_playback">Video playback</string>
+    <string name="thermal_control_per_app_dialer">Dialer</string>
+    <string name="thermal_control_per_app_camera">Camera</string>
 </resources>

@@ -103,6 +103,9 @@
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
+    <!-- Thermal controller -->
+    <uses-permission android:name="com.android.thermalcontroller.MANAGE_SETTINGS" />
+
     <application android:label="@string/settings_label"
             android:icon="@drawable/ic_launcher_settings"
             android:taskAffinity=""
