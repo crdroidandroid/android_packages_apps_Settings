@@ -3208,7 +3208,7 @@
             android:icon="@drawable/ic_homepage_system_dashboard"
             android:taskAffinity="com.android.settings"
             android:parentActivityName="Settings">
-            <intent-filter android:priority="-2">
+            <intent-filter android:priority="-1">
                 <action android:name="com.android.settings.action.SETTINGS"/>
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
@@ -3401,7 +3401,7 @@
                 android:icon="@drawable/ic_homepage_crdroid"
                 android:taskAffinity="com.android.settings"
                 android:parentActivityName="Settings">
-            <intent-filter android:priority="-1">
+            <intent-filter android:priority="-2">
                 <action android:name="com.android.settings.action.SETTINGS"/>
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
