@@ -305,8 +305,8 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         menu.add(Menu.NONE, MENU_ADVANCED_BATTERY, Menu.NONE, R.string.advanced_battery_title);
 
         MenuItem reset = menu.add(0, MENU_STATS_RESET, 0, R.string.battery_stats_reset)
-                .setIcon(R.drawable.ic_delete)
-                .setAlphabeticShortcut('d');
+                .setIcon(R.drawable.ic_reset)
+                .setAlphabeticShortcut('r');
         reset.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
 
         super.onCreateOptionsMenu(menu, inflater);
