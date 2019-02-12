@@ -31,4 +31,7 @@
 
     <!-- Storage Summary Title -->
     <color name="storage_summary_title_color">@*android:color/accent_device_default_light</color>
+
+    <!-- Suggestion cards -->
+    <color name="suggestion_card_background">#fafafa</color>
 </resources>

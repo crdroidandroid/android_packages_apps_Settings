@@ -25,6 +25,7 @@
     app:cardPreventCornerOverlap="false"
     app:cardUseCompatPadding="true"
     app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/suggestion_card_background"
     app:cardCornerRadius="@dimen/suggestion_card_corner_radius">
 
     <LinearLayout
