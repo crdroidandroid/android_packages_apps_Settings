@@ -68,15 +68,4 @@
         android:key="lockscreen_quick_unlock_control"
         android:title="@string/unlock_quick_unlock_control_title"
         android:summary="@string/unlock_quick_unlock_control_summary" />
-
-    <!--<lineageos.preference.LineageSecureSettingSwitchPreference
-        android:key="lockscreen_media_metadata"
-        android:title="@string/lockscreen_media_art_title"
-        android:defaultValue="true" />-->
-
-   <!--<lineageos.preference.LineageSecureSettingSwitchPreference
-        android:key="lockscreen_visualizer"
-        android:title="@string/lockscreen_visualizer_title"
-        android:defaultValue="true" />-->
-
 </PreferenceScreen>
