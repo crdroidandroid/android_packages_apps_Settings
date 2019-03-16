@@ -492,6 +492,7 @@
 
     <style name="TextAppearance.SearchBar" parent="@android:style/TextAppearance.Material.Widget.Toolbar.Subtitle">
         <item name="android:textSize">@dimen/search_bar_text_size</item>
+		<item name="android:fontFamily">@font/google_sans_bold</item>
     </style>
 
     <style name="device_info_dialog_label">
