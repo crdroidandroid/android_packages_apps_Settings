@@ -20,9 +20,6 @@
     <string name="advanced_reboot_title">Advanced restart</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
 
-    <!-- Toolbar -->
-    <string name="settings_head_title">crDroid Settings</string>
-
     <!-- App ops permissions -->
     <string name="app_ops_permissions_allowed">Allowed</string>
     <string name="app_ops_permissions_ignored">Ignored</string>

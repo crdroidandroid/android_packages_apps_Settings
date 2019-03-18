@@ -28,6 +28,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.Typeface;
 import android.os.BatteryManager;
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -53,6 +54,9 @@ public class BatteryMeterView extends CardView {
     Intent batteryStatus;
     int status;
 
+    private static final String FONT_FAMILY = "sans-serif";
+    private static final String FONT_FAMILY_LIGHT = "sans-serif-light";
+
     public BatteryMeterView(@NonNull Context context) {
         super(context);
         init(context);
@@ -71,22 +75,23 @@ public class BatteryMeterView extends CardView {
         setLayoutParams(new ViewGroup.LayoutParams((int) dpToPx(232), (int) dpToPx(232)));
         waveView = new WaveView(context);
         progress_Text = new TextView(context);
-        progress_Text.setTextAppearance(R.style.BatteryGauage_TextView);
+        progress_Text.setTypeface(Typeface.create(FONT_FAMILY, Typeface.BOLD));
         charging_Text = new TextView(context);
-        charging_Text.setTextAppearance(R.style.BatteryGauage_TextView_Light);
+        charging_Text.setTypeface(Typeface.create(FONT_FAMILY_LIGHT, Typeface.NORMAL));
         charging_Text.setTextSize(22);
         charging_Text.setGravity(Gravity.CENTER_HORIZONTAL);
         progress_Text.setTextSize(52);
         progress_Text.setTextColor(getColorAttr(context, android.R.attr.textColorSecondary));
         if (getCharging()) {
-            charging_Text.setText("Charging");
-        } else
-            charging_Text.setText("Discharging");
+            charging_Text.setText(context.getString(R.string.battery_charging));
+        } else {
+            charging_Text.setText(context.getString(R.string.battery_discharging));
+        }
         progress_Text.setGravity(Gravity.CENTER_HORIZONTAL);
         charging_Text.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT));
         progress_Text.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT));
-        charging_Text.setAlpha((float) 0.7);
-        progress_Text.setAlpha((float) 0.7);
+        charging_Text.setAlpha((float) 0.85);
+        progress_Text.setAlpha((float) 0.85);
         LinearLayout linearLayout = new LinearLayout(context);
         linearLayout.setOrientation(LinearLayout.VERTICAL);
         linearLayout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
