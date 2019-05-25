@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:paddingLeft="0dp"
-        android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+        android:textAppearance="@*android:style/TextAppearancePreference"
         android:textColor="?android:attr/textColorPrimary" />
 
 </LinearLayout>

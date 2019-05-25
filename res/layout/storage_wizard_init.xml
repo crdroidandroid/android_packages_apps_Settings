@@ -49,7 +49,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/suw_description_margin_bottom"
-                    android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+                    android:textAppearance="@*android:style/TextAppearancePreference"
                     android:text="@string/storage_wizard_init_v2_internal_title" />
                 <TextView
                     android:layout_width="match_parent"
@@ -116,7 +116,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/suw_description_margin_bottom"
-                    android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+                    android:textAppearance="@*android:style/TextAppearancePreference"
                     android:text="@string/storage_wizard_init_v2_external_title" />
                 <TextView
                     android:layout_width="match_parent"

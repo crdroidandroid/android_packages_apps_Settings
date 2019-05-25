@@ -198,7 +198,7 @@
 
     <style name="wifi_item_content">
         <item name="android:textAlignment">viewStart</item>
-        <item name="android:textAppearance">@android:style/TextAppearance.Material.Subhead</item>
+        <item name="android:textAppearance">@*android:style/TextAppearancePreference</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
         <item name="android:minHeight">@dimen/min_tap_target_size</item>
     </style>
@@ -308,19 +308,19 @@
 
     <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.Material.Medium" />
     <style name="TextAppearance.Small" parent="@android:style/TextAppearance.Material.Small" />
-    <style name="TextAppearance.Switch" parent="@android:style/TextAppearance.Material.Title" />
+    <style name="TextAppearance.Switch" parent="@*android:style/TextAppearanceTitle" />
 
-    <style name="TextAppearance.CategoryTitle" parent="@android:style/TextAppearance.Material.Body2">
+    <style name="TextAppearance.CategoryTitle" parent="@*android:style/TextAppearancePreferenceCategory">
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
 
-    <style name="TextAppearance.TileTitle" parent="@android:style/TextAppearance.Material.Subhead" />
+    <style name="TextAppearance.TileTitle" parent="@*android:style/TextAppearancePreference" />
     <style name="TextAppearance.TileSubTitle" parent="@android:style/TextAppearance.Material.Body1" />
     <style name="TextAppearance.RecentsTitle" parent="TextAppearance.CategoryTitle" />
     <style name="TextAppearance.ResultTitle" parent="TextAppearance.CategoryTitle" />
 
     <style name="TextAppearance.SuggestionHeader"
-           parent="@android:style/TextAppearance.Material.Subhead">
+           parent="@*android:style/TextAppearancePreference">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">?android:attr/colorAccent</item>
     </style>
@@ -345,7 +345,7 @@
     </style>
 
     <style name="TextAppearance.SuggestionTitle"
-           parent="@android:style/TextAppearance.Material.Subhead">
+           parent="@*android:style/TextAppearancePreference">
         <item name="android:textSize">16sp</item>
     </style>
 
@@ -395,7 +395,7 @@
     <style name="RedactionItemAndLabel">
         <item name="android:layout_marginTop">@dimen/redaction_vertical_margins</item>
         <item name="android:paddingStart">@dimen/redaction_padding_start</item>
-        <item name="android:textAppearance">@android:style/TextAppearance.Material.Subhead</item>
+        <item name="android:textAppearance">@*android:style/TextAppearancePreference</item>
     </style>
 
     <style name="FingerprintHeaderStyle" parent="android:style/TextAppearance.Material.Subhead">
@@ -421,7 +421,7 @@
     </style>
 
     <style name="TextAppearance.EntityHeaderTitle"
-           parent="@android:style/TextAppearance.Material.Subhead">
+           parent="@*android:style/TextAppearancePreference">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
         <item name="android:textSize">16sp</item>
     </style>
@@ -503,7 +503,7 @@
 
     <style name="device_info_dialog_value">
         <item name="android:textAlignment">viewStart</item>
-        <item name="android:textAppearance">@android:style/TextAppearance.Material.Body2</item>
+        <item name="android:textAppearance">@*android:style/TextAppearancePreferenceCategory</item>
         <item name="android:paddingBottom">24dp</item>
     </style>
 

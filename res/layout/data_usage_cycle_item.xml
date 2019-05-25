@@ -22,6 +22,6 @@
     android:layout_height="wrap_content"
     android:paddingStart="0dp"
     android:ellipsize="marquee"
-    android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+    android:textAppearance="@*android:style/TextAppearancePreference"
     android:textColor="?android:attr/textColorPrimary"
     android:textAlignment="inherit" />
