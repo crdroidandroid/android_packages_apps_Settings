@@ -63,7 +63,7 @@
             android:layout_marginBottom="@dimen/bluetooth_dialog_padding"
             android:gravity="center_vertical"
             android:text="@string/bluetooth_enter_passkey_msg"
-            android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+            android:textAppearance="@*android:style/TextAppearancePreference"
             android:textColor="@color/bluetooth_dialog_text_color"
             android:visibility="gone" />
 

@@ -35,7 +35,7 @@
         android:fontFamily="@*android:string/config_headlineFontFamily"
         android:singleLine="true"
         android:textAlignment="viewStart"
-        android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+        android:textAppearance="@*android:style/TextAppearancePreference"
         android:textColor="@color/storage_summary_title_color"
         android:textSize="36sp"/>
 

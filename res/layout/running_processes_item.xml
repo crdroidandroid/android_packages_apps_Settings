@@ -48,7 +48,7 @@
             android:layout_weight="1"
             android:singleLine="true"
             android:ellipsize="marquee"
-            android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+            android:textAppearance="@*android:style/TextAppearancePreference"
             android:textAlignment="viewStart" />
 
         <TextView

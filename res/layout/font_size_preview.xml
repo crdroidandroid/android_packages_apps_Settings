@@ -42,13 +42,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/font_size_preview_text_title"
-                android:textAppearance="@android:style/TextAppearance.Material.Title"/>
+                android:textAppearance="@*android:style/TextAppearanceTitle"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/font_size_preview_text_subtitle"
-                android:textAppearance="@android:style/TextAppearance.Material.Subhead"/>
+                android:textAppearance="@*android:style/TextAppearancePreference"/>
 
             <TextView
                 android:layout_width="match_parent"

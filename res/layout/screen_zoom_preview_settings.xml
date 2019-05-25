@@ -57,7 +57,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/wifi_settings"
-                        android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+                        android:textAppearance="@*android:style/TextAppearancePreference"
                         android:textColor="?android:attr/textColorPrimary" />
 
 
@@ -96,7 +96,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/data_usage_summary_title"
-                        android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+                        android:textAppearance="@*android:style/TextAppearancePreference"
                         android:textColor="?android:attr/textColorPrimary" />
 
                     <TextView
@@ -134,7 +134,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/display_settings_title"
-                        android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+                        android:textAppearance="@*android:style/TextAppearancePreference"
                         android:textColor="?android:attr/textColorPrimary" />
 
                     <TextView
@@ -172,7 +172,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/sound_settings"
-                        android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+                        android:textAppearance="@*android:style/TextAppearancePreference"
                         android:textColor="?android:attr/textColorPrimary" />
 
                     <TextView
@@ -210,7 +210,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/applications_settings"
-                        android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+                        android:textAppearance="@*android:style/TextAppearancePreference"
                         android:textColor="?android:attr/textColorPrimary" />
 
                     <TextView
