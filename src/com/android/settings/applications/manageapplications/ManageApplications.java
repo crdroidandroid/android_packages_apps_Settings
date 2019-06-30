@@ -155,7 +155,6 @@ public class ManageApplications extends InstrumentedFragment
 
     private static final String EXTRA_SORT_ORDER = "sortOrder";
     private static final String EXTRA_SHOW_SYSTEM = "showSystem";
-    private static final String EXTRA_SHOW_SUBSTRATUM = "showSubstratum";
     private static final String EXTRA_HAS_ENTRIES = "hasEntries";
     private static final String EXTRA_HAS_BRIDGE = "hasBridge";
 
@@ -184,9 +183,6 @@ public class ManageApplications extends InstrumentedFragment
 
     // whether showing system apps.
     private boolean mShowSystem;
-
-    // whether showing substratum overlays.
-    private boolean mShowSubstratum;
 
     private ApplicationsState mApplicationsState;
 
@@ -320,7 +316,6 @@ public class ManageApplications extends InstrumentedFragment
         if (savedInstanceState != null) {
             mSortOrder = savedInstanceState.getInt(EXTRA_SORT_ORDER, mSortOrder);
             mShowSystem = savedInstanceState.getBoolean(EXTRA_SHOW_SYSTEM, mShowSystem);
-            mShowSubstratum = savedInstanceState.getBoolean(EXTRA_SHOW_SUBSTRATUM, mShowSubstratum);
         }
 
         mInvalidSizeStr = activity.getText(R.string.invalid_size_value);
@@ -501,7 +496,6 @@ public class ManageApplications extends InstrumentedFragment
         mResetAppsHelper.onSaveInstanceState(outState);
         outState.putInt(EXTRA_SORT_ORDER, mSortOrder);
         outState.putBoolean(EXTRA_SHOW_SYSTEM, mShowSystem);
-        outState.putBoolean(EXTRA_SHOW_SUBSTRATUM, mShowSubstratum);
         outState.putBoolean(EXTRA_HAS_ENTRIES, mApplications.mHasReceivedLoadEntries);
         outState.putBoolean(EXTRA_HAS_BRIDGE, mApplications.mHasReceivedBridgeCallback);
         if (mApplications != null) {
@@ -654,10 +648,6 @@ public class ManageApplications extends InstrumentedFragment
         // Hide notification menu items, because sorting happens when filtering
         mOptionsMenu.findItem(R.id.sort_order_recent_notification).setVisible(false);
         mOptionsMenu.findItem(R.id.sort_order_frequent_notification).setVisible(false);
-        mOptionsMenu.findItem(R.id.show_substratum).setVisible(!mShowSubstratum
-                && mListType != LIST_TYPE_HIGH_POWER);
-        mOptionsMenu.findItem(R.id.hide_substratum).setVisible(mShowSubstratum
-                && mListType != LIST_TYPE_HIGH_POWER);
     }
 
     @Override
@@ -673,11 +663,6 @@ public class ManageApplications extends InstrumentedFragment
             case R.id.show_system:
             case R.id.hide_system:
                 mShowSystem = !mShowSystem;
-                mApplications.rebuild();
-                break;
-            case R.id.show_substratum:
-            case R.id.hide_substratum:
-                mShowSubstratum = !mShowSubstratum;
                 mApplications.rebuild();
                 break;
             case R.id.reset_app_preferences:
@@ -1052,7 +1037,7 @@ public class ManageApplications extends InstrumentedFragment
             if (mCompositeFilter != null) {
                 filterObj = new CompoundFilter(filterObj, mCompositeFilter);
             }
-            if (!mManageApplications.mShowSystem && !mManageApplications.mShowSubstratum) {
+            if (!mManageApplications.mShowSystem) {
                 if (LIST_TYPES_WITH_INSTANT.contains(mManageApplications.mListType)) {
                     filterObj = new CompoundFilter(filterObj,
                             ApplicationsState.FILTER_DOWNLOADED_AND_LAUNCHER_AND_INSTANT);
@@ -1060,21 +1045,7 @@ public class ManageApplications extends InstrumentedFragment
                     filterObj = new CompoundFilter(filterObj,
                             ApplicationsState.FILTER_DOWNLOADED_AND_LAUNCHER);
                 }
-                filterObj = new CompoundFilter(filterObj,
-                        ApplicationsState.FILTER_SUBSTRATUM);
-            } else if (!mManageApplications.mShowSystem) {
-                if (LIST_TYPES_WITH_INSTANT.contains(mManageApplications.mListType)) {
-                    filterObj = new CompoundFilter(filterObj,
-                            ApplicationsState.FILTER_DOWNLOADED_AND_LAUNCHER_AND_INSTANT);
-                } else {
-                    filterObj = new CompoundFilter(filterObj,
-                            ApplicationsState.FILTER_DOWNLOADED_AND_LAUNCHER);
             }
-            } else if (!mManageApplications.mShowSubstratum) {
-                filterObj = new CompoundFilter(filterObj,
-                        ApplicationsState.FILTER_SUBSTRATUM);
-            }
-
             switch (mLastSortMode) {
                 case R.id.sort_order_size:
                     switch (mWhichSize) {
