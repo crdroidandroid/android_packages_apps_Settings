@@ -146,6 +146,10 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.crdroid.settings.crDroidSettingsLayout;
 import com.crdroid.settings.fragments.misc.GamingMode;
+import com.crdroid.settings.fragments.navigation.PieSettings;
+import com.crdroid.settings.fragments.navigation.smartnav.SmartbarSettings;
+import com.crdroid.settings.fragments.navigation.smartnav.FlingSettings;
+import com.crdroid.settings.fragments.navigation.smartnav.PulseSettings;
 
 public class SettingsGateway {
 
@@ -273,11 +277,11 @@ public class SettingsGateway {
             ToggleBackupSettingFragment.class.getName(),
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
             crDroidSettingsLayout.class.getName(),
-            SmartbarSettingsActivity.class.getName(),
-            FlingSettingsActivity.class.getName(),
+            SmartbarSettings.class.getName(),
+            FlingSettings.class.getName(),
             GamingMode.class.getName(),
-            PieSettingsActivity.class.getName(),
-            PulseSettingsActivity.class.getName(),
+            PieSettings.class.getName(),
+            PulseSettings.class.getName(),
             RunningServices.class.getName()
     };
 
