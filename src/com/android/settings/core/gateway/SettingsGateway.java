@@ -150,6 +150,7 @@ import com.crdroid.settings.fragments.navigation.PieSettings;
 import com.crdroid.settings.fragments.navigation.smartnav.SmartbarSettings;
 import com.crdroid.settings.fragments.navigation.smartnav.FlingSettings;
 import com.crdroid.settings.fragments.navigation.smartnav.PulseSettings;
+import com.crdroid.settings.fragments.ui.DozeFragment;
 import com.crdroid.settings.fragments.ui.SmartPixels;
 
 public class SettingsGateway {
@@ -278,6 +279,7 @@ public class SettingsGateway {
             ToggleBackupSettingFragment.class.getName(),
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
             crDroidSettingsLayout.class.getName(),
+            DozeFragment.class.getName(),
             SmartPixels.class.getName(),
             SmartbarSettings.class.getName(),
             FlingSettings.class.getName(),
@@ -324,6 +326,7 @@ public class SettingsGateway {
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.crDroidSettingsLayoutActivity.class.getName(),
+            Settings.DozeActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
             Settings.FlingSettingsActivity.class.getName(),
