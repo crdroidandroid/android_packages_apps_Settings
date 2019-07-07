@@ -24,6 +24,7 @@ import com.android.settings.MasterClear;
 import com.android.settings.PrivacySettings;
 import com.android.settings.Settings;
 import com.android.settings.Settings.FlingSettingsActivity;
+import com.android.settings.Settings.GamingModeActivity;
 import com.android.settings.Settings.PieSettingsActivity;
 import com.android.settings.Settings.PulseSettingsActivity;
 import com.android.settings.Settings.SmartbarSettingsActivity;
@@ -144,6 +145,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.crdroid.settings.crDroidSettingsLayout;
+import com.crdroid.settings.fragments.misc.GamingMode;
 
 public class SettingsGateway {
 
@@ -273,6 +275,7 @@ public class SettingsGateway {
             crDroidSettingsLayout.class.getName(),
             SmartbarSettingsActivity.class.getName(),
             FlingSettingsActivity.class.getName(),
+            GamingMode.class.getName(),
             PieSettingsActivity.class.getName(),
             PulseSettingsActivity.class.getName(),
             RunningServices.class.getName()
@@ -317,6 +320,7 @@ public class SettingsGateway {
             Settings.crDroidSettingsLayoutActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
             Settings.FlingSettingsActivity.class.getName(),
+            Settings.GamingModeActivity.class.getName(),
             Settings.PieSettingsActivity.class.getName(),
             Settings.PulseSettingsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName()

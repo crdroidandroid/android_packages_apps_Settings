@@ -182,5 +182,6 @@ public class Settings extends SettingsActivity {
     public static class PulseSettingsActivity extends SettingsActivity {}
 
     public static class PieSettingsActivity extends SettingsActivity {}
+    public static class GamingModeActivity extends SettingsActivity {}
     public static class DevRunningServicesActivity extends SettingsActivity {}
 }
