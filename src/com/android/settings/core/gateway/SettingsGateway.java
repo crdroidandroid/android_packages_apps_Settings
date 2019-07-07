@@ -163,6 +163,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.crdroid.settings.crDroidSettingsLayout;
 import com.crdroid.settings.fragments.misc.GamingMode;
 import com.crdroid.settings.fragments.ui.OmniJawsSettings;
+import com.crdroid.settings.fragments.ui.SmartPixels;
 
 public class SettingsGateway {
 
@@ -315,6 +316,7 @@ public class SettingsGateway {
             crDroidSettingsLayout.class.getName(),
             GamingMode.class.getName(),
             OmniJawsSettings.class.getName(),
+            SmartPixels.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -357,5 +359,6 @@ public class SettingsGateway {
             Settings.crDroidSettingsLayoutActivity.class.getName(),
             Settings.GamingModeActivity.class.getName(),
             Settings.OmniJawsSettingsActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
     };
 }
