@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <resources>
+    <string name="battery_tip_smart_battery_summary_custom">自動調整バッテリーを ON にしてください</string>
+    <string name="smart_battery_footer_custom">"自動調整バッテリーで使用頻度の低いアプリの電池使用を制限すると、電池が長持ちします。時間の経過とともに、スマートフォンがアプリの使用状況を学習します。
+
+このアプリの通知は遅れることがあります。"</string>
+    <string name="smart_battery_manager_title_custom">自動調整バッテリー</string>
+    <string name="smart_battery_title_custom">自動調整バッテリーの使用</string>
+  </resources>

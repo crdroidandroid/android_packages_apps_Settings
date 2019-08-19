@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <resources>
+    <string name="battery_tip_smart_battery_summary_custom">تغیر پذیر بیٹری آن کریں</string>
+    <string name="smart_battery_footer_custom">"بیٹری لائف بڑھانے کے لیے، تغیر پذیر بیٹری کبھی کبھار استعمال کی جانے والی ایپس کے لیے بیٹری کو محدود کرتی ہے۔ وقت گزرنے پر، آپ کا فون ایپس استعمال کرنے کا طریقہ سیکھے گا۔
+
+ان ایپس کے لیے اطلاعات میں تاخیر ہو سکتی ہے۔"</string>
+    <string name="smart_battery_manager_title_custom">تغیر پذیر بیٹری</string>
+    <string name="smart_battery_title_custom">تغیر پذیر بیٹری استعمال کریں</string>
+  </resources>

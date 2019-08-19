@@ -43,7 +43,7 @@ public class SmartBatteryTip extends BatteryTip {
 
     @Override
     public CharSequence getSummary(Context context) {
-        return context.getString(R.string.battery_tip_smart_battery_summary);
+        return context.getString(R.string.battery_tip_smart_battery_summary_custom);
     }
 
     @Override

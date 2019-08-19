@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <resources>
+    <string name="battery_tip_smart_battery_summary_custom">Activa la bateria intel·ligent</string>
+    <string name="smart_battery_footer_custom">"Per augmentar la durada de la bateria, la bateria intel·ligent en limita l'ús a les aplicacions que utilitzes amb poca freqüència. El teu telèfon aprendrà com fas servir les aplicacions al llarg del temps.
+
+És possible que rebis les notificacions d'aquestes aplicacions amb retard."</string>
+    <string name="smart_battery_manager_title_custom">Bateria intel·ligent</string>
+    <string name="smart_battery_title_custom">Fes servir la bateria intel·ligent</string>
+  </resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <resources>
+    <string name="battery_tip_smart_battery_summary_custom">Uključite prilagodljivu bateriju</string>
+    <string name="smart_battery_footer_custom">"Da bi se produžio vijek trajanja baterije, prilagodljiva baterija ograničava upotrebu baterije za aplikacije koje se ne koriste često. Telefon će vremenom učiti na koji način koristite aplikacije.
+
+Moguće je da će obavještenja za te aplikacije kasniti."</string>
+    <string name="smart_battery_manager_title_custom">Prilagodljiva baterija</string>
+    <string name="smart_battery_title_custom">Koristi prilagodljivu bateriju</string>
+  </resources>

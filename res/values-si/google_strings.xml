@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <resources>
+    <string name="battery_tip_smart_battery_summary_custom">අනුවර්තනීය බැටරිය ක්‍රියාත්මක කරන්න</string>
+    <string name="smart_battery_footer_custom">"බැටරි ආයු කාලය දිගු කිරීමට, අනුවර්තනීය බැටරිය නිතර භාවිත කරන යෙදුම් සඳහා බැටරිය සීමා කරයි. ඔබගේ දුරකථනය කාලයත් සමඟ යෙදුම් භාවිත කරන ආකාරය දැන ගනු ඇත.
+
+මෙම යෙදුම් සඳහා දැනුම්දීම් ප්‍රමාද විය හැකිය."</string>
+    <string name="smart_battery_manager_title_custom">අනුවර්තනීය බැටරිය</string>
+    <string name="smart_battery_title_custom">අනුවර්තනීය බැටරිය භාවිත කරන්න</string>
+  </resources>

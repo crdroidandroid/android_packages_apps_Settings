@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <resources>
+    <string name="battery_tip_smart_battery_summary_custom">अनुकूलनीय ब्याट्री सक्रिय गर्नुहोस्</string>
+    <string name="smart_battery_footer_custom">"ब्याट्रीको आयु बढाउन, अनुकूलनीय ब्याट्रीले ब्याट्रीलाई कहिलेकाहीँ मात्र प्रयोग गरिने अनुप्रयोगहरूमा सीमित गर्दछ। तपाईंको ट्याब्लेटले अनुप्रयोहरूलाई समयअनुसार कसरी प्रयोग गर्ने भन्ने सिक्ने छ।
+
+यी अनुप्रयोगहरूसम्बन्धी सूचनाहरू आइपुग्न ढिलाइ हुन सक्छ।"</string>
+    <string name="smart_battery_manager_title_custom">अनुकूलनीय ब्याट्री</string>
+    <string name="smart_battery_title_custom">अनुकूलनीय ब्याट्री प्रयोग गर्नुहोस्</string>
+  </resources>

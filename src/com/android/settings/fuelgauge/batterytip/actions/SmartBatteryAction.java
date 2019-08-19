@@ -48,7 +48,7 @@ public class SmartBatteryAction extends BatteryTipAction {
                         ? ((Instrumentable) mFragment).getMetricsCategory()
                         : Instrumentable.METRICS_CATEGORY_UNKNOWN)
                 .setDestination(SmartBatterySettings.class.getName())
-                .setTitleRes(R.string.smart_battery_manager_title)
+                .setTitleRes(R.string.smart_battery_manager_title_custom)
                 .launch();
 
     }

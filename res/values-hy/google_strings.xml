@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <resources>
+    <string name="battery_tip_smart_battery_summary_custom">Միացրեք Adaptive Battery-ն</string>
+    <string name="smart_battery_footer_custom">"Մարտկոցի աշխատաժամանակը երկարացնելու համար Adaptive Battery-ն սահմանափակում է հազվադեպ օգտագործվող հավելվածների ֆոնային աշխատանքը: Ժամանակի ընթացքում ձեր հեռախոսը հիշում է, թե որ հավելվածներն եք հաճախ օգտագործում, որոնք՝ ոչ:
+
+Սահմանափակված հավելվածների ծանուցումները կարող են ուշացումով ստացվել:"</string>
+    <string name="smart_battery_manager_title_custom">Adaptive Battery</string>
+    <string name="smart_battery_title_custom">Միացնել Adaptive Battery-ն</string>
+  </resources>

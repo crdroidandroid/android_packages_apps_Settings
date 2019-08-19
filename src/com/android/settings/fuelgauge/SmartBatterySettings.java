@@ -43,7 +43,7 @@ public class SmartBatterySettings extends DashboardFragment {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.smart_battery_footer);
+        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.smart_battery_footer_custom);
     }
 
     @Override
