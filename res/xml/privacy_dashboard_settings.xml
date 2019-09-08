@@ -19,8 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="privacy_dashboard_page"
-    android:title="@string/privacy_dashboard_title"
-    settings:initialExpandedChildrenCount="10">
+    android:title="@string/privacy_dashboard_title">
 
     <!-- This preference isn't searchable, and user won't see title in this preference.
          So, we just set empty text for title. -->
