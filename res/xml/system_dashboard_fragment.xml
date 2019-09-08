@@ -18,8 +18,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="system_dashboard_screen"
-    android:title="@string/header_category_system"
-    settings:initialExpandedChildrenCount="4">
+    android:title="@string/header_category_system">
 
     <Preference
         android:key="language_input_settings"
