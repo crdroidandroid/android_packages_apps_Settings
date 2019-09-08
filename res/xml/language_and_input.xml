@@ -19,8 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
-    android:title="@string/language_settings"
-    settings:initialExpandedChildrenCount="3">
+    android:title="@string/language_settings">
 
     <Preference
         android:key="phone_language"

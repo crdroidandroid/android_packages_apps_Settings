@@ -64,8 +64,7 @@
 
     <PreferenceCategory
         android:key="channel_advanced"
-        android:order="50"
-        settings:initialExpandedChildrenCount="0">
+        android:order="50">
 
         <!-- peeking -->
         <com.android.settingslib.RestrictedSwitchPreference
