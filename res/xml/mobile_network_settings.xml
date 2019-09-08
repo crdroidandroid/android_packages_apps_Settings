@@ -16,8 +16,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:key="mobile_network_pref_screen"
-    settings:initialExpandedChildrenCount="8">
+    android:key="mobile_network_pref_screen">
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="use_sim_switch"
