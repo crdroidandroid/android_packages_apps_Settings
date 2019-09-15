@@ -52,6 +52,7 @@ public class BatteryInfo {
     public int pluggedStatus;
     public boolean discharging = true;
     public boolean isBatteryDefender;
+    static float batteryTemp;
     public long remainingTimeUs = 0;
     public long averageTimeToDischarge = EstimateKt.AVERAGE_TIME_TO_DISCHARGE_UNKNOWN;
     public String batteryPercentString;
@@ -260,6 +261,8 @@ public class BatteryInfo {
         info.isBatteryDefender = batteryBroadcast.getIntExtra(
                 BatteryManager.EXTRA_CHARGING_STATUS, BatteryManager.CHARGING_POLICY_DEFAULT)
                 == BatteryManager.CHARGING_POLICY_ADAPTIVE_LONGLIFE;
+        int bTemp = batteryBroadcast.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0);
+        info.batteryTemp = (float) (bTemp / 10);
 
         info.statusLabel = Utils.getBatteryStatus(context, batteryBroadcast, isCompactStatus);
         info.batteryStatus = batteryBroadcast.getIntExtra(
