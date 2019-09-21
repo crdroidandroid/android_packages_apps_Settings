@@ -38,13 +38,13 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
 
-    <!-- Lineage API version -->
+    <!-- Lineage API version
     <Preference
         android:key="lineage_api_version"
         android:title="@*lineageos.platform:string/lineage_api_level"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageApiVersionPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageApiVersionPreferenceController"/> -->
 
     <!-- Security patch -->
     <Preference
