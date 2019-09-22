@@ -24,7 +24,7 @@
         android:key="advanced_reboot"
         android:title="@string/advanced_reboot_title"
         android:summary="@string/advanced_reboot_summary"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
 
     <Preference
         android:key="gesture_global_actions_panel_summary"
