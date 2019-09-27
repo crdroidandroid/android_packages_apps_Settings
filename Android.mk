@@ -21,6 +21,8 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
+LOCAL_SRC_FILES += $(call all-java-files-under, ../crDroidSettings/src)
+LOCAL_ASSET_DIR := packages/apps/crDroidSettings/assets
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx-constraintlayout_constraintlayout \
@@ -53,7 +55,13 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     zxing-core-1.7 \
     org.lineageos.platform.internal
 
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+    packages/apps/crDroidSettings/res
+
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
+
+LOCAL_AAPT_FLAGS := --auto-add-overlay \
+    --extra-packages com.crdroid.settings
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
@@ -70,7 +78,8 @@ include $(BUILD_PACKAGE)
 include $(CLEAR_VARS)
 
 LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := \
-    contextualcards:libs/contextualcards.aar
+    contextualcards:libs/contextualcards.aar \
+    libcwac:../crDroidSettings/libs/cwac-wakeful-1.1.0.jar
 include $(BUILD_MULTI_PREBUILT)
 
 # Use the following include to make our test apk.
