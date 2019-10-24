@@ -53,10 +53,11 @@
             android:title="@string/lockscreen_media_art_title"
             android:defaultValue="true" />
 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
-            android:key="lockscreen_visualizer"
-            android:title="@string/lockscreen_visualizer_title"
-            android:defaultValue="false" />
+        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+            android:key="lockscreen_visualizer_enabled"
+            android:title="@string/music_visualizer_title"
+            android:summary="@string/music_visualizer_summary"
+            android:defaultValue="true" />
 
         <SwitchPreference
             android:key="security_setting_lockdown_enabled"
