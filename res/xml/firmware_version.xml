@@ -21,6 +21,12 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- crDroid logo -->
+    <PreferenceScreen
+        android:layout="@layout/crdroid_logo"
+        android:key="crdroid_logo"
+        android:selectable="false" />
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
