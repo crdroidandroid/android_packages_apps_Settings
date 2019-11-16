@@ -148,6 +148,7 @@ import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.crdroid.settings.crDroidSettingsLayout;
+import com.crdroid.settings.fragments.misc.GamingMode;
 import com.crdroid.settings.fragments.ui.SmartPixels;
 
 public class SettingsGateway {
@@ -286,6 +287,7 @@ public class SettingsGateway {
             MobileNetworkListFragment.class.getName(),
             GlobalActionsPanelSettings.class.getName(),
             crDroidSettingsLayout.class.getName(),
+            GamingMode.class.getName(),
             SmartPixels.class.getName(),
     };
 
@@ -326,6 +328,7 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.crDroidSettingsLayoutActivity.class.getName(),
+            Settings.GamingModeActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
     };
 }
