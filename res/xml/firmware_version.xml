@@ -27,6 +27,14 @@
         android:key="crdroid_logo"
         android:selectable="false" />
 
+    <!-- Device name -->
+    <Preference
+        android:key="about_device_name"
+        android:title="@string/about_device_name"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
