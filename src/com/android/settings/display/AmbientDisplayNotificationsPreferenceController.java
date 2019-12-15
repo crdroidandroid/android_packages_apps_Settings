@@ -79,8 +79,7 @@ public class AmbientDisplayNotificationsPreferenceController extends
 
     @Override
     public int getAvailabilityStatus() {
-        return getAmbientConfig().pulseOnNotificationAvailable()
-                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
