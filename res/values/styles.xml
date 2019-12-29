@@ -289,7 +289,7 @@
     </style>
 
     <style name="TextAppearance.ZenOnboardingButton">
-        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">?android:attr/colorAccent</item>
         <item name="android:background">@*android:drawable/btn_borderless_rect</item>
@@ -597,7 +597,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
-        <item name="android:fontFamily">google-sans-medium</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
     </style>
 
     <style name="AccessibilityDialogDescription"
@@ -608,7 +608,7 @@
         <item name="android:layout_marginBottom">32dp</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
-        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
     </style>
 
     <style name="AccessibilityDialogPermissionTitle"
@@ -617,7 +617,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
-        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
     </style>
 
     <style name="AccessibilityDialogPermissionDescription"
@@ -626,7 +626,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
-        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
     </style>
 
     <style name="AccessibilityDialogButtonBarSpace">
