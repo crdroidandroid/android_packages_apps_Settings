@@ -58,7 +58,7 @@ public class ConfigureNotificationSettings extends DashboardFragment implements
     private static final String TAG = "ConfigNotiSettings";
 
     @VisibleForTesting
-    static final String KEY_SWIPE_DOWN = "gesture_swipe_down_fingerprint_notifications";
+    //static final String KEY_SWIPE_DOWN = "gesture_swipe_down_fingerprint_notifications";
     static final String KEY_LOCKSCREEN = "lock_screen_notifications";
 
     private static final String KEY_NOTI_DEFAULT_RINGTONE = "notification_default_ringtone";
@@ -236,7 +236,7 @@ public class ConfigureNotificationSettings extends DashboardFragment implements
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     final List<String> keys = super.getNonIndexableKeys(context);
-                    keys.add(KEY_SWIPE_DOWN);
+                    //keys.add(KEY_SWIPE_DOWN);
                     return keys;
                 }
             };

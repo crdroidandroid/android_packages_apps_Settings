@@ -34,11 +34,11 @@ public class LockdownButtonPreferenceController extends TogglePreferenceControll
 
     @Override
     public int getAvailabilityStatus() {
-        if (mLockPatternUtils.isSecure(UserHandle.myUserId())) {
+        /*if (mLockPatternUtils.isSecure(UserHandle.myUserId())) {
             return AVAILABLE;
-        } else {
+        } else {*/
             return DISABLED_FOR_USER;
-        }
+        //}
     }
 
     @Override
