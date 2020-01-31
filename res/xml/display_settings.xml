@@ -52,7 +52,7 @@
     <Preference
         android:key="auto_brightness_entry"
         android:title="@string/auto_brightness_title"
-        android:summary="@string/summary_placeholder"
+        android:summary="@string/auto_brightness_summary"
         android:fragment="com.android.settings.display.AutoBrightnessSettings"
         settings:controller="com.android.settings.display.AutoBrightnessPreferenceController"/>
 

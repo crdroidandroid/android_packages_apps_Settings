@@ -55,10 +55,10 @@ public class AutoBrightnessPreferenceController extends TogglePreferenceControll
                 : UNSUPPORTED_ON_DEVICE;
     }
 
-    @Override
+    /*@Override
     public CharSequence getSummary() {
         return mContext.getText(isChecked()
                 ? R.string.auto_brightness_summary_on
                 : R.string.auto_brightness_summary_off);
-    }
+    }*/
 }
