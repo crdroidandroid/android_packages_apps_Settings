@@ -152,14 +152,14 @@
         settings:controller="com.android.settings.sound.MediaControlsParentPreferenceController"
         settings:keywords="@string/keywords_media_controls"/>
 
-    <!-- Also vibrate for calls -->
+    <!-- Haptics -->
     <Preference
-        android:fragment="com.android.settings.sound.VibrateForCallsPreferenceFragment"
-        android:key="vibrate_for_calls"
-        android:title="@string/vibrate_when_ringing_title"
-        android:order="-90"
-        settings:controller="com.android.settings.sound.VibrateForCallsPreferenceController"
-        settings:keywords="@string/keywords_vibrate_for_calls"/>
+        android:fragment="com.android.settings.notification.VibrationSettingsPreferenceFragment"
+        android:key="vibration_preferences_fragment"
+        android:title="@string/vibration_preferences"
+        android:order="-130"
+        android:summary="@string/summary_vibration_preferences"
+        settings:keywords="@string/keywords_vibration_preferences"/>
 
     <com.android.settings.widget.PrimarySwitchPreference
         android:key="gesture_prevent_ringing_sound"
@@ -228,14 +228,6 @@
         android:key="touch_sounds"
         android:title="@string/touch_sounds_title"
         android:order="-30"/>
-
-    <!-- Vibrate on touch -->
-    <SwitchPreference
-        android:key="vibrate_on_touch"
-        android:title="@string/vibrate_on_touch_title"
-        android:summary="@string/vibrate_on_touch_summary"
-        settings:keywords="@string/keywords_vibrate_on_touch"
-        android:order="-25"/>
 
     <!-- Dock speaker plays -->
     <DropDownPreference
