@@ -120,12 +120,15 @@
         android:order="-135"
         settings:controller="com.android.settings.notification.IncreasingRingVolumePreferenceController" />
 
-    <!-- Also vibrate for calls -->
-    <SwitchPreference
-        android:key="vibrate_when_ringing"
-        android:title="@string/vibrate_when_ringing_title"
-        settings:controller="com.android.settings.notification.VibrateWhenRingPreferenceController"
-        android:order="-130"/>
+    <!-- Haptics -->
+    <Preference
+        android:fragment="com.crdroid.settings.fragments.notifications.VibrationSettingsPreferenceFragment"
+        android:key="vibration_preferences_fragment"
+        android:title="@string/vibration_preferences"
+        android:order="-130"
+        android:summary="@string/summary_vibration_preferences"
+        settings:allowDividerAbove="true"
+        settings:keywords="@string/keywords_vibration_preferences"/>
 
     <!-- Interruptions -->
     <com.android.settingslib.RestrictedPreference
@@ -135,7 +138,6 @@
         android:order="-120"
         settings:useAdminDisabledSummary="true"
         settings:keywords="@string/keywords_sounds_and_notifications_interruptions"
-        settings:allowDividerAbove="true"
         settings:controller="com.android.settings.notification.ZenModePreferenceController"/>
 
     <Preference
@@ -209,13 +211,6 @@
         <SwitchPreference
           android:key="touch_sounds"
           android:title="@string/touch_sounds_title"/>
-
-        <!-- Vibrate on touch -->
-        <SwitchPreference
-          android:key="vibrate_on_touch"
-          android:title="@string/vibrate_on_touch_title"
-          android:summary="@string/vibrate_on_touch_summary"
-          settings:keywords="@string/keywords_vibrate_on_touch"/>
 
         <!-- Dock speaker plays -->
         <DropDownPreference
