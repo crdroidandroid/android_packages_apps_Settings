@@ -78,12 +78,12 @@ public class RunningProcessesView extends FrameLayout
     View mHeader;
     ServiceListAdapter mAdapter;
     ProgressBar mColorBar;
-    TextView mBackgroundProcessPrefix;
-    TextView mAppsProcessPrefix;
-    TextView mForegroundProcessPrefix;
-    TextView mBackgroundProcessText;
-    TextView mAppsProcessText;
-    TextView mForegroundProcessText;
+    TextView mBackgroundProcess;
+    TextView mAppsProcess;
+    TextView mForegroundProcess;
+    CharSequence mForegroundProcessText;
+    CharSequence mAppsProcessText;
+    CharSequence mBackgroundProcessText;
 
     long mCurTotalRam = -1;
     long mCurHighRam = -1;      // "System" or "Used"
@@ -342,15 +342,11 @@ public class RunningProcessesView extends FrameLayout
             if (mCurShowCached != mAdapter.mShowBackground) {
                 mCurShowCached = mAdapter.mShowBackground;
                 if (mCurShowCached) {
-                    mForegroundProcessPrefix.setText(getResources().getText(
-                            R.string.running_processes_header_used_prefix));
-                    mAppsProcessPrefix.setText(getResources().getText(
-                            R.string.running_processes_header_cached_prefix));
+                    mForegroundProcessText = getResources().getText(R.string.running_processes_header_used_prefix);
+                    mAppsProcessText = getResources().getText(R.string.running_processes_header_cached_prefix);
                 } else {
-                    mForegroundProcessPrefix.setText(getResources().getText(
-                            R.string.running_processes_header_system_prefix));
-                    mAppsProcessPrefix.setText(getResources().getText(
-                            R.string.running_processes_header_apps_prefix));
+                    mForegroundProcessText = getResources().getText(R.string.running_processes_header_system_prefix);
+                    mAppsProcessText = getResources().getText(R.string.running_processes_header_apps_prefix);
                 }
             }
 
@@ -377,15 +373,15 @@ public class RunningProcessesView extends FrameLayout
                 BidiFormatter bidiFormatter = BidiFormatter.getInstance();
                 String sizeStr = bidiFormatter.unicodeWrap(
                         Formatter.formatShortFileSize(getContext(), lowRam));
-                mBackgroundProcessText.setText(getResources().getString(
+                mBackgroundProcess.setText(mBackgroundProcessText + ": " + getResources().getString(
                         R.string.running_processes_header_ram, sizeStr));
                 sizeStr = bidiFormatter.unicodeWrap(
                         Formatter.formatShortFileSize(getContext(), medRam));
-                mAppsProcessText.setText(getResources().getString(
+                mAppsProcess.setText(mAppsProcessText + ": " + getResources().getString(
                         R.string.running_processes_header_ram, sizeStr));
                 sizeStr = bidiFormatter.unicodeWrap(
                         Formatter.formatShortFileSize(getContext(), highRam));
-                mForegroundProcessText.setText(getResources().getString(
+                mForegroundProcess.setText(mForegroundProcessText + ": " + getResources().getString(
                         R.string.running_processes_header_ram, sizeStr));
                 int progress = (int) ((highRam/(float) totalRam) * 100);
                 mColorBar.setProgress(progress);
@@ -457,12 +453,12 @@ public class RunningProcessesView extends FrameLayout
         mColorBar.setProgressBackgroundTintList(
                 ColorStateList.valueOf(context.getColor(R.color.running_processes_free_ram)));
         mColorBar.setProgressBackgroundTintMode(PorterDuff.Mode.SRC);
-        mBackgroundProcessPrefix = mHeader.findViewById(R.id.freeSizePrefix);
-        mAppsProcessPrefix = mHeader.findViewById(R.id.appsSizePrefix);
-        mForegroundProcessPrefix = mHeader.findViewById(R.id.systemSizePrefix);
-        mBackgroundProcessText = mHeader.findViewById(R.id.freeSize);
-        mAppsProcessText = mHeader.findViewById(R.id.appsSize);
-        mForegroundProcessText = mHeader.findViewById(R.id.systemSize);
+        mBackgroundProcess = mHeader.findViewById(R.id.freeSize);
+        mAppsProcess = mHeader.findViewById(R.id.appsSize);
+        mForegroundProcess = mHeader.findViewById(R.id.systemSize);
+        mForegroundProcessText = getResources().getText(R.string.running_processes_header_system_prefix);
+        mAppsProcessText = getResources().getText(R.string.running_processes_header_apps_prefix);
+        mBackgroundProcessText = getResources().getText(R.string.running_processes_header_free_prefix);
 
         ActivityManager.MemoryInfo memInfo = new ActivityManager.MemoryInfo();
         mAm.getMemoryInfo(memInfo);
