@@ -45,7 +45,7 @@
             android:title="@string/accessibility_force_invert_title"
             settings:controller="com.android.settings.accessibility.ToggleForceInvertPreferenceController"/>
 
-        <DropDownPreference
+        <ListPreference
             android:key="dark_ui_auto_mode"
             android:title="@string/dark_ui_auto_mode_title"
             android:summary="%s"
