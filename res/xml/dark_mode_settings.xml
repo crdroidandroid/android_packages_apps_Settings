@@ -53,7 +53,7 @@
     <PreferenceCategory
         android:key="display_category"
         android:title="@string/accessibility_screen_option">
-        <DropDownPreference
+        <ListPreference
             android:key="dark_ui_auto_mode"
             android:title="@string/dark_ui_auto_mode_title"
             android:summary="%s"
