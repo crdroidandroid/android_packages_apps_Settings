@@ -54,7 +54,7 @@
     <PreferenceCategory
         android:key="display_category"
         android:title="@string/dark_theme_timing_category">
-        <DropDownPreference
+        <ListPreference
             android:key="dark_ui_auto_mode"
             android:title="@string/dark_ui_auto_mode_title"
             android:summary="%s"
