@@ -20,7 +20,7 @@ import android.content.res.Configuration;
 import android.location.LocationManager;
 import android.os.PowerManager;
 
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
@@ -29,14 +29,14 @@ import com.android.settings.core.BasePreferenceController;
 import com.android.settings.display.TwilightLocationDialog;
 
 /**
- * Controller for the dark ui option dropdown
+ * Controller for the dark ui option list
  */
 public class DarkModeScheduleSelectorController extends BasePreferenceController
         implements Preference.OnPreferenceChangeListener {
     private static final String TAG = DarkModeScheduleSelectorController.class.getSimpleName();
     private final UiModeManager mUiModeManager;
     private PowerManager mPowerManager;
-    private DropDownPreference mPreference;
+    private ListPreference mPreference;
     private LocationManager mLocationManager;
     private int mCurrentMode;
 
