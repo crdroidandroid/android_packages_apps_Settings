@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="security_settings_face_settings_footer_moto">Seadme avamiseks kasutage näotuvastamis funktsiooni.\n\nPidage meeles: \nPilk telefonile võib selle avada ka siis, kui te ei kavatse seda teha.\n\nTeine inimene saab telefoni lukust lahti, kui telefoni hoitakse teie näo kohal ja teie silmad on avatud.\n\nTeie telefoni saab avada keegi, kes on teiega väga sarnane, näiteks teie laps või identne kaksik.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Näoktuvastamis funktsiooni abil salvestatud andmed kustutatakse jäädavalt. Pärast eemaldamist peate telefoni avamiseks sisestama PIN-koodi, mustrit või parooli.</string>
+</resources>
