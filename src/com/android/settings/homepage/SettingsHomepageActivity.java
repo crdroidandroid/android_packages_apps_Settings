@@ -141,6 +141,12 @@ public class SettingsHomepageActivity extends FragmentActivity {
     public void onResume() {
         super.onResume();
         avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
+        if (mUserManager.isUserSwitcherEnabled()) {
+            avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
+            avatarView.setVisibility(View.VISIBLE);
+        } else {
+            avatarView.setVisibility(View.GONE);
+        }
 
     }
 }
