@@ -127,6 +127,7 @@ public class DeviceAdminListPreferenceController extends BasePreferenceControlle
         mContext.registerReceiverAsUser(
                 mBroadcastReceiver, UserHandle.ALL, FILTER,
                 null /* broadcastPermission */, null /* scheduler */);
+        updateList();
     }
 
     @Override
