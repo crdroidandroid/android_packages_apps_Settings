@@ -310,16 +310,7 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
         final PreferenceScreen screen = getPreferenceScreen();
         screen.setOnExpandButtonClickListener(this);
         mPreferenceControllers.values().stream().flatMap(Collection::stream).forEach(
-                controller -> {
-                    final String key = controller.getPreferenceKey();
-                    if (!TextUtils.isEmpty(key)) {
-                        final Preference preference = screen.findPreference(key);
-                        if ((preference != null) && (!isPreferenceExpanded(preference))) {
-                            return;
-                        }
-                    }
-                    controller.displayPreference(screen);
-                });
+                controller -> controller.displayPreference(screen));
     }
 
     /**
@@ -331,6 +322,10 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
                 mPreferenceControllers.values();
         for (List<AbstractPreferenceController> controllerList : controllerLists) {
             for (AbstractPreferenceController controller : controllerList) {
+                if (!controller.isAvailable()) {
+                    continue;
+                }
+
                 final String key = controller.getPreferenceKey();
                 if (TextUtils.isEmpty(key)) {
                     Log.d(TAG, String.format("Preference key is %s in Controller %s",
@@ -342,14 +337,6 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
                 if (preference == null) {
                     Log.d(TAG, String.format("Cannot find preference with key %s in Controller %s",
                             key, controller.getClass().getSimpleName()));
-                    continue;
-                }
-
-                if (!isPreferenceExpanded(preference)) {
-                    continue;
-                }
-
-                if (!controller.isAvailable()) {
                     continue;
                 }
                 controller.updateState(preference);
