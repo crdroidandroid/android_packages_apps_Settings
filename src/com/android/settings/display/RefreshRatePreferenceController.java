@@ -29,9 +29,11 @@ public class RefreshRatePreferenceController extends AbstractPreferenceControlle
     private static final String KEY_REFRESH_RATE = "refresh_rate_setting";
 
     private ListPreference mRefreshRate;
+    private int peakRate;
 
     public RefreshRatePreferenceController(Context context) {
         super(context);
+        peakRate = mContext.getResources().getInteger(com.android.internal.R.integer.config_defaultPeakRefreshRate);
     }
 
     @Override
@@ -69,24 +71,30 @@ public class RefreshRatePreferenceController extends AbstractPreferenceControlle
 
     public void updateRefreshRate(int refreshRate) {
         switch (refreshRate) {
-            case 0:
+            case 0: // automatic
             default:
                 Settings.System.putInt(mContext.getContentResolver(),
-                        Settings.System.PEAK_REFRESH_RATE, 90);
+                        Settings.System.PEAK_REFRESH_RATE, peakRate);
                 Settings.System.putInt(mContext.getContentResolver(),
                         Settings.System.MIN_REFRESH_RATE, 60);
                 break;
-            case 1:
+            case 1: // locked - min rate 60Hz
                 Settings.System.putInt(mContext.getContentResolver(),
                         Settings.System.PEAK_REFRESH_RATE, 60);
                 Settings.System.putInt(mContext.getContentResolver(),
                         Settings.System.MIN_REFRESH_RATE, 60);
                 break;
-            case 2:
+            case 2: // locked - max rate 90Hz
                 Settings.System.putInt(mContext.getContentResolver(),
                         Settings.System.PEAK_REFRESH_RATE, 90);
                 Settings.System.putInt(mContext.getContentResolver(),
                         Settings.System.MIN_REFRESH_RATE, 90);
+                break;
+            case 3: // locked - max rate 120 Hz
+                Settings.System.putInt(mContext.getContentResolver(),
+                        Settings.System.PEAK_REFRESH_RATE, 120);
+                Settings.System.putInt(mContext.getContentResolver(),
+                        Settings.System.MIN_REFRESH_RATE, 120);
                 break;
         }
         updateRefreshRateSummary(refreshRate);
@@ -97,8 +105,10 @@ public class RefreshRatePreferenceController extends AbstractPreferenceControlle
             mRefreshRate.setSummary(R.string.refresh_rate_summary_60);
         } else if (refreshRate == 2) {
             mRefreshRate.setSummary(R.string.refresh_rate_summary_90);
+        } else if (refreshRate == 3) {
+            mRefreshRate.setSummary(R.string.refresh_rate_summary_120);
         } else {
-            mRefreshRate.setSummary(R.string.refresh_rate_summary_auto);
+            mRefreshRate.setSummary(R.string.refresh_rate_summary_automatic);
         }
     }
 }
