@@ -18,6 +18,7 @@ package com.android.settings.homepage;
 
 import android.animation.LayoutTransition;
 import android.app.ActivityManager;
+import android.app.admin.DevicePolicyManager;
 import android.app.settings.SettingsEnums;
 import android.content.ComponentName;
 import android.content.Context;
@@ -27,6 +28,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -50,7 +52,7 @@ import com.android.settingslib.drawable.CircleFramedDrawable;
 
 public class SettingsHomepageActivity extends FragmentActivity {
 
-    Context context;
+    Context mContext;
     ImageView avatarView;
     UserManager mUserManager;
 
@@ -65,16 +67,16 @@ public class SettingsHomepageActivity extends FragmentActivity {
 
         setHomepageContainerPaddingTop();
 
-        Context context = getApplicationContext();
+        mContext = getApplicationContext();
 
-        mUserManager = context.getSystemService(UserManager.class);
+        mUserManager = mContext.getSystemService(UserManager.class);
 
         final Toolbar toolbar = findViewById(R.id.search_action_bar);
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
         avatarView = root.findViewById(R.id.account_avatar);
-        avatarView.setImageDrawable(getCircularUserIcon(context));
+        avatarView.setImageDrawable(getCircularUserIcon());
         avatarView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,6 +85,7 @@ public class SettingsHomepageActivity extends FragmentActivity {
                 startActivity(intent);
             }
         });
+        avatarView.setVisibility(isMultiUserEnabled() ? View.VISIBLE : View.GONE);
 
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
@@ -120,24 +123,45 @@ public class SettingsHomepageActivity extends FragmentActivity {
         view.setPadding(0 /* left */, paddingTop, 0 /* right */, 0 /* bottom */);
     }
 
-    private Drawable getCircularUserIcon(Context context) {
+    private Drawable getCircularUserIcon() {
         Bitmap bitmapUserIcon = mUserManager.getUserIcon(UserHandle.myUserId());
 
         if (bitmapUserIcon == null) {
             // get default user icon.
             final Drawable defaultUserIcon = UserIcons.getDefaultUserIcon(
-                    context.getResources(), UserHandle.myUserId(), false);
+                    mContext.getResources(), UserHandle.myUserId(), false);
             bitmapUserIcon = UserIcons.convertToBitmap(defaultUserIcon);
         }
         Drawable drawableUserIcon = new CircleFramedDrawable(bitmapUserIcon,
-                (int) context.getResources().getDimension(R.dimen.circle_avatar_size));
+                (int) mContext.getResources().getDimension(R.dimen.circle_avatar_size));
 
         return drawableUserIcon;
+    }
+
+    private boolean isMultiUserEnabled() {
+        // The default in UserManager is to show the switcher. We want to not show it unless the
+        // user explicitly requests it in Settings
+        final boolean userSwitcherEnabled = Settings.Global.getInt(mContext.getContentResolver(),
+                Settings.Global.USER_SWITCHER_ENABLED, 0) != 0;
+
+        if (!userSwitcherEnabled
+                || !UserManager.supportsMultipleUsers()
+                || UserManager.isDeviceInDemoMode(mContext)
+                || mUserManager.hasUserRestriction(UserManager.DISALLOW_USER_SWITCH)) {
+            return false;
+        }
+
+        final boolean guestEnabled = !mContext.getSystemService(DevicePolicyManager.class)
+                .getGuestUserDisabled(null);
+
+        // If we cannot add guests even if they are enabled, do not show
+        return (guestEnabled && !mUserManager.hasUserRestriction(UserManager.DISALLOW_ADD_USER));
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
+        avatarView.setImageDrawable(getCircularUserIcon());
+        avatarView.setVisibility(isMultiUserEnabled() ? View.VISIBLE : View.GONE);
     }
 }
