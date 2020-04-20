@@ -20,6 +20,9 @@ import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
+import android.provider.Settings;
+
+import androidx.preference.PreferenceScreen;
 
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.display.BrightnessLevelPreferenceController;
@@ -27,7 +30,6 @@ import com.android.settings.display.CameraGesturePreferenceController;
 import com.android.settings.display.LiftToWakePreferenceController;
 import com.android.settings.display.NightDisplayPreferenceController;
 import com.android.settings.display.NightModePreferenceController;
-import com.android.settings.display.RefreshRatePreferenceController;
 import com.android.settings.display.ScreenSaverPreferenceController;
 import com.android.settings.display.ShowOperatorNamePreferenceController;
 import com.android.settings.display.TapToWakePreferenceController;
@@ -39,6 +41,8 @@ import com.android.settings.search.Indexable;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
+
+import com.crdroid.settings.preferences.GlobalSettingListPreference;
 
 import lineageos.hardware.LineageHardwareManager;
 
@@ -53,6 +57,9 @@ public class DisplaySettings extends DashboardFragment {
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_HIGH_TOUCH_SENSITIVITY = "high_touch_sensitivity_enable";
+    private static final String KEY_REFRESH_RATE_SETTING = "refresh_rate_setting";
+
+    private GlobalSettingListPreference mVariableRefreshRate;
 
     @Override
     public int getMetricsCategory() {
@@ -72,6 +79,22 @@ public class DisplaySettings extends DashboardFragment {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mVariableRefreshRate = (GlobalSettingListPreference) prefScreen.findPreference(KEY_REFRESH_RATE_SETTING);
+        boolean hasVariableRefreshRate =
+            getContext().getResources().getBoolean(com.android.internal.R.bool.config_hasVariableRefreshRate);
+
+        if (!hasVariableRefreshRate) {
+            prefScreen.removePreference(mVariableRefreshRate);
+        } else {
+            int defVarRateSetting = getContext().getResources().getInteger(
+                 com.android.internal.R.integer.config_defaultVariableRefreshRateSetting);
+            int mVarRateSetting = Settings.Global.getInt(getContext().getContentResolver(),
+                 Settings.Global.REFRESH_RATE_SETTING, defVarRateSetting);
+            mVariableRefreshRate.setValue(String.valueOf(mVarRateSetting));
+        }
     }
 
     @Override
@@ -98,7 +121,6 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new ShowOperatorNamePreferenceController(context));
         controllers.add(new ThemePreferenceController(context));
         controllers.add(new BrightnessLevelPreferenceController(context, lifecycle));
-        controllers.add(new RefreshRatePreferenceController(context));
         return controllers;
     }
 
@@ -127,6 +149,12 @@ public class DisplaySettings extends DashboardFragment {
                             LineageHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY)) {
                         keys.add(KEY_HIGH_TOUCH_SENSITIVITY);
                     }
+                    boolean hasVariableRefreshRate =
+                        context.getResources().getBoolean(com.android.internal.R.bool.config_hasVariableRefreshRate);
+                    if (!hasVariableRefreshRate) {
+                        keys.add(KEY_REFRESH_RATE_SETTING);
+                    }
+
                     return keys;
                 }
 
