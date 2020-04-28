@@ -18,17 +18,12 @@ package com.android.settings.notification;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import android.content.Context;
 import android.media.RingtoneManager;
 import android.telephony.TelephonyManager;
 
-import androidx.preference.PreferenceScreen;
-
-import com.android.settings.DefaultRingtonePreference;
-import com.android.settings.R;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -43,10 +38,6 @@ public class PhoneRingtonePreferenceControllerTest {
 
     @Mock
     private TelephonyManager mTelephonyManager;
-    @Mock
-    private PreferenceScreen mPreferenceScreen;
-    @Mock
-    private DefaultRingtonePreference mPreference;
 
     private Context mContext;
     private PhoneRingtonePreferenceController mController;
@@ -59,16 +50,6 @@ public class PhoneRingtonePreferenceControllerTest {
         mContext = RuntimeEnvironment.application;
         mController = new PhoneRingtonePreferenceController(mContext);
     }
-
-    @Test
-    public void displayPreference_shouldUpdateTitle_for_MultiSimDevice() {
-        when(mTelephonyManager.isMultiSimEnabled()).thenReturn(true);
-        when(mPreferenceScreen.findPreference(mController.getPreferenceKey()))
-                .thenReturn(mPreference);
-        mController.displayPreference(mPreferenceScreen);
-
-        verify(mPreference).setTitle(mContext.getString(R.string.ringtone1_title));
-    
 
     @Test
     public void isAvailable_notVoiceCapable_shouldReturnFalse() {
