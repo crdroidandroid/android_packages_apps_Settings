@@ -35,6 +35,7 @@ import android.annotation.Nullable;
 import android.annotation.StringRes;
 import android.app.Activity;
 import android.app.ActivityManager;
+import android.app.AppLockManager;
 import android.app.settings.SettingsEnums;
 import android.app.usage.IUsageStatsManager;
 import android.compat.annotation.ChangeId;
@@ -258,10 +259,15 @@ public class ManageApplications extends InstrumentedFragment
     private View mEmptyView;
     private int mFilterType;
 
+    private AppLockManager mAppLockManager;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+        
+        mAppLockManager = Utils.getAppLockManager(getContext());
+
         final Activity activity = getActivity();
         mUserManager = activity.getSystemService(UserManager.class);
         mApplicationsState = ApplicationsState.getInstance(activity.getApplication());
@@ -635,7 +641,9 @@ public class ManageApplications extends InstrumentedFragment
                 HighPowerDetail.show(this, mCurrentUid, mCurrentPkgName, INSTALLED_APP_DETAILS);
                 break;
             case LIST_TYPE_OVERLAY:
-                startAppInfoFragment(DrawOverlayDetails.class, R.string.overlay_settings);
+                if (!mAppLockManager.isAppLocked(mCurrentPkgName)) {
+                    startAppInfoFragment(DrawOverlayDetails.class, R.string.overlay_settings);
+                }
                 break;
             case LIST_TYPE_WRITE_SETTINGS:
                 startAppInfoFragment(WriteSettingsDetails.class, R.string.write_system_settings);
@@ -1466,6 +1474,7 @@ public class ManageApplications extends InstrumentedFragment
                 // Bind the data efficiently with the holder
                 ApplicationsState.AppEntry entry = mEntries.get(position);
                 synchronized (entry) {
+                    holder.setEnabled(isEnabled(position));
                     holder.setTitle(entry.label);
                     mState.ensureLabelDescription(entry);
                     holder.itemView.setContentDescription(entry.labelDescription);
@@ -1475,7 +1484,6 @@ public class ManageApplications extends InstrumentedFragment
                     updateSwitch(holder, entry);
                     holder.updateDisableView(entry.info);
                 }
-                holder.setEnabled(isEnabled(position));
             }
             holder.itemView.setOnClickListener(mManageApplications);
         }
@@ -1505,7 +1513,16 @@ public class ManageApplications extends InstrumentedFragment
                     holder.setSummary(HighPowerDetail.getSummary(mContext, entry));
                     break;
                 case LIST_TYPE_OVERLAY:
-                    holder.setSummary(DrawOverlayDetails.getSummary(mContext, entry));
+                    final CharSequence summary;
+                    AppLockManager al = (AppLockManager) Utils.getAppLockManager(mContext);
+                    if (al.isAppLocked(entry.info.packageName)) {
+                        summary = mContext.getString(R.string.applock_overlay_summary);
+                        holder.setEnabled(false);
+                    } else {
+                        summary = DrawOverlayDetails.getSummary(mContext, entry);
+                        holder.setEnabled(true);
+                    }
+                    holder.setSummary(summary);
                     break;
                 case LIST_TYPE_WRITE_SETTINGS:
                     holder.setSummary(WriteSettingsDetails.getSummary(mContext, entry));

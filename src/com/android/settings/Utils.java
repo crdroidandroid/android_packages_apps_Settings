@@ -30,6 +30,7 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.AppGlobals;
+import android.app.AppLockManager;
 import android.app.IActivityManager;
 import android.app.KeyguardManager;
 import android.app.admin.DevicePolicyManager;
@@ -806,6 +807,10 @@ public final class Utils extends com.android.settingslib.Utils {
             Log.e(TAG, "Failed to create user context", e);
         }
         return null;
+    }
+
+    public static AppLockManager getAppLockManager(Context context) {
+        return (AppLockManager) context.getSystemService(Context.APPLOCK_SERVICE);
     }
 
     public static FingerprintManager getFingerprintManagerOrNull(Context context) {
