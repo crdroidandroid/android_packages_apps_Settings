@@ -16,6 +16,7 @@
 
 package com.android.settings.security;
 
+import android.app.AppLockManager;
 import android.content.Context;
 import android.hardware.face.FaceManager;
 import android.hardware.fingerprint.FingerprintManager;
@@ -43,14 +44,22 @@ public class TopLevelSecurityEntryPreferenceController extends BasePreferenceCon
                 Utils.getFingerprintManagerOrNull(mContext);
         final FaceManager faceManager =
                 Utils.getFaceManagerOrNull(mContext);
+        final AppLockManager appLockManager =
+                Utils.getAppLockManager(mContext);
+        CharSequence summary = null;
         if (fpm != null && fpm.isHardwareDetected() && FaceUtils.isFaceUnlockSupported()) {
-            return mContext.getText(R.string.security_dashboard_summary_face_and_fingerprint);
+            summary = mContext.getText(R.string.security_dashboard_summary_face_and_fingerprint);
         } else if (fpm != null && fpm.isHardwareDetected()) {
-            return mContext.getText(R.string.security_dashboard_summary);
+            summary = mContext.getText(R.string.security_dashboard_summary);
         } else if (faceManager != null && faceManager.isHardwareDetected()) {
-            return mContext.getText(R.string.security_dashboard_summary_face);
+            summary = mContext.getText(R.string.security_dashboard_summary_face);
         } else {
-            return mContext.getText(R.string.security_dashboard_summary_no_fingerprint);
+            summary = mContext.getText(R.string.security_dashboard_summary_no_fingerprint);
+        }
+        if (appLockManager == null) {
+            return summary;
+        } else {
+            return summary + ", " + mContext.getText(R.string.applock_title);
         }
     }
 }
