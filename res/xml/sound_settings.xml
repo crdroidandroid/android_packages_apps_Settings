@@ -212,6 +212,11 @@
           android:key="charging_sounds_settings"
           lineage:replacesKey="charging_sounds" /> -->
 
+        <!-- Custom charging sounds -->
+        <org.lineageos.internal.lineageparts.LineagePartsPreference
+          android:key="charging_sounds_settings"
+          lineage:replacesKey="charging_sounds" />
+
         <!-- Docking sounds -->
         <SwitchPreference
           android:key="docking_sounds"
