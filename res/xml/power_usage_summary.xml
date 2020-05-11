@@ -94,6 +94,11 @@
         android:title="@string/current_battery_capacity"
         android:selectable="false" />
 
+    <com.android.settings.fuelgauge.PowerGaugePreference 
+        android:key="battery_charge_cycles" 
+        android:title="@string/battery_charge_cycles"
+        android:selectable="false" />
+
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
         android:title="@string/battery_footer_summary"
