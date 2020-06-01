@@ -27,7 +27,7 @@
         settings:controller="com.android.settings.display.TwilightLocationPreferenceController"
         settings:allowDividerBelow="true"/>
 
-    <DropDownPreference
+    <ListPreference
         android:key="night_display_auto_mode"
         android:title="@string/night_display_auto_mode_title"
         android:summary="%s"
