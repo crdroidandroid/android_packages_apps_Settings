@@ -20,7 +20,7 @@ import android.content.Context;
 import android.hardware.display.ColorDisplayManager;
 import android.location.LocationManager;
 
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
@@ -31,7 +31,7 @@ public class NightDisplayAutoModePreferenceController extends BasePreferenceCont
         implements Preference.OnPreferenceChangeListener {
 
     private final LocationManager mLocationManager;
-    private DropDownPreference mPreference;
+    private ListPreference mPreference;
     private ColorDisplayManager mColorDisplayManager;
 
     public NightDisplayAutoModePreferenceController(Context context, String key) {
