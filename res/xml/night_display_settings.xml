@@ -35,7 +35,7 @@
         android:title="@string/twilight_mode_location_off_dialog_message"
         settings:controller="com.android.settings.display.TwilightLocationPreferenceController"/>
 
-    <DropDownPreference
+    <ListPreference
         android:key="night_display_auto_mode"
         android:title="@string/night_display_auto_mode_title"
         android:summary="%s"
