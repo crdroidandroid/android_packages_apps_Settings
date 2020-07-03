@@ -28,6 +28,10 @@
         android:title="@string/summary_placeholder"
         settings:controller="com.android.settings.privacy.PermissionBarChartPreferenceController"/>
 
+    <Preference
+        android:key="privacy_animation"
+        android:layout="@layout/privacy_animation" />
+
     <!-- Work Policy info -->
     <Preference
         android:key="work_policy_info"
