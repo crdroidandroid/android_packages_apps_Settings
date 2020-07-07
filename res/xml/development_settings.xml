@@ -359,6 +359,12 @@
             android:entries="@array/bluetooth_map_versions"
             android:entryValues="@array/bluetooth_map_version_values" />
 
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="sbc_hd_priority"
+            android:title="@string/sbc_hd_priority_title"
+            android:summary="@string/sbc_hd_priority_summary"
+            android:defaultValue="false" />
+
         <SwitchPreference
             android:key="bluetooth_hd_audio_settings"
             android:title="@string/bluetooth_profile_a2dp_high_quality_unknown_codec"/>
