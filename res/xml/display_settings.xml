@@ -94,6 +94,14 @@
         android:key="rotation"
         lineage:requiresFeature="android.hardware.sensor.accelerometer" />
 
+    <com.android.settings.display.DcDimmingPreference
+        android:key="dc_dimming"
+        android:title="@string/dc_dimming_title"
+        android:fragment="com.android.settings.display.DcDimmingSettings"
+        android:widgetLayout="@null"
+        settings:widgetLayout="@null"
+        settings:searchable="false"/>
+
     <Preference
         android:key="color_mode"
         android:title="@string/color_mode_title"
