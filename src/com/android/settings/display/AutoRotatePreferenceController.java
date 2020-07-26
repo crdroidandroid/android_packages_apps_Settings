@@ -70,9 +70,13 @@ public class AutoRotatePreferenceController extends TogglePreferenceController i
         }
     }
 
+    private boolean hasSystemFeature(Context context, String feature) {
+        return context.getPackageManager().hasSystemFeature(feature);
+    }
+
     @Override
     public int getAvailabilityStatus() {
-        return RotationPolicy.isRotationLockToggleVisible(mContext)
+        return RotationPolicy.isRotationLockToggleVisible(mContext) && !hasSystemFeature(mContext, "android.hardware.sensor.accelerometer")
                 ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
