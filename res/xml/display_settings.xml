@@ -90,7 +90,6 @@
 
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="rotation"
-        lineage:replacesKey="auto_rotate"
         lineage:requiresFeature="android.hardware.sensor.accelerometer" />
 
     <Preference
