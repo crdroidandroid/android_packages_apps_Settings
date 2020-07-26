@@ -18,29 +18,14 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal" >
 
-    <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="150dp">
-
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/wifi_connection"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:clickable="false"
         android:layout_alignParentLeft="true"
         app:lottie_rawRes="@raw/wifi"
         app:lottie_loop="true"
         app:lottie_autoPlay="true" />
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/network_connection"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:clickable="false"
-        android:layout_alignParentRight="true"
-        app:lottie_rawRes="@raw/network"
-        app:lottie_loop="true"
-        app:lottie_autoPlay="true" />
-    </RelativeLayout>
 
 </LinearLayout>

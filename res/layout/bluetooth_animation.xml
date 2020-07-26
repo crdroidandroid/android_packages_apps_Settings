@@ -22,10 +22,10 @@
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/bt_connection"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
         android:clickable="false"
-        app:lottie_rawRes="@raw/bluetooth_connection"
+        app:lottie_rawRes="@raw/connected_devices"
         app:lottie_loop="true"
         app:lottie_autoPlay="true" />
 
