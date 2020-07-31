@@ -136,6 +136,8 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     @VisibleForTesting
     BatteryTipPreferenceController mBatteryTipPreferenceController;
 
+    boolean mBatteryHealthSupported;
+
     @VisibleForTesting
     final ContentObserver mSettingsObserver = new ContentObserver(new Handler()) {
         @Override
@@ -262,6 +264,13 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         mBatteryChargeCycles = (PowerGaugePreference) findPreference(
                 KEY_BATTERY_CHARGE_CYCLES);
         mBatteryUtils = BatteryUtils.getInstance(getContext());
+
+        mBatteryHealthSupported = getResources().getBoolean(R.bool.config_supportBatteryHealth);
+        if (!mBatteryHealthSupported) {
+            getPreferenceScreen().removePreference(mCurrentBatteryCapacity);
+            getPreferenceScreen().removePreference(mDesignedBatteryCapacity);
+            getPreferenceScreen().removePreference(mBatteryChargeCycles);
+        }
 
         if (Utils.isBatteryPresent(getContext())) {
             restartBatteryInfoLoader();
@@ -403,9 +412,11 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         BatteryInfo batteryInfo = BatteryInfo.getBatteryInfoOld(context, batteryBroadcast,
                 mStatsHelper.getStats(), elapsedRealtimeUs, false);
         updateHeaderPreference(batteryInfo);
-        mCurrentBatteryCapacity.setSubtitle(parseBatterymAhText(getResources().getString(R.string.config_batteryCalculatedCapacity)));
-        mDesignedBatteryCapacity.setSubtitle(parseBatterymAhText(getResources().getString(R.string.config_batteryDesignCapacity)));
-        mBatteryChargeCycles.setSubtitle(parseBatteryCycle(getResources().getString(R.string.config_batteryChargeCycles)));
+        if (mBatteryHealthSupported) {
+            mCurrentBatteryCapacity.setSubtitle(parseBatterymAhText(getResources().getString(R.string.config_batteryCalculatedCapacity)));
+            mDesignedBatteryCapacity.setSubtitle(parseBatterymAhText(getResources().getString(R.string.config_batteryDesignCapacity)));
+            mBatteryChargeCycles.setSubtitle(parseBatteryCycle(getResources().getString(R.string.config_batteryChargeCycles)));
+        }
     }
 
     @VisibleForTesting
@@ -608,5 +619,19 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.power_usage_summary);
+            new BaseSearchIndexProvider(R.xml.power_usage_summary) {
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+
+                    if (!context.getResources().getBoolean(R.bool.config_supportBatteryHealth)) {
+                        keys.add(KEY_CURRENT_BATTERY_CAPACITY);
+                        keys.add(KEY_DESIGNED_BATTERY_CAPACITY);
+                        keys.add(KEY_BATTERY_CHARGE_CYCLES);
+                    }
+
+                    return keys;
+                }
+    };
 }
