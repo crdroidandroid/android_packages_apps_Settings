@@ -54,9 +54,9 @@
             android:defaultValue="true" />
 
         <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-            android:key="lockscreen_visualizer_enabled"
-            android:title="@string/music_visualizer_title"
-            android:summary="@string/music_visualizer_summary"
+            android:key="lockscreen_pulse_enabled"
+            android:title="@string/show_lockscreen_pulse_title"
+            android:summary="@string/show_lockscreen_pulse_summary"
             android:defaultValue="true" />
 
         <lineageos.preference.LineageSecureSettingSwitchPreference
