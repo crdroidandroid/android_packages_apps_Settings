@@ -21,6 +21,10 @@
     android:key="privacy_dashboard_page"
     android:title="@string/privacy_dashboard_title">
 
+    <Preference
+        android:key="privacy_animation"
+        android:layout="@layout/privacy_animation" />
+
     <!-- This preference isn't searchable, and user won't see title in this preference.
          So, we just set empty text for title. -->
     <com.android.settingslib.widget.BarChartPreference
