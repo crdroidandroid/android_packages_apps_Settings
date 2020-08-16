@@ -21,6 +21,11 @@
     android:title="@string/header_category_system">
 
     <Preference
+        android:key="system_animation"
+        android:order="-500"
+        android:layout="@layout/system_animation" />
+
+    <Preference
         android:key="language_input_settings"
         android:title="@string/language_settings"
         android:icon="@drawable/ic_settings_language"
