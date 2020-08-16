@@ -20,6 +20,11 @@
     android:key="network_and_internet_screen"
     android:title="@string/network_dashboard_title">
 
+    <Preference
+        android:key="wifi_anim" 
+        android:layout="@layout/wifi_animation"
+        android:order="-999"/>
+
     <PreferenceCategory
         android:key="multi_network_header"
         android:title="@string/summary_placeholder"
