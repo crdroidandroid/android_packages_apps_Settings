@@ -19,6 +19,7 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/storage_settings"
     android:orderingFromXml="false">
+
     <com.android.settings.deviceinfo.storage.StorageSummaryDonutPreference
         android:key="storage_summary"
         android:order="0"

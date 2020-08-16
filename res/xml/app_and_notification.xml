@@ -22,6 +22,11 @@
     android:title="@string/app_and_notification_dashboard_title">
     <!-- the initial count should include the dynamic tiles -->
 
+   <Preference
+        android:key="notification_animation"
+        android:layout="@layout/notification_animation" 
+        android:order="-999"/>
+
     <Preference
         android:key="all_app_info"
         android:title="@string/applications_settings"

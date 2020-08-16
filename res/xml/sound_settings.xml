@@ -21,6 +21,11 @@
     android:key="sound_settings"
     settings:keywords="@string/keywords_sounds">
 
+   <Preference
+        android:key="sound_animation"
+        android:layout="@layout/sound_animation" 
+        android:order="-999"/>
+
     <!-- Remote volume group -->
     <PreferenceCategory
         android:key="remote_media_group"
