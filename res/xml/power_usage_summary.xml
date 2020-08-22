@@ -78,7 +78,8 @@
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="designed_battery_capacity"
         android:title="@string/designed_battery_capacity"
-        android:selectable="false" />
+        android:selectable="false"
+        settings:allowDividerAbove="true" />
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="current_battery_capacity"
