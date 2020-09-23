@@ -74,6 +74,8 @@
     <string name="status_bar_double_tap_to_sleep_summary">Tocca due volte la barra di stato o la schermata di sblocco per spegnere lo schermo</string>
     <string name="touchscreen_gesture_settings_title">Gesture sullo schermo</string>
     <string name="touchscreen_gesture_settings_summary">Esegui varie gesture sullo schermo per azioni rapide</string>
+    <string name="data_usage_app_restrict_all">Consenti accesso alla rete</string>
+    <string name="data_usage_app_restrict_all_summary">Abilita l\'utilizzo della rete</string>
     <string name="data_usage_app_restrict_data">Dati mobili</string>
     <string name="data_usage_app_restrict_data_summary">Abilita l\'utilizzo dei dati mobili</string>
     <string name="data_usage_app_restrict_vpn">Dati VPN</string>
@@ -92,4 +94,18 @@
     <string name="update_recovery_summary">Aggiorna la recovery integrata con gli aggiornamenti del sistema</string>
     <string name="update_recovery_on_warning">AVVISO: Quando questa funzionalità è attiva, la recovery installata sarà sostituita da una inclusa con la versione corrente del sistema.\n\nLa vostra recovery attuale verrà aggiornata con gli aggiornamenti di sistema, contribuendo a garantire la compatibilità con le future versioni.\n\nAttivare questa funzione?</string>
     <string name="update_recovery_off_warning">Attenzione: Quando questa funzionalità è disattivata, la recovery installata non verrà aggiornata con il sistema.\n\nFuturi aggiornamenti potrebbero non installarsi con recovery personalizzate o vecchie.\n\nDisattivare questa funzione?</string>
+    <string name="berry_black_theme_title">Nero puro</string>
+    <string name="berry_black_theme_summary">Tema scuro con sfondo nero</string>
+    <string name="back_sensitivity_title">Sensibilità gesto indietro</string>
+    <string name="back_sensitivity_message">Una maggiore sensibilità potrebbe essere in conflitto con qualsiasi gesto delle app lungo i bordi dello schermo.</string>
+    <string name="back_exclusion_title">Esclusione gesto indietro</string>
+    <string name="back_exclusion_summary">Escludi una porzione della parte superiore dello schermo dall\'area del gesto indietro</string>
+    <string name="min_label">Min</string>
+    <string name="max_label">Max</string>
+    <string name="show_navbar_hint_title">Indicatore navigazione</string>
+    <string name="show_navbar_hint_summary">Mostra l\'indicatore di navigazione in fondo allo schermo</string>
+    <string name="keywords_notification_log">notifiche,  log notifiche</string>
+    <string name="connected_tws_device_saved_title">Auricolari salvati</string>
+    <string name="heads_up_notifications_enabled_title">Heads-up</string>
+    <string name="heads_up_notifications_enabled_summary">Visualizza le notifiche prioritarie in una piccola finestra fluttuante</string>
 </resources>
