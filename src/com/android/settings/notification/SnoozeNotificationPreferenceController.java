@@ -24,6 +24,8 @@ import android.provider.Settings;
 import com.android.settings.core.TogglePreferenceController;
 
 import androidx.annotation.VisibleForTesting;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 
 public class SnoozeNotificationPreferenceController extends TogglePreferenceController {
 
@@ -35,6 +37,15 @@ public class SnoozeNotificationPreferenceController extends TogglePreferenceCont
 
     public SnoozeNotificationPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
+    }
+
+    @Override
+    public void displayPreference(PreferenceScreen screen) {
+        super.displayPreference(screen);
+        Preference preference = screen.findPreference(getPreferenceKey());
+        if (preference != null) {
+            updateState(preference);
+        }
     }
 
     @Override
