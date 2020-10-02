@@ -2969,6 +2969,13 @@
             </intent-filter>
         </receiver>
 
+        <receiver android:name="com.android.settingslib.bluetooth.BluetoothTimeoutReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.bluetooth.intent.TIMEOUT" />
+            </intent-filter>
+        </receiver>
+
         <!-- Watch for ContactsContract.Profile changes and update the user's photo.  -->
         <receiver android:name=".users.ProfileUpdateReceiver"
             android:exported="true">
