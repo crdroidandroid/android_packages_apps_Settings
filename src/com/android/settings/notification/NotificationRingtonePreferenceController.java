@@ -19,6 +19,9 @@ package com.android.settings.notification;
 import android.content.Context;
 import android.media.RingtoneManager;
 
+import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
+
 import com.android.settings.R;
 
 public class NotificationRingtonePreferenceController extends RingtonePreferenceControllerBase {
@@ -27,6 +30,15 @@ public class NotificationRingtonePreferenceController extends RingtonePreference
 
     public NotificationRingtonePreferenceController(Context context) {
         super(context);
+    }
+
+    @Override
+    public void displayPreference(PreferenceScreen screen) {
+        super.displayPreference(screen);
+        Preference preference = screen.findPreference(getPreferenceKey());
+        if (preference != null) {
+            updateState(preference);
+        }
     }
 
     @Override

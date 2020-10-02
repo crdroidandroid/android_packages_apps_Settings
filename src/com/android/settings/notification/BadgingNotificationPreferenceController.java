@@ -57,6 +57,7 @@ public class BadgingNotificationPreferenceController extends TogglePreferenceCon
         super.displayPreference(screen);
         Preference preference = screen.findPreference(NOTIFICATION_BADGING);
         if (preference != null) {
+            updateState(preference);
             mSettingObserver = new SettingObserver(preference);
         }
     }

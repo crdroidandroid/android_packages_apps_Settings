@@ -22,6 +22,8 @@ import android.service.notification.Adjustment;
 import com.android.settings.core.TogglePreferenceController;
 
 import com.google.common.annotations.VisibleForTesting;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 
 import java.util.List;
 
@@ -34,6 +36,15 @@ public class AssistantCapabilityPreferenceController extends TogglePreferenceCon
     public AssistantCapabilityPreferenceController(Context context, String key) {
         super(context, key);
         mBackend = new NotificationBackend();
+    }
+
+    @Override
+    public void displayPreference(PreferenceScreen screen) {
+        super.displayPreference(screen);
+        Preference preference = screen.findPreference(getPreferenceKey());
+        if (preference != null) {
+            updateState(preference);
+        }
     }
 
     @VisibleForTesting
