@@ -47,6 +47,15 @@
         settings:useAdminDisabledSummary="true"
         settings:controller="com.android.settings.connecteddevice.AddDevicePreferenceController"/>
 
+    <ListPreference
+        android:key="bluetooth_timeout"
+        android:icon="@drawable/ic_bluetooth_disabled"
+        android:title="@string/bluetooth_timeout"
+        android:summary="@string/bluetooth_timeout_summary"
+        android:entries="@array/custom_timeout_entries"
+        android:entryValues="@array/custom_timeout_values"
+        settings:controller="com.android.settings.bluetooth.BluetoothTimeoutPreferenceController"/>
+
     <PreferenceCategory
         android:key="previously_connected_devices"
         android:title="@string/connected_device_saved_title"
