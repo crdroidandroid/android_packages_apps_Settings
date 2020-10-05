@@ -75,6 +75,8 @@ import com.android.settingslib.RestrictedPreference;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
+import com.android.internal.util.custom.faceunlock.FaceUnlockUtils;
+
 public class ChooseLockGeneric extends SettingsActivity {
     public static final String CONFIRM_CREDENTIALS = "confirm_credentials";
 
