@@ -32,7 +32,7 @@ public class LegalSettings extends DashboardFragment {
 
     private static final String TAG = "LegalSettings";
 
-    private static final String PROPERTY_LINEAGELICENSE_URL = "ro.lineagelegal.url";
+    private static final String PROPERTY_LINEAGELICENSE_URL = "ro.crdroidlegal.url";
     private static final String KEY_LINEAGE_LICENSE = "lineagelicense";
 
     @Override
