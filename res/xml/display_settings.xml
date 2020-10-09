@@ -177,6 +177,10 @@
             android:title="@string/lift_to_wake_title"/>
 
         <SwitchPreference
+            android:key="enable_blurs_on_windows"
+            android:title="@string/window_blurs"/>
+
+        <SwitchPreference
             android:key="tap_to_wake"
             android:title="@string/tap_to_wake"
             android:summary="@string/tap_to_wake_summary"/>
