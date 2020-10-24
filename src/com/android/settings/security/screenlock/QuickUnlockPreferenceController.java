@@ -27,6 +27,7 @@ import androidx.preference.TwoStatePreference;
 
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
+import com.android.settings.Utils;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.security.trustagent.TrustAgentManager;
@@ -53,6 +54,9 @@ public class QuickUnlockPreferenceController extends AbstractPreferenceControlle
     @Override
     public boolean isAvailable() {
         if (!mLockPatternUtils.isSecure(mUserId)) {
+            return false;
+        }
+        if (Utils.getPINPasswordLength(mLockPatternUtils, mUserId) <= 0) {
             return false;
         }
         switch (mLockPatternUtils.getKeyguardStoredPasswordQuality(mUserId)) {

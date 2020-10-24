@@ -846,6 +846,7 @@ public class ChooseLockGeneric extends SettingsActivity {
                 // We need to wait for that to occur, otherwise, the UI will still show that
                 // fingerprints exist even though they are (about to) be removed depending on
                 // the race condition.
+                Utils.savePINPasswordLength(mLockPatternUtils, 0, mUserId);
                 tracker.onFingerprintDone();
             }
         }
@@ -871,6 +872,7 @@ public class ChooseLockGeneric extends SettingsActivity {
                 }
             }
             if (!hasChildProfile) {
+                Utils.savePINPasswordLength(mLockPatternUtils, 0, mUserId);
                 tracker.onFingerprintDone();
             }
         }
