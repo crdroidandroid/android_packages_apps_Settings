@@ -212,6 +212,7 @@ public class ChooseLockPattern extends SettingsActivity {
         protected TextView mTitleText;
         protected TextView mHeaderText;
         protected TextView mMessageText;
+        private LockPatternUtils mLockPatternUtils;
         protected LockPatternView mLockPatternView;
         protected TextView mFooterText;
         protected FooterButton mSkipOrClearButton;
@@ -469,6 +470,7 @@ public class ChooseLockPattern extends SettingsActivity {
             Intent intent = getActivity().getIntent();
             // Only take this argument into account if it belongs to the current profile.
             mUserId = Utils.getUserIdFromBundle(getActivity(), intent.getExtras());
+            mLockPatternUtils = new LockPatternUtils(getActivity());
 
             if (intent.getBooleanExtra(
                     ChooseLockSettingsHelper.EXTRA_KEY_FOR_CHANGE_CRED_REQUIRED_FOR_BOOT, false)) {
@@ -674,6 +676,7 @@ public class ChooseLockPattern extends SettingsActivity {
                             + " when button is " + RightButtonMode.Confirm);
                 }
                 startSaveAndFinish();
+                Utils.savePINPasswordLength(mLockPatternUtils, 0, mUserId);
             } else if (mUiStage.rightMode == RightButtonMode.Ok) {
                 if (mUiStage != Stage.HelpScreen) {
                     throw new IllegalStateException("Help screen is only mode with ok button, "
