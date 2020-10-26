@@ -420,7 +420,7 @@ public class WifiDppQrCodeScannerFragment extends WifiDppQrCodeBaseFragment impl
 
     @Override
     public Rect getFramePosition(Size previewSize, int cameraOrientation) {
-        return new Rect(0, 0, previewSize.getHeight(), previewSize.getHeight());
+        return new Rect(0, 0, previewSize.getWidth(), previewSize.getHeight());
     }
 
     @Override
