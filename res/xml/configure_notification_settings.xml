@@ -135,11 +135,11 @@
             android:title="@string/notification_pulse_title"
             settings:controller="com.android.settings.notification.PulseNotificationPreferenceController"/>
 
-        <!-- Notification lights -->
+        <!-- Notification lights
         <org.lineageos.internal.lineageparts.LineagePartsPreference
             android:key="notification_lights"
             lineage:requiresConfig="@*android:bool/config_intrusiveNotificationLed"
-            lineage:replacesKey="notification_pulse" />
+            lineage:replacesKey="notification_pulse" /> -->
 
         <!-- Heads up -->
         <lineageos.preference.GlobalSettingSwitchPreference
