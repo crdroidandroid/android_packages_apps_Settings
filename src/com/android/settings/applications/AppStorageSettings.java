@@ -209,13 +209,6 @@ public class AppStorageSettings extends AppInfoWithHeader
         if (mAppsControlDisallowedAdmin != null && !mAppsControlDisallowedBySystem) {
             RestrictedLockUtils.sendShowAdminSupportDetailsIntent(
                     getActivity(), mAppsControlDisallowedAdmin);
-        } else if (mAppEntry.info.manageSpaceActivityName != null) {
-            if (!Utils.isMonkeyRunning()) {
-                Intent intent = new Intent(Intent.ACTION_DEFAULT);
-                intent.setClassName(mAppEntry.info.packageName,
-                        mAppEntry.info.manageSpaceActivityName);
-                startActivityForResult(intent, REQUEST_MANAGE_SPACE);
-            }
         } else {
             showDialogInner(DLG_CLEAR_DATA, 0);
         }
@@ -299,11 +292,8 @@ public class AppStorageSettings extends AppInfoWithHeader
         if (appHasSpaceManagementUI) {
             intent.setClassName(mAppEntry.info.packageName, mAppEntry.info.manageSpaceActivityName);
         }
-        final boolean isManageSpaceActivityAvailable =
-                getPackageManager().resolveActivity(intent, 0) != null;
 
-        if ((!appHasSpaceManagementUI && appRestrictsClearingData)
-                || !isManageSpaceActivityAvailable) {
+        if (!appHasSpaceManagementUI && appRestrictsClearingData) {
             mButtonsPref
                     .setButton1Text(R.string.clear_user_data_text)
                     .setButton1Icon(R.drawable.ic_settings_delete)
