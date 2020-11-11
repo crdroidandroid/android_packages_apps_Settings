@@ -40,6 +40,15 @@
         settings:textEnd="@string/long_label"
         android:dependency="navigation_bar_hint" />
 
+    <com.android.settings.widget.LabeledSeekBarPreference
+        android:key="gesture_back_height"
+        android:title="@string/back_height_title"
+        android:summary="@string/back_height_summary"
+        android:max="3"
+        android:selectable="true"
+        settings:textStart="@string/back_height_low_label"
+        settings:textEnd="@string/back_height_high_label"/>
+
     <PreferenceCategory
         android:key="assistant_gesture_category"
         android:persistent="false"
