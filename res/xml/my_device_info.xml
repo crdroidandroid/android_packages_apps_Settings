@@ -93,6 +93,15 @@
         android:selectable="false"
         android:title="@string/my_device_info_device_details_category_title">
 
+        <Preference
+            android:title="@string/radio_info_title"
+            android:key="radio_info_settings"
+            android:order="6">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.phone"
+                    android:targetClass="com.android.phone.settings.RadioInfo" />
+         </Preference>
+
         <!-- SIM status -->
         <Preference
             android:key="sim_status"
