@@ -17,6 +17,7 @@
 package com.android.settings.gestures;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.provider.Settings;
 import android.text.TextUtils;
 
@@ -40,8 +41,12 @@ public class GlobalActionsPanelPreferenceController extends GesturePreferenceCon
 
     @Override
     public int getAvailabilityStatus() {
-        int enabled = Settings.Secure.getInt(mContext.getContentResolver(), AVAILABLE_SETTING, 0);
-        return enabled == 1 ? AVAILABLE : CONDITIONALLY_UNAVAILABLE;
+        return hasNFC(mContext) == true ? AVAILABLE : CONDITIONALLY_UNAVAILABLE;
+    }
+
+    // Check to see if device supports NFC
+    public static boolean hasNFC(Context context) {
+        return context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_NFC);
     }
 
     @Override
