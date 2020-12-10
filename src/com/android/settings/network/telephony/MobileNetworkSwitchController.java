@@ -81,7 +81,9 @@ public class MobileNetworkSwitchController extends BasePreferenceController impl
                 R.string.mobile_network_use_sim_off);
 
         mSwitchBar.addOnSwitchChangeListener((switchView, isChecked) -> {
-            if (mSubscriptionManager.isSubscriptionEnabled(mSubId) != isChecked
+            // TODO b/135222940: re-evaluate whether to use
+            // mSubscriptionManager#isSubscriptionEnabled
+            if (mSubscriptionManager.isActiveSubId(mSubId) != isChecked
                     && (!mSubscriptionManager.setSubscriptionEnabled(mSubId, isChecked))) {
                 mSwitchBar.setChecked(!isChecked);
             }
@@ -93,23 +95,25 @@ public class MobileNetworkSwitchController extends BasePreferenceController impl
         if (mSwitchBar == null) {
             return;
         }
-        final List<SubscriptionInfo> subs = SubscriptionUtil.getAvailableSubscriptions(
-                mContext);
-        if (mSubId == SubscriptionManager.INVALID_SUBSCRIPTION_ID ||
-                mSubscriptionManager.isSubscriptionEnabled(mSubId) && subs.size() < 2) {
-            mSwitchBar.hide();
-            return;
-        }
 
-        for (SubscriptionInfo info : subs) {
+        SubscriptionInfo subInfo = null;
+        for (SubscriptionInfo info : SubscriptionUtil.getAvailableSubscriptions(mContext)) {
             if (info.getSubscriptionId() == mSubId) {
-                mSwitchBar.show();
-                mSwitchBar.setChecked(mSubscriptionManager.isSubscriptionEnabled(mSubId));
-                return;
+                subInfo = info;
+                break;
             }
         }
-        // This subscription was not found in the available list.
-        mSwitchBar.hide();
+
+        // For eSIM, we always want the toggle. The telephony stack doesn't currently support
+        // disabling a pSIM directly (b/133379187), so we for now we don't include this on pSIM.
+        if (subInfo == null || !subInfo.isEmbedded()) {
+            mSwitchBar.hide();
+        } else {
+            mSwitchBar.show();
+            // TODO b/135222940: re-evaluate whether to use
+            // mSubscriptionManager#isSubscriptionEnabled
+            mSwitchBar.setChecked(mSubscriptionManager.isActiveSubId(mSubId));
+        }
     }
 
     @Override
