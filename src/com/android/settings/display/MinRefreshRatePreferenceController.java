@@ -81,8 +81,10 @@ public class MinRefreshRatePreferenceController extends BasePreferenceController
 
     @Override
     public void updateState(Preference preference) {
+        final float defaultRefreshRate = (float) mContext.getResources().getInteger(
+                        com.android.internal.R.integer.config_defaultRefreshRate);
         final float currentValue = Settings.System.getFloat(mContext.getContentResolver(),
-                MIN_REFRESH_RATE, 60.00f);
+                MIN_REFRESH_RATE, defaultRefreshRate);
         int index = mListPreference.findIndexOfValue(
                 String.format(Locale.US, "%.02f", currentValue));
         if (index < 0) index = 0;
