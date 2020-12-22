@@ -24,6 +24,7 @@ import android.util.Log;
 
 import androidx.preference.Preference;
 
+import com.android.settings.RingtonePreference;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.utils.ThreadUtils;
@@ -51,9 +52,9 @@ public abstract class RingtonePreferenceControllerBase extends AbstractPreferenc
     }
 
     private void updateSummary(Preference preference) {
-        final Uri ringtoneUri = RingtoneManager.getActualDefaultRingtoneUri(
-                mContext, getRingtoneType());
-
+        final Uri ringtoneUri = RingtoneManager.getActualDefaultRingtoneUriForPhoneAccountHandle(
+                mContext, getRingtoneType(),
+                        ((RingtonePreference)preference).getPhoneAccountHandle());
         final CharSequence summary;
         try {
             summary = Ringtone.getTitle(
