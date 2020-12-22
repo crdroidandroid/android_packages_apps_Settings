@@ -403,9 +403,12 @@ public class AppInfoDashboardFragment extends DashboardFragment
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-        menu.add(0, PLAY_STORE, 0, R.string.app_play_store)
-                .setIcon(R.drawable.ic_menu_play_store)
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        Context mContext = getContext();
+        if (com.android.internal.util.crdroid.Utils.isPackageInstalled(mContext,"com.android.vending",false)) {
+            menu.add(0, PLAY_STORE, 0, R.string.app_play_store)
+                    .setIcon(R.drawable.ic_menu_play_store)
+                    .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        }
         menu.add(0, UNINSTALL_UPDATES, 0, R.string.app_factory_reset)
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
         menu.add(0, UNINSTALL_ALL_USERS_MENU, 1, R.string.uninstall_all_users_text)
