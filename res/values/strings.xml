@@ -12174,4 +12174,8 @@
 
     <!-- Summary for see all preference when bluetooth is disable [CHAR LIMIT=none]-->
     <string name="connected_device_see_all_summary">Bluetooth will turn on</string>
+
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Screen off fingerprint</string>
+    <string name="fod_gesture_summary">Allows unlocking the device without having to wake up the screen first</string>
 </resources>
