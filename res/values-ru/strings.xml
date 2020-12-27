@@ -5139,4 +5139,7 @@
     <string name="media_controls_no_players" msgid="3493023121892175946">"Нет доступных проигрывателей"</string>
     <string name="keywords_media_controls" msgid="8345490568291778638">"Медиа"</string>
     <string name="connected_device_see_all_summary" msgid="2056010318537268108">"Будет включен модуль Bluetooth"</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Сканер отпечатка пальца на выключенном экране</string>
+    <string name="fod_gesture_summary">Разрешает разблокировать устройство без включения экрана</string>
 </resources>
