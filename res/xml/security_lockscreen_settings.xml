@@ -57,15 +57,17 @@
             android:title="@string/owner_info_settings_title"
             android:summary="@string/owner_info_settings_summary" />
 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
-            android:key="lockscreen_visualizer"
-            android:title="@string/lockscreen_visualizer_title"
-            android:defaultValue="false" />
+        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+            android:key="lockscreen_pulse_enabled"
+            android:title="@string/show_lockscreen_pulse_title"
+            android:summary="@string/show_lockscreen_pulse_summary"
+            android:defaultValue="true" />
 
         <lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="lockscreen_media_metadata"
-            android:title="@string/lockscreen_media_art_title"
-            android:defaultValue="false" />
+            android:title="@string/media_art_title"
+            android:summary="@string/media_art_summary"
+            android:defaultValue="true" />
 
         <SwitchPreference
             android:key="lockscreen_privacy_wallet_switch"
