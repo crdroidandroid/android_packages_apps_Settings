@@ -60,4 +60,11 @@
         android:title="@string/unlock_quick_unlock_control_title"
         android:summary="@string/unlock_quick_unlock_control_summary" />
 
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        android:key="fod_gesture"
+        android:title="@string/fod_gesture_title"
+        android:summary="@string/fod_gesture_summary"
+        android:defaultValue="false"
+        settings:controller="com.android.settings.security.screenlock.ScreenOffFodPreferenceController" />
+
 </PreferenceScreen>
