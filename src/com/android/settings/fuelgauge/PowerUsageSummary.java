@@ -27,6 +27,8 @@ import android.content.IntentFilter;
 import android.database.ContentObserver;
 import android.icu.text.NumberFormat;
 import android.net.Uri;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.PowerManager;
@@ -91,6 +93,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     static final int BATTERY_TIP_LOADER = 2;
     @VisibleForTesting
     static final int MENU_ADVANCED_BATTERY = Menu.FIRST + 1;
+    static final int MENU_STATS_RESET = Menu.FIRST + 2;
     public static final int DEBUG_INFO_LOADER = 3;
 
     @VisibleForTesting
@@ -301,7 +304,28 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.add(Menu.NONE, MENU_ADVANCED_BATTERY, Menu.NONE, R.string.advanced_battery_title);
 
+        MenuItem reset = menu.add(0, MENU_STATS_RESET, 0, R.string.battery_stats_reset)
+                .setIcon(R.drawable.ic_delete)
+                .setAlphabeticShortcut('d');
+        reset.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+
         super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    private void resetStats() {
+        AlertDialog dialog = new AlertDialog.Builder(getActivity())
+            .setTitle(R.string.battery_stats_reset)
+            .setMessage(R.string.battery_stats_message)
+            .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    mStatsHelper.resetStatistics();
+                    refreshUi(BatteryUpdateType.MANUAL);
+                }
+            })
+            .setNegativeButton(R.string.cancel, null)
+            .create();
+        dialog.show();
     }
 
     @Override
@@ -312,6 +336,9 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case MENU_STATS_RESET:
+                resetStats();
+                return true;
             case MENU_ADVANCED_BATTERY:
                 new SubSettingLauncher(getContext())
                         .setDestination(PowerUsageAdvanced.class.getName())
