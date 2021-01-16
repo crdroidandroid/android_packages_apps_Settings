@@ -35,7 +35,7 @@ public class AboutDeviceNamePreferenceController extends BasePreferenceControlle
     private static final String TAG = "AboutDeviceNameCtrl";
 
     private static final String KEY_BRAND_NAME_PROP = "ro.product.manufacturer";
-    private static final String KEY_DEVICE_NAME_PROP = "ro.crdroid.device";
+    private static final String KEY_DEVICE_NAME_PROP = "ro.product.device";
 
     public AboutDeviceNamePreferenceController(Context context, String key) {
         super(context, key);
