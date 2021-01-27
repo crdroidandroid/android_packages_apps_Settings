@@ -45,4 +45,13 @@
         android:key="wifi_tether_auto_turn_off"
         android:title="@string/wifi_hotspot_auto_off_title"
         android:summary="@string/wifi_hotspot_auto_off_summary"/>
+
+    <PreferenceScreen
+        android:key="wifi_tether_client_list"
+        android:title="@string/wifi_tether_client_list_title"
+        android:summary="@string/wifi_tether_client_list_summary">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.softap"
+                android:targetClass="com.android.softap.ClientListActivity" />
+    </PreferenceScreen>
 </PreferenceScreen>
