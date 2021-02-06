@@ -53,7 +53,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     contextualcards \
     settings-logtags \
     zxing-core-1.7 \
-    org.lineageos.platform.internal
+    org.lineageos.platform.internal \
+    vendor.lineage.fastcharge-V1.0-java
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     packages/apps/crDroidSettings/res
