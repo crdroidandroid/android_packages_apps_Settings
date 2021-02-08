@@ -26,6 +26,8 @@ import androidx.preference.Preference;
 
 import com.android.settings.Utils;
 
+import com.android.settings.custom.biometrics.FaceUtils;
+
 /**
  * Preference controller for Face settings page controlling the ability to use
  * Face authentication in apps (through BiometricPrompt).
@@ -78,6 +80,10 @@ public class FaceSettingsAppPreferenceController extends FaceSettingsPreferenceC
 
     @Override
     public int getAvailabilityStatus() {
+        if (FaceUtils.isFaceUnlockSupported()){
+            return UNSUPPORTED_ON_DEVICE;
+        }
+
         if(mFaceManager == null){
             return AVAILABLE_UNSEARCHABLE;
         }
