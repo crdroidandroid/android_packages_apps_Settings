@@ -18,8 +18,6 @@ package com.android.settings.biometrics.face;
 
 import android.content.Context;
 import android.content.Intent;
-import android.view.View;
-import android.widget.Button;
 
 import androidx.preference.Preference;
 
@@ -33,7 +31,7 @@ import com.android.settingslib.widget.LayoutPreference;
  * Preference controller that allows a user to enroll their face.
  */
 public class FaceSettingsEnrollButtonPreferenceController extends BasePreferenceController
-        implements View.OnClickListener {
+        implements Preference.OnPreferenceClickListener {
 
     private static final String TAG = "FaceSettings/Remove";
     static final String KEY = "security_settings_face_enroll_faces_container";
@@ -41,7 +39,6 @@ public class FaceSettingsEnrollButtonPreferenceController extends BasePreference
     private int mUserId;
     private byte[] mToken;
     private SettingsActivity mActivity;
-    private Button mButton;
     private boolean mIsClicked;
     private Listener mListener;
 
@@ -57,14 +54,11 @@ public class FaceSettingsEnrollButtonPreferenceController extends BasePreference
     @Override
     public void updateState(Preference preference) {
         super.updateState(preference);
-
-        mButton = ((LayoutPreference) preference)
-                .findViewById(R.id.security_settings_face_settings_enroll_button);
-        mButton.setOnClickListener(this);
+        preference.setOnPreferenceClickListener(this);
     }
 
     @Override
-    public void onClick(View v) {
+    public boolean onPreferenceClick(Preference preference) {
         mIsClicked = true;
         final Intent intent = new Intent();
         intent.setClassName("com.android.settings", FaceEnrollIntroduction.class.getName());
@@ -75,6 +69,7 @@ public class FaceSettingsEnrollButtonPreferenceController extends BasePreference
         } else {
             mContext.startActivity(intent);
         }
+        return true;
     }
 
     @Override
