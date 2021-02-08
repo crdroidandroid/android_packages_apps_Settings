@@ -27,29 +27,50 @@
         app:controller="com.android.settings.widget.VideoPreferenceController"/>
 
     <PreferenceCategory
-        android:key="security_settings_face_unlock_category"
-        android:title="@string/security_settings_face_settings_use_face_category">
+        android:key="security_settings_face_button_category"
+        android:title="@string/security_settings_face_preference_title">
+
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="security_settings_face_keyguard"
             android:title="@string/security_settings_face_settings_use_face_unlock_phone"
             app:keywords="@string/keywords_face_unlock"
             app:controller="com.android.settings.biometrics.face.FaceSettingsKeyguardPreferenceController"/>
+
         <SwitchPreference
             android:key="security_settings_face_app"
             android:title="@string/security_settings_face_settings_use_face_for_apps"
             app:keywords="@string/keywords_face_unlock"
             app:controller="com.android.settings.biometrics.face.FaceSettingsAppPreferenceController"/>
+
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="security_lockscreen_bypass"
             android:title="@string/lockscreen_bypass_title"
             android:summary="@string/lockscreen_bypass_summary"
             settings:keywords="@string/keywords_lockscreen_bypass"
             settings:controller="com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController" />
+
+        <Preference
+            android:title="@string/security_settings_face_unlock_redo_face_scan_title"
+            android:key="security_settings_face_redo_face_scan"
+            android:summary="@string/security_settings_face_unlock_redo_face_scan_summary"
+            app:controller="com.android.settings.custom.biometrics.face.FaceSettingsRedoPreferenceController"
+            app:keywords="@string/keywords_face_unlock"/>
+
+        <Preference
+            android:title="@string/security_settings_face_settings_remove_face_data"
+            android:key="security_settings_face_delete_faces_container"
+            app:keywords="@string/keywords_face_unlock"/>
+
+        <Preference
+            android:title="@string/security_settings_face_settings_enroll"
+            android:key="security_settings_face_enroll_faces_container"
+            app:keywords="@string/keywords_face_unlock"/>
     </PreferenceCategory>
 
     <PreferenceCategory
         android:key="security_settings_face_manage_category"
-        android:title="@string/security_settings_face_settings_require_category">
+        android:title="@string/security_settings_face_settings_require_category"
+        app:controller="com.android.settings.biometrics.face.FaceSettingsManagePreferenceController">
         <SwitchPreference
             android:key="security_settings_face_require_attention"
             android:title="@string/security_settings_face_settings_require_attention"
@@ -63,24 +84,6 @@
             android:summary="@string/security_settings_face_settings_require_confirmation_details"
             app:keywords="@string/keywords_face_unlock"
             app:controller="com.android.settings.biometrics.face.FaceSettingsConfirmPreferenceController"/>
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="security_settings_face_button_category"
-        android:title="@string/security_settings_face_preference_title">
-        <com.android.settingslib.widget.LayoutPreference
-            android:key="security_settings_face_delete_faces_container"
-            android:title="@string/security_settings_face_settings_remove_face_data"
-            android:selectable="false"
-            android:layout="@layout/face_remove_button"
-            settings:allowDividerBelow="true"/>
-
-        <com.android.settingslib.widget.LayoutPreference
-            android:key="security_settings_face_enroll_faces_container"
-            android:title="@string/security_settings_face_settings_enroll"
-            android:selectable="false"
-            android:layout="@layout/face_enroll_button"
-            settings:allowDividerBelow="true"/>
     </PreferenceCategory>
 
     <com.android.settingslib.widget.FooterPreference
