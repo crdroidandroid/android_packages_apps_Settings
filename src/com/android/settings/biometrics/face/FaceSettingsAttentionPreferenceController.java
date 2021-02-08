@@ -27,6 +27,8 @@ import androidx.preference.SwitchPreference;
 
 import com.android.settings.Utils;
 
+import com.android.settings.custom.biometrics.FaceUtils;
+
 /**
  * Preference controller that manages the ability to use face authentication with/without
  * user attention. See {@link FaceManager#setRequireAttention(boolean, byte[])}.
@@ -123,6 +125,6 @@ public class FaceSettingsAttentionPreferenceController extends FaceSettingsPrefe
 
     @Override
     public int getAvailabilityStatus() {
-        return AVAILABLE;
+        return FaceUtils.isFaceUnlockSupported() ? UNSUPPORTED_ON_DEVICE : AVAILABLE;
     }
 }
