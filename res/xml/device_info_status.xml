@@ -84,6 +84,13 @@
         android:summary="@string/summary_placeholder"
         android:persistent="false" />
     <Preference
+        android:key="sleep_time"
+        android:enabled="false"
+        android:shouldDisableView="false"
+        android:title="@string/status_sleep_time"
+        android:summary="@string/summary_placeholder"
+        android:persistent="false" />
+    <Preference
         android:key="ims_reg_state"
         android:enabled="false"
         android:shouldDisableView="false"
