@@ -34,6 +34,15 @@
         settings:keywords="@string/keywords_wifi_notify_open_networks"
         settings:controller="com.android.settings.wifi.NotifyOpenNetworksPreferenceController"/>
 
+    <ListPreference
+        android:key="wifi_timeout"
+        android:icon="@drawable/ic_wifi_off"
+        android:title="@string/wifi_timeout"
+        android:summary="@string/wifi_timeout_summary"
+        android:entries="@array/wifi_timeout_entries"
+        android:entryValues="@array/wifi_timeout_values"
+        settings:controller="com.android.settings.wifi.WifiTimeoutPreferenceController"/>
+
     <SwitchPreference
         android:key="wifi_cellular_data_fallback"
         android:title="@string/wifi_cellular_data_fallback_title"
