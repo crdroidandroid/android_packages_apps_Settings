@@ -28,6 +28,8 @@ import android.util.Log;
 
 import androidx.annotation.VisibleForTesting;
 
+import com.android.settings.homepage.contextualcards.ContextualCard;
+import com.android.settings.slices.CustomSliceRegistry;
 import com.android.settingslib.utils.ThreadUtils;
 
 public class ContextualCardFeatureProviderImpl implements ContextualCardFeatureProvider {
@@ -56,7 +58,15 @@ public class ContextualCardFeatureProviderImpl implements ContextualCardFeatureP
 
     @Override
     public ContextualCard getDefaultContextualCard() {
-        return null;
+     ContextualCard.Builder builder = new ContextualCard.Builder();
+        builder.setCategory(6);
+        builder.setSliceUri(CustomSliceRegistry.CONTEXTUAL_WIFI_SLICE_URI);
+        builder.setName(mContext.getPackageName() + '/' + CustomSliceRegistry.CONTEXTUAL_WIFI_SLICE_URI.toString());
+        builder.setCardType(1);
+        builder.setRankingScore(1.0d);
+        builder.setHasInlineAction(true);
+        builder.setIsLargeCard(true);
+        return builder.build();
     }
 
     @Override
