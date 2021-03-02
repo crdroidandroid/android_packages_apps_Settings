@@ -54,8 +54,8 @@ public class SuggestionFeatureProviderImpl implements SuggestionFeatureProvider 
     @Override
     public ComponentName getSuggestionServiceComponent() {
         return new ComponentName(
-                "com.android.settings.intelligence",
-                "com.android.settings.intelligence.suggestions.SuggestionService");
+                "com.google.android.settings.intelligence",
+                "com.google.android.settings.intelligence.modules.suggestions.SuggestionService");
     }
 
     @Override

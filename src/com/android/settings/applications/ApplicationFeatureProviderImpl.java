@@ -167,6 +167,14 @@ public class ApplicationFeatureProviderImpl implements ApplicationFeatureProvide
         if (locationHistoryPackage != null) {
             keepEnabledPackages.add(locationHistoryPackage);
         }
+
+        // Keep Google Applications enabled.
+        keepEnabledPackages.add("com.google.android.inputmethod.latin");
+        keepEnabledPackages.add("com.google.android.dialer");
+        keepEnabledPackages.add("com.google.android.apps.wellbeing");
+        keepEnabledPackages.add("com.google.android.settings.intelligence");
+        keepEnabledPackages.add("com.google.android.ims");
+        keepEnabledPackages.add("com.google.android.euicc");
         return keepEnabledPackages;
     }
 
