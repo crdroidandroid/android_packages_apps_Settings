@@ -25,10 +25,16 @@ import android.content.pm.ActivityInfo;
 import android.content.pm.ComponentInfo;
 import android.content.pm.IPackageManager;
 import android.content.pm.PackageManager;
+import android.content.pm.ProviderInfo;
 import android.content.pm.ResolveInfo;
 import android.content.pm.ServiceInfo;
 import android.content.pm.UserInfo;
+import android.icu.text.MeasureFormat;
+import android.icu.text.MeasureFormat.FormatWidth;
+import android.icu.util.Measure;
+import android.icu.util.MeasureUnit;
 import android.location.LocationManager;
+import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.UserManager;
 import android.service.euicc.EuiccService;
@@ -44,10 +50,12 @@ import com.android.settings.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Set;
 
 public class ApplicationFeatureProviderImpl implements ApplicationFeatureProvider {
     private static final String TAG = "AppFeatureProviderImpl";
+    private static final boolean DEBUG = false;
 
     protected final Context mContext;
     private final PackageManager mPm;
@@ -345,5 +353,98 @@ public class ApplicationFeatureProviderImpl implements ApplicationFeatureProvide
         // app-op permission allowed by default, this should always return false - if it is ever
         // converted to a special app-op permission, this should be updated.
         return false;
+    }
+
+    public CharSequence getTimeSpentInApp(String packageName) {
+        try {
+            if (!isPrivilegedApp("com.google.android.apps.wellbeing.api")) {
+                if (DEBUG) {
+                    Log.d("ApplicationFeatureProviderImpl", "Not a privileged app.");
+                }
+                return "";
+            }
+            Bundle bundle = new Bundle();
+            bundle.putString("packageName", packageName);
+            Bundle call = mContext.getContentResolver().call(
+                                   "com.google.android.apps.wellbeing.api",
+                                   "get_app_usage_millis", null, bundle);
+            if (call != null) {
+                if (call.getBoolean("success")) {
+                    Bundle bundle2 = call.getBundle("data");
+                    if (bundle2 == null) {
+                        if (DEBUG) {
+                            Log.d("ApplicationFeatureProviderImpl", "data bundle is null.");
+                        }
+                        return "";
+                    }
+                    String readableDuration = getReadableDuration(
+                        Long.valueOf(bundle2.getLong("total_time_millis")),
+                        FormatWidth.NARROW, R.string.duration_less_than_one_minute, false);
+                    return mContext.getString(
+                            R.string.screen_time_summary_usage_today, readableDuration);
+                }
+            }
+            if (DEBUG) {
+                Log.d("ApplicationFeatureProviderImpl", "Provider call unsuccessful");
+            }
+            return "";
+        } catch (Exception e) {
+            Log.w("ApplicationFeatureProviderImpl", "Error getting time spent for app " + packageName, e);
+            return "";
+        }
+    }
+
+    String getReadableDuration(Long totalTime, FormatWidth formatWidth, int defaultString, boolean landscape) {
+        long j;
+        long j2;
+        long longValue = totalTime.longValue();
+        if (longValue >= 3600000) {
+            j = longValue / 3600000;
+            longValue -= 3600000 * j;
+        } else {
+            j = 0;
+        }
+        if (longValue >= 60000) {
+            j2 = longValue / 60000;
+            longValue -= 60000 * j2;
+        } else {
+            j2 = 0;
+        }
+        int i2 = (j > 0 ? 1 : (j == 0 ? 0 : -1));
+        if (i2 > 0 && j2 > 0) {
+            return MeasureFormat.getInstance(Locale.getDefault(), formatWidth).formatMeasures(
+                                             new Measure(Long.valueOf(j), MeasureUnit.HOUR),
+                                             new Measure(Long.valueOf(j2), MeasureUnit.MINUTE));
+        } else if (i2 > 0) {
+            Locale locale = Locale.getDefault();
+            if (!landscape) {
+                formatWidth = FormatWidth.WIDE;
+            }
+            return MeasureFormat.getInstance(locale, formatWidth).formatMeasures(
+                                             new Measure(Long.valueOf(j), MeasureUnit.HOUR));
+        } else if (j2 > 0) {
+            Locale locale2 = Locale.getDefault();
+            if (!landscape) {
+                formatWidth = FormatWidth.WIDE;
+            }
+            return MeasureFormat.getInstance(locale2, formatWidth).formatMeasures(
+                                             new Measure(Long.valueOf(j2), MeasureUnit.MINUTE));
+        } else if (longValue > 0) {
+            return mContext.getResources().getString(defaultString);
+        } else {
+            Locale locale3 = Locale.getDefault();
+            if (!landscape) {
+                formatWidth = FormatWidth.WIDE;
+            }
+            return MeasureFormat.getInstance(locale3, formatWidth).formatMeasures(
+                                             new Measure(0, MeasureUnit.MINUTE));
+        }
+    }
+
+    boolean isPrivilegedApp(String packageName) {
+        ProviderInfo resolveContentProvider = mContext.getPackageManager().resolveContentProvider(packageName, 0);
+        if (resolveContentProvider == null)
+            return false;
+        return resolveContentProvider.applicationInfo.isPrivilegedApp();
     }
 }
