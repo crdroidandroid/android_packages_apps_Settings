@@ -25,6 +25,8 @@ import androidx.preference.PreferenceScreen;
 import com.android.settings.DefaultRingtonePreference;
 import com.android.settings.Utils;
 
+import com.android.settings.R;
+
 public class PhoneRingtone2PreferenceController extends RingtonePreferenceControllerBase {
 
     private static final int SLOT_ID = 1;
@@ -41,6 +43,8 @@ public class PhoneRingtone2PreferenceController extends RingtonePreferenceContro
         DefaultRingtonePreference ringtonePreference =
                 (DefaultRingtonePreference) screen.findPreference(KEY_PHONE_RINGTONE2);
         ringtonePreference.setSlotId(SLOT_ID);
+        ringtonePreference.setTitle(mContext.getString(R.string.ringtone_title) + " - " +
+            String.format(mContext.getString(R.string.sim_card_number_title), 2));
         ringtonePreference.setEnabled(hasCard());
     }
 
