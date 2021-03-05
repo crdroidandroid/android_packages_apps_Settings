@@ -136,7 +136,7 @@
     <!-- Phone ringtone for Slot2 -->
     <com.android.settings.DefaultRingtonePreference
         android:key="ringtone2"
-        android:title="@string/ringtone2_title"
+        android:title="@string/ringtone_title"
         android:dialogTitle="@string/ringtone_title"
         android:summary="@string/summary_placeholder"
         android:ringtoneType="ringtone"
