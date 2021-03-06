@@ -42,8 +42,6 @@ import com.android.settings.dashboard.suggestions.SuggestionFeatureProvider;
 import com.android.settings.dashboard.suggestions.SuggestionFeatureProviderImpl;
 import com.android.settings.enterprise.EnterprisePrivacyFeatureProvider;
 import com.android.settings.enterprise.EnterprisePrivacyFeatureProviderImpl;
-import com.android.settings.fuelgauge.BatteryStatusFeatureProvider;
-import com.android.settings.fuelgauge.BatteryStatusFeatureProviderImpl;
 import com.android.settings.fuelgauge.PowerUsageFeatureProvider;
 import com.android.settings.fuelgauge.PowerUsageFeatureProviderImpl;
 import com.android.settings.gestures.AssistGestureFeatureProvider;
@@ -80,7 +78,6 @@ public class FeatureFactoryImpl extends FeatureFactory {
     private SecurityFeatureProvider mSecurityFeatureProvider;
     private SuggestionFeatureProvider mSuggestionFeatureProvider;
     private PowerUsageFeatureProvider mPowerUsageFeatureProvider;
-    private BatteryStatusFeatureProvider mBatteryStatusFeatureProvider;
     private AssistGestureFeatureProvider mAssistGestureFeatureProvider;
     private UserFeatureProvider mUserFeatureProvider;
     private SlicesFeatureProvider mSlicesFeatureProvider;
@@ -111,15 +108,6 @@ public class FeatureFactoryImpl extends FeatureFactory {
                     context.getApplicationContext());
         }
         return mPowerUsageFeatureProvider;
-    }
-
-    @Override
-    public BatteryStatusFeatureProvider getBatteryStatusFeatureProvider(Context context) {
-        if (mBatteryStatusFeatureProvider == null) {
-            mBatteryStatusFeatureProvider = new BatteryStatusFeatureProviderImpl(
-                    context.getApplicationContext());
-        }
-        return mBatteryStatusFeatureProvider;
     }
 
     @Override
