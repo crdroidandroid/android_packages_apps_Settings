@@ -28,6 +28,8 @@ import com.android.settings.core.TogglePreferenceController;
 import com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 import com.android.settingslib.RestrictedLockUtilsInternal;
 
+import com.android.settings.custom.biometrics.FaceUtils;
+
 /**
  * Preference controller that controls whether the biometrics authentication to be used in apps.
  */
@@ -69,7 +71,7 @@ public class BiometricSettingsAppPreferenceController extends TogglePreferenceCo
 
     @Override
     public int getAvailabilityStatus() {
-        if (!Utils.isMultipleBiometricsSupported(mContext)) {
+        if (!Utils.isMultipleBiometricsSupported(mContext) || FaceUtils.isFaceUnlockSupported()) {
             return UNSUPPORTED_ON_DEVICE;
         }
         if (mFaceManager == null || mFingerprintManager == null) {

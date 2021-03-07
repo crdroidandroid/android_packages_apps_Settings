@@ -25,7 +25,6 @@ import android.provider.Settings;
 import androidx.preference.Preference;
 
 import com.android.settings.Utils;
-
 import com.android.settings.custom.biometrics.FaceUtils;
 
 /**
@@ -80,12 +79,8 @@ public class FaceSettingsAppPreferenceController extends FaceSettingsPreferenceC
 
     @Override
     public int getAvailabilityStatus() {
-        if (FaceUtils.isFaceUnlockSupported()){
-            return UNSUPPORTED_ON_DEVICE;
-        }
-
         // When the device supports multiple biometrics auth, this preference will be hidden.
-        if (Utils.isMultipleBiometricsSupported(mContext)) {
+        if (Utils.isMultipleBiometricsSupported(mContext) && !FaceUtils.isFaceUnlockSupported()) {
             return UNSUPPORTED_ON_DEVICE;
         }
 
