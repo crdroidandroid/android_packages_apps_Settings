@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.biometrics.face;
+package com.android.settings.biometrics.combination;
 
 import android.content.Context;
 
@@ -22,17 +22,14 @@ import com.android.settings.core.BasePreferenceController;
 
 import com.android.settings.custom.biometrics.FaceUtils;
 
-/**
- * Preference controller that controls the face unlock features to be shown / be hidden.
- */
-public class FaceUnlockCategoryPreferenceController extends BasePreferenceController {
+public class BiometricWaysToUsePreferenceController extends BasePreferenceController {
 
-    public FaceUnlockCategoryPreferenceController(Context context, String key) {
+    public BiometricWaysToUsePreferenceController(Context context, String key) {
         super(context, key);
     }
 
     @Override
     public int getAvailabilityStatus() {
-        return Utils.isMultipleBiometricsSupported(mContext) && !FaceUtils.isFaceUnlockSupported() ? UNSUPPORTED_ON_DEVICE : AVAILABLE;
+        return FaceUtils.isFaceUnlockSupported() ? UNSUPPORTED_ON_DEVICE : AVAILABLE;
     }
 }
