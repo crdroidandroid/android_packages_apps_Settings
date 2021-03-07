@@ -66,16 +66,10 @@ public class FaceSettingsRemoveButtonPreferenceController extends BasePreference
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
-            int dialogMessage = mIsConvenience
-                            ? R.string.security_settings_face_settings_remove_dialog_details_convenience
-                            : R.string.security_settings_face_settings_remove_dialog_details;
-
-            if (FaceUtils.isFaceUnlockSupported()) {
-                dialogMessage = R.string.security_settings_face_settings_remove_dialog_details_custom;
-            }
-
             builder.setTitle(R.string.security_settings_face_settings_remove_dialog_title)
-                    .setMessage(dialogMessage)
+                    .setMessage(mIsConvenience && !FaceUtils.isFaceUnlockSupported()
+                            ? R.string.security_settings_face_settings_remove_dialog_details_convenience
+                            : R.string.security_settings_face_settings_remove_dialog_details)
                     .setPositiveButton(R.string.delete, mOnClickListener)
                     .setNegativeButton(R.string.cancel, mOnClickListener);
             AlertDialog dialog = builder.create();
