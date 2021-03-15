@@ -29,8 +29,8 @@
         <item>com.android.localtransport/.LocalTransport</item>
     </string-array>
 
-    <!-- Whether to show min refresh rate in display settings -->
-    <bool name="config_show_min_refresh_rate_switch">false</bool>
+    <!-- Whether to show min/max refresh rate in display settings -->
+    <bool name="config_show_refresh_rate_controls">false</bool>
 
     <!-- Screen off FOD -->
     <bool name="config_supportScreenOffFod">true</bool>
