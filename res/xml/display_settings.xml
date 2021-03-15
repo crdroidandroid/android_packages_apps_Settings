@@ -140,6 +140,18 @@
             android:title="@string/peak_refresh_rate_title"
             settings:controller="com.android.settings.display.SmoothDisplayPreferenceController"/>
 
+        <ListPreference
+            android:key="min_refresh_rate"
+            android:title="@string/default_refresh_rate_title_custom"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.display.MinRefreshRatePreferenceController" />
+
+        <ListPreference
+            android:key="peak_refresh_rate"
+            android:title="@string/peak_refresh_rate_title_custom"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController" />
+
         <SwitchPreference
             android:key="show_operator_name"
             android:title="@string/show_operator_name_title"
