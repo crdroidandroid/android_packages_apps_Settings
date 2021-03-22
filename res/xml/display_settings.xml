@@ -160,7 +160,8 @@
 
     <SwitchPreference
         android:key="lift_to_wake"
-        android:title="@string/lift_to_wake_title" />
+        android:title="@string/lift_to_wake_title"
+        android:defaultValue="false" />
 
     <SwitchPreference
         android:key="tap_to_wake"
