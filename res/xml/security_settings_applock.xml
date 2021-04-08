@@ -21,12 +21,13 @@
     android:title="@string/applock_title"
     settings:keywords="@string/keywords_applock_settings">
 
-    <SwitchPreference
-        android:key="show_only_on_wake"
-        android:title="@string/applock_show_only_on_wake"
-        android:defaultValue="false"
-        android:summaryOn="@string/applock_show_only_on_wake_on_summary"
-        android:summaryOff="@string/applock_show_only_on_wake_off_summary"
+    <ListPreference
+        android:key="applock_lock_after"
+        android:defaultValue="0"
+        android:entries="@array/applock_lock_after_entries"
+        android:entryValues="@array/applock_lock_after_values"
+        android:summary="%s"
+        android:title="@string/applock_lock_after_title"
         android:order="-999" />
 
     <Preference 
