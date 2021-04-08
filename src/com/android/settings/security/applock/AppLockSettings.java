@@ -38,7 +38,7 @@ import android.widget.SearchView;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
+import androidx.preference.ListPreference;
 
 import com.android.settings.biometrics.BiometricEnrollBase;
 import com.android.settings.R;
@@ -86,7 +86,7 @@ public class AppLockSettings extends SubSettings {
     public static class AppLockSettingsFragment extends SettingsPreferenceFragment
             implements SearchView.OnQueryTextListener, SearchView.OnCloseListener {
 
-        private final String KEY_SHOW_ON_WAKE = "show_only_on_wake";
+        private final String KEY_LOCK_AFTER = "applock_lock_after";
         private final String KEY_LOCKED_APPS = "locked_apps";
         private final String KEY_UNLOCKED_APPS = "unlocked_apps";
         private final String KEY_NOTIFICATION_HELP = "applock_notification_info";
@@ -101,7 +101,7 @@ public class AppLockSettings extends SubSettings {
         private SearchView mSearchView;
         private SearchFilter mSearchFilter;
         private PreferenceScreen mPreferenceScreen;
-        private SwitchPreference mShowOnlyOnWake;
+        private ListPreference lockTimeoutPref;
         private Preference mLocked;
         private Preference mUnlocked;
         private Preference mNotifInfo;
@@ -164,14 +164,15 @@ public class AppLockSettings extends SubSettings {
             mAppLockManager = Utils.getAppLockManager(getPrefContext());
             mPreferenceScreen = getPreferenceScreen();
 
-            mShowOnlyOnWake = mPreferenceScreen.findPreference(KEY_SHOW_ON_WAKE);
+            lockTimeoutPref = mPreferenceScreen.findPreference(KEY_LOCK_AFTER);
             mLocked = mPreferenceScreen.findPreference(KEY_LOCKED_APPS);
             mUnlocked = mPreferenceScreen.findPreference(KEY_UNLOCKED_APPS);
             mNotifInfo = mPreferenceScreen.findPreference(KEY_NOTIFICATION_HELP);
 
-            mShowOnlyOnWake.setChecked(mAppLockManager.getShowOnlyOnWake());
-            mShowOnlyOnWake.setOnPreferenceChangeListener((preference, checked) -> {
-                mAppLockManager.setShowOnlyOnWake((boolean) checked);
+            lockTimeoutPref.setValue(String.valueOf(mAppLockManager.getLockTimeout()));
+            setLockTimeoutSummary();
+            lockTimeoutPref.setOnPreferenceChangeListener((preference, lockTimeout) -> {
+                mAppLockManager.setLockTimeout(Integer.parseInt((String) lockTimeout));
                 return true;
             });
 
@@ -442,6 +443,29 @@ public class AppLockSettings extends SubSettings {
             protected void publishResults(CharSequence constraint, FilterResults results) {
                 updatePreferencesPostSearch((ArrayList<AppLockInfo>) results.values);
             }
+        }
+
+        private void setLockTimeoutSummary() {
+                lockTimeoutPref.setSummaryProvider(new Preference.SummaryProvider<ListPreference>() {
+                private String summaryText = "";
+
+                @Override
+                public CharSequence provideSummary(ListPreference preference) {
+                    final int selectedLockTimeout = Integer.parseInt(preference.getValue());
+                    switch (selectedLockTimeout) {
+                        case 0:
+                            summaryText = String.valueOf(getText(R.string.applock_lock_after_instantly_summary));
+                            break;
+                        case 15:
+                            summaryText = String.valueOf(getText(R.string.applock_lock_after_15_seconds_summary));
+                            break;
+                        case -1:
+                            summaryText = String.valueOf(getText(R.string.applock_lock_after_screen_off_summary));
+                            break;
+                    }
+                    return summaryText;
+                  }
+                });
         }
     }
 }
