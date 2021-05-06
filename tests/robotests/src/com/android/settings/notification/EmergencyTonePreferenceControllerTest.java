@@ -27,7 +27,7 @@ import android.provider.Settings.Global;
 import android.telephony.TelephonyManager;
 
 import androidx.fragment.app.FragmentActivity;
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.PreferenceScreen;
 
 import org.junit.Before;
@@ -55,7 +55,7 @@ public class EmergencyTonePreferenceControllerTest {
     private Context mContext;
 
     private EmergencyTonePreferenceController mController;
-    private DropDownPreference mPreference;
+    private ListPreference mPreference;
 
     @Before
     public void setUp() {
@@ -67,7 +67,7 @@ public class EmergencyTonePreferenceControllerTest {
         when(mActivity.getSystemService(Context.TELEPHONY_SERVICE)).thenReturn(mTelephonyManager);
         when(mActivity.getContentResolver()).thenReturn(mContentResolver);
         when(mActivity.getResources()).thenReturn(appContext.getResources());
-        mPreference = new DropDownPreference(appContext);
+        mPreference = new ListPreference(appContext);
         mController = new EmergencyTonePreferenceController(mContext, mSetting, null);
         when(mScreen.findPreference(mController.getPreferenceKey())).thenReturn(mPreference);
         doReturn(mScreen).when(mSetting).getPreferenceScreen();

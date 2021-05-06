@@ -25,7 +25,7 @@ import android.telephony.SmsManager;
 import android.view.View;
 
 import androidx.annotation.VisibleForTesting;
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceScreen;
@@ -207,7 +207,7 @@ public class PremiumSmsAccess extends EmptyTextSettings
 
     }
 
-    private class PremiumSmsPreference extends DropDownPreference {
+    private class PremiumSmsPreference extends ListPreference {
         private final AppEntry mAppEntry;
 
         public PremiumSmsPreference(AppEntry appEntry, Context context) {

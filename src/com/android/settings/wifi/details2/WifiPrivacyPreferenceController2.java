@@ -21,7 +21,7 @@ import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
 
 import androidx.annotation.VisibleForTesting;
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
@@ -66,7 +66,7 @@ public class WifiPrivacyPreferenceController2 extends BasePreferenceController i
 
     @Override
     public void updateState(Preference preference) {
-        final DropDownPreference dropDownPreference = (DropDownPreference) preference;
+        final ListPreference dropDownPreference = (ListPreference) preference;
         final int randomizationLevel = getRandomizationValue();
         final boolean isSelectable = mWifiEntry.canSetPrivacy();
         preference.setSelectable(isSelectable);
@@ -90,7 +90,7 @@ public class WifiPrivacyPreferenceController2 extends BasePreferenceController i
             mWifiEntry.disconnect(null /* callback */);
             mWifiEntry.connect(null /* callback */);
         }
-        updateSummary((DropDownPreference) preference, privacy);
+        updateSummary((ListPreference) preference, privacy);
         return true;
     }
 
@@ -124,7 +124,7 @@ public class WifiPrivacyPreferenceController2 extends BasePreferenceController i
             ? WifiEntry.PRIVACY_RANDOMIZED_MAC : WifiEntry.PRIVACY_DEVICE_MAC;
     }
 
-    private void updateSummary(DropDownPreference preference, int macRandomized) {
+    private void updateSummary(ListPreference preference, int macRandomized) {
         // Translates value here to set RANDOMIZATION_PERSISTENT as first item in UI for better UX.
         final int prefMacRandomized = translateMacRandomizedValueToPrefValue(macRandomized);
         preference.setSummary(preference.getEntries()[prefMacRandomized]);

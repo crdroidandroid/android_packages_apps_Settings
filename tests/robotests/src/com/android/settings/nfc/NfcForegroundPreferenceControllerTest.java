@@ -26,7 +26,7 @@ import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.pm.PackageManager;
 
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.PreferenceScreen;
 
 import com.android.settings.R;
@@ -56,7 +56,7 @@ public class NfcForegroundPreferenceControllerTest {
     private PackageManager mManager;
 
     private Context mContext;
-    private DropDownPreference mPreference;
+    private ListPreference mPreference;
     private NfcForegroundPreferenceController mController;
     private FakeFeatureFactory mFakeFeatureFactory;
 
@@ -67,7 +67,7 @@ public class NfcForegroundPreferenceControllerTest {
         when(mContext.getPackageManager()).thenReturn(mManager);
         mFakeFeatureFactory = FakeFeatureFactory.setupForTest();
         mController = new NfcForegroundPreferenceController(mContext, PREF_KEY);
-        mPreference = new DropDownPreference(mContext);
+        mPreference = new ListPreference(mContext);
         when(mScreen.findPreference(PREF_KEY)).thenReturn(mPreference);
     }
 

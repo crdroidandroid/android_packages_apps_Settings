@@ -18,7 +18,7 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.text.TextUtils;
 
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
@@ -36,7 +36,7 @@ public class NfcForegroundPreferenceController extends BasePreferenceController 
         PaymentBackend.Callback, Preference.OnPreferenceChangeListener,
         LifecycleObserver, OnStart, OnStop {
 
-    private DropDownPreference mPreference;
+    private ListPreference mPreference;
     private PaymentBackend mPaymentBackend;
     private MetricsFeatureProvider mMetricsFeatureProvider;
 
@@ -100,8 +100,8 @@ public class NfcForegroundPreferenceController extends BasePreferenceController 
 
     @Override
     public void updateState(Preference preference) {
-        if (preference instanceof DropDownPreference) {
-            ((DropDownPreference) preference).setValue(
+        if (preference instanceof ListPreference) {
+            ((ListPreference) preference).setValue(
                     mPaymentBackend.isForegroundMode() ? "1" : "0");
         }
         super.updateState(preference);
@@ -114,10 +114,10 @@ public class NfcForegroundPreferenceController extends BasePreferenceController 
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (!(preference instanceof DropDownPreference)) {
+        if (!(preference instanceof ListPreference)) {
             return false;
         }
-        final DropDownPreference pref = (DropDownPreference) preference;
+        final ListPreference pref = (ListPreference) preference;
         final String newValueString = (String) newValue;
         pref.setSummary(pref.getEntries()[pref.findIndexOfValue(newValueString)]);
         final boolean foregroundMode = Integer.parseInt(newValueString) != 0;

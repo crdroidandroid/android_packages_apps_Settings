@@ -24,7 +24,7 @@ import android.provider.Settings.Global;
 import android.provider.Settings.Secure;
 import android.provider.Settings.System;
 
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.TwoStatePreference;
@@ -45,7 +45,7 @@ public class SettingPref {
     private final Uri mUri;
 
     protected TwoStatePreference mTwoState;
-    protected DropDownPreference mDropDown;
+    protected ListPreference mDropDown;
 
     public SettingPref(int type, String key, String setting, int def, int... values) {
         mType = type;
@@ -73,8 +73,8 @@ public class SettingPref {
         }
         if (p instanceof TwoStatePreference) {
             mTwoState = (TwoStatePreference) p;
-        } else if (p instanceof DropDownPreference) {
-            mDropDown = (DropDownPreference) p;
+        } else if (p instanceof ListPreference) {
+            mDropDown = (ListPreference) p;
             CharSequence[] entries = new CharSequence[mValues.length];
             CharSequence[] values = new CharSequence[mValues.length];
             for (int i = 0; i < mValues.length; i++) {

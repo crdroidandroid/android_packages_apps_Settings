@@ -28,7 +28,7 @@ import android.content.Context;
 import android.provider.Settings.Global;
 
 import androidx.fragment.app.FragmentActivity;
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.PreferenceScreen;
 
 import org.junit.Before;
@@ -54,7 +54,7 @@ public class DockAudioMediaPreferenceControllerTest {
     private Context mContext;
 
     private DockAudioMediaPreferenceController mController;
-    private DropDownPreference mPreference;
+    private ListPreference mPreference;
 
     @Before
     public void setUp() {
@@ -64,7 +64,7 @@ public class DockAudioMediaPreferenceControllerTest {
         when(mActivity.getResources().getBoolean(com.android.settings.R.bool.has_dock_settings))
             .thenReturn(true);
         when(mActivity.getResources().getString(anyInt())).thenReturn("test string");
-        mPreference = new DropDownPreference(RuntimeEnvironment.application);
+        mPreference = new ListPreference(RuntimeEnvironment.application);
         mController = new DockAudioMediaPreferenceController(mContext, mSetting, null);
         when(mScreen.findPreference(mController.getPreferenceKey())).thenReturn(mPreference);
         doReturn(mScreen).when(mSetting).getPreferenceScreen();

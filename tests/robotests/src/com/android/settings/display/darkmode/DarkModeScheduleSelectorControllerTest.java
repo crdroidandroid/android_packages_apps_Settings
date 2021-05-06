@@ -31,7 +31,7 @@ import android.content.Context;
 import android.location.LocationManager;
 import android.os.PowerManager;
 
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.PreferenceScreen;
 
 import com.android.settings.R;
@@ -49,7 +49,7 @@ public class DarkModeScheduleSelectorControllerTest {
     private DarkModeScheduleSelectorController mController;
     private String mPreferenceKey = "key";
     @Mock
-    private DropDownPreference mPreference;
+    private ListPreference mPreference;
     @Mock
     private PreferenceScreen mScreen;
     private Context mContext;
@@ -70,7 +70,7 @@ public class DarkModeScheduleSelectorControllerTest {
         when(mContext.getString(R.string.dark_ui_auto_mode_never)).thenReturn("never");
         when(mContext.getString(R.string.dark_ui_auto_mode_auto)).thenReturn("auto");
         when(mContext.getString(R.string.dark_ui_auto_mode_custom)).thenReturn("custom");
-        mPreference = spy(new DropDownPreference(mContext));
+        mPreference = spy(new ListPreference(mContext));
         mPreference.setEntryValues(new CharSequence[]{
                 mContext.getString(R.string.dark_ui_auto_mode_never),
                 mContext.getString(R.string.dark_ui_auto_mode_auto)

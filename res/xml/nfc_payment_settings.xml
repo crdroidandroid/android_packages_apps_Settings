@@ -26,7 +26,7 @@
         android:widgetLayout="@layout/preference_widget_gear"
         settings:controller="com.android.settings.nfc.NfcPaymentPreferenceController"/>
 
-    <DropDownPreference
+    <ListPreference
         android:key="nfc_foreground"
         android:title="@string/nfc_payment_use_default"
         settings:controller="com.android.settings.nfc.NfcForegroundPreferenceController"/>
