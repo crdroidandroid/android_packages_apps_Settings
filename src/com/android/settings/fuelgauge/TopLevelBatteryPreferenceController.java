@@ -37,7 +37,6 @@ public class TopLevelBatteryPreferenceController extends BasePreferenceControlle
     private final BatteryBroadcastReceiver mBatteryBroadcastReceiver;
     private Preference mPreference;
     private BatteryInfo mBatteryInfo;
-    private BatteryStatusFeatureProvider mBatteryStatusFeatureProvider;
     private String mBatteryStatusLabel;
 
     public TopLevelBatteryPreferenceController(Context context, String preferenceKey) {
@@ -52,9 +51,6 @@ public class TopLevelBatteryPreferenceController extends BasePreferenceControlle
                 updateState(mPreference);
             }, true /* shortString */);
         });
-
-        mBatteryStatusFeatureProvider = FeatureFactory.getFactory(context)
-                .getBatteryStatusFeatureProvider(context);
     }
 
     @Override
@@ -99,9 +95,7 @@ public class TopLevelBatteryPreferenceController extends BasePreferenceControlle
         }
 
         if (batteryStatusUpdate) {
-            if (!mBatteryStatusFeatureProvider.triggerBatteryStatusUpdate(this, info)) {
-                mBatteryStatusLabel = null; // will generateLabel()
-            }
+            mBatteryStatusLabel = null; // will generateLabel()
         }
 
         return (mBatteryStatusLabel == null) ? generateLabel(info) : mBatteryStatusLabel;
