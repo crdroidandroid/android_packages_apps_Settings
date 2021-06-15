@@ -67,6 +67,7 @@ android_library {
         "org.lineageos.platform.internal",
         "vendor.lineage.fastcharge-V1.0-java",
         "faceunlock_framework",
+        "glide",
     ],
 
     libs: [
@@ -105,4 +106,9 @@ android_app {
 android_library_import {
     name: "contextualcards",
     aars: ["libs/contextualcards.aar"],
+}
+
+android_library_import {
+    name: "glide",
+    aars: ["libs/glide-4.9.0.aar"],
 }
