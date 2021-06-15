@@ -82,6 +82,7 @@ android_library {
         "android.hardware.dumpstate-V1.1-java",
         "lottie",
         "org.lineageos.platform.internal",
+        "glide",
     ],
 
     libs: [
@@ -140,4 +141,9 @@ filegroup {
 filegroup {
     name: "Settings_manifest",
     srcs: ["AndroidManifest.xml"],
+}
+
+android_library_import {
+    name: "glide",
+    aars: ["libs/glide-4.9.0.aar"],
 }
