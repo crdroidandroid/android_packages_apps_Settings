@@ -52,6 +52,17 @@
             settings:keywords="@string/keywords_face_unlock"
             settings:controller="com.android.settings.biometrics.face.FaceSettingsConfirmPreferenceController"/>
 
+        <com.crdroid.settings.preferences.SecureSettingListPreference
+            android:key="face_unlock_method"
+            android:title="@string/face_unlock_method_title"
+            android:summary="%s"
+            android:dialogTitle="@string/face_unlock_method_title"
+            android:entries="@array/face_unlock_method_entries"
+            android:entryValues="@array/face_unlock_method_values"
+            android:defaultValue="0"
+            settings:searchable="false"
+            settings:controller="com.android.settings.biometrics.face.FaceSettingsLockscreenUnlockMethodPreferenceController" />
+
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="security_lockscreen_bypass"
             android:title="@string/lockscreen_bypass_title"
