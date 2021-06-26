@@ -3430,14 +3430,14 @@
                 android:value="com.android.settings.gestures.GlobalActionsPanelSettings" />
         </activity>
 
-        <activity android:name="Settings$PowerMenuSettingsActivity"
+        <activity android:name="Settings$PowerMenuActions"
                   android:label="@string/power_menu_setting_name">
             <intent-filter>
                 <action android:name="android.settings.ACTION_POWER_MENU_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.gestures.PowerMenuSettings" />
+                       android:value="com.crdroid.settings.fragments.buttons.PowerMenuActions" />
         </activity>
 
         <activity android:name="Settings$DeviceControlsSettingsActivity"
