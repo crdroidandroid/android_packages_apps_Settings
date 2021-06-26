@@ -96,7 +96,6 @@ import com.android.settings.gestures.DoubleTwistGestureSettings;
 import com.android.settings.gestures.GestureNavigationSettingsFragment;
 import com.android.settings.gestures.GlobalActionsPanelSettings;
 import com.android.settings.gestures.PickupGestureSettings;
-import com.android.settings.gestures.PowerMenuSettings;
 import com.android.settings.gestures.SwipeToNotificationSettings;
 import com.android.settings.gestures.SystemNavigationGestureSettings;
 import com.android.settings.inputmethod.AvailableVirtualKeyboardFragment;
@@ -163,6 +162,7 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.crdroid.settings.crDroidSettingsLayout;
+import com.crdroid.settings.fragments.buttons.PowerMenuActions;
 import com.crdroid.settings.fragments.misc.GamingMode;
 import com.crdroid.settings.fragments.ui.OmniJawsSettings;
 import com.crdroid.settings.fragments.ui.SmartPixels;
@@ -307,7 +307,7 @@ public class SettingsGateway {
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
             BatterySaverScheduleSettings.class.getName(),
             MobileNetworkListFragment.class.getName(),
-            PowerMenuSettings.class.getName(),
+            PowerMenuActions.class.getName(),
             GlobalActionsPanelSettings.class.getName(),
             DeviceControlsSettings.class.getName(),
             DarkModeSettingsFragment.class.getName(),
