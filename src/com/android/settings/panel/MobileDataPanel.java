@@ -62,7 +62,6 @@ public class MobileDataPanel implements PanelContent {
         final List<Uri> uris = new ArrayList<>();
         uris.add(CustomSliceRegistry.MOBILE_DATA_SLICE_URI);
         uris.add(CustomSliceRegistry.DATA_USAGE_SLICE_URI);
-        uris.add(CustomSliceRegistry.ENHANCED_4G_SLICE_URI);
         return uris;
     }
 
