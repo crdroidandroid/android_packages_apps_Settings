@@ -17,11 +17,13 @@
 package com.android.settings.gestures;
 
 import android.app.settings.SettingsEnums;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.view.WindowManager;
 
@@ -51,6 +53,8 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
     private static final String LEFT_EDGE_SEEKBAR_KEY = "gesture_left_back_sensitivity";
     private static final String RIGHT_EDGE_SEEKBAR_KEY = "gesture_right_back_sensitivity";
     private static final String GESTURE_TUTORIAL_KEY = "assistant_gesture_navigation_tutorial";
+    private static final String GESTURE_NAVBAR_LENGTH_KEY = "gesture_navbar_length_preference";
+
     final Intent mLaunchTutorialIntent =  new Intent(ACTION_GESTURE_SANDBOX)
             .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             .putExtra("use_tutorial_menu", true);
@@ -86,6 +90,8 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
         initSliderPreference(LEFT_EDGE_SEEKBAR_KEY);
         initSliderPreference(RIGHT_EDGE_SEEKBAR_KEY);
         initTutorialButton();
+
+        initGestureNavbarLengthPreference();
     }
 
     @Override
@@ -176,6 +182,19 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
             pref.setSliderStateDescription(formatStateDescription(pref, (int) v));
             return true;
         });
+    }
+
+    private void initGestureNavbarLengthPreference() {
+        final SliderPreference pref = getPreferenceScreen().findPreference(GESTURE_NAVBAR_LENGTH_KEY);
+        pref.setUpdatesContinuously(true);
+        pref.setHapticFeedbackMode(SeekBarPreference.HAPTIC_FEEDBACK_MODE_ON_TICKS);
+        pref.setSliderIncrement(1);
+        pref.setValue(Settings.System.getIntForUser(
+            getContext().getContentResolver(), Settings.System.GESTURE_NAVBAR_LENGTH_MODE,
+            1, UserHandle.USER_CURRENT));
+        pref.setOnPreferenceChangeListener((p, v) ->
+            Settings.System.putIntForUser(getContext().getContentResolver(),
+            Settings.System.GESTURE_NAVBAR_LENGTH_MODE, (int) v, UserHandle.USER_CURRENT));
     }
 
     private CharSequence formatStateDescription(SliderPreference pref, int progress) {
