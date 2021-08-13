@@ -29,6 +29,15 @@
         android:summary="@string/show_navbar_hint_summary"
         android:defaultValue="true" />
 
+    <com.android.settings.widget.LabeledSeekBarPreference
+        android:key="gesture_navbar_length_preference"
+        android:title="@string/gesture_navbar_length_title"
+        android:max="2"
+        android:selectable="true"
+        settings:textStart="@string/short_label"
+        settings:textEnd="@string/long_label"
+        android:dependency="navigation_bar_hint" />
+
     <PreferenceCategory
         android:key="assistant_gesture_category"
         android:persistent="false"
