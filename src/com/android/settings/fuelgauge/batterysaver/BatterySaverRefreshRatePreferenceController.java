@@ -20,14 +20,37 @@ import static android.provider.Settings.System.LOW_POWER_REFRESH_RATE;
 
 import android.content.Context;
 import android.provider.Settings;
+import android.view.Display;
 
 import com.android.settings.R;
 import com.android.settings.core.TogglePreferenceController;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+
 public class BatterySaverRefreshRatePreferenceController extends TogglePreferenceController {
 
-    public BatterySaverRefreshRatePreferenceController(Context context, String key) {
-        super(context, key);
+    private static final String KEY_BATTERY_SAVER_RATE = "battery_saver_rr_switch";
+
+    private List<String> mEntries = new ArrayList<>();
+    private List<String> mValues = new ArrayList<>();
+
+    public BatterySaverRefreshRatePreferenceController(Context context) {
+        super(context, KEY_BATTERY_SAVER_RATE);
+
+        if (mContext.getResources().getBoolean(R.bool.config_show_refresh_rate_controls)) {
+            Display.Mode mode = mContext.getDisplay().getMode();
+            Display.Mode[] modes = mContext.getDisplay().getSupportedModes();
+            for (Display.Mode m : modes) {
+                if (m.getPhysicalWidth() == mode.getPhysicalWidth() &&
+                        m.getPhysicalHeight() == mode.getPhysicalHeight()) {
+                    mEntries.add(String.format("%.02fHz", m.getRefreshRate())
+                            .replaceAll("[\\.,]00", ""));
+                    mValues.add(String.format(Locale.US, "%.02f", m.getRefreshRate()));
+                }
+            }
+        }
     }
 
     @Override
@@ -44,7 +67,11 @@ public class BatterySaverRefreshRatePreferenceController extends TogglePreferenc
 
     @Override
     public int getAvailabilityStatus() {
-        return mContext.getResources().getBoolean(R.bool.config_show_refresh_rate_controls)
-                        ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return mEntries.size() > 1 ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+    }
+
+    @Override
+    public String getPreferenceKey() {
+        return KEY_BATTERY_SAVER_RATE;
     }
 }
