@@ -22,13 +22,17 @@ import android.net.wifi.WifiManager;
 
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreference;
+import androidx.preference.PreferenceScreen;
 
 import com.android.settings.core.BasePreferenceController;
+import android.util.Log;
 
 public class WifiTetherAutoOffPreferenceController extends BasePreferenceController implements
         Preference.OnPreferenceChangeListener {
 
     private final WifiManager mWifiManager;
+    private String TAG = "WifiTetherAutoOffPreferenceController";
+    private SwitchPreference mPreference = null;
 
     public WifiTetherAutoOffPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
@@ -38,6 +42,19 @@ public class WifiTetherAutoOffPreferenceController extends BasePreferenceControl
     @Override
     public int getAvailabilityStatus() {
         return AVAILABLE;
+    }
+
+    @Override
+    public void displayPreference(PreferenceScreen scr) {
+        super.displayPreference(scr);
+        mPreference = scr.findPreference(getPreferenceKey());
+    }
+
+    public void updateDisplay() {
+        if(mPreference != null)
+            updateState(mPreference);
+        else
+            Log.e(TAG, "updateDisplay Failed, cannot find switch preference");
     }
 
     @Override
