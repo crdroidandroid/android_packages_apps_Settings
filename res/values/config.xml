@@ -465,4 +465,10 @@
 
     <!-- Whether the given language capitalizes nouns -->
     <bool name="language_capitalizes_nouns">false</bool>
+
+    <!-- Battery Health -->
+    <string name="config_batChargeCycle"></string>
+    <string name="config_batDesCap"></string>
+    <string name="config_batCurCap"></string>
+    <bool name="config_supportBatteryHealth">false</bool>
 </resources>
