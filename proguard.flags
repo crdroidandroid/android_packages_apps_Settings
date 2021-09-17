@@ -67,3 +67,9 @@
 -keepclasseswithmembers class * extends com.android.settings.slices.SliceBackgroundWorker {
     public <init>(android.content.Context, android.net.Uri);
 }
+
+# Keep ImsConnector members for FeatureConnector.Listener<ImsManager>
+-keep class com.android.settings.deviceinfo.ImsConnector {
+    *;
+}
+
