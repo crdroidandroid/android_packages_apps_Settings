@@ -74,3 +74,8 @@
 
 # Custom rules
 -keep class com.google.** { *; }
+
+# Keep ImsConnector members for FeatureConnector.Listener<ImsManager>
+-keep class com.android.settings.deviceinfo.ImsConnector {
+    *;
+}
