@@ -23,7 +23,9 @@
 
     <Preference
         android:key="location_animation"
-        android:layout="@layout/location_animation" />
+        android:layout="@layout/location_animation"
+        android:clickable="false"
+        android:selectable="false" />
 
     <PreferenceCategory
         android:key="recent_location_requests"

@@ -23,7 +23,9 @@
 
     <Preference
             android:key="accesibility_animation"
-            android:layout="@layout/accessibility_animation" />
+            android:layout="@layout/accessibility_animation" 
+            android:clickable="false"
+            android:selectable="false" />
 
     <PreferenceCategory
         android:key="user_installed_services_category"
