@@ -23,7 +23,9 @@
     <Preference
         android:key="system_animation"
         android:order="-500"
-        android:layout="@layout/system_animation" />
+        android:layout="@layout/system_animation"
+        android:clickable="false"
+        android:selectable="false" />
 
     <Preference
         android:key="language_input_settings"

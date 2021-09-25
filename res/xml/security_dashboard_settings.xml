@@ -24,7 +24,9 @@
     <Preference
         android:key="security_animation"
         android:layout="@layout/security_animation"
-        android:order="-20" />
+        android:order="-20"
+        android:clickable="false"
+        android:selectable="false" />
 
     <!-- security_settings_status.xml -->
     <PreferenceCategory
