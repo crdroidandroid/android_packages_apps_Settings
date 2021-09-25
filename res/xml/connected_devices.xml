@@ -22,7 +22,9 @@
 
     <Preference
         android:key="bluetooth_animation"
-        android:layout="@layout/bluetooth_animation" />
+        android:layout="@layout/bluetooth_animation"
+        android:clickable="false"
+        android:selectable="false" />
 
     <com.android.settings.slices.SlicePreference
         android:key="bt_nearby_slice"

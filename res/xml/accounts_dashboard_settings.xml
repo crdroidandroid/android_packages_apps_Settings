@@ -23,7 +23,9 @@
 
     <Preference
         android:key="account_animation"
-        android:layout="@layout/account_animation" />
+        android:layout="@layout/account_animation" 
+        android:clickable="false"
+        android:selectable="false" />
 
     <PreferenceCategory
         android:key="dashboard_tile_placeholder"
