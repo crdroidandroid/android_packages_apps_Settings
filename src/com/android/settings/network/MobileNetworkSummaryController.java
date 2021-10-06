@@ -159,7 +159,7 @@ public class MobileNetworkSummaryController extends AbstractPreferenceController
         mPreference.setOnPreferenceClickListener(null);
         mPreference.setOnAddClickListener(null);
         mPreference.setFragment(null);
-        mPreference.setEnabled(!mChangeListener.isAirplaneModeOn());
+        mPreference.setEnabled(true);
     }
 
     private void update() {
@@ -186,7 +186,7 @@ public class MobileNetworkSummaryController extends AbstractPreferenceController
         // We have one or more existing subscriptions, so we want the plus button if eSIM is
         // supported.
         if (mStatusCache.isEuiccConfigSupport()) {
-            mPreference.setAddWidgetEnabled(!mChangeListener.isAirplaneModeOn());
+            mPreference.setAddWidgetEnabled(true);
             mPreference.setOnAddClickListener(p -> {
                 logPreferenceClick(p);
                 startAddSimFlow();
@@ -227,7 +227,6 @@ public class MobileNetworkSummaryController extends AbstractPreferenceController
 
     @Override
     public void onAirplaneModeChanged(boolean airplaneModeEnabled) {
-        mStatusCache.update(mContext, statusCache -> update());
     }
 
     @Override
