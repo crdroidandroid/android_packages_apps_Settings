@@ -116,11 +116,12 @@
     <PreferenceCategory
         android:title="@string/category_name_display_controls">
 
-        <SwitchPreference
+        <Preference
             android:key="auto_rotate"
             android:title="@string/accelerometer_title"
+            android:fragment="com.android.settings.display.SmartAutoRotatePreferenceFragment"
             settings:keywords="@string/keywords_auto_rotate"
-            settings:controller="com.android.settings.display.AutoRotatePreferenceController"/>
+            settings:controller="com.android.settings.display.SmartAutoRotatePreferenceController"/>
 
         <org.lineageos.internal.lineageparts.LineagePartsPreference
             android:key="rotation"
