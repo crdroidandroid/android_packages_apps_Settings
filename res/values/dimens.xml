@@ -138,6 +138,8 @@
     <dimen name="avatar_margin_end">24dp</dimen>
 
     <!-- Homepage title -->
+    <!-- avatar_length + avatar_margin_top -->
+    <dimen name="homepage_title_margin_top">104dp</dimen>
     <dimen name="homepage_title_margin_bottom">8dp</dimen>
     <dimen name="homepage_title_margin_horizontal">24dp</dimen>
 
