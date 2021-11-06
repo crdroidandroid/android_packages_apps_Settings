@@ -16,6 +16,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:gravity="center"
     android:orientation="horizontal" >
 
     <com.airbnb.lottie.LottieAnimationView
@@ -23,7 +24,6 @@
         android:layout_width="wrap_content"
         android:layout_height="120dp"
         android:clickable="false"
-        android:layout_alignParentLeft="true"
         app:lottie_rawRes="@raw/wifi"
         app:lottie_loop="true"
         app:lottie_autoPlay="true" />
