@@ -179,7 +179,7 @@ Once it resets, go through the setup process and choose to bring your data from 
     <string name="config_account_intent_uri">intent:#Intent;action=com.android.settings.action.VIEW_ACCOUNT;category=android.intent.category.DEFAULT;launchFlags=0x8000;S.extra.callingPackageName=com.android.settings;end</string>
     <string name="config_battery_prediction_authority">com.google.android.apps.turbo.bluetooth.estimated_time_remaining</string>
     <string name="config_bluetooth_device_settings_uri">content://com.google.android.apps.wearables.maestro.companion/settings_slice?addr=%1$s</string>
-    <string name="config_cell_broadcast_receiver_package">com.google.android.cellbroadcastreceiver</string>
+    <!--string name="config_cell_broadcast_receiver_package">com.google.android.cellbroadcastreceiver</string-->
     <string name="config_contextual_card_feedback_email">contextual-settings-homepage-feedback@google.com</string>
     <string name="config_deletion_helper_package">com.google.android.storagemanager</string>
     <string name="config_emergency_intent_action">com.google.android.safetyhub.SAFETY_HUB</string>
