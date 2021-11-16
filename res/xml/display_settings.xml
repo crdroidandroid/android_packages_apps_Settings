@@ -119,7 +119,7 @@
 
     <ListPreference
         android:key="peak_refresh_rate"
-        android:title="@string/peak_refresh_rate_title"
+        android:title="@string/peak_refresh_rate_title_custom"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController" />
 
