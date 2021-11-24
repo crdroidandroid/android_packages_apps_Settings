@@ -150,6 +150,15 @@
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
     <Preference
+        android:fragment="com.crdroid.settings.crDroidSettingsLayout"
+        android:icon="@drawable/ic_settings_cogs"
+        android:key="top_level_crdroid"
+        android:order="9"
+        android:title="@string/crdroid_settings_title"
+        android:summary="@string/crdroid_settings_summary"
+        settings:controller="com.crdroid.settings.TopLevelSettingsPreferenceController"/>
+
+    <Preference
         android:fragment="com.android.settings.system.SystemDashboardFragment"
         android:icon="@drawable/ic_settings_system_dashboard_white"
         android:key="top_level_system"
