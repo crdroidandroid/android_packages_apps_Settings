@@ -25,6 +25,8 @@ import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.os.UserHandle;
+import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
@@ -43,6 +45,9 @@ import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 /**
  * Preference controller to allow users to choose an overlay from a list for a given category.
  * The chosen overlay is enabled exclusively within its category. A default option is also
@@ -51,12 +56,15 @@ import java.util.List;
 public class OverlayCategoryPreferenceController extends DeveloperOptionsPreferenceController
         implements Preference.OnPreferenceChangeListener, PreferenceControllerMixin {
     private static final String TAG = "OverlayCategoryPC";
+    private static final String FONT_KEY = "android.theme.customization.font";
+
     @VisibleForTesting
     static final String PACKAGE_DEVICE_DEFAULT = "package_device_default";
     private static final Comparator<OverlayInfo> OVERLAY_INFO_COMPARATOR =
             Comparator.comparing(OverlayInfo::getPackageName);
     private final IOverlayManager mOverlayManager;
     private final boolean mAvailable;
+    private final boolean mIsFonts;
     private final String mCategory;
     private final PackageManager mPackageManager;
     private final String mDeviceDefaultLabel;
@@ -72,6 +80,7 @@ public class OverlayCategoryPreferenceController extends DeveloperOptionsPrefere
         mCategory = category;
         mAvailable = overlayManager != null && !getOverlayInfos().isEmpty();
         mDeviceDefaultLabel = mContext.getString(R.string.overlay_option_device_default);
+        mIsFonts = FONT_KEY.equals(category);
     }
 
     public OverlayCategoryPreferenceController(Context context, String category) {
@@ -106,19 +115,61 @@ public class OverlayCategoryPreferenceController extends DeveloperOptionsPrefere
     }
 
     private boolean setOverlay(String label) {
-        final String[] currentPackageNames = getOverlayInfos().stream()
-                .filter(info -> info.isEnabled())
-                .map(info -> info.packageName)
-                .toArray(String[]::new);
+        final List<OverlayInfo> infos = getOverlayInfos();
 
-        final String[] packageNames = getOverlayInfos().stream()
-                .filter(info -> label.equals(getPackageLabel(info.packageName)))
-                .map(info -> info.packageName)
-                .toArray(String[]::new);
+        ArrayList<String> currentPackageNames = new ArrayList<>();;
+        ArrayList<String> currentCategoryNames = new ArrayList<>();;
+        ArrayList<String> packageNames = new ArrayList<>();;
+        ArrayList<String> categoryNames = new ArrayList<>();;
+
+        for (OverlayInfo info : infos) {
+            if (info.isEnabled()) {
+                currentPackageNames.add(info.packageName);
+                currentCategoryNames.add(info.category);
+            }
+            if (label.equals(getPackageLabel(info.packageName))) {
+                packageNames.add(info.packageName);
+                categoryNames.add(info.category);
+            }
+        }
 
         Log.w(TAG, "setOverlay currentPackageNames=" + currentPackageNames.toString());
         Log.w(TAG, "setOverlay packageNames=" + packageNames.toString());
         Log.w(TAG, "setOverlay label=" + label);
+
+        if (mIsFonts) {
+            // For fonts we also need to set this setting
+            String value = Settings.Secure.getStringForUser(mContext.getContentResolver(),
+                    Settings.Secure.THEME_CUSTOMIZATION_OVERLAY_PACKAGES, UserHandle.USER_CURRENT);
+            JSONObject json;
+            if (value == null) {
+                json = new JSONObject();
+            } else {
+                try {
+                    json = new JSONObject(value);
+                } catch (JSONException e) {
+                    Log.e(TAG, "Error parsing current settings value:\n" + e.getMessage());
+                    return false;
+                }
+            }
+            // removing all currently enabled overlays from the json
+            for (String categoryName : currentCategoryNames) {
+                json.remove(categoryName);
+            }
+            // adding the new ones
+            for (int i = 0; i < categoryNames.size(); i++) {
+                try {
+                    json.put(categoryNames.get(i), packageNames.get(i));
+                } catch (JSONException e) {
+                    Log.e(TAG, "Error adding new settings value:\n" + e.getMessage());
+                    return false;
+                }
+            }
+            // updating the setting
+            Settings.Secure.putStringForUser(mContext.getContentResolver(),
+                    Settings.Secure.THEME_CUSTOMIZATION_OVERLAY_PACKAGES,
+                    json.toString(), UserHandle.USER_CURRENT);
+        }
 
         new AsyncTask<Void, Void, Boolean>() {
             @Override
