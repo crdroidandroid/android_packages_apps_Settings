@@ -457,7 +457,7 @@
     <dimen name="output_switcher_panel_icon_corner_radius">16dp</dimen>
 
     <!-- Settings panel related dimensions -->
-    <dimen name="settings_panel_corner_radius">28dp</dimen>
+    <dimen name="settings_panel_corner_radius">@*android:dimen/config_dialogCornerRadius</dimen>
     <dimen name="settings_panel_title_margin">24dp</dimen>
     <dimen name="settings_panel_title_margin_bottom">16dp</dimen>
     <dimen name="settings_panel_width">@dimen/match_parent</dimen>
