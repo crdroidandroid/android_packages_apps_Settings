@@ -59,7 +59,7 @@ public class DataUsageSummaryPreference extends Preference implements GroupSecti
     private static final long WARNING_AGE = TimeUnit.HOURS.toMillis(6L);
     @VisibleForTesting
     static final Typeface SANS_SERIF_MEDIUM =
-            Typeface.create("sans-serif-medium", Typeface.NORMAL);
+            Typeface.create("@*android:string/config_bodyFontFamilyMedium", Typeface.NORMAL);
 
     private boolean mChartEnabled = true;
     private CharSequence mStartLabel;
@@ -284,7 +284,7 @@ public class DataUsageSummaryPreference extends Preference implements GroupSecti
 
             if (updateAgeMillis <= WARNING_AGE) {
                 setCarrierInfoTextStyle(
-                        carrierInfo, android.R.attr.textColorSecondary, Typeface.SANS_SERIF);
+                        carrierInfo, android.R.attr.textColorSecondary, Typeface.DEFAULT);
             } else {
                 setCarrierInfoTextStyle(carrierInfo, android.R.attr.colorError, SANS_SERIF_MEDIUM);
             }
