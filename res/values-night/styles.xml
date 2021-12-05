@@ -21,4 +21,9 @@
   <item name="android:background">?android:attr/colorPrimaryDark</item>
 </style>
 
+    <style name="Widget.SliceView.Panel">
+        <item name="titleSize">16sp</item>
+        <item name="rowStyle">@style/SliceRow</item>
+        <item name="android:background">@*android:color/primary_device_default_dark</item>
+    </style>
 </resources>
