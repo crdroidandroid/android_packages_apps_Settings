@@ -55,6 +55,9 @@ public class PhoneRingtone2PreferenceController extends RingtonePreferenceContro
 
     @Override
     public boolean isAvailable() {
+        if (isBuiltInEuiccSlot(SLOT_ID)) {
+            return false;
+        }
         TelephonyManager telephonyManager =
                 (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
         return Utils.isVoiceCapable(mContext) && telephonyManager.isMultiSimEnabled();
