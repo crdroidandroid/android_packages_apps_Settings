@@ -70,4 +70,19 @@ public abstract class RingtonePreferenceControllerBase extends AbstractPreferenc
 
     public abstract int getRingtoneType();
 
+    public boolean isBuiltInEuiccSlot(int slotIndex) {
+        int[] euiccSlots = mContext.getResources()
+                .getIntArray(com.android.internal.R.array.non_removable_euicc_slots);
+        for (int slot : euiccSlots) {
+            if (slot == slotIndex) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean isDeviceSupportsESIM() {
+        return mContext.getResources()
+                .getIntArray(com.android.internal.R.array.non_removable_euicc_slots).length > 0;
+    }
 }
