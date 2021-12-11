@@ -43,12 +43,10 @@ public class PhoneRingtonePreferenceController extends RingtonePreferenceControl
 
         TelephonyManager telephonyManager =
                 (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-        if (telephonyManager.isMultiSimEnabled()) {
-            // For Multi SIM device, shoud show "Phone ringtone - SIM 1" for slot1 ringtone setting.
+        if (telephonyManager.isMultiSimEnabled() && !isDeviceSupportsESIM()) {
             DefaultRingtonePreference ringtonePreference =
                     (DefaultRingtonePreference) screen.findPreference(KEY_PHONE_RINGTONE);
-            ringtonePreference.setTitle(mContext.getString(R.string.ringtone_title) + " - " +
-                String.format(mContext.getString(R.string.sim_card_number_title), 1));
+            ringtonePreference.setTitle(mContext.getString(R.string.ringtone_title));
             ringtonePreference.setEnabled(hasCard());
         }
     }
