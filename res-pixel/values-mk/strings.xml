@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Заклучен екран во мирување</string>
+    <string name="gesture_silence_title">Движење за стишување предупредувања</string>
+    <string name="gesture_skip_title">Прескокни го движењето</string>
+    <string name="keywords_touch_sensitivity">допир, чувствителност, чувствителен, заштитник на екранот, филм, подготвен, реакција</string>
+    <string name="touch_sensitivity_summary">Го подобрува допирот кога се користат заштитници на екранот</string>
+    <string name="touch_sensitivity_title">Зголемување на чувствителноста на допир</string>
+    <string name="accessibility_vibration_settings_screen_title">Користи „Вибрации и допир“</string>
+    <string name="vibration_haptics_settings_not_available_summary">Вибрациите и допирот не се достапни бидејќи телефонот е поставен во безгласен режим</string>
+    <string name="vibration_haptics_strength_category_title">Јачина на вибрации и на допирот</string>
+    <string name="accessibility_vibration_settings_title">Вибрации и допир</string>
+    <string name="columbus_title">Допрете брзо за да започнете дејства</string>
+    <string name="vibrate_for_calls_category_title">Повици</string>
+    <string name="accessibility_alarm_vibration_title">Вибрации на аларм</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Поставете Active Edge. Одете на следниот екран или продолжете со приспособување.</string>
+    <string name="accessibility_keyboard_haptics_title">Допир на тастатурата</string>
+    <string name="accessibility_vibration_preferences_file">Поставки за вибрации</string>
+    <string name="adaptive_charging">Адаптивно полнење</string>
+    <string name="adaptive_charging_description">Полни постепено ноќе за да се одржи долготрајноста на батеријата. Го користи алармот за да го заврши полнењето кога ќе се разбудите.</string>
+    <string name="adaptive_charging_time_estimate"><b>Адаптивно полнење</b> • Целосно наполнето за %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Поставки</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Помошник, неодамнешни апликации, стандардни апликации</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Продолжи на „Помошникот“</string>
+    <string name="assist_gesture_enrollment_do_it_later">Направи подоцна</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Слабо стискање</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Цврсто стискање</string>
+    <string name="assist_gesture_enrollment_settings">Поставки</string>
+    <string name="assist_gesture_setting_enable_assistant_text">За да зборувате со „Помошникот“, стиснете го долниот дел на телефонот набрзина и отпуштете</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Стискање за „Помошникот“</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Стиснете за да ги стишите алармите, тајмерите, известувањата и дојдовните повици</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">Стиснете за да ги стишите известувањата и дојдовните повици</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Стиснете за да го стишите телефонот</string>
+    <string name="assist_gesture_setting_enable_wake_title">Отвори „Помошник“ кога екранот е исклучен</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Слабо стискање</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Цврсто стискање</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Чувствителност на стискањето</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Може да го повика „Помошникот“ случајно</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Стиснете го долниот дел на телефонот</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Стуткајте побрзо</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Стуткајте посилно</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Стиснете набрзина и потоа отпуштете</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">Обидете се со приспособување на лизгачот</string>
+    <string name="assist_gesture_training_enrolling_text">Стуткајте го телефонот долу. Може да ја приспособувате силата на стуткување.</string>
+    <string name="assist_gesture_training_enrolling_title">Стиснете набрзина и отпуштете</string>
+    <string name="assist_gesture_training_finished_text">Подоцна може да ја промените чувствителноста на стискањето во „Поставки“</string>
+    <string name="assist_gesture_training_finished_title">Завршете или приспособувајте и понатаму</string>
+    <string name="assist_gesture_training_intro_text">За да зборувате со „Помошникот“, стиснете го долниот дел на телефонот набрзина и потоа отпуштете</string>
+    <string name="assist_gesture_training_intro_title">Стуткајте за „Помошникот“</string>
+    <string name="assist_gesture_training_suggestion_summary">Зборувајте со „Помошникот“, стишете ги повиците</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Зборувајте со „Помошникот“, стишете ги алармите и повиците</string>
+    <string name="assist_gesture_training_suggestion_title">Стуткајте и отпуштете за „Помошникот“</string>
+    <string name="automatic_storage_manager_activation_warning">Кога сте поврзани, сѐ уште ќе може да пристапувате до фотографии и видеа со квалитетот што сте го избрале за бекапот</string>
+    <string name="automatic_storage_manager_days_title">Избриши слики и видеа со бекап</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Да се исклучи „Паметен капацитет“? 
+
+„Паметен капацитет“ нема да ослободи простор кога капацитетот е речиси полн."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Бекап од преземањата</string>
+    <string name="automatic_storage_manager_preference_title">Паметен капацитет</string>
+    <string name="automatic_storage_manager_primary_switch_title">Користи „Паметен капацитет“</string>
+    <string name="automatic_storage_manager_settings">Паметен капацитет</string>
+    <string name="automatic_storage_manager_text">Кога капацитетот е речиси полн, отстранете ги фотографиите и видеата што имаат бекап. Сѐ уште ќе може да ги најдете во „Фотографии на Google“.</string>
+    <string name="aware_disabled_preference_action">Вклучи</string>
+    <string name="aware_disabled_preference_neutral">Не сега</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense е недостапна бидејќи авионскиот режим и штедачот на батерија се вклучени</string>
+    <string name="aware_footer_when_airplane_on">Motion Sense е недостапна бидејќи авионскиот режим е вклучен</string>
+    <string name="aware_footer_when_batterysaver_on">Motion Sense е недостапна бидејќи штедачот на батерија е вклучен</string>
+    <string name="aware_gesture_summary_off">„Брзи гестикулации“ е вклучено, Active Edge е исклучено.</string>
+    <string name="aware_gesture_summary_on_non_assist">„Брзи гестикулации“ е вклучено, Active Edge е вклучено.</string>
+    <string name="aware_gesture_summary_on_with_assist">„Брзи гестикулации“ е вклучено, Active Edge е вклучено, стиснете за „Помошникот“</string>
+    <string name="aware_info_button_description">Повеќе поставки</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">Недостапна бидејќи авионскиот режим и штедачот на батерија се вклучени</string>
+    <string name="aware_summary_when_airplane_on">Недостапна бидејќи авионскиот режим е вклучен</string>
+    <string name="aware_summary_when_batterysaver_on">Недостапно бидејќи штедачот на батерија е вклучен</string>
+    <string name="backup_data_summary">Бекап на податоци на апликација, лозинки на Wi-Fi и други поставки на сервери на Google</string>
+    <string name="backup_suggestion_cancel">Откажи</string>
+    <string name="backup_suggestion_dialog_description">Ова ќе ги избрише сите податоци од внатрешната меморија на телефонот.</string>
+    <string name="backup_suggestion_dialog_title">Ресетирај го уредов?</string>
+    <string name="backup_suggestion_get_started">дознајте повеќе</string>
+    <string name="backup_suggestion_item_summary">Копирај од уред со Android или iPhone®</string>
+    <string name="backup_suggestion_item_title">Ви недостасуваат податоците од стариот телефон?</string>
+    <string name="backup_suggestion_missing_description">"Ако не користите некои од вашите податоци, како SMS-пораките и фотографиите, може да ги префрлите на Pixel преку кабел.
+
+За да започнете, потребно е да го ресетирате вашиот Pixel. Сите податоци на телефонов, вклучувајќи ги и приспособените поставки и содржините што не се синхронизирани во облакот, ќе бидат избришани."</string>
+    <string name="backup_suggestion_missing_title">Ви недостасуваат податоците?</string>
+    <string name="backup_suggestion_next">следно</string>
+    <string name="backup_suggestion_other_ways_to_copy">Други начини на копирање</string>
+    <string name="backup_suggestion_reset_description">"На следниот екран може да го ресетирате вашиот Pixel. Ова е единствениот начин да ги префрлите податоците преку кабел.
+
+Откако ќе се ресетира, повторете ја постапката за почетно поставување и изберете да ги копирате податоците од претходниот телефон."</string>
+    <string name="backup_suggestion_reset_title">Ресетирајте го вашиот Pixel</string>
+    <string name="backup_suggestion_what_is_needed_summary">"Откако ќе го ресетирате телефонот, ќе ви биде потребно:
+
+• Претходниот телефон (поддржани се LINK_BEGINповеќето телефониLINK_END на Android 5.0+ или iOS® 8.0+)
+• Кабел за полнење или префрлање податоци за претходниот телефон
+• Quick Switch Adapter што се испорачува со вашиот Pixel"</string>
+    <string name="backup_suggestion_what_is_needed_title">Што ќе ви треба</string>
+    <string name="battery_manager_summary">Продолжете го траењето на батеријата и оптимизирајте го полнењето</string>
+    <string name="battery_manager_summary_unsupported">Продолжете го траењето на батеријата</string>
+    <string name="battery_missing_link_message">Дознајте повеќе</string>
+    <string name="battery_suggestion_summary">Вклучете „Адаптивна батерија“</string>
+    <string name="battery_tip_smart_battery_summary">Вклучете „Адаптивна батерија“</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s веќе нема да биде спарен со ниту еден уред поврзан со сметкава на Google</string>
+    <string name="columbus_gesture_detected">Откриен е „Брз допир“!</string>
+    <string name="columbus_gesture_enrollment_complete">Готово</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Не сега</string>
+    <string name="columbus_gesture_enrollment_settings">Оди во „Поставки“</string>
+    <string name="columbus_gesture_enrollment_try_it">Испробајте</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Изберете дејство за извршување</string>
+    <string name="columbus_gesture_training_action_text">Изберете што да се случува кога користите „Брз допир“. Ова може да го промените подоцна во поставките.</string>
+    <string name="columbus_gesture_training_action_title">Изберете ја опцијата „Брз допир“</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">…Откриени движења со двоен допир: 1 од 2</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Да пробаме уште еднаш. Набрзина допрете ја задната страна на телефонот двапати.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Одлично!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">…Откриени движења со двоен допир: 2 од 2</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Спремни сте да започнете со користење на „Брз допир“</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Успеавте!</string>
+    <string name="columbus_gesture_training_enrolling_text">Набрзина допрете ја задната страна на телефонот двапати.</string>
+    <string name="columbus_gesture_training_enrolling_title">Испробајте „Брз допир“</string>
+    <string name="columbus_gesture_training_finished_text">За да ја измените силата на допирот потребна за користење на „Брз допир“, одете во „Поставки“.</string>
+    <string name="columbus_gesture_training_finished_title">Поставивте „Брз допир“</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Тукушто допревте двапати на задната страна на уредот, а тоа ви овозможува да го користите вашиот „Помошник“ во движење. Движењево може да го приспособите во поставките.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Направете слика од екранот, прегледајте известувања или започнете друго дејство со два допири.</string>
+    <string name="columbus_gesture_training_intro_title">„Брз допир“ за брзи дејства</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Изберете апликација за да ја отворите</string>
+    <string name="columbus_gesture_training_launch_text">Изберете ја апликацијата што сакате да ја отворате со користење на „Брз допир“.</string>
+    <string name="columbus_gesture_training_launch_title">Изберете апликација за отворање</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">Поставки за кратенката на %1$s</string>
+    <string name="columbus_launch_settings_activity_title">Поставки за „Брз допир“</string>
+    <string name="columbus_name">Брз допир</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">Поставки за %1$s</string>
+    <string name="columbus_setting_action_assistant_title">Пристап до дигиталниот помошник</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Не е избрана апликација</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Апликацијата не е инсталирана</string>
+    <string name="columbus_setting_action_launch_title">Отворање апликација</string>
+    <string name="columbus_setting_action_notification_title">Приказ на известувањата</string>
+    <string name="columbus_setting_action_open_app_title">Отвори ја апликацијата</string>
+    <string name="columbus_setting_action_overview_title">Приказ на неодамнешните апликации</string>
+    <string name="columbus_setting_action_play_pause_title">Пуштање или паузирање аудиовизуелни содржини</string>
+    <string name="columbus_setting_action_screenshot_title">Зачувување слика од екранот</string>
+    <string name="columbus_setting_actions_title">Допрете двапати на задната страна на телефонот за</string>
+    <string name="columbus_setting_additional_settings_title">Сила на „Брз допир“</string>
+    <string name="columbus_setting_app_selection_help_text">Изберете ја апликацијата што сакате да се отвори кога ќе ја допрете задната страна на телефонот двапати. Ако ја деинсталирате апликацијата, „Брз допир“ ќе се исклучи додека не изберете друга апликација.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Изберете што да се случува кога ќе ја отворите апликацијава со „Брз допир“.</string>
+    <string name="columbus_setting_enable_switch_title">Користи „Брз допир“</string>
+    <string name="columbus_setting_sensitivity_title">Барај посилни допири</string>
+    <string name="connectivity_helper_call_quality_category">Квалитет на повик</string>
+    <string name="connectivity_helper_call_quality_summary">Добивајте известувања за случаи со проблеми со врската за време на повици</string>
+    <string name="connectivity_helper_call_quality_title">Добивајте известувања</string>
+    <string name="connectivity_helper_d2d_summary">Известете го другото лице кога вашиот телефон има проблеми со врската за време на повици</string>
+    <string name="connectivity_helper_d2d_title">Споделете податоци за врската</string>
+    <string name="connectivity_helper_footnote">Може да споделувате податоци за врската кога другиот повикувач користи поддржани уред и мрежа</string>
+    <string name="content_capture">Персонализирај со користење податоци од апликациите</string>
+    <string name="copy_toast_msg">Линкот е копиран во привремена меморија</string>
+    <string name="dark_ui_text">Темната тема користи црна заднина за подолго траење на батеријата. Распоредите за темната тема не се вклучуваат додека не се исклучи екранот.</string>
+    <string name="dock_summary_charging_phone">Полнење на телефонот</string>
+    <string name="double_twist_for_camera_mode_summary">За да го вклучите или исклучите режимот за селфи во „Камерата на Google“, завртете го уредот двапати додека сте во апликацијата.</string>
+    <string name="downloads_backup_text">Ќе се направат резервни копии од преземените датотеки на Google Drive</string>
+    <string name="duration_less_than_one_minute">Помалку од 1 минута</string>
+    <string name="extra_app_info_label">Оптимизација на игри</string>
+    <string name="face_enrolling_center_head">Ликот поставете го во внатрешната рамка</string>
+    <string name="face_enrolling_description">Снимете ги сите агли на лицето, така што ќе ги отстраните сите плочки.</string>
+    <string name="face_enrolling_do_it_later">Направи подоцна</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Откажи</string>
+    <string name="face_enrolling_gaze_dialog_continue">Поставете без отворени очи</string>
+    <string name="face_enrolling_gaze_dialog_message">Дали сакате да поставите „Отклучување со лик“ без очите да ви бидат отворени? Ако поставите вака, некој може да ви го отклучи телефонот, така што ќе го насочи кон вас кога не сте свесни за тоа.</string>
+    <string name="face_enrolling_gaze_dialog_title">Поставете без отворени очи</string>
+    <string name="face_enrolling_how_to_setup">Како се поставува</string>
+    <string name="face_enrolling_title">Држете го телефонот мирно. Свртете ја главата. Движете се бавно.</string>
+    <string name="face_enrolling_title_accessibility">Гледајте директно во телефонот</string>
+    <string name="face_enrolling_title_accessibility_progress">Продолжете да гледате директно во телефонот</string>
+    <string name="face_enrolling_too_close">Оддалечете го телефонот</string>
+    <string name="face_enrolling_too_far">Доближете го телефонот</string>
+    <string name="face_enrolling_too_high">Спуштете го телефонот подолу</string>
+    <string name="face_enrolling_too_left">Поместете го телефонот надесно</string>
+    <string name="face_enrolling_too_low">Кренете го телефонот погоре</string>
+    <string name="face_enrolling_too_right">Поместете го телефонот налево</string>
+    <string name="face_enrolling_turn_head_to_arrow">Свртете ја главата кон стрелката</string>
+    <string name="face_enrolling_turned_too_far">Не вртете ја главата толку многу</string>
+    <string name="fallback_menu_item_copy_link">Копирај го линкот</string>
+    <string name="fallback_menu_item_open_in_browser">Отвори во прелистувач</string>
+    <string name="fallback_menu_item_share_link">Сподели линк</string>
+    <string name="fullbackup_data_summary">"Автоматски создајте бекап на податоците на уредот (како што се лозинки за Wi-Fi и историја на повици) и податоците за апликациите (како што се поставки и датотеки што ги складирале апликациите) на Google Drive.
+
+Откако ќе вклучите автоматско создавање бекап, податоците за уредот и апликациите повремено се зачувуваат во приватна папка во Google Drive. Податоците за апликацијата може да бидат секакви податоци што ги зачувала апликацијата (според поставките на програмерот), вклучувајќи потенцијално чувствителни податоци како што се контакти, пораки и фотографии.
+
+Податоците од бекапот нема да се сметаат во квотата за складирање на Drive. Нема да се создава бекап на големите датотеки или датотеките што програмерите одлучиле да ги исклучат од услугата."</string>
+    <string name="fullbackup_erase_dialog_message">Дали да се престане со создавање резервна копија на податоците за уредот (како што се лозинки за Wi-Fi и историја на повици) и податоците за апликациите (како што се поставки и датотеки што ги складирале апликациите) и да се избришат сите копии на Google Drive?</string>
+    <string name="game_dashboard_always_on_summary">Прикажувај ја кратенката за „Контролната табла за игри“ во игри</string>
+    <string name="game_dashboard_always_on_title">Контролна табла за игри</string>
+    <string name="game_dashboard_dnd_rule_name">Игри</string>
+    <string name="game_dashboard_dnd_summary">Добивајте известувања само од важните луѓе и апликации кога играте</string>
+    <string name="game_dashboard_dnd_title">„Не вознемирувај“ за игри</string>
+    <string name="game_mode_battery_description">Го продолжува траењето на батеријата</string>
+    <string name="game_mode_battery_title">Штедач на батерија</string>
+    <string name="game_mode_performance_description">Ја максимизира стапката на слики и троши повеќе батерија</string>
+    <string name="game_mode_performance_title">Изведба</string>
+    <string name="game_mode_standard_description">Ги користи стандардните поставки на играта</string>
+    <string name="game_mode_standard_title">Стандардно</string>
+    <string name="game_optimization_unavailable">Не е достапно за оваа игра</string>
+    <string name="gesture_aware_confirmation_action_button">Сфатив</string>
+    <string name="gesture_aware_footer"><annotation link="link">Поставки</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Поставки</annotation></string>
+    <string name="gesture_skip_direction_ltr">Одлево надесно</string>
+    <string name="gesture_skip_direction_rtl">Оддесно налево</string>
+    <string name="gesture_skip_direction_title">Прескокнете ја насоката</string>
+    <string name="gesture_skip_footer"><annotation link="link">Поставки</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Поставки</annotation></string>
+    <string name="global_actions_panel_short_title">Картички и пропусници</string>
+    <string name="global_actions_panel_summary">За да пристапувате до работи како вашите начини на плаќање или пропусниците за превоз, притиснете и задржете го копчето за вклучување.</string>
+    <string name="global_actions_panel_title">Прикажи картички и пропусници</string>
+    <string name="install_unknown_applications">Дозволи инсталација на апликации од други извори освен Play Store</string>
+    <string name="keywords_accessibility_menu">моторна, брзо мени, помошно мени, допир, попреченост</string>
+    <string name="keywords_adaptive_charging">полнење, паметно полнење, адаптивно полнење, батерија, трајност на батеријата</string>
+    <string name="keywords_assist_gesture_launch">движење, раб, страна, активен раб, стискање, стисок, помош, помошник, стисни, ok google, помошник на google</string>
+    <string name="keywords_assist_gesture_silence">движење, раб, страна, активен раб, тишина, одложи аларм, аларм, дојдовен повик, тивко, приказ, заклучен екран, стискање, стисок, сопри</string>
+    <string name="keywords_assist_gesture_wake">движење, раб, страна, активен раб, активен, известувања, екран, приказ, исклучен екран, вклучен екран, стискање, во мирување, режим во мирување, стисок</string>
+    <string name="keywords_battery_share">споделување батерија, безжично полнење</string>
+    <string name="keywords_battery_share_settings">споделување батерија, обратно безжично полнење</string>
+    <string name="keywords_content_capture">снимање содржини, содржини од апликација, податоци од апликација</string>
+    <string name="keywords_gesture">движење, потези</string>
+    <string name="keywords_global_actions_panel">картички, пропусници</string>
+    <string name="keywords_live_transcribe">Титлови, затворени титлови, CC, Автоматски титлови, нарушување на слух, загуба на слух, CART, од говор во текст</string>
+    <string name="keywords_reverse_charging_stop_threshold">Сопри го споделувањето на батеријата кога телефонот ќе достигне:</string>
+    <string name="keywords_select_to_speak">Слушај текст, читање на глас, изговор на екранот, читач на екран</string>
+    <string name="keywords_sound_amplifier">PSAP, засили, засилување звук, нарушување на слух, загуба на слух, засилување</string>
+    <string name="keywords_sound_notifications">Известувања, нарушување на слух, загуба на слух, извести</string>
+    <string name="keywords_switch_access">моторна, прекинувач, рака, AT, aпомошна технологија, парализа, ALS, скенирање, скенирање чекор</string>
+    <string name="keywords_talkback">Читач на екран, гласовна синхронизација, Гласовна помош, слепи, слаб вид, TTS, од текст во говор, говорни повратни информации</string>
+    <string name="keywords_voice_access">глас, гласовна контрола, моторна, рака, микрофон, диктирање, зборување, контрола</string>
+    <string name="language_input_gesture_summary_off">Active Edge е исклучена</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge е вклучена</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge е вклучена, стуткајте за „Помошникот“</string>
+    <string name="me_card_title">Мојот Pixel</string>
+    <string name="my_device_info_account_preference_title">Сметка на Google</string>
+    <string name="owner_info_settings_edit_text_hint">На пр. Pixel-от на Миле.</string>
+    <string name="reverse_charging_charging_wirelessly_message">Не е достапно бидејќи батеријата се полни безжично</string>
+    <string name="reverse_charging_detail_charging_overheat_message">„Споделувањето батерија“ е недостапно бидејќи вашиот Pixel е премногу загреан. Почекајте додека да се олади телефонот и обидете се повторно.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">„Споделувањето батерија“ не е достапно бидејќи телефонот се полни безжично</string>
+    <string name="reverse_charging_detail_footer_title">Батеријата на телефонот ќе се празни побрзо ако се користи „Споделувањето батерија“. „Споделувањето батерија“ функционира со компатибилни слушалки, часовници, телефони и друго. За подобро полнење, отстранете ја футролата на телефонот.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"„Споделувањето батерија“ функционира со компатибилни слушалки, телефони и друго.
+
+Батеријата на телефонот ќе се празни побрзо при користењето на функцијава. „Споделувањето батерија“ автоматски се исклучува по неколку минути ако не се открие друг уред. За подобро полнење, отстранете ја футролата на телефонот и други предмети што може да попречуваат, како метални предмети."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">„Споделувањето батерија“ не е достапно бидејќи е вклучен „Штедачот на батерија“</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">„Споделувањето батерија“ не е достапно бидејќи е приклучен уред USB-C</string>
+    <string name="reverse_charging_instructions_title">"Полнете ги други уреди со вашиот Pixel.
+Превртете го телефонот за да испробате."</string>
+    <string name="reverse_charging_is_off_summary">Исклучено</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Споделување и полнење на батеријата</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Се споделува батеријата</string>
+    <string name="reverse_charging_is_on_summary">Вклучено/Полнете ги другите уреди</string>
+    <string name="reverse_charging_main_switch">Дозволете „Споделување батерија“</string>
+    <string name="reverse_charging_off_low_battery_summary">Исклучено/Батеријата на телефонот е под %1$s</string>
+    <string name="reverse_charging_off_sharing_level_summary">Исклучено/Батеријата е под нивото за споделување</string>
+    <string name="reverse_charging_overheat_summary">Недостапно бидејќи Pixel е премногу жежок. Почекајте додека да се олади телефонот и обидете се повторно.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">Недостапно бидејќи штедачот на батерија е вклучен</string>
+    <string name="reverse_charging_sharing_level_message">Не е достапно бидејќи батеријата е под нивото за споделување</string>
+    <string name="reverse_charging_switch_summary">Ставете ги уредите на задната страна од вашиот Pixel</string>
+    <string name="reverse_charging_switch_title">Полнете ги другите уреди, така што ќе ги ставите на задната страна од вашиот Pixel</string>
+    <string name="reverse_charging_switch_title_message">Полнете други уреди</string>
+    <string name="reverse_charging_title">Споделување батерија</string>
+    <string name="reverse_charging_unplug_usb_cable_message">Не е достапно бидејќи е приклучен уред USB-C</string>
+    <string name="reverse_charging_warning_summary">Не е достапно, бидејќи батеријата е под %1$s</string>
+    <string name="reverse_charging_warning_title">„Споделувањето батерија“ не е достапно бидејќи батеријата е под %1$s</string>
+    <string name="rtt_settings_always_visible">Секогаш видливо</string>
+    <string name="rtt_settings_no_visible">Не е видливо</string>
+    <string name="rtt_settings_title">Текст во реално време (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Видливо во повик</string>
+    <string name="screen_time_summary_usage_today">%1$s денес</string>
+    <string name="search_bar_account_avatar_content_description">Слика на профилот, допрете двапати за да ја отворите сметката на Google</string>
+    <string name="security_advanced_settings">Напредни поставки</string>
+    <string name="security_dismiss_dialog_dismiss_button">Отфрли</string>
+    <string name="security_dismiss_dialog_title">Да се отфрли опоменава?</string>
+    <string name="security_settings_face_enroll_education_message">На следниот екран, ротирајте ја главата за да се снимат сите агли на вашето лице</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">На следниот екран, држете го телефонот во висина на очите</string>
+    <string name="security_settings_face_enroll_error_dialog_title">Регистрацијата не беше завршена</string>
+    <string name="security_settings_face_enroll_error_generic_dialog_message">„Регистрацијата на лик“ не успеа.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">Достигнато е временското ограничување на „Регистрација на лик“. Обидете се повторно.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Времето за поставување „Отклучување со лик“ истече</string>
+    <string name="security_settings_face_enroll_finish_description">Сега може да го користите вашето лице за да го отклучите телефонот или да потврдите дека сте вие, како кога се најавувате на апликации или одобрувате купување</string>
+    <string name="security_settings_face_enroll_finish_title">Добро е!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Ограничен вид/движење на главата</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">Кога користите „Отклучување со лик“, можеби ќе треба да ја поставите главата директно пред телефонот.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Потребни се отворени очи</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Вие и вашето дете може да го избришете моделот од неговото лице или да го исклучите „Отклучувањето со лик“ во секое време во „Поставки“. Моделите на лицето се складираат во телефонот додека не се избришат.
+
+Дознајте повеќе на g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Вие и вашето дете сте во контрола</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"Сега може да го избришете моделот на лице или да го исклучите „Отклучувањето со лик“ во секое време во „Поставки“. Моделите на лицето се складираат во телефонот додека не се избришат.
+
+Дознајте повеќе на g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Вие сте главни</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"„Отклучувањето со лик“ создава уникатен модел од лицето на вашето дете за да потврди дека е тоа. За да го создаде моделов на лице при поставувањето, детето ќе направи слики од своето лице од различни агли.
+
+Кога го користи „Отклучувањето со лик“, сликите се користат за ажурирање на неговиот модел на лице. Сликите што се користат за создавање на моделот на неговото лице не се складираат, а самиот модел се складира безбедно во телефонот и никогаш не го напушта. Целата обработка се одвива безбедно во телефонот."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"„Отклучувањето со лик“ создава единствен модел од вашето лице за да потврди дека сте вие. За да го создадете моделов на лице при поставувањето, ќе направите слики од лицето од различни агли.
+
+Кога го користите „Отклучувањето со лик“, сликите се користат за ажурирање на моделот на вашето лице. Сликите што се користат за создавање на моделот на вашето лице не се складираат, а самиот модел се складира безбедно во телефонот и никогаш не го напушта. Целата обработка се одвива безбедно во телефонот."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Како функционира</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">„Отклучување со лик“ може да бара очите на детето да бидат отворени за да се отклучи телефонот или да се потврди дека е тоа. Вие и вашето дете може да ја вклучите опцијава во „Поставки“ во секое време.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Ако вашето дете вообичаено носи очила, може да ги носи при поставувањето.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">Ако гледа во телефонот, тој може да се отклучи дури и ако нема таква намера. Телефонот може да го отклучи и некој што многу наликува на него, на пример, идентичен близнак или ако некој го држи пред неговото лице.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">„Отклучување со лик“ може да бара очите да ви бидат отворени за да се отклучи телефонот или да се потврди дека сте вие. Може да ја вклучите опцијава во „Поставки“ во секое време.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Очила или малку затемнети очила за сонце се во ред.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">Користењето лик за отклучување на телефонот може да биде понесигурно од силна шема или PIN.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">Ако гледате во телефонот, тој може да се отклучи дури и ако немате таква намера. Телефонот може да го отклучи и некој што многу наликува на вас, на пример, идентичен близнак или ако некој го држи пред вашето лице.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Имајте предвид</string>
+    <string name="security_settings_face_enroll_introduction_message">Користете го лицето за да го отклучите телефонот или да потврдите дека сте вие, како кога се најавувате во апликации или одобрувате купување.</string>
+    <string name="security_settings_face_enroll_introduction_title">Поставете „Отклучување со лик“</string>
+    <string name="security_settings_face_enroll_next">Следно</string>
+    <string name="security_settings_face_enroll_partial_message">За да ја подобрите изведбата, може повторно да поставите „Отклучување со лик“ во „Поставки“</string>
+    <string name="security_settings_face_enroll_partial_start_over">Почни одново</string>
+    <string name="security_settings_face_enroll_partial_title">Поставувањето на „Отклучување со лик“ заврши</string>
+    <string name="security_settings_face_enroll_timeout_message">"Наместо тоа, пробајте брзо поставување. Имајте предвид, тогаш можеби ќе треба да ја поставите главата подиректно пред телефонот при користењето „Отклучување со лик“.
+
+За да ја подобрите изведбата, може повторно да поставите „Отклучување со лик“ во „Поставки“."</string>
+    <string name="security_settings_face_enroll_timeout_title">Не може да се продолжи со поставувањето</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Обиди се пак</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Употреби брзо поставување</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Излези од поставувањето</string>
+    <string name="security_settings_face_enroll_too_hot_message">Поставувањето на „Отклучување со лик“ не може да се заврши бидејќи телефонот е премногу топол. Обидете се подоцна кога телефонот ќе се олади.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Прескокни „Отклучување со лик“</string>
+    <string name="security_settings_face_enroll_too_hot_title">Телефонот е премногу топол</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Допрете за да поставите отпечаток</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Дознајте повеќе на g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint за работа</string>
+    <string name="setup_suggestion_summary">Копирајте податоци, плаќајте со телефон…</string>
+    <string name="setup_suggestion_title">Завршете го поставувањето</string>
+    <string name="smart_battery_footer">За да го продолжи траењето на батеријата, „Адаптивна батерија“ може да ги намали изведбата и активноста во заднина. Можно е некои известувања да бидат одложени.</string>
+    <string name="smart_battery_manager_title">Поставки за адаптивност</string>
+    <string name="smart_battery_title">Адаптивна батерија</string>
+    <string name="sound_dashboard_summary">Јачина на звук, допир, „Не вознемирувај“</string>
+    <string name="sound_settings">Звук и вибрации</string>
+    <string name="storage_manager_indicator">„Паметен капацитет“: ^1</string>
+    <string name="time_remaining_warning_subtext">Уште околу %1$s според досегашното користење</string>
+    <string name="time_remaining_warning_text">Наскоро може да снема батерија</string>
+    <string name="tips_suggestion_summary">Откријте што може да правите со телефонот</string>
+    <string name="tips_suggestion_title">Запознајте го вашиот Pixel</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Држете го телефонот пред лицето</string>
+    <string name="usb_use_file_transfers">Пренос на датотеки/Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">„Вибрирај за повици“ не е достапно бидејќи телефонот е поставен во безгласен режим</string>
+    <string name="vibration_haptics_settings_not_available_title">Недостапно</string>
+    <string name="wallpaper_dashboard_summary">Бои, икони со тема, мрежа со апликации</string>
+    <string name="wifi_subscription_summary">Прегледајте ја или изменете ја претплатата за OpenRoaming</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">Поврзано со %1$s</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Допрете за поврзување</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Не може да се поврзе. Допрете за да пробате пак.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Се поврзува…</string>
+</resources>

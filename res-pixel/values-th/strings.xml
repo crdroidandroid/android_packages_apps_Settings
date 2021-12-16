@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">หน้าจอล็อกเมื่อไม่มีความเคลื่อนไหว</string>
+    <string name="gesture_silence_title">ท่าทางสัมผัสสำหรับปิดเสียงการแจ้งเตือน</string>
+    <string name="gesture_skip_title">ท่าทางสัมผัสสำหรับข้าม</string>
+    <string name="keywords_touch_sensitivity">สัมผัส, ความไว, ตอบสนองไว, แผ่นปกป้องหน้าจอ, ฟิล์ม, ตอบสนอง, การตอบสนอง</string>
+    <string name="touch_sensitivity_summary">ปรับปรุงการแตะเมื่อมีการใช้แผ่นปกป้องหน้าจอ</string>
+    <string name="touch_sensitivity_title">เพิ่มความไวในการตอบสนองต่อการแตะ</string>
+    <string name="accessibility_vibration_settings_screen_title">ใช้การสั่นและการโต้ตอบการสัมผัส</string>
+    <string name="vibration_haptics_settings_not_available_summary">ตั้งค่าการสั่นและการโต้ตอบการสัมผัสไม่ได้เนื่องจากโทรศัพท์อยู่ในโหมดปิดเสียง</string>
+    <string name="vibration_haptics_strength_category_title">การสั่นและระดับการโต้ตอบการสัมผัส</string>
+    <string name="accessibility_vibration_settings_title">การสั่นและการโต้ตอบการสัมผัส</string>
+    <string name="columbus_title">การแตะด่วนเพื่อเริ่มการดำเนินการ</string>
+    <string name="vibrate_for_calls_category_title">การโทร</string>
+    <string name="accessibility_alarm_vibration_title">การสั่นเมื่อปลุก</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">ตั้งค่า Active Edge เสร็จแล้ว ไปที่หน้าจอถัดไปหรือปรับเปลี่ยนต่อ</string>
+    <string name="accessibility_keyboard_haptics_title">การโต้ตอบการสัมผัสของแป้นพิมพ์</string>
+    <string name="accessibility_vibration_preferences_file">ค่ากำหนดการสั่น</string>
+    <string name="adaptive_charging">การชาร์จแบบปรับอัตโนมัติ</string>
+    <string name="adaptive_charging_description">ชาร์จอย่างต่อเนื่องข้ามคืนเพื่อถนอมแบตเตอรี่ให้ใช้งานได้ยาวนาน ใช้การปลุกเพื่อให้ระบบชาร์จให้เต็มก่อนที่คุณจะตื่น</string>
+    <string name="adaptive_charging_time_estimate"><b>กำลังชาร์จแบบปรับอัตโนมัติ</b> • จะเต็มภายใน %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">ค่ากำหนด</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Assistant แอปล่าสุด แอปเริ่มต้น</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">เรียกใช้ Assistant</string>
+    <string name="assist_gesture_enrollment_do_it_later">ข้ามไปก่อน</string>
+    <string name="assist_gesture_enrollment_seekbar_light">บีบเบาๆ</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">บีบแรงๆ</string>
+    <string name="assist_gesture_enrollment_settings">การตั้งค่า</string>
+    <string name="assist_gesture_setting_enable_assistant_text">หากต้องการพูดคุยกับ Assistant ให้บีบครึ่งล่างของโทรศัพท์แล้วปล่อยอย่างรวดเร็ว</string>
+    <string name="assist_gesture_setting_enable_assistant_title">บีบเพื่อเริ่มพูดคุยกับ Assistant</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">บีบเพื่อปิดเสียงการปลุก ตัวจับเวลา การแจ้งเตือน และสายเรียกเข้า</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">บีบเพื่อปิดเสียงการแจ้งเตือนและสายเรียกเข้า</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">บีบเพื่อปิดเสียงโทรศัพท์</string>
+    <string name="assist_gesture_setting_enable_wake_title">เปิด Assistant เมื่อหน้าจอปิด</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">บีบเบาๆ</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">บีบแรงๆ</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">การตอบสนองต่อการบีบ</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">อาจเรียกใช้ Assistant โดยไม่ได้ตั้งใจ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">บีบครึ่งล่างของโทรศัพท์</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">บีบให้เร็วขึ้น</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">บีบให้แรงขึ้น</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">บีบแล้วปล่อยอย่างรวดเร็ว</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">ลองปรับแถบเลื่อน</string>
+    <string name="assist_gesture_training_enrolling_text">บีบครึ่งล่างของโทรศัพท์ คุณสามารถปรับความแรงที่จะต้องบีบ</string>
+    <string name="assist_gesture_training_enrolling_title">บีบแล้วปล่อยอย่างรวดเร็ว</string>
+    <string name="assist_gesture_training_finished_text">คุณสามารถเปลี่ยนความไวในการบีบได้ภายหลังในการตั้งค่า</string>
+    <string name="assist_gesture_training_finished_title">ฝึกให้เสร็จหรือปรับเปลี่ยนต่อไป</string>
+    <string name="assist_gesture_training_intro_text">ทุกครั้งที่ต้องการพูดคุยกับ Assistant ให้บีบครึ่งล่างของโทรศัพท์แล้วปล่อย</string>
+    <string name="assist_gesture_training_intro_title">บีบเพื่อเริ่มพูดคุยกับ Assistant</string>
+    <string name="assist_gesture_training_suggestion_summary">พูดคุยกับ Assistant, ปิดเสียงสายเรียกเข้า</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">พูดคุยกับ Assistant, ปิดเสียงการปลุกและสายเรียกเข้า</string>
+    <string name="assist_gesture_training_suggestion_title">บีบแล้วปล่อยเพื่อเรียกใช้ Assistant</string>
+    <string name="automatic_storage_manager_activation_warning">ถ้าเชื่อมต่ออินเทอร์เน็ต ก็จะเข้าถึงรูปภาพและวิดีโอที่มีระดับคุณภาพตามที่เลือกไว้สำหรับการสำรองข้อมูลได้</string>
+    <string name="automatic_storage_manager_days_title">นำรูปภาพและวิดีโอที่สำรองไว้ออก</string>
+    <string name="automatic_storage_manager_deactivation_warning">"คุณแน่ใจหรือว่าต้องการปิดพื้นที่เก็บข้อมูลอัจฉริยะ 
+
+พื้นที่เก็บข้อมูลอัจฉริยะจะไม่ทำให้พื้นที่ว่างมากขึ้นเมื่อพื้นที่เก็บข้อมูลใกล้เต็ม"</string>
+    <string name="automatic_storage_manager_downloads_days_title">สำรองข้อมูลที่ดาวน์โหลดแล้ว</string>
+    <string name="automatic_storage_manager_preference_title">พื้นที่เก็บข้อมูลอัจฉริยะ</string>
+    <string name="automatic_storage_manager_primary_switch_title">ใช้พื้นที่เก็บข้อมูลอัจฉริยะ</string>
+    <string name="automatic_storage_manager_settings">พื้นที่เก็บข้อมูลอัจฉริยะ</string>
+    <string name="automatic_storage_manager_text">เมื่อพื้นที่เก็บข้อมูลใกล้เต็ม ให้นำรูปภาพและวิดีโอที่สำรองข้อมูลไว้ออก ทั้งนี้คุณจะยังดูรูปภาพและวิดีโอดังกล่าวได้ใน Google Photos</string>
+    <string name="aware_disabled_preference_action">เปิด</string>
+    <string name="aware_disabled_preference_neutral">ไว้ทีหลัง</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense ใช้งานไม่ได้เนื่องจากเปิดโหมดบนเครื่องบินและโหมดประหยัดแบตเตอรี่อยู่</string>
+    <string name="aware_footer_when_airplane_on">Motion Sense ใช้งานไม่ได้เนื่องจากเปิดโหมดบนเครื่องบินอยู่</string>
+    <string name="aware_footer_when_batterysaver_on">Motion Sense ใช้งานไม่ได้เนื่องจากเปิดโหมดประหยัดแบตเตอรี่อยู่</string>
+    <string name="aware_gesture_summary_off">การใช้ท่าทางควบคุมเปิดอยู่, Active Edge ปิดอยู่</string>
+    <string name="aware_gesture_summary_on_non_assist">การใช้ท่าทางควบคุมเปิดอยู่, Active Edge เปิดอยู่</string>
+    <string name="aware_gesture_summary_on_with_assist">การใช้ท่าทางควบคุมเปิดอยู่, Active Edge ปิดอยู่, บีบเพื่อเรียกใช้ Assistant</string>
+    <string name="aware_info_button_description">การตั้งค่าเพิ่มเติม</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">ใช้งานไม่ได้เนื่องจากเปิดโหมดบนเครื่องบินและโหมดประหยัดแบตเตอรี่อยู่</string>
+    <string name="aware_summary_when_airplane_on">ใช้งานไม่ได้เนื่องจากเปิดโหมดบนเครื่องบินอยู่</string>
+    <string name="aware_summary_when_batterysaver_on">ใช้งานไม่ได้เนื่องจากเปิดโหมดประหยัดแบตเตอรี่อยู่</string>
+    <string name="backup_data_summary">สำรองข้อมูลแอป รหัสผ่าน Wi-Fi และการตั้งค่าอื่นๆ ลงในเซิร์ฟเวอร์ของ Google</string>
+    <string name="backup_suggestion_cancel">ยกเลิก</string>
+    <string name="backup_suggestion_dialog_description">การดำเนินการนี้จะลบข้อมูลทั้งหมดจากที่จัดเก็บข้อมูลภายในของโทรศัพท์</string>
+    <string name="backup_suggestion_dialog_title">รีเซ็ตอุปกรณ์นี้ใช่ไหม</string>
+    <string name="backup_suggestion_get_started">ดูข้อมูลเพิ่มเติม</string>
+    <string name="backup_suggestion_item_summary">คัดลอกจากอุปกรณ์ Android หรือ iPhone®</string>
+    <string name="backup_suggestion_item_title">ต้องการข้อมูลจากโทรศัพท์เก่าใช่ไหม</string>
+    <string name="backup_suggestion_missing_description">"หากคุณไม่เห็นข้อมูลบางส่วน เช่น ข้อความ SMS และรูปภาพ คุณสามารถโอนข้อมูลดังกล่าวไปยัง Pixel โดยใช้สายเชื่อมต่อ
+
+ในการเริ่มต้นใช้งาน คุณต้องรีเซ็ต Pixel ระบบจะลบข้อมูลทั้งหมดในโทรศัพท์นี้ รวมถึงการตั้งค่าที่กำหนดเองและเนื้อหาที่ไม่ได้ซิงค์ไปยังระบบคลาวด์"</string>
+    <string name="backup_suggestion_missing_title">ข้อมูลหายไปใช่ไหม</string>
+    <string name="backup_suggestion_next">ถัดไป</string>
+    <string name="backup_suggestion_other_ways_to_copy">วิธีอื่นในการคัดลอกข้อมูล</string>
+    <string name="backup_suggestion_reset_description">"ในหน้าจอถัดไป คุณสามารถรีเซ็ต Pixel นี่เป็นวิธีเดียวในการโอนข้อมูลโดยใช้สายเชื่อมต่อ
+
+เมื่อรีเซ็ตแล้ว ให้ทำตามขั้นตอนการตั้งค่าและเลือกนำข้อมูลมาจากโทรศัพท์เครื่องก่อน"</string>
+    <string name="backup_suggestion_reset_title">รีเซ็ต Pixel</string>
+    <string name="backup_suggestion_what_is_needed_summary">"หลังจากรีเซ็ตโทรศัพท์ คุณจะต้องใช้:
+
+• โทรศัพท์เครื่องก่อน (รองรับLINK_BEGINโทรศัพท์ส่วนใหญ่LINK_ENDที่ใช้ Android 5.0 ขึ้นไป หรือ iOS® 8.0 ขึ้นไป)
+• สายชาร์จหรือสายเชื่อมต่อข้อมูลของโทรศัพท์เครื่องก่อน
+• Quick Switch Adapter ที่มาพร้อมกับ Pixel"</string>
+    <string name="backup_suggestion_what_is_needed_title">สิ่งที่คุณต้องใช้</string>
+    <string name="battery_manager_summary">ยืดอายุการใช้งานแบตเตอรี่และเพิ่มประสิทธิภาพการชาร์จ</string>
+    <string name="battery_manager_summary_unsupported">ยืดอายุการใช้งานแบตเตอรี่</string>
+    <string name="battery_missing_link_message">ดูข้อมูลเพิ่มเติม</string>
+    <string name="battery_suggestion_summary">เปิดแบตเตอรี่แบบปรับอัตโนมัติ</string>
+    <string name="battery_tip_smart_battery_summary">เปิดแบตเตอรี่แบบปรับอัตโนมัติ</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s จะไม่จับคู่กับอุปกรณ์ที่ลิงก์กับบัญชี Google นี้อีกต่อไป</string>
+    <string name="columbus_gesture_detected">ตรวจพบการแตะด่วน</string>
+    <string name="columbus_gesture_enrollment_complete">เสร็จ</string>
+    <string name="columbus_gesture_enrollment_do_it_later">ไว้ทีหลัง</string>
+    <string name="columbus_gesture_enrollment_settings">ไปที่การตั้งค่า</string>
+    <string name="columbus_gesture_enrollment_try_it">ลองใช้</string>
+    <string name="columbus_gesture_training_action_no_selection_error">โปรดเลือกการดำเนินการที่จะทำ</string>
+    <string name="columbus_gesture_training_action_text">เลือกสิ่งที่จะเกิดขึ้นเมื่อใช้การแตะด่วน คุณเปลี่ยนค่านี้ภายหลังได้ในการตั้งค่า</string>
+    <string name="columbus_gesture_training_action_title">เลือกตัวเลือกการแตะด่วน</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… ตรวจพบการแตะสองครั้ง 1 ครั้งจาก 2 ครั้ง</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">ลองทำอีกครั้ง แตะสองครั้งเร็วๆ ที่ด้านหลังโทรศัพท์</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">ดีมาก</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… ตรวจพบการแตะสองครั้ง 2 ครั้งจาก 2 ครั้ง</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">คุณพร้อมเริ่มใช้การแตะด่วนแล้ว</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">ใช่แล้ว</string>
+    <string name="columbus_gesture_training_enrolling_text">แตะสองครั้งเร็วๆ ที่ด้านหลังโทรศัพท์</string>
+    <string name="columbus_gesture_training_enrolling_title">ลองแตะด่วน</string>
+    <string name="columbus_gesture_training_finished_text">หากต้องการเปลี่ยนความแรงที่ต้องใช้ในการแตะด่วน ให้ไปที่การตั้งค่า</string>
+    <string name="columbus_gesture_training_finished_title">คุณตั้งค่าการแตะด่วนแล้ว</string>
+    <string name="columbus_gesture_training_intro_text_accidental">คุณเพิ่งแตะสองครั้งที่ด้านหลังอุปกรณ์ซึ่งทำให้ใช้งาน Assistant ได้ทุกที่ทุกเวลา คุณสามารถปรับท่าทางสัมผัสนี้ได้ตามต้องการในการตั้งค่า</string>
+    <string name="columbus_gesture_training_intro_text_suw">ถ่ายภาพหน้าจอ แสดงการแจ้งเตือน หรือเริ่มการดำเนินการอื่นด้วยการแตะสองครั้ง</string>
+    <string name="columbus_gesture_training_intro_title">การแตะด่วนเพื่อใช้งานแบบลัด</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">โปรดเลือกแอปที่จะเปิด</string>
+    <string name="columbus_gesture_training_launch_text">เลือกแอปที่ต้องการเปิดเมื่อใช้การแตะด่วน</string>
+    <string name="columbus_gesture_training_launch_title">เลือกแอปที่จะเปิด</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">การตั้งค่าทางลัด %1$s</string>
+    <string name="columbus_launch_settings_activity_title">การตั้งค่าการแตะด่วน</string>
+    <string name="columbus_name">การแตะด่วน</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">การตั้งค่า %1$s</string>
+    <string name="columbus_setting_action_assistant_title">เปิดใช้ผู้ช่วยดิจิทัล</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">ไม่ได้เลือกแอป</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">ไม่ได้ติดตั้งแอปนี้</string>
+    <string name="columbus_setting_action_launch_title">เปิดแอป</string>
+    <string name="columbus_setting_action_notification_title">แสดงการแจ้งเตือน</string>
+    <string name="columbus_setting_action_open_app_title">เปิดแอป</string>
+    <string name="columbus_setting_action_overview_title">ดูแอปล่าสุด</string>
+    <string name="columbus_setting_action_play_pause_title">เล่นหรือหยุดสื่อชั่วคราว</string>
+    <string name="columbus_setting_action_screenshot_title">จับภาพหน้าจอ</string>
+    <string name="columbus_setting_actions_title">แตะสองครั้งที่ด้านหลังของโทรศัพท์เพื่อ</string>
+    <string name="columbus_setting_additional_settings_title">ความแรงของการแตะด่วน</string>
+    <string name="columbus_setting_app_selection_help_text">เลือกแอปที่จะเปิดเมื่อแตะด้านหลังของโทรศัพท์ 2 ครั้ง หากคุณถอนการติดตั้งแอปดังกล่าว การแตะด่วนจะปิดไว้จนกว่าจะมีการเลือกแอปอื่น</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">เลือกสิ่งที่จะเกิดขึ้นเมื่อเปิดแอปนี้โดยใช้การแตะด่วน</string>
+    <string name="columbus_setting_enable_switch_title">ใช้การแตะด่วน</string>
+    <string name="columbus_setting_sensitivity_title">ต้องแตะแรงกว่านี้</string>
+    <string name="connectivity_helper_call_quality_category">คุณภาพการโทร</string>
+    <string name="connectivity_helper_call_quality_summary">รับการแจ้งเตือนเกี่ยวกับสาเหตุของปัญหาการเชื่อมต่อระหว่างที่โทร</string>
+    <string name="connectivity_helper_call_quality_title">รับการแจ้งเตือน</string>
+    <string name="connectivity_helper_d2d_summary">แจ้งให้ปลายสายทราบเมื่อโทรศัพท์ของคุณมีปัญหาการเชื่อมต่อระหว่างที่โทร</string>
+    <string name="connectivity_helper_d2d_title">แชร์ข้อมูลการเชื่อมต่อ</string>
+    <string name="connectivity_helper_footnote">คุณจะแชร์ข้อมูลการเชื่อมต่อได้เมื่อปลายสายใช้อุปกรณ์และเครือข่ายที่รองรับ</string>
+    <string name="content_capture">ปรับเปลี่ยนในแบบของคุณโดยใช้ข้อมูลแอป</string>
+    <string name="copy_toast_msg">คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว</string>
+    <string name="dark_ui_text">ธีมมืดใช้พื้นหลังสีดำเพื่อให้แบตเตอรี่ใช้งานได้นานขึ้น ธีมมืดกำหนดเวลารอเปิดจนกระทั่งปิดหน้าจอ</string>
+    <string name="dock_summary_charging_phone">กำลังชาร์จโทรศัพท์</string>
+    <string name="double_twist_for_camera_mode_summary">หากต้องการเข้าและออกจากโหมดเซลฟีใน Google กล้องถ่ายรูป โปรดบิด 2 ครั้งเมื่อคุณอยู่ในแอป</string>
+    <string name="downloads_backup_text">ไฟล์ที่ดาวน์โหลดจะได้รับการสำรองข้อมูลไว้ใน Google ไดรฟ์</string>
+    <string name="duration_less_than_one_minute">น้อยกว่า 1 นาที</string>
+    <string name="extra_app_info_label">การเพิ่มประสิทธิภาพเกม</string>
+    <string name="face_enrolling_center_head">จัดใบหน้าของคุณให้อยู่ในกรอบด้านใน</string>
+    <string name="face_enrolling_description">จับภาพใบหน้าให้ครบทุกมุมโดยเติมชิ้นส่วนภาพทั้งหมดจนเต็ม</string>
+    <string name="face_enrolling_do_it_later">ข้ามไปก่อน</string>
+    <string name="face_enrolling_gaze_dialog_cancel">ยกเลิก</string>
+    <string name="face_enrolling_gaze_dialog_continue">ตั้งค่าโดยไม่ลืมตา</string>
+    <string name="face_enrolling_gaze_dialog_message">คุณต้องการตั้งค่าการปลดล็อกด้วยใบหน้าโดยไม่ต้องลืมตาใช่ไหม หากคุณใช้การตั้งค่านี้ อาจมีคนปลดล็อกโทรศัพท์คุณได้เพียงแค่ส่องโทรศัพท์มาที่หน้าของคุณในตอนที่คุณไม่รู้ตัว</string>
+    <string name="face_enrolling_gaze_dialog_title">ตั้งค่าโดยไม่ลืมตา</string>
+    <string name="face_enrolling_how_to_setup">วิธีการตั้งค่า</string>
+    <string name="face_enrolling_title">ถือโทรศัพท์นิ่งๆ ค่อยๆ หมุนศีรษะช้าๆ</string>
+    <string name="face_enrolling_title_accessibility">มองตรงไปที่โทรศัพท์</string>
+    <string name="face_enrolling_title_accessibility_progress">มองตรงไปที่โทรศัพท์ค้างไว้</string>
+    <string name="face_enrolling_too_close">ถือโทรศัพท์ให้ห่างกว่านี้</string>
+    <string name="face_enrolling_too_far">ถือโทรศัพท์ให้ใกล้กว่านี้</string>
+    <string name="face_enrolling_too_high">ถือโทรศัพท์ให้ต่ำลง</string>
+    <string name="face_enrolling_too_left">เลื่อนโทรศัพท์ไปทางขวา</string>
+    <string name="face_enrolling_too_low">ยกโทรศัพท์ให้สูงขึ้น</string>
+    <string name="face_enrolling_too_right">เลื่อนโทรศัพท์ไปทางซ้าย</string>
+    <string name="face_enrolling_turn_head_to_arrow">หันศีรษะไปทางลูกศร</string>
+    <string name="face_enrolling_turned_too_far">หันศีรษะกลับมาเล็กน้อย</string>
+    <string name="fallback_menu_item_copy_link">คัดลอกลิงก์</string>
+    <string name="fallback_menu_item_open_in_browser">เปิดในเบราว์เซอร์</string>
+    <string name="fallback_menu_item_share_link">แชร์ลิงก์</string>
+    <string name="fullbackup_data_summary">"สำรองข้อมูลในอุปกรณ์ (เช่น รหัสผ่าน Wi-Fi และประวัติการโทร) และข้อมูลแอป (เช่น การตั้งค่าและไฟล์ที่แอปจัดเก็บไว้) ลงใน Google ไดรฟ์โดยอัตโนมัติ
+
+เมื่อคุณเปิดการสำรองข้อมูลอัตโนมัติ ระบบจะบันทึกข้อมูลอุปกรณ์และข้อมูลแอปไปยังโฟลเดอร์ส่วนตัวใน Google ไดรฟ์เป็นระยะๆ ข้อมูลแอปอาจเป็นข้อมูลใดๆ ก็ตามที่แอปบันทึกไว้ (ตามการตั้งค่าของนักพัฒนาซอฟต์แวร์) ซึ่งรวมถึงข้อมูลที่อาจมีความละเอียดอ่อน เช่น รายชื่อติดต่อ ข้อความ และรูปภาพ
+
+ข้อมูลสำรองจะไม่นับรวมในโควต้าพื้นที่เก็บข้อมูลไดรฟ์ ระบบจะไม่สำรองไฟล์ขนาดใหญ่หรือไฟล์ที่นักพัฒนาซอฟต์แวร์เลือกที่จะไม่รวมในบริการ"</string>
+    <string name="fullbackup_erase_dialog_message">หยุดการสำรองข้อมูลอุปกรณ์ (เช่น รหัสผ่าน Wi-Fi และประวัติการโทร) และข้อมูลแอป (เช่น การตั้งค่าและไฟล์ที่แอปจัดเก็บไว้) พร้อมทั้งลบสำเนาทั้งหมดบน Google ไดรฟ์ไหม</string>
+    <string name="game_dashboard_always_on_summary">แสดงทางลัดสำหรับแดชบอร์ดเกมในเกม</string>
+    <string name="game_dashboard_always_on_title">แดชบอร์ดเกม</string>
+    <string name="game_dashboard_dnd_rule_name">เกม</string>
+    <string name="game_dashboard_dnd_summary">รับเฉพาะการแจ้งเตือนจากคนและแอปที่สำคัญเมื่อเล่นเกม</string>
+    <string name="game_dashboard_dnd_title">โหมดห้ามรบกวนสำหรับเกม</string>
+    <string name="game_mode_battery_description">ยืดอายุการใช้งานแบตเตอรี่</string>
+    <string name="game_mode_battery_title">โหมดประหยัดแบตเตอรี่</string>
+    <string name="game_mode_performance_description">เพิ่มอัตราเฟรมสูงสุด ใช้แบตเตอรี่มากขึ้น</string>
+    <string name="game_mode_performance_title">ประสิทธิภาพ</string>
+    <string name="game_mode_standard_description">ใช้ค่าเริ่มต้นของเกม</string>
+    <string name="game_mode_standard_title">มาตรฐาน</string>
+    <string name="game_optimization_unavailable">ไม่พร้อมใช้งานสำหรับเกมนี้</string>
+    <string name="gesture_aware_confirmation_action_button">รับทราบ</string>
+    <string name="gesture_aware_footer"><annotation link="link">ค่ากำหนด</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">ค่ากำหนด</annotation></string>
+    <string name="gesture_skip_direction_ltr">ซ้ายไปขวา</string>
+    <string name="gesture_skip_direction_rtl">ขวาไปซ้าย</string>
+    <string name="gesture_skip_direction_title">ทิศทางการข้าม</string>
+    <string name="gesture_skip_footer"><annotation link="link">ค่ากำหนด</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">ค่ากำหนด</annotation></string>
+    <string name="global_actions_panel_short_title">บัตรและบัตรผ่าน</string>
+    <string name="global_actions_panel_summary">หากต้องการเข้าถึงข้อมูลอย่างเช่น วิธีการชำระเงินและบอร์ดดิ้งพาส ให้กดปุ่มเปิด/ปิดค้างไว้</string>
+    <string name="global_actions_panel_title">แสดงบัตรและบัตรผ่าน</string>
+    <string name="install_unknown_applications">อนุญาตให้ติดตั้งแอปจากแหล่งอื่นๆ ที่นอกเหนือไปจาก Play Store</string>
+    <string name="keywords_accessibility_menu">การเคลื่อนไหว, เมนูด่วน, เมนูการช่วยเหลือพิเศษ, การสัมผัส, ความคล่องแคล่ว</string>
+    <string name="keywords_adaptive_charging">ชาร์จ, การชาร์จ, การชาร์จอัจฉริยะ, การชาร์จแบบปรับอัตโนมัติ, แบตเตอรี่, สภาพแบตเตอรี่</string>
+    <string name="keywords_assist_gesture_launch">ท่าทางสัมผัส, ขอบ, ด้านข้าง, active edge, บีบ, กำแน่น, ช่วยเหลือ, assistant, บีบ, ok google, google assistant</string>
+    <string name="keywords_assist_gesture_silence">ท่าทางสัมผัส, ขอบ, ด้านข้าง, active edge, ปิดเสียง, เลื่อนการปลุก, การปลุก, สายเรียกเข้า, เงียบ, การแสดงผล, หน้าจอล็อก, บีบ, กำแน่น, หยุด</string>
+    <string name="keywords_assist_gesture_wake">ท่าทางสัมผัส, ขอบ, ด้านข้าง, active edge, ปลุก, การแจ้งเตือน, หน้าจอ, การแสดงผล, หน้าจอปิดอยู่, หน้าจอเปิดอยู่, บีบ, อยู่ในโหมดสลีป, โหมดสลีป, กำแน่น</string>
+    <string name="keywords_battery_share">การแชร์แบตเตอรี่, การชาร์จแบบไร้สาย</string>
+    <string name="keywords_battery_share_settings">การแชร์แบตเตอรี่ การชาร์จอุปกรณ์อื่นแบบไร้สาย</string>
+    <string name="keywords_content_capture">การบันทึกเนื้อหา, เนื้อหาแอป, ข้อมูลแอป</string>
+    <string name="keywords_gesture">ท่าทางสัมผัส, การเคลื่อนไหว</string>
+    <string name="keywords_global_actions_panel">บัตร บัตรผ่าน</string>
+    <string name="keywords_live_transcribe">คำบรรยายวิดีโอ, คำอธิบายภาพ, คำบรรยาย, คำบรรยายสด, มีปัญหาในการได้ยิน, สูญเสียการได้ยิน, CART, การแปลงคำพูดเป็นข้อความ, คำบรรยาย</string>
+    <string name="keywords_reverse_charging_stop_threshold">หยุดแชร์แบตเตอรี่เมื่อโทรศัพท์เหลือแบตเตอรี่</string>
+    <string name="keywords_select_to_speak">ฟังข้อความ, อ่านออกเสียง, อ่านหน้าจอ, โปรแกรมอ่านหน้าจอ</string>
+    <string name="keywords_sound_amplifier">PSAP, ขยายเสียง, การขยายเสียง, มีปัญหาในการได้ยิน, สูญเสียการได้ยิน, การขยายเสียง</string>
+    <string name="keywords_sound_notifications">การแจ้งเตือน, มีปัญหาในการได้ยิน, สูญเสียการได้ยิน, แจ้งเตือน</string>
+    <string name="keywords_switch_access">การเคลื่อนไหว, สวิตช์, มือ, AT, เทคโนโลยีความช่วยเหลือพิเศษ, อัมพาต, ALS, การสแกน, การสแกนทีละขั้นตอน</string>
+    <string name="keywords_talkback">โปรแกรมอ่านหน้าจอ, เสียงแจ้งเตือน, เสียงแจ้งเตือน, เสียงผู้ช่วย, ตาบอด, สายตาเลือนราง, TTS, อ่านออกเสียงข้อความ, อธิบายและอ่านออกเสียง</string>
+    <string name="keywords_voice_access">เสียง, การควบคุมด้วยเสียง, การเคลื่อนไหว, มือ, ไมค์, ไมโครโฟน, การพิมพ์ตามคำบอก, พูดคุย, ควบคุม</string>
+    <string name="language_input_gesture_summary_off">Active Edge ปิดอยู่</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge เปิดอยู่</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge เปิดอยู่ บีบเพื่อเรียกใช้ Assistant</string>
+    <string name="me_card_title">Pixel ของฉัน</string>
+    <string name="my_device_info_account_preference_title">บัญชี Google</string>
+    <string name="owner_info_settings_edit_text_hint">เช่น Pixel ของสมชาย</string>
+    <string name="reverse_charging_charging_wirelessly_message">ใช้ไม่ได้เนื่องจากโทรศัพท์กำลังชาร์จแบบไร้สาย</string>
+    <string name="reverse_charging_detail_charging_overheat_message">การแชร์แบตเตอรี่ใช้งานไม่ได้เนื่องจาก Pixel มีอุณหภูมิสูงเกินไป โปรดรอให้โทรศัพท์เย็นลงแล้วลองอีกครั้ง</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">การแชร์แบตเตอรี่ใช้งานไม่ได้เนื่องจากโทรศัพท์กำลังชาร์จแบบไร้สาย</string>
+    <string name="reverse_charging_detail_footer_title">แบตเตอรี่โทรศัพท์จะหมดเร็วขึ้นเมื่อใช้การแชร์แบตเตอรี่ ฟีเจอร์นี้ใช้ได้กับหูฟังเอียร์บัด นาฬิกา โทรศัพท์ และอุปกรณ์อื่นๆ ที่เข้ากันได้ ถอดเคสของโทรศัพท์ออกเพื่อให้ชาร์จได้ดียิ่งขึ้น</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"การแชร์แบตเตอรี่ใช้ได้กับหูฟังเอียร์บัด โทรศัพท์\\nและอุปกรณ์อื่นๆ ที่เข้ากันได้
+
+แบตเตอรี่โทรศัพท์จะหมดเร็วขึ้นเมื่อใช้ฟีเจอร์นี้ การแชร์แบตเตอรี่จะปิดโดยอัตโนมัติหากผ่านไป 2-3 นาทีแล้วไม่พบอุปกรณ์อื่น ถอดเคสของโทรศัพท์และสิ่งอื่นๆ ที่อาจรบกวนการชาร์จออก เช่น วัตถุที่เป็นโลหะ เพื่อให้ชาร์จได้ดียิ่งขึ้น"</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">การแชร์แบตเตอรี่ใช้งานไม่ได้เนื่องจากเปิดโหมดประหยัดแบตเตอรี่อยู่</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">การแชร์แบตเตอรี่ใช้งานไม่ได้เนื่องจากเสียบอุปกรณ์ USB-C อยู่</string>
+    <string name="reverse_charging_instructions_title">"ชาร์จอุปกรณ์อื่นด้วย Pixel ของคุณ
+พลิกโทรศัพท์แล้วลองชาร์จเลย"</string>
+    <string name="reverse_charging_is_off_summary">ปิด</string>
+    <string name="reverse_charging_is_on_and_charging_summary">กำลังแชร์และชาร์จแบตเตอรี่</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">กำลังแชร์แบตเตอรี่</string>
+    <string name="reverse_charging_is_on_summary">เปิดอยู่/ชาร์จอุปกรณ์อื่นๆ</string>
+    <string name="reverse_charging_main_switch">อนุญาตการแชร์แบตเตอรี่</string>
+    <string name="reverse_charging_off_low_battery_summary">ปิดอยู่/แบตเตอรี่โทรศัพท์เหลือไม่ถึง %1$s</string>
+    <string name="reverse_charging_off_sharing_level_summary">ปิดอยู่/แบตเตอรี่เหลือต่ำกว่าระดับการแชร์</string>
+    <string name="reverse_charging_overheat_summary">ใช้งานไม่ได้เนื่องจาก Pixel มีอุณหภูมิสูงเกินไป โปรดรอให้โทรศัพท์เย็นลงแล้วลองอีกครั้ง</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">ใช้งานไม่ได้เนื่องจากเปิดโหมดประหยัดแบตเตอรี่อยู่</string>
+    <string name="reverse_charging_sharing_level_message">ใช้ไม่ได้เนื่องจากแบตเตอรี่เหลือต่ำกว่าระดับการแชร์</string>
+    <string name="reverse_charging_switch_summary">วางอุปกรณ์ไว้บนด้านหลังของ Pixel</string>
+    <string name="reverse_charging_switch_title">ชาร์จอุปกรณ์อื่นด้วยการวางอุปกรณ์นั้นไว้บนด้านหลังของ Pixel</string>
+    <string name="reverse_charging_switch_title_message">ชาร์จอุปกรณ์อื่นๆ</string>
+    <string name="reverse_charging_title">การแชร์แบตเตอรี่</string>
+    <string name="reverse_charging_unplug_usb_cable_message">ใช้ไม่ได้เนื่องจากเสียบอุปกรณ์ USB-C อยู่</string>
+    <string name="reverse_charging_warning_summary">ใช้ไม่ได้เนื่องจากแบตเตอรี่เหลือน้อยกว่า %1$s</string>
+    <string name="reverse_charging_warning_title">การแชร์แบตเตอรี่ใช้งานไม่ได้เนื่องจากเหลือแบตเตอรี่ไม่ถึง %1$s</string>
+    <string name="rtt_settings_always_visible">แสดงเสมอ</string>
+    <string name="rtt_settings_no_visible">ไม่แสดง</string>
+    <string name="rtt_settings_title">ข้อความแบบเรียลไทม์ (RTT)</string>
+    <string name="rtt_settings_visible_during_call">แสดงระหว่างการโทร</string>
+    <string name="screen_time_summary_usage_today">%1$s วันนี้</string>
+    <string name="search_bar_account_avatar_content_description">รูปโปรไฟล์ แตะสองครั้งเพื่อเปิดบัญชี Google</string>
+    <string name="security_advanced_settings">การตั้งค่าขั้นสูง</string>
+    <string name="security_dismiss_dialog_dismiss_button">ปิด</string>
+    <string name="security_dismiss_dialog_title">ต้องการปิดคำเตือนนี้ใช่ไหม</string>
+    <string name="security_settings_face_enroll_education_message">ในหน้าจอถัดไป ให้หมุนศีรษะเพื่อจับภาพใบหน้าทุกมุม</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">ในหน้าจอถัดไป ให้ถือโทรศัพท์ไว้ที่ระดับสายตา</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">การตั้งค่าการปลดล็อกด้วยใบหน้าหมดเวลา</string>
+    <string name="security_settings_face_enroll_finish_description">ตอนนี้คุณสามารถใช้ใบหน้าเพื่อปลดล็อกโทรศัพท์หรือยืนยันว่าเป็นคุณ เช่น เมื่อลงชื่อเข้าใช้แอปหรืออนุมัติการซื้อ</string>
+    <string name="security_settings_face_enroll_finish_title">เรียบร้อยแล้ว</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">ตั้งค่าสำหรับการมองหรือการขยับศีรษะที่จำกัด</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">เมื่อใช้การปลดล็อกด้วยใบหน้า คุณอาจต้องหันหน้าให้ตรงกับโทรศัพท์มากขึ้น</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">ต้องลืมตา</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"คุณและบุตรหลานลบรูปแบบใบหน้า หรือปิดการปลดล็อกด้วยใบหน้าได้ทุกเมื่อในการตั้งค่า ระบบจะเก็บรูปแบบใบหน้าไว้ในโทรศัพท์จนกว่าจะมีการลบออก
+
+ดูข้อมูลเพิ่มเติมที่ g.co/pixel/faceunlock"</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">คุณและบุตรหลานจะเป็นผู้ควบคุม</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"คุณลบรูปแบบใบหน้าหรือปิดการปลดล็อกด้วยใบหน้าได้ทุกเมื่อในการตั้งค่า ระบบจะเก็บรูปแบบใบหน้าไว้ในโทรศัพท์จนกว่าคุณจะลบออก
+
+ดูข้อมูลเพิ่มเติมที่ g.co/pixel/faceunlock"</string>
+    <string name="security_settings_face_enroll_introduction_control_title">คุณควบคุมได้</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"การปลดล็อกด้วยใบหน้าจะสร้างรูปแบบใบหน้าที่เป็นเอกลักษณ์ของบุตรหลานเพื่อยืนยันว่าเป็นตนเอง ในการสร้างรูปแบบใบหน้านี้ระหว่างการตั้งค่า บุตรหลานจะถ่ายภาพใบหน้าจากมุมต่างๆ ที่ไม่ซ้ำกัน
+
+เมื่อบุตรหลานใช้การปลดล็อกด้วยใบหน้า ระบบจะใช้รูปภาพเพื่ออัปเดตรูปแบบใบหน้า ระบบจะไม่เก็บรูปภาพที่ใช้สร้างรูปแบบใบหน้า แต่จะเก็บรูปแบบใบหน้าไว้อย่างปลอดภัยในโทรศัพท์และจะไม่มีการส่งออกไปไหน การประมวลผลข้อมูลทั้งหมดเกิดขึ้นอย่างปลอดภัยในโทรศัพท์"</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"การปลดล็อกด้วยใบหน้าจะสร้างรูปแบบใบหน้าที่เป็นเอกลักษณ์เพื่อยืนยันว่าเป็นคุณ ในการสร้างรูปแบบใบหน้านี้ระหว่างการตั้งค่า คุณจะถ่ายภาพใบหน้าจากมุมต่างๆ ที่ไม่ซ้ำกัน
+
+เมื่อคุณใช้การปลดล็อกด้วยใบหน้า ระบบจะใช้รูปภาพเพื่ออัปเดตรูปแบบใบหน้า ระบบจะไม่เก็บรูปภาพที่ใช้สร้างรูปแบบใบหน้า แต่จะเก็บรูปแบบใบหน้าไว้อย่างปลอดภัยในโทรศัพท์และจะไม่มีการส่งออกไปไหน การประมวลผลข้อมูลทั้งหมดเกิดขึ้นอย่างปลอดภัยในโทรศัพท์"</string>
+    <string name="security_settings_face_enroll_introduction_how_title">วิธีการทำงาน</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">การปลดล็อกด้วยใบหน้าสามารถกำหนดได้ว่าบุตรหลานต้องลืมตาในการปลดล็อกโทรศัพท์หรือยืนยันว่าเป็นตนเอง คุณและบุตรหลานเปิดตัวเลือกนี้ได้ทุกเมื่อในการตั้งค่า</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">หากบุตรหลานสวมแว่นตาเป็นปกติ ก็สวมไว้ระหว่างการตั้งค่าได้</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">การมองโทรศัพท์จะปลดล็อกโทรศัพท์ได้แม้ว่าบุตรหลานไม่ได้ตั้งใจก็ตาม หากมีคนที่หน้าคล้ายบุตรหลานมากๆ เช่น ฝาแฝด หรือหากมีผู้ถือโทรศัพท์ไว้ตรงหน้าของบุตรหลานก็อาจปลดล็อกโทรศัพท์ได้เช่นกัน</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">การปลดล็อกด้วยใบหน้าสามารถกำหนดได้ว่าคุณต้องลืมตาในการปลดล็อกโทรศัพท์หรือยืนยันว่าเป็นคุณ คุณเปิดตัวเลือกนี้ได้ทุกเมื่อในการตั้งค่า</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">สวมแว่นตาหรือแว่นกันแดดที่มีเลนส์สีอ่อนได้</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">การใช้ใบหน้าเพื่อปลดล็อกโทรศัพท์อาจไม่ปลอดภัยเท่ารูปแบบหรือ PIN ที่รัดกุม</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">การมองโทรศัพท์จะปลดล็อกโทรศัพท์ได้แม้ว่าคุณไม่ได้ตั้งใจก็ตาม หากมีคนที่หน้าคล้ายคุณมากๆ เช่น ฝาแฝด หรือหากมีผู้ถือโทรศัพท์ไว้ตรงหน้าของคุณก็อาจปลดล็อกโทรศัพท์ได้เช่นกัน</string>
+    <string name="security_settings_face_enroll_introduction_info_title">โปรดทราบ</string>
+    <string name="security_settings_face_enroll_introduction_message">ใช้ใบหน้าเพื่อปลดล็อกโทรศัพท์หรือยืนยันว่าเป็นคุณ เช่น เมื่อลงชื่อเข้าใช้แอปหรืออนุมัติการซื้อ</string>
+    <string name="security_settings_face_enroll_introduction_title">ตั้งค่าการปลดล็อกด้วยใบหน้า</string>
+    <string name="security_settings_face_enroll_next">ถัดไป</string>
+    <string name="security_settings_face_enroll_partial_message">หากต้องการปรับปรุงประสิทธิภาพ คุณตั้งค่าการปลดล็อกด้วยใบหน้าอีกครั้งได้ในการตั้งค่า</string>
+    <string name="security_settings_face_enroll_partial_start_over">เริ่มต้นใหม่</string>
+    <string name="security_settings_face_enroll_partial_title">ตั้งค่าการปลดล็อกด้วยใบหน้าเสร็จแล้ว</string>
+    <string name="security_settings_face_enroll_timeout_message">"ลองใช้การตั้งค่าด่วนแทน โปรดทราบว่าคุณอาจต้องหันหน้าให้ตรงกับโทรศัพท์มากขึ้นเมื่อใช้การปลดล็อกด้วยใบหน้า
+
+หากต้องการปรับปรุงประสิทธิภาพ คุณตั้งค่าการปลดล็อกด้วยใบหน้าอีกครั้งได้ในการตั้งค่า"</string>
+    <string name="security_settings_face_enroll_timeout_title">ตั้งค่าต่อไม่ได้</string>
+    <string name="security_settings_face_enroll_timeout_try_again">ลองอีกครั้ง</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">ใช้การตั้งค่าด่วน</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">ออกจากการตั้งค่า</string>
+    <string name="security_settings_face_enroll_too_hot_message">ตั้งค่าการปลดล็อกด้วยใบหน้าให้เสร็จสมบูรณ์ไม่ได้เนื่องจากโทรศัพท์ร้อนเกินไป โปรดลองอีกครั้งในภายหลังเมื่อโทรศัพท์เย็นลง</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">ข้ามการปลดล็อกด้วยใบหน้า</string>
+    <string name="security_settings_face_enroll_too_hot_title">โทรศัพท์ร้อนเกินไป</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message">เซ็นเซอร์อยู่ที่ด้านหลังโทรศัพท์ โปรดใช้นิ้วชี้</string>
+    <string name="security_settings_fingerprint_preference_summary_none">แตะเพื่อตั้งค่าลายนิ้วมือ</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">ดูข้อมูลเพิ่มเติมที่ g.co/pixel/fingerprintunlock</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint สำหรับการทำงาน</string>
+    <string name="setup_suggestion_summary">คัดลอกข้อมูล ชำระเงินด้วยโทรศัพท์ และอื่นๆ</string>
+    <string name="setup_suggestion_title">ตั้งค่าให้เสร็จ</string>
+    <string name="smart_battery_footer">แบตเตอรี่แบบปรับอัตโนมัติอาจลดประสิทธิภาพหรือกิจกรรมในเบื้องหลังเพื่อยืดอายุการใช้งานแบตเตอรี่ การแจ้งเตือนบางอย่างอาจล่าช้า</string>
+    <string name="smart_battery_manager_title">ค่ากำหนดแบบปรับอัตโนมัติ</string>
+    <string name="smart_battery_title">แบตเตอรี่แบบปรับอัตโนมัติ</string>
+    <string name="sound_dashboard_summary">ระดับเสียง การโต้ตอบการสัมผัส ห้ามรบกวน</string>
+    <string name="sound_settings">เสียงและการสั่น</string>
+    <string name="storage_manager_indicator">พื้นที่เก็บข้อมูลอัจฉริยะ: ^1</string>
+    <string name="time_remaining_warning_subtext">เหลืออีกราว %1$s โดยอิงจากการใช้งานที่ผ่านมาของคุณ</string>
+    <string name="time_remaining_warning_text">แบตเตอรี่อาจหมดเร็วๆ นี้</string>
+    <string name="tips_suggestion_summary">ดูสิ่งที่คุณทําได้ด้วยโทรศัพท์</string>
+    <string name="tips_suggestion_title">ทำความรู้จัก Pixel ของคุณ</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">ถือโทรศัพท์ไว้ตรงหน้าคุณ</string>
+    <string name="usb_use_file_transfers">การโอนไฟล์/Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">การสั่นเมื่อมีสายเรียกเข้าใช้งานไม่ได้เนื่องจากมีการตั้งค่าปิดเสียงเรียกเข้าของโทรศัพท์</string>
+    <string name="vibration_haptics_settings_not_available_title">ตั้งค่านี้ไม่ได้</string>
+    <string name="wallpaper_dashboard_summary">สี, ไอคอนตามธีม, ตารางกริดสำหรับแอป</string>
+    <string name="wifi_subscription_summary">ดูหรือเปลี่ยนการสมัครใช้บริการ OpenRoaming</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">เชื่อมต่อกับ %1$s</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">แตะเพื่อเชื่อมต่อ</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">เชื่อมต่อไม่ได้ แตะเพื่อลองอีกครั้ง</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">กำลังเชื่อมต่อ…</string>
+</resources>

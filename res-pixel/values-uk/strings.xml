@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Неактивний заблокований екран</string>
+    <string name="gesture_silence_title">Жест, яким вмикаються беззвучні сповіщення</string>
+    <string name="gesture_skip_title">Жест, яким пропускається файл</string>
+    <string name="keywords_touch_sensitivity">торкнутися, чутливість, чутливий, захист екрана, плівка, реагує, реагування</string>
+    <string name="touch_sensitivity_summary">Покращує якість сенсорного вводу, якщо використовується захист екрана</string>
+    <string name="touch_sensitivity_title">Підвищення чутливості екрана</string>
+    <string name="accessibility_vibration_settings_screen_title">Використання вібрації та вібровідгуку</string>
+    <string name="vibration_haptics_settings_not_available_summary">Вібрація й вібровідгук недоступні, оскільки на телефоні ввімкнено беззвучний режим</string>
+    <string name="vibration_haptics_strength_category_title">Сила вібрації та вібровідгуку</string>
+    <string name="accessibility_vibration_settings_title">Вібрація та вібровідгук</string>
+    <string name="columbus_title">Подвійний дотик для виконання дій</string>
+    <string name="vibrate_for_calls_category_title">Виклики</string>
+    <string name="accessibility_alarm_vibration_title">Вібрація для будильників</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge налаштовано. Перейдіть на наступний екран або продовжуйте коригування.</string>
+    <string name="accessibility_keyboard_haptics_title">Вібровідгук клавіатури</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">Адаптивне заряджання</string>
+    <string name="adaptive_charging_description">Заряджання протягом ночі регулюється, щоб сповільнити старіння акумулятора. Він повністю заряджається до моменту, коли має спрацювати будильник.</string>
+    <string name="adaptive_charging_time_estimate"><b>Адаптивне заряджання</b> • Завершиться о %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Параметри</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Асистент, нещодавні додатки, додатки за умовчанням</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Відкрити Асистент</string>
+    <string name="assist_gesture_enrollment_do_it_later">Пізніше</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Легке стиснення</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Сильне стиснення</string>
+    <string name="assist_gesture_enrollment_settings">Налаштування</string>
+    <string name="assist_gesture_setting_enable_assistant_text">Щоб спілкуватися з Асистентом, стисніть і швидко відпустіть нижню частину телефона</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Запускати Асистент стисненням</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Стисніть, щоб вимкнути звук будильників, таймерів, сповіщень і вхідних дзвінків</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">Стисніть, щоб вимкнути звук сповіщень і вхідних дзвінків</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Вимикати звук на телефоні стисненням</string>
+    <string name="assist_gesture_setting_enable_wake_title">Вмикати Асистент, коли екран вимкнено</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Легке стиснення</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Сильне стиснення</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Чутливість стиснення</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Може випадково відкрити Асистент</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Стисніть нижню частину телефона</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Стисніть швидше</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Стисніть сильніше</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Швидко стисніть і відпустіть</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">Спробуйте перемістити повзунок</string>
+    <string name="assist_gesture_training_enrolling_text">Стисніть нижню частину телефона. Ви можете налаштувати силу стискання.</string>
+    <string name="assist_gesture_training_enrolling_title">Швидко стисніть і відпустіть</string>
+    <string name="assist_gesture_training_finished_text">Пізніше можна змінити чутливість до стиснення в налаштуваннях</string>
+    <string name="assist_gesture_training_finished_title">Закінчити або продовжити налаштування</string>
+    <string name="assist_gesture_training_intro_text">Щоб будь-коли спілкуватися з Асистентом, швидко стисніть і відпустіть нижню частину телефона</string>
+    <string name="assist_gesture_training_intro_title">Стисніть, щоб запустити Асистент</string>
+    <string name="assist_gesture_training_suggestion_summary">Спілкуйтеся з Асистентом, вимикайте звук дзвінків</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Спілкуйтеся з Асистентом, вимикайте звук будильників і дзвінків</string>
+    <string name="assist_gesture_training_suggestion_title">Стисніть і відпустіть, щоб відкрити Асистент</string>
+    <string name="automatic_storage_manager_activation_warning">Коли пристрій під’єднано до мережі, ви маєте доступ до фото й відео в якості, яку вибрали для автозавантаження</string>
+    <string name="automatic_storage_manager_days_title">Видалити фото й відео, які мають резервні копії</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Вимкнути функцію \"Розумна пам’ять\"? 
+
+Місце не звільнятиметься, коли буде недостатньо пам’яті."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Резервні копії завантажень</string>
+    <string name="automatic_storage_manager_preference_title">Розумна пам’ять</string>
+    <string name="automatic_storage_manager_primary_switch_title">"Використовувати розумну пам'ять"</string>
+    <string name="automatic_storage_manager_settings">Розумна пам’ять</string>
+    <string name="automatic_storage_manager_text">Коли сховище буде майже повним, з пристрою видаляться фото й відео, автоматично скопійовані у ваш обліковий запис. Вони залишатимуться в Google Фото.</string>
+    <string name="aware_disabled_preference_action">Увімкнути</string>
+    <string name="aware_disabled_preference_neutral">Не зараз</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Функція Motion Sense недоступна, оскільки ввімкнено режими польоту й енергозбереження</string>
+    <string name="aware_footer_when_airplane_on">Функція Motion Sense недоступна, оскільки ввімкнено режим польоту</string>
+    <string name="aware_footer_when_batterysaver_on">Функція Motion Sense недоступна, оскільки ввімкнено режим енергозбереження</string>
+    <string name="aware_gesture_summary_off">Швидкі жести ввімкнено, Active Edge вимкнено</string>
+    <string name="aware_gesture_summary_on_non_assist">Швидкі жести та Active Edge увімкнено</string>
+    <string name="aware_gesture_summary_on_with_assist">Швидкі жести та Active Edge увімкнено. Стисніть, щоб запустити Асистент</string>
+    <string name="aware_info_button_description">Додаткові налаштування</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">Недоступно, оскільки ввімкнено режими польоту й енергозбереження</string>
+    <string name="aware_summary_when_airplane_on">Недоступно, оскільки ввімкнено режим польоту</string>
+    <string name="aware_summary_when_batterysaver_on">Недоступно, оскільки ввімкнено режим енергозбереження</string>
+    <string name="backup_data_summary">Створювати резервні копії даних додатків, паролів Wi-Fi та інших налаштувань на серверах Google</string>
+    <string name="backup_suggestion_cancel">Скасувати</string>
+    <string name="backup_suggestion_dialog_description">Буде видалено всі дані з внутрішньої пам’яті вашого телефона.</string>
+    <string name="backup_suggestion_dialog_title">Скинути налаштування пристрою?</string>
+    <string name="backup_suggestion_get_started">докладніше</string>
+    <string name="backup_suggestion_item_summary">Копіювання даних із пристрою Android або iPhone®</string>
+    <string name="backup_suggestion_item_title">Немає даних зі старого телефона?</string>
+    <string name="backup_suggestion_missing_description">"Якщо деякі дані, як-от SMS і фотографії, не відображаються, їх можна перенести на телефон Pixel за допомогою кабелю.
+
+Спершу скиньте налаштування телефона Pixel. Буде видалено всі дані на цьому телефоні, зокрема вибрані налаштування та вміст, не синхронізований із хмарою."</string>
+    <string name="backup_suggestion_missing_title">Немає потрібних даних?</string>
+    <string name="backup_suggestion_next">далі</string>
+    <string name="backup_suggestion_other_ways_to_copy">Інші способи копіювання даних</string>
+    <string name="backup_suggestion_reset_description">"На наступному екрані можна скинути налаштування телефона Pixel. Це єдиний спосіб перенести дані за допомогою кабелю.
+
+Після скидання налаштуйте пристрій і перенесіть дані з попереднього телефона."</string>
+    <string name="backup_suggestion_reset_title">Скинути налаштування Pixel</string>
+    <string name="backup_suggestion_what_is_needed_summary">"Після скидання налаштувань телефона вам знадобиться:
+
+• ваш попередній телефон (підтримується LINK_BEGINбільшість телефонівLINK_END з ОС Android 5.0 чи новішої версії або iOS® 8.0 чи новішої версії)
+• кабель для заряджання або передавання даних від попереднього телефона
+• Quick Switch Adapter із комплекту телефона Pixel"</string>
+    <string name="backup_suggestion_what_is_needed_title">Що знадобиться</string>
+    <string name="battery_manager_summary">Довший час роботи акумулятора й оптимізоване заряджання</string>
+    <string name="battery_manager_summary_unsupported">Подовжте час роботи акумулятора</string>
+    <string name="battery_missing_link_message">Докладніше</string>
+    <string name="battery_suggestion_summary">Увімкнути Адаптивний акумулятор</string>
+    <string name="battery_tip_smart_battery_summary">Увімкнути Адаптивний акумулятор</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s більше не буде підключено до інших пристроїв, зв’язаних із цим обліковим записом Google</string>
+    <string name="columbus_gesture_detected">Виявлено подвійний дотик.</string>
+    <string name="columbus_gesture_enrollment_complete">Готово</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Не зараз</string>
+    <string name="columbus_gesture_enrollment_settings">Налаштування</string>
+    <string name="columbus_gesture_enrollment_try_it">Спробувати</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Виберіть потрібну дію</string>
+    <string name="columbus_gesture_training_action_text">Виберіть дію, яка відбуватиметься після подвійного дотику. Її можна потім змінити в налаштуваннях.</string>
+    <string name="columbus_gesture_training_action_title">Виберіть дію для подвійного дотику</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Подвійний дотик: розпізнано 1 із 2</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Спробуймо ще раз. Двічі швидко торкніться задньої панелі телефона.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Чудово!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Подвійний дотик: розпізнано 2 з 2</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Ви готові користуватися подвійним дотиком</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Правильно!</string>
+    <string name="columbus_gesture_training_enrolling_text">Двічі швидко торкніться задньої панелі телефона.</string>
+    <string name="columbus_gesture_training_enrolling_title">Спробуйте подвійний дотик</string>
+    <string name="columbus_gesture_training_finished_text">Щоб змінити потрібну для подвійного дотику силу, перейдіть у налаштування.</string>
+    <string name="columbus_gesture_training_finished_title">Подвійний дотик налаштовано</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Ви щойно двічі торкнулися задньої частини пристрою, а отже, можете користуватись Асистентом на ходу. За потреби цей жест можна налаштувати.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Робіть знімки екрана, переглядайте сповіщення або починайте іншу дію двома дотиками.</string>
+    <string name="columbus_gesture_training_intro_title">Подвійний дотик для швидких дій</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Виберіть додаток, який потрібно відкривати</string>
+    <string name="columbus_gesture_training_launch_text">Виберіть додаток, який потрібно відкривати подвійним дотиком.</string>
+    <string name="columbus_gesture_training_launch_title">Виберіть додаток, який потрібно відкривати</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">Налаштування ярликів додатка %1$s</string>
+    <string name="columbus_launch_settings_activity_title">Налаштування подвійного дотику</string>
+    <string name="columbus_name">Подвійний дотик</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">Налаштування дії \"%1$s\"</string>
+    <string name="columbus_setting_action_assistant_title">Запустити цифровий помічник</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Додаток не вибрано</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Додаток не встановлено</string>
+    <string name="columbus_setting_action_launch_title">Відкрити додаток</string>
+    <string name="columbus_setting_action_notification_title">Показати сповіщення</string>
+    <string name="columbus_setting_action_open_app_title">Відкрити додаток</string>
+    <string name="columbus_setting_action_overview_title">Переглянути нещодавні додатки</string>
+    <string name="columbus_setting_action_play_pause_title">Відтворити або зупинити медіа</string>
+    <string name="columbus_setting_action_screenshot_title">Зробити знімок екрана</string>
+    <string name="columbus_setting_actions_title">Дії в разі подвійного дотику до задньої панелі телефона</string>
+    <string name="columbus_setting_additional_settings_title">Сила подвійного дотику</string>
+    <string name="columbus_setting_app_selection_help_text">Виберіть додаток, який має відкриватися, коли ви двічі торкаєтеся задньої панелі телефона. Якщо ви видалите додаток, подвійний дотик не працюватиме, доки ви не виберете інший.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Виберіть дію, яка має відбуватися, коли ви відкриваєте цей додаток подвійним дотиком.</string>
+    <string name="columbus_setting_enable_switch_title">Використовувати подвійний дотик</string>
+    <string name="columbus_setting_sensitivity_title">Сильніший дотик</string>
+    <string name="connectivity_helper_call_quality_category">Якість дзвінка</string>
+    <string name="connectivity_helper_call_quality_summary">Отримуйте сповіщення про причини проблем із підключенням під час дзвінків</string>
+    <string name="connectivity_helper_call_quality_title">Отримуйте сповіщення</string>
+    <string name="connectivity_helper_d2d_summary">Сповістіть іншу людину, коли у вас виникають проблеми з підключенням під час дзвінків</string>
+    <string name="connectivity_helper_d2d_title">Діліться даними про з’єднання</string>
+    <string name="connectivity_helper_footnote">Ви можете поділитися інформацією про з’єднання, якщо інший абонент використовує підтримувані пристрій і мережу</string>
+    <string name="content_capture">Персоналізувати використання даних додатків</string>
+    <string name="copy_toast_msg">Посилання скопійовано в буфер обміну</string>
+    <string name="dark_ui_text">У темній темі використовується чорний фон, щоб економити заряд акумулятора. Її розклад буде активовано після вимкнення екрана.</string>
+    <string name="dock_summary_charging_phone">Заряджання телефона</string>
+    <string name="double_twist_for_camera_mode_summary">"Переключатись між основною та фронтальною камерами можна подвійним обертом зап'ястя"</string>
+    <string name="downloads_backup_text">Резервні копії завантажених файлів зберігатимуться на Google Диску</string>
+    <string name="duration_less_than_one_minute">Менше 1 хвилини</string>
+    <string name="extra_app_info_label">Оптимізація ігор</string>
+    <string name="face_enrolling_center_head">Розташуйте обличчя у внутрішній рамці</string>
+    <string name="face_enrolling_description">Зніміть своє обличчя з усіх кутів, вилучаючи фрагменти.</string>
+    <string name="face_enrolling_do_it_later">Пізніше</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Скасувати</string>
+    <string name="face_enrolling_gaze_dialog_continue">Налаштувати без погляду</string>
+    <string name="face_enrolling_gaze_dialog_message">Розблоковувати телефон за допомогою фейсконтролю, навіть якщо у вас заплющені очі? У такому разі будь-хто зможе розблокувати телефон, якщо наведе його на ваше обличчя без вашого відома.</string>
+    <string name="face_enrolling_gaze_dialog_title">Налаштувати без погляду</string>
+    <string name="face_enrolling_how_to_setup">Як налаштувати</string>
+    <string name="face_enrolling_title">Тримайте телефон рівно. Обертайте голову. Не поспішайте.</string>
+    <string name="face_enrolling_title_accessibility">Дивіться прямо на телефон</string>
+    <string name="face_enrolling_title_accessibility_progress">Продовжуйте дивитися на телефон прямо</string>
+    <string name="face_enrolling_too_close">Тримайте телефон далі від обличчя</string>
+    <string name="face_enrolling_too_far">Тримайте телефон ближче до обличчя</string>
+    <string name="face_enrolling_too_high">Опустіть телефон нижче</string>
+    <string name="face_enrolling_too_left">Тримайте телефон правіше</string>
+    <string name="face_enrolling_too_low">Підніміть телефон вище</string>
+    <string name="face_enrolling_too_right">Тримайте телефон лівіше</string>
+    <string name="face_enrolling_turn_head_to_arrow">Поверніть обличчя в напрямку стрілки</string>
+    <string name="face_enrolling_turned_too_far">Трохи поверніть обличчя</string>
+    <string name="fallback_menu_item_copy_link">Копіювати посилання</string>
+    <string name="fallback_menu_item_open_in_browser">Відкрити у веб-переглядачі</string>
+    <string name="fallback_menu_item_share_link">Надіслати посилання</string>
+    <string name="fullbackup_data_summary">"Автоматично створюйте резервні копії даних пристроїв (як-от паролів Wi-Fi та історії викликів) і додатків (як-от налаштувань і збережених файлів) на Google Диску.
+
+Якщо ввімкнути резервне копіювання, дані пристроїв і додатків періодично зберігаються в приватній папці на Google Диску. Дані додатків – це будь-яка інформація, яку вони зберігають (залежно від налаштувань розробника), зокрема такі конфіденційні дані, як контакти, повідомлення та фотографії.
+
+Резервні копії даних не займають місце на вашому Диску. Резервні копії великих файлів або файлів, які розробники не включили в цей сервіс, не зберігаються."</string>
+    <string name="fullbackup_erase_dialog_message">Не створювати резервні копії даних пристроїв (як-от паролів Wi-Fi та історії дзвінків) і додатків (як-от налаштувань і збережених файлів) та стерти всі копії на Google Диску?</string>
+    <string name="game_dashboard_always_on_summary">Показувати ярлик ігрової панелі в іграх</string>
+    <string name="game_dashboard_always_on_title">Ігрова панель</string>
+    <string name="game_dashboard_dnd_rule_name">Ігри</string>
+    <string name="game_dashboard_dnd_summary">Коли ввімкнено гру, отримувати сповіщення лише від важливих людей і додатків</string>
+    <string name="game_dashboard_dnd_title">Режим \"Не турбувати\" для ігор</string>
+    <string name="game_mode_battery_description">Подовжує час роботи акумулятора</string>
+    <string name="game_mode_battery_title">Режим енергозбереження</string>
+    <string name="game_mode_performance_description">Максимально підвищує частоту кадрів, споживає більше заряду акумулятора</string>
+    <string name="game_mode_performance_title">Швидкодія</string>
+    <string name="game_mode_standard_description">Використовує стандартні налаштування гри</string>
+    <string name="game_mode_standard_title">Стандартний режим</string>
+    <string name="game_optimization_unavailable">Не доступно для цієї гри</string>
+    <string name="gesture_aware_confirmation_action_button">OK</string>
+    <string name="gesture_aware_footer"><annotation link="link">Параметри</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Параметри</annotation></string>
+    <string name="gesture_skip_direction_ltr">Зліва направо</string>
+    <string name="gesture_skip_direction_rtl">Справа наліво</string>
+    <string name="gesture_skip_direction_title">Напрямок для пропуску</string>
+    <string name="gesture_skip_footer"><annotation link="link">Параметри</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Параметри</annotation></string>
+    <string name="global_actions_panel_short_title">Картки й перепустки</string>
+    <string name="global_actions_panel_summary">Щоб переглянути способи оплати, посадкові талони тощо, утримуйте кнопку живлення.</string>
+    <string name="global_actions_panel_title">Показати картки й квитки</string>
+    <string name="install_unknown_applications">Дозволити встановлення додатків не лише з магазину Google Play</string>
+    <string name="keywords_accessibility_menu">моторика, швидке меню, допоміжне меню, дотик, для лівої руки</string>
+    <string name="keywords_adaptive_charging">зарядити, заряджання, розумне заряджання, адаптивне заряджання, акумулятор, стан акумулятора</string>
+    <string name="keywords_assist_gesture_launch">жест, край, сторона, активний край, стиснути, міцно тримати, допомагати, асистент, стиснути, ok google, google асистент, помічник</string>
+    <string name="keywords_assist_gesture_silence">жест, край, сторона, активний край, вимкнути звук, відкласти, будильник, вхідний дзвінок, беззвучний режим, дисплей, заблокований екран, стиснути, міцно тримати, зупинити</string>
+    <string name="keywords_assist_gesture_wake">жест, край, сторона, активний край, активувати, сповіщення, екран, дисплей, екран вимкнено, екран увімкнено, стиснути, режим сну, сон, міцно тримати</string>
+    <string name="keywords_battery_share">спільний акумулятор, бездротове заряджання</string>
+    <string name="keywords_battery_share_settings">спільний акумулятор, бездротове заряджання підключених пристроїв</string>
+    <string name="keywords_content_capture">запис вмісту, вміст додатка, дані додатка</string>
+    <string name="keywords_gesture">жести, рухи</string>
+    <string name="keywords_global_actions_panel">картки, перепустки</string>
+    <string name="keywords_live_transcribe">Підписи, субтитри, субтитрування, живі субтитри, поганий слух, втрата слуху, системи CART, перетворення мовлення на текст, субтитр</string>
+    <string name="keywords_reverse_charging_stop_threshold">Зупинити спільне використання акумулятора, коли його заряд на телефоні досягне:</string>
+    <string name="keywords_select_to_speak">Прослухати текст, читати вголос, озвучити текст на екрані, зчитування з екрана</string>
+    <string name="keywords_sound_amplifier">слуховий апарат, підсилити, підсилення звуку, поганий слух, втрата слуху, підсилення</string>
+    <string name="keywords_sound_notifications">Сповіщення, поганий слух, втрата слуху, сповістити</string>
+    <string name="keywords_switch_access">автоматично, перемикач, рука, допоміжна технологія, технологія для людей з обмеженими можливостями, параліч, бічний аміотрофічний склероз, сканування, покрокове сканування</string>
+    <string name="keywords_talkback">Зчитування з екрана, озвучування, озвучення, голосовий помічник, для незрячих, поганий зір, синтез мовлення, системи синтезу мовлення, голосові підказки</string>
+    <string name="keywords_voice_access">голос, голосове керування, автоматично, рука, мікрофон, диктування, голос, керування</string>
+    <string name="language_input_gesture_summary_off">Active Edge вимкнено</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge увімкнено</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge увімкнено. Стисніть, щоб відкрити Асистент</string>
+    <string name="me_card_title">Мій Pixel</string>
+    <string name="my_device_info_account_preference_title">Обліковий запис Google</string>
+    <string name="owner_info_settings_edit_text_hint">Приклад: Pixel Олега.</string>
+    <string name="reverse_charging_charging_wirelessly_message">Недоступно під час бездротового заряджання телефона</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Спільний доступ до акумулятора недоступний, оскільки пристрій Pixel загарячий. Зачекайте, поки він охолоне, і повторіть спробу.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">Спільне використання акумулятора недоступне під час бездротового заряджання телефона</string>
+    <string name="reverse_charging_detail_footer_title">Акумулятор телефона виснажується швидше, коли використовується для заряджання інших пристроїв. Заряджати можна сумісні вакуумні навушники, годинники, інші телефони тощо. Для кращої зарядки зніміть чохол із телефона.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"Доступ можна надати для сумісних вакуумних навушників, телефонів тощо.
+
+Якщо до акумулятора телефона надано спільний доступ, він розряджатиметься швидше. Якщо інший пристрій не буде знайдено, функція спільного акумулятора автоматично вимикається за кілька хвилин. Для кращого заряджання зніміть із телефона чохол та інші речі, які можуть заважати, зокрема металеві предмети."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">Спільне використання акумулятора недоступне, оскільки ввімкнено режим енергозбереження</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">Спільне використання акумулятора недоступне, оскільки підключено пристрій USB-C</string>
+    <string name="reverse_charging_instructions_title">"Заряджайте інші пристрої від Pixel.
+Переверніть телефон, щоб спробувати."</string>
+    <string name="reverse_charging_is_off_summary">Вимкнено</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Заряджання й спільне використання акумулятора</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Спільне використання акумулятора</string>
+    <string name="reverse_charging_is_on_summary">Увімкнено / Заряджайте інші пристрої</string>
+    <string name="reverse_charging_main_switch">Дозволити спільний акумулятор</string>
+    <string name="reverse_charging_off_low_battery_summary">Вимкнено / Заряд акумулятора телефона менше ніж %1$s</string>
+    <string name="reverse_charging_off_sharing_level_summary">Вимкнено / Рівень заряду акумулятора менше потрібного для функції спільного доступу</string>
+    <string name="reverse_charging_overheat_summary">Недоступно, оскільки пристрій Pixel загарячий. Зачекайте, поки він охолоне, і повторіть спробу.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">Недоступно, оскільки ввімкнено режим енергозбереження</string>
+    <string name="reverse_charging_sharing_level_message">Недоступно, оскільки рівень заряду акумулятора менше потрібного для функції спільного доступу</string>
+    <string name="reverse_charging_switch_summary">Розмістіть пристрої на задній панелі телефона Pixel</string>
+    <string name="reverse_charging_switch_title">Заряджайте інші пристрої, розміщуючи їх на задній панелі телефона Pixel</string>
+    <string name="reverse_charging_switch_title_message">Заряджати інші пристрої</string>
+    <string name="reverse_charging_title">Спільний акумулятор</string>
+    <string name="reverse_charging_unplug_usb_cable_message">Недоступно, оскільки підключено пристрій USB-C</string>
+    <string name="reverse_charging_warning_summary">Недоступно, оскільки рівень заряду акумулятора менше ніж %1$s</string>
+    <string name="reverse_charging_warning_title">Спільне використання акумулятора недоступне, оскільки рівень його заряду менший за %1$s</string>
+    <string name="rtt_settings_always_visible">Завжди показувати</string>
+    <string name="rtt_settings_no_visible">Не показувати</string>
+    <string name="rtt_settings_title">Текст у реальному часі (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Показувати під час виклику</string>
+    <string name="screen_time_summary_usage_today">%1$s сьогодні</string>
+    <string name="search_bar_account_avatar_content_description">Зображення профілю. Двічі торкніться, щоб відкрити обліковий запис Google</string>
+    <string name="security_advanced_settings">Розширені налаштування</string>
+    <string name="security_dismiss_dialog_dismiss_button">Закрити</string>
+    <string name="security_dismiss_dialog_title">Закрити це попередження?</string>
+    <string name="security_settings_face_enroll_education_message">На наступному екрані повертайте голову, щоб зняти обличчя з усіх боків</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">Коли відкриється наступний екран, утримуйте телефон на рівні очей</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">Час на сканування обличчя вичерпано. Повторіть спробу.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Час очікування налаштування фейсконтролю минув</string>
+    <string name="security_settings_face_enroll_finish_description">Тепер ви можете за допомогою фейсконтролю розблоковувати телефон або підтверджувати особу, наприклад щоб увійти в додатки або схвалити покупку</string>
+    <string name="security_settings_face_enroll_finish_title">Непогано!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Налаштувати без повороту голови</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">Під час використання фейсконтролю телефон потрібно тримати просто перед обличчям.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Відкриті очі</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Ви та дитина будь-коли можете видалити модель обличчя або вимкнути фейсконтроль у налаштуваннях. Моделі облич зберігаються на телефоні, доки ви їх не видалите.
+
+Докладніше читайте на сторінці g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Ви та дитина керуєте налаштуваннями</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"Ви будь-коли можете видалити свою модель обличчя або вимкнути фейсконтроль у налаштуваннях. Моделі облич зберігаються на телефоні, доки ви їх не видалите.
+
+Докладніше читайте на сторінці g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Усе під вашим контролем</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"Фейсконтроль створює унікальну модель обличчя вашої дитини, щоб підтверджувати її особу. Для цього дитині потрібно сфотографувати своє обличчя під різними кутами.
+
+Коли дитина користується фейсконтролем, отримані зображення використовуються для оновлення моделі обличчя. Ці зображення не залишаються на телефоні, але сама модель надійно зберігається та нікуди не передається. Усі процедури обробки безпечно відбуваються на телефоні."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"Фейсконтроль створює унікальну модель вашого обличчя, щоб підтверджувати вашу особу. Для цього вам потрібно сфотографувати своє обличчя під різними кутами.
+
+Коли ви користуєтеся фейсконтролем, отримані зображення використовуються для оновлення моделі обличчя. Ці зображення не залишаються на телефоні, але сама модель надійно зберігається та нікуди не передається. Усі процедури обробки безпечно відбуваються на телефоні."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Як це працює</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">Можливо, для розблокування телефона за допомогою фейсконтролю або підтвердження особи дитині потрібно буде розплющити очі. Ви та дитина будь-коли можете вимкнути цю опцію в налаштуваннях.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Якщо дитина зазвичай носить окуляри, вона може не знімати їх під час налаштування.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">Дитина може випадково розблокувати телефон, ненароком поглянувши на нього. Крім того, телефон може розблокувати хтось дуже схожий на неї (наприклад, близнюк) або інша особа, яка піднесе пристрій до її обличчя.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">Можливо, для розблокування телефона за допомогою фейсконтролю або підтвердження особи вам потрібно буде розплющити очі. Ви будь-коли можете вимкнути цю опцію в налаштуваннях.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Можна не знімати звичайні або слабозатінені сонцезахисні окуляри.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">Розблокування телефона за допомогою фейсконтролю може не гарантувати таку саму безпеку, як використання надійного пароля чи PIN-коду.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">Ви можете випадково розблокувати телефон у недоречний момент, ненароком поглянувши на нього. Крім того, телефон може розблокувати хтось дуже схожий на вас (наприклад, ваш близнюк) або інша особа, яка піднесе пристрій до вашого обличчя.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Зверніть увагу</string>
+    <string name="security_settings_face_enroll_introduction_message">За допомогою фейсконтролю ви можете розблоковувати телефон або підтверджувати свою особу, наприклад щоб увійти в додатки або схвалити покупку.</string>
+    <string name="security_settings_face_enroll_introduction_title">Налаштування функції \"Фейсконтроль\"</string>
+    <string name="security_settings_face_enroll_next">Далі</string>
+    <string name="security_settings_face_enroll_partial_message">Щоб покращити роботу фейсконтролю, налаштуйте його знову</string>
+    <string name="security_settings_face_enroll_partial_start_over">Почати знову</string>
+    <string name="security_settings_face_enroll_partial_title">Налаштування фейсконтролю завершено</string>
+    <string name="security_settings_face_enroll_timeout_message">"Натомість спробуйте швидке налаштування. Зверніть увагу: під час використання фейсконтролю телефон потрібно тримати просто перед обличчям.
+
+Щоб покращити роботу фейсконтролю, налаштуйте його знову."</string>
+    <string name="security_settings_face_enroll_timeout_title">Не вдалося продовжити налаштування</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Повторити спробу</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Спробувати зараз</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Вийти з налаштування</string>
+    <string name="security_settings_face_enroll_too_hot_message">Не вдається завершити налаштування фейсконтролю, оскільки телефон перегрівся. Повторіть спробу, коли він охолоне.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Пропустити фейсконтроль</string>
+    <string name="security_settings_face_enroll_too_hot_title">Телефон загарячий</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Торкніться, щоб додати відбиток пальця</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Докладніше: g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint для роботи</string>
+    <string name="setup_suggestion_summary">Копіюйте дані, сплачуйте з телефона тощо</string>
+    <string name="setup_suggestion_title">Завершіть налаштування</string>
+    <string name="smart_battery_footer">Щоб заощадити заряд, функція \"Адаптивний акумулятор\" може обмежувати швидкодію пристрою та роботу додатків у фоновому режимі. Деякі сповіщення можуть з’являтись із затримкою.</string>
+    <string name="smart_battery_manager_title">Адаптивні налаштування</string>
+    <string name="smart_battery_title">Адаптивний акумулятор</string>
+    <string name="sound_dashboard_summary">Гучність, вібровідгук, режим \"Не турбувати\"</string>
+    <string name="sound_settings">Звук і вібрація</string>
+    <string name="storage_manager_indicator">Інтелектуальне сховище: ^1</string>
+    <string name="time_remaining_warning_subtext">Залишилося приблизно %1$s (на основі попереднього використання)</string>
+    <string name="time_remaining_warning_text">Акумулятор невдовзі розрядиться</string>
+    <string name="tips_suggestion_summary">Дізнайтеся про можливості телефона</string>
+    <string name="tips_suggestion_title">Докладніше про Pixel</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Тримайте телефон перед обличчям</string>
+    <string name="usb_use_file_transfers">Передавання файлів/Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">Вібрація під час викликів недоступна, оскільки на телефоні ввімкнено беззвучний режим</string>
+    <string name="vibration_haptics_settings_not_available_title">Недоступно</string>
+    <string name="wallpaper_dashboard_summary">Кольори, теми значків, сітка додатків</string>
+    <string name="wifi_subscription_summary">Перегляд або редагування підписки OpenRoaming</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">Підключено до автентифікатора %1$s</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Натисніть, щоб підключитися</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Не вдається підключитися. Натисніть, щоб повторити спробу.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Підключення…</string>
+</resources>

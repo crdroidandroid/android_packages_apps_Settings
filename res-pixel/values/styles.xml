@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+    <style name="AssistGestureTrainingProgressBar">
+        <item name="android:padding">8.0dip</item>
+    </style>
+    <style name="BottomSheetButton" parent="@android:style/Widget.DeviceDefault.Button.Colored">
+        <item name="android:colorBackground">?android:colorAccent</item>
+        <item name="android:textColor">?android:colorBackground</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="BottomSheetButtonBorderless" parent="@android:style/Widget.DeviceDefault.Button.Borderless.Colored">
+        <item name="android:textColor">?android:colorAccent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="BottomSheetStyle" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="ContextualSuggestionCardStyle">
+        <item name="android:layout_marginTop">@dimen/suggestion_card_margin_top</item>
+        <item name="android:layout_marginHorizontal">@dimen/suggestion_card_margin_horizontal</item>
+        <item name="cardBackgroundColor">?androidprv:attr/colorAccentPrimary</item>
+        <item name="cardCornerRadius">@dimen/suggestion_card_corner_radius</item>
+        <item name="cardElevation">0.0dip</item>
+        <item name="rippleColor">?android:colorControlHighlight</item>
+    </style>
+    <style name="HatsLibFlatButton" parent="@style/Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/hats_lib_survey_highlight_color</item>
+    </style>
+    <style name="HatsLibPromptTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorControlNormal">@color/hats_lib_survey_control_normal</item>
+        <item name="android:colorControlActivated">#ff4285f4</item>
+        <item name="android:colorPrimaryDark">@android:color/transparent</item>
+    </style>
+    <style name="HatsLibQuestionTextStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/hats_lib_survey_question_text_color</item>
+        <item name="android:background">@color/hats_lib_white_100</item>
+        <item name="android:lineSpacingMultiplier">@dimen/hats_lib_survey_header_question_line_spacing_multiplier</item>
+    </style>
+    <style name="HatsLibThankYouTextStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/hats_lib_prompt_text_color</item>
+        <item name="android:fontFamily">roboto-medium</item>
+    </style>
+    <style name="MarlinColors">
+        <item name="color_iphonecircle">#ffcecece</item>
+        <item name="color_iphoneface">#ffededed</item>
+        <item name="color_iphoneoutline">#ffcecece</item>
+        <item name="color_nexusface">#ffededed</item>
+        <item name="color_nexusoutline">#ffcecece</item>
+        <item name="fingerprint_sensor_location_color1">#ffc6c6c6</item>
+        <item name="fingerprint_sensor_location_color2">#ffdddddd</item>
+        <item name="fingerprint_sensor_location_color3">#ffd6d6d6</item>
+        <item name="fingerprint_sensor_location_color4">#ffafafaf</item>
+        <item name="fingerprint_sensor_location_color5">#ffafafaf</item>
+        <item name="fingerprint_sensor_location_color6">#ff9b9b9b</item>
+        <item name="fingerprint_sensor_location_color7">#ffcecece</item>
+    </style>
+    <style name="MarlinColors.Blue" parent="@style/MarlinColors"/>
+    <style name="MarlinColors.Graphite" parent="@style/MarlinColors"/>
+    <style name="MarlinColors.Silver" parent="@style/MarlinColors"/>
+    <style name="Preference.SeekBarPreference.Material" parent="@style/Preference.SeekBarPreference">
+        <item name="android:layout">@layout/preference_widget_seekbar_material</item>
+        <item name="allowDividerAbove">false</item>
+        <item name="adjustable">true</item>
+        <item name="allowDividerBelow">true</item>
+        <item name="iconSpaceReserved">@bool/config_materialPreferenceIconSpaceReserved</item>
+        <item name="showSeekBarValue">false</item>
+    </style>
+    <style name="SecurityShowMoreWarningsCard" parent="@style/ContextualCardStyle">
+        <item name="strokeWidth">0.0dip</item>
+    </style>
+    <style name="SuggestionCardIcon">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginStart">12.0dip</item>
+        <item name="android:layout_marginEnd">12.0dip</item>
+        <item name="android:layout_alignParentStart">false</item>
+    </style>
+    <style name="SuggestionCardIconStyle">
+        <item name="android:tint">?android:textColorPrimary</item>
+    </style>
+    <style name="SuggestionCardSummaryColor">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="SuggestionCardText">
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="SuggestionCardTitleColor">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.FaceErrorText" parent="@android:style/TextAppearance.Material.Body1">
+        <item name="android:textColor">?android:colorError</item>
+    </style>
+    <style name="TextAppearance.SecurityShowMoreTitle" parent="@style/TextAppearance.SecurityStatusSummary">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.SecurityStatusSummary" parent="@android:style/TextAppearance.DeviceDefault.Small">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:fontFamily">@*android:string/config_customAdbPublicKeyConfirmationComponent</item>
+    </style>
+    <style name="TextAppearance.SecurityStatusTitle" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:fontFamily">@*android:string/config_managed_provisioning_package</item>
+    </style>
+    <style name="TextAppearance.SuggestionCardSummary" parent="@style/SuggestionCardSummaryColor">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:fontFamily">@*android:string/config_customAdbPublicKeyConfirmationComponent</item>
+    </style>
+    <style name="TextAppearance.SuggestionCardTitle" parent="@style/SuggestionCardTitleColor">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:fontFamily">@*android:string/config_managed_provisioning_package</item>
+    </style>
+</resources>

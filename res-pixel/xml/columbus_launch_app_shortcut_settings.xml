@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="columbus_launch_app_shortcut_settings_page"
+    android:title="@string/columbus_launch_settings_activity_title">
+
+    <com.android.settingslib.widget.TopIntroPreference
+        android:key="columbus_launch_shortcut_app_summary"
+        android:title="@string/columbus_setting_app_shortcut_selection_help_text"
+        settings:searchable="false" />
+
+    <PreferenceCategory
+        android:key="columbus_app_shortcut_list"
+        settings:controller="com.google.android.settings.gestures.columbus.ColumbusAppShortcutListPreferenceController"
+        settings:searchable="false" />
+
+</PreferenceScreen>

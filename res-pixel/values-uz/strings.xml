@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Kutish rejimida ekranni qulflash</string>
+    <string name="gesture_silence_title">Sukut qilish ishorasi</string>
+    <string name="gesture_skip_title">Imo-ishorani tashlab ketish</string>
+    <string name="keywords_touch_sensitivity">tegish, sezuvchanlik, sezuvchan, ekran himoyasi, himoya oynasi, tez, tezlik</string>
+    <string name="touch_sensitivity_summary">Himoya oynasi yoki plyonkasidan foydalanganda sezgirlikni oshirish</string>
+    <string name="touch_sensitivity_title">Teginish sezuvchanligini oshirish</string>
+    <string name="accessibility_vibration_settings_screen_title">Tebranish va sezuvchanlik</string>
+    <string name="vibration_haptics_settings_not_available_summary">Tebranish va sezuvchanlik ishlamaydi, chunki telefon ovozsiz rejimda</string>
+    <string name="vibration_haptics_strength_category_title">Tebranish va sezgirlik kuchi</string>
+    <string name="accessibility_vibration_settings_title">Tebranish va sezuvchanlik</string>
+    <string name="columbus_title">Amallarni bajarish uchun qisqa tegining</string>
+    <string name="vibrate_for_calls_category_title">Chaqiruvlar</string>
+    <string name="accessibility_alarm_vibration_title">Bildirishnomalar kelganda vibratsiya</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge sozlandi. Keyingi ekranga o‘ting yoki sozlashni davom ettiring.</string>
+    <string name="accessibility_keyboard_haptics_title">Klaviaturada sezgir aloqa</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">Moslashuvchan quvvatlash</string>
+    <string name="adaptive_charging_description">Batareya quvvati tezda tugab qolmasligi uchun qurilma kechasi bilan doimiy ravishda quvvat oladi. Uyqudan turish signali yangrashi bilan quvvatlash jarayoni toʻliq tugallanadi.</string>
+    <string name="adaptive_charging_time_estimate"><b>Moslashuvchan quvvatlash</b> • Qoldi: %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Sozlamalar</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Assistent, oxirgi ilovalar, birlamchi ilovalar</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Assistentga kirish</string>
+    <string name="assist_gesture_enrollment_do_it_later">Keyinroq bajarish</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Yengil qisish</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Qattiq qisish</string>
+    <string name="assist_gesture_enrollment_settings">Sozlamalar</string>
+    <string name="assist_gesture_setting_enable_assistant_text">Assistent bilan gaplashish uchun telefoningizning pastki yarmini tezda qisib, keyin qo‘yib yuboring</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Assistentni chaqirish uchun qurilmani qisish</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Signal, bildirishnomalar, taymer va kiruvchi chaqiruvlarni ovozsiz qilish uchun qising</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">Bildirishnomalar va kiruvchi chaqiruvlarni ovozsiz qilish uchun qising</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Ovozsiz qilish uchun telefonni qisish</string>
+    <string name="assist_gesture_setting_enable_wake_title">Ekran yoniq emasligida Assistentni ochish</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Yengil qisish</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Qattiq qisish</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Qisish sezuvchanligi</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Assistent tasodifan yoqilishi mumkin</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Telefoningizning pastki yarmini qising</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Tezroq qising</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Qattiqroq qising</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Tezda qisib, qo‘yib yuboring</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">Slayder joylashuvini o‘zgartiring</string>
+    <string name="assist_gesture_training_enrolling_text">Telefoningizning pastki yarmini qising. Qanday kuchda qisishni sozlash mumkin.</string>
+    <string name="assist_gesture_training_enrolling_title">Teza qising va qo‘yib yuboring</string>
+    <string name="assist_gesture_training_finished_text">Keyinroq Sozlamalar orqali qisish sezuvchanligini o‘zgartirish mumkin</string>
+    <string name="assist_gesture_training_finished_title">Yakunlang yoki o‘zgartirishni davom eting</string>
+    <string name="assist_gesture_training_intro_text">Istalgan vaqt Assistent bilan gaplashish uchun telefoningizning pastki yarmini tezda qisib, keyin qo‘yib yuboring.</string>
+    <string name="assist_gesture_training_intro_title">Assistentni chaqirish uchun qurilmani qisish</string>
+    <string name="assist_gesture_training_suggestion_summary">Assistent bilan gaplashish, chaqiruvlarni ovozsiz qilish</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Assistent bilan gaplashish, signal va chaqiruvlarni ovozsiz qilish</string>
+    <string name="assist_gesture_training_suggestion_title">Assistentni chaqirish uchun qising va qo‘yib yuboring</string>
+    <string name="automatic_storage_manager_activation_warning">Internetga ulangan vaqtda surat va videolarni yuklab olish paytida tanlangan sifatda tomosha qilishingiz mumkin.</string>
+    <string name="automatic_storage_manager_days_title">Zaxiralangan surat va videolarni o‘chirish</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Smart xotira o‘chirib qo‘yilsinmi? 
+
+Agar xotirangiz deyarli to‘lgan bo‘lsa, Smart xotira joy bo‘shatmaydi."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Zaxiralangan yuklanmalar</string>
+    <string name="automatic_storage_manager_preference_title">Smart xotira</string>
+    <string name="automatic_storage_manager_primary_switch_title">Smart xotiradan foydalanish</string>
+    <string name="automatic_storage_manager_settings">Smart xotira</string>
+    <string name="automatic_storage_manager_text">Xotirada joy qolmaganda, zaxiralangan surat va videolarni o‘chirib tashlang. Ularni keyinchalik Google Photos orqali topishingiz mumkin.</string>
+    <string name="aware_disabled_preference_action">Yoqish</string>
+    <string name="aware_disabled_preference_neutral">Hozir emas</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense ishlamayapti, chunki parvoz va quvvat tejash yoniq</string>
+    <string name="aware_footer_when_airplane_on">Motion Sense ishlamayapti, chunki parvoz rejimi yoniq</string>
+    <string name="aware_footer_when_batterysaver_on">Motion Sense ishlamayapti, chunki Quvvat tejash yoniq</string>
+    <string name="aware_gesture_summary_off">Tezkor ishoralar yoniq, Active Edge yoqilmagan</string>
+    <string name="aware_gesture_summary_on_non_assist">Tezkor ishoralar yoniq, Active Edge yoniq</string>
+    <string name="aware_gesture_summary_on_with_assist">Tezkor ishoralar yoniq, Active Edge yoniq, Assistentni chaqirish uchun qurilmani qising</string>
+    <string name="aware_info_button_description">Boshqa sozlamalar</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">Parvoz va quvvat tejash rejimi yoniqligi uchun bu funksiya ishlamaydi</string>
+    <string name="aware_summary_when_airplane_on">Parvoz rejimi yoniqligi uchun bu funksiya ishlamaydi</string>
+    <string name="aware_summary_when_batterysaver_on">Quvvat tejash rejimi yoniqligi uchun bu funksiya ishlamaydi</string>
+    <string name="backup_data_summary">Ilova ma’lumotlari, Wi-Fi parollari va boshqa sozlamalarning zaxira nusxasni Google serveriga saqlang</string>
+    <string name="backup_suggestion_cancel">Bekor qilish</string>
+    <string name="backup_suggestion_dialog_description">Bu telefonning ichki xotiradan barcha ma’lumotlarni o‘chirib tashlaydi.</string>
+    <string name="backup_suggestion_dialog_title">Bu qurilma zavod holatiga qaytarilsinmi?</string>
+    <string name="backup_suggestion_get_started">batafsil</string>
+    <string name="backup_suggestion_item_summary">Eski qurilmadan ma’lumotlarni ko‘chirib o‘tkazing</string>
+    <string name="backup_suggestion_item_title">Yangi telefonmi?</string>
+    <string name="backup_suggestion_missing_description">"SMS, surat va boshqa ma’lumotlaringizni eski telefondan yangisiga kabel yordamida ko‘chirib o‘tkazish mumkin
+
+Buning uchun ushbu Pixel qurilmasida sozlamalarni asl holiga qaytarish kerak bo‘ladi, bunda undagi barcha ma’lumotlar, jumladan, moslashtirilgan sozlamalar ham o‘chib ketadi."</string>
+    <string name="backup_suggestion_missing_title">Yangi telefon ishlatyapsizmi?</string>
+    <string name="backup_suggestion_next">keyingisi</string>
+    <string name="backup_suggestion_other_ways_to_copy">Ma’lumotlarni nusxalashning boshqa yo‘llari</string>
+    <string name="backup_suggestion_reset_description">"Keyingi ekranda Pixel qurilmasi sozlamalari asl holiga qaytarilgach, yetishmayotgan ma’lumotlarni kabel yordamida olish mumkin.
+
+Asl holatiga qaytgach, ma’lumotlarni ko‘chirish uchun boshlang‘ich jarayonni qaytaring."</string>
+    <string name="backup_suggestion_reset_title">Pixel sozlamalarni asl holiga qaytarish</string>
+    <string name="backup_suggestion_what_is_needed_summary">"Sozlamalar asliga qaytarilganidan keyin sizga quyidagilar zarur:
+
+• Eski telefoningiz (LINK_BEGINAndroid 5.0+ yoki iOS® 8.0+LINK_END asosida ishlovchi aksariyat telefonlar bilan mos)
+• Quvvatlash yoki axborot uzatish kabeli
+• Pixel smartfoningiz bilan kelgan Quick Switch Adapter adapteri"</string>
+    <string name="backup_suggestion_what_is_needed_title">Sizga nimalar kerak</string>
+    <string name="battery_manager_summary">Batareya quvvatini oshirish va quvvatlashni optimallashtirish</string>
+    <string name="battery_manager_summary_unsupported">Batareya quvvati sarfini uzaytirish</string>
+    <string name="battery_missing_link_message">Batafsil</string>
+    <string name="battery_suggestion_summary">Adaptive Battery funksiyasini yoqing</string>
+    <string name="battery_tip_smart_battery_summary">Adaptive Battery funksiyasini yoqing</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s endi bu Google hisobining hech qaysi qurilmasiga ulanmaydi</string>
+    <string name="columbus_gesture_detected">Tezkor teginish aniqlandi!</string>
+    <string name="columbus_gesture_enrollment_complete">Tayyor</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Hozir emas</string>
+    <string name="columbus_gesture_enrollment_settings">Sozlamalarni ochish</string>
+    <string name="columbus_gesture_enrollment_try_it">Sinash</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Bajarish uchun amalni tanlang</string>
+    <string name="columbus_gesture_training_action_text">Tezkor teginishdan foydalanilganda nimalar yuz berishini tanlang. Buni keyinroq sozlamalardan oʻzgartirishingiz mumkin.</string>
+    <string name="columbus_gesture_training_action_title">Tezkor teginishni tanlash parametri</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Qurilmaga bir marta tegindingiz</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Yana bir marta urining. Telefonning orqa tomoniga tezkor tegining.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Yaxshi!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Qurilmaga ikki marta tegindingiz</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Tezkor teginishdan foydalanishni boshlashingiz mumkin</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Tushunarli!</string>
+    <string name="columbus_gesture_training_enrolling_text">Telefonning orqa tomoniga tezkor tegining.</string>
+    <string name="columbus_gesture_training_enrolling_title">Tezkor teginishdan foydalaning</string>
+    <string name="columbus_gesture_training_finished_text">Tezkor teginishdan foydalanish uchun zarur teginish uzunligini Sozlamalar orqali oʻzgartirish mumkin.</string>
+    <string name="columbus_gesture_training_finished_title">Tezkor teginish sozlandi</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Qurilmangiz orqasiga ikki marta tegindingiz. Bu Assistentni ishga tushiradi. Bu ishorani sozlamalar orqali sozlashingiz mumkin.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Ikki marta teginish bilan skrinshot oling, bildirishnomalar chiqaring yoki boshqa amalni boshlang.</string>
+    <string name="columbus_gesture_training_intro_title">Tezkor amallar uchun Tezkor teginish</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Ochish uchun ilovani tanlang</string>
+    <string name="columbus_gesture_training_launch_text">Tezkor teginishdan foydalanganda qaysi ilova ochilishini tanlang.</string>
+    <string name="columbus_gesture_training_launch_title">Ochish uchun ilovani tanlang</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s yorliq sozlamalari</string>
+    <string name="columbus_launch_settings_activity_title">Tezkor teginish sozlamalari</string>
+    <string name="columbus_name">Tezkor teginish</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">%1$s sozlamalari</string>
+    <string name="columbus_setting_action_assistant_title">Raqamli assistentdan foydalanish</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Hech qanday ilova belgilanmagan</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Ilova oʻrnatilmadi</string>
+    <string name="columbus_setting_action_launch_title">Ilovani ochish</string>
+    <string name="columbus_setting_action_notification_title">Bildirishnomalarni chiqarish</string>
+    <string name="columbus_setting_action_open_app_title">Ilovani ochish</string>
+    <string name="columbus_setting_action_overview_title">Yaqinda ishlatilgan ilovalarni chiqarish</string>
+    <string name="columbus_setting_action_play_pause_title">Media ijrosi yoki pauza</string>
+    <string name="columbus_setting_action_screenshot_title">Skrinshot olish</string>
+    <string name="columbus_setting_actions_title">Telefonning orqa tomoniga teginilganda qaysi amal bajarilsin</string>
+    <string name="columbus_setting_additional_settings_title">Tezkor teginish kuchi</string>
+    <string name="columbus_setting_app_selection_help_text">Telefonning orqa tomoniga tezkor ikki marta teginganda ochish uchun ilovani tanlang. Agar ilova oʻchirib tashlansa, Tezkor teginish to boshqa ilova tanlanmaguncha faolsizlantiriladi.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Tezkor teginish yordamida bu ilova ochilganda nimalar boʻlishini tanlang.</string>
+    <string name="columbus_setting_enable_switch_title">Tezkor teginishdan foydalanish</string>
+    <string name="columbus_setting_sensitivity_title">Kuchliroq teginishni talab etish</string>
+    <string name="connectivity_helper_call_quality_category">Chaqiruv sifati</string>
+    <string name="connectivity_helper_call_quality_summary">Chaqiruv davomida aloqada yuz bergan muammolar sabablari haqida maʼlumot oling</string>
+    <string name="connectivity_helper_call_quality_title">Bildirishnomalar olish</string>
+    <string name="connectivity_helper_d2d_summary">Chaqiruv mobaynida telefonda yuz bergan aloqa muammolari haqida boshqa insonga xabar bering</string>
+    <string name="connectivity_helper_d2d_title">Aloqa axborotini ulashish</string>
+    <string name="connectivity_helper_footnote">Boshqa telefon qiluvchi mos qurilma va tarmoqdan foydalansa, aloqa axborotini ulashishingiz mumkin</string>
+    <string name="content_capture">Ilova maʼlumotlari asosida moslashtirish</string>
+    <string name="copy_toast_msg">Havoladan vaqtinchalik xotiraga nusxa olindi</string>
+    <string name="dark_ui_text">Tungi mavzu batareyani uzoqroqqa yetkazish uchun qora fondan foydalanadi. Bundan tashqari, tungi mavzuni ishga tushishi va faolsizlantirishni tanlay olasiz.</string>
+    <string name="dock_summary_charging_phone">Telefon quvvat olmoqda</string>
+    <string name="double_twist_for_camera_mode_summary">Google Kamera ilovasida selfi rejimga o‘tish uchun ilova ochiqligida qurilmani ikki marta silkiting.</string>
+    <string name="downloads_backup_text">Yuklab olingan fayllar Google Drive omboriga zaxiralanadi</string>
+    <string name="duration_less_than_one_minute">1 daqiqadan kamroq</string>
+    <string name="extra_app_info_label">Oʻyinlar optimizatsiyasi</string>
+    <string name="face_enrolling_center_head">Yuzingizni ichki ramka ichiga joylang</string>
+    <string name="face_enrolling_description">Yuzingizni hamma tomondan tasvirga tushiring.</string>
+    <string name="face_enrolling_do_it_later">Keyinroq</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Bekor qilish</string>
+    <string name="face_enrolling_gaze_dialog_continue">Koʻzni ochmasdan sozlash</string>
+    <string name="face_enrolling_gaze_dialog_message">Yuz bilan ochishni koʻzni ochmasdan sozlamoqchimisiz? Agar bunday sozlansa, telefon qulfi boshqa odam yuzi bilan tasodifan ochilishi ham mumkin.</string>
+    <string name="face_enrolling_gaze_dialog_title">Koʻzni ochmasdan sozlash</string>
+    <string name="face_enrolling_how_to_setup">Qanday sozlash haqida</string>
+    <string name="face_enrolling_title">Telefonni ushlab turing. Boshingizni buring. Ohista buring.</string>
+    <string name="face_enrolling_title_accessibility">Telefonga tik qarang</string>
+    <string name="face_enrolling_title_accessibility_progress">Telefonga tik qarab turing</string>
+    <string name="face_enrolling_too_close">Telefonni biroz uzoqroq tuting</string>
+    <string name="face_enrolling_too_far">Telefonni yaqinroq tuting</string>
+    <string name="face_enrolling_too_high">Telefonni pastroq tuting</string>
+    <string name="face_enrolling_too_left">Telefonni oʻngroq tuting</string>
+    <string name="face_enrolling_too_low">Telefonni teparoq tuting</string>
+    <string name="face_enrolling_too_right">Telefonni chaproq tuting</string>
+    <string name="face_enrolling_turn_head_to_arrow">Boshingizni strelka tomon buring</string>
+    <string name="face_enrolling_turned_too_far">Boshingizni ozgina buring</string>
+    <string name="fallback_menu_item_copy_link">Havoladan nusxa olish</string>
+    <string name="fallback_menu_item_open_in_browser">Brauzerda ochish</string>
+    <string name="fallback_menu_item_share_link">Havolani ulashish</string>
+    <string name="fullbackup_data_summary">"Qurilmadagi ma’lumotlar (m-n, Wi-Fi parollari va qo‘ng‘iroqlar tarixi) va ilovalarga oid ma’lumotlar (m-n, sozlamalar va ilovalar tomonidan saqlangan fayllar) zaxira nusxasini Google Drive xizmatiga avtomatik saqlang.
+
+Agar avtomatik zaxiralash funksiyasi yoqilsa, qurilma va ilova ma’lumotlarining zaxira nusxasi vaqti-vaqti bilan Google Drive xizmatidagi shaxsiy jildga saqlab turiladi. Ilova ma’lumotlariga ilova tomonidan saqlangan har qanday ma’lumot (dasturchi sozlamalari asosida), jumladan, kontaktlar, xabar va rasmlar kabi maxfiy ma’lumotlar ham kiradi.
+
+Zaxiralangan ma’lumotlar egallagan joy Google Drive xizmatidagi sizga ajratilgan joyga ta’sir qilmaydi. Yirik fayllar yoki dasturchilar xizmatdan chiqarib tashlagan fayllarning zaxira nusxasi saqlanmaydi."</string>
+    <string name="fullbackup_erase_dialog_message">Qurilmadagi ma’lumotlar (m-n, Wi-Fi parollari va qo‘ng‘iroqlar tarixi) va ilova ma’lumotlarining (m-n, sozlamalar va ilovalar tomonidan saqlangan fayllar) zaxira nusxasini saqlash to‘xtatililib, ularning Google Drive xizmatidagi barcha nusxalari o‘chirib tashlansinmi?</string>
+    <string name="game_dashboard_always_on_summary">Oʻyinlar ichida Oʻyinlar boshqaruv paneliga yorliq chiqsin</string>
+    <string name="game_dashboard_always_on_title">Oʻyinlar boshqaruv paneli</string>
+    <string name="game_dashboard_dnd_rule_name">Geyming</string>
+    <string name="game_dashboard_dnd_summary">Oʻyin ishga tushganda faqat muhim odamlar va ilovalar bezovta qilsin</string>
+    <string name="game_dashboard_dnd_title">Oʻyinlar uchun Bezovta qilinmasin rejimi</string>
+    <string name="game_mode_battery_description">Batareya quvvati muddatini uzaytiradi</string>
+    <string name="game_mode_battery_title">Quvvat tejash</string>
+    <string name="game_mode_performance_description">Kadrlar chastotasini oshiradi, batareya quvvatini tezroq sarflaydi</string>
+    <string name="game_mode_performance_title">Unumdorlik</string>
+    <string name="game_mode_standard_description">Oʻyinda standart sozlamalardan foydalanadi</string>
+    <string name="game_mode_standard_title">Standart</string>
+    <string name="game_optimization_unavailable">Bu oʻyin uchun mavjud emas</string>
+    <string name="gesture_aware_confirmation_action_button">OK</string>
+    <string name="gesture_aware_footer"><annotation link="link">Sozlamalar</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Sozlamalar</annotation></string>
+    <string name="gesture_skip_direction_ltr">Chapdan oʻngga</string>
+    <string name="gesture_skip_direction_rtl">Oʻngdan chapga</string>
+    <string name="gesture_skip_direction_title">Tashlab ketish ishorasi yoʻnalishi</string>
+    <string name="gesture_skip_footer"><annotation link="link">Sozlamalar</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Sozlamalar</annotation></string>
+    <string name="global_actions_panel_short_title">Kartalar va talonlar</string>
+    <string name="global_actions_panel_summary">Toʻlov usullari va bortga chiqish talonlari kabilardan foydalanish uchun Quvvat tugmasini bosib turing.</string>
+    <string name="global_actions_panel_title">Kartalar va talonlar</string>
+    <string name="install_unknown_applications">Play Marketdan boshqa manbalardan olingan ilovalarni o‘rnatishga ruxsat berish</string>
+    <string name="keywords_accessibility_menu">motor, tezkor menyu, yordamchi menyu, teginish, tezkorlik</string>
+    <string name="keywords_adaptive_charging">quvvatlash, quvvatlanmoqda, smart quvvatlash, moslashuvchan quvvatlagich, batareya, batareya yaroqliligi</string>
+    <string name="keywords_assist_gesture_launch">imo-ishora, qirra, tomon, faol qirra, qisish, ushlash, yordam, assistent, qisish, ok google, google assistent</string>
+    <string name="keywords_assist_gesture_silence">imo-ishora, qirra, tomon, faol qirra, ovozsiz, kechiktirish, signal, kiruvchi chaqiruv, jimjit, ekran, ekran qulfi, qisish, ushlash, to‘xtatish</string>
+    <string name="keywords_assist_gesture_wake">imo-ishora, qirra, tomon, faol qirra, uyg‘otish, bildirishnomalar, ekran, displey, ekran o‘chiq, ekran yoniq, qisish, uyqu, uxlash, ushlash</string>
+    <string name="keywords_battery_share">quvvat ulashish, simsiz quvvatlash</string>
+    <string name="keywords_battery_share_settings">quvvat ulashish, simsiz teskari quvvatlash</string>
+    <string name="keywords_content_capture">kontent yozib olish, ilova kontenti, ilova axboroti</string>
+    <string name="keywords_gesture">imo-ishora, surishlar</string>
+    <string name="keywords_global_actions_panel">kartalar, talonlar</string>
+    <string name="keywords_live_transcribe">Taglavhalar, yopiq taglavhalar, CC, Jonli izoh, nuqsonli eshitish, karlik, CART, nutq sintezatori, taglavha</string>
+    <string name="keywords_reverse_charging_stop_threshold">Batareya quvvati shu darajaga yetsa, funksiya faolsizlantirilsin:</string>
+    <string name="keywords_select_to_speak">Matnni eshitish, baland ovoz bilan oʻqish, ekranni eshitish, ekrandan oʻqish</string>
+    <string name="keywords_sound_amplifier">PSAP, kuchaytirish, tovush kuchaytirish, nuqsonli eshitish, karlik, amplifikatsiya</string>
+    <string name="keywords_sound_notifications">Bildirishnomalar, nuqsonli eshitish, karlik, bildirish</string>
+    <string name="keywords_switch_access">motor, kalit, qoʻl, AT, yordamchi texnologya, paralich, ALS, skanerlash, qadam skaneri</string>
+    <string name="keywords_talkback">Ekrandan oʻqish, ovozli, VoiceOver, ovozli assistent, koʻrlik, zaif koʻrish, TTS, nutq sintezatori, oʻqib eshittirish</string>
+    <string name="keywords_voice_access">ovoz, ovozli boshqaruv, motor, qoʻl, mik, mikrofon, ovoz bilan yozish, gapirish, boshqarish</string>
+    <string name="language_input_gesture_summary_off">Active Edge yoqilmagan</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge yoniq</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge yoniq, Assistentni chaqirish uchun qurilmani qising</string>
+    <string name="me_card_title">Pixel qurilmam</string>
+    <string name="my_device_info_account_preference_title">Google hisobi</string>
+    <string name="owner_info_settings_edit_text_hint">M-n: Abrorning Pixel telefoni.</string>
+    <string name="reverse_charging_charging_wirelessly_message">Telefon simsiz quvvat olayotgani sababli hozir ishlamaydi</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Pixel qurilmasi juda qizib ketgan, Battery Share funksiyasi ishlamaydi. Telefon soviguncha kuting va qayta urining.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">Telefon simsiz quvvat olmoqda, shuning uchun quvvat ulashish funksiyasi ishlamaydi</string>
+    <string name="reverse_charging_detail_footer_title">Quvvat ulashish funksiyasidan foydalanilganda batareya tez sarflanadi. Quvvat ulashish funksiyasi mos quloqliklar, soatlar va telefonlar bilan ishlaydi. Yaxshiroq quvvatlash uchun telefon gʻilofini olib tashlang.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"Quvvat ulashish funksiyasi mos quloqliklar, soatlar va telefonlar bilan ishlaydi.
+
+Quvvat ulashish funksiyasidan foydalanilganda telefon batareyasi tez sarflanadi. Boshqa qurilma aniqlanmasa, Quvvat ulashish funksiyasi avtomatik oʻchadi. Yaxshiroq quvvatlash uchun telefon gʻilofini va xalaqit qilishi mumkin metall buyumlarni olib tashlang."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">Quvvat tejash yoniqligi uchun quvvat ulashish funksiyasi ishlamaydi.</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">USB-C qurilmasi suqilgani uchun quvvat ulashish funksiyasi ishlamaydi.</string>
+    <string name="reverse_charging_instructions_title">"Pixel bilan boshqa qurilmalarni quvvatlang.
+Boshlash uchun telefonni teskari qiling."</string>
+    <string name="reverse_charging_is_off_summary">Yoqilmagan</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Batareya boshqa qurilmadan quvvat olmoqda</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Batareya quvvati ulashilmoqda</string>
+    <string name="reverse_charging_is_on_summary">Yoniq / Boshqa qurilmalarni quvvatlash</string>
+    <string name="reverse_charging_main_switch">Batareya quvvatini ulashish</string>
+    <string name="reverse_charging_off_low_battery_summary">Yoqilmagan / Batareya quvvati %1$s dan kam</string>
+    <string name="reverse_charging_off_sharing_level_summary">Yoqilmagan / Batareya quvvati ulashish uchun yetarli emas</string>
+    <string name="reverse_charging_overheat_summary">Pixel qurilmasi juda qizib ketgani sababli ishlamaydi. Telefon soviguncha kuting va qayta urining.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">Quvvat tejash rejimi yoniqligi uchun bu funksiya ishlamaydi</string>
+    <string name="reverse_charging_sharing_level_message">Batareya quvvati ulashish uchun yetarli emasligi uchun ishlamaydi</string>
+    <string name="reverse_charging_switch_summary">Qurilmalarni Pixel orqasiga joylang</string>
+    <string name="reverse_charging_switch_title">Boshqa qurilmalarni Pixel telefonining orqa tomoniga joylash orqali quvvatlash mumkin</string>
+    <string name="reverse_charging_switch_title_message">Boshqa qurilmalarni quvvatlash</string>
+    <string name="reverse_charging_title">Quvvat ulashish</string>
+    <string name="reverse_charging_unplug_usb_cable_message">USB-C qurilmasi ulangani uchun ishlamaydi</string>
+    <string name="reverse_charging_warning_summary">Batareya quvvati %1$s boʻlgani sababli ishlamaydi</string>
+    <string name="reverse_charging_warning_title">Batareya quvvati %1$s dan kam qolgani uchun quvvat ulashish funksiyasi ishlamaydi</string>
+    <string name="rtt_settings_always_visible">Har doim koʻrsatiladi</string>
+    <string name="rtt_settings_no_visible">Berkitilgan</string>
+    <string name="rtt_settings_title">Real vaqt rejimida xabar almashinuv (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Chaqiruv vaqtida chiqadi</string>
+    <string name="screen_time_summary_usage_today">Bugun: %1$s</string>
+    <string name="search_bar_account_avatar_content_description">Profil rasmi, Google hisobini ochish uchun ikki marta bosing</string>
+    <string name="security_advanced_settings">Kengaytirilgan sozlamalar</string>
+    <string name="security_dismiss_dialog_dismiss_button">Yopish</string>
+    <string name="security_dismiss_dialog_title">Ogohlantirish yopilsinmi?</string>
+    <string name="security_settings_face_enroll_education_message">Keyingi ekranda yuzingizning barcha burchaklarini suratga olish uchun boshingizni buring</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">Keyingi ekranda telefonni koʻz balandligida tuting</string>
+    <string name="security_settings_face_enroll_error_dialog_title">Yuzingiz qayd qilinmadi</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Yuz bilan ochishni sozlashda kutish vaqti tugadi</string>
+    <string name="security_settings_face_enroll_finish_description">Endi telefonni qulfdan chiqarish, ilovaga kirish yoki xaridni tasdiqlash kabi hisob tekshiruvida yuzingizdan foydalanishingiz mumkin</string>
+    <string name="security_settings_face_enroll_finish_title">Ajoyib!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Maxsus imkoniyatlarni yoqish</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">Yuz bilan ochishda telefon ekraniga tikroq qarashingiz kerak boʻladi.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Koʻz yumilmasligi kerak</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Siz va farzandingiz istalgan vaqt Sozlamalar orqali yuz modelini oʻchirib tashlashingiz yoki yuz bilan ochishni faolsizlantirishingiz mumkin. Yuz modellari telefonda oʻchirilmaguncha saqlanadi.
+
+Batafsil: g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Siz va farzandingiz boshqarasiz</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"Istalgan vaqt Sozlamalar orqali yuz modelini oʻchirib tashlashingiz yoki yuz bilan ochishni faolsizlantirishingiz mumkin. Yuz modellari telefonda oʻchirilmaguncha saqlanadi.
+
+Batafsil: g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Boshqaruv oʻz qoʻlingizda</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"Yuz bilan ochish autentifikatsiya paytida shaxsni tanish uchun uning farzandingiz yuzi unikal modelini yaratadi. Sozlash davomida farzandingiz yuzi modelini yaratish uchun uning yuzi turli burchak ostida rasmga olinadi.
+
+Shuningdek, telefon yuz modelini yangilab turish maqsadida farzandingizning yuz bilan ochish harakatlari rasmlaridan ham foydalanadi. Yuz modelini yaratishda ishlatiladigan rasmlar saqlanmaydi, lekin yuz modeli telefonda xavfsiz saqlanadi va hech qachon tashqariga yuklanmaydi. Barcha ishlar telefonda xavfsiz amalga oshiriladi."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"Yuz bilan ochish autentifikatsiya paytida sizni tanish uchun yuzingizning unikal modelini yaratadi. Sozlash davomida yuz modelini yaratish uchun yuzingiz turli burchak ostida rasmga olinadi.
+
+Shuningdek, telefon yuz modelini yangilab turish maqsadida yuzingiz rasmlaridan ham foydalanadi. Yuz modelini yaratishda ishlatiladigan rasmlar saqlanmaydi, lekin yuz modeli telefoningizda xavfsiz saqlanadi va hech qachon tashqariga yuklanmaydi. Barcha ishlar telefoningizda xavfsiz amalga oshiriladi."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Ishlash tartibi</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">Yuz bilan ochish funksiyasi telefonni ochishi yoki farzandingizni shaxsini tasdiqlashi uchun uning koʻzlari ochiq boʻlishi kerak. Siz yoki farzandingiz istalgan vaqtda bu sozlamani Sozlamalar orqali yoqishi mumkin.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Farzandingiz odatda koʻzoynak taqsa, uni sozlash vaqtida ham taqishi mumkin.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">Telefonga tasodifan qaragalganda ham qulfi ochilishi mumkin. Telefon begonalar tomonidan ham qulfdan chiqarilishi mumkin, masalan farzandingizga oʻxshagan yaqinlaringiz tomonidan yoki kimdir yuziga qaratishi orqali.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">Yuz bilan ochish funksiyasi telefonni ochishi yoki shaxsingizni tasdiqlashi uchun koʻzlaringiz ochiq boʻlishi kerak. Istalgan vaqtda bu sozlamani Sozlamalar orqali yoqishingiz mumkin.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Koʻzoynakni olish shart emas ( quyoshdan himoya qiluvchi koʻzoynak och rangda boʻlsa ham ruxsat beriladi)</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">Telefonni yuz bilan ochish kuchli grafik kalit yoki PIN kodga nisbatan xavfsizligi kamroq.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">Telefonga tasodifan qaraganingizda ham qulfi ochilishi mumkin. Telefoningiz begonalar tomonidan ham qulfdan chiqarilishi mumkin, masalan sizga oʻxshagan yaqinlaringiz tomonidan yoki kimdir yuzingizga qaratishi orqali.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Yodda tuting</string>
+    <string name="security_settings_face_enroll_introduction_message">Telefonni qulfdan chiqarish, ilovaga kirish yoki xaridni tasdiqlashda shaxsingizni tasdiqlash uchun yuzingizdan foydalaning.</string>
+    <string name="security_settings_face_enroll_introduction_title">Yuz bilan ochish funksiyasini sozlash</string>
+    <string name="security_settings_face_enroll_next">Keyingisi</string>
+    <string name="security_settings_face_enroll_partial_message">Unumdorlikni yaxshilash uchun Yuz bilan ochish funksiyasini Sozlamalar orqali qayta sozlashingiz mumkin</string>
+    <string name="security_settings_face_enroll_partial_start_over">Boshidan boshlash</string>
+    <string name="security_settings_face_enroll_partial_title">Yuz bilan ochish funksiyasi sozlandi</string>
+    <string name="security_settings_face_enroll_timeout_message">"Oʻrniga tezkor sozlashingiz ham mumkin. Yodda tuting, yuz bilan ochishda telefon ekraniga tikroq qarashingiz kerak boʻladi.
+
+Unumdorlikni yaxshilash uchun Yuz bilan ochish funksiyasini Sozlamalar orqali qayta sozlashingiz mumkin"</string>
+    <string name="security_settings_face_enroll_timeout_title">Sozlashni davom ettirish imkonsiz</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Qayta urinish</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Tezkor sozlashdan foydalaning</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Keyinroq sozlash</string>
+    <string name="security_settings_face_enroll_too_hot_message">Telefon qizib ketdi va ekran qulfi hozir yuz bilan ochilmaydi. Telefon sovigandan keyin qayta urining.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Yuz bilan ochishni keyin sozlash</string>
+    <string name="security_settings_face_enroll_too_hot_title">Telefon qizib ketdi</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Barmoq izi kiritish uchun bosing</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Batafsil: g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Ish uchun Pixel Imprint</string>
+    <string name="setup_suggestion_summary">Maʼlumotlardan nusxa olish, telefon bilan toʻlash va boshqalar</string>
+    <string name="setup_suggestion_title">Sozlashni tugallang</string>
+    <string name="smart_battery_footer">Batareya quvvatini uzaytirish uchun Adaptive Battery rejimida unumdorlik va fondagi amallar cheklanishi mumkin. Ayrim bildirishnomalar kechikishi mumkin.</string>
+    <string name="smart_battery_manager_title">Moslashuvchan sozlamalar</string>
+    <string name="smart_battery_title">Moslashuvchan batareya</string>
+    <string name="sound_dashboard_summary">Tovush balandligi, sezuvchanlik, Bezovta qilinmasin</string>
+    <string name="sound_settings">Tovush va tebranish</string>
+    <string name="storage_manager_indicator">Smart xotira: ^1</string>
+    <string name="time_remaining_warning_subtext">Oldingi foydalanishga nisbatan taxminan %1$s qoldi</string>
+    <string name="time_remaining_warning_text">Batareya tez orada tugaydi</string>
+    <string name="tips_suggestion_summary">Telefoningiz bilan nimalar qila olasiz</string>
+    <string name="tips_suggestion_title">Pixel bilan tanishing</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Telefonni yuzingizga qaratib tutib turing</string>
+    <string name="usb_use_file_transfers">Fayl uzatish / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">Chaqiruvlar uchun tebranish ishlamaydi, chunki telefon ovozsiz rejimda</string>
+    <string name="vibration_haptics_settings_not_available_title">Mavjud emas</string>
+    <string name="wallpaper_dashboard_summary">Ranglar, uslubiy belgilar, ilovalar jadvali</string>
+    <string name="wifi_subscription_summary">OpenRoaming obunasini koʻrish yoki oʻzgartirish</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">%1$s orqali ulangan</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Ulanish uchun bosing</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Ulanmadi. Qayta urinish uchun bosing.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Ulanmoqda…</string>
+</resources>

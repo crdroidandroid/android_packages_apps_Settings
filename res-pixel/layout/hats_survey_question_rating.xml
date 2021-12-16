@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/hats_lib_survey_question_rating_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/hats_lib_white_100"
+    android:minHeight="@dimen/hats_lib_rating_survey_min_height"
+    android:orientation="vertical"
+    android:padding="@dimen/hats_lib_rating_container_padding">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hats_lib_white_100"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="4.0dip"
+        android:paddingRight="@dimen/hats_lib_survey_question_text_right_padding">
+
+        <ImageView
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/hats_lib_rating_logo_margin_right"
+            android:scaleType="fitXY"
+            android:src="@drawable/googleg_standard_color_24" />
+
+        <com.google.android.libraries.material.autoresizetext.AutoResizeTextView
+            android:id="@id/hats_lib_survey_question_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="20.0sp"
+            style="@style/HatsLibQuestionTextStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/hats_lib_survey_rating_images_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hats_lib_white_100"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <com.google.android.libraries.hats20.ui.StarRatingBar
+        android:id="@id/hats_lib_star_rating_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/hats_lib_default_star_rating_bar_description"
+        android:focusable="true"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="16.0dip"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hats_lib_white_100">
+
+        <TextView
+            android:id="@id/hats_lib_survey_rating_low_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textColor="@color/hats_lib_survey_question_text_color"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@id/hats_lib_survey_rating_high_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/hats_lib_survey_question_text_color"
+            android:textSize="12.0sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

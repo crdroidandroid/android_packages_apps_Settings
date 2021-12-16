@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">Барлық ескертуді (%1$d) көру</item>
+        <item quantity="one">%1$d ескертуді көрсету</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">%1$d ескерту</item>
+        <item quantity="one">%1$d ескерту</item>
+    </plurals>
+</resources>

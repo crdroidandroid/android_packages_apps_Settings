@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <attr name="autoResizeText_minTextSize" format="dimension"/>
+    <attr name="autoResizeText_resizeStepUnit">
+        <enum name="unitDip" value="1"/>
+        <enum name="unitIn" value="4"/>
+        <enum name="unitMm" value="5"/>
+        <enum name="unitPt" value="3"/>
+        <enum name="unitPx" value="0"/>
+        <enum name="unitSp" value="2"/>
+    </attr>
+    <attr name="color_iphonecircle" format="color"/>
+    <attr name="color_iphoneface" format="color"/>
+    <attr name="color_iphoneoutline" format="color"/>
+    <attr name="color_nexusface" format="color"/>
+    <attr name="color_nexusoutline" format="color"/>
+    <attr name="fingerprint_sensor_location_color1" format="color"/>
+    <attr name="fingerprint_sensor_location_color2" format="color"/>
+    <attr name="fingerprint_sensor_location_color3" format="color"/>
+    <attr name="fingerprint_sensor_location_color4" format="color"/>
+    <attr name="fingerprint_sensor_location_color5" format="color"/>
+    <attr name="fingerprint_sensor_location_color6" format="color"/>
+    <attr name="fingerprint_sensor_location_color7" format="color"/>
+    <attr name="secureValue" format="string"/>
+    <attr name="textSizeMaxDp" format="dimension"/>
+</resources>
