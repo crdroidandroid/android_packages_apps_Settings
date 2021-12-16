@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:icon="@drawable/ic_quick_tap"
+    app:sucHeaderText="@string/columbus_gesture_training_intro_title">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="@dimen/columbus_animation_layout_width"
+        android:layout_height="@dimen/columbus_animation_layout_height"
+        android:importantForAccessibility="no"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/gesture_columbus_circle" />
+
+</com.google.android.setupdesign.GlifLayout>

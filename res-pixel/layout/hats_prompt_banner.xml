@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@id/hats_lib_prompt_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    custom:cardBackgroundColor="@color/hats_lib_white_100"
+    custom:cardCornerRadius="0.0dip"
+    custom:cardElevation="@dimen/hats_lib_prompt_banner_elevation_card"
+    custom:cardPreventCornerOverlap="false"
+    custom:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@id/hats_lib_prompt_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hats_lib_white_100"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/hats_lib_prompt_banner_bottom_padding"
+        android:paddingLeft="@dimen/hats_lib_prompt_banner_left_padding"
+        android:paddingRight="@dimen/hats_lib_prompt_banner_right_padding"
+        android:paddingTop="@dimen/hats_lib_prompt_banner_top_padding">
+
+        <com.google.android.libraries.material.autoresizetext.AutoResizeTextView
+            android:id="@id/hats_lib_prompt_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:fontFamily="roboto-regular"
+            android:includeFontPadding="false"
+            android:layout_weight="1.0"
+            android:text="@string/hats_lib_default_prompt_title"
+            android:textColor="@color/hats_lib_prompt_text_color" />
+
+        <LinearLayout
+            android:id="@id/hats_lib_prompt_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/googleg_standard_color_24" />
+
+            <include
+                layout="@layout/hats_spacer_view_for_linear_layout" />
+
+            <FrameLayout
+                android:id="@id/hats_lib_prompt_no_thanks_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hats_lib_prompt_button_height"
+                android:layout_marginRight="8.0dip"
+                android:paddingBottom="@dimen/hats_lib_prompt_buttons_vertical_padding"
+                android:paddingTop="@dimen/hats_lib_prompt_buttons_vertical_padding">
+
+                <com.google.android.libraries.hats20.view.ButtonWithMaxTextSize
+                    android:id="@id/hats_lib_prompt_no_thanks_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/hats_white_button"
+                    android:fontFamily="roboto-medium"
+                    android:padding="8.0dip"
+                    android:text="@string/hats_lib_prompt_no_thanks"
+                    android:textAllCaps="true"
+                    android:textColor="@color/hats_lib_prompt_take_survey_blue"
+                    android:textSize="@dimen/hats_lib_prompt_buttons_text_size"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    custom:textSizeMaxDp="@dimen/hats_lib_prompt_buttons_max_text_size" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@id/hats_lib_prompt_take_survey_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hats_lib_prompt_button_height"
+                android:paddingBottom="@dimen/hats_lib_prompt_buttons_vertical_padding"
+                android:paddingTop="@dimen/hats_lib_prompt_buttons_vertical_padding">
+
+                <com.google.android.libraries.hats20.view.ButtonWithMaxTextSize
+                    android:id="@id/hats_lib_prompt_take_survey_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/hats_blue_button"
+                    android:fontFamily="roboto-medium"
+                    android:padding="8.0dip"
+                    android:text="@string/hats_lib_prompt_take_our_survey"
+                    android:textAllCaps="true"
+                    android:textColor="@color/hats_lib_white_100"
+                    android:textSize="@dimen/hats_lib_prompt_buttons_text_size"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    custom:textSizeMaxDp="@dimen/hats_lib_prompt_buttons_max_text_size" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

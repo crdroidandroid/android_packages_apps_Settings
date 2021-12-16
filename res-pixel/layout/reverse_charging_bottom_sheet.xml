@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/card"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_bg"
+    android:gravity="bottom"
+    android:layout_gravity="bottom|center"
+    android:minHeight="@dimen/reverse_charging_bottom_sheet_min_height"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AlertDialog"
+    android:transitionName="card">
+
+    <FrameLayout
+        android:id="@id/toolbar_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="32.0dip"
+        android:paddingRight="32.0dip"
+        android:paddingTop="24.0dip">
+
+        <TextView
+            android:id="@id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title" />
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/video_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:paddingEnd="40.0dip"
+        android:paddingStart="40.0dip"
+        android:paddingTop="16.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@id/header_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="5.0dip"
+            android:paddingBottom="16.0dip"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="12.0sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@id/content_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/reverse_charging_bottom_sheet_image_size"
+            android:importantForAccessibility="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_subtitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:drawable/divider_horizontal_textfield"
+        android:orientation="vertical"
+        android:showDividers="beginning"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/nav_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="8.0dip">
+
+            <Button
+                android:id="@id/learn_more_btn"
+                android:text="@string/learn_more"
+                style="@style/BottomSheetButtonBorderless"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@id/ok_btn"
+                android:text="@android:string/ok"
+                style="@style/BottomSheetButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

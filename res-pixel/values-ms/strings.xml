@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Skrin kunci melahu</string>
+    <string name="gesture_silence_title">Gerak isyarat senyapkan makluman</string>
+    <string name="gesture_skip_title">Gerak isyarat langkau</string>
+    <string name="keywords_touch_sensitivity">sentuh, kepekaan, sensitif, pelindung skrin, filem, responsif, keresponsifan</string>
+    <string name="touch_sensitivity_summary">Meningkatkan sentuhan apabila menggunakan pelindung skrin</string>
+    <string name="touch_sensitivity_title">Tingkatkan kepekaan sentuhan</string>
+    <string name="accessibility_vibration_settings_screen_title">Gunakan getaran &amp; haptik</string>
+    <string name="vibration_haptics_settings_not_available_summary">Getaran &amp; haptik tidak tersedia kerana telefon ditetapkan kepada senyap</string>
+    <string name="vibration_haptics_strength_category_title">Kekuatan getaran &amp; haptik</string>
+    <string name="accessibility_vibration_settings_title">Getaran &amp; haptik</string>
+    <string name="columbus_title">Ketikan Segera untuk memulakan tindakan</string>
+    <string name="vibrate_for_calls_category_title">Panggilan</string>
+    <string name="accessibility_alarm_vibration_title">Getaran penggera</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Sisi Aktif disediakan. Pergi ke skrin seterusnya atau teruskan membuat pelarasan.</string>
+    <string name="accessibility_keyboard_haptics_title">Haptik papan kekunci</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">Pengecasan Mudah Suai</string>
+    <string name="adaptive_charging_description">Caskan secara tetap semalaman untuk memelihara hayat bateri jangka panjang. Gunakan penggera untuk cas sepenuhnya sebelum bangun.</string>
+    <string name="adaptive_charging_time_estimate"><b>Pengecasan mudah suai</b> • Penuh sebelum %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Pilihan</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Assistant, apl terbaharu, apl lalai</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Teruskan ke Assistant</string>
+    <string name="assist_gesture_enrollment_do_it_later">Lakukan kemudian</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Picit perlahan</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Picit ketat</string>
+    <string name="assist_gesture_enrollment_settings">Tetapan</string>
+    <string name="assist_gesture_setting_enable_assistant_text">Untuk bercakap dgn Assistant, picit separuh bahagian bawah telefon dengan cepat, kemudian lepaskan</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Picit untuk mendapatkan Assistant anda</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Picit untuk menyenyapkan penggera, pemasa, pemberitahuan dan panggilan masuk</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">Picit untuk menyenyapkan pemberitahuan dan panggilan masuk</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Picit untuk menyenyapkan telefon</string>
+    <string name="assist_gesture_setting_enable_wake_title">Buka Assistant apabila skrin dimatikan</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Picit perlahan</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Picit ketat</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Kepekaan picitan</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Assistant mungkin terlancar</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Picit separuh bahagian bawah telefon</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Picit dengan lebih cepat</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Picit lebih kuat</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Picit dengan cepat, kemudian lepaskan</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">Cuba laraskan peluncur</string>
+    <string name="assist_gesture_training_enrolling_text">Picit separuh bahagian bawah telefon. Anda boleh melaraskan kekuatan picitan.</string>
+    <string name="assist_gesture_training_enrolling_title">Picit dengan cepat, kemudian lepaskan</string>
+    <string name="assist_gesture_training_finished_text">Anda juga boleh menukar kepekaan picitan kemudian dalam Tetapan</string>
+    <string name="assist_gesture_training_finished_title">Selesaikan atau teruskan pelarasan</string>
+    <string name="assist_gesture_training_intro_text">Untuk bercakap dengan Assistant, picit separuh bahagian bawah telefon, kemudian lepaskan dgn cepat</string>
+    <string name="assist_gesture_training_intro_title">Picit untuk mendapatkan Assistant anda</string>
+    <string name="assist_gesture_training_suggestion_summary">Bercakap dengan Assistant, senyapkan panggilan</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Bercakap dengan Assistant, senyapkan penggera dan panggilan</string>
+    <string name="assist_gesture_training_suggestion_title">Picit &amp; lepaskan utk lancarkan Assistant</string>
+    <string name="automatic_storage_manager_activation_warning">Apabila anda disambungkan, anda masih dapat mengakses foto dan video pada kualiti yang dipilih untuk sandaran</string>
+    <string name="automatic_storage_manager_days_title">Alih keluar foto &amp; video yang disandarkan</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Matikan Storan Pintar? 
+
+Storan Pintar tidak akan mengosongkan ruang apabila storan anda hampir penuh."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Muat turun yang disandarkan</string>
+    <string name="automatic_storage_manager_preference_title">Storan Pintar</string>
+    <string name="automatic_storage_manager_primary_switch_title">Gunakan Storan Pintar</string>
+    <string name="automatic_storage_manager_settings">Storan Pintar</string>
+    <string name="automatic_storage_manager_text">Apabila storan hampir penuh, alih keluar foto dan video yang disandarkan. Anda masih dapat menemukan foto dan video itu dalam Google Photos.</string>
+    <string name="aware_disabled_preference_action">Hidupkan</string>
+    <string name="aware_disabled_preference_neutral">Bukan sekarang</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense tidak tersedia kerana mod pesawat dan Penjimat Bateri dihidupkan</string>
+    <string name="aware_footer_when_airplane_on">Motion Sense tidak tersedia kerana mod pesawat dihidupkan</string>
+    <string name="aware_footer_when_batterysaver_on">Motion Sense tidak tersedia kerana Penjimat Bateri dihidupkan</string>
+    <string name="aware_gesture_summary_off">Gerak Isyarat Pantas hidup, Sisi Aktif dimatikan</string>
+    <string name="aware_gesture_summary_on_non_assist">Gerak Isyarat Pantas hidup, Sisi Aktif dihidupkan</string>
+    <string name="aware_gesture_summary_on_with_assist">Gerak Isyarat Pantas hidup, Sisi Aktif hidup, picit untuk melancarkan Pembantu</string>
+    <string name="aware_info_button_description">Lagi tetapan</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">Tidak tersedia kerana mod pesawat dan Penjimat Bateri dihidupkan</string>
+    <string name="aware_summary_when_airplane_on">Tidak tersedia kerana mod pesawat dihidupkan</string>
+    <string name="aware_summary_when_batterysaver_on">Tidak tersedia kerana Penjimat Bateri dihidupkan</string>
+    <string name="backup_suggestion_cancel">Batal</string>
+    <string name="backup_suggestion_dialog_description">Tindakan ini akan memadamkan semua data daripada storan dalaman telefon anda.</string>
+    <string name="backup_suggestion_dialog_title">Tetapkan semula peranti ini?</string>
+    <string name="backup_suggestion_get_started">ketahui lebih lanjut</string>
+    <string name="backup_suggestion_item_summary">Salin daripada peranti Android atau iPhone®</string>
+    <string name="backup_suggestion_item_title">Kehilangan data drp tel lama?</string>
+    <string name="backup_suggestion_missing_description">"Jika anda tidak melihat sesetengah data anda, seperti mesej SMS dan foto, anda boleh memindahkannya ke Pixel menggunakan kabel.
+
+Untuk bermula, Pixel anda perlu ditetapkan semula. Semua data pada telefon ini, termasuk tetapan dan kandungan tersuai yang tidak disegerakkan ke awan, akan dipadamkan."</string>
+    <string name="backup_suggestion_missing_title">Inginkan data anda?</string>
+    <string name="backup_suggestion_next">seterusnya</string>
+    <string name="backup_suggestion_other_ways_to_copy">Cara lain untuk menyalin data</string>
+    <string name="backup_suggestion_reset_description">"Pada skrin seterusnya, anda boleh menetapkan semula Pixel. Inilah sahaja cara untuk memindahkan data menggunakan kabel.
+
+Setelah peranti anda ditetapkan semula, jalankan proses persediaan dan pilih untuk membawa data anda daripada telefon terdahulu."</string>
+    <string name="backup_suggestion_reset_title">Tetapkan semula Pixel anda</string>
+    <string name="backup_suggestion_what_is_needed_summary">"Setelah anda menetapkan semula telefon, anda memerlukan:
+
+• Telefon terdahulu anda (LINK_BEGINkebanyakan telefonLINK_END yang menjalankan Android 5.0+ atau iOS® 8.0+ disokong)
+• Kabel pengecasan atau kabel data untuk telefon terdahulu anda
+• Quick Switch Adapter yang disertakan dengan Pixel anda"</string>
+    <string name="backup_suggestion_what_is_needed_title">Perkara yang anda perlukan</string>
+    <string name="battery_manager_summary">Lanjutkan hayat bateri dan optimumkan pengecasan</string>
+    <string name="battery_manager_summary_unsupported">Panjangkan hayat bateri</string>
+    <string name="battery_missing_link_message">Ketahui lebih lanjut</string>
+    <string name="battery_suggestion_summary">Hidupkan Bateri Mudah Suai</string>
+    <string name="battery_tip_smart_battery_summary">Hidupkan Bateri Mudah Suai</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s tidak lagi digandingkan dengan sebarang peranti yang dipaut ke Akaun Google ini</string>
+    <string name="columbus_gesture_detected">Ketikan Segera dikesan!</string>
+    <string name="columbus_gesture_enrollment_complete">Selesai</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Bukan sekarang</string>
+    <string name="columbus_gesture_enrollment_settings">Pergi ke Tetapan</string>
+    <string name="columbus_gesture_enrollment_try_it">Cuba</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Sila pilih tindakan untuk dilaksanakan</string>
+    <string name="columbus_gesture_training_action_text">Pilih perkara yang berlaku apabila anda menggunakan Ketikan Segera. Anda boleh menukar perkara ini kemudian dalam tetapan.</string>
+    <string name="columbus_gesture_training_action_title">Pilih pilihan Ketikan Segera</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Ketik dua kali 1 daripada 2 dikesan</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Mari cuba sekali lagi. Ketik dua kali pada belakang telefon anda dengan cepat.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Bagus!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Ketik dua kali 2 daripada 2 dikesan</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Anda bersedia untuk mula menggunakan Ketikan Segera</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Beres!</string>
+    <string name="columbus_gesture_training_enrolling_text">Ketik dua kali pada belakang telefon anda dengan cepat.</string>
+    <string name="columbus_gesture_training_enrolling_title">Cuba Ketikan Segera</string>
+    <string name="columbus_gesture_training_finished_text">Untuk mengubah kekuatan ketikan yang diperlukan untuk menggunakan Ketikan Segera, pergi ke Tetapan.</string>
+    <string name="columbus_gesture_training_finished_title">Anda telah menyediakan Ketikan Segera</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Anda hanya perlu mengetik dua kali di bahagian belakang peranti anda, yang membolehkan anda menggunakan Assistant semasa dalam perjalanan. Anda boleh menyesuaikan gerak isyarat ini dalam tetapan.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Ambil tangkapan skrin, tunjukkan pemberitahuan atau mulakan tindakan lain menggunakan dwiketik.</string>
+    <string name="columbus_gesture_training_intro_title">Ketikan Segera untuk tindakan pantas</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Sila pilih apl untuk dibuka</string>
+    <string name="columbus_gesture_training_launch_text">Pilih apl yang ingin anda buka semasa anda menggunakan Ketikan Segera.</string>
+    <string name="columbus_gesture_training_launch_title">Pilih apl untuk dibuka</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">Tetapan pintasan %1$s</string>
+    <string name="columbus_launch_settings_activity_title">Tetapan Ketikan Segera</string>
+    <string name="columbus_name">Ketikan Segera</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">Tetapan %1$s</string>
+    <string name="columbus_setting_action_assistant_title">Akses pembantu digital anda</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Tiada apl dipilih</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Apl tidak dipasang</string>
+    <string name="columbus_setting_action_launch_title">Buka apl</string>
+    <string name="columbus_setting_action_notification_title">Tunjukkan pemberitahuan</string>
+    <string name="columbus_setting_action_open_app_title">Buka apl</string>
+    <string name="columbus_setting_action_overview_title">Lihat apl terbaharu</string>
+    <string name="columbus_setting_action_play_pause_title">Main atau jeda media</string>
+    <string name="columbus_setting_action_screenshot_title">Ambil tangkapan skrin</string>
+    <string name="columbus_setting_actions_title">Ketik dua kali pada belakang telefon untuk</string>
+    <string name="columbus_setting_additional_settings_title">Kekuatan Ketikan Segera</string>
+    <string name="columbus_setting_app_selection_help_text">Pilih apl untuk dibuka apabila anda mengetik dua kali pada belakang telefon anda. Jika anda menyahpasang apl, Ketikan Segera akan dimatikan sehingga anda memilih apl berbeza.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Pilih perkara yang berlaku apabila anda membuka apl ini menggunakan Ketikan Segera.</string>
+    <string name="columbus_setting_enable_switch_title">Gunakan Ketikan Segera</string>
+    <string name="columbus_setting_sensitivity_title">Perlukan ketikan yang lebih kuat</string>
+    <string name="connectivity_helper_call_quality_category">Kualiti panggilan</string>
+    <string name="connectivity_helper_call_quality_summary">Dapatkan pemberitahuan tentang punca masalah sambungan semasa panggilan</string>
+    <string name="connectivity_helper_call_quality_title">Dapatkan pemberitahuan</string>
+    <string name="connectivity_helper_d2d_summary">Beritahu orang lain apabila telefon anda mempunyai masalah sambungan semasa panggilan</string>
+    <string name="connectivity_helper_d2d_title">Kongsi maklumat sambungan</string>
+    <string name="connectivity_helper_footnote">Anda boleh berkongsi maklumat sambungan apabila pemanggil yang lain menggunakan peranti dan rangkaian yang disokong</string>
+    <string name="content_capture">Peribadikan menggunakan data apl</string>
+    <string name="copy_toast_msg">Pautan disalin ke papan keratan</string>
+    <string name="dark_ui_text">Tema gelap menggunakan latar belakang hitam untuk memastikan bateri anda tahan lebih lama. Jadual tema gelap menunggu untuk dihidupkan hingga skrin anda dimatikan.</string>
+    <string name="dock_summary_charging_phone">Mengecas telefon</string>
+    <string name="double_twist_for_camera_mode_summary">Untuk beralih masuk dan keluar daripada mod potret diri dalam Kamera Google, pusing dua kali semasa anda menggunakan apl itu.</string>
+    <string name="downloads_backup_text">Fail yang dimuat turun akan disandarkan ke Google Drive</string>
+    <string name="duration_less_than_one_minute">Kurang daripada seminit</string>
+    <string name="extra_app_info_label">Pengoptimuman Permainan</string>
+    <string name="face_enrolling_center_head">Muatkan wajah anda dalam bingkai sebelah dalam</string>
+    <string name="face_enrolling_description">Tangkap semua sudut wajah anda dengan mengalih keluar semua jubin.</string>
+    <string name="face_enrolling_do_it_later">Lakukan kemudian</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Batal</string>
+    <string name="face_enrolling_gaze_dialog_continue">Sediakan tanpa membuka mata</string>
+    <string name="face_enrolling_gaze_dialog_message">Adakah anda mahu menyediakan Buka Kunci Wajah tanpa memerlukan mata anda dibuka? Jika anda menyediakan dengan cara ini, seseorang boleh membuka kunci telefon anda dengan menghalakan telefon itu pada wajah anda semasa anda tidak menyedarinya.</string>
+    <string name="face_enrolling_gaze_dialog_title">Sediakan tanpa membuka mata</string>
+    <string name="face_enrolling_how_to_setup">Cara penyediaan</string>
+    <string name="face_enrolling_title">Pastikan telefon pegun. Pusingkan kepala anda. Perlahan-lahan.</string>
+    <string name="face_enrolling_title_accessibility">Lihat terus pada telefon anda</string>
+    <string name="face_enrolling_title_accessibility_progress">Terus melihat pada telefon anda</string>
+    <string name="face_enrolling_too_close">Jauhkan telefon</string>
+    <string name="face_enrolling_too_far">Dekatkan telefon</string>
+    <string name="face_enrolling_too_high">Rendahkan lagi telefon</string>
+    <string name="face_enrolling_too_left">Gerakkan telefon ke kanan anda</string>
+    <string name="face_enrolling_too_low">Tinggikan lagi telefon</string>
+    <string name="face_enrolling_too_right">Gerakkan telefon ke kiri anda</string>
+    <string name="face_enrolling_turn_head_to_arrow">Pusingkan kepala anda ke arah anak panah</string>
+    <string name="face_enrolling_turned_too_far">Pusingkan kepala kurang sedikit</string>
+    <string name="fallback_menu_item_copy_link">Salin pautan</string>
+    <string name="fallback_menu_item_open_in_browser">Buka dalam penyemak imbas</string>
+    <string name="fallback_menu_item_share_link">Kongsi pautan</string>
+    <string name="fullbackup_data_summary">"Sandarkan data peranti secara automatik (seperti kata laluan Wi-Fi dan sejarah panggilan) dan data apl (seperti tetapan dan fail yang disimpan oleh apl) pada Google Drive.
+
+Apabila anda menghidupkan sandaran automatik, data peranti dan apl disimpan secara berkala pada folder peribadi di Google Drive. Data apl boleh merangkumi sebarang data yang telah disimpan oleh apl (berdasarkan tetapan pembangun), termasuk data yang berkemungkinan sensitif, seperti kenalan, mesej dan foto.
+
+Data sandaran tidak dikira dalam kuota storan Drive anda. Fail yang besar atau fail yang telah dipilih oleh pembangun supaya dikecualikan daripada perkhidmatan itu, tidak akan disandarkan."</string>
+    <string name="fullbackup_erase_dialog_message">Berhenti menyandarkan data peranti (seperti kata laluan Wi-Fi dan sejarah panggilan) dan data apl (seperti tetapan dan fail yang disimpan oleh apl), serta padamkan semua salinan di Google Drive?</string>
+    <string name="game_dashboard_always_on_summary">Tunjukkan pintasan Papan Pemuka Permainan dalam permainan</string>
+    <string name="game_dashboard_always_on_title">Papan Pemuka Permainan</string>
+    <string name="game_dashboard_dnd_rule_name">Permainan</string>
+    <string name="game_dashboard_dnd_summary">Dapatkan pemberitahuan oleh orang dan apl penting sahaja semasa bermain permainan</string>
+    <string name="game_dashboard_dnd_title">Jangan Ganggu untuk permainan</string>
+    <string name="game_mode_battery_description">Memanjangkan hayat bateri</string>
+    <string name="game_mode_battery_title">Penjimat Bateri</string>
+    <string name="game_mode_performance_description">Memaksimumkan kadar bingkai, menggunakan lebih banyak kuasa bateri</string>
+    <string name="game_mode_performance_title">Prestasi</string>
+    <string name="game_mode_standard_description">Menggunakan lalai permainan</string>
+    <string name="game_mode_standard_title">Standard</string>
+    <string name="game_optimization_unavailable">Tidak tersedia untuk permainan ini</string>
+    <string name="gesture_aware_confirmation_action_button">OK</string>
+    <string name="gesture_aware_footer"><annotation link="link">Pilihan</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Pilihan</annotation></string>
+    <string name="gesture_skip_direction_ltr">Kiri ke kanan</string>
+    <string name="gesture_skip_direction_rtl">Kanan ke kiri</string>
+    <string name="gesture_skip_direction_title">Arah Langkauan</string>
+    <string name="gesture_skip_footer"><annotation link="link">Pilihan</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Pilihan</annotation></string>
+    <string name="global_actions_panel_short_title">Kad &amp; pas</string>
+    <string name="global_actions_panel_summary">Untuk mengakses item seperti kaedah pembayaran dan pas masuk, tekan dan tahan butang Kuasa.</string>
+    <string name="global_actions_panel_title">Tunjukkan kad &amp; pas</string>
+    <string name="install_unknown_applications">Benarkan pemasangan apl daripada sumber selain Gedung Play</string>
+    <string name="keywords_accessibility_menu">motor, menu pantas, menu bantu, sentuh, kecekatan</string>
+    <string name="keywords_adaptive_charging">cas, mengecas, pengecasan pintar, pengecasan mudah suai, bateri, kesihatan bateri</string>
+    <string name="keywords_assist_gesture_launch">gerak isyarat, sisi, tepi, sisi aktiif, picit, genggam, bantu, pembantu, picit, ok google, google assistant</string>
+    <string name="keywords_assist_gesture_silence">gerak isyarat, tepi, sisi, sisi aktif, senyapkan, tunda, penggera, panggilan masuk, senyap, paparan, skrin kunci, picit, genggam, henti</string>
+    <string name="keywords_assist_gesture_wake">gerak isyarat, sisi, tepi, sisi aktif, bangkit, pemberitahuan, skrin, paparan, skrin dimatikan, skrin dihidupkan, picit, tidur, genggam</string>
+    <string name="keywords_battery_share">perkongsian bateri, pengecasan wayarles</string>
+    <string name="keywords_battery_share_settings">perkongsian bateri, pengecasan wayarles balikan</string>
+    <string name="keywords_content_capture">rakaman kandungan, kandungan apl, data apl</string>
+    <string name="keywords_gesture">gerak isyarat, pergerakan</string>
+    <string name="keywords_global_actions_panel">kad, pas</string>
+    <string name="keywords_live_transcribe">Sari kata, SK, Sari Kata Langsung, pekak labang, kehilangan pendengaran, CART, pertuturan kepada teks, sari kata</string>
+    <string name="keywords_reverse_charging_stop_threshold">Berhenti berkongsi kuasa bateri apabila telefon mencapai:</string>
+    <string name="keywords_select_to_speak">Dengar teks, baca dengan lantang, skrin tutur, pembaca skrin</string>
+    <string name="keywords_sound_amplifier">PSAP, kuatkan, penguatan bunyi, pekak labang, kehilangan pendengaran, penguatan</string>
+    <string name="keywords_sound_notifications">Pemberitahuan, pekak labang, kehilangan pendengaran, beritahu</string>
+    <string name="keywords_switch_access">motor, suis, tangan, AT, teknologi bantuan, lumpuh, ALS, pengimbasan, pengimbasan langkah</string>
+    <string name="keywords_talkback">Pembaca skrin, Suara Latar, VoiceOver, Bantuan Suara, Orang Buta, Rabun, TTS, teks kepada pertuturan, maklum balas yang dituturkan</string>
+    <string name="keywords_voice_access">suara, kawalan suara, motor, tangan, mik, mikrofon, pengimlakan, cakap, kawalan</string>
+    <string name="language_input_gesture_summary_off">Sisi Aktif dimatikan</string>
+    <string name="language_input_gesture_summary_on_non_assist">Sisi Aktif dihidupkan</string>
+    <string name="language_input_gesture_summary_on_with_assist">Sisi Aktif dihidupkan, picit untuk mendapatkan Assistant</string>
+    <string name="me_card_title">My Pixel</string>
+    <string name="my_device_info_account_preference_title">Akaun Google</string>
+    <string name="owner_info_settings_edit_text_hint">Mis., Pixel Johari.</string>
+    <string name="reverse_charging_charging_wirelessly_message">Tidak tersedia kerana telefon dicas secara wayarles</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Perkongsian Bateri tidak tersedia kerana Pixel terlalu panas. Tunggu telefon menyejuk, kemudian cuba lagi.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">Perkongsian Bateri tidak tersedia kerana telefon sedang dicas secara wayarles</string>
+    <string name="reverse_charging_detail_footer_title">Bateri telefon anda akan habis dengan lebih pantas apabila menggunakan Perkongsian Bateri. Perkongsian Bateri berfungsi dengan fon telinga, jam tangan, telefon dan pelbagai lagi yang serasi. Untuk pengecasan yang lebih baik, tanggalkan bekas telefon anda.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"Perkongsian Bateri berfungsi dengan fon telinga, telefon dan pelbagai lagi yang serasi.
+
+Bateri telefon anda akan habis dengan lebih pantas apabila menggunakan ciri ini Perkongsian Bateri dimatikan secara automatik selepas beberapa minit jika peranti lain tidak dikesan. Untuk pengecasan yang lebih baik, tanggalkan bekas telefon anda dan item lain yang boleh membawa gangguan, seperti barang logam."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">Perkongsian Bateri tidak tersedia kerana Penjimat Bateri dihidupkan</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">Perkongsian Bateri tidak tersedia kerana peranti USB-C dipalamkan</string>
+    <string name="reverse_charging_instructions_title">"Caskan peranti lain dengan Pixel anda.
+Balikkan telefon anda untuk mencuba."</string>
+    <string name="reverse_charging_is_off_summary">Mati</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Bateri perkongsian dan pengecasan</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Berkongsi bateri</string>
+    <string name="reverse_charging_is_on_summary">Hidup / Caskan peranti lain</string>
+    <string name="reverse_charging_main_switch">Benarkan Perkongsian Bateri</string>
+    <string name="reverse_charging_off_low_battery_summary">Mati / Kuasa bateri telefon kurang daripada %1$s</string>
+    <string name="reverse_charging_off_sharing_level_summary">Mati / Kuasa bateri di bawah tahap perkongsian</string>
+    <string name="reverse_charging_overheat_summary">Tidak tersedia kerana Pixel terlalu panas. Tunggu telefon menyejuk, kemudian cuba lagi.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">Tidak tersedia kerana Penjimat Bateri dihidupkan</string>
+    <string name="reverse_charging_sharing_level_message">Tidak tersedia kerana kuasa bateri di bawah tahap perkongsian</string>
+    <string name="reverse_charging_switch_summary">Letakkan peranti pada bahagian belakang Pixel anda</string>
+    <string name="reverse_charging_switch_title">Caskan peranti lain dengan meletakkan peranti itu pada bahagian belakang Pixel anda</string>
+    <string name="reverse_charging_switch_title_message">Caskan peranti lain</string>
+    <string name="reverse_charging_title">Perkongsian Bateri</string>
+    <string name="reverse_charging_unplug_usb_cable_message">Tidak tersedia kerana peranti USB-C dipalamkan</string>
+    <string name="reverse_charging_warning_summary">Tidak tersedia kerana cas bateri kurang daripada %1$s</string>
+    <string name="reverse_charging_warning_title">Perkongsian Bateri tidak tersedia kerana bateri kurang daripada %1$s</string>
+    <string name="rtt_settings_always_visible">Sentiasa kelihatan</string>
+    <string name="rtt_settings_no_visible">Tidak kelihatan</string>
+    <string name="rtt_settings_title">Teks masa nyata (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Kelihatan semasa panggilan</string>
+    <string name="screen_time_summary_usage_today">%1$s hari ini</string>
+    <string name="search_bar_account_avatar_content_description">Gambar profil, ketik dua kali untuk membuka Akaun Google</string>
+    <string name="security_advanced_settings">Tetapan terperinci</string>
+    <string name="security_dismiss_dialog_dismiss_button">Ketepikan</string>
+    <string name="security_dismiss_dialog_title">Ketepikan amaran ini?</string>
+    <string name="security_settings_face_enroll_consent_introduction_title">Benarkan Buka Kunci Wajah</string>
+    <string name="security_settings_face_enroll_education_message">Pada skrin seterusnya, pusingkan kepala anda agar semua sudut wajah anda dapat dirakam.</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">Pada skrin seterusnya, pegang telefon anda pada paras mata</string>
+    <string name="security_settings_face_enroll_error_generic_dialog_message">Pendaftaran wajah tidak berfungsi.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Persediaan Buka Kunci Wajah sudah tamat masa</string>
+    <string name="security_settings_face_enroll_finish_description">Sekarang, anda boleh menggunakan wajah anda untuk membuka kunci telefon anda atau mengesahkan sama ada itulah anda atau tidak, seperti ketika anda log masuk apl atau meluluskan pembelian</string>
+    <string name="security_settings_face_enroll_finish_title">Nampak bagus!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Persediaan untuk penglihatan/gerakan terhad</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">Apabila menggunakan Buka Kunci Wajah, kepala anda mungkin perlu berada betul-betul di hadapan telefon.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Mata perlu dibuka</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Anda dan anak anda boleh memadamkan model wajah mereka atau mematikan Buka Kunci Wajah pada bila-bila masa dalam Tetapan. Model wajah disimpan pada telefon sehingga ia dipadamkan.
+
+Ketahui lebih lanjut melalui g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Anda dan anak anda berada dalam kawalan</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"Anda boleh memadamkan model wajah anda atau mematikan Buka Kunci Wajah pada bila-bila masa dalam Tetapan. Model wajah disimpan pada telefon sehingga anda memadamkan model itu.
+
+Ketahui lebih lanjut melalui g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Kawalan di tangan anda</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"Buka Kunci Wajah menghasilkan model unik wajah anak anda untuk mengesahkan identiti anak anda. Untuk menghasilkan model wajah semasa persediaan, anak anda akan mengambil imej wajah mereka daripada sudut yang berbeza.
+
+Apabila mereka menggunakan Buka Kunci Wajah, imej digunakan untuk mengemas kini model wajah mereka. Imej yang digunakan untuk menghasilkan model wajah anak anda tidak disimpan, tetapi model wajah disimpan dengan selamat pada telefon dan tidak akan keluar daripada telefon itu. Semua pemprosesan berlaku dengan selamat pada telefon."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"Buka Kunci Wajah menghasilkan model unik wajah anda untuk mengesahkan identiti anda. Untuk menghasilkan model wajah ini semasa persediaan, anda akan mengambil imej wajah anda dari sudut yang berbeza.
+
+Apabila anda menggunakan Buka Kunci Wajah, imej akan digunakan untuk mengemas kini model wajah anda. Imej yang digunakan untuk menghasilkan model wajah anda tidak disimpan, tetapi model wajah disimpan dengan selamat pada telefon anda dan tidak akan keluar daripada telefon itu. Semua pemprosesan berlaku dengan selamat pada telefon anda."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Caranya</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">Buka Kunci Wajah memerlukan mata anak anda dibuka untuk membuka kunci telefon atau mengesahkan diri mereka. Anda dan anak anda boleh menghidupkan pilihan ini pada bila-bila masa dalam Tetapan.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Jika anak anda biasanya memakai cermin mata, mereka boleh memakai cermin mata semasa persediaan.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">Tindakan melihat telefon boleh membuka kunci telefon itu meskipun mereka tidak bermaksud untuk berbuat demikian. Telefon mereka juga boleh dibuka kunci oleh seseorang yang amat mirip dengan mereka, seperti kembar seiras atau jika seseorang menghalakan telefon rapat ke wajah mereka.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">Buka Kunci Wajah memerlukan mata anda dibuka untuk membuka kunci telefon atau mengesahkan diri anda. Anda boleh menghidupkan pilihan ini pada bila-bila masa dalam Tetapan.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Cermin mata atau cermin mata hitam yang cair warna hitamnya boleh digunakan.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">Penggunaan wajah untuk membuka kunci telefon mungkin menjadi kurang selamat daripada corak atau PIN yang kuat.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">Tindakan melihat telefon boleh membuka kunci telefon itu meskipun anda tidak bermaksud untuk berbuat demikian. Telefon anda juga boleh dibuka kunci oleh seseorang yang amat mirip dengan anda, seperti kembar seiras atau jika seseorang memegang rapat telefon ke wajah anda.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Jangan lupa</string>
+    <string name="security_settings_face_enroll_introduction_message">Gunakan wajah anda untuk membuka kunci telefon anda atau mengesahkan sama ada itulah anda atau tidak, seperti masa anda log masuk aplikasi atau meluluskan pembelian.</string>
+    <string name="security_settings_face_enroll_introduction_title">Sediakan Buka Kunci Wajah</string>
+    <string name="security_settings_face_enroll_next">Seterusnya</string>
+    <string name="security_settings_face_enroll_partial_message">Untuk meningkatkan prestasi, anda boleh menyediakan semula Buka Kunci Wajah dalam Tetapan</string>
+    <string name="security_settings_face_enroll_partial_start_over">Mulakan semula</string>
+    <string name="security_settings_face_enroll_partial_title">Persediaan Buka Kunci Wajah selesai</string>
+    <string name="security_settings_face_enroll_timeout_message">"Cuba persediaan pantas. Jangan lupa bahawa kepala anda mungkin perlu berada betul-betul di hadapan telefon anda apabila anda menggunakan Buka Kunci Wajah.
+
+Untuk meningkatkan prestasi, anda boleh menyediakan semula Buka Kunci Wajah dalam Tetapan."</string>
+    <string name="security_settings_face_enroll_timeout_title">Tidak dapat meneruskan persediaan</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Cuba lagi</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Gunakan persediaan pantas</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Keluar daripada persediaan</string>
+    <string name="security_settings_face_enroll_too_hot_message">Persediaan Buka Kunci Wajah tidak dapat dilengkapkan kerana telefon terlalu panas. Cuba sebentar lagi apabila telefon menyejuk.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Langkau Buka Kunci Wajah</string>
+    <string name="security_settings_face_enroll_too_hot_title">Telefon terlalu panas</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Ketik untuk menyediakan cap jari</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Ketahui lebih lanjut melalui g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint untuk kerja</string>
+    <string name="setup_suggestion_summary">Salin data, bayar guna telefon anda dan banyak lagi</string>
+    <string name="setup_suggestion_title">Selesaikan persediaan</string>
+    <string name="smart_battery_footer">Untuk melanjutkan hayat bateri, Bateri Mudah Suai mungkin mengurangkan prestasi dan aktiviti latar belakang. Sesetengah pemberitahuan mungkin tertangguh.</string>
+    <string name="smart_battery_manager_title">Pilihan mudah suai</string>
+    <string name="smart_battery_title">Bateri Mudah Suai</string>
+    <string name="sound_dashboard_summary">Kelantangan, haptik, Jangan Ganggu</string>
+    <string name="sound_settings">Bunyi &amp; getaran</string>
+    <string name="storage_manager_indicator">Storan Pintar: ^1</string>
+    <string name="time_remaining_warning_subtext">Tinggal kira-kira %1$s berdasarkan penggunaan lepas</string>
+    <string name="time_remaining_warning_text">Bateri akan kehabisan tidak lama lagi</string>
+    <string name="tips_suggestion_summary">Teroka yang boleh dibuat dengan telefon</string>
+    <string name="tips_suggestion_title">Kenali Pixel anda</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Pegang telefon anda di hadapan wajah anda</string>
+    <string name="usb_use_file_transfers">Pindahan fail / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">Getaran untuk panggilan tidak tersedia kerana telefon ditetapkan kepada senyap</string>
+    <string name="vibration_haptics_settings_not_available_title">Tidak tersedia</string>
+    <string name="wallpaper_dashboard_summary">Warna, ikon bertema, grid apl</string>
+    <string name="wifi_subscription_summary">Lihat atau tukar langganan OpenRoaming</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">Disambungkan dengan %1$s</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Ketik untuk sambung</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Gagal disambungkan. Ketik untuk mencuba lagi.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Menyambung…</string>
+</resources>

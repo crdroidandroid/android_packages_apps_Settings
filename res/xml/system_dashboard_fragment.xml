@@ -43,6 +43,14 @@
         android:fragment="com.android.settings.datetime.DateTimeSettings"
         settings:controller="com.android.settings.datetime.DateTimePreferenceController"/>
 
+    <com.google.android.settings.aware.AwareSettingsDialogPreference
+        android:icon="@drawable/ic_aware"
+        android:key="aware_settings"
+        android:order="-230"
+        android:title="@string/aware_settings_title"
+        settings:controller="com.google.android.settings.aware.AwareSettingsPreferenceController"
+        settings:searchable="false" />
+
     <!-- System updates -->
     <Preference
         android:key="additional_system_update_settings"
