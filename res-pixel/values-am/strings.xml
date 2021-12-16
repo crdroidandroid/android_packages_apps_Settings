@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">ስራ የፈታ የማያ ገጽ መቆለፊያ</string>
+    <string name="gesture_silence_title">ጸጥታ የጣት ምልክትን ያነቃል</string>
+    <string name="gesture_skip_title">የጣት ምልክትን ይዝለሉ</string>
+    <string name="keywords_touch_sensitivity">ንኪ፣ አደጋ ላይ መጣል የሚችልበት ሁኔታ፣ አደጋ ላይ ሊጥል የሚችል፣ የማያ ገጽ ጠባቂ፣ ፊልም፣ ምላሽ ሰጪ፣ ምላሽ ሰጪነት</string>
+    <string name="touch_sensitivity_summary">የማያ ገጽ ጠባቂዎችን በመጠቀም ላይ ንኪን ያሻሽላል</string>
+    <string name="touch_sensitivity_title">የንኪ አደጋ ተጋላጭነትን ይጨምራል</string>
+    <string name="accessibility_vibration_settings_screen_title">ንዝረት እና ረቂቅ ንዝረትን ይጠቀሙ</string>
+    <string name="vibration_haptics_settings_not_available_summary">የስልኩ ድምጽ ስለተዘጋ ንዝረት እና ረቂቅ ንዝረት አይገኙም</string>
+    <string name="vibration_haptics_strength_category_title">የንዝረት እና የረቂቅ ንዝረት ጥንካሬ</string>
+    <string name="accessibility_vibration_settings_title">ንዝረት እና ረቂቅ ንዝረት</string>
+    <string name="columbus_title">እርምጃዎችን ለመጀመር ፈጣን መታ ያድርጉ</string>
+    <string name="vibrate_for_calls_category_title">ጥሪዎች</string>
+    <string name="accessibility_alarm_vibration_title">የማንቂአይ ንዝረት</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">ንቁ የEdge ቅንብር። ወደ ቀጣዩ ማያ ገጽ ይሂዱ ወይም ማስተካከል ይቀጥሉ።</string>
+    <string name="accessibility_keyboard_haptics_title">የቁልፍ ሰሌዳ ረቂቅ ንዝረት</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">ተስማሚ ኃይል መሙላት</string>
+    <string name="adaptive_charging_description">ረዥም ጊዜ የሚቆይ የባትሪ ዕድሜን ለማቆየት በወጥነት በአንድ ሌሊት ኃይል ይሙሉ። በመንቃት ጊዜ ሙሉ በሙሉ ኃይል ለመሙላት ማንቂያን ይጠቀማል።</string>
+    <string name="adaptive_charging_time_estimate"><b>ተስማሚ የኃይል አሞላል</b> • እስከ %1$s ድረስ የሚሞላ</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">ምርጫዎች</annotation></string>
+    <string name="app_and_notification_dashboard_summary">ረዳት፣ የቅርብ ጊዜ መተግበሪያዎች፣ ነባሪ መተግበሪያዎች</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">ወደ ረዳት ቀጥል</string>
+    <string name="assist_gesture_enrollment_do_it_later">በኋላ ላይ ያድርጉት</string>
+    <string name="assist_gesture_enrollment_seekbar_light">ቀላል ጨመቅ ማድረግ</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">ጠበቅ አድርጎ ጨመቅ ማድረግ</string>
+    <string name="assist_gesture_enrollment_settings">ቅንብሮች</string>
+    <string name="assist_gesture_setting_enable_assistant_text">የእርስዎን ረዳት ለማናገር ታችኛውን የስልክዎ አጋማሽ በፍጥነት ጨመቅ አድርገው ለቀቅ ያድርጉት</string>
+    <string name="assist_gesture_setting_enable_assistant_title">የእርስዎን ረዳት ይጭመቁት</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">የማንቂያዎች፣ የሰዓት ቆጣሪዎች እና የገቢ ጥሪዎች ድምጽ ለመዝጋት ጨመቅ ያድርጉ</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">ማሳወቂያዎችን እና የገቢ ጥሪዎችን ድምጽ ለመዝጋት ጨመቅ ያድርጉ</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">ስልክን ጸጥ ለማሰኘት ጨመቅ ያድርጉት</string>
+    <string name="assist_gesture_setting_enable_wake_title">ማያ ገጽ ሲጠፋ ረዳት ይክፈቱ</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">ቀላል ጨመቅ ማድረግ</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">ጠበቅ አድርጎ ጨመቅ ማድረግ</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">ትብነትን ጨመቅ ያድርጉ</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">በድንገት ረዳትን ሊያመጣ ይችላል</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">የስልክዎን ታችኛው ግማሽ ክፍል ጨመቅ ያድርጉት</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">በበለጠ ፍጥነት ጨመቅ ያድርጉ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">ጠበቅ አድርገው ይጭመቁ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">በፍጥነት ጨመቅ አድርገው ይልቀቁት</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">ተንሸራታቹን ለማስተካከል ይሞክሩ</string>
+    <string name="assist_gesture_training_enrolling_text">የስልክዎን ታችኛው ግማሽ ክፍል ጨመቅ ያድርጉት። በምን ያህል ጥንካሬ መጭመቅ እንዳለብዎት ማስተካከል ይችላሉ።</string>
+    <string name="assist_gesture_training_enrolling_title">በፍጥነት ጨመቅ አድርገው ይልቀቁት</string>
+    <string name="assist_gesture_training_finished_text">እንዲሁም በኋላ ላይ የጨመቃ ትብነትን በቅንብሮች ውስጥ መለወጥ ይችላሉ</string>
+    <string name="assist_gesture_training_finished_title">ይጨርሱ ወይም ማስተካከሉን ይቀጥሉ</string>
+    <string name="assist_gesture_training_intro_text">በማንኛውም ጊዜ ረዳትዎን ለማነጋገር የስልክዎን ታችኛው ግማሽ ክፍል ጨመቅ ያድርጉትና ይልቀቁት</string>
+    <string name="assist_gesture_training_intro_title">የእርስዎን ረዳት ይጭመቁት</string>
+    <string name="assist_gesture_training_suggestion_summary">ከረዳት ጋር ይነጋገሩ፣ የጥሪዎች ድምጽ ይዝጉ</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">ከረዳት ጋር ይነጋገሩ፣ የማንቂያዎች እና ጥሪዎች ድምጽ ይዝጉ</string>
+    <string name="assist_gesture_training_suggestion_title">ረዳቱን ለማግኘት ጨመቅ ያድርጉና ይልቀቁ</string>
+    <string name="automatic_storage_manager_activation_warning">እርስዎ ሲገናኙ አሁንም ፎቶዎችን እና ቪዲዮዎችን ለምትኬ በመረጡት ጥራት ላይ መድረስ ይችላሉ</string>
+    <string name="automatic_storage_manager_days_title">ምትኬ የተቀመጠላቸው ፎቶዎችን እና ቪዲዮዎችን አስወግድ</string>
+    <string name="automatic_storage_manager_deactivation_warning">"ዘመናዊ ማከማቻ ይጥፋ? 
+
+ማከማቻዎ ሊሞላ ሲል ዘመናዊ ማከማቻ ቦታ አያስለቅቅም።"</string>
+    <string name="automatic_storage_manager_downloads_days_title">ምትኬ የተቀመጠላቸው ውርዶች</string>
+    <string name="automatic_storage_manager_preference_title">ዘመናዊ ማከማቻ</string>
+    <string name="automatic_storage_manager_primary_switch_title">ዘመናዊ ማከማቻን ተጠቀም</string>
+    <string name="automatic_storage_manager_settings">ዘመናዊ ማከማቻ</string>
+    <string name="automatic_storage_manager_text">ማከማቻ ሊሞላ ትንሽ ሲቀረው፣ ምትኬ የተቀመጠላቸውን ፎቶዎች እና ቪዲዮዎች ያስወግዱ። አሁንም በGoogle ፎቶዎች ውስጥ ሊያገኟቸው ይችላሉ።</string>
+    <string name="aware_disabled_preference_action">አብራ</string>
+    <string name="aware_disabled_preference_neutral">አሁን አይደለም</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">የአውሮፕላን ሁነታ እና ባትሪ ቁጠባ ስለበሩ Motion Sense አይገኝም</string>
+    <string name="aware_footer_when_airplane_on">የአውሮፕላን ሁነታ ስለበራ Motion Sense አይገኝም</string>
+    <string name="aware_footer_when_batterysaver_on">ባትሪ ቁጠባ ስለበራ Motion Sense አይገኝም</string>
+    <string name="aware_gesture_summary_off">ፈጣን የእጅ ምልክቶች በርቷል፣ Active Edge ጠፍቷል</string>
+    <string name="aware_gesture_summary_on_non_assist">ፈጣን የእጅ ምልክቶች በርቷል፣ Active Edge በርቷል</string>
+    <string name="aware_gesture_summary_on_with_assist">ፈጣን የእጅ ምልክቶች በርቷል፣ Active Edge በርቷል፣ የእርስዎን ረዳት ለማግኘት ይጭመቁ</string>
+    <string name="aware_info_button_description">ተጨማሪ ቅንብሮች</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">የአውሮፕላን ሁነታ እና ባትሪ ቁጠባ ስለበሩ አይገኝም</string>
+    <string name="aware_summary_when_airplane_on">የአውሮፕላን ሁነታ ስለበራ አይገኝም</string>
+    <string name="aware_summary_when_batterysaver_on">ባትሪ ቁጠባ ስለበራ አይገኝም</string>
+    <string name="backup_data_summary">የመተግበሪያ ውሂብ፣ የWi-Fi ይለፍ ቃላት እና የሌሎች ቅንብሮች ምትኬ ወደ Google አገልጋዮች ያስቀምጡ</string>
+    <string name="backup_suggestion_cancel">ይቅር</string>
+    <string name="backup_suggestion_dialog_description">ይሄ በስልክዎ ውስጣዊ ማከማቻ ላይ ያለውን ውሂብ ሁሉ ይሰርዛል።</string>
+    <string name="backup_suggestion_dialog_title">ይህ መሣሪያ ዳግም ይጀመር?</string>
+    <string name="backup_suggestion_get_started">ተጨማሪ ለመረዳት</string>
+    <string name="backup_suggestion_item_summary">ከAndroid ወይም iPhone® መሣሪያ ቅዳ</string>
+    <string name="backup_suggestion_item_title">ከድሮ ስልኩ ውሂብ ይጎድላል?</string>
+    <string name="backup_suggestion_missing_description">"እንደ የኤስኤምኤስ መልዕክቶች እና ፎቶዎች ያሉ አንዳንድ ውሂብዎ የማይታየዎት ከሆነ ገመድ ተጠቅመው ወደ የእርስዎ Pixel ማስተላለፍ ይችላሉ።
+
+ለመጀመር የእርስዎ Pixel ዳግም መጀመር አለበት። ብጁ ቅንብሮች እና ከደመናው ጋር ያልሰመረ ይዘትም ጨምሮ በዚህ ስልክ ላይያለ ሁሉም ውሂብ ይሰረዛል።"</string>
+    <string name="backup_suggestion_missing_title">ውሂብዎ ይጎድላል?</string>
+    <string name="backup_suggestion_next">ቀጣይ</string>
+    <string name="backup_suggestion_other_ways_to_copy">ውሂብ የሚቀዳባቸው ሌሎች መንገዶች</string>
+    <string name="backup_suggestion_reset_description">"በሚቀጥለው ማያ ገጽ ላይ የእርስዎን Pixel ዳግም ማስጀመር ይችላሉ። ይሄ ገመድ በመጠቀም ማስተላለፍ የሚቻልበት ብቸኛው መንገድ ነው።
+
+አንዴ ዳግም ከተጀመረ በኋላ ወደ የማዋቀር ሂደቱ ይግቡና ውሂብዎን ከቀዳሚው ስልክዎ ለማምጣት ይምረጡ።"</string>
+    <string name="backup_suggestion_reset_title">የእርስዎን Pixel ዳግም ያስጀምሩት</string>
+    <string name="backup_suggestion_what_is_needed_summary">"የእርስዎን ስልክ ዳግም ካስጀመሩት በኋላ እነዚህ ያስፈልጉዎታል፦
+
+• የእርስዎ ቀዳሚ ስልክ (በAndroid 5.0+ ወይም iOS® 8.0+ ላይ ያሉ LINK_BEGINአብዛኛዎቹ ስልኮችLINK_END ይደገፋሉ)
+• አንድ የኃይል መሙያ ወይም የውሂብ ገመድ ለቀዳሚው ስልክዎ
+• ከእርስዎ Pixel ጋር አብሮ የመጣውን Quick Switch Adapter"</string>
+    <string name="backup_suggestion_what_is_needed_title">የሚያስፈልጉዎ ነገሮች</string>
+    <string name="battery_manager_summary">የባትሪ ዕድሜን ያራዝሙና ኃይል መሙላትን ያመቻቹ</string>
+    <string name="battery_manager_summary_unsupported">የባትሪ ዕድሜን አራዝም</string>
+    <string name="battery_missing_link_message">የበለጠ ለመረዳት</string>
+    <string name="battery_suggestion_summary">ተለማማጅ ባትሪን ያብሩ</string>
+    <string name="battery_tip_smart_battery_summary">ተለማማጅ ባትሪን ያብሩ</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s ከእንግዲህ ከዚህ Google መለያ ጋር ከተገናኘ ማንኛውም መሣሪያ ጋር አይጣመርም</string>
+    <string name="columbus_gesture_detected">ፈጣን መታ ማድረግ ተገኝቷል!</string>
+    <string name="columbus_gesture_enrollment_complete">ተጠናቅቋል</string>
+    <string name="columbus_gesture_enrollment_do_it_later">አሁን አይደለም</string>
+    <string name="columbus_gesture_enrollment_settings">ወደ ቅንብሮች ሂድ</string>
+    <string name="columbus_gesture_enrollment_try_it">ሞክረው</string>
+    <string name="columbus_gesture_training_action_no_selection_error">እባክዎ አንድ የሚያከናውኑትን እርምጃ ይምረጡ</string>
+    <string name="columbus_gesture_training_action_text">ፈጣን መታ ማድረግን በሚጠቀሙበት ጊዜ ምን እንደሚከሰት ይምረጡ። ይህን በኋላ በቅንብሮች ውስጥ መቀየር ይችላሉ።</string>
+    <string name="columbus_gesture_training_action_title">ፈጣን መታ ማድረግን ይምረጡ</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… ከተገኙት 2ቱ ውስጥ 1ዱን ሁለቴ መታ ያድርጉ</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">እስቲ ይህን አንዴ እንደገና እንሞክረው። በፍጥነት የስልክዎን ጀርባ ሁለቴ መታ ያድርጉት።</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">ጥሩ!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… ከተገኙት 2ቱ ውስጥ 2ቱን ሁለቴ መታ ያድርጉ</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">ፈጣን መታ ማድረግን ለመጠቀም ዝግጁ ነዎት</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">ገብተዎታል!</string>
+    <string name="columbus_gesture_training_enrolling_text">በፍጥነት የስልክዎን ጀርባ ሁለቴ መታ ያድርጉት።</string>
+    <string name="columbus_gesture_training_enrolling_title">ፈጣን መታ ማድረግን ይሞክሩ</string>
+    <string name="columbus_gesture_training_finished_text">ፈጣን መታ ማድረግን ለመጠቀም የሚያስፈልገውን መታ የማድረግ ጥንካሬ ለመቀየር ወደ ቅንብሮች ይሂዱ።</string>
+    <string name="columbus_gesture_training_finished_title">ፈጣን መታ ማድረግን አቀናብረዋል</string>
+    <string name="columbus_gesture_training_intro_text_accidental">በመሣሪያዎ ጀርባ ላይ ልክ አሁን ሁለት ጊዜ መታ አድርገዋል፣ ይህም ረዳትዎን በጉዞ ላይ እንዲጠቀሙ ያስችልዎታል። ይህን የእጅ ምልክት በቅንብሮች ውስጥ ማበጀት ይችላሉ።</string>
+    <string name="columbus_gesture_training_intro_text_suw">ሁለቴ መታ በማድረግ ቅጽበታዊ ገጽ እይታን ያንሱ፣ ማሳወቂያዎችን ያሳዩ ወይም ሌላ እርምጃ ይጀምሩ።</string>
+    <string name="columbus_gesture_training_intro_title">ፈጣን መታ ማድረግ ለፈጣን እርምጃዎች</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">እባክዎ አንድ የሚከፍቱትን መተግበሪያ ይምረጡ</string>
+    <string name="columbus_gesture_training_launch_text">በፈጣን መታ በሚያደርጉበት ጊዜ እንዲከፈቱ የሚፈልጓቸውን መተግበሪያዎች ይምረጡ።</string>
+    <string name="columbus_gesture_training_launch_title">የሚከፍቱትን መተግበሪያ ይምረጡ</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">የ%1$s አቋራጭ ቅንብሮች</string>
+    <string name="columbus_launch_settings_activity_title">የፈጣን መታ ማድረግ ቅንብሮች</string>
+    <string name="columbus_name">ፈጣን መታ ማድረግ</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">የ%1$s ቅንብሮች</string>
+    <string name="columbus_setting_action_assistant_title">የእርስዎን ዲጂታል ረዳት ይድረሱበት</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">ምንም መተግበሪያ አልተመረጠም</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">መተግበሪያ አልተጫነም</string>
+    <string name="columbus_setting_action_launch_title">መተግበሪያን ክፈት</string>
+    <string name="columbus_setting_action_notification_title">ማሳወቂያዎችን አሳይ</string>
+    <string name="columbus_setting_action_open_app_title">መተግበሪያ ክፈት</string>
+    <string name="columbus_setting_action_overview_title">የቅርብ ጊዜ መተግበሪያዎችን ይመልከቱ</string>
+    <string name="columbus_setting_action_play_pause_title">ሚዲያን ያጫውቱ ወይም ባለበት ያቁሙ</string>
+    <string name="columbus_setting_action_screenshot_title">ቅጽበታዊ ገጽ ዕይታን ያንሱ</string>
+    <string name="columbus_setting_actions_title">የሚከተለውን ለማድረግ የስልክ ጀርባን ሁለቴ መታ ያድርጉ፦</string>
+    <string name="columbus_setting_additional_settings_title">የፈጣን መታ ማድረግ ጥንካሬ</string>
+    <string name="columbus_setting_app_selection_help_text">የስልክዎን ጀርባ ሁለት ጊዜ መታ ሲያደርጉት የሚከፈተውን መተግበሪያ ይምረጡ። መተግበሪያውን ካራገፉት ሌላ መተግበሪያ እስከሚመርጡ ድረስ ፈጣን መታ ማድረግ ይጠፋል።</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">ፈጣን መታ ማድረግን በመጠቀም ይህን መተግበሪያ ሲከፍቱት ጊዜ ምን እንደሚከሰት ይምረጡ።</string>
+    <string name="columbus_setting_enable_switch_title">ፈጣን መታ ማድረግን ይጠቀሙ</string>
+    <string name="columbus_setting_sensitivity_title">ጠንከር ያሉ መታ ማድረጎችን ይጠይቁ</string>
+    <string name="connectivity_helper_call_quality_category">የጥሪ ጥራት</string>
+    <string name="connectivity_helper_call_quality_summary">በጥሪዎች ጊዜ ስለ የግንኙነት ችግሮች መንስኤዎች ማሳወቂያ ያግኙ</string>
+    <string name="connectivity_helper_call_quality_title">ማሳወቂያዎችን ያግኙ</string>
+    <string name="connectivity_helper_d2d_summary">በጥሪዎች ጊዜ ስልክዎ የግንኙነት ችግሮች ሲኖሩት ለሌላው ሰው ያሳውቁ</string>
+    <string name="connectivity_helper_d2d_title">የግንኙነት መረጃን ያጋሩ</string>
+    <string name="connectivity_helper_footnote">ሌላኛው ደዋይ የሚደገፍ መሣሪያ እና አውታረ መረብ ሲጠቀም የግንኙነት መረጃን ማጋራት ይችላሉ</string>
+    <string name="content_capture">የመተግበሪያ ውሂብን በመጠቀም ግላዊነት ማላበስ</string>
+    <string name="copy_toast_msg">አገናኝ ወደ ቅንጥብ ሰሌዳ ተቀድቷል</string>
+    <string name="dark_ui_text">ጨለማ ገጽታ የባትሪዎን ዕድሜ ለማራዘም እንዲያግዝ ጥቁር ጀርባን ይጠቀማል። የጨለማ ገጽታ መርሐግብሮች ለመብራት ማያ ገጽዎ እስኪጠፋ ድረስ ይጠብቃሉ።</string>
+    <string name="dock_summary_charging_phone">ኃይል የሚሞላ ስልክ</string>
+    <string name="double_twist_for_camera_mode_summary">በGoogle ካሜራ ውስጥ ወደ የራስ ፎቶ ሁነታ ለመግባት እና ከእሱ ለመውጣት በመተግበሪያው ውስጥ ሲሆኑ ሁለቴ ጠምዘዝ ያድርጉ</string>
+    <string name="downloads_backup_text">የወረዱ ፋይሎች ምትኬ በGoogle Drive ላይ ይቀመጣል</string>
+    <string name="duration_less_than_one_minute">ከ1 ደቂቃ ያነሰ</string>
+    <string name="extra_app_info_label">ጨዋታን ማትባት</string>
+    <string name="face_enrolling_center_head">መልክዎን በውስጣዊ ክፈፉ ውስጥ በአግባቡ ያስገቡት</string>
+    <string name="face_enrolling_description">ሁሉንም ጡቦች በማስወገድ የእርስዎን ፊት ሁሉንም ማዕዘኖች ፎቶ ያንሱ።</string>
+    <string name="face_enrolling_do_it_later">በኋላ ላይ ያድርጉት</string>
+    <string name="face_enrolling_gaze_dialog_cancel">ተወው</string>
+    <string name="face_enrolling_gaze_dialog_continue">ዓይኖች ሳይከፈቱ ያቀናብሩ</string>
+    <string name="face_enrolling_gaze_dialog_message">አይኖችዎ መክፈት ሳያስፈልግ በመልክ መክፈትን ማዋቀር ይፈልጋሉ? በዚህ መንገድ ካዋቀሩ የሆነ ሰው ስልክዎን ፊትዎ ላይ በማድረግ እርስዎ ሳያውቁት ስልክዎን ሊከፍት ይችላል።</string>
+    <string name="face_enrolling_gaze_dialog_title">ዓይኖች ሳይከፈቱ ያቀናብሩ</string>
+    <string name="face_enrolling_how_to_setup">እንዴት ማቀናበር ይችላሉ</string>
+    <string name="face_enrolling_title">ስልኩን ሳያነቃንቁ ይያዙት። የእርስዎን ጭንቅላት ያሽከርክሩት። ቀስ ብለው ይሂዱ።</string>
+    <string name="face_enrolling_title_accessibility">በቀጥታ ወደ ስልክዎ ይመልከቱ</string>
+    <string name="face_enrolling_title_accessibility_progress">ስልክዎን በቀጥታ ማየቱን ይቀጥሉ</string>
+    <string name="face_enrolling_too_close">ስልኩን ያርቁት</string>
+    <string name="face_enrolling_too_far">ስልኩን ያቅርቡት</string>
+    <string name="face_enrolling_too_high">ስልኩን ወደ ታች ዝቅ ያድርጉ</string>
+    <string name="face_enrolling_too_left">ስልኩን ወደ በስተቀኝዎ ይውሰዱት</string>
+    <string name="face_enrolling_too_low">ስልኩን ከፍ ወዳለ ቦታ ይውሰዱት</string>
+    <string name="face_enrolling_too_right">ስልክዎን ወደ በስተግራዎ ይውሰዱት</string>
+    <string name="face_enrolling_turn_head_to_arrow">ወደ ቀስቱ አቅጣጫ የእርስዎን ጭንቅላት ያዙሩ</string>
+    <string name="face_enrolling_turned_too_far">ጭንቅላት ትንሽ ብቻ ያዙሩት</string>
+    <string name="fallback_menu_item_copy_link">አገናኝ ቅዳ</string>
+    <string name="fallback_menu_item_open_in_browser">በአሳሽ ውስጥ ክፈት</string>
+    <string name="fallback_menu_item_share_link">አገናኝ አጋራ</string>
+    <string name="fullbackup_data_summary">"የመሣሪያ ውሂብ (እንደ የWi-Fi ይለፍ ቃላት እና የጥሪ ታሪክ ያሉ) እና የመተግበሪያ ውሂብ (እንደ በመተግበሪያዎች የተከማቹ ቅንብሮች እና ፋይሎች ያለ) ምትኬ በራስ-ሰር Google Drive ላይ ያስቀምጡ።
+
+ራስ-ሰር ምትኬን ሲያበሩ የመሣሪያ እና የመተግበሪያ ውሂብ በየጊዜው Google Drive ላይ ወዳለ የግል አቃፊ ይቀመጣል። የመተግበሪያ ውሂብ እንደ እውቂያዎች፣ መልዕክቶች እና ፎቶዎች ያሉ ሚስጥራዊነት ሊኖራቸው የሚችል ውሂብ ጨምሮ አንድ መተግበሪያ የሚያስቀምጠው ማንኛውም ውሂብ (በገንቢ ቅንብሮች ላይ የተመሠረተ) ሊሆን ይችላል።
+
+የምትኬ ውሂብ በDrive ማከማቻ ኮታዎ ላይ አይቆጠርም። የትልቅ ፋይሎች ወይም ገንቢዎች ከአገልግሎቱ ለማግለል የመረጧቸው የፋይሎች ምትኬ አይቀመጥላቸውም።"</string>
+    <string name="fullbackup_erase_dialog_message">የመሣሪያ ውሂብ (እንደ የWi-Fi ይለፍ ቃላት እና የጥሪ ታሪክ ያለ) እና የመተግበሪያ ውሂብ (እንደ በመተግበሪያዎች የተከማቹ ቅንብሮች እና ፋይሎች ያሉ) ምትኬ ማስቀመጥ ቆሞ በGoogle Drive ላይ ያሉ ሁሉም ቅጂዎች ይደምሰሱ?</string>
+    <string name="game_dashboard_always_on_summary">በጨዋታዎች ውስጥ የጨዋታ ዳሽቦርድ አቋራጭ አሳይ</string>
+    <string name="game_dashboard_always_on_title">የጨዋታ ዳሽቦርድ</string>
+    <string name="game_dashboard_dnd_rule_name">ጨዋታ</string>
+    <string name="game_dashboard_dnd_summary">ጨዋታ በሚጫወቱበት ጊዜ አስፈላጊ ከሆኑ ሰዎች እና መተግበሪያዎች ብቻ ማሳወቂያን ያግኙ</string>
+    <string name="game_dashboard_dnd_title">አትረብሽ ለጨዋታዎች</string>
+    <string name="game_mode_battery_description">የባትሪ ዕድሜን ያራዝማል</string>
+    <string name="game_mode_battery_title">የባትሪ ኃይል ቆጣቢ</string>
+    <string name="game_mode_performance_description">የክፈፍ ፍጥነትን ይጨምራል፣ የበለጠ ባትሪ ይጠቀማል</string>
+    <string name="game_mode_performance_title">አፈጻጸም</string>
+    <string name="game_mode_standard_description">የጨዋታውን ነባሪዎች ይጠቀማል</string>
+    <string name="game_mode_standard_title">መደበኛ</string>
+    <string name="game_optimization_unavailable">ለዚህ ጨዋታ አይገኝም</string>
+    <string name="gesture_aware_confirmation_action_button">ገባኝ</string>
+    <string name="gesture_aware_footer"><annotation link="link">ምርጫዎች</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">ምርጫዎች</annotation></string>
+    <string name="gesture_skip_direction_ltr">ከግራ ወደ ቀኝ</string>
+    <string name="gesture_skip_direction_rtl">ከቀኝ ወደ ግራ</string>
+    <string name="gesture_skip_direction_title">የመዝለል አቅጣጫ</string>
+    <string name="gesture_skip_footer"><annotation link="link">ምርጫዎች</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">ምርጫዎች</annotation></string>
+    <string name="global_actions_panel_short_title">ካርዶች እና ማለፊያዎች</string>
+    <string name="global_actions_panel_summary">እንደ የእርስዎ የመክፈያ ዘዴዎች እና የማለፊያ ወረቀቶች ያሉ ነገሮችን ለመድረስ የኃይል አዝራሩን ተጭነው ይያዙት።</string>
+    <string name="global_actions_panel_title">ካርዶችን እና ማለፊያዎችን አሳይ</string>
+    <string name="install_unknown_applications">ከPlay መደብር ውጭ ካሉ ምንጮች የሚመጡ መተግበሪያዎች እንዲጫኑ ፍቀድ</string>
+    <string name="keywords_accessibility_menu">ሞተር፣ ፈጣን ምናሌ፣ ረዳት ምናሌ፣ ንካ፣ ቅልጥፍና</string>
+    <string name="keywords_adaptive_charging">ኃይል ሙላ፣ ኃይል በመሙላት ላይ፣ ዘመናዊ ኃይል አሞላል፣ ተስማሚ ኃይል አሞላል፣ ባትሪ፣ የባትሪ ጤና</string>
+    <string name="keywords_assist_gesture_launch">የእጅ ውዝዋዜ፣ ጫፍ፣ ጎን፣ ንቁ ጫፍ፣ ጭመቅ፣ ጨብጥ፣ እርዳ፣ ረዳት፣ ጭመቅ፣ ok google፣ google ረዳት</string>
+    <string name="keywords_assist_gesture_silence">"የእጅ ውዝዋዜ፣ ጫፍ፣ ጎን፣ ንቁ  ጎን፣ ጸጥታ፣ አሸልብ፣ ማንቂያ፣ ገቢ ጥሪ፣ ጸጥታ፣ ማሳያ፣ የማያ ገጽ ቆላፊ፣ ጭመቅ፣ ጭመቅ፣ ጨብጥ፣ ቁም"</string>
+    <string name="keywords_assist_gesture_wake">የእጅ ውዝዋዜ፣ ጫፍ፣ ንቁ ጫፍ፣ ንቃ፣ ማሳወቂያዎች፣ ማያ ገጽ፣ ማሳያ፣ ማያ ገጽ ጠፍቷል፣ ማያ ገጽ በርቷል፣ ጭመቅ፣ አንቀላፋ፣ ተኛ፣ ጨብጥ</string>
+    <string name="keywords_battery_share">ባትሪ አጋራ፣ በሽቦ አልባ ኋይል መሙላት</string>
+    <string name="keywords_battery_share_settings">ባትሪን ማጋራት፣ በተገላቢጦሽ ገመድ-አልባ ኃይል መሙላት</string>
+    <string name="keywords_content_capture">ይዘትን መቅረጽ፣ የመተግበሪያ ይዘት፣ የመተግበሪያ ውሂብ</string>
+    <string name="keywords_gesture">የጣት ምልክት፣ እንቅስቃሴዎች</string>
+    <string name="keywords_global_actions_panel">ካርዶች፣ ማለፊያዎች</string>
+    <string name="keywords_live_transcribe">የመግለጫ ጽሑፎች፣ ዝግ መግለጫ ጽሑፎች፣ ካርቦን ቅጂ (ካቅ)፣ የቀጥታ ጽሑፍ ግልባጭ፣ የመስማት ችግር፣ መስማት አለመቻል፣ ተሳቢ፣ ከንግግር- ወደ-ጽሑፍ፣ የግርጌ ጽሑፎች</string>
+    <string name="keywords_reverse_charging_stop_threshold">ስልኩ እዚህ ሲደርስ ባትሪ ማጋራትን አቁም፦</string>
+    <string name="keywords_select_to_speak">ጽሑፍን ይስሙ፣ ጮክ ብለው ያንብቡ፣ ማያ ገጽ ላይ ይናገሩ ፣ የማያ ገጽ አንባቢ</string>
+    <string name="keywords_sound_amplifier">PSAP፣ ድምፅ ማጉያ፣ ድምፅ ማጉላት፣ የመስማት ችግር፣ መስማት አለመቻል፣ ማጉላት</string>
+    <string name="keywords_sound_notifications">ማሳወቂያዎች ፣ ለመስማት ችግር፣ መስማት አለመቻል፣ ማሳወቅ</string>
+    <string name="keywords_switch_access">ሞተር፣ ማብሪያ/ማጥፊያ፣ እጅ፣ ኤቲ፣ ቴክኖሎጂ፣ ሽባነት፣ ኤኤልኤስ፣ መቃኘት፣ ደረጃ መቃኘት</string>
+    <string name="keywords_talkback">ማያ ገጽ አንባቢ፣ የድምፅ ተደራቢ፣ የድምፅ ድጋፍ፣ ዓይነ ስውር፣ ዝቅተኛ-ዕይታ፣ TTS፣ ከጽሑፍ ወደ ንግግር፣ የቃል ግብረመልስ</string>
+    <string name="keywords_voice_access">ድምፅ፣ የድምፅ ቁጥጥር፣ ሞተር፣ እጅ፣ ማይክሮፎን፣ ማይክሮፎን፣ መግለጫ፣ ይናገሩ፣ ቁጥጥር</string>
+    <string name="language_input_gesture_summary_off">Active Edge ጠፍቷል</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge በርቷል</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge በርቷል፣ የእርስዎን ረዳት ለማግኘት ጨመቅ ያድርጉ</string>
+    <string name="me_card_title">የእኔ Pixel</string>
+    <string name="my_device_info_account_preference_title">የGoogle መለያ</string>
+    <string name="owner_info_settings_edit_text_hint">ለምሳሌ፦ የአበበ Pixel</string>
+    <string name="reverse_charging_charging_wirelessly_message">ስልኩ ያለገመድ ኃይል እየሞላ ስለሆነ አይገኝም</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Pixel በጣም ስለጋለ ባትሪ አጋራ አይገኝም። ስልኩ እስከሚቀዘቅዝ ድረስ ይጠብቁ እና እንደገና ይሞክሩ።</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">ስልኩ ያለገማድ እየሞላ ስለሆነ ባትሪ አጋራ አይገኝም</string>
+    <string name="reverse_charging_detail_footer_title">ባትሪ አጋራ ሲጠቀሙ የስልክዎ ባትሪ በበለጠ ፍጥነት ያልቃል። ባትሪ አጋራ ተኳዃኝ ከሆኑ የጆሮ ማዳመጫዎች፣ የእጅ ሰዓቶች፣ ስልኮች እና ተጨማሪ ነገሮች ጋር ይሠራል። ለተሻለ ኃይል መሙላት የስልክዎን መያዣ ያስወግዱ።</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"ባትሪ አጋራ ተኳዃኝ ከሆኑ የጆሮ ማዳመጫዎች፣ ስልኮች እና ተጨማሪ ነገሮች ጋር ይሠራል።
+
+ይህን ባህሪ ሲጠቀሙ የእርስዎ ስልክ ባትሪ በፍጥነት ያልቃል። ሌላ መሣሪያ ተፈልጎ ካልተገኘ ከጥቂት ደቂቃዎች በኋላ ባትሪ አጋራ በራስ-ሰር ይጠፋል። ለተሻለ ኃይል መሙላት የስልክዎን መያዣ እና እንደ ብረት ዕቃዎች ያሉ ሊያስተጓጉልዎት የሚችሉ ሌሎች ንጥሎች ያስወግዱ።"</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">ባትሪ ቆጣቢ ስለበራ ባትሪ አጋራ አይገኝም</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">የUSB-C መሣሪያ ስለተሰካ ባትሪ አጋራ አይገኝም</string>
+    <string name="reverse_charging_instructions_title">"ሌሎች የመሣሪያዎችን ኃይል በእርስዎ PIxel ኃይል ይሙሉ።
+ለመሞከር ስልክዎን ይገልብጡት።"</string>
+    <string name="reverse_charging_is_off_summary">ጠፍቷል</string>
+    <string name="reverse_charging_is_on_and_charging_summary">ባትሪን ማጋራት እና የባትሪ ኃይል መሙላት</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">ባትሪን በማጋራት ላይ</string>
+    <string name="reverse_charging_is_on_summary">በርቷል / የሌሎች መሣሪያዎች ኃይል ይሙሉ</string>
+    <string name="reverse_charging_main_switch">ባትሪ አጋራን ፍቀድ</string>
+    <string name="reverse_charging_off_low_battery_summary">ጠፍቷል / የስልክ ባትሪ ከ%1$s በታች</string>
+    <string name="reverse_charging_off_sharing_level_summary">ጠፍቷል / ባትሪ ከማጋሪያ ደረጃ በታች ነው</string>
+    <string name="reverse_charging_overheat_summary">Pixel በጣም ስለጋለ አይገኝም። ስልኩ እስከሚቀዘቅዝ ድረስ ይጠብቁ እና እንደገና ይሞክሩ።</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">ባትሪ ቁጠባ ስለበራ አይገኝም</string>
+    <string name="reverse_charging_sharing_level_message">ባትሪ ከማጋሪያ ደረጃው በታች ስለሆነ አይገኝም</string>
+    <string name="reverse_charging_switch_summary">መሣሪያዎችን በእርስዎ Pixel ጀርባ ላይ ያስቀምጡ</string>
+    <string name="reverse_charging_switch_title">ሌሎች መሣሪያዎችን በእርስዎ Pixel ጀርባ ላይ በማስቀመጥ ኃይላቸውን ይሙሉ</string>
+    <string name="reverse_charging_switch_title_message">የሌሎች መሣሪያዎችን ኃይል ይሙሉ</string>
+    <string name="reverse_charging_title">ባትሪ አጋራ</string>
+    <string name="reverse_charging_unplug_usb_cable_message">የUSB-Cሲ መሣሪያ ስለተሰካ አይገኝም</string>
+    <string name="reverse_charging_warning_summary">ባትሪ ከ%1$s በታች ስለሆነ አይገኝም</string>
+    <string name="reverse_charging_warning_title">ባትሪ ከ%1$s በታች ስለሆነ ባትሪ አጋራ አይገኝም</string>
+    <string name="rtt_settings_always_visible">ሁልጊዜ ይታያል</string>
+    <string name="rtt_settings_no_visible">አይታይም</string>
+    <string name="rtt_settings_title">ቅጽበታዊ ጽሑፍ (አርቲቲ)</string>
+    <string name="rtt_settings_visible_during_call">በጥሪ ጊዜ ይታያል</string>
+    <string name="screen_time_summary_usage_today">%1$s ዛሬ</string>
+    <string name="search_bar_account_avatar_content_description">የመገለጫ ሥዕል፣ የGoogle መለያን ለመክፈት ሁለቴ መታ ያድርጉ</string>
+    <string name="security_advanced_settings">የላቁ ቅንብሮች</string>
+    <string name="security_dismiss_dialog_dismiss_button">አሰናብት</string>
+    <string name="security_dismiss_dialog_title">ይህ ማስጠንቀቂያ ይሰናበት?</string>
+    <string name="security_settings_face_enroll_education_message">በሚቀጥለው ማያ ገጽ ላይ ሁሉንም የመልክዎ ማዕዘኖች ለማግኘት ጭንቅላትዎን ያሽከርክሩት</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">በሚቀጥለው ማያ ገጽ ላይ ስልክዎን በዓይንዎ ልክ ይያዙት</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">የፊት ማስመዘገቢያ ጊዜ ገደብ ላይ ተደርሷል። እንደገና ይሞክሩ።</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">የበመልክ መክፈት ውቅረት ጊዜ አብቅቷል</string>
+    <string name="security_settings_face_enroll_finish_description">አሁን ስልክዎን ለመክፈት ወይም እንደ በመለያ ወደ መተግበሪያዎች ሲገቡ ወይም ግዢን ለማጽደቅ ላሉ እርስዎ መሆንዎን ለማረጋገጥ መልክዎን መጠቀም ይችላሉ</string>
+    <string name="security_settings_face_enroll_finish_title">ጥሩ ይመስላል!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">ለተገደበ እይታ ወይም የጭንቅላት እንቅስቃሴ ያቀናብሩ</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">በመልክ መክፈትን ሲጠቀሙ የእርስዎ ጭንቅላት ይበልጥ ከስልክዎ ፊት ለፊት መሆን ሊያስፈልገው ይችላል።</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">በዓይኖች መክፈትን ጠይቅ</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"እርስዎ እና ልጅዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ የመልክ ሞዴላቸውን መሰረዝ ወይም በመልክ መክፈትን ማጥፋት ትችላላችሁ። የመልክ ሞዴሎች እስኪሰረዙ ድረስ በስልኩ ላይ ይከማቻሉ።
+
+g.co/pixel/faceunlock ላይ የበለጠ ይወቁ።"</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">እርስዎ እና ልጅዎ ተቆጣጣሪ ናችሁ</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"በማንኛውም ጊዜ በቅንብሮች ውስጥ የእርስዎን የመልክ ሞዴልን መሰረዝ ወይም በመልክ መክፈትን ማጥፋት ይችላሉ። የመልክ ሞዴሎች እርስዎ እስኪሰርዟቸው ድረስ በስልኩ ላይ ይከማቻሉ።የመልክ ሞዴሎች እርስዎ እስኪሰርዟቸው ድረስ በስልኩ ላይ ይከማቻሉ።
+
+g.co/pixel/faceunlock ላይ የበለጠ ይወቁ።"</string>
+    <string name="security_settings_face_enroll_introduction_control_title">እርስዎ የሚቆጣጠሩት ነው</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"በመልክ መክፈት እነሱ መሆናቸውን ለማረጋገጥ ልዩ የልጅዎን መልክ ሞዴል ይፈጥራል። በማዋቀር ወቅት ይህን የመልክ ሞዴል ለመፍጠር ልጅዎ የመልካቸውን ምስሎች ከተለያዩ ማዕዘናት ያነሳሉ።
+
+በመልክ መክፈትን ሲጠቀሙ ምስሎች የመልክ ሞዴላቸውን ለማዘመን ስራ ላይ ይውላሉ። የመልክ ሞዴላቸውን ለመፍጠር ስራ ላይ የዋሉ ምስሎች በጭራሽ አይከማቹም፣ ነገር ግን የመልክ ሞዴሉ በስልኩ ላይ ደህንነቱ በተጠበቀ ሁኔታ የሚከማች ሲሆን በጭራሽ ከስልኩ አይወጣም። ሁሉም ሂደት በስልኩ ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከናወናል።"</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"እርስዎ መሆንዎን ለማረጋገጥ በመልክ መክፈት የመልክዎን ልዩ ሞዴልን ይፈጥራል። በሚያቀናብሩበት ጊዜ ይህን የመልክ ሞዴል ለመፍጠር እርስዎ የመልክዎን ምስሎች ከተለያዩ ማዕዘናት ያነሳሉ።
+
+በመልክ መክፈትን ሲጠቀሙ ምስሎች የመልክዎን ሞዴል ለማዘመን ስራ ላይ ይውላሉ። የመልክዎን ሞዴል ለመፍጠር ጥቅም ላይ የዋሉ ምስሎች በጭራሽ አይከማቹም፣ ነገር ግን የመልክ ሞዴሉ በስልክዎ ላይ ደህንነቱ በተጠበቀ ሁኔታ የሚከማች ሲሆን በጭራሽ ከስልኩ አይወጣም። ሁሉም ሂደት በስልክዎ ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከናወናል።"</string>
+    <string name="security_settings_face_enroll_introduction_how_title">እንዴት እንደሚሠራ</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">በመልክ መክፈት ስልኩን ለመክፈት ወይም እነሱ መሆናቸውን ለማረጋገጥ የልጅዎ ዓይኖች ክፍት እንዲሆኑ ሊጠይቅ ይችላል። እርስዎ እና ልጅዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ ይህንን አማራጭ ማብራት ይችላሉ።</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">ልጅዎ በመደበኛነት የዓይን መነፅር የሚያደርግ ከሆነ በሚያቀናብሩበት ጊዜ ሊያደርጓቸው ይችላሉ።</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">እነሱ ሳይፈልጉም እንኳ ስልኩን መመልከት ስልኩን ሊከፍተው ይችላል። ስልካቸው እንዲሁም እንደ ተመሳሳይ ወንድም/እህት ያለ እነሱን በጣም በሚመስል ሰው ወይም አንድ ሰው ፊታቸው ላይ ከያዘው ሊከፈት ይችላል።</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">በመልክ መክፈት ስልኩን ለመክፈት ወይም እርስዎ መሆንዎን ለማረጋገጥ የእርስዎ ዓይኖች ክፍት እንዲሆኑ ሊጠይቅ ይችላል። እርስዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ ይህንን አማራጭ ማብራት ይችላሉ።</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">መነጽር ወይም ትንሽ ቅልም ያላቸው የፀሐይ መነጽሮች ችግር የላቸውም።</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">ስልኩን ለመክፈት መልክን መጠቀም ከጠንካራ ስርዓተ-ጥለት ወይም ፒን ያነሰ ደህንነት ሊኖረው ይችላል።</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">እርስዎ ሳይፈልጉም እንኳ ስልኩን መመልከት ስልኩን ሊከፍተው ይችላል። ስልክዎ እንዲሁም እንደ ተመሳሳይ ወንድም/እህት ያለ እርስዎን በጣም በሚመስል ሰው ወይም አንድ ሰው ፊትዎ ላይ ከያዘው ሊከፈት ይችላል።</string>
+    <string name="security_settings_face_enroll_introduction_info_title">ከግምት ውስጥ ያስገቡ</string>
+    <string name="security_settings_face_enroll_introduction_message">እንደ ወደ መተግበሪያዎች ሲገቡ ወይም ግዢን ሲያጸድቁ ስልክዎን ለመክፈት ወይም እርስዎ መሆንዎን ለማረጋገጥ መልክዎን ይጠቀሙ።</string>
+    <string name="security_settings_face_enroll_introduction_title">በመልክ መክፈትን አቀናብር</string>
+    <string name="security_settings_face_enroll_next">ቀጣይ</string>
+    <string name="security_settings_face_enroll_partial_message">አፈጻጸምን ለማሻሻል በቅንብሮች ውስጥ በመልክ መክፈትን እንደገና ማዋቀር ይችላሉ</string>
+    <string name="security_settings_face_enroll_partial_start_over">እንደገና ጀምር</string>
+    <string name="security_settings_face_enroll_partial_title">በመልክ መክፈትን ማዋቀር አልቋል</string>
+    <string name="security_settings_face_enroll_timeout_message">"በምትኩ ፈጣን ማዋቀርን ይሞክሩ። በመልክ መክፈትን በሚጠቀሙበት ጊዜ የእርስዎ ጭንቅላት ይበልጥ ከስልክዎ ፊት ለፊት መሆን ሊያስፈልገው እንደሚችል ከግምት ውስጥ ያስገቡ።
+
+አፈጻጸምን ለማሻሻል በቅንብሮች ውስጥ በመልክ መክፈትን እንደገና ማዋቀር ይችላሉ።"</string>
+    <string name="security_settings_face_enroll_timeout_title">ማቀናበርን መቀጠል አልተቻለም</string>
+    <string name="security_settings_face_enroll_timeout_try_again">እንደገና ሞክር</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">ፈጣን ቅንብርን ይጠቀሙ</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">ከማቀናበር ውጣ</string>
+    <string name="security_settings_face_enroll_too_hot_message">ስልኩ ስለጋለ በመልክ መክፈትን ማዋቀር ሊጠናቀቅ አይችልም። በኋላ ስልኩ ሲቀዘቅዝ እንደገና ይሞክሩ።</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">በመልክ መክፈትን ዝለል</string>
+    <string name="security_settings_face_enroll_too_hot_title">ስልኩ ግሏል</string>
+    <string name="security_settings_fingerprint_preference_summary_none">የጣት አሻራን ለማቀናበር መታ ያድርጉ</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">g.co/pixel/fingerprintunlock ላይ የበለጠ ይወቁ።</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint ለሥራ</string>
+    <string name="setup_suggestion_summary">ውሂብን ይቅዱ፣ በስልክዎ ይክፈሉ እና ሌሎችንም ያድርጉ</string>
+    <string name="setup_suggestion_title">ማዋቀር ይጨርሱ</string>
+    <string name="smart_battery_footer">የባትሪ ዕድሜን ለማራዘም የተስማሚ ባትሪ የአፈፃፀምን እና የጀርባ እንቅስቃሴን ሊቀንስ ይችላል። አንዳንድ ማሳወቂያዎች ሊዘገዩ ይችላሉ</string>
+    <string name="smart_battery_manager_title">ተስማሚ ምርጫዎች</string>
+    <string name="smart_battery_title">ተለማማጅ ባትሪ</string>
+    <string name="sound_dashboard_summary">የድምጽ መጠን፣ ረቂቅ ንዝረት፣ አትረብሽ</string>
+    <string name="sound_settings">ድምጽ እና ንዝረት</string>
+    <string name="storage_manager_indicator">ዘመናዊ ማከማቻ፦ ^1</string>
+    <string name="time_remaining_warning_subtext">ባለፈ አጠቃቀም ላይ በመመርኮዝ ወደ %1$s ገደማ ቀርቷል</string>
+    <string name="time_remaining_warning_text">ባትሪ በጣም በቅርቡ ሊያልቅ ይችል ይሆናል</string>
+    <string name="tips_suggestion_summary">በስልክዎ ምን ማድረግ እንደሚችሉ ያስሱ</string>
+    <string name="tips_suggestion_title">ከእርስዎ Pixel ጋር ይተዋወቁ</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">ስልክ ከፊትዎ ፊት ለፊት ይያዙ</string>
+    <string name="usb_use_file_transfers">ፋይል ማስተላለፍ / ራስሰር Android</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">ስልክ ጸጥ እንዲል ተደርጎ ስለተቀናበረ ለስልክ ጥሪዎች መንዘር አይገኝም</string>
+    <string name="vibration_haptics_settings_not_available_title">የለም</string>
+    <string name="wallpaper_dashboard_summary">ቀለሞች፣ ገጽታ ያላቸው አዶዎች፣ የመተግበሪያ ፍርግርግ</string>
+    <string name="wifi_subscription_summary">የOpenRoaming ደንበኝነት ምዝገባን ይመልከቱ ወይም ይቀይሩ</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">ከ%1$s ጋር ተገናኝቷል</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">ለማገናኘት መታ ያድርጉ</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">መገናኘት አልቻለም። እንደገና ለመሞከር መታ ያድርጉ።</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">በመገናኘት ላይ…</string>
+</resources>

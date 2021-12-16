@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="game_mode_screen"
+    android:title="@string/extra_app_info_label"
+    settings:controller="com.google.android.settings.gamemode.GameModeController">
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="game_mode_header"
+        android:layout="@layout/settings_entity_header"
+        android:selectable="false"
+        settings:allowDividerBelow="true"
+        settings:controller="com.google.android.settings.gamemode.GameModeHeaderController" />
+
+    <com.android.settings.applications.SpacePreference
+        android:layout_height="0.0dip"
+        settings:allowDividerAbove="true" />
+
+    <com.android.settingslib.widget.RadioButtonPreference
+        android:key="game_mode_performance"
+        android:summary="@string/game_mode_performance_description"
+        android:title="@string/game_mode_performance_title" />
+
+    <com.android.settingslib.widget.RadioButtonPreference
+        android:key="game_mode_standard"
+        android:summary="@string/game_mode_standard_description"
+        android:title="@string/game_mode_standard_title" />
+
+    <com.android.settingslib.widget.RadioButtonPreference
+        android:key="game_mode_battery"
+        android:summary="@string/game_mode_battery_description"
+        android:title="@string/game_mode_battery_title" />
+
+</PreferenceScreen>

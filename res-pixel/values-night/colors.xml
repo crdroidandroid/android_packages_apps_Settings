@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <color name="contextual_card_background">#ff202124</color>
+    <color name="contextual_card_dismissal_background">#ff3c4043</color>
+    <color name="face_enroll_indicator">#ff8ab4f8</color>
+    <color name="security_green">#ff5bb974</color>
+    <color name="security_red">#ffee675c</color>
+    <color name="security_status_unfilled_wedge">#ff3c4043</color>
+    <color name="security_yellow">#fffcc934</color>
+    <color name="dialog_background">#ff3c4043</color>
+</resources>

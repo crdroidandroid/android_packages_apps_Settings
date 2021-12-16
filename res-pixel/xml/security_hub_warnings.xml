@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="security_hub_warnings"
+    android:title="@string/security_settings_title">
+
+    <PreferenceCategory
+        android:key="security_hub_warnings_category"
+        android:title="@string/summary_placeholder"
+        settings:searchable="false" />
+
+</PreferenceScreen>

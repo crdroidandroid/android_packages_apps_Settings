@@ -72,26 +72,25 @@
 
         <Preference
             android:fragment="com.android.settings.accessibility.TapAssistanceFragment"
-            android:key="tap_assistance_preference_screen"
             android:icon="@drawable/ic_tap_assistance"
+            android:key="tap_assistance_preference_screen"
             android:persistent="false"
             android:title="@string/accessibility_tap_assistance_title"
-            settings:searchable="true"/>
+            settings:searchable="true" />
 
         <Preference
             android:fragment="com.android.settings.accessibility.SystemControlsFragment"
-            android:key="system_controls_preference_screen"
             android:icon="@drawable/ic_system_controls"
+            android:key="system_controls_preference_screen"
             android:title="@string/accessibility_system_controls_title"
-            settings:searchable="true"/>
+            settings:searchable="true" />
 
-        <Preference
-            android:fragment="com.android.settings.accessibility.VibrationSettings"
-            android:key="vibration_preference_screen"
+        <com.google.android.settings.accessibility.HapticsDialogPreference
             android:icon="@drawable/ic_vibration"
+            android:key="vibration_preference_screen"
             android:persistent="false"
             android:title="@string/accessibility_vibration_settings_title"
-            settings:controller="com.android.settings.accessibility.VibrationPreferenceController"/>
+            settings:controller="com.google.android.settings.accessibility.VibrationPreferenceController" />
 
     </PreferenceCategory>
 

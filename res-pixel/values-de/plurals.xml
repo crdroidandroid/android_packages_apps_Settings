@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">%1$d Warnungen anzeigen</item>
+        <item quantity="one">%1$d Warnung anzeigen</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">%1$d Warnungen</item>
+        <item quantity="one">%1$d Warnung</item>
+    </plurals>
+</resources>

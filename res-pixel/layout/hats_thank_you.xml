@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.material.autoresizetext.AutoResizeTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/hats_lib_thank_you"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:alpha="0.0"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:maxLines="3"
+    android:padding="8.0dip"
+    android:text="@string/hats_lib_default_thank_you"
+    android:textAppearance="@style/HatsLibThankYouTextStyle"
+    android:textSize="20.0sp"
+    android:visibility="gone" />

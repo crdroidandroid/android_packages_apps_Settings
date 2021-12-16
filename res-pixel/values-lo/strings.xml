@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">ໜ້າຈໍລັອກຢູ່ລ້າໆ</string>
+    <string name="gesture_silence_title">ທ່າທາງການເຕືອນແບບງຽບ</string>
+    <string name="gesture_skip_title">ຂ້າມທ່າທາງ</string>
+    <string name="keywords_touch_sensitivity">ສຳຜັດ, ຄວາມລະອຽດອ່ອນ, ລະອຽດອ່ອນ, ຕົວປົກປ້ອງໜ້າຈໍ, ຟີມ, ຕອບສະໜອງ, ການຕອບສະໜອງ</string>
+    <string name="touch_sensitivity_summary">ປັບປຸງການສຳຜັດເມື່ອໃຊ້ຕົວປົກປ້ອງໜ້າຈໍ</string>
+    <string name="touch_sensitivity_title">ເພີ່ມຄວາມລະອຽດອ່ອນໃນການສຳຜັດ</string>
+    <string name="accessibility_vibration_settings_screen_title">ໃຊ້ການສັ່ນເຕືອນ ແລະ ການຕອບສະໜອງ</string>
+    <string name="vibration_haptics_settings_not_available_summary">ການສັ່ນເຕືອນ ແລະ ການຕອບສະໜອງບໍ່ສາມາດໃຊ້ໄດ້ເນື່ອງຈາກໂທລະສັບຖືກຕັ້ງໃຫ້ປິດສຽງຢູ່</string>
+    <string name="vibration_haptics_strength_category_title">ຄວາມແຮງການສັ່ນເຕືອນ ແລະ ການຕອບສະໜອງ</string>
+    <string name="accessibility_vibration_settings_title">ການສັ່ນເຕືອນ ແລະ ການຕອບສະໜອງ</string>
+    <string name="columbus_title">ການແຕະດ່ວນເພື່ອເລີ່ມຄຳສັ່ງ</string>
+    <string name="vibrate_for_calls_category_title">ການໂທ</string>
+    <string name="accessibility_alarm_vibration_title">ການສັ່ນເຕືອນໂມງປຸກ</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">ຕັ້ງຄ່າ Active Edge. ໄປທີ່ໜ້າຈໍຖັດໄປ ຫຼື ສືບຕໍ່ປັບແຕ່ງ.</string>
+    <string name="accessibility_keyboard_haptics_title">ການຕອບສະໜອງແປ້ນພິມ</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">ການສາກໄຟແບບປັບອັດຕະໂນມັດ</string>
+    <string name="adaptive_charging_description">ສາກໄຟຢ່າງຕໍ່ເນື່ອງຂ້າມຄືນເພື່ອຖະໜອມອາຍຸແບັດເຕີຣີໃຫ້ໃຊ້ໄດ້ຍາວນານ. ໃຊ້ໂມງປຸກເພື່ອໃຫ້ລະບົບສາກໄຟແລ້ວກ່ອນທີ່ທ່ານຈະຕື່ນ.</string>
+    <string name="adaptive_charging_time_estimate"><b>ກຳລັງສາກໄຟແບບປັບອັດຕະໂນມັດ</b> • ຈະເຕັມພາຍໃນ %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">ການຕັ້ງຄ່າ</annotation></string>
+    <string name="app_and_notification_dashboard_summary">ຜູ້ຊ່ວຍ, ແອັບຫຼ້າສຸດ, ແອັບເລີ່ມຕົ້ນ</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">ສືບຕໍ່ໄປທີ່ຜູ້ຊ່ວຍ</string>
+    <string name="assist_gesture_enrollment_do_it_later">ເຮັດໃນພາຍຫຼັງ</string>
+    <string name="assist_gesture_enrollment_seekbar_light">ບີບຄ່ອຍໆ</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">ບີບແຮງໆ</string>
+    <string name="assist_gesture_enrollment_settings">ການຕັ້ງຄ່າ</string>
+    <string name="assist_gesture_setting_enable_assistant_text">ເພື່ອລົມກັບຜູ້ຊ່ວຍຂອງທ່ານ, ໃຫ້ບີບເຄິ່ງລຸ່ມຂອງໂທລະສັບທ່ານ, ຈາກນັ້ນປ່ອຍ</string>
+    <string name="assist_gesture_setting_enable_assistant_title">ບີບເພື່ອເອີ້ນຜູ້ຊ່ວຍ</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">ບີບເພື່ອປິດສຽງໂມງປຸກ, ໂມງນັບຖອຍຫຼັງ, ການແຈ້ງເຕືອນ ແລະ ສາຍໂທເຂົ້າ</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">ບີບເພື່ອປິດສຽງການແຈ້ງເຕືອນ ແລະ ສາຍໂທເຂົ້າ</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">ບີບໂທລະສັບຂອງທ່ານເພື່ອປິດສຽງໂທລະສັບ</string>
+    <string name="assist_gesture_setting_enable_wake_title">ເປີດຜູ້ຊ່ວຍເມື່ອປິດໜ້າຈໍ</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">ບີບຄ່ອຍໆ</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">ບີບແຮງໆ</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">ຄວາມແຮງການບີບ</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">ອາດເອີ້ນຜູ້ຊ່ວຍໂດຍບໍ່ໄດ້ຕັ້ງໃຈ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">ບີບເຄິ່ງລຸ່ມຂອງໂທລະສັບທ່ານ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">ບີບໄວຂຶ້ນ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">ບີບໃຫ້ຫຼາຍຂຶ້ນ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">ບີບໄວໆຈາກນັ້ນປ່ອຍ</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">ໃຫ້ລອງປັບແຕ່ງຕົວເລື່ອນ</string>
+    <string name="assist_gesture_training_enrolling_text">ບີບເຄິ່ງລຸ່ມຂອງໂທລະສັບທ່ານ. ທ່ານສາມາດປັບລະດັບຄວາມແຮງທີ່ໃຊ້ໃນການບີບໄດ້.</string>
+    <string name="assist_gesture_training_enrolling_title">ບີບໄວໆແລ້ວວາງ</string>
+    <string name="assist_gesture_training_finished_text">ທ່ານສາມາດປ່ຽນລະດັບຄວາມແຮງຂອງການບີບໄດ້ໃນພາຍຫຼັງຢູ່ການຕັ້ງຄ່າ</string>
+    <string name="assist_gesture_training_finished_title">ສຳເລັດການຕັ້ງຄ່າ ຫຼື ປັບແຕ່ງເພີ່ມເຕີມ</string>
+    <string name="assist_gesture_training_intro_text">ເພື່ອລົມກັບຜູ້ຊ່ວຍຂອງທ່ານໄດ້ທຸກເວລາ, ໃຫ້ບີບເຄິ່ງລຸ່ມຂອງໂທລະສັບທ່ານ ຈາກນັ້ນປ່ອຍ</string>
+    <string name="assist_gesture_training_intro_title">ບີບເພື່ອເອີ້ນຜູ້ຊ່ວຍ</string>
+    <string name="assist_gesture_training_suggestion_summary">ລົມກັບຜູ້ຊ່ວຍ, ປິດສຽງສາຍໂທເຂົ້າ</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">ລົມກັບຜູ້ຊ່ວຍ, ປິດສຽງໂມງປຸກ ແລະ ສຽງສາຍໂທເຂົ້າ</string>
+    <string name="assist_gesture_training_suggestion_title">ບີບແລ້ວປ່ອຍເພື່ອເອີ້ນຜູ້ຊ່ວຍ</string>
+    <string name="automatic_storage_manager_activation_warning">ເມື່ອທ່ານເຊື່ອມຕໍ່ແລ້ວ, ທ່ານຈະຍັງສາມາດເຂົ້າເຖິງຮູບພາບ ແລະ ວິດີໂອທີ່ລະດັບຄຸນນະພາບທີ່ທ່ານເລືອກໃຫ້ສຳລັບການສຳຮອງຂໍ້ມູນໄດ້</string>
+    <string name="automatic_storage_manager_days_title">ລຶບຮູບພາບ ແລະ ວິດີໂອທີ່ສຳຮອງຂໍ້ມູນແລ້ວອອກ</string>
+    <string name="automatic_storage_manager_deactivation_warning">"ປິດການໃຊ້ບ່ອນຈັດເກັບຂໍ້ມູນອັດສະລິຍະບໍ? 
+
+ບ່ອນຈັດເກັບຂໍ້ມູນອັດສະລິຍະຈະບໍ່ສ້າງບ່ອນຫວ່າງເມື່ອພື້ນທີ່ຈັດເກັບຂໍ້ມູນຂອງທ່ານໃກ້ເຕັມແລ້ວ."</string>
+    <string name="automatic_storage_manager_downloads_days_title">ສຳຮອງຂໍ້ມູນການດາວໂຫລດແລ້ວ</string>
+    <string name="automatic_storage_manager_preference_title">ບ່ອນຈັດເກັບຂໍ້ມູນອັດສະລິຍະ</string>
+    <string name="automatic_storage_manager_primary_switch_title">ໃຊ້ບ່ອນຈັດເກັບຂໍ້ມູນອັດສະລິຍະ</string>
+    <string name="automatic_storage_manager_settings">ບ່ອນຈັດເກັບຂໍ້ມູນອັດສະລິຍະ</string>
+    <string name="automatic_storage_manager_text">ເມື່ອພື້ນທີ່ຈັດເກັບຂໍ້ມູນໃກ້ຈະເຕັມແລ້ວ, ໃຫ້ລຶບຮູບພາບ ແລະ ວິດີໂອທີ່ສຳຮອງຂໍ້ມູນແລ້ວອອກ. ທ່ານຍັງຄົງສາມາດຊອກຫາພວກມັນໄດ້ຈາກ Google ຮູບພາບໄດ້ຄືເກົ່າ.</string>
+    <string name="aware_disabled_preference_action">ເປີດ</string>
+    <string name="aware_disabled_preference_neutral">ບໍ່ຟ້າວເທື່ອ</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">ບໍ່ສາມາດໃຊ້ Motion Sense ໄດ້ເນື່ອງຈາກເປີດໂໝດຢູ່ໃນຍົນ ແລະ ເປີດຕົວປະຢັດ​ແບັດເຕີຣີ</string>
+    <string name="aware_footer_when_airplane_on">ບໍ່ສາມາດໃຊ້ Motion Sense ໄດ້ເນື່ອງຈາກເປີດໂໝດຢູ່ໃນຍົນ</string>
+    <string name="aware_footer_when_batterysaver_on">ບໍ່ສາມາດໃຊ້ Motion Sense ໄດ້ເນື່ອງຈາກເປີດຕົວປະຢັດ​ແບັດເຕີຣີ</string>
+    <string name="aware_gesture_summary_off">ເປີດໃຊ້ທ່າທາງດ່ວນແລ້ວ, ປິດ Active Edge ແລ້ວ</string>
+    <string name="aware_gesture_summary_on_non_assist">ເປີດໃຊ້ທ່າທາງດ່ວນແລ້ວ, ເປີດໃຊ້ Active Edge ແລ້ວ</string>
+    <string name="aware_gesture_summary_on_with_assist">ເປີດໃຊ້ທ່າທາງດ່ວນແລ້ວ, ເປີດໃຊ້ Active Edge ແລ້ວ, ບີບເພື່ອເອີ້ນຜູ້ຊ່ວຍຂອງທ່ານ</string>
+    <string name="aware_info_button_description">ການຕັ້ງຄ່າເພີ່ມເຕີມ</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">ບໍ່ສາມາດໃຊ້ໄດ້ເນື່ອງຈາກເປີດໂໝດຢູ່ໃນຍົນ ແລະ ເປີດຕົວປະຢັດ​ແບັດເຕີຣີ</string>
+    <string name="aware_summary_when_airplane_on">ບໍ່ສາມາດໃຊ້ໄດ້ເນື່ອງຈາກເປີດໂໝດຢູ່ໃນຍົນ</string>
+    <string name="aware_summary_when_batterysaver_on">ບໍ່ສາມາດໃຊ້ໄດ້ເນື່ອງຈາກເປີດຕົວປະຢັດ​ແບັດເຕີຣີ</string>
+    <string name="backup_data_summary">ສຳຮອງຂໍ້ມູນແອັບ, ລະຫັດຜ່ານ Wi-Fi ແລະ ການຕັ້ງຄ່າອື່ນໆໄວ້ໃນເຊີບເວີຂອງ Google</string>
+    <string name="backup_suggestion_cancel">ຍົກເລີກ</string>
+    <string name="backup_suggestion_dialog_description">"This will delete all data from your phone's internal storage."</string>
+    <string name="backup_suggestion_dialog_title">Reset this device?</string>
+    <string name="backup_suggestion_get_started">ສຶກສາເພີ່ມເຕີມ</string>
+    <string name="backup_suggestion_item_summary">ສຳເນົາຈາກ Android ຫຼື iPhone®</string>
+    <string name="backup_suggestion_item_title">ບໍ່ມີຂໍ້ມູນຈາກໂທລະສັບເກົ່າຂອງທ່ານບໍ?</string>
+    <string name="backup_suggestion_missing_description">"ຫາກທ່ານບໍ່ເຫັນຂໍ້ມູນບາງຢາງຂອງທ່ານ ເຊັ່ນ: ຂໍ້ຄວາມ SMS ແລະ ຮູບພາບ, ທ່ານສາມາດໂອນຍ້າຍມັນໄປໃສ່ Pixel ຂອງທ່ານໂດຍໃຊ້ສາຍໄດ້.
+
+ເພື່ອເລີ່ມຕົ້ນ, Pixel ຂອງທ່ານຈະຕ້ອງຖືກຣີເຊັດກ່ອນ. ຂໍ້ມູນທັງໝົດໃນໂທລະສັບໜ່ວຍນີ້ຮວມທັງການຕັ້ງຄ່າ ແລະ ເນື້ອຫາທີ່ຍັງບໍ່ໄດ້ຊິ້ງຂໍ້ມູນໄປໃສ່ຄລາວຈະຖືກລຶບອອກ."</string>
+    <string name="backup_suggestion_missing_title">Missing your data?</string>
+    <string name="backup_suggestion_next">ຕໍ່ໄປ</string>
+    <string name="backup_suggestion_other_ways_to_copy">ວິທີອື່ນໆໃນການສຳເນົາຂໍ້ມູນ</string>
+    <string name="backup_suggestion_reset_description">"ໃນໜ້າຈໍຖັດໄປ, ທ່ານສາມາດຣີເຊັດ Pixel ຂອງທ່ານໄດ້. ນີ້ເປັນວິທີດຽວທີ່ຈະໂອນຍ້າຍໂດຍໃຊ້ສາຍ.
+
+ເມື່ອຣີເຊັດແລ້ວ, ໃຫ້ເຮັດຕາມຂັ້ນຕອນການຕັ້ງຄ່າ ແລ້ວເລືອກດຶງຂໍ້ມູນມາຈາກໂທລະສັບເຄື່ອງເກົ່າຂອງທ່ານ."</string>
+    <string name="backup_suggestion_reset_title">ຣີເຊັດ Pixel ຂອງທ່ານ</string>
+    <string name="backup_suggestion_what_is_needed_summary">"ຫຼັງຈາກຣີເຊັດໂທລະສັບຂອງທ່ານແລ້ວ, ທ່ານຈະຕ້ອງ:
+
+• ໂທລະສັບໜ່ວນເກົ່າຂອງທ່ານ (LINK_BEGINໂທລະສັບສ່ວນໃຫຍ່LINK_END ທີ່ໃຊ້ Android 5.0+ ຫຼື iOS® 8.0+ ແມ່ນຮອງຮັບ)
+• ສາຍສາກ ຫຼື ສາຍຂໍ້ມູນສຳລັບໂທລະສັບໜ່ວຍເກົ່າຂອງທ່ານ
+• Quick Switch Adapter ທີ່ມາພ້ອມກັບ Pixel ຂອງທ່ານ"</string>
+    <string name="backup_suggestion_what_is_needed_title">"What you'll need"</string>
+    <string name="battery_manager_summary">ຍືດອາຍຸແບັດເຕີຣີ ແລະ ເພີ່ມປະສິດທິພາບການສາກໄຟ</string>
+    <string name="battery_manager_summary_unsupported">ຂະຫຍາຍອາຍຸແບັດເຕີຣີ</string>
+    <string name="battery_missing_link_message">ສຶກສາເພີ່ມເຕີມ</string>
+    <string name="battery_suggestion_summary">ເປີດໃຊ້ແບັດເຕີຣີແບບປັບຕົວໄດ້</string>
+    <string name="battery_tip_smart_battery_summary">ເປີດໃຊ້ແບັດເຕີຣີແບບປັບຕົວໄດ້</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s ຈະບໍ່ຖືກຈັບຄູ່ກັບອຸປະກອນໃດທີ່ເຊື່ອມຕໍ່ຫາບັນຊີ Google ນີ້ອີກຕໍ່ໄປ</string>
+    <string name="columbus_gesture_detected">ກວດພົບການແຕະດ່ວນ!</string>
+    <string name="columbus_gesture_enrollment_complete">ແລ້ວໆ</string>
+    <string name="columbus_gesture_enrollment_do_it_later">ບໍ່ຟ້າວເທື່ອ</string>
+    <string name="columbus_gesture_enrollment_settings">ໄປຫາການຕັ້ງຄ່າ</string>
+    <string name="columbus_gesture_enrollment_try_it">ລອງໃຊ້ເບິ່ງ</string>
+    <string name="columbus_gesture_training_action_no_selection_error">ກະລຸນາເລືອກຄຳສັ່ງເພື່ອດຳເນີນການ</string>
+    <string name="columbus_gesture_training_action_text">ເລືອກວ່າຈະເກີດຫຍັງຂຶ້ນເມື່ອທ່ານໃຊ້ການແຕະດ່ວນ. ທ່ານສາມາດປ່ຽນສິ່ງນີ້ໄດ້ພາຍຫຼັງໃນການຕັ້ງຄ່າ.</string>
+    <string name="columbus_gesture_training_action_title">ເລືອກຕົວເລືອກການແຕະດ່ວນ</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… ກວດພົບການແຕະ​ສອງ​ເທື່ອເທື່ອທີ 1 ຈາກທັງໝົດ 2 ເທື່ອ</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">ລອງເຮັດອີກເທື່ອໜຶ່ງ. ແຕະໄວໆໃສ່ທາງຫຼັງໂທລະສັບຂອງທ່ານສອງເທື່ອ.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">ດີ!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… ກວດພົບການແຕະ​ສອງ​ເທື່ອເທື່ອທີ 2 ຈາກທັງໝົດ 2 ເທື່ອ</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">ທ່ານພ້ອມເລີ່ມການນຳໃຊ້ການແຕະດ່ວນແລ້ວ</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">ທ່ານເຮັດໄດ້ແລ້ວ!</string>
+    <string name="columbus_gesture_training_enrolling_text">ແຕະໄວໆໃສ່ທາງຫຼັງໂທລະສັບຂອງທ່ານສອງເທື່ອ.</string>
+    <string name="columbus_gesture_training_enrolling_title">ລອງໃຊ້ການແຕະດ່ວນ</string>
+    <string name="columbus_gesture_training_finished_text">ເພື່ອປ່ຽນຄວາມແຮງການແຕະທີ່ຈຳເປັນຕ້ອງໃຊ້ການແຕະດ່ວນ, ໃຫ້ເຂົ້າໄປຫາການຕັ້ງຄ່າ.</string>
+    <string name="columbus_gesture_training_finished_title">ທ່ານຕັ້ງຄ່າການແຕະດ່ວນແລ້ວ</string>
+    <string name="columbus_gesture_training_intro_text_accidental">ທ່ານໄດ້ແຕະສອງເທື່ອໃສ່ທາງຫຼັງອຸປະກອນຂອງທ່ານແລ້ວ, ເຊິ່ງຈະເຮັດໃຫ້ທ່ານສາມາດໃຊ້ຜູ້ຊ່ວຍຂອງທ່ານໃນລະຫວ່າງເດີນທາງໄດ້. ທ່ານສາມາດປັບແຕ່ງທ່າທາງນີ້ໄດ້ໃນການຕັ້ງຄ່າ.</string>
+    <string name="columbus_gesture_training_intro_text_suw">ຖ່າຍຮູບໜ້າຈໍ, ສະແດງການແຈ້ງເຕືອນ ຫຼື ເລີ່ມຄຳສັ່ງອື່ນໄດ້ດ້ວຍການແຕະສອງເທື່ອ.</string>
+    <string name="columbus_gesture_training_intro_title">ການແຕະດ່ວນສຳລັບຄຳສັ່ງດ່ວນ</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">ກະລຸນາເລືອກແອັບເພື່ອເປີດ</string>
+    <string name="columbus_gesture_training_launch_text">ເລືອກແອັບທີ່ທ່ານຕ້ອງການເປີດເມື່ອທ່ານໃຊ້ການແຕະດ່ວນ.</string>
+    <string name="columbus_gesture_training_launch_title">ເລືອກແອັບເພື່ອເປີດ</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">ການຕັ້ງຄ່າທາງລັດ %1$s</string>
+    <string name="columbus_launch_settings_activity_title">ການຕັ້ງຄ່າການແຕະດ່ວນ</string>
+    <string name="columbus_name">ການແຕະດ່ວນ</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">ການຕັ້ງຄ່າ %1$s</string>
+    <string name="columbus_setting_action_assistant_title">ເຂົ້າເຖິງຜູ້ຊ່ວຍດິຈິຕອນຂອງທ່ານ</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">ບໍ່ໄດ້ເລືອກແອັບ</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">ບໍ່ໄດ້ຕິດຕັ້ງແອັບ</string>
+    <string name="columbus_setting_action_launch_title">ເປີດແອັບ</string>
+    <string name="columbus_setting_action_notification_title">ສະແດງການແຈ້ງເຕືອນ</string>
+    <string name="columbus_setting_action_open_app_title">ເປີດແອັບ</string>
+    <string name="columbus_setting_action_overview_title">ເບິ່ງແອັບຫຼ້າສຸດ</string>
+    <string name="columbus_setting_action_play_pause_title">ຫຼິ້ນ ຫຼື ຢຸດມີເດຍຊົ່ວຄາວ</string>
+    <string name="columbus_setting_action_screenshot_title">ຖ່າຍຮູບໜ້າຈໍ</string>
+    <string name="columbus_setting_actions_title">ແຕະທາງຫຼັງຂອງໂທລະສັບສອງເທື່ອເພື່ອ</string>
+    <string name="columbus_setting_additional_settings_title">ຄວາມແຮງການແຕະດ່ວນ</string>
+    <string name="columbus_setting_app_selection_help_text">ເລືອກແອັບເພື່ອເປີດເມື່ອທ່ານແຕະທາງຫຼັງຂອງໂທລະສັບຂອງທ່ານສອງເທື່ອ. ຫາກທ່ານຖອນການຕິດຕັ້ງແອັບ, ການແຕະດ່ວນຈະຖືກປິດໄວ້ຈົນກວ່າທ່ານຈະເລືອກແອັບອື່ນ.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">ເລືອກສິ່ງທີ່ຈະເກີດຂຶ້ນເມື່ອທ່ານເປີດແອັບນີ້ໂດຍໃຊ້ການແຕະດ່ວນ.</string>
+    <string name="columbus_setting_enable_switch_title">ໃຊ້ການແຕະດ່ວນ</string>
+    <string name="columbus_setting_sensitivity_title">ຕ້ອງແຕະແຮງຂຶ້ນ</string>
+    <string name="connectivity_helper_call_quality_category">ຄຸນນະພາບການໂທ</string>
+    <string name="connectivity_helper_call_quality_summary">ຮັບການແຈ້ງເຕືອນກ່ຽວກັບສາຍເຫດຂອງບັນຫາການເຊື່ອມຕໍ່ໃນລະຫວ່າງການໂທ</string>
+    <string name="connectivity_helper_call_quality_title">ຮັບການແຈ້ງເຕືອນ</string>
+    <string name="connectivity_helper_d2d_summary">ແຈ້ງເຕືອນຄົນອື່ນເມື່ອໂທລະສັບຂອງທ່ານມີບັນຫາການເຊື່ອມຕໍ່ໃນລະຫວ່າງການໂທ</string>
+    <string name="connectivity_helper_d2d_title">ແບ່ງປັນຂໍ້ມູນການເຊື່ອມຕໍ່</string>
+    <string name="connectivity_helper_footnote">ທ່ານສາມາດແບ່ງປັນຂໍ້ມູນການເຊື່ອມຕໍ່ໄດ້ໃນເວລາທີ່ຜູ້ໂທອື່ນກຳລັງໃຊ້ອຸປະກອນ ແລະ ເຄືອຂ່າຍທີ່ຮອງຮັບ</string>
+    <string name="content_capture">ປັບແຕ່ງໃຫ້ເປັນສ່ວນຕົວໂດຍໃຊ້ຂໍ້ມູນແອັບ</string>
+    <string name="copy_toast_msg">ສຳເນົາລິ້ງໃສ່ຄລິບບອດແລ້ວ</string>
+    <string name="dark_ui_text">ຮູບແບບສີສັນມືດຈະໃຊ້ພື້ນຫຼັງສີດຳເພື່ອຊ່ວຍເຮັດໃຫ້ແບັດເຕີຣີຂອງທ່ານຢູ່ໄດ້ດົນຂຶ້ນ. ກຳນົດເວລາຮູບແບບສີສັນມືດຈະລໍຖ້າເປີດຈົນກວ່າໜ້າຈໍຂອງທ່ານຈະປິດ.</string>
+    <string name="dock_summary_charging_phone">ກຳລັງສາກໄຟໂທລະສັບ</string>
+    <string name="double_twist_for_camera_mode_summary">ເພື່ອສະຫຼັບເຂົ້າ ແລະ ອອກຈາກໂໝດເຊວຟີໃນກ້ອງຖ່າຍຮູບ Google, ໃຫ້ບິດມືຖືສອງເທື່ອເມື່ອທ່ານຢູ່ໃນແອັບກ້ອງ.</string>
+    <string name="downloads_backup_text">ໄຟລ໌ທີ່ດາວໂຫລດມາຈະຖືກສຳຮອງຂໍ້ມູນໄວ້ໃນ Google Drive</string>
+    <string name="duration_less_than_one_minute">ໜ້ອຍກວ່າ 1 ນາທີ</string>
+    <string name="extra_app_info_label">ການເພີ່ມປະສິດທິພາບເກມ</string>
+    <string name="face_enrolling_center_head">ເລື່ອນໜ້າຂອງທ່ານມາໄວ້ໃນຂອບທາງໃນ</string>
+    <string name="face_enrolling_description">ບັນທຶກທຸກມຸມຂອງໃບໜ້າທ່ານໂດຍການລຶບເອົາແຜ່ນອອກ.</string>
+    <string name="face_enrolling_do_it_later">ເຮັດໃນພາຍຫຼັງ</string>
+    <string name="face_enrolling_gaze_dialog_cancel">ຍົກເລີກ</string>
+    <string name="face_enrolling_gaze_dialog_continue">ຕັ້ງຄ່າໂດຍບໍ່ຕ້ອງມືນຕາ</string>
+    <string name="face_enrolling_gaze_dialog_message">ທ່ານຕ້ອງການຕັ້ງຄ່າການປົດລັອກດ້ວຍໜ້າໂດຍບໍ່ຕ້ອງມືນຕາບໍ່? ຫາກທ່ານຕັ້ງຄ່າດ້ວຍວິທີນີ້, ຄົນອື່ນຈະສາມາດປົດລັອກໂທລະສັບຂອງທ່ານໂດຍຖືມັນໄປໃສ່ໜ້າທ່ານຕອນທີ່ທ່ານບໍ່ທັນລະວັງໄດ້.</string>
+    <string name="face_enrolling_gaze_dialog_title">ຕັ້ງຄ່າໂດຍບໍ່ຕ້ອງມືນຕາ</string>
+    <string name="face_enrolling_how_to_setup">ວິທີຕັ້ງຄ່າ</string>
+    <string name="face_enrolling_title">ຖືໂທລະສັບຂອງທ່ານໄວ້ຊື່ໆ. ປິ່ນຫົວຂອງທ່ານ. ເຮັດຊ້າໆ.</string>
+    <string name="face_enrolling_title_accessibility">ເບິ່ງຊື່ໆໄປໃສ່ໂທລະສັບຂອງທ່ານ</string>
+    <string name="face_enrolling_title_accessibility_progress">ເບິ່ງຊື່ໆໄປຫາໂທລະສັບຂອງທ່ານຄ້າງໄວ້</string>
+    <string name="face_enrolling_too_close">ເລື່ອນໂທລະສັບອອກໄປໄກຂຶ້ນ</string>
+    <string name="face_enrolling_too_far">ຍ້າຍໂທລະສັບເຂົ້າໄປໃກ້ຂຶ້ນ</string>
+    <string name="face_enrolling_too_high">ເລື່ອນໂທລະສັບຕ່ຳລົງ</string>
+    <string name="face_enrolling_too_left">ເລື່ອນໂທລະສັບໄປທາງຂວາຂອງທ່ານ</string>
+    <string name="face_enrolling_too_low">ຍົກໂທລະສັບໃຫ້ສູງຂຶ້ນ</string>
+    <string name="face_enrolling_too_right">ຍ້າຍໂທລະສັບໄປທາງຊ້າຍຂອງທ່ານ</string>
+    <string name="face_enrolling_turn_head_to_arrow">ປິ່ນຫົວຂອງທ່ານໄປທາງລູກສອນ</string>
+    <string name="face_enrolling_turned_too_far">ໝຸນຫົວໜ້ອຍໜຶ່ງ</string>
+    <string name="fallback_menu_item_copy_link">ສຳເນົາລິ້ງ</string>
+    <string name="fallback_menu_item_open_in_browser">ເປີດໃນໂປຣແກຣມທ່ອງເວັບ</string>
+    <string name="fallback_menu_item_share_link">ແບ່ງປັນລິ້ງ</string>
+    <string name="fullbackup_data_summary">"ສຳຮອງຂໍ້ມູນອຸປະກອນໂດຍອັດຕະໂນມັດໄປໃສ່ Google Drive (ເຊັ່ນ: ລະຫັດຜ່ານ Wi-Fi ແລະ ປະຫວັດການໂທ) ແລະ ຂໍ້ມູນແອັບ (ເຊັ່ນ: ການຕັ້ງຄ່າ ແລະ ໄຟລ໌ທີ່ເກັບໄວ້ໂດຍແອັບ).
+
+ເມື່ອທ່ານເປີດການສຳຮອງໂດຍອັດຕະໂນມັດແລ້ວ, ຂໍ້ມູນແອັບ ແລະ ອຸປະກອນຖືກບັນທຶກໄປໃສ່ໂຟນເດີສ່ວນຕົວຢູ່ໃນ Google Drive ເປັນໄລຍະໆ. ຂໍ້ມູນແອັບສາມາດເປັນຂໍ້ມູນໃດໜຶ່ງທີ່ແອັບໄດ້ບັນທຶກ (ອີງຕາມການຕັ້ງຄ່າຜູ້ພັດທະນາ) ຮວມທັງຂໍ້ມູນລະອຽດອ່ອນທີ່ອາດເປັນໄປໄດ້ເຊັ່ນ: ລາຍຊື່, ຂໍ້ຄວາມ ແລະ ຮູບພາບ.
+
+ຂໍ້ມູນສຳຮອງຈະບໍ່ນັບໄປຍັງໂຄຕ້າບ່ອນຈັດເກັບຂໍ້ມູນຂອງ Drive. ໄຟລ໌ໃຫຍ່ ຫຼື ໄຟລ໌ທີ່ຜູ້ພັດທະນາໄດ້ເລືອກທີ່ຈະບໍ່ເອົາຮວມໃສ່ຈາກການບໍລິການຈະບໍ່ຖືກສຳຮອງຂໍ້ມູນ."</string>
+    <string name="fullbackup_erase_dialog_message">ຢຸດການສຳຮອງຂໍ້ມູນອຸປະກອນ (ເຊັ່ນ: ລະຫັດຜ່ານ Wi-Fi ແລະ ປະຫວັດການໂທ) ແລະ ຂໍ້ມູນແອັບ (ເຊັ່ນ: ການຕັ້ງຄ່າ ແລະ ໄຟລ໌ທີ່ແອັບບັນທຶກໄວ້), ບວກໃສ່ລຶບທຸກສຳເນົາຢູ່ໃນ Google Drive ບໍ?</string>
+    <string name="game_dashboard_always_on_summary">ສະແດງທາງລັດແຜງໜ້າປັດເກມໃນເກມຕ່າງໆ</string>
+    <string name="game_dashboard_always_on_title">ແຜງໜ້າປັດເກມ</string>
+    <string name="game_dashboard_dnd_rule_name">ການຫຼິ້ນເກມ</string>
+    <string name="game_dashboard_dnd_summary">ຮັບການແຈ້ງເຕືອນຈາກຄົນ ແລະ ແອັບສຳຄັນເທົ່ານັ້ນໃນເວລາທີ່ກຳລັງຫຼິ້ນເກມ</string>
+    <string name="game_dashboard_dnd_title">ໂໝດຫ້າມລົບກວນສຳລັບເກມ</string>
+    <string name="game_mode_battery_description">ຍືດອາຍຸແບັດເຕີຣີ</string>
+    <string name="game_mode_battery_title">ຕົວປະຢັດແບັດເຕີຣີ</string>
+    <string name="game_mode_performance_description">ເພີ່ມອັດຕາເຟຣມສູງສຸດ, ໃຊ້ແບັດເຕີຣີຫຼາຍຂຶ້ນ</string>
+    <string name="game_mode_performance_title">ປະສິດທິພາບ</string>
+    <string name="game_mode_standard_description">ໃຊ້ຄ່າເລີ່ມຕົ້ນຂອງເກມ</string>
+    <string name="game_mode_standard_title">ມາດຕະຖານ</string>
+    <string name="game_optimization_unavailable">ບໍ່ສາມາດໃຊ້ໄດ້ສຳລັບເກມນີ້</string>
+    <string name="gesture_aware_confirmation_action_button">ເຂົ້າໃຈແລ້ວ</string>
+    <string name="gesture_aware_footer"><annotation link="link">ການຕັ້ງຄ່າ</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">ການຕັ້ງຄ່າ</annotation></string>
+    <string name="gesture_skip_direction_ltr">ຊ້າຍໄປຂວາ</string>
+    <string name="gesture_skip_direction_rtl">ຂວາໄປຊ້າຍ</string>
+    <string name="gesture_skip_direction_title">ຂ້າມທິດທາງ</string>
+    <string name="gesture_skip_footer"><annotation link="link">ການຕັ້ງຄ່າ</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">ການຕັ້ງຄ່າ</annotation></string>
+    <string name="global_actions_panel_short_title">ບັດ ແລະ ປີ້ຕ່າງໆ</string>
+    <string name="global_actions_panel_summary">ເພື່ອເຂົ້າເຖິງສິ່ງຕ່າງໆ ເຊັ່ນ: ຂໍ້ມູນການຈ່າຍເງິນຂອງທ່ານ ແລະ ບັດການໂດຍສານ, ໃຫ້ກົດປຸ່ມເປີດ/ປິດຄ້າງໄວ້.</string>
+    <string name="global_actions_panel_title">ສະແດງບັດ ແລະ ປີ້</string>
+    <string name="install_unknown_applications">ອະນຸຍາດການຕິດຕັ້ງແອັບຈາກແຫລ່ງຂໍ້ມູນທີ່ນອກເໜືອໄປຈາກ Play Store</string>
+    <string name="keywords_accessibility_menu">ມໍເຕີ, ເມນູດ່ວນ, ເມນູຊ່ວຍເຫຼືອ, ສຳຜັດ, ຄວາມຄ່ອງຕົວ</string>
+    <string name="keywords_adaptive_charging">ສາກ, ການສາກ, ການສາກໄຟອັດສິລະຍະ, ການສາກໄຟແບບປັບອັດຕະໂນມັດ, ແບັດເຕີຣີ, ສຸຂະພາບແບັດເຕີຣີ</string>
+    <string name="keywords_assist_gesture_launch">gesture, edge, side, active edge, squeeze, grip, assist, assistant, squeeze, ok google, google assistant</string>
+    <string name="keywords_assist_gesture_silence">gesture, edge, side, active edge, silence, snooze, alarm, incoming call, quiet, display, lockscreen, squeeze, grip, stop</string>
+    <string name="keywords_assist_gesture_wake">gesture, edge, side, active edge, wake, notifications, screen, display, screen off, screen on, squeeze, asleep, sleep, grip</string>
+    <string name="keywords_battery_share">ການແບ່ງປັນແບັດເຕີຣີ, ການສາກໄຟໄຮ້ສາຍ</string>
+    <string name="keywords_battery_share_settings">ການແບ່ງປັນແບັດເຕີຣີ, ການສາກໄຟໄຮ້ສາຍແບບຍ້ອນກັບ</string>
+    <string name="keywords_content_capture">ບັນທຶກເນື້ອຫາ, ເນື້ອຫາແອັບ, ຂໍ້ມູນແອັບ</string>
+    <string name="keywords_gesture">ທ່າງທາ, ການຍ້າຍ</string>
+    <string name="keywords_global_actions_panel">ບັດ, ປີ້</string>
+    <string name="keywords_live_transcribe">ຄຳບັນຍາຍ, CC, ຄຳບັນຍາຍສົດ, ມີບັນຫາໃນການໄດ້ຍິນ, ສູນເສຍການໄດ້ຍິນ, CART, ການປ່ຽນສຽງເວົ້າເປັນຂໍ້ຄວາມ, ຄຳແປ</string>
+    <string name="keywords_reverse_charging_stop_threshold">ຢຸດການແບ່ງປັນແບັດເຕີຣີເມື່ອໂທລະສັບຮອດ:</string>
+    <string name="keywords_select_to_speak">ໄດ້ຍິນຂໍ້ຄວາມ, ອ່ານອອກສຽງ, ອ່ານໜ້າຈໍ, ໂປຣແກຣມອ່ານໜ້າຈໍ</string>
+    <string name="keywords_sound_amplifier">PSAP, ຂະຫຍາຍ, ການຂະຫຍາຍສຽງ, ມີບັນຫາໃນການໄດ້ຍິນ, ສູນເສຍການໄດ້ຍິນ, ການຂະຫຍາຍ</string>
+    <string name="keywords_sound_notifications">ການແຈ້ງເຕືອນ, ບັນຫາໃນການໄດ້ຍິນ, ສູນເສຍການໄດ້ຍິນ, ແຈ້ງເຕືອນ</string>
+    <string name="keywords_switch_access">ມໍເຕີ, ສະວິດ, ມື, AT, ເທັກໂນໂລຢີການຊ່ວຍເຫຼືອ, ອຳມະພາດ, ALS, ການສະແກນ, ການສະແກນແບບຂັ້ນຕອນ</string>
+    <string name="keywords_talkback">ໂປຣແກຣມອ່ານໜ້າຈໍ, ສຽງພາກ, ພາກສຽງ, ຄວາມຊ່ວຍ​ເຫຼືອ​ທາງ​ສຽງ, ຕາບອດ, ເບິ່ງເຫັນຍາກ, TTS, ການປ່ຽນຂໍ້ຄວາມເປັນສຽງເວົ້າ, ການ​ຕອບ​ສະໜອງ​ແບບ​ສຽງ​ເວົ້າ</string>
+    <string name="keywords_voice_access">ສຽງ, ການຄວບຄຸມສຽງ, ມໍເຕີ, ມື, ໄມ, ໄມໂຄຣໂຟນ, ການປ້ອນຂໍ້ມູນດ້ວຍສຽງ, ລົມ, ຄວບຄຸມ</string>
+    <string name="language_input_gesture_summary_off">ປິດ Active Edge ແລ້ວ</string>
+    <string name="language_input_gesture_summary_on_non_assist">ເປີດ Active Edge ແລ້ວ</string>
+    <string name="language_input_gesture_summary_on_with_assist">ເປີດ Active Edge ແລ້ວ, ບີບເພື່ອເອີ້ນຜູ້ຊ່ວຍຂອງທ່ານ</string>
+    <string name="me_card_title">Pixel ຂອງຂ້ອຍ</string>
+    <string name="my_device_info_account_preference_title">ບັນຊີ Google</string>
+    <string name="owner_info_settings_edit_text_hint">ຕົວຢ່າງ: Pixel ຂອງ Joe.</string>
+    <string name="reverse_charging_charging_wirelessly_message">ບໍ່ສາມາດໃຊ້ໄດ້ເນື່ອງຈາກກຳລັງສາກໄຟໂທລະສັບແບບໄຮ້ສາຍຢູ່</string>
+    <string name="reverse_charging_detail_charging_overheat_message">ບໍ່ສາມາດແບ່ງປັນແບັດເຕີຣີໄດ້ເນື່ອງຈາກ Pixel ຮ້ອນເກີນໄປ. ກະລຸນາລໍຖ້າໃຫ້ໂທລະສັບເຢັນລົງກ່ອນແລ້ວຈຶ່ງລອງໃໝ່.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">ບໍ່ສາມາດແບ່ງປັນແບັດເຕີຣີໄດ້ເນື່ອງຈາກກຳລັງສາກໄຟໂທລະສັບແບບໄຮ້ສາຍຢູ່</string>
+    <string name="reverse_charging_detail_footer_title">ແບັດເຕີຣີຂອງທ່ານຈະໝົດໄວຂຶ້ນເມື່ອໃຊ້ການແບ່ງປັນແບັດເຕີຣີ. ການແບ່ງປັນແບັດເຕີຣີສາມາດໃຊ້ໄດ້ກັບຫູຟັງ, ໂມງ, ໂທລະສັບ ແລະ ອື່ນໆທີ່ໃຊ້ຮ່ວມກັນໄດ້. ເພື່ອສາກໄຟໃຫ້ໄດ້ດີຂຶ້ນ, ກະລຸນາຖອດເຄສຂອງໂທລະສັບທ່ານອອກ.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"ການແບ່ງປັນແບັດເຕີຣີສາມາດໃຊ້ໄດ້ກັບຫູຟັງເອຍບັດ, ໂທລະສັບ ແລະ ອຸປະກອນອື່ນໆທີ່ໃຊ້ຮ່ວມກັນໄດ້.
+
+ແບັດເຕີຣີຂອງໂທລະສັບທ່ານຈະໝົດໄວຂຶ້ນເມື່ອໃຊ້ຄຸນສົມບັດນີ້. ການແບ່ງປັນແບັດເຕີຣີຈະປິດເອງອັດຕະໂນມັດຫຼັງຈາກສອງສາມນາທີຫາກບໍ່ພົບອຸປະກອນອື່ນ. ເພື່ອສາກໄຟໃຫ້ໄດ້ດີຂຶ້ນ, ໃຫ້ຖອດເຄສຂອງໂທລະສັບທ່ານອອກ ຫຼື ອຸປະກອນອື່ນໆທີ່ອາດລົບກວນ ເຊັ່ນ: ວັດຖຸທີ່ເປັນໂລຫະ."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">ບໍ່ສາມາດແບ່ງປັນແບັດເຕີຣີໄດ້ເນື່ອງຈາກເປີດໃຊ້ຕົວປະຢັດແບັດເຕີຣີຢູ່</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">ບໍ່ສາມາດແບ່ງປັນແບັດເຕີຣີໄດ້ເນື່ອງຈາກສຽບອຸປະກອນ USB-C ຢູ່</string>
+    <string name="reverse_charging_instructions_title">"ສາກໄຟອຸປະກອນອື່ນດ້ວຍ Pixel ຂອງທ່ານ.
+ປີ້ນໂທລະສັບຂອງທ່ານເພື່ອລອງໃຊ້."</string>
+    <string name="reverse_charging_is_off_summary">ປິດ</string>
+    <string name="reverse_charging_is_on_and_charging_summary">ກຳລັງແບ່ງປັນ ແລະ ກຳລັງສາກແບັດເຕີຣີ</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">ກຳລັງແບ່ງປັນແບັດເຕີຣີ</string>
+    <string name="reverse_charging_is_on_summary">ເປີດ / ສາກໄຟໃຫ້ອຸປະກອນອື່ນ</string>
+    <string name="reverse_charging_main_switch">ອະນຸຍາດໃຫ້ໃຊ້ການແບ່ງປັນແບັດເຕີຣີ</string>
+    <string name="reverse_charging_off_low_battery_summary">ປິດ / ແບັດເຕີຣີໂທລະສັບເຫຼືອໜ້ອຍກວ່າ %1$s</string>
+    <string name="reverse_charging_off_sharing_level_summary">ປິດ / ແບັດເຕີຣີເຫຼືອຕ່ຳກວ່າລະດັບການແບ່ງປັນ</string>
+    <string name="reverse_charging_overheat_summary">ບໍ່ສາມາດໃຊ້ໄດ້ເນື່ອງຈາກ Pixel ຮ້ອນເກີນໄປ. ກະລຸນາລໍຖ້າໃຫ້ໂທລະສັບເຢັນລົງກ່ອນແລ້ວຈຶ່ງລອງໃໝ່.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">ບໍ່ສາມາດໃຊ້ໄດ້ເນື່ອງຈາກເປີດຕົວປະຢັດ​ແບັດເຕີຣີ</string>
+    <string name="reverse_charging_sharing_level_message">ບໍ່ສາມາດໃຊ້ໄດ້ເນື່ອງຈາກແບັດເຕີຣີເຫຼືອຕ່ຳກວ່າລະດັບການແບ່ງປັນ</string>
+    <string name="reverse_charging_switch_summary">ວາງອຸປະກອນໄວ້ຫຼັງ Pixel ຂອງທ່ານ</string>
+    <string name="reverse_charging_switch_title">ສາກອຸປະກອນອື່ນໂດຍການວາງພວກມັນໄວ້ທາງຫຼັງ Pixel ຂອງທ່ານ</string>
+    <string name="reverse_charging_switch_title_message">ສາກໄຟອຸປະກອນອື່ນ</string>
+    <string name="reverse_charging_title">ການແບ່ງປັນແບັດເຕີຣີ</string>
+    <string name="reverse_charging_unplug_usb_cable_message">ບໍ່ສາມາດໃຊ້ໄດ້ເນື່ອງຈາກສຽບອຸປະກອນ USB-C ອື່ນໄວ້ຢູ່</string>
+    <string name="reverse_charging_warning_summary">ບໍ່ສາມາດໃຊ້ໄດ້ເນື່ອງຈາກແບັດເຕີຣີຕ່ຳກວ່າ %1$s</string>
+    <string name="reverse_charging_warning_title">ບໍ່ສາມາດແບ່ງປັນແບັດເຕີຣີໄດ້ເນື່ອງຈາກແບັດເຕີຣີເຫຼືອຕ່ຳກວ່າ %1$s</string>
+    <string name="rtt_settings_always_visible">ສະແດງຕະຫຼອດ</string>
+    <string name="rtt_settings_no_visible">ບໍ່ສະແດງ</string>
+    <string name="rtt_settings_title">ຂໍ້ຄວາມແບບສົດໆ (RTT)</string>
+    <string name="rtt_settings_visible_during_call">ສະແດງໃນລະຫວ່າງການໂທ</string>
+    <string name="screen_time_summary_usage_today">%1$s ມື້ນີ້</string>
+    <string name="search_bar_account_avatar_content_description">ຮູບໂປຣໄຟລ໌, ແຕະສອງເທື່ອເພື່ອເປີດບັນຊີ Google</string>
+    <string name="security_advanced_settings">ການຕັ້ງຄ່າຂັ້ນສູງ</string>
+    <string name="security_dismiss_dialog_dismiss_button">ປິດໄວ້</string>
+    <string name="security_dismiss_dialog_title">ປິດຄຳເຕືອນນີ້ໄວ້ບໍ?</string>
+    <string name="security_settings_face_enroll_education_message">ຢູ່ໜ້າຈໍຕໍ່ໄປ, ໃຫ້ປິ່ນຫົວຂອງທ່ານເພື່ອບັນທຶກໃບໜ້າທ່ານທຸກອົງສາ</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">ຢູ່ໜ້າຈໍຕໍ່ໄປ, ໃຫ້ຖືໂທລະສັບຂອງທ່ານໄວ້ໃນລະດັບສາຍຕາ</string>
+    <string name="security_settings_face_enroll_error_dialog_title">ການລົງທະບຽນບໍ່ສຳເລັດ</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">ຮອດຂີດຈຳກັດເວລາການລົງທະບຽນໃບໜ້າແລ້ວ ລອງໃໝ່.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">ໝົດເວລາຕັ້ງຄ່າການປົດລັອກດ້ວຍໜ້າ</string>
+    <string name="security_settings_face_enroll_finish_description">ຕອນນີ້ທ່ານສາມາດໃຊ້ໜ້າຂອງທ່ານເພື່ອປົດລັອກໂທລະສັບຂອງທ່ານ ຫຼື ຢັ້ງຢືນວ່າແມ່ນທ່ານໄດ້ແລ້ວ ເຊັ່ນ: ໃນເວລາທີ່ທ່ານເຂົ້າສູ່ລະບົບຫາແອັບ ຫຼື ອະນຸມັດການສັ່ງຊື້</string>
+    <string name="security_settings_face_enroll_finish_title">ດີແລ້ວ!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">ຕັ້ງຄ່າສຳລັບການເບິ່ງ ຫຼື ການເຄື່ອນໄຫວຫົວທີ່ຈຳກັດ</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">ເມື່ອໃຊ້ການປົດລັອກດ້ວຍໜ້າ, ຫົວຂອງທ່ານອາດຕ້ອງຢູ່ໜ້າໂທລະສັບຂອງທ່ານໃຫ້ຊື່ໆຫຼາຍຂຶ້ນ.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">ຕ້ອງເປີດຕາເບິ່ງ</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"ທ່ານ ແລະ ລູກຂອງທ່ານສາມາດລຶບຮູບແບບໃບໜ້າຂອງເຂົາເຈົ້າ ຫຼື ປິດການປົດລັອກດ້ວຍໜ້າຕອນໃດກໍໄດ້ໃນການຕັ້ງຄ່າ. ຮູບແບບໃບໜ້າແມ່ນຖືກຈັດເກັບໄວ້ຢູ່ໂທລະສັບຈົນກວ່າພວກມັນຈະຖືກລຶບອອກ.
+
+ສຶກສາເພີ່ມເຕີມໄດ້ຢູ່ g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">ທ່ານ ແລະ ລູກຂອງທ່ານຄວບຄຸມໄດ້</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"ທ່ານສາມາດລຶບຮູບແບບໃບໜ້າຂອງທ່ານ ຫຼື ປິດການປົດລັອກດ້ວຍໜ້າຕອນໃດກໍໄດ້ໃນການຕັ້ງຄ່າ. ຮູບແບບໃບໜ້າແມ່ນຖືກຈັດເກັບໄວ້ຢູ່ໂທລະສັບຈົນກວ່າຈະລຶບພວກມັນອອກ.
+
+ສຶກສາເພີ່ມເຕີມໄດ້ຢູ່ g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">ທ່ານຄວບຄຸມໄດ້</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"ການປົດລັອກດ້ວຍໜ້າຈະສ້າງຮູບແບບທີ່ບໍ່ຊ້ຳກັນຂອງໜ້າລູກຂອງທ່ານເພື່ອຢັ້ງຢືນວ່າແມ່ນເຂົາເຈົ້າແທ້. ເພື່ອສ້າງຮູບແບບໃບໜ້ານີ້ໃນລະຫວ່າງການຕັ້ງຄ່າ, ລູກຂອງທ່ານຈະຖ່າຍຮູບໃບໜ້າຂອງເຂົາເຈົ້າຈາກຫຼາຍໆມຸມ.
+
+ເມື່ອເຂົາເຈົ້າປົດລັອກດ້ວຍໜ້າ, ຮູບຈະຖືກໃຊ້ເພື່ອອັບເດດຮູບແບບໃບໜ້າຂອງເຂົາເຈົ້າ. ຮູບທີ່ຖືກໃຊ້ເພື່ອສ້າງຮູບແບບໃບໜ້າຂອງເຂົາເຈົ້າຈະບໍ່ຖືກຈັດເກັບໄວ້, ແຕ່ຮູບແບບໃບໜ້າແມ່ນຖືກຈັດເກັບໄວ້ຢ່າງປອດໄພຢູ່ໂທລະສັບຂອງທ່ານ ແລະ ຈະບໍ່ຖືກສົ່ງອອກຈາກໂທລະສັບເດັດຂາດ. ການປະມວນຜົນທັງໝົດຈະເກີດຂຶ້ນຢ່າງປອດໄພຢູ່ໂທລະສັບ."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"ການປົດລັອກດ້ວຍໜ້າຈະສ້າງຮູບແບບທີ່ບໍ່ຊ້ຳກັນຂອງໜ້າທ່ານເພື່ອຢັ້ງຢືນວ່າແມ່ນທ່ານແທ້. ເພື່ອສ້າງຮູບແບບໃບໜ້າໃນລະຫວ່າງການຕັ້ງຄ່າ, ທ່ານຈະຕ້ອງຖ່າຍຮູບໜ້າຂອງທ່ານຈາກຫຼາຍໆມຸມ.
+
+ເມື່ອທ່ານປົດລັອກດ້ວຍໜ້າ, ຮູບຈະຖືກໃຊ້ເພື່ອອັບເດດຮູບແບບໃບໜ້າຂອງທ່ານ. ຮູບທີ່ຖືກໃຊ້ເພື່ອສ້າງຮູບແບບໃບໜ້າຂອງທ່ານຈະບໍ່ຖືກຈັດເກັບໄວ້, ແຕ່ຮູບແບບໃບໜ້າແມ່ນຖືກຈັດເກັບໄວ້ຢ່າງປອດໄພຢູ່ໂທລະສັບຂອງທ່ານ ແລະ ຈະບໍ່ຖືກສົ່ງອອກຈາກໂທລະສັບເດັດຂາດ. ການປະມວນຜົນທັງໝົດຈະເກີດຂຶ້ນຢ່າງປອດໄພຢູ່ໂທລະສັບຂອງທ່ານ."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">ມັນເຮັດວຽກແນວໃດ</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">ການປົດລັອກດ້ວຍໜ້າສາມາດບັງຄັບໃຫ້ລູກຂອງທ່ານມືນຕາເພື່ອປົດລັອກໂທລະສັບ ຫຼື ຢັ້ງຢືນວ່າແມ່ນເຂົາເຈົ້າແທ້. ທ່ານ ແລະ ລູກຂອງທ່ານສາມາດເປີດຕົວເລືອກນີ້ຕອນໃດກໍໄດ້ໃນການຕັ້ງຄ່າ.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">ຫາກປົກກະຕິລູກຂອງທ່ານໃສ່ແວ່ນຕາ, ເຂົາເຈົ້າສາມາດໃສ່ໃນຂະນະທີ່ກຳລັງຕັ້ງຄ່າໄດ້.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">ການເບິ່ງໂທລະສັບສາມາດປົດລັອກມັນໄດ້ເຖິງແມ່ນວ່າເຂົາເຈົ້າຈະບໍ່ຕັ້ງໃຈກໍຕາມ. ໂທລະສັບຂອງເຂົາເຈົ້າສາມາດຖືກປົດລັອກໄດ້ໂດຍຄົນທີ່ໜ້າຕາຄ້າຍເຂົາເຈົ້າຫຼາຍ ເຊັ່ນ: ຝາແຝດ ຫຼື ຫາກມີຄົນຖືມັນໄປໃສ່ໜ້າຂອງເຂົາເຈົ້າ.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">ການປົດລັອກດ້ວຍໜ້າສາມາດບັງຄັບໃຫ້ທ່ານມືນຕາເພື່ອປົດລັອກໂທລະສັບ ຫຼື ຢັ້ງຢືນວ່າແມ່ນເຂົາເຈົ້າແທ້. ທ່ານສາມາດເປີດຕົວເລືອກນີ້ຕອນໃດກໍໄດ້ໃນການຕັ້ງຄ່າ.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">ແວ່ນຕາ ຫຼື ແວ່ນກັນແດດທີ່ມີສີເລັກນ້ອຍແມ່ນໃຊ້ໄດ້.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">ການໃຊ້ໜ້າເພື່ອປົດລັອກໂທລະສັບອາດມີຄວາມປອດໄພໜ້ອຍກວ່າການໃຊ້ຮູບແບບ ຫຼື PIN ທີ່ຊັບຊ້ອນ.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">ການເບິ່ງໂທລະສັບຈະສາມາດປົດລັອກມັນໄດ້ເຖິງແມ່ນວ່າທ່ານຈະບໍ່ຕັ້ງໃຈກໍຕາມ. ໂທລະສັບຂອງທ່ານສາມາດຖືກປົດລັອກໄດ້ໂດຍຄົນທີ່ໜ້າຕາຄ້າຍທ່ານຫຼາຍ ເຊັ່ນ: ຝາແຝດ ຫຼື ຫາກມີຄົນຖືມັນໄປໃສ່ໜ້າຂອງທ່ານ.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">ຂໍ້ຄວນຈື່</string>
+    <string name="security_settings_face_enroll_introduction_message">ໃຊ້ໃບໜ້າຂອງທ່ານເພື່ອປົດລັອກໂທລະສັບທ່ານ ຫຼື ຢັ້ງຢືນວ່າແມ່ນທ່ານແທ້ ເຊັ່ນ: ໃນເວລາທີ່ທ່ານເຂົ້າສູ່ລະບົບຫາແອັບ ຫຼື ອະນຸມັດການສັ່ງຊື້ໃດໜຶ່ງ.</string>
+    <string name="security_settings_face_enroll_introduction_title">ຕັ້ງຄ່າການປົດລັອກດ້ວຍໜ້າ</string>
+    <string name="security_settings_face_enroll_next">ຖັດໄປ</string>
+    <string name="security_settings_face_enroll_partial_message">ເພື່ອປັບປຸງປະສິດທິພາບ, ທ່ານສາມາດຕັ້ງຄ່າການປົດລັອກດ້ວຍໜ້າຄືນໃໝ່ໄດ້ໃນການຕັ້ງຄ່າ</string>
+    <string name="security_settings_face_enroll_partial_start_over">ເລີ່ມຕົ້ນໃຫມ່</string>
+    <string name="security_settings_face_enroll_partial_title">ຕັ້ງຄ່າການປົດລັອກດ້ວຍໜ້າສຳເລັດແລ້ວ</string>
+    <string name="security_settings_face_enroll_timeout_message">"ລອງໃຊ້ການຕັ້ງຄ່າດ່ວນແທນ. ກະລຸນາຮັບຊາບວ່າທ່ານອາດຕ້ອງປິ່ນຫົວໄປໃສ່ໂທລະສັບໃຫ້ຊື່ໆຫຼາຍຂຶ້ນເມື່ອທ່ານໃຊ້ການປົດລັອກດ້ວຍໜ້າ.
+
+ເພື່ອປັບປຸງປະສິດທິພາບ, ທ່ານສາມາດຕັ້ງຄ່າການປົດລັອກດ້ວຍໜ້າຄືນໃໝ່ໄດ້ໃນການຕັ້ງຄ່າ."</string>
+    <string name="security_settings_face_enroll_timeout_title">ບໍ່ສາມາດສືບຕໍ່ການຕັ້ງຄ່າໄດ້</string>
+    <string name="security_settings_face_enroll_timeout_try_again">ລອງໃໝ່</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">ໃຊ້ການຕັ້ງຄ່າດ່ວນ</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">ອອກຈາກການຕັ້ງຄ່າ</string>
+    <string name="security_settings_face_enroll_too_hot_message">ບໍ່ສາມາດຕັ້ງຄ່າການປົດລັອກດ້ວຍໜ້າໃຫ້ສຳເລັດໄດ້ເນື່ອງຈາກໂທລະສັບຮ້ອນເກີນໄປ. ກະລຸນາລອງໃໝ່ໃນພາຍຫຼັງເມື່ອໂທລະສັບເຢັນລົງແລ້ວ.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">ຂ້າມການປົດລັອກດ້ວຍໜ້າ</string>
+    <string name="security_settings_face_enroll_too_hot_title">ໂທລະສັບຮ້ອນເກີນໄປ</string>
+    <string name="security_settings_fingerprint_preference_summary_none">ແຕະເພື່ອຕັ້ງຄ່າລາຍນິ້ວມື</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">ສຶກສາເພີ່ມເຕີມໄດ້ຢູ່ g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint ສຳລັບວຽກ</string>
+    <string name="setup_suggestion_summary">ສຳເນົາຂໍ້ມູນ, ຈ່າຍດ້ວຍໂທລະສັບ ແລະ ອື່ນໆ</string>
+    <string name="setup_suggestion_title">ສຳເລັດການຕັ້ງຄ່າ</string>
+    <string name="smart_battery_footer">ເພື່ອຍືດອາຍຸແບັດເຕີຣີ, ຄຸນສົມບັດແບັດເຕີຣີແບບປັບຕົວໄດ້ອາດຫຼຸດປະສິດທິພາບ ແລະ ການເຄື່ອນໄຫວໃນພື້ນຫຼັງ. ການແຈ້ງເຕືອນບາງຢ່າງອາດຫຼ້າຊ້າ.</string>
+    <string name="smart_battery_manager_title">ການຕັ້ງຄ່າແບບປັບແຕ່ງອັດຕະໂນມັດ</string>
+    <string name="smart_battery_title">ແບັດເຕີຣີແບບປັບຕົວໄດ້</string>
+    <string name="sound_dashboard_summary">ລະດັບສຽງ, ການຕອບສະໜອງ, ຫ້າມລົບກວນ</string>
+    <string name="sound_settings">ສຽງ ແລະ ການສັ່ນເຕືອນ</string>
+    <string name="storage_manager_indicator">Smart Storage: ^1</string>
+    <string name="time_remaining_warning_subtext">ເຫຼືອອີກປະມານ %1$s ໂດຍອ້າງອີງຈາກການນຳໃຊ້ຂອງທ່ານ</string>
+    <string name="time_remaining_warning_text">ແບັດເຕີຣີຈະໝົດໃນໄວໆນີ້</string>
+    <string name="tips_suggestion_summary">ສຳຫຼວດສິ່ງທີ່ທ່ານເຮັດໄດ້ດ້ວຍໂທລະສັບທ່ານ</string>
+    <string name="tips_suggestion_title">ມາຮູ້ຈັກກັບ Pixel ຂອງທ່ານ</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">ຖືໂທລະສັບໄວ້ຕໍ່ໜ້າທ່ານ</string>
+    <string name="usb_use_file_transfers">ການໂອນຍ້າຍໄຟລ໌ / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">ບໍ່ສາມາດໃຊ້ການສັ່ນເຕືອນສຳລັບສາຍໂທເຂົ້າໄດ້ເນື່ອງຈາກໂທລະສັບຖືກຕັ້ງໃຫ້ປິດສຽງຢູ່</string>
+    <string name="vibration_haptics_settings_not_available_title">ບໍ່ສາມາດໃຊ້ໄດ້</string>
+    <string name="wallpaper_dashboard_summary">ສີ, ໄອຄອນຕາມຮູບແບບສີສັນ, ຕາຕະລາງແອັບ</string>
+    <string name="wifi_subscription_summary">ເບິ່ງ ຫຼື ປ່ຽນ ການສະໝັກໃຊ້ OpenRoaming</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">ເຊື່ອມຕໍ່ກັບ %1$s ແລ້ວ</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">ແຕະເພື່ອເຊື່ອມຕໍ່</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">ບໍ່ສາມາດເຊື່ອມຕໍ່ໄດ້. ແຕະເພື່ອລອງໃໝ່.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">ກຳລັງເຊື່ອມຕໍ່…</string>
+</resources>

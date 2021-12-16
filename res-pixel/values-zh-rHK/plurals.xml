@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">查看所有警告 (%1$d 個)</item>
+        <item quantity="one">顯示 %1$d 個警告</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">%1$d 個警告</item>
+        <item quantity="one">%1$d 個警告</item>
+    </plurals>
+</resources>

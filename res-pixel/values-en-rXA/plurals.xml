@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">[Šéé åļļ ŵåŕñîñĝš (%1$d) one two three]</item>
+        <item quantity="one">[Šĥöŵ %1$d ŵåŕñîñĝ one two]</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">[%1$d ŵåŕñîñĝš one two]</item>
+        <item quantity="one">[%1$d ŵåŕñîñĝ one two]</item>
+    </plurals>
+</resources>

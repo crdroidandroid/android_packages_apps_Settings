@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/suggestion_card"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/ContextualSuggestionCardStyle">
+
+    <LinearLayout
+        android:id="@id/card_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@*android:drawable/jog_dial_arrow_long_right_red"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@android:id/icon"
+            android:layout_width="@dimen/contextual_card_icon_size"
+            android:layout_height="@dimen/contextual_card_icon_size"
+            android:contentDescription="@null"
+            android:layout_marginStart="@dimen/suggestion_card_icon_margin_start"
+            android:tintMode="src_in"
+            style="@style/SuggestionCardIconStyle" />
+
+        <LinearLayout
+            android:id="@id/text_container"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/suggestion_card_text_padding_end"
+            android:paddingStart="@dimen/suggestion_card_text_padding_start"
+            android:paddingVertical="@dimen/suggestion_card_text_padding_vertical">
+
+            <TextView
+                android:id="@android:id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.SuggestionCardTitle" />
+
+            <TextView
+                android:id="@android:id/summary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.SuggestionCardSummary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
