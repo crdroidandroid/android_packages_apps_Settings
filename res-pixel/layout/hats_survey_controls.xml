@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/hats_lib_survey_controls_container"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/hats_lib_survey_controls_height"
+    android:background="@color/hats_lib_white_100"
+    android:clipToPadding="false"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/hats_lib_survey_controls_padding_bottom"
+    android:paddingLeft="@dimen/hats_lib_survey_horizontal_padding"
+    android:paddingTop="@dimen/hats_lib_survey_controls_padding_top">
+
+    <ImageView
+        android:layout_width="@dimen/hats_lib_survey_controls_logo_width"
+        android:layout_height="@dimen/hats_lib_survey_controls_logo_height"
+        android:alpha="0.54"
+        android:layout_gravity="center|left"
+        android:src="@drawable/googlelogo_dark_color_62x24" />
+
+    <Button
+        android:id="@id/hats_lib_next"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/hats_lib_survey_controls_height"
+        android:background="@drawable/hats_white_button"
+        android:layout_gravity="center|right"
+        android:paddingLeft="43.0dip"
+        android:paddingRight="43.0dip"
+        android:text="@string/hats_lib_next"
+        android:textAllCaps="true"
+        android:textColor="@color/hats_lib_prompt_take_survey_blue"
+        android:textSize="14.0sp"
+        android:theme="@style/HatsLibFlatButton"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+</FrameLayout>

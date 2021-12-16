@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:id="@id/progress"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_gravity="center"
+        style="?android:progressBarStyle" />
+
+    <View
+        android:id="@id/done"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:background="@drawable/ic_progress_check"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@id/label"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="16.0dip" />
+
+</merge>

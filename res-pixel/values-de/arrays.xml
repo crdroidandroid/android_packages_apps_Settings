@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string-array name="wifitrackerlib_wsu_service_provider_packages">
+        <item>com.google.android.apps.carrier.carrierwifi</item>
+    </string-array>
+</resources>

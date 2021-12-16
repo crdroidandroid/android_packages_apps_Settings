@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">Паказаць усе папярэджанні (%1$d)</item>
+        <item quantity="one">Паказаць усе папярэджанні (%1$d)</item>
+        <item quantity="few">Паказаць усе папярэджанні (%1$d)</item>
+        <item quantity="many">Паказаць усе папярэджанні (%1$d)</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">%1$d папярэджання</item>
+        <item quantity="one">%1$d папярэджанне</item>
+        <item quantity="few">%1$d папярэджанні</item>
+        <item quantity="many">%1$d папярэджанняў</item>
+    </plurals>
+</resources>

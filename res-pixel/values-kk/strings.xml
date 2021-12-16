@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Құлыптаулы экран</string>
+    <string name="gesture_silence_title">\"Ескертулердің дыбысын өшіру\" қимылы</string>
+    <string name="gesture_skip_title">\"Өткізіп жіберу\" қимылы</string>
+    <string name="keywords_touch_sensitivity">түрту, сезгіштік, сезгіш, экран қорғанышы, үлдір, жауап беретін, жауап беру</string>
+    <string name="touch_sensitivity_summary">Экран қорғаныштары қолданылғанда, сезгіштікті арттырады.</string>
+    <string name="touch_sensitivity_title">Түрту сезгіштігін арттыру</string>
+    <string name="accessibility_vibration_settings_screen_title">Діріл мен хептиканы пайдалану</string>
+    <string name="vibration_haptics_settings_not_available_summary">Телефон үнсіз режимге қойылғандықтан, діріл мен хептика істемейді.</string>
+    <string name="vibration_haptics_strength_category_title">Діріл мен хептика күші</string>
+    <string name="accessibility_vibration_settings_title">Діріл және хептика</string>
+    <string name="columbus_title">Әрекеттерді бастау үшін жылдам түртіңіз</string>
+    <string name="vibrate_for_calls_category_title">Қоңыраулар</string>
+    <string name="accessibility_alarm_vibration_title">Дабыл дірілі</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge реттелді. Келесі экранға өтіңіз немесе реттеуді жалғастырыңыз.</string>
+    <string name="accessibility_keyboard_haptics_title">Пернетақта хептикасы</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">Бейімдеп зарядтау</string>
+    <string name="adaptive_charging_description">Ұзаққа жетуі үшін, батарея түні бойы зарядталады. Оятқыш қосылғанша толық зарядталып болады.</string>
+    <string name="adaptive_charging_time_estimate"><b>Бейімдеп зарядтау</b> • Толық зарядталу уақыты: %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Параметрлер</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Assistant, соңғы қолданбалар, әдепкі қолданбалар</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Көмекшіге өту</string>
+    <string name="assist_gesture_enrollment_do_it_later">Кейінірек</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Ақырын қысу</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Қатты қысу</string>
+    <string name="assist_gesture_enrollment_settings">Параметрлер</string>
+    <string name="assist_gesture_setting_enable_assistant_text">Assistant қызметіне пәрмен беру үшін телефонның төменгі бөлігін жылдам қысып, қайта жіберіңіз.</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Assistant-ті қосу үшін қысу</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Оятқыш, таймер, хабарландыру және қоңырау дыбысын өшіру үшін құрылғыны қысасыз.</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">Дабылдар мен келген қоңыраулардың дыбысын өшіру үшін құрылғыны қысасыз.</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Дыбысын өшіру үшін телефонды қысу</string>
+    <string name="assist_gesture_setting_enable_wake_title">Экран өшірулі кезде Assistant-ті ашу</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Ақырын қысу</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Қатты қысу</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Қысу сезгіштігі</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Assistant қызметіне байқамай қосылу</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Телефонның төменгі бөлігін қысу</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Жылдам қысу</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Қаттырақ қысыңыз</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Жылдам қысып, жіберу</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">Жүгірткіні реттеп көру</string>
+    <string name="assist_gesture_training_enrolling_text">Телефонның астыңғы жартысын қысып, жылдам жіберіңіз. Қаншалықты қатты қысу керектігін реттеуіңізге болады.</string>
+    <string name="assist_gesture_training_enrolling_title">Жылдам қысып, жіберу</string>
+    <string name="assist_gesture_training_finished_text">Кейінірек \"Параметрлер\" бөлімінде қысу сезгіштігін өзгертуіңізге болады</string>
+    <string name="assist_gesture_training_finished_title">Реттеуді аяқтау не жалғастыру</string>
+    <string name="assist_gesture_training_intro_text">Assistant қызметіне пәрмен беру үшін телефонның төменгі бөлігін жылдам қысып, қайта жіберіңіз.</string>
+    <string name="assist_gesture_training_intro_title">Assistant-ті қосу үшін қысу</string>
+    <string name="assist_gesture_training_suggestion_summary">Көмекшіге пәрмен беру, қоңыраулардың дыбысын өшіру</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Көмекшіге пәрмен беру, дабылдар мен қоңыраулардың дыбысын өшіру</string>
+    <string name="assist_gesture_training_suggestion_title">Көмекшіні ашу үшін қысып, жіберіңіз</string>
+    <string name="automatic_storage_manager_activation_warning">Жалғанғаннан кейін, суреттер мен бейнелерді сақтық көшірме үшін таңдалған сапамен пайдалана бересіз.</string>
+    <string name="automatic_storage_manager_days_title">Сақтық көшірмесі бар суреттер мен бейнелерді өшіру</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Ақылды жад өшірілсін бе? 
+
+Жад толып қалғанда, функция орын босатпайды."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Жүктелгендер сақтық көшірмесі</string>
+    <string name="automatic_storage_manager_preference_title">Ақылды жад</string>
+    <string name="automatic_storage_manager_primary_switch_title">Ақылды жадты пайдалану</string>
+    <string name="automatic_storage_manager_settings">Ақылды жад</string>
+    <string name="automatic_storage_manager_text">Жад толайын деп қалғанда, фотосуреттер мен бейнелердің сақтық көшірмесі жойылады. Оларды Google Photos қолданбасынан таба аласыз.</string>
+    <string name="aware_disabled_preference_action">Қосу</string>
+    <string name="aware_disabled_preference_neutral">Қазір емес</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Ұшақ режимі және Батареяны үнемдеу режимі қосулы тұрғандықтан, Motion Sense қолжетімді емес.</string>
+    <string name="aware_footer_when_airplane_on">Ұшақ режимі қосулы тұрғандықтан, Motion Sense қолжетімді емес.</string>
+    <string name="aware_footer_when_batterysaver_on">Батареяны үнемдеу режимі қосулы тұрғандықтан, Motion Sense қолжетімді емес.</string>
+    <string name="aware_gesture_summary_off">Quick Gestures қосулы, Active Edge өшірулі.</string>
+    <string name="aware_gesture_summary_on_non_assist">Quick Gestures қосулы, Active Edge қосулы.</string>
+    <string name="aware_gesture_summary_on_with_assist">Quick Gestures қосулы, Active Edge қосулы, Assistant қызметін шақыру үшін қысу керек.</string>
+    <string name="aware_info_button_description">Басқа параметрлер</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">Ұшақ режимі және Батареяны үнемдеу режимі қосулы тұрғандықтан, қолжетімді емес.</string>
+    <string name="aware_summary_when_airplane_on">Ұшақ режимі қосулы тұрғандықтан, қолжетімді емес.</string>
+    <string name="aware_summary_when_batterysaver_on">Батареяны үнемдеу режимі қосулы тұрғандықтан, қолжетімді емес.</string>
+    <string name="backup_data_summary">Google серверлеріне қолданба дерекқорының, Wi-Fi құпия сөздерінің және басқа параметрлердің сақтық көшірмесін жасау.</string>
+    <string name="backup_suggestion_cancel">Бас тарту</string>
+    <string name="backup_suggestion_dialog_description">Мұның нәтижесінде телефонның ішкі жадындағы барлық деректер жойылады.</string>
+    <string name="backup_suggestion_dialog_title">Құрылғы бастапқы күйіне қайтарылсын ба?</string>
+    <string name="backup_suggestion_get_started">толығырақ</string>
+    <string name="backup_suggestion_item_summary">Android не iPhone® құрылғысынан көшіру</string>
+    <string name="backup_suggestion_item_title">Ескі телефондағы деректер жоқ па?</string>
+    <string name="backup_suggestion_missing_description">"SMS хабарлары мен суреттер сияқты кейбір деректер жоқ болып шықса, оларды кабель арқылы Pixel телефоныңызға көшіре аласыз.
+
+Жұмысты бастау үшін Pixel телефонын бастапқы күйіне қайтару қажет. Ондағы барлық деректер, соның ішінде реттелген параметрлер мен бұлтпен синхрондалмаған мазмұн жойылады."</string>
+    <string name="backup_suggestion_missing_title">Деректеріңіз жоғалған ба?</string>
+    <string name="backup_suggestion_next">келесі</string>
+    <string name="backup_suggestion_other_ways_to_copy">Деректерді көшірудің басқа тәсілдері</string>
+    <string name="backup_suggestion_reset_description">"Келесі экранда Pixel телефонын бастапқы күйіне қайтаруға болады. Жоғалған деректерді тек осылай ала аласыз.
+
+Одан кейін реттеу процестерін орындап, деректерді бұрынғы телефоннан алуды таңдаңыз."</string>
+    <string name="backup_suggestion_reset_title">Pixel телефонын бастапқы күйіне қайтару</string>
+    <string name="backup_suggestion_what_is_needed_summary">"Телефон бастапқы күйіне қайтарылғаннан кейін, келесілер қажет болады:
+
+• Бұрынғы телефон (Android 5.0+ не iOS® 8.0+ жүйелерімен жұмыс істейтін LINK_BEGINкөпшілік телефондарLINK_END қолдауға ие)
+• Бұрынғы телефонның зарядтау не деректер кабелі
+• Pixel телефонымен бірге берілетін Quick Switch Adapter"</string>
+    <string name="backup_suggestion_what_is_needed_title">Не қажет болады?</string>
+    <string name="battery_manager_summary">Батарея жұмысын ұзарту және зарядтауды оңтайландыру</string>
+    <string name="battery_manager_summary_unsupported">Батарея жұмысының ұзақтығын арттырады.</string>
+    <string name="battery_missing_link_message">Толығырақ</string>
+    <string name="battery_suggestion_summary">Батарея шығынын бейімдеу функциясын қосу</string>
+    <string name="battery_tip_smart_battery_summary">Батарея шығынын бейімдеу функциясын қосыңыз</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s құрылғысы енді осы Google аккаунтына байланыстырылған ешбір құрылғымен жұптаспайды.</string>
+    <string name="columbus_gesture_detected">Жылдам түрту қимылы анықталды.</string>
+    <string name="columbus_gesture_enrollment_complete">Дайын</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Қазір емес</string>
+    <string name="columbus_gesture_enrollment_settings">Параметрлерге өту</string>
+    <string name="columbus_gesture_enrollment_try_it">Пайдаланып көру</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Орындалатын әрекетті таңдаңыз.</string>
+    <string name="columbus_gesture_training_action_text">Жылдам түрту қимылын пайдалану кезінде не болатынын таңдаңыз. Мұны кейінірек \"Параметрлер\" бөлімінен өзгертуге болады.</string>
+    <string name="columbus_gesture_training_action_title">Жылдам түрту опциясын таңдау</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Екі рет түрту: екі әрекеттің біреуі ғана анықталды.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Тағы бір рет қайталап көрейік. Телефоныңыздың артқы жағын жылдам екі рет түртіңіз.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Жақсы!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Екі рет түрту: екі әрекеттің екеуі де анықталды.</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Жылдам түрту қимылын пайдалануға дайынсыз.</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Түсінікті!</string>
+    <string name="columbus_gesture_training_enrolling_text">Телефоныңыздың артқы жағын жылдам екі рет түртіңіз.</string>
+    <string name="columbus_gesture_training_enrolling_title">Жылдам түрту қимылын пайдаланып көріңіз</string>
+    <string name="columbus_gesture_training_finished_text">Жылдам түрту күшін өзгерту үшін \"Параметрлер\" бөліміне өтіңіз.</string>
+    <string name="columbus_gesture_training_finished_title">Жылдам түрту параметрі реттелді</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Құрылғыңыздың артқы жағын екі рет түрттіңіз. Ол Assistant-ті мобильдік құрылғыдан пайдалануға мүмкіндік береді. Бұл қимылды параметрлерден реттей аласыз.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Екі рет түртіп, скриншот жасаңыз, хабарландыруларды көріңіз немесе басқа әрекетті бастаңыз.</string>
+    <string name="columbus_gesture_training_intro_title">Жылдам түртіп, әрекеттерді жылдам орындау</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Ашылатын қолданбаны таңдаңыз.</string>
+    <string name="columbus_gesture_training_launch_text">Жылдам түрту қимылын пайдалану кезінде ашылатын қолданбаны таңдаңыз.</string>
+    <string name="columbus_gesture_training_launch_title">Ашылатын қолданбаны таңдаңыз</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s: жылдам пәрмен параметрлері</string>
+    <string name="columbus_launch_settings_activity_title">Жылдам түрту параметрлері</string>
+    <string name="columbus_name">Жылдам түрту</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">%1$s параметрлері</string>
+    <string name="columbus_setting_action_assistant_title">Цифрлық көмекшіні пайдалану</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Ешқандай қолданба таңдалмады.</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Қолданба орнатылмаған.</string>
+    <string name="columbus_setting_action_launch_title">Қолданбаны ашу</string>
+    <string name="columbus_setting_action_notification_title">Хабарландыруларды көрсету</string>
+    <string name="columbus_setting_action_open_app_title">Қолданбаны ашу</string>
+    <string name="columbus_setting_action_overview_title">Соңғы қолданбаларды көру</string>
+    <string name="columbus_setting_action_play_pause_title">Медиафайлды ойнату немесе кідірту</string>
+    <string name="columbus_setting_action_screenshot_title">Скриншот жасау</string>
+    <string name="columbus_setting_actions_title">Телефонның артқы жағын екі рет түрткенде орындалатын әрекет:</string>
+    <string name="columbus_setting_additional_settings_title">Жылдам түрту күші</string>
+    <string name="columbus_setting_app_selection_help_text">Телефоныңыздың артқы жағын екі рет түрту кезінде ашылатын қолданбаны таңдаңыз. Егер қолданбаны жойсаңыз, жылдам түрту қимылы басқа қолданбаны таңдағанға дейін өшіп тұрады.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Бұл қолданбаны жылдам түрту арқылы ашу кезінде не болатынын таңдаңыз.</string>
+    <string name="columbus_setting_enable_switch_title">Жылдам түрту қимылын пайдалану</string>
+    <string name="columbus_setting_sensitivity_title">Қаттырақ түртуді талап ету</string>
+    <string name="connectivity_helper_call_quality_category">Қоңырау сапасы</string>
+    <string name="connectivity_helper_call_quality_summary">Қоңырау кезіндегі байланыс ақауларының себептері жайлы хабарландырулар алыңыз.</string>
+    <string name="connectivity_helper_call_quality_title">Хабарландырулар алу</string>
+    <string name="connectivity_helper_d2d_summary">Сөйлесіп жатқан адамға телефоныңызда қоңырау кезінде байланыс ақаулары пайда болғаны туралы хабарлаңыз.</string>
+    <string name="connectivity_helper_d2d_title">Байланыс туралы ақпаратты бөлісу</string>
+    <string name="connectivity_helper_footnote">Сөйлесіп жатқан адам қолдау көрсетілетін құрылғы мен желіні пайдаланса, байланыс туралы ақпаратты бөлісе аласыз.</string>
+    <string name="content_capture">Қолданба дерегі арқылы жекелендіру</string>
+    <string name="copy_toast_msg">Сілтеме буферге көшірілді.</string>
+    <string name="dark_ui_text">Қараңғы тақырыпта қара фон тұратындықтан, батарея заряды үнемделеді. Кесте бойынша уақыты келіп тұрса да, экран өшпейінше, қараңғы тақырып қойылмайды.</string>
+    <string name="dock_summary_charging_phone">Телефонды зарядтау</string>
+    <string name="double_twist_for_camera_mode_summary">Google Camera қолданбасында селфи режимін қосу/өшіру үшін білегіңізді екі рет айналдырыңыз.</string>
+    <string name="downloads_backup_text">Жүктеп алынған файлдардың сақтық көшірмелері Google Drive дискіне салынады</string>
+    <string name="duration_less_than_one_minute">1 минутқа жетпейді</string>
+    <string name="extra_app_info_label">Ойынды оңтайландыру</string>
+    <string name="face_enrolling_center_head">Бетіңізді ішкі жақтауға дәлдеңіз.</string>
+    <string name="face_enrolling_description">Барлық бөлшекті алып тастап, бетіңізді жан-жағынан түсіріңіз.</string>
+    <string name="face_enrolling_do_it_later">Кейінірек</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Бас тарту</string>
+    <string name="face_enrolling_gaze_dialog_continue">Құрылғыға қарамай-ақ реттеу</string>
+    <string name="face_enrolling_gaze_dialog_message">Бет тану функциясын көзді жұмып реттегіңіз келе ме? Олай реттесеңіз, кез келген адам телефонды бетіңізге қаратып, сізге білдіртпей ашып алуы мүмкін.</string>
+    <string name="face_enrolling_gaze_dialog_title">Құрылғыға қарамай-ақ реттеу</string>
+    <string name="face_enrolling_how_to_setup">Параметрлерді реттеу әдісі</string>
+    <string name="face_enrolling_title">Телефонды қозғалтпай ұстаңыз. Басыңызды бұрыңыз. Баяу қозғалыңыз.</string>
+    <string name="face_enrolling_title_accessibility">Телефонға тура қараңыз</string>
+    <string name="face_enrolling_title_accessibility_progress">Телефонға тура қарап тұрыңыз</string>
+    <string name="face_enrolling_too_close">Телефонды алшақ ұстаңыз.</string>
+    <string name="face_enrolling_too_far">Телефонды жақынырақ ұстаңыз.</string>
+    <string name="face_enrolling_too_high">Телефонды төменірек ұстаңыз.</string>
+    <string name="face_enrolling_too_left">Телефонды оңға қарай ұстаңыз.</string>
+    <string name="face_enrolling_too_low">Телефонды жоғарырақ ұстаңыз.</string>
+    <string name="face_enrolling_too_right">Телефонды солға қарай ұстаңыз.</string>
+    <string name="face_enrolling_turn_head_to_arrow">Басыңызды көрсеткіге қарай бұрыңыз.</string>
+    <string name="face_enrolling_turned_too_far">Басыңызды аздап бұрыңыз.</string>
+    <string name="fallback_menu_item_copy_link">Сілтемені көшіру</string>
+    <string name="fallback_menu_item_open_in_browser">Браузерден ашу</string>
+    <string name="fallback_menu_item_share_link">Сілтемені бөлісу</string>
+    <string name="fullbackup_data_summary">"Google Drive дискісіне құрылғы деректерінің (мысалы, Wi-Fi құпия сөздері мен қоңыраулар журналы) және қолданба деректерінің (мысалы, қолданбалар арқылы сақталған параметрлер мен файлдар) сақтық көшірмесін автоматты түрде жасау.
+
+Автоматты түрде сақтық көшірмесін жасау функциясы қосылған кезде, құрылғы мен қолданба деректері Google Drive дискісіндегі жеке қалтаға сақталып отырады. Қолданба деректеріне контактілер, хабарлар жəне фотосуреттер сияқты ықтимал құпия деректерді қамтитын (әзірлеушінің параметрлеріне байланысты) қолданба сақтаған кез келген деректер жатуы мүмкін.
+
+Сақтық көшірме деректері Drive дискісінде орын алмайды. Үлкен файлдар немесе әзірлеушілер қызметтен шығару үшін таңдаған файлдардың сақтық көшірмесі жасалмайды."</string>
+    <string name="fullbackup_erase_dialog_message">Құрылғы деректерінің (мысалы, Wi-Fi құпия сөзі және қоңыраулар журналы) және қолданба деректерінің (мысалы, қолданбалар сақтаған параметрлер мен файлдар) сақтық көшірмесін жасауды тоқтату және Google Drive ішіндегі барлық көшірмелерді өшіру керек пе?</string>
+    <string name="game_dashboard_always_on_summary">Ойын тақтасының таңбашасы ойындарда көрсетіледі.</string>
+    <string name="game_dashboard_always_on_title">Ойын тақтасы</string>
+    <string name="game_dashboard_dnd_rule_name">Ойын режимі</string>
+    <string name="game_dashboard_dnd_summary">Ойын ойнап жатқан кезде, маңызды адамдар мен қолданбалардан ғана хабарландыру аласыз.</string>
+    <string name="game_dashboard_dnd_title">Ойындар үшін Мазаламау режимін қосу</string>
+    <string name="game_mode_battery_description">Батарея жұмысын ұзартады.</string>
+    <string name="game_mode_battery_title">Батареяны үнемдеу</string>
+    <string name="game_mode_performance_description">Кадр жиілігін барынша арттырады, батарея көбірек пайдаланылады.</string>
+    <string name="game_mode_performance_title">Өнімділік</string>
+    <string name="game_mode_standard_description">Ойынның әдепкі параметрлері пайдаланылады.</string>
+    <string name="game_mode_standard_title">Стандартты</string>
+    <string name="game_optimization_unavailable">Бұл ойын үшін қолжетімді емес.</string>
+    <string name="gesture_aware_confirmation_action_button">Түсінікті</string>
+    <string name="gesture_aware_footer"><annotation link="link">Параметрлер</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Параметрлер</annotation></string>
+    <string name="gesture_skip_direction_ltr">Солдан оңға</string>
+    <string name="gesture_skip_direction_rtl">Оңнан солға</string>
+    <string name="gesture_skip_direction_title">Өткізіп жіберу бағыты</string>
+    <string name="gesture_skip_footer"><annotation link="link">Параметрлер</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Параметрлер</annotation></string>
+    <string name="global_actions_panel_short_title">Карталар мен жол жүру билеттері</string>
+    <string name="global_actions_panel_summary">Төлеу әдістері және отырғызу талондары сияқты құжаттарды ашу үшін қуат түймесін басып тұрыңыз.</string>
+    <string name="global_actions_panel_title">Карталар мен билеттерді көрсету</string>
+    <string name="install_unknown_applications">Қолданбаларды Play Store дүкенінен басқа дереккөздерден орнатуды рұқсат ету</string>
+    <string name="keywords_accessibility_menu">моторика, жылдам мәзір, көмекші мәзір, түрту, ептілік</string>
+    <string name="keywords_adaptive_charging">заряд, зарядтау, смарт зарядтау, бейімдеп зарядтау, батарея, батарея күйі</string>
+    <string name="keywords_assist_gesture_launch">қимыл, жиек, бүйір, active edge, қысу, қармау, көмектесу, көмекші, қысу, ok google, google көмекшісі</string>
+    <string name="keywords_assist_gesture_silence">қимыл, жиек, бүйір, active edge, үнсіздік, кідірту, дабыл, келген қоңырау, тыныш, құлып экраны, қысу, қармау, тоқтату</string>
+    <string name="keywords_assist_gesture_wake">қимыл, жиек, бүйір, active edge, ояу, хабарландырулар, экран, дисплей, экранды өшіру, экранды қосу, қысу, ұйқылы, ұйқы, қармау</string>
+    <string name="keywords_battery_share">батареяны бөлісу, сымсыз зарядтау</string>
+    <string name="keywords_battery_share_settings">батареяны бөлісу, кері сымсыз зарядтау</string>
+    <string name="keywords_content_capture">мазмұн түсіру, қолданба мазмұны, қолданба деректері</string>
+    <string name="keywords_gesture">қимыл, қозғалыстар</string>
+    <string name="keywords_global_actions_panel">карталар, жол жүру билеттері</string>
+    <string name="keywords_live_transcribe">Жазулар, субтитрлер, субтитр, Live Caption, нашар есту қабілеті, есту қабілетінен айырылу, тікелей транскрипция, дауысты мәтінге айналдыру</string>
+    <string name="keywords_reverse_charging_stop_threshold">Телефон заряды мына деңгейге жеткенде, батареяны бөлісу тоқтатылсын:</string>
+    <string name="keywords_select_to_speak">Мәтінді есту, дауыстап оқу, сөйлейтін экран, экранды оқу құралы</string>
+    <string name="keywords_sound_amplifier">Жеке дыбысты күшейту құралы, дыбысты күшейту, нашар есту қабілеті, есту қабілетінен айырылу. күшейту</string>
+    <string name="keywords_sound_notifications">Хабарландырулар, нашар есту қабілеті, есту қабілетінен айырылу, хабарлау</string>
+    <string name="keywords_switch_access">моторика, ауыстырғыш, қол, арнайы мүмкіндіктер, көмекші технология, сал, амиотрофты бүйірлік склероз, сканерлеу, сатылы сканерлеу</string>
+    <string name="keywords_talkback">Экранды оқу құралы, дыбыстау, VoiceOver, дауыстық көмек, зағип, нашар көру қабілеті, мәтінді дыбыстау, дауыстық ақпарат</string>
+    <string name="keywords_voice_access">дауыс, дауыспен басқару, моторика, қол, микрофон, мәтінді дауыспен енгізу, сөйлеу, басқару</string>
+    <string name="language_input_gesture_summary_off">Active Edge өшірулі</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge қосулы</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge қосулы, Көмекші үшін қысыңыз</string>
+    <string name="me_card_title">Pixel құрылғым</string>
+    <string name="my_device_info_account_preference_title">Google аккаунты</string>
+    <string name="owner_info_settings_edit_text_hint">Мысалы, Жандостың Pixel құрылғысы</string>
+    <string name="reverse_charging_charging_wirelessly_message">Телефон сымсыз зарядталатындықтан, ол мүмкін емес.</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Батареяны бөлісу функциясы қолжетімді емес, себебі Pixel құрылғысы қызып кетті. Оны суытып, әрекетті қайталап көріңіз.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">Телефон сымсыз зарядталып жатқандықтан, Батареяны бөлісу функциясы істемейді.</string>
+    <string name="reverse_charging_detail_footer_title">Батареяны бөлісу функциясын пайдаланған кезде телефон батареясының заряды жылдам азаяды. Ол үйлесімді құлақаспаптармен, сағаттармен, телефондармен және т.б. жұмыс істейді. Жылдам зарядтау үшін телефонның қабын алып тастаңыз.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"Батареяны бөлісу функциясы үйлесімді құлақаспаптармен, телефондармен және т.б. жұмыс істейді.
+
+Бұл функцияны пайдаланған кезде, батарея заряды жылдам азаяды. Басқа құрылғы анықталмаса, функция бірнеше минуттан кейін өзі өшеді. Дұрыс зарядтау үшін телефон қабын және кедергі болатын басқа нәрселерді (мысалы, металл заттарды) алып тастаңыз."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">Батареяны үнемдеу режимі қосулы тұрғандықтан, Батареяны бөлісу функциясы істемейді.</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">USB-C құрылғысы жалғанғандықтан, Батареяны бөліс функциясы істемейді.</string>
+    <string name="reverse_charging_instructions_title">"Pixel арқылы басқа құрылғыларды зарядтаңыз.
+Зарядтап көру үшін телефонды аударыңыз."</string>
+    <string name="reverse_charging_is_off_summary">Өшірулі</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Батареяны бөлісу және зарядтау</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Батареяны бөлісу</string>
+    <string name="reverse_charging_is_on_summary">Қосулы/Басқа құрылғыларды зарядтау</string>
+    <string name="reverse_charging_main_switch">Батареяны бөлісуге рұқсат беру</string>
+    <string name="reverse_charging_off_low_battery_summary">Өшірулі/Телефон заряды %1$s деңгейінен төмен.</string>
+    <string name="reverse_charging_off_sharing_level_summary">Өшірулі/Батарея заряды аз</string>
+    <string name="reverse_charging_overheat_summary">Функция қолжетімді емес, себебі Pixel құрылғысы қызып кетті. Оны суытып, әрекетті қайталап көріңіз.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">Батареяны үнемдеу режимі қосулы тұрғандықтан, ол мүмкін емес.</string>
+    <string name="reverse_charging_sharing_level_message">Батарея заряды аз болғандықтан, ол мүмкін емес.</string>
+    <string name="reverse_charging_switch_summary">Құрылғыларды Pixel телефонының артына қойыңыз.</string>
+    <string name="reverse_charging_switch_title">Басқа құрылғыларды Pixel телефонының артына қойып зарядтау</string>
+    <string name="reverse_charging_switch_title_message">Басқа құрылғыларды зарядтау</string>
+    <string name="reverse_charging_title">Батареяны бөлісу</string>
+    <string name="reverse_charging_unplug_usb_cable_message">USB-C құрылғысы жалғанғандықтан, ол мүмкін емес.</string>
+    <string name="reverse_charging_warning_summary">Батарея заряды %1$s деңгейінен аз болғандықтан, ол мүмкін емес.</string>
+    <string name="reverse_charging_warning_title">Батарея заряды %1$s деңгейінен аз болғандықтан, Батареяны бөлісу функциясы істемейді.</string>
+    <string name="rtt_settings_always_visible">Әрқашан көрсетіледі.</string>
+    <string name="rtt_settings_no_visible">Көрсетілмейді</string>
+    <string name="rtt_settings_title">Нақты уақытта мәтін жіберу (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Қоңырау кезінде көрсетіледі.</string>
+    <string name="screen_time_summary_usage_today">Бүгін %1$s</string>
+    <string name="search_bar_account_avatar_content_description">Профиль суреті. Google аккаунтын ашу үшін екі рет түртіңіз</string>
+    <string name="security_advanced_settings">Қосымша параметрлер</string>
+    <string name="security_dismiss_dialog_dismiss_button">Бас тарту</string>
+    <string name="security_dismiss_dialog_title">Ескерту жабылсын ба?</string>
+    <string name="security_settings_face_enroll_education_message">Келесі экранда бетіңізді барлық жағынан түсіріп алу үшін басыңызды бұрыңыз.</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">Келесі экранда телефонды көз деңгейінде ұстаңыз.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Бет тану функциясын реттеу уақыты өтіп кетті</string>
+    <string name="security_settings_face_enroll_finish_description">Енді телефон құлпын ашу немесе жеке басыңызды растау үшін (мысалы, қолданбаларға кіргенде немесе бірдеңе сатып алғанда) бет тану функциясын пайдалана аласыз.</string>
+    <string name="security_settings_face_enroll_finish_title">Жақсы!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Көру қабілеті не басты қозғалту мүмкіндігі шектеулі болған жағдайдағы реттеу</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">Бет тану функциясын пайдалану кезінде басты телефонның алдында тік ұстау қажет.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Көзді ашып тұру керек.</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Балаңыз екеуіңіз кез келген уақытта \"Параметрлер\" бөлімінен оның бет үлгісін жоя аласыздар. Бет тану функциясын өшіріп қоюға да болады. Үлгілер өзіңіз жойғанша сақталып тұрады.
+
+Толығырақ: g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Бәрін балаңыз екеуіңіз басқарасыздар</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"Кез келген уақытта \"Параметрлер\" бөлімінен бет үлгісін жоюға немесе Бет тану функциясын өшіруге болады. Бет үлгілері жойылмайынша, телефонда сақталып тұрады.
+
+Толығырақ: g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Барлығы өз қолыңызда</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"Балаңыздың жеке басын растау үшін Бет тану функциясы оның бетінің қайталанбас үлгісін жасайды. Реттеу кезінде бет үлгісін жасау үшін, балаңыз бетін жан-жағынан суретке түсіреді.
+
+Балаңыз Бет тану функциясын пайдаланған кездегі суреттер оның бет үлгісін жаңарту үшін пайдаланылады. Бет үлгісін жасау үшін қолданылған суреттер сақталмайды, бірақ үлгінің өзі телефонда қауіпсіз түрде сақталады және басқа ешқайда жіберілмейді. Барлық өңдеу жұмыстары телефонда ғана орындалады."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"Жеке басыңызды растау үшін Бет тану функциясы бетіңіздің қайталанбас үлгісін жасайды. Реттеу кезінде бет үлгісін жасау үшін бетіңізді жан-жағынан суретке түсіресіз.
+
+Бет тану функциясын қолданған кездегі суреттер бетіңіздің үлгісін жаңарту үшін пайдаланылады. Бетіңіздің үлгісін жасау үшін қолданылған суреттер сақталмайды, бірақ үлгінің өзі телефонда сақталады және басқа ешқайда жіберілмейді. Барлық өңдеу жұмыстары телефонда ғана орындалады."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Бұл қалай жұмыс істейді?</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">Бет тану функциясы телефонның құлпын ашу үшін немесе балаңыздың жеке басын растау үшін одан көзін ашуын талап етуі мүмкін. Балаңыз екеуіңіз бұл функцияны \"Параметрлер\" бөлімінен кез келген уақытта қоса аласыздар.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Балаңыз әдетте көзілдірік тағатын болса, реттеу кезінде оны шешпесе де болады.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">Ашқысы келмесе де, телефонға қараған кезде, оның құлпы ашылып кетуі мүмкін. Құлыпты оған ұқсайтын біреу (мысалы, оның сыңары) ашып алуы мүмкін. Телефонды бетіне тақаған кезде де ашылып кетуі ықтимал.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">Бет тану функциясы телефонның құлпын ашу үшін немесе жеке басыңызды растау үшін көзіңізді ашуды талап етуі мүмкін. Бұл функцияны \"Параметрлер\" бөлімінен кез келген уақытта қоса аласыз.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Түссіз немесе сәл күңгірттелген көзілдірікті шешпеуге болады.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">Телефонның құлпын бетті анықтау функциясы арқылы ашу күрделі өрнекке немесе PIN кодына қарағанда сенімсіздеу болуы мүмкін.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">Ашқыңыз келмесе де, телефонға қараған кезде, оның құлпы ашылып кетуі мүмкін. Құлыпты өзіңізге ұқсайтын біреу, мысалы, егіз бауырыңыз ашып алуы мүмкін. Телефонды бетіңізге тақаған кезде де ашылып кетуі ықтимал.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Есте сақтаңыз</string>
+    <string name="security_settings_face_enroll_introduction_message">Телефон құлпын ашу немесе жеке басыңызды растау үшін (мысалы, қолданбаларға кіргенде не бірдеңе сатып алғанда) бет тану функциясын пайдаланыңыз.</string>
+    <string name="security_settings_face_enroll_introduction_title">Бет тану функциясын реттеу</string>
+    <string name="security_settings_face_enroll_next">Келесі</string>
+    <string name="security_settings_face_enroll_partial_message">Бет тану функциясы жақсырақ жұмыс істеуі үшін, оны \"Параметрлер\" бөлімінен қайта реттей аласыз.</string>
+    <string name="security_settings_face_enroll_partial_start_over">Қайта бастау</string>
+    <string name="security_settings_face_enroll_partial_title">Бет тану функциясын реттеу аяқталды</string>
+    <string name="security_settings_face_enroll_timeout_message">"Жылдам реттеп көріңіз. Бет тану функциясын пайдалану кезінде басты телефонның алдында тік ұстау қажет екенін ұмытпаңыз.
+
+Қайта реттеу керек болса, \"Параметрлер\" бөліміне өтіңіз."</string>
+    <string name="security_settings_face_enroll_timeout_title">Реттеуді жалғастыру мүмкін емес</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Қайталау</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Жылдам реттеу</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Реттеуден шығу</string>
+    <string name="security_settings_face_enroll_too_hot_message">Телефон қатты қызып кеткендіктен, реттеуді аяқтау мүмкін емес. Cуығаннан кейін қайталап көріңіз.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Бет тану функциясын өткізіп жіберу</string>
+    <string name="security_settings_face_enroll_too_hot_title">Телефон тым ыстық.</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Саусақ ізін орнату үшін түртіңіз.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Толығырақ: g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Жұмысқа арналған Pixel Imprint</string>
+    <string name="setup_suggestion_summary">Деректі көшіру, телефонмен төлеу, т.б.</string>
+    <string name="setup_suggestion_title">Реттеуді аяқтау</string>
+    <string name="smart_battery_footer">Батарея жұмысын ұзарту үшін Батарея шығынын бейімдеу функциясы жұмыс өнімділігі мен фондық белсенділікті төмендетеді. Кейбір хабарландырулар кідіруі мүмкін.</string>
+    <string name="smart_battery_manager_title">Бейімделмелі параметрлер</string>
+    <string name="smart_battery_title">Батарея шығынын бейімдеу</string>
+    <string name="sound_dashboard_summary">Дыбыс деңгейі, хептика, Мазаламау режимі</string>
+    <string name="sound_settings">Дыбыс және діріл</string>
+    <string name="storage_manager_indicator">Ақылды жад: ^1</string>
+    <string name="time_remaining_warning_subtext">Соңғы пайдалану негізінде шамамен %1$s қалды</string>
+    <string name="time_remaining_warning_text">Батареяның заряды көп ұзамай бітуі мүмкін</string>
+    <string name="tips_suggestion_summary">Телефонмен не істеуге болатынын біліңіз.</string>
+    <string name="tips_suggestion_title">Pixel телефонымен танысу</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Телефонды бетіңізге қарама-қарсы ұстаңыз</string>
+    <string name="usb_use_file_transfers">Файл жіберу/Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">Үнсіз режимге қойылғандықтан, қоңырау түскенде, телефон дірілдемейді.</string>
+    <string name="vibration_haptics_settings_not_available_title">Жоқ</string>
+    <string name="wallpaper_dashboard_summary">Түстер, тақырыпқа сай белгішелер, қолданбалар торы</string>
+    <string name="wifi_subscription_summary">OpenRoaming жазылымын көру не өзгерту</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">%1$s арқылы қосылды</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Қосылу үшін түртіңіз.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Қосылмады. Қайталау үшін түртіңіз.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Қосылып жатыр…</string>
+</resources>

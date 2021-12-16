@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">सबै चेतावनीहरू (%1$d) हेर्नुहोस्</item>
+        <item quantity="one">%1$d चेतावनी देखाइयोस्</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">%1$d वटा चेतावनी</item>
+        <item quantity="one">%1$d चेतावनी</item>
+    </plurals>
+</resources>

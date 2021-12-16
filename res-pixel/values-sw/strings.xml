@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Skrini wakati kifaa hakitumiki</string>
+    <string name="gesture_silence_title">Ishara ya kuzima sauti za arifa</string>
+    <string name="gesture_skip_title">Ruka ishara</string>
+    <string name="keywords_touch_sensitivity">kugusa, kiwango cha hisi, hisi, ulinzi wa skrini, utando, rahisi kufanya kazi, urahisi wa kufanya kazi</string>
+    <string name="touch_sensitivity_summary">Huboresha utendaji wa kugusa wakati kifaa kinatumia ulinzi wa skrini</string>
+    <string name="touch_sensitivity_title">Ongeza kiwango cha hisi unapogusa</string>
+    <string name="accessibility_vibration_settings_screen_title">Tumia mtetemo na kuhisi</string>
+    <string name="vibration_haptics_settings_not_available_summary">Mtetemo na kuhisi hakupatikani kwa sababu simu ipo katika hali ya kimya</string>
+    <string name="vibration_haptics_strength_category_title">Uthabiti wa kuhisi na mtetemo</string>
+    <string name="accessibility_vibration_settings_title">Mtetemo na kuhisi</string>
+    <string name="columbus_title">Kugusa Haraka ili kuanzisha vitendo</string>
+    <string name="vibrate_for_calls_category_title">Simu</string>
+    <string name="accessibility_alarm_vibration_title">Mtetemo wa kengele</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Mipangilio ya Active Edge. Nenda kwenye skrini inayofuata au endelea kurekebisha.</string>
+    <string name="accessibility_keyboard_haptics_title">Uhisi wa kibodi</string>
+    <string name="accessibility_vibration_preferences_file">Mapendeleo ya mtetemo</string>
+    <string name="adaptive_charging">Hali ya Kuchaji Inayojirekebisha</string>
+    <string name="adaptive_charging_description">Chaji taratibu usiku kucha ili uendelee kutumia betri kwa muda mrefu zaidi. Chaji hujaa kufikia wakati ulioweka kengele ikuamshe.</string>
+    <string name="adaptive_charging_time_estimate"><b>Hali ya kuchaji inayojirekebisha</b> • Itajaa kufikia saa %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Mapendeleo</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Mratibu, programu za hivi majuzi, programu chaguomsingi</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Nenda kwenye Mratibu</string>
+    <string name="assist_gesture_enrollment_do_it_later">Ufanye baadaye</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Bana kidogo</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Bana kwa nguvu</string>
+    <string name="assist_gesture_enrollment_settings">Mipangilio</string>
+    <string name="assist_gesture_setting_enable_assistant_text">Ili uzungumze na Mratibu wako, bana haraka sehemu ya chini ya simu yako kisha uiachilie</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Bana ili upate Mratibu wako</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Bana ili uzime sauti za kengele, vipima muda, arifa na simu zinazoingia</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">Bana ili uzime arifa na simu zinazoingia</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Bana ili unyamazishe simu</string>
+    <string name="assist_gesture_setting_enable_wake_title">Washa Mratibu wakati skrini imezimwa</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Bana kidogo</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Bana kwa nguvu</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Kiwango cha hisi unapobana</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Huenda hatua hii ikawasha Mratibu bila wewe kutaka</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Bana sehemu ya chini ya simu yako</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Bana haraka</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Bana zaidi</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Bana haraka kisha uachilie</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">Jaribu kurekebisha kitelezi</string>
+    <string name="assist_gesture_training_enrolling_text">Bana sehemu ya chini ya simu yako. Unaweza kubadilisha jinsi unavyohitaji kubana.</string>
+    <string name="assist_gesture_training_enrolling_title">Bana haraka na uachilie</string>
+    <string name="assist_gesture_training_finished_text">Unaweza pia kubadilisha kiwango cha hisi unapobana baadaye katika Mipangilio</string>
+    <string name="assist_gesture_training_finished_title">Maliza au uendelea kurekebisha</string>
+    <string name="assist_gesture_training_intro_text">Ili uzungumze na Mratibu wako wakati wowote, bana haraka sehemu ya chini ya simu yako kisha uiachilie.</string>
+    <string name="assist_gesture_training_intro_title">Bana ili upate Mratibu wako</string>
+    <string name="assist_gesture_training_suggestion_summary">Zungumza na Mratibu wako, zima sauti ya simu</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Zungumza na Mratibu, zima sauti za kengele na simu</string>
+    <string name="assist_gesture_training_suggestion_title">Bana na uachilie simu ili ufungue Mratibu</string>
+    <string name="automatic_storage_manager_activation_warning">Ukiwa kwenye intaneti, bado unaweza kupata picha na video katika ubora uliochagua wakati wa kuhifadhi nakala</string>
+    <string name="automatic_storage_manager_days_title">Ondoa nakala za picha na video</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Ungependa kuzima Smart Storage? 
+
+Smart Storage haitaweza kufuta faili ili kupata nafasi wakati hifadhi inakaribia kujaa."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Vipakuliwa ulivyohifadhia nakala</string>
+    <string name="automatic_storage_manager_preference_title">Hifadhi Mahiri</string>
+    <string name="automatic_storage_manager_primary_switch_title">Tumia Hifadhi Mahiri</string>
+    <string name="automatic_storage_manager_settings">Hifadhi Mahiri</string>
+    <string name="automatic_storage_manager_text">Hifadhi inapokaribia kujaa, futa picha na video ambazo nakala zake zimehifadhiwa. Bado unaweza kuzipata katika programu ya Picha kwenye Google.</string>
+    <string name="aware_disabled_preference_action">Washa</string>
+    <string name="aware_disabled_preference_neutral">Si sasa</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Kipengele cha Motion Sense hakipatikani kwa sababu umewasha hali ya ndegeni na Kiokoa betri</string>
+    <string name="aware_footer_when_airplane_on">Kipengele cha Motion Sense hakipatikani kwa sababu umewasha hali ya ndegeni</string>
+    <string name="aware_footer_when_batterysaver_on">Kipengele cha Motion Sense hakipatikani kwa sababu umewasha Kiokoa betri</string>
+    <string name="aware_gesture_summary_off">Umewasha Ishara Nyepesi, Active Edge imezimwa</string>
+    <string name="aware_gesture_summary_on_non_assist">Umewasha Ishara Nyepesi, Active Edge imewashwa</string>
+    <string name="aware_gesture_summary_on_with_assist">Umewasha Ishara Nyepesi, umewasha Active Edge, bana ili ufungue Mratibu</string>
+    <string name="aware_info_button_description">Mipangilio zaidi</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">Hakipatikani kwa sababu umewasha hali ya ndegeni na Kiokoa betri</string>
+    <string name="aware_summary_when_airplane_on">Hakipatikani kwa sababu umewasha hali ya ndegeni</string>
+    <string name="aware_summary_when_batterysaver_on">Hakipatikani kwa sababu umewasha Kiokoa betri</string>
+    <string name="backup_suggestion_cancel">Ghairi</string>
+    <string name="backup_suggestion_dialog_description">Hatua hii itafuta data yote kutoka hifadhi ya ndani ya simu yako.</string>
+    <string name="backup_suggestion_dialog_title">Ungependa kuweka upya kifaa hiki?</string>
+    <string name="backup_suggestion_get_started">pata maelezo zaidi</string>
+    <string name="backup_suggestion_item_summary">Nakili kutoka kifaa cha Android au iPhone®</string>
+    <string name="backup_suggestion_item_title">Unahitaji data kutoka simu yako ya zamani?</string>
+    <string name="backup_suggestion_missing_description">"Kama huoni baadhi ya data yako, kama vile ujumbe wa SMS na picha, unaweza kuiweka kwenye Pixel yako kwa kutumia kebo.
+
+Ili kuanza, unahitaji kubadilisha mipangilio ya Pixel. Hatua hii itafuta data yote iliyo kwenye simu hii, ikiwa ni pamoja na mipangilio maalum na maudhui ambayo hayajasawazishwa kwenye wingu."</string>
+    <string name="backup_suggestion_missing_title">Je, unahitaji data yako?</string>
+    <string name="backup_suggestion_next">endelea</string>
+    <string name="backup_suggestion_other_ways_to_copy">Njia nyingine za kunakili data</string>
+    <string name="backup_suggestion_reset_description">"Kwenye skrini inayofuata, unaweza kubadilisha mipangilio ya Pixel. Hii ndiyo njia ya pekee ya kuhamisha data kwa kutumia kebo.
+
+Baada ya kubadilisha mipangilio, kagua mchakato wa kuweka mipangilio na uchague kuleta data yako kutoka kwenye simu yako ya awali."</string>
+    <string name="backup_suggestion_reset_title">Badilisha Mipangilio ya Pixel yako</string>
+    <string name="backup_suggestion_what_is_needed_summary">"Baada ya kubadilisha mipangilio ya simu yako, utahitaji:
+
+• Simu yako ya awali (LINK_BEGINsimu nyingiLINK_END zinazotumia Android 5.0+ au iOS® 8.0+ zinaweza kutumika)
+• Kebo ya chaja au data ya simu yako ya awali
+• Quick Switch Adapter ambayo ilinunuliwa pamoja na Pixel yako"</string>
+    <string name="backup_suggestion_what_is_needed_title">Utakachohitaji</string>
+    <string name="battery_manager_summary">Ongeza muda wa matumizi ya betri na uboreshe hali ya kuchaji</string>
+    <string name="battery_manager_summary_unsupported">Ongeza muda wa matumizi ya betri</string>
+    <string name="battery_missing_link_message">Pata maelezo zaidi</string>
+    <string name="battery_suggestion_summary">Washa Betri Inayojirekebisha</string>
+    <string name="battery_tip_smart_battery_summary">Washa Betri Inayojirekebisha</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s kamwe hakitaoanishwa na kifaa chochote kilichounganishwa kwenye Akaunti hii ya Google</string>
+    <string name="columbus_gesture_detected">Kipengele cha Kugusa Haraka kimetambuliwa!</string>
+    <string name="columbus_gesture_enrollment_complete">Nimemaliza</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Si sasa</string>
+    <string name="columbus_gesture_enrollment_settings">Nenda kwenye Mipangilio</string>
+    <string name="columbus_gesture_enrollment_try_it">Ijaribu</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Tafadhali chagua kitendo cha kutekeleza</string>
+    <string name="columbus_gesture_training_action_text">Chagua kinachofanyika unapotumia kipengele cha Kugusa Haraka. Unaweza kubadilisha baadaye katika mipangilio.</string>
+    <string name="columbus_gesture_training_action_title">Teua chaguo la Kugusa Haraka</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Imetambua ishara moja kati ya mbili za ishara ya kugusa mara mbili</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Hebu jaribu tena hatua hii. Gusa nyuma ya simu yako mara mbili kwa haraka.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Safi!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Imetambua ishara mbili kati ya mbili za ishara ya kugusa mara mbili</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Uko tayari kuanza kutumia kipengele cha Kugusa Haraka</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Umeelewa!</string>
+    <string name="columbus_gesture_training_enrolling_text">Gusa nyuma ya simu yako mara mbili kwa haraka.</string>
+    <string name="columbus_gesture_training_enrolling_title">Jaribu kipengele cha Kugusa Haraka</string>
+    <string name="columbus_gesture_training_finished_text">Ili ubadilishe nguvu za kugusa zinazohitajika kutumia kipengele cha Kugusa Haraka, nenda kwenye Mipangilio.</string>
+    <string name="columbus_gesture_training_finished_title">Umeweka mipangilio ya kipengele cha Kugusa Haraka</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Umegusa tu nyuma ya kifaa chako mara mbili, hali inayokuruhusu kutumia programu yako ya Mratibu popote ulipo. Unaweza kuweka mapendeleo ya ishara hii katika mipangilio.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Piga picha ya skrini, onyesha arifa au uanzishe kitendo kingine kwa kugusa mara mbili.</string>
+    <string name="columbus_gesture_training_intro_title">Tumia kipengele cha Kugusa Haraka ili utekeleze vitendo vya haraka</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Tafadhali chagua programu ili ufungue</string>
+    <string name="columbus_gesture_training_launch_text">Chagua programu unayotaka kufungua unapotumia kipengele cha Kugusa Haraka.</string>
+    <string name="columbus_gesture_training_launch_title">Chagua programu ili ufungue</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">Mipangilio ya njia ya mkato ya %1$s</string>
+    <string name="columbus_launch_settings_activity_title">Mipangilio ya kipengele cha Kugusa Haraka</string>
+    <string name="columbus_name">Kipengele cha Kugusa Haraka</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">Mipangilio ya %1$s</string>
+    <string name="columbus_setting_action_assistant_title">Kufikia programu yako ya mratibu dijitali</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Hujachagua programu yoyote</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Programu haijasakinishwa</string>
+    <string name="columbus_setting_action_launch_title">Kufungua programu</string>
+    <string name="columbus_setting_action_notification_title">Kuonyesha arifa</string>
+    <string name="columbus_setting_action_open_app_title">Fungua programu</string>
+    <string name="columbus_setting_action_overview_title">Kuona programu za hivi majuzi</string>
+    <string name="columbus_setting_action_play_pause_title">Kucheza au kusimamisha maudhui</string>
+    <string name="columbus_setting_action_screenshot_title">Kupiga picha ya skrini</string>
+    <string name="columbus_setting_actions_title">Gusa nyuma ya simu mara mbili ili</string>
+    <string name="columbus_setting_additional_settings_title">Nguvu za kipengele cha Kugusa Haraka</string>
+    <string name="columbus_setting_app_selection_help_text">Chagua programu unayotaka kufungua unapogusa sehemu ya nyuma ya simu yako mara mbili. Ukiondoa programu hiyo, kipengele cha Kugusa Haraka huzimwa hadi utakapochagua programu tofauti.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Chagua kinachofanyika unapofungua programu hii ukitumia kipengele cha Kugusa Haraka.</string>
+    <string name="columbus_setting_enable_switch_title">Tumia kipengele cha Kugusa Haraka</string>
+    <string name="columbus_setting_sensitivity_title">Inahitaji uguse kwa nguvu</string>
+    <string name="connectivity_helper_call_quality_category">Ubora wa kupiga simu</string>
+    <string name="connectivity_helper_call_quality_summary">Pokea arifa kuhusu vyanzo vya hitilafu za muunganisho wakati wa kupiga simu</string>
+    <string name="connectivity_helper_call_quality_title">Pokea arifa</string>
+    <string name="connectivity_helper_d2d_summary">Mwarifu unayezungumza naye simu yako inapokuwa na hitilafu za muunganisho wakati wa kupiga simu</string>
+    <string name="connectivity_helper_d2d_title">Shiriki maelezo ya muunganisho</string>
+    <string name="connectivity_helper_footnote">Unaweza kushiriki maelezo ya muunganisho wakati anayekupigia anatumia kifaa na mtandao unaoweza kutumika</string>
+    <string name="content_capture">Weka mapendeleo ukitumia data ya programu</string>
+    <string name="copy_toast_msg">Imenakili kiungo kwenye ubao wa kunakili</string>
+    <string name="dark_ui_text">Mandhari meusi hutumia mandharinyuma meusi ili kuboresha muda wa matumizi ya betri. Ratiba za Mandhari meusi hujiwasha hadi skrini ya simu yako inapozima.</string>
+    <string name="dock_summary_charging_phone">Inachaji simu</string>
+    <string name="double_twist_for_camera_mode_summary">"Ili uweke na uondoe hali ya kupiga picha ya 'selfi' kwenye Kamera ya Google, geuza mara mbili ukiwa umefungua kamera."</string>
+    <string name="downloads_backup_text">Faili zilizopakuliwa zitahifadhiwa nakala kwenye Hifadhi ya Google</string>
+    <string name="duration_less_than_one_minute">Chini ya dakika 1</string>
+    <string name="extra_app_info_label">Kuboresha Mchezo</string>
+    <string name="face_enrolling_center_head">Weka uso wako ulingane na fremu ya ndani</string>
+    <string name="face_enrolling_description">Nasa pande zote za uso wako kwa kuondoa vigae vyote.</string>
+    <string name="face_enrolling_do_it_later">Sajili baadaye</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Ghairi</string>
+    <string name="face_enrolling_gaze_dialog_continue">Weka mipangilio ukifunga macho</string>
+    <string name="face_enrolling_gaze_dialog_message">Ungependa kuweka mipangilio ya Kufungua kwa uso bila kuhitajika kufumbua macho? Ukiweka mipangilio hivi, mtu anaweza kufungua simu yako kwa kuielekeza kwenye uso wako pasipo wewe kufahamu.</string>
+    <string name="face_enrolling_gaze_dialog_title">Weka mipangilio ukifunga macho</string>
+    <string name="face_enrolling_how_to_setup">Jinsi ya kuweka mipangilio</string>
+    <string name="face_enrolling_title">Shika simu imara. Zungusha kichwa chako. Fanya taratibu.</string>
+    <string name="face_enrolling_title_accessibility">Angalia simu yako moja kwa moja</string>
+    <string name="face_enrolling_title_accessibility_progress">Endelea kuangalia simu yako moja kwa moja</string>
+    <string name="face_enrolling_too_close">Sogeza simu mbali kiasi</string>
+    <string name="face_enrolling_too_far">Sogeza simu karibu</string>
+    <string name="face_enrolling_too_high">Sogeza simu chini</string>
+    <string name="face_enrolling_too_left">Sogeza simu upande wako wa kulia</string>
+    <string name="face_enrolling_too_low">Sogeza simu juu zaidi</string>
+    <string name="face_enrolling_too_right">Sogeza simu upande wako wa kushoto</string>
+    <string name="face_enrolling_turn_head_to_arrow">Geuza kichwa chako kuelekea kwenye mshale</string>
+    <string name="face_enrolling_turned_too_far">Geuza kichwa kidogo tu</string>
+    <string name="fallback_menu_item_copy_link">Nakili kiungo</string>
+    <string name="fallback_menu_item_open_in_browser">Fungua katika kivinjari</string>
+    <string name="fallback_menu_item_share_link">Shiriki kiungo</string>
+    <string name="fullbackup_data_summary">"Hifadhi kiotomatiki nakala ya data ya kifaa (kama vile manenosiri ya Wi-Fi na rekodi ya simu zilizopigwa) na data ya programu (kama vile mipangilio na faili zilizohifadhiwa na programu), kwenye Hifadhi ya Google.
+
+1Unapowasha kipengele cha kuhifadhi nakala kiotomatiki, hali hii itasababisha data ya kifaa na programu kuhifadhiwa mara kwa mara katika folda ya faragha kwenye Hifadhi ya Google. Data ya programu inaweza kuwa data yoyote ambayo programu imehifadhi (kulingana na mipangilio ya msanidi programu), ikiwa ni pamoja na data ambayo inaweza kuwa nyeti kama vile anwani, ujumbe na picha.
+
+Data ya nakala haitajumuishwa katika kiwango cha nafasi yako kwenye Hifadhi ya Google. Haitahifadhi nakala za faili kubwa au faili ambazo wasanidi programu wameziondoa kwenye huduma hii."</string>
+    <string name="fullbackup_erase_dialog_message">Je, ungependa kuacha kuhifadhi nakala ya data ya kifaa (kama vile manenosiri ya Wi-Fi na rekodi ya simu zilizopigwa) na data ya programu (kama vile mipangilio na faili zilizohifadhiwa na programu), na pia kufuta nakala zote zilizo kwenye Hifadhi ya Google?</string>
+    <string name="game_dashboard_always_on_summary">Onyesha Njia ya mkato ya Dashibodi ya michezo katika michezo</string>
+    <string name="game_dashboard_always_on_title">Dashibodi ya michezo</string>
+    <string name="game_dashboard_dnd_rule_name">Michezo ya Video</string>
+    <string name="game_dashboard_dnd_summary">Pata arifa za watu na programu muhimu pekee unapocheza mchezo</string>
+    <string name="game_dashboard_dnd_title">Hali ya Usinisumbue kwenye michezo</string>
+    <string name="game_mode_battery_description">Huboresha muda wa matumizi ya betri</string>
+    <string name="game_mode_battery_title">Kiokoa Betri</string>
+    <string name="game_mode_performance_description">Huongeza kasi ya picha, hutumia chaji nyingi ya betri</string>
+    <string name="game_mode_performance_title">Utendaji</string>
+    <string name="game_mode_standard_description">Hutumia chaguomsingi za mchezo</string>
+    <string name="game_mode_standard_title">Wastani</string>
+    <string name="game_optimization_unavailable">Haupatikani kwenye mchezo huu</string>
+    <string name="gesture_aware_confirmation_action_button">Nimeelewa</string>
+    <string name="gesture_aware_footer"><annotation link="link">Mapendeleo</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Mapendeleo</annotation></string>
+    <string name="gesture_skip_direction_ltr">Kushoto kwenda kulia</string>
+    <string name="gesture_skip_direction_rtl">Kulia kwenda kushoto</string>
+    <string name="gesture_skip_direction_title">Mwelekeo wa Kuruka</string>
+    <string name="gesture_skip_footer"><annotation link="link">Mapendeleo</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Mapendeleo</annotation></string>
+    <string name="global_actions_panel_short_title">Kadi na pasi</string>
+    <string name="global_actions_panel_summary">Ili ufikie vitu kama vile njia unazotumia kulipa na pasi za kuabiri, bonyeza na ushikilie kitufe cha Kuwasha/Kuzima.</string>
+    <string name="global_actions_panel_title">Onyesha kadi na pasi</string>
+    <string name="install_unknown_applications">Ruhusu usakinishaji wa programu zilizo kwenye vyanzo vingine kando na Duka la Google Play</string>
+    <string name="keywords_accessibility_menu">mota, menyu ya haraka, menyu saidizi, gusa, kutumia vidole</string>
+    <string name="keywords_adaptive_charging">chaji, inachaji, chaji mahiri, chaji inayojirekebisha, betri, hali ya betri</string>
+    <string name="keywords_assist_gesture_launch">ishara, edge, upande, active edge, bana, shikilia, mapendeleo, mratibu, bana, ok google, mratibu wa google</string>
+    <string name="keywords_assist_gesture_silence">ishara, edge, upande, active edge, kimya, ahirisha, kengele, simu inayoingia, utulivu, onyesho, kufunga skrini, bana, shikilia, simamisha</string>
+    <string name="keywords_assist_gesture_wake">ishara, edge, upande, active edge, washa skrini, arifa, skrini, onyesho, skrini imezimwa, skrini imewashwa, bana, imezimwa, hali tuli, shikilia</string>
+    <string name="keywords_battery_share">kushiriki betri, kuchaji bila kutumia waya</string>
+    <string name="keywords_battery_share_settings">kushiriki betri, kutumia kifaa kilichochajiwa kuchaji vifaa vingine bila kutumia waya</string>
+    <string name="keywords_content_capture">kunasa maudhui, maudhui ya programu, data ya programu</string>
+    <string name="keywords_gesture">ishara, mwendo</string>
+    <string name="keywords_global_actions_panel">kadi, pasi</string>
+    <string name="keywords_live_transcribe">Manukuu, manukuu, manukuu, Manukuu Papo Hapo, tatizo la kusikia, kupoteza uwezo wa kusikia, KIKAPU, kunukuu matamshi, manukuu</string>
+    <string name="keywords_reverse_charging_stop_threshold">Acha kushiriki betri simu inapofika:</string>
+    <string name="keywords_select_to_speak">Sikiliza maandishi, soma kwa sauti, skrini inayozungumza, kisoma skrini</string>
+    <string name="keywords_sound_amplifier">PSAP, kuza, kukuza sauti, tatizo la kusikia, kupoteza uwezo wa kusikia, ukuzaji</string>
+    <string name="keywords_sound_notifications">Arifa, tatizo la kusikia, kupoteza uwezo wa kusikia, arifu</string>
+    <string name="keywords_switch_access">mota, swichi, mkono, AT, teknolojia saidizi, kupooza, ALS, kukagua, kukagua hatua</string>
+    <string name="keywords_talkback">Kisoma skrini, Ujumbe wa Sauti, Ujumbe wa Sauti, Maagizo ya Sauti, Kipofu, Uwezo Mdogo wa Kuona, TTS, kusoma maandishi kwa sauti, maelezo yanayotamkwa</string>
+    <string name="keywords_voice_access">sauti, kudhibiti kwa sauti, mota, mkono, maikrofoni, maikrofoni, imla, zungumza, dhibiti</string>
+    <string name="language_input_gesture_summary_off">Active Edge imezimwa</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge imewashwa</string>
+    <string name="language_input_gesture_summary_on_with_assist">Umewasha Active Edge, bana ili ufungue Mratibu</string>
+    <string name="me_card_title">Pixel Yangu</string>
+    <string name="my_device_info_account_preference_title">Akaunti ya Google</string>
+    <string name="owner_info_settings_edit_text_hint">Kwa mfano, Pixel ya Juma.</string>
+    <string name="reverse_charging_charging_wirelessly_message">Haipatikani kwa sababu simu inachaji bila kutumia waya</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Kipengele cha Kushiriki Betri hakipatikani kwa sababu Pixel ina joto sana. Subiri simu ipoe kisha ujaribu tena.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">Kipengele cha Kushiriki Betri hakipatikani kwa sababu simu inachaji bila kutumia waya</string>
+    <string name="reverse_charging_detail_footer_title">Betri ya simu yako itaisha haraka ukitumia kipengele cha Kushiriki Betri. Kipengele cha Kushiriki Betri hufanya kazi na vifaa vya sauti vya masikioni, saa, simu na zaidi. Ili ichaji vizuri, ondoa kipochi cha simu yako.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"Kipengele cha Kushiriki Betri hufanya kazi na vifaa vya sauti vya masikioni, simu na zaidi.
+
+Betri ya simu yako itaisha haraka ukitumia kipengele hiki. Kipengele cha Kushiriki Betri huzima kiotomatiki baada ya dakika chache kifaa kingine kisipotambuliwa. Ili ichaji vizuri, ondoa kipochi cha simu yako na vipengee vingine vinavyoweza kutatiza, kama vile vifaa vya chuma."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">Kipengele cha Kushiriki Betri hakipatikani kwa sababu Kiokoa Betri kimewashwa</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">Kipengele cha Kushiriki Betri hakipatikani kwa sababu kifaa cha USB-C kimechomekwa</string>
+    <string name="reverse_charging_instructions_title">"Chaji vifaa vingine ukitumia Pixel yako.
+Geuza simu yako ili ujaribu."</string>
+    <string name="reverse_charging_is_off_summary">Imezimwa</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Inashiriki na kuchaji betri</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Inashiriki betri</string>
+    <string name="reverse_charging_is_on_summary">Kimewashwa / Chaji vifaa vingine</string>
+    <string name="reverse_charging_main_switch">Ruhusu Kipengele cha Kushiriki Betri</string>
+    <string name="reverse_charging_off_low_battery_summary">Kimezimwa / Chaji ya betri ya simu iko chini ya %1$s</string>
+    <string name="reverse_charging_off_sharing_level_summary">Kimezimwa / Chaji ya betri iko chini ya kiwango cha kushiriki</string>
+    <string name="reverse_charging_overheat_summary">Hakipatikani kwa sababu Pixel ina joto sana. Subiri simu ipoe kisha ujaribu tena.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">Hakipatikani kwa sababu umewasha Kiokoa betri</string>
+    <string name="reverse_charging_sharing_level_message">Hakipatikani kwa sababu chaji ya betri iko chini ya kiwango cha kushiriki</string>
+    <string name="reverse_charging_switch_summary">Weka vifaa kwenye sehemu ya nyuma ya Pixel yako</string>
+    <string name="reverse_charging_switch_title">Chaji vifaa vingine kwa kuviweka kwenye sehemu ya nyuma ya Pixel yako</string>
+    <string name="reverse_charging_switch_title_message">Chaji vifaa vingine</string>
+    <string name="reverse_charging_title">Kushiriki Betri</string>
+    <string name="reverse_charging_unplug_usb_cable_message">Hakipatikani kwa sababu kifaa cha USB-C kimechomekwa</string>
+    <string name="reverse_charging_warning_summary">Hakipatikani kwa sababu chaji ya betri iko chini ya %1$s</string>
+    <string name="reverse_charging_warning_title">Kipengele cha Kushiriki Betri hakipatikani kwa sababu chaji ya betri iko chini ya %1$s</string>
+    <string name="rtt_settings_always_visible">Ionekane kila wakati</string>
+    <string name="rtt_settings_no_visible">Isionekane</string>
+    <string name="rtt_settings_title">Kutuma SMS katika muda halisi (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Ionekane wakati mazungumzo ya simu yanaendelea</string>
+    <string name="screen_time_summary_usage_today">%1$s leo</string>
+    <string name="search_bar_account_avatar_content_description">Picha ya wasifu, gusa mara mbili ili ufungue Akaunti ya Google</string>
+    <string name="security_advanced_settings">Mipangilio ya kina</string>
+    <string name="security_dismiss_dialog_dismiss_button">Ondoa</string>
+    <string name="security_dismiss_dialog_title">Ungependa kuondoa onyo hili?</string>
+    <string name="security_settings_face_enroll_consent_introduction_title">Ruhusu kipengele cha Kufungua kwa Uso</string>
+    <string name="security_settings_face_enroll_education_message">Kwenye skrini inayofuata, zungusha kichwa chako ili upige picha ya pande zote za uso wako</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">Kwenye skrini inayofuata, shikilia simu yako katika usawa wa macho</string>
+    <string name="security_settings_face_enroll_error_dialog_title">Hujakamilisha usajili</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Muda wa kuweka mipangilio ya Kufungua kwa uso umekwisha</string>
+    <string name="security_settings_face_enroll_finish_description">Sasa unaweza kutumia uso wako kufungua simu yako au kuthibitisha kuwa ni wewe, kama vile unapoingia katika akaunti kwenye programu au unapoidhinisha ununuzi</string>
+    <string name="security_settings_face_enroll_finish_title">Kila kitu ni shwari!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Mipangilio ya wasioweza kuona au kuzungusha kichwa vizuri</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">Unapotumia kipengele cha Kufungua kwa uso, huenda ukahitajika kuweka kichwa chako moja kwa moja mbele ya simu yako.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Inahitaji ufungue macho</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Wewe na mtoto wako mnaweza kufuta muundo wa uso wake au kuzima kipengele cha Kufungua kwa Uso wakati wowote katika Mipangilio. Miundo ya uso inahifadhiwa kwenye simu hadi utakapoifuta.
+
+Pata maelezo zaidi kwenye g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Uamuzi ni wako na mtoto wako</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"Unaweza kufuta muundo wa uso wako au uzime kipengele cha Kufungua kwa Uso wakati wowote katika Mipangilio. Miundo ya uso inahifadhiwa kwenye simu hadi utakapoifuta.
+
+Pata maelezo zaidi kwenye g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Uamuzi ni wako</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"Kipengele cha Kufungua kwa Uso huunda muundo wa kipekee wa uso wa mtoto wako ili kuthibitisha kuwa ni yeye. Ili kuunda muundo huu wa uso wakati wa kuweka mipangilio, mtoto wako atapiga picha za uso wake kutoka pembe tofauti.
+
+Anapotumia kipengele cha Kufungua kwa Uso, picha zinatumiwa ili kusasisha muundo wa uso wake. Picha zinazotumiwa kuunda muundo wa uso wake hazihifadhiwi, ila muundo wa uso unahifadhiwa kwa njia salama na husalia kwenye simu. Mchakato wote hufanyika kwenye simu kwa njia salama."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"Kipengele cha Kufungua kwa Uso huunda muundo wa kipekee wa uso wako ili kuthibitisha kuwa ni wewe. Ili uunde muundo huu wa uso wakati wa kuweka mipangilio, utapiga picha za uso wako kutoka pembe tofauti.
+
+Unapotumia kipengele cha Kufungua kwa Uso, picha zinatumiwa ili kusasisha muundo wa uso wako. Picha zinazotumiwa kuunda muundo wa uso wako hazihifadhiwi, ila muundo wa uso unahifadhiwa kwa njia salama na kusalia kwenye simu yako. Mchakato wote hufanyika kwenye simu yako kwa njia salama."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Jinsi kinavyofanya kazi</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">Kipengele cha kufungua kwa uso kinaweza kuhitaji mtoto wako afungue macho ili kufungua simu au kuthibitisha kuwa ni yeye. Wewe na mtoto wako mnaweza kuwasha chaguo hili katika Mipangilio wakati wowote.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Ikiwa kwa kawaida mtoto wako anavaa miwani, anaweza kuivaa wakati wa kuweka mipangilio.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">Kuangalia simu kunaweza kuifungua hata ikiwa hana lengo la kufanya hivyo. Simu yake inaweza pia kufunguliwa na mtu ambaye anamfanana, kama vile ndugu anayemfanana sana au mtu mwingine akiishikilia mbele ya uso wake.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">Kipengele cha kufungua kwa uso kinaweza kuhitaji ufungue macho ili kufungua simu au kuthibitisha kuwa ni wewe. Unaweza kuwasha chaguo hili katika Mipangilio wakati wowote.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Miwani au miwani ya jua iliyowekwa rangi maalum kidogo ni sawa.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">Huenda PIN au mchoro thabiti ukawa salama zaidi kuliko kutumia uso kufungua simu.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">Kuangalia simu kunaweza kuifungua hata ikiwa huna lengo la kufanya hivyo. Simu yako inaweza pia kufunguliwa na mtu ambaye anakufanana, kama vile ndugu anayekufanana sana au mtu mwingine akiishikilia mbele ya uso wako.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Kumbuka</string>
+    <string name="security_settings_face_enroll_introduction_message">Tumia uso wako kufungua simu yako au kuthibitisha kuwa ni wewe, kama vile unapoingia katika akaunti kwenye programu au unapoidhinisha ununuzi.</string>
+    <string name="security_settings_face_enroll_introduction_title">Weka mipangilio ya Kufungua kwa Uso</string>
+    <string name="security_settings_face_enroll_next">Inayofuata</string>
+    <string name="security_settings_face_enroll_partial_message">Ili uboreshe utendaji, unaweza kuweka tena kipengele cha Kufungua kwa uso katika Mipangilio</string>
+    <string name="security_settings_face_enroll_partial_start_over">Anza tena</string>
+    <string name="security_settings_face_enroll_partial_title">Umemaliza kuweka mipangilio ya Kufungua kwa uso</string>
+    <string name="security_settings_face_enroll_timeout_message">"Jaribu kuweka mipangilio kwa haraka badala yake. Kumbuka kuwa huenda ukahitajika kuweka kichwa chako moja kwa moja mbele ya simu yako unapotumia kipengele cha Kufungua kwa uso. 
+
+Ili uboreshe utendaji, unaweza kuweka tena mipangilio ya Kufungua kwa uso katika Mipangilio."</string>
+    <string name="security_settings_face_enroll_timeout_title">Imeshindwa kuendelea kuweka mipangilio</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Jaribu tena</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Tumia kipengele cha kuweka mipangilio kwa haraka</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Acha kuweka mipangilio</string>
+    <string name="security_settings_face_enroll_too_hot_message">Mipangilio ya Kufungua kwa uso haiwezi kukamilishwa kwa sababu simu ina joto sana. Jaribu tena baadaye joto la simu litakapopungua.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Ruka kuweka mipangilio ya Kufungua kwa uso</string>
+    <string name="security_settings_face_enroll_too_hot_title">Simu ina joto sana</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Gusa ili uweke mipangilio ya alama ya kidole</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Pata maelezo zaidi kwenye g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint kwenye wasifu wa kazini</string>
+    <string name="setup_suggestion_summary">Nakili data, lipa kwa simu yako na zaidi</string>
+    <string name="setup_suggestion_title">Maliza kuweka mipangilio</string>
+    <string name="smart_battery_footer">Ili uboreshe muda wa matumizi ya betri, kipengele cha Betri Inayojirekebisha kinaweza kupunguza utendaji na shughuli za chinichini. Huenda baadhi ya arifa zikachelewa.</string>
+    <string name="smart_battery_manager_title">Mapendeleo yanayojirekebisha</string>
+    <string name="smart_battery_title">Betri Inayojirekebisha</string>
+    <string name="sound_dashboard_summary">Sauti, kuhisi, Usinisumbue</string>
+    <string name="sound_settings">Milio na mitetemo</string>
+    <string name="storage_manager_indicator">Hifadhi Mahiri: ^1</string>
+    <string name="time_remaining_warning_subtext">Takriban %1$s zimesalia kulingana na matumizi yako</string>
+    <string name="time_remaining_warning_text">Huenda chaji ya betri ikaisha baada ya muda mfupi</string>
+    <string name="tips_suggestion_summary">Gundua unachoweza kufanya kwenye simu yako</string>
+    <string name="tips_suggestion_title">Jifahamishe kuhusu Pixel yako</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Shikilia simu mbele ya uso wako</string>
+    <string name="usb_use_file_transfers">Kuhamisha faili / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">Hakuna mtetemo simu zinapopigwa kwa sababu simu imewekwa katika hali ya kimya</string>
+    <string name="vibration_haptics_settings_not_available_title">Haipatikani</string>
+    <string name="wallpaper_dashboard_summary">Rangi, aikoni zenye mada, gridi ya programu</string>
+    <string name="wifi_subscription_summary">Angalia au ubadilishe usajili wa OpenRoaming</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">Imeunganishwa na %1$s</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Gusa ili uunganishe</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Imeshindwa kuunganisha. Gusa ili ujaribu tena.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Inaunganisha…</string>
+</resources>

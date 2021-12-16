@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hats_white_button"
+    android:elevation="0.0dip"
+    android:fontFamily="roboto-regular"
+    android:gravity="left"
+    android:lineSpacingMultiplier="@dimen/hats_lib_survey_answer_line_spacing_multiplier"
+    android:paddingBottom="@dimen/hats_lib_multiple_choice_item_padding"
+    android:paddingLeft="@dimen/hats_lib_survey_horizontal_padding"
+    android:paddingRight="@dimen/hats_lib_survey_horizontal_right_padding"
+    android:paddingTop="@dimen/hats_lib_multiple_choice_item_padding"
+    android:textAllCaps="false"
+    android:textColor="@color/hats_lib_survey_text_color"
+    android:textSize="@dimen/hats_lib_survey_answer_font_size"
+    android:textStyle="normal"
+    style="@style/Widget.AppCompat.Button.Borderless" />

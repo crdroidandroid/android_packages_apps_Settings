@@ -54,6 +54,7 @@ android_library {
     aaptflags: ["--extra-packages com.crdroid.settings"],
 
     resource_dirs: ["res",
+                   "res-pixel",
                     "crDroidSettings/res"
     ],
 
@@ -90,7 +91,10 @@ android_library {
         "SystemUISharedLib",
         "glide",
         "faceunlock_framework",
+        "SettingsGoogle-lib",
     ],
+    manifest: "AndroidManifest.xml",
+    additional_manifests: ["SettingsGoogle-Manifest.xml"],
 
     libs: [
         "telephony-common",

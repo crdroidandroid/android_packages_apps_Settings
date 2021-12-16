@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Pantaila blokeatu inaktiboa</string>
+    <string name="gesture_silence_title">Alertak isilarazteko keinua</string>
+    <string name="gesture_skip_title">Saltatu keinua</string>
+    <string name="keywords_touch_sensitivity">ukitu, sentikortasuna, sentikorra, pantailaren babesa, filma, moldagarri, moldagarritasun</string>
+    <string name="touch_sensitivity_summary">Ukipenaren erabilera hobetzen du pantaila babesteko osagarria erabiltzean</string>
+    <string name="touch_sensitivity_title">Handitu ukipenaren sentikortasuna</string>
+    <string name="accessibility_vibration_settings_screen_title">Erabili dardara eta ukipen bidezko interakzioa</string>
+    <string name="vibration_haptics_settings_not_available_summary">Dardara eta ukipen bidezko interakzioa ez daude erabilgarri telefonoa modu isilean dagoelako</string>
+    <string name="vibration_haptics_strength_category_title">Dardararen eta ukipen bidezko interakzioen intentsitatea</string>
+    <string name="accessibility_vibration_settings_title">Dardara eta ukipen bidezko interakzioa</string>
+    <string name="columbus_title">Ekintzak gauzatzeko sakatze bizkorrak</string>
+    <string name="vibrate_for_calls_category_title">Deiak</string>
+    <string name="accessibility_alarm_vibration_title">Alarmen dardara</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Konfiguratu da Active Edge. Joan hurrengo pantailara edo jarraitu aukerak doitzen.</string>
+    <string name="accessibility_keyboard_haptics_title">Teklatuaren ukipen bidezko interakzioa</string>
+    <string name="accessibility_vibration_preferences_file">Dardara-hobespenak</string>
+    <string name="adaptive_charging">Karga egokitua</string>
+    <string name="adaptive_charging_description">Kargatu pixkanaka gauez bateriaren iraupena epe luzean zaintzeko. Esnatzen zarenean, gailua guztiz kargatuta dagoela adieraziko du alarma batek.</string>
+    <string name="adaptive_charging_time_estimate"><b>Karga egokitua</b> • Ordu honetan egongo da guztiz kargatuta: %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Hobespenak</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Laguntzailea, azken aplikazioak, aplikazio lehenetsiak</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Atzitu Laguntzailea</string>
+    <string name="assist_gesture_enrollment_do_it_later">Geroago</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Estutze arina</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Estutze sendoa</string>
+    <string name="assist_gesture_enrollment_settings">Ezarpenak</string>
+    <string name="assist_gesture_setting_enable_assistant_text">Laguntzailea zerbitzuari hitz egiteko, estutu eta askatu bizkor telefonoaren beheko erdia</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Estutu Laguntzailea erabiltzeko</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Estutu telefonoa alarmak, tenporizadoreak, jakinarazpenak eta jasotako deiak isilarazteko</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">Estutu telefonoa jakinarazpenak eta jasotako deiak isilarazteko</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Estutu telefonoa isilarazteko</string>
+    <string name="assist_gesture_setting_enable_wake_title">Ireki Laguntzailea pantaila itzalita dagoenean</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Estutze arina</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Estutze sendoa</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Estutzeko aukeraren sentikortasuna</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Agian nahi gabe irekiko da Laguntzailea</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Estutu telefonoaren beheko erdia</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Estutu bizkorrago</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Estutu gehiago</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Estutu eta askatu bizkor</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">Doitu graduatzailea</string>
+    <string name="assist_gesture_training_enrolling_text">Estutu telefonoaren beheko erdia. Estutze-indarra doi dezakezu.</string>
+    <string name="assist_gesture_training_enrolling_title">Estutu eta askatu bizkor</string>
+    <string name="assist_gesture_training_finished_text">Geroago ere alda dezakezu estutzeko keinuaren sentikortasuna Ezarpenak atalean</string>
+    <string name="assist_gesture_training_finished_title">Amaitu edo jarraitu doitzen</string>
+    <string name="assist_gesture_training_intro_text">Laguntzailea zerbitzuari edonoiz hitz egiteko, estutu eta askatu bizkor telefonoaren beheko erdia</string>
+    <string name="assist_gesture_training_intro_title">Estutu Laguntzailea erabiltzeko</string>
+    <string name="assist_gesture_training_suggestion_summary">Hitz egin Laguntzailea zerbitzuari eta isilarazi deiak</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Hitz egin Laguntzailea zerbitzuari, eta isilarazi alarmak eta deiak</string>
+    <string name="assist_gesture_training_suggestion_title">Estutu eta askatu Laguntzailea atzitzeko</string>
+    <string name="automatic_storage_manager_activation_warning">Konektatuta zaudenean, babeskopiak egiteko hautatu duzun kalitatean ikusi ahal izango dituzu argazkiak eta bideoak</string>
+    <string name="automatic_storage_manager_days_title">Kendu babeskopia duten argazki eta bideoak</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Biltegi adimenduna desaktibatu nahi duzu? 
+
+Biltegi adimenduna eginbideak ez du tokirik egingo memoria agortzear dagoenean."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Babeskopiak dituzten deskargak</string>
+    <string name="automatic_storage_manager_preference_title">Biltegi adimenduna</string>
+    <string name="automatic_storage_manager_primary_switch_title">Erabili Biltegi adimenduna</string>
+    <string name="automatic_storage_manager_settings">Biltegi adimenduna</string>
+    <string name="automatic_storage_manager_text">Biltegia betetzeko gutxi falta denean, kendu babeskopiak dituzten argazkiak eta bideoak. Google Argazkiak zerbitzuan izango dituzu gordeta halere.</string>
+    <string name="aware_disabled_preference_action">Aktibatu</string>
+    <string name="aware_disabled_preference_neutral">Orain ez</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Ez dago erabilgarri Motion Sense, hegaldi modua eta bateria-aurrezlea aktibatuta daudelako</string>
+    <string name="aware_footer_when_airplane_on">Ez dago erabilgarri Motion Sense, hegaldi modua aktibatuta dagoelako</string>
+    <string name="aware_footer_when_batterysaver_on">Ez dago erabilgarri Motion Sense, bateria-aurrezlea aktibatuta dagoelako</string>
+    <string name="aware_gesture_summary_off">Keinu bizkorrak aktibatuta, Active Edge desaktibatuta</string>
+    <string name="aware_gesture_summary_on_non_assist">Keinu bizkorrak eta Active Edge aktibatuta</string>
+    <string name="aware_gesture_summary_on_with_assist">Keinu bizkorrak eta Active Edge aktibatuta; estutu gailua Laguntzailea erabiltzeko</string>
+    <string name="aware_info_button_description">Ezarpen gehiago</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">Ez dago erabilgarri, hegaldi modua eta bateria-aurrezlea aktibatuta daudelako</string>
+    <string name="aware_summary_when_airplane_on">Ez dago erabilgarri, hegaldi modua aktibatuta dagoelako</string>
+    <string name="aware_summary_when_batterysaver_on">Ez dago erabilgarri, bateria-aurrezlea aktibatuta dagoelako</string>
+    <string name="backup_data_summary">Egin aplikazioetako datuen, wifi-sareetako pasahitzen eta gainerako ezarpenen babeskopiak eta gorde itzazu Google-ren zerbitzarietan</string>
+    <string name="backup_suggestion_cancel">Utzi</string>
+    <string name="backup_suggestion_dialog_description">Telefonoaren barneko memoriako datu guztiak ezabatuko dira.</string>
+    <string name="backup_suggestion_dialog_title">Gailua berrezarri nahi duzu?</string>
+    <string name="backup_suggestion_get_started">lortu informazio gehiago</string>
+    <string name="backup_suggestion_item_summary">Kopiatu Android edo iPhone® gailu batetik</string>
+    <string name="backup_suggestion_item_title">Telefono zaharreko datuak falta dira?</string>
+    <string name="backup_suggestion_missing_description">"Datu batzuk falta bazaizkizu (adibidez, SMS mezuak eta argazkiak), kable bat erabilita transferi ditzakezu Pixel-era.
+
+Lehen urratsak emateko, berrezarri Pixel-a. Telefonoko datu guztiak ezabatuko dira (ezarpen pertsonalizatuak eta hodeiarekin sinkronizatu gabeko datuak barne)."</string>
+    <string name="backup_suggestion_missing_title">Datuak falta zaizkizu?</string>
+    <string name="backup_suggestion_next">hurrengoa</string>
+    <string name="backup_suggestion_other_ways_to_copy">Datuak kopiatzeko beste modu batzuk</string>
+    <string name="backup_suggestion_reset_description">"Hurrengo pantailan berrezarri ahal izango duzu Pixel-a. Datuak kable baten bidez transferitzeko modu bakarra da hori.
+
+Berrezarri ondoren, gauzatu konfiguratze-prozesua eta adierazi telefono zaharreko datuak ekarri nahi dituzula."</string>
+    <string name="backup_suggestion_reset_title">Berrezarri Pixel-a</string>
+    <string name="backup_suggestion_what_is_needed_summary">"Telefonoa berrezarri ondoren, hauek beharko dituzu:
+
+• Telefono zaharra (Android 5.0+ edo iOS® 8.0+ sistema duten LINK_BEGINgailu gehienakLINK_END erabil daitezke).
+• Telefono zaharra kargatzeko edo datuak transferitzeko balio duen kable bat.
+• Pixel-arekin jaso duzun gailuz bizkor aldatzeko Quick Switch Adapter egokigailua."</string>
+    <string name="backup_suggestion_what_is_needed_title">Behar duzuna</string>
+    <string name="battery_manager_summary">Luzatu bateriaren iraupena eta optimizatu kargatze-prozesua</string>
+    <string name="battery_manager_summary_unsupported">Luzatu bateriaren iraupena</string>
+    <string name="battery_missing_link_message">Lortu informazio gehiago</string>
+    <string name="battery_suggestion_summary">Aktibatu Bateria egokitua</string>
+    <string name="battery_tip_smart_battery_summary">Aktibatu Bateria egokitua</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">Aurrerantzean, %1$s ez da parekatuko Google-ko kontu hau lotuta duen inongo gailurekin</string>
+    <string name="columbus_gesture_detected">Sakatze bizkorra hauteman da.</string>
+    <string name="columbus_gesture_enrollment_complete">Eginda</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Orain ez</string>
+    <string name="columbus_gesture_enrollment_settings">Joan ezarpenetara</string>
+    <string name="columbus_gesture_enrollment_try_it">Probatu</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Hautatu zer egin nahi duzun</string>
+    <string name="columbus_gesture_training_action_text">Hautatu zer gertatuko den sakatze bizkorra erabiltzen duzunean. Ondoren, ezarpenetan alda dezakezu.</string>
+    <string name="columbus_gesture_training_action_title">Aukeratu sakatze bizkorra</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Hauteman da birritan sakatzeko lehen saioa. Bi saio behar dira.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Proba ezazu berriro. Sakatu telefonoaren atzealdea birritan bizkor.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Ederki!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Hauteman dira birritan sakatzeko bi saioak</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Prest zaude sakatze bizkorra erabiltzen hasteko</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Bikain!</string>
+    <string name="columbus_gesture_training_enrolling_text">Sakatu telefonoaren atzealdea birritan bizkor.</string>
+    <string name="columbus_gesture_training_enrolling_title">Probatu sakatze bizkorra</string>
+    <string name="columbus_gesture_training_finished_text">Sakatze bizkorra erabiltzeko behar den indarra aldatzeko, joan ezarpenetara.</string>
+    <string name="columbus_gesture_training_finished_title">Konfiguratu duzu sakatze bizkorra</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Gailuaren atzealdea birritan sakatu duzu; Laguntzailea edonoiz eta edonon erabiltzeko aukera ematen dizu keinu horrek. Keinua pertsonalizatzeko, joan ezarpenetara.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Atera pantaila-argazki bat, erakutsi jakinarazpenak edo hasi beste ekintza bat birritan sakatuta.</string>
+    <string name="columbus_gesture_training_intro_title">Sakatze bizkorrarekin ekintza bizkorrak egiteko</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Hautatu zein aplikazio ireki nahi duzun</string>
+    <string name="columbus_gesture_training_launch_text">Hautatu zer aplikazio irekiko den sakatze bizkorra erabiltzen duzunean.</string>
+    <string name="columbus_gesture_training_launch_title">Aukeratu zein aplikazio ireki nahi duzun</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s aplikazioaren lasterbidearen ezarpenak</string>
+    <string name="columbus_launch_settings_activity_title">Sakatze bizkorraren ezarpenak</string>
+    <string name="columbus_name">Sakatze bizkorra</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">\"%1$s\" ekintzaren ezarpenak</string>
+    <string name="columbus_setting_action_assistant_title">Atzitu laguntzaile digitala</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Ez da hautatu aplikaziorik</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Aplikazioa ez dago instalatuta</string>
+    <string name="columbus_setting_action_launch_title">Ireki aplikazioa</string>
+    <string name="columbus_setting_action_notification_title">Erakutsi jakinarazpenak</string>
+    <string name="columbus_setting_action_open_app_title">Ireki aplikazioa</string>
+    <string name="columbus_setting_action_overview_title">Ikusi azken aplikazioak</string>
+    <string name="columbus_setting_action_play_pause_title">Erreproduzitu edo pausatu multimedia-edukia</string>
+    <string name="columbus_setting_action_screenshot_title">Atera pantaila-argazki bat</string>
+    <string name="columbus_setting_actions_title">Sakatu birritan telefonoaren atzealdea hau egiteko:</string>
+    <string name="columbus_setting_additional_settings_title">Sakatze bizkorraren indarra</string>
+    <string name="columbus_setting_app_selection_help_text">Hautatu zer aplikazio irekiko den telefonoaren atzealdea birritan sakatzen duzunean. Aplikazioa desinstalatzen baduzu, beste aplikazio bat hautatu arte desaktibatu egingo da sakatze bizkorra.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Hautatu zer gertatuko den aplikazioa sakatze bizkorra erabiliz irekitzen duzunean.</string>
+    <string name="columbus_setting_enable_switch_title">Erabili sakatze bizkorra</string>
+    <string name="columbus_setting_sensitivity_title">Eskatu indar handiagoz sakatzeko</string>
+    <string name="connectivity_helper_call_quality_category">Deiaren kalitatea</string>
+    <string name="connectivity_helper_call_quality_summary">Jaso jakinarazpenak deiak abian direnean gertatutako konexio-arazoen arrazoiei buruz</string>
+    <string name="connectivity_helper_call_quality_title">Jaso jakinarazpenak</string>
+    <string name="connectivity_helper_d2d_summary">Jakinarazi besteei telefonoak konexio-arazoak dituenean deiak abian direnean</string>
+    <string name="connectivity_helper_d2d_title">Partekatu konexioari buruzko informazioa</string>
+    <string name="connectivity_helper_footnote">Beste deitzaileak gailu eta sare bateragarriak darabiltzanean parteka dezakezu konexioari buruzko informazioa</string>
+    <string name="content_capture">Pertsonalizatu aplikazioetako datuekin</string>
+    <string name="copy_toast_msg">Arbelean kopiatu da esteka</string>
+    <string name="dark_ui_text">Gai ilunak atzeko plano beltza erabiltzen du bateriak gehiago iraun dezan. Gai ilunaren programazioak ez dira aktibatzen pantaila itzaltzen den arte.</string>
+    <string name="dock_summary_charging_phone">Telefonoa kargatzea</string>
+    <string name="double_twist_for_camera_mode_summary">Google-ren Kamera aplikazioaren autoargazki modua aktibatu eta desaktibatzeko, biratu birritan eskumuturra.</string>
+    <string name="downloads_backup_text">Deskargatutako fitxategien babeskopiak Google Drive-n gordeko dira</string>
+    <string name="duration_less_than_one_minute">1 minutu baino gutxiago</string>
+    <string name="extra_app_info_label">Jokoen optimizazioa</string>
+    <string name="face_enrolling_center_head">Sartu aurpegia barneko markoan</string>
+    <string name="face_enrolling_description">Grabatu aurpegiaren angelu guztiak lauza guztiak kenduta.</string>
+    <string name="face_enrolling_do_it_later">Geroago</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Utzi</string>
+    <string name="face_enrolling_gaze_dialog_continue">Konfiguratu begiak itxita</string>
+    <string name="face_enrolling_gaze_dialog_message">Begiak itxita daudela ere funtziona dezan konfiguratu nahi duzu aurpegi bidez desblokeatzeko eginbidea? Horrela konfiguratzen baduzu, beste norbaitek ere desblokea lezake zure telefonoa hura zuri begira jarrita zu adi ez zaudenean.</string>
+    <string name="face_enrolling_gaze_dialog_title">Konfiguratu begiak itxita</string>
+    <string name="face_enrolling_how_to_setup">Konfiguratzeko argibideak</string>
+    <string name="face_enrolling_title">Eutsi telefonoari finko eta biratu aurpegia mantso.</string>
+    <string name="face_enrolling_title_accessibility">Begiratu zuzenean telefonoari</string>
+    <string name="face_enrolling_title_accessibility_progress">Jarraitu zuzen begiratzen telefonoari</string>
+    <string name="face_enrolling_too_close">Urrundu telefonoa</string>
+    <string name="face_enrolling_too_far">Hurbildu telefonoa</string>
+    <string name="face_enrolling_too_high">Jaitsi telefonoa</string>
+    <string name="face_enrolling_too_left">Eraman telefonoa eskuinera</string>
+    <string name="face_enrolling_too_low">Igo telefonoa</string>
+    <string name="face_enrolling_too_right">Eraman telefonoa ezkerrera</string>
+    <string name="face_enrolling_turn_head_to_arrow">Biratu burua gezirantz</string>
+    <string name="face_enrolling_turned_too_far">Biratu burua apur bat gutxiago</string>
+    <string name="fallback_menu_item_copy_link">Kopiatu esteka</string>
+    <string name="fallback_menu_item_open_in_browser">Ireki arakatzailean</string>
+    <string name="fallback_menu_item_share_link">Partekatu esteka</string>
+    <string name="fullbackup_data_summary">"Egin babeskopiak automatikoki Google Drive-n, bai gailuetako datuenak (esaterako, Wi-Fi pasahitzak eta deien historia), bai aplikazioetako datuenak (esaterako, ezarpenak eta aplikazioek gordetako fitxategiak).
+
+Babeskopiak automatikoki egiteko aukera aktibatzean, gailuko eta aplikazioetako datuak Google Drive-ko karpeta pribatu batean gordetzen dira aldizka. Aplikazioetako datuak aplikazioek gordetako edozein datu izan daitezke (garatzaileen ezarpenen arabera), eta kontuzkoak izan litezkeen datuak ere sar daitezke (adibidez, kontaktuak, mezuak eta argazkiak).
+
+Babeskopiek ez dute eraginik Drive-ko biltegiratze-kuotan. Fitxategiak handiak badira edo garatzaileek zerbitzutik kanpo nahita utzi badituzte, ez da haien babeskopiarik egingo."</string>
+    <string name="fullbackup_erase_dialog_message">Babeskopiak, bai gailuetako datuenak (esaterako, Wi-Fi pasahitzak eta deien historia), bai aplikazioetako datuenak (esaterako, ezarpenak eta aplikazioek gordetako fitxategiak), egiteari utzi eta Google Drive-ko kopia guztiak ezabatu nahi dituzu?</string>
+    <string name="game_dashboard_always_on_summary">Erakutsi joko-paneleko lasterbidea jokoetan</string>
+    <string name="game_dashboard_always_on_title">Joko-panela</string>
+    <string name="game_dashboard_dnd_rule_name">Jokoak</string>
+    <string name="game_dashboard_dnd_summary">Jokoa erabiltzean, jaso pertsona eta aplikazio garrantzitsuen jakinarazpenak soilik</string>
+    <string name="game_dashboard_dnd_title">Jokoetarako ez molestatzeko modua</string>
+    <string name="game_mode_battery_description">Bateriaren iraupena luzatzen da</string>
+    <string name="game_mode_battery_title">Bateria-aurrezlea</string>
+    <string name="game_mode_performance_description">Irudi-abiadura maximizatzen du, eta bateria gehiago kontsumitzen</string>
+    <string name="game_mode_performance_title">Errendimendua</string>
+    <string name="game_mode_standard_description">Jokoaren balio lehenetsiak erabiltzen ditu</string>
+    <string name="game_mode_standard_title">Estandarra</string>
+    <string name="game_optimization_unavailable">Ez dago erabilgarri joko honetan</string>
+    <string name="gesture_aware_confirmation_action_button">Ados</string>
+    <string name="gesture_aware_footer"><annotation link="link">Hobespenak</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Hobespenak</annotation></string>
+    <string name="gesture_skip_direction_ltr">Ezkerretik eskuinera</string>
+    <string name="gesture_skip_direction_rtl">Eskuinetik ezkerrera</string>
+    <string name="gesture_skip_direction_title">Saltatzeko norabidea</string>
+    <string name="gesture_skip_footer"><annotation link="link">Hobespenak</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Hobespenak</annotation></string>
+    <string name="global_actions_panel_short_title">Txartelak eta sarrerak</string>
+    <string name="global_actions_panel_summary">Ordainketa-metodoak, hegazkineratze-txartelak eta bestelakoak atzitzeko, eduki sakatuta etengailua.</string>
+    <string name="global_actions_panel_title">Erakutsi txartelak eta bonuak</string>
+    <string name="install_unknown_applications">Baimendu Play Store ez diren iturburuetatik datozen aplikazioak instalatzea</string>
+    <string name="keywords_accessibility_menu">motorra, menu bizkorra, erabilerraztasun-menua, ukipena, trebetasuna</string>
+    <string name="keywords_adaptive_charging">karga, kargatzen, karga adimenduna, karga egokitua, bateria, bateriaren osasuna</string>
+    <string name="keywords_assist_gesture_launch">keinua, ertza, alboa, ertz aktiboa, estutu, estutzea, heldu, eutsi, oratu, laguntza, lagundu, laguntzailea, ok google, hey google, google-ren laguntzailea</string>
+    <string name="keywords_assist_gesture_silence">keinua, ertza, alboa, ertz aktiboa, isiltasuna, isilarazi, atzeratu, alarma, jasotako deia, sarrerako deia, deia, isilik, bistaratu, bistaratzea, pantaila blokeatua, estutu, estutzea, heldu, eutsi, oratu, ertzak, gelditu, geldiarazi</string>
+    <string name="keywords_assist_gesture_wake">keinua, ertza, alboa, ertz aktiboa, esnatu, iratzarri, esnarazi, jakinarazpenak, pantaila, bistaratu, bistaratzea, pantaila itzalita, pantaila piztuta, estutu, estutzea, lo, lotan, inaktibo, lo egin, heldu, eutsi, oratu</string>
+    <string name="keywords_battery_share">bateria partekatzea, hari gabe kargatzea</string>
+    <string name="keywords_battery_share_settings">bateria partekatzea, beste gailu batzuk hari gabe kargatzea</string>
+    <string name="keywords_content_capture">eduki-bilketa, aplikazioko edukia, aplikazioetako datuak</string>
+    <string name="keywords_gesture">keinuak, mugimenduak</string>
+    <string name="keywords_global_actions_panel">txartelak, sarrerak</string>
+    <string name="keywords_live_transcribe">azpitituluak, istanteko azpitituluak, entzumen txarra, entzumen-galera, CART, ordenagailuz lagundutako transkripzioa denbora errealean, ahotsa testu bihurtzea</string>
+    <string name="keywords_reverse_charging_stop_threshold">Utzi bateria partekatzeari telefonoaren bateria-maila hona iristean:</string>
+    <string name="keywords_select_to_speak">testua entzun, ozen irakurri, pantailan dagoena esan, pantaila-irakurgailua</string>
+    <string name="keywords_sound_amplifier">PSAP, soinua anplifikatzeko produktu pertsonalak, anplifikatu, soinu-anplifikazioa, entzumen txarra, entzumen-galera, anplifikazioa</string>
+    <string name="keywords_sound_notifications">jakinarazpenak, entzumen txarra, entzumen-galera, jakinarazi</string>
+    <string name="keywords_switch_access">motorra, erabilerraztasun-etengailua, eskua, laguntza-teknologia, paralisia, AEA, alboko esklerosi amiotrofikoa, eskaneatzea, urratsez urrats eskaneatzea</string>
+    <string name="keywords_talkback">pantaila-irakurgailua, Voice Over, VoiceOver, itsua, ikusmen txarra, TTS, testua ahots bihurtzea, ahozko argibideak</string>
+    <string name="keywords_voice_access">ahotsa, ahots bidezko kontrola, motorra, eskua, mikrofonoa, diktaketa, hitz egin, kontrolatu</string>
+    <string name="language_input_gesture_summary_off">Active Edge desaktibatuta</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge aktibatuta</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge aktibatuta. Estutu gailua Laguntzailea atzitzeko.</string>
+    <string name="me_card_title">Nire Pixel gailua</string>
+    <string name="my_device_info_account_preference_title">Google-ko kontua</string>
+    <string name="owner_info_settings_edit_text_hint">Adibidez, Jonen Pixel gailua.</string>
+    <string name="reverse_charging_charging_wirelessly_message">Ez dago erabilgarri telefonoa haririk gabe ari delako kargatzen</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Ezin da partekatu bateria Pixel gailua gehiegi berotu delako. Itxaron telefonoa hoztu arte eta saiatu berriro.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">Ezin da partekatu bateria, telefonoa haririk gabe ari delako kargatzen</string>
+    <string name="reverse_charging_detail_footer_title">Bateria partekatuz gero, bizkorrago agortuko da telefonoaren bateria. Aurikular, ordulari, telefono eta bestelako gailu bateragarriekin parteka daiteke bateria. Hobeto kargatzeko, kendu karkasa telefonoari.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"Aurikular, telefono eta bestelako gailu bateragarriekin parteka daiteke bateria.
+
+Eginbide hori erabiliz gero, bizkorrago agortuko da telefonoaren bateria. Minutu batzuk igaro ondoren beste gailurik hauteman ez bada, automatikoki desaktibatuko da bateria partekatzeko eginbidea. Hobeto kargatzeko, kendu karkasa eta agian oztopo egiten duten bestelako elementuak (adibidez, metalezko objektuak) telefonoari."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">Ezin da partekatu bateria, bateria-aurrezlea aktibatuta dagoelako</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">Ezin da partekatu bateria, USB-C gailu bat entxufatuta dagoelako</string>
+    <string name="reverse_charging_instructions_title">"Kargatu beste gailu batzuk Pixel-arekin.
+Probatzeko, irauli telefonoa."</string>
+    <string name="reverse_charging_is_off_summary">Desaktibatuta</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Bateria partekatzen eta kargatzen</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Bateria partekatzen</string>
+    <string name="reverse_charging_is_on_summary">Aktibatuta / Kargatu beste gailu batzuk</string>
+    <string name="reverse_charging_main_switch">Eman bateria partekatzeko baimena</string>
+    <string name="reverse_charging_off_low_battery_summary">Desaktibatuta / Bateriaren %1$s baino gutxiago geratzen zaio telefonoari</string>
+    <string name="reverse_charging_off_sharing_level_summary">Desaktibatuta / Partekatzeko behar dena baino bateria gutxiago geratzen zaio telefonoari</string>
+    <string name="reverse_charging_overheat_summary">Ez dago erabilgarri Pixel gailua beroegi dagoelako. Itxaron telefonoa hoztu arte eta saiatu berriro.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">Ez dago erabilgarri, bateria-aurrezlea aktibatuta dagoelako</string>
+    <string name="reverse_charging_sharing_level_message">Ez dago erabilgarri, partekatzeko behar dena baino bateria gutxiago geratzen zaiolako telefonoari</string>
+    <string name="reverse_charging_switch_summary">Ipini gailuak Pixel-aren bizkar gainean</string>
+    <string name="reverse_charging_switch_title">Kargatu beste gailu batzuk haiek Pixel gailuaren atzealdean jarrita</string>
+    <string name="reverse_charging_switch_title_message">Kargatu beste gailu batzuk</string>
+    <string name="reverse_charging_title">Bateria partekatzea</string>
+    <string name="reverse_charging_unplug_usb_cable_message">Ez dago erabilgarri beste gailu bat konektatuta dagoelako USB-C bidez</string>
+    <string name="reverse_charging_warning_summary">Ez dago erabilgarri bateria %1$s(e)tik beherakoa delako</string>
+    <string name="reverse_charging_warning_title">Ezin da partekatu bateria, %1$s baino gutxiago gelditzen delako</string>
+    <string name="rtt_settings_always_visible">Beti ikusgai</string>
+    <string name="rtt_settings_no_visible">Ez dago ikusgai</string>
+    <string name="rtt_settings_title">Deietan testua bidaltzeko eginbidea (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Ikusgai deietan</string>
+    <string name="screen_time_summary_usage_today">%1$s gaur</string>
+    <string name="search_bar_account_avatar_content_description">Profileko argazkia. Sakatu birritan Google-ko kontua irekitzeko.</string>
+    <string name="security_advanced_settings">Ezarpen aurreratuak</string>
+    <string name="security_dismiss_dialog_dismiss_button">Baztertu</string>
+    <string name="security_dismiss_dialog_title">Abisua baztertu nahi duzu?</string>
+    <string name="security_settings_face_enroll_education_message">Hurrengo pantailan, biratu burua aurpegiaren angelu guztiak hauteman daitezen</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">Hurrengo pantailan, eutsi telefonoari begien parean</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Gainditu da eginbidea konfiguratzeko denbora-muga</string>
+    <string name="security_settings_face_enroll_finish_description">Orain, aurpegia erabil dezakezu telefonoa desblokeatzeko edo zeu zarela egiaztatzeko, hala nola aplikazioetan saioa hastean edo erosketak onartzean</string>
+    <string name="security_settings_face_enroll_finish_title">Dena ongi!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Konfiguratu ikusmena mugatuta edo buruaren mugimendua murriztuta dutenentzat</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">Aurpegi bidez desblokeatzeko, litekeena da telefonoari zuzenago begiratu behar izatea.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Begiak irekita eduki behar dituzu</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Haurrak eta zuk haren aurpegi-eredua ezabatu nahi baduzue edo aurpegi bidez desblokeatzeko eginbidea desaktibatu nahi baduzue, joan Ezarpenak atalera. Ezabatzen dituzuen arte, telefonoan gordeko dira aurpegi-ereduak.
+
+Lortu informazio gehiago g.co/pixel/faceunlock helbidean."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Haurrak eta zeuk duzue kontrola</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"Aurpegi-eredua ezabatzeko edo aurpegi bidez desblokeatzeko eginbidea desaktibatzeko, joan Ezarpenak atalera. Ezabatzen dituzun arte, telefonoan gordeko dira aurpegi-ereduak.
+
+Lortu informazio gehiago g.co/pixel/faceunlock helbidean."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Zure esku dago</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"Aurpegi bidez desblokeatzeko eginbideak haurraren aurpegiaren eredu esklusibo bat sortzen du hura dela egiaztatzeko. Konfiguratzean aurpegi-eredu hori sortzeko, aurpegiaren argazkiak aterako ditu haurrak, hainbat ikuspegitatik.
+
+Aurpegi bidez desblokeatzeko eginbidea erabiltzen duenean, haren aurpegi-eredua eguneratzeko erabiltzen dira irudiak. Aurpegi-eredua sortzeko erabilitako irudiak ez dira biltegiratzen, baina aurpegi-eredua telefonoan gordetzen da, modu seguruan, eta ez da inoiz ateratzen telefonotik. Guztia telefonoan prozesatzen da, modu seguruan."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"Aurpegi bidez desblokeatzeko eginbideak zure aurpegiaren eredu esklusibo bat sortzen du zeu zarela egiaztatzeko. Konfiguratzean aurpegi-eredu hori sortzeko, aurpegiaren argazkiak aterako dituzu, hainbat ikuspegitatik.
+
+Aurpegi bidez desblokeatzeko eginbidea erabiltzen duzunean, zure aurpegi-eredua eguneratzeko erabiltzen dira irudiak. Aurpegi-eredua sortzeko erabilitako irudiak ez dira biltegiratzen, baina aurpegi-eredua telefonoan gordetzen da, modu seguruan, eta ez da inoiz ateratzen telefonotik. Guztia telefonoan prozesatzen da, modu seguruan."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Nola funtzionatzen du?</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">Baliteke haurrak begiak irekita edukitzeko eskatzea aurpegi bidez desblokeatzeko eginbideak, telefonoa desblokeatze edo hura dela egiaztatze aldera. Ezarpenetan aktiba edo desaktiba dezakezue aukera hori bai zuk, bai haurrak berak.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Haurrak betaurrekoak erabili ohi baditu, konfigurazio-prozesuan jantzita eduki ditzake.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">Telefonoari begiratuz gero, desblokeatu egin daiteke, halako asmorik izan ez arren. Haren antz handia duen norbaitek ere (biki batek, esaterako) desblokea dezake telefonoa, edo telefonoa aurpegiaren parean jartzen badiote.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">Baliteke begiak irekita edukitzeko eskatzea aurpegi bidez desblokeatzeko eginbideak, telefonoa desblokeatze edo zeu zarela egiaztatze aldera. Ezarpenetan aktiba edo desaktiba dezakezu aukera hori.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Betaurrekoak jantzita utz daitezke, baita kristalak leunki tindatuta badituzte ere.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">Telefonoa aurpegiaren bidez desblokeatzea agian ez da eredu edo PIN konplexuak erabiltzea bezain segurua.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">Telefonoari begiratuz gero, desblokeatu egin daiteke, halako asmorik izan ez arren. Zure antz handia duen norbaitek ere (biki batek, esaterako) desblokea dezake telefonoa, edo telefonoa aurpegiaren parean jartzen badizute.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Gogoan izan</string>
+    <string name="security_settings_face_enroll_introduction_message">Erabili aurpegia telefonoa desblokeatzeko edo zeu zarela egiaztatzeko, hala nola aplikazioetan saioa hastean edo erosketak onartzean.</string>
+    <string name="security_settings_face_enroll_introduction_title">Konfiguratu aurpegi bidez desblokeatzeko eginbidea</string>
+    <string name="security_settings_face_enroll_next">Hurrengoa</string>
+    <string name="security_settings_face_enroll_partial_message">Errendimendua hobetu nahi baduzu, konfiguratu aurpegi bidez desblokeatzeko eginbidea berriro Ezarpenak atalean</string>
+    <string name="security_settings_face_enroll_partial_start_over">Hasi berriro</string>
+    <string name="security_settings_face_enroll_partial_title">Konfiguratu da aurpegi bidez desblokeatzeko eginbidea</string>
+    <string name="security_settings_face_enroll_timeout_message">"Probatu konfigurazio bizkorra. Kontuan izan: litekeena da gailuari zuzenago begiratu behar izatea aurpegi bidez desblokeatzeko eginbidea erabiltzen duzunean.
+
+Errendimendua hobetu nahi baduzu, konfiguratu aurpegi bidez desblokeatzeko eginbidea berriro Ezarpenak atalean."</string>
+    <string name="security_settings_face_enroll_timeout_title">Ezin da jarraitu konfiguratzen</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Saiatu berriro</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Erabili konfigurazio bizkorra</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Irten konfiguraziotik</string>
+    <string name="security_settings_face_enroll_too_hot_message">Ezin da amaitu aurpegi bidez desblokeatzeko eginbidea konfiguratzen telefonoa gehiegi berotu delako. Saiatu berriro telefonoa hozten denean.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Saltatu konfigurazio-prozesua</string>
+    <string name="security_settings_face_enroll_too_hot_title">Telefonoa gehiegi berotu da</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Hatz-marka konfiguratzeko, sakatu hau</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Lortu informazio gehiago g.co/pixel/fingerprintunlock helbidean.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Laneko profilerako Pixel Imprint</string>
+    <string name="setup_suggestion_summary">Kopiatu datuak, ordaindu telefonoarekin, eta abar</string>
+    <string name="setup_suggestion_title">Amaitu konfiguratzen</string>
+    <string name="smart_battery_footer">Bateriaren iraupena luzatzeko, baliteke Bateria egokitua eginbideak errendimendua eta atzeko planoko jarduerak mugatzea. Beharbada, jakinarazpen batzuk atzeratu egingo dira.</string>
+    <string name="smart_battery_manager_title">Hobespen egokituak</string>
+    <string name="smart_battery_title">Bateria egokitua</string>
+    <string name="sound_dashboard_summary">Bolumena, ukipen bidezko interakzioa, Ez molestatu</string>
+    <string name="sound_settings">Soinua eta dardara</string>
+    <string name="storage_manager_indicator">Biltegi adimenduna: ^1</string>
+    <string name="time_remaining_warning_subtext">%1$s inguru gelditzen dira, erabileraren arabera</string>
+    <string name="time_remaining_warning_text">Laster agortuko da bateria</string>
+    <string name="tips_suggestion_summary">Ikusi zer egin dezakezun telefonoarekin</string>
+    <string name="tips_suggestion_title">Ezagutu Pixel gailua</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Eutsi telefonoari aurpegiaren aurrean</string>
+    <string name="usb_use_file_transfers">Fitxategi-transferentzia / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">Deietarako dardara ez dago erabilgarri telefonoa modu isilean dagoelako</string>
+    <string name="vibration_haptics_settings_not_available_title">Ez daude erabilgarri</string>
+    <string name="wallpaper_dashboard_summary">Koloreak, ikono gaidunak, aplikazioen sareta</string>
+    <string name="wifi_subscription_summary">Ikusi edo aldatu OpenRoaming-eko harpidetza</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">%1$s autentifikatzailearekin konektatuta</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Sakatu konektatzeko</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Ezin da konektatu. Berriro saiatzeko, sakatu hau.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Konektatzen…</string>
+</resources>

@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">අක්‍රිය අගුලු තිරය</string>
+    <string name="gesture_silence_title">ඇඟවීම් අභිනය නිහඬ කරන්න</string>
+    <string name="gesture_skip_title">අභිනය මඟ හරින්න</string>
+    <string name="keywords_touch_sensitivity">ස්පර්ශය, සංවේදීතාව, සංවේදී, තිර ආරක්ෂකය, චිත්‍රපටය, ප්‍රතිචාරාත්මක, ප්‍රතිචාරාත්මකතාව</string>
+    <string name="touch_sensitivity_summary">තිර ආරක්ෂකය භාවිත කරන විට ස්පර්ශය වැඩිදියුණු කරයි</string>
+    <string name="touch_sensitivity_title">ස්පර්ශ සංවේදිතාව වැඩි කරන්න</string>
+    <string name="accessibility_vibration_settings_screen_title">කම්පන &amp; ස්පර්ශ භාවිත කරන්න</string>
+    <string name="vibration_haptics_settings_not_available_summary">දුරකථනය නිහඬ වෙත සකසා ඇති නිසා කම්පන &amp; ස්පර්ශ ලබා ගත නොහැකිය</string>
+    <string name="vibration_haptics_strength_category_title">කම්පන සහ ස්පර්ශ ශක්තිය</string>
+    <string name="accessibility_vibration_settings_title">කම්පන &amp; ස්පර්ශ</string>
+    <string name="columbus_title">ක්‍රියා ආරම්භ කිරීමට ඉක්මන් තට්ටු කිරීම</string>
+    <string name="vibrate_for_calls_category_title">ඇමතුම්</string>
+    <string name="accessibility_alarm_vibration_title">එලාම කම්පනය</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge පිහිටුවීම. ඊළඟ තිරය වෙත යන්න නැතහොත් සීරුමාරු කිරීම දිගටම කරගෙන යන්න.</string>
+    <string name="accessibility_keyboard_haptics_title">යතුරු පුවරු ස්පර්ශ</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">අනුවර්තී ආරෝපණය</string>
+    <string name="adaptive_charging_description">දිගුකාලීන බැටරි ආයු කාලය ආරක්ෂා කර ගැනීම සඳහා රාත්‍රියෙහි ස්ථාවර ලෙස ආරෝපණය කරන්න. අවදි වන විට සම්පූර්ණයෙන්ම ආරෝපණය කිරීමට එලාමය භාවිත කරයි.</string>
+    <string name="adaptive_charging_time_estimate"><b>අනුවර්තී ආරෝපණය</b> • %1$s වන විට සම්පූර්ණයි</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">මනාප</annotation></string>
+    <string name="app_and_notification_dashboard_summary">සහකරු, මෑත යෙදුම්, පෙරනිමි යෙදුම්</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">සහායක වෙත දිගටම</string>
+    <string name="assist_gesture_enrollment_do_it_later">පසුව එය කරන්න</string>
+    <string name="assist_gesture_enrollment_seekbar_light">ලිහිල් මිරිකීම</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">දැඩි මිරිකීම</string>
+    <string name="assist_gesture_enrollment_settings">සැකසීම්</string>
+    <string name="assist_gesture_setting_enable_assistant_text">ඔබගේ සහායකට කථා කිරීමට, ඔබේ දුරකථනයේ පහළ අර්ධය ඉක්මනින් මිරිකා, අනතුරුව මුදා හරින්න</string>
+    <string name="assist_gesture_setting_enable_assistant_title">ඔබගේ සහායක සඳහා මිරිකන්න</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">එලාම, ටයිමර, දැනුම්දීම් සහ එන ඇමතුම් නිහඬ කිරීමට මිරිකන්න</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">දැනුම්දීම් සහ එන ඇමතුම් නිහඬ කිරීමට මිරිකන්න</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">දුරකථනය නිහඬ කිරීමට මිරිකන්න</string>
+    <string name="assist_gesture_setting_enable_wake_title">තිරය ක්‍රියාවිරහිත විට සහායක විවෘත කරන්න</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">ලිහිල් මිරිකීම</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">දැඩි මිරිකීම</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">මිරිකීමේ සංවේදීතාව</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">වැරදීමකින් සහායක ඒමට පුළුවනි</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">ඔ‍බගේ දුරකථනයේ පහළ අර්ධය මිරිකන්න</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">වේගයෙන් මිරිකන්න</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">තදින් මිරිකන්න</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">ඉක්මනින් මිරිකා අනතුරුව මුදා හරින්න</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">ස්ලයිඩරය සීරුමාරු කිරීමට උත්සහ කරන්න</string>
+    <string name="assist_gesture_training_enrolling_text">ඔබේ දුරකථනයේ පහළ අර්ධය මිරිකන්න. ඔබට කොතරම් තදින් මිරිකීමට අවශ්‍යද යන්න සීරුමාරු කළ හැකිය.</string>
+    <string name="assist_gesture_training_enrolling_title">ඉක්මනින් මිරිකා මුදා හරින්න</string>
+    <string name="assist_gesture_training_finished_text">ඔබට මිරිකිමේ සංවේදීතාවය පසුව සැකසීම් වල වෙනස් කිරීමට හැකිය</string>
+    <string name="assist_gesture_training_finished_title">අවසන් කරන්න හෝ දිගටම සීරුමාරු කරන්න</string>
+    <string name="assist_gesture_training_intro_text">ඔබගේ සහායකට ඕනෑම වේලාවක කථා කිරීමට, ඔබේ දුරකථනයේ පහළ අර්ධය ඉක්මනින් මිරිකා, අනතුරුව මුදා හරින්න.</string>
+    <string name="assist_gesture_training_intro_title">ඔබගේ සහායක සඳහා මිරිකන්න</string>
+    <string name="assist_gesture_training_suggestion_summary">සහායකට කථා කරන්න, ඇමතුම් නිහඬ කරන්න</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">සහායකට කථා කරන්න, එලාම සහ ඇමතුම් නිහඬ කරන්න</string>
+    <string name="assist_gesture_training_suggestion_title">සහායක සඳහා මිරිකා මුදා හරින්න</string>
+    <string name="automatic_storage_manager_activation_warning">ඔබ සම්බන්ධ වී ඇති විට, ඔබ උපස්ථය සඳහා තෝරා ඇති ගුණත්වයේදී ඔබට තවම ඡායාරූප සහ වීඩියෝ වෙත ප්‍රවේශ විය හැකිය</string>
+    <string name="automatic_storage_manager_days_title">උපස්ථ කළ ඡායාරූප සහ වීඩියෝ ඉවත් කරන්න</string>
+    <string name="automatic_storage_manager_deactivation_warning">"ස්මාර්ට් ගබඞාව ක්‍රියා විරහිත කරන්නද? 
+
+ඔබගේ ගබඩාව මුළුමනින්ම පාහේ පිරී තිබෙන විට ස්මාර්ට් ගබඞාව හට ඉඩ නිදහස් කිරීමට නොහැක."</string>
+    <string name="automatic_storage_manager_downloads_days_title">උපස්ථ කළ බාගැනීම්</string>
+    <string name="automatic_storage_manager_preference_title">ස්මාර්ට් ගබඞාව</string>
+    <string name="automatic_storage_manager_primary_switch_title">ස්මාර්ට් ගබඩාව භාවිත කරන්න</string>
+    <string name="automatic_storage_manager_settings">ස්මාර්ට් ගබඞාව</string>
+    <string name="automatic_storage_manager_text">ගබඩාව පිරුණු විට, උපස්ථ කළ ඡායාරූප සහ වීඩියෝ ඉවත් කරන්න. ඔබට ඒවා තවම Google ඡායාරූප තුළ සොයා ගත හැකිය.</string>
+    <string name="aware_disabled_preference_action">ක්‍රියාත්මක කරන්න</string>
+    <string name="aware_disabled_preference_neutral">දැන් නොවේ</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">ගුවන් යානා ප්‍රකාරය සහ බැටරි සුරැකුම ක්‍රියාත්මක නිසා Motion Sense ලබා ගත නොහැකිය</string>
+    <string name="aware_footer_when_airplane_on">ගුවන් යානා ප්‍රකාරය ක්‍රියාත්මක නිසා Motion Sense ලබා ගත නොහැකිය</string>
+    <string name="aware_footer_when_batterysaver_on">බැටරි සුරැකුම ක්‍රියාත්මක නිසා Motion Sense ලබා ගත නොහැකිය</string>
+    <string name="aware_gesture_summary_off">ඉක්මන් ඉංගිත ක්‍රියාත්මකයි, Active Edge ක්‍රියාවිරහිතයි</string>
+    <string name="aware_gesture_summary_on_non_assist">ඉක්මන් ඉංගිත ක්‍රියාත්මකයි, Active Edge ක්‍රියාත්මකයි</string>
+    <string name="aware_gesture_summary_on_with_assist">ඉක්මන් ඉංගිත ක්‍රියාත්මකයි, Active Edge ක්‍රියාත්මකයි, ඔබේ සහායක සඳහා මිරිකන්න</string>
+    <string name="aware_info_button_description">තව සැකසීම්</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">ගුවන් යානා ප්‍රකාරය සහ බැටරි සුරැකුම ක්‍රියාත්මක නිසා ලබා ගත නොහැකිය</string>
+    <string name="aware_summary_when_airplane_on">ගුවන් යානා ප්‍රකාරය ක්‍රියාත්මක නිසා ලබා ගත නොහැකිය</string>
+    <string name="aware_summary_when_batterysaver_on">බැටරි සුරැකුම ක්‍රියාත්මක නිසා ලබා ගත නොහැකිය</string>
+    <string name="backup_data_summary">යෙදුම් දත්ත, Wi-Fi මුරපද, සහ අනෙකුත් සැකසීම් Google සේවාදායකයන්ට උපස්ථ කරන්න</string>
+    <string name="backup_suggestion_cancel">අවලංගු කරන්න</string>
+    <string name="backup_suggestion_dialog_description">මෙය ඔබේ දුරකථනයේ අභ්‍යන්තර ගබඩාවෙන් සියලු දත්ත මකනු ඇත.</string>
+    <string name="backup_suggestion_dialog_title">මෙම උපාංගය යළි සකසන්නද?</string>
+    <string name="backup_suggestion_get_started">තව දැන ගන්න</string>
+    <string name="backup_suggestion_item_summary">Android හෝ iPhone® උපාංගය වෙතින් පිටපත් කරන්න</string>
+    <string name="backup_suggestion_item_title">පැරණි දුරකථනය වෙතින් අස්ථානගතද?</string>
+    <string name="backup_suggestion_missing_description">"SMS පණිවිඩ හා ඡායාරූප වැනි, ඔබේ සමහර දත්ත ඔබ නොදකින්නේ නම්, ඔබට කේබලයක් භාවිතයෙන් එය ඔබේ Pixel වෙත මාරු කළ හැකිය.
+
+මෙම අන්තර්ගතය මාරු කිරීම සඳහා, ඔබේ Pixel යළි සැකසීම අවශ්‍යය. අභිරුචි සැකසීම් සහ වලාකුළ වෙත සමුමුහුර්ත නොකළ අන්තර්ගතය ඇතුළුව, මෙම දුරකථනයෙහි ඇති සියලු දත්ත මකනු ඇත."</string>
+    <string name="backup_suggestion_missing_title">ඔබේ දත්ත අස්ථානගතද?</string>
+    <string name="backup_suggestion_next">ඊළඟ</string>
+    <string name="backup_suggestion_other_ways_to_copy">දත්ත පිටපත් කිරීමට වෙනත් ක්‍රම</string>
+    <string name="backup_suggestion_reset_description">"ඊළඟ තිරය මත, ඔබට ඔබේ Pixel යළි සැකසිය හැකිය. මෙය ඔබේ අස්ථානගත වූ දත්ත මාරු කිරීමේ එකම ක්‍රමය වේ.
+
+එය යළි සැකසුණ විට, පිහිටුවීමේ ක්‍රියාවලිය හරහා ගොස් ඔබේ පෙර දුරකථනයෙන් දත්ත ගෙන ඒමට තෝරන්න."</string>
+    <string name="backup_suggestion_reset_title">ඔබේ Pixel යළි සකසන්න</string>
+    <string name="backup_suggestion_what_is_needed_summary">"ඔබ ඔබේ දුරකථනය යළි සැකසීමෙන් පසුව, ඔබට මේවා අවශ්‍ය වනු ඇත:
+
+• ඔබේ පෙර දුරකථනය (LINK_BEGINබොහෝ දුරකථනවලLINK_END Android 5.0+ හෝ iOS® 8.0+ සහාය දක්වයි)
+• ඔබේ පෙර දුරකථනය සඳහා ආරෝපණ හෝ දත්ත කේබලයක්
+• ඔබේ Pixel සමග පැමිණි Quick Switch Adapter"</string>
+    <string name="backup_suggestion_what_is_needed_title">ඔබට අවශ්‍ය වන දේ</string>
+    <string name="battery_manager_summary">බැටරි ආයු කාලය දිගු කරන්න සහ ආරෝපණය ප්‍රශස්ත කරන්න</string>
+    <string name="battery_manager_summary_unsupported">බැටරි ආයු කාලය දිගු කරන්න</string>
+    <string name="battery_missing_link_message">තව දැන ගන්න</string>
+    <string name="battery_suggestion_summary">අනුවර්තනීය බැටරිය ක්‍රියාත්මක කරන්න</string>
+    <string name="battery_tip_smart_battery_summary">අනුවර්තනීය බැටරිය ක්‍රියාත්මක කරන්න</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s මෙම Google ගිණුමට සබැඳි කළ කිසිම උපාංගයකට තවදුරටත් යුගලන නොකෙරේ</string>
+    <string name="columbus_gesture_detected">ඉක්මන් තට්ටු කිරීම අනාවරණය කර ගන්නා ලදි!</string>
+    <string name="columbus_gesture_enrollment_complete">නිමයි</string>
+    <string name="columbus_gesture_enrollment_do_it_later">දැන් නොවේ</string>
+    <string name="columbus_gesture_enrollment_settings">සැකසීම් වෙත යන්න</string>
+    <string name="columbus_gesture_enrollment_try_it">එය උත්සාහ කරන්න</string>
+    <string name="columbus_gesture_training_action_no_selection_error">කරුණාකර සිදු කිරීමට ක්‍රියාවක් තෝරන්න</string>
+    <string name="columbus_gesture_training_action_text">ඔබ ඉක්මන් තට්ටු කිරීම භාවිත කරන විට සිදු වන දේ තෝරන්න. ඔබට මෙය පසුව සැකසීම් තුළ වෙනස් කළ හැකිය.</string>
+    <string name="columbus_gesture_training_action_title">ඉක්මන් තට්ටු කිරීම විකල්පය තෝරන්න</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… දෙවරක් තට්ටු කරන්න 2කින් 1 අනාවරණය කර ගන්නා ලදි</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">අපි තව වරක් එය උත්සාහ කරමු. ඔබගේ දුරකථනයෙහි පිටුපස ඉක්මනින් තට්ටු කරන්න.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">කදිමයි!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… දෙවරක් තට්ටු කරන්න 2කින් 2 අනාවරණය කර ගන්නා ලදි</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">ඔබ ඉක්මන් තට්ටු කිරීම ආරම්භ කිරීමට සූදානම්ය</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">ඔබට එය තේරුණා!</string>
+    <string name="columbus_gesture_training_enrolling_text">ඔබගේ දුරකථනයෙහි පිටුපස ඉක්මනින් තට්ටු කරන්න.</string>
+    <string name="columbus_gesture_training_enrolling_title">ඉක්මන් තට්ටු කිරීම උත්සාහ කරන්න</string>
+    <string name="columbus_gesture_training_finished_text">ඉක්මන් තට්ටු කිරීම භාවිත කිරීමට අවශ්‍ය තට්ටු කිරීමේ ප්‍රබලතාව වෙනස් කිරීමට, සැකසීම් වෙත යන්න.</string>
+    <string name="columbus_gesture_training_finished_title">ඔබ ඉක්මන් තට්ටු කිරීම පිහිටුවා ඇත</string>
+    <string name="columbus_gesture_training_intro_text_accidental">ඔබගේ උපාංගයේ පසුපස ඔබ මේ දැන් දෙවරක් තට්ටු කර ඇති අතර, එය ඔබට ඔබගේ සහායක එදිනෙදා කටයුතු අතරතුර භාවිත කිරීමට ඉඩ ලබා දේ. සැකසීම් තුළ ඔබට මෙම ඉංගිතය අභිරුචිකරණය කළ හැකිය.</string>
+    <string name="columbus_gesture_training_intro_text_suw">තට්ටු කිරීම් දෙකකින් තිර රුවක් ගන්න, දැනුම්දීම් පෙන්වන්න හෝ තවත් ක්‍රියාවක් ආරම්භ කරන්න.</string>
+    <string name="columbus_gesture_training_intro_title">ඉක්මන් ක්‍රියා සඳහා ඉක්මන් තට්ටු කිරීම</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">කරුණාකර විවෘත කිරීමට යෙදුමක් තෝරන්න</string>
+    <string name="columbus_gesture_training_launch_text">ඔබ ඉක්මන් තට්ටු කිරීම භාවිත කරන විට විවෘත කිරීමට කැමති යෙදුම තෝරන්න.</string>
+    <string name="columbus_gesture_training_launch_title">විවෘත කිරීමට යෙදුම තෝරන්න</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s කෙටි මං සැකසීම්</string>
+    <string name="columbus_launch_settings_activity_title">ඉක්මන් තට්ටු කිරීමේ සැකසීම්</string>
+    <string name="columbus_name">ඉක්මන් තට්ටු කිරීම</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">%1$s සැකසීම්</string>
+    <string name="columbus_setting_action_assistant_title">ඔබගේ ඩිජිටල් සහායක වෙත ප්‍රවේශ වන්න</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">කිසිදු යෙදුමක් තෝරා නැත</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">යෙදුම ස්ථාපනය කර නැත</string>
+    <string name="columbus_setting_action_launch_title">යෙදුම විවෘත කරන්න</string>
+    <string name="columbus_setting_action_notification_title">දැනුම්දීම් පෙන්වන්න</string>
+    <string name="columbus_setting_action_open_app_title">යෙදුම විවෘත කරන්න</string>
+    <string name="columbus_setting_action_overview_title">මෑත යෙදුම් බලන්න</string>
+    <string name="columbus_setting_action_play_pause_title">මාධ්‍ය ධාවන කරන්න හෝ විරාම කරන්න</string>
+    <string name="columbus_setting_action_screenshot_title">තිර රුව ගන්න</string>
+    <string name="columbus_setting_actions_title">දුරකථනයෙහි පසුපස දෙවරක් තට්ටු කරන්න</string>
+    <string name="columbus_setting_additional_settings_title">ඉක්මන් තට්ටු කිරීමේ ප්‍රබලතාව</string>
+    <string name="columbus_setting_app_selection_help_text">ඔබ ඔබගේ දුරකථනයේ පිටුපස දෙවරක් තට්ටු කරන විට විවෘත කිරීමට යෙදුමක් තෝරන්න. ඔබ යෙදුම අස්ථාපනය කළහොත්, ඉක්මන් තට්ටු කිරීම ඔබ වෙනත් යෙදුමක් තෝරන තෙක් ක්‍රියාවිරහිත වේ.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">ඔබ ඉක්මන් තට්ටු කිරීම භාවිතයෙන් මෙම යෙදුම විවෘත කළ විට සිදු වන දේ තෝරන්න.</string>
+    <string name="columbus_setting_enable_switch_title">ඉක්මන් තට්ටු කිරීම භාවිත කරන්න</string>
+    <string name="columbus_setting_sensitivity_title">වඩාත් දැඩි තට්ටු කිරීම් අවශ්‍යයි</string>
+    <string name="connectivity_helper_call_quality_category">ඇමතුමේ ගුණත්වය</string>
+    <string name="connectivity_helper_call_quality_summary">ඇමතුම් අතරතුර සම්බන්ධතා ගැටලු ඇති වීමේ හේතු පිළිබඳ දැනුම්දීම් ලබා ගන්න</string>
+    <string name="connectivity_helper_call_quality_title">දැනුම්දීම් ලබා ගන්න</string>
+    <string name="connectivity_helper_d2d_summary">ඇමතුම් අතරතුර ඔබගේ දුරකථනයේ සම්බන්ධතා ගැටලු ඇති විට අනෙක් පුද්ගලයාට දැනුම් දෙන්න</string>
+    <string name="connectivity_helper_d2d_title">සම්බන්ධතා තතු බෙදා ගන්න</string>
+    <string name="connectivity_helper_footnote">අනෙක් අමතන්නා සහාය දක්වන උපාංගයක් සහ ජාලයක් භාවිත කරන විට ඔබට සම්බන්ධතා තොරතුරු බෙදා ගත හැකිය</string>
+    <string name="content_capture">යෙදුම් දත්ත භාවිතයෙන් පෞද්ගලීකරණය</string>
+    <string name="copy_toast_msg">සබැඳිය පසුරු පුවරුවට පිටපත් කෙරිණි</string>
+    <string name="dark_ui_text">අඳුරු තේමාව ඔබේ බැටරිය දිගු කාලයක් සජීවිව තබා ගැනීම සඳහා සහාය වීමට කළු පසුබිමක් භාවිත කරයි. අඳුරු තේමා කාල සටහන් ක්‍රියාත්මක වීමට ඔබගේ තිරය ක්‍රියාවිරහිත වන තෙක් රැඳී සිටී.</string>
+    <string name="dock_summary_charging_phone">දුරකථනය ආරෝපණය වෙමින්</string>
+    <string name="double_twist_for_camera_mode_summary">Google කැමරාව තුළ සෙල්ෆී ප්‍රකාරයට සහ එයින් ඉවතට මාරු වීමට, ඔබ යෙදුම තුළ සිටින විට දෙවරක් කරකවන්න.</string>
+    <string name="downloads_backup_text">බාගත් ගොනු Google Drive වෙත උපස්ථ කරනු ඇත</string>
+    <string name="duration_less_than_one_minute">1 විනාඩියකට වඩා අඩු</string>
+    <string name="extra_app_info_label">ක්‍රීඩා ප්‍රශස්තකරණය</string>
+    <string name="face_enrolling_center_head">ඇතුළත රාමුවෙහි ඔබේ මුහුණ සවි කරන්න</string>
+    <string name="face_enrolling_description">සියලු ටයිල ඉවත් කිරීමෙන් ඔබේ මුහුණේ සියලු කෝණයන් ග්‍රහණය කරන්න.</string>
+    <string name="face_enrolling_do_it_later">පසුව එය කරන්න</string>
+    <string name="face_enrolling_gaze_dialog_cancel">අවලංගු කරන්න</string>
+    <string name="face_enrolling_gaze_dialog_continue">ඇස් නොඇර සකසන්න</string>
+    <string name="face_enrolling_gaze_dialog_message">ඔබට ඔබගේ ඇස් විවෘතව තිබීම අවශ්‍ය නොකර මුහුණෙන් අගුළු හැරීම පිහිටුවීමට අවශ්‍යද? ඔබ මෙලෙස පිහිටුවන්නේ නම්, ඔබ නොදැනුවත්ව යම් කෙනෙකුට දුරකථනය ඔබගේ මුහුණ වෙත එල්ල කර ඔබගේ එය අගුලු හැරිය හැකිය.</string>
+    <string name="face_enrolling_gaze_dialog_title">ඇස් නොඇර සකසන්න</string>
+    <string name="face_enrolling_how_to_setup">සකසන ආකාරය</string>
+    <string name="face_enrolling_title">දුරකථනය නිශ්චලව අල්ලා ගන්න. ඔබේ හිස කරකවන්න. සෙමින් යන්න.</string>
+    <string name="face_enrolling_title_accessibility">ඔබේ දුරකථනය දෙස කෙලින්ම බලන්න</string>
+    <string name="face_enrolling_title_accessibility_progress">ඔබගේ උපාංගය දෙස සෘජුව බලාගෙන සිටින්න</string>
+    <string name="face_enrolling_too_close">දුරකථනය තවත් දුරට ගෙන යන්න</string>
+    <string name="face_enrolling_too_far">දුරකථනය තවත් සමීපව ගෙන යන්න</string>
+    <string name="face_enrolling_too_high">දුරකථනය පහළට ගෙන යන්න</string>
+    <string name="face_enrolling_too_left">දුරකථනය ඔබේ දකුණු පසට ගෙන යන්න</string>
+    <string name="face_enrolling_too_low">දුරකථනය ඉහළට ගෙන යන්න</string>
+    <string name="face_enrolling_too_right">දුරකථනය ඔබේ වම් පසට ගෙන යන්න</string>
+    <string name="face_enrolling_turn_head_to_arrow">ඊතලය දෙසට ඔබේ හිස හරවන්න</string>
+    <string name="face_enrolling_turned_too_far">හිස තරමක් අඩුවෙන් හරවන්න</string>
+    <string name="fallback_menu_item_copy_link">සබැඳිය පිටපත් කරන්න</string>
+    <string name="fallback_menu_item_open_in_browser">බ්‍රව්සරයේ විවෘත කරන්න</string>
+    <string name="fallback_menu_item_share_link">සබැඳිය බෙදා ගන්න</string>
+    <string name="fullbackup_data_summary">"Google Drive වෙත උපාංග දත්ත (Wi-Fi මුරපද සහ ඇමතුම් ඉතිහාසය යනාදී) සහ යෙදුම් දත්ත (සැකසීම් සහ යෙදුම් විසින් ගබඩා කළ ගොනු යනාදී) ස්වයංක්‍රියව උපස්ථ කරයි.
+
+ඔබ ස්වයංක්‍රිය උපස්ථ කිරීම ක්‍රියාත්මක කළ විට, උපාංග සහ යෙදුම් දත්ත වරින් වර Google Drive හි පුද්ගලික ෆෝල්ඩරයක් වෙත සුරැකෙනු ඇත. යෙදුම් දත්ත යනු විභව්‍ය වශයෙන් සංවේදී සම්බන්ධතා, පණිවිඩ, සහ ඡායාරූප ඇතුළුව, යම් යෙදුමක් විසින් සුරැක ඇති (සංවර්ධක සැකසීම් මත පදනම්ව), කිනම් හෝ දත්ත විය හැකිය.
+
+උපස්ථ දත්ත ඔබේ Drive ගබඩා පංගුව සඳහා ගණන් නොගැනෙනු ඇත. විශාල ගොනු, හෝ සංවර්ධකයන් විසින් සේවාව වෙතින් බැහැර කිරීමට තෝරා ඇති ගොනු උපස්ථ නොකරනු ඇත."</string>
+    <string name="fullbackup_erase_dialog_message">උපාංග දත්ත (Wi-Fi මුරපද සහ ඇමතුම් ඉතිහාසය යනාදී) සහ යෙදුම් දත්ත (යෙදුම් මගින් ගබඩා කළ සැකසීම් සහ ගොනු යනාදී) උපස්ථ කිරීම සහ Google Drive වල සියලු පිටපත් මැකීම නවත්වන්නද?</string>
+    <string name="game_dashboard_always_on_summary">ක්‍රීඩා තුළ ක්‍රීඩා උපකරණ පුවරු කෙටි මඟ පෙන්වන්න</string>
+    <string name="game_dashboard_always_on_title">ක්‍රීඩා උපකරණ පුවරුව</string>
+    <string name="game_dashboard_dnd_rule_name">ක්‍රීඩාවේ යෙදීම්</string>
+    <string name="game_dashboard_dnd_summary">ක්‍රීඩාවක් කරන විට වැදගත් පුද්ගලයන් සහ යෙදුම් විසින් පමණක් දැනුම් දෙනු ලැබේ</string>
+    <string name="game_dashboard_dnd_title">ක්‍රීඩා සඳහා බාධා නොකිරීම</string>
+    <string name="game_mode_battery_description">බැටරි ආයු කාලය දිගු කරයි</string>
+    <string name="game_mode_battery_title">බැටරි සුරැකුම</string>
+    <string name="game_mode_performance_description">රාමු අනුපාතය උපරිම කරයි, බැටරිය වැඩියෙන් භාවිත කරයි</string>
+    <string name="game_mode_performance_title">කාර්ය සාධනය</string>
+    <string name="game_mode_standard_description">ක්‍රීඩාවේ පෙරනිමි භාවිත කරයි</string>
+    <string name="game_mode_standard_title">සම්මත</string>
+    <string name="game_optimization_unavailable">මෙම ක්‍රීඩාව සඳහා ලබා ගත නොහැකිය</string>
+    <string name="gesture_aware_confirmation_action_button">තේරුණා</string>
+    <string name="gesture_aware_footer"><annotation link="link">මනාප</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">මනාප</annotation></string>
+    <string name="gesture_skip_direction_ltr">වමේ සිට දකුණට</string>
+    <string name="gesture_skip_direction_rtl">දකුණේ සිට වමට</string>
+    <string name="gesture_skip_direction_title">මග හැරීමේ දිශාව</string>
+    <string name="gesture_skip_footer"><annotation link="link">මනාප</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">මනාප</annotation></string>
+    <string name="global_actions_panel_short_title">කාඩ්පත් සහ පාස්පත්</string>
+    <string name="global_actions_panel_summary">ඔබේ ගෙවීමේ ක්‍රම සහ යාත්‍රාගත වීමේ ප්‍රවේශපත් වැනි දේ වෙත ප්‍රවේශ වීමට, බල බොත්තම ඔබාගෙන සිටින්න.</string>
+    <string name="global_actions_panel_title">කාඩ්පත් සහ පාස්පත් පෙන්වන්න</string>
+    <string name="install_unknown_applications">Play Store හැර අනෙකුත් මූලාශ්‍ර වෙතින් යෙදුම් ස්ථාපනය කිරීමට ඉඩ දෙන්න</string>
+    <string name="keywords_accessibility_menu">මෝටරය, ඉක්මන් මෙනුව, සහායක මෙනුව, ස්පර්ශය, දක්ෂතාව</string>
+    <string name="keywords_adaptive_charging">ආරෝපණය, ආරෝපණය කිරීම, ස්මාර්ට් ආරෝපණය, අනුවර්තී ආරෝපණය, බැටරිය, බැටරි තත්ත්වය</string>
+    <string name="keywords_assist_gesture_launch">ඉංගිතය, දාරය, පැත්ත, ක්‍රියාකාරී දාරය, මිරිකීම, ග්‍රහණය, සහාය, සහකාර, මිරිකීම, ok google, google සහායක</string>
+    <string name="keywords_assist_gesture_silence">ඉංගිතය, දාරය, පැත්ත, ක්‍රියාකාරී දාරය, නිහඬතාව, ස්නූස්, එලාම, ලැබෙන ඇමතුම්, නිහඬ, සංදර්ශකය, අගුලු තිරය, මිරිකීම, ග්‍රහණය, දාරය, නවත්වන්න</string>
+    <string name="keywords_assist_gesture_wake">ඉංගිතය, දාරය, පැත්ත, ක්‍රියාකාරී දාරය, අවදි කරන්න, දැනුම්දීම්, තිරය, සංදර්ශකය, තිරය ක්‍රියාවිරහිතයි, තිරය සක්‍රියයි, මිරිකීම, නිදිය, නින්ද, ග්‍රහණය</string>
+    <string name="keywords_battery_share">බැටරිය බෙදා ගැනීම, රැහැන් රහිත ආරෝපණය</string>
+    <string name="keywords_battery_share_settings">බැටරිය බෙදා ගැනීම, ප්‍රතිලෝම රැහැන් රහිත ආරෝපණය</string>
+    <string name="keywords_content_capture">අන්තර්ගත ග්‍රහණය, යෙදුම් අන්තර්ගතය, යෙදුම් දත්ත</string>
+    <string name="keywords_gesture">ඉංගිත, චලන</string>
+    <string name="keywords_global_actions_panel">කාඩ්පත්, පාස්පත්</string>
+    <string name="keywords_live_transcribe">සිරස්තල, සංවෘත සිරස්තල, CC, සජීවී සිරස්තල, ඇසීමට අපහසු, ශ්‍රවණය අහිමි, CART, කථනයෙන් පෙළට, උපසිරැසි</string>
+    <string name="keywords_reverse_charging_stop_threshold">දුරකථනය මේ දක්වා ළඟා වන විට බැටරිය බෙදා ගැනීම නතර කරන්න:</string>
+    <string name="keywords_select_to_speak">පෙළ අසන්න, ශබ්ද නඟා කියවන්න, කථන තිරය, තිර කියවනය</string>
+    <string name="keywords_sound_amplifier">PSAP, විස්තාරක, හඬ වර්ධකය, ඇසීමට අපහසු, ශ්‍රවණය අහිමි, විස්තාරකය</string>
+    <string name="keywords_sound_notifications">දැනුම්දීම්, ඇසීමට අපහසු, ශ්‍රවණය අහිමි, දැනුම් දෙන්න</string>
+    <string name="keywords_switch_access">මෝටරය, ස්විචය, අත, AT, උපකාරක තාක්ෂණය, අංශභාගය, ALS, ස්කෑන් කිරීම, පියවර ස්කෑන් කිරීම</string>
+    <string name="keywords_talkback">තිර කියවනය, වොයිස් ඕවර්, වොයිස්ඕවර්, හඬ සහාය, අන්ධ, අඩු දෘශ්‍යතාව, TTS, පෙළ සිට කථනය, කථන ප්‍රතිපෝෂණය</string>
+    <string name="keywords_voice_access">හඬ, හඬ පාලනය, මෝටරය, අත, මයික්, මයික්‍රෆෝනය, අනුලේඛනය, කතාව, පාලනය</string>
+    <string name="language_input_gesture_summary_off">සක්‍රිය දාරය ක්‍රියාවිරහිතයි</string>
+    <string name="language_input_gesture_summary_on_non_assist">සක්‍රිය දාරය ක්‍රියාත්මකයි</string>
+    <string name="language_input_gesture_summary_on_with_assist">සක්‍රිය දාරය ක්‍රියාත්මකයි, ඔබේ සහායක සඳහා මිරිකන්න</string>
+    <string name="me_card_title">මගේ Pixel</string>
+    <string name="my_device_info_account_preference_title">Google ගිණුම</string>
+    <string name="owner_info_settings_edit_text_hint">උදාහරණයක් ලෙස, ජෝගේ Pixel.</string>
+    <string name="reverse_charging_charging_wirelessly_message">දුරකථනය නොරැහැන්ව ආරෝපණය වන නිසා ලබා ගත නොහැකිය</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Pixel ඉතා උණුසුම් නිසා බැටරිය බෙදා ගැනීම ලබා ගත නොහැකිය. දුරකථනය සිසිල් වන තෙක් රැඳී සිට නැවත උත්සාහ කරන්න.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">දුරකථනය නොරැහැන්ව ආරෝපණය වන නිසා බැටරි බලය බෙදා ගැනීම ලබා ගත නොහැකිය</string>
+    <string name="reverse_charging_detail_footer_title">බැටරි බලය බෙදා ගැනීම භාවිත කරන විට ඔබේ දුරකථනයේ බැටරිය වේගයෙන් ඉවර වෙනු ඇත. බැටරි බලය බෙදා ගැනීම ගැළපෙන ඉයර්බඩ්, ඔරලෝසු, දුරකථන සහ තවත් බොහෝ දේ සමග ක්‍රියා කරයි. වඩාත් හොඳ ආරෝපණයක් සඳහා, ඔබේ දුරකථනයේ ආවරණය ඉවත් කරන්න.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"බැටරි බලය බෙදා ගැනීම ගැළපෙන ඉයර්බඩ්, දුරකථන සහ තවත් බොහෝ දේ සමග ක්‍රියා කරයි.
+
+මෙම විශේෂාංගය භාවිත කරන විට ඔබේ දුරකථනයේ බැටරිය වේගයෙන් ඉවර වෙනු ඇත. වෙනත් උපාංගයක් අනාවරණය නොවන්නේ නම් මිනිත්තු කිහිපයකට පසු බැටරි බලය බෙදා ගැනීම ස්වයංක්‍රීයව ක්‍රියාවිරහිත වේ. වඩා හොඳ ආරෝපණය කිරීමක් සඳහා, ඔබගේ දුරකථනයේ කවරය සහ ලෝහ වස්තු වැනි බාධා ඇති වෙනත් අයිතම ඉවත් කරන්න."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">බැටරි සුරැකුම ක්‍රියාත්මක නිසා බැටරි බලය බෙදා ගැනීම ලබා ගත නොහැකිය</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">USB-C උපාංගය පේනුගත කිර ඇති නිසා බැටරි බලය බෙදා ගැනීම ලබා ගත නොහැකිය</string>
+    <string name="reverse_charging_instructions_title">"ඔබේ Pixel සමග වෙනත් උපාංග ආරෝපණය කරන්න.
+උත්සාහ කිරීමට ඔබ දුරකථනය ඉහළින් ෆ්ලිප් කරන්න."</string>
+    <string name="reverse_charging_is_off_summary">ක්‍රියාවිරහිතයි</string>
+    <string name="reverse_charging_is_on_and_charging_summary">බැටරිය බෙදා ගනිමින් සහ ආරෝපණය කරමින්</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">බැටරිය බෙදා ගනිමින්</string>
+    <string name="reverse_charging_is_on_summary">ක්‍රියාත්මකයි / වෙනත් උපාංග ආරෝපණය කිරීම</string>
+    <string name="reverse_charging_main_switch">බැටරි බෙදා ගැනීම ඉඩ දෙන්න</string>
+    <string name="reverse_charging_off_low_battery_summary">ක්‍රියාවිරහිතයි / දුරකථන බැටරිය %1$sට අඩුය</string>
+    <string name="reverse_charging_off_sharing_level_summary">ක්‍රියාවිරහිතයි / බැටරිය බෙදා ගැනීමේ මට්ටමට අඩුය</string>
+    <string name="reverse_charging_overheat_summary">Pixel ඉතා උණුසුම් නිසා ලබා ගත නොහැකිය. දුරකථනය සිසිල් වන තෙක් රැඳී සිට නැවත උත්සාහ කරන්න.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">බැටරි සුරැකුම ක්‍රියාත්මක නිසා ලබා ගත නොහැකිය</string>
+    <string name="reverse_charging_sharing_level_message">බැටරිය බෙදා ගැනීමේ මට්ටමට පහළ නිසා ලබා ගත නොහැකිය</string>
+    <string name="reverse_charging_switch_summary">උපාංග ඔබේ Pixel පසුපස ස්ථානගත කරන්න</string>
+    <string name="reverse_charging_switch_title">වෙනත් උපාංග ඒවා ඔබේ Pixel හි පසුපස ස්ථානගත කිරීමෙන් ආරෝපණය කරන්න</string>
+    <string name="reverse_charging_switch_title_message">වෙනත් උපාංග ආරෝපණය කරන්න</string>
+    <string name="reverse_charging_title">බැටරි බලය බෙදා ගැනීම</string>
+    <string name="reverse_charging_unplug_usb_cable_message">USB-C උපාංගය පේනුගත කර ඇති නිසා ලබා ගත නොහැකිය</string>
+    <string name="reverse_charging_warning_summary">බැටරි බලය %1$sට අඩු නිසා ලබාගත නොහැකිය</string>
+    <string name="reverse_charging_warning_title">බැටරි බලය %1$sට පහළ නිසා බැටරි බලය බෙදා ගැනීම ලබා ගත නොහැකිය</string>
+    <string name="rtt_settings_always_visible">සැමවිට දෘශ්‍යමානයි</string>
+    <string name="rtt_settings_no_visible">දෘශ්‍යමාන නොවේ</string>
+    <string name="rtt_settings_title">තථ්‍ය කාල පෙළ (RTT)</string>
+    <string name="rtt_settings_visible_during_call">ඇමතුම අතරතුර දෘශ්‍යමාන වේ</string>
+    <string name="screen_time_summary_usage_today">අද %1$s</string>
+    <string name="search_bar_account_avatar_content_description">පැතිකඩ පින්තූරය, Google ගිණුම විවෘත කිරීමට දෙවරක් තට්ටු කරන්න</string>
+    <string name="security_advanced_settings">උසස් සැකසීම්</string>
+    <string name="security_dismiss_dialog_dismiss_button">ඉවත ලන්න</string>
+    <string name="security_dismiss_dialog_title">අනතුරු ඇඟවීම ඉවත ලන්නද?</string>
+    <string name="security_settings_face_enroll_done">කළා</string>
+    <string name="security_settings_face_enroll_education_message">ඊළඟ තිරයේ, ඔබේ මුහුණේ සියලු කෝණ ග්‍රහණය කිරීමට ඔබේ හිස කරකවන්න</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">ඊළඟ තිරයේ, ඔබගේ දුරකථනය ඇස් මට්ටමේ තබා ගන්න</string>
+    <string name="security_settings_face_enroll_error_dialog_title">ලියාපදිංචිය අවසන් නොකළා</string>
+    <string name="security_settings_face_enroll_error_generic_dialog_message">මුහුණු ලියාපදිංචිය ක්‍රියා කළේ නැත.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">මුහුණු ලියාපදිංචි කාල සීමාව ළඟා විය. නැවත උත්සාහ කරන්න.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">මුහුණෙන් අගුළු හැරීම පිහිටුවීම කාල නිමා විය</string>
+    <string name="security_settings_face_enroll_finish_description">ඔබගේ දුරකථනය අගුලු හැරීමට හෝ ඔබ යෙදුම්වලට පුරන විට හෝ මිලදී ගැනීමක් අනුමත කරන විට වැනි අවස්ථාවල, ඒ ඔබ බව තහවුරු කිරීමට ඔබට ඔබගේ මුහුණ භාවිත කළ හැකිය</string>
+    <string name="security_settings_face_enroll_finish_title">පෙනෙන විදිහට හොඳයි!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">සීමිත දෘෂ්ටිය හෝ හිසේ චලනය සඳහා සකසන්න</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">මුහුණෙන් අගුළු හැරීම භාවිත කරන විට, ඔබගේ හිස ඔබගේ දුරකථනය ඉදිරියේ තවත් ඍජුව තිබීමට අවශ්‍ය විය හැකිය.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">ඇස් ඇර තබා ගැනීම අවශ්‍ය කරයි</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"ඔබට සහ ඔබගේ දරුවාට සැකසීම් තුළ ඕනෑම වේලාවක සිය මුහුණු ආකෘතිය මැකීමට හෝ මුහුණෙන් අගුලු හැරීම ක්‍රියාවිරහිත කිරීමට හැකිය. මුහුණු ආකෘති ඒවා මකන තෙක් දුරකථනයේ ගබඩා කර ඇත.
+
+g.co/pixel/faceunlock හිදී තව දැන ගන්න."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">ඔබ සහ ඔබගේ දරුවා පාලනයේ සිටී</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"ඔබට සැකසීම් තුළ ඕනෑම වේලාවක ඔබගේ මුහුණු ආකෘතිය මැකීමට හෝ මුහුණෙන් අගුලු හැරීම ක්‍රියාවිරහිත කිරීමට හැකිය. මුහුණු ආකෘති ඔබ මකන තෙක් දුරකථනයේ ගබඩා කර ඇත.
+
+g.co/pixel/faceunlock හිදී තව දැන ගන්න"</string>
+    <string name="security_settings_face_enroll_introduction_control_title">ඔබ සිටින්නේ පාලනයේය</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"ඒ ඔවුන් බව සත්‍යාපනය කිරීමට මුහුණෙන් අගුලු හැරීම ඔබගේ දරුවාගේ මුහුණෙහි අනන්‍ය ආකෘතියක් තනයි. පිහිටුවීම අතරතුර මෙම මුහුණු ආකෘතිය තැනීම සඳහා, ඔබගේ දරුවා විවිධ පිහිටීම්වලින් ඔවුන්ගේ මුහුණේ රූප ගනු ඇත.
+
+ඔවුන් මුහුණෙන් අගුලු හැරීම භාවිත කරන විට, ඔවුන්ගේ මුහුණු ආකෘතිය යාවත්කාලීන කිරීමට රූප භාවිත කෙරේ. ඔවුන්ගේ මුහුණු ආකෘතිය තැනීමට භාවිත කරන රූප ගබඩා නොකරනු ඇත, නමුත් මුහුණු ආකෘතිය ඔවුන්ගේ දුරකථනයේ ආරක්ෂිතව ගබඩා කර ඇති අතර කිසි විටක දුරකථනය හැර නොයයි. සියලු සැකසීම් දුරකථනයේ ආරක්ෂිතව සිදු වේ."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"ඒ ඔබ බව සත්‍යාපනය කිරීමට මුහුණෙන් අගුලු හැරීම ඔබගේ මුහුණේ අනන්‍ය ආකෘතියක් තනයි. පිහිටුවීම අතරතුර මෙම මුහුණු ආකෘතිය තැනීම සඳහා, ඔබ විවිධ කෝණවලින් ඔබගේ මුහුණේ රූප ගනු ඇත.
+
+ඔබ මුහුණෙන් අගුලු හැරීම භාවිත කරන විට, ඔබගේ මුහුණු ආකෘතිය යාවත්කාලීන කිරීමට රූප භාවිත කෙරේ. ඔබගේ මුහුණු ආකෘතිය තැනීමට භාවිත කරන රූප ගබඩා නොකරනු ඇත, නමුත් මුහුණු ආකෘතිය ඔබගේ දුරකථනයේ ආරක්ෂිතව ගබඩා කර ඇති අතර කිසි විටක දුරකථනය හැර නොයයි. සියලු සැකසීම් ඔබගේ දුරකථනයේ ආරක්ෂිතව සිදු වේ."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">එය ක්‍රියා කරන ආකාරය</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">මුහුණෙන් අගුළු ඇරීමට දුරකථනය අගුළු ඇරීමට හෝ ඒවා සත්‍යාපනය කිරීමට ඔබගේ දරුවාගේ දෑස් විවෘතව තිබීම අවශ්‍යය. ඔබට සහ ඔබගේ දරුවාට ඕනෑම වේලාවක සැකසීම් තුළ මෙම විකල්පය ක්‍රියාත්මක කළ හැකිය.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">ඔබගේ දරුවා සාමාන්‍යයෙන් ඇස් කණ්ණාඩි පළඳින්නේ නම්, පිහිටුවීම අතරතුර ඔවුන්ට ඒවා පැළඳිය හැකිය.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">දුරකථනය දෙස බැලීම ඔවුන් අදහස් නොකරන නමුත් අගුලු හැරිය හැකිය. ඔවුන්ගේ දුරකථනය බොහෝ දුරට පෙනුමෙන් ඔවුන්ට සමාන, සර්වසම සහෝදර සහෝදරියක් වැනි යමෙකු විසින්, හෝ එය යම් කෙනෙක් ඔවුන්ගේ මුහුණට අල්ලාගෙන සිටියහොත් අගුලු හැරිය හැකිය.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">මුහුණෙන් අගුළු ඇරීමට දුරකථනය අගුළු ඇරීමට හෝ ඒ ඔබ බව සත්‍යාපනය කිරීමට ඔබගේ දෑස් විවෘතව තිබීම අවශ්‍යය. ඔබට ඕනෑම වේලාවක සැකසීම් තුළ මෙම විකල්පය ක්‍රියාත්මක කළ හැකිය.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">කණ්ණාඩි හෝ සුළු වශයෙන් වර්ණ ගැන්වූ අවු කණ්ණාඩි කමක් නැත.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">දුරකථනය අගුලු හැරීමට මුහුණක් භාවිත කිරීම ප්‍රබල රටාවකට හෝ PIN අංකයකට වඩා ආරක්ෂාව අඩු විය හැකිය.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">දුරකථනය දෙස බැලීම ඔබ අදහස් නොකරන නමුත් අගුලු හැරිය හැකිය. ඔබගේ දුරකථනය බොහෝ දුරට පෙනුමෙන් ඔබට සමාන, සර්වසම සහෝදර සහෝදරියක් වැනි යමෙකු විසින්, හෝ එය යම් කෙනෙක් ඔබගේ මුහුණට අල්ලාගෙන සිටියහොත් අගුලු හැරිය හැකිය.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">මතක තබා ගන්න</string>
+    <string name="security_settings_face_enroll_introduction_message">ඔබගේ දුරකථනය අගුලු හැරීමට හෝ ඔබ යෙදුම්වලට පුරන විට හෝ මිලදී ගැනීමක් අනුමත කරන විට වැනි අවස්ථාවල, ඒ ඔබ බව තහවුරු කිරීමට ඔබගේ මුහුණ භාවිත කරන්න.</string>
+    <string name="security_settings_face_enroll_introduction_title">මුහුණු අගුලු හැරීම සකසන්න</string>
+    <string name="security_settings_face_enroll_next">මිළඟ</string>
+    <string name="security_settings_face_enroll_partial_message">කාර්ය සාධනය වැඩිදියුණු කිරීමට, ඔබට මුහුණෙන් අගුළු හැරීම නැවතත් සැකසීම්වල පිහිටුවිය හැකිය.</string>
+    <string name="security_settings_face_enroll_partial_start_over">යළි මුල සිට අරඹන්න</string>
+    <string name="security_settings_face_enroll_partial_title">මුහුණෙන් අගුළු හැරීම පිහිටුවීම අවසන්ය</string>
+    <string name="security_settings_face_enroll_timeout_message">"ඒ වෙනුවට වේගවත් පිහිටුවීම උත්සාහ කරන්න. සිතෙහි තබා ගන්න, මුහුණෙන් අගුළු හැරීම භාවිත කරන විට ඔබගේ හිස ඔබගේ දුරකථනය ඉදිරියේ වඩාත් සෘජුව තිබීමට අවශ්‍ය විය හැකිය.
+
+කාර්ය සාධනය වැඩිදියුණු කිරීමට, ඔබට මුහුණෙන් අගුළු හැරීම නැවත සැකසීම්වල පිහිටුවිය හැකිය."</string>
+    <string name="security_settings_face_enroll_timeout_title">පිහිටුවීම දිගටම කරගෙන යාමට නොහැකිය</string>
+    <string name="security_settings_face_enroll_timeout_try_again">නැවත උත්සාහ කරන්න</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">වේගවත් පිහිටුවීම භාවිතය</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">පිහිටුවීමෙන් පිටවන්න</string>
+    <string name="security_settings_face_enroll_too_hot_message">දුරකථනය උණුසුම් වැඩි නිසා මුහුණෙන් අගුළු හැරීම පිහිටුවීම සම්පූර්ණ කළ නොහැකිය. දුරකථනය සිසිල් වූ විට පසුව නැවත උත්සාහ කරන්න.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">මුහුණෙන් අගුළු හැරීම මග හරින්න</string>
+    <string name="security_settings_face_enroll_too_hot_title">දුරකථනය උණුසුම් වැඩිය</string>
+    <string name="security_settings_fingerprint_preference_summary_none">ඇඟිලි සලකුණ පිහිටුවීමට තට්ටු කරන්න</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">g.co/pixel/fingerprintunlock හිදී තව දැන ගන්න.</string>
+    <string name="security_settings_work_fingerprint_preference_title">කාර්යාලය සඳහා Pixel Imprint</string>
+    <string name="setup_suggestion_summary">දත්ත පිටපත් කර., දුරකථනය සමඟ ගෙව. සහ තව</string>
+    <string name="setup_suggestion_title">පිහිටුවීම අවසන් කරන්න</string>
+    <string name="smart_battery_footer">බැටරි ආයු කාලය දිගු කිරීමට, අනුවර්තනීය බැටරිය කාර්ය සාධනය සහ පසුබිම් ක්‍රියාකාරිත්වය අඩු කළ හැකිය. සමහර දැනුම්දීම් ප්‍රමාද විය හැකිය.</string>
+    <string name="smart_battery_manager_title">අනුවර්තී මනාප</string>
+    <string name="smart_battery_title">අනුවර්තනීය බැටරිය</string>
+    <string name="sound_dashboard_summary">හඬ පරිමාව, ස්පර්ශ, බාධා නොකරන්න</string>
+    <string name="sound_settings">ශබ්දය &amp; කම්පනය</string>
+    <string name="storage_manager_indicator">ස්මාර්ට් ගබඞාව: ^1</string>
+    <string name="time_remaining_warning_subtext">ඔබගේ භාවිතය මත පදනම්ව %1$s පමණ ඉතිරිව ඇත</string>
+    <string name="time_remaining_warning_text">බැටරිය ඉක්මනින් අවසන් විය හැකිය</string>
+    <string name="tips_suggestion_summary">ඔබගේ දුරකථනයෙන් ඔබට කළ හැකි දේ ගවේෂණය ක.</string>
+    <string name="tips_suggestion_title">ඔබගේ Pixel ගැන දැන ගන්න</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">ඔබගේ දුරකථනය ඔබගේ මුහුණ ඉදිරියෙන් අල්ලා ගන්න</string>
+    <string name="usb_use_file_transfers">ගොනු මාරුව / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">දුරකථනය නිශ්ශබ්දව තැබීමට සකසා ඇති නිසා ඇමතුම් සඳහා කම්පනය ලබා ගත නොහැකිය</string>
+    <string name="vibration_haptics_settings_not_available_title">ලබා ගත නොහැකිය</string>
+    <string name="wallpaper_dashboard_summary">වර්ණ, තේමා නිරූපක, යෙදුම් ජාලකය</string>
+    <string name="wifi_subscription_summary">OpenRoaming දායකත්වය බලන්න නැතහොත් වෙනස් කරන්න</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">%1$s සමග සම්බන්ධ විය</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">සම්බන්ධ වීමට තට්ටු කරන්න</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">සම්බන්ධ විය නොහැකිය. නැවත උත්සාහ කිරීමට තට්ටු කරන්න.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">සබැඳෙමින්…</string>
+</resources>

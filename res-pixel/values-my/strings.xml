@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">အသုံးမပြုချိန် လော့ခ်မျက်နှာပြင်</string>
+    <string name="gesture_silence_title">သတိပေးချက်များ အသံပိတ်ရန် လက်ဟန်</string>
+    <string name="gesture_skip_title">ကျော်ရန် လက်ဟန်</string>
+    <string name="keywords_touch_sensitivity">ထိတွေ့မှု၊ အထိအတွေ့ကို သိရှိမှု၊ အထိမခံသော၊ ဖန်သားပြင် အကာအကွယ်၊ အလွှာပါး၊ တုံ့ပြန်မှု လျင်မြန်သော၊ တုံ့ပြန်မှု လျင်မြန်ခြင်း</string>
+    <string name="touch_sensitivity_summary">ဖန်သားပြင် အကာအကွယ်များကို အသုံးပြုလျှင် ထိတွေ့မှု ပိုမိုကောင်းမွန်ပါသည်</string>
+    <string name="touch_sensitivity_title">အထိအတွေ့သိရှိမှုကို တိုးရန်</string>
+    <string name="accessibility_vibration_settings_screen_title">တုန်ခါမှုနှင့် တုန်ခါ၍တုံ့ပြန်မှုများ သုံးရန်</string>
+    <string name="vibration_haptics_settings_not_available_summary">ဖုန်းကို အသံတိတ်မုဒ်သို့ သတ်မှတ်ထားသည့်အတွက် တုန်ခါမှုနှင့် တုန်ခါ၍တုံ့ပြန်မှုများ မရနိုင်ပါ</string>
+    <string name="vibration_haptics_strength_category_title">တုန်ခါမှုနှင့် တုန်ခါ၍တုံ့ပြန်မှုအား</string>
+    <string name="accessibility_vibration_settings_title">တုန်ခါမှုနှင့် တုန်ခါ၍တုံ့ပြန်မှုများ</string>
+    <string name="columbus_title">လုပ်ဆောင်ချက်များ စတင်ရန် ‘အမြန်တို့’ လက်ဟန်</string>
+    <string name="vibrate_for_calls_category_title">ခေါ်ဆိုမှုများ</string>
+    <string name="accessibility_alarm_vibration_title">နိုးစက် တုန်ခါမှု</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge စနစ်ထည့်သွင်းမှု။ နောက်တစ်မျက်နှာသို့ သွားပါ သို့မဟုတ် ဆက်လက်ချိန်ညှိပါ။</string>
+    <string name="accessibility_keyboard_haptics_title">ကီးဘုတ် တုန်ခါ၍တုံ့ပြန်မှုများ</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">အလိုက်သင့်အားသွင်းခြင်း</string>
+    <string name="adaptive_charging_description">ဘက်ထရီသက်တမ်း ထိန်းသိမ်းရန် ဖြည်းဖြည်းမှန်မှန်နှင့် ညစဉ်အားသွင်းပါ။ နိုးထချိန်တွင် အားအပြည့်သွင်းပြီးဖြစ်ရန် နှိုးစက်သုံးပါ။</string>
+    <string name="adaptive_charging_time_estimate"><b>အလိုက်သင့်အားသွင်းခြင်း</b> • အားပြည့်ရန် %1$s ကျန်သည်</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">သတ်မှတ်ချက်များ</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Assistant၊ မကြာသေးမီက အက်ပ်များ၊ မူရင်း အက်ပ်များ</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Assistant သို့ဆက်ရန်</string>
+    <string name="assist_gesture_enrollment_do_it_later">နောက်မှလုပ်ရန်</string>
+    <string name="assist_gesture_enrollment_seekbar_light">အသာဖျစ်ညှစ်ရန်</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">တင်းတင်းဖျစ်ညှစ်ရန်</string>
+    <string name="assist_gesture_enrollment_settings">ဆက်တင်များ</string>
+    <string name="assist_gesture_setting_enable_assistant_text">Assistant ကို စကားပြောရန် ဖုန်းအောက်ပိုင်းကို အမြန်ဖျစ်ညှစ်ပြီး ပြန်လွှတ်လိုက်ပါ</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Assistant ကိုဖွင့်ရန် ဖျစ်ညှစ်လိုက်ပါ</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">နှိုးစက်၊ သံပတ်နှင့် ဖုန်းခေါ်သံတို့ကို အသံပိတ်ရန် ဖျစ်ညှစ်လိုက်ပါ</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">နှိုးစက်နှင့် ဖုန်းခေါ်သံကိုပိတ်ရန် ဖျစ်ညှစ်လိုက်ပါ</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">ဖုန်းသံကို ပိတ်ရန် ဖျစ်ညှစ်လိုက်ပါ</string>
+    <string name="assist_gesture_setting_enable_wake_title">စကရင်ပိတ်ထားစဉ် Assistant ကို ဖွင့်ပါ</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">အသာဖျစ်ညှစ်ရန်</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">တင်းတင်းဖျစ်ညှစ်ရန်</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">တုံ့ပြန်ရန် အသုံးပြုသည့် ညှစ်အား</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Assistant မတော်တဆ ပွင့်လာနိုင်ပါသည်</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">သင်၏ဖုန်းအောက်ပိုင်းကို ဖျစ်ညှစ်လိုက်ပါ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">အမြန် ဖျစ်ညှစ်ပါ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">ပို၍ ဖျစ်ညစ်ပါ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">အမြန်ဖျစ်ညှစ်ပြီး ပြန်လွှတ်ပါ</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">ရွှေ့သည့်ကိရိယာကို ချိန်ညှိကြည့်ပါ</string>
+    <string name="assist_gesture_training_enrolling_text">သင့်ဖုန်းအောက်ပိုင်းကို ဖျစ်ညှစ်ပါ။ အားမည်မျှစိုက်ရန်လိုကြောင်း ချိန်ဆနိုင်သည်။</string>
+    <string name="assist_gesture_training_enrolling_title">အမြန်ဖျစ်ညှစ်ပြီး ပြန်လွှတ်ပါ</string>
+    <string name="assist_gesture_training_finished_text">ဖျစ်ညှစ်မှုအားကို အာရုံခံနိုင်စွမ်းအား နောက်ပိုင်းတွင် ဆက်တင်ထဲ၌ ပြန်ပြောင်းနိုင်ပါသည်</string>
+    <string name="assist_gesture_training_finished_title">အပြီးသတ်ရန် သို့မဟုတ် ဆက်လက် ချိန်ညှိရန်</string>
+    <string name="assist_gesture_training_intro_text">Assistant ကို အချိန်မရွေးစကားပြောရန် ဖုန်းအောက်ပိုင်းကို အမြန်ဖျစ်ညှစ်ပြီး ပြန်လွှတ်ပါ</string>
+    <string name="assist_gesture_training_intro_title">Assistant ကိုဖွင့်ရန် ဖျစ်ညှစ်လိုက်ပါ</string>
+    <string name="assist_gesture_training_suggestion_summary">Assistant ကို စကားပြောရန်၊ ဖုန်းခေါ်သံ ပိတ်ရန်</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Assistant ကို စကားပြောရန်၊ နှိုးစက်နှင့် ဖုန်းခေါ်သံပိတ်ရန်</string>
+    <string name="assist_gesture_training_suggestion_title">Assistant သုံးရန်ဖျစ်ညှစ်ပြီးပြန်လွှတ်ပါ</string>
+    <string name="automatic_storage_manager_activation_warning">ချိတ်ဆက်ထားလျှင် မိတ္တူပွားခြင်းအတွက် သင်ရွေးချယ်ထားသော အရည်အသွေးဖြင့် ဓာတ်ပုံများနှင့် ဗီဒီယိုများကို ကြည့်ရှုနိုင်ပါသေးသည်</string>
+    <string name="automatic_storage_manager_days_title">အရန်သိမ်းထားသော ဓာတ်ပုံနှင့် ဗီဒီယိုများကို ဖယ်ရှားပါ</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Smart Storage ကို ပိတ်လိုပါသလား။
+
+သင်၏ သိုလှောင်ခန်းပြည့်လုနီးပါက Smart Storage သည် နေရာလွတ်ရရှိရန် ရှင်းလင်းပေးမည်မဟုတ်ပါ။"</string>
+    <string name="automatic_storage_manager_downloads_days_title">ဒေါင်းလုဒ်များမိတ္တူသိမ်းခြင်း</string>
+    <string name="automatic_storage_manager_preference_title">စမတ်သိုလှောင်ခန်း</string>
+    <string name="automatic_storage_manager_primary_switch_title">အဆင့်မြင့် သိုလှောင်ခန်းကို သုံးရန်</string>
+    <string name="automatic_storage_manager_settings">အဆင့်မြင့် သိုလှောင်ခန်း</string>
+    <string name="automatic_storage_manager_text">သိုလှောင်ခန်းပြည့်ခါနီးအချိန်တွင် အရန်သိမ်းထားသည့် ဓာတ်ပုံနှင့် ဗီဒီယိုများကို ဖယ်ရှားပါ။ ၎င်းတို့ကို Google Photos တွင်တွေ့နိုင်ပါဦးမည်။</string>
+    <string name="aware_disabled_preference_action">ဖွင့်ရန်</string>
+    <string name="aware_disabled_preference_neutral">ယခု မလုပ်ပါ</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">"လေယာဉ်ပျံမုဒ်နှင့် 'ဘက်ထရီ အားထိန်း' ဖွင့်ထားသောကြောင့် Motion Sense မရနိုင်ပါ"</string>
+    <string name="aware_footer_when_airplane_on">လေယာဉ်ပျံမုဒ် ဖွင့်ထားသောကြောင့် Motion Sense မရနိုင်ပါ</string>
+    <string name="aware_footer_when_batterysaver_on">"'ဘက်ထရီ အားထိန်း' ဖွင့်ထားသောကြောင့် Motion Sense မရနိုင်ပါ"</string>
+    <string name="aware_gesture_summary_off">"'အမြန်လက်ဟန်များ' ဖွင့်ထားသည်၊ Active Edge ပိတ်ထားသည်"</string>
+    <string name="aware_gesture_summary_on_non_assist">"'အမြန်လက်ဟန်များ' ဖွင့်ထားသည်၊ Active Edge ဖွင့်ထားသည်"</string>
+    <string name="aware_gesture_summary_on_with_assist">"'အမြန်လက်ဟန်များ' ဖွင့်ထားသည်၊ Active Edge ဖွင့်ထားသည်၊ Assistant ကိုသုံးရန် ဖျစ်ညှစ်ပါ"</string>
+    <string name="aware_info_button_description">နောက်ထပ် ဆက်တင်များ</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">"လေယာဉ်ပျံမုဒ်နှင့် 'ဘက်ထရီ အားထိန်း' ဖွင့်ထားသောကြောင့် မရနိုင်ပါ"</string>
+    <string name="aware_summary_when_airplane_on">လေယာဉ်ပျံမုဒ် ဖွင့်ထားသောကြောင့် မရနိုင်ပါ</string>
+    <string name="aware_summary_when_batterysaver_on">"'ဘက်ထရီ အားထိန်း' ဖွင့်ထားသောကြောင့် မရနိုင်ပါ"</string>
+    <string name="backup_data_summary">Google ဆာဗာများသို့ အက်ပ်ဒေတာ၊ Wi-Fi စကားဝှက်များနှင့် အခြားဆက်တင်များကို အရန်ကူးယူပါ</string>
+    <string name="backup_suggestion_cancel">မလုပ်တော့</string>
+    <string name="backup_suggestion_dialog_description">၎င်းသည် ဖုန်းအတွင်းပိုင်း သိုလှောင်ခန်းမှ ဒေတာများအားလုံးကို ဖျက်လိုက်ပါမည်။</string>
+    <string name="backup_suggestion_dialog_title">ဤစက်ကို ပြန်သတ်မှတ်လိုပါသလား။</string>
+    <string name="backup_suggestion_get_started">ပိုမိုလေ့လာရန်</string>
+    <string name="backup_suggestion_item_summary">Android သို့မဟုတ် iPhone® စက်ပစ္စည်းမှ ကူးယူပါ</string>
+    <string name="backup_suggestion_item_title">ဖုန်းအဟောင်းမှ ဒေတာများ ပျောက်နေပါသလား။</string>
+    <string name="backup_suggestion_missing_description">"SMS မက်ဆေ့ဂျ်များနှင့် ဓာတ်ပုံများကဲ့သို့ သင့်ဒေတာအချို့ကို မတွေ့လျှင် ကေဘယ်ကို အသုံးပြုပြီး ၎င်းတို့ကို သင့် Pixel သို့ လွှဲပြောင်းနိုင်ပါသည်။
+
+စတင်ရန် သင့် Pixel ကို ပြင်ဆင်သတ်မှတ်ရန် လိုအပ်ပါသည်။ စိတ်ကြိုက်ပြင်ဆင်ထားသည့် ဆက်တင်များနှင့် cloud သို့ စင့်ခ်လုပ်ထားခြင်း မရှိသည့် အကြောင်းအရာများ အပါအဝင် ဤဖုန်းပေါ်ရှိ ဒေတာများအားလုံးကို ဖျက်လိုက်ပါမည်။"</string>
+    <string name="backup_suggestion_missing_title">သင့်ဒေတာများ ပျောက်နေပါသလား။</string>
+    <string name="backup_suggestion_next">ရှေ့သို့</string>
+    <string name="backup_suggestion_other_ways_to_copy">ဒေတာကူးယူရန် အခြားနည်းလမ်းများ</string>
+    <string name="backup_suggestion_reset_description">"နောက်စာမျက်နှာတွင် သင့် Pixel ကို ပြင်ဆင်သတ်မှတ်နိုင်ပါသည်။ ဤသည်မှာ ကေဘယ်ကို အသုံးပြုပြီး သင့်ဒေတာများကို လွှဲပြောင်းရန် တစ်ခုတည်းသော နည်းလမ်းဖြစ်ပါသည်။
+
+ပြင်ဆင်သတ်မှတ်ပြီးသည်နှင့် ယခင်ဖုန်းမှ ဒေတာများကို ရယူရန် စနစ်ထည့်သွင်း သတ်မှတ်ပါ။"</string>
+    <string name="backup_suggestion_reset_title">သင့် Pixel ကို ပြင်ဆင်သတ်မှတ်ပါ</string>
+    <string name="backup_suggestion_what_is_needed_summary">"သင်၏ဖုန်းကို ပြင်ဆင်သတ်မှတ်ပြီးသည်နှင့် အောက်ပါတို့ကို လိုအပ်ပါမည်−
+
+• ယခင်ဖုန်း (Android 5.0+ သို့မဟုတ် iOS® 8.0+ LINK_BEGINဖုန်းအများစုLINK_END ကို ပံ့ပိုးပါသည်)
+• ယခင်ဖုန်းအတွက် အားသွင်းကြိုး သို့မဟုတ် ဒေတာကေဘယ်
+• သင့် Pixel နှင့် အတူပါလာသော ဒေတာအြမန်လွှဲ အဒက်တာ"</string>
+    <string name="backup_suggestion_what_is_needed_title">သင်လိုအပ်မည့် အရာများ</string>
+    <string name="battery_manager_summary">ဘက်ထရီသက်တမ်း ပိုရှည်စေပြီး အားသွင်းခြင်းကို ပိုကောင်းအောင်လုပ်သည်</string>
+    <string name="battery_manager_summary_unsupported">ဘက်ထရီသက်တမ်းကို တိုးပေးသည်</string>
+    <string name="battery_missing_link_message">ပိုမိုလေ့လာရန်</string>
+    <string name="battery_suggestion_summary">"'အလိုက်သင့် ဘက်ထရီအားထိန်း' ကို ဖွင့်ပါ"</string>
+    <string name="battery_tip_smart_battery_summary">"'အလိုက်သင့် ဘက်ထရီအားထိန်း' ကို ဖွင့်ပါ"</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s သည် ဤ Google အကောင့်နှင့် လင့်ခ်ချိတ်ထားသည့် စက်ပစ္စည်းများနှင့် တွဲချိတ်တော့မည် မဟုတ်ပါ</string>
+    <string name="columbus_gesture_detected">‘အမြန်တို့’ ကို တွေ့ရသည်။</string>
+    <string name="columbus_gesture_enrollment_complete">ပြီးပြီ</string>
+    <string name="columbus_gesture_enrollment_do_it_later">ယခုမလုပ်ပါ</string>
+    <string name="columbus_gesture_enrollment_settings">ဆက်တင်များသို့သွားရန်</string>
+    <string name="columbus_gesture_enrollment_try_it">စမ်းကြည့်ရန်</string>
+    <string name="columbus_gesture_training_action_no_selection_error">လုပ်ဆောင်ချက်တစ်ခုကို ရွေးပါ</string>
+    <string name="columbus_gesture_training_action_text">‘အမြန်တို့’ ကို သုံးသောအခါ မည်သို့ဖြစ်မည်ကို ရွေးပါ။ နောက်မှ ဆက်တင်များတွင် ပြောင်းနိုင်ပါသည်။</string>
+    <string name="columbus_gesture_training_action_title">‘အမြန်တို့’ ကို ရွေးရန်</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Double Tap နှစ်ချက်တို့ခြင်းအတွက် တစ်ချက်တို့ပြီးပါပြီ</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">ထပ်စမ်းကြည့်ရအောင်။ သင့်ဖုန်း၏ နောက်ဘက်ကို နှစ်ချက်အမြန်တို့ပါ။</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">ကောင်းသည်။</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Double Tap နှစ်ချက်တို့ခြင်းအတွက် နှစ်ချက်လုံး တို့ပြီးပါပြီ</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">သင်သည် ‘အမြန်တို့’ ကို သုံးရန် အသင့်ဖြစ်ပါပြီ</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">ရပါပြီ။</string>
+    <string name="columbus_gesture_training_enrolling_text">သင့်ဖုန်း၏ နောက်ဘက်ကို နှစ်ချက်အမြန်တို့ပါ။</string>
+    <string name="columbus_gesture_training_enrolling_title">‘အမြန်တို့’ ကို စမ်းကြည့်ပါ</string>
+    <string name="columbus_gesture_training_finished_text">‘အမြန်တို့’ ကို သုံးရန်အတွက် လိုအပ်သော တို့အားပြောင်းရန် ဆက်တင်များသို့ သွားပါ။</string>
+    <string name="columbus_gesture_training_finished_title">‘အမြန်တို့’ ကို စနစ်ထည့်သွင်းပြီးပါပြီ</string>
+    <string name="columbus_gesture_training_intro_text_accidental">သင့်စက်၏ နောက်ဘက်ကို နှစ်ကြိမ်တို့လိုက်ပြီး ၎င်းက သင်၏ Assistant ကို သွားရင်းလာရင်း အသုံးပြုရန် ခွင့်ပြုသည်။ ဤလက်ဟန်ကို ဆက်တင်များတွင် စိတ်ကြိုက်လုပ်နိုင်သည်။</string>
+    <string name="columbus_gesture_training_intro_text_suw">ဖန်သားပြင်ဓာတ်ပုံရိုက်ပါ၊ အကြောင်းကြားချက်များပြပါ၊ (သို့) နှစ်ချက်တို့၍ နောက်လုပ်ဆောင်ချက် စတင်ပါ။</string>
+    <string name="columbus_gesture_training_intro_title">အမြန်လုပ်ဆောင်ချက်များအတွက် ‘အမြန်တို့’</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">ဖွင့်ရန် အက်ပ်တစ်ခုရွေးပါ</string>
+    <string name="columbus_gesture_training_launch_text">‘အမြန်တို့’ ကို သုံးသောအခါ သင်ဖွင့်လိုသောအက်ပ်ကို ရွေးပါ။</string>
+    <string name="columbus_gesture_training_launch_title">ဖွင့်ရန် အက်ပ်ရွေးပါ</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s ဖြတ်လမ်းလင့်ခ် ဆက်တင်များ</string>
+    <string name="columbus_launch_settings_activity_title">‘အမြန်တို့’ ဆက်တင်များ</string>
+    <string name="columbus_name">အမြန်တို့</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">%1$s ဆက်တင်များ</string>
+    <string name="columbus_setting_action_assistant_title">သင့် ဒစ်ဂျစ်တယ် Assistant ကို သုံးရန်</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">အက်ပ် ရွေးမထားပါ</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">အက်ပ် ထည့်သွင်းမထားပါ</string>
+    <string name="columbus_setting_action_launch_title">အက်ပ်ဖွင့်ခြင်း</string>
+    <string name="columbus_setting_action_notification_title">အကြောင်းကြားချက်များ ပြခြင်း</string>
+    <string name="columbus_setting_action_open_app_title">အက်ပ် ဖွင့်ရန်</string>
+    <string name="columbus_setting_action_overview_title">မကြာသေးမီကအက်ပ်များကို ကြည့်ရန်</string>
+    <string name="columbus_setting_action_play_pause_title">မီဒီယာဖွင့်ရန် (သို့) ခဏရပ်ရန်</string>
+    <string name="columbus_setting_action_screenshot_title">ဖန်သားပြင်ဓာတ်ပုံ ရိုက်ရန်</string>
+    <string name="columbus_setting_actions_title">ဖုန်း၏နောက်ဘက်ကို နှစ်ကြိမ်တို့ခြင်းဖြင့်</string>
+    <string name="columbus_setting_additional_settings_title">‘အမြန်တို့’ ၏ တို့အား</string>
+    <string name="columbus_setting_app_selection_help_text">သင့်ဖုန်း၏နောက်ဘက်ကို နှစ်ချက်တို့လျှင် ဖွင့်မည့်အက်ပ်ကို ရွေးပါ။ အက်ပ်ကို ဖယ်ရှားလိုက်ပါက သင် အခြားအက်ပ်ကို မရွေးမချင်း ‘အမြန်တို့’ ကို ပိတ်ထားသည်။</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">‘အမြန်တို့’ ကို သုံး၍ ဤအက်ပ်ကိုဖွင့်သောအခါ မည်သို့ဖြစ်မည်ကို ရွေးပါ။</string>
+    <string name="columbus_setting_enable_switch_title">‘အမြန်တို့’ သုံးရန်</string>
+    <string name="columbus_setting_sensitivity_title">ခပ်ပြင်းပြင်းတို့ချက်များ လိုအပ်သည်</string>
+    <string name="connectivity_helper_call_quality_category">ခေါ်ဆိုမှု အရည်အသွေး</string>
+    <string name="connectivity_helper_call_quality_summary">ခေါ်ဆိုမှုများအတွင်း ချိတ်ဆက်မှု ပြဿနာများအကြောင်း အကြောင်းကြားချက် ရယူနိုင်သည်</string>
+    <string name="connectivity_helper_call_quality_title">အကြောင်းကြားချက်များ ရယူရန်</string>
+    <string name="connectivity_helper_d2d_summary">ခေါ်ဆိုမှုများအတွင်း သင့်ဖုန်းတွင် ချိတ်ဆက်မှု ပြဿနာများရှိနေပါက တစ်ဖက်လူကို အသိပေးနိုင်သည်</string>
+    <string name="connectivity_helper_d2d_title">ချိတ်ဆက်မှုအချက်အလက် မျှဝေခြင်း</string>
+    <string name="connectivity_helper_footnote">အခြားတစ်ဖက်မှခေါ်ဆိုသူက ပံ့ပိုးထားသည့် စက်နှင့်ကွန်ရက်ကို သုံးသည့်အခါ ချိတ်ဆက်မှု အချက်အလက်ကို မျှဝေနိုင်သည်</string>
+    <string name="content_capture">အက်ပ်ဒေတာအသုံးပြုမှုကို ပုဂ္ဂိုလ်ရေးသီးသန့် ပြုလုပ်ခြင်း</string>
+    <string name="copy_toast_msg">လင့်ခ်ကို ကလစ်ဘုတ်သို့ ကူးပြီးပါပြီ</string>
+    <string name="dark_ui_text">"သင့်ဘက်ထရီသက်တမ်း ပိုမိုကြာရှည်စွာ ခံနိုင်ရန် 'မှောင်သည့်အပြင်အဆင်' က အမည်းရောင်နောက်ခံကို အသုံးပြုသည်။ သင့်ဖန်သားပြင်ပိတ်သည်အထိ စောင့်ပြီးမှ မှောင်သည့် အပြင်အဆင် စတင်သည်။"</string>
+    <string name="dock_summary_charging_phone">ဖုန်းအားသွင်းနေသည်</string>
+    <string name="double_twist_for_camera_mode_summary">Google Camera တွင် ဆယ်လ်ဖီမုဒ်သို့ အဝင်အထွက်ကူးပြောင်းရန် အက်ပ်အတွင်းရှိနေစဉ် နှစ်ချက် လှည့်ပါ။</string>
+    <string name="downloads_backup_text">ဒေါင်းလုဒ်လုပ်ထားသော ဖိုင်များကို Google Drive သို့ မိတ္တူကူးယူထားပါမည်</string>
+    <string name="duration_less_than_one_minute">၁ မိနစ်အောက်</string>
+    <string name="extra_app_info_label">ဂိမ်း မွမ်းမံပြင်ဆင်ခြင်း</string>
+    <string name="face_enrolling_center_head">သင့်မျက်နှာကို အတွင်းဖရိမ်နှင့် အံကိုက်အောင်လုပ်ပါ</string>
+    <string name="face_enrolling_description">လေးထောင့်ကွက်အားလုံးကို ဖယ်ခြင်းဖြင့် သင့်မျက်နှာကို ထောင့်ပေါင်းစုံမှ ရိုက်ကူးပါ။</string>
+    <string name="face_enrolling_do_it_later">နောက်မှလုပ်ရန်</string>
+    <string name="face_enrolling_gaze_dialog_cancel">မလုပ်တော့</string>
+    <string name="face_enrolling_gaze_dialog_continue">မျက်လုံးမဖွင့်ဘဲ သတ်မှတ်ရန်</string>
+    <string name="face_enrolling_gaze_dialog_message">မျက်လုံးဖွင့်စရာမလိုသည့် မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း ထည့်သွင်းလိုပါသလား။ ဤကဲ့သို့ ထည့်သွင်းပါက သင်သတိမထားမိချိန်တွင် တစ်စုံတစ်ယောက်သည် ဖုန်းကို သင့်မျက်နှာသို့ချိန်၍ လော့ခ်ဖွင့်နိုင်ပါသည်။</string>
+    <string name="face_enrolling_gaze_dialog_title">မျက်လုံးမဖွင့်ဘဲ စနစ်ထည့်သွင်းရန်</string>
+    <string name="face_enrolling_how_to_setup">စနစ်ထည့်သွင်းနည်း</string>
+    <string name="face_enrolling_title">ဖုန်းကို ငြိမ်ငြိမ်ကိုင်ထားပါ။ ခေါင်းလှည့်ပါ။ ဖြည်းဖြည်း လုပ်ပါ။</string>
+    <string name="face_enrolling_title_accessibility">သင့်ဖုန်းကို တည့်တည့်ကြည့်ပါ</string>
+    <string name="face_enrolling_title_accessibility_progress">သင့်ဖုန်းကို တည့်တည့်ဆက်ကြည့်ပါ</string>
+    <string name="face_enrolling_too_close">ဖုန်းကို အဝေးသို့ခွာပါ</string>
+    <string name="face_enrolling_too_far">ဖုန်းကို အနားသို့ ပိုတိုးပါ</string>
+    <string name="face_enrolling_too_high">ဖုန်းကို အောက်ပိုနှိမ့်ပါ</string>
+    <string name="face_enrolling_too_left">ဖုန်းကို သင့်ညာဘက်သို့ ရွှေ့ပါ</string>
+    <string name="face_enrolling_too_low">ဖုန်းကို ပိုမြှင့်လိုက်ပါ</string>
+    <string name="face_enrolling_too_right">ဖုန်းကို သင့်ဘယ်ဘက်သို့ ရွှေ့ပါ</string>
+    <string name="face_enrolling_turn_head_to_arrow">သင့်ခေါင်းကို မြားဘက်သို့ လှည့်ပါ</string>
+    <string name="face_enrolling_turned_too_far">ခေါင်းနည်းနည်း ပြန်လှည့်ပါ</string>
+    <string name="fallback_menu_item_copy_link">လင့်ခ်ကို ကူးယူရန်</string>
+    <string name="fallback_menu_item_open_in_browser">ဘရောင်ဇာတွင် ဖွင့်ရန်</string>
+    <string name="fallback_menu_item_share_link">လင့်ခ်ကို မျှဝေရန်</string>
+    <string name="fullbackup_data_summary">"Google Drive သို့ စက်ပစ္စည်းဒေတာများ (Wi-Fi စကားဝှက်နှင့် ခေါ်ဆိုမှုမှတ်တမ်းကဲ့သို့) နှင့် အက်ပ်ဒေတာများ (အက်ပ်များမှ သိမ်းဆည်းထားသည့် ဆက်တင်များနှင့် ဖိုင်များ) ကိုအလိုအလျောက် အရန်ကူးယူပါ။
+
+အလိုအလျောက် အရန်ကူးယူခြင်းကို ဖွင့်ထားလျှင်၊ စက်ပစ္စည်းနှင့် အက်ပ်ဒေတာများကို အချိန်နှင့်အမျှ Google Drive ရှိ သီးသန့်ဖိုင်တွဲသို့ သိမ်းဆည်းသွားပါမည်။ အက်ပ်ဒေတာဟု ဆိုရာတွင် အဆက်အသွယ်များ၊ မက်ဆေ့ဂျ်များနှင့် ဓာတ်ပုံများကဲ့သို့ အရေးကြီးသည့် ဒေတာများအပါအဝင် အက်ပ်မှ သိမ်းဆည်းထားသည့် ဒေတာများ (ဆော့ဖ်ဝဲအင်ဂျင်နီယာ ဆက်တင်များအပေါ်မူတည်၍) အက်ပ်မှ သိမ်းဆည်းလိုက်သည့်ဒေတာများအားလုံး ပါဝင်ပါသည်။
+
+အရန်ကူးယူခြင်း ဒေတာများသည် သင့် Drive သိုလှောင်ခန်းနေရာကို အသုံးပြုခြင်းမရှိပါ။ အရွယ်အစားကြီးသည့် ဖိုင်များ သို့မဟုတ် ဆော့ဖ်ဝဲအင်ဂျင်နီယာမှ အရန်ကူးယူခြင်းမပြုရန် ထုတ်ပယ်ထားသည့် ဖိုင်များကို အရန်ကူးယူခြင်း ပြုလုပ်မည် မဟုတ်ပါ။"</string>
+    <string name="fullbackup_erase_dialog_message">စက်ပစ္စည်းဒေတာများ (Wi-Fi စကားဝှက်များနှင့် ခေါ်ဆိုမှုမှတ်တမ်း) နှင့် အက်ပ်ဒေတာများ (အက်ပ်များမှ သိမ်းဆည်းလိုက်သည့် ဆက်တင်များနှင့် ဖိုင်များ) ကိုအရန်ကူးယူထားခြင်းမှ ရပ်တန့်ပြီး Google Drive ပေါ်ရှိ မိတ္တူများအားလုံးကို ဖျက်မလား။</string>
+    <string name="game_dashboard_always_on_summary">ဂိမ်းများတွင် ဂိမ်းဒက်ရှ်ဘုတ် ဖြတ်လမ်းလင့်ခ်ကို ပြပါ</string>
+    <string name="game_dashboard_always_on_title">ဂိမ်း ဒက်ရှ်ဘုတ်</string>
+    <string name="game_dashboard_dnd_rule_name">ဂိမ်းကစားခြင်း</string>
+    <string name="game_dashboard_dnd_summary">ဂိမ်းကစားနေသောအခါ အရေးကြီးပုဂ္ဂိုလ်နှင့် အက်ပ်များထံမှသာ အကြောင်းကြားချက် ရယူပါ</string>
+    <string name="game_dashboard_dnd_title">ဂိမ်းများအတွက် မနှောင့်ယှက်ရ</string>
+    <string name="game_mode_battery_description">ဘက်ထရီ သက်တမ်း ပိုကြာစေနိုင်သည်</string>
+    <string name="game_mode_battery_title">ဘက်ထရီ အားထိန်း</string>
+    <string name="game_mode_performance_description">ဖရိမ်ပြနှုန်း တိုးမြှင့်ပြီး ဘက်ထရီ ပိုသုံးသည်</string>
+    <string name="game_mode_performance_title">စွမ်းဆောင်ရည်</string>
+    <string name="game_mode_standard_description">ဂိမ်း၏ မူလများကို သုံးသည်</string>
+    <string name="game_mode_standard_title">ပုံမှန်</string>
+    <string name="game_optimization_unavailable">ဤဂိမ်းအတွက် မရနိုင်ပါ</string>
+    <string name="gesture_aware_confirmation_action_button">ရပါပြီ</string>
+    <string name="gesture_aware_footer"><annotation link="link">သတ်မှတ်ချက်များ</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">သတ်မှတ်ချက်များ</annotation></string>
+    <string name="gesture_skip_direction_ltr">ဘယ်မှညာသို့</string>
+    <string name="gesture_skip_direction_rtl">ညာမှဘယ်သို့</string>
+    <string name="gesture_skip_direction_title">ညွှန်ကြားချက်ကို ကျော်ရန်</string>
+    <string name="gesture_skip_footer"><annotation link="link">သတ်မှတ်ချက်များ</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">သတ်မှတ်ချက်များ</annotation></string>
+    <string name="global_actions_panel_short_title">ကတ်များနှင့် ဖြတ်သန်းခွင့်များ</string>
+    <string name="global_actions_panel_summary">"သင်၏ ငွေပေးချေနည်းလမ်းနှင့် ဖြတ်သန်းခွင့် လက်မှတ်ကဲ့သို့သော အရာများကို အသုံးပြုရန် 'ပါဝါ' ခလုတ်ကို ဖိထားပါ။"</string>
+    <string name="global_actions_panel_title">ကတ်နှင့်လက်မှတ်များ ပြရန်</string>
+    <string name="install_unknown_applications">Play စတိုးမှမဟုတ်သည့် အခြားအရင်းအမြစ်များမှ အက်ပ်ထည့်သွင်းမှုများကို ခွင့်ပြုပါ</string>
+    <string name="keywords_accessibility_menu">မော်တာ၊ အမြန် မီနူး၊ အကူအညီ မီနူး၊ ထိတွေ့မှု၊ လက်၏ကျွမ်းကျင်မှု</string>
+    <string name="keywords_adaptive_charging">အားသွင်းသည်၊ အားသွင်းခြင်း၊ အဆင့်မြင့်အားသွင်းခြင်း၊ အလိုက်သင့်အားသွင်းခြင်း၊ ဘက်ထရီ၊ ဘက်ထရီအခြေအနေ</string>
+    <string name="keywords_assist_gesture_launch">ဟန်၊ အစွန်း၊ ဘက်၊ active edge၊ ဖျစ်ညှစ်ခြင်း၊ ဆုပ်ကိုင်ခြင်း၊ အကူ၊ assistant၊ ဖျစ်ညှစ်ခြင်း၊ ok google၊ google assistant</string>
+    <string name="keywords_assist_gesture_silence">ဟန်၊ အစွန်း၊ ဘက်၊ active edge၊ အသံတိတ်ခြင်း၊ နှိုးစက်အား ဆိုင်းငံ့ခြင်း၊ နှိုးစက်၊ အဝင်ခေါ်ဆိုမှု၊ အသံတိတ်ခြင်း၊ မျက်နှာပြင်ပြသမှု၊ လော့ခ်မျက်နှာပြင်၊ ဖျစ်ညှစ်ခြင်း၊ ဆုပ်ကိုင်ခြင်း၊ ရပ်ခြင်း</string>
+    <string name="keywords_assist_gesture_wake">ဟန်၊ အစွန်း၊ ဘက်၊ active edge၊ နိုးခြင်း၊ အကြောင်းကြားချက်များ၊ မျက်နှာပြင်၊ မျက်နှာပြင်ပြသမှု၊ မျက်နှာပြင် ပိတ်ခြင်း၊ မျက်နှာပြင် ဖွင့်ခြင်း၊ ဖျစ်ညှစ်ခြင်း၊ နားနေခြင်း၊ နားခြင်း၊ ဖျစ်ညှစ်ခြင်း</string>
+    <string name="keywords_battery_share">ဘက်ထရီမျှဝေခြင်း၊ ကြိုးမဲ့ ဖုန်းအားသွင်းခြင်း</string>
+    <string name="keywords_battery_share_settings">ဘက်ထရီမျှဝေခြင်း၊ ပြောင်းပြန် ကြိုးမဲ့ဖုန်းအားသွင်းခြင်း</string>
+    <string name="keywords_content_capture">အကြောင်းအရာ ရယူမှု၊ အက်ပ်အကြောင်းအရာ၊ အက်ပ်ဒေတာ</string>
+    <string name="keywords_gesture">လက်ဟန်၊ လှုပ်ရှားချက်များ</string>
+    <string name="keywords_global_actions_panel">ကတ်များ၊ ဖြတ်သန်းခွင့်များ</string>
+    <string name="keywords_live_transcribe">စာတန်းများ၊ စာတန်းများ၊ CC၊ တိုက်ရိုက်စာတန်း၊ နားလေးခြင်း၊ အကြားအာရုံဆုံးရှုံးခြင်း၊ CART၊ စကားပြောမှ စာသားသို့၊ စာတန်းထိုးများ</string>
+    <string name="keywords_reverse_charging_stop_threshold">ဖုန်းက ဤပမာဏသို့ ရောက်သောအခါ ဘက်ထရီမျှဝေခြင်းကို ရပ်ပါ-</string>
+    <string name="keywords_select_to_speak">စာသားကို နားထောင်ခြင်း၊ အသံထွက်ဖတ်ခြင်း၊ ဖန်သားပြင်သို့ စကားပြောခြင်း၊ ဖန်သားပြင်ဖတ် အက်ပ်</string>
+    <string name="keywords_sound_amplifier">PSAP၊ အသံချဲ့ခြင်း၊ အသံချဲ့ခြင်း၊ နားလေးခြင်း၊ အကြားအာရုံဆုံးရှုံးခြင်း၊ အသံချဲ့ခြင်း</string>
+    <string name="keywords_sound_notifications">အကြောင်းကြားချက်များ၊ နားလေးခြင်း၊ အကြားအာရုံဆုံးရှုံးခြင်း၊ အကြောင်းကြားခြင်း</string>
+    <string name="keywords_switch_access">မော်တာ၊ အသွင်တူ ခလုတ်၊ လက်၊ AT၊ ကူညီပေးသော နည်းပညာ၊ သွက်ချာပါဒဖြစ်ခြင်း၊ ALS၊ စကင်ဖတ်ခြင်း၊ အဆင့်လိုက် စကင်ဖတ်ခြင်း</string>
+    <string name="keywords_talkback">ဖန်သားပြင်ဖတ် အက်ပ်၊ အသံ ထွက်ပေးမှု၊ နောက်ခံစကားပြော၊ အသံ အကူအညီ၊ မျက်မမြင်၊ အမြင်အာရုံချို့တဲ့ခြင်း၊ TTS၊ စာသားမှ စကားပြောသို့၊ အသံထွက် အကြံပြုချက်</string>
+    <string name="keywords_voice_access">အသံ၊ အသံဖြင့် ထိန်းချုပ်ရန်၊ မော်တာ၊ လက်၊ မိုက်၊ မိုက်ခရိုဖုန်း၊ နှုတ်တိုက်ချပေးခြင်း၊ စကားပြောခြင်း၊ ထိန်းချုပ်ခြင်း</string>
+    <string name="language_input_gesture_summary_off">Active Edge ကို ပိတ်ထားပါသည်</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge ကို ဖွင့်ထားပါသည်</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge ဖွင့်ထားသည်၊ Assistant ကိုသုံးရန် ဖျစ်ညှစ်ပါ</string>
+    <string name="me_card_title">ကျွန်ုပ်၏ Pixel</string>
+    <string name="my_device_info_account_preference_title">Google Account</string>
+    <string name="owner_info_settings_edit_text_hint">ဥပမာ- Joe ၏ Pixel</string>
+    <string name="reverse_charging_charging_wirelessly_message">ဖုန်းကို ကြိုးမဲ့စနစ်ဖြင့် အားသွင်းနေသောကြောင့် မရနိုင်ပါ</string>
+    <string name="reverse_charging_detail_charging_overheat_message">"Pixel အလွန်ပူနေသောကြောင့် 'ဘက်ထရီ မျှဝေခြင်း' မရနိုင်ပါ။ ဖုန်းအေးသွားစေရန်စောင့်ပြီး ထပ်စမ်းကြည့်ပါ။"</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">"ကြိုးမဲ့စနစ်ဖြင့် ဖုန်းအားသွင်းနေသောကြောင့် 'ဘက်ထရီမျှဝေခြင်း' ကို မရနိုင်ပါ"</string>
+    <string name="reverse_charging_detail_footer_title">"'ဘက်ထရီမျှဝေခြင်း'ကို အသုံးပြုနေပါက သင့်ဖုန်းဘက်ထရီ အမြန်ကုန်ပါမည်။ တွဲဖက်သုံးနိုင်သော နားကြပ်၊ နာရီ၊ ဖုန်းနှင့် အခြားအရာတို့ဖြင့် 'ဘက်ထရီမျှဝေခြင်း' ကို အသုံးပြုနိုင်သည်။ ပိုမိုကောင်းမွန်စွာ အားသွင်းနိုင်ရန် သင့်ဖုန်း၏ကာဗာကို ဖယ်လိုက်ပါ။"</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"'ဘက်ထရီမျှဝေခြင်း' သည် ချိတ်ဆက်၍ရသော နားကြပ်များ၊ ဖုန်းများနှင့် အခြားအရာများနှင့်အတူ အလုပ်လုပ်သည်။
+
+ဤဝန်ဆောင်မှုကိုသုံးပါက သင့်ဖုန်းဘက်ထရီအကုန်မြန်ပါမည်။ 'ဘက်ထရီမျှဝေခြင်း' သည် အခြားစက်တစ်ခုကို မတွေ့ရှိပါက မိနစ်အနည်းငယ်ကြာပြီးနောက် အလိုအလျောက်ပိတ်သွားမည်။ ပိုမိုကောင်းမွန်စွာ အားသွင်းနိုင်ရန် သင့်ဖုန်း၏ ဘူးနှင့် သတ္တုကဲ့သို့ အနှောင့်အယှက်ပေးနိုင်သည့် အခြားအရာများကို ဖယ်လိုက်ပါ။"</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">"'ဘက်ထရီ အားထိန်း' ဖွင့်ထားသောကြောင့် 'ဘက်ထရီမျှဝေခြင်း' ကို မရနိုင်ပါ"</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">"USB-C စက်ကို ပလတ်တပ်ထားသောကြောင့် 'ဘက်ထရီမျှဝေခြင်း'ကို မရနိုင်ပါ"</string>
+    <string name="reverse_charging_instructions_title">"သင်၏ Pixel ဖြင့် အခြားစက်များကို အားသွင်းနိုင်သည်။
+စမ်းကြည့်ရန် သင့်ဖုန်းကို မှောက်လိုက်ပါ။"</string>
+    <string name="reverse_charging_is_off_summary">ပိတ်</string>
+    <string name="reverse_charging_is_on_and_charging_summary">ဘက်ထရီ မျှဝေခြင်းနှင့် အားသွင်းခြင်း</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">ဘက်ထရီ မျှဝေခြင်း</string>
+    <string name="reverse_charging_is_on_summary">ဖွင့်ထားသည် / အခြားစက်များကို အားသွင်းပါ</string>
+    <string name="reverse_charging_main_switch">‘ဘက်ထရီမျှဝေခြင်း’ ကို ခွင့်ပြုရန်</string>
+    <string name="reverse_charging_off_low_battery_summary">ပိတ်ထားသည် / ဖုန်းဘက်ထရီသည် %1$s အောက်ရောက်နေသည်</string>
+    <string name="reverse_charging_off_sharing_level_summary">ပိတ်ထားသည် / ဘက်ထရီသည် မျှဝေနိုင်သောပမာဏအောက် ရောက်နေသည်</string>
+    <string name="reverse_charging_overheat_summary">Pixel အလွန်ပူနေသောကြောင့် မရနိုင်ပါ။ ဖုန်းအေးသွားစေရန်စောင့်ပြီး ထပ်စမ်းကြည့်ပါ။</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">"'ဘက်ထရီ အားထိန်း' ဖွင့်ထားသောကြောင့် မရနိုင်ပါ"</string>
+    <string name="reverse_charging_sharing_level_message">ဘက်ထရီသည် မျှဝေနိုင်သောပမာဏအောက် ရောက်နေသောကြောင့် မရနိုင်ပါ</string>
+    <string name="reverse_charging_switch_summary">စက်များကို Pixel ၏ နောက်ကျောဘက်တွင် တင်ပါ</string>
+    <string name="reverse_charging_switch_title">အခြားစက်များကို Pixel ၏ နောက်ဘက်တွင် တင်၍ အားသွင်းခြင်း</string>
+    <string name="reverse_charging_switch_title_message">အခြားစက်များကို အားသွင်းခြင်း</string>
+    <string name="reverse_charging_title">ဘက်ထရီ မျှဝေခြင်း</string>
+    <string name="reverse_charging_unplug_usb_cable_message">USB-C စက်ကို ပလတ်တပ်ထားသောကြောင့် မရနိုင်ပါ</string>
+    <string name="reverse_charging_warning_summary">ဘက်ထရီသည် %1$s အောက်ရောက်နေသောကြောင့် မရနိုင်ပါ</string>
+    <string name="reverse_charging_warning_title">"ဘက်ထရီသည် %1$s အောက်ရောက်နေသောကြောင့် 'ဘက်ထရီမျှဝေခြင်း' ကို မရနိုင်ပါ"</string>
+    <string name="rtt_settings_always_visible">အမြဲမြင်နိုင်သည်</string>
+    <string name="rtt_settings_no_visible">မမြင်နိုင်ပါ</string>
+    <string name="rtt_settings_title">အချိန်နှင့်တစ်ပြေးညီ စာသား (RTT)</string>
+    <string name="rtt_settings_visible_during_call">ခေါ်ဆိုနေစဉ် မြင်နိုင်သည်</string>
+    <string name="screen_time_summary_usage_today">ယနေ့ %1$s</string>
+    <string name="search_bar_account_avatar_content_description">ပရိုဖိုင်ဓာတ်ပုံ၊ Google အကောင့်ကို ဖွင့်ရန် နှစ်ချက်တို့ပါ</string>
+    <string name="security_advanced_settings">အဆင့်မြင့် ဆက်တင်များ</string>
+    <string name="security_dismiss_dialog_dismiss_button">ပယ်ရန်</string>
+    <string name="security_dismiss_dialog_title">ဤသတိပေးချက်ကို ပယ်မလား။</string>
+    <string name="security_settings_face_enroll_consent_introduction_title">‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ ကို ခွင့်ပြုရန်</string>
+    <string name="security_settings_face_enroll_done">ပြီးပြီ</string>
+    <string name="security_settings_face_enroll_education_message">နောက်စာမျက်နှာတွင် သင့်မျက်နှာ၏ ရှုထောင့်ပေါင်းစုံကို ရိုက်ယူရန် သင့်ဦးခေါင်းကို လှည့်ပါ</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">နောက်ဖန်သားပြင်တွင် သင့်ဖုန်းကို မျက်လုံးနှင့် တစ်တန်းတည်းထား၍ ကိုင်ပါ</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">မျက်နှာပြ လော့ခ်ဖွင့်ခြင်းထည့်သွင်းချိန် ကုန်သွားပါပြီ</string>
+    <string name="security_settings_face_enroll_finish_description">အက်ပ်များသို့ လက်မှတ်ထိုးဝင်သောအခါ (သို့) ဝယ်ယူမှုကို အတည်ပြုသောအခါကဲ့သို့တွင် သင်ဖြစ်ကြောင်း အတည်ပြုရန်အတွက် (သို့) သင့်ဖုန်းကို လော့ခ်ဖွင့်ရန်အတွက် သင့်မျက်နှာကို ယခု သုံးနိုင်သည်</string>
+    <string name="security_settings_face_enroll_finish_title">အဆင်ပြေပါသည်။</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">မျက်လုံးအားနည်း၊ ခေါင်းသိပ်မလှုပ်နိုင်သူအတွက်</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ အသုံးပြုသည့်အခါ သင့်ခေါင်းကို ဖုန်းရှေ့တွင် တည့်အောင်ထားပေးရမည်။</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">မျက်လုံးများ ဖွင့်ထားရန် လိုအပ်သည်</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"သင်နှင့် သင့်ကလေးက ဆက်တင်များတွင် မျက်နှာနမူနာကို ဖျက်ခြင်း (သို့) ‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ ကို ပိတ်ခြင်းတို့ အချိန်မရွေး လုပ်နိုင်သည်။ မျက်နှာနမူနာများကို မဖျက်မချင်း ဖုန်းတွင် သိမ်းထားသည်။
+
+g.co/pixel/faceunlock တွင် ပိုမိုလေ့လာပါ။"</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">သင်နှင့် သင့်ကလေး၏ ထိန်းချုပ်မှုအောက်တွင် ရှိပါသည်</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"ဆက်တင်များတွင် သင့်မျက်နှာနမူနာကို ဖျက်ခြင်း (သို့) ‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ ကို ပိတ်ခြင်းတို့ အချိန်မရွေး လုပ်နိုင်သည်။ မျက်နှာနမူနာများကို သင်မဖျက်မချင်း ဖုန်းတွင် သိမ်းထားသည်။
+
+g.co/pixel/faceunlock တွင် ပိုမိုလေ့လာပါ။"</string>
+    <string name="security_settings_face_enroll_introduction_control_title">သင့်ထိန်းချုပ်မှုအောက်တွင် ရှိပါသည်</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ က သင့်ကလေးကို သူဖြစ်ကြောင်း အတည်ပြုရန်အတွက် သူ့မျက်နှာ၏ သီးခြားနမူနာတစ်ခုကို ပြုလုပ်သည်။ စနစ်ထည့်သွင်းနေစဉ် ဤမျက်နှာနမူနာကို ပြုလုပ်ရန်အတွက် သင့်ကလေး၏မျက်နှာကို ရှုထောင့်အမျိုးမျိုးမှ ပုံများရိုက်ကူးမည်။
+
+သူက ‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ သုံးသောအခါ သူ၏မျက်နှာနမူနာကို အပ်ဒိတ်လုပ်ရန် ပုံများကို သုံးသည်။ သူ၏မျက်နှာနမူနာပြုလုပ်ရန် သုံးထားသောပုံများကို မသိမ်းပါ။ သို့သော် မျက်နှာနမူနာကို ဖုန်းတွင် လုံခြုံစွာသိမ်းပြီး ဖုန်းအတွင်း၌သာ ထားပါသည်။ လုပ်ဆောင်ချက်အားလုံး ဖုန်းတွင် လုံခြုံစွာ ဖြစ်ပေါ်သည်။"</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ က သင်ဖြစ်ကြောင်း အတည်ပြုရန် သင့်မျက်နှာ၏ သီးခြားနမူနာတစ်ခုကို ပြုလုပ်သည်။ စနစ်ထည့်သွင်းနေစဉ် ဤမျက်နှာနမူနာကို ပြုလုပ်ရန်အတွက် သင့်မျက်နှာကို ရှုထောင့်အမျိုးမျိုးမှ ပုံများရိုက်ကူးမည်။
+
+‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ သုံးသောအခါ သင့်မျက်နှာနမူနာကို အပ်ဒိတ်လုပ်ရန် ပုံများကို သုံးသည်။ သင်၏မျက်နှာနမူနာပြုလုပ်ရန် သုံးထားသောပုံများကို မသိမ်းပါ။ သို့သော် မျက်နှာနမူနာကို သင့်ဖုန်းတွင် လုံခြုံစွာသိမ်းပြီး ဖုန်းအတွင်း၌သာ ထားပါသည်။ လုပ်ဆောင်ချက်အားလုံး သင့်ဖုန်းတွင် လုံခြုံစွာ ဖြစ်ပေါ်သည်။"</string>
+    <string name="security_settings_face_enroll_introduction_how_title">အလုပ်လုပ်ပုံ</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">ဖုန်းကို လော့ခ်ဖွင့်ရန်အတွက် (သို့) သင့်ကလေးဖြစ်ကြောင်း အတည်ပြုရန်အတွက် ‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ သည် သူ၏မျက်လုံးများကို ဖွင့်ထားရန်လိုအပ်နိုင်သည်။ သင်နှင့် သင့်ကလေးက ဤနည်းလမ်းကို ဆက်တင်များတွင် အချိန်မရွေး ဖွင့်နိုင်သည်။</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">သင့်ကလေးသည် မျက်မှန်တပ်လေ့ရှိသူဖြစ်လျှင် စနစ်ထည့်သွင်းစဉ်တွင် မျက်မှန်တပ်ထားနိုင်သည်။</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">မတော်တဆ သူ ဖုန်းကို ကြည့်မိရုံမျှဖြင့် ဖုန်းပွင့်သွားနိုင်ပါသည်။ အမြွှာကဲ့သို့ သူနှင့်အလွန်တူသူကလည်း သူ့ဖုန်းကို လော့ခ်ဖွင့်နိုင်သည် (သို့) တစ်စုံတစ်ယောက်က ဖုန်းကို သူ့မျက်နှာရှေ့ကိုင်ထားလျှင် ပွင့်နိုင်သည်။</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">ဖုန်းကို လော့ခ်ဖွင့်ရန်အတွက် (သို့) သင်ဖြစ်ကြောင်း အတည်ပြုရန်အတွက် ‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ သည် သင်၏မျက်လုံးများကို ဖွင့်ထားရန်လိုအပ်နိုင်သည်။ ဤနည်းလမ်းကို ဆက်တင်များတွင် အချိန်မရွေး ဖွင့်နိုင်သည်။</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">မျက်မှန် (သို့) အရောင်အနည်းငယ်ပါသည့် နေကာမျက်မှန်များ သုံးနိုင်သည်။</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">မျက်နှာကိုသုံး၍ ဖုန်းလော့ခ်ဖွင့်ခြင်းသည် ခိုင်မာသည့်ပုံစံ (သို့) ပင်နံပါတ်လောက် လုံခြုံမှုမရှိနိုင်ပါ။</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">မတော်တဆ သင့်ဖုန်းကို ကြည့်မိရုံမျှဖြင့် ဖုန်းပွင့်သွားနိုင်ပါသည်။ အမြွှာကဲ့သို့ သင်နှင့်အလွန်တူသူကလည်း သင့်ဖုန်းကို လော့ခ်ဖွင့်နိုင်သည် (သို့) တစ်စုံတစ်ယောက်က ဖုန်းကို သင့်မျက်နှာရှေ့ကိုင်ထားလျှင် ပွင့်နိုင်သည်။</string>
+    <string name="security_settings_face_enroll_introduction_info_title">သတိပြုရန်</string>
+    <string name="security_settings_face_enroll_introduction_message">အက်ပ်များသို့ လက်မှတ်ထိုးဝင်သောအခါ (သို့) ဝယ်ယူမှုကို အတည်ပြုသောအခါကဲ့သို့တွင် သင်ဖြစ်ကြောင်း အတည်ပြုရန်အတွက် (သို့) သင့်ဖုန်းကို လော့ခ်ဖွင့်ရန်အတွက် သင့်မျက်နှာကို သုံးပါ။</string>
+    <string name="security_settings_face_enroll_introduction_title">မျက်နှာပြ လော့ခ်ဖွင့်ခြင်းကို စနစ်ထည့်သွင်းခြင်း</string>
+    <string name="security_settings_face_enroll_next">ရှေ့သို့</string>
+    <string name="security_settings_face_enroll_partial_message">စွမ်းဆောင်ရည် ပိုမိုကောင်းမွန်စေရန် မျက်နှာပြ လော့ခ်ဖွင့်ခြင်းကို ဆက်တင်များတွင် ထပ်မံထည့်သွင်းနိုင်ပါသည်</string>
+    <string name="security_settings_face_enroll_partial_start_over">အစမှ ပြန်စရန်</string>
+    <string name="security_settings_face_enroll_partial_title">မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း ထည့်သွင်းပြီးပါပြီ</string>
+    <string name="security_settings_face_enroll_timeout_message">"၎င်းအစား အမြန် ထည့်သွင်းခြင်းကို စမ်းကြည့်ပါ။ မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း အသုံးပြုသည့်အခါ သင့်မျက်နှာကို ဖုန်းရှေ့တွင် တည့်အောင်ထားပေးရမည်။
+
+စွမ်းဆောင်ရည် ပိုမိုကောင်းမွန်စေရန် မျက်နှာပြ လော့ခ်ဖွင့်ခြင်းကို ဆက်တင်များတွင် ထပ်မံထည့်သွင်းနိုင်ပါသည်။"</string>
+    <string name="security_settings_face_enroll_timeout_title">ဆက်လက် စနစ်ထည့်သွင်း၍ မရပါ</string>
+    <string name="security_settings_face_enroll_timeout_try_again">ထပ်စမ်းကြည့်ရန်</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">အမြန် ထည့်သွင်းခြင်း သုံးရန်</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">စနစ်ထည့်သွင်းမှုမှ ထွက်ရန်</string>
+    <string name="security_settings_face_enroll_too_hot_message">ဖုန်းအလွန်ပူနေသောကြောင့် မျက်နှာပြ လော့ခ်ဖွင့်ခြင်းကို ထည့်သွင်း၍မရပါ။ ဖုန်းအေးသွားသည့်အခါ ထပ်စမ်းကြည့်ပါ။</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">မျက်နှာပြ လော့ခ်ဖွင့်ခြင်းကို ကျော်ရန်</string>
+    <string name="security_settings_face_enroll_too_hot_title">ဖုန်းအလွန်ပူနေသည်</string>
+    <string name="security_settings_fingerprint_preference_summary_none">လက်ဗွေ စနစ်ထည့်သွင်းသတ်မှတ်ရန် တို့ပါ</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">g.co/pixel/fingerprintunlock တွင် ပိုမိုလေ့လာပါ။</string>
+    <string name="security_settings_work_fingerprint_preference_title">အလုပ်အတွက် Pixel Imprint</string>
+    <string name="setup_suggestion_summary">ဒေတာမိတ္တူကူးခြင်း၊ သင့်ဖုန်းဖြင့်ငွေပေးချေခြင်း စသည်</string>
+    <string name="setup_suggestion_title">စနစ်ထည့်သွင်းမှု အပြီးသတ်ပါ</string>
+    <string name="smart_battery_footer">ဘက်ထရီသက်တမ်း ပိုရှည်စေရန် ‘အလိုက်အထိုက် ဘက်ထရီအားထိန်း’ က စွမ်းဆောင်ရည်နှင့် နောက်ခံလုပ်ဆောင်ချက်ကို လျှော့ချနိုင်သည်။ အချို့အကြောင်းကြားချက်များ ကြန့်ကြာနိုင်ပါသည်။</string>
+    <string name="smart_battery_manager_title">အလိုက်သင့် သတ်မှတ်ချက်များ</string>
+    <string name="smart_battery_title">အလိုက်အထိုက် ဘက်ထရီအားထိန်း</string>
+    <string name="sound_dashboard_summary">"အသံ၊ တုန်ခါ၍တုံ့ပြန်မှု၊ 'မနှောင့်ယှက်ရ'"</string>
+    <string name="sound_settings">အသံနှင့် တုန်ခါမှု</string>
+    <string name="storage_manager_indicator">စမတ်သိုလှောင်ခန်း− ^1</string>
+    <string name="time_remaining_warning_subtext">ယခင်က အသုံးပြုသည့်အနေအထားအရ %1$s ခန့် ကျန်ပါသည်</string>
+    <string name="time_remaining_warning_text">မကြာမီ ဓာတ်ခဲကုန်သွားပါလိမ့်မည်</string>
+    <string name="tips_suggestion_summary">သင့်ဖုန်းဖြင့်လုပ်နိုင်သည်ကို ရှာပါ</string>
+    <string name="tips_suggestion_title">သင့် Pixel အကြောင်း လေ့လာပါ</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">ဖုန်းကို သင့်မျက်နှာရှေ့တွင် ကိုင်ထားပါ</string>
+    <string name="usb_use_file_transfers">ဖိုင်ရွှေ့ပြောင်းခြင်း / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">ဖုန်းကို အသံတိတ်စနစ်သို့ သတ်မှတ်ထားသောကြောင့် ခေါ်ဆိုမှုများအတွက် တုန်ခါမှုကို မရနိုင်ပါ</string>
+    <string name="vibration_haptics_settings_not_available_title">မရနိုင်ပါ</string>
+    <string name="wallpaper_dashboard_summary">အရောင်များ၊ အပြင်အဆင်သုံး သင်္ကေတများ၊ အက်ပ်ဇယား</string>
+    <string name="wifi_subscription_summary">OpenRoaming စာရင်းသွင်းမှုကို ကြည့်ရန် သို့မဟုတ် ပြောင်းရန်</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">%1$s နှင့် ချိတ်ဆက်ထားသည်</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">ချိတ်ဆက်ရန် တို့ပါ</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">ချိတ်ဆက်၍ မရပါ။ ပြန်စမ်းကြည့်ရန် တို့ပါ။</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">ချိတ်ဆက်နေသည်…</string>
+</resources>

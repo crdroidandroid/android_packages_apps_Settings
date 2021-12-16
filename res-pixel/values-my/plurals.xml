@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">သတိပေးချက်အားလုံး (%1$d ခု) ကြည့်ရန်</item>
+        <item quantity="one">သတိပေးချက် %1$d ခု ပြရန်</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">သတိပေးချက် %1$d ခု</item>
+        <item quantity="one">သတိပေးချက် %1$d ခု</item>
+    </plurals>
+</resources>

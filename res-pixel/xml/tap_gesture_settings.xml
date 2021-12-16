@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/gesture_tap_title">
+
+    <com.android.settings.widget.VideoPreference
+        android:key="gesture_tap_video"
+        settings:animation="@raw/gesture_tap"
+        settings:preview="@drawable/gesture_tap" />
+
+    <SwitchPreference
+        android:key="gesture_tap_toggle"
+        android:summary="@string/gesture_tap_summary"
+        android:title="@string/gesture_tap_title"
+        settings:allowDividerAbove="true"
+        settings:controller="com.google.android.settings.aware.TapGesturePreferenceController"
+        settings:keywords="@string/keywords_gesture_tap" />
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="tap_gesture_footer"
+        android:selectable="false"
+        android:title="@string/gesture_tap_footer"
+        settings:controller="com.google.android.settings.aware.TapGestureFooterPreferenceController"
+        settings:searchable="false" />
+
+</PreferenceScreen>
