@@ -21,34 +21,59 @@
     android:title="@string/calls_and_sms">
 
     <ListPreference
-        android:key="provider_model_calls_preference"
-        android:title="@string/calls_preference_title"
-        settings:controller="com.android.settings.network.telephony.CallsDefaultSubscriptionController"
-        android:order="10"
         android:icon="@drawable/ic_phone"
-        />
+        android:key="provider_model_calls_preference"
+        android:order="10"
+        android:title="@string/calls_preference_title"
+        settings:controller="com.android.settings.network.telephony.CallsDefaultSubscriptionController" />
 
     <ListPreference
-        android:key="provider_model_sms_preference"
-        android:title="@string/sms_preference_title"
-        settings:controller="com.android.settings.network.telephony.SmsDefaultSubscriptionController"
-        android:order="15"
         android:icon="@drawable/ic_sms"
-        />
+        android:key="provider_model_sms_preference"
+        android:order="15"
+        android:title="@string/sms_preference_title"
+        settings:controller="com.android.settings.network.telephony.SmsDefaultSubscriptionController" />
 
     <PreferenceCategory
         android:key="provider_model_calling_category"
-        android:title="@string/calls_and_sms_category"
         android:order="20"
-        settings:controller="com.android.settings.network.telephony.NetworkProviderWifiCallingPreferenceController"
+        android:title="@string/calls_and_sms_category"
         settings:allowDividerAbove="true"
-        />
+        settings:controller="com.android.settings.network.telephony.NetworkProviderWifiCallingPreferenceController" />
 
     <PreferenceCategory
         android:key="provider_model_backup_calling_category"
-        android:title="@string/backup_calling_settings_title"
         android:order="25"
-        settings:controller="com.android.settings.network.telephony.NetworkProviderBackupCallingPreferenceController"
+        android:title="@string/backup_calling_settings_title"
         settings:allowDividerAbove="true"
-        />
+        settings:controller="com.android.settings.network.telephony.NetworkProviderBackupCallingPreferenceController" />
+
+    <PreferenceCategory
+        android:key="connectivity_helper_call_quality_category"
+        android:order="30"
+        android:title="@string/connectivity_helper_call_quality_category"
+        settings:allowDividerAbove="true">
+
+        <SwitchPreference
+            android:icon="@drawable/ic_connectivity_helper_call_quality"
+            android:key="connectivity_helper_call_quality"
+            android:summary="@string/connectivity_helper_call_quality_summary"
+            android:title="@string/connectivity_helper_call_quality_title"
+            settings:controller="com.google.android.settings.network.ConnectivityHelperCallQualityPreferenceController" />
+
+        <SwitchPreference
+            android:key="connectivity_helper_d2d"
+            android:order="40"
+            android:summary="@string/connectivity_helper_d2d_summary"
+            android:title="@string/connectivity_helper_d2d_title"
+            settings:controller="com.google.android.settings.network.ConnectivityHelperDeviceToDevicePreferenceController" />
+
+        <com.android.settingslib.widget.FooterPreference
+            android:key="connectivity_helper_footer"
+            android:selectable="false"
+            android:title="@string/connectivity_helper_footnote"
+            settings:searchable="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

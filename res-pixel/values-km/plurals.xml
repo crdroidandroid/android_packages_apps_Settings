@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">មើលការព្រមាន​ទាំងអស់ (%1$d)</item>
+        <item quantity="one">បង្ហាញ​ការព្រមាន %1$d</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">ការព្រមាន %1$d</item>
+        <item quantity="one">ការ​ព្រមាន %1$d</item>
+    </plurals>
+</resources>

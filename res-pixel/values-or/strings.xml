@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">ନିଷ୍କ୍ରିୟ ଲକ୍ ସ୍କ୍ରିନ୍</string>
+    <string name="gesture_silence_title">ନୀରବ ଆଲର୍ଟର ପାଇଁ ସ୍ପର୍ଶ ଦ୍ଵାରା ନିର୍ଦ୍ଦେଶ</string>
+    <string name="gesture_skip_title">ସ୍ପର୍ଶ ଦ୍ଵାରା ନିର୍ଦ୍ଦେଶକୁ ବାଦ୍ ଦିଅନ୍ତୁ</string>
+    <string name="keywords_touch_sensitivity">ସ୍ପର୍ଶ, ସମ୍ବେଦନଶୀଳତା, ସମ୍ବେଦନଶୀଳ, ସ୍କ୍ରିନ୍ ପ୍ରୋଟେକ୍ଟର୍, ଫିଲ୍ମ, ପ୍ରତିକ୍ରିୟାଶୀଳ, ପ୍ରତିକ୍ରିୟାଶୀଳତା</string>
+    <string name="touch_sensitivity_summary">ସ୍କ୍ରିନ୍ ପ୍ରୋଟେକ୍ଟର୍‌ଗୁଡ଼ିକ ବ୍ୟବହାର କରିବା ସମୟରେ ସ୍ପର୍ଶ ଉନ୍ନତ କରେ</string>
+    <string name="touch_sensitivity_title">ସ୍ପର୍ଶ ସମ୍ବେଦନଶୀଳତା ବଢ଼ାନ୍ତୁ</string>
+    <string name="accessibility_vibration_settings_screen_title">ଭାଇବ୍ରେସନ୍ ଓ ହାପଟିକ୍ସ ବ୍ୟବହାର କରନ୍ତୁ</string>
+    <string name="vibration_haptics_settings_not_available_summary">ଫୋନ୍ ସାଇଲେଣ୍ଟରେ ସେଟ୍ ହୋଇଥିବାରୁ ଭାଇବ୍ରେସନ୍ ଓ ହାପଟିକ୍ସ ଅନୁପଲବ୍ଧ ଅଛି</string>
+    <string name="vibration_haptics_strength_category_title">ଭାଇବ୍ରେସନ୍ ଏବଂ ହାପଟିକ୍ ମାତ୍ରା</string>
+    <string name="accessibility_vibration_settings_title">ଭାଇବ୍ରେସନ୍ ଓ ହାପଟିକ୍ସ</string>
+    <string name="columbus_title">କାର୍ଯ୍ୟଗୁଡ଼ିକ ଆରମ୍ଭ କରିବାକୁ କୁଇକ ଟାପ ବ୍ୟବହାର କରନ୍ତୁ</string>
+    <string name="vibrate_for_calls_category_title">କଲଗୁଡ଼ିକ</string>
+    <string name="accessibility_alarm_vibration_title">ଆଲାରାମ୍ ଭାଇବ୍ରେସନ୍</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge ସେଟ୍ ଅପ୍। ପରବର୍ତ୍ତୀ ସ୍କ୍ରୀନ୍‌କୁ ଯାଆନ୍ତୁ କିମ୍ୱା ଆଡ୍‌ଜଷ୍ଟ କରୁଥା’ନ୍ତୁ।</string>
+    <string name="accessibility_keyboard_haptics_title">କୀବୋର୍ଡ଼ ହାପଟିକ୍ସ</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">ଆଡପ୍ଟିଭ୍ ଚାର୍ଜିଂ</string>
+    <string name="adaptive_charging_description">ବ୍ୟାଟେରୀ ଲାଇଫକୁ ଲମ୍ବା-ସମୟ ପର୍ଯ୍ୟନ୍ତ ରଖିବାକୁ ରାତି ସାରା ସ୍ଥିର ଭାବରେ ଚାର୍ଜ କରନ୍ତୁ। ଉଠିବା ପର୍ଯ୍ୟନ୍ତ ସମ୍ପୂର୍ଣ୍ଣ ଭାବେ ଚାର୍ଜ କରିବାକୁ ଆଲାରାମ୍ ବ୍ୟବହାର କରେ।</string>
+    <string name="adaptive_charging_time_estimate"><b>ଆଡପ୍ଟିଭ୍ ଚାର୍ଜିଂ</b> • %1$sରେ ପୂର୍ଣ୍ଣ ହେବ</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">ପ୍ରାଥମିକତା</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Assistant,ବର୍ତ୍ତମାନର ଆପଗୁଡ଼ିକ, ଡିଫଲ୍ଟ ଆପଗୁଡ଼ିକ</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">ସହାୟକରେ ଜାରିରଖନ୍ତୁ</string>
+    <string name="assist_gesture_enrollment_do_it_later">ଏହା ପରେ କରନ୍ତୁ</string>
+    <string name="assist_gesture_enrollment_seekbar_light">ଲାଇଟ୍‌ ସ୍କ୍ୱିଜ୍‌</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">ଫର୍ମ ସ୍କ୍ୱିଜ୍‌</string>
+    <string name="assist_gesture_enrollment_settings">ସେଟିଂସ୍</string>
+    <string name="assist_gesture_setting_enable_assistant_text">ଆପଣଙ୍କ Assistant ସହ କଥା କରିବାକୁ, ଆପଣଙ୍କ ଫୋନର ତଳ ଅଧାଭାଗକୁ ସ୍କ୍ୱିଜ୍‌ କରନ୍ତୁ, ତାପରେ ଛାଡ଼ିଦିଅନ୍ତୁ</string>
+    <string name="assist_gesture_setting_enable_assistant_title">ଆପଣଙ୍କ Assistant ପାଇଁ ସ୍କ୍ୱିଜ୍‌ କରନ୍ତୁ</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">ଆଲାରାମ, ଟାଇମର୍‌, ବିଜ୍ଞପ୍ତି ଓ ଇନକମିଂ କଲ୍‌କୁ ନୀରବ କରିବା ପାଇଁ ସ୍କ୍ୱିଜ୍ କରନ୍ତୁ</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">ବିଜ୍ଞପ୍ତି ଓ ଇନକମିଙ୍ଗ କଲ୍‌କୁ ନିରବ କରିବା ପାଇଁ ଚିପିଦିଅନ୍ତୁ</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">ଫୋନକୁ ନୀରବ କରିବାକୁ ସ୍କ୍ୱିଜ୍ କରନ୍ତୁ</string>
+    <string name="assist_gesture_setting_enable_wake_title">ସ୍କ୍ରିନ୍ ବନ୍ଦ ଥିଲେ Assistant ଖୋଲନ୍ତୁ</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">ହାଲୁକା ଭାବେ ଦବାନ୍ତୁ</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">ଜୋର୍‌ରେ ଦବାନ୍ତୁ</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">ଦବାଇବାର ସମ୍ବେଦନଶୀଳତା</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">ସହାୟକ ଭୁଲବସତଃ ଆସିଥାଇ ପାରେ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">ଆପଣଙ୍କ ଫୋନର ତଳ ଅଧାଭାଗକୁ ସ୍କ୍ୱିଜ୍‌ କରନ୍ତୁ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">ଦ୍ରୁତ ଭାବେ ସ୍କ୍ୱିଜ୍‌ କରନ୍ତୁ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">ଦ୍ରୁତ ଭାବେ ସ୍କ୍ୱିଜ୍‌ କରନ୍ତୁ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">ତୁରନ୍ତ ସ୍କ୍ୱିଜ୍‌ କରନ୍ତୁ ଏବଂ ତାପରେ ଛାଡ଼ିଦିଅନ୍ତୁ</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">ସ୍ଲାଇଡର୍‌ ଆଡଜଷ୍ଟ କରିବାକୁ ଚେଷ୍ଟା କରନ୍ତୁ</string>
+    <string name="assist_gesture_training_enrolling_text">ଆପଣଙ୍କ ଫୋନର ତଳ ଅଧାଭାଗକୁ ସ୍କ୍ୱିଜ୍‌ କରନ୍ତୁ। ଆପଣ କେତେ ଜୋରରେ ସ୍କ୍ୱିଜ୍‌ କରିବାକୁ ଚାହାଁନ୍ତି ତାହା ଆପଣ ଆଡଜଷ୍ଟ କରିପାରିବେ।</string>
+    <string name="assist_gesture_training_enrolling_title">ଦ୍ରୁତ ଭାବେ ସ୍କ୍ୱିଜ୍‌ କରନ୍ତୁ ଏବଂ ତାପରେ ଛାଡ଼ିଦିଅନ୍ତୁ</string>
+    <string name="assist_gesture_training_finished_text">ପରେ ଆପଣ ସେଟିଙ୍ଗରେ ସ୍କ୍ୱିଜ୍‌ ସମ୍ବଦନଶୀଳତା ମଧ୍ୟ ବଦଳାଇ ପାରିବେ</string>
+    <string name="assist_gesture_training_finished_title">ଶେଷ କରନ୍ତୁ କିମ୍ବା ଆଡଜଷ୍ଟ କରିବା ଜାରିରଖନ୍ତୁ</string>
+    <string name="assist_gesture_training_intro_text">ଯେ କୌଣସି ସମୟରେ ଆପଣଙ୍କ Assistant ସହ କଥା ହେବାକୁ, ଆପଣଙ୍କ ଫୋନର ତଳ ଅଧାଭାଗକୁ ସ୍କ୍ୱିଜ୍‌ କରନ୍ତୁ, ତାପରେ ଛାଡ଼ିଦିଅନ୍ତୁ</string>
+    <string name="assist_gesture_training_intro_title">ଆପଣଙ୍କ Assistant ପାଇଁ ସ୍କ୍ୱିଜ୍‌ କରନ୍ତୁ</string>
+    <string name="assist_gesture_training_suggestion_summary">ସହାୟକଙ୍କ ସହ କଥାବାର୍ତ୍ତା କରନ୍ତୁ, କଲ୍‌ ସାଇଲେନ୍ସ କରନ୍ତୁ</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">ସହାୟକଙ୍କ ସହ କଥାବାର୍ତ୍ତା କରନ୍ତୁ, ଆଲାର୍ମ ଏବଂ କଲ୍‌ ସାଇଲେନ୍ସ କରନ୍ତୁ</string>
+    <string name="assist_gesture_training_suggestion_title">ସହାୟକ ପାଇଁ ସ୍କ୍ୱିଜ୍‌ କରନ୍ତୁ ଏବଂ ତାପରେ ଛାଡ଼ିଦିଅନ୍ତୁ</string>
+    <string name="automatic_storage_manager_activation_warning">ଇଣ୍ଟରନେଟ୍‌ ସହ ସଂଯୁକ୍ତ ଥିବା ବେଳେ, ଆପଣ ବ୍ୟାକଅପ୍‌ ନେବା ପାଇଁ ଚୟନ କରିଥିବା ଗୁଣବତ୍ତାରେ ଫଟୋ ଓ ଭିଡିଓକୁ ଏବେ ବି ଆକ୍ସେସ୍‌ କରି ପାରିବେ</string>
+    <string name="automatic_storage_manager_days_title">ବ୍ୟାକଅପ୍‌ ନିଆଯାଇଥିବା ଫଟୋ ଏବଂ ଭିଡିଓ କାଢ଼ି ଦିଅନ୍ତୁ</string>
+    <string name="automatic_storage_manager_deactivation_warning">"ଷ୍ଟୋରେଜ୍‌ ଅଫ୍ କରିବେ? 
+
+ଆପଣଙ୍କ ଷ୍ଟୋରେଜ୍‌ ପ୍ରାୟ ପୂର୍ଣ୍ଣ ଥିବା ବେଳେ ସ୍ମାର୍ଟ ଷ୍ଟୋରେଜ୍‌ ସ୍ପେସ୍‌ ଖାଲି କରିବ ନାହିଁ।"</string>
+    <string name="automatic_storage_manager_downloads_days_title">ବ୍ୟାକଅପ୍‌ ନିଆଯାଇଥିବା ଡାଉନଲୋଡ୍</string>
+    <string name="automatic_storage_manager_preference_title">ସ୍ମାର୍ଟ ଷ୍ଟୋରେଜ୍‌</string>
+    <string name="automatic_storage_manager_primary_switch_title">ସ୍ମାର୍ଟ ଷ୍ଟୋରେଜ୍ ବ୍ୟବହାର କରନ୍ତୁ</string>
+    <string name="automatic_storage_manager_settings">ସ୍ମାର୍ଟ ଷ୍ଟୋରେଜ୍‌</string>
+    <string name="automatic_storage_manager_text">ଷ୍ଟୋରେଜ୍‌ ପ୍ରାୟ ପୂର୍ଣ୍ଣ ହୋଇଗଲେ, ବ୍ୟାକଅପ୍‌ ନିଆଯାଇଥିବା ଫଟୋ ଏବଂ ଭିଡିଓଗୁଡ଼ିକୁ କାଢ଼ି ଦିଅନ୍ତୁ। ଆପଣ ତଥାପି ସେଗୁଡ଼ିକୁ Google Photosରେ ପାଇପାରିବେ।</string>
+    <string name="aware_disabled_preference_action">ଚାଲୁ କରନ୍ତୁ</string>
+    <string name="aware_disabled_preference_neutral">ଏବେ ନୁହେଁ</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">ଏୟାରପ୍ଲେନ୍ ମୋଡ୍ ଏବଂ ବ୍ୟାଟେରୀ ସେଭର୍ ଚାଲୁ ଥିବା ଯୋଗୁଁ Motion Sense ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="aware_footer_when_airplane_on">ଏୟାରପ୍ଲେନ୍ ମୋଡ୍ ଚାଲୁ ଥିବା ଯୋଗୁଁ Motion Sense ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="aware_footer_when_batterysaver_on">ବ୍ୟାଟେରୀ ସେଭର୍ ଚାଲୁ ଥିବା ଯୋଗୁଁ Motion Sense ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="aware_gesture_summary_off">କ୍ୱିକ୍ ଜେଶ୍ଚର୍ ଚାଲୁ ଅଛି, Active Edge ବନ୍ଦ କରାଯାଇଛି</string>
+    <string name="aware_gesture_summary_on_non_assist">କ୍ୱିକ୍ ଜେଶ୍ଚର୍ ଚାଲୁ ଅଛି, Active Edge ଚାଲୁ କରାଯାଇଛି</string>
+    <string name="aware_gesture_summary_on_with_assist">କ୍ୱିକ୍ ଜେଶ୍ଚର୍ ଚାଲୁ ଅଛି, Active Edge ଚାଲୁ ଅଛି, ଆପଣଙ୍କ Assistant ପାଇଁ ସ୍କୁଇଜ୍ କରନ୍ତୁ</string>
+    <string name="aware_info_button_description">ଅଧିକ ସେଟିଂସ୍</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">ଏୟାରପ୍ଲେନ୍ ମୋଡ୍ ଏବଂ ବ୍ୟାଟେରୀ ସେଭର୍ ଚାଲୁ ଥିବା ଯୋଗୁଁ ଏହି ସୁବିଧା ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="aware_summary_when_airplane_on">ଏୟାରପ୍ଲେନ୍ ମୋଡ୍ ଚାଲୁ ଥିବା ଯୋଗୁଁ ଏହି ସୁବିଧା ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="aware_summary_when_batterysaver_on">ବ୍ୟାଟେରୀ ସେଭର୍ ଚାଲୁ ଥିବା ଯୋଗୁଁ ଏହି ସୁବିଧା ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="backup_data_summary">Google ସର୍ଭର୍‌ରେ ଆପ୍‌ ଡାଟା, ୱାଇ-ଫାଇ ପାସ୍‌ୱର୍ଡ ଓ ଅନ୍ୟାନ୍ୟ ସେଟିଙ୍ଗ ବ୍ୟାକଅପ୍‌ ନିଅନ୍ତୁ</string>
+    <string name="backup_suggestion_cancel">ବାତିଲ୍‍ କରନ୍ତୁ</string>
+    <string name="backup_suggestion_dialog_description">ଏହା ଦ୍ୱାରା ଆପଣଙ୍କ ଫୋନର ଇଣ୍ଟର୍ନାଲ୍‌ ଷ୍ଟୋରେଜରେ ଡାଟା ଡିଲିଟ୍‌ ହୋଇଯିବ।</string>
+    <string name="backup_suggestion_dialog_title">ଏହି ଡିଭାଇସ୍‌ ରିସେଟ୍‌ କରିବେ?</string>
+    <string name="backup_suggestion_get_started">ଅଧିକ ଜାଣନ୍ତୁ</string>
+    <string name="backup_suggestion_item_summary">Android କିମ୍ବା iPhone® ଡିଭାଇସରୁ କପି କରନ୍ତୁ</string>
+    <string name="backup_suggestion_item_title">ପୁରୁଣା ଫୋନର ଡାଟା ପାଉନାହାଁନ୍ତି କି?</string>
+    <string name="backup_suggestion_missing_description">"ଆପଣଙ୍କ କିଛି ଡାଟା ଯଦି ଆପଣ ଦେଖନ୍ତି ନାହଁ, ଯେପକ୍ରିକି SMS ମେସେଜ୍‌ ଏବଂ ଫଟୋ, ଏକ କେବଲ୍‌ ବ୍ୟବହାର କରି ନିଜ Pixelକୁ ଆପଣ ଏହା ଟ୍ରାନ୍ସଫର୍‌ କରିପାରିବେ।
+
+ଆରମ୍ଭ କରିବାକୁ, ଆପଣଙ୍କ Pixelକୁ ରିସେଟ୍‌ କରାଯିବା ଆବଶ୍ୟକ। କଷ୍ଟମାଇଜ୍‌ କରାଯାଇଥିବା ସେଟିଙ୍ଗ ଏବଂ କ୍ଲାଉଡରେ ଏପର୍ଯ୍ୟନ୍ତ ସିଙ୍କ ହୋଇନଥିବା କଣ୍ଟେଣ୍ଟ ସମେତ ଏହି ଫୋନରେ ଥିବା ସମସ୍ତ ଡାଟା ଡିଲିଟ୍‌ ହୋଇଯିବ।"</string>
+    <string name="backup_suggestion_missing_title">ନିଜ ଡାଟା ପାଉନାହାଁନ୍ତି କି?</string>
+    <string name="backup_suggestion_next">ପରବର୍ତ୍ତୀ</string>
+    <string name="backup_suggestion_other_ways_to_copy">ଡାଟା କପି କରିବାର ଅନ୍ୟ ଉପାୟ</string>
+    <string name="backup_suggestion_reset_description">"ପରବର୍ତ୍ତୀ ସ୍କ୍ରୀନରେ, ନିଜ Pixel ଆପଣ ରିସେଟ୍‌ କରିପାରିବେ। ଏକ କେବଲ୍‌ ବ୍ୟବହାର କରି ଡାଟା ଟ୍ରାନ୍ସଫର୍‌ କରିବାର ଏହା ହେଉଛି ଏକମାତ୍ର ଉପାୟ।
+
+ଏହା ଥରେ ରିସେଟ୍‌ ହେବାପରେ, ସେଟଅପ୍‌ ପ୍ରକ୍ରିୟା ଦେଇ ଯାଆନ୍ତୁ ଏବଂ ଆପଣଙ୍କ ପୂର୍ବ ଫୋନରୁ ଡାଟା ଆଣିବାକୁ ବାଛନ୍ତୁ।"</string>
+    <string name="backup_suggestion_reset_title">ନିଜ Pixel ରିସେଟ୍‌ କରନ୍ତୁ</string>
+    <string name="backup_suggestion_what_is_needed_summary">"ନିଜ ଫୋନ୍‌ ରିସେଟ୍‌ କରିବା ପରେ, ଆପଣ ଏହିଗୁଡ଼ିକ କରିବା ଆବଶ୍ୟକ କରିବେ:
+
+• Android 5.0+ କିମ୍ବା iOS® 8.0+ରେ ଥିବା ଆପଣଙ୍କ ପୂର୍ବ ଫୋନ୍‌ (LINK_BEGINଅଧିକାଂଶ ଫୋନ୍‌LINK_END ଯେପରି ସପୋର୍ଟ କରୁଥାଏ)
+• ଆପଣଙ୍କ ପୂର୍ବ ଫୋନ୍‌ ପାଇଁ ଏକ ଚାର୍ଜ କରିବା କେବଲ୍‌ କିମ୍ବା ଡାଟା କେବଲ୍‌
+• ଆପଣଙ୍କ Pixel ସହ ଆସିଥିବା ଦ୍ରୁତ ସ୍ୱିଚ୍‌ ଆଡାପ୍ଟର"</string>
+    <string name="backup_suggestion_what_is_needed_title">ଆପଣ କଣ ଆବଶ୍ୟକ କରନ୍ତି</string>
+    <string name="battery_manager_summary">ବ୍ୟାଟେରୀର ଲାଇଫ୍ ବଢ଼ାନ୍ତୁ ଏବଂ ଚାର୍ଜିଂକୁ ଅପ୍ଟିମାଇଜ୍ କରନ୍ତୁ</string>
+    <string name="battery_manager_summary_unsupported">ବ୍ୟାଟେରୀ ଲାଇଫ ବଢ଼ାନ୍ତୁ</string>
+    <string name="battery_missing_link_message">ଅଧିକ ଜାଣନ୍ତୁ</string>
+    <string name="battery_suggestion_summary">ଆଡେପ୍ଟିଭ୍ ବ୍ୟାଟେରୀ ଚାଲୁ କରନ୍ତୁ</string>
+    <string name="battery_tip_smart_battery_summary">ଆଡେପ୍ଟିଭ୍ ବ୍ୟାଟେରୀ ଚାଲୁ କରନ୍ତୁ</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">ଏହି Google ଆକାଉଣ୍ଟ ସହ ଲିଙ୍କ୍ ହୋଇଥିବା କୌଣସି ଡିଭାଇସ୍ ସହିତ ଆଉ %1$s ପେୟାର୍ ରହିବ ନାହିଁ</string>
+    <string name="columbus_gesture_detected">କୁଇକ୍ ଟାପ୍ ଚିହ୍ନଟ କରାଯାଇଛି!</string>
+    <string name="columbus_gesture_enrollment_complete">ହୋଇଗଲା</string>
+    <string name="columbus_gesture_enrollment_do_it_later">ବର୍ତ୍ତମାନ ନୁହେଁ</string>
+    <string name="columbus_gesture_enrollment_settings">ସେଟିଂସକୁ ଯାଆନ୍ତୁ</string>
+    <string name="columbus_gesture_enrollment_try_it">ଏହା ବ୍ୟବହାର କରି ଦେଖ</string>
+    <string name="columbus_gesture_training_action_no_selection_error">ଦୟାକରି ପରଫର୍ମ କରିବା ପାଇଁ ଏକ କାର୍ଯ୍ୟ ଚୟନ କରନ୍ତୁ</string>
+    <string name="columbus_gesture_training_action_text">ଆପଣ କୁଇକ୍ ଟାପ୍ ବ୍ୟବହାର କରିବା ସମୟରେ କଣ ହୁଏ ତାହା ଚୟନ କରନ୍ତୁ। ଆପଣ ଏହାକୁ ପରେ ସେଟିଂସରେ ବଦଳାଇପାରିବେ।</string>
+    <string name="columbus_gesture_training_action_title">କୁଇକ୍ ଟାପ୍ ବିକଳ୍ପ ବାଛନ୍ତୁ</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">"… 2ଟି 'ଦୁଇଥର-ଟାପ୍'ରୁ 1ଟି ଚିହ୍ନଟ କରାଯାଇଛି"</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">ଚାଲନ୍ତୁ ଏହାକୁ ଆଉ ଥରେ ଚେଷ୍ଟା କରି ଦେଖିବା। ଆପଣଙ୍କ ଫୋନର ପଛ ପଟେ ଶୀଘ୍ର ଦୁଇଥର ଟାପ୍ କରନ୍ତୁ।</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">ବଢ଼ିଆ!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">"… 2ଟି 'ଦୁଇଥର-ଟାପ୍'ରୁ 2ଟି ଚିହ୍ନଟ କରାଯାଇଛି"</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">ଆପଣ କୁଇକ୍ ଟାପ୍ ବ୍ୟବହାର କରିବା ଆରମ୍ଭ କରିବାକୁ ପ୍ରସ୍ତୁତ ଅଛନ୍ତି</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">ଆପଣ ବୁଝିଲେ!</string>
+    <string name="columbus_gesture_training_enrolling_text">ଆପଣଙ୍କ ଫୋନର ପଛ ପଟେ ଶୀଘ୍ର ଦୁଇଥର ଟାପ୍ କରନ୍ତୁ।</string>
+    <string name="columbus_gesture_training_enrolling_title">କୁଇକ୍ ଟାପ୍ ବ୍ୟବହାର କରି ଦେଖନ୍ତୁ</string>
+    <string name="columbus_gesture_training_finished_text">କୁଇକ୍ ଟାପ୍ ବ୍ୟବହାର କରିବାକୁ ଆବଶ୍ୟକ ଥିବା ଟାପ୍ କରିବାର କ୍ଷମତା ବଦଳାଇବାକୁ, ସେଟିଂସକୁ ଯାଆନ୍ତୁ।</string>
+    <string name="columbus_gesture_training_finished_title">ଆପଣ କୁଇକ୍ ଟାପ୍ ସେଟ୍ ଅପ୍ କରିଛନ୍ତି</string>
+    <string name="columbus_gesture_training_intro_text_accidental">ଆପଣ ଏବେ ଆପଣଙ୍କ ଡିଭାଇସର ପଛ ପଟେ ଦୁଇଥର ଟାପ୍ କରିଛନ୍ତି, ଯାହା ଆପଣଙ୍କୁ ଯାତ୍ରା କରିବା ସମୟରେ ଆପଣଙ୍କ Assistant ବ୍ୟବହାର କରିବାକୁ ଅନୁମତି ଦିଏ। ଆପଣ ଏହି ଜେଶ୍ଚରକୁ ସେଟିଂସରେ କଷ୍ଟମାଇଜ୍ କରିପାରିବେ।</string>
+    <string name="columbus_gesture_training_intro_text_suw">ଦୁଇଥର ଟାପ୍ କରି ଏକ ସ୍କ୍ରିନସଟ୍ ନିଅନ୍ତୁ, ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକୁ ଦେଖାନ୍ତୁ କିମ୍ବା ଅନ୍ୟ ଏକ କାର୍ଯ୍ୟ ଆରମ୍ଭ କରନ୍ତୁ।</string>
+    <string name="columbus_gesture_training_intro_title">ଦ୍ରୁତ କାର୍ଯ୍ୟଗୁଡ଼ିକ ପାଇଁ କୁଇକ୍ ଟାପ୍</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">ଖୋଲିବା ପାଇଁ ଦୟାକରି ଏକ ଆପ୍ ଚୟନ କରନ୍ତୁ</string>
+    <string name="columbus_gesture_training_launch_text">ଆପଣ କୁଇକ୍ ଟାପ୍ ବ୍ୟବହାର କରିବା ସମୟରେ ଯେଉଁ ଆପ୍ ଖୋଲିବାକୁ ଚାହୁଁଛନ୍ତି ତାହା ଚୟନ କରନ୍ତୁ।</string>
+    <string name="columbus_gesture_training_launch_title">ଖୋଲିବା ପାଇଁ ଆପ୍ ବାଛନ୍ତୁ</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s ସର୍ଟକଟ୍ ସେଟିଂସ୍</string>
+    <string name="columbus_launch_settings_activity_title">କୁଇକ୍ ଟାପ୍ ସେଟିଂସ୍</string>
+    <string name="columbus_name">କୁଇକ୍ ଟାପ୍</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">%1$s ସେଟିଂସ୍</string>
+    <string name="columbus_setting_action_assistant_title">ଆପଣଙ୍କ ଡିଜିଟାଲ୍ Assistantକୁ ଆକ୍ସେସ୍ କରନ୍ତୁ</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">କୌଣସି ଆପ୍ ଚୟନ କରାଯାଇନାହିଁ</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">ଆପ୍ ଇନଷ୍ଟଲ୍ କରାଯାଇନାହିଁ</string>
+    <string name="columbus_setting_action_launch_title">ଆପ୍ ଖୋଲନ୍ତୁ</string>
+    <string name="columbus_setting_action_notification_title">ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ଦେଖାନ୍ତୁ</string>
+    <string name="columbus_setting_action_open_app_title">ଆପ୍ ଖୋଲନ୍ତୁ</string>
+    <string name="columbus_setting_action_overview_title">ବର୍ତ୍ତମାନର ଆପଗୁଡ଼ିକୁ ଦେଖନ୍ତୁ</string>
+    <string name="columbus_setting_action_play_pause_title">ମିଡିଆ ଚଲାନ୍ତୁ ବା ବିରତ କରନ୍ତୁ</string>
+    <string name="columbus_setting_action_screenshot_title">ସ୍କ୍ରିନସଟ୍ ନିଅନ୍ତୁ</string>
+    <string name="columbus_setting_actions_title">ଏହା କରିବାକୁ ଫୋନର ପଛ ପଟେ ଦୁଇଥର ଟାପ୍ କରନ୍ତୁ</string>
+    <string name="columbus_setting_additional_settings_title">କୁଇକ୍ ଟାପ୍ କ୍ଷମତା</string>
+    <string name="columbus_setting_app_selection_help_text">ଆପଣ ଆପଣଙ୍କ ଫୋନର ପଛ ପଟେ ଦୁଇଥର ଟାପ୍ କରି ଖୋଲିବାକୁ ଚାହୁଁଥିବା କୌଣସି ଆପ୍ ଚୟନ କରନ୍ତୁ। ଯଦି ଆପଣ ଏହି ଆପକୁ ଅନଇନଷ୍ଟଲ୍ କରନ୍ତି, ତେବେ ଆପଣ ଏକ ଭିନ୍ନ ଆପ୍ ଚୟନ ନକରିବା ପର୍ଯ୍ୟନ୍ତ କୁଇକ୍ ଟାପ୍ ବନ୍ଦ ରହିଥାଏ।</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">ଆପଣ କୁଇକ୍ ଟାପ୍ ବ୍ୟବହାର କରି ଏହି ଆପ୍ ଖୋଲିଲେ କଣ ହୁଏ ତାହା ଚୟନ କରନ୍ତୁ।</string>
+    <string name="columbus_setting_enable_switch_title">କୁଇକ୍ ଟାପ୍ ବ୍ୟବହାର କରନ୍ତୁ</string>
+    <string name="columbus_setting_sensitivity_title">ଆହୁରି ଜୋରରେ ଟାପ୍ କରିବା ଆବଶ୍ୟକ</string>
+    <string name="connectivity_helper_call_quality_category">କଲ୍ ଗୁଣବତ୍ତା</string>
+    <string name="connectivity_helper_call_quality_summary">କଲ୍ ସମୟରେ ସଂଯୋଗ ସମ୍ବନ୍ଧିତ ସମସ୍ୟାଗୁଡ଼ିକର କାରଣ ବିଷୟରେ ସୂଚନା ପାଆନ୍ତୁ</string>
+    <string name="connectivity_helper_call_quality_title">ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ପାଆନ୍ତୁ</string>
+    <string name="connectivity_helper_d2d_summary">କଲ୍ ସମୟରେ ଆପଣଙ୍କ ଫୋନରେ ସଂଯୋଗ ସମ୍ବନ୍ଧିତ ସମସ୍ୟା ଥିଲେ ଅନ୍ୟ ବ୍ୟକ୍ତିଙ୍କୁ ସୂଚିତ କରନ୍ତୁ</string>
+    <string name="connectivity_helper_d2d_title">ସଂଯୋଗ ସୂଚନା ସେୟାର୍ କରନ୍ତୁ</string>
+    <string name="connectivity_helper_footnote">ଅନ୍ୟ କଲର୍ ଏକ ସମର୍ଥିତ ଡିଭାଇସ୍ ଏବଂ ନେଟୱାର୍କ ବ୍ୟବହାର କରୁଥିବା ବେଳେ ଆପଣ ସଂଯୋଗ ସୂଚନା ସେୟାର୍ କରିପାରିବେ</string>
+    <string name="content_capture">ଆପ୍ ଡାଟା ବ୍ୟବହାର କରି ପର୍ସନାଲାଇଜ୍ କରନ୍ତୁ</string>
+    <string name="copy_toast_msg">ଲିଙ୍କକୁ କ୍ଲିପ୍‍‍ବୋର୍ଡରେ କପି କରାଯାଇଛି</string>
+    <string name="dock_summary_charging_phone">ଫୋନ୍ ଚାର୍ଜ ହେଉଛି</string>
+    <string name="double_twist_for_camera_mode_summary">Google Cameraରେ ସେଲଫି ମୋଡକୁ ସ୍ୱିଚ୍ ଇନ୍‌ କିମ୍ବା ଆଉଟ୍‌ କରିବା ପାଇଁ, ଆପ୍‌ ବ୍ୟବହାର କରୁଥିବା ସମୟରେ ଦୁଇଥର-ଟ୍ୱିଷ୍ଟ କରନ୍ତୁ।</string>
+    <string name="downloads_backup_text">ଡାଉନଲୋଡ୍ କରାଯାଇଥିବା ଫାଇଲ୍‌ Google ଡ୍ରାଇଭରେ ବ୍ୟାକଅପ୍‌ ନିଆଯିବ</string>
+    <string name="duration_less_than_one_minute">1 ମିନିଟରୁ କମ୍‌</string>
+    <string name="extra_app_info_label">ଗେମ୍ ଅପ୍ଟିମାଇଜେସନ୍</string>
+    <string name="face_enrolling_center_head">ଭିତର ଫ୍ରେମ୍ ମଧ୍ୟରେ ଆପଣଙ୍କର ମୁହଁକୁ ରଖନ୍ତୁ</string>
+    <string name="face_enrolling_description">ସମସ୍ତ ଟାଇଲ୍ କାଢ଼ି ଦେଇ ଆପଣଙ୍କ ମୁହଁକୁ ସବୁ କୋଣରୁ କ୍ୟାପଚର୍ କରନ୍ତୁ।</string>
+    <string name="face_enrolling_do_it_later">ଏହାକୁ ପରେ କରନ୍ତୁ</string>
+    <string name="face_enrolling_gaze_dialog_cancel">ବାତିଲ୍ କରନ୍ତୁ</string>
+    <string name="face_enrolling_gaze_dialog_continue">ଆଖି ନ ଖୋଲି ସେଟ୍ ଅପ୍ କରନ୍ତୁ</string>
+    <string name="face_enrolling_gaze_dialog_message">ଆପଣଙ୍କ ଆଖିକୁ ଖୋଲା ନରଖି ଆପଣ ଫେସ୍ ଅନଲକ୍ ସେଟ୍ ଅପ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି? ଯଦି ଆପଣ ଏପରି ଉପାୟରେ ସେଟ୍ ଅପ୍ କରିବେ, ତେବେ ଆପଣଙ୍କ ଅଜାଣତରେ କେହି ଜଣେ ବ୍ୟକ୍ତି ଆପଣଙ୍କ ମୁହଁକୁ ଆପଣଙ୍କ ଫୋନରେ ଦେଖାଇ ଏହାକୁ ଅନଲକ୍ କରିପାରିବେ।</string>
+    <string name="face_enrolling_gaze_dialog_title">ଆଖି ନ ଖୋଲି ସେଟ୍ ଅପ୍ କରନ୍ତୁ</string>
+    <string name="face_enrolling_how_to_setup">ସେଟ୍ ଅପ୍ କିପରି କରିବେ</string>
+    <string name="face_enrolling_title">ଆପଣଙ୍କର ଫୋନ୍ ସିଧା ରଖନ୍ତୁ। ଆପଣଙ୍କର ମୁଣ୍ଡକୁ ବୁଲାନ୍ତୁ। ଧୀରେ ଯାଆନ୍ତୁ।</string>
+    <string name="face_enrolling_title_accessibility">ଆପଣଙ୍କ ଫୋନ୍‌କୁ ସିଧା ଦେଖନ୍ତୁ</string>
+    <string name="face_enrolling_title_accessibility_progress">ଆପଣଙ୍କ ଫୋନକୁ ସିଧାସଳଖ ଦେଖୁଥାଆନ୍ତୁ</string>
+    <string name="face_enrolling_too_close">ଫୋନ୍‌କୁ ଟିକେ ଦୂରକୁ ନିଅନ୍ତୁ</string>
+    <string name="face_enrolling_too_far">ଫୋନ୍‌କୁ ପାଖକୁ ଆଣନ୍ତୁ</string>
+    <string name="face_enrolling_too_high">ଫୋନ୍‌କୁ ତଳକୁ ନିଅନ୍ତୁ।</string>
+    <string name="face_enrolling_too_left">ଆପଣଙ୍କର ଡାହାଣକୁ ଫୋନ୍‍କୁ ନିଅନ୍ତୁ</string>
+    <string name="face_enrolling_too_low">ଫୋନ୍‌କୁ ଉପରକୁ ଉଠାନ୍ତୁ</string>
+    <string name="face_enrolling_too_right">ଆପଣଙ୍କର ବାମକୁ ଫୋନ୍‌କୁ ନିଅନ୍ତୁ</string>
+    <string name="face_enrolling_turn_head_to_arrow">ଆପଣଙ୍କର ମୁଣ୍ଡକୁ ତୀରଚିହ୍ନ ଆଡ଼କୁ ବୁଲାନ୍ତୁ</string>
+    <string name="face_enrolling_turned_too_far">ଟିକେ ମୁଣ୍ଡ ଘୂରାନ୍ତୁ</string>
+    <string name="fallback_menu_item_copy_link">ଲିଙ୍କ୍ କପି କରନ୍ତୁ</string>
+    <string name="fallback_menu_item_open_in_browser">ବ୍ରାଉଜର୍‌ରେ ଖୋଲନ୍ତୁ</string>
+    <string name="fallback_menu_item_share_link">ଲିଙ୍କ୍ ସେୟାର୍ କରନ୍ତୁ</string>
+    <string name="fullbackup_data_summary">"ଡିଭାଇସ୍ ଡାଟା (ଯେପରିକି ୱାଇ-ଫାଇ ପାସୱାର୍ଡ ଏବଂ କଲ୍‌ ହିଷ୍ଟୋରୀ) ଏବଂ ଆପ୍‌ ଡାଟା (ଯେପରିକି ଆପ୍‌ ଦ୍ୱାରା ଷ୍ଟୋର୍‌ କରାଯାଇଥିବା ସେଟିଙ୍ଗ ଏବଂ ଫାଇଲ୍‌) ସ୍ୱଚାଳିତ ଭାବେ Google ଡ୍ରାଇଭରେ ବ୍ୟାକଅପ୍‌ ନିଅନ୍ତୁ।
+
+ଆପଣ ସ୍ୱଚାଳିତ ବ୍ୟାକଅପ୍‌ ଅନ୍‌ କରିବାପରେ, ଡିଭାଇସ୍‌ ଏବଂ ଆପ୍‌ ଡାଟା ସମୟ ଅନୁଯାୟୀ Google ଡ୍ରାଇଭରେ ଥିବା ଏକ ବ୍ୟକ୍ତିଗତ ଫୋଲ୍ଡରରେ ସେଭ୍‌ ହୋଇଥାଏ। ଆପ୍‌ ଡାଟା ଯେକୌଣସି ଡାଟା ହୋଇପାରେ ଯାହା ଏକ ଆପ୍‌ ସେଭ୍‌ କରିଥାଏ (ଡେଭଲପରଙ୍କ ସେଟିଙ୍ଗକୁ ଆଧାର କରି), ଯେଉଁଥିରେ ଗୁରୁତ୍ତ୍ୱପୂର୍ଣ୍ଣ ସମ୍ବଦନଶୀଳ ଡାଟା ଯେପରିକି ଯୋଗାଯୋଗ, ମେସେଜ୍‌, ଏବଂ ଫଟୋ ଅନ୍ତର୍ଭୂକ୍ତ ରହିଥାଏ।
+
+ବ୍ୟାକଅପ୍‌ ଡାଟା ଆପଣଙ୍କ ଡ୍ରାଇଭର ଷ୍ଟୋରେଜ୍‌ ଡାଟା ଗଣନା କରିବ ନାହିଁ। ବଡ଼ ଫାଇଲ୍‌ କିମ୍ବା ସେବାରୁ ଅଲଗା ରଖାଯିବାକୁ ଡେଭଲପରଙ୍କ ଦ୍ୱାରା ବଛାଯାଇଥିବା ଫାଇଲର ବ୍ୟାକଅପ୍‌ ନିଆଯିବ ନାହିଁ।"</string>
+    <string name="fullbackup_erase_dialog_message">ଡିଭାଇସ୍‌ ଡାଟା (ଯେପରି ୱାଇ-ଫାଇ ପାସ୍‌ୱର୍ଡ ଓ କଲ୍‌ ହିଷ୍ଟୋରୀ) ଏବଂ ଆପ୍‌ ଡାଟା (ଯେପରି ଆପ୍‌ ଦ୍ୱାରା ଷ୍ଟୋର୍‌ କରାଯାଇଥିବା ସେଟିଙ୍ଗ ଓ ଫାଇଲଗୁଡ଼ିକ)ର ବ୍ୟାକଅପ୍‌ ବନ୍ଦ କରିବା ସହ Google ଡ୍ରାଇଭ୍‍ରୁ ସମସ୍ତ କପୀ ଲିଭାଇବେ କି?</string>
+    <string name="game_dashboard_always_on_summary">ଗେମରେ ଗେମ୍ ଡ୍ୟାସବୋର୍ଡ ସର୍ଟକଟ୍ ଦେଖାନ୍ତୁ</string>
+    <string name="game_dashboard_always_on_title">ଗେମ୍ ଡ୍ୟାସବୋର୍ଡ</string>
+    <string name="game_dashboard_dnd_rule_name">ଗେମିଂ</string>
+    <string name="game_dashboard_dnd_summary">କୌଣସି ଗେମ୍ ଖେଳୁଥିବା ସମୟରେ କେବଳ ଗୁରୁତ୍ଵପୂର୍ଣ୍ଣ ଲୋକ ଏବଂ ଆପଗୁଡ଼ିକରୁ ସୂଚନା ପାଆନ୍ତୁ</string>
+    <string name="game_dashboard_dnd_title">"ଗେମଗୁଡ଼ିକ ପାଇଁ 'ବିରକ୍ତ କରନ୍ତୁ ନାହିଁ'"</string>
+    <string name="game_mode_battery_description">ବ୍ୟାଟେରୀ ଲାଇଫକୁ ବଢ଼ାଏ</string>
+    <string name="game_mode_battery_title">ବ୍ୟାଟେରୀ ସେଭର୍</string>
+    <string name="game_mode_performance_description">ଫ୍ରେମ୍ ରେଟ୍ ବଢ଼ାଏ, ବ୍ୟାଟେରୀ ଅଧିକ ଖର୍ଚ୍ଚ କରେ</string>
+    <string name="game_mode_performance_title">ପରଫରମାନ୍ସ</string>
+    <string name="game_mode_standard_description">ଗେମର ଡିଫଲ୍ଟ ସେଟିଂସକୁ ବ୍ୟବହାର କରେ</string>
+    <string name="game_mode_standard_title">ମାନକ</string>
+    <string name="game_optimization_unavailable">ଏହି ଗେମ୍ ପାଇଁ ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="gesture_aware_confirmation_action_button">ବୁଝିଗଲି</string>
+    <string name="gesture_aware_footer"><annotation link="link">ପ୍ରାଥମିକତା</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">ପ୍ରାଥମିକତା</annotation></string>
+    <string name="gesture_skip_direction_ltr">ବାମରୁ ଡାହାଣକୁ</string>
+    <string name="gesture_skip_direction_rtl">ଡାହାଣରୁ ବାମକୁ</string>
+    <string name="gesture_skip_direction_title">ବାଦ୍ ଦେବା ପାଇଁ ଡିରେକ୍‌ସନ୍</string>
+    <string name="gesture_skip_footer"><annotation link="link">ପ୍ରାଥମିକତା</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">ଅଧିକ ପସନ୍ଦଗୁଡ଼ିକ</annotation></string>
+    <string name="global_actions_panel_short_title">କାର୍ଡ ଏବଂ ପାସ୍‍ଗୁଡ଼ିକ</string>
+    <string name="global_actions_panel_summary">ଆପଣଙ୍କର ପେମେଣ୍ଟ ପଦ୍ଧତି ଏବଂ ବୋର୍ଡିଂ ପାସ୍‌ଗୁଡ଼ିକ ପରି ଜିନିଷଗୁଡ଼ିକ ଆକ୍ସେସ୍ କରିବା ପାଇଁ, ପାୱର୍ ବଟନ୍ ଦବାଇ ଧରନ୍ତୁ।</string>
+    <string name="global_actions_panel_title">କାର୍ଡ ଏବଂ ପାସ୍‍ଗୁଡ଼ିକ ଦେଖାନ୍ତୁ</string>
+    <string name="install_unknown_applications">ପ୍ଲେ ଷ୍ଟୋର୍‌ ବ୍ୟତୀତ ଅନ୍ୟ ସୋରସରୁ ଆସିଥିବା ଆପର ଇନଷ୍ଟଲେସନ୍‌ ଅନୁମତି ଦିଅନ୍ତୁ</string>
+    <string name="keywords_accessibility_menu">ମୋଟର, କ୍ୱିକ୍ ମେନୁ, ଆସିଷ୍ଟିଭ୍ ମେନୁ, ସ୍ପର୍ଶ, ଦକ୍ଷତା</string>
+    <string name="keywords_adaptive_charging">ଚାର୍ଜ, ଚାର୍ଜିଂ, ସ୍ମାର୍ଟ ଚାର୍ଜିଂ, ଆଡେପ୍ଟିଭ୍ ଚାର୍ଜିଂ, ବ୍ୟାଟେରୀ, ବ୍ୟାଟେରୀ ହେଲ୍ଥ</string>
+    <string name="keywords_assist_gesture_launch">ଜେଶ୍ଚର୍‌, ଏଡଜ୍‌, ସାଇଡ୍, ଆକ୍ଟିଭ୍‌ ଏଡଜ୍‌, ସ୍କ୍ୱିଜ୍‌, ଗ୍ରୀପ୍‌, ସହାୟତା, ସହାୟକ, ସ୍କ୍ୱିଜ୍‌, ଓକେ google, google ସହାୟକ</string>
+    <string name="keywords_assist_gesture_silence">ଜେଶ୍ଚର୍‌, ଏଡଜ୍‌, ସାଇଡ୍, ଆକ୍ଟିଭ୍‌ ଏଡଜ୍‌, ସାଇଲେନ୍ସ, ସ୍ନୁଜ୍‌, ଆଲାର୍ମ, ଇନକମିଙ୍ଗ କଲ୍‌, ଶାନ୍ତ, ଡିସପ୍ଲେ, ଲକସ୍କ୍ରୀନ୍‌, ସ୍କ୍ୱିଜ୍‌, ଗ୍ରୀପ୍‌, ବନ୍ଦ</string>
+    <string name="keywords_assist_gesture_wake">ଜେଶ୍ଚର୍‌, ଏଡଜ୍‌, ସାଇଡ୍, ଆକ୍ଟିଭ୍‌ ଏଡଜ୍‌, ୱେକ୍‌, ବିଜ୍ଞପ୍ତି, ସ୍କ୍ରୀନ୍‌, ଡିସପ୍ଲେ, ସ୍କ୍ରୀନ୍‌ ଅଫ୍‌, ସ୍କ୍ରୀନ୍‌ ଅନ୍, ସ୍କ୍ୱିଜ୍‌, ଅସ୍ଲିପ୍‌, ସ୍ଲିପ୍‌, ଗ୍ରୀପ୍‌</string>
+    <string name="keywords_battery_share">ବ୍ୟାଟେରୀ ସେୟାର୍, ୱାୟରଲେସ୍ ଚାର୍ଜିଂ</string>
+    <string name="keywords_battery_share_settings">ବ୍ୟାଟେରୀ ସେୟାର୍, ରିଭର୍ସ ୱାୟରଲେସ୍ ଚାର୍ଜିଂ</string>
+    <string name="keywords_content_capture">ବିଷୟବସ୍ତୁ କ୍ୟାପଚର୍, ଆପ୍ ବିଷୟବସ୍ତୁ, ଆପ୍ ଡାଟା</string>
+    <string name="keywords_gesture">ଜେଶ୍ଚର୍‌, ମୁଭସ୍‌</string>
+    <string name="keywords_global_actions_panel">କାର୍ଡ, ପାସ୍‍ଗୁଡ଼ିକ</string>
+    <string name="keywords_live_transcribe">କ୍ୟାପସନ୍, ବନ୍ଦ ଥିବା କ୍ୟାପସନ୍, CC, ଲାଇଭ୍ କ୍ୟାପସନ୍, କମ୍ ଶୁଣୁଥିବା, ଶ୍ରବଣଶକ୍ତିରେ ହ୍ରାସ, CART, ସ୍ପିଚ୍ ଟୁ ଟେକ୍ସଟ୍, ସବଟାଇଟେଲ୍</string>
+    <string name="keywords_reverse_charging_stop_threshold">ଫୋନ୍ ଏହି ବ୍ୟାଟେରୀ ସ୍ତରରେ ପହଞ୍ଚିଲେ ସେୟାରିଂ ବନ୍ଦ କରନ୍ତୁ:</string>
+    <string name="keywords_select_to_speak">ଟେକ୍ସଟ୍ ଶୁଣନ୍ତୁ, ବଡ଼ ପାଟିରେ ପଢ଼ନ୍ତୁ, ସ୍ପିକ୍ ସ୍କ୍ରିନ୍, ସ୍କ୍ରିନ୍ ରିଡର୍</string>
+    <string name="keywords_sound_amplifier">PSAP, ବଢ଼ାନ୍ତୁ, ସାଉଣ୍ଡ ଏମ୍ପ୍ଲିଫିକେସନ୍, କମ୍ ଶୁଣୁଥିବା, ଶ୍ରବଣଶକ୍ତିରେ ହ୍ରାସ, ଏମ୍ପ୍ଲିଫିକେସନ୍</string>
+    <string name="keywords_sound_notifications">ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ, କମ୍ ଶୁଣୁଥିବା, ଶ୍ରବଣଶକ୍ତିରେ ହ୍ରାସ, ସୂଚିତ କରନ୍ତୁ</string>
+    <string name="keywords_switch_access">ମୋଟର, ସ୍ୱିଚ୍, ହାତ, AT, ସହାୟକ ଟେକ୍ନୋଲୋଜି, ପକ୍ଷାଘାତ, ALS, ସ୍କାନିଂ, ଷ୍ଟେପ୍ ସ୍କାନିଂ</string>
+    <string name="keywords_talkback">ସ୍କ୍ରିନ୍ ରିଡର୍, ଭଏସ୍ ଓଭର୍, VoiceOver, ଭଏସ୍ ସହାୟତା, ଅନ୍ଧ, କମ୍ ଦେଖାଯାଉଥିବା, TTS, ଟେକ୍ସଟ୍ ଟୁ ସ୍ପିଚ୍, କଥିତ ମତାମତ</string>
+    <string name="keywords_voice_access">ଭଏସ୍, ଭଏସ୍ ନିୟନ୍ତ୍ରଣ, ମୋଟର, ହାତ, ମାଇକ୍, ମାଇକ୍ରୋଫୋନ୍, ଡିକ୍ଟେସନ୍, କଥା କହିବା, ନିୟନ୍ତ୍ରଣ</string>
+    <string name="language_input_gesture_summary_off">ଆକ୍ଟିଭ୍‌ ଏଡଜ୍‌ ଅଫ୍‌ କରାଯାଇଛି</string>
+    <string name="language_input_gesture_summary_on_non_assist">ଆକ୍ଟିଭ୍‌ ଏଜ୍‌ ଚାଲୁ କରାଯାଇଛି</string>
+    <string name="language_input_gesture_summary_on_with_assist">ଆକ୍ଟିଭ୍‌ ଏଜ୍ ଚାଲୁ‌ ଅଛି,ଆପଣଙ୍କ Assistant ପାଇଁ ସ୍କୁଇଜ୍ କରନ୍ତୁ</string>
+    <string name="me_card_title">ମୋ Pixel</string>
+    <string name="my_device_info_account_preference_title">Google ଆକାଉଣ୍ଟ</string>
+    <string name="owner_info_settings_edit_text_hint">ଯେପରି ରାଜୁର Pixel।</string>
+    <string name="reverse_charging_charging_wirelessly_message">ଫୋନ୍ ବିନା ତାରରେ ଚାର୍ଜ ହେଉଥିବା ଯୋଗୁଁ ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Pixel ବହୁତ ଗରମ ହୋଇଯାଇଥିବା ଯୋଗୁଁ ବ୍ୟାଟେରୀ ସେୟାର୍ କରିବା ସୁବିଧା ଉପଲବ୍ଧ ନାହିଁ। ଫୋନଟି ଥଣ୍ଡା ହେବା ପାଇଁ ଅପେକ୍ଷା କରନ୍ତୁ ଏବଂ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">"ଫୋନ୍ ବିନା ତାରରେ ଚାର୍ଜ ହେଉଥିବା ଯୋଗୁଁ 'ବ୍ୟାଟେରୀ ସେୟାର୍' ଉପଲବ୍ଧ ନାହିଁ"</string>
+    <string name="reverse_charging_detail_footer_title">’ବ୍ୟାଟେରୀ ସେୟାର୍’ ବ୍ୟବହାର କରିବା ସମୟରେ ଆପଣଙ୍କ ଫୋନର ବ୍ୟାଟେରୀ ଅତି ଶୀଘ୍ର ଖର୍ଚ୍ଚ ହେବ। ’ବ୍ୟାଟେରୀ ସେୟାର୍’ ସୁସଙ୍ଗତ ଇଅର୍ ବଡ୍, ଘଣ୍ଟା, ଫୋନ୍ ଏବଂ ଆହୁରି ଅନେକ କିଛିରେ କାର୍ଯ୍ୟ କରେ। ଆହୁରି ଭଲ ଚାର୍ଜିଂ ପାଇଁ, ଆପଣଙ୍କ ଫୋନର କଭର୍ କାଢ଼ି ଦିଅନ୍ତୁ।</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"ବ୍ୟାଟେରୀ ସେୟାର୍ ସୁସଙ୍ଗତ ଇଅର୍ ବଡ୍, ଫୋନ୍ ଏବଂ ଆହୁରି ଅନେକ କିଛିରେ କାର୍ଯ୍ୟ କରେ।
+
+ଏହି ଫିଚର୍ ବ୍ୟବହାର କରିବା ସମୟରେ ଆପଣଙ୍କ ଫୋନର ବ୍ୟାଟେରୀ ଅତି ଶୀଘ୍ର ଖର୍ଚ୍ଚ ହେବ। ଯଦି ଅନ୍ୟ ଏକ ଡିଭାଇସ୍ ଚିହ୍ନଟ ନହୁଏ, ତେବେ କିଛି ସମୟ ପରେ ବ୍ୟାଟେରୀ ସେୟାର୍ ସ୍ୱଚାଳିତ ଭାବେ ବନ୍ଦ ହୋଇଥାଏ। ଆହୁରି ଭଲ ଚାର୍ଜିଂ ପାଇଁ, ଆପଣଙ୍କ ଫୋନର କଭର୍ ଏବଂ ମେଟାଲ୍ ଅବଜେକ୍ଟଗୁଡ଼ିକ ଭଳି ଅନ୍ୟ ଆଇଟମ୍ ଯାହା ହସ୍ତକ୍ଷେପ କରିପାରେ ସେଗୁଡ଼ିକୁ କାଢ଼ି ଦିଅନ୍ତୁ।"</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">’ବ୍ୟାଟେରୀ ସେଭର୍’ ଚାଲୁ ଥିବା ଯୋଗୁଁ ’ବ୍ୟାଟେରୀ ସେୟାର୍’ ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">USB-C ଡିଭାଇସ୍ ପ୍ଲଗ୍ ଇନ୍ କରାଯାଇଥିବା ଯୋଗୁଁ ’ବ୍ୟାଟେରୀ ସେୟାର୍’ ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="reverse_charging_instructions_title">"ଅନ୍ୟ ଡିଭାଇସଗୁଡ଼ିକୁ ଆପଣଙ୍କ Pixel ମାଧ୍ୟମରେ ଚାର୍ଜ କରନ୍ତୁ। 
+ଆପଣଙ୍କ ଫୋନ୍ ବ୍ୟବହାର କରିବାକୁ ତଳମୁହାଁ କରନ୍ତୁ।"</string>
+    <string name="reverse_charging_is_off_summary">ବନ୍ଦ</string>
+    <string name="reverse_charging_is_on_and_charging_summary">ବ୍ୟାଟେରୀ ସେୟାର୍ ଏବଂ ଚାର୍ଜ କରାଯାଉଛି</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">ବ୍ୟାଟେରୀ ସେୟାର୍ କରାଯାଉଛି</string>
+    <string name="reverse_charging_is_on_summary">ଅନ୍ୟ ଡିଭାଇସଗୁଡ଼ିକୁ ଚାଲୁ / ଚାର୍ଜ କରନ୍ତୁ</string>
+    <string name="reverse_charging_main_switch">ବ୍ୟାଟେରୀ ସେୟାରକୁ ଅନୁମତି ଦିଅନ୍ତୁ</string>
+    <string name="reverse_charging_off_low_battery_summary">ବନ୍ଦ ଅଛି / ଫୋନ୍ ବ୍ୟାଟେରୀ %1$sରୁ କମ୍ ଅଛି</string>
+    <string name="reverse_charging_off_sharing_level_summary">ବନ୍ଦ ଅଛି / ବ୍ୟାଟେରୀ ସେୟାର୍ କରିବାର ସ୍ତର ଠାରୁ କମ୍ ଅଛି</string>
+    <string name="reverse_charging_overheat_summary">Pixel ବହୁତ ଗରମ ହୋଇଯାଇଥିବା ଯୋଗୁଁ ଉପଲବ୍ଧ ନାହିଁ। ଫୋନଟି ଥଣ୍ଡା ହେବା ପାଇଁ ଅପେକ୍ଷା କରନ୍ତୁ ଏବଂ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">"'ବ୍ୟାଟେରୀ ସେଭର୍' ଚାଲୁ ଥିବା ଯୋଗୁଁ ଏହି ସୁବିଧା ଉପଲବ୍ଧ ନାହିଁ"</string>
+    <string name="reverse_charging_sharing_level_message">ବ୍ୟାଟେରୀ ସେୟାର୍ କରିବାର ସ୍ତର ଠାରୁ କମ୍ ଥିବା ଯୋଗୁଁ ଏହି ସୁବିଧା ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="reverse_charging_switch_summary">ଆପଣଙ୍କ Pixelର ପଛପଟେ ଡିଭାଇସଗୁଡ଼ିକୁ ରଖନ୍ତୁ</string>
+    <string name="reverse_charging_switch_title">ଆପଣଙ୍କ Pixelର ପଛପଟେ ଅନ୍ୟ ଡିଭାଇସଗୁଡ଼ିକୁ ରଖି ସେଗୁଡ଼ିକୁ ଚାର୍ଜ କରନ୍ତୁ</string>
+    <string name="reverse_charging_switch_title_message">ଅନ୍ୟ ଡିଭାଇସଗୁଡ଼ିକୁ ଚାର୍ଜ କରନ୍ତୁ</string>
+    <string name="reverse_charging_title">ବ୍ୟାଟେରୀ ସେୟାର୍</string>
+    <string name="reverse_charging_unplug_usb_cable_message">USB-C ଡିଭାଇସ୍ ପ୍ଲଗ୍-ଇନ୍ କରାଯାଇଥିବା ଯୋଗୁଁ ଏହି ସୁବିଧା ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="reverse_charging_warning_summary">ବ୍ୟାଟେରୀ %1$sରୁ କମ୍ ଥିବା ଯୋଗୁଁ ଏହି ସୁବିଧା ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="reverse_charging_warning_title">"ବ୍ୟାଟେରୀର ଚାର୍ଜ %1$sରୁ କମ୍ ଥିବା ଯୋଗୁଁ 'ବ୍ୟାଟେରୀ ସେୟାର୍' ଉପଲବ୍ଧ ନାହିଁ"</string>
+    <string name="rtt_settings_always_visible">ସର୍ବଦା ଦୃଶ୍ୟମାନ ହୁଏ</string>
+    <string name="rtt_settings_no_visible">ଦୃଶ୍ୟମାନ ହୁଏ ନାହିଁ</string>
+    <string name="rtt_settings_title">ରିଅଲ୍-ଟାଇମ୍ ଟେକ୍ସଟ୍ (RTT)</string>
+    <string name="rtt_settings_visible_during_call">କଲ୍ ଚାଲିଥିବା ସମୟରେ ଦୃଶ୍ୟମାନ ହୁଏ</string>
+    <string name="screen_time_summary_usage_today">ଆଜି %1$s</string>
+    <string name="search_bar_account_avatar_content_description">ପ୍ରୋଫାଇଲ୍ ଛବି, Google ଆକାଉଣ୍ଟକୁ ଖୋଲିବା ପାଇଁ ଦୁଇଥର ଟାପ୍ କରନ୍ତୁ</string>
+    <string name="security_advanced_settings">ଉନ୍ନତ ସେଟିଂସ୍</string>
+    <string name="security_dismiss_dialog_dismiss_button">ଖାରଜ କରନ୍ତୁ</string>
+    <string name="security_dismiss_dialog_title">ଏହି ଚେତାବନୀ ଖାରଜ କରିବେ?</string>
+    <string name="security_settings_face_enroll_dialog_ok">ଠିକ ଅଛି</string>
+    <string name="security_settings_face_enroll_education_message">ପରବର୍ତ୍ତୀ ସ୍କ୍ରିନ୍‌ରେ, ଆପଣଙ୍କ ମୁହଁକୁ ସବୁ ଦିଗରୁ କ୍ୟାପ୍ଚର୍ କରିବା ପାଇଁ ଆପଣଙ୍କ ମୁଣ୍ଡ ବୁଲାନ୍ତୁ</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">ପରବର୍ତ୍ତୀ ସ୍କ୍ରିନରେ, ଆପଣଙ୍କ ଫୋନକୁ ଆଖି ସିଧାରେ ଧରି ରଖନ୍ତୁ</string>
+    <string name="security_settings_face_enroll_error_generic_dialog_message">ମୁହଁ ମାଧ୍ୟମରେ ଚିହ୍ନଟ ହୋଇପାରିଲା ନାହିଁ।</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">ମୁହଁ ମାଧ୍ୟମରେ ଚିହ୍ନଟର ସମୟ ସୀମା ସମ୍ପୂର୍ଣ୍ଣ ହୋଇଛି। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">ଫେସ୍ ଅନଲକ୍ ସେଟଅପ୍ ସମୟସୀମା ସମାପ୍ତ ହୋଇଯାଇଛି</string>
+    <string name="security_settings_face_enroll_finish_description">ବର୍ତ୍ତମାନ ଆପଣ ଆପଗୁଡ଼ିକରେ ସାଇନ୍ ଇନ୍ କରିବା କିମ୍ବା ଏକ କ୍ରୟକୁ ଅନୁମୋଦନ ଦେବା ପରି କାର୍ଯ୍ୟ କରିବା ସମୟରେ, ଆପଣଙ୍କ ଫୋନକୁ ଅନଲକ୍ କରିବା କିମ୍ବା ଏହା ଆପଣ ବୋଲି ଯାଞ୍ଚ କରିବା ପାଇଁ ଆପଣଙ୍କ ଫେସ୍ ବ୍ୟବହାର କରିପାରିବେ</string>
+    <string name="security_settings_face_enroll_finish_title">ଠିକ୍ ଥିବା ପରି ଲାଗୁଛି!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">ସୀମିତ ଭିଜନ୍ ବା ହେଡ୍ ମୋସନ୍ ପାଇଁ ସେଟ୍‍ଅପ୍ କରନ୍ତୁ</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">ଫେସ୍ ଅନଲକ୍ ବ୍ୟବହାର କରିବା ସମୟରେ ଆପଣଙ୍କ ମୁଣ୍ଡ ଆପଣଙ୍କ ଫୋନ୍ ସାମ୍ନାରେ ସମ୍ପୂର୍ଣ୍ଣ ସିଧା ରହିବା ଆବଶ୍ୟକ।</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">ଆଖି ଖୋଲା ରଖିବା ଆବଶ୍ୟକ</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"ଫେସ୍ ମଡେଲକୁ ଆପଣ ଏବଂ ଆପଣଙ୍କ ପିଲା ଡିଲିଟ୍ କରିପାରିବେ କିମ୍ବା ଯେ କୌଣସି ସମୟରେ ସେଟିଂସରେ ଫେସ୍ ଅନଲକ୍ ବନ୍ଦ କରିପାରିବେ। ଫେସ୍ ମଡେଲଗୁଡ଼ିକୁ ଡିଲିଟ୍ କରାନଯିବା ପର୍ଯ୍ୟନ୍ତ ସେଗୁଡ଼ିକ ଫୋନରେ ଷ୍ଟୋର୍ ହୋଇ ରହିଥାଏ।
+
+g.co/pixel/faceunlockରେ ଅଧିକ ଜାଣନ୍ତୁ।"</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">ଆପଣଙ୍କ ଏବଂ ଆପଣଙ୍କ ପିଲା ପାଖରେ ନିୟନ୍ତ୍ରଣ ଅଛି</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"ଆପଣ ଆପଣଙ୍କ ଫେସ୍ ମଡେଲକୁ ଡିଲିଟ୍ କରିପାରିବେ କିମ୍ବା ଯେ କୌଣସି ସମୟରେ ସେଟିଂସରେ ଫେସ୍ ଅନଲକ୍ ବନ୍ଦ କରିପାରିବେ। ଫେସ୍ ମଡେଲଗୁଡ଼ିକୁ ଆପଣ ଡିଲିଟ୍ ନକରିବା ପର୍ଯ୍ୟନ୍ତ ସେଗୁଡ଼ିକ ଫୋନରେ ଷ୍ଟୋର୍ ହୋଇ ରହିଥାଏ।
+
+g.co/pixel/faceunlockରେ ଅଧିକ ଜାଣନ୍ତୁ।"</string>
+    <string name="security_settings_face_enroll_introduction_control_title">ଆପଣଙ୍କ ନିୟନ୍ତ୍ରଣରେ ଅଛି</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"ଏହା ଆପଣଙ୍କ ପିଲା ଅଟେ ବୋଲି ଯାଞ୍ଚ କରିବାକୁ ଫେସ ଅନଲକ ତା'ର ଫେସର ଏକ ସ୍ୱତନ୍ତ୍ର ମଡେଲ ତିଆରି କରିଥାଏ। ସେଟଅପ ସମୟରେ ଏହି ଫେସ ମଡେଲ ତିଆରି କରିବାକୁ, ଆପଣଙ୍କ ପିଲା ବିଭିନ୍ନ ଆଙ୍ଗେଲରୁ ତା’ର ଫେସର ଇମେଜ ନେବ।
+
+ସେ ଫେସ ଅନଲକ ବ୍ୟବହାର କରିବା ସମୟରେ, ତା’ର ଫେସ ମଡେଲକୁ ଅପଡେଟ କରିବା ପାଇଁ ଇମେଜଗୁଡ଼ିକୁ ବ୍ୟବହାର କରାଯାଏ। ତା’ର ଫେସ ମଡେଲ ତିଆରି କରିବା ପାଇଁ ବ୍ୟବହୃତ ଇମେଜଗୁଡ଼ିକୁ ଷ୍ଟୋର କରାଯାଏ ନାହିଁ, କିନ୍ତୁ ଫେସ ମଡେଲକୁ ଫୋନରେ ସୁରକ୍ଷିତ ଭାବେ ଷ୍ଟୋର କରାଯାଇଥାଏ ଏବଂ କେବେ ବି ଫୋନରୁ କାଢ଼ି ଦିଆଯାଏ ନାହିଁ। ସମସ୍ତ ପ୍ରକ୍ରିୟାକରଣ ସୁରକ୍ଷିତ ଭାବେ ଫୋନରେ କରାଯାଇଥାଏ।"</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"ଏହା ଆପଣ ବୋଲି ଯାଞ୍ଚ କରିବାକୁ ଫେସ ଅନଲକ ଆପଣଙ୍କ ଫେସର ଏକ ସ୍ୱତନ୍ତ୍ର ମଡେଲ ତିଆରି କରିଥାଏ। ସେଟଅପ୍ ସମୟରେ ଏହି ଫେସ ମଡେଲ ତିଆରି କରିବାକୁ, ଆପଣ ବିଭିନ୍ନ ଆଙ୍ଗେଲରୁ ଆପଣଙ୍କ ଫେସର ଇମେଜ ନେବେ।
+
+ଆପଣ ଫେସ ଅନଲକ ବ୍ୟବହାର କରିବା ସମୟରେ, ଆପଣଙ୍କ ଫେସ ମଡେଲକୁ ଅପଡେଟ କରିବା ପାଇଁ ଇମେଜଗୁଡ଼ିକୁ ବ୍ୟବହାର କରାଯାଏ। ଆପଣଙ୍କ ଫେସ୍ ମଡେଲ ତିଆରି କରିବା ପାଇଁ ବ୍ୟବହୃତ ଇମେଜଗୁଡ଼ିକୁ ଷ୍ଟୋର୍ କରାଯାଏ ନାହିଁ, କିନ୍ତୁ ଫେସ ମଡେଲ ଆପଣଙ୍କ ଫୋନରେ ସୁରକ୍ଷିତ ଭାବେ ଷ୍ଟୋର କରାଯାଇଥାଏ ଏବଂ କେବେ ବି ଫୋନରୁ କାଢ଼ି ଦିଆଯାଏ ନାହିଁ। ସମସ୍ତ ପ୍ରକ୍ରିୟାକରଣ ସୁରକ୍ଷିତ ଭାବେ ଆପଣଙ୍କ ଫୋନରେ କରାଯାଇଥାଏ।"</string>
+    <string name="security_settings_face_enroll_introduction_how_title">ଏହା କିପରି କାମ କରେ</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">ଫୋନ୍ ଅନଲକ୍ କରିବାକୁ କିମ୍ବା ଆପଣଙ୍କ ପିଲାର ପରିଚୟ ଯାଞ୍ଚ କରିବା ପାଇଁ ଫେସ୍ ଅନଲକକୁ ଆପଣଙ୍କ ପିଲାର ଆଖିକୁ ଖୋଲା ରଖିବାର ଆବଶ୍ୟକତା ହୋଇପାରେ। ଆପଣ ଏବଂ ଆପଣଙ୍କ ପିଲା ଯେ କୌଣସି ସମୟରେ ସେଟିଂସରେ ଏହି ବିକଳ୍ପକୁ ବନ୍ଦ କରିପାରିବେ।</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">ଯଦି ଆପଣଙ୍କ ପିଲା ସାଧାରଣତଃ ଚଷମା ପିନ୍ଧେ, ତେବେ ସେଟଅପ୍ ସମୟରେ ସେ ତାହା ପିନ୍ଧିପାରିବ।</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">ସେ ଅଜାଣତରେ ମଧ୍ୟ ତା’ର ଫୋନକୁ ଦେଖିଲେ ଏହା ଅନଲକ୍ ହୋଇପାରିବ। ତା ପରି ଦେଖାଯାଉଥିବା କେହି ଜଣେ ବ୍ୟକ୍ତି ଯେପରି ଯାଆଁଳା ଭାଇ/ଭଉଣୀଙ୍କ ଦ୍ୱାରା କିମ୍ବା କେହି ଜଣେ ତା’ର ଫୋନକୁ ତା’ର ଫେସ୍ ସାମ୍ନାରେ ରଖିଲେ ମଧ୍ୟ ଏହାକୁ ଅନଲକ୍ କରାଯାଇପାରିବ।</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">ଫୋନ୍ ଅନଲକ୍ କରିବାକୁ କିମ୍ବା ଏହା ଆପଣ ଅଟନ୍ତି ବୋଲି ଯାଞ୍ଚ କରିବା ପାଇଁ ଫେସ୍ ଅନଲକକୁ ଆପଣଙ୍କର ଆଖିକୁ ଖୋଲା ରଖିବାର ଆବଶ୍ୟକତା ହୋଇପାରେ। ଆପଣ ଯେ କୌଣସି ସମୟରେ ସେଟିଂସରେ ଏହି ବିକଳ୍ପକୁ ବନ୍ଦ କରିପାରିବେ।</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">ଚଷମା କିମ୍ବା ହାଲୁକା ରଙ୍ଗର ସନଗ୍ଲାସ୍ ଠିକ୍ ଅଟେ।</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">ଫୋନକୁ ଅନଲକ କରିବା ପାଇଁ ଏକ ଫେସ ବ୍ୟବହାର କରିବା, ଏକ ଦୃଢ଼ ପାଟର୍ନ କିମ୍ବା PINଠାରୁ କମ୍ ସୁରକ୍ଷିତ ହୋଇପାରେ।</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">ଆପଣ ଅଜାଣତରେ ମଧ୍ୟ ଆପଣଙ୍କର ଫୋନକୁ ଦେଖିଲେ ଏହା ଅନଲକ୍ ହୋଇପାରିବ। ଆପଣଙ୍କ ପରି ଦେଖାଯାଉଥିବା କେହି ଜଣେ ଯେପରି ଯାଆଁଳା ଭାଇ/ଭଉଣୀ କିମ୍ବା କେହି ଜଣେ ଆପଣଙ୍କ ଫୋନକୁ ଆପଣଙ୍କ ଫେସ୍ ସାମ୍ନାରେ ରଖି ମଧ୍ୟ ଏହାକୁ ଅନଲକ୍ କରିପାରିବେ।</string>
+    <string name="security_settings_face_enroll_introduction_info_title">ମନେ ରଖନ୍ତୁ</string>
+    <string name="security_settings_face_enroll_introduction_message">ଆପଣ ଆପଗୁଡ଼ିକରେ ସାଇନ୍ ଇନ୍ କରିବା କିମ୍ବା ଏକ କ୍ରୟକୁ ଅନୁମୋଦନ ଦେବା ପରି କାର୍ଯ୍ୟ କରିବା ସମୟରେ, ଆପଣଙ୍କ ଫୋନକୁ ଅନଲକ୍ କରିବା କିମ୍ବା ଏହା ଆପଣ ବୋଲି ଯାଞ୍ଚ କରିବା ପାଇଁ ଆପଣଙ୍କ ଫେସ୍ ବ୍ୟବହାର କରନ୍ତୁ।</string>
+    <string name="security_settings_face_enroll_introduction_title">ଫେସ୍ ଅନଲକ୍ ସେଟ୍ ଅପ୍ କରନ୍ତୁ</string>
+    <string name="security_settings_face_enroll_next">ପରବର୍ତ୍ତୀ</string>
+    <string name="security_settings_face_enroll_partial_message">ପରଫରମାନ୍ସରେ ଉନ୍ନତି ଆଣିବାକୁ, ଆପଣ ସେଟିଂସରେ ପୁଣି ଫେସ୍ ଅନଲକ୍ ସେଟ୍ ଅପ୍ କରିପାରିବେ</string>
+    <string name="security_settings_face_enroll_partial_start_over">ଆରମ୍ଭ କରନ୍ତୁ</string>
+    <string name="security_settings_face_enroll_partial_title">ଫେସ୍ ଅନଲକ୍ ସେଟଅପ୍ ସମ୍ପୂର୍ଣ୍ଣ ହୋଇଛି</string>
+    <string name="security_settings_face_enroll_timeout_message">"ଏହା ପରିବର୍ତ୍ତେ ଦ୍ରୁତ ସେଟଅପ୍ ପାଇଁ ଚେଷ୍ଟା କରନ୍ତୁ। ମନେ ରଖନ୍ତୁ, ଫେସ୍ ଅନଲକ୍ ବ୍ୟବହାର କରିବା ସମୟରେ ଆପଣଙ୍କ ମୁଣ୍ଡ ଆପଣଙ୍କ ଫୋନ୍ ସାମ୍ନାରେ ସମ୍ପୂର୍ଣ୍ଣ ସିଧା ରହିବା ଆବଶ୍ୟକ।
+
+ପରଫରମାନ୍ସରେ ଉନ୍ନତି ଆଣିବାକୁ, ଆପଣ ସେଟିଂସରେ ପୁଣି ଫେସ୍ ଅନଲକ୍ ସେଟ୍ ଅପ୍ କରିପାରିବେ।"</string>
+    <string name="security_settings_face_enroll_timeout_title">ସେଟ୍ ଅପ୍ ଜାରି କରିପାରିବେ ନାହିଁ</string>
+    <string name="security_settings_face_enroll_timeout_try_again">ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">ଦ୍ରୁତ ସେଟଅପ୍ ବ୍ୟବହାର କରନ୍ତୁ</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">ସେଟ୍‍ଅପ୍‍ରୁ ବାହାରି ଯାଆନ୍ତୁ</string>
+    <string name="security_settings_face_enroll_too_hot_message">ଫୋନ୍ ଅଧିକ ଗରମ ହୋଇଥିବା ଯୋଗୁଁ ଫେସ୍ ଅନଲକ୍ ସେଟଅପ୍ ସମ୍ପୂର୍ଣ୍ଣ କରାଯାଇପାରିବ ନାହିଁ। ଫୋନ୍ ଥଣ୍ଡା ହେବା ପରେ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">ଫେସ୍ ଅନଲକ୍ ବାଦ୍ ଦିଅନ୍ତୁ</string>
+    <string name="security_settings_face_enroll_too_hot_title">ଫୋନ୍ ଅଧିକ ଗରମ ହୋଇଛି</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message">ଏହା ଆପଣଙ୍କ ଫୋନ୍‌ ପଛରେ ଅଛି। ନିଜ ତର୍ଜନୀର ବ୍ୟବହାର କରନ୍ତୁ।</string>
+    <string name="security_settings_fingerprint_preference_summary_none">ଟିପଚିହ୍ନ ସେଟଅପ୍‌ କରିବା ପାଇଁ ଟାପ୍‌ କରନ୍ତୁ</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">g.co/pixel/fingerprintunlockରେ ଅଧିକ ଜାଣନ୍ତୁ।</string>
+    <string name="security_settings_work_fingerprint_preference_title">କାର୍ଯ୍ୟ ପାଇଁ Pixel ଇମପ୍ରିଣ୍ଟ</string>
+    <string name="setup_suggestion_summary">ଡାଟା କପି କରନ୍ତୁ, ଆପଣଙ୍କ ଫୋନରେ ପେମେଣ୍ଟ କରନ୍ତୁ ଓ ଆହୁରି ଅନେକ କିଛି କରନ୍ତୁ</string>
+    <string name="setup_suggestion_title">ସେଟ୍ ଅପ୍ ସମ୍ପୂର୍ଣ୍ଣ କରନ୍ତୁ</string>
+    <string name="smart_battery_footer">ବ୍ୟାଟେରୀ ଲାଇଫ୍ ବଢ଼ାଇବାକୁ, ପରଫରମାନ୍ସ ଏବଂ ପୃଷ୍ଠପଟର କାର୍ଯ୍ୟକଳାପକୁ ଆଡେପ୍ଟିଭ୍ ବ୍ୟାଟେରୀ କମ୍ କରିପାରେ। କିଛି ବିଜ୍ଞପ୍ତି ପାଇଁ ବିଳମ୍ବ ହୋଇପାରେ।</string>
+    <string name="smart_battery_manager_title">ଆଡେପ୍ଟିଭ୍ ପସନ୍ଦଗୁଡ଼ିକ</string>
+    <string name="smart_battery_title">ଆଡେପ୍ଟିଭ୍ ବ୍ୟାଟେରୀ</string>
+    <string name="sound_dashboard_summary">ଭଲ୍ୟୁମ୍, ହାପଟିକ୍ସ, ବିରକ୍ତ କରନ୍ତୁ ନାହିଁ</string>
+    <string name="sound_settings">ସାଉଣ୍ଡ ଓ ଭାଇବ୍ରେସନ୍</string>
+    <string name="storage_manager_indicator">ସ୍ମାର୍ଟ ଷ୍ଟୋରେଜ୍‌: ^1</string>
+    <string name="time_remaining_warning_subtext">ବିଗତ ବ୍ୟବହାରକୁ ଆଧାର କରି %1$s ବାକି ରହିଛି</string>
+    <string name="time_remaining_warning_text">ଖୁବ୍ ଶୀଘ୍ର ବ୍ୟାଟେରୀ ଶେଷ ହୋଇଯାଇପାରେ</string>
+    <string name="tips_suggestion_summary">ଫୋନରେ ଆପଣ କଣ କରିପାରିବେ ତାହା ଏକ୍ସପ୍ଲୋର କର</string>
+    <string name="tips_suggestion_title">ଆପଣଙ୍କ Pixel ବିଷୟରେ ଜାଣନ୍ତୁ</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">ଫୋନକୁ ଆପଣଙ୍କ ଫେସ୍ ସାମ୍ନାରେ ଧରି ରଖନ୍ତୁ</string>
+    <string name="usb_use_file_transfers">ଫାଇଲ୍ ସ୍ଥାନାନ୍ତର / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">ଫୋନ୍ ସାଇଲେଣ୍ଟରେ ସେଟ୍ ହୋଇଥିବାରୁ କଲ୍ ପାଇଁ ଭାଇବ୍ରେସନ୍ ଅନୁପଲବ୍ଧ ଅଛି</string>
+    <string name="vibration_haptics_settings_not_available_title">ଅନୁପଲବ୍ଧ</string>
+    <string name="wallpaper_dashboard_summary">ରଙ୍ଗ, ଥିମ୍ ଯୁକ୍ତ ଆଇକନ୍, ଆପ୍ ଗ୍ରିଡ୍</string>
+    <string name="wifi_subscription_summary">OpenRoaming ସଦସ୍ୟତା ଦେଖନ୍ତୁ କିମ୍ବା ବଦଳାନ୍ତୁ</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">%1$s ସହ ସଂଯୋଗ କରାଯାଇଛି</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">ସଂଯୋଗ କରିବାକୁ ଟାପ୍ କରନ୍ତୁ</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">ସଂଯୋଗ କରାଯାଇପାରିବ ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରିବାକୁ ଟାପ୍ କରନ୍ତୁ।</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">ସଂଯୋଗ ହେଉଛି…</string>
+</resources>

@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Идэвхгүй горимын түгжигдсэн дэлгэц</string>
+    <string name="gesture_silence_title">Сэрэмжлүүлгийн зангааг чимээгүй болгох</string>
+    <string name="gesture_skip_title">Зангааг алгасах</string>
+    <string name="keywords_touch_sensitivity">хүрэх, мэдрэгшил, мэдрэг, дэлгэц хамгаалагч, хальс, хариу үйлдэлтэй, хариу үйлдэл</string>
+    <string name="touch_sensitivity_summary">Дэлгэц хамгаалагч ашиглах үед хүрэлтийг сайжруулдаг</string>
+    <string name="touch_sensitivity_title">Хүрэлтийн мэдрэгшлийг нэмэгдүүлэх</string>
+    <string name="accessibility_vibration_settings_screen_title">Чичиргээ болон хүртэхүйг ашиглах</string>
+    <string name="vibration_haptics_settings_not_available_summary">Утсыг чимээгүй горимд тохируулсан тул чичиргээ болон хүртэхүйн онцлог боломжгүй байна</string>
+    <string name="vibration_haptics_strength_category_title">Чичиргээ болон хүртэхүйн хүч</string>
+    <string name="accessibility_vibration_settings_title">Чичиргээ болон хүртэхүй</string>
+    <string name="columbus_title">Үйлдлийг эхлүүлэх Шуурхай товшилт</string>
+    <string name="vibrate_for_calls_category_title">Дуудлагууд</string>
+    <string name="accessibility_alarm_vibration_title">Сэрүүлгийн чичиргээ</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge-г тохируулсан. Дараагийн дэлгэцэд очих эсвэл үргэлжлүүлэн тохируулна уу.</string>
+    <string name="accessibility_keyboard_haptics_title">Гарын хүртэхүйн тохиргоо</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">Орчинтой тохируулан цэнэглэх</string>
+    <string name="adaptive_charging_description">Шөнөжин тасралтгүй цэнэглэж урт хугацааны батарейн ажиллах хугацаа нөөцлөөрэй. Сэрэх үед бүрэн цэнэглэхийн тулд сэрүүлэг ашигладаг.</string>
+    <string name="adaptive_charging_time_estimate"><b>Орчинтой тохируулан цэнэглэх</b> • %1$s гэхэд дүүрнэ</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Сонголт</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Туслах, саяхны аппууд, өгөгдмөл аппууд</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Туслахд үргэлжлүүлэх</string>
+    <string name="assist_gesture_enrollment_do_it_later">Дараа хийх</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Зөөлөн атгах</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Чанга атгах</string>
+    <string name="assist_gesture_enrollment_settings">Тохиргоо</string>
+    <string name="assist_gesture_setting_enable_assistant_text">Туслахтайгаа ярихын тулд утасныхаа доод хагас хэсгийг хурдан базаад суллана уу</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Туслахтайгаа холбогдохын тулд төхөөрөмжөө базна уу</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Сэрүүлэг, цаг хэмжигч, мэдэгдэл болон ирсэн дуудлагын дууг хаах бол атгана уу</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">Мэдэгдэл болон ирсэн дуудлагын дууг хаах бол базна уу</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Утсаа чимээгүй болгохын тулд базна уу</string>
+    <string name="assist_gesture_setting_enable_wake_title">Дэлгэц унтраалттай үед Туслахыг нээх</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Зөөлөн атгах</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Чанга атгах</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Атгалтыг мэдрэх түвшин</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Туслахыг санамсаргүй байдлаар гаргаж болзошгүй</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Пикселийн доод хагас хэсгийг базна уу</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Хурдан базна уу</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Чанга базна уу</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Хурдан базаад суллана уу</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">Гулгагчийг тохируулна уу</string>
+    <string name="assist_gesture_training_enrolling_text">Утасныхаа доод хагас хэсгийг базна уу. Та базах түвшнээ тохируулах боломжтой.</string>
+    <string name="assist_gesture_training_enrolling_title">Хурдан базаад суллана уу</string>
+    <string name="assist_gesture_training_finished_text">Та дараа нь Тохиргоо хэсэгт атгалтын мэдрэгшлийг өөрчлөх боломжтой</string>
+    <string name="assist_gesture_training_finished_title">Дуусгах эсвэл үргэлжлүүлэн тохируулах</string>
+    <string name="assist_gesture_training_intro_text">Туслахтайгаа хүссэн үедээ ярихын тулд утасныхаа доод хэсгийг хурдан базаад суллана уу</string>
+    <string name="assist_gesture_training_intro_title">Туслахтайгаа холбогдохын тулд төхөөрөмжөө базна уу</string>
+    <string name="assist_gesture_training_suggestion_summary">Туслахтай ярих, дуудлагын дууг хаах</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Туслахтай ярих, сэрүүлэг, дуудлагын дууг хаах</string>
+    <string name="assist_gesture_training_suggestion_title">Туслахад хандах бол базаад суллана уу</string>
+    <string name="automatic_storage_manager_activation_warning">Та холбогдсон үедээ нөөцлөхөөр сонгосон чанараар зураг, видеонд хандах боломжтой</string>
+    <string name="automatic_storage_manager_days_title">Нөөцөлсөн зураг, видеог устгах</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Ухаалаг санг унтраах уу? 
+
+Ухаалаг сан нь таны сан дүүрэх үед сул багтаамжийг нэмэгдүүлэхгүй."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Нөөцөлсөн таталт</string>
+    <string name="automatic_storage_manager_preference_title">Ухаалаг хадгалах сан</string>
+    <string name="automatic_storage_manager_primary_switch_title">Ухаалаг хадгалах санг ашиглах</string>
+    <string name="automatic_storage_manager_settings">Ухаалаг хадгалах сан</string>
+    <string name="automatic_storage_manager_text">Хадгалах сангийн багтаамж дүүрсэн тохиолдолд нөөцөлсөн зураг, видеог устгана уу. Эдгээрийг та Google Photos-с олох боломжтой хэвээр байна.</string>
+    <string name="aware_disabled_preference_action">Асаах</string>
+    <string name="aware_disabled_preference_neutral">Одоо биш</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Нислэгийн горим болон Батарей хэмнэгчийг асаасан тул Motion Sense боломжгүй</string>
+    <string name="aware_footer_when_airplane_on">Нислэгийн горимыг асаасан тул Motion Sense боломжгүй</string>
+    <string name="aware_footer_when_batterysaver_on">Батарей хэмнэгчийг асаасан тул Motion Sense боломжгүй</string>
+    <string name="aware_gesture_summary_off">Шуурхай зангаа асаалттай бөгөөд Active Edge унтраалттай байна</string>
+    <string name="aware_gesture_summary_on_non_assist">Шуурхай зангаа болон Active Edge асаалттай байна</string>
+    <string name="aware_gesture_summary_on_with_assist">Шуурхай зангаа болон Active Edge асаалттай байна. Туслахаа ашиглахын тулд атгана уу</string>
+    <string name="aware_info_button_description">Бусад тохиргоо</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">Нислэгийн горим болон Батарей хэмнэгчийг асаасан тул боломжгүй</string>
+    <string name="aware_summary_when_airplane_on">Нислэгийн горимыг асаасан тул боломжгүй</string>
+    <string name="aware_summary_when_batterysaver_on">Батарей хэмнэгчийг асаасан тул боломжгүй</string>
+    <string name="backup_data_summary">Апп-н өгөгдөл, Wi-Fi нууц үг болон бусад тохиргоог Google серверт нөөцөлнө үү</string>
+    <string name="backup_suggestion_cancel">Цуцлах</string>
+    <string name="backup_suggestion_dialog_description">Энэ нь таны утасны дотоод сангаас бүх өгөгдлийг устгах болно.</string>
+    <string name="backup_suggestion_dialog_title">Энэ төхөөрөмжийг шинэчлэх үү?</string>
+    <string name="backup_suggestion_get_started">дэлгэрэнгүй үзэх</string>
+    <string name="backup_suggestion_item_summary">Андройд, iPhone® төхөөрөмжөөс хуулах</string>
+    <string name="backup_suggestion_item_title">Хуучин утаснаас өгөгдлийг алга болгосон уу?</string>
+    <string name="backup_suggestion_missing_description">"Та SMS мессеж, зураг зэрэг зарим өгөгдлөө харахгүй байвал кабель ашиглан Pixel-д хуулах боломжтой .
+
+Эхлүүлэхийн тулд Pixel-г шинэчлэх шаардлагатай. Энэ утасны захиалсан тохиргоо, агуулга зэрэг бүх өгөгдлийг cloud-д синк хийгээгүй ба устах болно."</string>
+    <string name="backup_suggestion_missing_title">Өгөгдлөө алдсан уу?</string>
+    <string name="backup_suggestion_next">дараах</string>
+    <string name="backup_suggestion_other_ways_to_copy">Өгөгдөл хуулах бусад арга</string>
+    <string name="backup_suggestion_reset_description">"Та дараагийн дэлгэцэд Pixel-ээ шинэчлэх боломжтой. Энэ нь кабелиар дата шилжүүлэх цорын ганц арга юм.
+
+Шинэчилсний дараагаар тохиргоо боловсруулах хэсэгт очиж, хуучин утаснаасаа өгөгдлөө сонгоно уу."</string>
+    <string name="backup_suggestion_reset_title">Pixel-ээ шинэчлэх</string>
+    <string name="backup_suggestion_what_is_needed_summary">"Утсаа шинэчилсний дараа танд дараах шаардлагатай болно:
+
+• (Android 5.0+ эсвэл iOS® 8.0+-н LINK_BEGINихэнх утсыгLINK_END дэмжсэн)
+• Өмнөх утасны цэнэглэгч, эсвэл дата кабель
+• Таны Pixel-тэй хамт ирдэг Хурдан сэлгэх адаптар"</string>
+    <string name="backup_suggestion_what_is_needed_title">Танд хэрэг болох</string>
+    <string name="battery_manager_summary">Батарейн ажиллах хугацааг уртасгаж, цэнэглэлтийг оновчилно</string>
+    <string name="battery_manager_summary_unsupported">Батарейн ажиллах хугацааг сунгах</string>
+    <string name="battery_missing_link_message">Нэмэлт мэдээлэл авах</string>
+    <string name="battery_suggestion_summary">Дасан зохицох батарейг асаах</string>
+    <string name="battery_tip_smart_battery_summary">Дасан зохицох батарейг асаах</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s-г цаашид энэ Google Бүртгэлтэй холбосон ямар ч төхөөрөмжтэй хослуулахгүй</string>
+    <string name="columbus_gesture_detected">Шуурхай товшилт илэрлээ!</string>
+    <string name="columbus_gesture_enrollment_complete">Дууссан</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Одоо биш</string>
+    <string name="columbus_gesture_enrollment_settings">Тохиргоо руу очих</string>
+    <string name="columbus_gesture_enrollment_try_it">Туршиж үзэх</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Гүйцэтгэх үйлдэл сонгоно уу</string>
+    <string name="columbus_gesture_training_action_text">Таныг Шуурхай товшилтыг ашиглах үед хийгдэх үйлдлийг сонгоно уу. Үүнийг дараа нь тохиргоо хэсэгт өөрчлөх боломжтой.</string>
+    <string name="columbus_gesture_training_action_title">Шуурхай товшилтын сонголтыг сонгоно уу</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… 2-оос 1 хоёр товшилт илрүүлсэн</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Үүнийг дахин нэг удаа оролдож үзье. Утасныхаа ард хоёр удаа шуурхай товшино уу.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Сайн байна!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… 2-оос 2 хоёр товшилт илрүүлсэн</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Та Шуурхай товшилтыг ашиглаж эхлэхэд бэлэн боллоо</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Та зөв хийсэн байна!</string>
+    <string name="columbus_gesture_training_enrolling_text">Утасныхаа ард хоёр удаа шуурхай товшино уу.</string>
+    <string name="columbus_gesture_training_enrolling_title">Шуурхай товшилтыг туршина уу</string>
+    <string name="columbus_gesture_training_finished_text">Шуурхай товшилтыг ашиглахад шаардлагатай товшилтын хүчийг өөрчлөхийн тулд Тохиргоо руу очно уу.</string>
+    <string name="columbus_gesture_training_finished_title">Та Шуурхай товшилтыг тохирууллаа</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Та дөнгөж сая төхөөрөмжийнхөө ард хоёр удаа товшсон бөгөөд энэ нь танд явж байх зуураа Туслахаа ашиглах боломжийг олгодог. Та тохиргоонд энэ зангааг өөрчлөх боломжтой.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Хоёр товшилтоор дэлгэцийн агшин авах, мэдэгдэл харуулах эсвэл өөр үйлдэл эхлүүлнэ үү.</string>
+    <string name="columbus_gesture_training_intro_title">Шуурхай үйлдэл хийх бол Шуурхай товшилтыг ашиглана уу</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Нээх апп сонгоно уу</string>
+    <string name="columbus_gesture_training_launch_text">Та Шуурхай товшилтыг ашиглах үедээ нээхийг хүсэж буй аппаа сонгоно уу.</string>
+    <string name="columbus_gesture_training_launch_title">Нээх апп сонгоно уу</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s-н товчлолын тохиргоо</string>
+    <string name="columbus_launch_settings_activity_title">Шуурхай товшилтын тохиргоо</string>
+    <string name="columbus_name">Шуурхай товшилт</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">%1$s-н тохиргоо</string>
+    <string name="columbus_setting_action_assistant_title">Дижитал туслахдаа хандах</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Ямар ч апп сонгоогүй байна</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Аппыг суулгаагүй</string>
+    <string name="columbus_setting_action_launch_title">Аппыг нээх</string>
+    <string name="columbus_setting_action_notification_title">Мэдэгдэл харуулах</string>
+    <string name="columbus_setting_action_open_app_title">Апп нээх</string>
+    <string name="columbus_setting_action_overview_title">Саяхны аппуудыг харах</string>
+    <string name="columbus_setting_action_play_pause_title">Медиаг тоглуулах эсвэл түр зогсоох</string>
+    <string name="columbus_setting_action_screenshot_title">Дэлгэцийн агшныг дарах</string>
+    <string name="columbus_setting_actions_title">Дараахыг хийхийн тулд утасныхаа ард товшино уу</string>
+    <string name="columbus_setting_additional_settings_title">Шуурхай товшилтын хүч</string>
+    <string name="columbus_setting_app_selection_help_text">Та утасныхаа ард хоёр товших үедээ нээх аппыг сонгоно уу. Тус аппыг устгасан тохиолдолд таныг өөр апп сонгох хүртэл Шуурхай товшилтыг унтраана.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Та Шуурхай товшилтыг ашиглан энэ аппыг нээх үед хийгдэх үйлдлийг сонгоно уу.</string>
+    <string name="columbus_setting_enable_switch_title">Шуурхай товшилтыг ашиглах</string>
+    <string name="columbus_setting_sensitivity_title">Илүү хүчтэй товшилт шаардлагатай</string>
+    <string name="connectivity_helper_call_quality_category">Дуудлагын чанар</string>
+    <string name="connectivity_helper_call_quality_summary">Дуудлагын үеэрх холболтын асуудлын шалтгааны талаар мэдэгдэл авна уу</string>
+    <string name="connectivity_helper_call_quality_title">Мэдэгдэл авах</string>
+    <string name="connectivity_helper_d2d_summary">Таны утас дуудлагын үеэр холболтын асуудалтай тулгарахад нөгөө хүндээ мэдэгдэнэ үү</string>
+    <string name="connectivity_helper_d2d_title">Холболтыг мэдээллийг хуваалцах</string>
+    <string name="connectivity_helper_footnote">Та нөгөө дуудлага хийгчээ дэмжигдсэн төхөөрөмж болон сүлжээ ашиглаж байгаа үед холболтын мэдээллийг хуваалцах боломжтой</string>
+    <string name="content_capture">Аппын өгөгдлийг ашиглан хувийн болгох</string>
+    <string name="copy_toast_msg">Холбоосыг түр санах ойд хуулсан</string>
+    <string name="dark_ui_text">Бараан загвар нь таны батарейн ашиглалтын хугацааг уртасгахад туслахын тулд хар өнгийн дэвсгэр ашигладаг. Бараан загварын хуваарьт төлөв нь таны дэлгэц унтрах хүртэл хүлээж байгаад асдаг.</string>
+    <string name="dock_summary_charging_phone">Утсыг цэнэглэж байна</string>
+    <string name="double_twist_for_camera_mode_summary">Google Камерын сельфи хийх горимыг унтрааж асаахын тулд аппыг ашиглах үедээ бугуйгаа хоёр эргүүлнэ үү.</string>
+    <string name="downloads_backup_text">Татаж авсан файлыг Google Драйвт хуулбарлана</string>
+    <string name="duration_less_than_one_minute">1 минутаас бага</string>
+    <string name="extra_app_info_label">Тоглоомын оновчлол</string>
+    <string name="face_enrolling_center_head">Царайгаа дотор талын хүрээнд тааруулна уу</string>
+    <string name="face_enrolling_description">Бүх хавтанг арилгаж царайныхаа бүх өнцгийн зургийг авна уу.</string>
+    <string name="face_enrolling_do_it_later">Дараа хийх</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Цуцлах</string>
+    <string name="face_enrolling_gaze_dialog_continue">Нүдээ нээлгүйгээр тохируулах</string>
+    <string name="face_enrolling_gaze_dialog_message">Та Царайгаар түгжээ тайлахыг нүдээ нээлттэй байхыг шаардахгүйгээр тохируулахыг хүсэж байна уу? Та ингэж тохируулсан тохиолдолд хэн нэгэн таныг санамсаргүй байхад утсыг тань нүүр лүү чиглүүлж, түгжээг нь тайлах боломжтой.</string>
+    <string name="face_enrolling_gaze_dialog_title">Нүдээ нээлгүйгээр тохируулах</string>
+    <string name="face_enrolling_how_to_setup">Хэрхэн тохируулах вэ</string>
+    <string name="face_enrolling_title">Утсыг сайн барина уу. Толгойгоо эргүүлнэ үү. Удаан эргүүлээрэй.</string>
+    <string name="face_enrolling_title_accessibility">Утас руугаа эгц харах</string>
+    <string name="face_enrolling_title_accessibility_progress">Утас руугаа эгц харсан хэвээр байна уу</string>
+    <string name="face_enrolling_too_close">Утсаа холдуулна уу</string>
+    <string name="face_enrolling_too_far">Утсаа ойртуулна уу</string>
+    <string name="face_enrolling_too_high">Утсаа доошлуулна уу</string>
+    <string name="face_enrolling_too_left">Утсаа баруун тийш болгоно уу</string>
+    <string name="face_enrolling_too_low">Утсаа дээшлүүлнэ үү</string>
+    <string name="face_enrolling_too_right">Утсаа зүүн тийш болгоно уу</string>
+    <string name="face_enrolling_turn_head_to_arrow">Толгойгоо сумны зүг эргүүлнэ үү</string>
+    <string name="face_enrolling_turned_too_far">Толгойгоо бага зэрэг эргүүлнэ үү</string>
+    <string name="fallback_menu_item_copy_link">Холбоосыг хуулах</string>
+    <string name="fallback_menu_item_open_in_browser">Хөтчид нээх</string>
+    <string name="fallback_menu_item_share_link">Холбоосыг хуваалцах</string>
+    <string name="fullbackup_data_summary">"Төхөөрөмжийн өгөгдөл (Wi-Fi-ийн нууц үг, дуудлагын түүх зэрэг) болон апп-н өгөгдлийг (тохиргоо болон апп-н хадгалсан файл зэрэг) Google Драйвт автоматаар нөөцөлнө үү.
+
+Автомат нөөцлөлтийг асаах үед таны төхөөрөмжийн болон апп-н өгөгдөл Google Драйвын хувийн хавтас хадгалагдсан байх болно. Апп-ын өгөгдөл нь апп-ын хадгалсан (хөгжүүлэгчийн тохиргоон дээр үндэслэн) дурын өгөгдөл байж болох бөгөөд үүнд таны харилцагчийн хаяг, мессеж, зураг гэх мэт хувийн чанартай өгөгдөл байж болно.
+
+Нөөцөлсөн өгөгдөл нь таны Драйвын багтаамжид нөлөөлөхгүй. Томоохон файл эсвэл файл боловсруулагчийн үйлчилгээнд оруулахыг хүсээгүй файлыг нөөцлөхгүй."</string>
+    <string name="fullbackup_erase_dialog_message">Төхөөрөмжийн өгөгдөл (Wi-Fi-ийн нууц үг, дуудлагын түүх зэрэг) болон апп-н өгөгдлийг (тохиргоо болон апп-н хадгалсан файл зэрэг) нөөцлөхөө зогсоож, Google Драйвт байгаа хуулбарыг устгах уу?</string>
+    <string name="game_dashboard_always_on_summary">Тоглоом дотор Тоглоомын хяналтын самбарын товчлолыг харуулна</string>
+    <string name="game_dashboard_always_on_title">Тоглоомын хяналтын самбар</string>
+    <string name="game_dashboard_dnd_rule_name">Тоглоом</string>
+    <string name="game_dashboard_dnd_summary">Тоглоом тоглож байх үед зөвхөн чухал хүмүүс болон аппуудаас мэдэгдэл аваарай</string>
+    <string name="game_dashboard_dnd_title">Тоглоомын Бүү саад бол горим</string>
+    <string name="game_mode_battery_description">Батарейн ажиллах хугацааг уртасгадаг</string>
+    <string name="game_mode_battery_title">Батарей хэмнэгч</string>
+    <string name="game_mode_performance_description">Фрэймийн хурдыг дээд зэргээр ихэсгэж, илүү их батарей ашиглана</string>
+    <string name="game_mode_performance_title">Гүйцэтгэл</string>
+    <string name="game_mode_standard_description">Тоглоомын өгөгдмөлийг ашигладаг</string>
+    <string name="game_mode_standard_title">Стандарт</string>
+    <string name="game_optimization_unavailable">Энэ тоглоомд боломжгүй</string>
+    <string name="gesture_aware_confirmation_action_button">Ойлголоо</string>
+    <string name="gesture_aware_footer"><annotation link="link">Сонголт</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Сонголт</annotation></string>
+    <string name="gesture_skip_direction_ltr">Зүүнээс баруун</string>
+    <string name="gesture_skip_direction_rtl">Баруунаас зүүн</string>
+    <string name="gesture_skip_direction_title">Чиглэлийг алгасах</string>
+    <string name="gesture_skip_footer"><annotation link="link">Сонголт</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Тохируулга</annotation></string>
+    <string name="global_actions_panel_short_title">Картууд, тасалбарууд</string>
+    <string name="global_actions_panel_summary">Төлбөрийн хэрэгсэл болон зорчигчийн тасалбар зэрэг зүйлсдээ хандахын тулд Асаах товчийг удаан дарна уу.</string>
+    <string name="global_actions_panel_title">Карт, тасалбаруудыг харуулах</string>
+    <string name="install_unknown_applications">Play Store-с өөр эх үүсвэрээс татсан апп-уудыг суулгахыг зөвшөөрөх</string>
+    <string name="keywords_accessibility_menu">мотор, шуурхай цэс, туслах цэс, хүрэх, эв дүй</string>
+    <string name="keywords_adaptive_charging">цэнэглэх, цэнэглэж байна, ухаалгаар цэнэглэх, цэнэглэхийг орчинтой тохируулан цэнэглэх, батарей, батарейн барилт</string>
+    <string name="keywords_assist_gesture_launch">"зангаа, имрэг, тал, идэвхтэй  ирмэг, базах, атгах, туслах, туслагч, базах, ок google, google туслах"</string>
+    <string name="keywords_assist_gesture_silence">зангаа, ирмэг, тал, идэвхтэй ирмэг, дуугүй болгох, түр хойшлуулах, сэрүүлэг, ирсэн дуудлага, чимээгүй, харуулах, түгжигдсэн дэлгэц, базах, атгах, зогсоох</string>
+    <string name="keywords_assist_gesture_wake">зангаа, ирмэг, тал, идэвхтэй ирмэг, сэрээх, мэдэгдэл, дэлгэц, харуулах, дэлгэц унтраалттай, дэлгэц асаалттай, базах, унтаа, унтах, атгах</string>
+    <string name="keywords_battery_share">батарей хуваалцах, утасгүй цэнэглэлт</string>
+    <string name="keywords_battery_share_settings">батарей хуваалцах, урвуу утасгүй цэнэглэлт</string>
+    <string name="keywords_content_capture">контентын зураг авах, аппын контент, аппын өгөгдөл</string>
+    <string name="keywords_gesture">зангаа, алхам</string>
+    <string name="keywords_global_actions_panel">картууд, тасалбарууд</string>
+    <string name="keywords_live_transcribe">Тайлбарууд, хаалттай тайлбарууд, Хаалттай тайлбар, Шууд тайлбар, сонсголын бэрхшээл, сонсголын алдагдал, CART, яриаг бичвэрт буулгах, хадмал</string>
+    <string name="keywords_reverse_charging_stop_threshold">Утас дараах түвшинд хүрэхэд батарей хуваалцахыг зогсоох:</string>
+    <string name="keywords_select_to_speak">Текстийг сонсох, чангаар унших, дэлгэцийг унших, дэлгэц уншигч</string>
+    <string name="keywords_sound_amplifier">PSAP, өсгөх, дуу өсгөх, сонсголын бэрхшээл, сонсголын алдагдал, өсгөлт</string>
+    <string name="keywords_sound_notifications">Мэдэгдэл, сонсголын бэрхшээл, сонсголын алдагдал, мэдэгдэх</string>
+    <string name="keywords_switch_access">мотор, сэлгэх, гар, AT, туслах технологи, саажилт, ALS, скан хийх, алхамт скан</string>
+    <string name="keywords_talkback">Дэлгэц уншигч, Дуу оруулах, VoiceOver, Дуут туслах, Хараагүй, Сул хараа, TTS, бичвэрийг ярианд хувиргах, яриагаар өгөх санал</string>
+    <string name="keywords_voice_access">дуу хоолой, дуут хяналт, мотор, гар, мик, микрофон, дуу хоолойгоор бичих, ярих, хянах</string>
+    <string name="language_input_gesture_summary_off">Active Edge-г унтраасан</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge-г асаасан</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge-г асаасан, Туслахаа ашиглахын тулд базна уу</string>
+    <string name="me_card_title">Миний Pixel</string>
+    <string name="my_device_info_account_preference_title">Google Бүртгэл</string>
+    <string name="owner_info_settings_edit_text_hint">Жишээ нь Joe-н Pixel.</string>
+    <string name="reverse_charging_charging_wirelessly_message">Утсыг утасгүйгээр цэнэглэж байгаа тул боломжгүй</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Pixel хэт халсан тул Батарей хуваалцах боломжгүй байна. Утас хөрөхийг хүлээгээд, дахин оролдоно уу.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">Утсыг утасгүйгээр цэнэглэж байгаа тул батарей хуваалцах боломжгүй</string>
+    <string name="reverse_charging_detail_footer_title">Батарей хуваалцахыг ашиглах үед таны утасны батарей илүү хурдан дуусна. Батарей хуваалцах нь тохирох чихэвч, цаг, утас болон бусад төхөөрөмжтэй ажилладаг. Илүү сайн цэнэглэхийн тулд утасны гэрээ салгана уу.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"Батарей хуваалцах онцлог нь тохирох чихэвч, утас болон бусад зүйлтэй ажилладаг.
+
+Энэ онцлогийг ашиглаж байх үед таны утасны батарей илүү хурдан дуусна. Өөр төхөөрөмж илрүүлээгүй бол батарей хуваалцах онцлог хэдэн минутын дараа автоматаар унтардаг. Илүү сайн цэнэглэхийн тулд утасны гэр болон металл объект зэрэг саад болж болзошгүй бусад зүйлийг салгана уу"</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">Батарей хэмнэгч асаалттай байгаа тул батарей хуваалцах боломжгүй</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">USB-C төхөөрөмж залгаатай байгаа тул батарей хуваалцах боломжгүй</string>
+    <string name="reverse_charging_instructions_title">"Та Pixel-р бусад төхөөрөмжийг цэнэглэнэ үү.
+Утсаа дээш нь харуулан туршиж үзнэ үү."</string>
+    <string name="reverse_charging_is_off_summary">Унтраалттай</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Батарейг хуваалцаж мөн цэнэглэж байна</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Батарейг хуваалцаж байна</string>
+    <string name="reverse_charging_is_on_summary">Асаалттай / Бусад төхөөрөмжийг цэнэглэх</string>
+    <string name="reverse_charging_main_switch">Батарей хуваалцахыг зөвшөөрөх</string>
+    <string name="reverse_charging_off_low_battery_summary">Унтраалттай / Утасны батарей %1$s-с бага байна</string>
+    <string name="reverse_charging_off_sharing_level_summary">Унтраалттай / Батарей хуваалцах түвшнээс доогуур байна</string>
+    <string name="reverse_charging_overheat_summary">Pixel хэт халсан тул ашиглах боломжгүй. Утас хөрөхийг хүлээгээд, дахин оролдоно уу.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">Батарей хэмнэгч асаалттай тул боломжгүй</string>
+    <string name="reverse_charging_sharing_level_message">Батарей хуваалцах түвшнээс доогуур байгаа тул боломжгүй</string>
+    <string name="reverse_charging_switch_summary">Төхөөрөмжүүдийг Pixel-н ард байрлуулах</string>
+    <string name="reverse_charging_switch_title">Бусад төхөөрөмжийг Pixel-н ард байрлуулан цэнэглэх</string>
+    <string name="reverse_charging_switch_title_message">Бусад төхөөрөмжийг цэнэглэх</string>
+    <string name="reverse_charging_title">Батарей хуваалцах</string>
+    <string name="reverse_charging_unplug_usb_cable_message">USB-C төхөөрөмжийг залгасан тул боломжгүй</string>
+    <string name="reverse_charging_warning_summary">Батарей %1$s-с бага байгаа тул боломжгүй</string>
+    <string name="reverse_charging_warning_title">Батарей %1$s-с бага цэнэгтэй байгаа тул батарей хуваалцах боломжгүй</string>
+    <string name="rtt_settings_always_visible">Байнга харагдана</string>
+    <string name="rtt_settings_no_visible">Харагдахгүй</string>
+    <string name="rtt_settings_title">Тухайн агшины текст (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Дуудлагын үеэр харагдана</string>
+    <string name="screen_time_summary_usage_today">Өнөөдөр %1$s</string>
+    <string name="search_bar_account_avatar_content_description">Профайлын зураг, Google Бүртгэлийг нээхийн тулд хоёр товшино уу</string>
+    <string name="security_advanced_settings">Нарийвчилсан тохиргоо</string>
+    <string name="security_dismiss_dialog_dismiss_button">Хаах</string>
+    <string name="security_dismiss_dialog_title">Энэ сануулгыг хаах уу?</string>
+    <string name="security_settings_face_enroll_done">Дууссан</string>
+    <string name="security_settings_face_enroll_education_message">Дараагийн дэлгэц дээр царайныхаа бүхий л өнцгийн зургийг авахын тулд толгойгоо эргүүлнэ үү</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">Дараагийн дэлгэц дээр утсаа нүднийхээ түвшинд барина уу</string>
+    <string name="security_settings_face_enroll_error_dialog_title">Бүртгэлийг гүйцээж чадсангүй</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Царайгаар түгжээ тайлах завсарласан</string>
+    <string name="security_settings_face_enroll_finish_description">Одоо та царайгаа утасныхаа түгжээг тайлах эсвэл аппуудад нэвтрэх, худалдан авалт зөвшөөрөх зэргээр өөрийгөө мөн болохыг баталгаажуулахын тулд ашиглах боломжтой</string>
+    <string name="security_settings_face_enroll_finish_title">Ямар ч асуудалгүй байна!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Харааны бэрхшээлтэй эсвэл толгойгоо хөдөлгөх боломжгүй хэрэглэгчийн тохируулга</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">Царайгаар түгжээ тайлахыг ашиглах үед та толгойгоо утасныхаа урд аль болох эгц байлгах шаардлагатай.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Нүд нээлттэй байх шаардлагатай</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Та болон таны хүүхэд хүссэн үедээ Тохиргоо хэсэгт түүний нүүрний загварыг устгах эсвэл Царайгаар түгжээ тайлах онцлогийг унтраах боломжтой. Нүүрний загваруудыг устгах хүртэл утсанд хадгална.
+
+Та g.co/pixel/faceunlock дээрээс нэмэлт мэдээлэл авна уу."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Хяналт танд болон таны хүүхдэд байна</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"Та хүссэн үедээ Тохиргоо хэсэгт нүүрний загвараа устгах эсвэл Царайгаар түгжээ тайлах онцлогийг унтраах боломжтой. Нүүрний загваруудыг таныг устгах хүртэл утсанд хадгална.
+
+Tа g.co/pixel/faceunlock дээрээс нэмэлт мэдээлэл авна уу."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Хяналт таны гарт</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"Царайгаар түгжээ тайлах онцлог нь таны хүүхдийг мөн болохыг баталгаажуулахын тулд түүний нүүрний өвөрмөц загварыг үүсгэдэг. Тохируулгын үед энэ нүүрний загварыг үүсгэхийн тулд таны хүүхэд нүүрнийхээ зургийг өөр өөр өнцгөөс авна.
+
+Тэд Царайгаар түгжээ тайлах онцлогийг ашиглах үед зургийг тэдний нүүрний загварыг шинэчлэхэд ашиглана. Тэдний нүүрний загварыг үүсгэхэд ашигласан зургийг хадгалдаггүй хэдий ч нүүрний загварыг утсанд аюулгүйгээр бүрмөсөн хадгалдаг. Бүх боловсруулалтыг утсанд аюулгүйгээр хийдэг."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"Царайгаар түгжээ тайлах онцлог нь таныг мөн болохыг баталгаажуулахын тулд таны нүүрний өвөрмөц загварыг үүсгэдэг. Тохируулгын үеэр энэ нүүрний загварыг үүсгэхийн тулд та нүүрнийхээ зургийг өөр өөр өнцгөөс авна.
+
+Та Царайгаар түгжээ тайлах онцлогийг ашиглах үед зургийг таны нүүрний загварыг шинэчлэхэд ашиглана. Таны нүүрний загварыг үүсгэхэд ашигласан зургийг хадгалахгүй хэдий ч нүүрний загварыг утсанд аюулгүйгээр бүрмөсөн хадгалдаг. Бүх боловсруулалтыг таны утсанд аюулгүйгээр хийдэг."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Энэ нь хэрхэн ажилладаг вэ?</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">Царайгаар түгжээ тайлах онцлог нь утасны түгжээг тайлах эсвэл таны хүүхдийг мөн болохыг баталгаажуулахын тулд таны хүүхдээс нүдээ нээлттэй байлгахыг шаардаж болно. Та болон таны хүүхэд энэ сонголтын хүссэн үедээ Тохиргоо хэсэгт асаах боломжтой.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Хэрэв таны хүүхэд ердийн үед нүдний шил зүүдэг бол тохируулгын үеэр шилээ зүүж болно.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">Та хүүхэд утас руу санамсаргүй харснаар түгжээг нь тайлах боломжтой. Таны хүүхдийн утасны түгжээг мөн түүний ихэр зэрэг түүнтэй маш адилхан харагддаг хүн эсвэл хэн нэгэн үүнийг түүний нүүрний өмнө барьсан тохиолдолд тайлах боломжтой.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">Царайгаар түгжээ тайлах онцлог нь утасны түгжээг тайлах эсвэл таныг мөн болохыг баталгаажуулахын тулд танаас нүдээ нээлттэй байлгахыг шаардаж болно. Та энэ сонголтыг хүссэн үедээ Тохиргоо хэсэгт асаах боломжтой.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Нүдний шил эсвэл үл ялиг өнгө оруулсан нарны шил зүүж болно.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">Утасны түгжээг тайлахдаа царайг ашиглах нь хүчтэй хээ эсвэл ПИН-с аюул багатай байж магадгүй.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">Та утас руу санамсаргүй харснаар түгжээг нь тайлах боломжтой. Таны утасны түгжээг мөн таны ихэр зэрэг тантай маш адилхан харагддаг хүн эсвэл хэн нэгэн үүнийг таны нүүрний өмнө барьсан тохиолдолд тайлах боломжтой.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Санаж яваарай</string>
+    <string name="security_settings_face_enroll_introduction_message">Утасныхаа түгжээг тайлах эсвэл аппуудад нэвтрэх, худалдан авалт зөвшөөрөх зэргээр өөрийгөө мөн болохыг баталгаажуулахын тулд царайгаа ашиглана уу.</string>
+    <string name="security_settings_face_enroll_introduction_title">Царайгаар түгжээ тайлахыг тохируулах</string>
+    <string name="security_settings_face_enroll_next">Дараах</string>
+    <string name="security_settings_face_enroll_partial_message">Гүйцэтгэлийг сайжруулахын тулд та Царайгаар түгжээ тайлахыг Тохиргоонд дахин тохируулж болно</string>
+    <string name="security_settings_face_enroll_partial_start_over">Дахин эхлүүлэх</string>
+    <string name="security_settings_face_enroll_partial_title">Царайгаар түгжээ тайлахыг тохируулж дууслаа</string>
+    <string name="security_settings_face_enroll_timeout_message">"Оронд нь хурдан тохируулгыг туршиж үзнэ үү. Та Царайгаар түгжээ тайлахыг ашиглахдаа толгойгоо утасныхаа урд талд аль болох эгц байлгах шаардлагатайг санаарай.
+
+Гүйцэтгэлийг сайжруулахын тулд та Царайгаар түгжээ тайлахыг Тохиргоонд дахин тохируулж болно."</string>
+    <string name="security_settings_face_enroll_timeout_title">Тохируулгыг үргэлжлүүлэх боломжгүй байна</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Дахин оролдох</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Хурдан тохируулгыг ашиглах</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Тохируулгаас гарах</string>
+    <string name="security_settings_face_enroll_too_hot_message">Утас хэт халсан тул Царайгаар түгжээ тайлахын тохируулгыг дуусгах боломжгүй байна. Утас хөрөх үед дараа дахин оролдоно уу.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Царайгаар түгжээ тайлахыг алгасах</string>
+    <string name="security_settings_face_enroll_too_hot_title">Утас хэт халсан байна</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Хурууны хээ тохируулахын тулд товшино уу</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Та g.co/pixel/fingerprintunlock дээрээс нэмэлт мэдээлэл авна уу.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Ажлын зориулалттай Pixel Imprint</string>
+    <string name="setup_suggestion_summary">Өгөгдөл хуулах, утсаараа төлөх ба бусад</string>
+    <string name="setup_suggestion_title">Тохируулж дуусгах</string>
+    <string name="smart_battery_footer">Батарейн ажиллах хугацааг уртасгахын тулд Дасан зохицох батарей нь гүйцэтгэл болон дэвсгэрийн үйл ажиллагааг багасгаж болно. Зарим мэдэгдэл саатаж болзошгүй.</string>
+    <string name="smart_battery_manager_title">Орчинтой тохируулах сонголт</string>
+    <string name="smart_battery_title">Дасан зохицох батарей</string>
+    <string name="sound_dashboard_summary">Дууны түвшин, хүртэхүй, Бүү саад бол</string>
+    <string name="sound_settings">Дуу болон чичиргээ</string>
+    <string name="storage_manager_indicator">Ухаалаг сан: ^1</string>
+    <string name="time_remaining_warning_subtext">Таны өнгөрсөн хэрэглээнд тулгуурлан %1$s орчмын хугацаа үлдсэн байна</string>
+    <string name="time_remaining_warning_text">Батерей удахгүй дуусна</string>
+    <string name="tips_suggestion_summary">Утсаараа юу хийж болохоо судлаарай</string>
+    <string name="tips_suggestion_title">Pixel-ээ мэдэж аваарай</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Утсаа нүүрнийхээ урд барина уу</string>
+    <string name="usb_use_file_transfers">Файл шилжүүлэлт / Android Авто</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">Утcыг чимээгүй дээр тохируулсан тул дуудлага ирэх үед чичирхийлэх тохиргоо боломжгүй</string>
+    <string name="vibration_haptics_settings_not_available_title">Боломжгүй</string>
+    <string name="wallpaper_dashboard_summary">Өнгө, загварын дүрс тэмдэг, аппын хүснэгт</string>
+    <string name="wifi_subscription_summary">OpenRoaming захиалгыг харах эсвэл өөрчлөх</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">%1$s-тай холбогдсон</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Холбогдохын тулд товшино уу</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Холбогдох боломжгүй байна. Дахин оролдохын тулд товшино уу.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Холбогдож байна…</string>
+</resources>

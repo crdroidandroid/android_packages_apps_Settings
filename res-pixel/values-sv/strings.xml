@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Inaktiv låsskärm</string>
+    <string name="gesture_silence_title">Rörelse för att stänga av ljudet för aviseringar</string>
+    <string name="gesture_skip_title">Rörelse för att hoppa över</string>
+    <string name="keywords_touch_sensitivity">tryck, känslighet, känslig, skärmskydd, film, tryckkänslig, tryckkänslighet</string>
+    <string name="touch_sensitivity_summary">Ger bättre tryckkänslighet med skärmskydd</string>
+    <string name="touch_sensitivity_title">Öka tryckkänsligheten</string>
+    <string name="accessibility_vibration_settings_screen_title">Använd vibration och haptik</string>
+    <string name="vibration_haptics_settings_not_available_summary">Vibration och haptik är inte tillgängliga eftersom telefonen är inställd på ljudlöst</string>
+    <string name="vibration_haptics_strength_category_title">Vibration och haptisk styrka</string>
+    <string name="accessibility_vibration_settings_title">Vibration och haptik</string>
+    <string name="columbus_title">Använd snabbtryck för att starta åtgärderna</string>
+    <string name="vibrate_for_calls_category_title">Samtal</string>
+    <string name="accessibility_alarm_vibration_title">Vibration för alarm</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge har konfigurerats. Fortsätt till nästa skärm eller gör fler justeringar.</string>
+    <string name="accessibility_keyboard_haptics_title">Tangentbordets haptik</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">Smart laddning</string>
+    <string name="adaptive_charging_description">Ladda i ett jämnt tempo under natten så att batteritiden håller i längden. Batteriet laddas fullt före väckning utifrån alarmet.</string>
+    <string name="adaptive_charging_time_estimate"><b>Smart laddning</b> • Färdigt kl. %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Inställningar</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Assistent, senaste apparna, standardappar</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Öppna Assistent</string>
+    <string name="assist_gesture_enrollment_do_it_later">Gör det senare</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Kläm lätt</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Kläm hårt</string>
+    <string name="assist_gesture_enrollment_settings">Inställningar</string>
+    <string name="assist_gesture_setting_enable_assistant_text">Om du vill tala med assistenten klämmer du snabbt på den nedre delen av mobilen och släpper sedan</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Starta assistenten genom att klämma</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Kläm för att stänga av ljudet på alarm, timers, aviseringar och inkommande samtal</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">Kläm för att stänga av ljudet på aviseringar och inkommande samtal</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Stänga av ljudet genom att klämma</string>
+    <string name="assist_gesture_setting_enable_wake_title">Öppna assistenten när skärmen är av</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Kläm lätt</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Kläm hårt</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Klämkänslighet</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Kan öppna assistenten av misstag</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Kläm på mobilens nedre del</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Kläm snabbare</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Kläm hårdare</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Kläm snabbt och släpp sedan</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">Testa att justera skjutreglaget</string>
+    <string name="assist_gesture_training_enrolling_text">Kläm på nedre halvan av mobilen. Du kan justera hur hårt du behöver klämma.</string>
+    <string name="assist_gesture_training_enrolling_title">Kläm snabbt och släpp</string>
+    <string name="assist_gesture_training_finished_text">Du kan också ändra klämkänsligheten senare under Inställningar</string>
+    <string name="assist_gesture_training_finished_title">Slutför eller fortsätt justera</string>
+    <string name="assist_gesture_training_intro_text">När du vill prata med assistenten klämmer du på nedre delen av mobilen och släpper</string>
+    <string name="assist_gesture_training_intro_title">Starta assistenten genom att klämma</string>
+    <string name="assist_gesture_training_suggestion_summary">Prata med assistenten. Tysta samtal.</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Prata med assistenten. Tysta alarm och samtal.</string>
+    <string name="assist_gesture_training_suggestion_title">Kläm för att öppna Assistent</string>
+    <string name="automatic_storage_manager_activation_warning">När du är uppkopplad har du fortfarande tillgång till foton och videor i samma kvalitet som valdes för säkerhetskopiering</string>
+    <string name="automatic_storage_manager_days_title">Ta bort säkerhetskopierade foton och videor</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Vill du inaktivera Smart lagring? 
+
+Om lagringsutrymmet nästan är fullt frigörs inget utrymme av Smart lagring."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Säkerhetskopierade nedladdn.</string>
+    <string name="automatic_storage_manager_preference_title">Smart lagring</string>
+    <string name="automatic_storage_manager_primary_switch_title">Använd Smart lagring</string>
+    <string name="automatic_storage_manager_settings">Smart lagring</string>
+    <string name="automatic_storage_manager_text">Om du nästan har slut på lagringsutrymme kan du ta bort säkerhetskopior av foton och videor. De finns fortfarande kvar i Google Foto.</string>
+    <string name="aware_disabled_preference_action">Aktivera</string>
+    <string name="aware_disabled_preference_neutral">Inte nu</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense är inte tillgängligt eftersom flygplansläget och batterisparläget är på</string>
+    <string name="aware_footer_when_airplane_on">Motion Sense är inte tillgängligt eftersom flygplansläget är på</string>
+    <string name="aware_footer_when_batterysaver_on">Motion Sense är inte tillgängligt eftersom batterisparläget är på</string>
+    <string name="aware_gesture_summary_off">Quick Gestures är på, Active Edge är av</string>
+    <string name="aware_gesture_summary_on_non_assist">Quick Gestures är på, Active Edge är på</string>
+    <string name="aware_gesture_summary_on_with_assist">Quick Gestures är på, Active Edge är på, kläm för att öppna Assistent</string>
+    <string name="aware_info_button_description">Fler inställningar</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">Inte tillgängligt eftersom flygplansläget och batterisparläget är på</string>
+    <string name="aware_summary_when_airplane_on">Inte tillgängligt eftersom flygplansläget är på</string>
+    <string name="aware_summary_when_batterysaver_on">Inte tillgängligt eftersom batterisparläget är på</string>
+    <string name="backup_data_summary">Spara en säkerhetskopia av appdata, wifi-lösenord och andra inställningar på Googles servrar</string>
+    <string name="backup_suggestion_cancel">Avbryt</string>
+    <string name="backup_suggestion_dialog_description">All data från mobilens internminne raderas.</string>
+    <string name="backup_suggestion_dialog_title">Vill du återställa enheten?</string>
+    <string name="backup_suggestion_get_started">läs mer</string>
+    <string name="backup_suggestion_item_summary">Kopiera från en Android- eller iPhone®-enhet</string>
+    <string name="backup_suggestion_item_title">Saknar du data från en mobil?</string>
+    <string name="backup_suggestion_missing_description">"Om någon data inte visas, till exempel sms och foton, kan du överföra den till din Pixel med en sladd.
+
+Kom igång genom att återställa Pixel. All data på den här mobilen raderas, och det omfattar även anpassade inställningar och innehåll som inte har synkroniserats med molnet."</string>
+    <string name="backup_suggestion_missing_title">Saknas data?</string>
+    <string name="backup_suggestion_next">nästa</string>
+    <string name="backup_suggestion_other_ways_to_copy">Andra sätt att kopiera data</string>
+    <string name="backup_suggestion_reset_description">"På nästa skärm kan du återställa Pixel. Det här är det enda sättet att överföra data med en sladd.
+
+När mobilen har återställts konfigurerar du den och väljer att hämta data från en tidigare mobil."</string>
+    <string name="backup_suggestion_reset_title">Återställ Pixel</string>
+    <string name="backup_suggestion_what_is_needed_summary">"När du har återställt mobilen behöver du
+
+• din tidigare mobil (LINK_BEGINde flesta mobilerLINK_END med Android 5.0 eller senare eller iOS® 8.0 eller senare stöds)
+• en laddnings- eller datasladd till din tidigare mobil
+• med den Quick Switch Adapter som medföljde din Pixel."</string>
+    <string name="backup_suggestion_what_is_needed_title">Vad du behöver för att kopiera data</string>
+    <string name="battery_manager_summary">Förläng batteritiden och optimera laddningen</string>
+    <string name="battery_manager_summary_unsupported">Utöka batteritiden</string>
+    <string name="battery_missing_link_message">Läs mer</string>
+    <string name="battery_suggestion_summary">Aktivera Smart batteri</string>
+    <string name="battery_tip_smart_battery_summary">Aktivera Smart batteri</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s kopplas inte längre till någon enhet som har länkats till det här Google-kontot</string>
+    <string name="columbus_gesture_detected">Snabbtryck har registrerats</string>
+    <string name="columbus_gesture_enrollment_complete">Klar</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Inte nu</string>
+    <string name="columbus_gesture_enrollment_settings">Öppna inställningarna</string>
+    <string name="columbus_gesture_enrollment_try_it">Testa</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Välj en åtgärd</string>
+    <string name="columbus_gesture_training_action_text">Välj vad som ska hända när du använder Snabbtryck. Det här kan ändras senare i inställningarna.</string>
+    <string name="columbus_gesture_training_action_title">Välj alternativ för Snabbtryck</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Dubbeltryckning 1 av 2 registrerades</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Vi testar igen. Tryck snabbt två gånger på baksidan av telefonen.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Bra!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Dubbeltryckning 2 av 2 registrerades</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Nu kan du börja använda Snabbtryck</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Rätt!</string>
+    <string name="columbus_gesture_training_enrolling_text">Tryck snabbt två gånger på baksidan av telefonen.</string>
+    <string name="columbus_gesture_training_enrolling_title">Testa Snabbtryck</string>
+    <string name="columbus_gesture_training_finished_text">Du kan ändra tryckstyrka för Snabbtryck i inställningarna.</string>
+    <string name="columbus_gesture_training_finished_title">Du har konfigurerat Snabbtryck</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Genom att trycka snabbt två gånger på enhetens baksida kan du använda assistenten när du är på språng. Du kan anpassa den här rörelsen i inställningarna.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Ta en skärmbild, visa aviseringar eller utför en annan åtgärd med två tryck.</string>
+    <string name="columbus_gesture_training_intro_title">Snabbtryck för snabbåtgärder</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Välj vilken app som ska öppnas</string>
+    <string name="columbus_gesture_training_launch_text">Välj vilken app som ska öppnas när du använder Snabbtryck.</string>
+    <string name="columbus_gesture_training_launch_title">Välj app som ska öppnas</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">Inställningar för %1$s-genvägar</string>
+    <string name="columbus_launch_settings_activity_title">Inställningar för Snabbtryck</string>
+    <string name="columbus_name">Snabbtryck</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">Inställningar för %1$s</string>
+    <string name="columbus_setting_action_assistant_title">Komma åt din digitala assistent</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Inget app har valts</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Appen har inte installerats</string>
+    <string name="columbus_setting_action_launch_title">Öppna appen</string>
+    <string name="columbus_setting_action_notification_title">Visa aviseringar</string>
+    <string name="columbus_setting_action_open_app_title">Öppna appen</string>
+    <string name="columbus_setting_action_overview_title">Visa de senast använda apparna</string>
+    <string name="columbus_setting_action_play_pause_title">Spela upp eller pausa media</string>
+    <string name="columbus_setting_action_screenshot_title">Ta skärmbild</string>
+    <string name="columbus_setting_actions_title">Tryck två gånger på baksidan av telefonen</string>
+    <string name="columbus_setting_additional_settings_title">Styrka för Snabbtryck</string>
+    <string name="columbus_setting_app_selection_help_text">Välj en app som ska öppnas när du trycker två gånger på baksidan av telefonen. Om du avinstallerar appen inaktiveras Snabbtryck tills du väljer en annan app.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Välj vad som ska hända när du öppnar appen med Snabbtryck.</string>
+    <string name="columbus_setting_enable_switch_title">Använd Snabbtryck</string>
+    <string name="columbus_setting_sensitivity_title">Kräv kraftigare tryck</string>
+    <string name="connectivity_helper_call_quality_category">Samtalskvalitet</string>
+    <string name="connectivity_helper_call_quality_summary">Få aviseringar om orsaker till anslutningsproblem under samtal</string>
+    <string name="connectivity_helper_call_quality_title">Få aviseringar</string>
+    <string name="connectivity_helper_d2d_summary">Skicka personen du pratar med en avisering om din telefon har anslutningsproblem under samtal</string>
+    <string name="connectivity_helper_d2d_title">Dela information om anslutning</string>
+    <string name="connectivity_helper_footnote">Du kan dela information om anslutning när personen du pratar med använder en enhet och ett nätverk som stöds</string>
+    <string name="content_capture">Anpassa med hjälp av appdata</string>
+    <string name="copy_toast_msg">Länk kopierad till Urklipp</string>
+    <string name="dock_summary_charging_phone">Ladda mobilen</string>
+    <string name="double_twist_for_camera_mode_summary">Byt till och från selfieläget i Google Kamera genom att vrida snabbt två gånger när appen är öppen.</string>
+    <string name="downloads_backup_text">Nedladdade filer säkerhetskopieras till Google Drive</string>
+    <string name="duration_less_than_one_minute">Mindre än 1 minut</string>
+    <string name="extra_app_info_label">Speloptimering</string>
+    <string name="face_enrolling_center_head">Passa in ansiktet i den inre ramen</string>
+    <string name="face_enrolling_description">Fånga alla vinklar av ansiktet genom att ta bort alla rutor.</string>
+    <string name="face_enrolling_do_it_later">Gör det senare</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Avbryt</string>
+    <string name="face_enrolling_gaze_dialog_continue">Konfigurera utan vidöppna ögon</string>
+    <string name="face_enrolling_gaze_dialog_message">Vill du konfigurera ansiktslås utan att behöva ha öppna ögon? Om du väljer att konfigurera funktionen så här kan andra låsa upp telefonen genom att hålla upp den mot ditt ansikte när du inte tittar.</string>
+    <string name="face_enrolling_gaze_dialog_title">Konfigurera utan vidöppna ögon</string>
+    <string name="face_enrolling_how_to_setup">Konfigurera så här</string>
+    <string name="face_enrolling_title">Håll mobilen stilla. Vrid långsamt på huvudet.</string>
+    <string name="face_enrolling_title_accessibility">Titta rakt på telefonen</string>
+    <string name="face_enrolling_title_accessibility_progress">Fortsätt att tita rakt på telefonen</string>
+    <string name="face_enrolling_too_close">Flytta mobilen längre bort</string>
+    <string name="face_enrolling_too_far">För mobilen närmare</string>
+    <string name="face_enrolling_too_high">Sänk mobilen</string>
+    <string name="face_enrolling_too_left">Flytta mobilen åt höger</string>
+    <string name="face_enrolling_too_low">Höj mobilen</string>
+    <string name="face_enrolling_too_right">Flytta mobilen åt vänster</string>
+    <string name="face_enrolling_turn_head_to_arrow">Vrid huvudet mot pilen</string>
+    <string name="face_enrolling_turned_too_far">Vrid inte fullt så mycket på huvudet</string>
+    <string name="fallback_menu_item_copy_link">Kopiera länk</string>
+    <string name="fallback_menu_item_open_in_browser">Öppna i webbläsaren</string>
+    <string name="fallback_menu_item_share_link">Dela länk</string>
+    <string name="fullbackup_data_summary">"Säkerhetskopiera data på enheten (t.ex. wifi-lösenord och samtalshistorik) och appdata (t.ex. inställningar och filer som har sparats i appar) automatiskt på Google Drive.
+
+När du aktiverar automatisk säkerhetskopiering sparas enhets- och appdata då och då i en privat mapp i Google Drive. Appdata kan vara alla typer av data som en app har sparat (beroende på utvecklarinställningarna), inklusive data som kan vara känslig, till exempel kontakter, meddelanden och foton.
+
+Säkerhetskopierad data räknas inte in i ditt lagringsutrymme på Drive. Stora filer eller filer som utvecklaren har valt att exkludera från tjänsten säkerhetskopieras inte."</string>
+    <string name="fullbackup_erase_dialog_message">Vill du sluta säkerhetskopiera enhetsdata (t.ex. wifi-lösenord och samtalshistorik) och appdata (t.ex. inställningar och filer som har sparats i appar), och radera alla kopior på Google Drive?</string>
+    <string name="game_dashboard_always_on_summary">Visa genväg i Spelöversikt i spel</string>
+    <string name="game_dashboard_always_on_title">Spelöversikt</string>
+    <string name="game_dashboard_dnd_rule_name">Spel</string>
+    <string name="game_dashboard_dnd_summary">Få bara aviseringar från viktiga personer och appar när du spelar</string>
+    <string name="game_dashboard_dnd_title">Stör ej för spel</string>
+    <string name="game_mode_battery_description">Utökar batteritiden</string>
+    <string name="game_mode_battery_title">Batterisparläge</string>
+    <string name="game_mode_performance_description">Maximerar bildfrekvensen, drar mer batteri</string>
+    <string name="game_mode_performance_title">Prestanda</string>
+    <string name="game_mode_standard_description">Använder spelets standardinställningar</string>
+    <string name="game_mode_standard_title">Standard</string>
+    <string name="game_optimization_unavailable">Inte tillgängligt för detta spel</string>
+    <string name="gesture_aware_confirmation_action_button">OK</string>
+    <string name="gesture_aware_footer"><annotation link="link">Inställningar</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Inställningar</annotation></string>
+    <string name="gesture_skip_direction_ltr">Vänster till höger</string>
+    <string name="gesture_skip_direction_rtl">Höger till vänster</string>
+    <string name="gesture_skip_direction_title">Riktning för att hoppa över</string>
+    <string name="gesture_skip_footer"><annotation link="link">Inställningar</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Inställningar</annotation></string>
+    <string name="global_actions_panel_short_title">Kort och värdekort</string>
+    <string name="global_actions_panel_summary">Öppna betalningsmetoder, boardingpass med mera genom att hålla strömbrytaren nedtryckt.</string>
+    <string name="global_actions_panel_title">Visa kort och värdekort</string>
+    <string name="install_unknown_applications">Tillåt installation av appar från andra källor än Play Butik</string>
+    <string name="keywords_accessibility_menu">motorik, snabbmeny, stödmeny, pekgester, behändighet</string>
+    <string name="keywords_adaptive_charging">laddning, ladda, smart laddning, anpassad laddning, batteri, batterihälsa</string>
+    <string name="keywords_assist_gesture_launch">rörelse, edge, sida, active edge, klämma, grepp, assistera, assistent, klämma, hey google, google assistent</string>
+    <string name="keywords_assist_gesture_silence">rörelse, edge, sida, active edge, tysta, snooza, alarm, inkommande samtal, tyst, skärm, display, låsskärm, klämma, grepp, stopp</string>
+    <string name="keywords_assist_gesture_wake">rörelse, edge, sida, active edge, väcka, aviseringar, skärm, display, skärm, skärm av, skräm på, klämma, viloläge, grepp</string>
+    <string name="keywords_battery_share">batteridelning, trådlös laddning</string>
+    <string name="keywords_battery_share_settings">batteridelning, omvänd trådlös laddning</string>
+    <string name="keywords_content_capture">innehållsregistrering, appinnehåll, appdata</string>
+    <string name="keywords_gesture">rörelse, rörelser</string>
+    <string name="keywords_global_actions_panel">kort, värdekort</string>
+    <string name="keywords_live_transcribe">Textning, undertexter, undertextning, Live Caption, hörselskada, hörselnedsättning, CART, tal till text, undertext</string>
+    <string name="keywords_reverse_charging_stop_threshold">Stäng av batteridelning när telefonen når:</string>
+    <string name="keywords_select_to_speak">Höra text, läsa högt, skärmuppläsning, skärmläsare</string>
+    <string name="keywords_sound_amplifier">larmcentral, förstärk, ljudförstärkning, hörselskada, hörselnedsättning, förstärkning</string>
+    <string name="keywords_sound_notifications">Aviseringar, hörselskada, hörselnedsättning, avisera</string>
+    <string name="keywords_switch_access">motorik, brytare, AT, hjälpmedelsteknik, paralys, ALS, genomsökning, stegvis genomsökning</string>
+    <string name="keywords_talkback">Skärmläsare, uppläsning, VoiceOver, Röstassistent, Blind, Nedsatt syn, TTS, text till tal, talad feedback</string>
+    <string name="keywords_voice_access">röst, röststyrning, motorik, hand, mickdiktering, mikrofon, prata, styra</string>
+    <string name="language_input_gesture_summary_off">Active Edge har inaktiverats</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge har aktiverats</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge är på. Kläm för att öppna Assistent.</string>
+    <string name="me_card_title">Min Pixel</string>
+    <string name="my_device_info_account_preference_title">Google-konto</string>
+    <string name="owner_info_settings_edit_text_hint">T.ex. Jonas Pixel.</string>
+    <string name="reverse_charging_charging_wirelessly_message">Inte tillgängligt eftersom telefonen laddas trådlöst</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Batteridelning är inte tillgängligt eftersom Pixel-enheten är för varm. Låt enheten svalna och försök sedan igen.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">Batteridelning är inte tillgängligt eftersom telefonen laddas trådlöst</string>
+    <string name="reverse_charging_detail_footer_title">Telefonens batteri tar slut snabbare när du använder batteridelning. Batteridelning fungerar med kompatibla hörsnäckor, klockor, telefoner och annat. Ta bort fodralet från telefonen så laddas den bättre.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"Batteridelning fungerar med kompatibla hörsnäckor, telefoner och annat.
+
+Telefonens batteri tar slut snabbare när du använder den här funktionen. Batteridelning inaktiveras automatiskt efter några minuter om ingen annan enhet upptäcks. Ta bort telefonens fodral och annat som kan störa, till exempel metallföremål, för att laddningen ska fungera så bra som möjligt."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">Batteridelning är inte tillgängligt eftersom batterisparläget är på</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">Batteridelning är inte tillgängligt eftersom en USB-C-enhet är inkopplad</string>
+    <string name="reverse_charging_instructions_title">"Ladda andra enheter med Pixel.
+Vänd på telefonen om du vill testa."</string>
+    <string name="reverse_charging_is_off_summary">Av</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Delar och laddar batteri</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Delar batteri</string>
+    <string name="reverse_charging_is_on_summary">På/ladda andra enheter</string>
+    <string name="reverse_charging_main_switch">Tillåt batteridelning</string>
+    <string name="reverse_charging_off_low_battery_summary">Av/telefonens batterinivå är under %1$s</string>
+    <string name="reverse_charging_off_sharing_level_summary">Av/batterinivån är för låg för delning</string>
+    <string name="reverse_charging_overheat_summary">Inte tillgängligt eftersom Pixel-enheten är för varm. Låt telefonen svalna och försök sedan igen.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">Inte tillgängligt eftersom batterisparläget är på</string>
+    <string name="reverse_charging_sharing_level_message">Delning är inte tillgängligt eftersom batterinivån är för låg</string>
+    <string name="reverse_charging_switch_summary">Placera enheter på Pixel-telefonens baksida</string>
+    <string name="reverse_charging_switch_title">Ladda andra enheter genom att hålla dem mot baksidan på Pixel</string>
+    <string name="reverse_charging_switch_title_message">Ladda andra enheter</string>
+    <string name="reverse_charging_title">Batteridelning</string>
+    <string name="reverse_charging_unplug_usb_cable_message">Inte tillgängligt eftersom en USB-C-enhet är inkopplad</string>
+    <string name="reverse_charging_warning_summary">Inte tillgängligt eftersom batterinivån är under %1$s</string>
+    <string name="reverse_charging_warning_title">Batteridelning är inte tillgängligt eftersom batterinivån är under %1$s</string>
+    <string name="rtt_settings_always_visible">Alltid synlig</string>
+    <string name="rtt_settings_no_visible">Inte synlig</string>
+    <string name="rtt_settings_title">RTT (realtidstext)</string>
+    <string name="rtt_settings_visible_during_call">Synlig under samtal</string>
+    <string name="screen_time_summary_usage_today">%1$s i dag</string>
+    <string name="search_bar_account_avatar_content_description">Profilbild, tryck snabbt två gånger för att öppna Google-kontot</string>
+    <string name="security_advanced_settings">Avancerade inställningar</string>
+    <string name="security_dismiss_dialog_dismiss_button">Ignorera</string>
+    <string name="security_dismiss_dialog_title">Vill du ignorera varningen?</string>
+    <string name="security_settings_face_enroll_education_message">Vrid på huvudet på nästa skärm så att ditt ansikte kan registreras ur olika vinklar</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">Håll telefonen i ögonhöjd när du kommer till nästa skärm</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">Tidsgränsen för ansiktsregistrering har uppnåtts. Försök igen.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Konfigureringen av ansiktslås har nått tidsgränsen</string>
+    <string name="security_settings_face_enroll_finish_description">Nu kan du låsa upp telefonen eller verifiera din identitet med ditt ansikte, till exempel när du loggar in i appar eller godkänner ett köp</string>
+    <string name="security_settings_face_enroll_finish_title">Det ser bra ut!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Konfigurering vid nedsatt syn eller rörelseförmåga</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">När du använder ansiktslås kan du behöva ha huvudet mer rakt framför telefonen.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Du måste ha ögonen öppna</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Du och ditt barn kan radera ansiktsmodellen eller inaktivera ansiktslås när som helst i inställningarna Ansiktsmodeller lagras på telefonen tills du raderar dem.
+
+Läs mer på g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Det är du och ditt barn som har kontrollen</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"Du kan radera ansiktsmodellen eller inaktivera ansiktslås när du vill i inställningarna. Ansiktsmodeller lagras på telefonen tills du raderar dem.
+
+Läs mer på g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Du bestämmer själv</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"Med ansiktslås skapas en unik modell av ditt barns ansikte så att barnet kan verifiera sin identitet. Ansiktsmodellen skapas under konfigureringen genom att bilder tas av ansiktet från olika vinklar.
+
+När barnet använder ansiktslås uppdateras ansiktsmodellen med hjälp av bilder. De bilder som används för att skapa ansiktsmodellen lagras inte, men ansiktsmodellen lagras säkert på telefonen och lämnar den aldrig. All behandling görs säkert på telefonen."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"Med ansiktslås skapas en unik modell av ditt ansikte så att du kan verifiera din identitet. Ansiktsmodellen skapas under konfigureringen genom att bilder tas av ansiktet från olika vinklar.
+
+När du använder ansiktslås uppdateras ansiktsmodellen med hjälp av bilder. De bilder som används för att skapa ansiktsmodellen lagras inte, men ansiktsmodellen lagras säkert på telefonen och lämnar den aldrig. All behandling görs säkert på telefonen."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Så fungerar det</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">Ditt barns ögon kan behöva vara öppna för att låsa upp telefonen med ansiktslåset eller verifiera sin identitet. Du och ditt barn kan när som helst aktivera inställningen i Inställningar.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Om ditt barn vanligen använder glasögon kan barnet ha dem på sig under konfigureringen.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">Om ditt barn tittar på telefonen kan barnet oavsiktligt låsa upp den. Telefonen kanske kan låsas upp av någon som är mycket lik ditt barn, till exempel ett syskon, eller om någon håller upp den framför barnets ansikte.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">Dina ögon kan behöva vara öppna för att låsa upp telefonen med ansiktslåset eller verifiera din identitet. Du kan när som helst aktivera inställningen i Inställningar.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Glasögon eller solglasögon i en ljus ton är okej.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">Att låsa upp telefonen med ansiktet kan vara mindre säkert än ett starkt grafiskt lösenord eller en stark pinkod.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">Om du tittar på telefonen kan du oavsiktligt låsa upp den. Telefonen kanske kan låsas upp av någon som är mycket lik dig, till exempel ett syskon, eller om någon håller upp den framför ditt ansikte.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Kom ihåg</string>
+    <string name="security_settings_face_enroll_introduction_message">Lås upp telefonen eller verifiera din identitet med ditt ansikte, till exempel när du loggar in i appar eller godkänner ett köp.</string>
+    <string name="security_settings_face_enroll_introduction_title">Konfigurera ansiktslås</string>
+    <string name="security_settings_face_enroll_next">Nästa</string>
+    <string name="security_settings_face_enroll_partial_message">Du kan göra om konfigureringen av ansiktslås i inställningarna och få bättre prestanda</string>
+    <string name="security_settings_face_enroll_partial_start_over">Börja om</string>
+    <string name="security_settings_face_enroll_partial_title">Konfigureringen av ansiktslås har avslutats</string>
+    <string name="security_settings_face_enroll_timeout_message">"Testa snabb konfigurering i stället Kom ihåg att du kan behöva ha huvudet mer rakt framför telefonen när du använder ansiktslås.
+
+Du kan konfigurera ansiktslås igen i inställningarna och få bättre prestanda."</string>
+    <string name="security_settings_face_enroll_timeout_title">Det gick inte att fortsätta med konfigureringen</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Försök igen</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Använd snabb konfiguration</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Avsluta konfigurationen</string>
+    <string name="security_settings_face_enroll_too_hot_message">Det går inte att slutföra konfigureringen av ansiktslås eftersom telefonen är för varm. Försök igen senare när telefonen har svalnat.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Hoppa över ansiktslås</string>
+    <string name="security_settings_face_enroll_too_hot_title">Telefonen är för varm</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Tryck här om du vill konfigurera fingeravtryck</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Läs mer på g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint för jobbet</string>
+    <string name="setup_suggestion_summary">Kopiera data, betala med telefonen m.m.</string>
+    <string name="setup_suggestion_title">Slutför konfigureringen</string>
+    <string name="smart_battery_footer">Med funktionen Smart batteri kan prestandan och bakgrundsaktiviteten begränsas i syfte att förlänga batteritiden. Vissa aviseringar kan fördröjas.</string>
+    <string name="smart_battery_manager_title">Smarta batterifunktioner</string>
+    <string name="smart_battery_title">Smart batteri</string>
+    <string name="sound_dashboard_summary">Volym, haptik, Stör ej</string>
+    <string name="sound_settings">Ljud och vibration</string>
+    <string name="storage_manager_indicator">Smart lagring: ^1</string>
+    <string name="time_remaining_warning_subtext">Omkring %1$s kvar, baserat på tidigare användning</string>
+    <string name="time_remaining_warning_text">Batteriet kan ta slut snart</string>
+    <string name="tips_suggestion_summary">Ta reda på vad du kan göra med telefonen</string>
+    <string name="tips_suggestion_title">Bekanta dig med Pixel</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Håll upp telefonen framför ansiktet</string>
+    <string name="usb_use_file_transfers">Filöverföring/Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">Vibrera vid samtal är inte tillgängligt eftersom telefonen är inställd på ljudlöst</string>
+    <string name="vibration_haptics_settings_not_available_title">Inte tillgängligt</string>
+    <string name="wallpaper_dashboard_summary">Färger, ikoner med tema, rutnät för appar</string>
+    <string name="wifi_subscription_summary">Visa eller ändra prenumeration för OpenRoaming</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">Ansluten med %1$s</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Tryck för att ansluta</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Det gick inte att ansluta Tryck och försök igen.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Ansluter …</string>
+</resources>

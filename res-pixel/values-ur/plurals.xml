@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">سبھی وارننگز دیکھیں (%1$d)</item>
+        <item quantity="one">%1$d وارننگ دکھائیں</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">%1$d وارننگز</item>
+        <item quantity="one">%1$d وارننگ</item>
+    </plurals>
+</resources>

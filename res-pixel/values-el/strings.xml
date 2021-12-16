@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Οθόνη κλειδώματος σε αδράνεια</string>
+    <string name="gesture_silence_title">Κίνηση σίγασης ειδοποιήσεων</string>
+    <string name="gesture_skip_title">Κίνηση παράβλεψης</string>
+    <string name="keywords_touch_sensitivity">αφή, ευαισθησία, ευαίσθητο, προστατευτικό οθόνης, ταινία, αποκριτικό, απόκριση</string>
+    <string name="touch_sensitivity_summary">Βελτιώνει τη αφή κατά τη χρήση προστατευτικών οθόνης</string>
+    <string name="touch_sensitivity_title">Αύξηση ευαισθησίας αφής</string>
+    <string name="accessibility_vibration_settings_screen_title">Χρήση δόνησης και απτικής λειτουργίας</string>
+    <string name="vibration_haptics_settings_not_available_summary">Η Δόνηση και η απτική λειτουργία δεν είναι διαθέσιμες επειδή το τηλέφωνο είναι σε αθόρυβη λειτουργία</string>
+    <string name="vibration_haptics_strength_category_title">Ισχύς δόνησης και απτικής ανάδρασης</string>
+    <string name="accessibility_vibration_settings_title">Δόνηση και απτική λειτουργία</string>
+    <string name="columbus_title">Γρήγορο πάτημα για έναρξη ενεργειών</string>
+    <string name="vibrate_for_calls_category_title">Κλήσεις</string>
+    <string name="accessibility_alarm_vibration_title">Δόνηση ξυπνητηριού</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Ρύθμιση Active Edge. Μεταβείτε στην επόμενη οθόνη ή συνεχίστε την προσαρμογή.</string>
+    <string name="accessibility_keyboard_haptics_title">Απτική λειτουργία πληκτρολογίου</string>
+    <string name="accessibility_vibration_preferences_file">Προτιμήσεις_δόνησης</string>
+    <string name="adaptive_charging">Προσαρμοστική φόρτιση</string>
+    <string name="adaptive_charging_description">Φορτίστε την μπαταρία σταθερά κατά τη διάρκεια της νύχτας, για να διατηρήσετε τη μεγάλη διάρκεια ζωής της. Χρησιμοποιεί το ξυπνητήρι, ώστε η μπαταρία να έχει φορτιστεί πλήρως όταν ξυπνάτε.</string>
+    <string name="adaptive_charging_time_estimate"><b>Προσαρμοστική φόρτιση</b> • Πλήρης φόρτιση σε %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Προτιμήσεις</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Βοηθός, πρόσφατες εφαρμογές, προεπιλεγμένες εφαρμογές</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Συνέχεια στον Βοηθό</string>
+    <string name="assist_gesture_enrollment_do_it_later">Αργότερα</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Απαλή πίεση</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Δυνατή πίεση</string>
+    <string name="assist_gesture_enrollment_settings">Ρυθμίσεις</string>
+    <string name="assist_gesture_setting_enable_assistant_text">Για να μιλήσετε στον Βοηθό, ασκήστε γρήγορα πίεση στο κάτω μισό του τηλεφώνου και έπειτα ελευθερώστε</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Πιέστε για τον Βοηθό σας</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Πιέστε για σίγαση ξυπνητηριών, χρονομέτρων, ειδοποιήσεων και εισερχόμ. κλήσεων</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">Πιέστε για σίγαση ειδοποιήσεων και εισερχόμενων κλήσεων</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Πιέστε για σίγαση του τηλεφώνου</string>
+    <string name="assist_gesture_setting_enable_wake_title">Άνοιγμα Βοηθού όταν είναι απενεργοποιημένη η οθόνη</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Απαλή πίεση</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Δυνατή πίεση</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Ευαισθησία πίεσης</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Ίσως εμφανιστεί κατά λάθος ο Βοηθός</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Πιέστε το κάτω μισό του τηλεφώνου</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Πιέστε πιο γρήγορα</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Πιέστε πιο δυνατά</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Πιέστε γρήγορα και έπειτα ελευθερώστε</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">Δοκιμάστε να προσαρμόσετε το ρυθμιστικό</string>
+    <string name="assist_gesture_training_enrolling_text">Πιέστε το κάτω μισό τμήμα του τηλεφώνου σας. Μπορείτε να προσαρμόσετε την ισχύ της πίεσης.</string>
+    <string name="assist_gesture_training_enrolling_title">Πιέστε γρήγορα και ελευθερώστε</string>
+    <string name="assist_gesture_training_finished_text">Αργότερα, θα μπορείτε επίσης να αλλάξετε την ευαισθησία της πίεσης από τις Ρυθμίσεις</string>
+    <string name="assist_gesture_training_finished_title">Ολοκληρώστε ή συνεχίστε την προσαρμογή</string>
+    <string name="assist_gesture_training_intro_text">Μιλήστε με τον Βοηθό ανά πάσα στιγμή, πιέζοντας γρήγορα το κάτω μισό του τηλεφ. και ελευθερώνοντας</string>
+    <string name="assist_gesture_training_intro_title">Πιέστε για τον Βοηθό σας</string>
+    <string name="assist_gesture_training_suggestion_summary">Μιλήστε στον Βοηθό, θέστε τις κλήσεις σε σίγαση</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Μιλήστε στον Βοηθό, θέστε τα ξυπνητήρια και τις κλήσεις σε σίγαση</string>
+    <string name="assist_gesture_training_suggestion_title">Πιέστε και ελευθερώστε για ενεργ. Βοηθού</string>
+    <string name="automatic_storage_manager_activation_warning">Όταν είστε συνδεδεμένοι, εξακολουθείτε να έχετε πρόσβαση σε φωτογραφίες και βίντεο στην ποιότητα που έχετε επιλέξει για τα αντίγραφα ασφαλείας</string>
+    <string name="automatic_storage_manager_days_title">Κατάργηση φωτογραφιών και βίντεο για τα οποία έχουν δημιουργηθεί αντίγραφα ασφαλείας</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Απενεργοποίηση Έξυπνου αποθηκευτικού χώρου; 
+
+Ο Έξυπνος αποθηκευτικός χώρος δεν θα ελευθερώνει χώρο όταν ο αποθηκευτικός χώρος σας είναι σχεδόν πλήρης."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Αντίγραφα ασφαλείας λήψεων</string>
+    <string name="automatic_storage_manager_preference_title">Έξυπνος αποθηκευτικός χώρος</string>
+    <string name="automatic_storage_manager_primary_switch_title">Χρήση Έξυπνου αποθηκευτικού χώρου</string>
+    <string name="automatic_storage_manager_settings">Έξυπνος αποθηκευτικός χώρος</string>
+    <string name="automatic_storage_manager_text">Όταν ο αποθηκευτικός χώρος είναι σχεδόν πλήρης, καταργήστε τα αντίγραφα ασφαλείας των φωτογραφιών και των βίντεο. Θα εξακολουθούν να είναι διαθέσιμα στο Google Photos.</string>
+    <string name="aware_disabled_preference_action">Ενεργοποίηση</string>
+    <string name="aware_disabled_preference_neutral">Όχι τώρα</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Το Motion Sense δεν είναι διαθέσιμο επειδή έχουν ενεργοποιηθεί η λειτουργία πτήσης και η Εξοικονόμηση μπαταρίας</string>
+    <string name="aware_footer_when_airplane_on">Το Motion Sense δεν είναι διαθέσιμο επειδή έχει ενεργοποιηθεί η λειτουργία πτήσης</string>
+    <string name="aware_footer_when_batterysaver_on">Το Motion Sense δεν είναι διαθέσιμο επειδή έχει ενεργοποιηθεί η Εξοικονόμηση μπαταρίας</string>
+    <string name="aware_gesture_summary_off">Γρήγορες κινήσεις ενεργές, Active Edge ανενεργό</string>
+    <string name="aware_gesture_summary_on_non_assist">Γρήγορες κινήσεις ενεργές, Active Edge ενεργό</string>
+    <string name="aware_gesture_summary_on_with_assist">Γρήγορες κινήσεις ενεργές, Active Edge ενεργό, πιέστε για ενεργοποίηση του Βοηθού</string>
+    <string name="aware_info_button_description">Περισσότερες ρυθμίσεις</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">Μη διαθέσιμο επειδή έχει ενεργοποιηθεί η λειτουργία πτήσης και η Εξοικονόμηση μπαταρίας</string>
+    <string name="aware_summary_when_airplane_on">Μη διαθέσιμο επειδή έχει ενεργοποιηθεί η λειτουργία πτήσης</string>
+    <string name="aware_summary_when_batterysaver_on">Μη διαθέσιμο επειδή έχει ενεργοποιηθεί η Εξοικονόμηση μπαταρίας</string>
+    <string name="backup_suggestion_cancel">Ακύρωση</string>
+    <string name="backup_suggestion_dialog_description">Αυτή η επιλογή θα διαγράψει όλα τα δεδομένα από τον εσωτερικό αποθηκευτικό χώρο του τηλεφώνου.</string>
+    <string name="backup_suggestion_dialog_title">Επαναφορά αυτής της συσκευής;</string>
+    <string name="backup_suggestion_get_started">μάθετε περισσότερα</string>
+    <string name="backup_suggestion_item_summary">Αντιγραφή από συσκευή Android ή iPhone®</string>
+    <string name="backup_suggestion_item_title">Λείπουν παλιά δεδομένα;</string>
+    <string name="backup_suggestion_missing_description">"Εάν δεν βλέπετε ορισμένα από τα δεδομένα σας, όπως μηνύματα SMS και φωτογραφίες, μπορείτε να τα μεταφέρετε στο Pixel χρησιμοποιώντας ένα καλώδιο.
+
+Για να ξεκινήσετε, θα πρέπει να γίνει επαναφορά του Pixel. Όλα τα δεδομένα σε αυτό το τηλέφωνο, συμπεριλαμβανομένων των προσαρμοσμένων ρυθμίσεων και του περιεχομένου που δεν έχει συγχρονιστεί με το cloud, θα διαγραφoύν."</string>
+    <string name="backup_suggestion_missing_title">Λείπουν τα δεδομένα σας;</string>
+    <string name="backup_suggestion_next">επόμενο</string>
+    <string name="backup_suggestion_other_ways_to_copy">Άλλοι τρόποι αντιγραφής δεδομένων</string>
+    <string name="backup_suggestion_reset_description">"Στην επόμενη οθόνη, μπορείτε να επαναφέρετε το Pixel. Αυτός είναι ο μόνος τρόπος να μεταφέρετε δεδομένα χρησιμοποιώντας ένα καλώδιο.
+
+Μετά την επαναφορά, ακολουθήστε τα βήματα της διαδικασίας ρύθμισης και επιλέξτε να ανακτήσετε τα δεδομένα από το προηγούμενο τηλέφωνό σας."</string>
+    <string name="backup_suggestion_reset_title">Επαναφορά του Pixel</string>
+    <string name="backup_suggestion_what_is_needed_summary">"Μετά την επαναφορά του τηλεφώνου σας, θα χρειαστείτε:
+
+• Το προηγούμενο τηλέφωνό σας με LINK_BEGINAndroid 5.0+ ή iOS® 8.0+LINK_END
+• Ένα καλώδιο φόρτισης ή μεταφοράς δεδομένων
+• Τον Quick Switch Adapter που συνόδευε το Pixel"</string>
+    <string name="backup_suggestion_what_is_needed_title">Τι θα χρειαστείτε</string>
+    <string name="battery_manager_summary">Επέκταση διάρκειας ζωής μπαταρίας και βελτιστοποίηση της φόρτισης</string>
+    <string name="battery_manager_summary_unsupported">Επέκταση διάρκειας ζωής της μπαταρίας</string>
+    <string name="battery_missing_link_message">Μάθετε περισσότερα</string>
+    <string name="battery_suggestion_summary">Ενεργοποίηση της λειτουργίας \"Προσαρμοστική μπαταρία\"</string>
+    <string name="battery_tip_smart_battery_summary">Ενεργοποίηση της λειτουργίας \"Προσαρμοστική μπαταρία\"</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">Δεν θα γίνεται πλέον σύζευξη της συσκευής %1$s με οποιαδήποτε συσκευή έχει συνδεθεί με αυτόν τον Λογαριασμό Google</string>
+    <string name="columbus_gesture_detected">Εντοπίστηκε Γρήγορο πάτημα!</string>
+    <string name="columbus_gesture_enrollment_complete">Τέλος</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Όχι τώρα</string>
+    <string name="columbus_gesture_enrollment_settings">Μετάβαση σε Ρυθμίσεις</string>
+    <string name="columbus_gesture_enrollment_try_it">Δοκιμάστε το</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Επιλέξτε μια ενέργεια για εκτέλεση</string>
+    <string name="columbus_gesture_training_action_text">Επιλέξτε τι γίνεται όταν χρησιμοποιείτε το Γρήγορο πάτημα. Μπορείτε να αλλάξετε αυτήν την επιλογή αργότερα στις Ρυθμίσεις.</string>
+    <string name="columbus_gesture_training_action_title">Ορισμός επιλογής Γρήγορου πατήματος</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Διπλό πάτημα ανιχνεύτηκε 1 από 2</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Ας το δοκιμάσουμε άλλη μία φορά. Πατήστε γρήγορα στο πίσω μέρος του τηλεφώνου σας δύο φορές.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Ωραία!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Διπλό πάτημα ανιχνεύτηκαν 2 από 2</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Είστε έτοιμοι για χρήση του Γρήγορου πατήματος</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Σωστά!</string>
+    <string name="columbus_gesture_training_enrolling_text">Πατήστε γρήγορα στο πίσω μέρος του τηλεφώνου σας δύο φορές.</string>
+    <string name="columbus_gesture_training_enrolling_title">Δοκιμάστε το Γρήγορο πάτημα</string>
+    <string name="columbus_gesture_training_finished_text">Για να αλλάξετε τη δύναμη πατήματος που απαιτείται για το Γρήγορο πάτημα, μεταβείτε στις Ρυθμίσεις.</string>
+    <string name="columbus_gesture_training_finished_title">Ρυθμίσατε το Γρήγορο πάτημα</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Μόλις πατήσατε δύο φορές στο πίσω μέρος της συσκευής σας, κάτι που σας επιτρέπει να χρησιμοποιείτε τον Βοηθό σας εν κινήσει. Μπορείτε να προσαρμόσετε αυτήν την κίνηση στις Ρυθμίσεις.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Τραβήξτε ένα στιγμιότυπο οθόνης, εμφανίστε ειδοποιήσεις ή ξεκινήστε κάποια άλλη ενέργεια με δύο πατήματα.</string>
+    <string name="columbus_gesture_training_intro_title">Γρήγορο πάτημα για γρήγορες ενέργειες</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Επιλέξτε μια εφαρμογή για άνοιγμα</string>
+    <string name="columbus_gesture_training_launch_text">Επιλέξτε την εφαρμογή που θέλετε να ανοίγει όταν χρησιμοποιείτε το Γρήγορο πάτημα.</string>
+    <string name="columbus_gesture_training_launch_title">Επιλογή εφαρμογής για άνοιγμα</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">Ρυθμίσεις συντόμευσης %1$s</string>
+    <string name="columbus_launch_settings_activity_title">Ρυθμίσεις Γρήγορου πατήματος</string>
+    <string name="columbus_name">Γρήγορο πάτημα</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">Ρυθμίσεις %1$s</string>
+    <string name="columbus_setting_action_assistant_title">Αποκτήστε πρόσβαση στον ψηφιακό βοηθό σας</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Δεν επιλέχθηκε εφαρμογή</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Η εφαρμογή δεν έχει εγκατασταθεί</string>
+    <string name="columbus_setting_action_launch_title">Άνοιγμα εφαρμογής</string>
+    <string name="columbus_setting_action_notification_title">Εμφάνιση ειδοποιήσεων</string>
+    <string name="columbus_setting_action_open_app_title">Άνοιγμα εφαρμογής</string>
+    <string name="columbus_setting_action_overview_title">Δείτε τις πρόσφατες εφαρμογές</string>
+    <string name="columbus_setting_action_play_pause_title">Αναπαραγωγή ή παύση μέσου</string>
+    <string name="columbus_setting_action_screenshot_title">Λήψη στιγμιότυπου οθόνης</string>
+    <string name="columbus_setting_actions_title">Πατήστε το πίσω μέρος του τηλεφώνου για</string>
+    <string name="columbus_setting_additional_settings_title">Δύναμη Γρήγορου πατήματος</string>
+    <string name="columbus_setting_app_selection_help_text">Επιλέξτε την εφαρμογή που θα ανοίγει όταν πατάτε δύο φορές στο πίσω μέρος του τηλεφώνου σας. Εάν απεγκαταστήσετε την εφαρμογή, το Γρήγορο πάτημα θα απενεργοποιηθεί μέχρι να επιλέξετε διαφορετική εφαρμογή.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Επιλέξτε τι συμβαίνει όταν ανοίγετε την εφαρμογή χρησιμοποιώντας το Γρήγορο πάτημα.</string>
+    <string name="columbus_setting_enable_switch_title">Χρήση Γρήγορου πατήματος</string>
+    <string name="columbus_setting_sensitivity_title">Να απαιτούνται ισχυρότερα πατήματα</string>
+    <string name="connectivity_helper_call_quality_category">Ποιότητα κλήσης</string>
+    <string name="connectivity_helper_call_quality_summary">Ειδοποιηθείτε σχετικά με αιτίες προβλημάτων σύνδεσης κατά τη διάρκεια κλήσεων.</string>
+    <string name="connectivity_helper_call_quality_title">Λήψη ειδοποιήσεων</string>
+    <string name="connectivity_helper_d2d_summary">Ειδοποιήστε το άλλο άτομο όταν το τηλέφωνό σας αντιμετωπίζει προβλήματα σύνδεσης κατά τη διάρκεια κλήσεων.</string>
+    <string name="connectivity_helper_d2d_title">Κοινοποίηση πληροφοριών σύνδεσης</string>
+    <string name="connectivity_helper_footnote">Μπορείτε να κοινοποιείτε πληροφορίες σύνδεσης όταν το άλλο άτομο στην κλήση χρησιμοποιεί υποστηριζόμενη συσκευή και δίκτυο.</string>
+    <string name="content_capture">Εξατομίκευση με χρήση δεδομένων εφαρμογής</string>
+    <string name="copy_toast_msg">Ο σύνδεσμος αντιγράφηκε στο πρόχειρο</string>
+    <string name="dark_ui_text">Το Σκούρο θέμα χρησιμοποιεί μαύρο φόντο, για να επεκτείνει τη διάρκεια ζωής της μπαταρίας σας. Τα χρονοδιαγράμματα για το Σκούρο θέμα περιμένουν να σβήσει η οθόνη, για να ενεργοποιηθούν.</string>
+    <string name="dock_summary_charging_phone">Φόρτιση τηλεφώνου</string>
+    <string name="double_twist_for_camera_mode_summary">Για να εισέλθετε στη λειτουργία selfie και να εξέλθετε από αυτήν στο Google Camera, κάντε διπλή περιστροφή ενώ βρίσκεστε εντός της εφαρμογής.</string>
+    <string name="downloads_backup_text">Θα δημιουργηθούν αντίγραφα ασφαλείας των ληφθέντων αρχείων στο Google Drive</string>
+    <string name="duration_less_than_one_minute">Λιγότερο από 1 λεπτό</string>
+    <string name="extra_app_info_label">Βελτιστοποίηση παιχνιδιού</string>
+    <string name="face_enrolling_center_head">Τοποθετήστε το πρόσωπό σας στο εσωτερικό πλαίσιο.</string>
+    <string name="face_enrolling_description">Καταγράψτε όλες τις γωνίες του προσώπου σας απομακρύνοντας όλα τα πλακίδια.</string>
+    <string name="face_enrolling_do_it_later">Αργότερα</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Ακύρωση</string>
+    <string name="face_enrolling_gaze_dialog_continue">Ρύθμιση με κλειστά μάτια</string>
+    <string name="face_enrolling_gaze_dialog_message">Θέλετε να ρυθμίσετε τη λειτουργία Ξεκλείδωμα με το πρόσωπο χωρίς να χρειάζετε να έχετε τα μάτια ανοιχτά; Εάν επιλέξετε αυτόν τον τρόπο ρύθμισης, κάποιος θα μπορεί να ξεκλειδώσει το τηλέφωνό σας, στρέφοντάς το προς το πρόσωπό σας ενώ δεν τον έχετε αντιληφθεί.</string>
+    <string name="face_enrolling_gaze_dialog_title">Ρύθμιση με κλειστά μάτια</string>
+    <string name="face_enrolling_how_to_setup">Τρόπος ρύθμισης</string>
+    <string name="face_enrolling_title">Κρατήστε σταθερό το τηλέφωνο. Γυρίστε το κεφάλι σας, αργά.</string>
+    <string name="face_enrolling_title_accessibility">Κοιτάξτε απευθείας το τηλέφωνό σας</string>
+    <string name="face_enrolling_title_accessibility_progress">Συνεχίστε να κοιτάτε απευθείας το τηλέφωνό σας</string>
+    <string name="face_enrolling_too_close">Απομακρύνετε περισσότερο το τηλέφωνο</string>
+    <string name="face_enrolling_too_far">Φέρτε πιο κοντά το τηλέφωνό σας</string>
+    <string name="face_enrolling_too_high">Μετακινήστε πιο χαμηλά το τηλέφωνο</string>
+    <string name="face_enrolling_too_left">Μετακινήστε το τηλέφωνο προς τα δεξιά</string>
+    <string name="face_enrolling_too_low">Μετακινήστε το τηλέφωνο πιο ψηλά</string>
+    <string name="face_enrolling_too_right">Μετακινήστε το τηλέφωνο προς τα αριστερά</string>
+    <string name="face_enrolling_turn_head_to_arrow">Στρέψτε το κεφάλι σας προς το βέλος</string>
+    <string name="face_enrolling_turned_too_far">Γυρίστε το κεφάλι σας λιγότερο</string>
+    <string name="fallback_menu_item_copy_link">Αντιγραφή συνδέσμου</string>
+    <string name="fallback_menu_item_open_in_browser">Άνοιγμα σε πρόγραμμα περιήγησης</string>
+    <string name="fallback_menu_item_share_link">Κοινοποίηση συνδέσμου</string>
+    <string name="fullbackup_data_summary">"Αυτόματη δημιουργία αντιγράφων ασφαλείας για τα δεδομένα συσκευών (όπως είναι οι κωδικοί πρόσβασης Wi-Fi και το ιστορικό κλήσεων) και τα δεδομένα εφαρμογών (όπως είναι οι ρυθμίσεις και τα αρχεία που αποθηκεύουν οι εφαρμογές) στο Google Drive.
+
+Μόλις ενεργοποιήσετε την αυτόματη δημιουργία αντιγράφων ασφαλείας, τα δεδομένα συσκευών και εφαρμογών αποθηκεύονται ανά τακτά χρονικά διαστήματα σε έναν ιδιωτικό φάκελο στο Google Drive. Τα δεδομένα εφαρμογών μπορεί να περιέχουν δεδομένα που αποθηκεύει μια εφαρμογή (με βάση τις ρυθμίσεις του προγραμματιστή), συμπεριλαμβανομένων δυνητικά ευαίσθητων δεδομένων, όπως είναι οι επαφές, τα μηνύματα και οι φωτογραφίες.
+
+Τα δεδομένα των αντιγράφων ασφαλείας δεν υπολογίζονται στο όριο του αποθηκευτικού χώρου στο Drive. Τυχόν μεγάλα αρχεία ή αρχεία που οι προγραμματιστές επέλεξαν να εξαιρέσουν από την υπηρεσία δεν θα συμπεριλαμβάνονται στα αντίγραφα ασφαλείας."</string>
+    <string name="fullbackup_erase_dialog_message">Να διακοπεί η δημιουργία αντιγράφων ασφαλείας για τα δεδομένα συσκευών (όπως είναι οι κωδικοί πρόσβασης Wi-Fi και το ιστορικό κλήσεων) και τα δεδομένα εφαρμογών (όπως είναι οι ρυθμίσεις και τα αρχεία που αποθηκεύουν οι εφαρμογές) και να διαγραφούν όλα τα αντίγραφα από το Google Drive;</string>
+    <string name="game_dashboard_always_on_summary">Εμφάνιση της συντόμευσης Πίνακα ελέγχου παιχνιδιού σε παιχνίδια</string>
+    <string name="game_dashboard_always_on_title">Πίνακας ελέγχου παιχνιδιού</string>
+    <string name="game_dashboard_dnd_rule_name">Gaming</string>
+    <string name="game_dashboard_dnd_summary">Λήψη ειδοποιήσεων μόνο από σημαντικά άτομα και εφαρμογές κατά την εκτέλεση ενός παιχνιδιού</string>
+    <string name="game_dashboard_dnd_title">Λειτουργία Μην ενοχλείτε για παιχνίδια</string>
+    <string name="game_mode_battery_description">Παρατείνει τη διάρκεια ζωής μπαταρίας.</string>
+    <string name="game_mode_battery_title">Εξοικονόμηση μπαταρίας</string>
+    <string name="game_mode_performance_description">Μεγιστοποιεί τον ρυθμό καρέ, χρησιμοποιεί περισσότερη μπαταρία</string>
+    <string name="game_mode_performance_title">Απόδοση</string>
+    <string name="game_mode_standard_description">Χρησιμοποιεί τις προεπιλογές του παιχνιδιού</string>
+    <string name="game_mode_standard_title">Βασική</string>
+    <string name="game_optimization_unavailable">Μη διαθέσιμη για αυτό το παιχνίδι</string>
+    <string name="gesture_aware_confirmation_action_button">Το κατάλαβα</string>
+    <string name="gesture_aware_footer"><annotation link="link">Προτιμήσεις</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Προτιμήσεις</annotation></string>
+    <string name="gesture_skip_direction_ltr">Αριστερά προς δεξιά</string>
+    <string name="gesture_skip_direction_rtl">Δεξιά προς αριστερά</string>
+    <string name="gesture_skip_direction_title">Παράβλεψη οδηγίας</string>
+    <string name="gesture_skip_footer"><annotation link="link">Προτιμήσεις</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Προτιμήσεις</annotation></string>
+    <string name="global_actions_panel_short_title">Κάρτες και πάσα</string>
+    <string name="global_actions_panel_summary">Για να αποκτήσετε πρόσβαση σε επιλογές, όπως τρόποι πληρωμής και κάρτες επιβίβασης, πατήστε παρατεταμένα το κουμπί λειτουργίας.</string>
+    <string name="global_actions_panel_title">Εμφάνιση καρτών και πάσων</string>
+    <string name="install_unknown_applications">Να επιτρέπεται η εγκατάσταση εφαρμογών από άλλες πηγές εκτός του Play Store</string>
+    <string name="keywords_accessibility_menu">κινητικά προβλήματα, γρήγορο μενού, μενού υποβοήθησης, αφή, ακρίβεια κίνησης</string>
+    <string name="keywords_adaptive_charging">φορτίο, φόρτιση, έξυπνη φόρτιση, προσαρμοστική φόρτιση, μπαταρία, εύρυθμη λειτουργία μπαταρίας</string>
+    <string name="keywords_assist_gesture_launch">κίνηση, άκρο, πλάι, ενεργό άκρο, πίεση, λαβή, βοήθεια, βοηθός, πίεση, ok google, βοηθός google</string>
+    <string name="keywords_assist_gesture_silence">κίνηση, άκρο, πλάι, ενεργό άκρο, σίγαση, αναβολή, ξυπνητήρι, εισερχόμενη κλήση, χωρίς ήχο, οθόνη, οθόνη κλειδώματος, πίεση, λαβή, διακοπή</string>
+    <string name="keywords_assist_gesture_wake">κίνηση, άκρο, πλάι, ενεργό άκρο, αφύπνιση, ειδοποιήσεις, οθόνη, εμφάνιση, απενεργοποίηση οθόνης, ενεργοποίηση οθόνης, πίεση, αδρανής, αδράνεια, λαβή</string>
+    <string name="keywords_battery_share">κοινή χρήση μπαταρίας, ασύρματη φόρτιση</string>
+    <string name="keywords_battery_share_settings">κοινή χρήση μπαταρίας, αντίστροφη ασύρματη φόρτιση</string>
+    <string name="keywords_content_capture">λήψη περιεχομένου, περιεχόμενο εφαρμογής, δεδομένα εφαρμογών</string>
+    <string name="keywords_gesture">κίνηση, κινήσεις</string>
+    <string name="keywords_global_actions_panel">κάρτες, πάσα</string>
+    <string name="keywords_live_transcribe">Υπότιτλοι, υπότιτλοι, Υπότιτλοι, Ζωντανoί υπότιτλοι, βαρήκοοι, απώλεια ακοής, CART, ομιλία σε κείμενο, υπότιτλος</string>
+    <string name="keywords_reverse_charging_stop_threshold">Διακοπή κοινής χρήσης της μπαταρίας όταν το τηλέφωνο φτάνει το:</string>
+    <string name="keywords_select_to_speak">Ακρόαση κειμένου, εκφώνηση, ομιλία οθόνης, αναγνώστης οθόνης</string>
+    <string name="keywords_sound_amplifier">Υπηρεσία επικοινωνιών εκτάκτου ανάγκης (PSAP), ενίσχυση, ενίσχυση ήχου, βαρήκοοι, απώλεια ακοής, ενίσχυση</string>
+    <string name="keywords_sound_notifications">Ειδοποιήσεις, βαρήκοοι, απώλεια ακοής, ειδοποίηση</string>
+    <string name="keywords_switch_access">κινητικά προβλήματα, διακόπτης, χέρι, AT, τεχνολογία υποβοήθησης, παράλυση, ALS, σάρωση, σταδιακή σάρωση</string>
+    <string name="keywords_talkback">Αναγνώστης οθόνης, Voice Over, VoiceOver, Βοήθεια με φωνή, Τυφλοί, Χαμηλή όραση, TTS, κείμενο σε ομιλία, εκφωνημένα σχόλια</string>
+    <string name="keywords_voice_access">φωνή, φωνητικός έλεγχος, κινητικά προβλήματα, χέρι, μικρόφωνο, μικρόφωνο, υπαγόρευση, ομιλία, έλεγχος</string>
+    <string name="language_input_gesture_summary_off">Το Active Edge είναι απενεργοποιημένο</string>
+    <string name="language_input_gesture_summary_on_non_assist">Το Active Edge είναι ενεργοποιημένο</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge ενεργό, πιέστε για ενεργοποίηση του Βοηθού</string>
+    <string name="me_card_title">Το Pixel μου</string>
+    <string name="my_device_info_account_preference_title">Λογαριασμός Google</string>
+    <string name="owner_info_settings_edit_text_hint">Π.χ. Το Pixel του Joe.</string>
+    <string name="reverse_charging_charging_wirelessly_message">Μη διαθέσιμο λόγω ασύρματης φόρτισης του τηλεφώνου</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Η Κοινή χρήση μπαταρίας δεν είναι διαθέσιμη επειδή η θερμοκρασία του Pixel είναι πολύ υψηλή. Περιμένετε μέχρι να κρυώσει το τηλέφωνο και δοκιμάστε ξανά.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">Η κοινή χρήση μπαταρίας δεν είναι διαθέσιμη επειδή γίνεται ασύρματη φόρτιση του τηλεφώνου.</string>
+    <string name="reverse_charging_detail_footer_title">Η μπαταρία του τηλεφώνου σας θα εξαντλείται πιο γρήγορα όταν χρησιμοποιείτε την κοινή χρήση μπαταρίας. Η κοινή χρήση μπαταρίας λειτουργεί με συμβατά ακουστικά ψείρες, ρολόγια, τηλέφωνα και άλλα. Για καλύτερη φόρτιση, αφαιρέστε τη θήκη του τηλεφώνου.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"Η Κοινή χρήση μπαταρίας λειτουργεί με συμβατά ακουστικά ψείρες, τηλέφωνα και άλλα.
+
+Η μπαταρία του τηλεφώνου σας θα εξαντλείται πιο γρήγορα όταν χρησιμοποιείτε αυτήν τη λειτουργία. Η Κοινή χρήση μπαταρίας απενεργοποιείται αυτόματα μετά από λίγα λεπτά, εάν δεν εντοπιστεί άλλη συσκευή. Για καλύτερη φόρτιση, αφαιρέστε τη θήκη του τηλεφώνου και άλλα στοιχεία που ενδέχεται να επηρεάσουν τη διαδικασία, όπως μεταλλικά αντικείμενα."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">Η κοινή χρήση μπαταρίας δεν είναι διαθέσιμη επειδή έχει ενεργοποιηθεί η Εξοικονόμηση μπαταρίας.</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">Η κοινή χρήση μπαταρίας δεν είναι διαθέσιμη επειδή έχει συνδεθεί συσκευή USB-C.</string>
+    <string name="reverse_charging_instructions_title">"Φορτίστε άλλες συσκευές με το Pixel σας.
+Γυρίστε το τηλέφωνό σας ανάποδα για να δοκιμάσετε."</string>
+    <string name="reverse_charging_is_off_summary">Ανενεργή</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Κοινή χρήση και φόρτιση μπαταρίας</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Κοινή χρήση μπαταρίας</string>
+    <string name="reverse_charging_is_on_summary">Ενεργό/Γίνεται φόρτιση άλλων συσκευών.</string>
+    <string name="reverse_charging_main_switch">Να επιτρέπεται η Κοινή χρήση μπαταρίας</string>
+    <string name="reverse_charging_off_low_battery_summary">Ανενεργό/Η στάθμη της μπαταρίας του τηλεφώνου είναι κάτω από %1$s.</string>
+    <string name="reverse_charging_off_sharing_level_summary">Ανενεργό/Η στάθμη της μπαταρίας είναι κάτω από το επίπεδο κοινής χρήσης.</string>
+    <string name="reverse_charging_overheat_summary">Μη διαθέσιμη επιλογή επειδή η θερμοκρασία του Pixel είναι πολύ υψηλή. Περιμένετε μέχρι να κρυώσει το τηλέφωνο και δοκιμάστε ξανά.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">Μη διαθέσιμο επειδή έχει ενεργοποιηθεί η Εξοικονόμηση μπαταρίας.</string>
+    <string name="reverse_charging_sharing_level_message">Μη διαθέσιμο επειδή η μπαταρία είναι κάτω από το επίπεδο κοινής χρήσης.</string>
+    <string name="reverse_charging_switch_summary">Τοποθετήστε συσκευές στο πίσω μέρος του Pixel.</string>
+    <string name="reverse_charging_switch_title">Φορτίστε άλλες συσκευές τοποθετώντας τες στο πίσω μέρος του Pixel.</string>
+    <string name="reverse_charging_switch_title_message">Φόρτιση άλλων συσκευών</string>
+    <string name="reverse_charging_title">Κοινή χρήση μπαταρίας</string>
+    <string name="reverse_charging_unplug_usb_cable_message">Μη διαθέσιμο επειδή έχει συνδεθεί συσκευή USB-C.</string>
+    <string name="reverse_charging_warning_summary">Μη διαθέσιμο επειδή η στάθμη της μπαταρίας είναι κάτω από %1$s.</string>
+    <string name="reverse_charging_warning_title">Η κοινή χρήση μπαταρίας δεν είναι διαθέσιμη επειδή η στάθμη της μπαταρίας είναι κάτω από %1$s</string>
+    <string name="rtt_settings_always_visible">Πάντα ορατό</string>
+    <string name="rtt_settings_no_visible">Μη ορατό</string>
+    <string name="rtt_settings_title">Αποστολή κειμένου σε πραγματικό χρόνο (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Ορατό κατά τη διάρκεια κλήσεων</string>
+    <string name="screen_time_summary_usage_today">%1$s σήμερα</string>
+    <string name="search_bar_account_avatar_content_description">Εικόνα προφίλ, πατήστε δύο φορές για να ανοίξετε τον Λογαριασμό σας Google</string>
+    <string name="security_advanced_settings">Σύνθετες ρυθμίσεις</string>
+    <string name="security_dismiss_dialog_dismiss_button">Παράβλεψη</string>
+    <string name="security_dismiss_dialog_title">Παράβλεψη αυτής της ειδοποίησης;</string>
+    <string name="security_settings_face_enroll_dialog_ok">OK</string>
+    <string name="security_settings_face_enroll_education_message">Στην επόμενη οθόνη, περιστρέψτε το κεφάλι σας για να καταγράψετε όλες τις γωνίες του προσώπου.</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">Στην επόμενη οθόνη, κρατήστε το τηλέφωνό σας στο ύψος των ματιών</string>
+    <string name="security_settings_face_enroll_error_generic_dialog_message">Η καταχώριση προσώπου απέτυχε.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">Λήξη χρονικού ορίου καταχώρισης προσώπου. Δοκιμάστε ξανά.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Λήξη χρον. ορίου ρύθμισης Ξεκλείδωμ. με το πρόσωπο</string>
+    <string name="security_settings_face_enroll_finish_description">Μπορείτε πλέον να χρησιμοποιείτε το πρόσωπό σας για να ξεκλειδώσετε το τηλέφωνό σας ή να επαληθεύσετε την ταυτότητά σας, για παράδειγμα κατά τη σύνδεση σε εφαρμογές ή την έγκριση μιας αγοράς.</string>
+    <string name="security_settings_face_enroll_finish_title">Όλα εντάξει!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Ρύθμ. για περιορ. όραση ή κινητ. κεφαλ.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">Όταν χρησιμοποιείτε τη λειτουργία Ξεκλείδωμα με το πρόσωπο, ίσως χρειαστεί να μετακινηθείτε έτσι ώστε το κεφάλι σας να είναι ακριβώς μπροστά στο τηλέφωνό σας.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Να είναι απαραίτητο να έχετε τα μάτια ανοικτά</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Εσείς και το παιδί σας μπορείτε να διαγράψετε το μοντέλο προσώπου του ή να απενεργοποιήσετε το Ξεκλείδωμα με το πρόσωπο ανά πάσα στιγμή στις Ρυθμίσεις. Τα μοντέλα προσώπων αποθηκεύονται στο τηλέφωνο μέχρι να διαγραφούν.
+
+Μάθετε περισσότερα στο g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Εσείς και το παιδί σας έχετε τον έλεγχο</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"Μπορείτε να διαγράψετε το μοντέλο προσώπου σας ή να απενεργοποιήσετε το Ξεκλείδωμα με το πρόσωπο ανά πάσα στιγμή στις Ρυθμίσεις. Τα μοντέλα προσώπων αποθηκεύονται στο τηλέφωνο μέχρι να τα διαγράψετε.
+
+Μάθετε περισσότερα στο g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Έχετε τον έλεγχο</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"Το Ξεκλείδωμα με το πρόσωπο δημιουργεί ένα μοναδικό μοντέλο του προσώπου του παιδιού σας για να επαληθεύει την ταυτότητά του. Για τη δημιουργία αυτού του μοντέλου προσώπου κατά τη ρύθμιση, θα πρέπει να ληφθούν εικόνες του προσώπου του παιδιού σας από διαφορετικές γωνίες.
+
+Κατά τη χρήση του Ξεκλειδώματος με το πρόσωπο, οι εικόνες χρησιμοποιούνται για την ενημέρωση του μοντέλου προσώπου του. Οι εικόνες που χρησιμοποιούνται για τη δημιουργία του μοντέλου προσώπου του δεν αποθηκεύονται, αλλά το μοντέλο προσώπου αποθηκεύεται με ασφάλεια στο τηλέφωνο και παραμένει αποκλειστικά στο τηλέφωνο. Όλη η επεξεργασία πραγματοποιείται με ασφάλεια στο τηλέφωνο."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"Το Ξεκλείδωμα με το πρόσωπο δημιουργεί ένα μοναδικό μοντέλο του προσώπου σας για να επαληθεύει την ταυτότητά σας. Για τη δημιουργία αυτού του μοντέλου προσώπου κατά τη ρύθμιση, θα ληφθούν εικόνες του προσώπου σας από διαφορετικές οπτικές γωνίες.
+
+Κατά τη χρήση του Ξεκλειδώματος με το πρόσωπο, οι εικόνες χρησιμοποιούνται για την ενημέρωση του μοντέλου προσώπου σας. Οι εικόνες που χρησιμοποιούνται για τη δημιουργία του μοντέλου προσώπου σας δεν αποθηκεύονται ποτέ, αλλά το μοντέλο προσώπου αποθηκεύεται με ασφάλεια στο τηλέφωνό σας και παραμένει αποκλειστικά στο τηλέφωνο. Όλη η επεξεργασία πραγματοποιείται με ασφάλεια στο τηλέφωνό σας."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Πώς λειτουργεί</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">Το παιδί σας θα πρέπει να έχει τα μάτια του ανοικτά προκειμένου η λειτουργία Ξεκλείδωμα με το πρόσωπο να ξεκλειδώσει το τηλέφωνο ή να επαληθεύσει την ταυτότητά του. Εσείς και το παιδί σας μπορείτε να ενεργοποιήσετε αυτήν την επιλογή ανά πάσα στιγμή στις Ρυθμίσεις.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Εάν το παιδί σας φορά γυαλιά συνήθως, μπορεί να τα φορά κατά τη ρύθμιση.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">Το τηλέφωνο μπορεί να ξεκλειδώσει όταν το κοιτά ακόμη και αν δεν σκοπεύει να το ξεκλειδώσει. Το τηλέφωνο του παιδιού σας μπορεί επίσης να ξεκλειδωθεί από κάποιο άτομο που του μοιάζει πολύ, όπως για παράδειγμα, τον δίδυμο αδελφό του, ή σε περίπτωση που κάποιος το κρατήσει μπροστά στο πρόσωπό του.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">Θα πρέπει να έχετε τα μάτια σας ανοικτά προκειμένου η λειτουργία Ξεκλείδωμα με το πρόσωπο να ξεκλειδώσει το τηλέφωνο ή να επαληθεύσει την ταυτότητά σας. Μπορείτε να ενεργοποιήσετε αυτήν την επιλογή ανά πάσα στιγμή στις Ρυθμίσεις.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Η χρήση γυαλιών όρασης και γυαλιών ηλίου με ελαφριά απόχρωση είναι αποδεκτή.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">Η χρήση προσώπου για ξεκλείδωμα του τηλεφώνου ενδέχεται να είναι λιγότερο ασφαλής από ένα ισχυρό μοτίβο ή PIN.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">Το τηλέφωνο μπορεί να ξεκλειδώσει όταν το κοιτάτε ακόμη και αν δεν σκοπεύετε να το ξεκλειδώσετε. Το τηλέφωνό σας μπορεί επίσης να ξεκλειδωθεί από κάποιο άτομο που σας μοιάζει πολύ, όπως για παράδειγμα, τον δίδυμο αδελφό σας, ή σε περίπτωση που κάποιος το κρατήσει μπροστά στο πρόσωπό σας.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Έχετε υπόψη τα εξής</string>
+    <string name="security_settings_face_enroll_introduction_message">Χρησιμοποιήστε το πρόσωπό σας για να ξεκλειδώσετε το τηλέφωνό σας ή να επαληθεύσετε την ταυτότητά σας, για παράδειγμα κατά τη σύνδεση σε εφαρμογές ή την έγκριση μιας αγοράς.</string>
+    <string name="security_settings_face_enroll_introduction_title">Ρύθμιση του Ξεκλειδώματος με το πρόσωπο</string>
+    <string name="security_settings_face_enroll_next">Επόμενο</string>
+    <string name="security_settings_face_enroll_partial_message">Για να βελτιώσετε την απόδοση, μπορείτε να επαναλάβετε τη ρύθμιση της λειτουργίας Ξεκλείδωμα με το πρόσωπο στις Ρυθμίσεις.</string>
+    <string name="security_settings_face_enroll_partial_start_over">Έναρξη από την αρχή</string>
+    <string name="security_settings_face_enroll_partial_title">Ολοκλήρωση ρύθμισης Ξεκλειδώματος με το πρόσωπο</string>
+    <string name="security_settings_face_enroll_timeout_message">"Δοκιμάστε εναλλακτικά τη γρήγορη ρύθμιση. Να έχετε υπόψη ότι, όταν χρησιμοποιείτε το Ξεκλείδωμα με το πρόσωπο, το κεφάλι σας μπορεί να χρειάζεται να είναι ακριβώς μπροστά στο τηλέφωνό σας.
+
+Για να βελτιώσετε την απόδοση, μπορείτε να επαναλάβετε τη ρύθμιση της λειτουργίας Ξεκλείδωμα με το πρόσωπο στις Ρυθμίσεις."</string>
+    <string name="security_settings_face_enroll_timeout_title">Δεν είναι δυνατή η συνέχεια της ρύθμισης</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Δοκιμάστε ξανά</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Χρήση γρήγορης ρύθμισης</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Έξοδος από τη ρύθμιση</string>
+    <string name="security_settings_face_enroll_too_hot_message">Δεν είναι δυνατή η ολοκλήρωση της ρύθμισης του Ξεκλειδώματος με το πρόσωπο, επειδή η θερμοκρασία του τηλεφώνου είναι πολύ υψηλή. Δοκιμάστε ξανά όταν η θερμοκρασία του τηλεφώνου μειωθεί.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Παράβλεψη Ξεκλειδ. με το πρόσωπο</string>
+    <string name="security_settings_face_enroll_too_hot_title">Υψηλή θερμοκρασία τηλεφώνου</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Πατήστε για ρύθμιση δακτυλικού αποτυπώματος</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Μάθετε περισσότερα στο g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint για επαγγελματική χρήση</string>
+    <string name="setup_suggestion_summary">Αντιγραφή δεδομένων, πληρωμή με τηλέφωνο κ.ά.</string>
+    <string name="setup_suggestion_title">Ολοκλήρωση ρύθμισης</string>
+    <string name="smart_battery_footer">Για να επεκτείνετε τη διάρκεια ζωής της μπαταρίας, η Προσαρμοστική μπαταρία ενδέχεται να μειώσει την απόδοση και τη δραστηριότητα στο παρασκήνιο. Ορισμένες ειδοποιήσεις ενδέχεται να εμφανίζονται με καθυστέρηση.</string>
+    <string name="smart_battery_manager_title">Προσαρμοστικές προτιμήσεις</string>
+    <string name="smart_battery_title">Προσαρμοστική μπαταρία</string>
+    <string name="sound_dashboard_summary">Ένταση ήχου, απτική λειτουργία, Μην ενοχλείτε</string>
+    <string name="sound_settings">Ήχος και δόνηση</string>
+    <string name="storage_manager_indicator">Έξυπνος αποθηκευτικός χώρος: ^1</string>
+    <string name="time_remaining_warning_subtext">Απομένουν περίπου %1$s με βάση την προηγούμενη χρήση</string>
+    <string name="time_remaining_warning_text">Η μπαταρία μπορεί να εξαντληθεί σύντομα</string>
+    <string name="tips_suggestion_summary">Ανακαλύψτε τις δυνατότητες του τηλεφώνου</string>
+    <string name="tips_suggestion_title">Γνωρίστε τη συσκευή Pixel</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Κρατήστε το τηλέφωνο μπροστά σας</string>
+    <string name="usb_use_file_transfers">Μεταφορά αρχείου/Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">Η Δόνηση για κλήσεις δεν είναι διαθέσιμη, επειδή το τηλέφωνο είναι σε σίγαση.</string>
+    <string name="vibration_haptics_settings_not_available_title">Μη διαθέσιμη</string>
+    <string name="wallpaper_dashboard_summary">Χρώματα, εικονίδια θέματος, πλέγμα εφαρμογής</string>
+    <string name="wifi_subscription_summary">Προβολή ή αλλαγή συνδρομής OpenRoaming</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">Συνδέθηκε με %1$s</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Πατήστε για σύνδεση</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Αδυναμία σύνδεσης. Πατήστε για επανάληψη.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Σύνδεση…</string>
+</resources>

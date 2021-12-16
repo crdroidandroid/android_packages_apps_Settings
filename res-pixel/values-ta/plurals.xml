@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">அனைத்து எச்சரிக்கைகளையும் (%1$d) காட்டு</item>
+        <item quantity="one">%1$d எச்சரிக்கையைக் காட்டு</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">%1$d எச்சரிக்கைகள்</item>
+        <item quantity="one">%1$d எச்சரிக்கை</item>
+    </plurals>
+</resources>

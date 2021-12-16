@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">ดูคำเตือนทั้งหมด (%1$d)</item>
+        <item quantity="one">แสดงคำเตือน %1$d รายการ</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">คำเตือน %1$d รายการ</item>
+        <item quantity="one">คำเตือน %1$d รายการ</item>
+    </plurals>
+</resources>

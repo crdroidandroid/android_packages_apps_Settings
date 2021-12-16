@@ -22,15 +22,43 @@
 
     <com.android.settings.widget.VideoPreference
         android:key="gesture_assist_video"
-        app:animation="@raw/gesture_assist"
-        app:preview="@drawable/gesture_assist"
-        app:controller="com.android.settings.widget.VideoPreferenceController" />
+        app:animation="@raw/assist_gesture_settings_animation"
+        app:preview="@drawable/gesture_assist" />
+
+    <com.android.settings.widget.VideoPreference
+        android:key="gesture_assist_video_silence"
+        app:animation="@raw/assist_gesture_settings_animation_silence"
+        app:preview="@drawable/gesture_assist_silence" />
+
+    <com.android.settings.widget.LabeledSeekBarPreference
+        android:defaultValue="@integer/gesture_assist_sensitivity_default"
+        android:key="gesture_assist_sensitivity"
+        android:max="@integer/gesture_assist_sensitivity_max"
+        android:selectable="true"
+        android:title="@string/assist_gesture_squeeze_sensitivity_label"
+        app:allowDividerAbove="true"
+        app:controller="com.google.android.settings.gestures.assist.AssistGestureSensitivityPreferenceController"
+        app:textEnd="@string/assist_gesture_squeeze_help_minimum_sensitivity"
+        app:textStart="@string/assist_gesture_squeeze_help_maximum_sensitivity" />
 
     <SwitchPreference
         android:key="gesture_assist"
-        android:title="@string/assist_gesture_title"
-        app:keywords="@string/keywords_assist_gesture_launch"
-        app:controller="com.android.settings.gestures.AssistGestureSettingsPreferenceController"
-        app:allowDividerAbove="true" />
+        android:summary="@string/assist_gesture_setting_enable_assistant_text"
+        android:title="@string/assist_gesture_setting_enable_assistant_title"
+        app:controller="com.google.android.settings.gestures.assist.AssistGesturePreferenceController"
+        app:keywords="@string/keywords_assist_gesture_launch" />
+
+    <SwitchPreference
+        android:key="gesture_assist_wake"
+        android:title="@string/assist_gesture_setting_enable_wake_title"
+        app:controller="com.google.android.settings.gestures.assist.AssistGestureWakePreferenceController"
+        app:keywords="@string/keywords_assist_gesture_wake" />
+
+    <SwitchPreference
+        android:key="gesture_assist_silence"
+        android:summary="@string/assist_gesture_setting_enable_ring_silence_text"
+        android:title="@string/assist_gesture_setting_enable_ring_silence_title"
+        app:controller="com.google.android.settings.gestures.assist.AssistGestureSilenceAlertsPreferenceController"
+        app:keywords="@string/keywords_assist_gesture_silence" />
 
 </PreferenceScreen>

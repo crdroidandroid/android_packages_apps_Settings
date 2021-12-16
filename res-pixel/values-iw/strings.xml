@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">מסך הנעילה לא פעיל</string>
+    <string name="gesture_silence_title">תנועה להשתקת התראות</string>
+    <string name="gesture_skip_title">דילוג על תנועה</string>
+    <string name="keywords_touch_sensitivity">מגע, רגישות, רגיש, מגן מסך, סרט, מגיב, תגובה</string>
+    <string name="touch_sensitivity_summary">שיפור הרגישות למגע בזמן שימוש במגני מסכים</string>
+    <string name="touch_sensitivity_title">הגברת הרגישות למגע</string>
+    <string name="accessibility_vibration_settings_screen_title">שימוש ברטט ובמגע פיזי</string>
+    <string name="vibration_haptics_settings_not_available_summary">הגדרות של רטט ומגע פיזי אינן זמינות מפני שהטלפון מוגדר למצב שקט</string>
+    <string name="vibration_haptics_strength_category_title">עוצמת הרטט והמגע הפיזי</string>
+    <string name="accessibility_vibration_settings_title">רטט ומגע פיזי</string>
+    <string name="columbus_title">הקשה מהירה לביצוע פעולות</string>
+    <string name="vibrate_for_calls_category_title">שיחות</string>
+    <string name="accessibility_alarm_vibration_title">רטט של התראה</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">‏Active Edge מוגדר. אפשר לעבור למסך הבא או להמשיך בהתאמה.</string>
+    <string name="accessibility_keyboard_haptics_title">מגע פיזי במקלדת</string>
+    <string name="accessibility_vibration_preferences_file">העדפות רטט</string>
+    <string name="adaptive_charging">טעינה דינמית</string>
+    <string name="adaptive_charging_description">כדי לשמור על חיי הסוללה לטווח ארוך, הסוללה נטענת באופן אחיד במהלך הלילה. בהתאם לשעה שנקבעה בשעון המעורר, הסוללה מגיעה לטעינה מלאה כשקמים מהשינה.</string>
+    <string name="adaptive_charging_time_estimate"><b>טעינה דינמית</b> • טעינה מלאה בשעה %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">העדפות</annotation></string>
+    <string name="app_and_notification_dashboard_summary">‏Assistant, אפליקציות אחרונות, אפליקציות ברירת מחדל</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">‏המשך אל Assistant</string>
+    <string name="assist_gesture_enrollment_do_it_later">יותר מאוחר</string>
+    <string name="assist_gesture_enrollment_seekbar_light">לחיצה קלה</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">לחיצה חזקה</string>
+    <string name="assist_gesture_enrollment_settings">הגדרות</string>
+    <string name="assist_gesture_setting_enable_assistant_text">‏כדי לדבר עם Assistant‏, לוחצים משני צדי המכשיר בחלק התחתון שלו ומשחררים במהירות</string>
+    <string name="assist_gesture_setting_enable_assistant_title">‏לחיצה משני הצדדים כדי לדבר עם Assistant</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">לחיצה משני צדי המכשיר תשתיק התראות, שעונים מעוררים, טיימרים ושיחות נכנסות</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">לחיצה משני צדי המכשיר תשתיק התראות ושיחות נכנסות</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">לחיצה משני הצדדים להשתקת הטלפון</string>
+    <string name="assist_gesture_setting_enable_wake_title">‏פתיחת Assistant כשהמסך כבוי</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">לחיצה קלה</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">לחיצה חזקה</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">עוצמת לחיצה</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">‏ייתכן שהתנועה תפעיל את Assistant בטעות</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">יש ללחוץ משני צדי הטלפון בחלק התחתון</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">לא לחצת מהר מספיק משני צדי המכשיר</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">לא לחצת חזק מספיק משני צדי המכשיר</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">יש ללחוץ משני צדי המכשיר ולשחרר במהירות</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">כדאי לנסות להתאים את המחוון</string>
+    <string name="assist_gesture_training_enrolling_text">יש ללחוץ משני צדי המכשיר בחלק התחתון. ניתן לשנות את חוזק הלחיצה הנדרש להפעלה.</string>
+    <string name="assist_gesture_training_enrolling_title">לחיצה משני צדי המכשיר ושחרור מהיר</string>
+    <string name="assist_gesture_training_finished_text">"ניתן לשנות את רגישות הלחיצה גם בשלב מאוחר יותר ב'הגדרות'"</string>
+    <string name="assist_gesture_training_finished_title">סיום או המשך התאמה</string>
+    <string name="assist_gesture_training_intro_text">‏כדי לדבר עם Assistant, צריך פשוט ללחוץ משני צדי הטלפון בחלק התחתון שלו ולשחרר במהירות</string>
+    <string name="assist_gesture_training_intro_title">‏לחיצה משני צדי המכשיר כדי לדבר עם Assistant</string>
+    <string name="assist_gesture_training_suggestion_summary">‏לדבר עם Assistant, להשתיק שיחות</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">‏לדבר עם Assistant, להשתיק התראות ושיחות</string>
+    <string name="assist_gesture_training_suggestion_title">‏לחיצה דו-צדדית ושחרור להפעלת Assistant</string>
+    <string name="automatic_storage_manager_activation_warning">אם יש חיבור לאינטרנט, עדיין אפשר לגשת לתמונות ולסרטונים באיכות שבחרת לגיבוי</string>
+    <string name="automatic_storage_manager_days_title">הסרת תמונות וסרטונים שגובו</string>
+    <string name="automatic_storage_manager_deactivation_warning">"האם להשבית את התכונה 'ניהול אחסון חכם'? 
+
+השבתת התכונה לא תפנה מקום כאשר שטח האחסון שלך יהיה כמעט מלא."</string>
+    <string name="automatic_storage_manager_downloads_days_title">הורדות מגובות</string>
+    <string name="automatic_storage_manager_preference_title">ניהול אחסון חכם</string>
+    <string name="automatic_storage_manager_primary_switch_title">"שימוש ב'ניהול אחסון חכם'"</string>
+    <string name="automatic_storage_manager_settings">ניהול אחסון חכם</string>
+    <string name="automatic_storage_manager_text">‏כשהאחסון כמעט מלא, כדאי להסיר תמונות וסרטונים שגובו. עדיין ניתן יהיה למצוא אותם ב-Google Photos.</string>
+    <string name="aware_disabled_preference_action">הפעלה</string>
+    <string name="aware_disabled_preference_neutral">לא עכשיו</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">"‏התכונה Motion Sense לא זמינה מפני שהאפשרויות 'מצב טיסה' ו'חיסכון בסוללה' מופעלות"</string>
+    <string name="aware_footer_when_airplane_on">"‏התכונה Motion Sense לא זמינה מפני ש'מצב טיסה' פועל"</string>
+    <string name="aware_footer_when_batterysaver_on">"‏התכונה Motion Sense לא זמינה מפני שהתכונה 'חיסכון בסוללה' פועלת"</string>
+    <string name="aware_gesture_summary_off">‏התנועות המהירות פועלות, Active Edge כבוי</string>
+    <string name="aware_gesture_summary_on_non_assist">‏התנועות המהירות פועלות, Active Edge פועל</string>
+    <string name="aware_gesture_summary_on_with_assist">‏התנועות המהירות פועלות, Active Edge פועל, יש ללחוץ משני צדי המכשיר כדי להפעיל את Assistant</string>
+    <string name="aware_info_button_description">הגדרות נוספות</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">"לא זמינה מפני שהאפשרויות 'מצב טיסה' ו'חיסכון בסוללה' מופעלות"</string>
+    <string name="aware_summary_when_airplane_on">"לא זמינה מפני ש'מצב טיסה' פועל"</string>
+    <string name="aware_summary_when_batterysaver_on">"לא זמינה מפני שהתכונה 'חיסכון בסוללה' פועלת"</string>
+    <string name="backup_data_summary">‏גיבוי של נתוני אפליקציות, סיסמאות Wi-Fi והגדרות אחרות בשרתי Google</string>
+    <string name="backup_suggestion_cancel">ביטול</string>
+    <string name="backup_suggestion_dialog_description">פעולה זו תמחק את כל הנתונים באחסון הפנימי של הטלפון.</string>
+    <string name="backup_suggestion_dialog_title">לאפס את המכשיר?</string>
+    <string name="backup_suggestion_get_started">למידע נוסף</string>
+    <string name="backup_suggestion_item_summary">‏העתקה ממכשיר Android או ®iPhone</string>
+    <string name="backup_suggestion_item_title">חסרים לך נתונים מהטלפון הישן?</string>
+    <string name="backup_suggestion_missing_description">"‏אם אינך רואה חלק מהנתונים שלך, כמו הודעות SMS ותמונות, אפשר להעביר אותם ל-Pixel באמצעות כבל.
+
+כדי להתחיל, יש לאפס את Pixel. כל הנתונים בטלפון הזה יימחקו, כולל הגדרות שהותאמו אישית ותוכן שלא סונכרן עם הענן."</string>
+    <string name="backup_suggestion_missing_title">חסרים לך נתונים?</string>
+    <string name="backup_suggestion_next">הבא</string>
+    <string name="backup_suggestion_other_ways_to_copy">דרכים אחרות להעתקת נתונים</string>
+    <string name="backup_suggestion_reset_description">"‏במסך הבא אפשר לאפס את Pixel. זו הדרך היחידה להעביר נתונים באמצעות כבל.
+
+לאחר האיפוס, יש לבצע את תהליך ההגדרה ולבחור להעביר את הנתונים מהטלפון הקודם."</string>
+    <string name="backup_suggestion_reset_title">‏איפוס Pixel</string>
+    <string name="backup_suggestion_what_is_needed_summary">"‏לאחר איפוס הטלפון, צריך להכין את הפריטים הבאים:
+
+• הטלפון הקודם שלך (LINK_BEGINרוב הטלפונים שמותקנות בהם מערכות Android מגרסה 5.0 ואילך או ®iOS מגרסה 8.0 ואילך נתמכיםLINK_END)
+• כבל מטען לטלפון הקודם
+• מתאם Quick Switch Adapter שהגיע עם Pixel"</string>
+    <string name="backup_suggestion_what_is_needed_title">מה צריך להכין</string>
+    <string name="battery_manager_summary">הארכת חיי הסוללה וביצוע אופטימיזציה של הטעינה</string>
+    <string name="battery_manager_summary_unsupported">הארכת חיי הסוללה</string>
+    <string name="battery_missing_link_message">מידע נוסף</string>
+    <string name="battery_suggestion_summary">"הפעלה של 'סוללה שניתנת להתאמה'"</string>
+    <string name="battery_tip_smart_battery_summary">הפעלת סוללה שניתנת להתאמה</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">‏תבוטל ההתאמה בין %1$s לבין כל מכשיר שמקושר לחשבון Google הזה</string>
+    <string name="columbus_gesture_detected">זוהתה הקשה מהירה!</string>
+    <string name="columbus_gesture_enrollment_complete">סיום</string>
+    <string name="columbus_gesture_enrollment_do_it_later">לא עכשיו</string>
+    <string name="columbus_gesture_enrollment_settings">להגדרות</string>
+    <string name="columbus_gesture_enrollment_try_it">רוצה לנסות?</string>
+    <string name="columbus_gesture_training_action_no_selection_error">עליך לבחור פעולה לביצוע</string>
+    <string name="columbus_gesture_training_action_text">צריך לבחור פעולה שתתבצע כשמשתמשים בהקשה מהירה. אפשר לשנות זאת מאוחר יותר בהגדרות.</string>
+    <string name="columbus_gesture_training_action_title">יש לבחור באפשרות להקשה מהירה</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… זוהתה לחיצה פעמיים (1 מתוך 2)</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">ננסה זאת עוד פעם. יש ללחוץ פעמיים במהירות על גב הטלפון.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">איזה יופי!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… זוהתה לחיצה פעמיים (2 מתוך 2)</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">אפשר להתחיל להשתמש בהקשה מהירה</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">כל הכבוד!</string>
+    <string name="columbus_gesture_training_enrolling_text">יש ללחוץ פעמיים במהירות על גב הטלפון.</string>
+    <string name="columbus_gesture_training_enrolling_title">רוצה לנסות את ההקשה המהירה?</string>
+    <string name="columbus_gesture_training_finished_text">"כדי לשנות את עוצמת ההקשה הנדרשת לשימוש בהקשה מהירה, יש לעבור ל'הגדרות'."</string>
+    <string name="columbus_gesture_training_finished_title">הגדרת את ההקשה המהירה</string>
+    <string name="columbus_gesture_training_intro_text_accidental">‏אחרי שלחצת פעמיים על גב המכשיר, ניתן להשתמש ב-Assistant תוך כדי תנועה. אפשר להתאים אישית את התנועה בהגדרות.</string>
+    <string name="columbus_gesture_training_intro_text_suw">אפשר לצלם צילום מסך, להציג התראות או להתחיל פעולה אחרת על ידי לחיצה פעמיים.</string>
+    <string name="columbus_gesture_training_intro_title">הקשה מהירה לפעולות מהירות</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">יש לבחור אפליקציה לפתיחה</string>
+    <string name="columbus_gesture_training_launch_text">יש לבחור את האפליקציה שתיפתח כשמשתמשים בהקשה מהירה.</string>
+    <string name="columbus_gesture_training_launch_title">בחירת אפליקציה לפתיחה</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">הגדרות של קיצור הדרך לאפליקציה %1$s</string>
+    <string name="columbus_launch_settings_activity_title">הגדרות ההקשה המהירה</string>
+    <string name="columbus_name">הקשה מהירה</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">הגדרות %1$s</string>
+    <string name="columbus_setting_action_assistant_title">גישה אל העוזר הדיגיטלי</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">לא נבחרה אפליקציה</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">האפליקציה לא מותקנת</string>
+    <string name="columbus_setting_action_launch_title">פתיחת אפליקציה</string>
+    <string name="columbus_setting_action_notification_title">הצגת ההתראות</string>
+    <string name="columbus_setting_action_open_app_title">פתיחת האפליקציה</string>
+    <string name="columbus_setting_action_overview_title">הצגת אפליקציות שהיו בשימוש לאחרונה</string>
+    <string name="columbus_setting_action_play_pause_title">הפעלה או השהיה של מדיה</string>
+    <string name="columbus_setting_action_screenshot_title">צילום המסך</string>
+    <string name="columbus_setting_actions_title">יש להקיש פעמיים על גב הטלפון לצורך</string>
+    <string name="columbus_setting_additional_settings_title">עוצמת ההקשה המהירה</string>
+    <string name="columbus_setting_app_selection_help_text">צריך לבחור אפליקציה שתיפתח כמקישים פעמיים על גב הטלפון. אם מסירים את האפליקציה שנבחרה, ההקשה המהירה מושבתת עד שבוחרים אפליקציה אחרת.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">צריך לבחור מה קורה כשפותחים את האפליקציה באמצעות ההקשה המהירה.</string>
+    <string name="columbus_setting_enable_switch_title">שימוש בהקשה המהירה</string>
+    <string name="columbus_setting_sensitivity_title">הגברת עוצמת ההקשה</string>
+    <string name="connectivity_helper_call_quality_category">איכות השיחה</string>
+    <string name="connectivity_helper_call_quality_summary">קבלת עדכונים על גורמים לבעיות בחיבור במהלך שיחות</string>
+    <string name="connectivity_helper_call_quality_title">קבלת עדכונים</string>
+    <string name="connectivity_helper_d2d_summary">עדכון המשתתף/ת בשיחה שלטלפון שלך יש בעיות בחיבור במהלך שיחות</string>
+    <string name="connectivity_helper_d2d_title">שיתוף פרטי החיבור</string>
+    <string name="connectivity_helper_footnote">יש לך אפשרות לשתף את פרטי החיבור עם המשתתף/ת בשיחה כאשר יש להם רשת או מכשיר נתמכים</string>
+    <string name="content_capture">התאמה אישית באמצעות נתונים מאפליקציות</string>
+    <string name="copy_toast_msg">הקישור הועתק ללוח</string>
+    <string name="dark_ui_text">העיצוב הכהה משתמש ברקע שחור כדי להאריך את חיי הסוללה. הפעלת העיצוב הכהה מתוזמנת להתחיל לאחר שהמסך נכבה.</string>
+    <string name="dock_summary_charging_phone">טעינת הטלפון</string>
+    <string name="double_twist_for_camera_mode_summary">‏כדי להיכנס למצב סלפי ולצאת ממנו במצלמת Google, צריך לאחוז במכשיר ולסובב אותו פעמיים מצד לצד כאשר משתמשים באפליקציה.</string>
+    <string name="downloads_backup_text">‏קבצים שהורדת יגובו ב-Google Drive</string>
+    <string name="duration_less_than_one_minute">פחות מדקה</string>
+    <string name="extra_app_info_label">אופטימיזציה של המשחק</string>
+    <string name="face_enrolling_center_head">צריך למקם את הפנים בתוך המסגרת הפנימית</string>
+    <string name="face_enrolling_description">יש לצלם את הפנים שלך מכל הזוויות על ידי הסרת כל האריחים.</string>
+    <string name="face_enrolling_do_it_later">לא עכשיו</string>
+    <string name="face_enrolling_gaze_dialog_cancel">ביטול</string>
+    <string name="face_enrolling_gaze_dialog_continue">להגדיר בלי לפתוח את העיניים</string>
+    <string name="face_enrolling_gaze_dialog_message">האם ברצונך להגדיר פתיחה ע\"י זיהוי הפנים בלי לפקוח את העיניים? כשמגדירים בצורה כזו, מישהו יכול להפנות את הטלפון אל הפנים שלך ללא ידיעתך ולבטל את נעילת הטלפון.</string>
+    <string name="face_enrolling_gaze_dialog_title">להגדיר בלי לפתוח את העיניים</string>
+    <string name="face_enrolling_how_to_setup">איך להגדיר</string>
+    <string name="face_enrolling_title">יש להחזיק את הטלפון באופן יציב ולסובב את הראש. צריך לבצע את הפעולה לאט.</string>
+    <string name="face_enrolling_title_accessibility">יש להסתכל ישירות אל הטלפון</string>
+    <string name="face_enrolling_title_accessibility_progress">יש להמשיך להביט ישירות בטלפון</string>
+    <string name="face_enrolling_too_close">יש להרחיק את הטלפון</string>
+    <string name="face_enrolling_too_far">צריך לקרב את הטלפון</string>
+    <string name="face_enrolling_too_high">צריך להוריד את הטלפון למטה</string>
+    <string name="face_enrolling_too_left">צריך להזיז את הטלפון ימינה</string>
+    <string name="face_enrolling_too_low">צריך להרים את הטלפון למעלה</string>
+    <string name="face_enrolling_too_right">צריך להזיז את הטלפון שמאלה</string>
+    <string name="face_enrolling_turn_head_to_arrow">יש להפנות את הראש לכיוון החץ</string>
+    <string name="face_enrolling_turned_too_far">עליך לסובב את הראש קצת פחות</string>
+    <string name="fallback_menu_item_copy_link">להעתקת הקישור</string>
+    <string name="fallback_menu_item_open_in_browser">פתיחה בדפדפן</string>
+    <string name="fallback_menu_item_share_link">לשיתוף הקישור</string>
+    <string name="fullbackup_data_summary">"‏שימוש ב-Google Drive כדי לגבות אוטומטית את נתוני המכשיר (כמו ססמאות לרשתות Wi-Fi והיסטוריית שיחות) ונתוני אפליקציות (כמו הגדרות וקבצים המאוחסנים על ידי אפליקציות).
+
+כשהגיבוי האוטומטי פועל, נתוני המכשיר והאפליקציות נשמרים מדי פעם בתיקייה פרטית ב-Google Drive. נתוני אפליקציות יכולים להיות כל מה שהאפליקציה שמרה (בהתבסס על הגדרות המפתח), כולל נתונים שעשויים להיות רגישים, כמו אנשי קשר, הודעות ותמונות.
+
+נתונים בגיבוי לא ייחשבו כחלק ממכסת האחסון ב-Drive. לא יתבצע גיבוי של קבצים גדולים או של קבצים שהמפתחים בחרו שלא לכלול בשירות."</string>
+    <string name="fullbackup_erase_dialog_message">‏האם להפסיק לגבות את נתוני המכשיר (כמו סיסמאות לרשתות Wi-Fi והיסטוריית שיחות) ונתוני אפליקציות (כמו הגדרות וקבצים המאוחסנים על ידי אפליקציות) ולמחוק את כל העותקים השמורים ב-Google Drive?</string>
+    <string name="game_dashboard_always_on_summary">להציג במשחקים את הלחצן המהיר למרכז בקרת המשחקים</string>
+    <string name="game_dashboard_always_on_title">מרכז בקרת המשחקים</string>
+    <string name="game_dashboard_dnd_rule_name">משחקים</string>
+    <string name="game_dashboard_dnd_summary">קבלת התראות רק מאפליקציות ומאנשים חשובים במהלך משחק</string>
+    <string name="game_dashboard_dnd_title">"מצב 'נא לא להפריע' עבור משחקים"</string>
+    <string name="game_mode_battery_description">הארכת חיי הסוללה</string>
+    <string name="game_mode_battery_title">חיסכון בסוללה</string>
+    <string name="game_mode_performance_description">קצב פריימים מקסימלי, צריכת הסוללה מוגברת</string>
+    <string name="game_mode_performance_title">ביצועים</string>
+    <string name="game_mode_standard_description">שימוש בהגדרות ברירת המחדל של המשחק</string>
+    <string name="game_mode_standard_title">רגיל</string>
+    <string name="game_optimization_unavailable">לא זמינה למשחק זה</string>
+    <string name="game_settings_title">הגדרות של משחקים</string>
+    <string name="gesture_aware_confirmation_action_button">הבנתי</string>
+    <string name="gesture_aware_footer"><annotation link="link">העדפות</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">העדפות</annotation></string>
+    <string name="gesture_skip_direction_ltr">משמאל לימין</string>
+    <string name="gesture_skip_direction_rtl">מימין לשמאל</string>
+    <string name="gesture_skip_direction_title">דילוג על הכיוון</string>
+    <string name="gesture_skip_footer"><annotation link="link">העדפות</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">העדפות</annotation></string>
+    <string name="global_actions_panel_short_title">כרטיסים</string>
+    <string name="global_actions_panel_summary">כדי לגשת לפרטים כמו אמצעי תשלום וכרטיסי עלייה למטוס, יש ללחוץ לחיצה ארוכה על לחצן ההפעלה.</string>
+    <string name="global_actions_panel_title">הצגת כרטיסים</string>
+    <string name="install_unknown_applications">‏אישור התקנת אפליקציות ממקורות אחרים שאינם חנות Play</string>
+    <string name="keywords_accessibility_menu">מוטורי, תפריט מהיר, תפריט מסייע, מגע, מוטוריקה עדינה</string>
+    <string name="keywords_adaptive_charging">טעינה, טעינה דינמית, מתבצעת טעינה, טעינה חכמה, טעינה ניתנת להתאמה, סוללה, תקינות הסוללה</string>
+    <string name="keywords_assist_gesture_launch">"‏תנועה, מחווה, אדג', צד, כיווץ, תפיסה, לחץ משני צדי המכשיר, אחיזה, עזרה, אסיסטנט, assistant, Ok Google‏, אוקיי גוגל, אסיסטנט של גוגל, google assistant, gesture, edge, side, active edge, squeeze, grip, assist, assistant, ok google, google assistant"</string>
+    <string name="keywords_assist_gesture_silence">"‏תנועה, מחווה, אדג', צד, אקטיב אדג', השתק, השתקה, נודניק, שעון מעורר, שיחה נכנסת, שקט, מצב שקט, מסך, צג, תצוגה, מסך נעילה, נעילת מסך, לחץ משני צדי המכשיר, אחיזה, תפיסה, עצירה, gesture, edge, side, active edge, silence, snooze, alarm, incoming call, quiet, display, lockscreen, squeeze, grip, stop"</string>
+    <string name="keywords_assist_gesture_wake">"‏תנועה, מחווה, אדג', צד, אקטיב אדג', להעיר, מסך, צג, תצוגה, כיבוי מסך, הפעלת מסך, הדלקת מסך, לחץ משני צדי המכשיר, אדג', מצב שינה, שינה, אחיזה, תפיסה, gesture, edge, side, active edge, wake, notifications, screen, display, screen off, screen on, squeeze, asleep, sleep, grip"</string>
+    <string name="keywords_battery_share">שיתוף סוללה, טעינה אלחוטית</string>
+    <string name="keywords_battery_share_settings">שיתוף סוללה, טעינה אלחוטית הפוכה</string>
+    <string name="keywords_content_capture">תיעוד תוכן, תוכן אפליקציה, נתוני אפליקציה</string>
+    <string name="keywords_gesture">‏תנועה, תנועות, gesture‏, moves</string>
+    <string name="keywords_global_actions_panel">כרטיסים</string>
+    <string name="keywords_live_transcribe">‏כתוביות, כתוביות מיידיות, כבד שמיעה, אובדן שמיעה, CART, המרת דיבור לטקסט (STT), כתובית</string>
+    <string name="keywords_reverse_charging_stop_threshold">להפסיק את שיתוף הסוללה כשהטלפון יגיע אל:</string>
+    <string name="keywords_select_to_speak">שמיעת טקסט, הקראה בקול, הקראת תוכן מסך, קורא מסך</string>
+    <string name="keywords_sound_amplifier">‏PSAP, להגביר, הגברת קול, כבד שמיעה, אובדן שמיעה, הגברה</string>
+    <string name="keywords_sound_notifications">התראות, כבד שמיעה, אובדן שמיעה, להודיע</string>
+    <string name="keywords_switch_access">‏מוטורי, מתג, יד, AT, טכנולוגיה מסייעת, שיתוק, ALS, סריקה, סריקה בשלבים</string>
+    <string name="keywords_talkback">‏קורא מסך, הקראה, VoiceOver, סיוע קולי, עיוור, לקוי ראייה, TTS, המרת טקסט לדיבור, קורא מסך קולי</string>
+    <string name="keywords_voice_access">קול, שליטה באמצעות הקול, מוטורי, יד, מיקרופון, הכתבה, דיבור, שליטה</string>
+    <string name="language_input_gesture_summary_off">‏Active Edge כבוי</string>
+    <string name="language_input_gesture_summary_on_non_assist">‏Active Edge מופעל</string>
+    <string name="language_input_gesture_summary_on_with_assist">‏Active Edge מופעל. לחיצה משני צדי המכשיר תפעיל את Assistant</string>
+    <string name="me_card_title">‏ה-Pixel שלי</string>
+    <string name="my_device_info_account_preference_title">‏חשבון Google</string>
+    <string name="owner_info_settings_edit_text_hint">‏לדוגמה, ה-Pixel של יוסי.</string>
+    <string name="reverse_charging_charging_wirelessly_message">לא זמין מפני שהטלפון נטען באופן אלחוטי</string>
+    <string name="reverse_charging_detail_charging_overheat_message">‏שיתוף הסוללה אינו זמין מכיוון שה-Pixel חם מדי. יש להמתין עד שהטלפון יתקרר ולנסות שוב.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">שיתוף הסוללה אינו זמין מפני שהטלפון נטען באופן אלחוטי</string>
+    <string name="reverse_charging_detail_footer_title">סוללת הטלפון תתרוקן מהר יותר בזמן השימוש בשיתוף הסוללה. שיתוף הסוללה פועל עם אוזניות, שעונים, טלפונים ועוד מכשירים תואמים. כדי לשפר את יכולת הטעינה, יש להסיר את נרתיק הטלפון.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"שיתוף הסוללה פועל עם אוזניות כפתור, טלפונים ועוד מכשירים תואמים.
+
+הסוללה של הטלפון שלך תתרוקן מהר יותר בזמן השימוש בתכונה הזאת. שיתוף הסוללה נכבה באופן אוטומטי כעבור כמה דקות אם לא זוהה מכשיר נוסף. כדי לשפר את יכולת הטעינה, יש להסיר את נרתיק הטלפון ופריטים אחרים שעלולים להפריע, כמו חפצים ממתכת."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">"שיתוף הסוללה אינו זמין מפני שהתכונה 'חיסכון בסוללה' פועלת"</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">‏שיתוף הסוללה אינו זמין מפני שמחובר מכשיר USB-C</string>
+    <string name="reverse_charging_instructions_title">"‏אפשר לטעון מכשירים אחרים באמצעות ה-Pixel.
+כדי לנסות, עליך להפוך את הטלפון."</string>
+    <string name="reverse_charging_is_off_summary">מצב כבוי</string>
+    <string name="reverse_charging_is_on_and_charging_summary">הסוללה משותפת ומוטענת</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">הסוללה משותפת</string>
+    <string name="reverse_charging_is_on_summary">מופעל/טעינה של מכשירים אחרים</string>
+    <string name="reverse_charging_main_switch">אישור לשיתוף הסוללה</string>
+    <string name="reverse_charging_off_low_battery_summary">כבוי/רמת הטעינה של סוללת הטלפון נמוכה מ-%1$s</string>
+    <string name="reverse_charging_off_sharing_level_summary">כבוי/טעינת הסוללה נמוכה מרמה שמאפשרת שיתוף</string>
+    <string name="reverse_charging_overheat_summary">‏התכונה לא זמינה מכיוון שה-Pixel חם מדי. יש להמתין עד שהטלפון יתקרר ולנסות שוב.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">"לא זמין מפני שמצב 'חיסכון בסוללה' מופעל"</string>
+    <string name="reverse_charging_sharing_level_message">לא זמין מפני שטעינת הסוללה נמוכה מרמה שמאפשרת שיתוף</string>
+    <string name="reverse_charging_switch_summary">‏יש להניח מכשירים על גב ה-Pixel</string>
+    <string name="reverse_charging_switch_title">‏טעינה של מכשירים אחרים באמצעות הנחתם על גב ה-Pixel</string>
+    <string name="reverse_charging_switch_title_message">טעינת מכשירים אחרים</string>
+    <string name="reverse_charging_title">שיתוף סוללה</string>
+    <string name="reverse_charging_unplug_usb_cable_message">‏לא זמין מפני שמחובר מכשיר USB-C</string>
+    <string name="reverse_charging_warning_summary">לא זמין כי רמת טעינת הסוללה נמוכה מ-%1$s</string>
+    <string name="reverse_charging_warning_title">שיתוף הסוללה אינו זמין כי רמת טעינת הסוללה נמוכה מ-%1$s</string>
+    <string name="rtt_settings_always_visible">מוצג תמיד</string>
+    <string name="rtt_settings_no_visible">לא מוצג</string>
+    <string name="rtt_settings_title">‏טקסט בזמן אמת (RTT)</string>
+    <string name="rtt_settings_visible_during_call">מוצג במהלך שיחה</string>
+    <string name="screen_time_summary_usage_today">%1$s היום</string>
+    <string name="search_bar_account_avatar_content_description">‏תמונת פרופיל, יש ללחוץ פעמיים כדי לפתוח את חשבון Google</string>
+    <string name="security_advanced_settings">הגדרות מתקדמות</string>
+    <string name="security_dismiss_dialog_dismiss_button">סגירה</string>
+    <string name="security_dismiss_dialog_title">לסגור את האזהרה הזו?</string>
+    <string name="security_settings_face_enroll_education_message">במסך הבא, עליך לסובב את הראש כדי לצלם את הפנים מכל הזוויות</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">במסך הבא יש להחזיק את הטלפון בגובה העיניים</string>
+    <string name="security_settings_face_enroll_error_dialog_title">הסריקה לא הושלמה</string>
+    <string name="security_settings_face_enroll_error_generic_dialog_message">הסריקה לצורך זיהוי פנים לא פעלה.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">הגעת למגבלת הזמן של סריקה לצורך זיהוי פנים. יש לנסות שוב.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">פג הזמן הקצוב לפתיחה ע\"י זיהוי הפנים</string>
+    <string name="security_settings_face_enroll_finish_description">עכשיו אפשר להשתמש בזיהוי פנים כדי לבטל את נעילת הטלפון או לאמת את זהותך, למשל בכניסה לחשבון באפליקציות או באישור רכישה</string>
+    <string name="security_settings_face_enroll_finish_title">נראה טוב!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">מגבלה בראייה או בתנועת הראש</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">"לצורך השימוש בתכונה 'פתיחה ע\"י זיהוי הפנים', ייתכן שיהיה עליך לייצב את ראשך ישירות מול הטלפון."</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">העיניים צריכות להיות פתוחות</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"‏האפשרות למחוק את התבנית לזיהוי הפנים, או להשבית את הפיצ'ר 'פתיחה ע\"י זיהוי הפנים', זמינה לך ולילד או לילדה שלך בכל שלב בהגדרות. התבניות לזיהוי פנים נשמרות בטלפון עד שהן נמחקות.
+
+מידע נוסף זמין בכתובת g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">השליטה נמצאת בידיים שלך ושל הילד או הילדה</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"‏בכל שלב אפשר למחוק את התבנית לזיהוי הפנים או להשבית את הפיצ'ר 'פתיחה ע\"י זיהוי הפנים' בהגדרות. התבניות לזיהוי הפנים נשמרות בטלפון עד שהן נמחקות.
+
+מידע נוסף זמין בכתובת g.co/pixel/faceunlock"</string>
+    <string name="security_settings_face_enroll_introduction_control_title">השליטה בידיים שלך</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"הפיצ'ר 'פתיחה ע\"י זיהוי הפנים' יוצר תבנית ייחודית של הפנים של הילד או הילדה כדי לאמת את זהותם. כדי ליצור את התבנית הזו לזיהוי הפנים במהלך ההגדרה, יהיה על הילד או הילדה לצלם את פניהם מזוויות שונות.
+
+כשהם משתמשים בפיצ'ר 'פתיחה ע\"י זיהוי הפנים', נעשה שימוש בתמונות כדי לעדכן את התבנית שלהם לזיהוי הפנים. התמונות המשמשות ליצירת התבנית לזיהוי הפנים שלהם לא נשמרות. התבנית לזיהוי הפנים נשמרת באופן מאובטח בטלפון ואף פעם לא נשלחת או מועברת ממנו. כל פעולות העיבוד מתבצעות בטלפון באופן מאובטח."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"הפיצ'ר 'פתיחה ע\"י זיהוי הפנים' יוצר תבנית ייחודית של הפנים שלך כדי לאמת את זהותך. כדי ליצור את התבנית הזו לזיהוי הפנים במהלך ההגדרה, יהיה עליך לצלם את פניך מזוויות שונות.
+
+כשמשתמשים בפיצ'ר 'פתיחה ע\"י זיהוי הפנים', נעשה שימוש בתמונות כדי לעדכן את התבנית לזיהוי הפנים. התמונות המשמשות ליצירת התבנית לזיהוי הפנים שלך לא נשמרות. התבנית לזיהוי הפנים נשמרת באופן מאובטח בטלפון שלך ואף פעם לא נשלחת או מועברת ממנו. כל פעולות העיבוד מתבצעות בטלפון באופן מאובטח."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">איך זה עובד</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">"במסגרת 'פתיחה ע\"י זיהוי הפנים', אפשר לדרוש שהעיניים של הילד או הילדה יהיו פקוחות כדי לבטל את נעילת הטלפון או לאמת את זהותם. גם ההורה וגם הילד או הילדה יכולים להפעיל את האפשרות הזו בכל שלב ב'הגדרות'."</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">אם הילד או הילדה שלך מרכיבים בדרך כלל משקפיים, הם יכולים להרכיב אותם במהלך ההגדרה.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">מבט לטלפון עשוי לבטל נעילה גם כשהם לא מתכוונים לכך. כמו כן, נעילת הטלפון שלהם עשויה להתבטל על ידי מישהו שדומה להם מאוד, כמו אח או אחות תאומים, או כשמחזיקים אותו מול הפנים שלהם.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">"במסגרת 'פתיחה ע\"י זיהוי הפנים', אפשר לדרוש שהעיניים שלך יהיו פקוחות כדי לבטל את נעילת הטלפון או לאמת את זהותך. ניתן להפעיל את האפשרות הזו בכל שלב ב'הגדרות'."</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">אפשר להרכיב משקפיים או משקפי שמש בגוון בהיר.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">שימוש בזיהוי פנים לביטול נעילת הטלפון עלול להיות פחות מאובטח מקוד אימות או מקו ביטול נעילה חזקים.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">מבט לטלפון עשוי לבטל נעילה בלי כוונה. כמו כן, נעילת הטלפון עשויה להתבטל על ידי מישהו שדומה לך מאוד, כמו אח או אחות תאומים, או כשמחזיקים אותו מול הפנים שלך.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">חשוב לזכור</string>
+    <string name="security_settings_face_enroll_introduction_message">ניתן להשתמש בפנים כדי לבטל את הנעילה של הטלפון או לאמת את זהותך, למשל בכניסה לאפליקציות או באישור רכישה.</string>
+    <string name="security_settings_face_enroll_introduction_title">"הגדרת 'פתיחה ע\"י זיהוי הפנים'"</string>
+    <string name="security_settings_face_enroll_next">הבא</string>
+    <string name="security_settings_face_enroll_partial_message">"כדי לשפר את הביצועים, ניתן להגדיר שוב את התכונה 'פתיחה ע\"י זיהוי הפנים' ב'הגדרות'"</string>
+    <string name="security_settings_face_enroll_partial_start_over">התחלה מחדש</string>
+    <string name="security_settings_face_enroll_partial_title">הסתיימה ההגדרה של פתיחה ע\"י זיהוי הפנים</string>
+    <string name="security_settings_face_enroll_timeout_message">"במקום זאת, יש לנסות הגדרה מהירה. חשוב לזכור: ייתכן שיהיה עליך לייצב את ראשך ישירות מול הטלפון בזמן השימוש בשחרור נעילה על ידי זיהוי פנים.
+
+כדי לשפר את הביצועים, ניתן להגדיר שוב את התכונה 'פתיחה ע\"י זיהוי הפנים' ב'הגדרות'."</string>
+    <string name="security_settings_face_enroll_timeout_title">לא ניתן להמשיך בהגדרה</string>
+    <string name="security_settings_face_enroll_timeout_try_again">לניסיון חוזר</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">שימוש בהגדרה המהירה</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">יציאה מתהליך ההגדרה</string>
+    <string name="security_settings_face_enroll_too_hot_message">לא ניתן להשלים את ההגדרה של פתיחה ע\"י זיהוי הפנים מפני שהטלפון חם מדי. יש לנסות שוב מאוחר יותר לאחר שהטלפון יתקרר.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">דילוג על פתיחה ע\"י זיהוי הפנים</string>
+    <string name="security_settings_face_enroll_too_hot_title">הטלפון חם מדי</string>
+    <string name="security_settings_fingerprint_preference_summary_none">יש להקיש כדי להגדיר טביעת אצבע</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">‏מידע נוסף זמין בכתובת g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">‏Pixel Imprint לעבודה</string>
+    <string name="setup_suggestion_summary">העתקת נתונים, תשלום באמצעות הטלפון ועוד</string>
+    <string name="setup_suggestion_title">סיום תהליך ההגדרה</string>
+    <string name="smart_battery_footer">"כדי להאריך את חיי הסוללה, התכונה 'סוללה שניתנת להתאמה' עשויה להפחית את רמת הביצועים ואת הפעילות ברקע. ייתכן שיהיה עיכוב בקבלת התראות מסוימות."</string>
+    <string name="smart_battery_manager_title">העדפות סוללה</string>
+    <string name="smart_battery_title">סוללה שניתנת להתאמה</string>
+    <string name="sound_dashboard_summary">עוצמת קול, משוב פיזי, נא לא להפריע</string>
+    <string name="sound_settings">צליל ורטט</string>
+    <string name="storage_manager_indicator">ניהול אחסון חכם: ^1</string>
+    <string name="time_remaining_warning_subtext">על סמך נתוני שימוש קודמים, נשארו בערך %1$s</string>
+    <string name="time_remaining_warning_text">ייתכן שהסוללה תתרוקן בקרוב</string>
+    <string name="tips_suggestion_summary">כדאי לגלות מה אפשר לעשות בעזרת הטלפון</string>
+    <string name="tips_suggestion_title">‏טיפים ל-Pixel</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">מחזיקים את הטלפון מול הפנים</string>
+    <string name="usb_use_file_transfers">‏העברת קבצים / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">"התכונה 'רטט לשיחות' אינה זמינה מפני שהטלפון מוגדר למצב שקט"</string>
+    <string name="vibration_haptics_settings_not_available_title">ההגדרות לא זמינות</string>
+    <string name="wallpaper_dashboard_summary">צבעים, סמלים מעוצבים, תצוגת אפליקציות</string>
+    <string name="wifi_subscription_summary">‏הצגה או שינוי של מינוי OpenRoaming</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">מחובר עם %1$s</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">יש להקיש כדי להתחבר</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">לא ניתן להתחבר. יש להקיש כדי לנסות שוב.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">מתבצעת התחברות…</string>
+</resources>

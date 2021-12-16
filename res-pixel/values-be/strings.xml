@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Экран блакіроўкі ў рэжыме чакання</string>
+    <string name="gesture_silence_title">Жэст пераводу абвестак у рэжым без гуку</string>
+    <string name="gesture_skip_title">Жэст для пропуску</string>
+    <string name="keywords_touch_sensitivity">дакрануцца, адчувальнасць, адчувальны, ахоўная плёнка, плёнка, аператыўны, хуткая рэакцыя</string>
+    <string name="touch_sensitivity_summary">Параметр павышае адчувальнасць экрана да дакрананняў пры выкарыстанні ахоўных плёнак</string>
+    <string name="touch_sensitivity_title">Павышэнне адчувальнасці да дакрананняў</string>
+    <string name="accessibility_vibration_settings_screen_title">Выкарыстоўваць вібрацыю і тактыльны водгук</string>
+    <string name="vibration_haptics_settings_not_available_summary">Вібрацыя і тактыльны водгук недаступныя, таму што тэлефон знаходзіцца ў бязгучным рэжыме</string>
+    <string name="vibration_haptics_strength_category_title">Моц вібрацыі і тактыльнага водгуку</string>
+    <string name="accessibility_vibration_settings_title">Вібрацыя і тактыльны водгук</string>
+    <string name="columbus_title">Хуткі дотык для пачатку дзеянняў</string>
+    <string name="vibrate_for_calls_category_title">Выклікі</string>
+    <string name="accessibility_alarm_vibration_title">Вібрацыя падчас сігналаў</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge наладжаны. Перайдзіце да наступнага экрана ці працягвайце выконваць налады.</string>
+    <string name="accessibility_keyboard_haptics_title">Тактыльны водгук клавіятуры</string>
+    <string name="accessibility_vibration_preferences_file">Налады вібрацыі</string>
+    <string name="adaptive_charging">Адаптыўная зарадка</string>
+    <string name="adaptive_charging_description">Зараджайце ўсю ноч, каб забяспечыць доўгі тэрмін службы акумулятара. Для абуджэння пры дасягненні поўнага зараду выкарыстоўваецца будзільнік.</string>
+    <string name="adaptive_charging_time_estimate"><b>Адаптыўная зарадка</b> • Поўнасцю зарадзіцца ў %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Налады</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Памочнік, нядаўнія праграмы, стандартныя праграмы</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Перайсці да Памочніка</string>
+    <string name="assist_gesture_enrollment_do_it_later">Пазней</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Лёгкае сцісканне</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Моцнае сцісканне</string>
+    <string name="assist_gesture_enrollment_settings">Налады</string>
+    <string name="assist_gesture_setting_enable_assistant_text">Каб пагаварыць з Памочнікам, сцісніце і адпусціце ніжнюю палову тэлефона</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Сціснуць, каб выклікаць Памочніка</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Сцісніце, каб сцішыць будзільнікі, таймеры, апавяшчэнні і ўваходныя выклікі</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">Сцісніце, каб сцішыць апавяшчэнні і ўваходныя выклікі</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Сціснуць, каб адключыць гук тэлефона</string>
+    <string name="assist_gesture_setting_enable_wake_title">Адкрываць Памочніка з выключаным экранам</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Лёгкае сцісканне</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Моцнае сцісканне</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Адчувальнасць да сціскання</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Можа выпадкова ўключыцца Памочнік</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Сцісніце ніжнюю палову тэлефона</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Сціскайце хутчэй</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Сцісніце мацней</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Хутка сцісніце і адпусціце</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">Паспрабуйце адрэгуляваць паўзунок</string>
+    <string name="assist_gesture_training_enrolling_text">Сцісніце ніжнюю палову тэлефона. Вы можаце адрэгуляваць сілу сціску.</string>
+    <string name="assist_gesture_training_enrolling_title">Хутка сцісніце і адпусціце</string>
+    <string name="assist_gesture_training_finished_text">Адчувальнасць да сціскання можна змяніць потым у Наладах</string>
+    <string name="assist_gesture_training_finished_title">Завяршыць або працягнуць рэгуляванне</string>
+    <string name="assist_gesture_training_intro_text">Каб пагаварыць з Памочнікам у любы час, проста хутка сцісніце і адпусціце ніжнюю палову тэлфона</string>
+    <string name="assist_gesture_training_intro_title">Сціснуць, каб выклікаць Памочніка</string>
+    <string name="assist_gesture_training_suggestion_summary">Звяртацца да Памочніка, сцішваць выклікі</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Звяртацца да Памочніка, сцішваць будзільнікі і выклікі</string>
+    <string name="assist_gesture_training_suggestion_title">Сцісніце і адпусціце, каб выклікаць Памочніка</string>
+    <string name="automatic_storage_manager_activation_warning">Калі вы падключаны, вы па-ранейшаму можаце атрымліваць доступ да фота і відэа ў якасці, якую вы выбіралі для рэзервовага капіравання</string>
+    <string name="automatic_storage_manager_days_title">Выдаліць фота і відэа, для якіх створаны рэзервовыя копіі</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Выключыць \"Разумнае сховішча\"? 
+
+\"Разумнае сховішча\" не будзе вызваляць месца, калі ваша сховішча будзе амаль запоўнена."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Рэзервовыя копіі спамповак</string>
+    <string name="automatic_storage_manager_preference_title">Разумнае сховішча</string>
+    <string name="automatic_storage_manager_primary_switch_title">Выкарыстоўваць разумнае сховішча</string>
+    <string name="automatic_storage_manager_settings">Разумнае сховішча</string>
+    <string name="automatic_storage_manager_text">Калі сховішча амаль запоўнена, выдаліце рэзервовыя копіі фатаграфій і відэа. Яны па-ранейшаму будуць даступныя ў Google Фота.</string>
+    <string name="aware_disabled_preference_action">Уключыць</string>
+    <string name="aware_disabled_preference_neutral">Не зараз</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Функцыя Motion Sense недаступная, бо ўключаныя рэжымы палёту і эканоміі зараду</string>
+    <string name="aware_footer_when_airplane_on">Функцыя Motion Sense недаступная, бо ўключаны рэжым палёту</string>
+    <string name="aware_footer_when_batterysaver_on">Функцыя Motion Sense недаступная, бо ўключаны рэжым эканоміі зараду</string>
+    <string name="aware_gesture_summary_off">Жэсты ўключаны, Active Edge выключаны</string>
+    <string name="aware_gesture_summary_on_non_assist">Жэсты ўключаны, Active Edge уключаны</string>
+    <string name="aware_gesture_summary_on_with_assist">Жэсты ўключаны, Active Edge уключаны, сцісніце, каб выклікаць Памочніка</string>
+    <string name="aware_info_button_description">Дадатковыя налады</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">Функцыя недаступная, бо ўключаныя рэжымы палёту і эканоміі зараду</string>
+    <string name="aware_summary_when_airplane_on">Функцыя недаступная, бо ўключаны рэжым палёту</string>
+    <string name="aware_summary_when_batterysaver_on">Функцыя недаступная, бо ўключаны рэжым эканоміі зараду</string>
+    <string name="backup_data_summary">Рэзервовае капіраванне даных праграм, пароляў Wi-Fi і іншых налад на серверы Google</string>
+    <string name="backup_suggestion_cancel">Скасаваць</string>
+    <string name="backup_suggestion_dialog_description">Гэта прывядзе да выдалення ўсіх даных з унутранага сховішча тэлефона.</string>
+    <string name="backup_suggestion_dialog_title">Скінуць гэту прыладу?</string>
+    <string name="backup_suggestion_get_started">даведацца больш</string>
+    <string name="backup_suggestion_item_summary">Капіраванне з прылады Android ці iPhone®</string>
+    <string name="backup_suggestion_item_title">Няма даных са старога тэлеф.?</string>
+    <string name="backup_suggestion_missing_description">"Калі вы не бачыце некаторыя свае даныя, напрыклад SMS-паведамленні і фота, вы можаце перамясціць іх на свой Pixel з дапамогай кабелю.
+
+Каб пачаць, трэба скінуць ваш Pixel. Усе даныя на гэтым тэлефоне, у тым ліку персаналізаваныя налады і змесціва, не сінхранізаванае з воблакам, будуць выдалены."</string>
+    <string name="backup_suggestion_missing_title">Няма вашых даных?</string>
+    <string name="backup_suggestion_next">далей</string>
+    <string name="backup_suggestion_other_ways_to_copy">Іншыя спосабы капіравання</string>
+    <string name="backup_suggestion_reset_description">"На наступным экране вы можаце скінуць свой Pixel. Гэта адзіны спосаб перадаць даныя з дапамогай кабелю.
+
+Пасля скіду выканайце наладжванне і выберыце перанос даных з вашай папярэдняй прылады."</string>
+    <string name="backup_suggestion_reset_title">Скід вашага Pixel</string>
+    <string name="backup_suggestion_what_is_needed_summary">"Пасля скіду тэлефона вам спатрэбіцца наступнае:
+
+• ваш папярэдні тэлефон (падтрымліваецца LINK_BEGINбольшасць тэлефонаўLINK_END на платформе Android 5.0 ці вышэй або iOS® 8.0 ці вышэй)
+• кабель для зарадкі ці перадачы даных вашага папярэдняга тэлефона
+• Quick Switch Adapter, які пастаўляўся ў камплекце з вашым Pixel"</string>
+    <string name="backup_suggestion_what_is_needed_title">Што вам спатрэбіцца</string>
+    <string name="battery_manager_summary">Падаўжае час працы ад акумулятара і аптымізуе зарадку</string>
+    <string name="battery_manager_summary_unsupported">Павялічыць тэрмін службы акумулятара</string>
+    <string name="battery_missing_link_message">Даведацца больш</string>
+    <string name="battery_suggestion_summary">Уключыць адаптацыю акумулятара</string>
+    <string name="battery_tip_smart_battery_summary">Уключыць адаптацыю акумулятара</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">Прылада \"%1$s\" больш не будзе спалучацца з прыладамі, звязанымі з гэтым Уліковым запісам Google</string>
+    <string name="columbus_gesture_detected">Выяўлены Хуткі дотык!</string>
+    <string name="columbus_gesture_enrollment_complete">Гатова</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Не зараз</string>
+    <string name="columbus_gesture_enrollment_settings">Перайсці ў Налады</string>
+    <string name="columbus_gesture_enrollment_try_it">Паспрабаваць</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Выберыце дзеянне для выканання</string>
+    <string name="columbus_gesture_training_action_text">Выберыце, што павінна адбыцца, калі вы скарыстаеце Хуткі дотык. Пазней вы можаце змяніць свой выбар у наладах.</string>
+    <string name="columbus_gesture_training_action_title">Выберыце дзеянне для Хуткага дотыку</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Выяўлены адзін з двух двайных дотыкаў</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Паспрабуем яшчэ раз. Двойчы дакраніцеся да задняй панэлі тэлефона.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Выдатна!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Выяўлены два з двух двайных дотыкаў</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Усё гатова для выкарыстання Хуткага дотыку</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Зразумела.</string>
+    <string name="columbus_gesture_training_enrolling_text">Двойчы дакраніцеся да задняй панэлі тэлефона.</string>
+    <string name="columbus_gesture_training_enrolling_title">Паспрабуйце Хуткі дотык</string>
+    <string name="columbus_gesture_training_finished_text">Каб змяніць сілу націску, патрэбную для выкарыстання Хуткага дотыку, адкрыйце Налады.</string>
+    <string name="columbus_gesture_training_finished_title">Вы наладзілі Хуткі дотык</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Вы двойчы дакрануліся да задняй панэлі прылады, і цяпер можаце вызываць Памочніка на хаду. Гэты жэст можна адрэгуляваць у наладах.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Рабіце здымкі экрана, праглядайце апавяшчэнні ці запускайце іншае дзеянне двума дотыкамі.</string>
+    <string name="columbus_gesture_training_intro_title">Хуткі дотык для хуткіх дзеянняў</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Выберыце праграму, якую трэба адкрыць</string>
+    <string name="columbus_gesture_training_launch_text">Выберыце праграму, якая павінна адкрывацца пры выкарыстанні Хуткага дотыку.</string>
+    <string name="columbus_gesture_training_launch_title">Выбраць праграму, якую трэба адкрыць</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">Налады хуткага доступу да праграмы \"%1$s\"</string>
+    <string name="columbus_launch_settings_activity_title">Налады Хуткага дотыку</string>
+    <string name="columbus_name">Хуткі дотык</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">%1$s: налады</string>
+    <string name="columbus_setting_action_assistant_title">Адкрыць лічбавага памочніка</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Праграмы не выбраны</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Праграма не ўсталявана</string>
+    <string name="columbus_setting_action_launch_title">Адкрыць праграму</string>
+    <string name="columbus_setting_action_notification_title">Паказаць апавяшчэнні</string>
+    <string name="columbus_setting_action_open_app_title">Адкрыць праграму</string>
+    <string name="columbus_setting_action_overview_title">Паказаць нядаўнія праграмы</string>
+    <string name="columbus_setting_action_play_pause_title">Прайграць або прыпыніць прайграванне медыязмесціва</string>
+    <string name="columbus_setting_action_screenshot_title">Зрабіць здымак экрана</string>
+    <string name="columbus_setting_actions_title">Двойчы націснуць на заднюю частку тэлефона, каб</string>
+    <string name="columbus_setting_additional_settings_title">Сіла націску пры Хуткім дотыку</string>
+    <string name="columbus_setting_app_selection_help_text">Выберыце праграму, якая павінна адкрыцца падчас двайнога дотыку да задняй панэлі тэлефона. Калі вы выдаліце праграму, Хуткі дотык не будзе працаваць, пакуль вы не выбераце іншую праграму.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Выберыце, што павінна адбыцца, калі вы адкрыеце гэту праграму з дапамогай Хуткага дотыку.</string>
+    <string name="columbus_setting_enable_switch_title">Выкарыстоўваць Хуткі дотык</string>
+    <string name="columbus_setting_sensitivity_title">Патрабаваць мацнейшыя дотыкі</string>
+    <string name="connectivity_helper_call_quality_category">Якасць выкліку</string>
+    <string name="connectivity_helper_call_quality_summary">Атрымліваць апавяшчэнні пра выпадкі ўзнікнення праблем з падключэннем падчас выклікаў</string>
+    <string name="connectivity_helper_call_quality_title">Атрымліваць апавяшчэнні</string>
+    <string name="connectivity_helper_d2d_summary">Апавяшчаць іншую асобу, калі ў вашага тэлефона ўзнікаюць праблемы з падключэннем у час выклікаў</string>
+    <string name="connectivity_helper_d2d_title">Абагульваць даныя аб падключэнні</string>
+    <string name="connectivity_helper_footnote">Вы можаце абагульваць інфармацыю пра падключэнне, калі іншы абанент выкарыстоўвае прыладу і сетку, якія падтрымліваюцца</string>
+    <string name="content_capture">Персаналізаванае выкарыстанне даных праграм</string>
+    <string name="copy_toast_msg">Спасылка скапіравана ў буфер абмену</string>
+    <string name="dark_ui_text">У цёмнай тэме выкарыстоўваецца чорны фон, які эканоміць зарад акумулятара. Акрамя таго, вы можаце вызначыць, калі цёмная тэма павінна ўключацца і выключацца.</string>
+    <string name="dock_summary_charging_phone">Зарадка тэлефона</string>
+    <string name="double_twist_for_camera_mode_summary">Пераключайцеся паміж асноўнай і франтальнай камерай двайным рухам запясця</string>
+    <string name="downloads_backup_text">Рэзервовыя копіі спампаваных файлаў будуць захоўвацца на Google Дыску</string>
+    <string name="duration_less_than_one_minute">Менш за 1 хвіліну</string>
+    <string name="extra_app_info_label">Аптымізацыя гульні</string>
+    <string name="face_enrolling_center_head">Размясціце твар у межах унутранай рамкі</string>
+    <string name="face_enrolling_description">Зніміце твар з усіх бакоў.</string>
+    <string name="face_enrolling_do_it_later">Пазней</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Скасаваць</string>
+    <string name="face_enrolling_gaze_dialog_continue">Рэгістрацыя без адкрыцця вачэй</string>
+    <string name="face_enrolling_gaze_dialog_message">Задаць магчымасць распазнавання твару, калі вочы не расплюшчаны? Калі задаць такую магчымасць, іншы чалавек зможа разблакіраваць ваш тэлефон без вашага ведама, накіраваўшы яго камеру на ваш твар.</string>
+    <string name="face_enrolling_gaze_dialog_title">Задаць магчымасць рэгістрацыі без адкрыцця вачэй</string>
+    <string name="face_enrolling_how_to_setup">Як выканаць наладку</string>
+    <string name="face_enrolling_title">Трымайце тэлефон нерухома. Павольна паварочвайце галаву.</string>
+    <string name="face_enrolling_title_accessibility">Глядзіце прама на экран тэлефона</string>
+    <string name="face_enrolling_title_accessibility_progress">Працягвайце глядзець прама на экран тэлефона</string>
+    <string name="face_enrolling_too_close">Перамясціце тэлефон далей</string>
+    <string name="face_enrolling_too_far">Перамясціце тэлефон бліжэй</string>
+    <string name="face_enrolling_too_high">Перамясціце тэлефон ніжэй</string>
+    <string name="face_enrolling_too_left">Перамясціце тэлефон управа</string>
+    <string name="face_enrolling_too_low">Перамясціце тэлефон вышэй</string>
+    <string name="face_enrolling_too_right">Перамясціце тэлефон улева</string>
+    <string name="face_enrolling_turn_head_to_arrow">Павярніце галаву ў бок стрэлкі</string>
+    <string name="face_enrolling_turned_too_far">Не паварочвайце галаву так моцна</string>
+    <string name="fallback_menu_item_copy_link">Скапіраваць спасылку</string>
+    <string name="fallback_menu_item_open_in_browser">Адкрыць у браўзеры</string>
+    <string name="fallback_menu_item_share_link">Абагуліць спасылку</string>
+    <string name="fullbackup_data_summary">"Аўтаматычна стварайце рэзервовыя копіі даных прылады (напрыклад, пароляў Wi-Fi і гісторыі выклікаў) і даных праграм (напрыклад, налад і файлаў, якія захоўваюцца праграмамі) на Google Дыску.
+
+Пры ўключэнні аўтаматычнага рэзервовага капіравання даныя прылады і праграм перыядычна захоўваюцца ў прыватную папку на Google Дыску. Даныя праграм – гэта любыя даныя, якія захавала праграма (кіруючыся наладамі распрацоўшчыка), у тым ліку патэнцыйна канфідэнцыяльныя даныя, напрыклад кантакты, паведамленні і фатаграфіі.
+
+Даныя рэзервовага капіравання не будуць улічвацца ў квоце сховішча Дыска. Рэзервовыя копіі вялікіх файлаў або файлаў, якія распрацоўшчыкі вырашылі выключыць з сэрвісу, не будуць стварацца."</string>
+    <string name="fullbackup_erase_dialog_message">Спыніць рэзервовае капіраванне даных прылады (напрыклад, пароляў Wi-Fi і гісторыі выклікаў) і даных праграм (напрыклад, налад і файлаў, якія захоўваюцца праграмамі), а таксама сцерці ўсе копіі з Google Дыска?</string>
+    <string name="game_dashboard_always_on_summary">Паказ ярлыка гульнявой панэлі ў гульнях</string>
+    <string name="game_dashboard_always_on_title">Гульнявая панэль</string>
+    <string name="game_dashboard_dnd_rule_name">Гульні</string>
+    <string name="game_dashboard_dnd_summary">Падчас гульні атрымліваць апавяшчэнні толькі ад важных карыстальнікаў і праграм</string>
+    <string name="game_dashboard_dnd_title">Рэжым \"Не турбаваць\" для гульняў</string>
+    <string name="game_mode_battery_description">Павялічвае час працы ад акумулятара</string>
+    <string name="game_mode_battery_title">Рэжым энергазберажэння</string>
+    <string name="game_mode_performance_description">Пры максімальным павышэнні частаты кадраў акумулятар разраджаецца хутчэй</string>
+    <string name="game_mode_performance_title">Прадукцыйнасць</string>
+    <string name="game_mode_standard_description">У гэтым рэжыме выкарыстоўваюцца стандартныя налады гульні</string>
+    <string name="game_mode_standard_title">Стандартны рэжым</string>
+    <string name="game_optimization_unavailable">Недаступна для гэтай гульні</string>
+    <string name="gesture_aware_confirmation_action_button">Зразумела</string>
+    <string name="gesture_aware_footer"><annotation link="link">Налады</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Налады</annotation></string>
+    <string name="gesture_skip_direction_ltr">Злева направа</string>
+    <string name="gesture_skip_direction_rtl">Справа налева</string>
+    <string name="gesture_skip_direction_title">Кірунак для пропуску</string>
+    <string name="gesture_skip_footer"><annotation link="link">Налады</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Налады</annotation></string>
+    <string name="global_actions_panel_short_title">Карткі і талоны</string>
+    <string name="global_actions_panel_summary">Каб атрымаць доступ да спосабаў аплаты, пасадачных талонаў і іншага, націсніце і ўтрымлівайце кнопку сілкавання.</string>
+    <string name="global_actions_panel_title">Паказваць карткі і талоны</string>
+    <string name="install_unknown_applications">Дазволіць усталяванне праграм не з Крамы Play</string>
+    <string name="keywords_accessibility_menu">маторыка, хуткае меню, дапаможнае меню, дотык, спрыт</string>
+    <string name="keywords_adaptive_charging">зараджаць, зарадка, разумная зарадка, адаптыўная зарадка, акумулятар, тэрмін службы акумулятара</string>
+    <string name="keywords_assist_gesture_launch">жэст, край, бок, актыўны край, сціснуць, ухапіць, дапамагчы, памочнік, сціскаць, ok google, памочнік google</string>
+    <string name="keywords_assist_gesture_silence">жэст, край, бок, актыўны край, адключыць гук, адкласці, будзільнік, уваходны выклік, ціха, дысплэй, экран блакіроўкі, сціснуць, ухапіць, прыпыніць</string>
+    <string name="keywords_assist_gesture_wake">жэст, край, бок, актыўны край, абудзіць, апавяшчэнні, экран, дысплэй, выключыць экран, уключыць экран, сціснуць, у рэжыме сну, рэжым сну, ухапіць</string>
+    <string name="keywords_battery_share">перадача зараду акумулятара, бесправадная зарадка</string>
+    <string name="keywords_battery_share_settings">перадача зараду акумулятара, зваротная бесправадная зарадка</string>
+    <string name="keywords_content_capture">захаванне змесціва, змесціва праграм, даныя праграм</string>
+    <string name="keywords_gesture">жэсты, рухі</string>
+    <string name="keywords_global_actions_panel">карткі, талоны</string>
+    <string name="keywords_live_transcribe">Субцітры, субцітры, цітры, Імгненныя субцітры, слабы слых, страта слыху, транскрыпцыя ў рэальным часе, пераўтварэнне маўлення ў тэкст, субцітр</string>
+    <string name="keywords_reverse_charging_stop_threshold">Спыняць перадачу зараду акумулятара тэлефона, калі зарад дасягае</string>
+    <string name="keywords_select_to_speak">Слухаць тэкст, чытаць услых, экран маўлення, праграма чытання з экрана</string>
+    <string name="keywords_sound_amplifier">Персанальныя прадукты для ўзмацнення гучнасці, узмацніць, узмацненне гуку, слабы слых, страта слыху, узмацненне</string>
+    <string name="keywords_sound_notifications">Апавяшчэнні, слабы слых, страта слыху, апавясціць</string>
+    <string name="keywords_switch_access">маторыка, пераключальнік, рука, спецыяльныя магчымасці, дапаможная тэхналогія, параліч, бакавы аміатрафічны скляроз, сканіраванне, пакрокавае сканіраванне</string>
+    <string name="keywords_talkback">Праграма чытання з экрана, голас за кадрам, VoiceOver, Галасавая дапамога, слепата, слабы зрок, TTS, сінтэз маўлення, агучванне</string>
+    <string name="keywords_voice_access">голас, галасавое кіраванне, маторыка, рука, мікрафон, мікрафон, дыктаванне, маўленне, кіраванне</string>
+    <string name="language_input_gesture_summary_off">Active Edge выключаны</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge уключаны</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge уключаны, сцісніце, каб выклікаць Памочніка</string>
+    <string name="me_card_title">Мая прылада Pixel</string>
+    <string name="my_device_info_account_preference_title">Уліковы запіс Google</string>
+    <string name="owner_info_settings_edit_text_hint">Напрыклад, Pixel Джо.</string>
+    <string name="reverse_charging_charging_wirelessly_message">Недаступна, таму што ідзе бесправадная зарадка тэлефона</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Перадача зараду акумулятара недаступная, таму што прылада Pixel перагрэлася. Пачакайце, пакуль тэлефон астыне, і паўтарыце спробу.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">Перадача зараду акумулятара недаступная, таму што ідзе бесправадная зарадка тэлефона</string>
+    <string name="reverse_charging_detail_footer_title">Пры выкарыстанні перадачы зараду акумулятар на тэлефоне разрадзіцца хутчэй. Функцыя перадачы зараду акумулятара працуе з сумяшчальнымі навушнікамі, гадзіннікамі, тэлефонамі і іншымі прыладамі. Каб палепшыць якасць зарадкі, зніміце чахол з тэлефона.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"Функцыя перадачы зараду акумулятара працуе з сумяшчальнымі навушнікамі, тэлефонамі і іншымі прыладамі.
+
+Пры выкарыстанні гэтай функцыі акумулятар тэлефона разрадзіцца хутчэй. Калі іншая прылада не будзе выяўлена, функцыя перадачы зараду акумулятара выключыцца праз некалькі хвілін. Каб палепшыць якасць зарадкі, зніміце чахол з тэлефона, а таксама іншыя элементы, якія могуць перашкаджаць (напрыклад, металічныя аб'екты)."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">Перадача зараду акумулятара недаступная, таму што ўключаны рэжым эканоміі зараду</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">Перадача зараду акумулятара недаступная, таму што падключана прылада USB-C</string>
+    <string name="reverse_charging_instructions_title">"Зараджайце іншыя прылады з дапамогай Pixel.
+Каб паспрабаваць, перавярніце тэлефон."</string>
+    <string name="reverse_charging_is_off_summary">Выключана</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Абагульванне зараду і зарадка акумулятара</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Абагульваецца зарад акумулятара</string>
+    <string name="reverse_charging_is_on_summary">Уключана / Зараджаць іншыя прылады</string>
+    <string name="reverse_charging_main_switch">Дазволіць перадачу зараду акумулятара</string>
+    <string name="reverse_charging_off_low_battery_summary">Выключана / Узровень зараду акумулятара ў тэлефоне ніжэй за %1$s</string>
+    <string name="reverse_charging_off_sharing_level_summary">Выключана / Узровень зараду акумулятара ніжэй мінімальнага, прыдатнага для абагульвання</string>
+    <string name="reverse_charging_overheat_summary">Недаступна, таму што прылада Pixel перагрэлася. Пачакайце, пакуль тэлефон астыне, і паўтарыце спробу.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">Недаступна, таму што ўключаны рэжым эканоміі зараду</string>
+    <string name="reverse_charging_sharing_level_message">Недаступна, таму што ўзровень зараду акумулятара ніжэй мінімальнага, прыдатнага для абагульвання</string>
+    <string name="reverse_charging_switch_summary">Размяшчаць прылады на задняй панэлі Pixel</string>
+    <string name="reverse_charging_switch_title">Зарадка іншых прылад пры іх размяшчэнні на задняй панэлі Pixel</string>
+    <string name="reverse_charging_switch_title_message">Зарадка іншых прылад</string>
+    <string name="reverse_charging_title">Перадача зараду акумулятара</string>
+    <string name="reverse_charging_unplug_usb_cable_message">Недаступна, таму што падключана прылада USB-C</string>
+    <string name="reverse_charging_warning_summary">Недаступна, таму што ўзровень зараду акумулятара ніжэй за %1$s</string>
+    <string name="reverse_charging_warning_title">Перадача зараду акумулятара недаступная, таму што ўзровень зараду акумулятара ніжэй за %1$s</string>
+    <string name="rtt_settings_always_visible">Заўсёды бачная</string>
+    <string name="rtt_settings_no_visible">Не адлюстроўваецца</string>
+    <string name="rtt_settings_title">Тэкст у рэжыме рэальнага часу (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Бачная падчас выкліку</string>
+    <string name="screen_time_summary_usage_today">Сёння %1$s</string>
+    <string name="search_bar_account_avatar_content_description">Відарыс профілю: націсніце двойчы, каб адкрыць Уліковы запіс Google</string>
+    <string name="security_advanced_settings">Пашыраныя налады</string>
+    <string name="security_dismiss_dialog_dismiss_button">Закрыць</string>
+    <string name="security_dismiss_dialog_title">Закрыць гэта папярэджанне?</string>
+    <string name="security_settings_face_enroll_education_message">Скончыўшы прагляд, паварочвайце галаву, каб зрабіць здымкі твару ва ўсіх ракурсах</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">Каб працягнуць, трымайце тэлефон на ўзроўні вачэй</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">Час сканіравання твару скончыўся. Паспрабуйце яшчэ раз.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Перавышаны час чакання наладкі распазнавання твару</string>
+    <string name="security_settings_face_enroll_finish_description">Цяпер вы можаце выкарыстоўваць функцыю распазнавання твару для разблакіроўкі тэлефона ці спраўджання вашай асобы, напрыклад падчас уваходу ў праграмы ці ўхвалення куплі</string>
+    <string name="security_settings_face_enroll_finish_title">Усё добра!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Абмежаванні зроку ці руху галавы</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">Падчас выкарыстання функцыі распазнавання твару трымайце галаву непасрэдна перад экранам тэлефона.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Трэба адкрыць вочы</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Вы і ваша дзіця можаце ў любы час выдаліць мадэль твару ці выключыць распазнаванне твару ў Наладах. Мадэлі твару будуць захоўвацца на тэлефоне, пакуль іх не выдаляць.
+
+Даведайцеся больш на старонцы g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Доступ ёсць у вас і вашага дзіцяці</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"Вы можаце ў любы час выдаліць мадэль твару ці выключыць распазнаванне твару ў Наладах. Мадэлі твару будуць захоўвацца на тэлефоне, пакуль вы іх не выдаліце.
+
+Даведайцеся больш на старонцы g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Усё пад кантролем</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"Каб спраўджваць асобу дзіцяці, функцыя распазнавання твару стварае ўнікальную мадэль яго твару. Для стварэння мадэлі трэба зрабіць здымкі твару дзіцяці з розных ракурсаў.
+
+Калі дзіця ўжывае функцыю распазнавання твару, відарысы выкарыстоўваюцца для абнаўлення мадэлі твару. Відарысы, якія выкарыстоўваліся для стварэння мадэлі твару, не захоўваюцца. На тэлефоне бяспечна захоўваецца толькі сама мадэль, і яна нікуды не адпраўляецца. Уся апрацоўка выконваецца толькі на тэлефоне."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"Каб спраўджваць вашу асобу, функцыя распазнавання твару стварае ўнікальную мадэль вашага твару. Для стварэння мадэлі зрабіце здымкі свайго твару з розных ракурсаў.
+
+Калі вы ўжываеце функцыю распазнавання твару, відарысы выкарыстоўваюцца для абнаўлення мадэлі вашага твару. Відарысы, якія выкарыстоўваліся для стварэння мадэлі твару, не захоўваюцца. На вашым тэлефоне бяспечна захоўваецца толькі сама мадэль, і яна нікуды не адпраўляецца. Уся апрацоўка выконваецца толькі на вашым тэлефоне."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Як гэта працуе</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">Для функцыі распазнавання твару можна забараніць разблакіроўку тэлефона ці спраўджанне асобы, калі ў дзіцяці не адкрыты вочы. Вы і ваша дзіця можаце ў любы час уключыць гэты параметр у Наладах.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Калі ваша дзіця звычайна носіць акуляры, падчас наладжвання яно можа не здымаць іх.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">Гледзячы на тэлефон, можна разблакіраваць яго, нават не маючы такога намеру. Акрамя таго, тэлефон можа быць разблакіраваны кімсьці, хто падобны на ваша дзіця (напрыклад, гэта можа быць брат ці сястра), ці чалавекам, які паднясе тэлефон да твару дзіцяці.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">Для функцыі распазнавання твару можна забараніць разблакіроўку тэлефона ці спраўджанне асобы, калі ў вас не адкрыты вочы. Вы можаце ў любы час уключыць гэты параметр у Наладах.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Акуляры з празрыстымі лінзамі ці крыху зацемненым шклом не перашкодзяць распазнаванню твару.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">Выкарыстанне распазнавання твару для разблакіроўкі тэлефона можа быць не такім бяспечным, як складаны ўзор разблакіроўкі ці PIN-код.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">Гледзячы на тэлефон, вы можаце разблакіраваць яго, нават не маючы такога намеру. Акрамя таго, ваш тэлефон можа быць разблакіраваны кімсьці, хто падобны на вас (напрыклад, гэта можа быць ваш брат ці сястра), ці чалавекам, які паднясе тэлефон да вашага твару.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Майце на ўвазе</string>
+    <string name="security_settings_face_enroll_introduction_message">Твар можна выкарыстоўваць для разблакіроўкі тэлефона ці спраўджання вашай асобы, напрыклад падчас уваходу ў праграмы ці ўхвалення куплі.</string>
+    <string name="security_settings_face_enroll_introduction_title">Усталяваць Распазнаванне твару</string>
+    <string name="security_settings_face_enroll_next">Далей</string>
+    <string name="security_settings_face_enroll_partial_message">Для лепшай прадукцыйнасці можна нанава задаць функцыю распазнавання твару ў Наладах</string>
+    <string name="security_settings_face_enroll_partial_start_over">Пачаць нанава</string>
+    <string name="security_settings_face_enroll_partial_title">Наладжванне функцыі распазнавання твару выканана</string>
+    <string name="security_settings_face_enroll_timeout_message">"Паспрабуйце выканаць хуткую наладку. Увага! Падчас выкарыстання функцыі распазнавання твару трымайце галаву непасрэдна перад экранам тэлефона.
+
+Для лепшай прадукцыйнасці можна нанава задаць функцыю распазнавання твару ў Наладах."</string>
+    <string name="security_settings_face_enroll_timeout_title">Не ўдалося працягнуць наладку</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Паўтарыць спробу</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Выкарыстоўваць хуткую наладку</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Выйсці з наладжвання</string>
+    <string name="security_settings_face_enroll_too_hot_message">Не ўдалося завяршыць наладжванне распазнавання твару, таму што тэлефон перагрэўся. Паўтарыце спробу пазней, калі тэлефон астыне.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Прапусціць распазнаванне твару</string>
+    <string name="security_settings_face_enroll_too_hot_title">Тэлефон перагрэўся</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Дакраніцеся, каб зарэгістраваць адбітак пальца</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Даведайцеся больш на старонцы g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint для працы</string>
+    <string name="setup_suggestion_summary">Капіраванне даных, аплата тэлефонам і іншае</string>
+    <string name="setup_suggestion_title">Завяршыць наладжванне</string>
+    <string name="smart_battery_footer">Каб падоўжыць час працы ад акумулятара, функцыя яго адаптацыі можа панізіць прадукцыйнасць праграм і абмежаваць фонавыя працэсы. Некаторыя апавяшчэнні могуць прыходзіць з затрымкай.</string>
+    <string name="smart_battery_manager_title">Адаптыўныя налады</string>
+    <string name="smart_battery_title">Адаптацыя акумулятара</string>
+    <string name="sound_dashboard_summary">Гучнасць, тактыльны водгук, рэжым \"Не турбаваць\"</string>
+    <string name="sound_settings">Гук і вібрацыя</string>
+    <string name="storage_manager_indicator">Разумнае сховішча: ^1</string>
+    <string name="time_remaining_warning_subtext">Засталося каля %1$s на аснове вашага былога выкарыстання</string>
+    <string name="time_remaining_warning_text">Зарад акумулятара хутка можа скончыцца</string>
+    <string name="tips_suggestion_summary">Даведайцеся, што можа рабіць ваш тэлефон</string>
+    <string name="tips_suggestion_title">Азнаёмцеся са сваім Pixel</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Трымайце тэлефон перад тварам</string>
+    <string name="usb_use_file_transfers">Перанос файла / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">Вібрацыя падчас выклікаў недаступная, таму што на тэлефоне ўключаны рэжым \"Без гуку\"</string>
+    <string name="vibration_haptics_settings_not_available_title">Недаступна</string>
+    <string name="wallpaper_dashboard_summary">Колеры, тэматычныя значкі, сетка праграм</string>
+    <string name="wifi_subscription_summary">Праглядзець або змяніць падпіску OpenRoaming</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">Падключана да сеткі \"%1$s\"</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Націсніце для падключэння</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Не ўдалося падключыцца. Паўтарыце спробу.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Ідзе падключэнне…</string>
+</resources>

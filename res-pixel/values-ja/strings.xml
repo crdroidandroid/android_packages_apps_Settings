@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">ロック画面での通知</string>
+    <string name="gesture_silence_title">通知の消音操作</string>
+    <string name="gesture_skip_title">スキップ操作</string>
+    <string name="keywords_touch_sensitivity">タップ, 感度, 敏感, 画面保護シート, フィルム, 反応, 反応性</string>
+    <string name="touch_sensitivity_summary">画面保護シートを使用している場合にタップの感度を高めることができます</string>
+    <string name="touch_sensitivity_title">タップの感度の向上</string>
+    <string name="accessibility_vibration_settings_screen_title">バイブレーションとハプティクスの使用</string>
+    <string name="vibration_haptics_settings_not_available_summary">スマートフォンがマナーモードに設定されているため、バイブレーションとハプティクスは利用できません</string>
+    <string name="vibration_haptics_strength_category_title">バイブレーションとハプティクス フィードバックの強さ</string>
+    <string name="accessibility_vibration_settings_title">バイブレーションとハプティクス</string>
+    <string name="columbus_title">クイックタップでアクションを開始</string>
+    <string name="vibrate_for_calls_category_title">通話</string>
+    <string name="accessibility_alarm_vibration_title">アラームのバイブレーション</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge をセットアップしました。次の画面に進むか、調整を続けてください。</string>
+    <string name="accessibility_keyboard_haptics_title">キーボードのハプティクス</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">アダプティブ充電</string>
+    <string name="adaptive_charging_description">電池の劣化を防ぐため、夜間にゆっくりと充電します。起床までに完全に充電するには、アラームを使用してください。</string>
+    <string name="adaptive_charging_time_estimate"><b>アダプティブ充電中</b> • %1$s までにフル充電</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">設定</annotation></string>
+    <string name="app_and_notification_dashboard_summary">アシスタント、最近使ったアプリ、デフォルトのアプリ</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">アシスタントを起動</string>
+    <string name="assist_gesture_enrollment_do_it_later">後で</string>
+    <string name="assist_gesture_enrollment_seekbar_light">軽いスクイーズ</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">強いスクイーズ</string>
+    <string name="assist_gesture_enrollment_settings">設定</string>
+    <string name="assist_gesture_setting_enable_assistant_text">スマートフォンの下半分を素早くスクイーズしてから離すことで、アシスタントを利用できます</string>
+    <string name="assist_gesture_setting_enable_assistant_title">デバイスをスクイーズしてアシスタントに話しかける</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">スクイーズでアラーム、タイマー、通知、着信音を消音します</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">スクイーズで通知や着信音を消音します</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">デバイスをスクイーズしてスマートフォンを消音</string>
+    <string name="assist_gesture_setting_enable_wake_title">画面がオフのときでもアシスタントを開く</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">軽いスクイーズ</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">強いスクイーズ</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">スクイーズするときの強さの設定</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">アシスタントが開いてしまうことがあります</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">スマートフォンの下半分をスクイーズします</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">もっと速くスクイーズしてください</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">もっと強く握ってください</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">素早くスクイーズしてから離してください</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">スライダーを調整してみてください</string>
+    <string name="assist_gesture_training_enrolling_text">スマートフォンの下半分をスクイーズしてください。スクイーズの強さは調整できます。</string>
+    <string name="assist_gesture_training_enrolling_title">素早くスクイーズしてから離してください</string>
+    <string name="assist_gesture_training_finished_text">スクイーズの感度は後から [設定] で変更することもできます</string>
+    <string name="assist_gesture_training_finished_title">完了または調整を続行</string>
+    <string name="assist_gesture_training_intro_text">スマートフォンの下半分を素早くスクイーズしてから離すと、アシスタントに話しかけることができます</string>
+    <string name="assist_gesture_training_intro_title">デバイスをスクイーズしてアシスタントに話しかける</string>
+    <string name="assist_gesture_training_suggestion_summary">アシスタントに話しかけたり、着信音を消音したりします</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">アシスタントに話しかけたり、アラームや着信音を消音したりします</string>
+    <string name="assist_gesture_training_suggestion_title">スクイーズと離す操作でアシスタントを利用</string>
+    <string name="automatic_storage_manager_activation_warning">写真や動画が削除された後も、選択したバックアップ画質にてオンライン環境でお楽しみいただけます</string>
+    <string name="automatic_storage_manager_days_title">バックアップ済みの写真と動画の削除</string>
+    <string name="automatic_storage_manager_deactivation_warning">"スマート ストレージを OFF にしますか？
+
+ストレージの保存容量が上限に近付いても、スマート ストレージによる空き容量の調整が行われなくなります。"</string>
+    <string name="automatic_storage_manager_downloads_days_title">ダウンロードのバックアップ</string>
+    <string name="automatic_storage_manager_preference_title">スマート ストレージ</string>
+    <string name="automatic_storage_manager_primary_switch_title">スマート ストレージの使用</string>
+    <string name="automatic_storage_manager_settings">スマート ストレージ</string>
+    <string name="automatic_storage_manager_text">ストレージの空き容量が少なくなったときに、バックアップ済みの写真や動画を削除します。削除後も引き続き Google フォトで表示できます。</string>
+    <string name="aware_disabled_preference_action">ON にする</string>
+    <string name="aware_disabled_preference_neutral">後で行う</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">機内モードやバッテリー セーバーが ON のため、Motion Sense は利用できません</string>
+    <string name="aware_footer_when_airplane_on">機内モードが ON のため、Motion Sense はご利用いただけません</string>
+    <string name="aware_footer_when_batterysaver_on">バッテリー セーバーが ON のため、Motion Sense は利用できません</string>
+    <string name="aware_gesture_summary_off">クイック ジェスチャー: オン、Active Edge: オフ</string>
+    <string name="aware_gesture_summary_on_non_assist">クイック ジェスチャー: オン、Active Edge: オン</string>
+    <string name="aware_gesture_summary_on_with_assist">クイック ジェスチャー: オン、Active Edge: オン、デバイスをスクイーズしてアシスタントに話しかける</string>
+    <string name="aware_info_button_description">詳細設定</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">機内モードやバッテリー セーバーがオンのため、ご利用いただけません</string>
+    <string name="aware_summary_when_airplane_on">機内モードが ON のため、ご利用いただけません</string>
+    <string name="aware_summary_when_batterysaver_on">バッテリー セーバーが ON のため利用できません</string>
+    <string name="backup_data_summary">アプリのデータ、Wi-Fi のパスワード、その他の設定を Google サーバーにバックアップする</string>
+    <string name="backup_suggestion_cancel">キャンセル</string>
+    <string name="backup_suggestion_dialog_description">このスマートフォンの内部ストレージからすべてのデータが削除されます。</string>
+    <string name="backup_suggestion_dialog_title">このデバイスをリセットしますか？</string>
+    <string name="backup_suggestion_get_started">詳細</string>
+    <string name="backup_suggestion_item_summary">Android または iPhone® デバイスからコピー</string>
+    <string name="backup_suggestion_item_title">データはすべて揃っていますか？</string>
+    <string name="backup_suggestion_missing_description">"SMS メッセージや写真など一部のデータが見つからない場合は、ケーブルを使って Pixel に転送できます。
+
+その場合はまず Pixel をリセットする必要があります。カスタマイズ設定やクラウドに同期していないコンテンツを含め、Pixel のデータはすべて削除されます。"</string>
+    <string name="backup_suggestion_missing_title">データが見つからない場合</string>
+    <string name="backup_suggestion_next">次へ</string>
+    <string name="backup_suggestion_other_ways_to_copy">他の方法でデータをコピー</string>
+    <string name="backup_suggestion_reset_description">"次の画面で Pixel をリセットできます。ケーブルでデータを転送する場合は、必ずリセットが必要になります。
+
+リセットが完了したらセットアップ手順を実施し、前のスマートフォンからケーブルでデータ転送する方法を選択してください。"</string>
+    <string name="backup_suggestion_reset_title">Pixel のリセット</string>
+    <string name="backup_suggestion_what_is_needed_summary">"Pixel をリセットする前に以下をご用意ください。
+
+• 前のスマートフォン（Android 5.0 以上または iOS® 8.0 以上のLINK_BEGINほとんどのスマートフォンLINK_ENDがサポートされています）
+• 前のスマートフォンの充電ケーブルまたはデータケーブル
+• Pixel に付属の Quick Switch Adapter"</string>
+    <string name="backup_suggestion_what_is_needed_title">必要なもの</string>
+    <string name="battery_manager_summary">バッテリーを長持ちさせ、充電を最適化します</string>
+    <string name="battery_manager_summary_unsupported">バッテリーを長持ちさせる</string>
+    <string name="battery_missing_link_message">詳細</string>
+    <string name="battery_suggestion_summary">自動調整バッテリーを ON にする</string>
+    <string name="battery_tip_smart_battery_summary">自動調整バッテリーを ON にしてください</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s と、この Google アカウントにリンクしているすべてのデバイスとのペア設定を解除します</string>
+    <string name="columbus_gesture_detected">クイックタップが検出されました。</string>
+    <string name="columbus_gesture_enrollment_complete">完了</string>
+    <string name="columbus_gesture_enrollment_do_it_later">後で</string>
+    <string name="columbus_gesture_enrollment_settings">設定に移動</string>
+    <string name="columbus_gesture_enrollment_try_it">試してみる</string>
+    <string name="columbus_gesture_training_action_no_selection_error">実行するアクションを選択してください</string>
+    <string name="columbus_gesture_training_action_text">クイックタップを使用したときのアクションを選択してください。このアクションは後から [設定] で変更できます。</string>
+    <string name="columbus_gesture_training_action_title">クイックタップ オプションの選択</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… 2 つのダブルタップ操作のうち、1 つが検出されました</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">もう一度やってみましょう。スマートフォンの背面をすばやく 2 回タップしてください。</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">成功です</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… 2 つのダブルタップ操作のうち、2 つが検出されました</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">クイックタップを使用できるようになりました</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">できました</string>
+    <string name="columbus_gesture_training_enrolling_text">スマートフォンの背面をすばやく 2 回タップしてください。</string>
+    <string name="columbus_gesture_training_enrolling_title">クイックタップを使ってみる</string>
+    <string name="columbus_gesture_training_finished_text">クイックタップを使用するために必要なタップの強さを変更するには、[設定] に移動してください。</string>
+    <string name="columbus_gesture_training_finished_title">クイックタップの設定完了</string>
+    <string name="columbus_gesture_training_intro_text_accidental">デバイスの背面を 2 回タップするだけで、外出先でもアシスタントを使用できるようになります。この操作は設定でカスタマイズできます。</string>
+    <string name="columbus_gesture_training_intro_text_suw">スクリーンショットを撮影したり、通知を表示したり、別のアクションを開始したりするには、2 回タップしてください。</string>
+    <string name="columbus_gesture_training_intro_title">クイックタップでクイック操作</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">開くアプリを選択してください</string>
+    <string name="columbus_gesture_training_launch_text">クイックタップを使用したときに開くアプリを選択してください。</string>
+    <string name="columbus_gesture_training_launch_title">開くアプリの選択</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s のショートカットの設定</string>
+    <string name="columbus_launch_settings_activity_title">クイックタップの設定</string>
+    <string name="columbus_name">クイックタップ</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">「%1$s」の設定</string>
+    <string name="columbus_setting_action_assistant_title">デジタル アシスタントの起動</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">アプリが選択されていません</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">アプリがインストールされていません</string>
+    <string name="columbus_setting_action_launch_title">アプリを開く</string>
+    <string name="columbus_setting_action_notification_title">通知を表示</string>
+    <string name="columbus_setting_action_open_app_title">アプリを開く</string>
+    <string name="columbus_setting_action_overview_title">最近使用したアプリを表示</string>
+    <string name="columbus_setting_action_play_pause_title">メディアを再生または一時停止</string>
+    <string name="columbus_setting_action_screenshot_title">スクリーンショットを撮る</string>
+    <string name="columbus_setting_actions_title">スマートフォンの背面を 2 回タップして実行するアクション</string>
+    <string name="columbus_setting_additional_settings_title">クイックタップの強さ</string>
+    <string name="columbus_setting_app_selection_help_text">スマートフォンの背面を 2 回タップしたときに開くアプリを選択してください。アプリをアンインストールした場合は、別のアプリを選択するまでクイックタップは OFF になります。</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">クイックタップを使用してこのアプリを開いたときのアクションを選択してください。</string>
+    <string name="columbus_setting_enable_switch_title">クイックタップの使用</string>
+    <string name="columbus_setting_sensitivity_title">強いタップが必要</string>
+    <string name="connectivity_helper_call_quality_category">通話品質</string>
+    <string name="connectivity_helper_call_quality_summary">通話時の接続の問題の原因に関する通知が届きます</string>
+    <string name="connectivity_helper_call_quality_title">通知を受け取る</string>
+    <string name="connectivity_helper_d2d_summary">スマートフォンでの通話中に接続の問題が起きたときに、通話相手に通知が届きます</string>
+    <string name="connectivity_helper_d2d_title">接続情報の共有</string>
+    <string name="connectivity_helper_footnote">通話相手がサポート対象のデバイスとネットワークを使用している場合に、接続情報を共有できます</string>
+    <string name="content_capture">アプリデータに基づくパーソナライズ</string>
+    <string name="copy_toast_msg">リンクをクリップボードにコピーしました</string>
+    <string name="dark_ui_text">ダークモードでは黒地の背景を使用するため、電池が長持ちします。画面が OFF になるまでダークモードが ON にならないように設定できます。</string>
+    <string name="dock_summary_charging_phone">スマートフォンの充電</string>
+    <string name="double_twist_for_camera_mode_summary">Google カメラを起動した状態で 2 回ひねる動作を行うことで、前面カメラと背面カメラを切り替えられます。</string>
+    <string name="downloads_backup_text">ダウンロードしたファイルは Google ドライブにバックアップされます</string>
+    <string name="duration_less_than_one_minute">1 分未満</string>
+    <string name="extra_app_info_label">ゲーム最適化</string>
+    <string name="face_enrolling_center_head">内側のフレームに顔を合わせてください</string>
+    <string name="face_enrolling_description">色の付いたタイルがすべて消えるよう、あらゆる角度から顔をキャプチャします。</string>
+    <string name="face_enrolling_do_it_later">後で</string>
+    <string name="face_enrolling_gaze_dialog_cancel">キャンセル</string>
+    <string name="face_enrolling_gaze_dialog_continue">目を閉じた状態で設定</string>
+    <string name="face_enrolling_gaze_dialog_message">目を開いていることを必要とせずに顔認証を設定しますか？この方法で設定した場合、気付かないときに誰かにスマートフォンを顔に向けられるとロックが解除されます。</string>
+    <string name="face_enrolling_gaze_dialog_title">目を閉じた状態で設定</string>
+    <string name="face_enrolling_how_to_setup">設定方法</string>
+    <string name="face_enrolling_title">スマートフォンを動かさずに、頭をゆっくりと回します。</string>
+    <string name="face_enrolling_title_accessibility">スマートフォンを正面から見てください</string>
+    <string name="face_enrolling_title_accessibility_progress">スマートフォンにまっすぐ顔を向けたままにしてください</string>
+    <string name="face_enrolling_too_close">スマートフォンをもっと離してください</string>
+    <string name="face_enrolling_too_far">スマートフォンをもっと近づけてください</string>
+    <string name="face_enrolling_too_high">スマートフォンをもっと下げてください</string>
+    <string name="face_enrolling_too_left">スマートフォンを右に動かしてください</string>
+    <string name="face_enrolling_too_low">スマートフォンをもっと上げてください</string>
+    <string name="face_enrolling_too_right">スマートフォンを左に動かしてください</string>
+    <string name="face_enrolling_turn_head_to_arrow">頭を矢印の方に向けてください</string>
+    <string name="face_enrolling_turned_too_far">顔の向きを少し戻してください</string>
+    <string name="fallback_menu_item_copy_link">リンクをコピー</string>
+    <string name="fallback_menu_item_open_in_browser">ブラウザで開く</string>
+    <string name="fallback_menu_item_share_link">リンクの共有</string>
+    <string name="fullbackup_data_summary">"デバイスのデータ（Wi-Fi のパスワードや通話履歴など）とアプリのデータ（アプリで保存された設定やファイルなど）を自動的に Google ドライブにバックアップします。
+
+自動バックアップを ON にすると、デバイスのデータとアプリのデータは定期的に Google ドライブの非公開フォルダに保存されます。アプリのデータとしては、連絡先、メッセージ、写真など、機密と見なされるデータを含め、（デベロッパーの設定に基づいて）アプリで保存されたすべてのデータがバックアップされる可能性があります。
+
+バックアップデータは Google ドライブ ストレージの容量には合算されません。大容量のファイルや、デベロッパーがサービスから除外することを選択したファイルはバックアップされません。"</string>
+    <string name="fullbackup_erase_dialog_message">デバイスのデータ（Wi-Fi のパスワードや通話履歴など）とアプリのデータ（アプリで保存された設定やファイルなど）のバックアップを停止し、Google ドライブ上のすべてのコピーを消去しますか？</string>
+    <string name="game_dashboard_always_on_summary">ゲーム内に「ゲーム ダッシュボード」のショートカットを表示します</string>
+    <string name="game_dashboard_always_on_title">ゲーム ダッシュボード</string>
+    <string name="game_dashboard_dnd_rule_name">ゲームをプレイ中</string>
+    <string name="game_dashboard_dnd_summary">ゲームのプレイ中に、大切な人やアプリからの通知のみ受け取ります</string>
+    <string name="game_dashboard_dnd_title">ゲームでのサイレント モード</string>
+    <string name="game_mode_battery_description">バッテリーが長持ちします</string>
+    <string name="game_mode_battery_title">バッテリー セーバー</string>
+    <string name="game_mode_performance_description">フレームレートを最大化すると、バッテリー使用量が増えます</string>
+    <string name="game_mode_performance_title">パフォーマンス</string>
+    <string name="game_mode_standard_description">ゲームのデフォルトを使用します</string>
+    <string name="game_mode_standard_title">標準</string>
+    <string name="game_optimization_unavailable">このゲームでは利用できません</string>
+    <string name="gesture_aware_confirmation_action_button">OK</string>
+    <string name="gesture_aware_footer"><annotation link="link">設定</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">設定</annotation></string>
+    <string name="gesture_skip_direction_ltr">左から右</string>
+    <string name="gesture_skip_direction_rtl">右から左</string>
+    <string name="gesture_skip_direction_title">スキップの方向</string>
+    <string name="gesture_skip_footer"><annotation link="link">設定</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">設定</annotation></string>
+    <string name="global_actions_panel_short_title">カードとパス</string>
+    <string name="global_actions_panel_summary">電源ボタンを長押しすることで、お支払い方法や搭乗券などにアクセスできます。</string>
+    <string name="global_actions_panel_title">カードとパスの表示</string>
+    <string name="install_unknown_applications">提供元が Play ストアではないアプリのインストールを許可する</string>
+    <string name="keywords_accessibility_menu">運動, クイック メニュー, アシスト メニュー, タッチ, 手の動き</string>
+    <string name="keywords_adaptive_charging">充電, 充電中, スマート充電, アダプティブ充電, 電池, 電池の状態</string>
+    <string name="keywords_assist_gesture_launch">操作, 側面, 側, Active Edge, スクイーズ, つかむ, アシスト, アシスタント, スクイーズ, OK Google, Google アシスタント</string>
+    <string name="keywords_assist_gesture_silence">操作, 側面, 側, Active Edge, マナーモード, スヌーズ, アラーム, 着信, 無音, 表示, ロック画面, スクイーズ, つかむ, 停止</string>
+    <string name="keywords_assist_gesture_wake">操作, 側面, 側, Active Edge, 復帰, 通知, 画面, 表示, 画面を OFF, 画面を ON, スクイーズ, スリープ時, スリープ, つかむ</string>
+    <string name="keywords_battery_share">バッテリー シェア, ワイヤレス充電</string>
+    <string name="keywords_battery_share_settings">バッテリー シェア、リバース ワイヤレス充電</string>
+    <string name="keywords_content_capture">コンテンツ キャプチャ, アプリ コンテンツ, アプリデータ</string>
+    <string name="keywords_gesture">操作 移動</string>
+    <string name="keywords_global_actions_panel">カード, パス</string>
+    <string name="keywords_live_transcribe">キャプション, クローズド キャプション, CC, 自動 字幕起こし, 難聴, 聴覚 障がい, CART, 音声 入力, 字幕</string>
+    <string name="keywords_reverse_charging_stop_threshold">スマートフォンのバッテリーが以下の残量になったらバッテリー シェアを停止する:</string>
+    <string name="keywords_select_to_speak">聴く テキスト, 読み上げ, 読み上げ 画面, スクリーン リーダー</string>
+    <string name="keywords_sound_amplifier">PSAP, 増幅, 音声 増幅, 難聴, 聴覚 障がい, 増幅機能</string>
+    <string name="keywords_sound_notifications">通知, 難聴, 聴覚 障がい, 知らせる</string>
+    <string name="keywords_switch_access">運動, スイッチ, 手, AT, 支援 技術, 麻痺, ALS, スキャン, 手順 スキャン</string>
+    <string name="keywords_talkback">スクリーン リーダー, Voice Over, VoiceOver, 音声 アシスト, 目の見えない, ロー ビジョン, TTS, テキスト 読み上げ, 音声 フィードバック</string>
+    <string name="keywords_voice_access">音声, 音声 操作, 運動, 手, マイク, マイクロフォン, 音声入力, 読み上げ, コントロール</string>
+    <string name="language_input_gesture_summary_off">Active Edge は OFF です</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge は ON です</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge: ON。スクイーズしてアシスタントに話しかけます</string>
+    <string name="me_card_title">自分の Pixel</string>
+    <string name="my_device_info_account_preference_title">Google アカウント</string>
+    <string name="owner_info_settings_edit_text_hint">例: 佐藤の Pixel</string>
+    <string name="reverse_charging_charging_wirelessly_message">スマートフォンのワイヤレス充電中のため利用できません</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Pixel が過熱しているため、バッテリー シェアはご利用いただけません。スマートフォンの温度が下がってから、もう一度お試しください。</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">スマートフォンがワイヤレス充電中のため、バッテリー シェアは利用できません</string>
+    <string name="reverse_charging_detail_footer_title">バッテリー シェアを使用すると、お使いのスマートフォンの電池が早く消耗します。バッテリー シェアは、ワイヤレス充電に対応したイヤフォン、スマートウォッチ、スマートフォンなどで使用できます。充電が適切に行われるよう、スマートフォンのケースを取り外してください。</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"バッテリー シェアは、ワイヤレス充電に対応したイヤフォン、スマートフォンなどで使用できます。
+
+この機能を使用すると、お使いのスマートフォンのバッテリーが早く消耗します。他のデバイスが検出されない場合、バッテリー シェアは数分後に自動的に OFF になります。充電が適切に行われるよう、スマートフォンのケースを外し、金属など充電を妨げるものを近づけないようにします。"</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">バッテリー セーバーが ON のため、バッテリー シェアは利用できません</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">USB-C デバイスが接続されているため、バッテリー シェアは利用できません</string>
+    <string name="reverse_charging_instructions_title">"Pixel を使って他のデバイスを充電できます。
+スマートフォンを裏返してお試しください。"</string>
+    <string name="reverse_charging_is_off_summary">OFF</string>
+    <string name="reverse_charging_is_on_and_charging_summary">バッテリーを共有、充電しています</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">バッテリーを共有しています</string>
+    <string name="reverse_charging_is_on_summary">ON / 他のデバイスを充電可能</string>
+    <string name="reverse_charging_main_switch">バッテリー シェアを許可</string>
+    <string name="reverse_charging_off_low_battery_summary">OFF / スマートフォンのバッテリー残量が %1$s 未満</string>
+    <string name="reverse_charging_off_sharing_level_summary">OFF / バッテリー残量が共有レベルを下回っています</string>
+    <string name="reverse_charging_overheat_summary">Pixel が過熱しているため利用できません。スマートフォンの温度が下がってから、もう一度お試しください。</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">バッテリー セーバーが ON のため利用できません</string>
+    <string name="reverse_charging_sharing_level_message">バッテリー残量が共有レベルを下回っているため利用できません</string>
+    <string name="reverse_charging_switch_summary">Pixel の背面にデバイスを置きます</string>
+    <string name="reverse_charging_switch_title">Pixel の背面に置いた他のデバイスをワイヤレス充電できます</string>
+    <string name="reverse_charging_switch_title_message">他のデバイスの充電</string>
+    <string name="reverse_charging_title">バッテリー シェア</string>
+    <string name="reverse_charging_unplug_usb_cable_message">USB-C デバイスが接続されているため利用できません</string>
+    <string name="reverse_charging_warning_summary">バッテリー残量が %1$s 未満のため利用できません</string>
+    <string name="reverse_charging_warning_title">バッテリー残量が %1$s 未満のため、バッテリー シェアは利用できません</string>
+    <string name="rtt_settings_always_visible">常に表示</string>
+    <string name="rtt_settings_no_visible">非表示</string>
+    <string name="rtt_settings_title">リアルタイム テキスト（RTT）</string>
+    <string name="rtt_settings_visible_during_call">通話中に表示</string>
+    <string name="screen_time_summary_usage_today">今日: %1$s</string>
+    <string name="search_bar_account_avatar_content_description">プロフィール写真、ダブルタップすると Google アカウントが開きます</string>
+    <string name="security_advanced_settings">詳細設定</string>
+    <string name="security_dismiss_dialog_dismiss_button">閉じる</string>
+    <string name="security_dismiss_dialog_title">このメッセージを閉じますか？</string>
+    <string name="security_settings_face_enroll_education_message">次の画面で、首を振ってさまざまな角度から顔を撮影してください</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">次の画面で、スマートフォンを目の高さに合わせて持ってください</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">顔認証設定のタイムアウト</string>
+    <string name="security_settings_face_enroll_finish_description">顔を使って、スマートフォンのロック解除や本人確認（アプリへのログインや購入の承認など）を行えるようになりました</string>
+    <string name="security_settings_face_enroll_finish_title">OK です！</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">視覚や頭の動きに制限がある場合の設定</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">顔認証を使用する場合は、顔をスマートフォンの真正面に向けてください。</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">目を開けてください</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"あなたとお子様はいつでも [設定] で顔モデルを削除したり顔認証を OFF にしたりできます。顔モデルは、削除するまでスマートフォンに保存されたままになります。
+
+詳しくは、g.co/pixel/faceunlock をご覧ください。"</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">あなたとお子様が管理できます</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"いつでも [設定] で顔モデルを削除したり顔認証を OFF にしたりできます。顔モデルは、削除するまでスマートフォンに保存されたままになります。
+
+詳しくは、g.co/pixel/faceunlock をご覧ください。"</string>
+    <string name="security_settings_face_enroll_introduction_control_title">データはデバイス内だけに保存</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"顔認証を設定する際に、本人確認に使うお子様の顔の一意のモデルを作成します。この顔モデルを作成するため、さまざまな角度からお子様の顔の画像を撮影します。
+
+顔認証を使用すると、画像を基に顔モデルが更新されます。顔モデルの作成に使用された画像が保存されることはありませんが、顔モデルはスマートフォンに安全に保存されます。この情報が外部に送信されることは一切なく、処理はすべてスマートフォン上で安全に行われます。"</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"顔認証を設定する際に、本人確認に使う顔の一意のモデルを作成します。この顔モデルを作成するため、さまざまな角度から顔の画像を撮影します。
+
+顔認証を使用すると、画像を基に顔モデルが更新されます。顔モデルの作成に使用された画像が保存されることはありませんが、顔モデルはスマートフォンに安全に保存されます。この情報が外部に送信されることは一切なく、処理はすべてスマートフォン上で安全に行われます。"</string>
+    <string name="security_settings_face_enroll_introduction_how_title">仕組み</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">顔認証を使用するには、スマートフォンのロック解除または本人確認の際にお子様に目を開いていただくことが必要になる場合があります。あなたとお子様はいつでも [設定] でこのオプションを ON にできます。</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">お子様が眼鏡を普段かけている場合は、設定の際にかけていても構いません。</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">スマートフォンを見る動作を無意識に行うと、ロックが解除されることがあります。よく似た人（双子など）であったり、お子様の顔にスマートフォンを近づけられたりした場合も、ロックが解除されることがあります。</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">顔認証を使用するには、スマートフォンのロック解除または本人確認の際に目を開いていただくことが必要になる場合があります。このオプションは [設定] でいつでも ON にできます。</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">メガネやサングラス（薄い色）をかけていても大丈夫です。</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">顔を使ったスマートフォンのロック解除は、複雑なパターンや PIN よりも安全面で劣る可能性があります。</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">スマートフォンを見る動作を無意識に行うと、ロックが解除されることがあります。よく似た人（双子など）であったり、あなたの顔にスマートフォンを近づけられたりした場合も、ロックが解除されることがあります。</string>
+    <string name="security_settings_face_enroll_introduction_info_title">注意事項</string>
+    <string name="security_settings_face_enroll_introduction_message">顔を使って、スマートフォンのロック解除や本人確認（アプリへのログインや購入の承認など）を行います。</string>
+    <string name="security_settings_face_enroll_introduction_title">顔認証の設定</string>
+    <string name="security_settings_face_enroll_next">次へ</string>
+    <string name="security_settings_face_enroll_partial_message">パフォーマンスを改善するには、[設定] で顔認証を設定し直します。</string>
+    <string name="security_settings_face_enroll_partial_start_over">最初からやり直す</string>
+    <string name="security_settings_face_enroll_partial_title">顔認証の設定完了</string>
+    <string name="security_settings_face_enroll_timeout_message">"代わりに簡単セットアップをお試しください。顔認証を使用するときは顔をスマートフォンの真正面に向けてください。
+
+パフォーマンスを改善するには、[設定] で顔認証を設定し直します。"</string>
+    <string name="security_settings_face_enroll_timeout_title">設定を続行できません</string>
+    <string name="security_settings_face_enroll_timeout_try_again">再試行</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">簡単セットアップを使用する</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">設定を終了</string>
+    <string name="security_settings_face_enroll_too_hot_message">スマートフォンが過熱しているため、顔認証の設定を完了できません。スマートフォンの温度が下がってから、もう一度お試しください。</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">顔認証をスキップ</string>
+    <string name="security_settings_face_enroll_too_hot_title">スマートフォンが過熱しています</string>
+    <string name="security_settings_fingerprint_preference_summary_none">指紋をセットアップするにはタップします</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">詳しくは、g.co/pixel/fingerprintunlock をご覧ください。</string>
+    <string name="security_settings_work_fingerprint_preference_title">仕事用の Pixel Imprint</string>
+    <string name="setup_suggestion_summary">データのコピー、スマートフォンでのお支払いなど</string>
+    <string name="setup_suggestion_title">設定を完了してください</string>
+    <string name="smart_battery_footer">自動調整バッテリーは、バッテリーを長持ちさせるために、パフォーマンスやバックグラウンド アクティビティを制限することがあります。一部の通知が遅れる場合があります。</string>
+    <string name="smart_battery_manager_title">アダプティブの設定</string>
+    <string name="smart_battery_title">自動調整バッテリー</string>
+    <string name="sound_dashboard_summary">音量、ハプティクス、サイレント モード</string>
+    <string name="sound_settings">着信音とバイブレーション</string>
+    <string name="storage_manager_indicator">スマート ストレージ: ^1</string>
+    <string name="time_remaining_warning_subtext">過去の使用状況によると、あと約 %1$s使用できます</string>
+    <string name="time_remaining_warning_text">もうすぐ電池がなくなります</string>
+    <string name="tips_suggestion_summary">スマートフォンでできること</string>
+    <string name="tips_suggestion_title">Pixel を最大限活用しよう</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">スマートフォンを顔の前で持ちます</string>
+    <string name="usb_use_file_transfers">ファイル転送 / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">スマートフォンがマナーモードに設定されているため、着信時のバイブレーションは利用できません</string>
+    <string name="vibration_haptics_settings_not_available_title">利用不可</string>
+    <string name="wallpaper_dashboard_summary">色、テーマアイコン、アプリグリッド</string>
+    <string name="wifi_subscription_summary">OpenRoaming の定期購入を確認、変更できます</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">%1$s に接続</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">タップして接続</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">接続できません。タップしてもう一度お試しください。</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">接続中…</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/face_enroll_participation"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/FaceLayoutTheme"
+    app:sucHeaderText="@string/face_enrolling_participation_title">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        style="@style/SudContentFrame">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:lineSpacingExtra="5.0dip"
+            android:text="@string/face_enrolling_participation_description"
+            style="@*android:style/TextAppearance.DeviceDefault.Body2" />
+
+        <Space
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            style="@style/SudContentFrame">
+
+            <CheckBox
+                android:id="@id/agree_to_participate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/face_consent"
+                style="@*android:style/TextAppearance.DeviceDefault.Body2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.setupdesign.GlifLayout>
