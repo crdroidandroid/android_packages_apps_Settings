@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/hats_lib_close_button"
+    android:layout_width="@dimen/hats_lib_close_button_size"
+    android:layout_height="@dimen/hats_lib_close_button_size"
+    android:background="@drawable/hats_close_button"
+    android:contentDescription="@string/hats_lib_close_button_description"
+    android:layout_gravity="center|right|top"
+    android:paddingBottom="@dimen/hats_lib_close_button_bottom_left_padding"
+    android:paddingLeft="@dimen/hats_lib_close_button_bottom_left_padding"
+    android:paddingRight="@dimen/hats_lib_close_button_top_right_padding"
+    android:paddingTop="@dimen/hats_lib_close_button_top_right_padding"
+    android:src="@drawable/quantum_ic_close_grey600_24"
+    android:theme="@style/HatsLibFlatButton"
+    android:visibility="gone"
+    style="@style/Widget.AppCompat.Button.Borderless" />

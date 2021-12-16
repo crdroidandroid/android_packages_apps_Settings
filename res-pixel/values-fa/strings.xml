@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">صفحه قفل راکد</string>
+    <string name="gesture_silence_title">اشاره هشدارهای ساکت کردن</string>
+    <string name="gesture_skip_title">اشاره رد کردن</string>
+    <string name="keywords_touch_sensitivity">لمسی، حساسیت، حساس، محافظ صفحه‌نمایش،پوشش محافظ، پاسخگو، پاسخ‌گویی</string>
+    <string name="touch_sensitivity_summary">درصورت استفاده از محافظ‌های صفحه‌نمایش، حساسیت لمس کردن را بهبود می‌بخشد</string>
+    <string name="touch_sensitivity_title">افزایش حساسیت لمس کردن</string>
+    <string name="accessibility_vibration_settings_screen_title">استفاده از لرزش و فناوری لمسی</string>
+    <string name="vibration_haptics_settings_not_available_summary">به‌دلیل اینکه تلفن روی حالت بی‌صدا تنظیم شده است، لرزش و فناوری لمسی در دسترس نیست</string>
+    <string name="vibration_haptics_strength_category_title">لرزش و قدرت لمسی</string>
+    <string name="accessibility_vibration_settings_title">لرزش و فناوری لمسی</string>
+    <string name="columbus_title">ضربه سریع برای شروع کنش‌ها</string>
+    <string name="vibrate_for_calls_category_title">تماس</string>
+    <string name="accessibility_alarm_vibration_title">لرزش هشدار</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">‏Active Edge راه‌اندازی شد. به صفحه بعد بروید یا به تنظیم ادامه دهید.</string>
+    <string name="accessibility_keyboard_haptics_title">فناوری لمسی صفحه‌کلید</string>
+    <string name="accessibility_vibration_preferences_file">اولویت‌های لرزش</string>
+    <string name="adaptive_charging">شارژ تطبیقی</string>
+    <string name="adaptive_charging_description">درطول شب به‌طور پیوسته شارژ کنید تا عمر باتری برای مدتی طولانی حفظ شود. از مدت زمانی که تا زنگ زدن مانده استفاده می‌کند تا براساس آن قبل‌از بیداری کاملاً شارژ شود.</string>
+    <string name="adaptive_charging_time_estimate"><b>شارژ تطبیقی</b> • تا %1$s کامل می‌شود</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">تنظیمات برگزیده</annotation></string>
+    <string name="app_and_notification_dashboard_summary">دستیار، برنامه‌های اخیر، برنامه‌های پیش‌فرض</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">ادامه کار در دستیار</string>
+    <string name="assist_gesture_enrollment_do_it_later">بعداً انجام شود</string>
+    <string name="assist_gesture_enrollment_seekbar_light">فشردن آهسته</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">فشردن محکم</string>
+    <string name="assist_gesture_enrollment_settings">تنظیمات</string>
+    <string name="assist_gesture_setting_enable_assistant_text">برای صحبت کردن با «دستیار»، سریع نیمه پایینی تلفنتان را فشار دهید و رها کنید.</string>
+    <string name="assist_gesture_setting_enable_assistant_title">فشردن برای راه‌اندازی «دستیار»</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">برای بی‌صدا کردن هشدارها، تایمرها، اعلان‌ها و تماس‌های ورودی فشار دهید</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">برای بی‌صدا کردن اعلان‌ها و تماس‌های ورودی فشار دهید</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">فشردن برای بی‌صدا کردن تلفن</string>
+    <string name="assist_gesture_setting_enable_wake_title">وقتی صفحه خاموش است، «دستیار» باز شود</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">فشردن آهسته</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">فشردن محکم</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">حساسیت فشردن</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">ممکن است «دستیار» تصادفاً بالا آمده باشد</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">نیمه پایینی تلفنتان را فشار دهید</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">سریع‌تر فشار دهید</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">شدیدتر فشردن</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">سریع فشار دهید و رها کنید</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">سعی کنید لغزنده را تنظیم کنید</string>
+    <string name="assist_gesture_training_enrolling_text">نیمه پایینی تلفن را فشار دهید. می‌‌توانید قدرت فشار لازم را تنظیم کنید.</string>
+    <string name="assist_gesture_training_enrolling_title">سریع فشار دهید و رها کنید</string>
+    <string name="assist_gesture_training_finished_text">بعداً هم می‌توانید در «تنظیمات»، حساسیت فشردن را تغییر دهید.</string>
+    <string name="assist_gesture_training_finished_title">تمام کردن یا ادامه تنظیم</string>
+    <string name="assist_gesture_training_intro_text">برای صحبت کردن با «دستیار»، سریع نیمه پایینی تلفنتان را فشار دهید و رها کنید</string>
+    <string name="assist_gesture_training_intro_title">فشردن برای راه‌اندازی «دستیار»</string>
+    <string name="assist_gesture_training_suggestion_summary">با «دستیار» صحبت کنید، تماس‌‌ها را بی‌صدا کنید</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">با «دستیار» صحبت کنید، تماس‌‌ها و هشدارها را بی‌صدا کنید</string>
+    <string name="assist_gesture_training_suggestion_title">فشردن و رها کردن برای راه‌اندازی «دستیار»</string>
+    <string name="automatic_storage_manager_activation_warning">وقتی به اینترنت متصل باشید، همچنان می‌توانید به عکس‌ها و ویدیوها با کیفیتی که برای پشتیبان‌گیری انتخاب کرده‌اید دسترسی داشته باشید</string>
+    <string name="automatic_storage_manager_days_title">حذف عکس‌ها و ویدیوهای پشتیبان‌گیری‌شده</string>
+    <string name="automatic_storage_manager_deactivation_warning">"«ذخیره‌سازی هوشمند» خاموش شود؟ 
+
+زمانی‌که فضای ذخیره‌سازی شما تقریباً پر است، «ذخیره‌سازی هوشمند» فضا آزاد نمی‌کند."</string>
+    <string name="automatic_storage_manager_downloads_days_title">بارگیری‌های پشتیبان‌گیری‌شده</string>
+    <string name="automatic_storage_manager_preference_title">ذخیره‌سازی هوشمند</string>
+    <string name="automatic_storage_manager_primary_switch_title">استفاده از ذخیره‌سازی هوشمند</string>
+    <string name="automatic_storage_manager_settings">ذخیره‌سازی هوشمند</string>
+    <string name="automatic_storage_manager_text">‏زمانی که حافظه‌تان تقریباً پر است، عکس‌ها و ویدیوهای پشتیبان‌گیری‌شده پاک می‌شود. همچنان می‌توانید در Google photos آن‌ها را پیدا کنید.</string>
+    <string name="aware_disabled_preference_action">روشن کردن</string>
+    <string name="aware_disabled_preference_neutral">اکنون نه</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">‏Motion Sense در دسترس نیست، زیرا حالت هواپیما و «بهینه‌سازی باتری» روشن هستند</string>
+    <string name="aware_footer_when_airplane_on">‏Motion Sense در دسترس نیست، زیرا حالت هواپیما روشن است</string>
+    <string name="aware_footer_when_batterysaver_on">‏Motion Sense در دسترس نیست، زیرا «بهینه‌سازی باتری» روشن است</string>
+    <string name="aware_gesture_summary_off">‏«اشاره‌های سریع» روشن و Active Edge خاموش است</string>
+    <string name="aware_gesture_summary_on_non_assist">‏«اشاره‌های سریع» و Active Edge روشن هستند</string>
+    <string name="aware_gesture_summary_on_with_assist">‏«اشاره‌های سریع» و Active Edge روشن هستند، برای دسترسی به «دستیار» فشار دهید</string>
+    <string name="aware_info_button_description">تنظیمات بیشتر</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">در دسترس نیست، زیرا حالت هواپیما و «بهینه‌سازی باتری» روشن هستند</string>
+    <string name="aware_summary_when_airplane_on">در دسترس نیست، زیرا حالت هواپیما روشن است</string>
+    <string name="aware_summary_when_batterysaver_on">در دسترس نیست، زیرا «بهینه‌سازی باتری» روشن است</string>
+    <string name="backup_data_summary">‏پشتیبان‌گیری از داده‌های برنامه، گذرواژه‌های Wi-Fi و سایر تنظیمات در سرورهای Google</string>
+    <string name="backup_suggestion_cancel">لغو</string>
+    <string name="backup_suggestion_dialog_description">با این کار همه داده‌های حافظه داخلی تلفن شما حذف خواهد شد.</string>
+    <string name="backup_suggestion_dialog_title">دستگاه بازنشانی شود؟</string>
+    <string name="backup_suggestion_get_started">بیشتر بدانید</string>
+    <string name="backup_suggestion_item_summary">‏کپی کردن داده از دستگاه Android یا iPhone®‎</string>
+    <string name="backup_suggestion_item_title">داده‌های قبلی‌تان را می‌خواهید؟</string>
+    <string name="backup_suggestion_missing_description">"‏اگر برخی از داده‌هایتان (مانند پیامک‌ها و عکس‌ها) را نمی‌بینید، می‌توانید آن‌ها را با استفاده از کابل به Pixel خود منتقل کنید.
+
+برای شروع به کار، Pixel شما باید بازنشانی شود. همه داده‌های موجود در این تلفن (از جمله تنظیمات سفارشی‌شده و محتوای پشتیبان‌گیری‌ نشده در ابر) حذف خواهند شد."</string>
+    <string name="backup_suggestion_missing_title">همه داده‌ها منتقل نشده‌اند؟</string>
+    <string name="backup_suggestion_next">بعدی</string>
+    <string name="backup_suggestion_other_ways_to_copy">روش‌های دیگر برای کپی کردن داده‌ها</string>
+    <string name="backup_suggestion_reset_description">"‏در صفحه بعد، می‌توانید Pixel خود را بازنشانی کنید. این تنها راه انتقال داده‌ها با استفاده از کابل است.
+
+بعد از انجام بازنشانی، روند راه‌اندازی را انجام دهید تا داده‌ها از تلفن قبلی‌تان منتقل شوند."</string>
+    <string name="backup_suggestion_reset_title">‏بازنشانی Pixel</string>
+    <string name="backup_suggestion_what_is_needed_summary">"‏بعد از بازنشانی تلفن، به این موارد نیاز دارید:
+
+• تلفن قدیمی‌تان (LINK_BEGINاکثر تلفن‌هایLINK_END دارای Android نسخه ۵.۰ به بالا یا iOS‎®‎ نسخه ۸.۰ به بالا
+ پشتیبانی می‌شوند) • کابل شارژ یا داده برای تلفن قبلی‌تان
+• «آداپتور انتقال سریع» که با Pixel ارائه می‌شود"</string>
+    <string name="backup_suggestion_what_is_needed_title">آنچه لازم دارید</string>
+    <string name="battery_manager_summary">افزایش عمر باتری و بهینه‌سازی شارژ</string>
+    <string name="battery_manager_summary_unsupported">افزایش عمر باتری</string>
+    <string name="battery_missing_link_message">بیشتر بدانید</string>
+    <string name="battery_suggestion_summary">روشن کردن «باتری تطبیقی»</string>
+    <string name="battery_tip_smart_battery_summary">«باتری تطبیقی» را روشن کنید</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">‏%1$s دیگر با دستگاه‌های پیوندداده‌شده با این حساب Google مرتبط نخواهد بود</string>
+    <string name="columbus_gesture_detected">«ضربه سریع» شناسایی شد!</string>
+    <string name="columbus_gesture_enrollment_complete">تمام</string>
+    <string name="columbus_gesture_enrollment_do_it_later">الآن نه</string>
+    <string name="columbus_gesture_enrollment_settings">رفتن به تنظیمات</string>
+    <string name="columbus_gesture_enrollment_try_it">امتحان کنید</string>
+    <string name="columbus_gesture_training_action_no_selection_error">لطفاً کنشی را برای اجرا انتخاب کنید</string>
+    <string name="columbus_gesture_training_action_text">انتخاب کنید وقتی از «ضربه سریع» استفاده می‌کنید چه اتفاقی بیفتد. می‌توانید این مورد را بعداً در تنظیمات تغییر دهید.</string>
+    <string name="columbus_gesture_training_action_title">انتخاب گزینه «ضربه سریع»</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… دوضربه زدن ۱ از ۲ شناسایی شد</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">بیایید یک‌بار دیگر آن را امتحان کنیم. دوضربه سریع به پشت تلفن بزنید.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">عالی!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… دوضربه زدن ۲ از ۲ شناسایی شد</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">آماده استفاده از «ضربه سریع» هستید</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">متوجه شدید!</string>
+    <string name="columbus_gesture_training_enrolling_text">دوضربه سریع به پشت تلفن بزنید.</string>
+    <string name="columbus_gesture_training_enrolling_title">«ضربه سریع» را امتحان کنید</string>
+    <string name="columbus_gesture_training_finished_text">برای تغییر دادن شدت ضربه لازم برای استفاده از «ضربه سریع»، به «تنظیمات» بروید.</string>
+    <string name="columbus_gesture_training_finished_title">«ضربه سریع» را راه‌اندازی کردید</string>
+    <string name="columbus_gesture_training_intro_text_accidental">اکنون دوبار پشت دستگاهتان ضربه زدید، این کار به شما کمک می‌کند درحال حرکت از «دستیار» استفاده کنید. می‌توانید این اشاره را در تنظیمات سفارشی کنید.</string>
+    <string name="columbus_gesture_training_intro_text_suw">با دوضربه، نماگرفت ثبت کنید، اعلان‌ها را نمایش دهید، یا کنش دیگری را شروع کنید.</string>
+    <string name="columbus_gesture_training_intro_title">«ضربه سریع» برای کنش‌های سریع</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">لطفاً برنامه‌ای را برای باز شدن انتخاب کنید</string>
+    <string name="columbus_gesture_training_launch_text">برنامه‌ای را که می‌خواهید هنگام استفاده از «ضربه سریع» باز شود انتخاب کنید.</string>
+    <string name="columbus_gesture_training_launch_title">انتخاب برنامه برای باز شدن</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">تنظیمات میان‌بر %1$s</string>
+    <string name="columbus_launch_settings_activity_title">تنظیمات «ضربه سریع»</string>
+    <string name="columbus_name">ضربه سریع</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">تنظیمات %1$s</string>
+    <string name="columbus_setting_action_assistant_title">دسترسی به دستیار دیجیتالی</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">برنامه‌ای انتخاب نشده است</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">برنامه نصب نشد</string>
+    <string name="columbus_setting_action_launch_title">باز کردن برنامه</string>
+    <string name="columbus_setting_action_notification_title">نمایش اعلان‌ها</string>
+    <string name="columbus_setting_action_open_app_title">باز کردن برنامه</string>
+    <string name="columbus_setting_action_overview_title">مشاهده برنامه‌های اخیر</string>
+    <string name="columbus_setting_action_play_pause_title">پخش یا توقف موقت رسانه</string>
+    <string name="columbus_setting_action_screenshot_title">گرفتن نماگرفت</string>
+    <string name="columbus_setting_actions_title">دوضربه زدن به پشت تلفن برای</string>
+    <string name="columbus_setting_additional_settings_title">شدت «ضربه سریع»</string>
+    <string name="columbus_setting_app_selection_help_text">برنامه‌ای را انتخاب کنید تا هنگامی که به پشت تلفن دوضربه می‌زنید باز شود. اگر برنامه را حذف نصب کنید، تا زمانی‌که برنامه دیگری را انتخاب نکنید، «ضربه سریع» خاموش می‌ماند.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">انتخاب کنید که هنگام باز کردن این برنامه بااستفاده از «ضربه سریع»، چه اتفاقی بیفتد.</string>
+    <string name="columbus_setting_enable_switch_title">استفاده از «ضربه سریع»</string>
+    <string name="columbus_setting_sensitivity_title">درخواست ضربه‌های محکم‌تر</string>
+    <string name="connectivity_helper_call_quality_category">کیفیت تماس</string>
+    <string name="connectivity_helper_call_quality_summary">درباره دلایل مشکلات اتصال درحین تماس‌ها اعلان دریافت می‌کنید</string>
+    <string name="connectivity_helper_call_quality_title">دریافت اعلان</string>
+    <string name="connectivity_helper_d2d_summary">وقتی تلفن‌تان درحین تماس با مشکلات اتصال روبرو است، به فرد دیگر اطلاع داده می‌شود</string>
+    <string name="connectivity_helper_d2d_title">هم‌رسانی اطلاعات اتصال</string>
+    <string name="connectivity_helper_footnote">وقتی تماس‌گیرنده دیگر از شبکه و دستگاهی پشتیبانی‌شده استفاده می‌کند، می‌توانید اطلاعات اتصال را هم‌رسانی کنید</string>
+    <string name="content_capture">شخصی‌سازی با استفاده از داده‌های برنامه</string>
+    <string name="copy_toast_msg">پیوند در بریده‌دان کپی شد</string>
+    <string name="dark_ui_text">«طرح زمینه تیره» از پس‌زمینه‌ای سیاه استفاده می‌کند تا شارژ باتری برای مدت طولانی‌تری حفظ شود. «طرح زمینه تیره» تا زمانی که صفحه خاموش باشد، زمان انتظاری برای روشن شدن تنظیم می‌کند.</string>
+    <string name="dock_summary_charging_phone">درحال شارژ تلفن</string>
+    <string name="double_twist_for_camera_mode_summary">‏برای رفتن به حالت خودگرفت و خارج شدن از آن در «دوربین Google»، وقتی در برنامه هستید دستگاه را دو بار بچرخانید.</string>
+    <string name="downloads_backup_text">‏فایل‌های بارگیری‌شده در Google Drive پشتیبان‌گیری خواهند شد</string>
+    <string name="duration_less_than_one_minute">کمتر از ۱ دقیقه</string>
+    <string name="extra_app_info_label">بهینه‌سازی بازی</string>
+    <string name="face_enrolling_center_head">صورتتان را در قاب داخلی قرار دهید</string>
+    <string name="face_enrolling_description">با برداشتن همه مربع‌ها، همه زوایای چهره‌تان را ضبط کنید.</string>
+    <string name="face_enrolling_do_it_later">بعداً انجام شود</string>
+    <string name="face_enrolling_gaze_dialog_cancel">لغو</string>
+    <string name="face_enrolling_gaze_dialog_continue">چشم‌بسته راه‌اندازی کردن</string>
+    <string name="face_enrolling_gaze_dialog_message">می‌خواهید چشم‌بسته «قفل‌گشایی با چهره» را راه‌اندازی کنید؟ اگر راه‌اندازی را به این روش انجام دهید، وقتی حواستان نیست فردی می‌تواند با گرفتن تلفن در مقابل چهره‌تان، قفل آن را باز کند.</string>
+    <string name="face_enrolling_gaze_dialog_title">چشم‌بسته راه‌اندازی کردن</string>
+    <string name="face_enrolling_how_to_setup">نحوه راه‌اندازی</string>
+    <string name="face_enrolling_title">تلفن را ثابت نگه‌‌دارید. سرتان را بچرخانید. آهسته حرکت کنید.</string>
+    <string name="face_enrolling_title_accessibility">مستقیماً به تلفن خود نگاه کنید</string>
+    <string name="face_enrolling_title_accessibility_progress">همچنان مستقیماً به تلفن نگاه کنید</string>
+    <string name="face_enrolling_too_close">تلفن را دورتر ببرید</string>
+    <string name="face_enrolling_too_far">تلفن را نزدیک‌تر بیاورید</string>
+    <string name="face_enrolling_too_high">تلفن را پایین‌تر ببرید</string>
+    <string name="face_enrolling_too_left">تلفن را به راست ببرید</string>
+    <string name="face_enrolling_too_low">تلفن را بالاتر ببرید</string>
+    <string name="face_enrolling_too_right">تلفن را به چپ ببرید</string>
+    <string name="face_enrolling_turn_head_to_arrow">سرتان را بهطرف پیکان بچرخانید</string>
+    <string name="face_enrolling_turned_too_far">سرتان را کمی کمتر بچرخانید</string>
+    <string name="fallback_menu_item_copy_link">کپی پیوند</string>
+    <string name="fallback_menu_item_open_in_browser">بازکردن در مرورگر</string>
+    <string name="fallback_menu_item_share_link">هم‌رسانی پیوند</string>
+    <string name="fullbackup_data_summary">"‏پشتیبان‌گیری خودکار از داده‌های دستگاه (مانند گذرواژه‌های Wi-Fi و سابقه تماس) و داده‌های برنامه (مثل تنظیمات و فایل‌های ذخیره‌شده توسط برنامه‌ها) در Google Drive.‏
+
+وقتی پشتیبان‌گیری خودکار را روشن می‌کنید، داده‌های دستگاه و برنامه به‌صورت دوره‌ای در یک پوشه خصوصی در Google Drive ذخیره می‌‌شود. داده‌های برنامه می‌تواند هر داده‌ای باشد که برنامه (براساس تنظیمات تولیدکننده) ذخیره کرده است، از جمله داده‌های بالقوه حساس مانند مخاطبین، پیام‌ها و عکس‌ها.
+
+داده‌های پشتیبان‌گیری شده در سهمیه فضای ذخیره‌سازی Drive شما حساب نمی‌شوند. فایل‌های بزرگ یا فایل‌هایی که بنابر انتخاب تولیدکننده در سرویس وارد نمی‌شوند، پشتیبان‌گیری نمی‌شوند."</string>
+    <string name="fullbackup_erase_dialog_message">‏پشتیبان‌گیری از داده‌های دستگاه (مانند گذرواژه‌های Wi-Fi و سابقه تماس) و داده‌های برنامه (مثل تنظیمات و فایل‌های ذخیره‌شده توسط برنامه‌ها) متوقف شود و همچنین همه رونوشت‌ها در Google Drive پاک شوند؟</string>
+    <string name="game_dashboard_always_on_summary">نمایش میان‌بر «داشبورد بازی‌ها» در بازی‌ها</string>
+    <string name="game_dashboard_always_on_title">داشبورد بازی‌ها</string>
+    <string name="game_dashboard_dnd_rule_name">بازی</string>
+    <string name="game_dashboard_dnd_summary">هنگام بازی کردن، فقط از افراد و برنامه‌های مهم اعلان دریافت می‌کنید</string>
+    <string name="game_dashboard_dnd_title">«مزاحم نشوید» برای بازی‌ها</string>
+    <string name="game_mode_battery_description">عمر باتری را افزایش می‌دهد</string>
+    <string name="game_mode_battery_title">بهینه‌سازی باتری</string>
+    <string name="game_mode_performance_description">نرخ فریم را به حداکثر می‌رساند، از باتری بیشتری استفاده می‌کند</string>
+    <string name="game_mode_performance_title">عملکرد</string>
+    <string name="game_mode_standard_description">از پیش‌فرض‌های بازی استفاده می‌کند</string>
+    <string name="game_mode_standard_title">استاندارد</string>
+    <string name="game_optimization_unavailable">برای این بازی دردسترس نیست</string>
+    <string name="gesture_aware_confirmation_action_button">متوجه شدم</string>
+    <string name="gesture_aware_footer"><annotation link="link">تنظیمات برگزیده</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">تنظیمات برگزیده</annotation></string>
+    <string name="gesture_skip_direction_ltr">چپ‌به‌راست</string>
+    <string name="gesture_skip_direction_rtl">راست‌به‌چپ</string>
+    <string name="gesture_skip_direction_title">جهت رد کردن</string>
+    <string name="gesture_skip_footer"><annotation link="link">تنظیمات برگزیده</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">تنظیمات برگزیده</annotation></string>
+    <string name="global_actions_panel_short_title">کارت‌ها و مجوزها</string>
+    <string name="global_actions_panel_summary">برای دسترسی به مواردی مانند روش‌های پرداخت و کارت پرواز، دکمه روشن/خاموش را فشار دهید و نگه‌دارید.</string>
+    <string name="global_actions_panel_title">نمایش کارت‌ها و مجوزها</string>
+    <string name="install_unknown_applications">‏اجازه نصب برنامه‌ها از منابعی غیراز «فروشگاه Play»</string>
+    <string name="keywords_accessibility_menu">حرکت، منوی سریع، منوی یاری‌رسان، لمس کردن، مهارت‌های حرکتی</string>
+    <string name="keywords_adaptive_charging">شارژ، شارژ کردن، شارژ هوشمند، شارژ تطبیقی، باتری، سلامت باتری</string>
+    <string name="keywords_assist_gesture_launch">‏اشاره، لبه، کنار، active edge، فشردن، در دست گرفتن، کمک کردن، دستیار، فشردن، ok google، دستیار google</string>
+    <string name="keywords_assist_gesture_silence">‏اشاره، لبه، کنار، active edge، سکوت، تعویق، زنگ، تماس ورودی، بی‌صدا، نمایشگر، صفحه درحالت قفل، فشردن، در دست گرفتن، توقف</string>
+    <string name="keywords_assist_gesture_wake">‏اشاره، لبه، کنار، active edge، بیدار کردن، اعلان‌ها، صفحه‌نمایش، نمایشگر، صفحه خاموش، صفحه روشن، فشردن، خواب، حالت خواب، در دست گرفتن</string>
+    <string name="keywords_battery_share">اشتراک باتری، شارژ بی‌سیم</string>
+    <string name="keywords_battery_share_settings">اشتراک باتری، شارژ بی‌سیم معکوس</string>
+    <string name="keywords_content_capture">ضبط محتوا، محتوای برنامه، داده‌های برنامه</string>
+    <string name="keywords_gesture">اشاره، حرکت‌ها</string>
+    <string name="keywords_global_actions_panel">کارت‌ها، مجوزها</string>
+    <string name="keywords_live_transcribe">‏زیرنویس، زیرنویس ناشنوایان، CC، زیرنویس ناشنوایان زنده، کم‌شنوا، ازدست دادن شنوایی، CART، گفتار به نوشتار، زیرنویس</string>
+    <string name="keywords_reverse_charging_stop_threshold">توقف اشتراک‌گذاری باتری وقتی شارژ باتری تلفن به این میزان می‌رسد:</string>
+    <string name="keywords_select_to_speak">شنیدن نوشتار، بلند خواندن، خواندن صفحه‌نمایش، صفحه‌خوان</string>
+    <string name="keywords_sound_amplifier">‏PSAP، تقویت کردن، ‏تقویت کردن صدا، کم‌شنوا، ازدست دادن شنوایی، تقویت</string>
+    <string name="keywords_sound_notifications">اعلان‌ها، کم‌شنوا، ازدست دادن شنوایی، اعلان کردن</string>
+    <string name="keywords_switch_access">‏حرکت، کلید، دست، AT، فناوری یاری‌رسان، فلج، ALS، اسکن کردن، اسکن مرحله‌ای</string>
+    <string name="keywords_talkback">‏صفحه‌خوان، صدا گذاری، صداگذاری، دستیار صوتی، نابینا، کم‌بینا، TTS، نوشتار به گفتار، بازخورد گفتاری</string>
+    <string name="keywords_voice_access">گفتار، دستورات صوتی، حرکت، دست، میکروفون، میکروفون، تایپ صوتی، صحبت، کنترل</string>
+    <string name="language_input_gesture_summary_off">‏Active Edge خاموش است</string>
+    <string name="language_input_gesture_summary_on_non_assist">‏Active Edge روشن شد</string>
+    <string name="language_input_gesture_summary_on_with_assist">‏Active Edge روشن است. برای دسترسی به «دستیار» فشار دهید</string>
+    <string name="me_card_title">‏Pixel من</string>
+    <string name="my_device_info_account_preference_title">‏حساب Google</string>
+    <string name="owner_info_settings_edit_text_hint">‏برای مثال، Ali’s Pixel (پیکسل علی)</string>
+    <string name="reverse_charging_charging_wirelessly_message">امکان‌پذیر نیست، چون تلفن به‌صورت بی‌سیم درحال شارژ شدن است</string>
+    <string name="reverse_charging_detail_charging_overheat_message">‏«اشتراک باتری» دردسترس نیست زیرا Pixel خیلی داغ شده است. منتظر بمانید تا تلفن خنک شود و دوباره امتحان کنید.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">«اشتراک باتری» دردسترس نیست چون تلفن به‌صورت بی‌سیم درحال شارژ شدن است</string>
+    <string name="reverse_charging_detail_footer_title">وقتی از «اشتراک باتری» استفاده می‌کنید، شارژ باتری تلفن زودتر تمام می‌شود. «اشتراک باتری» برای هدفون‌های توگوشی، ساعت‌ها، تلفن‌ها، و دیگر دستگاه‌های سازگار کار می‌کند. برای بهتر شارژ کردن، قاب تلفن را جدا کنید.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"«اشتراک باتری» با هدفون‌های توگوشی، تلفن‌ها، و دیگر دستگاه‌های سازگار کار می‌کند.
+
+وقتی از این ویژگی استفاده می‌کنید، شارژ باتری تلفن زودتر تمام می‌شود. اگر دستگاه دیگری شناسایی نشود، «اشتراک باتری» بعد از چند دقیقه به‌طور خودکار خاموش می‌شود. برای بهتر شارژ کردن، قاب تلفن و چیزهایی مانند اشیای فلزی را که ممکن است تداخل ایجاد کنند جدا کنید."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">«اشتراک باتری» دردسترس نیست، چون «بهینه‌سازی باتری» روشن است</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">‏«اشتراک باتری» دردسترس نیست، چون دستگاه USB-C وصل است</string>
+    <string name="reverse_charging_instructions_title">"‏دستگاه‌های دیگر را با Pixel شارژ کنید.
+برای امتحان تلفنتان را بچرخانید."</string>
+    <string name="reverse_charging_is_off_summary">خاموش</string>
+    <string name="reverse_charging_is_on_and_charging_summary">درحال اشتراک‌گذاری و شارژ کردن باتری</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">درحال اشتراک‌گذاری باتری</string>
+    <string name="reverse_charging_is_on_summary">روشن/ شارژ کردن دستگاه‌های دیگر</string>
+    <string name="reverse_charging_main_switch">مجاز کردن اشتراک باتری</string>
+    <string name="reverse_charging_off_low_battery_summary">خاموش/ شارژ باتری تلفن زیر %1$s است</string>
+    <string name="reverse_charging_off_sharing_level_summary">خاموش / شارژ باتری کمتر از سطح اشتراک‌گذاری است</string>
+    <string name="reverse_charging_overheat_summary">‏به‌دلیل اینکه Pixel خیلی داغ شده است در دسترس نیست. منتظر بمانید تا تلفن خنک شود و دوباره امتحان کنید.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">امکان‌پذیر نیست، چون «بهینه‌سازی باتری» روشن است</string>
+    <string name="reverse_charging_sharing_level_message">امکان‌پذیر نیست زیرا شارژ باتری کمتر از سطح اشتراک‌گذاری است</string>
+    <string name="reverse_charging_switch_summary">‏دستگاه‌ها را پشت Pixel بگذارید</string>
+    <string name="reverse_charging_switch_title">‏دستگاه‌های دیگر را با قرار دادن در پشت Pixel شارژ کنید</string>
+    <string name="reverse_charging_switch_title_message">شارژ کردن دستگاه‌های دیگر</string>
+    <string name="reverse_charging_title">اشتراک باتری</string>
+    <string name="reverse_charging_unplug_usb_cable_message">‏امکان‌پذیر نیست، چون دستگاه USB-C وصل است</string>
+    <string name="reverse_charging_warning_summary">امکان‌پذیر نیست، چون شارژ باتری کمتر از %1$s است</string>
+    <string name="reverse_charging_warning_title">«اشتراک باتری» دردسترس نیست، چون شارژ باتری کمتر از %1$s است</string>
+    <string name="rtt_settings_always_visible">همیشه نمایان</string>
+    <string name="rtt_settings_no_visible">نمایان نیست</string>
+    <string name="rtt_settings_title">‏نوشتار هم‌زمان (RTT)</string>
+    <string name="rtt_settings_visible_during_call">نمایان درحین تماس</string>
+    <string name="screen_time_summary_usage_today">امروز: %1$s</string>
+    <string name="search_bar_account_avatar_content_description">‏عکس نمایه، برای باز کردن حساب Google، دو ضربه سریع بزنید</string>
+    <string name="security_advanced_settings">تنظیمات پیشرفته</string>
+    <string name="security_dismiss_dialog_dismiss_button">رد شدن</string>
+    <string name="security_dismiss_dialog_title">این هشدار رد شود؟</string>
+    <string name="security_settings_face_enroll_education_message">در صفحه بعد، سرتان را بچرخانید تا همه زوایای صورتتان را ثبت کند</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">در صفحه بعدی، تلفن را هم‌سطح چشمانتان نگه دارید</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">مهلت ثبت چهره به پایان رسید. دوباره امتحان کنید.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">مهلت راه‌اندازی «قفل‌گشایی با چهره» تمام شد</string>
+    <string name="security_settings_face_enroll_finish_description">اکنون می‌توانید از چهره‌تان برای باز کردن قفل تلفن یا به‌تأیید رساندن هویتتان (مثلاً هنگام ورود به سیستم برنامه‌ها یا تأیید خریدها) استفاده کنید</string>
+    <string name="security_settings_face_enroll_finish_title">خوب به نظر می‌رسد!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">راه‌اندازی برای دید محدود یا حرکت سر</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">هنگام استفاده از «قفل‌گشایی با چهره»، ممکن است لازم باشد سرتان مستقیم روبروی تلفن قرار گیرد.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">به چشمان باز نیاز دارد</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"‏شما و فرزندتان هرزمان بخواهید می‌توانید مدل چهره را حذف کنید، یا «قفل‌گشایی با چهره» را در «تنظیمات» خاموش کنید. تا وقتی مدل‌های چهره را حذف نکنید، در تلفن ذخیره می‌مانند.
+
+در g.co/pixel/faceunlock بیشتر بدانید."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">کنترل دراختیار شما و فرزندتان است</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"‏هر زمان بخواهید می‌توانید مدل چهره‌تان را حذف کنید، یا «قفل‌گشایی با چهره» را در «تنظیمات» خاموش کنید. تا وقتی مدل‌های چهره را حذف نکنید، در تلفن ذخیره می‌مانند.
+
+در g.co/pixel/faceunlock بیشتر بدانید."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">کنترل در دست شماست</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"«قفل‌گشایی با چهره» مدلی بی‌همتا از چهره فرزندتان ایجاد می‌کند که برای تأیید هویت او استفاده می‌شود. برای ایجاد این مدل چهره درحین راه‌اندازی، فرزندتان چند تصویر از زاویه‌های مختلف از چهره‌اش می‌گیرد.
+
+وقتی فرزندتان از «قفل‌گشایی با چهره» استفاده می‌کند، مدل چهره او به‌کمک تصاویر به‌روزرسانی می‌شود. تصاویر استفاده‌شده برای ایجاد مدل چهره فرزندتان ذخیره نمی‌شوند، اما مدل چهره به‌طور ایمن در تلفن ذخیره می‌شود و هرگز از آن خارج نمی‌شود. همه پردازش‌ها به‌طور ایمن در تلفن انجام می‌شود."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"«قفل‌گشایی با چهره» مدلی بی‌همتا از چهره‌تان ایجاد می‌کند که برای تأیید هویتتان استفاده می‌شود. برای ایجاد این مدلِ چهره درطول راه‌اندازی، چند تصویر از زاویه‌های مختلف از چهره‌تان می‌گیرید.
+
+وقتی از «قفل‌گشایی با چهره» استفاده می‌کنید، مدل چهره‌تان به‌کمک تصاویر به‌روزرسانی می‌شود. تصاویر استفاده‌شده برای ایجاد مدل چهره‌تان ذخیره نمی‌شوند، اما مدل چهره به‌طور ایمن در تلفنتان ذخیره می‌شود و هرگز از آن خارج نمی‌شود. همه پردازش‌ها به‌طور ایمن در تلفنتان انجام می‌شود."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">نحوه کار</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">«قفل‌گشایی با چهره» می‌تواند باز بودن چشم‌های فرزندتان را برای باز کردن قفل تلفن یا تأیید هویت او الزامی کند. شما و فرزندتان هروقت بخواهید می‌توانید این گزینه را در «تنظیمات» روشن کنید.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">اگر فرزندتان معمولاً از عینک استفاده می‌کند، می‌تواند درطول راه‌اندازی آن را به چشم بزند.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">نگاه کردن به تلفن می‌تواند قفل آن را باز کند، حتی اگر فرزندتان چنین قصدی نداشته باشد. اگر فرد دیگری تلفن را در جلوی صورت فرزندتان نگه دارد یا شباهت زیادی به او داشته باشد (مثل خواهر یا برادر دوقلو)، می‌تواند قفل تلفن را باز کند.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">«قفل‌گشایی با چهره» می‌تواند باز بودن چشم‌هایتان را برای باز کردن قفل تلفن یا تأیید هویتتان الزامی کند. هروقت بخواهید می‌توانید این گزینه را در «تنظیمات» روشن کنید.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">عینک یا عینک دودی با کمی سایه‌روشن قابل قبول است.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">استفاده از چهره برای باز کردن قفل تلفن ممکن است امنیت کمتری نسبت به الگو یا پین قوی داشته باشد.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">نگاه کردن به تلفن می‌تواند قفل آن را باز کند، حتی اگر چنین قصدی نداشته باشید. اگر فرد دیگری تلفنتان را جلوی صورتتان نگه دارد یا شباهت زیادی به شما داشته باشد (مثل خواهر یا برادر دوقلو)، می‌تواند قفل تلفنتان را باز کند.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">به‌خاطر داشته باشید</string>
+    <string name="security_settings_face_enroll_introduction_message">از چهره‌تان برای باز کردن قفل تلفن یا به‌تأیید رساندن هویتتان (مثلاً هنگام ورود به سیستم برنامه‌ها یا تأیید خریدها) استفاده کنید.</string>
+    <string name="security_settings_face_enroll_introduction_title">نصب «قفل‌گشایی با چهره»</string>
+    <string name="security_settings_face_enroll_next">بعدی</string>
+    <string name="security_settings_face_enroll_partial_message">برای بهبود عملکرد، می‌توانید «قفل‌گشایی با چهره» را در «تنظیمات» دوباره راه‌اندازی کنید</string>
+    <string name="security_settings_face_enroll_partial_start_over">شروع مجدد</string>
+    <string name="security_settings_face_enroll_partial_title">راه‌اندازی «قفل‌گشایی با چهره» به‌پایان رسید</string>
+    <string name="security_settings_face_enroll_timeout_message">"درعوض، راه‌اندازی سریع را امتحان کنید. به‌خاطر داشته باشید که هنگام استفاده از «قفل‌گشایی با چهره»، ممکن است لازم باشد سرتان مستقیماً روبروی تلفن قرار بگیرد.
+
+برای بهبود عملکرد، می‌توانید دوباره در «تنظیمات»، «قفل‌گشایی با چهره» را راه‌اندازی کنید."</string>
+    <string name="security_settings_face_enroll_timeout_title">ادامه راه‌اندازی امکان‌پذیر نیست</string>
+    <string name="security_settings_face_enroll_timeout_try_again">دوباره امتحان کنید</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">استفاده از راه‌اندازی سریع</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">خروج از راه‌اندازی</string>
+    <string name="security_settings_face_enroll_too_hot_message">راه‌اندازی «قفل‌گشایی با چهره» تکمیل نشد زیرا تلفن خیلی داغ است. وقتی تلفن خنک شد، بعداً دوباره امتحان کنید.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">رد شدن از «قفل‌گشایی با چهره»</string>
+    <string name="security_settings_face_enroll_too_hot_title">تلفن خیلی داغ است</string>
+    <string name="security_settings_fingerprint_preference_summary_none">برای راه‌اندازی اثر انگشت ضربه بزنید</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">‏در g.co/pixel/fingerprintunlock بیشتر بدانید.</string>
+    <string name="security_settings_work_fingerprint_preference_title">‏Pixel Imprint برای نمایه کاری</string>
+    <string name="setup_suggestion_summary">با تلفنتان پرداخت کنید، داده‌ها را کپی کنید، و کارهای بیشتری انجام دهید</string>
+    <string name="setup_suggestion_title">اتمام راه‌اندازی</string>
+    <string name="smart_battery_footer">برای افزایش عمر باتری، «باتری تطبیقی» می‌تواند عملکرد و فعالیت پس‌زمینه را کاهش دهد. ممکن است بعضی از اعلان‌ها تأخیر داشته باشد.</string>
+    <string name="smart_battery_manager_title">اولویت‌های تطبیقی</string>
+    <string name="smart_battery_title">باتری تطبیقی</string>
+    <string name="sound_dashboard_summary">صدا، فناوری لمسی، «مزاحم نشوید»</string>
+    <string name="sound_settings">صدا و لرزش</string>
+    <string name="storage_manager_indicator">ذخیره‌سازی هوشمند: ^1</string>
+    <string name="time_remaining_warning_subtext">براساس میزان مصرف گذشته، تقریباً %1$s باقی‌مانده است</string>
+    <string name="time_remaining_warning_text">ممکن است باتری به‌زودی تمام شود</string>
+    <string name="tips_suggestion_summary">آنچه را می‌توانید با تلفنتان انجام دهید کاوش کنید</string>
+    <string name="tips_suggestion_title">‏با Pixel خود آشنا شوید</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">تلفن را جلوی صورتتان نگه دارید</string>
+    <string name="usb_use_file_transfers">‏انتقال فایل / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">«لرزش» برای تماس‌ها دردسترس نیست زیرا تلفن روی حالت بی‌صدا تنظیم شده است</string>
+    <string name="vibration_haptics_settings_not_available_title">در دسترس نیست</string>
+    <string name="wallpaper_dashboard_summary">رنگ‌ها، نمادهای دارای طرح زمینه، جدول برنامه</string>
+    <string name="wifi_subscription_summary">‏مشاهده یا تغییر اشتراک OpenRoaming</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">با %1$s متصل شد</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">برای اتصال ضربه بزنید</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">متصل نمی‌شود. برای امتحان مجدد ضربه بزنید.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">درحال اتصال…</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">අනතුරු ඇඟවීම් සියල්ල (%1$d) බලන්න</item>
+        <item quantity="one">අනතුරු ඇඟවීම් සියල්ල (%1$d) බලන්න</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">අනතුරු ඇඟවීම් %1$dක්</item>
+        <item quantity="one">අනතුරු ඇඟවීම් %1$dක්</item>
+    </plurals>
+</resources>

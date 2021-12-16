@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Onaktiwiteitsluitskerm</string>
+    <string name="gesture_silence_title">Gebaar om opletberigte stil te maak</string>
+    <string name="gesture_skip_title">Oorslaan-gebaar</string>
+    <string name="keywords_touch_sensitivity">raak, sensitiwiteit, sensitief, skermbeskermer, bedekking, reagerend, reaksie</string>
+    <string name="touch_sensitivity_summary">Verbeter raak wanneer skermbeskermers gebruik word</string>
+    <string name="touch_sensitivity_title">Vergroot raaksensitiwiteit</string>
+    <string name="accessibility_vibration_settings_screen_title">Gebruik vibrasie en fisiese terugvoer</string>
+    <string name="vibration_haptics_settings_not_available_summary">Vibrasie en fisiese terugvoer is nie beskikbaar nie omdat die foon op stil gestel is</string>
+    <string name="vibration_haptics_strength_category_title">Krag van vibrasie en fisiese terugvoer</string>
+    <string name="accessibility_vibration_settings_title">Vibrasie en fisiese terugvoer</string>
+    <string name="columbus_title">Dubbeltik om handelinge te begin</string>
+    <string name="vibrate_for_calls_category_title">Oproepe</string>
+    <string name="accessibility_alarm_vibration_title">Wekkervibrasie</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge is opgestel. Gaan na die volgende skerm toe of hou aan om te verstel.</string>
+    <string name="accessibility_keyboard_haptics_title">Fisiese sleutelbordterugvoer</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">Aanpasbare laaiproses</string>
+    <string name="adaptive_charging_description">Laai geleidelik oornag om langtermyn-batterylewe in stand te hou. Gebruik wekker om teen opstaantyd ten volle gelaai te wees.</string>
+    <string name="adaptive_charging_time_estimate"><b>Aanpasbare laaiproses</b> • Vol teen %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Voorkeure</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Assistent, onlangse programme, verstekprogramme</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Gaan voort na Assistent</string>
+    <string name="assist_gesture_enrollment_do_it_later">Doen dit later</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Ligte druk</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Ferm druk</string>
+    <string name="assist_gesture_enrollment_settings">Instellings</string>
+    <string name="assist_gesture_setting_enable_assistant_text">Om met jou assistent te praat, druk die onderste helfte van jou foon vinnig en los dit dan</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Druk vir jou Assistent</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Druk om wekkers, aftellers, kennisgewings en inkomende oproepe stil te maak</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">Druk om wekkers en inkomende oproepe stil te maak</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Druk om foon stil te maak</string>
+    <string name="assist_gesture_setting_enable_wake_title">Maak Assistent oop wanneer skerm af is</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Ligte druk</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Ferm druk</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Druksensitiwiteit</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Kan assistent per ongeluk laat verskyn</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Druk die onderste helfte van jou foon</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Druk vinniger</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Druk harder</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Druk vinnig en los dan</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">Probeer die glyer verstel</string>
+    <string name="assist_gesture_training_enrolling_text">Druk die onderste helfte van jou foon. Jy kan aanpas hoe hard jy moet druk.</string>
+    <string name="assist_gesture_training_enrolling_title">Druk vinnig en los</string>
+    <string name="assist_gesture_training_finished_text">Jy kan die druksensitiwiteit ook later in Instellings verander</string>
+    <string name="assist_gesture_training_finished_title">Voltooi of hou aan verstel</string>
+    <string name="assist_gesture_training_intro_text">Om enige tyd met jou assistent te praat, druk die onderste helfte van jou foon vinnig en los dit dan</string>
+    <string name="assist_gesture_training_intro_title">Druk vir jou Assistent</string>
+    <string name="assist_gesture_training_suggestion_summary">Praat met Assistent, maak oproepe stil</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Praat met Assistent, maak wekkers en oproepe stil</string>
+    <string name="assist_gesture_training_suggestion_title">Druk en laat los vir Assistent</string>
+    <string name="automatic_storage_manager_activation_warning">"Wanneer jy gekoppel is, kan jy steeds toegang kry tot foto's en video's teen die gehalte wat jy vir rugsteun gekies het"</string>
+    <string name="automatic_storage_manager_days_title">"Verwyder gerugsteunde foto's en video's"</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Skakel Slimberging af? 
+
+Slimberging sal nie spasie beskikbaar maak wanneer jou berging amper vol is nie."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Gerugsteunde aflaaie</string>
+    <string name="automatic_storage_manager_preference_title">Slimberging</string>
+    <string name="automatic_storage_manager_primary_switch_title">Gebruik Slimberging</string>
+    <string name="automatic_storage_manager_settings">Slimberging</string>
+    <string name="automatic_storage_manager_text">"Verwyder gerugsteunde foto's en video's wanneer die berging byna vol is. Jy kan hulle steeds in Google Foto's vind."</string>
+    <string name="aware_disabled_preference_action">Skakel aan</string>
+    <string name="aware_disabled_preference_neutral">Nie nou nie</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense is onbeskikbaar omdat vliegtuigmodus en Batterybespaarder aan is</string>
+    <string name="aware_footer_when_airplane_on">Motion Sense is onbeskikbaar omdat vliegtuigmodus aan is</string>
+    <string name="aware_footer_when_batterysaver_on">Motion Sense is onbeskikbaar omdat Batterybespaarder aan is</string>
+    <string name="aware_gesture_summary_off">Kitsgebare aan, Active Edge is afgeskakel</string>
+    <string name="aware_gesture_summary_on_non_assist">Kitsgebare aan, Active Edge is aangeskakel</string>
+    <string name="aware_gesture_summary_on_with_assist">Kitsgebare aan, Active Edge aan, druk vir jou Assistent</string>
+    <string name="aware_info_button_description">Nog instellings</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">Onbeskikbaar omdat vliegtuigmodus en Batterybespaarder aan is</string>
+    <string name="aware_summary_when_airplane_on">Onbeskikbaar omdat vliegtuigmodus aan is</string>
+    <string name="aware_summary_when_batterysaver_on">Onbeskikbaar omdat Batterybespaarder aan is</string>
+    <string name="backup_data_summary">Rugsteun programdata, Wi-Fi-wagwoorde en ander instellings in Google-bedieners</string>
+    <string name="backup_suggestion_cancel">Kanselleer</string>
+    <string name="backup_suggestion_dialog_description">Dit sal alle data van jou foon se interne berging af uitvee.</string>
+    <string name="backup_suggestion_dialog_title">Stel hierdie toestel terug?</string>
+    <string name="backup_suggestion_get_started">kom meer te wete</string>
+    <string name="backup_suggestion_item_summary">Kopieer van Android- of iPhone®-toestel af</string>
+    <string name="backup_suggestion_item_title">Ontbreek data van ou foon?</string>
+    <string name="backup_suggestion_missing_description">"As daar van jou data is wat jy nie sien nie, soos SMS'e en foto's, kan jy dit met 'n kabel na jou Pixel oordra.
+
+Om te begin, moet jou Pixel teruggestel word. Alle data op hierdie foon, insluitend gepasmaakte instellings en inhoud wat nie in die wolk gesinkroniseer is nie, sal uitgevee word."</string>
+    <string name="backup_suggestion_missing_title">Ontbreek jou data?</string>
+    <string name="backup_suggestion_next">volgende</string>
+    <string name="backup_suggestion_other_ways_to_copy">Ander maniere om data te kopieer</string>
+    <string name="backup_suggestion_reset_description">"Jy kan jou Pixel op die volgende skerm terugstel. Dit is die enigste manier om data met 'n kabel oor te dra.
+
+Nadat dit teruggestel is, volg die opstelproses en kies om jou data van jou vorige foon af te bring."</string>
+    <string name="backup_suggestion_reset_title">Stel jou Pixel terug</string>
+    <string name="backup_suggestion_what_is_needed_summary">"Nadat jy jou foon teruggestel het, benodig jy:
+
+• Jou vorige foon (LINK_BEGINdie meeste foneLINK_END met Android 5.0+ of iOS® 8.0+ word gesteun)
+• 'n Laai- of datakabel vir jou vorige foon
+• Die Quick Switch Adapter wat jy saam met jou Pixel gekry het"</string>
+    <string name="backup_suggestion_what_is_needed_title">Wat jy sal benodig</string>
+    <string name="battery_manager_summary">Verleng batterylewe en optimeer die laaiproses</string>
+    <string name="battery_manager_summary_unsupported">Verleng batterylewe</string>
+    <string name="battery_missing_link_message">Kom meer te wete</string>
+    <string name="battery_suggestion_summary">Skakel Aanpasbare Battery aan</string>
+    <string name="battery_tip_smart_battery_summary">Skakel Aanpasbare Battery aan</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s sal nie meer saamgebind word met enige toestel wat aan hierdie Google-rekening gekoppel is nie</string>
+    <string name="columbus_gesture_detected">Dubbeltik bespeur!</string>
+    <string name="columbus_gesture_enrollment_complete">Klaar</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Nie nou nie</string>
+    <string name="columbus_gesture_enrollment_settings">Gaan na Instellings</string>
+    <string name="columbus_gesture_enrollment_try_it">Probeer dit</string>
+    <string name="columbus_gesture_training_action_no_selection_error">"Kies asseblief 'n handeling om uit te voer"</string>
+    <string name="columbus_gesture_training_action_text">Kies wat gebeur wanneer jy Dubbeltik gebruik. Jy kan dit later in Instellings verander.</string>
+    <string name="columbus_gesture_training_action_title">Kies Dubbeltik-opsie</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Dubbeltik 1 van 2 bespeur</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Kom ons probeer dit nog een keer. Tik twee keer vinnig op die agterkant van jou foon.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Mooi so!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Dubbeltik 2 van 2 bespeur</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Jy is gereed om Dubbeltik te begin gebruik</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Jy het dit!</string>
+    <string name="columbus_gesture_training_enrolling_text">Tik twee keer vinnig op die agterkant van jou foon.</string>
+    <string name="columbus_gesture_training_enrolling_title">Probeer Dubbeltik</string>
+    <string name="columbus_gesture_training_finished_text">Gaan na Instellings om te verander hoe hard jy moet tik om Dubbeltik te gebruik.</string>
+    <string name="columbus_gesture_training_finished_title">Jy het Dubbeltik opgestel</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Jy het sopas twee keer op die agterkant van jou toestel getik en jy kan nou jou Assistent gebruik terwyl jy aan die beweeg is. Jy kan hierdie gebaar in instellings pasmaak.</string>
+    <string name="columbus_gesture_training_intro_text_suw">"Neem 'n skermkiekie, wys kennisgewings, of begin 'n ander handeling met twee tikke."</string>
+    <string name="columbus_gesture_training_intro_title">Dubbeltik vir kitshandelinge</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">"Kies asseblief 'n program om oop te maak"</string>
+    <string name="columbus_gesture_training_launch_text">Kies die program wat jy wil oopmaak wanneer jy Dubbeltik gebruik.</string>
+    <string name="columbus_gesture_training_launch_title">Kies program om oop te maak</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s-kortpadinstellings</string>
+    <string name="columbus_launch_settings_activity_title">Dubbeltik-instellings</string>
+    <string name="columbus_name">Dubbeltik</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">%1$s-instellings</string>
+    <string name="columbus_setting_action_assistant_title">Kry toegang tot jou digitale assistent</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Geen program is gekies nie</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Program is nie geïnstalleer nie</string>
+    <string name="columbus_setting_action_launch_title">Maak program oop</string>
+    <string name="columbus_setting_action_notification_title">Wys kennisgewings</string>
+    <string name="columbus_setting_action_open_app_title">Maak program oop</string>
+    <string name="columbus_setting_action_overview_title">Sien onlangse programme</string>
+    <string name="columbus_setting_action_play_pause_title">Speel of onderbreek media</string>
+    <string name="columbus_setting_action_screenshot_title">Neem skermkiekie</string>
+    <string name="columbus_setting_actions_title">Tik twee keer op agterkant van foon om</string>
+    <string name="columbus_setting_additional_settings_title">Dubbeltik-hardheid</string>
+    <string name="columbus_setting_app_selection_help_text">"Kies 'n program om oop te maak wanneer jy twee keer op die agterkant van jou foon tik. As jy die program deïnstalleer, skakel Dubbeltik af totdat jy 'n ander program kies."</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Kies wat gebeur as jy hierdie program met Dubbeltik oopmaak.</string>
+    <string name="columbus_setting_enable_switch_title">Gebruik Dubbeltik</string>
+    <string name="columbus_setting_sensitivity_title">Vereis harder tikke</string>
+    <string name="connectivity_helper_call_quality_category">Oproepgehalte</string>
+    <string name="connectivity_helper_call_quality_summary">Word in kennis gestel oor oorsake van verbindingkwessies tydens oproepe</string>
+    <string name="connectivity_helper_call_quality_title">Kry kennisgewings</string>
+    <string name="connectivity_helper_d2d_summary">Stel die ander persoon in kennis as jou foon verbindingprobleme ervaar tydens oproepe</string>
+    <string name="connectivity_helper_d2d_title">Deel verbindinginligting</string>
+    <string name="connectivity_helper_footnote">"Jy kan verbindinginligting deel wanneer die ander beller 'n gesteunde toestel en netwerk gebruik"</string>
+    <string name="content_capture">Gebruik programdata om te personaliseer</string>
+    <string name="copy_toast_msg">Skakel is na knipbord gekopieer</string>
+    <string name="dark_ui_text">"Donkertema gebruik 'n swart agtergrond om te help om jou battery langer te laat hou. Donkertemaskedules wag totdat jou skerm af is om aan te skakel."</string>
+    <string name="dock_summary_charging_phone">Laai tans foon</string>
+    <string name="double_twist_for_camera_mode_summary">Wanneer jy in Google Kamera is, kan jy jou pols twee keer draai om in en uit selfiemodus te wissel.</string>
+    <string name="downloads_backup_text">Afgelaaide lêers sal in Google Drive gerugsteun word</string>
+    <string name="duration_less_than_one_minute">Minder as 1 minuut</string>
+    <string name="extra_app_info_label">Speloptimering</string>
+    <string name="face_enrolling_center_head">Pas jou gesig in die binneraam</string>
+    <string name="face_enrolling_description">Vang alle hoeke van jou gesig vas deur al die teëls te verwyder.</string>
+    <string name="face_enrolling_do_it_later">Doen dit later</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Kanselleer</string>
+    <string name="face_enrolling_gaze_dialog_continue">Stel op sonder dat oë oop is</string>
+    <string name="face_enrolling_gaze_dialog_message">Wil jy Gesigslot opstel sonder om te vereis dat jou oë oop moet wees? As jy dit só opstel, kan iemand jou foon ontsluit deur dit voor jou gesig te hou wanneer jy nie daarvan bewus is nie.</string>
+    <string name="face_enrolling_gaze_dialog_title">Stel op sonder dat oë oop is</string>
+    <string name="face_enrolling_how_to_setup">Stel só op</string>
+    <string name="face_enrolling_title">Hou die foon stil. Draai jou kop. Doen dit stadig.</string>
+    <string name="face_enrolling_title_accessibility">Kyk direk na jou foon</string>
+    <string name="face_enrolling_title_accessibility_progress">Hou aan om reguit na jou foon te kyk</string>
+    <string name="face_enrolling_too_close">Beweeg foon verder weg</string>
+    <string name="face_enrolling_too_far">Beweeg foon nader</string>
+    <string name="face_enrolling_too_high">Beweeg foon laer af</string>
+    <string name="face_enrolling_too_left">Beweeg foon na jou regterkant</string>
+    <string name="face_enrolling_too_low">Beweeg foon hoër op</string>
+    <string name="face_enrolling_too_right">Beweeg jou foon na jou linkerkant</string>
+    <string name="face_enrolling_turn_head_to_arrow">Draai jou kop na die pyl</string>
+    <string name="face_enrolling_turned_too_far">"Draai kop 'n bietjie minder"</string>
+    <string name="fallback_menu_item_copy_link">Kopieer skakel</string>
+    <string name="fallback_menu_item_open_in_browser">Maak in blaaier oop</string>
+    <string name="fallback_menu_item_share_link">Deel skakel</string>
+    <string name="fullbackup_data_summary">"Rugsteun toesteldata (soos Wi-Fi-wagwoorde en oproepgeskiedenis) en programdata (soos instellings en lêers wat deur programme geberg is) outomaties in Google Drive.
+
+Wanneer jy outomatiese rugsteun aanskakel, word toestel- en programdata van tyd tot tyd in 'n private vouer in Google Drive gestoor. Programdata kan enige data wees wat 'n program gestoor het (op grond van ontwikkelaarinstellings), insluitend potensieel sensitiewe data, soos kontakte, boodskappe en foto's.
+
+Rugsteundata sal nie deel vorm van jou Drive-bergingkwota nie. Groot lêers, of lêers wat ontwikkelaars gekies het om van die diens uit te sluit, sal nie gerugsteun word nie."</string>
+    <string name="fullbackup_erase_dialog_message">Staak die rugsteun van toesteldata (soos Wi-Fi-wagwoorde en oproepgeskiedenis) en programdata (soos instellings en lêers wat deur programme geberg is), en vee ook alle kopieë in Google Drive uit?</string>
+    <string name="game_dashboard_always_on_summary">Wys Spelkontroleskerm-kortpad in speletjies</string>
+    <string name="game_dashboard_always_on_title">Spelkontroleskerm</string>
+    <string name="game_dashboard_dnd_rule_name">Speletjies</string>
+    <string name="game_dashboard_dnd_summary">"Ontvang slegs kennisgewings vanaf belangrike mense en programme wanneer jy 'n speletjie speel"</string>
+    <string name="game_dashboard_dnd_title">Moenie Steur Nie vir speletjies</string>
+    <string name="game_mode_battery_description">Verleng batterylewe</string>
+    <string name="game_mode_battery_title">Batterybespaarder</string>
+    <string name="game_mode_performance_description">Maksimeer raamtempo; gebruik meer batterykrag</string>
+    <string name="game_mode_performance_title">Werkverrigting</string>
+    <string name="game_mode_standard_description">Gebruik die speletjieverstekke</string>
+    <string name="game_mode_standard_title">Standaard</string>
+    <string name="game_optimization_unavailable">Nie vir hierdie speletjie beskikbaar nie</string>
+    <string name="gesture_aware_confirmation_action_button">Het dit</string>
+    <string name="gesture_aware_footer"><annotation link="link">Voorkeure</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Voorkeure</annotation></string>
+    <string name="gesture_skip_direction_ltr">Links na regs</string>
+    <string name="gesture_skip_direction_rtl">Regs na links</string>
+    <string name="gesture_skip_direction_title">Oorslaanrigting</string>
+    <string name="gesture_skip_footer"><annotation link="link">Voorkeure</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Voorkeure</annotation></string>
+    <string name="global_actions_panel_short_title">Kaarte en passe</string>
+    <string name="global_actions_panel_summary">Druk en hou die aan/af-skakelaar om toegang te kry tot goed soos jou betaalmetodes en instapkaarte.</string>
+    <string name="global_actions_panel_title">Wys kaarte en passe</string>
+    <string name="install_unknown_applications">Laat die installering van programme vanaf ander bronne as die Play Winkel toe</string>
+    <string name="keywords_accessibility_menu">motories, kitskieslys, bystandskieslys, raak, handvaardigheid</string>
+    <string name="keywords_adaptive_charging">laai, laaiproses, slimlaaiproses, aanpasbare laaiproses, battery, batterygesondheid</string>
+    <string name="keywords_assist_gesture_launch">gebaar, rand, kant, active edge, druk, greep, help, assistent, druk, ok google, google assistent</string>
+    <string name="keywords_assist_gesture_silence">gebaar, rand, kant, active edge, stilte, sluimer, wekker, inkomende oproep, stil, vertoonskerm, sluitskerm, druk, greep, stop</string>
+    <string name="keywords_assist_gesture_wake">gebaar, rand, kant, active edge, maak wakker, kennisgewings, skerm, vertoonskerm, skerm af, skerm aan, druk, aan die slaap, slaap, greep</string>
+    <string name="keywords_battery_share">batterydeling, draadlose batterylaai</string>
+    <string name="keywords_battery_share_settings">batterydeling, omgekeerde draadlose batterylaai</string>
+    <string name="keywords_content_capture">inhoudvaslegging, programinhoud, programdata</string>
+    <string name="keywords_gesture">gebaar, bewegings</string>
+    <string name="keywords_global_actions_panel">kaarte, passe</string>
+    <string name="keywords_live_transcribe">Onderskrifte, onderskrifte, CC, intydse onderskrifte, hardhorend, gehoorverlies, CART, spraak-na-teks, onderskrifte</string>
+    <string name="keywords_reverse_charging_stop_threshold">Hou op om battery te deel wanneer foon die volgende vlak bereik:</string>
+    <string name="keywords_select_to_speak">Hoor teks, lees hardop, lees op skerm, skermleser</string>
+    <string name="keywords_sound_amplifier">PSAP, versterk, klankversterker, hardhorend, gehoorverlies, versterking</string>
+    <string name="keywords_sound_notifications">Kennisgewings, hardhorend, gehoorverlies, stel in kennis</string>
+    <string name="keywords_switch_access">motories, skakelaar, hand, AT, bystandtegnologie, verlamming, ALS, skandering, stapskandering</string>
+    <string name="keywords_talkback">Skermleser, stembeskrywing, stembystand, blind, swak sig, TTS, teks na spraak, gesproke terugvoer</string>
+    <string name="keywords_voice_access">stem, stembeheer, motories, hand, mikrofoon, dikteer, praat, beheer</string>
+    <string name="language_input_gesture_summary_off">Active Edge is afgeskakel</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge is aangeskakel</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge is aan, druk vir jou Assistent</string>
+    <string name="me_card_title">My Pixel</string>
+    <string name="my_device_info_account_preference_title">Google-rekening</string>
+    <string name="owner_info_settings_edit_text_hint">Byvoorbeeld, Jan se Pixel.</string>
+    <string name="reverse_charging_charging_wirelessly_message">Nie beskikbaar nie omdat foon tans draadloos laai</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Batterydeling is onbeskikbaar omdat Pixel te warm is. Wag dat foon afkoel en probeer weer.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">Batterydeling is nie beskikbaar nie omdat foon tans draadloos laai</string>
+    <string name="reverse_charging_detail_footer_title">Jou foon se battery sal vinniger pap word wanneer jy batterydeling gebruik. Batterydeling werk met versoenbare oorfoonknoppies, horlosies, fone en meer. Om beter te laai, kan jy jou foon se houer verwyder.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"Batterydeling werk met versoenbare oorfoonknoppies, fone en meer.
+
+Jou foon se battery sal vinniger pap word wanneer jy hierdie kenmerk gebruik. Batterydeling skakel ná 'n paar minute outomaties af as 'n ander toestel nie bespeur word nie. Om beter te laai, kan jy jou foon se houer en ander items wat dalk kan inmeng, soos metaalvoorwerpe, verwyder."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">Batterydeling is nie beskikbaar nie omdat Batterybespaarder aan is</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">Batterydeling is nie beskikbaar nie omdat USB-C-toestel ingeprop is</string>
+    <string name="reverse_charging_instructions_title">"Laai ander toestelle met jou Pixel.
+Keer jou foon om om te probeer."</string>
+    <string name="reverse_charging_is_off_summary">Af</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Deel en laai battery</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Deel tans battery</string>
+    <string name="reverse_charging_is_on_summary">Aan / Laai ander toestelle</string>
+    <string name="reverse_charging_main_switch">Laat batterydeling toe</string>
+    <string name="reverse_charging_off_low_battery_summary">Af / Foonbattery onder %1$s</string>
+    <string name="reverse_charging_off_sharing_level_summary">Af / Battery onder delingvlak</string>
+    <string name="reverse_charging_overheat_summary">Onbeskikbaar omdat Pixel te warm is. Wag dat foon afkoel en probeer weer.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">Nie beskikbaar nie omdat Batterybespaarder aan is</string>
+    <string name="reverse_charging_sharing_level_message">Nie beskikbaar nie omdat battery onder delingvlak is</string>
+    <string name="reverse_charging_switch_summary">Plaas toestelle op die agterkant van jou Pixel</string>
+    <string name="reverse_charging_switch_title">Laai ander toestelle deur hulle op die agterkant van jou Pixel te plaas</string>
+    <string name="reverse_charging_switch_title_message">Laai ander toestelle</string>
+    <string name="reverse_charging_title">Batterydeling</string>
+    <string name="reverse_charging_unplug_usb_cable_message">Nie beskikbaar nie omdat USB-C-toestel ingeprop is</string>
+    <string name="reverse_charging_warning_summary">Nie beskikbaar nie omdat battery onder %1$s is</string>
+    <string name="reverse_charging_warning_title">Batterydeling is nie beskikbaar nie omdat battery onder %1$s is</string>
+    <string name="rtt_settings_always_visible">Altyd sigbaar</string>
+    <string name="rtt_settings_no_visible">Nie sigbaar nie</string>
+    <string name="rtt_settings_title">Intydse Teks (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Sigbaar gedurende oproep</string>
+    <string name="screen_time_summary_usage_today">%1$s vandag</string>
+    <string name="search_bar_account_avatar_content_description">Profielprent; dubbeltik om Google-rekening oop te maak</string>
+    <string name="security_advanced_settings">Gevorderde instellings</string>
+    <string name="security_dismiss_dialog_dismiss_button">Maak toe</string>
+    <string name="security_dismiss_dialog_title">Maak hierdie opletberig toe?</string>
+    <string name="security_settings_face_enroll_education_message">Draai op die volgende skerm jou kop om alle hoeke van jou gesig vas te vang</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">Hou jou foon op die volgende skerm op oogvlak</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">Gesiginskrywing-tydlimiet is bereik. Probeer weer.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Opstelling van Gesigslot het uitgetel</string>
+    <string name="security_settings_face_enroll_finish_description">"Jy kan nou jou gesig gebruik om jou foon te ontsluit of te verifieer dis jy, soos wanneer jy aanmeld by programme of 'n aankoop goedkeur"</string>
+    <string name="security_settings_face_enroll_finish_title">Lyk goed!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Opstelling vir beperkte visie of kopbeweging</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">Wanneer jy Gesigslot gebruik, sal jou kop dalk meer direk voor jou foon moet wees.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Vereis oop oë</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Jy en jou kind kan enige tyd in Instellings sy of haar gesigmodel uitvee of Gesigslot afskakel. Gesigmodelle word op die foon geberg totdat hulle uitgevee word.
+
+Kom meer te wete by g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Jy en jou kind is in beheer</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"Jy kan enige tyd in Instellings jou gesigmodel uitvee of Gesigslot afskakel. Gesigmodelle word op die foon geberg totdat jy hulle uitvee.
+
+Kom meer te wete by g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Jy is in beheer</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"Gesigslot skep 'n unieke model van jou kind se gesig om te verifieer dis hy of sy. Jou kind sal sy of haar gesig uit verskillende hoeke afneem om hierdie gesigmodel tydens die opstelling te skep.
+
+Wanneer jou kind Gesigslot gebruik, word prente gebruik om sy of haar gesigmodel op te dateer. Prente wat gebruik word om jou kind se gesigmodel te skep, word nie geberg nie. Die gesigmodel word egter veilig op die foon geberg en verlaat nooit die foon nie. Alle verwerking vind veilig op die foon plaas."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"Gesigslot skep 'n unieke model van jou gesig om te verifieer dis jy. Jy sal jou gesig uit verskillende hoeke afneem om hierdie gesigmodel tydens die opstelling te skep.
+
+Wanneer jy Gesigslot gebruik, word prente gebruik om jou gesigmodel op te dateer. Prente wat gebruik word om jou gesigmodel te skep, word nie geberg nie. Die gesigmodel word veilig op jou foon geberg en verlaat nooit die foon nie. Alle verwerking vind veilig op jou foon plaas."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Hoe dit werk</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">Gesigslot kan vereis dat jou kind se oë oop moet wees om die foon te ontsluit of te verifieer dis hy of sy. Jy en jou kind kan enige tyd hierdie opsie in Instellings afskakel.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">"As jou kind gewoonlik 'n bril dra, kan hy of sy dit gedurende die opstelling dra."</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">"As jou kind na die foon kyk, kan dit ontsluit selfs al het hulle nie bedoel om dit te doen nie. Jou kind se foon kan ook ontsluit word deur iemand wat baie soos hy of sy lyk, soos 'n identiese broer of suster, of wanneer iemand dit voor jou kind se gesig hou."</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">Gesigslot kan vereis dat jou oë oop moet wees om die foon te ontsluit of te verifieer dis jy. Jy kan hierdie opsie enige tyd in Instellings afskakel.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">"'n Bril of sonbril met ligte tint is nie 'n probleem nie."</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">"Dit kan dalk minder veilig wees om die foon met 'n gesig te ontsluit eerder as met 'n sterk patroon of PIN."</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">"As jy na die foon kyk, kan dit ontsluit selfs al het jy nie bedoel om dit te doen nie. Jou foon kan ook ontsluit word deur iemand wat baie soos jy lyk, soos 'n identiese broer of suster, of wanneer iemand dit voor jou gesig hou."</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Hou in gedagte</string>
+    <string name="security_settings_face_enroll_introduction_message">"Gebruik jou gesig om jou foon te ontsluit of te verifieer dis jy, soos wanneer jy by programme aanmeld of 'n aankoop goedkeur."</string>
+    <string name="security_settings_face_enroll_introduction_title">Stel Gesigslot op</string>
+    <string name="security_settings_face_enroll_next">Volgende</string>
+    <string name="security_settings_face_enroll_partial_message">Om die werkverrigting te verbeter, kan jy Gesigslot weer in Instellings opstel</string>
+    <string name="security_settings_face_enroll_partial_start_over">Begin oor</string>
+    <string name="security_settings_face_enroll_partial_title">Gesigslot is klaar opgestel</string>
+    <string name="security_settings_face_enroll_timeout_message">"Probeer eerder vinnige opstelling. Hou in gedagte dat jou kop dalk meer direk voor jou foon sal moet wees wanneer jy Gesigslot gebruik.
+
+Om die werkverrigting te verbeter, kan jy Gesigslot weer in Instellings opstel."</string>
+    <string name="security_settings_face_enroll_timeout_title">Kan nie met opstelling voortgaan nie</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Probeer weer</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Gebruik vinnige opstelling</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Verlaat opstelling</string>
+    <string name="security_settings_face_enroll_too_hot_message">Gesigslot-opstelling kan nie voltooi word nie omdat die foon te warm is. Probeer later weer wanneer die foon afgekoel het.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Slaan Gesigslot oor</string>
+    <string name="security_settings_face_enroll_too_hot_title">Foon is te warm</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Tik om vingerafdruk op te stel</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Kom meer te wete by g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint vir werk</string>
+    <string name="setup_suggestion_summary">Kopieer data, betaal met jou foon, en meer</string>
+    <string name="setup_suggestion_title">Stel klaar op</string>
+    <string name="smart_battery_footer">Om batterylewe te verleng, kan Aanpasbare Battery werkverrigting en agtergrondaktiwiteit beperk. Sommige kennisgewings kan vertraag word.</string>
+    <string name="smart_battery_manager_title">Verstelbare voorkeure</string>
+    <string name="smart_battery_title">Aanpasbare Battery</string>
+    <string name="sound_dashboard_summary">Volume, fisiese terugvoer, Moenie Steur Nie</string>
+    <string name="sound_settings">Klank en vibrasie</string>
+    <string name="storage_manager_indicator">Slimberging: ^1</string>
+    <string name="time_remaining_warning_subtext">Ongeveer %1$s oor gegrond op vorige gebruik</string>
+    <string name="time_remaining_warning_text">Battery kan binnekort afloop</string>
+    <string name="tips_suggestion_summary">Verken wat jy met jou foon kan doen</string>
+    <string name="tips_suggestion_title">Leer jou Pixel ken</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Hou foon voor jou gesig</string>
+    <string name="usb_use_file_transfers">Lêeroordrag / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">Vibreer vir oproepe is nie beskikbaar nie omdat foon op stil gestel is</string>
+    <string name="vibration_haptics_settings_not_available_title">Nie beskikbaar nie</string>
+    <string name="wallpaper_dashboard_summary">Kleure, ikone met temas, programrooster</string>
+    <string name="wifi_subscription_summary">Bekyk of verander OpenRoaming-intekening</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">Gekoppel met %1$s</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Tik om te koppel</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Kan nie koppel nie. Tik om weer te probeer.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Koppel tans …</string>
+</resources>

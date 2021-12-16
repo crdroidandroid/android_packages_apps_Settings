@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">ჩაკეტილი ეკრანი მოცდის რეჟიმშია</string>
+    <string name="gesture_silence_title">გაფრთხილებების გაჩუმების ჟესტი</string>
+    <string name="gesture_skip_title">ჟესტის გამოტოვება</string>
+    <string name="keywords_touch_sensitivity">შეხება, მგრძნობიარობა, სენსიტიური, ეკრანის დამცავი, ფირი, რეაგირებადი, რეაგირება</string>
+    <string name="touch_sensitivity_summary">აუმჯობესებს შეხებას ეკრანის დამცავის გამოყენებისას</string>
+    <string name="touch_sensitivity_title">აუმჯობესებს შეხების მგრძნობიარობას</string>
+    <string name="accessibility_vibration_settings_screen_title">ვიბრაციის და შეხებისადმი მგრძნობელობის გამოყენება</string>
+    <string name="vibration_haptics_settings_not_available_summary">ვიბრაცია და შეხებისადმი მგრძნობელობა მიუწვდომელია, რადგან ტელეფონი ჩუმ რეჟიმზეა დაყენებული</string>
+    <string name="vibration_haptics_strength_category_title">ვიბრაცია და შეხებისადმი მგრძნობელობის სიძლიერე</string>
+    <string name="accessibility_vibration_settings_title">ვიბრაცია და შეხებისადმი მგრძნობელობა</string>
+    <string name="columbus_title">სწრაფად შეეხეთ მოქმედებების დასაწყებად</string>
+    <string name="vibrate_for_calls_category_title">ზარები</string>
+    <string name="accessibility_alarm_vibration_title">მაღვიძარის ვიბრაცია</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge დაყენებულია. გადადით მომდევნო ეკრანზე ან განაგრძეთ დარეგულირება.</string>
+    <string name="accessibility_keyboard_haptics_title">კლავიატურის შეხებისადმი მგრძნობელობა</string>
+    <string name="accessibility_vibration_preferences_file">ვიბრაციისპარამეტრები</string>
+    <string name="adaptive_charging">ადაპტირებადი დატენვა</string>
+    <string name="adaptive_charging_description">ღამის განმავლობაში სტაბილურად იტენება, ბატარეის მუშაობის ხანგრძლივობის შესანარჩუნებლად. იყენებს მაღვიძარას იმისთვის, რომ გაღვიძებისას სრულად იყოს დატენილი.</string>
+    <string name="adaptive_charging_time_estimate"><b>ადაპტირებადი დატენვა</b> • სრულად დატენვამდე დარჩა %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">პარამეტრები</annotation></string>
+    <string name="app_and_notification_dashboard_summary">ასისტენტი, ბოლოდროინდელი აპები, ნაგულისხმევი აპები</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">ასისტენტზე გადასვლა</string>
+    <string name="assist_gesture_enrollment_do_it_later">მოგვიანებით გაკეთება</string>
+    <string name="assist_gesture_enrollment_seekbar_light">მსუბუქად მოჭერა</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">ძლიერად მოჭერა</string>
+    <string name="assist_gesture_enrollment_settings">პარამეტრები</string>
+    <string name="assist_gesture_setting_enable_assistant_text">ასისტენტთან სასაუბროდ, სწრაფად მოუჭირეთ ტელეფონის ქვედა ნახევარს, შემდეგ კი აუშვით</string>
+    <string name="assist_gesture_setting_enable_assistant_title">ასისტენტის გასახსნელად, მოუჭირეთ</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">მაღვიძარების, ტაიმერების, შეტყობინებებისა და შემომავალი ზარების დასადუმებლად, მოუჭირეთ</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">შეტყობინებებისა და შემომავალი ზარების ჩასაჩუმებლად, მოუჭირეთ</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">ტელეფონის ჩასაჩუმებლად, მოუჭირეთ</string>
+    <string name="assist_gesture_setting_enable_wake_title">ასისტენტის გახსნა გამორთულ ეკრანზე</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">მსუბუქად მოჭერა</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">ძლიერად მოჭერა</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">მოჭერის მგრძნობიარობა</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">შესაძლოა შემთხვევით გახსნას ასისტენტი</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">მოუჭირეთ ტელეფონის ქვედა ნახევარს</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">უფრო სწრაფად მოუჭირეთ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">უფრო მძლავრად მოუჭირეთ</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">მოუჭირეთ სწრაფად, შემდეგ კი აუშვით</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">ცადეთ სლაიდერის დარეგულირება</string>
+    <string name="assist_gesture_training_enrolling_text">მოუჭირეთ ტელეფონის ქვედა ნახევარს. შეგიძლიათ დაარეგულიროთ, თუ რამდენად ძლიერად არის საჭირო მოჭერა.</string>
+    <string name="assist_gesture_training_enrolling_title">მოუჭირეთ სწრაფად, შემდეგ კი აუშვით</string>
+    <string name="assist_gesture_training_finished_text">მოჭერისადმი მგრძნობელობის შეცვლა მოგვიანებით პარამეტრებიდან შეგიძლიათ</string>
+    <string name="assist_gesture_training_finished_title">დაასრულეთ ან განაგრძეთ დარეგულირება</string>
+    <string name="assist_gesture_training_intro_text">ასისტენტთან ნებისმიერ დროს სასაუბროდ, სწრაფად მოუჭირეთ ტელეფონის ქვედა ნახევარს, შემდეგ კი აუშვით</string>
+    <string name="assist_gesture_training_intro_title">ასისტენტის გასახსნელად, მოუჭირეთ</string>
+    <string name="assist_gesture_training_suggestion_summary">ასისტენტთან საუბარი, ზარების ჩაჩუმება</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">ასისტენტთან საუბარი, მაღვიძარებისა და ზარების ჩაჩუმება</string>
+    <string name="assist_gesture_training_suggestion_title">ასისტენტთან სასაუბროდ მოუჭირეთ, შემდეგ კი აუშვით</string>
+    <string name="automatic_storage_manager_activation_warning">როცა ინტერნეტთან დაკავშირებული იქნებით, ფოტოები და ვიდეოები მაინც იქნება ხელმისაწვდომი იმ ხარისხით, რომელიც სარეზერვო ასლებისთვის აირჩიეთ</string>
+    <string name="automatic_storage_manager_days_title">დარეზ. ფოტო/ვიდეოების ამოშლა</string>
+    <string name="automatic_storage_manager_deactivation_warning">"გსურთ, გამორთოთ გონიერი მეხსიერება? 
+
+გონიერი მეხსიერება ვერ გამოათავისუფლებს ხელმისაწვდომ სივრცეს, როცა ის თითქმის სავსეა."</string>
+    <string name="automatic_storage_manager_downloads_days_title">სარეზ. ასლებიანი ჩამოტვირთვები</string>
+    <string name="automatic_storage_manager_preference_title">გონიერი მეხსიერება</string>
+    <string name="automatic_storage_manager_primary_switch_title">ჭკვიანი მეხსიერების გამოყენება</string>
+    <string name="automatic_storage_manager_settings">გონიერი მეხსიერება</string>
+    <string name="automatic_storage_manager_text">სარეზერვო ასლების მქონე ფოტოებისა და ვიდეოების ამოშლა. ამ ფაილების პოვნას Google Photos-ში შეძლებთ.</string>
+    <string name="aware_disabled_preference_action">ჩართვა</string>
+    <string name="aware_disabled_preference_neutral">ახლა არა</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense მიუწვდომელია, რადგან ჩართულია თვითმფრინავის რეჟიმი და ბატარეის დამზოგი</string>
+    <string name="aware_footer_when_airplane_on">Motion Sense მიუწვდომელია, რადგან ჩართულია თვითმფრინავის რეჟიმი</string>
+    <string name="aware_footer_when_batterysaver_on">Motion Sense მიუწვდომელია, რადგან ჩართულია ბატარეის დამზოგი</string>
+    <string name="aware_gesture_summary_off">ჟესტებით მართვა ჩართულია, Active Edge გამორთულია</string>
+    <string name="aware_gesture_summary_on_non_assist">ჟესტებით მართვა ჩართულია, Active Edge ჩართულია</string>
+    <string name="aware_gesture_summary_on_with_assist">ჟესტებით მართვა ჩართულია, Active Edge ჩართულია, მოუჭირეთ ასისტენტის გასახსნელად</string>
+    <string name="aware_info_button_description">სხვა პარამეტრები</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">მიუწვდომელია, რადგან ჩართულია თვითმფრინავის რეჟიმი და ბატარეის დამზოგი</string>
+    <string name="aware_summary_when_airplane_on">მიუწვდომელია, რადგან ჩართულია თვითმფრინავის რეჟიმი</string>
+    <string name="aware_summary_when_batterysaver_on">მიუწვდომელია, რადგან ჩართულია ბატარეის დამზოგი</string>
+    <string name="backup_data_summary">აპების მონაცემების, Wi-Fi-ს პაროლებისა და სხვა პარამეტრების სარეზერვო ასლების შექმნა Google-ის სერვერებზე</string>
+    <string name="backup_suggestion_cancel">გაუქმება</string>
+    <string name="backup_suggestion_dialog_description">ეს მოქმედება თქვენი ტელეფონის შიდა მეხსიერებიდან ყველა მონაცემს წაშლის.</string>
+    <string name="backup_suggestion_dialog_title">გსურთ მოწყობილობის გადაყენება?</string>
+    <string name="backup_suggestion_get_started">შეიტყვეთ მეტი</string>
+    <string name="backup_suggestion_item_summary">Android ან iPhone® მოწყობილობიდან კოპირება</string>
+    <string name="backup_suggestion_item_title">ძველი ტელეფონიდან ყველა მონაცემი არ მიგიღიათ?</string>
+    <string name="backup_suggestion_missing_description">"თუ ზოგიერთ თქვენს მონაცემს (როგორიცაა SMS-შეტყობინებები და ფოტოები) ვერ ხედავთ, ამ კონტენტის თქვენს Pixel-ზე გადმოტანა კაბელის მეშვეობით შეგიძლიათ.
+
+დასაწყებად საჭიროა თქვენი Pixel-ის გადაყენება. ამ ტელეფონზე არსებული ყველა მონაცემი (მათ შორის, მორგებული პარამეტრები და კონტენტი, რომელიც ღრუბლოვან სერვისთან სინქრონიზებული არ არის) წაიშლება."</string>
+    <string name="backup_suggestion_missing_title">რომელიმე მონაცემი გაკლიათ?</string>
+    <string name="backup_suggestion_next">შემდეგი</string>
+    <string name="backup_suggestion_other_ways_to_copy">მონაცემთა კოპირების სხვა ხერხები</string>
+    <string name="backup_suggestion_reset_description">"შემდეგ ეკრანზე თქვენი Pixel-ის გადაყენებას შეძლებთ. ეს კაბელის მეშვეობით მონაცემების გადატანის ერთადერთი ხერხია.
+
+გადაყენების შემდეგ გაიარეთ დაყენების პროცესი და აირჩიეთ თქვენი მონაცემების ძველი ტელეფონიდან გადმოტანა."</string>
+    <string name="backup_suggestion_reset_title">თქვენი Pixel-ის გადაყენება</string>
+    <string name="backup_suggestion_what_is_needed_summary">"თქვენი ტელეფონის გადაყენების შემდეგ, თქვენ დაგჭირდებათ:
+
+• თქვენი ძველი ტელეფონი (მხარდაჭერილია იმ LINK_BEGINტელეფონების უმეტესობაLINK_END, რომელზეც გაშვებულია Android 5.0+ ან iOS® 8.0+)
+• თქვენი ძველი ტელეფონის დამტენის ან მონაცემთა გადაცემის კაბელი
+• Quick Switch Adapter, რომელიც თქვენს Pixel-ს მოჰყვა"</string>
+    <string name="backup_suggestion_what_is_needed_title">ის, რაც დაგჭირდებათ</string>
+    <string name="battery_manager_summary">ახანგრძლივებს ბატარეის მუშაობას და ახდენს დატენვის ოპტიმიზაციას</string>
+    <string name="battery_manager_summary_unsupported">ზრდის ბატარეის მუშაობის ხანგრძლივობას</string>
+    <string name="battery_missing_link_message">შეიტყვეთ მეტი</string>
+    <string name="battery_suggestion_summary">ადაპტაციური ბატარეის ჩართვა</string>
+    <string name="battery_tip_smart_battery_summary">ადაპტაციური ბატარეის ჩართვა</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">%1$s აღარ იქნება დაწყვილებული ამ Google ანგარიშთან მიბმულ რომელიმე მოწყობილობასთან</string>
+    <string name="columbus_gesture_detected">გამოვლინდა „სწრაფი შეხება“!</string>
+    <string name="columbus_gesture_enrollment_complete">მზადაა</string>
+    <string name="columbus_gesture_enrollment_do_it_later">ახლა არა</string>
+    <string name="columbus_gesture_enrollment_settings">პარამეტრებზე გადასვლა</string>
+    <string name="columbus_gesture_enrollment_try_it">ცდა</string>
+    <string name="columbus_gesture_training_action_no_selection_error">გთხოვთ, აირჩიოთ შესასრულებელი მოქმედება</string>
+    <string name="columbus_gesture_training_action_text">აირჩიეთ, რა მოხდეს, „სწრაფი შეხების“ გამოყენებისას. ამის შეცვლა მოგვიანებით პარამეტრებიდან შეგიძლიათ.</string>
+    <string name="columbus_gesture_training_action_title">აირჩიეთ სწრაფი შეხების ვარიანტი</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… გამოვლენილია 2-დან 1 ორმაგი შეხება</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">კიდევ ერთხელ ცადეთ. სწრაფად შეეხეთ ორჯერ თქვენი ტელეფონის უკანა მხარეს.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">მშვენიერია!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… გამოვლენილია 2-დან 2 ორმაგი შეხება</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">თქვენ მზად ხართ, დაიწყოთ სწრაფი შეხების გამოყენება</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">გასაგებია!</string>
+    <string name="columbus_gesture_training_enrolling_text">სწრაფად შეეხეთ ორჯერ თქვენი ტელეფონის უკანა მხარეს.</string>
+    <string name="columbus_gesture_training_enrolling_title">ცადეთ სწრაფი შეხება</string>
+    <string name="columbus_gesture_training_finished_text">სწრაფი შეხების გამოყენებისთვის საჭირო შეხების სიძლიერის შესაცვლელად გადადით პარამეტრებზე.</string>
+    <string name="columbus_gesture_training_finished_title">თქვენ დააყენეთ „სწრაფი შეხება“</string>
+    <string name="columbus_gesture_training_intro_text_accidental">თქვენ ახლახან ორჯერ შეეხეთ თქვენი მოწყობილობის უკანა მხარეს, რაც გადაადგილებისას ასისტენტით სარგებლობის საშუალებას გაძლევთ. ამ ჟესტის მორგება პარამეტრებში შეგიძლიათ.</string>
+    <string name="columbus_gesture_training_intro_text_suw">გადაიღეთ ეკრანის ანაბეჭდი, გამოაჩინეთ შეტყობინებები ან დაიწყეთ სხვა მოქმედება მხოლოდ ორი შეხებით.</string>
+    <string name="columbus_gesture_training_intro_title">სწრაფი შეხება სწრაფი მოქმედებებისთვის</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">აირჩიეთ აპი გასახსნელად</string>
+    <string name="columbus_gesture_training_launch_text">აირჩიეთ აპი, რომლის გახსნაც გსურთ სწრაფი შეხების გამოყენებისას.</string>
+    <string name="columbus_gesture_training_launch_title">აირჩიეთ აპი გასახსნელად</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s-ის მალსახმობის პარამეტრები</string>
+    <string name="columbus_launch_settings_activity_title">„სწრაფი შეხების“ პარამეტრები</string>
+    <string name="columbus_name">სწრაფი შეხება</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">%1$s — პარამეტრები</string>
+    <string name="columbus_setting_action_assistant_title">თქვენს ციფრულ ასისტენტზე წვდომა</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">აპი არჩეული არ არის</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">აპი დაუინსტალირებელია</string>
+    <string name="columbus_setting_action_launch_title">აპის გახსნა</string>
+    <string name="columbus_setting_action_notification_title">შეტყობინებების ჩვენება</string>
+    <string name="columbus_setting_action_open_app_title">აპის გახსნა</string>
+    <string name="columbus_setting_action_overview_title">ბოლოს გამოყენებული აპების ნახვა</string>
+    <string name="columbus_setting_action_play_pause_title">მედიის დაკვრა ან დაპაუზება</string>
+    <string name="columbus_setting_action_screenshot_title">ეკრანის ანაბეჭდის გადაღება</string>
+    <string name="columbus_setting_actions_title">ორმაგად შეეხეთ ტელეფონის უკანა მხარეს, რომ შეძლოთ</string>
+    <string name="columbus_setting_additional_settings_title">„სწრაფი შეხების“ სიძლიერე</string>
+    <string name="columbus_setting_app_selection_help_text">აირჩიეთ აპი, რომელიც გაიხსნება თქვენი ტელეფონის უკანა მხარეზე ორმაგი შეხებით. აპის დეინსტალაციის შემთხვევაში, „სწრაფი შეხება“ გამოირთვება სხვა აპის არჩევამდე.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">აირჩიეთ, რა მოხდეს, როცა აპს „სწრაფი შეხებით“ გახსნით.</string>
+    <string name="columbus_setting_enable_switch_title">„სწრაფი შეხების“ გამოყენება</string>
+    <string name="columbus_setting_sensitivity_title">უფრო ძლიერად შეხების მოთხოვნა</string>
+    <string name="connectivity_helper_call_quality_category">ზარის ხარისხი</string>
+    <string name="connectivity_helper_call_quality_summary">მიიღეთ შეტყობინებები ზარების განმავლობაში კავშირის პრობლემების მიზეზების შესახებ</string>
+    <string name="connectivity_helper_call_quality_title">შეტყობინებების მიღება</string>
+    <string name="connectivity_helper_d2d_summary">შეატყობინეთ თანამოსაუბრეს, როდესაც თქვენს ტელეფონს ზარის განმავლობაში კავშირის პრობლემები აქვს</string>
+    <string name="connectivity_helper_d2d_title">კავშირის ინფორმაციის გაზიარება</string>
+    <string name="connectivity_helper_footnote">შეგიძლიათ, თანამოსაუბრეს გაუზიაროთ კავშირის ინფორმაცია, როდესაც ის მხარდაჭერილი მოწყობილობით და ქსელით სარგებლობს</string>
+    <string name="content_capture">პერსონალიზება აპების მონაცემების გამოყენებით</string>
+    <string name="copy_toast_msg">გაცვლის ბუფერში კოპირებული ბმული</string>
+    <string name="dark_ui_text">მუქი თემა იყენებს შავ ფონს იმისთვის, რომ თქვენმა ბატარეამ დიდხანს გაძლოს. მუქი თემა აყენებს ჩართვის განრიგს სანამ თქვენი ეკრანი გამორთულია.</string>
+    <string name="dock_summary_charging_phone">ტელეფონი იტენება</string>
+    <string name="double_twist_for_camera_mode_summary">Google კამერაში სელფის რეჟიმის ჩასართავად/გამოსართავად, აპში ყოფნისას შეასრულეთ ორმაგი მოტრიალება.</string>
+    <string name="downloads_backup_text">Google Drive-ზე ჩამოტვირთული ფაილების სარეზერვო ასლები შეიქმნება</string>
+    <string name="duration_less_than_one_minute">1 წუთზე ნაკლები</string>
+    <string name="extra_app_info_label">თამაშის ოპტიმიზაცია</string>
+    <string name="face_enrolling_center_head">მოაქციეთ თქვენი სახე შიდა ჩარჩოში</string>
+    <string name="face_enrolling_description">აღბეჭდეთ თქვენი სახის ყველა კუთხე ყველა მოზაიკის მოცილებით.</string>
+    <string name="face_enrolling_do_it_later">მოგვიანებით გაკეთება</string>
+    <string name="face_enrolling_gaze_dialog_cancel">გაუქმება</string>
+    <string name="face_enrolling_gaze_dialog_continue">გახელ. თვალების გარეშე დაყენ.</string>
+    <string name="face_enrolling_gaze_dialog_message">გსურთ, დააყენოთ სახით განბლოკვა გახელილი თვალების მოთხოვნის გარეშე? თუ ამგვარად დააყენებთ, სხვა პირს შეეძლება ტელეფონის თქვენს სახესთან მოტანა და მისი ამგვარად განბლოკვა ისე, რომ შეიძლება ამის შესახებ არც იცოდეთ.</string>
+    <string name="face_enrolling_gaze_dialog_title">გახელილი თვალების გარეშე დაყენება</string>
+    <string name="face_enrolling_how_to_setup">როგორ დავაყენოთ</string>
+    <string name="face_enrolling_title">არ გაანძრიოთ ტელეფონი. შეატრიალეთ თავი. ნელა იმოძრავეთ.</string>
+    <string name="face_enrolling_title_accessibility">პირდაპირ შეხედეთ ტელეფონს</string>
+    <string name="face_enrolling_title_accessibility_progress">გთხოვთ, პირდაპირ უყუროთ ტელეფონს</string>
+    <string name="face_enrolling_too_close">გაწიეთ ტელეფონი უფრო შორს</string>
+    <string name="face_enrolling_too_far">მიიტანეთ ტელეფონი უფრო ახლოს</string>
+    <string name="face_enrolling_too_high">ჩაწიეთ ტელეფონი ქვემოთ</string>
+    <string name="face_enrolling_too_left">გაწიეთ ტელეფონი თქვენგან მარჯვნივ</string>
+    <string name="face_enrolling_too_low">აწიეთ ტელეფონი ზემოთ</string>
+    <string name="face_enrolling_too_right">გაწიეთ ტელეფონი თქვენგან მარცხნივ</string>
+    <string name="face_enrolling_turn_head_to_arrow">მიაბრუნეთ თავი ისრის მიმართულებით</string>
+    <string name="face_enrolling_turned_too_far">თავი ცოტა ნაკლებად მიაბრუნეთ</string>
+    <string name="fallback_menu_item_copy_link">ბმულის კოპირება</string>
+    <string name="fallback_menu_item_open_in_browser">ბრაუზერში გახსნა</string>
+    <string name="fallback_menu_item_share_link">ბმულის გაზიარება</string>
+    <string name="fullbackup_data_summary">"Google Drive-ში მოწყობილობის მონაცემებისა (მათ შორის, Wi-Fi-ს პაროლებისა და საუბრის ისტორიის) და აპების მონაცემების (მათ შორის, აპების მიერ შენახული პარამეტრებისა და ფაილების) სარეზერვო ასლების ავტომატურად შექმნა.
+
+სარეზერვო ასლების ავტომატურად შექმნის ჩართვის შემთხვევაში, მოწყობილობისა და აპების მონაცემები პერიოდულად შეინახება Google Drive-ზე არსებულ პირად საქაღალდეში. აპების მონაცემები გულისხმობს ამა თუ იმ აპის მიერ შენახულ ნებისმიერ მონაცემს (დამოკიდებულია დეველოპერის პარამეტრებზე). ეს შეიძლება იყოს ისეთი კონფიდენციალური მონაცემებიც, როგორიცაა კონტაქტები, შეტყობინებები და ფოტოები.
+
+სარეზერვო მონაცემები Drive-ზე თქვენთვის გამოყოფილ მეხსიერების კვოტაზე გავლენას არ იქონიებს. დიდი ზომის ფაილები, ან ფაილები, რომლებიც დეველოპერების მიერ სერვისიდან გამოირიცხა, არ დაკოპირდება."</string>
+    <string name="fullbackup_erase_dialog_message">გსურთ, შეწყდეს მოწყობილობის მონაცემებისა (მათ შორის, Wi-Fi-ს პაროლებისა და საუბრის ისტორიის) და აპების მონაცემების (მათ შორის, აპების მიერ შენახული პარამეტრებისა და ფაილების) სარეზერვო ასლების შექმნა და, ამასთანავე, წაიშალოს Google Drive-ში არსებული ყველა ასლი?</string>
+    <string name="game_dashboard_always_on_summary">თამაშების დაფის მალსახმობის ჩვენება თამაშებში</string>
+    <string name="game_dashboard_always_on_title">თამაშების დაფა</string>
+    <string name="game_dashboard_dnd_rule_name">თამაშები</string>
+    <string name="game_dashboard_dnd_summary">თამაშის განმავლობაში შეტყობინებები მიიღება მხოლოდ მნიშვნელოვანი ხალხისა და აპებისგან</string>
+    <string name="game_dashboard_dnd_title">„არ შემაწუხოთ“ თამაშებისთვის</string>
+    <string name="game_mode_battery_description">ახანგრძლივებს ბატარეის მუშაობას</string>
+    <string name="game_mode_battery_title">ბატარეის დამზოგი</string>
+    <string name="game_mode_performance_description">მაქსიმუმამდე ზრდის კადრების სიჩქარეს, მეტად ხარჯავს ბატარეას</string>
+    <string name="game_mode_performance_title">ეფექტურობა</string>
+    <string name="game_mode_standard_description">იყენებს თამაშის ნაგულისხმევ პარამეტრებს</string>
+    <string name="game_mode_standard_title">სტანდარტული</string>
+    <string name="game_optimization_unavailable">ამ თამაშისთვის მიუწვდომელია</string>
+    <string name="gesture_aware_confirmation_action_button">გასაგებია</string>
+    <string name="gesture_aware_footer"><annotation link="link">პარამეტრები</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">პარამეტრები</annotation></string>
+    <string name="gesture_skip_direction_ltr">მარცხნიდან მარჯვნივ</string>
+    <string name="gesture_skip_direction_rtl">მარჯვნიდან მარცხნივ</string>
+    <string name="gesture_skip_direction_title">გამოტოვების მიმართულება</string>
+    <string name="gesture_skip_footer"><annotation link="link">პარამეტრები</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">პარამეტრები</annotation></string>
+    <string name="global_actions_panel_short_title">ბარათები და საშვები</string>
+    <string name="global_actions_panel_summary">იმისათვის, რომ გქონდეთ წვდომა ისეთ კონტენტზე, როგორიც არის გადახდის მეთოდები და ჩასხდომის ბარათები, ხანგრძლივად დააჭირეთ ჩართვის ღილაკს.</string>
+    <string name="global_actions_panel_title">ბარათებისა და საშვების ჩვენება</string>
+    <string name="install_unknown_applications">Play Store-ისგან განსხვავებული წყაროებიდან აპების ინსტალაციის დაშვება</string>
+    <string name="keywords_accessibility_menu">ძრავა, სწრაფი მენიუ, დამხმარე მენიუ, შეხება, სიმარჯვე</string>
+    <string name="keywords_adaptive_charging">მუხტი, დატენვა, გონიერი დატენვა, ადაპტირებადი დატენვა, ბატარეა, ბატარეის გამართულობა</string>
+    <string name="keywords_assist_gesture_launch">ჟესტი, კიდე, გვერდი, Active Edge, მოჭერა, ჩავლება, დახმარება, ასისტენტი, მოჭერა, Ok Google, Google ასისტენტი</string>
+    <string name="keywords_assist_gesture_silence">ჟესტი, კიდე, გვერდი, Active Edge, დადუმება, ჩაჩუმება, მაღვიძარა, შემომავალი ზარი, ჩუმი, ჩვენება, ჩაკეტილი ეკრანი, მოჭერა, ჩავლება, შეწყვეტა</string>
+    <string name="keywords_assist_gesture_wake">ჟესტი, კიდე, გვერდი, Active Edge, გაღვიძება, შეტყობინებები, ეკრანი, ჩვენება, ეკრანის გამორთვა, ეკრანის ჩართვა, მოჭერა, დაძინებული, ძილი, ჩავლება</string>
+    <string name="keywords_battery_share">ბატარეის გაზიარება, უსადენო დატენა</string>
+    <string name="keywords_battery_share_settings">ბატარეის გაზიარება, პირუკუ უსადენო დატენა</string>
+    <string name="keywords_content_capture">კონტენტის აღბეჭდვა, აპების კონტენტი, აპების მონაცემები</string>
+    <string name="keywords_gesture">ჟესტები, მოძრაობები</string>
+    <string name="keywords_global_actions_panel">ბარათები, საშვები</string>
+    <string name="keywords_live_transcribe">სუბტიტრები, დახურული სუბტიტრები, დახ. სუბტ., ავტოსუბტიტრები, სმენადაქვეითებული, სმენის დაკარგვა, კომუნიკაციური წვდომის მომსახურება რეალურ დროში (CART), მეტყველების გარდაქმნა ტექსტად, სუბტიტრი</string>
+    <string name="keywords_reverse_charging_stop_threshold">შეწყდეს ბატარეის გაზიარება, როდესაც ტელეფონი მიაღწევს:</string>
+    <string name="keywords_select_to_speak">ტექსტის მოსმენა, ხმამაღლა წაკითხვა, ეკრანის გახმოვანება, ეკრანის წამკითხველი</string>
+    <string name="keywords_sound_amplifier">პირადი მოხმარების ხმის გამაძლიერებელი პროდუქტი (PSAP,) გაძლიერება, ხმის გაძლიერება, სმენადაქვეითებული, სმენის დაკარგვა, გაძლიერება</string>
+    <string name="keywords_sound_notifications">შეტყობინებები, სმენადაქვეითებული, სმენის დაკარგვა, ცნობება</string>
+    <string name="keywords_switch_access">ძრავა, გადამრთველი, ხელი, დამხმარე ტექნოლოგია (AT), დამხმარე ტექნოლოგია, პარალიზი, ამიოტროფული გვერდითი სკლეროზი (ALS), სკანირება, ნაბიჯების სკანირება</string>
+    <string name="keywords_talkback">ეკრანის წამკითხველი, გახმოვანება, გახმოვანება, ხმოვანი დახმარება, უსინათლო, მხედველობადაქვეითებული, ტექსტის გახმოვანება (TTS), ტექსტის გახმოვანება, გახმოვანებული უკუკავშირი</string>
+    <string name="keywords_voice_access">ხმა, ხმოვანი მართვა, ძრავა, ხელი, მიკროფონი, მიკროფონი, კარნახი, საუბარი, მართვა</string>
+    <string name="language_input_gesture_summary_off">Active Edge გამორთულია</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge ჩართულია</string>
+    <string name="language_input_gesture_summary_on_with_assist">Active Edge ჩართულია, მოუჭირეთ ასისტენტთან სასაუბროდ</string>
+    <string name="me_card_title">ჩემი Pixel</string>
+    <string name="my_device_info_account_preference_title">Google ანგარიში</string>
+    <string name="owner_info_settings_edit_text_hint">მაგ., ნიკას Pixel.</string>
+    <string name="reverse_charging_charging_wirelessly_message">მიუწვდომელია, რადგან ტელეფონი უსადენოდ იტენება</string>
+    <string name="reverse_charging_detail_charging_overheat_message">ბატარეის გაზიარება მიუწვდომელია, რადგან Pixel გადახურებულია. დააცადეთ ტელეფონს გაგრილება და ცადეთ ხელახლა.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">ბატარეის გაზიარება მიუწვდომელია, რადგან ტელეფონი უსადენოდ იტენება</string>
+    <string name="reverse_charging_detail_footer_title">ბატარეის გაზიარების გამოყენების შემთხვევაში, თქვენი ტელეფონის ბატარეა უფრო მალე დაიცლება. ბატარეის გაზიარება შესაძლებელია თავსებად ყურსაცვამებთან, საათებთან, ტელეფონებთან და სხვა მოწყობილობებთან. უკეთ დასატენად, მოაცილეთ ტელეფონის ბუდე.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"ბატარეის გაზიარება მუშაობს თავსებად ყურსაცვამებთან, ტელეფონებთან და ა.შ.
+
+ამ ფუნქციის გამოყენების შემთხვევაში, თქვენი ტელეფონის ბატარეა უფრო მალე დაიცლება. ბატარეის გაზიარება ავტომატურად გამოირთვება რამდენიმე წუთში, თუ სხვა მოწყობილობა არ იქნა ამოცნობილი. უკეთ დასატენად, მოაცილეთ ტელეფონს ბუდე და სხვა ხელისშემშლელი ელემენტები, მაგალითად, ლითონის საგნები."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">ბატარეის გაზიარება მიუწვდომელია, რადგან ჩართულია ბატარეის დამზოგი</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">ბატარეის გაზიარება მიუწვდომელია, რადგან მიერთებულია USB-C მოწყობილობა</string>
+    <string name="reverse_charging_instructions_title">"დატენეთ სხვა მოწყობილობები Pixel-ით.
+ამის საცდელად ამოაბრუნეთ ტელეფონი."</string>
+    <string name="reverse_charging_is_off_summary">გამორთულია</string>
+    <string name="reverse_charging_is_on_and_charging_summary">ბატარეის გაზიარება და დამუხტვა</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">ბატარეა ზიარდება</string>
+    <string name="reverse_charging_is_on_summary">ჩართულია / დატენეთ სხვა მოწყობილობები</string>
+    <string name="reverse_charging_main_switch">ბატარეის გაზიარების დაშვება</string>
+    <string name="reverse_charging_off_low_battery_summary">გამორთულია / ტელეფონის ბატარეის მუხტი %1$s-ზე ნაკლებია</string>
+    <string name="reverse_charging_off_sharing_level_summary">გამორთულია / ბატარეის მუხტი გაზიარებისთვის საჭიროზე ნაკლებია</string>
+    <string name="reverse_charging_overheat_summary">მიუწვდომელია, რადგან Pixel გადახურებულია. დააცადეთ ტელეფონს გაგრილება და ცადეთ ხელახლა.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">მიუწვდომელია, რადგან ჩართულია ბატარეის დამზოგი</string>
+    <string name="reverse_charging_sharing_level_message">მიუწვდომელია, რადგან ბატარეის მუხტი გაზიარებისთვის საჭიროზე ნაკლებია</string>
+    <string name="reverse_charging_switch_summary">მოათავსეთ მოწყობილობები თქვენი Pixel-ის უკანა მხარეს</string>
+    <string name="reverse_charging_switch_title">დატენეთ სხვა მოწყობილობები მათი მოთავსებით თქვენი Pixel მოწყობილობის უკანა მხარეზე</string>
+    <string name="reverse_charging_switch_title_message">სხვა მოწყობილობების დატენვა</string>
+    <string name="reverse_charging_title">ბატარეის გაზიარება</string>
+    <string name="reverse_charging_unplug_usb_cable_message">მიუწვდომელია, რადგან მიერთებულია USB-C მოწყობილობა</string>
+    <string name="reverse_charging_warning_summary">მიუწვდომელია, რადგან ბატარეის მუხტი %1$s-ზე დაბალია</string>
+    <string name="reverse_charging_warning_title">ბატარეის გაზიარება მიუწვდომელია, რადგან ბატარეის მუხტი %1$s-ზე ნაკლებია</string>
+    <string name="rtt_settings_always_visible">ყოველთვის ხილვადი</string>
+    <string name="rtt_settings_no_visible">ხილვადი არ არის</string>
+    <string name="rtt_settings_title">შეტყობინება რეალურ დროში (RTT)</string>
+    <string name="rtt_settings_visible_during_call">ზარის დროს ხილვადი</string>
+    <string name="screen_time_summary_usage_today">%1$s დღეს</string>
+    <string name="search_bar_account_avatar_content_description">პროფილის სურათი, Google ანგარიშის გასახსნელად შეეხეთ ორმაგად</string>
+    <string name="security_advanced_settings">გაფართოებული პარამეტრები</string>
+    <string name="security_dismiss_dialog_dismiss_button">დახურვა</string>
+    <string name="security_dismiss_dialog_title">დაიხუროს ეს გაფრთხილება?</string>
+    <string name="security_settings_face_enroll_education_message">შემდეგ ეკრანზე შეატრიალეთ თავი, რომ სახე ყველა კუთხიდან გადაიღოთ</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">მომდევნო ეკრანზე ტელეფონი სახესთან, თვალების დონეზე მიიტანეთ</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">სახით განბლოკვის დაყენებამ ლოდინის დროს გადააჭარბა</string>
+    <string name="security_settings_face_enroll_finish_description">ახლა უკვე შეგიძლიათ სახის გამოყენება ტელეფონის განსაბლოკად ან ვინაობის დასადასტურებლად, ისეთ შემთხვევებში, როცა აპებში შედიხართ ან შენაძენს ადასტურებთ</string>
+    <string name="security_settings_face_enroll_finish_title">ყველაფერი რიგზეა!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">დაყენ. შეზღუდ. მხედველ. ან თავის მოძრ.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">სახით განბლოკვის გამოყენებისას, საჭიროა, სახე ტელეფონს უფრო მეტად უსწოროთ.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">მოითხოვს გახელილ თვალებს</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"თქვენ და თქვენ ბავშვს შეგიძლიათ სახის მოდელის წაშლა ან სახით განბლოკვის ნებისმიერ დროს გამორთვა პარამეტრებიდან. სახის მოდელები მანამ ინახება ტელეფონში, სანამ მათ არ წაშლით.
+
+შეიტყვეთ მეტი ბმულზე g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">თქვენ და თქვენი ბავშვი აკონტროლებთ ყველაფერს</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"თქვენი სახის მოდელის წაშლა ან სახით განბლოკვის გამორთვა ნებისმიერ დროს შეგიძლიათ პარამეტრებიდან. სახის მოდელები მანამ ინახება ტელეფონში, სანამ მათ არ წაშლით.
+
+შეიტყვეთ მეტი ბმულზე g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">ამას თქვენ აკონტროლებთ</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"სახით განბლოკვის ფუნქცია თქვენი ბავშვის სახის უნიკალურ მოდელს ქმნის მისი ვინაობის დადასტურების მიზნით. დაყენებისას სახის ამ მოდელის შესაქმნელად თქვენმა ბავშვმა უნდა გადაიღოს სახის სურათები სხვადასხვა რაკურსიდან.
+
+სახით განბლოკვის გამოყენებისას სახის მოდელი სურათების მეშვეობით განახლდება. სახის მოდელის შესაქმნელად გამოყენებული სურათები არ ინახება, სახის მოდელი კი უსაფრთხოდ შეინახება ტელეფონში და არასოდეს გასცდება მას. ყველაფერი მუშავდება უსაფრთხოდ, ტელეფონში."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"სახით განბლოკვის ფუნქცია თქვენი სახის უნიკალურ მოდელს ქმნის თქვენი ვინაობის დასადასტურებლად. დაყენების პროცესში სახის ამ მოდელის შესაქმნელად სახის სურათები სხვადასხვა რაკურსიდან უნდა გადაიღოთ.
+
+სახით განბლოკვის გამოყენებისას სახის მოდელი სურათების მეშვეობით განახლდება. სახის მოდელის შესაქმნელად გამოყენებული სურათები არ ინახება, სახის მოდელი კი უსაფრთხოდ შეინახება თქვენს ტელეფონში და არასოდეს გასცდება მას. ყველაფერი მუშავდება უსაფრთხოდ, თქვენს ტელეფონში."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">მუშაობის პრინციპი</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">სახით განბლოკვამ, ტელეფონის განსაბლოკად ან იმის დადასტურებლად, რომ ნამდვილად ის არის, შეიძლება მოითხოვოს, რომ თქვენს ბავშვს თვალები გახელილი ჰქონდეს. თქვენ და თქვენს ბავშვს ამ ვარიანტის ჩართვა ნებისმიერ დროს შეგიძლიათ პარამეტრებიდან.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">თუ თქვენი ბავშვი, ჩვეულებრივ, სათვალეს ატარებს, მას სახით ამოცნობის დაყენების დროსაც შეუძლია მისი გამოყენება.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">ტელეფონზე დახედვისასაც შეიძლება განიბლოკოს ის, თუნდაც ამის განზრახვა არ ჰქონდეს ადამიანს. მისი ტელეფონის განბლოკვა შეუძლია სხვასაც, ვინც ტყუპისცალივით ჰგავს მას, ან იმ შემთხვევაში, თუ ვინმე სახესთან მიუტანს ტელეფონს.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">სახით განბლოკვამ, ტელეფონის განსაბლოკად ან იმის დადასტურებლად, რომ ნამდვილად თქვენ ხართ, შეიძლება მოითხოვოს, რომ თვალები გახელილი გქონდეთ. ამ ვარიანტის ჩართვა ნებისმიერ დროს შეგიძლიათ პარამეტრებიდან.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">სათვალე ან მკრთალად შეფერილი მზის სათვალე დასაშვებია.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">ტელეფონის განსაბლოკად სახის გამოყენება შეიძლება ნაკლებად უსაფრთხო იყოს, ვიდრე მძლავრი განმბლოკავი ნიმუში ან PIN-კოდი.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">ტელეფონზე შეხედვას შეუძლია განბლოკოს ის, თუნდაც ამის განზრახვა არ გქონდეთ. თქვენი ტელეფონის განბლოკვა შეუძლია ისეთ პირსაც, რომელიც ძალიან გგავთ, მაგალითად, იდენტურ დას ან ძმას, ან თუ ვინმე ტელეფონს თქვენს სახეთან დაიჭერს.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">გაითვალისწინეთ</string>
+    <string name="security_settings_face_enroll_introduction_message">გამოიყენეთ სახე ტელეფონის განბლოკვისას ან ვინაობის დადასტურებისას, ისეთ შემთხვევებში, როცა აპებში შედიხართ ან შენაძენს ადასტურებთ.</string>
+    <string name="security_settings_face_enroll_introduction_title">Face Unlock-ის პარამეტრების დაყენება</string>
+    <string name="security_settings_face_enroll_next">შემდეგი</string>
+    <string name="security_settings_face_enroll_partial_message">მუშაობის გასაუმჯობესებლად, შეგიძლიათ, სახით განბლოკვა ხელახლა დააყენოთ პარამეტრებიდან</string>
+    <string name="security_settings_face_enroll_partial_start_over">თავიდან დაწყება</string>
+    <string name="security_settings_face_enroll_partial_title">სახით განბლოკვის დაყენება დასრულდა</string>
+    <string name="security_settings_face_enroll_timeout_message">"ცადეთ სწრაფი დაყენება. გაითვალისწინეთ, რომ როდესაც სახით განბლოკვას იყენებთ, საჭიროა, სახე უფრო მეტად უსწოროთ ტელეფონს.
+
+მუშაობის გასაუმჯობესებლად, შეგიძლიათ, სახით განბლოკვა ხელახლა დააყენოთ პარამეტრებიდან."</string>
+    <string name="security_settings_face_enroll_timeout_title">დაყენების გაგრძელება ვერ ხერხდება</string>
+    <string name="security_settings_face_enroll_timeout_try_again">ხელახლა ცდა</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">სწრაფი დაყენების გამოყენება</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">დაყენებიდან გამოსვლა</string>
+    <string name="security_settings_face_enroll_too_hot_message">სახით განბლოკვის დაყენება ვერ სრულდება, რადგან ტელეფონი გადახურებულია. ცადეთ მოგვიანებით, როდესაც ტელეფონი გაგრილდება.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">სახით განბლოკვის გამოტოვება</string>
+    <string name="security_settings_face_enroll_too_hot_title">ტელეფონი გადახურებულია</string>
+    <string name="security_settings_fingerprint_preference_summary_none">შეეხეთ თითის ანაბეჭდის დასაყენებლად</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">შეიტყვეთ მეტი ბმულზე g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint სამსახურისთვის</string>
+    <string name="setup_suggestion_summary">მონაცემთა კოპირება, ტელეფონით გადახდა და სხვა</string>
+    <string name="setup_suggestion_title">დაასრულეთ დაყენება</string>
+    <string name="smart_battery_footer">ბატარეის მუშაობის გასახანგრძლივებლად ადაპტაციურმა ბატარეამ, შესაძლოა, შეამციროს ეფექტურობა და ფონური აქტივობა. გარკვეული შეტყობინებები, შესაძლოა, დაგვიანდეს.</string>
+    <string name="smart_battery_manager_title">ადაპტაციური პარამეტრები</string>
+    <string name="smart_battery_title">ადაპტაციური ბატარეა</string>
+    <string name="sound_dashboard_summary">ხმის სიმძლავრე, შეხებისადმი მგრძნობელობა, არ შემაწუხოთ</string>
+    <string name="sound_settings">ხმა და ვიბრაცია</string>
+    <string name="storage_manager_indicator">გონიერი მეხსიერება: ^1</string>
+    <string name="time_remaining_warning_subtext">დარჩა დაახლოებით %1$s, ბატარეის წარსული მოხმარების გათვალისწინებით</string>
+    <string name="time_remaining_warning_text">ბატარეა შესაძლოა მალე ამოიწუროს</string>
+    <string name="tips_suggestion_summary">გაეცანით, რის საშუალებას გაძლევთ ტელეფონი</string>
+    <string name="tips_suggestion_title">გაეცანით Pixel-ს</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">დაიჭირეთ ტელეფონი სახის პირისპირ</string>
+    <string name="usb_use_file_transfers">ფაილის გადატანა / Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">ზარებზე ვიბრაციის პარამეტრი მიუწვდომელია, რადგან ტელეფონი ჩუმ რეჟიმზეა დაყენებული</string>
+    <string name="vibration_haptics_settings_not_available_title">მიუწვდომელია</string>
+    <string name="wallpaper_dashboard_summary">ფერები, თემატური ხატულები, აპების ბადე</string>
+    <string name="wifi_subscription_summary">OpenRoaming გამოწერის ნახვა ან შეცვლა</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">დაკავშირებულია %1$s-თან</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">შეეხეთ დასაკავშირებლად</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">დაკავშირება ვერ ხერხდება. შეეხეთ ხელახლა საცდელად.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">მიმდინარეობს დაკავშირება…</string>
+</resources>

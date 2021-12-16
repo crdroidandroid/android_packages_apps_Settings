@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Écran de verrouillage inactif</string>
+    <string name="gesture_silence_title">"Geste d'interruption des alertes"</string>
+    <string name="gesture_skip_title">Ignorer le geste</string>
+    <string name="keywords_touch_sensitivity">"toucher, sensibilité, sensible, protecteur d'écran, pellicule, réactif, réactivité"</string>
+    <string name="touch_sensitivity_summary">"Améliore la précision du toucher lors de l'utilisation de protecteurs d'écran"</string>
+    <string name="touch_sensitivity_title">Augmenter la sensibilité du toucher</string>
+    <string name="accessibility_vibration_settings_screen_title">Utiliser les vibrations et les rétroactions haptiques</string>
+    <string name="vibration_haptics_settings_not_available_summary">Les paramètres de vibrations et de rétroactions haptiques ne sont pas accessibles parce que le téléphone est en mode silencieux</string>
+    <string name="vibration_haptics_strength_category_title">Vibrations et intensité des rétroactions haptiques</string>
+    <string name="accessibility_vibration_settings_title">Vibrations et rétroactions haptiques</string>
+    <string name="columbus_title">Double toucher pour démarrer les actions</string>
+    <string name="vibrate_for_calls_category_title">Appels</string>
+    <string name="accessibility_alarm_vibration_title">"Vibrations d'alarme"</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">"Active Edge est configuré. Passez à l'écran suivant ou continuez à apporter des ajustements."</string>
+    <string name="accessibility_keyboard_haptics_title">Rétroactions haptiques du clavier</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">Recharge adaptative</string>
+    <string name="adaptive_charging_description">"Cette option permet de recharger graduellement la pile pendant la nuit afin de préserver l'autonomie à long terme de la pile. Se sert de l'alarme définie pour effectuer la recharge complète à votre heure de réveil."</string>
+    <string name="adaptive_charging_time_estimate"><b>Recharge adaptative</b>" • Pile chargée d'ici %1$s"</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Préférences</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Assistant, applications récentes, applications par défaut</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">"Cont. vers l'Assistant"</string>
+    <string name="assist_gesture_enrollment_do_it_later">Plus tard</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Pression légère</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Pression ferme</string>
+    <string name="assist_gesture_enrollment_settings">Paramètres</string>
+    <string name="assist_gesture_setting_enable_assistant_text">"Pour parler avec l'Assistant, serrez la partie inférieure du téléphone, puis relâchez-la"</string>
+    <string name="assist_gesture_setting_enable_assistant_title">"Serrer pour parler avec l'Assistant Google"</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">"Serrez l'appareil pour taire les alarmes, les minuteries, les notifications et les appels entrants"</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">"Serrer l'appareil pour taire les notifications et les appels entrants"</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Serrer le téléphone pour taire les appels</string>
+    <string name="assist_gesture_setting_enable_wake_title">"Ouvrir l'Assistant quand l'écran est éteint"</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Pression légère</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Pression ferme</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Sensibilité de pression</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">"Peut activer l'Assistant par erreur"</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Serrez la partie inf. de votre téléphone</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Serrez plus rapidement</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Serrez plus fort</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">"Serrez rapidement l'appar., puis relâchez"</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">"Essayez d'ajuster le curseur"</string>
+    <string name="assist_gesture_training_enrolling_text">Serrez la partie infér. du téléphone. Vous pouvez ajuster la force nécessaire.</string>
+    <string name="assist_gesture_training_enrolling_title">Serrez rapidement, puis relâchez</string>
+    <string name="assist_gesture_training_finished_text">Vous pourrez modifier la sensibilité de la pression plus tard dans les paramètres</string>
+    <string name="assist_gesture_training_finished_title">"Terminez ou continuez d'ajuster"</string>
+    <string name="assist_gesture_training_intro_text">Pour parler à votre Assistant, serrez rapidement la partie inférieure du téléphone, puis relâchez-la</string>
+    <string name="assist_gesture_training_intro_title">"Serrer pour parler avec l'Assistant Google"</string>
+    <string name="assist_gesture_training_suggestion_summary">"Parler à l'Assistant, taire les appels entrants"</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">"Parler à l'Assistant, taire les alarmes et les appels entrants"</string>
+    <string name="assist_gesture_training_suggestion_title">"Serrer et relâcher pour ouvrir l'Assistant"</string>
+    <string name="automatic_storage_manager_activation_warning">Lorsque vous êtes connecté, vous pouvez toujours accéder aux photos et aux vidéos à la qualité sélectionnée pour la sauvegarde</string>
+    <string name="automatic_storage_manager_days_title">Supprimer photos et vidéos sauvegardées</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Désactiver le stockage intelligent? 
+
+Le stockage intelligent ne libère pas d'espace lorsque votre espace de stockage est presque saturé."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Téléchargements sauvegardés</string>
+    <string name="automatic_storage_manager_preference_title">Stockage intelligent</string>
+    <string name="automatic_storage_manager_primary_switch_title">Utiliser la fonctionnalité Stockage intelligent</string>
+    <string name="automatic_storage_manager_settings">Stockage intelligent</string>
+    <string name="automatic_storage_manager_text">Lorsque votre espace de stockage est presque plein, supprimez les photos et les vidéos sauvegardées. Vous pourrez toujours les consulter dans Google Photos.</string>
+    <string name="aware_disabled_preference_action">Activer</string>
+    <string name="aware_disabled_preference_neutral">Pas maintenant</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">"La fonctionnalité Motion Sense n'est pas accessible parce que le mode Avion et l'économiseur de pile sont activés"</string>
+    <string name="aware_footer_when_airplane_on">"La fonctionnalité Motion Sense n'est pas accessible parce que le mode Avion est activé"</string>
+    <string name="aware_footer_when_batterysaver_on">"La fonctionnalité Motion Sense n'est pas accessible parce que l'économiseur de pile est activé"</string>
+    <string name="aware_gesture_summary_off">Gestes rapides activés, Active Edge désactivée</string>
+    <string name="aware_gesture_summary_on_non_assist">Gestes rapides activés, Active Edge activé</string>
+    <string name="aware_gesture_summary_on_with_assist">"Gestes rapides activés, Active Edge activé, serrez l'appareil pour lancer l'Assistant"</string>
+    <string name="aware_info_button_description">Plus de paramètres</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">"Cette option n'est pas accessible parce que le mode Avion et l'économiseur de pile sont activés"</string>
+    <string name="aware_summary_when_airplane_on">"Cette option n'est pas accessible parce que le mode Avion est activé"</string>
+    <string name="aware_summary_when_batterysaver_on">"Cette option n'est pas accessible parce que l'économiseur de pile est activé"</string>
+    <string name="backup_data_summary">"Sauvegarder les données des applications, les mots de passe Wi-Fi et d'autres paramètres sur les serveurs de Google"</string>
+    <string name="backup_suggestion_cancel">Annuler</string>
+    <string name="backup_suggestion_dialog_description">Cette action supprimera toutes les données de la mémoire interne de votre téléphone.</string>
+    <string name="backup_suggestion_dialog_title">Réinitialiser cet appareil?</string>
+    <string name="backup_suggestion_get_started">en savoir plus</string>
+    <string name="backup_suggestion_item_summary">"Copie à partir d'un appareil Android ou iPhone🅫"</string>
+    <string name="backup_suggestion_item_title">"Donn. manqu. de l'ancien tél.?"</string>
+    <string name="backup_suggestion_missing_description">"Si des données semblent manquer, comme des messages texte ou des photos, vous pouvez les transférer sur votre Pixel à l'aide d'un câble.
+
+Pour commencer, votre Pixel doit être réinitialisé. Toutes les données sur ce téléphone, y compris les paramètres personnalisés et le contenu non synchronisé dans le nuage, seront supprimées."</string>
+    <string name="backup_suggestion_missing_title">Vos données sont manquantes?</string>
+    <string name="backup_suggestion_next">suivant</string>
+    <string name="backup_suggestion_other_ways_to_copy">Autres façons de copier données</string>
+    <string name="backup_suggestion_reset_description">"À l'écran suivant, vous pourrez réinitialiser votre Pixel. Il s'agit de la seule manière de transférer des données à l'aide d'un câble.
+
+Une fois qu'il est réinitialisé, suivez le processus de configuration et choisissez d'importer vos données de l'ancien téléphone."</string>
+    <string name="backup_suggestion_reset_title">Réinitialiser votre Pixel</string>
+    <string name="backup_suggestion_what_is_needed_summary">"Une fois votre téléphone réinitialisé, vous aurez besoin des éléments suivants :
+
+• Votre ancien téléphone (LINK_BEGINla plupart des téléphonesLINK_END sous Android 5.0 ou iOSMD 8.0 [ou toute version ultérieure] sont pris en charge)
+• Un câble de charge ou de données pour votre ancien téléphone
+• L'adaptateur Quick Switch Adapter fourni avec votre Pixel"</string>
+    <string name="backup_suggestion_what_is_needed_title">Ce dont vous aurez besoin</string>
+    <string name="battery_manager_summary">"Prolonger l'autonomie de la pile et optimiser la recharge"</string>
+    <string name="battery_manager_summary_unsupported">"Prolonger l'autonomie de la pile"</string>
+    <string name="battery_missing_link_message">En savoir plus</string>
+    <string name="battery_suggestion_summary">Activez le gestionnaire de pile adaptatif</string>
+    <string name="battery_tip_smart_battery_summary">Activez le gestionnaire de pile adaptatif</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">"L'appareil %1$s ne sera plus associé avec les appareils liés à ce compte Google"</string>
+    <string name="columbus_gesture_detected">Double toucher détecté!</string>
+    <string name="columbus_gesture_enrollment_complete">Terminé</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Plus tard</string>
+    <string name="columbus_gesture_enrollment_settings">Accéder paramètres</string>
+    <string name="columbus_gesture_enrollment_try_it">Essayer</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Veuillez sélectionner une action à effectuer</string>
+    <string name="columbus_gesture_training_action_text">"Sélectionnez l'action à effectuer lorsque vous utilisez le double toucher. Vous pourrez modifier ce choix plus tard dans les paramètres."</string>
+    <string name="columbus_gesture_training_action_title">Choisissez une option pour le double toucher</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Double-toucher 1 de 2 détecté</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Essayez encore une fois. Touchez deux fois rapidement le dos de votre téléphone.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Bien!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… double-toucher 2 de 2 détecté</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Vous êtes prêt à commencer à utiliser le double toucher</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">"C'est ça!"</string>
+    <string name="columbus_gesture_training_enrolling_text">Touchez deux fois rapidement le dos de votre téléphone.</string>
+    <string name="columbus_gesture_training_enrolling_title">Essayez le double toucher</string>
+    <string name="columbus_gesture_training_finished_text">Pour modifier la sensibilité du double toucher, sélectionnez Paramètres.</string>
+    <string name="columbus_gesture_training_finished_title">Vous avez configuré le double toucher</string>
+    <string name="columbus_gesture_training_intro_text_accidental">"Vous venez de toucher deux fois l'arrière de votre appareil, ce qui vous permet d'utiliser votre Assistant aisément. Vous pouvez personnaliser ce geste dans les paramètres."</string>
+    <string name="columbus_gesture_training_intro_text_suw">"Faites une capture d'écran, affichez les notifications ou réalisez une autre action en touchant deux fois."</string>
+    <string name="columbus_gesture_training_intro_title">Utiliser le double toucher pour effectuer des actions rapides</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Veuillez sélectionner une application à ouvrir</string>
+    <string name="columbus_gesture_training_launch_text">"Sélectionnez l'application que vous souhaitez lancer lorsque vous utilisez le double toucher."</string>
+    <string name="columbus_gesture_training_launch_title">"Choisir l'application à ouvrir"</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">Paramètres du raccourci de %1$s</string>
+    <string name="columbus_launch_settings_activity_title">Paramètres du double toucher</string>
+    <string name="columbus_name">Double toucher</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">Paramètres de %1$s</string>
+    <string name="columbus_setting_action_assistant_title">Accéder à votre assistant numérique</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Aucune application sélectionnée</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">"L'application n'a pas été installée"</string>
+    <string name="columbus_setting_action_launch_title">"Ouvrir l'application"</string>
+    <string name="columbus_setting_action_notification_title">Afficher les notifications</string>
+    <string name="columbus_setting_action_open_app_title">"Ouvrir l'application"</string>
+    <string name="columbus_setting_action_overview_title">Voir les applications récentes</string>
+    <string name="columbus_setting_action_play_pause_title">Faire jouer ou mettre en pause le contenu multimédia</string>
+    <string name="columbus_setting_action_screenshot_title">"Prendre une capture d'écran"</string>
+    <string name="columbus_setting_actions_title">Touchez deux fois le dos du téléphone pour</string>
+    <string name="columbus_setting_additional_settings_title">Sensibilité du double toucher</string>
+    <string name="columbus_setting_app_selection_help_text">"Sélectionnez une application à ouvrir quand vous touchez deux fois le dos de votre téléphone. Si vous désinstallez l'application, le double toucher sera désactivé tant que vous ne sélectionnerez pas une autre application."</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">"Sélectionnez l'action à effectuer quand vous ouvrez cette application avec le double toucher."</string>
+    <string name="columbus_setting_enable_switch_title">Utiliser le double toucher</string>
+    <string name="columbus_setting_sensitivity_title">Touchez plus fort</string>
+    <string name="connectivity_helper_call_quality_category">"Qualité de l'appel"</string>
+    <string name="connectivity_helper_call_quality_summary">Recevez des notifications relatives aux causes des problèmes de connexion pendant les appels</string>
+    <string name="connectivity_helper_call_quality_title">Recevoir des notifications</string>
+    <string name="connectivity_helper_d2d_summary">"Envoyez une notification à l'autre personne lorsque votre téléphone éprouve des problèmes de connexion pendant les appels"</string>
+    <string name="connectivity_helper_d2d_title">"Partager l'info de la connexion"</string>
+    <string name="connectivity_helper_footnote">"Vous pouvez partager les informations relatives à la connexion lorsque l'autre appelant utilise un appareil et un réseau compatibles"</string>
+    <string name="content_capture">"Personnalisation à l'aide des données des applications"</string>
+    <string name="copy_toast_msg">Lien copié dans le presse-papiers</string>
+    <string name="dark_ui_text">"Le thème sombre utilise un arrière-plan noir pour contribuer à prolonger l'autonomie de votre pile. Les horaires du thème sombre attendent que votre écran soit éteint pour s'activer."</string>
+    <string name="dock_summary_charging_phone">Recharge du téléphone</string>
+    <string name="double_twist_for_camera_mode_summary">"Pour activer ou désactiver le mode Égoportrait dans l'Appareil photo Google, ouvrir l'application et pivoter deux fois le poignet."</string>
+    <string name="downloads_backup_text">Les fichiers téléchargés seront sauvegardés sur Google Disque</string>
+    <string name="duration_less_than_one_minute">"Moins d'une minute"</string>
+    <string name="extra_app_info_label">Optimisation du jeu</string>
+    <string name="face_enrolling_center_head">Centrez votre visage dans le cadre intérieur</string>
+    <string name="face_enrolling_description">Capturez tous les angles de votre visage en supprimant toutes les tuiles.</string>
+    <string name="face_enrolling_do_it_later">Plus tard</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Annuler</string>
+    <string name="face_enrolling_gaze_dialog_continue">Config. sans les yeux ouverts</string>
+    <string name="face_enrolling_gaze_dialog_message">Voulez-vous configurer le déverrouillage par reconnaissance faciale sans devoir avoir les yeux ouverts? Si vous choisissez ce type de configuration, une autre personne peut déverrouiller votre téléphone en le pointant vers votre visage à votre insu.</string>
+    <string name="face_enrolling_gaze_dialog_title">Configurer sans les yeux ouverts</string>
+    <string name="face_enrolling_how_to_setup">Comment effectuer la configuration</string>
+    <string name="face_enrolling_title">Tenir le téléphone immobile. Faire pivoter lentement votre tête.</string>
+    <string name="face_enrolling_title_accessibility">Regarder directement votre téléphone</string>
+    <string name="face_enrolling_title_accessibility_progress">Continuez à regarder directement votre téléphone</string>
+    <string name="face_enrolling_too_close">Éloignez le téléphone</string>
+    <string name="face_enrolling_too_far">Rapprochez le téléphone</string>
+    <string name="face_enrolling_too_high">Baissez le téléphone</string>
+    <string name="face_enrolling_too_left">Déplacez le téléphone vers la droite</string>
+    <string name="face_enrolling_too_low">Montez le téléphone</string>
+    <string name="face_enrolling_too_right">Déplacez le téléphone vers la gauche</string>
+    <string name="face_enrolling_turn_head_to_arrow">Tournez votre tête vers la flèche</string>
+    <string name="face_enrolling_turned_too_far">Tournez la tête un peu moins</string>
+    <string name="fallback_menu_item_copy_link">Copier le lien</string>
+    <string name="fallback_menu_item_open_in_browser">Ouvrir dans le navigateur</string>
+    <string name="fallback_menu_item_share_link">Partager le lien</string>
+    <string name="fullbackup_data_summary">"Sauvegardez automatiquement les données de l'appareil (comme les mots de passe Wi-Fi et l'historique des appels) et celles des applications (telles que les paramètres et les fichiers enregistrés par ces applications) sur Google Disque.
+
+Lorsque vous activez la sauvegarde automatique, les données de l'appareil et des applications sont enregistrées régulièrement dans un dossier privé sur Google Disque. Les données d'applications correspondent à toutes les données enregistrées par une application (en fonction des paramètres que le développeur définit), y compris les données potentiellement confidentielles comme les contacts, les messages et les photos.
+
+Les données de sauvegarde ne sont pas prises en compte dans le quota de stockage de Google Disque. Les fichiers volumineux ou ceux que les développeurs ont choisi d'exclure du service ne sont pas sauvegardés."</string>
+    <string name="fullbackup_erase_dialog_message">"Voulez-vous vraiment arrêter de sauvegarder les données de l'appareil (comme les mots de passe Wi-Fi et l'historique des appels) et celles des applications (telles que les paramètres et les fichiers enregistrés par ces applications), et en effacer toutes les copies sur Google Disque?"</string>
+    <string name="game_dashboard_always_on_summary">Afficher le raccourci vers le tableau de bord de jeu dans les jeux</string>
+    <string name="game_dashboard_always_on_title">Tableau de bord de jeu</string>
+    <string name="game_dashboard_dnd_rule_name">Jeux vidéo</string>
+    <string name="game_dashboard_dnd_summary">Recevez uniquement les notifications des personnes et des applications importantes lorsque vous jouez à un jeu</string>
+    <string name="game_dashboard_dnd_title">Mode Ne pas déranger pour les jeux</string>
+    <string name="game_mode_battery_description">"Prolonge l'autonomie de la pile"</string>
+    <string name="game_mode_battery_title">Économiseur de pile</string>
+    <string name="game_mode_performance_description">"Maximise la fréquence d'images, sollicite davantage la pile"</string>
+    <string name="game_mode_performance_title">Performances</string>
+    <string name="game_mode_standard_description">Utilise les valeurs par défaut du jeu</string>
+    <string name="game_mode_standard_title">Standard</string>
+    <string name="game_optimization_unavailable">Non proposée pour ce jeu</string>
+    <string name="gesture_aware_confirmation_action_button">OK</string>
+    <string name="gesture_aware_footer"><annotation link="link">Préférences</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Préférences</annotation></string>
+    <string name="gesture_skip_direction_ltr">De gauche à droite</string>
+    <string name="gesture_skip_direction_rtl">De droite à gauche</string>
+    <string name="gesture_skip_direction_title">Direction du geste pour passer à la chanson suivante</string>
+    <string name="gesture_skip_footer"><annotation link="link">Préférences</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Préférences</annotation></string>
+    <string name="global_actions_panel_short_title">Cartes et laissez-passer</string>
+    <string name="global_actions_panel_summary">"Pour accéder à des éléments comme vos modes de paiement et vos cartes d'embarquement, maintenir l'interrupteur enfoncé."</string>
+    <string name="global_actions_panel_title">Afficher les cartes et les laissez-passer</string>
+    <string name="install_unknown_applications">"Autoriser l'installation d'applications à partir d'autres sources que la boutique Google Play Store"</string>
+    <string name="keywords_accessibility_menu">"motricité, menu rapide, menu d'assistance, toucher, dextérité"</string>
+    <string name="keywords_adaptive_charging">recharge, recharger, recharge intelligente, recharge adaptative, pile, état de la pile</string>
+    <string name="keywords_assist_gesture_launch">geste, bordure, côté, côté actif, serrer, prise en main, assistance, assistant, serrer, ok google, assistant google</string>
+    <string name="keywords_assist_gesture_silence">geste, bordure, côté, côté actif, silence, répéter, alarme, appel entrant, tranquille, écran, écran de verrouillage, serrer, prise en main, arrêter</string>
+    <string name="keywords_assist_gesture_wake">geste, bordure, côté, côté actif, réactiver, notifications, écran, affichage, écran désactivé, écran activé, serrer, en veille, sommeil, prise en main</string>
+    <string name="keywords_battery_share">partage de la pile, recharge sans fil</string>
+    <string name="keywords_battery_share_settings">partage de la pile, recharge sans fil inversée</string>
+    <string name="keywords_content_capture">"capturer du contenu, contenu d'application, données des applications"</string>
+    <string name="keywords_gesture">geste, mouvements</string>
+    <string name="keywords_global_actions_panel">cartes, laissez-passer</string>
+    <string name="keywords_live_transcribe">Sous-titres, sous-titrage, CC, transcription instantanée, malentendant, perte auditive, transcription en temps réel assistée par ordinateur, synthèse textuelle, sous-titrer</string>
+    <string name="keywords_reverse_charging_stop_threshold">Arrêter le partage de la pile lorsque son niveau atteint :</string>
+    <string name="keywords_select_to_speak">"Écouter du texte, lire à voix haute, énoncer le contenu de l'écran, lecteur d'écran"</string>
+    <string name="keywords_sound_amplifier">"appareil personnel d'amplification des sons, amplifier, amplification des sons, malentendant, perte auditive, amplification"</string>
+    <string name="keywords_sound_notifications">Notifications, malentendant, perte auditive, notifier</string>
+    <string name="keywords_switch_access">"motricité, commutateur, main, AT, technologie d'assistance, paralysie, ALS, numériser, analyse des pas"</string>
+    <string name="keywords_talkback">"Lecteur d'écran, voix hors champ, VoiceOver, Assistance vocale, aveugle, vision faible, synthèse vocale, rétroaction vocale"</string>
+    <string name="keywords_voice_access">voix, commande vocale, motricité, main, micro, microphone, dictée, parler, contrôler</string>
+    <string name="language_input_gesture_summary_off">Active Edge est désactivé</string>
+    <string name="language_input_gesture_summary_on_non_assist">Active Edge est activé</string>
+    <string name="language_input_gesture_summary_on_with_assist">"Active Edge est activé, serrer appareil pour ouvrir l'Assistant"</string>
+    <string name="me_card_title">Mon Pixel</string>
+    <string name="my_device_info_account_preference_title">Compte Google</string>
+    <string name="owner_info_settings_edit_text_hint">Par exemple : Pixel de Jonathan.</string>
+    <string name="reverse_charging_charging_wirelessly_message">"Cette fonctionnalité n'est pas accessible parce que le téléphone est en train de se recharger sans fil"</string>
+    <string name="reverse_charging_detail_charging_overheat_message">"Le partage de la pile n'est pas accessible parce que le Pixel est trop chaud. Attendez que le téléphone se refroidisse, puis réessayez."</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">"Le partage de la pile n'est pas accessible parce que le téléphone est en train de se recharger sans fil"</string>
+    <string name="reverse_charging_detail_footer_title">"La pile de votre téléphone s'épuisera plus rapidement lorsque vous utiliserez le partage de la pile. La fonctionnalité de partage de la pile fonctionne avec les écouteurs, les montres, les téléphones et d'autres appareils compatibles. Pour obtenir de meilleures performances de recharge, retirez l'étui de votre téléphone."</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"La fonctionnalité de partage de la pile fonctionne avec les écouteurs, les téléphones et d'autres appareils compatibles.
+
+La pile de votre téléphone s'épuisera plus vite si vous utilisez cette fonctionnalité. Elle sera automatiquement désactivée au bout de quelques minutes si aucun autre appareil n'est détecté. Pour obtenir de meilleures performances de recharge, retirez l'étui de votre téléphone et tout autre article qui pourrait interférer avec lui, comme des objets métalliques."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">"Le partage de la pile n'est pas accessible parce que l'économiseur de pile est activé"</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">"Le partage de la pile n'est pas accessible parce qu'un appareil USB-C est branché"</string>
+    <string name="reverse_charging_instructions_title">"Rechargez d'autres appareils avec votre Pixel.
+Retournez votre appareil pour essayer."</string>
+    <string name="reverse_charging_is_off_summary">Désactivé</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Partage et recharge de la pile</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Partage de la pile</string>
+    <string name="reverse_charging_is_on_summary">"Activé : permet de recharger d'autres appareils"</string>
+    <string name="reverse_charging_main_switch">Autoriser le partage de la pile</string>
+    <string name="reverse_charging_off_low_battery_summary">Désactivé : le niveau de charge de la pile du téléphone est sous %1$s</string>
+    <string name="reverse_charging_off_sharing_level_summary">Désactivé : le niveau de charge de la pile est sous le seuil autorisé pour le partage</string>
+    <string name="reverse_charging_overheat_summary">"Cette fonctionnalité n'est pas accessible parce que le Pixel est trop chaud. Attendez que le téléphone se refroidisse, puis réessayez."</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">"Cette option n'est pas accessible parce que l'économiseur de pile est activé"</string>
+    <string name="reverse_charging_sharing_level_message">"Cette fonctionnalité n'est pas accessible parce que le niveau de charge de la pile est sous le seuil autorisé pour le partage"</string>
+    <string name="reverse_charging_switch_summary">"Placez les appareils à l'arrière de votre Pixel"</string>
+    <string name="reverse_charging_switch_title">"Rechargez d'autres appareils en les plaçant sur le dos de votre Pixel"</string>
+    <string name="reverse_charging_switch_title_message">"Recharger d'autres appareils"</string>
+    <string name="reverse_charging_title">Partage de la pile</string>
+    <string name="reverse_charging_unplug_usb_cable_message">"Cette fonctionnalité n'est pas accessible parce qu'un appareil USB-C est branché"</string>
+    <string name="reverse_charging_warning_summary">"Cette fonctionnalité n'est pas accessible parce que la charge de la pile est inférieure à %1$s"</string>
+    <string name="reverse_charging_warning_title">"Le partage de la pile n'est pas accessible parce que la charge est inférieure à %1$s"</string>
+    <string name="rtt_settings_always_visible">Toujours visible</string>
+    <string name="rtt_settings_no_visible">Non visible</string>
+    <string name="rtt_settings_title">Texte en temps réel (TTR)</string>
+    <string name="rtt_settings_visible_during_call">Visible durant les appels</string>
+    <string name="screen_time_summary_usage_today">"%1$s aujourd'hui"</string>
+    <string name="search_bar_account_avatar_content_description">Touchez deux fois la photo de profil pour ouvrir le compte Google</string>
+    <string name="security_advanced_settings">Paramètres avancés</string>
+    <string name="security_dismiss_dialog_dismiss_button">Ignorer</string>
+    <string name="security_dismiss_dialog_title">Ignorer cet avertissement?</string>
+    <string name="security_settings_face_enroll_education_message">"À l'écran suivant, faites pivoter votre tête pour capturer tous les angles de votre visage"</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">"Sur l'écran suivant, tenez votre téléphone à la hauteur des yeux"</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Délai configuration déverrouillage facial dépassé</string>
+    <string name="security_settings_face_enroll_finish_description">"Vous pouvez maintenant utiliser votre visage pour déverrouiller votre téléphone ou vérifier qu'il s'agit bien de vous, par exemple pour vous connecter à des applications ou approuver un achat"</string>
+    <string name="security_settings_face_enroll_finish_title">Tout semble correct!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Config. pour vision ou mouv. de tête limités</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">Lorsque vous utilisez cette fonctionnalité, il se peut que votre tête doive être placée plus directement devant votre téléphone.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Les yeux doivent être ouverts</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Vous et votre enfant pouvez supprimer son modèle facial ou désactiver le déverrouillage par reconnaissance faciale en tout temps dans Paramètres. Les modèles faciaux sont stockés sur le téléphone jusqu'à ce qu'ils soient supprimés.
+
+Apprenez-en plus à la page g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Vous et votre enfant êtes aux commandes</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"Vous pouvez supprimer votre modèle facial ou désactiver le déverrouillage par reconnaissance faciale en tout temps dans Paramètres. Les modèles faciaux sont stockés sur le téléphone jusqu'à ce que vous les supprimiez.
+
+Apprenez-en plus à la page g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Vous êtes aux commandes</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"Le déverrouillage par reconnaissance faciale crée un modèle unique du visage de votre enfant pour vérifier qu'il s'agit bien de lui. Pour créer ce modèle durant la configuration, l'appareil demandera à votre enfant de capturer des images de son visage sous différents angles.
+
+Lorsqu'il utilise le déverrouillage par reconnaissance faciale, les images sont utilisées pour mettre à jour son modèle facial. Les images utilisées pour créer son modèle facial ne sont pas stockées, contrairement au modèle facial, qui est stocké de façon sécuritaire sur le téléphone et ne le quitte jamais. Tous les traitements sont sécurisés sur le téléphone."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"La fonctionnalité de déverrouillage par reconnaissance faciale crée un modèle unique de votre visage pour vérifier qu'il s'agit bien de vous. Pour créer ce modèle durant la configuration, l'appareil vous demandera de capturer des images de votre visage sous différents angles.
+
+Lorsque vous utilisez le déverrouillage par reconnaissance faciale, les images sont utilisées pour mettre à jour votre modèle facial. Les images utilisées pour créer votre modèle facial ne sont pas stockées, contrairement au modèle facial, qui est stocké de façon sécuritaire sur votre téléphone et ne le quitte jamais. Tous les traitements sont sécurisés sur votre téléphone."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Fonctionnement</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">"Le déverrouillage par reconnaissance faciale peut exiger que les yeux de votre enfant soient ouverts pour déverrouiller le téléphone ou vérifier qu'il s'agit bien de lui. Vous et votre enfant pouvez activer cette option en tout temps dans Paramètres."</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Si votre enfant porte normalement des lunettes, il peut les porter pendant la configuration.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">"Il peut déverrouiller le téléphone en le regardant, même si ce n'est pas son intention. Son téléphone peut aussi être déverrouillé par une personne qui lui ressemble beaucoup, comme un jumeau identique, ou si quelqu'un le tient devant son visage."</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">"Le déverrouillage par reconnaissance faciale peut exiger que vos yeux soient ouverts pour déverrouiller le téléphone ou vérifier qu'il s'agit bien de vous. Vous pouvez activer cette option en tout temps dans Paramètres."</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Le port de lunettes de vue ou de lunettes de soleil légèrement teintées est acceptable.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">"L'utilisation d'un visage peut être moins sûre qu'un schéma ou NIP complexe pour déverrouiller votre téléphone."</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">"Le téléphone peut être déverrouillé en le regardant, même si ce n'est pas votre intention. Il peut être déverrouillé par une personne qui vous ressemble beaucoup, comme un jumeau identique, ou si quelqu'un le tient devant votre visage."</string>
+    <string name="security_settings_face_enroll_introduction_info_title">À noter</string>
+    <string name="security_settings_face_enroll_introduction_message">"Utilisez votre visage pour déverrouiller votre téléphone ou vérifier qu'il s'agit bien de vous, par exemple pour vous connecter à des applications ou approuver un achat."</string>
+    <string name="security_settings_face_enroll_introduction_title">Configurer Face Unlock</string>
+    <string name="security_settings_face_enroll_next">Suivant</string>
+    <string name="security_settings_face_enroll_partial_message">Pour améliorer la performance, vous pouvez configurer le déverrouillage par reconnaissance faciale plus tard dans les paramètres</string>
+    <string name="security_settings_face_enroll_partial_start_over">Recommencer</string>
+    <string name="security_settings_face_enroll_partial_title">Configuration du déverrouillage facial terminée</string>
+    <string name="security_settings_face_enroll_timeout_message">"Essayez plutôt la configuration rapide. Gardez à l'esprit que vous devrez peut-être placer votre visage plus directement devant votre téléphone lorsque vous utiliserez le déverrouillage par reconnaissance faciale.
+
+Pour améliorer la performance, vous pouvez configurer le déverrouillage par reconnaissance faciale plus tard dans les paramètres."</string>
+    <string name="security_settings_face_enroll_timeout_title">Impossible de continuer la configuration</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Réessayer</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Utiliser la configuration rapide</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Quitter la configuration</string>
+    <string name="security_settings_face_enroll_too_hot_message">"La configuration du déverrouillage par reconnaissance faciale n'a pas pu être terminée parce que le téléphone est trop chaud. Réessayez plus tard quand le téléphone aura refroidi."</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Ignorer cette étape de config.</string>
+    <string name="security_settings_face_enroll_too_hot_title">Le téléphone est trop chaud</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Touchez pour configurer les empreintes digitales</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Apprenez-en plus à la page g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint pour le travail</string>
+    <string name="setup_suggestion_summary">Copiez des données, payez avec votre téléphone et plus</string>
+    <string name="setup_suggestion_title">Terminer la configuration</string>
+    <string name="smart_battery_footer">"Pour prolonger l'autonomie de la pile, le gestionnaire de pile adaptatif peut réduire la performance ou l'activité en arrière-plan. Certaines notifications pourraient s'afficher plus tard."</string>
+    <string name="smart_battery_manager_title">Préférences adaptatives</string>
+    <string name="smart_battery_title">Gestionnaire de pile adaptatif</string>
+    <string name="sound_dashboard_summary">Volume, rétroactions haptiques, Ne pas déranger</string>
+    <string name="sound_settings">Sons et vibrations</string>
+    <string name="storage_manager_indicator">Stockage intelligent : ^1</string>
+    <string name="time_remaining_warning_subtext">"Il reste environ %1$s en fonction de l'usage"</string>
+    <string name="time_remaining_warning_text">La pile sera bientôt épuisée</string>
+    <string name="tips_suggestion_summary">Explorez les possibilités de votre téléphone</string>
+    <string name="tips_suggestion_title">Découvrir votre Pixel</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Tenez votre téléphone devant votre visage</string>
+    <string name="usb_use_file_transfers">Transfert de fichiers/Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">"La vibration pour les appels n'est pas accessible parce que le téléphone est en mode silencieux"</string>
+    <string name="vibration_haptics_settings_not_available_title">Inaccessibles</string>
+    <string name="wallpaper_dashboard_summary">"Couleurs, icônes thématiques, grille d'applications"</string>
+    <string name="wifi_subscription_summary">"Affichez ou modifiez l'abonnement à OpenRoaming"</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">Connecté avec %1$s</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Toucher pour établir la connexion</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Connexion impossible. Touchez pour réessayer.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Connexion en cours…</string>
+</resources>

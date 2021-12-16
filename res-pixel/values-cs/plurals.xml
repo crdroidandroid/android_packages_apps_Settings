@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">Zobrazit všechna upozornění (%1$d)</item>
+        <item quantity="one">Zobrazit %1$d upozornění</item>
+        <item quantity="few">Zobrazit všechna upozornění (%1$d)</item>
+        <item quantity="many">Zobrazit všechna upozornění (%1$d)</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">%1$d upozornění</item>
+        <item quantity="one">%1$d upozornění</item>
+        <item quantity="few">%1$d upozornění</item>
+        <item quantity="many">%1$d upozornění</item>
+    </plurals>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/reverse_charging_title">
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="auto_reverse_charging_bottom_sheet"
+        android:selectable="false"
+        settings:lottie_rawRes="@raw/lottie_reverse_charging" />
+
+</PreferenceScreen>

@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="aware_display_settings_title">Неактивен заключен екран</string>
+    <string name="gesture_silence_title">Жест за заглушаване на сигналите</string>
+    <string name="gesture_skip_title">Жест за пропускане</string>
+    <string name="keywords_touch_sensitivity">докосване, чувствителност, чувствително, защитен слой за екрана, филм, адаптивно, реагиране</string>
+    <string name="touch_sensitivity_summary">Подобрява докосването, когато използвате защитни слоеве за екрана</string>
+    <string name="touch_sensitivity_title">Увеличаване на чувствителността при докосване</string>
+    <string name="accessibility_vibration_settings_screen_title">Използване на вибриране и осезателна обратна връзка</string>
+    <string name="vibration_haptics_settings_not_available_summary">Вибрирането и осезателната обратна връзка не са налице, защото за телефона е зададен тих режим</string>
+    <string name="vibration_haptics_strength_category_title">Сила на вибрирането и осезателната обратна връзка</string>
+    <string name="accessibility_vibration_settings_title">Вибриране и осезателна обр. връзка</string>
+    <string name="columbus_title">Бързо докосване за стартиране на действия</string>
+    <string name="vibrate_for_calls_category_title">Обаждания</string>
+    <string name="accessibility_alarm_vibration_title">Будилници – вибриране</string>
+    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Настройване на Active Edge. Преминете към следващия екран или продължете да коригирате.</string>
+    <string name="accessibility_keyboard_haptics_title">Осезателна обратна връзка от клавиатурата</string>
+    <string name="accessibility_vibration_preferences_file">VibrationPrefs</string>
+    <string name="adaptive_charging">Адаптивно зареждане</string>
+    <string name="adaptive_charging_description">За да запазите живота на батерията за по-дълго, оставете я да се зарежда цяла нощ. Функцията използва зададения от вас будилник, за да я зареди напълно, преди да се събудите.</string>
+    <string name="adaptive_charging_time_estimate"><b>Адаптивно зареждане</b> • Ще се зареди напълно до %1$s</string>
+    <string name="ambient_display_wake_screen_footer"><annotation link="link">Предпочитания</annotation></string>
+    <string name="app_and_notification_dashboard_summary">Асистент, скорошни приложения, стандартни приложения</string>
+    <string name="assist_gesture_enrollment_continue_to_assistant">Към Асистент</string>
+    <string name="assist_gesture_enrollment_do_it_later">По-късно</string>
+    <string name="assist_gesture_enrollment_seekbar_light">Леко стискане</string>
+    <string name="assist_gesture_enrollment_seekbar_strong">Силно стискане</string>
+    <string name="assist_gesture_enrollment_settings">Настройки</string>
+    <string name="assist_gesture_setting_enable_assistant_text">За да разговаряте с Асистент, стиснете бързо долната половина на телефона, след което я пуснете</string>
+    <string name="assist_gesture_setting_enable_assistant_title">Стискане за достъп до Асистент</string>
+    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Стиснете, за да заглушите будилниците, таймерите, известията и вход. обаждания</string>
+    <string name="assist_gesture_setting_enable_ring_silence_text">Стиснете, за да заглушите известията и входящите обаждания</string>
+    <string name="assist_gesture_setting_enable_ring_silence_title">Стискане за заглушаване на телефона</string>
+    <string name="assist_gesture_setting_enable_wake_title">Отваряне на Асистент при изключен екран</string>
+    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Леко стискане</string>
+    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Силно стискане</string>
+    <string name="assist_gesture_squeeze_sensitivity_label">Чувствителност при стискане</string>
+    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Може случайно да активирате Асистент</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Стиснете долната половина на телефона си</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Стиснете по-бързо</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Стиснете по-силно</string>
+    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Стиснете бързо и след това пуснете</string>
+    <string name="assist_gesture_training_enrolling_error_try_adjusting">Опитайте да коригирате плъзгача</string>
+    <string name="assist_gesture_training_enrolling_text">Стиснете долната половина на телефона. Можете да коригирате силата на стискане.</string>
+    <string name="assist_gesture_training_enrolling_title">Стиснете бързо и пуснете</string>
+    <string name="assist_gesture_training_finished_text">Можете да промените чувствителността при стискане и по-късно от настройките</string>
+    <string name="assist_gesture_training_finished_title">Завършете или продължете с коригирането</string>
+    <string name="assist_gesture_training_intro_text">Винаги можете да разговаряте с Асистент, като стиснете бързо долната половина на телефона и пуснете</string>
+    <string name="assist_gesture_training_intro_title">Стискане за достъп до Асистент</string>
+    <string name="assist_gesture_training_suggestion_summary">Разговаряйте с Асистент и заглушавайте обажданията</string>
+    <string name="assist_gesture_training_suggestion_summary_including_alarms">Разговаряйте с Асистент и заглушавайте будилниците и обажданията</string>
+    <string name="assist_gesture_training_suggestion_title">Натисн. и пуснете за достъп до Асистент</string>
+    <string name="automatic_storage_manager_activation_warning">Когато е установена връзка, ще имате достъп до снимките и видеоклиповете с качеството, което сте избрали за резервното копие</string>
+    <string name="automatic_storage_manager_days_title">Премахване на снимки и видеоклипове с резервно копие</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Да се изключи ли Интелигентно хранилище?
+
+Така функцията няма да освободи място, когато хранилището е на път да се изчерпи."</string>
+    <string name="automatic_storage_manager_downloads_days_title">Изтегляния с резервно копие</string>
+    <string name="automatic_storage_manager_preference_title">Интелигентно хранилище</string>
+    <string name="automatic_storage_manager_primary_switch_title">Използване на интелигентното хранилище</string>
+    <string name="automatic_storage_manager_settings">Интел. хранилище</string>
+    <string name="automatic_storage_manager_text">Когато хранилището е почти пълно, се премахват снимките и видеоклиповете, за които е създадено резервно копие. Въпреки това можете да ги намерите в Google Снимки.</string>
+    <string name="aware_disabled_preference_action">Включване</string>
+    <string name="aware_disabled_preference_neutral">Не сега</string>
+    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense не е налице, защото самолетният режим и този за запазване на батерията са включени</string>
+    <string name="aware_footer_when_airplane_on">Motion Sense не е налице, защото самолетният режим е включен</string>
+    <string name="aware_footer_when_batterysaver_on">Motion Sense не е налице, защото режимът за запазване на батерията е включен</string>
+    <string name="aware_gesture_summary_off">Бързите жестове са включени, Active Edge се изключи</string>
+    <string name="aware_gesture_summary_on_non_assist">Бързите жестове са включени, Active Edge се включи</string>
+    <string name="aware_gesture_summary_on_with_assist">Бързите жестове са включени, Active Edge се включи, стиснете за достъп до Асистент</string>
+    <string name="aware_info_button_description">Още настройки</string>
+    <string name="aware_summary_when_airplane_batterysaver_on">Функцията не е налице, защото самолетният режим и този за запазване на батерията са включени</string>
+    <string name="aware_summary_when_airplane_on">Функцията не е налице, защото самолетният режим е включен</string>
+    <string name="aware_summary_when_batterysaver_on">Функцията не е налице, защото режимът за запазване на батерията е включен</string>
+    <string name="backup_data_summary">В сървърите на Google се създава резервно копие на данните за приложенията, паролите за Wi-Fi и другите настройки</string>
+    <string name="backup_suggestion_cancel">Отказ</string>
+    <string name="backup_suggestion_dialog_description">Това действие ще изтрие всички данни от вътрешното хранилище на телефона ви.</string>
+    <string name="backup_suggestion_dialog_title">Нулиране на това устройство?</string>
+    <string name="backup_suggestion_get_started">научете повече</string>
+    <string name="backup_suggestion_item_summary">Копиране от устройство с Android или iPhone®</string>
+    <string name="backup_suggestion_item_title">Липсват данни от стария телефон?</string>
+    <string name="backup_suggestion_missing_description">"Ако не виждате част от данните си, като например SMS съобщенията и снимките, можете да ги прехвърлите на своя Pixel посредством кабел.
+
+За да започнете, трябва да нулирате своя Pixel. Всички данни на този телефон, включително персонализираните настройки и съдържанието, което не е синхронизирано в облака, ще бъдат изтрити."</string>
+    <string name="backup_suggestion_missing_title">Данните ви липсват?</string>
+    <string name="backup_suggestion_next">напред</string>
+    <string name="backup_suggestion_other_ways_to_copy">Копир. на данни: Други начини</string>
+    <string name="backup_suggestion_reset_description">"На следващия екран можете да нулирате своя Pixel. Това е единственият начин, чрез който да прехвърлите данните си посредством кабел.
+
+След нулирането преминете през процеса за настройване и изберете да прехвърлите данните от предишния си телефон."</string>
+    <string name="backup_suggestion_reset_title">Нулиране на вашия Pixel</string>
+    <string name="backup_suggestion_what_is_needed_summary">"След като нулирате телефона си, ще са ви необходими:
+
+• предишният ви телефон (LINK_BEGINподдържат се повечето телефони с LINK_ENDAndroid 5.0 или по-нова версия или iOS® 8.0 или по-нова версия);
+• кабелът за пренос на данни или за зареждане на предишния ви телефон;
+• Quick Switch Adapter, който сте получили със своя Pixel."</string>
+    <string name="backup_suggestion_what_is_needed_title">Какво ще ви трябва</string>
+    <string name="battery_manager_summary">Удължаване на живота на батерията и оптимизиране на зареждането</string>
+    <string name="battery_manager_summary_unsupported">Удължаване на живота на батерията</string>
+    <string name="battery_missing_link_message">Научете повече</string>
+    <string name="battery_suggestion_summary">Включете режима за адаптивна батерия</string>
+    <string name="battery_tip_smart_battery_summary">Включете режима за адаптивна батерия</string>
+    <string name="bluetooth_untethered_unpair_dialog_body">Устройството %1$s вече няма да бъде сдвоено с никое устройство, свързано с този профил в Google</string>
+    <string name="columbus_gesture_detected">Разпознат е жестът „Бързо докосване“!</string>
+    <string name="columbus_gesture_enrollment_complete">Готово</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Не сега</string>
+    <string name="columbus_gesture_enrollment_settings">Към настройките</string>
+    <string name="columbus_gesture_enrollment_try_it">Изпробване</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Моля, изберете действие, което да се извършва</string>
+    <string name="columbus_gesture_training_action_text">Изберете какво да се случва при използване на жеста „Бързо докосване“. Можете да промените това по-късно от настройките.</string>
+    <string name="columbus_gesture_training_action_title">Избиране на опция за жеста „Бързо докосване“</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Жестът „Двукратно докосване“ е активиран веднъж</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Да опитаме още веднъж. Бързо докоснете двукратно задната част на телефона си.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Чудесно!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Жестът „Двукратно докосване“ е активиран втори път</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Можете да започнете да използвате жеста „Бързо докосване“</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Успяхте!</string>
+    <string name="columbus_gesture_training_enrolling_text">Бързо докоснете двукратно задната част на телефона си.</string>
+    <string name="columbus_gesture_training_enrolling_title">Изпробвайте жеста „Бързо докосване“</string>
+    <string name="columbus_gesture_training_finished_text">За да промените силата на докосване, необходима за използване на жеста „Бързо докосване“, отворете настройките.</string>
+    <string name="columbus_gesture_training_finished_title">Настроихте жеста „Бързо докосване“</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Току-що докоснахте двукратно задната част на устройството си, което улеснява използването на Асистент в движение. Можете да персонализирате този жест от настройките.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Направете екранна снимка, вижте известията или стартирайте друго действие с двукратно докосване.</string>
+    <string name="columbus_gesture_training_intro_title">Използване на жеста „Бързо докосване“ за бързи действия</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Изберете приложение, което да се отваря</string>
+    <string name="columbus_gesture_training_launch_text">Изберете приложението, което да се отваря с жеста „Бързо докосване“.</string>
+    <string name="columbus_gesture_training_launch_title">Изберете приложение, което да се отваря</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">Настройки за прекия път към %1$s</string>
+    <string name="columbus_launch_settings_activity_title">Настройки за жеста „Бързо докосване“</string>
+    <string name="columbus_name">Бързо докосване</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">Настройки за %1$s</string>
+    <string name="columbus_setting_action_assistant_title">Достъп до дигиталния ви асистент</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Няма избрано приложение</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Приложението не е инсталирано</string>
+    <string name="columbus_setting_action_launch_title">Отваряне на приложение</string>
+    <string name="columbus_setting_action_notification_title">Показване на известията</string>
+    <string name="columbus_setting_action_open_app_title">Отваряне на приложението</string>
+    <string name="columbus_setting_action_overview_title">Преглед на скорошните приложения</string>
+    <string name="columbus_setting_action_play_pause_title">Пускане или поставяне на пауза на мултимедия</string>
+    <string name="columbus_setting_action_screenshot_title">Създаване на екранна снимка</string>
+    <string name="columbus_setting_actions_title">Докоснете двукратно задната част на телефона с цел</string>
+    <string name="columbus_setting_additional_settings_title">Сила за жеста „Бързо докосване“</string>
+    <string name="columbus_setting_app_selection_help_text">Изберете приложение, което да се отваря при двукратно докосване на задната част на телефона. Ако деинсталирате съответното приложение, жестът „Бързо докосване“ се изключва, докато не изберете друго.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Изберете какво да се случва, когато отворите това приложение посредством жеста „Бързо докосване“.</string>
+    <string name="columbus_setting_enable_switch_title">Използване на жеста „Бързо докосване“</string>
+    <string name="columbus_setting_sensitivity_title">Изискване на повече сила при докосванията</string>
+    <string name="connectivity_helper_call_quality_category">Качество на обажданията</string>
+    <string name="connectivity_helper_call_quality_summary">Получавайте известия относно причините за проблемите с връзката по време на обаждания</string>
+    <string name="connectivity_helper_call_quality_title">Получаване на известия</string>
+    <string name="connectivity_helper_d2d_summary">Известяване на другите хора, когато телефонът ви има проблеми с връзката по време на обаждания</string>
+    <string name="connectivity_helper_d2d_title">Споделяне на данни за връзката</string>
+    <string name="connectivity_helper_footnote">Можете да споделяте информация за връзката, ако другият обаждащ се използва поддържани устройство и мрежа</string>
+    <string name="content_capture">Персонализиране посредством данните от приложението</string>
+    <string name="copy_toast_msg">Връзката е копирана в буферната памет</string>
+    <string name="dark_ui_text">Тъмната тема използва черен фон с цел удължаване на живота на батерията ви. Графиците за нея изчакват с включването, докато екранът ви не се изключи.</string>
+    <string name="dock_summary_charging_phone">Зареждане на телефона</string>
+    <string name="double_twist_for_camera_mode_summary">За да включите или изключите режима за селфи в Google Камера, завъртете устройството два пъти, когато сте в приложението.</string>
+    <string name="downloads_backup_text">За изтеглените файлове ще се създава резервно копие в Google Диск</string>
+    <string name="duration_less_than_one_minute">По-малко от 1 минута</string>
+    <string name="extra_app_info_label">Оптимизиране на играта</string>
+    <string name="face_enrolling_center_head">Позиционирайте лицето си във вътрешната рамка</string>
+    <string name="face_enrolling_description">Уловете всички ъгли на лицето си, като премахнете всички панели.</string>
+    <string name="face_enrolling_do_it_later">По-късно</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Отказ</string>
+    <string name="face_enrolling_gaze_dialog_continue">Настройване без отворени очи</string>
+    <string name="face_enrolling_gaze_dialog_message">Искате ли да настроите отключването с лице без изискването очите ви да са отворени? Ако го направите по този начин, някой може да отключи телефона ви, като го насочи към лицето ви, без да знаете.</string>
+    <string name="face_enrolling_gaze_dialog_title">Настройване без очите да са отворени</string>
+    <string name="face_enrolling_how_to_setup">Начин за настройване</string>
+    <string name="face_enrolling_title">Дръжте телефона неподвижно. Завъртете главата си бавно.</string>
+    <string name="face_enrolling_title_accessibility">Гледайте директно в телефона си</string>
+    <string name="face_enrolling_title_accessibility_progress">Продължавайте да гледате директно към телефона</string>
+    <string name="face_enrolling_too_close">Отдалечете телефона</string>
+    <string name="face_enrolling_too_far">Доближете телефона</string>
+    <string name="face_enrolling_too_high">Преместете телефона по-ниско</string>
+    <string name="face_enrolling_too_left">Преместете телефона надясно</string>
+    <string name="face_enrolling_too_low">Преместете телефона по-високо</string>
+    <string name="face_enrolling_too_right">Преместете телефона наляво</string>
+    <string name="face_enrolling_turn_head_to_arrow">Завъртете главата си към стрелката</string>
+    <string name="face_enrolling_turned_too_far">Не завъртайте главата си толкова много</string>
+    <string name="fallback_menu_item_copy_link">Копиране на връзката</string>
+    <string name="fallback_menu_item_open_in_browser">Отваряне в браузър</string>
+    <string name="fallback_menu_item_share_link">Споделяне на връзката</string>
+    <string name="fullbackup_data_summary">"В Google Диск автоматично се създава резервно копие на данните на устройството (например пароли за Wi-Fi и история на обажданията) и тези на приложенията (например настройки и съхранявани от приложенията файлове).
+
+Когато включите автоматичното създаване на резервно копие, данните на устройството и на приложенията периодично се запазват в частна папка в Google Диск. Данните на приложенията могат да бъдат всяка запазвана от тях информация (въз основа на настройките на програмиста), включително потенциално поверителната, като например контакти, съобщения и снимки.
+
+Данните в резервното копие няма да заемат от квотата ви за хранилището в Диск. Няма да се създава резервно копие на големите файлове, нито на тези, които програмистите са избрали да не включат в услугата."</string>
+    <string name="fullbackup_erase_dialog_message">Искате ли да спрете създаването на резервно копие на данните на устройството (например пароли за Wi-Fi и история на обажданията) и тези на приложенията (например настройки и съхранявани от приложенията файлове), както и да изтриете всички копия в Google Диск?</string>
+    <string name="game_dashboard_always_on_summary">Показване в игрите на прекия път за таблото за управление на играта</string>
+    <string name="game_dashboard_always_on_title">Табло за управление на играта</string>
+    <string name="game_dashboard_dnd_rule_name">Игри</string>
+    <string name="game_dashboard_dnd_summary">Получавайте известия само от важни хора и приложения, докато играете игри</string>
+    <string name="game_dashboard_dnd_title">Режим „Не безпокойте“ за игри</string>
+    <string name="game_mode_battery_description">Удължава живота на батерията</string>
+    <string name="game_mode_battery_title">Режим за запазване на батерията</string>
+    <string name="game_mode_performance_description">Увеличава максимално скоростта на кадрите, изразходва повече батерия</string>
+    <string name="game_mode_performance_title">Ефективност</string>
+    <string name="game_mode_standard_description">Използва стандартните настройки на играта</string>
+    <string name="game_mode_standard_title">Стандартно</string>
+    <string name="game_optimization_unavailable">Не е налице за тази игра</string>
+    <string name="gesture_aware_confirmation_action_button">Разбрах</string>
+    <string name="gesture_aware_footer"><annotation link="link">Предпочитания</annotation></string>
+    <string name="gesture_silence_footer"><annotation link="link">Предпочитания</annotation></string>
+    <string name="gesture_skip_direction_ltr">От ляво надясно</string>
+    <string name="gesture_skip_direction_rtl">От дясно наляво</string>
+    <string name="gesture_skip_direction_title">Посока на прекарване на пръст за пропускане</string>
+    <string name="gesture_skip_footer"><annotation link="link">Предпочитания</annotation></string>
+    <string name="gesture_tap_footer"><annotation link="link">Предпочитания</annotation></string>
+    <string name="global_actions_panel_short_title">Карти и пропуски</string>
+    <string name="global_actions_panel_summary">За достъп до различни неща, като например начините ви на плащане и бордните ви карти, натиснете и задръжте бутона за захранване.</string>
+    <string name="global_actions_panel_title">Показване на карти и пропуски</string>
+    <string name="install_unknown_applications">Разрешаване на инсталирането на приложения от източници, различни от Google Play Магазин</string>
+    <string name="keywords_accessibility_menu">двигателна система, бързо меню, помощно меню, докосване, сръчност</string>
+    <string name="keywords_adaptive_charging">зареждане, зарежда се, интелигентно зареждане, адаптивно зареждане, батерия, състояние на батерията</string>
+    <string name="keywords_assist_gesture_launch">жест, ръб, страна, active edge, стискане, хващане, помощно приложение, асистент, стискам, ok google, google асистент</string>
+    <string name="keywords_assist_gesture_silence">жест, ръб, страна, active edge, заглушаване, отлагане, будилник, входящо обаждане, тихо, дисплей, заключен екран, стискане, хващане, спиране</string>
+    <string name="keywords_assist_gesture_wake">жест, ръб, страна, active edge, активиране, известия, екран, дисплей, изключен екран, включен екран, стискане, неактивно, спящ режим, хващане</string>
+    <string name="keywords_battery_share">споделяне на батерията, безжично зареждане</string>
+    <string name="keywords_battery_share_settings">споделяне на батерията, безжично зареждане на други устройства</string>
+    <string name="keywords_content_capture">заснемане на съдържание, съдържание на приложението, данни от приложението</string>
+    <string name="keywords_gesture">жестове, движения</string>
+    <string name="keywords_global_actions_panel">карти, пропуски</string>
+    <string name="keywords_live_transcribe">Надписи, субтитри, „Надписи на живо“, увреден слух, загуба на слуха, надписи в реално време (CART), транскрибиране на говор</string>
+    <string name="keywords_reverse_charging_stop_threshold">Спиране на споделянето на батерията, когато нивото ѝ достигне:</string>
+    <string name="keywords_select_to_speak">слушане на текст, четене на глас, изговаряне на елементите на екрана, екранен четец</string>
+    <string name="keywords_sound_amplifier">център за приемане на спешни обаждания, усилване, звукоусилвател, увреден слух, загуба на слуха, усилвател</string>
+    <string name="keywords_sound_notifications">Известия, увреден слух, загуба на слуха, известяване</string>
+    <string name="keywords_switch_access">двигателна система, превключвател, ръка, помощна технология, парализа, АЛС, сканиране, постъпково сканиране</string>
+    <string name="keywords_talkback">екранен четец, гласов запис, озвучаване, гласов асистент, незрящо лице, слабо зрение, TTS, синтезиран говор, обратна връзка с говор</string>
+    <string name="keywords_voice_access">глас, гласов контрол, двигателна система, ръка, микрофон, диктуване, говорене, управление</string>
+    <string name="language_input_gesture_summary_off">Функцията Active Edge е изключена</string>
+    <string name="language_input_gesture_summary_on_non_assist">Функцията Active Edge е включена</string>
+    <string name="language_input_gesture_summary_on_with_assist">Функцията Active Edge е вкл., стиснете за достъп до Асистент</string>
+    <string name="me_card_title">Моят Pixel</string>
+    <string name="my_device_info_account_preference_title">Профил в Google</string>
+    <string name="owner_info_settings_edit_text_hint">Напр. „Устройството Pixel на Иван“.</string>
+    <string name="reverse_charging_charging_wirelessly_message">Не е налице, защото телефонът се зарежда безжично</string>
+    <string name="reverse_charging_detail_charging_overheat_message">Споделянето на батерията не е достъпно, защото устройството Pixel е твърде горещо. Изчакайте телефонът да се охлади и опитайте отново.</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">Споделянето на батерията не е достъпно, защото е включен режимът за запазването ѝ</string>
+    <string name="reverse_charging_detail_footer_title">Батерията на телефона ви ще се изтощи по-бързо, когато използвате функцията за споделянето ѝ. Тази функция работи със съвместимите слушалки, часовници, телефони и др. За по-добро зареждане премахнете калъфа на телефона си.</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"Функцията за споделяне на батерията работи със съвместими слушалки, телефони и др.
+
+При използването ѝ батерията на телефона ви ще се изтощава по-бързо. Функцията се изключва автоматично след няколко минути, ако не бъде открито друго устройство. За по-добро зареждане свалете калъфа на телефона си и отстранете другите неща, които може да пречат, като например метални предмети."</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">Споделянето на батерията не е достъпно, защото е включен режимът за запазването ѝ</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">Споделянето на батерията не е достъпно, защото устройството с USB-C е включено в захранването</string>
+    <string name="reverse_charging_instructions_title">"Зареждайте други устройства чрез своя Pixel.
+Обърнете телефона си, за да опитате."</string>
+    <string name="reverse_charging_is_off_summary">Изкл.</string>
+    <string name="reverse_charging_is_on_and_charging_summary">Споделяне и зареждане на батерията</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">Батерията се споделя</string>
+    <string name="reverse_charging_is_on_summary">Вкл./зареждане на други устройства</string>
+    <string name="reverse_charging_main_switch">Разрешаване на споделянето на батерията</string>
+    <string name="reverse_charging_off_low_battery_summary">Изкл./нивото на батерията е под %1$s</string>
+    <string name="reverse_charging_off_sharing_level_summary">Изкл./батерията е под нивото за споделяне</string>
+    <string name="reverse_charging_overheat_summary">Не е налице, защото устройството Pixel е твърде горещо. Изчакайте телефонът да се охлади и опитайте отново.</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">Функцията не е налице, защото режимът за запазване на батерията е включен</string>
+    <string name="reverse_charging_sharing_level_message">Не е налице, защото батерията е под нивото за споделяне</string>
+    <string name="reverse_charging_switch_summary">Поставете устройствата на гърба на своя Pixel</string>
+    <string name="reverse_charging_switch_title">Зареждайте други устройства, като ги поставите върху задната страна на своя Pixel</string>
+    <string name="reverse_charging_switch_title_message">Зареждане на други устройства</string>
+    <string name="reverse_charging_title">Споделяне на батерията</string>
+    <string name="reverse_charging_unplug_usb_cable_message">Не е налице, защото устройството с USB-C е включено в захранването</string>
+    <string name="reverse_charging_warning_summary">Не е налице, защото нивото на батерията е под %1$s</string>
+    <string name="reverse_charging_warning_title">Споделянето на батерията не е достъпно, защото нивото ѝ е под %1$s</string>
+    <string name="rtt_settings_always_visible">Винаги да се вижда</string>
+    <string name="rtt_settings_no_visible">Да не се вижда</string>
+    <string name="rtt_settings_title">Текстово съобщение в реално време (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Вижда се по време на обажданията</string>
+    <string name="screen_time_summary_usage_today">Днес: %1$s</string>
+    <string name="search_bar_account_avatar_content_description">Снимка на потребителския профил – докоснете два пъти, за да отворите профила в Google</string>
+    <string name="security_advanced_settings">Разширени настройки</string>
+    <string name="security_dismiss_dialog_dismiss_button">Отхвърляне</string>
+    <string name="security_dismiss_dialog_title">Да се отхвърли ли това предупреждение?</string>
+    <string name="security_settings_face_enroll_education_message">На следващия екран завъртете главата си, за да уловите всички ъгли на лицето си</string>
+    <string name="security_settings_face_enroll_education_message_accessibility">На следващия екран дръжте телефона на нивото на очите си</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">Достигнато е времевото ограничение за регистриране на лице. Опитайте отново.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Настройването на откл. с лице не завърши навреме</string>
+    <string name="security_settings_face_enroll_finish_description">Вече можете да използвате лицето си, за да отключвате телефона или да потвърждавате самоличността си, например при влизане в приложения или одобряване на покупки</string>
+    <string name="security_settings_face_enroll_finish_title">Всичко изглежда наред!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Настройка при ограничено зрение или движение на главата</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded">Когато използвате функцията за отключване с лице, може да се наложи да поставите телефона точно пред главата си.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Изискване очите да са отворени</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message">"Вие и детето ви можете по всяко време да изтриете модела на лицето му или да изключите функцията за отключване с лице от настройките. Моделите на лицата се съхраняват на телефона, докато не бъдат изтрити.
+
+Научете повече на адрес g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Контролът е във ваши ръце и в ръцете на детето ви</string>
+    <string name="security_settings_face_enroll_introduction_control_message">"По всяко време можете да изтриете модела на лицето си или да изключите функцията за отключване с лице от настройките. Моделите на лицата се съхраняват на телефона, докато не ги изтриете.
+
+Научете повече на адрес g.co/pixel/faceunlock."</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Контролът е във ваши ръце</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message">"Функцията за отключване с лице изгражда уникален модел на лицето на детето ви с цел потвърждаване на самоличността му. За да създаде такъв модел по време на настройването, то ще трябва да заснеме лицето си под различни ъгли.
+
+Изображенията от взаимодействията на детето ви с функцията за отключване с лице се използват за актуализиране на съответния модел. Изображенията, ползвани за създаването му, не се запазват, но моделът на лицето се съхранява надеждно на телефона и никога не го напуска. Цялото обработване се извършва надеждно на телефона."</string>
+    <string name="security_settings_face_enroll_introduction_how_message">"Функцията за отключване с лице изгражда уникален модел на лицето ви с цел потвърждаване на самоличността ви. За да създадете такъв модел по време на настройването, ще трябва да заснемете лицето си под различни ъгли.
+
+Изображенията от взаимодействията ви с функцията за отключване с лице се използват за актуализиране на съответния модел. Изображенията, ползвани за създаването му, не се запазват, но моделът на лицето ви се съхранява надеждно на телефона ви и никога не го напуска. Цялото обработване се извършва надеждно на телефона ви."</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Начин на работа</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze">Функцията за отключване с лице може да изисква очите на детето ви да са отворени за отключване на телефона или потвърждаване на самоличността му. По всяко време вие и детето ви можете да включите тази опция от настройките.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Ако обикновено детето ви е с очила, може да ги носи и при настройването.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking">Дори и да не възнамерява да отключи телефона, това може да стане, когато детето ви гледа в него. Той може да бъде отключен и от някого, който много прилича на детето ви, например от негов брат или сестра близнак, или ако бъде задържан пред лицето му.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze">Функцията за отключване с лице може да изисква очите ви да са отворени за отключване на телефона или потвърждаване на самоличността ви. По всяко време можете да включите тази опция от настройките.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Може да носите очила или леко затъмнени слънчеви очила.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure">Използването на лице за отключване на телефона може да не е толкова сигурно в сравнение с надеждна фигура или ПИН код.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking">Дори и да не възнамерявате да отключите телефона, това може да стане, когато гледате в него. Той може да бъде отключен и от някого, който много прилича на вас, например от ваш брат или сестра близнак, или ако бъде задържан пред лицето ви.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Имайте предвид следното</string>
+    <string name="security_settings_face_enroll_introduction_message">Използвайте лицето си, за да отключвате телефона или да потвърждавате самоличността си, например при влизане в приложения или одобряване на покупки.</string>
+    <string name="security_settings_face_enroll_introduction_title">Настройване на отключването с лице</string>
+    <string name="security_settings_face_enroll_next">Напред</string>
+    <string name="security_settings_face_enroll_partial_message">С цел подобряване на ефективността можете да настроите отново функцията „Отключване с лице“ от настройките</string>
+    <string name="security_settings_face_enroll_partial_start_over">Стартиране отначало</string>
+    <string name="security_settings_face_enroll_partial_title">Настройването на отключването с лице завърши</string>
+    <string name="security_settings_face_enroll_timeout_message">"Вместо това изпробвайте бързото настройване. Имайте предвид, че може да се наложи да поставяте телефона точно пред главата си, когато използвате функцията за отключване с лице.
+
+С цел подобряване на ефективността можете да настроите отново функцията от настройките."</string>
+    <string name="security_settings_face_enroll_timeout_title">Настройването не може да продължи</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Нов опит</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Бързо настройване</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Изход от настройването</string>
+    <string name="security_settings_face_enroll_too_hot_message">Настройването на функцията „Отключване с лице“ не може да бъде завършено, защото телефонът е твърде горещ. Опитайте отново по-късно, когато се охлади.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Без отключване с лице</string>
+    <string name="security_settings_face_enroll_too_hot_title">Телефонът е твърде горещ</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Докоснете, за да настроите отпечатък</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Научете повече на адрес g.co/pixel/fingerprintunlock.</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint за служебни цели</string>
+    <string name="setup_suggestion_summary">Копирайте данни, плащайте с телефона си и др.</string>
+    <string name="setup_suggestion_title">Завършете настройването</string>
+    <string name="smart_battery_footer">За да удължи живота на батерията, режимът за адаптивна батерия може да намали ефективността и активността на заден план. Може да има забавяне на някои известия.</string>
+    <string name="smart_battery_manager_title">Предпочитания за адаптивните функции</string>
+    <string name="smart_battery_title">Адаптивна батерия</string>
+    <string name="sound_dashboard_summary">Сила на звука, осезателна обратна връзка, режим „Не безпокойте“</string>
+    <string name="sound_settings">Звук и вибриране</string>
+    <string name="storage_manager_indicator">Интелигентно хранилище: ^1</string>
+    <string name="time_remaining_warning_subtext">Още около %1$s въз основа на историята на използване</string>
+    <string name="time_remaining_warning_text">Батерията може скоро да се изтощи</string>
+    <string name="tips_suggestion_summary">Разгледайте възможностите на телефона си</string>
+    <string name="tips_suggestion_title">Опознайте своя Pixel</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">Дръжте телефона пред лицето си</string>
+    <string name="usb_use_file_transfers">Прехв. на файлове/Android Auto</string>
+    <string name="vibrate_for_calls_settings_not_available_summary">Вибрирането при обаждания не е налице, защото за телефона е зададен тих режим</string>
+    <string name="vibration_haptics_settings_not_available_title">Не е налице</string>
+    <string name="wallpaper_dashboard_summary">Цветове, икони с теми, решетка с приложения</string>
+    <string name="wifi_subscription_summary">Преглед или промяна на абонамента за OpenRoaming</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">Установена е връзка с(ъс) %1$s</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Докоснете за свързване</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">Не може да се установи връзка. Докоснете за нов опит.</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">Установява се връзка…</string>
+</resources>

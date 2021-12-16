@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">경고 모두 보기(%1$d개)</item>
+        <item quantity="one">경고 %1$d개 표시</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">경고 %1$d개</item>
+        <item quantity="one">경고 %1$d개</item>
+    </plurals>
+</resources>

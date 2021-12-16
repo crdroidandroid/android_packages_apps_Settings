@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <plurals name="security_settings_hub_show_warnings_preference">
+        <item quantity="other">Бүх сануулгыг харах (%1$d)</item>
+        <item quantity="one">%1$d сануулга харуулах</item>
+    </plurals>
+    <plurals name="security_settings_hub_warnings_title">
+        <item quantity="other">%1$d сануулга</item>
+        <item quantity="one">%1$d сануулга</item>
+    </plurals>
+</resources>
