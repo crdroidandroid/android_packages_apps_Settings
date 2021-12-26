@@ -4386,5 +4386,17 @@
         <activity android:theme="@style/SudThemeGlif.Light" android:label="@string/columbus_gesture_training_action_title" android:name="com.google.android.settings.gestures.columbus.ColumbusGestureTrainingActionActivity" android:enabled="true" android:exported="false" android:screenOrientation="portrait"/>
         <activity android:theme="@style/SudThemeGlif.Light" android:label="@string/columbus_gesture_training_launch_title" android:name="com.google.android.settings.gestures.columbus.ColumbusGestureTrainingLaunchActivity" android:enabled="true" android:exported="false" android:screenOrientation="portrait"/>
         <activity android:theme="@style/SudThemeGlif.Light" android:label="@string/columbus_gesture_training_finished_title" android:name="com.google.android.settings.gestures.columbus.ColumbusGestureTrainingFinishedActivity" android:enabled="true" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.google.android.settings.games.GameSettingsActivity" android:exported="true" android:screenOrientation="behind" android:showForAllUsers="true" android:enabled="true">
+            <intent-filter android:priority="1">
+                <action android:name="com.google.android.settings.games.GAME_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.google.android.settings.games.GameSettings"/>
+        </activity>
     </application>
 </manifest>
