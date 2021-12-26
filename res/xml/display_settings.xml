@@ -152,6 +152,12 @@
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController" />
 
+        <ListPreference
+            android:key="low_power_refresh_rate"
+            android:title="@string/low_power_refresh_rate_title_custom"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.display.LowPowerRefreshRatePreferenceController" />
+
         <SwitchPreference
             android:key="show_operator_name"
             android:title="@string/show_operator_name_title"
