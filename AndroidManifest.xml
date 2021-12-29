@@ -107,6 +107,7 @@
     <uses-permission android:name="android.permission.READ_DREAM_STATE" />
     <uses-permission android:name="android.permission.READ_DREAM_SUPPRESSION" />
     <uses-permission android:name="android.permission.MANAGE_APP_HIBERNATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
