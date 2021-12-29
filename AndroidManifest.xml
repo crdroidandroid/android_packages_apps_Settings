@@ -152,6 +152,7 @@
     <uses-permission android:name="android.permission.MANAGE_COMPANION_DEVICES" />
     <uses-permission android:name="android.permission.CONTROL_SIM_AUTO_PIN_MANAGEMENT" />
     <uses-permission android:name="android.permission.MANAGE_COMPUTER_CONTROL_CONSENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
             android:name=".SettingsApplication"
