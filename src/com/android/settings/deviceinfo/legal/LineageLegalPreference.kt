@@ -33,7 +33,7 @@ class LineageLegalPreference(
 ) : PreferenceMetadata, PreferenceTitleProvider, PreferenceAvailabilityProvider {
 
     private companion object {
-        const val PROPERTY_LINEAGE_LICENSE_URL = "ro.lineagelegal.url"
+        const val PROPERTY_LINEAGE_LICENSE_URL = "ro.crdroidlegal.url"
     }
 
     private fun getLicenseUrl(): String = SystemProperties.get(PROPERTY_LINEAGE_LICENSE_URL)
