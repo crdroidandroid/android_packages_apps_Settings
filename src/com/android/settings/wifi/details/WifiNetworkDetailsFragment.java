@@ -21,6 +21,7 @@ import android.app.Dialog;
 import android.app.admin.DevicePolicyManager;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -167,6 +168,9 @@ public class WifiNetworkDetailsFragment extends RestrictedDashboardFragment impl
         if (!mIsUiRestricted && isEditable()) {
             MenuItem item = menu.add(0, Menu.FIRST, 0, R.string.wifi_modify);
             item.setIcon(com.android.internal.R.drawable.ic_mode_edit);
+            item.setIconTintList(ColorStateList.valueOf(
+                com.android.settingslib.Utils.getColorAttrDefaultColor(getContext(),
+                    android.R.attr.colorControlNormal)));
             item.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
         }
         super.onCreateOptionsMenu(menu, inflater);
