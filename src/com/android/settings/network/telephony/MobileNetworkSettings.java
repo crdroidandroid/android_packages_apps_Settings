@@ -24,6 +24,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.os.UserManager;
 import android.provider.Settings;
@@ -465,6 +466,9 @@ public class MobileNetworkSettings extends AbstractMobileNetworkSettings impleme
             final MenuItem item = menu.add(Menu.NONE, R.id.edit_sim_name, Menu.NONE,
                     R.string.mobile_network_sim_name);
             item.setIcon(com.android.internal.R.drawable.ic_mode_edit);
+            item.setIconTintList(ColorStateList.valueOf(
+                com.android.settingslib.Utils.getColorAttrDefaultColor(getContext(),
+                    android.R.attr.colorControlNormal)));
             item.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
         }
         super.onCreateOptionsMenu(menu, inflater);
