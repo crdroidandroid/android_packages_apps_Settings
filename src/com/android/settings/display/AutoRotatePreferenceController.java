@@ -18,6 +18,7 @@ import android.content.Context;
 import android.text.TextUtils;
 
 import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.R;
@@ -29,12 +30,17 @@ import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnPause;
 import com.android.settingslib.core.lifecycle.events.OnResume;
 
+import com.crdroid.settings.preferences.SystemSettingSwitchPreference;
+
 public class AutoRotatePreferenceController extends TogglePreferenceController implements
         PreferenceControllerMixin, Preference.OnPreferenceChangeListener, LifecycleObserver,
         OnResume, OnPause {
 
+    private final String FLOATING_BUTTON_PREF_KEY = "enable_floating_rotation_button";
+
     private final MetricsFeatureProvider mMetricsFeatureProvider;
     private Preference mPreference;
+    private SystemSettingSwitchPreference mFloatingPref;
     private RotationPolicy.RotationPolicyListener mRotationPolicyListener;
 
     public AutoRotatePreferenceController(Context context, String key) {
@@ -43,8 +49,15 @@ public class AutoRotatePreferenceController extends TogglePreferenceController i
     }
 
     @Override
+    public void displayPreference(PreferenceScreen screen) {
+        super.displayPreference(screen);
+        mFloatingPref = screen.findPreference(FLOATING_BUTTON_PREF_KEY);
+    }
+
+    @Override
     public void updateState(Preference preference) {
         mPreference = preference;
+        if (mFloatingPref != null) mFloatingPref.setEnabled(!isChecked());
         super.updateState(preference);
     }
 
@@ -104,6 +117,7 @@ public class AutoRotatePreferenceController extends TogglePreferenceController i
         mMetricsFeatureProvider.action(mContext, SettingsEnums.ACTION_ROTATION_LOCK,
                 isLocked);
         RotationPolicy.setRotationLock(mContext, isLocked);
+        if (mFloatingPref != null) mFloatingPref.setEnabled(!isChecked);
         return true;
     }
 }
