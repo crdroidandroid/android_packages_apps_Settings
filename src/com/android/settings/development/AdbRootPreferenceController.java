@@ -53,7 +53,7 @@ public class AdbRootPreferenceController extends DeveloperOptionsPreferenceContr
 
     @Override
     public boolean isAvailable() {
-        return Build.IS_DEBUGGABLE;
+        return true;
     }
 
     @Override
