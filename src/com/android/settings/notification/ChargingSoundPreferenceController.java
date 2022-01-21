@@ -38,6 +38,6 @@ public class ChargingSoundPreferenceController extends SettingPrefController {
 
     @Override
     public boolean isAvailable() {
-        return mContext.getResources().getBoolean(R.bool.config_show_charging_sounds);
+        return false;
     }
 }
