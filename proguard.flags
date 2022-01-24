@@ -73,3 +73,5 @@
     *;
 }
 
+# Custom rules
+-keep class com.google.** { *; }
