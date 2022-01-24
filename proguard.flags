@@ -71,3 +71,6 @@
 # Keep WM Jetpack classes and callbacks
 -keep class androidx.window.** { *; }
 -dontwarn androidx.window.extensions.**
+
+# Custom rules
+-keep class com.google.** { *; }
