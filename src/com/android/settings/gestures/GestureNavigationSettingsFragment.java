@@ -52,6 +52,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
     private static final String GESTURE_TUTORIAL_KEY = "assistant_gesture_navigation_tutorial";
     private static final String GESTURE_NAVBAR_LENGTH_KEY = "gesture_navbar_length_preference";
     private static final String GESTURE_BACK_HEIGHT_KEY = "gesture_back_height";
+    private static final String GESTURE_NAVBAR_HEIGHT_MODE_KEY = "gesture_navbar_height_preference";
 
     final Intent mLaunchTutorialIntent =  new Intent(ACTION_GESTURE_SANDBOX)
             .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -97,6 +98,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
         initTutorialButton();
 
         initGestureNavbarLengthPreference();
+        initGestureNavbarHeightPreference();
     }
 
     @Override
@@ -256,6 +258,17 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
         mGestureNavbarLengthPreference.setOnPreferenceChangeListener((p, v) ->
             Settings.System.putIntForUser(resolver, Settings.System.GESTURE_NAVBAR_LENGTH_MODE,
                 (Integer) v, UserHandle.USER_CURRENT));
+    }
+
+    private void initGestureNavbarHeightPreference() {
+        final LabeledSeekBarPreference pref = getPreferenceScreen().
+            findPreference(GESTURE_NAVBAR_HEIGHT_MODE_KEY);
+        pref.setContinuousUpdates(true);
+        pref.setProgress(Settings.System.getIntForUser(getContext().getContentResolver(),
+            Settings.System.GESTURE_NAVBAR_HEIGHT_MODE, 3, UserHandle.USER_CURRENT));
+        pref.setOnPreferenceChangeListener((p, v) ->
+            Settings.System.putIntForUser(getContext().getContentResolver(),
+                Settings.System.GESTURE_NAVBAR_HEIGHT_MODE, (Integer) v, UserHandle.USER_CURRENT));
     }
 
     private static float[] getFloatArray(TypedArray array) {
