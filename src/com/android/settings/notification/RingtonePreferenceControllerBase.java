@@ -24,7 +24,6 @@ import android.util.Log;
 
 import androidx.preference.Preference;
 
-import com.android.settings.RingtonePreference;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.utils.ThreadUtils;
@@ -52,8 +51,8 @@ public abstract class RingtonePreferenceControllerBase extends AbstractPreferenc
     }
 
     private void updateSummary(Preference preference) {
-        final Uri ringtoneUri = RingtoneManager.getActualDefaultRingtoneUriBySlot(mContext,
-                getRingtoneType(), ((RingtonePreference)preference).getSlotId());
+        final Uri ringtoneUri = RingtoneManager.getActualDefaultRingtoneUri(
+                mContext, getRingtoneType());
 
         final CharSequence summary;
         try {
@@ -70,19 +69,4 @@ public abstract class RingtonePreferenceControllerBase extends AbstractPreferenc
 
     public abstract int getRingtoneType();
 
-    public boolean isBuiltInEuiccSlot(int slotIndex) {
-        int[] euiccSlots = mContext.getResources()
-                .getIntArray(com.android.internal.R.array.non_removable_euicc_slots);
-        for (int slot : euiccSlots) {
-            if (slot == slotIndex) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public boolean isDeviceSupportsESIM() {
-        return mContext.getResources()
-                .getIntArray(com.android.internal.R.array.non_removable_euicc_slots).length > 0;
-    }
 }
