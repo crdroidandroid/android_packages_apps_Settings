@@ -50,6 +50,14 @@
         android:dependency="navigation_bar_hint" />
 
     <com.android.settingslib.widget.SliderPreference
+        android:key="gesture_navbar_height_preference"
+        android:title="@string/gesture_navbar_radius_title"
+        android:min="0"
+        android:max="4"
+        settings:textStart="@string/thin_label"
+        settings:textEnd="@string/thick_label" />
+
+    <com.android.settingslib.widget.SliderPreference
         android:key="gesture_back_height"
         android:title="@string/back_height_title"
         android:summary="@string/back_height_summary"
