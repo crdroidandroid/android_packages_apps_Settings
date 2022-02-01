@@ -40,6 +40,14 @@
         android:dependency="navigation_bar_hint" />
 
     <com.android.settings.widget.LabeledSeekBarPreference
+        android:key="gesture_navbar_radius_preference"
+        android:title="@string/gesture_navbar_radius_title"
+        android:max="3"
+        android:selectable="true"
+        settings:textStart="@string/thin_label"
+        settings:textEnd="@string/thick_label" />
+
+    <com.android.settings.widget.LabeledSeekBarPreference
         android:key="gesture_back_height"
         android:title="@string/back_height_title"
         android:summary="@string/back_height_summary"

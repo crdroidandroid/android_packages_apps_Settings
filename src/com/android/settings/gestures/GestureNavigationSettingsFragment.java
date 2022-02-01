@@ -55,6 +55,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
     private static final String NAVIGATION_BAR_LENGTH_KEY = "gesture_navbar_length_preference";
     private static final String GESTURE_NAVBAR_LENGTH_KEY = "gesture_navbar_length_preference";
     private static final String GESTURE_BACK_HEIGHT_KEY = "gesture_back_height";
+    private static final String GESTURE_NAVBAR_RADIUS_KEY = "gesture_navbar_radius_preference";
 
     private WindowManager mWindowManager;
     private BackGestureIndicatorView mIndicatorView;
@@ -97,6 +98,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
         initSeekBarPreference(GESTURE_BACK_HEIGHT_KEY);
 
         initGestureNavbarLengthPreference();
+        initGestureBarRadiusPreference();
 
         boolean isTaskbarEnabled = LineageSettings.System.getInt(getContext().getContentResolver(),
                 LineageSettings.System.ENABLE_TASKBAR, isLargeScreen(getContext()) ? 1 : 0) == 1;
@@ -245,6 +247,17 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
         mGestureNavbarLengthPreference.setOnPreferenceChangeListener((p, v) ->
             Settings.System.putIntForUser(resolver, Settings.System.GESTURE_NAVBAR_LENGTH_MODE,
                 (Integer) v, UserHandle.USER_CURRENT));
+    }
+
+    private void initGestureBarRadiusPreference() {
+        final LabeledSeekBarPreference pref = getPreferenceScreen().
+            findPreference(GESTURE_NAVBAR_RADIUS_KEY);
+        pref.setContinuousUpdates(true);
+        pref.setProgress(Settings.System.getIntForUser(getContext().getContentResolver(),
+            Settings.System.GESTURE_NAVBAR_RADIUS, 0, UserHandle.USER_CURRENT));
+        pref.setOnPreferenceChangeListener((p, v) ->
+            Settings.System.putIntForUser(getContext().getContentResolver(),
+                Settings.System.GESTURE_NAVBAR_RADIUS, (Integer) v, UserHandle.USER_CURRENT));
     }
 
     private static float[] getFloatArray(TypedArray array) {
