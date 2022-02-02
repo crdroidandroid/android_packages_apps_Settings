@@ -134,15 +134,14 @@
         android:order="-120"
         settings:keywords="@string/sound_settings"/>
 
-    <!-- Phone ringtone for Slot2 -->
+    <!-- Phone ringtone for SIM2 -->
     <com.android.settings.DefaultRingtonePreference
-        android:key="ringtone2"
+        android:key="phone_ringtone2"
         android:title="@string/ringtone_title"
         android:dialogTitle="@string/ringtone_title"
         android:summary="@string/summary_placeholder"
         android:ringtoneType="ringtone"
-        settings:allowDividerAbove="false"
-        android:order="-119"/>
+        android:order="-115"/>
 
     <!-- Live Caption -110 and Now Playing -105-->
     <Preference
