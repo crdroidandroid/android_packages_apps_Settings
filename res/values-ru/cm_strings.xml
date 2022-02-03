@@ -15,19 +15,39 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Android debugging as root -->
     <string name="adb_enable_root">Отладка суперпользователем</string>
     <string name="adb_enable_summary_root">Разрешить запуск отладки Android с правами суперпользователя</string>
+
+    <!-- Backup Transport selection settings menu and activity title -->
     <string name="backup_transport_setting_label">Сменить поставщика резервного копирования</string>
     <string name="backup_transport_title">Выберите поставщика резервного копирования</string>
+
+    <!-- Device Info screen. LineageOS legal. -->
     <string name="lineagelicense_title">Политика конфиденциальности LineageOS</string>
+
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Возрастающая громкость звонка</string>
+    <string name="increasing_ring_min_volume_title">Начальная громкость</string>
+    <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
+
+    <!-- Volume link notification -->
     <string name="volume_link_notification_title">Связать громкость рингтона и уведомлений</string>
+
+    <!-- PIN scramble -->
     <string name="unlock_scramble_pin_layout_title">Перемешивать кнопки</string>
     <string name="unlock_scramble_pin_layout_summary">Переставлять кнопки ввода PIN-кода в случайном порядке</string>
+
+    <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Выберите размер граф. ключа</string>
     <string name="lockpattern_settings_enable_error_path_title">Показывать неверный ввод</string>
     <string name="lockpattern_settings_enable_dots_title">Показывать точки</string>
+
+    <!-- Hotspot lineage extras -->
     <string name="tethering_allow_vpn_upstreams_title">Разрешить клиентам использовать VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Разрешить клиентам точки доступа использовать VPN-соединения этого устройства при подключения</string>
+
+    <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">Разрешить доступ к сети</string>
     <string name="data_usage_app_restrict_all_summary">Отслеживание использование сети</string>
     <string name="data_usage_app_restrict_mobile">Мобильные данные</string>
@@ -36,6 +56,22 @@
     <string name="data_usage_app_restrict_vpn_summary">Включить использование данных VPN</string>
     <string name="data_usage_app_restrict_wifi">Данные Wi\u2011Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Включить использование данных Wi\u2011Fi</string>
+
+    <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Частота звуковых уведомлений</string>
+    <string name="app_notification_sound_timeout_summary_template">Звуки и вибрация не чаще, чем раз в <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Без ограничений</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 секунд</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 секунд</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 минуту</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 минут</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 минут</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 минут</string>
+
+    <!-- Navigation bar hint -->
     <string name="show_navbar_hint_title">Подсказки по навигации</string>
     <string name="show_navbar_hint_summary">Показать подсказку по навигации в нижней части экрана</string>
+
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Сохранённые наушники</string>
 </resources>
