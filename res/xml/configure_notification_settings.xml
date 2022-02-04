@@ -164,10 +164,10 @@
             android:summary="@string/notification_assistant_summary"
             settings:controller="com.android.settings.notification.NotificationAssistantPreferenceController"/>
 
-        <!-- Notification lights -->
+        <!-- Notification lights
         <org.lineageos.internal.lineageparts.LineagePartsPreference
             android:key="notification_lights"
             lineage:requiresConfig="@*android:bool/config_intrusiveNotificationLed"
-            lineage:replacesKey="notification_pulse" />
+            lineage:replacesKey="notification_pulse" /> -->
     </PreferenceCategory>
 </PreferenceScreen>
