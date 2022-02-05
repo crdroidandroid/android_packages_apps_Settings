@@ -98,6 +98,14 @@
         android:order="-138"
         settings:controller="com.android.settings.notification.LinkedVolumesPreferenceController"/>
 
+    <!-- Per-app volume control -->
+    <SwitchPreference
+        android:key="app_volume"
+        android:title="@string/app_volume_title"
+        android:summary="@string/app_volume_summary"
+        android:order="-137"
+        android:defaultValue="true" />
+
     <!-- Increasing ring -->
     <lineageos.preference.LineageSystemSettingSwitchPreference
         android:key="increasing_ring"
