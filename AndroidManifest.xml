@@ -3928,6 +3928,18 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name="com.crdroid.settings.fragments.ui.DisplayCutoutForceFullscreenActivity"
+                android:label="@string/display_cutout_force_fullscreen_title"
+                android:theme="@style/Theme.SubSettingsBase"
+                android:enabled="true"
+                android:exported="true"
+                android:taskAffinity="com.android.settings"
+                android:parentActivityName="Settings">
+            <intent-filter android:priority="70">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <receiver android:name="com.crdroid.settings.fragments.ui.doze.DozeReceiver"
             android:exported="true">
             <intent-filter>
