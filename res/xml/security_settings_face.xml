@@ -33,12 +33,6 @@
             android:title="@string/biometric_settings_use_biometric_for_apps"
             settings:keywords="@string/keywords_face_unlock"
             settings:controller="com.android.settings.biometrics.face.FaceSettingsAppPreferenceController"/>
-        <com.android.settingslib.RestrictedSwitchPreference
-            android:key="security_lockscreen_bypass"
-            android:title="@string/lockscreen_bypass_title"
-            android:summary="@string/lockscreen_bypass_summary"
-            settings:keywords="@string/keywords_lockscreen_bypass"
-            settings:controller="com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -59,24 +53,29 @@
             settings:controller="com.android.settings.biometrics.face.FaceSettingsConfirmPreferenceController"/>
 
         <com.android.settingslib.RestrictedSwitchPreference
-            android:key="biometric_settings_lockscreen_bypass"
+            android:key="security_lockscreen_bypass"
             android:title="@string/lockscreen_bypass_title"
             android:summary="@string/lockscreen_bypass_summary"
             settings:keywords="@string/keywords_lockscreen_bypass"
-            settings:controller="com.android.settings.biometrics.face.BiometricLockscreenBypassPreferenceController" />
+            settings:controller="com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController" />
     </PreferenceCategory>
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="security_settings_face_delete_faces_container"
-        android:title="@string/security_settings_face_settings_remove_face_model"
-        android:selectable="false"
-        android:layout="@layout/face_remove_button"/>
+    <Preference
+        android:title="@string/security_settings_face_unlock_redo_face_scan_title"
+        android:key="security_settings_face_redo_face_scan"
+        android:summary="@string/security_settings_face_unlock_redo_face_scan_summary"
+        settings:controller="com.android.settings.custom.biometrics.face.FaceSettingsRedoPreferenceController"
+        settings:keywords="@string/keywords_face_unlock" />
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="security_settings_face_enroll_faces_container"
+    <Preference
+        android:title="@string/security_settings_face_settings_remove_face_model"
+        android:key="security_settings_face_delete_faces_container"
+        settings:keywords="@string/keywords_face_unlock"/>
+
+    <Preference
         android:title="@string/security_settings_face_settings_enroll"
-        android:selectable="false"
-        android:layout="@layout/face_enroll_button"/>
+        android:key="security_settings_face_enroll_faces_container"
+        settings:keywords="@string/keywords_face_unlock"/>
 
     <com.android.settingslib.widget.FooterPreference
         android:key="security_face_footer"
