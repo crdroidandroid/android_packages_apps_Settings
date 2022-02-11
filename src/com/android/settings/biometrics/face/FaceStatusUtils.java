@@ -26,6 +26,8 @@ import com.android.settings.Utils;
 import com.android.settings.biometrics.ParentalControlsUtils;
 import com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 
+import com.android.settings.custom.biometrics.FaceUtils;
+
 /**
  * Utilities for face details shared between Security Settings and Safety Center.
  */
@@ -62,6 +64,9 @@ public class FaceStatusUtils {
      * Returns the summary of face settings entity.
      */
     public String getSummary() {
+        if (FaceUtils.isFaceUnlockSupported() && FaceUtils.isFaceDisabledByAdmin(mContext)) {
+            return mContext.getResources().getString(R.string.disabled_by_administrator_summary);
+        }
         return mContext.getResources().getString(hasEnrolled()
                 ? R.string.security_settings_face_preference_summary
                 : R.string.security_settings_face_preference_summary_none);
