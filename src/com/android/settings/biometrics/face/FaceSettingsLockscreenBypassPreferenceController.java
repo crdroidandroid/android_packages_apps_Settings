@@ -83,16 +83,15 @@ public class FaceSettingsLockscreenBypassPreferenceController
 
     @Override
     public int getAvailabilityStatus() {
-        // When the device supports multiple biometrics auth, this preference won't be shown
-        // in face unlock category.
-        if (Utils.isMultipleBiometricsSupported(mContext)) {
-            return UNSUPPORTED_ON_DEVICE;
-        }
         if (mUserManager.isManagedProfile(getUserId())) {
             return UNSUPPORTED_ON_DEVICE;
         }
 
-        if (mFaceManager != null && mFaceManager.isHardwareDetected()) {
+        boolean faceAuthOnlyOnSecurityView  = mContext.getResources().getBoolean(
+                com.android.internal.R.bool.config_faceAuthOnlyOnSecurityView);
+
+        if (mFaceManager != null && mFaceManager.isHardwareDetected() &&
+                !faceAuthOnlyOnSecurityView) {
             return mFaceManager.hasEnrolledTemplates(getUserId())
                     ? AVAILABLE : DISABLED_DEPENDENT_SETTING;
         } else {
