@@ -22,11 +22,13 @@ import static com.android.settings.biometrics.BiometricUtils.GatekeeperCredentia
 
 import android.app.admin.DevicePolicyManager;
 import android.app.settings.SettingsEnums;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.hardware.SensorPrivacyManager;
 import android.hardware.biometrics.BiometricAuthenticator;
 import android.hardware.face.FaceManager;
+import android.hardware.face.FaceSensorPropertiesInternal;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.text.Html;
@@ -60,6 +62,10 @@ import com.google.android.setupcompat.template.FooterButton;
 import com.google.android.setupcompat.util.WizardManagerHelper;
 import com.google.android.setupdesign.span.LinkSpan;
 
+import java.util.List;
+
+import com.android.settings.custom.biometrics.FaceUtils;
+
 /**
  * Provides introductory info about face unlock and prompts the user to agree before starting face
  * enrollment.
@@ -71,6 +77,8 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
     @Nullable private FooterButton mPrimaryFooterButton;
     @Nullable private FooterButton mSecondaryFooterButton;
     @Nullable private SensorPrivacyManager mSensorPrivacyManager;
+
+    private boolean mForRedo;
 
     @Override
     protected void onCancelButtonClick(View view) {
@@ -110,28 +118,7 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
                 mDevicePostureState, mLaunchedPostureGuidance);
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        mFaceManager = getFaceManager();
-
-        if (savedInstanceState == null
-                && !WizardManagerHelper.isAnySetupWizard(getIntent())
-                && !getIntent().getBooleanExtra(EXTRA_FROM_SETTINGS_SUMMARY, false)
-                && maxFacesEnrolled()) {
-            // from tips && maxEnrolled
-            Log.d(TAG, "launch face settings");
-            launchFaceSettingsActivity();
-            finish();
-        }
-
-        super.onCreate(savedInstanceState);
-
-        // Wait super::onCreated() then return because SuperNotCalledExceptio will be thrown
-        // if we don't wait for it.
-        if (isFinishing()) {
-            return;
-        }
-
+    private void initDefaultLayout(){
         // Apply extracted theme color to icons.
         final ImageView iconGlasses = findViewById(R.id.icon_glasses);
         final ImageView iconLooking = findViewById(R.id.icon_looking);
@@ -172,6 +159,35 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
             infoMessageRequireEyes.setText(getInfoMessageRequireEyes());
         }
 
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        mFaceManager = getFaceManager();
+
+        if (savedInstanceState == null
+                && !WizardManagerHelper.isAnySetupWizard(getIntent())
+                && !getIntent().getBooleanExtra(EXTRA_FROM_SETTINGS_SUMMARY, false)
+                && maxFacesEnrolled()) {
+            // from tips && maxEnrolled
+            Log.d(TAG, "launch face settings");
+            launchFaceSettingsActivity();
+            finish();
+        }
+
+        super.onCreate(savedInstanceState);
+
+        // Wait super::onCreated() then return because SuperNotCalledExceptio will be thrown
+        // if we don't wait for it.
+        if (isFinishing()) {
+            return;
+        }
+
+        if (!FaceUtils.isFaceUnlockSupported()) {
+            initDefaultLayout();
+        }
+
+        mForRedo = getIntent().getBooleanExtra("for_redo", false);
         // This path is an entry point for SetNewPasswordController, e.g.
         // adb shell am start -a android.app.action.SET_NEW_PASSWORD
         if (mToken == null && BiometricUtils.containsGatekeeperPasswordHandle(getIntent())) {
@@ -207,6 +223,10 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
         final boolean cameraPrivacyEnabled = helper
                 .isSensorBlocked(SensorPrivacyManager.Sensors.CAMERA, mUserId);
         Log.v(TAG, "cameraPrivacyEnabled : " + cameraPrivacyEnabled);
+
+        if (FaceUtils.isFaceUnlockSupported() && mHasPassword && mToken != null) {
+            openCustomFaceUnlockPackage();
+        }
     }
 
     private void launchFaceSettingsActivity() {
@@ -304,6 +324,11 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+	    if (FaceUtils.isFaceUnlockSupported()) {
+            onActivityResultCustom(requestCode, resultCode, data);
+            return;
+        }
+
         if (requestCode == REQUEST_POSTURE_GUIDANCE) {
             mLaunchedPostureGuidance = false;
             if (resultCode == RESULT_CANCELED || resultCode == RESULT_SKIP) {
@@ -334,6 +359,66 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
             data = setSkipPendingEnroll(data);
         }
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    void onActivityResultCustom(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode != CHOOSE_LOCK_GENERIC_REQUEST) {
+            if (requestCode != CONFIRM_REQUEST) {
+                if (requestCode == ENROLL_REQUEST) {
+                    if (resultCode == RESULT_FIRST_USER || resultCode == RESULT_OK) {
+                        setResult(RESULT_FIRST_USER);
+                        finish();
+                        return;
+                    }
+                    setResult(RESULT_CANCELED);
+                    finish();
+                }
+            } else if (resultCode == RESULT_OK && data != null) {
+                checkTokenAndOpenCustomFaceUnlockPackage(data);
+            }
+        } else if (resultCode == RESULT_FIRST_USER) {
+            checkTokenAndOpenCustomFaceUnlockPackage(data);
+        }
+    }
+
+    private void openCustomFaceUnlockPackage() {
+        ComponentName componentName;
+        Intent intent = new Intent();
+        intent.putExtra(ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE_TOKEN, mToken);
+        if (mUserId != -10000) {
+            intent.putExtra("android.intent.extra.USER_ID", mUserId);
+        }
+        if (mForRedo) {
+            componentName = new ComponentName(
+                "com.crdroid.faceunlock",
+                "com.crdroid.faceunlock.FaceEnrollActivity");
+        } else {
+            componentName = new ComponentName(
+                "com.crdroid.faceunlock",
+                "com.crdroid.faceunlock.SetupFaceIntroActivity");
+        }
+        intent.setComponent(componentName);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(intent, ENROLL_REQUEST);
+        }
+    }
+
+    private void checkTokenAndOpenCustomFaceUnlockPackage(Intent intent) {
+        if (mToken == null) {
+            mFaceManager.generateChallenge(mUserId, (sensorId, userId, challenge) -> {
+                if (mToken == null) {
+                    mToken = BiometricUtils.requestGatekeeperHat(this, intent, mUserId,
+                            challenge);
+                    mSensorId = sensorId;
+                    mChallenge = challenge;
+                    BiometricUtils.removeGatekeeperPasswordHandle(this, intent);
+                    openCustomFaceUnlockPackage();
+                }
+            });
+        }else{
+            openCustomFaceUnlockPackage();
+        }
     }
 
     protected boolean generateChallengeOnCreate() {
@@ -383,6 +468,9 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
 
     @Override
     protected int getLayoutResource() {
+        if (FaceUtils.isFaceUnlockSupported()) {
+            return R.layout.face_enroll_introduction_invisible;
+        }
         return R.layout.face_enroll_introduction;
     }
 
@@ -426,12 +514,20 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
     }
 
     private boolean maxFacesEnrolled() {
+        final boolean isSetupWizard = WizardManagerHelper.isAnySetupWizard(getIntent());
         if (mFaceManager != null) {
+            final List<FaceSensorPropertiesInternal> props =
+                    mFaceManager.getSensorPropertiesInternal();
             // This will need to be updated for devices with multiple face sensors.
+            final int max = props.get(0).maxEnrollmentsPerUser;
             final int numEnrolledFaces = mFaceManager.getEnrolledFaces(mUserId).size();
-            final int maxFacesEnrollable = getApplicationContext().getResources()
+            final int maxFacesEnrollableIfSUW = getApplicationContext().getResources()
                     .getInteger(R.integer.suw_max_faces_enrollable);
-            return numEnrolledFaces >= maxFacesEnrollable;
+            if (isSetupWizard) {
+                return numEnrolledFaces >= maxFacesEnrollableIfSUW;
+            } else {
+                return numEnrolledFaces >= max;
+            }
         } else {
             return false;
         }
