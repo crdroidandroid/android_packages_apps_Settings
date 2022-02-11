@@ -27,6 +27,8 @@ import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.utils.AnnotationSpan;
 import com.android.settingslib.HelpUtils;
 
+import com.android.settings.custom.biometrics.FaceUtils;
+
 /**
  * Footer for face settings showing the help text and help link.
  */
@@ -55,10 +57,14 @@ public class FaceSettingsFooterPreferenceController extends BasePreferenceContro
         final AnnotationSpan.LinkInfo linkInfo =
                 new AnnotationSpan.LinkInfo(mContext, ANNOTATION_URL, helpIntent);
 
-        final int footerRes = mProvider.isAttentionSupported(mContext)
-                ? R.string.security_settings_face_settings_footer
-                : R.string.security_settings_face_settings_footer_attention_not_supported;
-
+        final int footerRes;
+        if (FaceUtils.isFaceUnlockSupported()) {
+            footerRes = R.string.security_settings_face_settings_footer_custom;
+        } else if (mProvider.isAttentionSupported(mContext)) {
+            footerRes = R.string.security_settings_face_settings_footer;
+        } else {
+            footerRes = R.string.security_settings_face_settings_footer_attention_not_supported;
+        }
         preference.setTitle(AnnotationSpan.linkify(
                 mContext.getText(footerRes), linkInfo));
     }
