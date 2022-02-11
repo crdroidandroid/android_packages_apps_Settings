@@ -20,6 +20,8 @@ import android.content.Context;
 import com.android.settings.Utils;
 import com.android.settings.core.BasePreferenceController;
 
+import com.android.settings.custom.biometrics.FaceUtils;
+
 /**
  * Preference controller that controls the face unlock features to be shown / be hidden.
  */
@@ -31,6 +33,6 @@ public class FaceUnlockCategoryPreferenceController extends BasePreferenceContro
 
     @Override
     public int getAvailabilityStatus() {
-        return Utils.isMultipleBiometricsSupported(mContext) ? UNSUPPORTED_ON_DEVICE : AVAILABLE;
+        return Utils.isMultipleBiometricsSupported(mContext) || FaceUtils.isFaceUnlockSupported() ? UNSUPPORTED_ON_DEVICE : AVAILABLE;
     }
 }
