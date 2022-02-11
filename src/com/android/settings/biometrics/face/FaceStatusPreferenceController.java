@@ -19,6 +19,7 @@ package com.android.settings.biometrics.face;
 import android.content.Context;
 import android.hardware.biometrics.BiometricAuthenticator;
 import android.hardware.face.FaceManager;
+import androidx.preference.Preference;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.Lifecycle;
@@ -35,6 +36,8 @@ import com.android.settings.biometrics.BiometricStatusPreferenceController;
 import com.android.settings.biometrics.ParentalControlsUtils;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedPreference;
+
+import com.android.settings.custom.biometrics.FaceUtils;
 
 public class FaceStatusPreferenceController extends BiometricStatusPreferenceController
         implements LifecycleObserver {
@@ -91,6 +94,9 @@ public class FaceStatusPreferenceController extends BiometricStatusPreferenceCon
     public void updateState(Preference preference) {
         super.updateState(preference);
         updateStateInternal();
+        if (FaceUtils.isFaceUnlockSupported()) {
+            preference.setEnabled(!FaceUtils.isFaceDisabledByAdmin(mContext));
+        }
     }
 
     private void updateStateInternal() {
@@ -107,12 +113,18 @@ public class FaceStatusPreferenceController extends BiometricStatusPreferenceCon
 
     @Override
     protected String getSummaryTextEnrolled() {
+        if (FaceUtils.isFaceUnlockSupported() && FaceUtils.isFaceDisabledByAdmin(mContext)) {
+            return mContext.getResources().getString(R.string.disabled_by_administrator_summary);
+        }
         return mContext.getResources()
                 .getString(R.string.security_settings_face_preference_summary);
     }
 
     @Override
     protected String getSummaryTextNoneEnrolled() {
+        if (FaceUtils.isFaceUnlockSupported() && FaceUtils.isFaceDisabledByAdmin(mContext)) {
+            return mContext.getResources().getString(R.string.disabled_by_administrator_summary);
+        }
         return mContext.getResources()
                 .getString(R.string.security_settings_face_preference_summary_none);
     }
