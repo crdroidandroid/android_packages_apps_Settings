@@ -20,8 +20,6 @@ import static com.android.settings.Utils.SETTINGS_PACKAGE_NAME;
 
 import android.content.Context;
 import android.content.Intent;
-import android.view.View;
-import android.widget.Button;
 
 import androidx.preference.Preference;
 
@@ -31,14 +29,13 @@ import com.android.settings.core.BasePreferenceController;
 import com.android.settings.password.ChooseLockSettingsHelper;
 import com.android.settingslib.widget.LayoutPreference;
 
-import com.google.android.setupdesign.util.ButtonStyler;
 import com.google.android.setupdesign.util.PartnerStyleHelper;
 
 /**
  * Preference controller that allows a user to enroll their face.
  */
 public class FaceSettingsEnrollButtonPreferenceController extends BasePreferenceController
-        implements View.OnClickListener {
+        implements Preference.OnPreferenceClickListener {
 
     private static final String TAG = "FaceSettings/Remove";
     static final String KEY = "security_settings_face_enroll_faces_container";
@@ -48,7 +45,6 @@ public class FaceSettingsEnrollButtonPreferenceController extends BasePreference
     private int mUserId;
     private byte[] mToken;
     private SettingsActivity mActivity;
-    private Button mButton;
     private boolean mIsClicked;
     private Listener mListener;
 
@@ -64,19 +60,11 @@ public class FaceSettingsEnrollButtonPreferenceController extends BasePreference
     @Override
     public void updateState(Preference preference) {
         super.updateState(preference);
-
-        mButton = ((LayoutPreference) preference).findViewById(
-                R.id.security_settings_face_settings_enroll_button);
-
-        if (PartnerStyleHelper.shouldApplyPartnerResource(mButton)) {
-            ButtonStyler.applyPartnerCustomizationPrimaryButtonStyle(mContext, mButton);
-        }
-
-        mButton.setOnClickListener(this);
+        preference.setOnPreferenceClickListener(this);
     }
 
     @Override
-    public void onClick(View v) {
+    public boolean onPreferenceClick(Preference preference) {
         mIsClicked = true;
         final Intent intent = new Intent();
         intent.setClassName(SETTINGS_PACKAGE_NAME, FaceEnrollIntroduction.class.getName());
@@ -87,6 +75,7 @@ public class FaceSettingsEnrollButtonPreferenceController extends BasePreference
         } else {
             mContext.startActivity(intent);
         }
+        return true;
     }
 
     @Override

@@ -58,7 +58,7 @@ public abstract class BiometricEnrollIntroduction extends BiometricEnrollBase
     private static final String KEY_CONFIRMING_CREDENTIALS = "confirming_credentials";
 
     private UserManager mUserManager;
-    private boolean mHasPassword;
+    protected boolean mHasPassword;
     private boolean mBiometricUnlockDisabledByAdmin;
     private TextView mErrorText;
     protected boolean mConfirmingCredentials;
