@@ -20,12 +20,13 @@
 
     <PreferenceCategory
         android:key="columbus_sensitivity_category"
-        android:title="@string/columbus_setting_additional_settings_title">
+        android:title="@string/columbus_setting_additional_settings_title"
+        settings:controller="com.android.settings.gestures.columbus.ColumbusLowSensitivityCategoryPreferenceController">
 
         <SwitchPreference
             android:key="columbus_low_sensitivity"
             android:title="@string/columbus_setting_sensitivity_title"
-            settings:controller="com.google.android.settings.gestures.columbus.ColumbusLowSensitivityPreferenceController" />
+            settings:controller="com.android.settings.gestures.columbus.ColumbusLowSensitivityPreferenceController" />
 
     </PreferenceCategory>
 
