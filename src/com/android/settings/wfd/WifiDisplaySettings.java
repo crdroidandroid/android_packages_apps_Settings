@@ -19,6 +19,7 @@ package com.android.settings.wfd;
 import android.app.settings.SettingsEnums;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -35,8 +36,10 @@ import android.net.wifi.p2p.WifiP2pManager;
 import android.net.wifi.p2p.WifiP2pManager.ActionListener;
 import android.net.wifi.p2p.WifiP2pManager.Channel;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.SystemProperties;
 import android.provider.Settings;
 import android.util.Slog;
 import android.util.TypedValue;
@@ -67,6 +70,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.TwoTargetPreference;
+import com.android.internal.util.crdroid.Utils;
 
 /**
  * The Settings screen for WifiDisplay configuration and connection management.
@@ -116,6 +120,8 @@ public final class WifiDisplaySettings extends SettingsPreferenceFragment implem
     private int mWpsConfig = WpsInfo.INVALID;
     private int mListenChannel;
     private int mOperatingChannel;
+
+    private int mLegacyVideoMode = 1;
 
     public WifiDisplaySettings() {
         mHandler = new Handler();
@@ -274,6 +280,41 @@ public final class WifiDisplaySettings extends SettingsPreferenceFragment implem
             MediaRouter.RouteInfo route = mRouter.getRouteAt(i);
             if (route.matchesTypes(MediaRouter.ROUTE_TYPE_REMOTE_DISPLAY)) {
                 preferenceScreen.addPreference(createRoutePreference(route));
+
+                // Drop down list for choosing output video modes
+                ListPreference lp = new ListPreference(getPrefContext());
+                lp.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                    @Override
+                    public boolean onPreferenceChange(Preference preference, Object value) {
+                        int videoMode = Integer.parseInt((String) value);
+                        if (videoMode != mLegacyVideoMode) {
+                            mLegacyVideoMode = videoMode;
+                            Settings.System.putInt(getActivity().getContentResolver(),
+                                   Settings.System.WFD_LEGACY_VIDEO_MODE, mLegacyVideoMode);
+                            try {
+                                 SystemProperties.set("persist.wfd.legacy.video.mode",
+                                                          String.valueOf(mLegacyVideoMode));
+                            } catch(Exception e) { }
+                        }
+                        return true;
+                    }
+                    });
+                mLegacyVideoMode = Settings.System.getInt(getActivity().getContentResolver(),
+                        Settings.System.WFD_LEGACY_VIDEO_MODE, 1);
+                lp.setKey("wfd_legacy_video_mode");
+                lp.setTitle(R.string.legacy_wfd_video_mode_title);
+                lp.setEntries(getResources().getStringArray(R.array.legacy_wfd_video_mode_entries));
+                lp.setEntryValues(getResources().getStringArray(R.array.legacy_wfd_video_mode_values));
+                lp.setValue("" + mLegacyVideoMode);
+                lp.setSummary("%1$s");
+                lp.setEnabled(route.isEnabled() && !route.isSelected());
+                try {
+                     SystemProperties.set("persist.wfd.legacy.video.mode",
+                                              String.valueOf(mLegacyVideoMode));
+                } catch(Exception e) { }
+                if (!Utils.isPackageInstalled(getPrefContext(), "com.qualcomm.wfd.service")) {
+                    preferenceScreen.addPreference(lp);
+                }
             }
         }
 
