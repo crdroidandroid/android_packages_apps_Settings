@@ -37,6 +37,7 @@ import android.net.wifi.p2p.WifiP2pManager.Channel;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.SystemProperties;
 import android.provider.Settings;
 import android.util.Slog;
 import android.util.TypedValue;
@@ -242,6 +243,7 @@ public final class WifiDisplaySettings extends SettingsPreferenceFragment implem
 
     private void update(int changes) {
         boolean invalidateOptions = false;
+        boolean mediaRouteFound = false;
 
         // Update settings.
         if ((changes & CHANGE_SETTINGS) != 0) {
@@ -274,8 +276,31 @@ public final class WifiDisplaySettings extends SettingsPreferenceFragment implem
             MediaRouter.RouteInfo route = mRouter.getRouteAt(i);
             if (route.matchesTypes(MediaRouter.ROUTE_TYPE_REMOTE_DISPLAY)) {
                 preferenceScreen.addPreference(createRoutePreference(route));
+                mediaRouteFound = true;
             }
         }
+
+        // Drop down list for choosing output video modes
+        ListPreference lp = new ListPreference(getPrefContext());
+        lp.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object value) {
+                int videoMode = Integer.parseInt((String) value);
+                try {
+                     SystemProperties.set("media.wfd.max_resolution",
+                                              String.valueOf(videoMode));
+                } catch(Exception e) { }
+                return true;
+            }
+        });
+        lp.setKey("wfd_legacy_video_mode");
+        lp.setTitle(R.string.legacy_wfd_video_mode_title);
+        lp.setEntries(getResources().getStringArray(R.array.legacy_wfd_video_mode_entries));
+        lp.setEntryValues(getResources().getStringArray(R.array.legacy_wfd_video_mode_values));
+        lp.setValue(SystemProperties.get("media.wfd.max_resolution", "8"));
+        lp.setSummary("%1$s");
+        if (mediaRouteFound)
+            preferenceScreen.addPreference(lp);
 
         // Additional features for wifi display routes.
         if (mWifiDisplayStatus != null
