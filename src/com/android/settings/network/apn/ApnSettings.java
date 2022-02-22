@@ -134,7 +134,6 @@ public class ApnSettings extends RestrictedSettingsFragment
     private boolean mUnavailable;
 
     private boolean mHideImsApn;
-    private boolean mAllowAddingApns;
     private boolean mHidePresetApnDetails;
 
     public ApnSettings() {
@@ -230,16 +229,6 @@ public class ApnSettings extends RestrictedSettingsFragment
                 getSystemService(Context.CARRIER_CONFIG_SERVICE);
         final PersistableBundle b = configManager.getConfigForSubId(mSubId);
         mHideImsApn = b.getBoolean(CarrierConfigManager.KEY_HIDE_IMS_APN_BOOL);
-        mAllowAddingApns = b.getBoolean(CarrierConfigManager.KEY_ALLOW_ADDING_APNS_BOOL);
-        if (mAllowAddingApns) {
-            final String[] readOnlyApnTypes = b.getStringArray(
-                    CarrierConfigManager.KEY_READ_ONLY_APN_TYPES_STRING_ARRAY);
-            // if no apn type can be edited, do not allow adding APNs
-            if (ApnEditor.hasAllApns(readOnlyApnTypes)) {
-                Log.d(TAG, "not allowing adding APN because all APN types are read only");
-                mAllowAddingApns = false;
-            }
-        }
         mHidePresetApnDetails = b.getBoolean(CarrierConfigManager.KEY_HIDE_PRESET_APN_DETAILS_BOOL);
         mUserManager = UserManager.get(activity);
     }
@@ -392,12 +381,10 @@ public class ApnSettings extends RestrictedSettingsFragment
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         if (!mUnavailable) {
-            if (mAllowAddingApns) {
-                menu.add(0, MENU_NEW, 0,
-                        getResources().getString(R.string.menu_new))
-                        .setIcon(R.drawable.ic_add_24dp)
-                        .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
-            }
+            menu.add(0, MENU_NEW, 0,
+                    getResources().getString(R.string.menu_new))
+                    .setIcon(R.drawable.ic_add_24dp)
+                    .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
             menu.add(0, MENU_RESTORE, 0,
                     getResources().getString(R.string.menu_restore))
                     .setIcon(android.R.drawable.ic_menu_upload);
