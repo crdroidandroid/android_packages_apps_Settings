@@ -283,6 +283,8 @@ public class BiometricEnrollActivity extends InstrumentedActivity {
         if (!setupWizard && authenticators == BiometricManager.Authenticators.DEVICE_CREDENTIAL) {
             launchCredentialOnlyEnroll();
             finish();
+        } else if (setupWizard && canUseFingerprint) {
+            launchFingerprintOnlyEnroll();
         } else if (canUseFace && canUseFingerprint) {
             if (mGkPwHandle != null) {
                 launchFaceAndFingerprintEnroll();
