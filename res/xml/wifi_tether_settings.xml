@@ -72,4 +72,9 @@
         android:key="wifi_tether_client_manager"
         android:title="@string/wifi_hotspot_client_manager_title"
         android:fragment="com.android.settings.wifi.tether.WifiTetherClientManager" />
+
+    <SwitchPreferenceCompat
+        android:key="wifi_tether_hidden_ssid"
+        android:title="@string/wifi_hotspot_hidden_ssid_title"
+        android:summary="@string/wifi_hotspot_hidden_ssid_summary" />
 </PreferenceScreen>
