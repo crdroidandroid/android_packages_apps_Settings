@@ -36,7 +36,7 @@ import com.android.settingslib.core.lifecycle.events.OnStop;
 
 import java.util.concurrent.Executor;
 
-public class PeakRefreshRatePreferenceController extends TogglePreferenceController
+public class SmoothDisplayPreferenceController extends TogglePreferenceController
         implements LifecycleObserver, OnStart, OnStop {
 
     @VisibleForTesting static float DEFAULT_REFRESH_RATE = 60f;
@@ -55,7 +55,7 @@ public class PeakRefreshRatePreferenceController extends TogglePreferenceControl
         void onDefaultRefreshRateChanged();
     }
 
-    public PeakRefreshRatePreferenceController(Context context, String key) {
+    public SmoothDisplayPreferenceController(Context context, String key) {
         super(context, key);
         mHandler = new Handler(context.getMainLooper());
         mDeviceConfigDisplaySettings = new DeviceConfigDisplaySettings();

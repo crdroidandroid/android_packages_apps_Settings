@@ -136,9 +136,9 @@
             settings:controller="com.android.settings.display.DisplayWhiteBalancePreferenceController"/>
 
         <SwitchPreference
-            android:key="peak_refresh_rate"
+            android:key="smooth_display"
             android:title="@string/peak_refresh_rate_title"
-            settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController"/>
+            settings:controller="com.android.settings.display.SmoothDisplayPreferenceController"/>
 
         <SwitchPreference
             android:key="show_operator_name"
