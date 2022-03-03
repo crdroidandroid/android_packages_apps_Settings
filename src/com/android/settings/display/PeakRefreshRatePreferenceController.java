@@ -46,7 +46,8 @@ public class PeakRefreshRatePreferenceController extends BasePreferenceControlle
     public PeakRefreshRatePreferenceController(Context context) {
         super(context, KEY_PEAK_REFRESH_RATE);
 
-        if (mContext.getResources().getBoolean(R.bool.config_show_refresh_rate_controls)) {
+        if (mContext.getResources().getBoolean(R.bool.config_show_refresh_rate_controls) &&
+                !mContext.getResources().getBoolean(R.bool.config_show_smooth_display)) {
             Display.Mode mode = mContext.getDisplay().getMode();
             Display.Mode[] modes = mContext.getDisplay().getSupportedModes();
             for (Display.Mode m : modes) {

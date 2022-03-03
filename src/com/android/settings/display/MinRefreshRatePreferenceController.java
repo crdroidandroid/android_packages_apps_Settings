@@ -46,7 +46,8 @@ public class MinRefreshRatePreferenceController extends BasePreferenceController
     public MinRefreshRatePreferenceController(Context context) {
         super(context, KEY_MIN_REFRESH_RATE);
 
-        if (mContext.getResources().getBoolean(R.bool.config_show_refresh_rate_controls)) {
+        if (mContext.getResources().getBoolean(R.bool.config_show_refresh_rate_controls) &&
+                !mContext.getResources().getBoolean(R.bool.config_show_smooth_display)) {
             Display.Mode mode = mContext.getDisplay().getMode();
             Display.Mode[] modes = mContext.getDisplay().getSupportedModes();
             for (Display.Mode m : modes) {
