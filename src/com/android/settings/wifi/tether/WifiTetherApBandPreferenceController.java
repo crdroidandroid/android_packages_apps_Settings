@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
+ *           (C) 2022 Project Kaleidoscope
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,8 +22,10 @@ import static com.android.settings.AllInOneTetherSettings.DEDUP_POSTFIX;
 import android.content.Context;
 import android.content.res.Resources;
 import android.net.wifi.SoftApConfiguration;
+import android.text.TextUtils;
 import android.util.FeatureFlagUtils;
 import android.util.Log;
+import android.util.SparseIntArray;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.ListPreference;
@@ -31,10 +34,24 @@ import androidx.preference.Preference;
 import com.android.settings.R;
 import com.android.settings.core.FeatureFlags;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class WifiTetherApBandPreferenceController extends WifiTetherBasePreferenceController {
 
     private static final String TAG = "WifiTetherApBandPref";
     private static final String PREF_KEY = "wifi_tether_network_ap_band";
+
+    private static final int[][] sBands = {
+        {SoftApConfiguration.BAND_2GHZ},
+        {SoftApConfiguration.BAND_2GHZ | SoftApConfiguration.BAND_5GHZ},
+        {SoftApConfiguration.BAND_2GHZ | SoftApConfiguration.BAND_6GHZ},
+        {SoftApConfiguration.BAND_2GHZ | SoftApConfiguration.BAND_60GHZ},
+        {SoftApConfiguration.BAND_2GHZ,
+            SoftApConfiguration.BAND_2GHZ | SoftApConfiguration.BAND_5GHZ},
+        {SoftApConfiguration.BAND_2GHZ,
+            SoftApConfiguration.BAND_2GHZ | SoftApConfiguration.BAND_6GHZ}
+    };
 
     private String[] mBandEntries;
     private String[] mBandSummaries;
@@ -50,41 +67,29 @@ public class WifiTetherApBandPreferenceController extends WifiTetherBasePreferen
     public void updateDisplay() {
         final SoftApConfiguration config = mWifiManager.getSoftApConfiguration();
         if (config == null) {
-            mBandIndex = SoftApConfiguration.BAND_2GHZ;
+            mBandIndex = 0;
             Log.d(TAG, "Updating band index to BAND_2GHZ because no config");
-        } else if (is5GhzBandSupported()) {
-            mBandIndex = validateSelection(config.getBand());
-            Log.d(TAG, "Updating band index to " + mBandIndex);
         } else {
-            mWifiManager.setSoftApConfiguration(
-                    new SoftApConfiguration.Builder(config).setBand(SoftApConfiguration.BAND_2GHZ)
-                        .build());
-            mBandIndex = SoftApConfiguration.BAND_2GHZ;
-            Log.d(TAG, "5Ghz not supported, updating band index to 2GHz");
+            mBandIndex = getIndexOfBands(getBands(config));
+            Log.d(TAG, "Updating band index to " + mBandIndex);
         }
         ListPreference preference =
                 (ListPreference) mPreference;
         preference.setEntries(mBandSummaries);
         preference.setEntryValues(mBandEntries);
 
-        if (!is5GhzBandSupported()) {
-            preference.setEnabled(false);
-            preference.setSummary(R.string.wifi_ap_choose_2G);
-        } else {
-            preference.setValue(Integer.toString(config.getBand()));
-            preference.setSummary(getConfigSummary());
-        }
+        preference.setValue(Integer.toString(mBandIndex));
+        preference.setSummary(getConfigSummary());
     }
 
     String getConfigSummary() {
-        switch (mBandIndex) {
-            case SoftApConfiguration.BAND_2GHZ:
-                return mBandSummaries[0];
-            case SoftApConfiguration.BAND_5GHZ:
-                return mBandSummaries[1];
-            default:
-                return mContext.getString(R.string.wifi_ap_prefer_5G);
+        final String index = Integer.toString(mBandIndex);
+        for (int i = 0; i < mBandEntries.length; i++) {
+            if (TextUtils.equals(index, mBandEntries[i])) {
+                return mBandSummaries[i];
+            }
         }
+        return "";
     }
 
     @Override
@@ -95,41 +100,101 @@ public class WifiTetherApBandPreferenceController extends WifiTetherBasePreferen
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        mBandIndex = validateSelection(Integer.parseInt((String) newValue));
+        mBandIndex = Integer.parseInt((String) newValue);
         Log.d(TAG, "Band preference changed, updating band index to " + mBandIndex);
         preference.setSummary(getConfigSummary());
         mListener.onTetherConfigUpdated(this);
         return true;
     }
 
-    private int validateSelection(int band) {
-        // unsupported states:
-        // 1: BAND_5GHZ only - include 2GHZ since some of countries doesn't support 5G hotspot
-        // 2: no 5 GHZ support means we can't have BAND_5GHZ - default to 2GHZ
-        if (SoftApConfiguration.BAND_5GHZ == band) {
-            if (!is5GhzBandSupported()) {
-                return SoftApConfiguration.BAND_2GHZ;
-            }
-            return SoftApConfiguration.BAND_5GHZ | SoftApConfiguration.BAND_2GHZ;
-        }
-
-        return band;
-    }
-
     @VisibleForTesting
     void updatePreferenceEntries() {
+        mBandEntries = getSupportedApBandEntries();
+        mBandSummaries = getSupportedApBandSummaries();
+    }
+
+    private String[] getSupportedApBandEntries() {
+        ArrayList<String> bands = new ArrayList<>();
+        if (mWifiManager.is24GHzBandSupported()) {
+            bands.add("0");
+        }
+        if (mWifiManager.is5GHzBandSupported()) {
+            bands.add("1");
+        }
+        if (mWifiManager.is6GHzBandSupported()) {
+            bands.add("2");
+        }
+        if (mWifiManager.is60GHzBandSupported()) {
+            bands.add("3");
+        }
+        // device supports dual-ap
+        if (mWifiManager.isBridgedApConcurrencySupported()) {
+            if (mWifiManager.is24GHzBandSupported() && mWifiManager.is5GHzBandSupported()) {
+                bands.add("4");
+            }
+            if (mWifiManager.is24GHzBandSupported() && mWifiManager.is6GHzBandSupported()) {
+                bands.add("5");
+            }
+        }
+        return bands.toArray(new String[bands.size()]);
+    }
+
+    private String[] getSupportedApBandSummaries() {
+        ArrayList<String> bands = new ArrayList<>();
         Resources res = mContext.getResources();
-        int entriesRes = R.array.wifi_ap_band;
-        int summariesRes = R.array.wifi_ap_band_summary;
-        mBandEntries = res.getStringArray(entriesRes);
-        mBandSummaries = res.getStringArray(summariesRes);
+        if (mWifiManager.is24GHzBandSupported()) {
+            bands.add(res.getString(R.string.wifi_band_24ghz));
+        }
+        if (mWifiManager.is5GHzBandSupported()) {
+            bands.add(res.getString(R.string.wifi_band_5ghz));
+        }
+        if (mWifiManager.is6GHzBandSupported()) {
+            bands.add(res.getString(R.string.wifi_band_6ghz));
+        }
+        if (mWifiManager.is60GHzBandSupported()) {
+            bands.add(res.getString(R.string.wifi_band_60ghz));
+        }
+        // device supports dual-ap
+        if (mWifiManager.isBridgedApConcurrencySupported()) {
+            if (mWifiManager.is24GHzBandSupported() && mWifiManager.is5GHzBandSupported()) {
+                bands.add(res.getString(R.string.wifi_band_24ghz_and_5ghz));
+            }
+            if (mWifiManager.is24GHzBandSupported() && mWifiManager.is6GHzBandSupported()) {
+                bands.add(res.getString(R.string.wifi_band_24ghz_and_6ghz));
+            }
+        }
+        return bands.toArray(new String[bands.size()]);
     }
 
-    private boolean is5GhzBandSupported() {
-        return mWifiManager.is5GHzBandSupported();
+    private int getIndexOfBands(int[] bands) {
+        for (int i = 0; i < sBands.length; i++) {
+            if (Arrays.equals(bands, sBands[i])) {
+                return i;
+            }
+        }
+        return -1;
     }
 
-    public int getBandIndex() {
-        return mBandIndex;
+    private int[] getBands(SoftApConfiguration config) {
+        SparseIntArray channels = config.getChannels();
+        int[] bands = new int[channels.size()];
+        for (int i = 0; i < channels.size(); i++) {
+            bands[i] = channels.keyAt(i);
+        }
+        return bands;
+    }
+
+    /**
+     * Setup the bands setting to the SoftAp Configuration
+     *
+     * @param builder The builder to build the SoftApConfiguration.
+     */
+    public void setupBands(SoftApConfiguration.Builder builder) {
+        if (builder == null) {
+            return;
+        }
+        if (mBandIndex != -1) {
+            builder.setBands(sBands[mBandIndex]);
+        }
     }
 }
