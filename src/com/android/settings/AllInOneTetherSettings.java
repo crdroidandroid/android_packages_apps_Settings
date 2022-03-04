@@ -395,7 +395,7 @@ public class AllInOneTetherSettings extends RestrictedDashboardFragment
                     mPasswordPreferenceController.getPasswordValidated(securityType),
                     SoftApConfiguration.SECURITY_TYPE_WPA2_PSK);
         }
-        configBuilder.setBand(mApBandPreferenceController.getBandIndex());
+        mApBandPreferenceController.setupBands(configBuilder);
         mClientPreferenceController.updateConfig(configBuilder);
         configBuilder.setHiddenSsid(mHiddenSsidPreferenceController.isHiddenSsidEnabled());
         return configBuilder.build();
