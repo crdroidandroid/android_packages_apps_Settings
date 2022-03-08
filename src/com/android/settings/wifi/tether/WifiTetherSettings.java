@@ -347,8 +347,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
         if (!mWifiTetherViewModel.isSpeedFeatureAvailable()) {
             mMaxCompatibilityPrefController.setupMaximizeCompatibility(configBuilder);
         }
-        configBuilder.setAutoShutdownEnabled(
-                mWifiTetherAutoOffPreferenceController.isEnabled());
+        mWifiTetherAutoOffPreferenceController.updateConfig(configBuilder);
         mClientPrefController.updateConfig(configBuilder);
         return configBuilder.build();
     }
@@ -360,6 +359,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
         use(WifiTetherSecurityPreferenceController.class).updateDisplay();
         use(WifiTetherPasswordPreferenceController.class).updateDisplay();
         use(WifiTetherMaximizeCompatibilityPreferenceController.class).updateDisplay();
+        use(WifiTetherAutoOffPreferenceController.class).updateDisplay();
     }
 
     @Override
