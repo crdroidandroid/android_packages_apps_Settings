@@ -1,5 +1,7 @@
 /*
- * Copyright (C) 2017 The Android Open Source Project
+ * Copyright (C) 2022 Project Kaleidoscope
+ * Copyright (C) 2022 FlamingoOS Project
+ * Copyright (C) 2024 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,9 +23,11 @@ import android.net.wifi.SoftApConfiguration;
 import android.net.wifi.WifiManager;
 
 import androidx.annotation.VisibleForTesting;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
-import androidx.preference.TwoStatePreference;
+import androidx.preference.PreferenceScreen;
 
+import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.wifi.repository.WifiHotspotRepository;
@@ -32,9 +36,10 @@ public class WifiTetherAutoOffPreferenceController extends BasePreferenceControl
         Preference.OnPreferenceChangeListener {
 
     private final WifiManager mWifiManager;
-    private boolean mSettingsOn;
     @VisibleForTesting
     boolean mNeedShutdownSecondarySap;
+
+    private ListPreference mPreference;
 
     public WifiTetherAutoOffPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
@@ -52,27 +57,63 @@ public class WifiTetherAutoOffPreferenceController extends BasePreferenceControl
     }
 
     @Override
-    public void updateState(Preference preference) {
-        SoftApConfiguration softApConfiguration = mWifiManager.getSoftApConfiguration();
-        mSettingsOn = softApConfiguration.isAutoShutdownEnabled();
+    public void displayPreference(PreferenceScreen screen) {
+        super.displayPreference(screen);
+        mPreference = screen.findPreference(getPreferenceKey());
+        updateDisplay();
+    }
 
-        ((TwoStatePreference) preference).setChecked(mSettingsOn);
+    private long getAutoOffTimeout() {
+        final SoftApConfiguration softApConfiguration = mWifiManager.getSoftApConfiguration();
+        final boolean settingsOn = softApConfiguration.isAutoShutdownEnabled();
+        return settingsOn ? softApConfiguration.getShutdownTimeoutMillis() : 0;
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        boolean settingsOn = (Boolean) newValue;
-        SoftApConfiguration.Builder configBuilder =
-                new SoftApConfiguration.Builder(mWifiManager.getSoftApConfiguration());
-        configBuilder.setAutoShutdownEnabled(settingsOn);
-        if (mNeedShutdownSecondarySap) {
-            configBuilder.setBridgedModeOpportunisticShutdownEnabled(settingsOn);
+        final long timeout;
+        try {
+            timeout = Long.parseLong((String) newValue);
+        } catch (NumberFormatException e) {
+            return false;
         }
-        mSettingsOn = settingsOn;
+        final SoftApConfiguration.Builder configBuilder =
+                new SoftApConfiguration.Builder(mWifiManager.getSoftApConfiguration());
+        setShutdownTimeout(configBuilder, timeout);
+        if (mNeedShutdownSecondarySap) {
+            configBuilder.setBridgedModeOpportunisticShutdownEnabled(timeout > 0);
+        }
         return mWifiManager.setSoftApConfiguration(configBuilder.build());
     }
 
-    public boolean isEnabled() {
-        return mSettingsOn;
+    public void updateConfig(SoftApConfiguration.Builder builder) {
+        if (builder == null) return;
+        final long timeout = getAutoOffTimeout();
+        setShutdownTimeout(builder, timeout);
+    }
+
+    private void setShutdownTimeout(SoftApConfiguration.Builder builder, long timeout) {
+        builder.setAutoShutdownEnabled(timeout > 0);
+        if (timeout > 0) {
+            builder.setShutdownTimeoutMillis(timeout);
+        }
+        updateDisplay(timeout);
+    }
+
+    public void updateDisplay() {
+        updateDisplay(getAutoOffTimeout());
+    }
+
+    private void updateDisplay(long timeout) {
+        if (mPreference != null) {
+            mPreference.setValue(String.valueOf(timeout));
+            if (timeout > 0) {
+                int index = mPreference.findIndexOfValue(String.valueOf(timeout));
+                mPreference.setSummary(mPreference.getEntries()[index]);
+            } else {
+                mPreference.setSummary(mContext.getResources().getString(
+                    R.string.wifi_hotspot_auto_off_summary));
+            }
+        }
     }
 }
