@@ -110,7 +110,7 @@ public class AppVolumeSlice implements CustomSliceable {
     private IconCompat getApplicationIcon(String packageName) {
         PackageManager pm = mContext.getPackageManager();
         try {
-            ApplicationInfo ai = pm.getApplicationInfo(packageName, 0);
+            ApplicationInfo ai = pm.getApplicationInfo(packageName, PackageManager.MATCH_ANY_USER);
             Resources resources = pm.getResourcesForApplication(ai);
             IconCompat icon = IconCompat.createWithResource(resources, packageName, ai.icon);
             return icon;
