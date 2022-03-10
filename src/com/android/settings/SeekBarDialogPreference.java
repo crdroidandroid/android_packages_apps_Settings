@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2007 The Android Open Source Project
+ *           (C) 2022 Project Kaleidoscope
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,12 +19,15 @@ package com.android.settings;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+import android.widget.TextView;
 
 import com.android.settingslib.CustomDialogPreferenceCompat;
+import com.android.settings.R;
 
 /**
  * Based on frameworks/base/core/java/android/preference/SeekBarDialogPreference.java
@@ -31,6 +35,7 @@ import com.android.settingslib.CustomDialogPreferenceCompat;
  */
 public class SeekBarDialogPreference extends CustomDialogPreferenceCompat {
     private final Drawable mMyIcon;
+    private TextView mTextView;
 
     public SeekBarDialogPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -63,6 +68,19 @@ public class SeekBarDialogPreference extends CustomDialogPreferenceCompat {
             iconView.setImageDrawable(mMyIcon);
         } else {
             iconView.setVisibility(View.GONE);
+        }
+
+        mTextView = view.findViewById(R.id.text);
+    }
+
+    public void setText(String text) {
+        if (mTextView != null) {
+            if (TextUtils.isEmpty(text)) {
+                mTextView.setVisibility(View.GONE);
+            } else {
+                mTextView.setVisibility(View.VISIBLE);
+            }
+            mTextView.setText(text);
         }
     }
 
