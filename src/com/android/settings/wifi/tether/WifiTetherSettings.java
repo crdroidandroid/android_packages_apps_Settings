@@ -39,6 +39,7 @@ import com.android.settings.core.FeatureFlags;
 import com.android.settings.dashboard.RestrictedDashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.widget.SettingsMainSwitchBar;
+import com.android.settings.wifi.tether.WifiTetherClientManagerPreferenceController;
 import com.android.settingslib.TetherUtil;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.search.SearchIndexable;
@@ -63,6 +64,9 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
     @VisibleForTesting
     static final String KEY_WIFI_TETHER_MAXIMIZE_COMPATIBILITY =
             WifiTetherMaximizeCompatibilityPreferenceController.PREF_KEY;
+    @VisibleForTesting
+    static final String KEY_WIFI_TETHER_CLIENT_MANAGER =
+            WifiTetherClientManagerPreferenceController.PREF_KEY;
 
     private WifiTetherSwitchBarController mSwitchBarController;
     private WifiTetherSSIDPreferenceController mSSIDPreferenceController;
@@ -70,6 +74,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
     private WifiTetherSecurityPreferenceController mSecurityPreferenceController;
     private WifiTetherMaximizeCompatibilityPreferenceController mMaxCompatibilityPrefController;
     private WifiTetherAutoOffPreferenceController mWifiTetherAutoOffPreferenceController;
+    private WifiTetherClientManagerPreferenceController mClientPrefController;
 
     private WifiManager mWifiManager;
     private boolean mRestartWifiApAfterConfigChange;
@@ -118,6 +123,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
         mMaxCompatibilityPrefController =
                 use(WifiTetherMaximizeCompatibilityPreferenceController.class);
         mWifiTetherAutoOffPreferenceController = use(WifiTetherAutoOffPreferenceController.class);
+        mClientPrefController = use(WifiTetherClientManagerPreferenceController.class);
     }
 
     @Override
@@ -184,6 +190,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
         controllers.add(
                 new WifiTetherAutoOffPreferenceController(context, KEY_WIFI_TETHER_AUTO_OFF));
         controllers.add(new WifiTetherMaximizeCompatibilityPreferenceController(context, listener));
+        controllers.add(new WifiTetherClientManagerPreferenceController(context, listener));
         return controllers;
     }
 
@@ -218,6 +225,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
         mMaxCompatibilityPrefController.setupMaximizeCompatibility(configBuilder);
         configBuilder.setAutoShutdownEnabled(
                 mWifiTetherAutoOffPreferenceController.isEnabled());
+        mClientPrefController.updateConfig(configBuilder);
         return configBuilder.build();
     }
 
@@ -245,6 +253,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
                         keys.add(KEY_WIFI_TETHER_NETWORK_PASSWORD);
                         keys.add(KEY_WIFI_TETHER_AUTO_OFF);
                         keys.add(KEY_WIFI_TETHER_MAXIMIZE_COMPATIBILITY);
+                        keys.add(KEY_WIFI_TETHER_CLIENT_MANAGER);
                     }
 
                     // Remove duplicate
