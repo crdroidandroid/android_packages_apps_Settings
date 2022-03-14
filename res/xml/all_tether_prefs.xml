@@ -56,6 +56,11 @@
             android:summary="@string/summary_placeholder"
             android:entries="@array/wifi_tether_security"
             android:entryValues="@array/wifi_tether_security_values"/>
+
+        <Preference
+            android:key="wifi_tether_client_manager_2"
+            android:title="@string/wifi_hotspot_client_manager_title"
+            android:fragment="con.android.settings.wifi.tether.WifiTetherClientManager" />
     </PreferenceCategory>
 
     <PreferenceCategory
