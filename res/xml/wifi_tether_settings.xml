@@ -65,4 +65,9 @@
         android:title="@string/wifi_hotspot_instant_title"
         android:summary="@string/summary_placeholder"
         settings:isPreferenceVisible="false"/>
+
+    <Preference
+        android:key="wifi_tether_client_manager"
+        android:title="@string/wifi_hotspot_client_manager_title"
+        android:fragment="com.android.settings.wifi.tether.WifiTetherClientManager" />
 </PreferenceScreen>
