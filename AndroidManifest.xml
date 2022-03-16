@@ -240,7 +240,6 @@
         <activity android:name=".network.telephony.MobileNetworkActivity"
                   android:label="@string/network_settings_title"
                   android:exported="true"
-                  android:launchMode="singleTask"
                   android:configChanges="orientation|screenSize|keyboardHidden">
             <!-- Note: Since the framework does not support the multiple requests of network scan
             from the UI, this singleTask can protect that there is only one
