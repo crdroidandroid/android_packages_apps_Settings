@@ -60,6 +60,11 @@
             android:title="@string/security_settings_biometric_preference_title"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_biometric_settings" />
+
+        <!-- App lock -->
+        <com.android.settingslib.RestrictedPreference
+            android:key="app_lock"
+            android:title="@string/app_lock_title" />
     </PreferenceCategory>
 
     <Preference
