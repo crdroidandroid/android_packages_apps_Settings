@@ -29,7 +29,7 @@
         android:title="@string/show_navbar_hint_title"
         android:summary="@string/show_navbar_hint_summary"
         android:defaultValue="true"
-        lineage:requiresPackage="org.lineageos.overlay.customization.navbar.nohint" />
+        lineage:requiresPackage="com.custom.overlay.systemui.gestural.hidden" />
 
     <PreferenceCategory
         android:key="assistant_gesture_category"
