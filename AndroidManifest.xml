@@ -135,6 +135,9 @@
     <uses-permission android:name="android.permission.ACCESS_GPU_SERVICE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
+    <!-- App lock -->
+    <uses-permission android:name="android.permission.MANAGE_APP_LOCK" />
+
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
     <application
@@ -5112,5 +5115,26 @@
                 android:exported="true"
                 android:permission="crDroidDozeService">
         </service>
+
+        <!-- App lock -->
+        <activity android:name=".security.applock.AppLockCredentialActivity"
+            android:exported="false"
+            android:permission="android.permission.MANAGE_APP_LOCK"
+            android:excludeFromRecents="true"
+            android:stateNotNeeded="true"
+            android:taskAffinity="com.android.settings.applock"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.app.action.UNLOCK_APP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".security.applock.AppLockSubSettings"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.android.settings.applock"
+            android:launchMode="singleTask" />
     </application>
 </manifest>
