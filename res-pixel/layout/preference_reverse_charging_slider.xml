@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:paddingStart="12.0dip"
                 android:singleLine="true"
-                android:textAppearance="@*android:style/TextAppearance.DeviceDefault.Notification.Title"
+                android:textAppearance="@*android:style/TextAppearance.DeviceDefault.Subhead"
                 android:textColor="?android:textColorPrimary" />
 
             <LinearLayout
@@ -64,7 +64,7 @@
                     android:textColor="?android:textColorSecondary" />
 
                 <SeekBar
-                    android:id="@*android:id/select_all"
+                    android:id="@*android:id/seekbar"
                     android:layout_width="fill_parent"
                     android:layout_height="48.0dip"
                     android:layout_gravity="center_vertical" />
