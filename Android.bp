@@ -90,7 +90,6 @@ android_library {
         "glide",
         "faceunlock_framework",
         "columbus-settingsgoogle",
-        "gamemode-settingsgoogle",
     ],
 
     libs: [
@@ -168,11 +167,5 @@ android_library_import {
 java_import {
     name: "columbus-settingsgoogle",
     jars: ["libs/columbus-settings.jar"],
-    sdk_version: "current",
-}
-
-java_import {
-    name: "gamemode-settingsgoogle",
-    jars: ["libs/gamemode.jar"],
     sdk_version: "current",
 }
