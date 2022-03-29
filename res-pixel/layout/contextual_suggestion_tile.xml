@@ -10,7 +10,7 @@
         android:id="@id/card_container"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@*android:drawable/jog_dial_arrow_long_right_red"
+        android:background="@*android:drawable/item_background_material_light"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
