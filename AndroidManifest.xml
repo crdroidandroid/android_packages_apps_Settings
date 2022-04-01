@@ -118,6 +118,9 @@
     <uses-permission android:name="com.android.settings.FACE_UNLOCK"/>
     <permission android:name="com.android.settings.FACE_UNLOCK" android:protectionLevel="signatureOrSystem"/>
 
+    <uses-permission android:name="com.google.android.settings.routines.ROUTINES_ACTIONS"/>
+    <permission android:name="com.google.android.settings.routines.ROUTINES_ACTIONS" android:protectionLevel="normal|signature|system"/>
+
     <application
             android:name=".SettingsApplication"
             android:label="@string/settings_label"
@@ -4418,5 +4421,13 @@
         <activity android:theme="@style/SudThemeGlif.Light" android:label="@string/columbus_gesture_training_action_title" android:name="com.google.android.settings.gestures.columbus.ColumbusGestureTrainingActionActivity" android:enabled="true" android:exported="false" android:screenOrientation="portrait"/>
         <activity android:theme="@style/SudThemeGlif.Light" android:label="@string/columbus_gesture_training_launch_title" android:name="com.google.android.settings.gestures.columbus.ColumbusGestureTrainingLaunchActivity" android:enabled="true" android:exported="false" android:screenOrientation="portrait"/>
         <activity android:theme="@style/SudThemeGlif.Light" android:label="@string/columbus_gesture_training_finished_title" android:name="com.google.android.settings.gestures.columbus.ColumbusGestureTrainingFinishedActivity" android:enabled="true" android:exported="false" android:screenOrientation="portrait"/>
+
+        <receiver android:name="com.google.android.settings.routines.RoutinesActionBroadcastReceiver"
+                  android:permission="com.google.android.settings.routines.ROUTINES_ACTIONS" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.settings.routines.RoutinesActionBroadcastReceiver.RINGER_MODE_SILENCE_ACTION"/>
+            </intent-filter>
+        </receiver>
+
     </application>
 </manifest>
