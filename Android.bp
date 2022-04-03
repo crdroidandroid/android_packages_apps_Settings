@@ -167,3 +167,9 @@ android_library_import {
     name: "glide",
     aars: ["libs/glide-4.9.0.aar"],
 }
+
+java_import  {
+	name: "SettingsGoogle-lib",
+    sdk_version: "current",
+	jars: ["libs/SettingsGoogle.jar"],
+}
