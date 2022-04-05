@@ -150,10 +150,19 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
             }
         }
 
+        // Create estimate from data
         colIndex = cursor.getColumnIndex(BATTERY_ESTIMATE_COL);
         Estimate enhancedEstimate = new Estimate(cursor.getLong(colIndex),
                                                  basedOnUsage, dischargeTime);
-        cursor.close();
+
+        // Cleanup
+        try {
+            cursor.close();
+        }
+        catch (NullPointerException nullPointerException) {
+            // We already checked if cursor is null, so it shouldn't be dereferenced yet.
+        }
+
         return enhancedEstimate;
     }
 
