@@ -17,8 +17,18 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="connected_devices_screen"
     android:title="@string/connected_devices_dashboard_title">
+
+    <com.android.settingslib.widget.TopIntroPreference
+        android:key="connected_illustration_desc"
+        android:order="-999"/>
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="connected_illustration"
+        android:order="-998"
+        app:lottie_rawRes="@raw/connected_devices"/>
 
     <com.android.settings.slices.SlicePreference
         android:key="bt_nearby_slice"
