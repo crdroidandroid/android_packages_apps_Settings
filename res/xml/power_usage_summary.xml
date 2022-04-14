@@ -46,6 +46,11 @@
         android:title="@string/advanced_battery_preference_title"
         settings:searchable="false" />
 
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        android:key="battery_24_hrs_stats"
+        android:title="@string/advanced_battery_preference_summary_with_hours"
+        settings:searchable="false" />
+
     <Preference
         android:fragment="com.android.settings.fuelgauge.batterysaver.BatterySaverSettings"
         android:key="battery_saver_summary"
