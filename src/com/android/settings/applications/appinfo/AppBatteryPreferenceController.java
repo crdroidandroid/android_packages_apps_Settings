@@ -25,6 +25,7 @@ import android.os.Bundle;
 import android.os.UidBatteryConsumer;
 import android.os.UserHandle;
 import android.os.UserManager;
+import android.provider.Settings;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -253,9 +254,8 @@ public class AppBatteryPreferenceController extends BasePreferenceController
             }
         }
 
-        final PowerUsageFeatureProvider powerUsageFeatureProvider =
-                FeatureFactory.getFactory(context).getPowerUsageFeatureProvider(context);
-        mIsChartGraphEnabled = powerUsageFeatureProvider.isChartGraphEnabled(context);
+        mIsChartGraphEnabled = Settings.System.getIntForUser(context.getContentResolver(),
+                "battery_24_hrs_stats", 0, UserHandle.USER_CURRENT) != 0;
     }
 
     private boolean isWorkProfile(Context context) {

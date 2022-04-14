@@ -26,6 +26,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.provider.Settings;
 import android.text.TextUtils;
 import android.text.format.DateUtils;
 import android.util.Log;
@@ -527,17 +528,17 @@ public class AdvancedPowerUsageDetail extends DashboardFragment implements
         final String slotTime = bundle.getString(EXTRA_SLOT_TIME, null);
         final long totalTimeMs = foregroundTimeMs + backgroundTimeMs;
         final CharSequence usageTimeSummary;
-        final PowerUsageFeatureProvider powerFeatureProvider =
-                FeatureFactory.getFactory(getContext()).getPowerUsageFeatureProvider(getContext());
+        boolean isChartGraphEnabled = Settings.System.getIntForUser(getContext().getContentResolver(),
+                "battery_24_hrs_stats", 0, UserHandle.USER_CURRENT) != 0;
 
         if (totalTimeMs == 0) {
             final int batteryWithoutUsageTime = consumedPower > 0
                     ? R.string.battery_usage_without_time : R.string.battery_not_usage_24hr;
-            usageTimeSummary = getText(powerFeatureProvider.isChartGraphEnabled(getContext())
+            usageTimeSummary = getText(isChartGraphEnabled
                     ? batteryWithoutUsageTime : R.string.battery_not_usage);
         } else if (slotTime == null) {
             // Shows summary text with past 24 hr or full charge if slot time is null.
-            usageTimeSummary = powerFeatureProvider.isChartGraphEnabled(getContext())
+            usageTimeSummary = isChartGraphEnabled
                     ? getAppPast24HrActiveSummary(foregroundTimeMs, backgroundTimeMs, totalTimeMs)
                     : getAppFullChargeActiveSummary(
                             foregroundTimeMs, backgroundTimeMs, totalTimeMs);
