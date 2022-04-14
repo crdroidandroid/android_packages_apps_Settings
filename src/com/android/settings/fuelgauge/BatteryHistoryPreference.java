@@ -18,6 +18,8 @@ package com.android.settings.fuelgauge;
 
 import android.content.Context;
 import android.os.BatteryUsageStats;
+import android.os.UserHandle;
+import android.provider.Settings;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -29,7 +31,6 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
 import com.android.settings.R;
-import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.widget.UsageView;
 
 /**
@@ -50,9 +51,8 @@ public class BatteryHistoryPreference extends Preference {
 
     public BatteryHistoryPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        mIsChartGraphEnabled =
-            FeatureFactory.getFactory(context).getPowerUsageFeatureProvider(context)
-                   .isChartGraphEnabled(context);
+        mIsChartGraphEnabled = Settings.System.getIntForUser(context.getContentResolver(),
+            "battery_24_hrs_stats", 0, UserHandle.USER_CURRENT) != 0;
         Log.i(TAG, "isChartGraphEnabled: " + mIsChartGraphEnabled);
         setLayoutResource(
             mIsChartGraphEnabled
