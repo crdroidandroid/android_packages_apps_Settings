@@ -162,6 +162,25 @@
         settings:controller="com.android.settings.sound.VibrateForCallsPreferenceController"
         settings:keywords="@string/keywords_vibrate_for_calls"/>
 
+    <!-- Ringtone vibration pattern -->
+    <ListPreference
+        android:key="ringtone_vibration_pattern"
+        android:title="@string/ringtone_vibration_pattern"
+        android:order="-85"
+        android:entries="@array/ringtone_vibration_pattern_entries"
+        android:entryValues="@array/ringtone_vibration_pattern_values"
+        android:dependency="vibrate_for_calls"/>
+
+    <!-- Vibration intensity -->
+    <Preference
+        android:fragment="com.android.settings.notification.VibrationIntensityPreferenceFragment"
+        android:key="vibration_intensity_fragment"
+        android:title="@string/vibration_intensity_preferences"
+        android:order="-83"
+        android:summary="@string/summary_vibration_intensity_preferences"
+        settings:controller="com.android.settings.notification.VibrationIntensityPreferenceController"
+        settings:keywords="@string/keywords_vibration_preferences"/>
+
     <com.android.settings.widget.PrimarySwitchPreference
         android:key="gesture_prevent_ringing_sound"
         android:title="@string/gesture_prevent_ringing_sound_title"

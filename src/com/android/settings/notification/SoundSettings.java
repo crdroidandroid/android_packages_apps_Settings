@@ -275,6 +275,7 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
         controllers.add(new PhoneRingtone2PreferenceController(context));
         controllers.add(new AlarmRingtonePreferenceController(context));
         controllers.add(new NotificationRingtonePreferenceController(context));
+        controllers.add(new VibrationPatternPreferenceController(context));
         controllers.add(new IncreasingRingPreferenceController(context));
         controllers.add(new IncreasingRingVolumePreferenceController(context));
 
