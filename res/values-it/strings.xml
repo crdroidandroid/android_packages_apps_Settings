@@ -793,14 +793,14 @@
     <string name="manage_device_admin" msgid="1044620606203916275">"App di amministrazione del dispositivo"</string>
     <string name="number_of_device_admins_none" msgid="152926922020437312">"Nessuna app attiva"</string>
     <plurals name="number_of_device_admins" formatted="false" msgid="2528735319390151989">
-      <item quantity="one"><xliff:g id="COUNT_1">%d</xliff:g> active apps</item>
+      <item quantity="one"><xliff:g id="COUNT_1">%d</xliff:g> app attiva</item>
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> app attive</item>
     </plurals>
     <string name="manage_trust_agents" msgid="6410149930029992356">"Agenti di attendibilità"</string>
     <string name="disabled_because_no_backup_security" msgid="4998095356607488854">"Per usare questa opzione, imposta prima un blocco schermo"</string>
     <string name="manage_trust_agents_summary" msgid="6423843123607674286">"Nessuno"</string>
     <plurals name="manage_trust_agents_summary_on" formatted="false" msgid="5438047398376802735">
-      <item quantity="one"><xliff:g id="COUNT">%d</xliff:g> active trust agents</item>
+      <item quantity="one"><xliff:g id="COUNT">%d</xliff:g> agente di attendibilità attiva</item>
       <item quantity="other"><xliff:g id="COUNT">%d</xliff:g> agenti di attendibilità attivi</item>
     </plurals>
     <string name="bluetooth_quick_toggle_title" msgid="5955341060378240781">"Bluetooth"</string>
