@@ -52,6 +52,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
     private static final String RIGHT_EDGE_SEEKBAR_KEY = "gesture_right_back_sensitivity";
 
     private static final String NAVIGATION_BAR_HINT_KEY = "navigation_bar_hint";
+    private static final String NAVIGATION_BAR_LENGTH_KEY = "gesture_navbar_length_preference";
     private static final String GESTURE_NAVBAR_LENGTH_KEY = "gesture_navbar_length_preference";
     private static final String GESTURE_BACK_HEIGHT_KEY = "gesture_back_height";
 
@@ -100,6 +101,8 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
         boolean isTaskbarEnabled = LineageSettings.System.getInt(getContext().getContentResolver(),
                 LineageSettings.System.ENABLE_TASKBAR, isLargeScreen(getContext()) ? 1 : 0) == 1;
         if (isTaskbarEnabled) {
+            getPreferenceScreen().removePreference(
+                    getPreferenceScreen().findPreference(NAVIGATION_BAR_LENGTH_KEY));
             getPreferenceScreen().removePreference(
                     getPreferenceScreen().findPreference(NAVIGATION_BAR_HINT_KEY));
         }
