@@ -102,6 +102,7 @@ public class AndroidBeam extends InstrumentedFragment
         mOldActivityTitle = activity.getActionBar().getTitle();
 
         mSwitchBar = activity.getSwitchBar();
+        mSwitchBar.setTitle(getContext().getString(R.string.enable_text));
         if (mBeamDisallowedByOnlyAdmin) {
             mSwitchBar.hide();
         } else {
