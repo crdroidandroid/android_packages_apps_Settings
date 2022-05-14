@@ -144,6 +144,8 @@
         <receiver android:name="com.google.android.settings.fuelgauge.BatteryBroadcastReceiver" android:exported="true" android:enabled="true">
             <intent-filter>
                 <action android:name="settings.intelligence.battery.action.FETCH_BATTERY_USAGE_DATA"/>
+                <action android:name="settings.intelligence.battery.action.FETCH_BLUETOOTH_BATTERY_DATA"/>
+                <action android:name="settings.intelligence.battery.action.CLEAR_BATTERY_CACHE_DATA"/>
             </intent-filter>
         </receiver>
         <service android:name="com.google.android.settings.fuelgauge.BatteryUsageLoaderService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false" android:process=":usage_data_loader" android:enabled="true"/>
