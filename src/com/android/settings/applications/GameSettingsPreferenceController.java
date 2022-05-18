@@ -45,8 +45,7 @@ public class GameSettingsPreferenceController extends BasePreferenceController {
 
     @Override
     public int getAvailabilityStatus() {
-        return mGameSettingsFeatureProvider.isSupported(mContext)
-                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
