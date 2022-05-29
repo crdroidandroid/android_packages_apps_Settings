@@ -96,6 +96,7 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
     private static final String DASHBOARD_TILE_PREF_KEY_PREFIX = "dashboard_tile_pref_";
     private static final String META_DATA_KEY_INTENT_ACTION = "com.android.settings.intent.action";
     private static final String TOP_LEVEL_ACCOUNT_CATEGORY = "top_level_account_category";
+    private static final String WELLBEING_PACKAGE = "com.google.android.apps.wellbeing";
 
     private static final Map<String, Pair<Integer, Integer>> COLOR_SCHEMES = ImmutableMap.of(
             "blue_variant", new Pair<>(
@@ -485,6 +486,11 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
                     preference.setIcon(iconDrawable);
                     return;
                 }
+            }
+            if (iconPackage.equals(WELLBEING_PACKAGE) && iconDrawable instanceof LayerDrawable
+                    && ((LayerDrawable) iconDrawable).getDrawable(1) != null) {
+                iconDrawable = ((LayerDrawable) iconDrawable).getDrawable(1);
+                iconDrawable.mutate();
             }
             iconDrawable.setTint(Utils.getHomepageIconColor(preference.getContext()));
         }
