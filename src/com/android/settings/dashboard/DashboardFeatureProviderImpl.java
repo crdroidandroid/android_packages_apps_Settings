@@ -42,6 +42,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.Icon;
+import android.graphics.drawable.LayerDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -92,6 +93,7 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
     private static final String TAG = "DashboardFeatureImpl";
     private static final String DASHBOARD_TILE_PREF_KEY_PREFIX = "dashboard_tile_pref_";
     private static final String META_DATA_KEY_INTENT_ACTION = "com.android.settings.intent.action";
+    private static final String WELLBEING_PACKAGE = "com.google.android.apps.wellbeing";
 
     protected final Context mContext;
 
@@ -456,6 +458,11 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
         }
         // Tint homepage icons
         if (TextUtils.equals(tile.getCategory(), CategoryKey.CATEGORY_HOMEPAGE)) {
+            if (iconPackage.equals(WELLBEING_PACKAGE) && iconDrawable instanceof LayerDrawable
+                    && ((LayerDrawable) iconDrawable).getDrawable(1) != null) {
+                iconDrawable = ((LayerDrawable) iconDrawable).getDrawable(1);
+                iconDrawable.mutate();
+            }
             // Skip tinting and Adaptive Icon transformation for homepage account type raw icons
             if (TextUtils.equals(tile.getGroupKey(), "top_level_account_category")
                     && iconPackage == null) {
