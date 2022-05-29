@@ -49,6 +49,10 @@ public class WifiDataUsageSummaryPreferenceController extends DataUsageSummaryPr
             return;
         }
 
+        if (mDataUsageController == null || mDataInfoController == null || mPolicyEditor == null) {
+            updateConfiguration(mContext, mSubId, getSubscriptionInfo(mSubId));
+        }
+
         final DataUsageSummaryPreference mPreference = (DataUsageSummaryPreference) preference;
         // TODO(b/126299427): Currently gets data usage of whole Wi-Fi networks, but should get
         //  specified one.
