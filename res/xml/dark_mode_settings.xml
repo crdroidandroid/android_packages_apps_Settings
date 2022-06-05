@@ -41,7 +41,6 @@
         android:summary="%s"
         android:entries="@array/dark_ui_scheduler_preference_titles"
         android:entryValues="@array/dark_ui_scheduler_preference_titles"
-        settings:allowDividerAbove="true"
         settings:controller="com.android.settings.display.darkmode.DarkModeScheduleSelectorController"
         settings:keywords="@string/keywords_dark_ui_mode"/>
 
