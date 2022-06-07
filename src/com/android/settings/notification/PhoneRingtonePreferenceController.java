@@ -43,7 +43,7 @@ public class PhoneRingtonePreferenceController extends RingtonePreferenceControl
 
         TelephonyManager telephonyManager =
                 (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-        if (telephonyManager.isMultiSimEnabled() && !isDeviceSupportsESIM()) {
+        if (telephonyManager.isMultiSimEnabled()) {
             DefaultRingtonePreference ringtonePreference =
                     (DefaultRingtonePreference) screen.findPreference(KEY_PHONE_RINGTONE);
             ringtonePreference.setTitle(mContext.getString(R.string.ringtone_title));
