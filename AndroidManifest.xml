@@ -3768,6 +3768,7 @@
             android:name="RegulatoryInfoDisplayActivity"
             android:label="@string/regulatory_labels"
             android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase"
             android:enabled="@bool/config_show_regulatory_info">
             <intent-filter>
                 <action android:name="android.settings.SHOW_REGULATORY_INFO" />

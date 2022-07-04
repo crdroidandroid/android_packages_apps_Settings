@@ -16,8 +16,6 @@
 
 package com.android.settings;
 
-import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -31,7 +29,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.VisibleForTesting;
-import androidx.appcompat.app.AlertDialog;
+
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
 import java.util.Locale;
 
@@ -45,8 +44,7 @@ import java.util.Locale;
  * or add a string resource named "regulatory_info_text" with an HTML version of the required
  * information (text will be centered in the dialog).
  */
-public class RegulatoryInfoDisplayActivity extends Activity implements
-        DialogInterface.OnDismissListener {
+public class RegulatoryInfoDisplayActivity extends CollapsingToolbarBaseActivity {
 
     private final String REGULATORY_INFO_RESOURCE = "regulatory_info";
     private static final String DEFAULT_REGULATORY_INFO_FILEPATH =
@@ -60,11 +58,6 @@ public class RegulatoryInfoDisplayActivity extends Activity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AlertDialog.Builder builder = new AlertDialog.Builder(this)
-                .setTitle(R.string.regulatory_labels)
-                .setOnDismissListener(this)
-                .setPositiveButton(android.R.string.ok, null /* onClickListener */);
-
         boolean regulatoryInfoDrawableExists = false;
 
         final String regulatoryInfoFile = getRegulatoryInfoImageFileName();
@@ -101,14 +94,7 @@ public class RegulatoryInfoDisplayActivity extends Activity implements
             } else {
                 image.setImageResource(resId);
             }
-            builder.setView(view);
-            builder.show();
-        } else if (regulatoryText.length() > 0) {
-            builder.setMessage(regulatoryText);
-            AlertDialog dialog = builder.show();
-            // we have to show the dialog first, or the setGravity() call will throw a NPE
-            TextView messageText = (TextView) dialog.findViewById(android.R.id.message);
-            messageText.setGravity(Gravity.CENTER);
+            setContentView(view);
         } else {
             // neither drawable nor text resource exists, finish activity
             finish();
@@ -144,11 +130,6 @@ public class RegulatoryInfoDisplayActivity extends Activity implements
             }
         }
         return resId;
-    }
-
-    @Override
-    public void onDismiss(DialogInterface dialog) {
-        finish();   // close the activity
     }
 
     private String getCoo() {

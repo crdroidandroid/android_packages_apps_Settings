@@ -13,9 +13,12 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
     <ImageView
         android:id="@+id/regulatoryInfo"
         android:adjustViewBounds="true"
@@ -24,5 +27,5 @@
         android:scaleType="centerCrop"
         android:contentDescription="@string/regulatory_labels"
         android:src="@drawable/regulatory_info" />
-</ScrollView>
 
+</androidx.core.widget.NestedScrollView>
