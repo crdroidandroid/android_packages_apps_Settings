@@ -20,15 +20,14 @@ import static android.view.WindowManager.LayoutParams.SYSTEM_FLAG_HIDE_NON_SYSTE
 
 import android.os.Bundle;
 
-import androidx.fragment.app.FragmentActivity;
-
 import com.android.settings.R;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
 /**
  * Activity for Bluetooth device picker dialog. The device picker logic
  * is implemented in the {@link BluetoothPairingDetail} fragment.
  */
-public final class DevicePickerActivity extends FragmentActivity {
+public final class DevicePickerActivity extends CollapsingToolbarBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
