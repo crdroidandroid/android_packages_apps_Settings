@@ -63,6 +63,12 @@
         android:key="charging_control"
         settings:requiresService="lineagehealth" />
 
+    <Preference
+        android:key="high_power_apps"
+        android:title="@string/high_power_apps">
+        <intent android:action="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
+    </Preference>
+
     <!-- Battery light
     <lineageos.preference.LineagePartsPreference
         android:key="battery_lights"
