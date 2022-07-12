@@ -65,6 +65,12 @@
         settings:keywords="@string/keywords_battery_adaptive_preferences"
         settings:searchable="true" />
 
+    <Preference
+        android:key="high_power_apps"
+        android:title="@string/high_power_apps">
+        <intent android:action="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
+    </Preference>
+
     <!-- Battery light
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="battery_lights"
