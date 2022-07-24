@@ -701,6 +701,7 @@
         <SwitchPreference
             android:key="enable_freeform_support"
             android:title="@string/enable_freeform_support"
+            android:defaultValue="true"
             android:summary="@string/enable_freeform_support_summary" />
 
         <SwitchPreference
