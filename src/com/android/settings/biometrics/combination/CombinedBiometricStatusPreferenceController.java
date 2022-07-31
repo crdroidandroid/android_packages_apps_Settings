@@ -16,6 +16,7 @@
 package com.android.settings.biometrics.combination;
 
 import android.content.Context;
+import android.os.UserHandle;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.Lifecycle;
@@ -56,7 +57,12 @@ public class CombinedBiometricStatusPreferenceController extends
 
     public CombinedBiometricStatusPreferenceController(
             Context context, String key, Lifecycle lifecycle) {
-        super(context, key);
+        this(context, key, lifecycle, UserHandle.USER_NULL /* profileChallengeUserId */);
+    }
+
+    public CombinedBiometricStatusPreferenceController(
+            Context context, String key, Lifecycle lifecycle, int profileChallengeUserId) {
+        super(context, key, profileChallengeUserId);
         mCombinedBiometricStatusUtils = new CombinedBiometricStatusUtils(context, getUserId());
 
         if (lifecycle != null) {
