@@ -18,6 +18,7 @@ package com.android.settings.biometrics.fingerprint;
 
 import android.content.Context;
 import android.hardware.fingerprint.FingerprintManager;
+import android.os.UserHandle;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.Lifecycle;
@@ -56,7 +57,12 @@ public class FingerprintStatusPreferenceController extends BiometricStatusPrefer
     }
 
     public FingerprintStatusPreferenceController(Context context, String key, Lifecycle lifecycle) {
-        super(context, key);
+        this(context, key, lifecycle, UserHandle.USER_NULL /* profileChallengeUserId */);
+    }
+
+    public FingerprintStatusPreferenceController(
+            Context context, String key, Lifecycle lifecycle, int profileChallengeUserId) {
+        super(context, key, profileChallengeUserId);
         mFingerprintManager = Utils.getFingerprintManagerOrNull(context);
         mFingerprintStatusUtils =
                 new FingerprintStatusUtils(context, mFingerprintManager, getUserId());

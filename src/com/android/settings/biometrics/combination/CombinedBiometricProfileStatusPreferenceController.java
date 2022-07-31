@@ -29,22 +29,24 @@ public class CombinedBiometricProfileStatusPreferenceController extends
 
     private static final String KEY_BIOMETRIC_SETTINGS = "biometric_settings_profile";
 
-    public CombinedBiometricProfileStatusPreferenceController(Context context) {
-        super(context, KEY_BIOMETRIC_SETTINGS);
-    }
-
-    public CombinedBiometricProfileStatusPreferenceController(Context context, String key) {
-        super(context, key);
+    public CombinedBiometricProfileStatusPreferenceController(
+            Context context, int profileChallengeUserId) {
+        super(context, KEY_BIOMETRIC_SETTINGS, null /* lifecycle */, profileChallengeUserId);
     }
 
     public CombinedBiometricProfileStatusPreferenceController(
-            Context context, Lifecycle lifecycle) {
-        super(context, KEY_BIOMETRIC_SETTINGS, lifecycle);
+            Context context, String key, int profileChallengeUserId) {
+        super(context, key, null /* lifecycle */, profileChallengeUserId);
     }
 
     public CombinedBiometricProfileStatusPreferenceController(
-            Context context, String key, Lifecycle lifecycle) {
-        super(context, key, lifecycle);
+            Context context, Lifecycle lifecycle, int profileChallengeUserId) {
+        super(context, KEY_BIOMETRIC_SETTINGS, lifecycle, profileChallengeUserId);
+    }
+
+    public CombinedBiometricProfileStatusPreferenceController(
+            Context context, String key, Lifecycle lifecycle, int profileChallengeUserId) {
+        super(context, key, lifecycle, profileChallengeUserId);
     }
 
     @Override

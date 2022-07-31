@@ -26,21 +26,24 @@ public class FingerprintProfileStatusPreferenceController
 
     public static final String KEY_FINGERPRINT_SETTINGS = "fingerprint_settings_profile";
 
-    public FingerprintProfileStatusPreferenceController(Context context) {
-        super(context, KEY_FINGERPRINT_SETTINGS);
-    }
-
-    public FingerprintProfileStatusPreferenceController(Context context, String key) {
-        super(context, key);
-    }
-
-    public FingerprintProfileStatusPreferenceController(Context context, Lifecycle lifecycle) {
-        super(context, KEY_FINGERPRINT_SETTINGS, lifecycle);
+    public FingerprintProfileStatusPreferenceController(
+            Context context, int profileChallengeUserId) {
+        super(context, KEY_FINGERPRINT_SETTINGS, null /* lifecycle */, profileChallengeUserId);
     }
 
     public FingerprintProfileStatusPreferenceController(
-            Context context, String key, Lifecycle lifecycle) {
-        super(context, key, lifecycle);
+            Context context, String key, int profileChallengeUserId) {
+        super(context, key, null /* lifecycle */, profileChallengeUserId);
+    }
+
+    public FingerprintProfileStatusPreferenceController(
+            Context context, Lifecycle lifecycle, int profileChallengeUserId) {
+        super(context, KEY_FINGERPRINT_SETTINGS, lifecycle, profileChallengeUserId);
+    }
+
+    public FingerprintProfileStatusPreferenceController(
+            Context context, String key, Lifecycle lifecycle, int profileChallengeUserId) {
+        super(context, key, lifecycle, profileChallengeUserId);
     }
 
     @Override

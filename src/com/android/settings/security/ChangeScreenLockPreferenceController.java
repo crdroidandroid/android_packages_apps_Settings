@@ -54,13 +54,18 @@ public class ChangeScreenLockPreferenceController extends AbstractPreferenceCont
     protected RestrictedPreference mPreference;
 
     public ChangeScreenLockPreferenceController(Context context, SettingsPreferenceFragment host) {
+        this(context, host, UserHandle.USER_NULL /* profileChallengeUserId */);
+    }
+
+    public ChangeScreenLockPreferenceController(
+            Context context, SettingsPreferenceFragment host, int profileChallengeUserId) {
         super(context);
         mUm = (UserManager) context.getSystemService(Context.USER_SERVICE);
         mLockPatternUtils = FeatureFactory.getFactory(context)
                 .getSecurityFeatureProvider()
                 .getLockPatternUtils(context);
         mHost = host;
-        mProfileChallengeUserId = Utils.getManagedProfileId(mUm, mUserId);
+        mProfileChallengeUserId = profileChallengeUserId;
         mMetricsFeatureProvider = FeatureFactory.getFactory(context).getMetricsFeatureProvider();
         mScreenLockPreferenceDetailUtils = new ScreenLockPreferenceDetailsUtils(context);
     }
