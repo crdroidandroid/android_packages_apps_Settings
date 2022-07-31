@@ -27,6 +27,8 @@ import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.UserHandle;
+import android.os.UserManager;
 
 import com.android.settings.R;
 import com.android.settings.biometrics.combination.CombinedBiometricProfileStatusPreferenceController;
@@ -38,6 +40,7 @@ import com.android.settings.safetycenter.SafetyCenterManagerWrapper;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.security.trustagent.TrustAgentListPreferenceController;
 import com.android.settings.widget.PreferenceCategoryController;
+import com.android.settings.Utils;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.drawer.CategoryKey;
@@ -143,18 +146,31 @@ public class SecurityAdvancedSettings extends DashboardFragment {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new TrustAgentListPreferenceController(context, host, lifecycle));
 
+        // TODO: Add preferences for every managed profile.
+        // This may require substantial reworking, so for now, we simply show the
+        // first managed profile as usual, unless the Settings activity is accessed
+        // via a specific profile, in which case its preferences will be shown.
+        final UserManager userManager =
+                (UserManager) context.getSystemService(Context.USER_SERVICE);
+        int profileId = UserHandle.myUserId();
+        if (!userManager.isManagedProfile(profileId)) {
+            profileId = Utils.getManagedProfileId(userManager, profileId);
+        }
+
         final List<AbstractPreferenceController> profileSecurityControllers = new ArrayList<>();
         profileSecurityControllers.add(new ChangeProfileScreenLockPreferenceController(
-                context, host));
-        profileSecurityControllers.add(new LockUnificationPreferenceController(context, host));
+                context, host, profileId));
+        profileSecurityControllers.add(new LockUnificationPreferenceController(
+                context, host, profileId));
         profileSecurityControllers.add(new VisiblePatternProfilePreferenceController(
-                context, lifecycle));
+                context, lifecycle, profileId));
         profileSecurityControllers.add(new FaceProfileStatusPreferenceController(
-                context, lifecycle));
+                context, lifecycle, profileId));
         profileSecurityControllers.add(new FingerprintProfileStatusPreferenceController(
-                context, lifecycle));
+                context, lifecycle, profileId));
         profileSecurityControllers
-                .add(new CombinedBiometricProfileStatusPreferenceController(context, lifecycle));
+                .add(new CombinedBiometricProfileStatusPreferenceController(
+                        context, lifecycle, profileId));
         controllers.add(new PreferenceCategoryController(context, WORK_PROFILE_SECURITY_CATEGORY)
                 .setChildren(profileSecurityControllers));
         controllers.addAll(profileSecurityControllers);
