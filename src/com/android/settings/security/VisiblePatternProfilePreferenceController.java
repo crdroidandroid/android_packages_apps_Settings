@@ -52,24 +52,25 @@ public class VisiblePatternProfilePreferenceController extends TogglePreferenceC
 
     private Preference mPreference;
 
-    public VisiblePatternProfilePreferenceController(Context context) {
-        this(context, null /* lifecycle */);
+    public VisiblePatternProfilePreferenceController(Context context, int profileChallengeUserId) {
+        this(context, null /* lifecycle */, profileChallengeUserId);
     }
 
-    public VisiblePatternProfilePreferenceController(Context context, Lifecycle lifecycle) {
-        this(context, lifecycle, KEY_VISIBLE_PATTERN_PROFILE);
+    public VisiblePatternProfilePreferenceController(
+            Context context, Lifecycle lifecycle, int profileChallengeUserId) {
+        this(context, lifecycle, KEY_VISIBLE_PATTERN_PROFILE, profileChallengeUserId);
     }
 
 
     // TODO (b/73074893) Replace this constructor without Lifecycle using setter method instead.
     public VisiblePatternProfilePreferenceController(
-            Context context, Lifecycle lifecycle, String key) {
+            Context context, Lifecycle lifecycle, String key, int profileChallengeUserId) {
         super(context, key);
         mUm = (UserManager) context.getSystemService(Context.USER_SERVICE);
         mLockPatternUtils = FeatureFactory.getFactory(context)
                 .getSecurityFeatureProvider()
                 .getLockPatternUtils(context);
-        mProfileChallengeUserId = Utils.getManagedProfileId(mUm, mUserId);
+        mProfileChallengeUserId = profileChallengeUserId;
         if (lifecycle != null) {
             lifecycle.addObserver(this);
         }

@@ -34,23 +34,26 @@ public class FaceProfileStatusPreferenceController extends FaceStatusPreferenceC
     private static final String KEY_FACE_SETTINGS = "face_settings_profile";
     private final DevicePolicyManager mDevicePolicyManager;
 
-    public FaceProfileStatusPreferenceController(Context context) {
-        super(context, KEY_FACE_SETTINGS);
+    public FaceProfileStatusPreferenceController(Context context, int profileChallengeUserId) {
+        super(context, KEY_FACE_SETTINGS, null /* lifecycle */, profileChallengeUserId);
         mDevicePolicyManager = context.getSystemService(DevicePolicyManager.class);
     }
 
-    public FaceProfileStatusPreferenceController(Context context, String key) {
-        super(context, key);
+    public FaceProfileStatusPreferenceController(
+            Context context, String key, int profileChallengeUserId) {
+        super(context, key, null /* lifecycle */, profileChallengeUserId);
         mDevicePolicyManager = context.getSystemService(DevicePolicyManager.class);
     }
 
-    public FaceProfileStatusPreferenceController(Context context, Lifecycle lifecycle) {
-        super(context, KEY_FACE_SETTINGS, lifecycle);
+    public FaceProfileStatusPreferenceController(
+            Context context, Lifecycle lifecycle, int profileChallengeUserId) {
+        super(context, KEY_FACE_SETTINGS, lifecycle, profileChallengeUserId);
         mDevicePolicyManager = context.getSystemService(DevicePolicyManager.class);
     }
 
-    public FaceProfileStatusPreferenceController(Context context, String key, Lifecycle lifecycle) {
-        super(context, key, lifecycle);
+    public FaceProfileStatusPreferenceController(
+            Context context, String key, Lifecycle lifecycle, int profileChallengeUserId) {
+        super(context, key, lifecycle, profileChallengeUserId);
         mDevicePolicyManager = context.getSystemService(DevicePolicyManager.class);
     }
 

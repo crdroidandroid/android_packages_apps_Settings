@@ -86,7 +86,8 @@ public class VisiblePatternProfilePreferenceControllerTest {
 
         mLifecycleOwner = () -> mLifecycle;
         mLifecycle = new Lifecycle(mLifecycleOwner);
-        mController = new VisiblePatternProfilePreferenceController(mContext, mLifecycle);
+        mController = new VisiblePatternProfilePreferenceController(
+                mContext, mLifecycle, FAKE_PROFILE_USER_ID);
     }
 
     @Test
@@ -123,7 +124,8 @@ public class VisiblePatternProfilePreferenceControllerTest {
 
     @Test
     public void getPreferenceKey_whenGivenValue_returnsGivenValue() {
-        mController = new VisiblePatternProfilePreferenceController(mContext, mLifecycle, "key");
+        mController = new VisiblePatternProfilePreferenceController(
+                mContext, mLifecycle, "key", FAKE_PROFILE_USER_ID);
 
         assertThat(mController.getPreferenceKey()).isEqualTo("key");
     }

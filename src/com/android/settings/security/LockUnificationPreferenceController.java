@@ -25,6 +25,7 @@ import android.app.Activity;
 import android.app.admin.DevicePolicyManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.UserInfo;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
@@ -87,12 +88,13 @@ public class LockUnificationPreferenceController extends AbstractPreferenceContr
         mUnifyProfile = screen.findPreference(mPreferenceKey);
     }
 
-    public LockUnificationPreferenceController(Context context, SettingsPreferenceFragment host) {
-        this(context, host, KEY_UNIFICATION);
+    public LockUnificationPreferenceController(
+            Context context, SettingsPreferenceFragment host, int profileUserId) {
+        this(context, host, KEY_UNIFICATION, profileUserId);
     }
 
     public LockUnificationPreferenceController(
-            Context context, SettingsPreferenceFragment host, String key) {
+            Context context, SettingsPreferenceFragment host, String key, int profileUserId) {
         super(context);
         mHost = host;
         mUm = context.getSystemService(UserManager.class);
@@ -100,7 +102,7 @@ public class LockUnificationPreferenceController extends AbstractPreferenceContr
         mLockPatternUtils = FeatureFactory.getFactory(context)
                 .getSecurityFeatureProvider()
                 .getLockPatternUtils(context);
-        mProfileUserId = Utils.getManagedProfileId(mUm, MY_USER_ID);
+        mProfileUserId = profileUserId;
         mCurrentDevicePassword = LockscreenCredential.createNone();
         mCurrentProfilePassword = LockscreenCredential.createNone();
         this.mPreferenceKey = key;
@@ -124,8 +126,10 @@ public class LockUnificationPreferenceController extends AbstractPreferenceContr
         }
         final boolean useOneLock = (Boolean) value;
         if (useOneLock) {
+            final UserInfo parentUser = mUm.getProfileParent(mProfileUserId);
+            final int parentUserId = parentUser != null ? parentUser.id : MY_USER_ID;
             mRequireNewDevicePassword = !mDpm.isPasswordSufficientAfterProfileUnification(
-                    UserHandle.myUserId(), mProfileUserId);
+                    parentUserId, mProfileUserId);
             startUnification();
         } else {
             final String title = mContext.getString(R.string.unlock_set_unlock_launch_picker_title);
