@@ -46,6 +46,12 @@
         android:title="@string/advanced_battery_preference_title"
         settings:searchable="false" />
 
+    <Preference
+        android:fragment="com.android.settings.fuelgauge.smartcharging.SmartChargingSettings"
+        android:key="smart_charging_key"
+        android:summary="@string/smart_charging_summary"
+        android:title="@string/smart_charging_title" />
+
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="battery_24_hrs_stats"
         android:title="@string/advanced_battery_preference_summary_with_hours"
