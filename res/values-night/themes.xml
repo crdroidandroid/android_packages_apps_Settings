@@ -22,7 +22,7 @@
         <item name="colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorBackground">?android:attr/colorPrimaryDark</item>
         <!-- Homepage should follow device default design, the values is same as device default theme.-->
-        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">?android:attr/colorBackground</item>
         <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
     </style>
 
