@@ -251,6 +251,7 @@ public class BluetoothDetailsProfilesController extends BluetoothDetailsControll
     public void onResume() {
         super.onResume();
         mProfileManager.addServiceListener(this);
+        refresh();
     }
 
     @Override
