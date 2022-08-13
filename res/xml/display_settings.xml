@@ -101,6 +101,10 @@
             android:title="@string/widgets_on_lockscreen_title"
             android:fragment="com.android.settings.communal.WidgetsOnLockscreenFragment"
             settings:controller="com.android.settings.display.WidgetsOnLockscreenPreferenceController"/>
+
+        <com.android.settings.display.DensityPreference
+            android:key="density"
+            android:title="@string/developer_smallest_width" />
     </PreferenceCategory>
 
     <PreferenceCategory
