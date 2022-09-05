@@ -38,6 +38,7 @@ import com.android.settings.homepage.contextualcards.slices.DarkThemeSlice;
 import com.android.settings.homepage.contextualcards.slices.FaceSetupSlice;
 import com.android.settings.homepage.contextualcards.slices.LowStorageSlice;
 import com.android.settings.location.LocationSlice;
+import com.android.settings.media.AppVolumeSlice;
 import com.android.settings.media.MediaOutputIndicatorSlice;
 import com.android.settings.media.RemoteMediaSlice;
 import com.android.settings.network.ProviderModelSlice;
@@ -338,6 +339,16 @@ public class CustomSliceRegistry {
             .appendPath("turn_on_wifi")
             .build();
 
+    /**
+     * Backing Uri for the App Volume Slice.
+     */
+    public static Uri APP_VOLUME_SLICE_URI = new Uri.Builder()
+            .scheme(ContentResolver.SCHEME_CONTENT)
+            .authority(SettingsSliceProvider.SLICE_AUTHORITY)
+            .appendPath(SettingsSlicesContract.PATH_SETTING_ACTION)
+            .appendPath("app_volume")
+            .build();
+
     @VisibleForTesting
     static final Map<Uri, Class<? extends CustomSliceable>> sUriToSlice;
 
@@ -360,6 +371,7 @@ public class CustomSliceRegistry {
         sUriToSlice.put(DARK_THEME_SLICE_URI, DarkThemeSlice.class);
         sUriToSlice.put(REMOTE_MEDIA_SLICE_URI, RemoteMediaSlice.class);
         sUriToSlice.put(ALWAYS_ON_SLICE_URI, AlwaysOnDisplaySlice.class);
+        sUriToSlice.put(APP_VOLUME_SLICE_URI, AppVolumeSlice.class);
     }
 
     public static Class<? extends CustomSliceable> getSliceClassByUri(Uri uri) {
