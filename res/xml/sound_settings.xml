@@ -199,6 +199,13 @@
         android:title="@string/sound_audio_category_title">
         <!-- Live Caption -110 and Now Playing -105-->
 
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="show_app_volume"
+            android:title="@string/app_volume_title"
+            android:summary="@string/app_volume_summary"
+            android:defaultValue="false"
+            android:order="-112"/>
+
         <!-- Spatial audio -->
         <Preference
             android:key="spatial_audio_summary"
