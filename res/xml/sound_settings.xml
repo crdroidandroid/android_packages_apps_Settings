@@ -132,7 +132,7 @@
     <ListPreference
         android:key="vibration_pattern"
         android:title="@string/ringtone_vibration_pattern"
-        android:order="-85"
+        android:order="-129"
         android:entries="@array/ringtone_vibration_pattern_entries"
         android:entryValues="@array/ringtone_vibration_pattern_values"/>
 
@@ -141,7 +141,7 @@
         android:key="custom_vibration_pattern"
         android:title="@string/custom_vibration_pattern_title"
         android:summary="@string/custom_vibration_pattern_summary"
-        android:order="-83"
+        android:order="-128"
         android:fragment="com.android.settings.sound.CustomVibrationPreferenceFragment"
         android:visibility="gone"/>
 
