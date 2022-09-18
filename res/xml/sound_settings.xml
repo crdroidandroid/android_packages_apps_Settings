@@ -128,6 +128,23 @@
         settings:controller="com.android.settings.sound.VibrateForCallsPreferenceController"
         settings:keywords="@string/keywords_vibrate_for_calls"/>
 
+    <!-- Ringtone vibration pattern -->
+    <ListPreference
+        android:key="vibration_pattern"
+        android:title="@string/ringtone_vibration_pattern"
+        android:order="-129"
+        android:entries="@array/ringtone_vibration_pattern_entries"
+        android:entryValues="@array/ringtone_vibration_pattern_values"/>
+
+    <!-- Custom ringtone vibration pattern preference -->
+    <Preference
+        android:key="custom_vibration_pattern"
+        android:title="@string/custom_vibration_pattern_title"
+        android:summary="@string/custom_vibration_pattern_summary"
+        android:order="-128"
+        android:fragment="com.android.settings.sound.CustomVibrationPreferenceFragment"
+        android:visibility="gone"/>
+
     <!-- Interruptions -->
     <com.android.settingslib.RestrictedPreference
         android:key="zen_mode"
