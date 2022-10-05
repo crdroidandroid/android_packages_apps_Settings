@@ -177,10 +177,10 @@
             android:title="@string/heads_up_notifications_enabled_title"
             android:summary="@string/heads_up_notifications_enabled_summary" />
 
-        <!-- Notification lights -->
+        <!-- Notification lights
         <lineageos.preference.LineagePartsPreference
             android:key="notification_lights"
             settings:requiresConfig="@*android:bool/config_intrusiveNotificationLed"
-            settings:replacesKey="notification_pulse" />
+            settings:replacesKey="notification_pulse" /> -->
     </PreferenceCategory>
 </PreferenceScreen>
