@@ -70,9 +70,7 @@ public class PulseNotificationPreferenceController extends TogglePreferenceContr
 
     @Override
     public int getAvailabilityStatus() {
-        return mContext.getResources().getBoolean(
-                com.android.internal.R.bool.config_intrusiveNotificationLed) ? AVAILABLE
-                : UNSUPPORTED_ON_DEVICE;
+        return UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
