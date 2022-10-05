@@ -83,11 +83,11 @@
         settings:controller="com.android.settings.fuelgauge.ChargingSpeedPreferenceController"
         settings:requiresService="lineagehealth" />
 
-    <!-- Battery light -->
+    <!-- Battery light
     <lineageos.preference.LineagePartsPreference
         android:key="battery_lights"
         settings:requiresConfig="@*lineageos.platform:integer/config_deviceLightCapabilities"
-        settings:requiresConfigMask="64" />
+        settings:requiresConfigMask="64" /> -->
 
     <SwitchPreferenceCompat
         android:key="status_bar_show_battery_percent"
