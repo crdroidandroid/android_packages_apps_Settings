@@ -94,7 +94,24 @@ public class PhoneNumberPreferenceController extends BasePreferenceController
 
     @Override
     public CharSequence getSummary() {
-        return getFirstPhoneNumber();
+        return mContext.getString(R.string.device_info_protected_single_press);
+    }
+
+    @Override
+    public boolean handlePreferenceTreeClick(Preference preference) {
+        String prefKey = preference.getKey();
+        if (prefKey.startsWith(KEY_PHONE_NUMBER)) {
+            int simSlotNumber = 0;
+            if (!TextUtils.equals(prefKey, KEY_PHONE_NUMBER)) {
+                // Get multisim slot number from preference key.
+                // Multisim preference key is KEY_PHONE_NUMBER + simSlotNumber
+                simSlotNumber = Integer.parseInt(
+                        prefKey.replaceAll("[^0-9]", ""));
+            }
+            final Preference simStatusPreference = mPreferenceList.get(simSlotNumber);
+            simStatusPreference.setSummary(getPhoneNumber(simSlotNumber));
+        }
+        return super.handlePreferenceTreeClick(preference);
     }
 
     @Override
@@ -111,7 +128,6 @@ public class PhoneNumberPreferenceController extends BasePreferenceController
             final Preference multiSimPreference = createNewPreference(screen.getContext());
             multiSimPreference.setOrder(phonePreferenceOrder + simSlotNumber);
             multiSimPreference.setKey(KEY_PHONE_NUMBER + simSlotNumber);
-            multiSimPreference.setSelectable(false);
             category.addPreference(multiSimPreference);
             mPreferenceList.add(multiSimPreference);
         }
@@ -122,7 +138,7 @@ public class PhoneNumberPreferenceController extends BasePreferenceController
         for (int simSlotNumber = 0; simSlotNumber < mPreferenceList.size(); simSlotNumber++) {
             final Preference simStatusPreference = mPreferenceList.get(simSlotNumber);
             simStatusPreference.setTitle(getPreferenceTitle(simSlotNumber));
-            simStatusPreference.setSummary(getPhoneNumber(simSlotNumber));
+            simStatusPreference.setSummary(getSummary());
         }
     }
 
