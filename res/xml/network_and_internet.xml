@@ -127,4 +127,13 @@
         android:summary="@string/summary_placeholder"
         android:order="25"
         settings:controller="com.android.settings.network.AdaptiveConnectivityPreferenceController"/>
+
+    <SwitchPreference
+        android:icon="@drawable/ic_network_check"
+        android:key="captive_portal"
+        android:title="@string/captive_portal_title"
+        android:summary="@string/captive_portal_summary"
+        android:order="30"
+        settings:highlightableMenuKey="@string/menu_key_network"
+        settings:controller="com.android.settings.network.CaptivePortalPreferenceController" />
 </PreferenceScreen>
