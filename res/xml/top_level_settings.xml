@@ -51,7 +51,7 @@
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.notification.ConfigureNotificationSettings"
-        android:icon="@drawable/ic_notifications"
+        android:icon="@drawable/ic_settings_notifications"
         android:key="top_level_notifications"
         android:order="-120"
         android:title="@string/configure_notification_settings"
