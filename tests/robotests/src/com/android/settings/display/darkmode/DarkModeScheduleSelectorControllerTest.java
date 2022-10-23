@@ -34,7 +34,7 @@ import android.content.res.Resources;
 import android.location.LocationManager;
 import android.os.PowerManager;
 
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.PreferenceScreen;
 import androidx.test.core.app.ApplicationProvider;
 
@@ -53,7 +53,7 @@ public class DarkModeScheduleSelectorControllerTest {
     private DarkModeScheduleSelectorController mController;
     private String mPreferenceKey = "key";
     @Mock
-    private DropDownPreference mPreference;
+    private ListPreference mPreference;
     @Mock
     private PreferenceScreen mScreen;
     private Context mContext;
@@ -94,7 +94,7 @@ public class DarkModeScheduleSelectorControllerTest {
                 .thenReturn("custom_bedtime");
         when(mResources.getStringArray(R.array.dark_ui_scheduler_with_bedtime_preference_titles))
                 .thenReturn(new String[]{"never", "auto", "custom", "custom_bedtime"});
-        mPreference = spy(new DropDownPreference(mContext));
+        mPreference = spy(new ListPreference(mContext));
         mPreference.setEntryValues(new CharSequence[]{"never", "auto", "custom"});
         doNothing().when(mPreference).setValueIndex(anyInt());
         when(mLocationManager.isLocationEnabled()).thenReturn(true);

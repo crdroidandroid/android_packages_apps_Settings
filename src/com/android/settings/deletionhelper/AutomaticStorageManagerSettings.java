@@ -25,7 +25,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 
@@ -51,7 +51,7 @@ public class AutomaticStorageManagerSettings extends DashboardFragment
     private static final String KEY_DAYS = "days";
 
     private AutomaticStorageManagerSwitchBarController mSwitchController;
-    private DropDownPreference mDaysToRetain;
+    private ListPreference mDaysToRetain;
     private SettingsMainSwitchBar mSwitchBar;
 
     @Override
@@ -66,7 +66,7 @@ public class AutomaticStorageManagerSettings extends DashboardFragment
     }
 
     private void initializeDaysToRetainPreference() {
-        mDaysToRetain = (DropDownPreference) findPreference(KEY_DAYS);
+        mDaysToRetain = (ListPreference) findPreference(KEY_DAYS);
         mDaysToRetain.setOnPreferenceChangeListener(this);
 
         ContentResolver cr = getContentResolver();
