@@ -28,7 +28,7 @@ import android.provider.Settings;
 import android.service.notification.ZenModeConfig;
 import android.service.notification.ZenModeConfig.EventInfo;
 
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceScreen;
@@ -50,8 +50,8 @@ public class ZenModeEventRuleSettings extends ZenModeRuleSettingsBase {
 
     public static final String ACTION = Settings.ACTION_ZEN_MODE_EVENT_RULE_SETTINGS;
 
-    private DropDownPreference mCalendar;
-    private DropDownPreference mReply;
+    private ListPreference mCalendar;
+    private ListPreference mReply;
 
     private EventInfo mEvent;
 
@@ -128,7 +128,7 @@ public class ZenModeEventRuleSettings extends ZenModeRuleSettingsBase {
         mCreate = true;
         final PreferenceScreen root = getPreferenceScreen();
 
-        mCalendar = (DropDownPreference) root.findPreference(KEY_CALENDAR);
+        mCalendar = (ListPreference) root.findPreference(KEY_CALENDAR);
         mCalendar.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -143,7 +143,7 @@ public class ZenModeEventRuleSettings extends ZenModeRuleSettingsBase {
             }
         });
 
-        mReply = (DropDownPreference) root.findPreference(KEY_REPLY);
+        mReply = (ListPreference) root.findPreference(KEY_REPLY);
         mReply.setEntries(new CharSequence[] {
                 getString(R.string.zen_mode_event_rule_reply_any_except_no),
                 getString(R.string.zen_mode_event_rule_reply_yes_or_maybe),
