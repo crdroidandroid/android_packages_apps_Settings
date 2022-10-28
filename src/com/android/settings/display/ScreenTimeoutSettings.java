@@ -129,7 +129,7 @@ public class ScreenTimeoutSettings extends RadioButtonPickerFragment implements
         mPrivacyPreference.setSelectable(false);
         mPrivacyPreference.setLayoutResource(R.layout.preference_footer);
         mPrivacyManager = SensorPrivacyManager.getInstance(context);
-        mPrivacyManager.addSensorPrivacyListener(CAMERA,
+        mPrivacyManager.addSensorPrivacyListener(CAMERA, UserHandle.myUserId(),
                 (sensor, enabled) -> mAdaptiveSleepController.updatePreference());
     }
 
