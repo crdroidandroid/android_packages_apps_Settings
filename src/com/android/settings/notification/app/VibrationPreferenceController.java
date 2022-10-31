@@ -32,10 +32,13 @@ public class VibrationPreferenceController extends NotificationPreferenceControl
 
     private static final String KEY_VIBRATE = "vibrate";
     private final Vibrator mVibrator;
+    private NotificationSettings.DependentFieldListener mDependentFieldListener;
 
-    public VibrationPreferenceController(Context context, NotificationBackend backend) {
+    public VibrationPreferenceController(Context context, NotificationBackend backend,
+            NotificationSettings.DependentFieldListener dependentFieldListener) {
         super(context, backend);
         mVibrator = context.getSystemService(Vibrator.class);
+        mDependentFieldListener = dependentFieldListener;
     }
 
     @Override
@@ -74,6 +77,7 @@ public class VibrationPreferenceController extends NotificationPreferenceControl
             final boolean vibrate = (Boolean) newValue;
             mChannel.enableVibration(vibrate);
             saveChannel();
+            mDependentFieldListener.onFieldValueChanged();
         }
         return true;
     }
