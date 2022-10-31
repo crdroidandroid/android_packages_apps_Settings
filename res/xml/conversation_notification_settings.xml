@@ -88,6 +88,46 @@
             android:icon="@drawable/ic_volume_ringer_vibrate"
             android:title="@string/notification_vibrate_title" />
 
+        <!-- Custom Vibration -->
+        <com.android.settingslib.RestrictedSwitchPreference
+            android:key="custom_vibrate"
+            android:icon="@drawable/ic_volume_ringer_vibrate"
+            android:title="@string/notification_custom_vibrate_title"
+            android:summary="@string/notification_custom_vibrate_summary" />
+
+        <PreferenceCategory
+            android:key="custom_vibrate_seek_bars"
+            android:visibility="gone" >
+
+            <!-- Custom vibration pattern 1 -->
+            <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+                android:key="custom_vibrate1"
+                android:title="@string/notification_custom_vibrate_slider1"
+                android:max="2000"
+                settings:min="0"
+                settings:interval="100"
+                settings:units="@string/unit_milliseconds" />
+
+            <!-- Custom vibration pattern 2 -->
+            <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+                android:key="custom_vibrate2"
+                android:title="@string/notification_custom_vibrate_slider2"
+                android:max="2000"
+                settings:min="0"
+                settings:interval="100"
+                settings:units="@string/unit_milliseconds" />
+
+            <!-- Custom vibration pattern 3 -->
+            <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+                android:key="custom_vibrate3"
+                android:title="@string/notification_custom_vibrate_slider1"
+                android:max="2000"
+                settings:min="0"
+                settings:interval="100"
+                settings:units="@string/unit_milliseconds" />
+
+        </PreferenceCategory>
+
     <!-- demote -->
     <Preference
         android:key="demote"
