@@ -81,24 +81,69 @@
         android:icon="@drawable/ic_volume_ringer_vibrate"
         android:title="@string/notification_vibrate_title" />
 
+    <!-- Custom Vibration -->
+    <com.android.settingslib.RestrictedSwitchPreference
+        android:key="custom_vibrate"
+        android:order="13"
+        android:icon="@drawable/ic_volume_ringer_vibrate"
+        android:title="@string/notification_custom_vibrate_title"
+        android:summary="@string/notification_custom_vibrate_summary" />
+
+    <PreferenceCategory
+        android:key="custom_vibrate_seek_bars"
+        android:order="14"
+        android:visibility="gone" >
+
+        <!-- Custom vibration pattern 1 -->
+        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+            android:key="custom_vibrate1"
+            android:title="@string/notification_custom_vibrate_slider1"
+            android:order="15"
+            android:max="2000"
+            settings:min="0"
+            settings:interval="100"
+            settings:units="@string/unit_milliseconds" />
+
+        <!-- Custom vibration pattern 2 -->
+        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+            android:key="custom_vibrate2"
+            android:title="@string/notification_custom_vibrate_slider2"
+            android:order="16"
+            android:max="2000"
+            settings:min="0"
+            settings:interval="100"
+            settings:units="@string/unit_milliseconds" />
+
+        <!-- Custom vibration pattern 3 -->
+        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+            android:key="custom_vibrate3"
+            android:title="@string/notification_custom_vibrate_slider1"
+            android:order="17"
+            android:max="2000"
+            settings:min="0"
+            settings:interval="100"
+            settings:units="@string/unit_milliseconds" />
+
+    </PreferenceCategory>
+
     <!-- Visibility Override -->
     <com.android.settings.RestrictedListPreference
         android:key="visibility_override"
-        android:order="13"
+        android:order="20"
         android:icon="@drawable/ic_notification_vis_override"
         android:title="@string/app_notification_visibility_override_title"/>
 
     <!-- Lights -->
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="lights"
-        android:order="14"
+        android:order="25"
         android:icon="@drawable/ic_lightbulb_outline_24"
         android:title="@string/notification_show_lights_title" />
 
     <!-- Show badge -->
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="badge"
-        android:order="15"
+        android:order="30"
         android:title="@string/notification_channel_badge_title"
         android:icon="@drawable/ic_notification_dot"
         settings:restrictedSwitchSummary="@string/enabled_by_admin"/>
@@ -106,14 +151,14 @@
     <!-- Bypass DND -->
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="bypass_dnd"
-        android:order="17"
+        android:order="35"
         android:icon="@drawable/ic_do_not_disturb_on_24dp"
         android:title="@string/app_notification_override_dnd_title"
         android:summary="@string/app_notification_override_dnd_summary" />
 
     <Preference
         android:key="app_link"
-        android:order="18"
+        android:order="40"
         android:title="@string/app_settings_link"
         android:icon="@drawable/ic_settings_24dp"
         settings:allowDividerAbove="true"/>
