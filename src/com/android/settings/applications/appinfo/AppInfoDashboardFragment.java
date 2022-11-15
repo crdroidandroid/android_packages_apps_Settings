@@ -432,7 +432,7 @@ public class AppInfoDashboardFragment extends DashboardFragment
         // Utils.isSystemPackage doesn't include all aosp built apps, like Contacts etc. Add them
         // and grab the Google Play Store itself (com.android.vending) in the process
         menu.findItem(PLAY_STORE).setVisible(!Utils.isSystemPackage(getContext().getResources(), mPm, mPackageInfo)
-                && !isAospOrStore(mAppEntry.info.packageName));
+                && isAppFromStore(mAppEntry.info.packageName));
     }
 
     private static void showLockScreen(Context context, Runnable successRunnable) {
@@ -620,8 +620,9 @@ public class AppInfoDashboardFragment extends DashboardFragment
         i.setData(Uri.parse(playURL));
         startActivity(i);
     }
-     private boolean isAospOrStore(String packageName) {
-        return packageName.contains("com.android");
+
+    private boolean isAppFromStore(String packageName) {
+        return !packageName.contains("com.android") && !packageName.contains("org.chromium.webapk");
     }
 
     private void uninstallPkg(String packageName, boolean allUsers, boolean andDisable) {
