@@ -639,4 +639,7 @@
 
     <!-- Whether the given language capitalizes nouns -->
     <bool name="language_capitalizes_nouns">false</bool>
+
+    <!-- Whether sim related information is visible to the end user. -->
+    <bool name="config_show_sim_info">true</bool>
 </resources>
