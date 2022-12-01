@@ -96,11 +96,12 @@
         <Preference
             android:title="@string/radio_info_title"
             android:key="radio_info_settings"
-            android:order="6">
+            android:order="6"
+            settings:controller="com.android.settings.deviceinfo.RadioInfoPreferenceController">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.phone"
                     android:targetClass="com.android.phone.settings.RadioInfo" />
-         </Preference>
+        </Preference>
 
         <!-- SIM status -->
         <Preference
