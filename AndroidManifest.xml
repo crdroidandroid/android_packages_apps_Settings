@@ -398,7 +398,7 @@
                   android:excludeFromRecents="true"
                   android:exported="true"
                   android:permission="android.permission.NETWORK_STACK"
-                  android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+                  android:theme="@*android:style/Theme.DeviceDefault.Dialog.Alert.DayNight">
             <intent-filter>
                 <action android:name="android.net.conn.PROMPT_UNVALIDATED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -1116,7 +1116,7 @@
         <activity
             android:name=".fuelgauge.RequestIgnoreBatteryOptimizations"
             android:label="@string/high_power_apps"
-            android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+            android:theme="@*android:style/Theme.DeviceDefault.Dialog.Alert.DayNight">
             <intent-filter android:priority="1">
                 <action android:name="android.settings.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -2129,7 +2129,7 @@
                   android:label="@string/bluetooth_pairing_request"
                   android:excludeFromRecents="true"
                   android:permission="android.permission.BLUETOOTH"
-                  android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+                  android:theme="@*android:style/Theme.DeviceDefault.Dialog.Alert.DayNight">
         </activity>
 
         <service android:name=".bluetooth.BluetoothPairingService" />
@@ -2162,7 +2162,7 @@
 
         <activity android:name="ActivityPicker"
                 android:label="@string/activity_picker_label"
-                android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert"
+                android:theme="@*android:style/Theme.DeviceDefault.Dialog.Alert.DayNight"
                 android:finishOnCloseSystemDialogs="true">
             <intent-filter android:priority="1">
                 <action android:name="android.intent.action.PICK_ACTIVITY" />
@@ -2211,7 +2211,7 @@
         <!-- Standard picker for widgets -->
         <activity android:name="AppWidgetPickActivity"
                 android:label="@string/widget_picker_title"
-                android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert"
+                android:theme="@*android:style/Theme.DeviceDefault.Dialog.Alert.DayNight"
                 android:finishOnCloseSystemDialogs="true">
             <intent-filter android:priority="1">
                 <action android:name="android.appwidget.action.APPWIDGET_PICK" />
@@ -2220,7 +2220,7 @@
         </activity>
 
         <activity android:name="AllowBindAppWidgetActivity"
-                android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert"
+                android:theme="@*android:style/Theme.DeviceDefault.Dialog.Alert.DayNight"
                 android:finishOnCloseSystemDialogs="true"
                 android:excludeFromRecents="true">
             <intent-filter android:priority="1">
