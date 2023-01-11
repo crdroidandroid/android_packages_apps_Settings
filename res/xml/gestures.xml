@@ -72,8 +72,8 @@
         android:fragment="com.android.settings.gestures.OneHandedSettings"
         settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController" />
 
-    <Preference
-        android:key="gesture_tap_screen_input_summary"
+    <com.android.settingslib.PrimarySwitchPreference
+        android:key="gesture_tap"
         android:title="@string/ambient_display_tap_screen_title"
         android:fragment="com.android.settings.gestures.TapScreenGestureSettings"
         settings:searchable="false"
@@ -86,7 +86,7 @@
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController" />
 
-    <Preference
+    <com.android.settingslib.PrimarySwitchPreference
         android:key="gesture_pick_up_input_summary"
         android:title="@string/ambient_display_pickup_title"
         android:fragment="com.android.settings.gestures.PickupGestureSettings"
