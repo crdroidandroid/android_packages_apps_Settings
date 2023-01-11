@@ -26,12 +26,19 @@
         settings:searchable="false"
         app:lottie_rawRes="@raw/lottie_lift_to_check_phone"/>
 
-
-    <SwitchPreferenceCompat
+    <com.android.settingslib.widget.MainSwitchPreference
         android:key="gesture_pick_up"
         android:title="@string/ambient_display_pickup_title"
-        android:summary="@string/ambient_display_pickup_summary"
-        app:keywords="@string/keywords_gesture"
-        app:controller="com.android.settings.gestures.PickupGesturePreferenceController" />
+        app:keywords="@string/keywords_gesture" />
+
+    <PreferenceCategory
+        android:key="ambient_display_pickup"
+        android:title="@string/ambient_display_pickup_summary" />
+
+    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        android:key="doze_pick_up_gesture_ambient"
+        android:title="@string/doze_gesture_ambient_title"
+        android:summary="@string/doze_gesture_ambient_summary"
+        android:defaultValue="false" />
 
 </PreferenceScreen>
