@@ -42,6 +42,7 @@
     <!-- Media output switcher -->
     <Preference
         android:key="media_output"
+        android:icon="@drawable/ic_media_output"
         android:title="@string/media_output_title"
         android:dialogTitle="@string/media_output_title"
         android:order="-175"
