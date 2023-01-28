@@ -42,7 +42,7 @@
     <com.android.settings.widget.LabeledSeekBarPreference
         android:key="gesture_navbar_radius_preference"
         android:title="@string/gesture_navbar_radius_title"
-        android:max="3"
+        android:max="5"
         android:selectable="true"
         settings:textStart="@string/thin_label"
         settings:textEnd="@string/thick_label" />
