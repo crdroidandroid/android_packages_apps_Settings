@@ -99,7 +99,11 @@ class AppLockPackageListFragment : DashboardFragment() {
 
     private suspend fun getSelectedPackages(): Set<String> {
         return withContext(Dispatchers.IO) {
-            appLockManager.packageData.map { it.packageName }.toSet()
+            appLockManager.packageData.filter {
+                it.shouldProtectApp == true
+            }.map {
+                it.packageName
+            }.toSet()
         }
     }
 
@@ -116,11 +120,7 @@ class AppLockPackageListFragment : DashboardFragment() {
             isChecked = isProtected
             setOnPreferenceChangeListener { _, newValue ->
                 lifecycleScope.launch(Dispatchers.IO) {
-                    if (newValue as Boolean) {
-                        appLockManager.addPackage(packageInfo.packageName)
-                    } else {
-                        appLockManager.removePackage(packageInfo.packageName)
-                    }
+                    appLockManager.setShouldProtectApp(packageInfo.packageName, newValue as Boolean)
                 }
                 return@setOnPreferenceChangeListener true
             }
