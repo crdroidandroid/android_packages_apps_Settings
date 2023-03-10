@@ -1353,4 +1353,13 @@ public final class Utils extends com.android.settingslib.Utils {
         return dreamsSupported && (!dreamsOnlyEnabledForDockUser || canCurrentUserDream(context));
     }
 
+    public static int getPinLength(LockPatternUtils lockPatternUtils, int userId) {
+        int pinLength = 0;
+        try {
+            pinLength = lockPatternUtils.getLockSettings().getPinLength(userId);
+        } catch (Exception e) {
+            Log.d("getPinLength", "getLong error: " + e.getMessage());
+        }
+        return pinLength;
+    }
 }
