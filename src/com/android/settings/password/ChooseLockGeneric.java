@@ -996,7 +996,6 @@ public class ChooseLockGeneric extends SettingsActivity {
                                 lock.defaultQuality,
                                 lock == ScreenLockType.NONE,
                                 false /* chooseLockSkipped */);
-                        Utils.savePINPasswordLength(mLockPatternUtils, -1, mUserId);
                         return true;
                     case PATTERN:
                     case PIN:
