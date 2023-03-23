@@ -392,7 +392,13 @@ public class AppInfoDashboardFragment extends DashboardFragment
             return;
         }
         super.onPrepareOptionsMenu(menu);
-        menu.findItem(UNINSTALL_ALL_USERS_MENU).setVisible(shouldShowUninstallForAll(mAppEntry));
+        final MenuItem uninstallAllUsersItem = menu.findItem(UNINSTALL_ALL_USERS_MENU);
+        uninstallAllUsersItem.setVisible(
+                shouldShowUninstallForAll(mAppEntry) && !mAppsControlDisallowedBySystem);
+        if (uninstallAllUsersItem.isVisible()) {
+            RestrictedLockUtilsInternal.setMenuItemAsDisabledByAdmin(getActivity(),
+                    uninstallAllUsersItem, mAppsControlDisallowedAdmin);
+        }
         mUpdatedSysApp = (mAppEntry.info.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) != 0;
         final MenuItem uninstallUpdatesItem = menu.findItem(UNINSTALL_UPDATES);
         final boolean uninstallUpdateDisabled = getContext().getResources().getBoolean(
@@ -517,6 +523,11 @@ public class AppInfoDashboardFragment extends DashboardFragment
         return true;
     }
 
+    @Override
+    protected boolean shouldSkipForInitialSUW() {
+        return true;
+    }
+
     private void openPlayStore(String packageName) {
         // Launch an intent to the play store entry
         String playURL = "https://play.google.com/store/apps/details?id=" + packageName;
@@ -524,7 +535,8 @@ public class AppInfoDashboardFragment extends DashboardFragment
         i.setData(Uri.parse(playURL));
         startActivity(i);
     }
-     private boolean isAospOrStore(String packageName) {
+
+    private boolean isAospOrStore(String packageName) {
         return packageName.contains("com.android");
     }
 
