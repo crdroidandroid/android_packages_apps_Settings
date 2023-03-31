@@ -221,6 +221,12 @@
                 android:title="@string/select_automatically"
                 settings:controller="com.android.settings.network.telephony.gsm.AutoSelectPreferenceController"/>
 
+            <SwitchPreference
+                android:key="force_lteca_key"
+                android:title="@string/force_lte_ca"
+                android:summary="@string/force_lte_ca_summary"
+                settings:controller="com.android.settings.network.telephony.ForceLteCaPreferenceController"/>
+
             <Preference
                 android:key="choose_network_key"
                 android:title="@string/choose_network_title"
