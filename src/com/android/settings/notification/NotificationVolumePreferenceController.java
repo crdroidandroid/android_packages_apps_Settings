@@ -29,6 +29,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.os.ServiceManager;
 import android.os.Vibrator;
+import android.provider.Settings;
 import android.service.notification.NotificationListenerService;
 import android.text.TextUtils;
 import android.util.Log;
@@ -63,9 +64,6 @@ public class NotificationVolumePreferenceController extends VolumeSeekBarPrefere
     private final int mVibrateIconId = R.drawable.ic_volume_ringer_vibrate;
     private final int mSilentIconId = R.drawable.ic_notifications_off_24dp;
 
-    private final boolean mRingNotificationAliased;
-
-
     public NotificationVolumePreferenceController(Context context) {
         this(context, KEY_NOTIFICATION_VOLUME);
     }
@@ -77,8 +75,6 @@ public class NotificationVolumePreferenceController extends VolumeSeekBarPrefere
             mVibrator = null;
         }
 
-        mRingNotificationAliased = mContext.getResources().getBoolean(
-                com.android.internal.R.bool.config_alias_ring_notif_stream_types);
         updateRingerMode();
     }
 
@@ -100,11 +96,10 @@ public class NotificationVolumePreferenceController extends VolumeSeekBarPrefere
 
     @Override
     public int getAvailabilityStatus() {
-
-        // Show separate notification slider if ring/notification are not aliased by AudioManager --
+        // Show separate notification slider if device is voice capable
         // if they are, notification volume is controlled by RingVolumePreferenceController.
         return mContext.getResources().getBoolean(R.bool.config_show_notification_volume)
-                && (!mRingNotificationAliased || !Utils.isVoiceCapable(mContext))
+                && Utils.isVoiceCapable(mContext)
                 && !mHelper.isSingleVolume()
                 ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }

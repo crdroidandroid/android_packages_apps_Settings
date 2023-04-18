@@ -29,6 +29,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.os.ServiceManager;
 import android.os.Vibrator;
+import android.provider.Settings;
 import android.service.notification.NotificationListenerService;
 import android.text.TextUtils;
 import android.util.Log;
@@ -59,13 +60,6 @@ public class RingVolumePreferenceController extends VolumeSeekBarPreferenceContr
 
     private int mMuteIcon;
 
-    /*
-     * Whether ring and notification streams are aliased together by AudioManager.
-     * If they are, we'll present one volume control for both.
-     * If not, we'll present separate volume controls.
-     */
-    private final boolean mRingAliasNotif;
-
     private final int mNormalIconId;
     @VisibleForTesting
     final int mVibrateIconId;
@@ -76,6 +70,8 @@ public class RingVolumePreferenceController extends VolumeSeekBarPreferenceContr
     final int mTitleId;
 
     private INotificationManager mNoMan;
+
+    private final boolean mNotifAliasRing;
 
     public RingVolumePreferenceController(Context context) {
         this(context, KEY_RING_VOLUME);
@@ -88,28 +84,29 @@ public class RingVolumePreferenceController extends VolumeSeekBarPreferenceContr
             mVibrator = null;
         }
 
-        mRingAliasNotif = isRingAliasNotification();
-        if (mRingAliasNotif) {
-            mTitleId = R.string.ring_volume_option_title;
+        mNotifAliasRing = context.getResources().getBoolean(
+                com.android.internal.R.bool.config_alias_ring_notif_stream_types);
 
-            mNormalIconId = R.drawable.ic_notifications;
-            mSilentIconId = R.drawable.ic_notifications_off_24dp;
-        } else {
-            mTitleId = R.string.separate_ring_volume_option_title;
+        mTitleId = R.string.separate_ring_volume_option_title;
 
-            mNormalIconId = R.drawable.ic_ring_volume;
-            mSilentIconId = R.drawable.ic_ring_volume_off;
-        }
+        mNormalIconId = R.drawable.ic_volume_ringer;
+        mSilentIconId = R.drawable.ic_volume_ringer_mute;
+
         // todo: set a distinct vibrate icon for ring vs notification
         mVibrateIconId = R.drawable.ic_volume_ringer_vibrate;
 
         updateRingerMode();
     }
 
+    /*
+     * Whether ring and notification streams are aliased together by AudioManager.
+     * If they are, we'll present one volume control for both.
+     * If not, we'll present separate volume controls.
+     */
     @VisibleForTesting
     boolean isRingAliasNotification() {
-        return mContext.getResources().getBoolean(
-                com.android.internal.R.bool.config_alias_ring_notif_stream_types);
+        return Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.VOLUME_LINK_NOTIFICATION, mNotifAliasRing ? 1 : 0) == 1;
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
@@ -190,7 +187,7 @@ public class RingVolumePreferenceController extends VolumeSeekBarPreferenceContr
             return;
         }
 
-        if (hintsMatch(hints, mRingAliasNotif)) {
+        if (hintsMatch(hints, isRingAliasNotification())) {
             mSuppressor = suppressor;
             if (mPreference != null) {
                 final String text = SuppressorHelper.getSuppressionText(mContext, suppressor);
