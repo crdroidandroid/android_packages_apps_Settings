@@ -21,14 +21,14 @@ import android.app.NotificationManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.media.AudioManager;
-import android.os.Binder;
 import android.os.ServiceManager;
 import android.os.Vibrator;
-import android.provider.DeviceConfig;
 import android.util.Log;
 
 import com.android.internal.annotations.VisibleForTesting;
-import com.android.internal.config.sysui.SystemUiDeviceConfigFlags;
+
+import com.android.settings.R;
+import com.android.settings.Utils;
 
 import java.util.Objects;
 
@@ -50,8 +50,6 @@ public abstract class RingerModeAffectedVolumePreferenceController extends
     protected ComponentName mSuppressor;
     protected boolean mSeparateNotification;
     protected INotificationManager mNoMan;
-
-    private static final boolean CONFIG_SEPARATE_NOTIFICATION_DEFAULT_VAL = false;
 
     public RingerModeAffectedVolumePreferenceController(Context context, String key, String tag) {
         super(context, key);
@@ -119,10 +117,9 @@ public abstract class RingerModeAffectedVolumePreferenceController extends
     }
 
     protected boolean isSeparateNotificationConfigEnabled() {
-        return Binder.withCleanCallingIdentity(()
-                -> DeviceConfig.getBoolean(DeviceConfig.NAMESPACE_SYSTEMUI,
-                SystemUiDeviceConfigFlags.VOLUME_SEPARATE_NOTIFICATION,
-                CONFIG_SEPARATE_NOTIFICATION_DEFAULT_VAL));
+        return mContext.getResources().getBoolean(R.bool.config_show_notification_volume)
+                && Utils.isVoiceCapable(mContext)
+                && !mHelper.isSingleVolume();
     }
 
     /**
