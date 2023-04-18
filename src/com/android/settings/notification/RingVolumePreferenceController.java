@@ -113,8 +113,7 @@ public class RingVolumePreferenceController extends
     @Override
     public int getAvailabilityStatus() {
         boolean separateNotification = isSeparateNotificationConfigEnabled();
-        return !separateNotification && !mHelper.isSingleVolume()
-                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return !separateNotification ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
