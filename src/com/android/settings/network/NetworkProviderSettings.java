@@ -967,7 +967,7 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
      */
     private void updateWifiEntryPreferencesDelayed() {
         // Safeguard from some delayed event handling
-        if (getActivity() != null && !mIsRestricted && mWifiPickerTracker != null
+        if (getActivity() != null && getView() != null && !mIsRestricted && mWifiPickerTracker != null
                 && mWifiPickerTracker.getWifiState() == WifiManager.WIFI_STATE_ENABLED) {
             final View view = getView();
             final Handler handler = view.getHandler();
