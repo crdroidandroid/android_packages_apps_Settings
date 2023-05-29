@@ -21,6 +21,11 @@
     android:key="sound_settings"
     settings:keywords="@string/keywords_sounds">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="sound_illustration"
+        settings:lottie_rawRes="@raw/sound_illustration"
+        android:order="-1001" />
+
     <!-- Remote volume group -->
     <PreferenceCategory
         android:key="remote_media_group"
