@@ -21,6 +21,11 @@
     android:title="@string/display_settings"
     settings:keywords="@string/keywords_display">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="display_illustration"
+        settings:lottie_rawRes="@raw/display_illustration"
+        android:order="-1001" />
+
     <PreferenceCategory
         android:title="@string/category_name_brightness">
 
