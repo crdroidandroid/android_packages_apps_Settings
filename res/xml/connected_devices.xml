@@ -20,6 +20,11 @@
     android:key="connected_devices_screen"
     android:title="@string/connected_devices_dashboard_title">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="connected_illustration"
+        android:order="-1001"
+        settings:lottie_rawRes="@raw/connected_illustration"/>
+
     <com.android.settings.slices.SlicePreference
         android:key="bt_nearby_slice"
         android:title="@string/summary_placeholder"
