@@ -21,6 +21,11 @@
     android:key="security_dashboard_page"
     android:title="@string/security_settings_title">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="sec_illustration"
+        android:order="-1010"
+        settings:lottie_rawRes="@raw/sec_illustration"/>
+
     <!-- security_settings_status.xml -->
     <PreferenceCategory
         android:order="-10"
