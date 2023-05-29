@@ -20,6 +20,11 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/gesture_preference_title">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="gestures_illustration"
+        settings:lottie_rawRes="@raw/gestures_illustration"
+        android:order="-1001" />
+
     <lineageos.preference.LineagePartsPreference
         android:key="touchscreen_gesture_settings"
         settings:requiresFeature="lineagehardware:FEATURE_TOUCHSCREEN_GESTURES" />

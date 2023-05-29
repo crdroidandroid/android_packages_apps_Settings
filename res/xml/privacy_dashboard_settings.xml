@@ -21,6 +21,11 @@
     android:key="privacy_dashboard_page"
     android:title="@string/privacy_dashboard_title">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="privacy_illustration"
+        android:order="-1001"
+        settings:lottie_rawRes="@raw/privacy_illustration"/>
+
     <!-- Work Policy info -->
     <Preference
         android:key="work_policy_info"
