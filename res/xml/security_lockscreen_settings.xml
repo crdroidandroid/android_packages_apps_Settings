@@ -19,6 +19,11 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/lockscreen_settings_title">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="unlock_illustration"
+        settings:lottie_rawRes="@raw/unlock_illustration"
+        android:order="-1001" />
+
     <PreferenceCategory
         android:key="lockscreen_what_to_show"
         android:title="@string/lockscreen_settings_what_to_show_category">

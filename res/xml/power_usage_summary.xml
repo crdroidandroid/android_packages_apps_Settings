@@ -21,6 +21,11 @@
     android:title="@string/power_usage_summary_title"
     settings:keywords="@string/keywords_battery">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="charging_illustration"
+        settings:lottie_rawRes="@raw/charging_illustration"
+        android:order="-999" />
+
     <com.android.settingslib.widget.UsageProgressBarPreference
         android:key="battery_header"
         android:title="@string/summary_placeholder"
