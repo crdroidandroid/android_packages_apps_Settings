@@ -130,6 +130,7 @@ public class BiometricFragment extends InstrumentedFragment {
                 .setTitle(promptInfo.getTitle())
                 .setUseDefaultTitle() // use default title if title is null/empty
                 .setDeviceCredentialAllowed(true)
+                .setAllowedAuthenticators(promptInfo.getAuthenticators())
                 .setSubtitle(promptInfo.getSubtitle())
                 .setDescription(promptInfo.getDescription())
                 .setTextForDeviceCredential(
