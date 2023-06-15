@@ -149,6 +149,12 @@
             settings:keywords="@string/keywords_enhance_4g_lte"
             settings:controller="com.android.settings.network.telephony.Enhanced4gAdvancedCallingPreferenceController"/>
 
+        <!-- Settings search is handled by NrAdvancedCallingSearchItem. -->
+        <com.android.settings.spa.preference.ComposePreference
+            android:key="nr_advanced_calling"
+            settings:searchable="false"
+            settings:controller="com.android.settings.network.telephony.NrAdvancedCallingPreferenceController"/>
+
         <SwitchPreferenceCompat
             android:key="contact_discovery_opt_in"
             android:title="@string/contact_discovery_opt_in_title"
@@ -303,12 +309,6 @@
             android:summary="@string/require_cellular_encryption_summary"
             settings:controller=
                 "com.android.settings.network.telephony.NullAlgorithmsPreferenceController"/>
-
-        <!-- Settings search is handled by NrAdvancedCallingSearchItem. -->
-        <com.android.settings.spa.preference.ComposePreference
-            android:key="nr_advanced_calling"
-            settings:searchable="false"
-            settings:controller="com.android.settings.network.telephony.NrAdvancedCallingPreferenceController"/>
     </PreferenceCategory>
 
     <Preference
