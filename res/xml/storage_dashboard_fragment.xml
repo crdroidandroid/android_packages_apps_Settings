@@ -20,6 +20,12 @@
     android:key="storage_dashboard_fragment"
     android:title="@string/storage_settings"
     settings:keywords="@string/keywords_storage">
+    
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="store_illustration"
+        settings:lottie_rawRes="@raw/store_illustration"
+        android:order="-1001" />
+        
     <com.android.settingslib.widget.SettingsSpinnerPreference
         android:key="storage_spinner"
         android:order="1"
