@@ -20,6 +20,12 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="safety_and_emergency_screen"
     android:title="@string/emergency_settings_preference_title">
+    
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="emer_illustration"
+        settings:lottie_rawRes="@raw/emer_illustration"
+        android:order="-1001" />
+        
     <com.android.settingslib.widget.LayoutPreference
         android:key="more_emergency_settings"
         android:layout="@layout/more_settings_button"
