@@ -17,6 +17,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res-auto"
                   android:title="@string/configure_notification_settings">
+                  
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="noti_illustration"
+        settings:lottie_rawRes="@raw/noti_illustration"
+        android:order="-1001" />
 
     <PreferenceCategory
         android:key="general_notifications_category"
