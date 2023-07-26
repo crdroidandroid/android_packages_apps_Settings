@@ -20,6 +20,11 @@
     android:key="location_settings"
     android:title="@string/location_settings_title"
     settings:keywords="@string/keywords_location">
+    
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="loc_illustration"
+        settings:lottie_rawRes="@raw/loc_illustration"
+        android:order="-1001" />
 
     <PreferenceCategory
         android:key="recent_location_access"
