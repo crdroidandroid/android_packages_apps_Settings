@@ -34,6 +34,7 @@
     <string name="berry_black_theme_title">أسود خالص</string>
     <string name="berry_black_theme_summary">خلفية سوداء خالصة للوضع المظلم</string>
     <string name="lineagelicense_title">قانون LineageOS</string>
+    <string name="device_info_protected_single_press">انقر لعرض المعلومات</string>
     <string name="status_bar_double_tap_to_sleep_title">اضغط للنوم</string>
     <string name="status_bar_double_tap_to_sleep_summary">الضغط مرتين فوق شريط الحالة لإطفاء الشاشة</string>
     <string name="increasing_ring_volume_option_title">حجم الصوت متزايد</string>
@@ -47,6 +48,8 @@
     <string name="lockpattern_settings_enable_dots_title">إظهار نقاط النمط</string>
     <string name="lockscreen_media_art_title">عرض الغلاف الفني للوسائط</string>
     <string name="lockscreen_visualizer_title">عرض صورة الغلاف للموسيقى</string>
+    <string name="heads_up_notifications_enabled_title">الإشعارات العائمة</string>
+    <string name="heads_up_notifications_enabled_summary">عرض الإشعارات ذات الأولوية في إطار عائم صغير</string>
     <string name="high_touch_sensitivity_title">حساسية ذات لمس عالي</string>
     <string name="high_touch_sensitivity_summary">زيادة حساسية شاشة اللمس حتى يمكن استخدامها أثناء ارتداء القفازات</string>
     <string name="tethering_allow_vpn_upstreams_title">السماح للعملاء باستخدام الـ VPN</string>
@@ -70,6 +73,7 @@
     <string name="app_notification_sound_timeout_value_30_minutes">30 دقيقة</string>
     <string name="proximity_wake_title">منع الاستيقاظ العشوائي</string>
     <string name="proximity_wake_summary">التحقق من مستشعر القرب قبل إيقاظ الشاشة</string>
+    <string name="max_refresh_rate_title">معدل التحديث الأقصى</string>
     <string name="min_refresh_rate_title">معدل تحديث الشاشة الأدنى</string>
     <string name="show_navbar_hint_title">تلميح عن التنقل</string>
     <string name="show_navbar_hint_summary">إظهار شريط تنقل التلميح أسفل الشاشة</string>
