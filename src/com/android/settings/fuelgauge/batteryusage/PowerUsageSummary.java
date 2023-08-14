@@ -342,7 +342,11 @@ public class PowerUsageSummary extends PowerUsageBase implements
 
     private String parseBatterymAhText(String file) {
         try {
-            return Integer.parseInt(readLine(file)) / 1000 + " mAh";
+            if(String.valueOf(Integer.parseInt(readLine(file))).length() == 4) {
+                return Integer.parseInt(readLine(file)) + " mAh";
+            } else {
+                return Integer.parseInt(readLine(file)) / 1000 + " mAh";
+            }
         } catch (IOException ioe) {
             Log.e(TAG, "Cannot read battery capacity from "
                     + file, ioe);
