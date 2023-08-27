@@ -70,7 +70,7 @@ public class AutomaticSystemServerHeapDumpPreferenceController extends
     @Override
     public void updateState(Preference preference) {
         final int mode = Settings.Secure.getInt(mContext.getContentResolver(),
-                Settings.Global.ENABLE_AUTOMATIC_SYSTEM_SERVER_HEAP_DUMPS, SETTING_VALUE_ON);
+                Settings.Global.ENABLE_AUTOMATIC_SYSTEM_SERVER_HEAP_DUMPS, SETTING_VALUE_OFF);
         ((SwitchPreference) mPreference).setChecked(mode != SETTING_VALUE_OFF);
     }
 
