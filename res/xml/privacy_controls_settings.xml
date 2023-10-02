@@ -34,6 +34,14 @@
         android:summary="@string/mic_toggle_description"
         settings:controller="com.android.settings.privacy.MicToggleController"/>
 
+    <!-- Location indicators -->
+    <SwitchPreference
+        android:key="location_indicator_settings"
+        android:title="@string/location_indicator_settings_title"
+        android:summary="@string/location_indicator_settings_description"
+        android:defaultValue="true"
+        settings:controller="com.android.settings.location.LocationIndicatorsPreferenceController"/>
+
     <!-- Clipboard access notifications -->
     <SwitchPreference
         android:key="show_clip_access_notification"
