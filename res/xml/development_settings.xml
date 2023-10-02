@@ -784,13 +784,6 @@
             android:key="enable_gnss_raw_meas_full_tracking"
             android:title="@string/enable_gnss_raw_meas_full_tracking"
             android:summary="@string/enable_gnss_raw_meas_full_tracking_summary" />
-
-        <SwitchPreference
-            android:title="@string/location_indicator_settings_title"
-            android:summary="@string/location_indicator_settings_description"
-            android:defaultValue="true"
-            android:key="location_indicator_settings"
-            settings:controller="com.android.settings.location.LocationIndicatorsPreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory
