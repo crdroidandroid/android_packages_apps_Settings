@@ -107,6 +107,12 @@
         settings:isPreferenceVisible="@bool/config_show_sim_info"
         settings:controller="com.android.settings.security.ConfirmSimDeletionPreferenceController" />
 
+    <!-- App lock -->
+    <com.android.settingslib.RestrictedPreference
+        android:order="95"
+        android:key="app_lock"
+        android:title="@string/app_lock_title" />
+
     <!-- work profile security section -->
     <PreferenceCategory
         android:order="100"
