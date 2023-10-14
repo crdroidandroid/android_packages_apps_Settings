@@ -151,6 +151,11 @@
         android:order="240"
         android:key="security_settings_device_admin_category">
 
+        <!-- App lock -->
+        <com.android.settingslib.RestrictedPreference
+            android:key="app_lock"
+            android:title="@string/app_lock_title" />
+
         <Preference
             android:key="manage_device_admin"
             android:title="@string/manage_device_admin"
