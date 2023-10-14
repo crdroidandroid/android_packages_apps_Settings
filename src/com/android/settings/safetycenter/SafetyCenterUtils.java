@@ -39,6 +39,7 @@ import com.android.settings.notification.LockScreenNotificationPreferenceControl
 import com.android.settings.privacy.PrivacyDashboardFragment;
 import com.android.settings.security.ChangeProfileScreenLockPreferenceController;
 import com.android.settings.security.LockUnificationPreferenceController;
+import com.android.settings.security.applock.AppLockSettingsPreferenceController;
 import com.android.settings.security.trustagent.TrustAgentListPreferenceController;
 import com.android.settings.widget.PreferenceCategoryController;
 import com.android.settingslib.core.AbstractPreferenceController;
@@ -55,6 +56,7 @@ public final class SafetyCenterUtils {
             "privacy_work_profile_notifications_category";
     private static final String KEY_NOTIFICATION_WORK_PROFILE_NOTIFICATIONS =
             "privacy_lock_screen_work_profile_notifications";
+    private static final String APP_LOCK_PREF_KEY = "app_lock";
 
     /**
      * Returns preference controllers related to advanced security entries. This is used in {@link
@@ -80,6 +82,8 @@ public final class SafetyCenterUtils {
                 .add(new CombinedBiometricProfileStatusPreferenceController(context, lifecycle));
         controllers.add(new PreferenceCategoryController(context, WORK_PROFILE_SECURITY_CATEGORY)
                 .setChildren(profileSecurityControllers));
+        controllers.add(new AppLockSettingsPreferenceController(
+                context, APP_LOCK_PREF_KEY, host, lifecycle));
         controllers.addAll(profileSecurityControllers);
         return controllers;
     }
