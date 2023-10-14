@@ -35,8 +35,8 @@ import com.android.internal.widget.LockPatternUtils
 import com.android.settings.R
 import com.android.settings.Utils.SETTINGS_PACKAGE_NAME
 import com.android.settings.core.SubSettingLauncher
+import com.android.settings.dashboard.DashboardFragment
 import com.android.settings.password.ConfirmDeviceCredentialActivity
-import com.android.settings.security.SecuritySettings
 import com.android.settingslib.core.lifecycle.Lifecycle
 import com.android.settingslib.transition.SettingsTransitionHelper.TransitionType.TRANSITION_SLIDE
 import com.android.settings.core.BasePreferenceController
@@ -48,7 +48,7 @@ import com.android.settingslib.core.instrumentation.MetricsFeatureProvider
 class AppLockSettingsPreferenceController(
     context: Context,
     preferenceKey: String,
-    private val host: SecuritySettings?,
+    private val host: DashboardFragment?,
     lifecycle: Lifecycle?,
 ) : BasePreferenceController(context, preferenceKey),
     LifecycleEventObserver {
