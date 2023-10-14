@@ -110,7 +110,7 @@ class AppLockSettingsPreferenceController(
 
     private fun getSummaryForListSize(size: Int): CharSequence? =
         if (size == 0) {
-            null
+            mContext.getString(R.string.app_lock_packages_summary)
         } else {
             mContext.resources.getQuantityString(R.plurals.app_lock_summary, size, size)
         }
