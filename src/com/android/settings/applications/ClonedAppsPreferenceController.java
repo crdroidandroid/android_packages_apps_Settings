@@ -30,6 +30,7 @@ import androidx.lifecycle.OnLifecycleEvent;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
+import com.android.settings.custom.utils.AppUtils;
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.core.BasePreferenceController;
@@ -45,6 +46,7 @@ public class ClonedAppsPreferenceController extends BasePreferenceController
         implements LifecycleObserver {
     private Preference mPreference;
     private Context mContext;
+    private AppUtils appUtils = new AppUtils();
 
     public ClonedAppsPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
@@ -81,9 +83,7 @@ public class ClonedAppsPreferenceController extends BasePreferenceController
             @Override
             protected Integer[] doInBackground(Void... unused) {
                 // Get list of allowlisted cloneable apps.
-                List<String> cloneableApps = Arrays.asList(
-                        mContext.getResources().getStringArray(
-                                com.android.internal.R.array.cloneable_apps));
+                List<String> cloneableApps = appUtils.getCloneableAppListStr(mContext);
                 List<String> primaryUserApps = mContext.getPackageManager()
                         .getInstalledPackagesAsUser(/* flags*/ 0, UserHandle.myUserId()).stream()
                         .map(x -> x.packageName).toList();
