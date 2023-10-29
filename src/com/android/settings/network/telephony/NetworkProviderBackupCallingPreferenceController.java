@@ -91,6 +91,8 @@ public class NetworkProviderBackupCallingPreferenceController extends
         mPreferenceScreen = screen;
         mPreferenceCategory = screen.findPreference(KEY_PREFERENCE_CATEGORY);
         mPreferenceCategory.setVisible(isAvailable());
-        mNetworkProviderBackupCallingGroup.displayPreference(screen);
+        if (mNetworkProviderBackupCallingGroup != null) {
+            mNetworkProviderBackupCallingGroup.displayPreference(screen);
+        }
     }
 }
