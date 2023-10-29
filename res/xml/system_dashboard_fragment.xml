@@ -52,6 +52,15 @@
         settings:controller="com.android.settings.inputmethod.TrackpadSettingsController"/>
 
     <Preference
+        android:icon="@drawable/ic_hand_gesture" 
+        android:key="gesture_system_navigation_input_summary" 
+        android:title="@string/system_navigation_title" 
+        android:order="-255" 
+        android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings" 
+        settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"
+        settings:keywords="@string/keywords_system_navigation" />
+
+    <Preference
         android:key="gesture_settings"
         android:title="@string/gesture_preference_title"
         android:icon="@drawable/ic_settings_gestures"
