@@ -40,8 +40,7 @@ public final class DeviceLockPreferenceController extends BasePreferenceControll
 
     @Override
     public int getAvailabilityStatus() {
-        // TODO(b/282856378): make this entry searchable
-        return AVAILABLE_UNSEARCHABLE;
+        return UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
