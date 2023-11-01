@@ -20,7 +20,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="gesture_navigation_settings_page"
-    android:title="@string/gesture_settings_activity_title"
+    android:title="@string/edge_to_edge_navigation_title"
     settings:keywords="@string/keywords_gesture_navigation_settings">
 
     <lineageos.preference.LineageSystemSettingSwitchPreference
