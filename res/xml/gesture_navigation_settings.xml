@@ -55,7 +55,8 @@
         android:min="0"
         android:max="4"
         settings:textStart="@string/thin_label"
-        settings:textEnd="@string/thick_label" />
+        settings:textEnd="@string/thick_label"
+        android:dependency="navigation_bar_hint" />
 
     <com.android.settingslib.widget.SliderPreference
         android:key="gesture_back_height"
