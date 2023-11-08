@@ -120,6 +120,7 @@ android_library {
         "LineagePreferenceLib",
         "vendor.lineage.fastcharge-V1.0-java",
         "SystemUISharedLib",
+        "SettingsGoogle-lib",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],

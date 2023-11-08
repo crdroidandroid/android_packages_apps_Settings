@@ -81,6 +81,11 @@ import com.android.settings.wifi.WifiTrackerLibProvider;
 import com.android.settings.wifi.WifiTrackerLibProviderImpl;
 import com.android.settings.wifi.factory.WifiFeatureProvider;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
+import com.google.android.settings.fuelgauge.BatterySettingsFeatureProviderGoogleImpl;
+import com.google.android.settings.fuelgauge.BatteryStatusFeatureProviderGoogleImpl;
+import com.google.android.settings.fuelgauge.PowerUsageFeatureProviderGoogleImpl;
+import com.google.android.settings.security.SecurityHubDashboard;
+import com.google.android.settings.security.SecuritySettingsFeatureProviderGoogleImpl;
 
 /**
  * {@link FeatureFactory} implementation for AOSP Settings.
@@ -138,7 +143,7 @@ public class FeatureFactoryImpl extends FeatureFactory {
     @Override
     public PowerUsageFeatureProvider getPowerUsageFeatureProvider(Context context) {
         if (mPowerUsageFeatureProvider == null) {
-            mPowerUsageFeatureProvider = new PowerUsageFeatureProviderImpl(
+            mPowerUsageFeatureProvider = new PowerUsageFeatureProviderGoogleImpl(
                     context.getApplicationContext());
         }
         return mPowerUsageFeatureProvider;
@@ -147,7 +152,7 @@ public class FeatureFactoryImpl extends FeatureFactory {
     @Override
     public BatteryStatusFeatureProvider getBatteryStatusFeatureProvider(Context context) {
         if (mBatteryStatusFeatureProvider == null) {
-            mBatteryStatusFeatureProvider = new BatteryStatusFeatureProviderImpl(
+            mBatteryStatusFeatureProvider = new BatteryStatusFeatureProviderGoogleImpl(
                     context.getApplicationContext());
         }
         return mBatteryStatusFeatureProvider;
@@ -156,7 +161,8 @@ public class FeatureFactoryImpl extends FeatureFactory {
     @Override
     public BatterySettingsFeatureProvider getBatterySettingsFeatureProvider(Context context) {
         if (mBatterySettingsFeatureProvider == null) {
-            mBatterySettingsFeatureProvider = new BatterySettingsFeatureProviderImpl(context);
+            mBatterySettingsFeatureProvider = new BatterySettingsFeatureProviderGoogleImpl(
+                context.getApplicationContext());
         }
         return mBatterySettingsFeatureProvider;
     }
@@ -336,7 +342,8 @@ public class FeatureFactoryImpl extends FeatureFactory {
     @Override
     public SecuritySettingsFeatureProvider getSecuritySettingsFeatureProvider() {
         if (mSecuritySettingsFeatureProvider == null) {
-            mSecuritySettingsFeatureProvider = new SecuritySettingsFeatureProviderImpl();
+            mSecuritySettingsFeatureProvider =
+                    new SecuritySettingsFeatureProviderGoogleImpl(getAppContext());
         }
         return mSecuritySettingsFeatureProvider;
     }
