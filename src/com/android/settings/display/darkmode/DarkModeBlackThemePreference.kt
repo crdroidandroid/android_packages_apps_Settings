@@ -47,7 +47,7 @@ class DarkModeBlackThemePreference(context: Context, private val darkModeStorage
     fun isAvailable(context: Context): Boolean {
         return try {
             context.packageManager.getPackageInfo(
-                "org.lineageos.overlay.customization.blacktheme",
+                "com.android.system.theme.black",
                 0,
             )
             true
