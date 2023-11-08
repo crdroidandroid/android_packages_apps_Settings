@@ -199,6 +199,8 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.crdroid.settings.crDroidSettingsLayout;
 import com.crdroid.settings.fragments.ui.SmartPixels;
 
+import com.google.android.settings.security.SecurityHubDashboard;
+
 public class SettingsGateway {
 
     /**
@@ -385,6 +387,7 @@ public class SettingsGateway {
             crDroidSettingsLayout.class.getName(),
             RunningServices.class.getName(),
             SmartPixels.class.getName(),
+            SecurityHubDashboard.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
