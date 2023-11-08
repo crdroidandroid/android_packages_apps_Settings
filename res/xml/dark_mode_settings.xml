@@ -68,5 +68,5 @@
         android:title="@string/berry_black_theme_title"
         android:summary="@string/berry_black_theme_summary"
         android:defaultValue="false"
-        settings:requiresPackage="org.lineageos.overlay.customization.blacktheme" />
+        settings:requiresPackage="com.android.system.theme.black" />
 </PreferenceScreen>
