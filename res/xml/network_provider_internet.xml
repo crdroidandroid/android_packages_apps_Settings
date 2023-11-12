@@ -32,7 +32,6 @@
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_settings_wireless"
         android:order="-30"
-        settings:allowDividerAbove="true"
         settings:keywords="@string/keywords_internet"
         settings:useAdminDisabledSummary="true" />
 
@@ -43,7 +42,6 @@
         android:order="-20"
         android:summary="@string/summary_placeholder"
         settings:isPreferenceVisible="@bool/config_show_sim_info"
-        settings:allowDividerBelow="true"
         settings:keywords="@string/calls_and_sms"
         settings:useAdminDisabledSummary="true" />
 
