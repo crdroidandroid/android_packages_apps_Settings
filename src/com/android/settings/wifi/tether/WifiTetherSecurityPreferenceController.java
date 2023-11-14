@@ -92,7 +92,7 @@ public class WifiTetherSecurityPreferenceController extends WifiTetherBasePrefer
         // capability of WPA3 hotspot callback will update the preference list here, add null point
         // checking to avoid the mPreference is not ready when the fragment is loading for settings
         // keyword searching only.
-        if (mPreference == null) {
+        if (mPreference == null || mShouldHidePreference) {
             return;
         }
         final ListPreference preference = (ListPreference) mPreference;
