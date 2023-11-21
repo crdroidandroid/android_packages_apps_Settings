@@ -52,6 +52,7 @@
         android:key="wifi_cellular_data_fallback"
         android:title="@string/wifi_cellular_data_fallback_title"
         android:summary="@string/wifi_cellular_data_fallback_summary"
+        android:icon="@drawable/ic_sim_card_download"
         settings:controller="com.android.settings.wifi.CellularFallbackPreferenceController" />
 
     <Preference
