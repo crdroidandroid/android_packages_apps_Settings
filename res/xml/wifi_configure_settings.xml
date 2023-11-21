@@ -62,6 +62,7 @@
     <Preference
         android:key="wifi_direct"
         android:title="@string/wifi_menu_p2p"
+        android:icon="@drawable/ic_cast_24dp"
         android:fragment="com.android.settings.wifi.p2p.WifiP2pSettings" />
 
 </PreferenceScreen>
