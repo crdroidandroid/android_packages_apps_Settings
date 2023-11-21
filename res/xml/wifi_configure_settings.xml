@@ -30,6 +30,7 @@
         android:key="wifi_timeout"
         android:title="@string/wifi_timeout"
         android:summary="@string/wifi_timeout_summary"
+        android:icon="@drawable/ic_wifi_off"
         android:entries="@array/custom_timeout_entries"
         android:entryValues="@array/custom_timeout_values"
         settings:controller="com.android.settings.wifi.WifiTimeoutPreferenceController"/>
