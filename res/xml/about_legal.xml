@@ -61,6 +61,12 @@
         settings:controller="com.android.settings.deviceinfo.legal.WebViewLicensePreferenceController" />
 
     <Preference
+        android:key="legal_source_code"
+        android:summary="@string/legal_source_code_description"
+        android:title="@string/legal_source_code_title"
+        settings:controller="com.google.android.settings.deviceinfo.legal.SourceCodeController" />
+
+    <Preference
         android:key="wallpaper_attributions"
         android:title="@string/wallpaper_attributions"
         android:summary="@string/wallpaper_attributions_values"
