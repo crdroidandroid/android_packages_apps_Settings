@@ -15,7 +15,15 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:title="@string/vpn_title">
+
+    <com.android.settingslib.widget.ButtonPreference
+        android:icon="@drawable/ic_lightbulb_tips"
+        android:key="discover_tips"
+        android:title="@string/discover_tips_button"
+        settings:controller="com.google.android.settings.network.VpnSettings2TipsButtonPreferenceController" />
+
     <PreferenceCategory
         android:key="advanced_vpn_group"/>
 
