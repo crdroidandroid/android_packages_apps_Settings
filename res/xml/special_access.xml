@@ -47,6 +47,12 @@
         settings:controller="com.android.settings.enterprise.ManageDeviceAdminPreferenceController" />
 
     <Preference
+        android:key="debugging_data"
+        android:order="-1650"
+        android:title="@string/debugging_data_title"
+        settings:controller="com.google.android.settings.applications.specialaccess.DebuggingDataPreferenceController" />
+
+    <Preference
         android:key="system_alert_window_app_list"
         android:title="@string/system_alert_window_settings"
         android:order="-1600"

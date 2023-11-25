@@ -222,7 +222,15 @@
         android:title="@string/app_volume_title"
         android:summary="@string/app_volume_summary"
         android:defaultValue="false"
-        android:order="-5"/>
+        android:order="-58"/>
+
+    <Preference
+        android:key="clear_calling"
+        android:title="@string/clear_calling_title"
+        android:summary="@string/clear_calling_topintro"
+        android:fragment="com.google.android.settings.notification.ClearCallingSettings"
+        settings:controller="com.google.android.settings.notification.ClearCallingPreferenceController"
+        android:order="-55"/>
 
     <!-- Dial pad tones -->
     <SwitchPreferenceCompat

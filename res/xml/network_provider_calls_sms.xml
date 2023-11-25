@@ -45,4 +45,32 @@
         settings:controller="com.android.settings.network.telephony.NetworkProviderWifiCallingPreferenceController"
         settings:allowDividerAbove="true"
         />
+
+    <PreferenceCategory
+        android:key="connectivity_helper_call_quality_category"
+        android:order="30"
+        android:title="@string/connectivity_helper_call_quality_category"
+        settings:allowDividerAbove="true">
+
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_connectivity_helper_call_quality"
+            android:key="connectivity_helper_call_quality"
+            android:summary="@string/connectivity_helper_call_quality_summary"
+            android:title="@string/connectivity_helper_call_quality_title"
+            settings:controller="com.google.android.settings.network.ConnectivityHelperCallQualityPreferenceController" />
+
+        <SwitchPreferenceCompat
+            android:key="connectivity_helper_d2d"
+            android:order="40"
+            android:summary="@string/connectivity_helper_d2d_summary"
+            android:title="@string/connectivity_helper_d2d_title"
+            settings:controller="com.google.android.settings.network.ConnectivityHelperDeviceToDevicePreferenceController" />
+
+        <com.android.settingslib.widget.FooterPreference
+            android:key="connectivity_helper_footer"
+            android:selectable="false"
+            android:title="@string/connectivity_helper_footnote"
+            settings:searchable="false" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
