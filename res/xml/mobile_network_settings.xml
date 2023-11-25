@@ -168,6 +168,11 @@
             settings:controller="com.android.settings.network.telephony.CarrierSettingsVersionPreferenceController"
             settings:enableCopying="true"/>
 
+        <Preference
+            android:key="speed_boost_settings"
+            android:title="@string/speed_boost_title"
+            settings:controller="com.google.android.settings.network.telephony.SpeedBoostPreferenceController" />
+
         <PreferenceCategory
             android:key="calling_category"
             android:title="@string/call_category"

@@ -24,7 +24,15 @@
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="auto_awesome_battery"
-        settings:lottie_rawRes="@raw/auto_awesome_battery_lottie" />
+        android:selectable="false"
+        settings:lottie_rawRes="@raw/lottie_adaptive_battery"
+        settings:searchable="false" />
+
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:key="adaptive_charging_switch"
+        android:title="@string/adaptive_charging_main_switch_title"
+        settings:controller="com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingMainSwitchPreferenceController"
+        settings:keywords="@string/keywords_adaptive_charging"/>
 
     <SwitchPreference
         android:key="smart_battery"
@@ -43,8 +51,8 @@
         android:title="@string/restricted_app_title"/>
 
     <com.android.settingslib.widget.FooterPreference
-        android:key="smart_battery_detail_footer"
-        android:title="@string/smart_battery_footer"
-        android:selectable="false"
-        settings:searchable="false"/>
+        android:key="adaptive_charging_footer_preference"
+        android:title="@string/adaptive_charging_footer"
+        settings:controller="com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingFooterPreferenceController"
+        settings:searchable="false" />
 </PreferenceScreen>

@@ -24,6 +24,12 @@
         android:title="@string/spatial_audio_text"
         settings:searchable="false"/>
 
+    <com.android.settingslib.widget.ButtonPreference
+        android:icon="@drawable/ic_lightbulb_tips"
+        android:key="discover_tips"
+        android:title="@string/discover_tips_button"
+        settings:controller="com.google.android.settings.notification.SpatialAudioTipsButtonPreferenceController" />
+
     <SwitchPreference
         android:key="spatial_audio"
         android:title="@string/spatial_audio_speaker"
