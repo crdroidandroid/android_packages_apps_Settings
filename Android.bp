@@ -71,6 +71,7 @@ android_library {
         "res-export", // for external usage
         "res-product",
         "crDroidSettings/res",
+        "SettingsGoogle/res",
     ],
 
     static_libs: [

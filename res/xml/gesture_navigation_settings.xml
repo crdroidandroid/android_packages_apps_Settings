@@ -84,6 +84,19 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="search_gesture_category"
+        android:persistent="false"
+        android:title="@string/search_gesture_category_title"
+        settings:controller="com.google.android.settings.gestures.GestureNavigationSettingsGoogleSearchController">
+        <SwitchPreference
+            android:key="search_gesture_press_hold"
+            android:summary="@string/search_press_hold_gesture_summary"
+            android:title="@string/search_press_hold_gesture_title"
+            settings:controller="com.google.android.settings.gestures.GestureNavigationSettingsGoogleSearchController"
+            settings:highlightableMenuKey="@string/menu_key_system" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="back_sensitivity_category"
         android:persistent="false"
         android:title="@string/back_sensitivity_dialog_title">
