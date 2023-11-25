@@ -26,6 +26,12 @@
         android:key="auto_awesome_battery"
         settings:lottie_rawRes="@raw/auto_awesome_battery_lottie" />
 
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:key="adaptive_charging_switch"
+        android:title="@string/adaptive_charging_main_switch_title"
+        settings:controller="com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingMainSwitchPreferenceController"
+        settings:keywords="@string/keywords_adaptive_charging"/>
+
     <SwitchPreference
         android:key="smart_battery"
         android:title="@string/smart_battery_title"
