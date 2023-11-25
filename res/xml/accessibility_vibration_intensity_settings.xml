@@ -59,6 +59,14 @@
             app:keywords="@string/keywords_alarm_vibration"
             app:controller="com.android.settings.accessibility.AlarmVibrationIntensityPreferenceController" />
 
+        <SwitchPreferenceCompat
+            android:key="adaptive_alert_vibration"
+            android:summary="@string/adaptive_alert_vibration_summary"
+            android:title="@string/adaptive_alert_vibration_title"
+            app:controller="com.google.android.settings.accessibility.AdaptiveHapticsTogglePreferenceController"
+            app:keywords="@string/keywords_adaptive_alert_vibration"
+            app:searchable="@bool/config_adaptive_alert_vibration_enabled" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
