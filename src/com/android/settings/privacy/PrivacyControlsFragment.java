@@ -21,6 +21,7 @@ import android.content.Context;
 
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.location.LocationIndicatorsPreferenceController;
 import com.android.settingslib.core.AbstractPreferenceController;
 
 import java.util.ArrayList;
@@ -33,12 +34,14 @@ public class PrivacyControlsFragment extends DashboardFragment {
     private static final String TAG = "PrivacyDashboardFrag";
     private static final String CAMERA_KEY = "privacy_camera_toggle";
     private static final String MIC_KEY = "privacy_mic_toggle";
+    private static final String LOCATION_KEY = "location_indicator_settings";
 
     @Override
     protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new CameraToggleController(context, CAMERA_KEY));
         controllers.add(new MicToggleController(context, MIC_KEY));
+        controllers.add(new LocationIndicatorsPreferenceController(context, LOCATION_KEY));
         controllers.add(new ShowClipAccessNotificationPreferenceController(context));
         return controllers;
     }
