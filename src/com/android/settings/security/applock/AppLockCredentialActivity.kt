@@ -125,7 +125,7 @@ class AppLockCredentialActivity : FragmentActivity() {
         )
         var allowedAuthenticators = Authenticators.DEVICE_CREDENTIAL
         if (biometricsAllowed) {
-            allowedAuthenticators = allowedAuthenticators or Authenticators.BIOMETRIC_STRONG
+            allowedAuthenticators = allowedAuthenticators or Authenticators.BIOMETRIC_WEAK
         }
 
         val promptInfo = PromptInfo().apply {
