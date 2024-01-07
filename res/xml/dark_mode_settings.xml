@@ -73,4 +73,9 @@
         android:summary="@string/berry_black_theme_summary"
         android:defaultValue="false"
         settings:requiresPackage="com.android.system.theme.black" />
+
+    <SwitchPreference
+        android:key="hwui_force_dark"
+        android:title="@string/hwui_force_dark_title"
+        android:summary="@string/hwui_force_dark_summary" />
 </PreferenceScreen>
