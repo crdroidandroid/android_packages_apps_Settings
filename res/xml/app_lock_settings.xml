@@ -21,6 +21,7 @@
         android:key="app_lock_packages"
         android:title="@string/app_lock_packages_title"
         android:summary="@string/app_lock_packages_summary"
+        settings:searchable="false"
         android:fragment="com.android.settings.security.applock.AppLockPackageListFragment" />
 
     <ListPreference
@@ -31,11 +32,13 @@
         android:entryValues="@array/app_lock_timeout_values"
         android:defaultValue="0"
         android:persistent="false"
+        settings:searchable="false"
         settings:controller="com.android.settings.security.applock.AppLockTimeoutPreferenceController" />
 
     <SwitchPreference
         android:key="app_lock_biometrics_allowed"
         android:title="@string/app_lock_biometrics_allowed_title"
+        settings:searchable="false"
         android:persistent="false" />
 
 </PreferenceScreen>
