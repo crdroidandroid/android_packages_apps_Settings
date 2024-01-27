@@ -154,12 +154,12 @@
             settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
 
         <!-- Battery information -->
-        <Preference
+        <!--<Preference
             android:key="battery_info"
             android:order="44"
             android:title="@string/battery_info"
             android:fragment="com.android.settings.deviceinfo.batteryinfo.BatteryInfoFragment"
-            settings:keywords="@string/keywords_battery_info"/>
+            settings:keywords="@string/keywords_battery_info"/>-->
     </PreferenceCategory>
 
     <PreferenceCategory
