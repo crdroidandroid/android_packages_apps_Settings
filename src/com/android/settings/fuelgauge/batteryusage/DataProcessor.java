@@ -1390,17 +1390,6 @@ public final class DataProcessor {
                                 currentEntry.mCachedUsageConsumePower,
                                 nextEntry.mCachedUsageConsumePower);
             }
-            if (isSystemConsumer(selectedBatteryEntry.mConsumerType)
-                    && selectedBatteryEntry.mDrainType == BatteryConsumer.POWER_COMPONENT_SCREEN) {
-                // Replace Screen system component time with screen on time.
-                foregroundUsageTimeInMs = slotScreenOnTime;
-            }
-            // Excludes entry since we don't have enough data to calculate.
-            if (foregroundUsageTimeInMs == 0
-                    && backgroundUsageTimeInMs == 0
-                    && consumePower == 0) {
-                continue;
-            }
             // Forces refine the cumulative value since it may introduce deviation error since we
             // will apply the interpolation arithmetic.
             final float totalUsageTimeInMs =
