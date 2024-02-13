@@ -55,6 +55,7 @@ final class PowerMenuSettingsUtils {
     private static final int LONG_PRESS_POWER_GLOBAL_ACTIONS = 1; // a.k.a., Power Menu
     private static final int LONG_PRESS_POWER_ASSISTANT_VALUE = 5; // Settings.Secure.ASSISTANT
 
+    private static final int KEY_CHORD_POWER_VOLUME_UP_MUTE_TOGGLE = 1;
     private static final int KEY_CHORD_POWER_VOLUME_UP_GLOBAL_ACTIONS = 2;
 
     private static final Uri POWER_BUTTON_LONG_PRESS_URI =
@@ -113,14 +114,11 @@ final class PowerMenuSettingsUtils {
                 context.getContentResolver(),
                 POWER_BUTTON_LONG_PRESS_SETTING,
                 LONG_PRESS_POWER_GLOBAL_ACTIONS)) {
-            // We restore power + volume up buttons to the default action.
-            int keyChordDefaultValue =
-                    context.getResources()
-                            .getInteger(KEY_CHORD_POWER_VOLUME_UP_DEFAULT_VALUE_RESOURCE);
+            // We restore power + volume up buttons to the mute action.
             Settings.Global.putInt(
                     context.getContentResolver(),
                     KEY_CHORD_POWER_VOLUME_UP_SETTING,
-                    keyChordDefaultValue);
+                    KEY_CHORD_POWER_VOLUME_UP_MUTE_TOGGLE);
             return true;
         }
         return false;
