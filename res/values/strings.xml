@@ -12310,4 +12310,12 @@
 
     <!-- Warning message when we try to dock an app not supporting multiple instances split into multiple sides [CHAR LIMIT=NONE] -->
     <string name="dock_multi_instances_not_supported_text">"This app can only be opened in 1 window"</string>
+
+    <!-- Transistent task mode (Tadi mode) -->
+    <string name="transistent_task_mode_title">Transistent task mode</string>
+    <string name="transistent_task_mode_dialog_title">Transistent task mode (Reboot your device to apply changes)</string>
+    <string name="transistent_task_mode_summary">Dismiss apps from recents when last activity gets closed using back button.</string>
+    <string name="transistent_task_mode_default">Disable (Default)</string>
+    <string name="transistent_task_mode_allow">Enable (Some apps will stay)</string>
+    <string name="transistent_task_mode_force">Force (Override app behaviour)</string>
 </resources>

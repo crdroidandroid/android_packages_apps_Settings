@@ -187,4 +187,12 @@
     <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
     <string name="increasing_ring_min_volume_title">Start volume</string>
     <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+
+    <!-- Transistent task mode (Tadi mode) -->
+    <string name="transistent_task_mode_title">Transistent task mode</string>
+    <string name="transistent_task_mode_dialog_title">Transistent task mode (Reboot your device to apply changes)</string>
+    <string name="transistent_task_mode_summary">Dismiss apps from recents when last activity gets closed using back button.</string>
+    <string name="transistent_task_mode_default">Disable (Default)</string>
+    <string name="transistent_task_mode_allow">Enable (Some apps will stay)</string>
+    <string name="transistent_task_mode_force">Force (Override app behaviour)</string>
 </resources>
