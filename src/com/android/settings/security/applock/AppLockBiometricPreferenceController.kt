@@ -36,8 +36,8 @@ class AppLockBiometricPreferenceController(
     private val coroutineScope: CoroutineScope
 ) : AppLockTogglePreferenceController(context, KEY) {
 
-    private val appLockManager = context.getSystemService(AppLockManager::class.java)
-    private val biometricManager = context.getSystemService(BiometricManager::class.java)
+    private val appLockManager = context.getSystemService(AppLockManager::class.java)!!
+    private val biometricManager = context.getSystemService(BiometricManager::class.java)!!
 
     private var preference: Preference? = null
     private var isBiometricsAllowed = false
