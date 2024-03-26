@@ -53,7 +53,7 @@ class AppLockPackageListFragment : DashboardFragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        appLockManager = context.getSystemService(AppLockManager::class.java)
+        appLockManager = context.getSystemService(AppLockManager::class.java)!!
         pm = context.packageManager
         launchablePackages = Utils.launchablePackages(context)
         whiteListedPackages = resources.getStringArray(
@@ -67,10 +67,10 @@ class AppLockPackageListFragment : DashboardFragment() {
             val preferences = withContext(Dispatchers.Default) {
                 pm.getInstalledPackages(
                     PackageInfoFlags.of(PackageManager.MATCH_ALL.toLong())
-                ).filter {
-                    !it.applicationInfo.isSystemApp() ||
-                        launchablePackages.contains(it.packageName) ||
-                        whiteListedPackages.contains(it.packageName)
+                ).filter { packageInfo ->
+                    val isSystemApp = packageInfo.applicationInfo?.isSystemApp ?: false
+                    !isSystemApp || launchablePackages.contains(packageInfo.packageName) ||
+                        whiteListedPackages.contains(packageInfo.packageName)
                 }.sortedWith { first, second ->
                     getLabel(first).compareTo(getLabel(second))
                 }
@@ -108,14 +108,14 @@ class AppLockPackageListFragment : DashboardFragment() {
     }
 
     private fun getLabel(packageInfo: PackageInfo) =
-        packageInfo.applicationInfo.loadLabel(pm).toString()
+        packageInfo.applicationInfo?.loadLabel(pm).toString()
 
     private fun createPreference(packageInfo: PackageInfo, isProtected: Boolean): Preference {
         val label = getLabel(packageInfo)
         return PrimarySwitchPreference(requireContext()).apply {
             key = packageInfo.packageName
             title = label
-            icon = packageInfo.applicationInfo.loadIcon(pm)
+            icon = packageInfo.applicationInfo?.loadIcon(pm)
             setIconSize(ICON_SIZE_MEDIUM)
             isChecked = isProtected
             setOnPreferenceChangeListener { _, newValue ->
