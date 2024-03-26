@@ -35,7 +35,7 @@ class AppLockHideAppPC(
     private val coroutineScope: CoroutineScope
 ) : AppLockTogglePreferenceController(context, KEY) {
 
-    private val appLockManager = context.getSystemService(AppLockManager::class.java)
+    private val appLockManager = context.getSystemService(AppLockManager::class.java)!!
     private var hideFromLauncher = AppLockManager.DEFAULT_HIDE_IN_LAUNCHER
     private var preference: Preference? = null
 
