@@ -30,7 +30,7 @@ class AppLockTimeoutPreferenceController(
 ) : BasePreferenceController(context, key),
     Preference.OnPreferenceChangeListener {
 
-    private val appLockManager = context.getSystemService(AppLockManager::class.java)
+    private val appLockManager = context.getSystemService(AppLockManager::class.java)!!
 
     override fun getAvailabilityStatus() = AVAILABLE
 
