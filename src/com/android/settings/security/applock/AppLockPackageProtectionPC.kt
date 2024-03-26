@@ -36,7 +36,7 @@ class AppLockPackageProtectionPC(
     private val coroutineScope: CoroutineScope
 ) : AppLockTogglePreferenceController(context, KEY) {
 
-    private val appLockManager = context.getSystemService(AppLockManager::class.java)
+    private val appLockManager = context.getSystemService(AppLockManager::class.java)!!
     private var isProtected = false
     private var preference: Preference? = null
 
