@@ -54,7 +54,7 @@ class AppLockSettingsPreferenceController(
     LifecycleEventObserver {
 
     private val lockPatternUtils = LockPatternUtils(context)
-    private val appLockManager = context.getSystemService(AppLockManager::class.java)
+    private val appLockManager = context.getSystemService(AppLockManager::class.java)!!
     private var preference: Preference? = null
     private val securityPromptLauncher: ActivityResultLauncher<Intent>?
 
@@ -120,7 +120,7 @@ class AppLockSettingsPreferenceController(
             val title = mContext.getString(R.string.app_lock_authentication_dialog_title)
             val intent = Intent().apply {
                 setClassName(SETTINGS_PACKAGE_NAME,
-                        ConfirmDeviceCredentialActivity::class.qualifiedName)
+                        ConfirmDeviceCredentialActivity::class.qualifiedName!!)
                 putExtra(KeyguardManager.EXTRA_TITLE, title)
             }
             securityPromptLauncher.launch(intent)
