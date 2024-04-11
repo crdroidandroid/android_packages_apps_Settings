@@ -975,6 +975,25 @@
         </activity>
 
         <activity
+            android:name="Settings$PrivateDnsSettingsActivity"
+            android:label="@string/select_private_dns_configuration_title"
+            android:exported="true"
+            android:icon="@drawable/ic_settings_private_dns">
+            <intent-filter>
+                <action android:name="com.android.settings.PRIVATE_DNS_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:priority="4">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.network.PrivateDnsSettings" />
+            <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                       android:value="@string/menu_key_network"/>
+        </activity>
+
+        <activity
             android:name="Settings$DataSaverSummaryActivity"
             android:exported="true"
             android:label="@string/data_saver_title">
