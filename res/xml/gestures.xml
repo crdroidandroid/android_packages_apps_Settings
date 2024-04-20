@@ -39,6 +39,12 @@
     </lineageos.preference.RemotePreference>
 
     <Preference
+        android:key="columbus_input_summary"
+        android:title="@string/columbus_title"
+        android:fragment="com.google.android.settings.gestures.columbus.ColumbusSettings"
+        settings:controller="com.google.android.settings.gestures.columbus.ColumbusPreferenceController" />
+
+    <Preference
         android:key="gesture_swipe_down_fingerprint_input_summary"
         android:title="@string/fingerprint_swipe_for_notifications_title"
         android:fragment="com.android.settings.gestures.SwipeToNotificationSettings"
