@@ -73,7 +73,6 @@ public class WifiHotspotSpeedViewModel extends AndroidViewModel {
         mWifiHotspotRepository.get6gAvailable().observeForever(m6gAvailableObserver);
         mWifiHotspotRepository.get5gAvailable().observeForever(m5gAvailableObserver);
         mWifiHotspotRepository.getSpeedType().observeForever(mSpeedTypeObserver);
-        mWifiHotspotRepository.setAutoRefresh(true);
     }
 
     @Override
