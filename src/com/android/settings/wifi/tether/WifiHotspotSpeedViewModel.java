@@ -70,7 +70,6 @@ public class WifiHotspotSpeedViewModel extends AndroidViewModel {
         mWifiHotspotRepository.get6gAvailable().observeForever(m6gAvailableObserver);
         mWifiHotspotRepository.get5gAvailable().observeForever(m5gAvailableObserver);
         mWifiHotspotRepository.getSpeedType().observeForever(mSpeedTypeObserver);
-        mWifiHotspotRepository.setAutoRefresh(true);
 
         // The visibility of the 6 GHz speed option will not change on a Pixel device.
         mSpeedInfo6g.mIsVisible = mWifiHotspotRepository.is6GHzBandSupported();
