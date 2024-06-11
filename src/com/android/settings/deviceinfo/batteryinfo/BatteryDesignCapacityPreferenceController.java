@@ -20,6 +20,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.BatteryManager;
 
+import com.android.internal.os.PowerProfile;
+
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settingslib.fuelgauge.BatteryUtils;
@@ -42,8 +44,12 @@ public class BatteryDesignCapacityPreferenceController extends BasePreferenceCon
     @Override
     public CharSequence getSummary() {
         Intent batteryIntent = BatteryUtils.getBatteryIntent(mContext);
-        final int designCapacityUah =
+        int designCapacityUah =
                 batteryIntent.getIntExtra(BatteryManager.EXTRA_DESIGN_CAPACITY, -1);
+        if (designCapacityUah <= 0) {
+            final PowerProfile profile = new PowerProfile(mContext);
+            designCapacityUah = (int) profile.getBatteryCapacity() * 1000;
+        }
 
         if (designCapacityUah > 0) {
             int designCapacity = designCapacityUah / 1_000;
