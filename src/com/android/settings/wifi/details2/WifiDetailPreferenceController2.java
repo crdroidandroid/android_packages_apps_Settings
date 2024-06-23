@@ -116,6 +116,9 @@ public class WifiDetailPreferenceController2 extends AbstractPreferenceControlle
     private static final String TAG = "WifiDetailsPrefCtrl2";
     private static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);
 
+    private static final String WIFI_SHARING_KEY_ALIAS = "wifi_sharing_auth_key";
+    private static final int MAX_UNLOCK_SECONDS = 60;
+
     @VisibleForTesting
     static final String KEY_HEADER = "connection_header";
     @VisibleForTesting
@@ -980,6 +983,11 @@ public class WifiDetailPreferenceController2 extends AbstractPreferenceControlle
      * Share the wifi network with QR code.
      */
     private void shareNetwork() {
+        if (WifiDppUtils.isUnlockedWithinSeconds(WIFI_SHARING_KEY_ALIAS, MAX_UNLOCK_SECONDS)) {
+            // skip the auth dialog if unlocked last minute
+            launchWifiDppConfiguratorActivity();
+            return;
+        }
         WifiDppUtils.showLockScreen(mContext, () -> launchWifiDppConfiguratorActivity());
     }
 
