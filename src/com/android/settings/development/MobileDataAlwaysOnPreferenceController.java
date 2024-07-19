@@ -16,8 +16,12 @@
 
 package com.android.settings.development;
 
+import static android.content.pm.PackageManager.NameNotFoundException;
+
 import android.content.Context;
+import android.content.res.Resources;
 import android.provider.Settings;
+import android.util.Log;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
@@ -30,7 +34,9 @@ public class MobileDataAlwaysOnPreferenceController extends
         DeveloperOptionsPreferenceController implements Preference.OnPreferenceChangeListener,
         PreferenceControllerMixin {
 
+    private static final String TAG = "MobileDataAlwaysOnPreferenceController";
     private static final String MOBILE_DATA_ALWAYS_ON = "mobile_data_always_on";
+    private static final String SETTINGS_PROVIDER_PACKAGE = "com.android.providers.settings";
 
     @VisibleForTesting
     static final int SETTING_VALUE_ON = 1;
@@ -65,8 +71,21 @@ public class MobileDataAlwaysOnPreferenceController extends
     @Override
     protected void onDeveloperOptionsSwitchDisabled() {
         super.onDeveloperOptionsSwitchDisabled();
+
+        boolean enabledByDefault = true;
+        try {
+            final Resources res = mContext.getPackageManager().getResourcesForApplication(
+                    SETTINGS_PROVIDER_PACKAGE);
+            final int resId = res.getIdentifier("def_mobile_data_always_on", "bool",
+                    SETTINGS_PROVIDER_PACKAGE);
+            if (resId != 0) {
+                enabledByDefault = res.getBoolean(resId);
+            }
+        } catch (NameNotFoundException e) {
+            Log.e(TAG, "Failed to get resources from settingsprovider", e);
+        }
         Settings.Global.putInt(mContext.getContentResolver(), Settings.Global.MOBILE_DATA_ALWAYS_ON,
-                SETTING_VALUE_ON);
+                enabledByDefault ? SETTING_VALUE_ON : SETTING_VALUE_OFF);
         ((TwoStatePreference) mPreference).setChecked(true);
     }
 }
