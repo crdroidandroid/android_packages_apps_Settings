@@ -33,7 +33,7 @@
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_lock_screen_notif"/>
 
-        <SwitchPreferenceCompat
+        <com.android.settingslib.RestrictedSwitchPreference
             android:key="security_display_lockscreen_bypass"
             android:title="@string/lockscreen_bypass_title"
             android:summary="@string/lockscreen_bypass_summary"

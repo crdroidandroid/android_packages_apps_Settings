@@ -103,7 +103,7 @@
             android:summary="@string/lock_screen_notifs_redact_work_summary"
             settings:controller="com.android.settings.notification.RedactNotificationPreferenceController" />
 
-        <SwitchPreferenceCompat
+        <com.android.settingslib.RestrictedSwitchPreference
             android:key="notification_lockscreen_bypass"
             android:order="16"
             android:title="@string/lockscreen_bypass_title"
