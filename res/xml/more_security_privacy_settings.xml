@@ -123,6 +123,12 @@
             android:fragment="com.android.settings.network.telephony.CellularSecuritySettingsFragment"
             settings:controller="com.android.settings.network.CellularSecurityPreferenceController"
             settings:searchable="false"/>
+
+        <Preference
+            android:key="clipboard_auto_clear"
+            android:title="@string/clipboard_auto_clear_title"
+            android:summary="@string/clipboard_auto_clear_summary"
+            android:fragment="com.android.settings.custom.privacy.ClipboardAutoClearFragment" />
     </PreferenceCategory>
 
     <!-- Security section. -->
