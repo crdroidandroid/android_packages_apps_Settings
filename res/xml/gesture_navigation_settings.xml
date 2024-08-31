@@ -86,6 +86,12 @@
             settings:controller="com.android.settings.gestures.GestureNavigationSettingsAssistController"
         />
 
+        <SwitchPreferenceCompat
+            android:key="navbar_long_press_gesture"
+            android:title="@string/navbar_long_press_gesture_title"
+            android:summary="@string/navbar_long_press_gesture_summary"
+            settings:controller="com.android.settings.gestures.GestureNavigationLongPressController" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
