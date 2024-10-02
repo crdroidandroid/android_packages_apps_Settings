@@ -46,6 +46,7 @@
     <com.android.settings.spa.preference.ComposePreference
         android:key="allow_wep_networks"
         android:title="@string/wifi_allow_wep_networks"
+        android:icon="@drawable/ic_router"
         settings:controller="com.android.settings.wifi.WepNetworksPreferenceController"/>
 
     <SwitchPreferenceCompat
