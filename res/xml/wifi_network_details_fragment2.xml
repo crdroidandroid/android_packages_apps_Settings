@@ -94,8 +94,8 @@
             android:key="privacy"
             android:icon="@drawable/ic_wifi_privacy_24dp"
             android:title="@string/wifi_privacy_settings"
-            android:entries="@array/wifi_privacy_entries"
-            android:entryValues="@array/wifi_privacy_values"/>
+            android:entries="@array/wifi_privacy_entries_ext"
+            android:entryValues="@array/wifi_privacy_values_ext"/>
 
       <SwitchPreferenceCompat
           android:key="shared"
