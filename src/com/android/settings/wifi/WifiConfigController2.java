@@ -363,7 +363,7 @@ public class WifiConfigController2 implements TextWatcher,
         mHiddenSettingsSpinner.setAdapter(getSpinnerAdapter(R.array.wifi_hidden_entries));
         if (!mHideMeteredAndPrivacy && mWifiManager.isConnectedMacRandomizationSupported()) {
             mPrivacySettingsSpinner = mView.findViewById(R.id.privacy_settings);
-            mPrivacySettingsSpinner.setAdapter(getSpinnerAdapter(R.array.wifi_privacy_entries));
+            mPrivacySettingsSpinner.setAdapter(getSpinnerAdapter(R.array.wifi_privacy_entries_ext));
             if (Flags.androidVWifiApi()) {
                 mDhcpSettingsSpinner = mView.findViewById(R.id.dhcp_settings);
                 mDhcpSettingsSpinner.setAdapter(getSpinnerAdapter(R.array.wifi_dhcp_entries));
