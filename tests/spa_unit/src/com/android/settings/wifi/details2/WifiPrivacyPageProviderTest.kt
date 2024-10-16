@@ -85,7 +85,7 @@ class WifiPrivacyPageProviderTest {
         composeTestRule.setContent {
             WifiPrivacyPage(mockWifiEntry)
         }
-        val wifiPrivacyEntries = context.resources.getStringArray(R.array.wifi_privacy_entries)
+        val wifiPrivacyEntries = context.resources.getStringArray(R.array.wifi_privacy_entries_ext)
         for (entry in wifiPrivacyEntries) {
             composeTestRule.onNodeWithText(
                 entry
@@ -98,7 +98,7 @@ class WifiPrivacyPageProviderTest {
         composeTestRule.setContent {
             WifiPrivacyPage(mockWifiEntry)
         }
-        val wifiPrivacyEntries = context.resources.getStringArray(R.array.wifi_privacy_entries)
+        val wifiPrivacyEntries = context.resources.getStringArray(R.array.wifi_privacy_entries_ext)
         for (entry in wifiPrivacyEntries) {
             composeTestRule.onNodeWithText(
                 entry
@@ -111,8 +111,8 @@ class WifiPrivacyPageProviderTest {
         composeTestRule.setContent {
             WifiPrivacyPage(mockWifiEntry)
         }
-        val wifiPrivacyEntries = context.resources.getStringArray(R.array.wifi_privacy_entries)
-        val wifiPrivacyValues = context.resources.getStringArray(R.array.wifi_privacy_values)
+        val wifiPrivacyEntries = context.resources.getStringArray(R.array.wifi_privacy_entries_ext)
+        val wifiPrivacyValues = context.resources.getStringArray(R.array.wifi_privacy_values_ext)
         composeTestRule.onNodeWithText(
             wifiPrivacyEntries[wifiPrivacyValues.indexOf("0")]
         ).assertIsSelected()
@@ -126,7 +126,7 @@ class WifiPrivacyPageProviderTest {
         composeTestRule.setContent {
             WifiPrivacyPage(mockWifiEntry)
         }
-        val wifiPrivacyEntries = context.resources.getStringArray(R.array.wifi_privacy_entries)
+        val wifiPrivacyEntries = context.resources.getStringArray(R.array.wifi_privacy_entries_ext)
         for (entry in wifiPrivacyEntries) {
             composeTestRule.onNodeWithText(entry).assertIsNotEnabled()
         }
