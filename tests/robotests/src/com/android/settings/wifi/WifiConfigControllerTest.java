@@ -16,11 +16,12 @@
 
 package com.android.settings.wifi;
 
-import static com.android.settings.wifi.WifiConfigController.PRIVACY_SPINNER_INDEX_DEVICE_MAC;
-import static com.android.settings.wifi.WifiConfigController.PRIVACY_SPINNER_INDEX_RANDOMIZED_MAC;
+import static com.android.settings.wifi.WifiConfigController.PRIVACY_PREF_INDEX_DEVICE_MAC;
+import static com.android.settings.wifi.WifiConfigController.PRIVACY_PREF_INDEX_PER_CONNECTION_RANDOMIZED_MAC;
 import static com.android.settings.wifi.WifiConfigController.DHCP_SPINNER_INDEX_SEND_DHCP_HOST_NAME_ENABLE;
 import static com.android.settings.wifi.WifiConfigController.DHCP_SPINNER_INDEX_SEND_DHCP_HOST_NAME_DISABLE;
 
+import static com.android.settings.wifi.details2.WifiPrivacyPreferenceController2.translateMacRandomizedValueToPrefValue;
 import static com.google.common.truth.Truth.assertThat;
 
 import static org.mockito.Mockito.mock;
@@ -407,7 +408,7 @@ public class WifiConfigControllerTest {
 
         assertThat(privacySetting.getVisibility()).isEqualTo(View.VISIBLE);
         assertThat(privacySetting.getSelectedItemPosition()).isEqualTo(
-                PRIVACY_SPINNER_INDEX_RANDOMIZED_MAC);
+                PRIVACY_PREF_INDEX_PER_CONNECTION_RANDOMIZED_MAC);
     }
 
     @Test
@@ -432,8 +433,7 @@ public class WifiConfigControllerTest {
 
         assertThat(privacySetting.getVisibility()).isEqualTo(View.VISIBLE);
         assertThat(privacySetting.getSelectedItemPosition()).isEqualTo(
-                macRandomizedValue == WifiConfiguration.RANDOMIZATION_PERSISTENT
-                ? PRIVACY_SPINNER_INDEX_RANDOMIZED_MAC : PRIVACY_SPINNER_INDEX_DEVICE_MAC);
+                translateWifiEntryPrivacyToPrefValue(macRandomizedValue));
     }
 
     @Test
@@ -446,7 +446,7 @@ public class WifiConfigControllerTest {
     @Test
     public void saveMacRandomizedValue_ChangedToDeviceMac_shouldGetNone() {
         final Spinner privacySetting = mView.findViewById(R.id.privacy_settings);
-        privacySetting.setSelection(PRIVACY_SPINNER_INDEX_DEVICE_MAC);
+        privacySetting.setSelection(PRIVACY_PREF_INDEX_DEVICE_MAC);
 
         WifiConfiguration config = mController.getConfig();
         assertThat(config.macRandomizationSetting).isEqualTo(WifiConfiguration.RANDOMIZATION_NONE);
