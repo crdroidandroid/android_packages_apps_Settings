@@ -94,8 +94,8 @@ fun WifiPrivacyPage(wifiEntry: WifiEntry) {
     ) {
         Column {
             val title = stringResource(id = R.string.wifi_privacy_mac_settings)
-            val wifiPrivacyEntries = stringArrayResource(R.array.wifi_privacy_entries)
-            val wifiPrivacyValues = stringArrayResource(R.array.wifi_privacy_values)
+            val wifiPrivacyEntries = stringArrayResource(R.array.wifi_privacy_entries_ext)
+            val wifiPrivacyValues = stringArrayResource(R.array.wifi_privacy_values_ext)
             val textsSelectedId = rememberSaveable { mutableIntStateOf(wifiEntry.privacy) }
             val dataList = remember {
                 wifiPrivacyEntries.mapIndexed { index, text ->
