@@ -1235,8 +1235,9 @@
         <item>Treat as unmetered</item>
     </string-array>
 
-    <string-array name="wifi_privacy_entries">
-        <item>Use randomized MAC</item>
+    <string-array name="wifi_privacy_entries_ext">
+        <item>Use per-connection randomized MAC (default)</item>
+        <item>Use per-network randomized MAC</item>
         <item>Use device MAC</item>
     </string-array>
 
@@ -1256,7 +1257,8 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="wifi_privacy_values" translatable="false">
+    <string-array name="wifi_privacy_values_ext" translatable="false">
+        <item>100</item>
         <item>1</item>
         <item>0</item>
     </string-array>
