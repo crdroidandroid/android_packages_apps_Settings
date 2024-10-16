@@ -73,6 +73,7 @@ import com.android.settings.R;
 import com.android.settings.network.SubscriptionUtil;
 import com.android.settings.utils.AndroidKeystoreAliasLoader;
 import com.android.settings.wifi.details2.WifiPrivacyPreferenceController;
+import com.android.settings.wifi.details2.WifiPrivacyPreferenceController2;
 import com.android.settings.wifi.dpp.WifiDppUtils;
 import com.android.settingslib.Utils;
 import com.android.settingslib.utils.ThreadUtils;
@@ -151,9 +152,10 @@ public class WifiConfigController implements TextWatcher,
         UNDESIRED_CERTIFICATE_MACRANDSAPSECRET
     };
 
-    // Should be the same index value as wifi_privacy_entries in arrays.xml
-    @VisibleForTesting static final int PRIVACY_SPINNER_INDEX_RANDOMIZED_MAC = 0;
-    @VisibleForTesting static final int PRIVACY_SPINNER_INDEX_DEVICE_MAC = 1;
+    // Should be the same index value as wifi_privacy_entries_ext in arrays.xml
+    public static final int PRIVACY_PREF_INDEX_PER_CONNECTION_RANDOMIZED_MAC = 0;
+    public static final int PRIVACY_PREF_INDEX_PER_NETWORK_RANDOMIZED_MAC = 1;
+    public static final int PRIVACY_PREF_INDEX_DEVICE_MAC = 2;
 
     // Should be the same index value as wifi_dhcp_entries in arrays.xml
     @VisibleForTesting static final int DHCP_SPINNER_INDEX_SEND_DHCP_HOST_NAME_ENABLE = 0;
@@ -326,9 +328,9 @@ public class WifiConfigController implements TextWatcher,
                         ? HIDDEN_NETWORK
                         : NOT_HIDDEN_NETWORK);
 
-                mPrivacySettingsSpinner.setSelection(
-                        config.macRandomizationSetting == WifiConfiguration.RANDOMIZATION_PERSISTENT
-                        ? PRIVACY_SPINNER_INDEX_RANDOMIZED_MAC : PRIVACY_SPINNER_INDEX_DEVICE_MAC);
+                int selection = WifiPrivacyPreferenceController2
+                        .translateWifiEntryPrivacyToPrefValue(config.macRandomizationSetting);
+                mPrivacySettingsSpinner.setSelection(selection);
 
                 mDhcpSettingsSpinner.setSelection(
                         config.isSendDhcpHostnameEnabled()
@@ -848,10 +850,8 @@ public class WifiConfigController implements TextWatcher,
         }
 
         if (mPrivacySettingsSpinner != null) {
-            config.macRandomizationSetting = mPrivacySettingsSpinner.getSelectedItemPosition()
-                    == PRIVACY_SPINNER_INDEX_RANDOMIZED_MAC
-                    ? WifiConfiguration.RANDOMIZATION_PERSISTENT
-                    : WifiConfiguration.RANDOMIZATION_NONE;
+            config.macRandomizationSetting = WifiPrivacyPreferenceController2
+                    .translatePrefValueToWifiConfigSetting(mPrivacySettingsSpinner.getSelectedItemPosition());
         }
 
         if (mDhcpSettingsSpinner != null) {

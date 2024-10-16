@@ -19,6 +19,7 @@ package com.android.settings.wifi.details2;
 import android.content.Context;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
@@ -29,6 +30,10 @@ import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 import com.android.wifi.flags.Flags;
 import com.android.wifitrackerlib.WifiEntry;
+
+import static com.android.settings.wifi.WifiConfigController.PRIVACY_PREF_INDEX_DEVICE_MAC;
+import static com.android.settings.wifi.WifiConfigController.PRIVACY_PREF_INDEX_PER_CONNECTION_RANDOMIZED_MAC;
+import static com.android.settings.wifi.WifiConfigController.PRIVACY_PREF_INDEX_PER_NETWORK_RANDOMIZED_MAC;
 
 /**
  * A controller that controls whether the Wi-Fi network is mac randomized or not.
@@ -95,9 +100,6 @@ public class WifiPrivacyPreferenceController2 extends BasePreferenceController i
         return mWifiEntry.getPrivacy();
     }
 
-    private static final int PREF_RANDOMIZATION_PERSISTENT = 0;
-    private static final int PREF_RANDOMIZATION_NONE = 1;
-
     /**
      * Translates a WifiEntry.Privacy value to the matching preference index value.
      *
@@ -105,8 +107,13 @@ public class WifiPrivacyPreferenceController2 extends BasePreferenceController i
      * @return index value of preference
      */
     public static int translateWifiEntryPrivacyToPrefValue(@WifiEntry.Privacy int privacy) {
-        return (privacy == WifiEntry.PRIVACY_RANDOMIZED_MAC)
-            ? PREF_RANDOMIZATION_PERSISTENT : PREF_RANDOMIZATION_NONE;
+        Log.d("WifiMacRnd", "translateMacRandomizedValueToPrefValue called from", new Throwable());
+        return switch (privacy) {
+            case WifiEntry.PRIVACY_RANDOMIZATION_ALWAYS -> PRIVACY_PREF_INDEX_PER_CONNECTION_RANDOMIZED_MAC;
+            case WifiEntry.PRIVACY_RANDOMIZED_MAC -> PRIVACY_PREF_INDEX_PER_NETWORK_RANDOMIZED_MAC;
+            case WifiEntry.PRIVACY_DEVICE_MAC -> PRIVACY_PREF_INDEX_DEVICE_MAC;
+            default -> PRIVACY_PREF_INDEX_DEVICE_MAC;
+        };
     }
 
     /**
@@ -116,8 +123,13 @@ public class WifiPrivacyPreferenceController2 extends BasePreferenceController i
      * @return WifiConfiguration.MacRandomizationSetting value
      */
     public static int translatePrefValueToWifiConfigSetting(int prefMacRandomized) {
-        return (prefMacRandomized == PREF_RANDOMIZATION_PERSISTENT)
-            ? WifiConfiguration.RANDOMIZATION_AUTO : WifiConfiguration.RANDOMIZATION_NONE;
+        Log.d("WifiMacRnd", "translatePrefValueToWifiConfigSetting called from", new Throwable());
+        return switch (prefMacRandomized) {
+            case PRIVACY_PREF_INDEX_DEVICE_MAC -> WifiConfiguration.RANDOMIZATION_NONE;
+            case PRIVACY_PREF_INDEX_PER_NETWORK_RANDOMIZED_MAC -> WifiConfiguration.RANDOMIZATION_PERSISTENT;
+            case PRIVACY_PREF_INDEX_PER_CONNECTION_RANDOMIZED_MAC -> WifiConfiguration.RANDOMIZATION_ALWAYS;
+            default -> WifiConfiguration.RANDOMIZATION_ALWAYS;
+        };
     }
 
     private void updateSummary(ListPreference preference, int macRandomized) {
