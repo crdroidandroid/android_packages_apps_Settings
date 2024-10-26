@@ -128,6 +128,9 @@ public class LoadingViewController {
     }
 
     private static void setViewShown(final View view, boolean shown, boolean animate) {
+        if (view == null) {
+            return;
+        }
         if (animate) {
             Animation animation = AnimationUtils.loadAnimation(view.getContext(),
                     shown ? android.R.anim.fade_in : android.R.anim.fade_out);
