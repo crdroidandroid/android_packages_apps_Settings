@@ -241,6 +241,12 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:order="-20"
+        android:key="top_level_category_undefined"
+        android:layout="@layout/settingslib_preference_category_no_title">
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:order="100"
         android:key="top_level_support_category"
         android:layout="@layout/settingslib_preference_category_no_title">
