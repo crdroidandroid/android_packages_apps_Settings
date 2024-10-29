@@ -651,6 +651,8 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
                         group = screen.findPreference("top_level_account_category");
                     } else if (SECURITY_PRIVACY_INJECTED_KEYS.contains(key)) {
                         group = screen.findPreference("top_level_security_privacy_category");
+                    } else {
+                        group = screen.findPreference("top_level_category_undefined");
                     }
                     // Order the prefs within their respective category
                     if (KEY_ORDER.containsKey(key)) {
@@ -659,6 +661,7 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
                     if (group instanceof PreferenceCategory) {
                         ((PreferenceCategory) group).addPreference(pref);
                     } else {
+                        // Should never get here now
                         screen.addPreference(pref);
                     }
                 }
