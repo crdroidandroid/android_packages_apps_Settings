@@ -116,6 +116,12 @@
     </com.android.settingslib.widget.UntitledPreferenceCategory>
 
     <com.android.settingslib.widget.UntitledPreferenceCategory
+        android:order="-115"
+        android:key="top_level_category_undefined"
+        android:layout="@layout/settingslib_expressive_untitled_preference_category">
+    </com.android.settingslib.widget.UntitledPreferenceCategory>
+
+    <com.android.settingslib.widget.UntitledPreferenceCategory
         android:order="-110"
         android:key="top_level_system_info_category"
         android:layout="@layout/settingslib_expressive_untitled_preference_category">
