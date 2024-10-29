@@ -124,6 +124,12 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:order="-115"
+        android:key="top_level_category_undefined"
+        android:layout="@layout/settingslib_preference_category_no_title">
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:order="-110"
         android:key="top_level_system_info_category"
         android:layout="@layout/settingslib_preference_category_no_title">
