@@ -15,6 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="keyboard_extras_title">Breiseanna</string>
     <string name="heads_up_notifications_enabled_title">Cinnirí suas</string>
     <string name="heads_up_notifications_enabled_summary">Taispeáin fógraí tosaíochta i bhfuinneog bheag ar snámh</string>
     <string name="app_notification_sound_timeout_value_15_minutes">15 nóiméad</string>
