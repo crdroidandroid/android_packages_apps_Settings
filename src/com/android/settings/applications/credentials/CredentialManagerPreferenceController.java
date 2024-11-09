@@ -120,6 +120,7 @@ public class CredentialManagerPreferenceController extends BasePreferenceControl
     private Optional<Boolean> mSimulateHiddenForTests = Optional.empty();
     private boolean mIsWorkProfile = false;
     private boolean mSimulateConnectedForTests = false;
+    private boolean mIsPrivateSpace;
 
     public CredentialManagerPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
@@ -207,6 +208,7 @@ public class CredentialManagerPreferenceController extends BasePreferenceControl
         fragment.getSettingsLifecycle().addObserver(this);
         mFragmentManager = fragmentManager;
         mIsWorkProfile = isWorkProfile;
+        mIsPrivateSpace = fragment instanceof com.android.settings.accounts.AccountPrivateDashboardFragment;
 
         setDelegate(delegate);
         verifyReceivedIntent(launchIntent);
@@ -892,6 +894,15 @@ public class CredentialManagerPreferenceController extends BasePreferenceControl
                 return workProfile.getIdentifier();
             }
         }
+
+        if (mIsPrivateSpace) {
+            UserHandle user = com.android.settings.privatespace.PrivateSpaceMaintainer
+                    .getInstance(mContext).getPrivateProfileHandle();
+            if (user != null) {
+                return user.getIdentifier();
+            }
+        }
+
         return UserHandle.myUserId();
     }
 
