@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 
 import androidx.fragment.app.FragmentActivity;
-import androidx.window.R;
+import com.android.settings.R;
 
 import com.android.settings.biometrics.face.FaceEnrollEnrolling;
 
