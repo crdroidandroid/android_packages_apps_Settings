@@ -349,6 +349,20 @@ public class FingerprintEnrollEnrolling extends BiometricsEnrollEnrolling {
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Ignore if it's not udfps.
+        if (!mCanAssumeUdfps) {
+            return;
+        }
+        View decorView = getWindow().getDecorView();
+        // Hide the navigation bar and make the layout stable.
+        // so that the content doesn't resize as the navigation bar hides and shows.
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
+        decorView.setSystemUiVisibility(uiOptions);
+    }
+
     private void setHelpAnimation() {
         final RelativeLayout progressLottieLayout = findViewById(R.id.progress_lottie);
         mHelpAnimation = mSfpsEnrollmentFeature.getHelpAnimator(progressLottieLayout);
