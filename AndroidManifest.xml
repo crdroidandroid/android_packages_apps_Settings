@@ -16,6 +16,11 @@
         android:name="com.android.settings.USE_BIOMETRIC_PROVIDER"
         android:protectionLevel="signature|privileged"/>
 
+    <!-- Permission for using posture guidance -->
+    <permission
+        android:name="com.google.android.settings.biometrics.face.POSTURE_GUIDANCE"
+        android:protectionLevel="privileged|signature"/>
+
     <uses-permission android:name="android.permission.REQUEST_NETWORK_SCORES" />
     <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
@@ -5567,8 +5572,9 @@
 
         <activity android:theme="@style/SudThemeGlif.Light"
                   android:name="com.google.android.settings.biometrics.face.FaceEnrollConfirmation"
+                  android:permission="com.google.android.settings.biometrics.face.POSTURE_GUIDANCE"
                   android:exported="true"
-                  android:screenOrientation="portrait">
+                  android:screenOrientation="nosensor">
             <intent-filter>
                 <action android:name="com.google.android.settings.action.CONFIRM_FACE_ENROLLMENT"/>
                 <category android:name="android.intent.category.DEFAULT"/>
