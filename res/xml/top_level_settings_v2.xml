@@ -49,14 +49,15 @@
         android:order="-120"
         android:key="top_level_personalize_category"
         android:layout="@layout/settingslib_preference_category_no_title">
+
         <com.android.settings.widget.HomepagePreference
-            android:fragment="com.android.settings.applications.AppDashboardFragment"
-            android:icon="@drawable/ic_apps_filled"
-            android:key="top_level_apps"
+            android:fragment="com.crdroid.settings.crDroidSettingsLayout"
+            android:icon="@drawable/ic_settings_cogs_filled"
+            android:key="top_level_crdroid"
             android:order="-60"
-            android:title="@string/apps_dashboard_title"
-            android:summary="@string/app_and_notification_dashboard_summary"
-            settings:highlightableMenuKey="@string/menu_key_apps"/>
+            android:title="@string/crdroid_settings_title"
+            android:summary="@string/crdroid_settings_summary"
+            settings:controller="com.crdroid.settings.TopLevelSettingsPreferenceController"/>
 
         <com.android.settings.widget.HomepagePreference
             android:fragment="com.android.settings.notification.ConfigureNotificationSettings"
@@ -118,9 +119,33 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:order="-20"
+        android:key="top_level_category_undefined"
+        android:layout="@layout/settingslib_preference_category_no_title">
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:order="-90"
+        android:key="top_level_account_category"
+        android:layout="@layout/settingslib_preference_category_no_title">
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:order="-110"
         android:key="top_level_system_info_category"
         android:layout="@layout/settingslib_preference_category_no_title">
+
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="com.android.settings.applications.AppDashboardFragment"
+            android:icon="@drawable/ic_apps_filled"
+            android:key="top_level_apps"
+            android:order="-60"
+            android:title="@string/apps_dashboard_title"
+            android:summary="@string/app_and_notification_dashboard_summary"
+            settings:highlightableMenuKey="@string/menu_key_apps"/>
+
         <com.android.settings.widget.HomepagePreference
             android:fragment="com.android.settings.deviceinfo.StorageDashboardFragment"
             android:icon="@drawable/ic_storage_filled"
@@ -165,6 +190,17 @@
         android:order="-100"
         android:key="top_level_security_privacy_category"
         android:layout="@layout/settingslib_preference_category_no_title">
+
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="com.android.settings.accessibility.AccessibilitySettings"
+            android:icon="@drawable/ic_settings_accessibility_filled"
+            android:key="top_level_accessibility"
+            android:order="-60"
+            android:title="@string/accessibility_settings"
+            android:summary="@string/accessibility_settings_summary"
+            settings:highlightableMenuKey="@string/menu_key_accessibility"
+            settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
+
         <com.android.settings.widget.HomepagePreference
             android:icon="@drawable/ic_settings_safety_center_filled"
             android:key="top_level_safety_center"
@@ -223,48 +259,11 @@
             android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"
             settings:isPreferenceVisible="@bool/config_show_emergency_settings"
             settings:highlightableMenuKey="@string/menu_key_emergency"/>
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:order="-90"
-        android:key="top_level_account_category"
-        android:layout="@layout/settingslib_preference_category_no_title">
-
-        <com.android.settings.widget.HomepagePreference
-            android:fragment="com.crdroid.settings.crDroidSettingsLayout"
-            android:icon="@drawable/ic_settings_cogs_filled"
-            android:key="top_level_crdroid"
-            android:order="-50"
-            android:title="@string/crdroid_settings_title"
-            android:summary="@string/crdroid_settings_summary"
-            settings:controller="com.crdroid.settings.TopLevelSettingsPreferenceController"/>
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:order="-20"
-        android:key="top_level_category_undefined"
-        android:layout="@layout/settingslib_preference_category_no_title">
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:order="100"
-        android:key="top_level_support_category"
-        android:layout="@layout/settingslib_preference_category_no_title">
-
-        <com.android.settings.widget.HomepagePreference
-            android:fragment="com.android.settings.accessibility.AccessibilitySettings"
-            android:icon="@drawable/ic_settings_accessibility_filled"
-            android:key="top_level_accessibility"
-            android:order="-20"
-            android:title="@string/accessibility_settings"
-            android:summary="@string/accessibility_settings_summary"
-            settings:highlightableMenuKey="@string/menu_key_accessibility"
-            settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
 
         <com.android.settings.widget.HomepagePreference
             android:icon="@drawable/ic_help_filled"
             android:key="top_level_support"
-            android:order="-10"
+            android:order="0"
             android:title="@string/page_tab_title_support"
             android:summary="@string/support_summary"
             settings:highlightableMenuKey="@string/menu_key_support"
