@@ -34,6 +34,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 
 import com.android.settings.R;
 import com.android.settings.RingtonePreference;
@@ -62,6 +63,7 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
 
     private static final String EXTRA_OPEN_PHONE_RINGTONE_PICKER =
             "EXTRA_OPEN_PHONE_RINGTONE_PICKER";
+    private static final String KEY_NOW_PLAYING = "dashboard_tile_pref_com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity";
 
     @VisibleForTesting
     static final int STOP_SAMPLE = 1;
@@ -123,6 +125,19 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
                     ((VolumeSeekBarPreference) preference).setCallback(mVolumeCallback);
                 }
             }
+        }
+        updateAmbientMusicPref();
+    }
+
+    private void updateAmbientMusicPref() {
+        final PreferenceScreen screen = getPreferenceScreen();
+        if (getContext().getResources().getBoolean(R.bool.config_show_now_playing) || screen == null) {
+            return;
+        }
+
+        final Preference preference = screen.findPreference(KEY_NOW_PLAYING);
+        if (preference != null) {
+            screen.removePreference(preference);
         }
     }
 
@@ -351,6 +366,17 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider(R.xml.sound_settings) {
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+
+                    if (!context.getResources().getBoolean(R.bool.config_show_now_playing)) {
+                        keys.add(KEY_NOW_PLAYING);
+                    }
+
+                    return keys;
+                }
 
                 @Override
                 public List<AbstractPreferenceController> createPreferenceControllers(
