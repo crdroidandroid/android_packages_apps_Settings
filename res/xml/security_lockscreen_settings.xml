@@ -34,6 +34,12 @@
             settings:keywords="@string/keywords_lock_screen_notif"/>
 
         <com.android.settingslib.RestrictedSwitchPreference
+            android:key="enable_glanceable_hub_toggle"
+            android:title="@string/enable_glanceable_hub_toggle"
+            android:summary="@string/enable_glanceable_hub_toggle_summary"
+            settings:controller="com.google.android.settings.communal.GlanceableHubTogglePreferenceController"/>
+
+        <com.android.settingslib.RestrictedSwitchPreference
             android:key="security_display_lockscreen_bypass"
             android:title="@string/lockscreen_bypass_title"
             android:summary="@string/lockscreen_bypass_summary"
@@ -87,11 +93,6 @@
             android:summary="@string/lockscreen_double_line_clock_summary"
             settings:controller="com.android.settings.display.LockscreenClockPreferenceController" />
 
-        <SwitchPreferenceCompat
-            android:key="lockscreen_show_weather_switch"
-            android:summary="@string/lockscreen_show_weather_summary"
-            android:title="@string/lockscreen_show_weather_title"
-            settings:controller="com.google.android.settings.display.LockscreenWeatherPreferenceController" />
     </PreferenceCategory>
 
     <PreferenceCategory
