@@ -16,8 +16,99 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="keyboard_extras_title">Breiseanna</string>
+    <string name="advanced_keyboard_settings_title">Ardsocruithe</string>
+    <string name="adb_enable_root">Dífhabhtaithe fréamhaithe</string>
+    <string name="adb_enable_summary_root">Ceadaigh rith debugging Android mar fhréamh</string>
+    <string name="backup_transport_setting_label">Athraigh soláthraí cúltaca</string>
+    <string name="backup_transport_title">Roghnaigh soláthraí cúltaca</string>
+    <string name="berry_black_theme_title">Dubh íon</string>
+    <string name="berry_black_theme_summary">Cúlra dubh íon le haghaidh téama dorcha</string>
+    <string name="lineagelicense_title">LineageOS dlíthiúil</string>
+    <string name="device_info_protected_single_press">Tapáil chun eolas a thaispeáint</string>
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Tá tú <xliff:g id="step_count">%1$d</xliff:g> céim ar shiúl ó na socruithe forbartha a chumasú anois.</item>
+        <item quantity="two">Tá tú <xliff:g id="step_count">%1$d</xliff:g> céimeanna ar shiúl ó na socruithe forbartha a chumasú anois.</item>
+        <item quantity="few">Tá tú <xliff:g id="step_count">%1$d</xliff:g> céimeanna ar shiúl ó na socruithe forbartha a chumasú anois.</item>
+        <item quantity="many">Tá tú <xliff:g id="step_count">%1$d</xliff:g> céimeanna ar shiúl ó na socruithe forbartha a chumasú anois.</item>
+        <item quantity="other">Tá tú <xliff:g id="step_count">%1$d</xliff:g> céimeanna ar shiúl ó na socruithe forbartha a chumasú anois.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Tá socruithe forbartha cumasaithe agat!</string>
+    <string name="show_dev_already_cm">Ní gá, tá socruithe forbartha cumasaithe agat cheana féin.</string>
+    <string name="peak_refresh_rate_summary_custom">Ardaíonn sé go huathoibríoch an ráta athnuachana ó 60 go %1$d Hz do roinnt inneachair. Méaduithe ar úsáid ceallraí.</string>
+    <string name="status_bar_double_tap_to_sleep_title">Tapáil chun codlata</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Tapáil faoi dhó ar an mbarra stádais nó ar an scáileán glas chun an taispeáint a mhúchadh</string>
+    <string name="high_touch_polling_rate_title">Ráta vótaíochta tadhaill ard</string>
+    <string name="high_touch_polling_rate_summary">Ráta vótaíochta scáileáin tadhaill a mhéadú</string>
     <string name="heads_up_notifications_enabled_title">Cinnirí suas</string>
     <string name="heads_up_notifications_enabled_summary">Taispeáin fógraí tosaíochta i bhfuinneog bheag ar snámh</string>
+    <string name="high_touch_sensitivity_title">Íogaireacht dteagmháil ard</string>
+    <string name="high_touch_sensitivity_summary">Méadaigh íogaireacht scáileáin tadhaill ionas gur féidir é a úsáid agus lámhainní á chaitheamh agat</string>
+    <string name="tethering_allow_vpn_upstreams_title">Lig do chliaint VPNanna a úsáid</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Ceadaigh do chliaint hotspot naisc VPN an ghléis seo a úsáid le haghaidh nascachta in aghaidh an tsrutha</string>
+    <string name="increasing_ring_volume_option_title">Méadú ar an méid fáinne</string>
+    <string name="increasing_ring_min_volume_title">Tosaigh toirt</string>
+    <string name="increasing_ring_ramp_up_time_title">Am rampa suas</string>
+    <string name="lockscreen_media_art_title">Taispeáin ealaín chlúdach na meán</string>
+    <string name="lock_settings_picker_pattern_size_message">Roghnaigh méid patrún</string>
+    <string name="lockpattern_settings_enable_error_path_title">Taispeáin earráid patrún</string>
+    <string name="lockpattern_settings_enable_dots_title">Taispeáin poncanna patrún</string>
+    <string name="max_refresh_rate_title">Buaicráta athnuachana</string>
+    <string name="min_refresh_rate_title">Íosráta athnuachana</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Aimsigh an braiteoir méarloirg ar thaobh tosaigh do táibléad.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Aimsigh an braiteoir méarloirg ar thaobh tosaigh do ghléis.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Aimsigh an braiteoir méarloirg ar aghaidh do ghutháin.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Aimsigh an braiteoir méarloirg ar chúl do táibléad.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Aimsigh an braiteoir méarloirg ar chúl do ghléis.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Aimsigh an braiteoir méarloirg ar chúl do ghutháin.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Aimsigh an braiteoir méarloirg ar thaobh do táibléad.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">Aimsigh an braiteoir méarloirg ar thaobh do ghléis.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">Aimsigh an braiteoir méarloirg ar thaobh do ghutháin.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Déan teagmháil leis an braiteoir ar thaobh tosaigh do táibléad.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Déan teagmháil leis an braiteoir ar thaobh tosaigh do ghléis.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Déan teagmháil leis an braiteoir ar thaobh tosaigh do ghutháin.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Dteagmháil leis an braiteoir ar chúl do táibléad.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Déan teagmháil leis an braiteoir ar chúl do ghléis.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Dteagmháil leis an braiteoir ar chúl do ghutháin.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Dteagmháil leis an braiteoir ar thaobh do táibléad.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Déan teagmháil leis an braiteoir ar thaobh do ghléis.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Déan teagmháil leis an braiteoir ar thaobh do ghutháin.</string>
+    <string name="show_navbar_hint_title">Leid Nascleanúint</string>
+    <string name="show_navbar_hint_summary">Taispeáin barra leide nascleanúna ag bun an scáileáin</string>
+    <string name="app_notification_sound_timeout_title">Íosmhéid ama idir fuaimeanna fógra</string>
+    <string name="app_notification_sound_timeout_summary_template">Ná ceadaigh fuaimeanna nó creathadh níos mó ná uair amháin gach <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Gan srian</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 soicind</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 soicind</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 nóiméad</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 nóiméad</string>
     <string name="app_notification_sound_timeout_value_15_minutes">15 nóiméad</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 nóiméad</string>
+    <string name="auto_brightness_one_shot_title">Auto-gile lámhaigh amháin</string>
+    <string name="auto_brightness_one_shot_summary">Ní tharlóidh coigeartú gile ach amháin nuair a bhíonn an scáileán casta air</string>
+    <string name="data_usage_app_restrict_all">Ceadaigh rochtain líonra</string>
+    <string name="data_usage_app_restrict_all_summary">Cumasaigh úsáid líonra</string>
+    <string name="data_usage_app_restrict_mobile">Sonraí móibíleach</string>
+    <string name="data_usage_app_restrict_mobile_summary">Cumasaigh úsáid sonraí soghluaiste</string>
+    <string name="data_usage_app_restrict_vpn">Sonraí VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Cumasaigh úsáid sonraí VPN</string>
+    <string name="data_usage_app_restrict_wifi">Sonraí Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Cumasaigh úsáid sonraí Wi\u2011Fi</string>
+    <string name="unlock_scramble_pin_layout_title">Scrobh laíodán</string>
+    <string name="unlock_scramble_pin_layout_summary">Scrobh  leagan amach PIN agus an gléas á dhíghlasáil</string>
+    <string name="proximity_wake_title">Cosc a chur ar dhúiseacht thaisme</string>
+    <string name="proximity_wake_summary">Seiceáil an braiteoir gaireachta roimh an scáileán a dhúiseacht</string>
+    <string name="touchscreen_gesture_settings_title">Gothaí scáileáin tadhaill</string>
+    <string name="touchscreen_gesture_settings_summary">Déan gothaí scáileáin tadhaill éagsúla le haghaidh gníomhartha tapa</string>
+    <string name="touchscreen_hovering_title">Scáileán tadhaill ar foluain</string>
+    <string name="touchscreen_hovering_summary">Ligeann sé duit an scáileán a bhogadh mar luch i mbrabhsálaithe gréasáin, deasc iargúlta, etc</string>
+    <string name="wake_when_plugged_or_unplugged_title">Múscail ar an breiseán</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Cuir an scáileán ar siúl agus tú ag nascadh nó ag dínascadh foinse cumhachta</string>
+    <string name="fast_charging_title">Muirearú tapa</string>
+    <string name="fast_charging_summary">Díchumasaigh an teas a tháirgeann an gléas a laghdú agus é á mhuirearú nó chun saolré na ceallraí a leathnú</string>
+    <string name="ambient_display_screen_off_udfps_title" product="default">Brúigh fada ar an braiteoir méarloirg chun an fón a dhíghlasáil</string>
+    <string name="ambient_display_screen_off_udfps_title" product="tablet">Brúigh fada ar an braiteoir méarloirg chun an táibléad a dhíghlasáil</string>
+    <string name="ambient_display_screen_off_udfps_title" product="device">Brúigh fada ar an braiteoir méarloirg chun gléas a dhíghlasáil</string>
+    <string name="ambient_display_screen_off_udfps_summary">Chun do scáileán a mhúscailt agus a dhíghlasáil, brúigh fada do braiteoir méarloirg faoi-taispeáint.</string>
+    <string name="storage_warning_internal">Rabhadh: Seans nach n-oibreoidh an rogha seo i gceart nó go gcaillfí sonraí dá bharr agus mar sin ní mholtar é!</string>
     <string name="assisted_gps_summary">Íoslódáil sonraí cúnaimh satailíte ón idirlíon ar féidir leo feidhmíocht tosaithe GPS a fheabhsú go mór. I gcás glaonna éigeandála, ceadaítear GPS cuidithe i gcónaí.</string>
 </resources>

@@ -15,23 +15,59 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="keyboard_extras_title">கூடுதல்</string>
+    <string name="advanced_keyboard_settings_title">மேம்பட்ட அமைவுகள்</string>
+    <string name="adb_enable_root">வேரணுகப்பட்ட வழுநீக்கல்</string>
+    <string name="adb_enable_summary_root">ஆண்ட்ராய்டு வழுநீக்கலை வேர் அணுகலுடன் இயக்க ஏற்றுக்கொள்க</string>
+    <string name="backup_transport_setting_label">காப்பு வழங்கியை மாற்றுக</string>
+    <string name="backup_transport_title">காப்பு வழங்கியைத் தேர்ந்தெடுக்க</string>
+    <string name="berry_black_theme_title">மாசற்ற கருமை</string>
+    <string name="berry_black_theme_summary">இருள் தோற்றத்திற்கு மாசற்ற கருமை பின்னணி</string>
     <string name="lineagelicense_title">LineageOS சட்டம்</string>
+    <string name="device_info_protected_single_press">தகவலைக் காண்பிக்கத் தட்டுக</string>
     <plurals name="show_dev_countdown_cm">
-        <item quantity="one">வளர்ச்சி அமைப்புகளை செயல்படுத்துவதற்கு <xliff:g id="step_count">%1$d</xliff:g>  படி தொலைவில் நீங்கள் இப்போது உள்ளீர்கள்.</item>
-        <item quantity="other">வளர்ச்சி அமைப்புகளை செயல்படுத்துவதற்கு <xliff:g id="step_count">%1$d</xliff:g>  படிகள் தொலைவில் நீங்கள் இப்போது உள்ளீர்கள்.</item>
+        <item quantity="one">வளர்ச்சி அமைப்புகளைச் செயற்படுத்துவதற்கு <xliff:g id="step_count">%1$d</xliff:g> படி தொலைவில் இப்போது உள்ளீர்.</item>
+        <item quantity="other">வளர்ச்சி அமைப்புகளைச் செயற்படுத்துவதற்கு <xliff:g id="step_count">%1$d</xliff:g> படி தொலைவில் இப்போது உள்ளீர்.</item>
     </plurals>
-    <string name="show_dev_on_cm">நீங்கள் வளர்ச்சி அமைப்புகளை செயல்படுத்தினீர்கள்!</string>
-    <string name="show_dev_already_cm">தேவை இல்லை, நீங்கள் முன்பே வளர்ச்சி அமைப்புகளை செயல்படுத்துவிட்டீர்கள்.</string>
+    <string name="show_dev_on_cm">வளர்ச்சி அமைப்புகளைச் செயற்படுத்தினீர்!</string>
+    <string name="show_dev_already_cm">தேவையன்று, நீர் ஏற்கெனவே வளர்ச்சி அமைப்புகளைச் செயற்படுத்திவிட்டீர்.</string>
     <string name="peak_refresh_rate_summary_custom">சில உள்ளடக்கத்திற்குப் புதுப்பிக்கும் விகிதத்தை 60லிருந்து %1$d Hzக்குத் தானாகவே உயர்த்தும். இதனால் பேட்டரி உபயோகம் அதிகரிக்கும்.</string>
+    <string name="status_bar_double_tap_to_sleep_title">உறங்கத் தட்டுக</string>
+    <string name="status_bar_double_tap_to_sleep_summary">காட்சியை அணைக்க, நிலைமப்பட்டையிலோ பூட்டுத் திரையிலோ இருமுறை தட்டுக</string>
     <string name="high_touch_sensitivity_title">உயர்ந்த தொடல் உணர்திறன்</string>
     <string name="high_touch_sensitivity_summary">கையுறை அணிந்தும் அதை பயன்படுத்தும்படி தொடல்திறை உணர்திறனை அதிகரிக்கவும்</string>
-    <string name="increasing_ring_volume_option_title">ரிங் வால்யூமை அதிகரித்தல்</string>
-    <string name="increasing_ring_min_volume_title">வால்யூமை தொடங்கு</string>
-    <string name="increasing_ring_ramp_up_time_title">ராம்ப்-அப் நேரம்</string>
-    <string name="lockpattern_settings_enable_error_path_title">பேட்டர்ன் பிழையை காட்டு</string>
-    <string name="lockpattern_settings_enable_dots_title">பேட்டர்ன் புள்ளிகளை காட்டு</string>
-    <string name="unlock_scramble_pin_layout_title">ஸ்க்ராம்பில் லேயவுட்</string>
-    <string name="unlock_scramble_pin_layout_summary">கருவியை திறக்கும்போது PIN லேயவுட்டை ஸ்க்ராம்பில் செய்</string>
+    <string name="increasing_ring_volume_option_title">கறங்களவு பெருகுதல்</string>
+    <string name="increasing_ring_min_volume_title">தொடக்க ஒலியளவு</string>
+    <string name="increasing_ring_ramp_up_time_title">சரிவேற்ற நேரம்</string>
+    <string name="lockscreen_media_art_title">ஊடக அட்டைப்படத்தைக் காண்பிக்க</string>
+    <string name="lock_settings_picker_pattern_size_message">தோரண அளவு ஒன்றைத் தேர்க</string>
+    <string name="lockpattern_settings_enable_error_path_title">தோரணப் பிழையைக் காட்டுக</string>
+    <string name="lockpattern_settings_enable_dots_title">தோரணப் புள்ளிகளைக் காட்டுக</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">உமது தத்தல் கணினி முன்புறத்தில் கைரேகை உணரியைக் கண்டறிக.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">உமது கருவி முன்புறத்தில் கைரேகை உணரியைக் கண்டறிக.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">உமது செல்பேசி முன்புறத்தில் கைரேகை உணரியைக் கண்டறிக.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">உமது தத்தல் கணினி பின்புறத்தில் கைரேகை உணரியைக் கண்டறிக.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">உமது கருவி பின்புறத்தில் கைரேகை உணரியைக் கண்டறிக.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">உமது செல்பேசி பின்புறத்தில் கைரேகை உணரியைக் கண்டறிக.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">உமது தத்தல் கணினி ஓரத்தில் கைரேகை உணரியைக் கண்டறிக.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">உமது கருவி ஓரத்தில் கைரேகை உணரியைக் கண்டறிக.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">உமது செல்பேசி ஓரத்தில் கைரேகை உணரியைக் கண்டறிக.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">உமது தத்தல் கணினி முன்புறத்தில் உணரியைத் தொடுக.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">உமது கருவி முன்புறத்தில் உணரியைத் தொடுக.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">உமது செல்பேசி முன்புறத்தில் உணரியைத் தொடுக.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">உமது தத்தல் கணினி பின்புறத்தில் உணரியைத் தொடுக.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">உமது கருவி பின்புறத்தில் உணரியைத் தொடுக.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">உமது செல்பேசி பின்புறத்தில் உணரியைத் தொடுக.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">உமது தத்தல் கணினி ஓரத்தில் உணரியைத் தொடுக.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">உமது கருவி ஓரத்தில் உணரியைத் தொடுக.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">உமது செல்பேசி ஓரத்தில் உணரியைத் தொடுக.</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 நொடி</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 நொடி</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 நுணுத்தம்</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 நுணுத்தம்</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 நுணுத்தம்</string>
+    <string name="unlock_scramble_pin_layout_title">கலரீடு தளவமைப்பு</string>
+    <string name="unlock_scramble_pin_layout_summary">கருவியைத் திறக்கும்போது PIN தளவமைப்பைக் கலரீடுக</string>
     <string name="proximity_wake_title">தற்செயலான விழித்தலை தடு</string>
     <string name="touchscreen_hovering_title">தொடல்திறைக்கு மேல் நகர்தல்</string>
     <string name="touchscreen_hovering_summary">வலைதள உலாவிகள், ரிமோட்-டெஸ்க்டாப்புகள் உள்ளிட்டவற்றில் மவுஸ் போன்று நீங்கள் திரையின் மீது உலாவ உங்களை அனுமதிக்கிறது</string>
