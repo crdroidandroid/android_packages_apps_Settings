@@ -73,19 +73,29 @@ public class PrivateDnsModeDialogPreference extends CustomDialogPreferenceCompat
 
     // Only used in Settings, update on additions to ConnectivitySettingsUtils
     private static final int PRIVATE_DNS_MODE_CLOUDFLARE = 4;
-    private static final int PRIVATE_DNS_MODE_ADGUARD = 5;
-    private static final int PRIVATE_DNS_MODE_OPEN_DNS = 6;
-    private static final int PRIVATE_DNS_MODE_CLEANBROWSING = 7;
-    private static final int PRIVATE_DNS_MODE_QUAD9 = 8;
+    private static final int PRIVATE_DNS_MODE_CLOUDFLARE_BLOCK_MALWARE = 5;
+    private static final int PRIVATE_DNS_MODE_CLOUDFLARE_BLOCK_MALWARE_AND_ADULT_CONTENT = 6;
+    private static final int PRIVATE_DNS_MODE_ADGUARD = 7;
+    private static final int PRIVATE_DNS_MODE_OPEN_DNS = 8;
+    private static final int PRIVATE_DNS_MODE_CLEANBROWSING = 9;
+    private static final int PRIVATE_DNS_MODE_QUAD9 = 10;
+    private static final int PRIVATE_DNS_MODE_QUAD9_UNSECURED = 11;
+    private static final int PRIVATE_DNS_MODE_QUAD9_ECS = 12;
+    private static final int PRIVATE_DNS_MODE_QUAD9_UNSECURED_ECS = 13;
 
     static {
         PRIVATE_DNS_MAP = new HashMap<>();
         PRIVATE_DNS_MAP.put(PRIVATE_DNS_MODE_OFF, R.id.private_dns_mode_off);
         PRIVATE_DNS_MAP.put(PRIVATE_DNS_MODE_CLOUDFLARE, R.id.private_dns_mode_cloudflare);
+        PRIVATE_DNS_MAP.put(PRIVATE_DNS_MODE_CLOUDFLARE_BLOCK_MALWARE, R.id.private_dns_mode_cloudflare_block_malware);
+        PRIVATE_DNS_MAP.put(PRIVATE_DNS_MODE_CLOUDFLARE_BLOCK_MALWARE_AND_ADULT_CONTENT, R.id.private_dns_mode_cloudflare_block_malware_and_adult_content);
         PRIVATE_DNS_MAP.put(PRIVATE_DNS_MODE_ADGUARD, R.id.private_dns_mode_adguard);
         PRIVATE_DNS_MAP.put(PRIVATE_DNS_MODE_OPEN_DNS, R.id.private_dns_mode_open_dns);
         PRIVATE_DNS_MAP.put(PRIVATE_DNS_MODE_CLEANBROWSING, R.id.private_dns_mode_cleanbrowsing);
         PRIVATE_DNS_MAP.put(PRIVATE_DNS_MODE_QUAD9, R.id.private_dns_mode_quad9);
+        PRIVATE_DNS_MAP.put(PRIVATE_DNS_MODE_QUAD9_UNSECURED, R.id.private_dns_mode_quad9_unsecured);
+        PRIVATE_DNS_MAP.put(PRIVATE_DNS_MODE_QUAD9_ECS, R.id.private_dns_mode_quad9_ecs);
+        PRIVATE_DNS_MAP.put(PRIVATE_DNS_MODE_QUAD9_UNSECURED_ECS, R.id.private_dns_mode_quad9_unsecured_ecs);
         PRIVATE_DNS_MAP.put(PRIVATE_DNS_MODE_OPPORTUNISTIC, R.id.private_dns_mode_opportunistic);
         PRIVATE_DNS_MAP.put(PRIVATE_DNS_MODE_PROVIDER_HOSTNAME, R.id.private_dns_mode_provider);
     }
@@ -153,6 +163,10 @@ public class PrivateDnsModeDialogPreference extends CustomDialogPreferenceCompat
                     ConnectivitySettingsManager.getPrivateDnsHostname(context);
             final String cloudflareHostname =
                     context.getString(R.string.private_dns_hostname_cloudflare);
+            final String cloudflareblockmalwareHostname =
+                    context.getString(R.string.private_dns_hostname_cloudflare_block_malware);
+            final String cloudflareblockmalwareandadultcontentHostname =
+                    context.getString(R.string.private_dns_hostname_cloudflare_block_malware_and_adult_content);
             final String adguardHostname =
                     context.getString(R.string.private_dns_hostname_adguard);
             final String opendnsHostname =
@@ -161,8 +175,18 @@ public class PrivateDnsModeDialogPreference extends CustomDialogPreferenceCompat
                     context.getString(R.string.private_dns_hostname_cleanbrowsing);
             final String quad9Hostname =
                     context.getString(R.string.private_dns_hostname_quad9);
+            final String quad9unsecuredHostname =
+                    context.getString(R.string.private_dns_hostname_quad9_unsecured);
+            final String quad9ecsHostname =
+                    context.getString(R.string.private_dns_hostname_quad9_ecs);
+            final String quad9unsecuredecsHostname =
+                    context.getString(R.string.private_dns_hostname_quad9_unsecured_ecs);
             if (privateDnsHostname.equals(cloudflareHostname)) {
                 mMode = PRIVATE_DNS_MODE_CLOUDFLARE;
+            } else if (privateDnsHostname.equals(cloudflareblockmalwareHostname)) {
+                mMode = PRIVATE_DNS_MODE_CLOUDFLARE_BLOCK_MALWARE;
+            } else if (privateDnsHostname.equals(cloudflareblockmalwareandadultcontentHostname)) {
+                mMode = PRIVATE_DNS_MODE_CLOUDFLARE_BLOCK_MALWARE_AND_ADULT_CONTENT;
             } else if (privateDnsHostname.equals(adguardHostname)) {
                 mMode = PRIVATE_DNS_MODE_ADGUARD;
             } else if (privateDnsHostname.equals(opendnsHostname)) {
@@ -171,6 +195,12 @@ public class PrivateDnsModeDialogPreference extends CustomDialogPreferenceCompat
                 mMode = PRIVATE_DNS_MODE_CLEANBROWSING;
             } else if (privateDnsHostname.equals(quad9Hostname)) {
                 mMode = PRIVATE_DNS_MODE_QUAD9;
+            } else if (privateDnsHostname.equals(quad9unsecuredHostname)) {
+                mMode = PRIVATE_DNS_MODE_QUAD9_UNSECURED;
+            } else if (privateDnsHostname.equals(quad9ecsHostname)) {
+                mMode = PRIVATE_DNS_MODE_QUAD9_ECS;
+            } else if (privateDnsHostname.equals(quad9unsecuredecsHostname)) {
+                mMode = PRIVATE_DNS_MODE_QUAD9_UNSECURED_ECS;
             }
         }
         mRadioGroup = view.findViewById(R.id.private_dns_radio_group);
@@ -183,6 +213,12 @@ public class PrivateDnsModeDialogPreference extends CustomDialogPreferenceCompat
         final RadioButton cloudflareRadioButton =
                 view.findViewById(R.id.private_dns_mode_cloudflare);
         cloudflareRadioButton.setText(R.string.private_dns_mode_cloudflare);
+        final RadioButton cloudflareblockmalwareRadioButton =
+                view.findViewById(R.id.private_dns_mode_cloudflare_block_malware);
+        cloudflareblockmalwareRadioButton.setText(R.string.private_dns_mode_cloudflare_block_malware);
+        final RadioButton cloudflareblockmalwareandadultcontentRadioButton =
+                view.findViewById(R.id.private_dns_mode_cloudflare_block_malware_and_adult_content);
+        cloudflareblockmalwareandadultcontentRadioButton.setText(R.string.private_dns_mode_cloudflare_block_malware_and_adult_content);
         final RadioButton adguardRadioButton =
                 view.findViewById(R.id.private_dns_mode_adguard);
         adguardRadioButton.setText(R.string.private_dns_mode_adguard);
@@ -195,6 +231,15 @@ public class PrivateDnsModeDialogPreference extends CustomDialogPreferenceCompat
         final RadioButton quad9RadioButton =
                 view.findViewById(R.id.private_dns_mode_quad9);
         quad9RadioButton.setText(R.string.private_dns_mode_quad9);
+        final RadioButton quad9unsecuredRadioButton =
+                view.findViewById(R.id.private_dns_mode_quad9_unsecured);
+        quad9unsecuredRadioButton.setText(R.string.private_dns_mode_quad9_unsecured);
+        final RadioButton quad9ecsRadioButton =
+                view.findViewById(R.id.private_dns_mode_quad9_ecs);
+        quad9ecsRadioButton.setText(R.string.private_dns_mode_quad9_ecs);
+        final RadioButton quad9unsecuredecsRadioButton =
+                view.findViewById(R.id.private_dns_mode_quad9_unsecured_ecs);
+        quad9unsecuredecsRadioButton.setText(R.string.private_dns_mode_quad9_unsecured_ecs);
         final RadioButton opportunisticRadioButton =
                 view.findViewById(R.id.private_dns_mode_opportunistic);
         opportunisticRadioButton.setText(
@@ -232,6 +277,10 @@ public class PrivateDnsModeDialogPreference extends CustomDialogPreferenceCompat
             mMode = PRIVATE_DNS_MODE_OFF;
         } else if (checkedId == R.id.private_dns_mode_cloudflare) {
             mMode = PRIVATE_DNS_MODE_CLOUDFLARE;
+        } else if (checkedId == R.id.private_dns_mode_cloudflare_block_malware) {
+            mMode = PRIVATE_DNS_MODE_CLOUDFLARE_BLOCK_MALWARE;
+        } else if (checkedId == R.id.private_dns_mode_cloudflare_block_malware_and_adult_content) {
+            mMode = PRIVATE_DNS_MODE_CLOUDFLARE_BLOCK_MALWARE_AND_ADULT_CONTENT;
         } else if (checkedId == R.id.private_dns_mode_adguard) {
             mMode = PRIVATE_DNS_MODE_ADGUARD;
         } else if (checkedId == R.id.private_dns_mode_open_dns) {
@@ -240,6 +289,12 @@ public class PrivateDnsModeDialogPreference extends CustomDialogPreferenceCompat
             mMode = PRIVATE_DNS_MODE_CLEANBROWSING;
         } else if (checkedId == R.id.private_dns_mode_quad9) {
             mMode = PRIVATE_DNS_MODE_QUAD9;
+        } else if (checkedId == R.id.private_dns_mode_quad9_unsecured) {
+            mMode = PRIVATE_DNS_MODE_QUAD9_UNSECURED;
+        } else if (checkedId == R.id.private_dns_mode_quad9_ecs) {
+            mMode = PRIVATE_DNS_MODE_QUAD9_ECS;
+        } else if (checkedId == R.id.private_dns_mode_quad9_unsecured_ecs) {
+            mMode = PRIVATE_DNS_MODE_QUAD9_UNSECURED_ECS;
         } else if (checkedId == R.id.private_dns_mode_opportunistic) {
             mMode = PRIVATE_DNS_MODE_OPPORTUNISTIC;
         } else if (checkedId == R.id.private_dns_mode_provider) {
@@ -335,6 +390,16 @@ public class PrivateDnsModeDialogPreference extends CustomDialogPreferenceCompat
                     context.getString(R.string.private_dns_hostname_cloudflare);
             ConnectivitySettingsManager.setPrivateDnsHostname(context, cloudflareHostname);
             modeToSet = PRIVATE_DNS_MODE_PROVIDER_HOSTNAME;
+        } else if (mMode == PRIVATE_DNS_MODE_CLOUDFLARE_BLOCK_MALWARE) {
+            final String cloudflareblockmalwareHostname =
+                    context.getString(R.string.private_dns_hostname_cloudflare_block_malware);
+            ConnectivitySettingsManager.setPrivateDnsHostname(context, cloudflareblockmalwareHostname);
+            modeToSet = PRIVATE_DNS_MODE_PROVIDER_HOSTNAME;
+        } else if (mMode == PRIVATE_DNS_MODE_CLOUDFLARE_BLOCK_MALWARE_AND_ADULT_CONTENT) {
+            final String cloudflareblockmalwareandadultcontentHostname =
+                    context.getString(R.string.private_dns_hostname_cloudflare_block_malware_and_adult_content);
+            ConnectivitySettingsManager.setPrivateDnsHostname(context, cloudflareblockmalwareandadultcontentHostname);
+            modeToSet = PRIVATE_DNS_MODE_PROVIDER_HOSTNAME;
         } else if (mMode == PRIVATE_DNS_MODE_ADGUARD) {
             final String adguardHostname =
                     context.getString(R.string.private_dns_hostname_adguard);
@@ -354,6 +419,21 @@ public class PrivateDnsModeDialogPreference extends CustomDialogPreferenceCompat
             final String quad9Hostname =
                     context.getString(R.string.private_dns_hostname_quad9);
             ConnectivitySettingsManager.setPrivateDnsHostname(context, quad9Hostname);
+            modeToSet = PRIVATE_DNS_MODE_PROVIDER_HOSTNAME;
+        } else if (mMode == PRIVATE_DNS_MODE_QUAD9_UNSECURED) {
+            final String quad9unsecuredHostname =
+                    context.getString(R.string.private_dns_hostname_quad9_unsecured);
+            ConnectivitySettingsManager.setPrivateDnsHostname(context, quad9unsecuredHostname);
+            modeToSet = PRIVATE_DNS_MODE_PROVIDER_HOSTNAME;
+        } else if (mMode == PRIVATE_DNS_MODE_QUAD9_ECS) {
+            final String quad9ecsHostname =
+                    context.getString(R.string.private_dns_hostname_quad9_ecs);
+            ConnectivitySettingsManager.setPrivateDnsHostname(context, quad9ecsHostname);
+            modeToSet = PRIVATE_DNS_MODE_PROVIDER_HOSTNAME;
+        } else if (mMode == PRIVATE_DNS_MODE_QUAD9_UNSECURED_ECS) {
+            final String quad9unsecuredecsHostname =
+                    context.getString(R.string.private_dns_hostname_quad9_unsecured_ecs);
+            ConnectivitySettingsManager.setPrivateDnsHostname(context, quad9unsecuredecsHostname);
             modeToSet = PRIVATE_DNS_MODE_PROVIDER_HOSTNAME;
         }
 
