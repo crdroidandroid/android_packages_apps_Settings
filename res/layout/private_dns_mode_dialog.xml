@@ -42,6 +42,14 @@
                 layout="@layout/preference_widget_dialog_radiobutton"/>
 
             <include
+                android:id="@+id/private_dns_mode_cloudflare_block_malware"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_cloudflare_block_malware_and_adult_content"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
                 android:id="@+id/private_dns_mode_adguard"
                 layout="@layout/preference_widget_dialog_radiobutton"/>
 
@@ -55,6 +63,18 @@
 
             <include
                 android:id="@+id/private_dns_mode_quad9"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_quad9_unsecured"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_quad9_ecs"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_quad9_unsecured_ecs"
                 layout="@layout/preference_widget_dialog_radiobutton"/>
 
             <include
@@ -91,4 +111,3 @@
     </LinearLayout>
 
 </ScrollView>
-
