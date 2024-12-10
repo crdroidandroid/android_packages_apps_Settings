@@ -127,6 +127,7 @@ public class AppButtonsPreferenceController extends BasePreferenceController imp
     private boolean mFinishing = false;
     private boolean mAppsControlDisallowedBySystem;
     private boolean mAccessedFromAutoRevoke;
+    private boolean mLaunchedFromAppInfo;
 
     public AppButtonsPreferenceController(SettingsActivity activity,
             InstrumentedPreferenceFragment fragment,
@@ -164,10 +165,14 @@ public class AppButtonsPreferenceController extends BasePreferenceController imp
         } else {
             mFinishing = true;
         }
+        mLaunchedFromAppInfo = activity.getIntent().getIntExtra(MetricsFeatureProvider.EXTRA_SOURCE_METRICS_CATEGORY, 0) == com.android.settings.spa.app.appinfo.AppInfoSettingsProvider.METRICS_CATEGORY;
     }
 
     @Override
     public int getAvailabilityStatus() {
+        if (mLaunchedFromAppInfo) {
+            return CONDITIONALLY_UNAVAILABLE;
+        }
         // TODO(b/37313605): Re-enable once this controller supports instant apps
         return mFinishing || isInstantApp() || isSystemModule() ? DISABLED_FOR_USER : AVAILABLE;
     }

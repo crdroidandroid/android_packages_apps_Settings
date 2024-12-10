@@ -29,6 +29,7 @@ import android.os.UserHandle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.CompoundButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
@@ -48,12 +49,17 @@ import com.android.settings.fuelgauge.batteryusage.BatteryDiffEntry;
 import com.android.settings.fuelgauge.batteryusage.BatteryEntry;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.widget.EntityHeaderController;
+import com.android.settingslib.HelpUtils;
 import com.android.settingslib.PrimarySwitchPreference;
 import com.android.settingslib.applications.AppUtils;
 import com.android.settingslib.applications.ApplicationsState;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.instrumentation.Instrumentable;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
+import com.android.settingslib.widget.FooterPreference;
 import com.android.settingslib.widget.LayoutPreference;
+import com.android.settingslib.widget.MainSwitchPreference;
+import com.android.settingslib.widget.SelectorWithWidgetPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,6 +74,7 @@ import java.util.concurrent.Executors;
  */
 public class AdvancedPowerUsageDetail extends DashboardFragment
         implements ButtonActionDialogFragment.AppButtonsDialogListener,
+                SelectorWithWidgetPreference.OnClickListener,
                 Preference.OnPreferenceClickListener,
                 Preference.OnPreferenceChangeListener {
     public static final String TAG = "AdvancedPowerDetail";
@@ -86,7 +93,10 @@ public class AdvancedPowerUsageDetail extends DashboardFragment
     public static final String EXTRA_POWER_USAGE_AMOUNT = "extra_power_usage_amount";
 
     private static final String KEY_PREF_HEADER = "header_view";
+    private static final String KEY_PREF_UNRESTRICTED = "unrestricted_preference";
+    private static final String KEY_PREF_OPTIMIZED = "optimized_preference";
     private static final String KEY_ALLOW_BACKGROUND_USAGE = "allow_background_usage";
+    private static final String KEY_FOOTER_PREFERENCE = "app_usage_footer_preference";
 
     private static final int REQUEST_UNINSTALL = 0;
     private static final int REQUEST_REMOVE_DEVICE_ADMIN = 1;
@@ -100,7 +110,10 @@ public class AdvancedPowerUsageDetail extends DashboardFragment
     @VisibleForTesting ApplicationsState mState;
     @VisibleForTesting ApplicationsState.AppEntry mAppEntry;
     @VisibleForTesting BatteryOptimizeUtils mBatteryOptimizeUtils;
-    @VisibleForTesting PrimarySwitchPreference mAllowBackgroundUsagePreference;
+    @VisibleForTesting SelectorWithWidgetPreference mOptimizePreference;
+    @VisibleForTesting SelectorWithWidgetPreference mUnrestrictedPreference;
+    @VisibleForTesting MainSwitchPreference mMainSwitchPreference;
+    @VisibleForTesting FooterPreference mFooterPreference;
 
     @VisibleForTesting @BatteryOptimizeUtils.OptimizationMode
     int mOptimizationMode = BatteryOptimizeUtils.MODE_UNKNOWN;
@@ -362,7 +375,18 @@ public class AdvancedPowerUsageDetail extends DashboardFragment
                     context.getString(
                             R.string.manager_battery_usage_allow_background_usage_summary);
         }
-        mAllowBackgroundUsagePreference.setSummary(detailInfoString);
+        mFooterPreference.setTitle(detailInfoString);
+        final Intent helpIntent =
+                HelpUtils.getHelpIntent(
+                        context,
+                        context.getString(R.string.help_url_app_usage_settings),
+                        /* backupContext= */ "");
+        if (helpIntent != null) {
+            mFooterPreference.setLearnMoreAction(
+                    v -> startActivityForResult(helpIntent, /* requestCode= */ 0));
+            mFooterPreference.setLearnMoreText(
+                    context.getString(R.string.manager_battery_usage_link_a11y));
+        }
     }
 
     @Override
@@ -402,6 +426,8 @@ public class AdvancedPowerUsageDetail extends DashboardFragment
         }
         controllers.add(mAppButtonsPreferenceController);
         controllers.add(new AllowBackgroundPreferenceController(context, uid, packageName));
+        controllers.add(new OptimizedPreferenceController(context, uid, packageName));
+        controllers.add(new UnrestrictedPreferenceController(context, uid, packageName));
 
         return controllers;
     }
@@ -484,14 +510,51 @@ public class AdvancedPowerUsageDetail extends DashboardFragment
     }
 
     private void onCreateBackgroundUsageState(String packageName) {
-        mAllowBackgroundUsagePreference = findPreference(KEY_ALLOW_BACKGROUND_USAGE);
-        if (mAllowBackgroundUsagePreference != null) {
-            mAllowBackgroundUsagePreference.setOnPreferenceClickListener(this);
-            mAllowBackgroundUsagePreference.setOnPreferenceChangeListener(this);
-        }
+        mOptimizePreference = findPreference(KEY_PREF_OPTIMIZED);
+        mUnrestrictedPreference = findPreference(KEY_PREF_UNRESTRICTED);
+        mMainSwitchPreference = findPreference(KEY_ALLOW_BACKGROUND_USAGE);
+        mFooterPreference = findPreference(KEY_FOOTER_PREFERENCE);
+
+        mOptimizePreference.setOnClickListener(this);
+        mUnrestrictedPreference.setOnClickListener(this);
+        mMainSwitchPreference.addOnSwitchChangeListener((view, isChecked) -> {
+            mMainSwitchPreference.setChecked(isChecked);
+            updateSelectorPreference(isChecked);
+        });
 
         mBatteryOptimizeUtils =
                 new BatteryOptimizeUtils(
                         getContext(), getArguments().getInt(EXTRA_UID), packageName);
+    }
+
+    @Override
+    public void onRadioButtonClicked(SelectorWithWidgetPreference selected) {
+        final String selectedKey = selected == null ? null : selected.getKey();
+        updateSelectorPreferenceState(mUnrestrictedPreference, selectedKey);
+        updateSelectorPreferenceState(mOptimizePreference, selectedKey);
+        mBatteryOptimizeUtils.setAppUsageState(getSelectedPreference(), Action.APPLY);
+    }
+
+    void updateSelectorPreference(boolean isEnabled) {
+        mOptimizePreference.setEnabled(isEnabled);
+        mUnrestrictedPreference.setEnabled(isEnabled);
+        onRadioButtonClicked(isEnabled ? mOptimizePreference : null);
+    }
+
+    int getSelectedPreference() {
+        if (!mMainSwitchPreference.isChecked()) {
+            return BatteryOptimizeUtils.MODE_RESTRICTED;
+        } else if (mUnrestrictedPreference.isChecked()) {
+            return BatteryOptimizeUtils.MODE_UNRESTRICTED;
+        } else if (mOptimizePreference.isChecked()) {
+            return BatteryOptimizeUtils.MODE_OPTIMIZED;
+        } else {
+            return BatteryOptimizeUtils.MODE_UNKNOWN;
+        }
+    }
+
+    private static void updateSelectorPreferenceState(
+            SelectorWithWidgetPreference preference, String selectedKey) {
+        preference.setChecked(TextUtils.equals(selectedKey, preference.getKey()));
     }
 }

@@ -49,12 +49,33 @@
     <PreferenceCategory
         android:title="@string/manager_battery_usage_category_title"
         android:key="manage_battery_usage_category">
-
-        <com.android.settingslib.PrimarySwitchPreference
-            android:key="allow_background_usage"
-            android:title="@string/manager_battery_usage_allow_background_usage_title"
-            settings:controller="com.android.settings.fuelgauge.AllowBackgroundPreferenceController"/>
-
+<!-- keep in sync with power_background_usage_detail-->
     </PreferenceCategory>
+
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:key="allow_background_usage"
+        android:title="@string/manager_battery_usage_allow_background_usage_title"
+        settings:controller="com.android.settings.fuelgauge.AllowBackgroundPreferenceController"/>
+
+    <!-- keep in sync with power_background_usage_detail-->
+    <com.android.settingslib.widget.SelectorWithWidgetPreference
+        android:key="optimized_preference"
+        android:title="@string/manager_battery_usage_optimized_title"
+        android:summary="@string/manager_battery_usage_optimized_summary"
+        settings:controller="com.android.settings.fuelgauge.OptimizedPreferenceController"/>
+
+    <!-- keep in sync with power_background_usage_detail-->
+    <com.android.settingslib.widget.SelectorWithWidgetPreference
+        android:key="unrestricted_preference"
+        android:title="@string/manager_battery_usage_unrestricted_title"
+        android:summary="@string/manager_battery_usage_unrestricted_summary"
+        settings:controller="com.android.settings.fuelgauge.UnrestrictedPreferenceController"/>
+
+    <!-- keep in sync with power_background_usage_detail-->
+    <com.android.settingslib.widget.FooterPreference
+        android:key="app_usage_footer_preference"
+        android:title="@string/manager_battery_usage_footer"
+        android:selectable="false"
+        settings:searchable="false"/>
 
 </PreferenceScreen>
