@@ -46,7 +46,7 @@
     <string name="tethering_allow_vpn_upstreams_summary">Zezwól urządzeniom, podłączonym do udostępnionej sieci, na wysyłanie pakietów, poprzez VPN tego urządzenia</string>
     <string name="increasing_ring_volume_option_title">Narastająca głośność dzwonka</string>
     <string name="increasing_ring_min_volume_title">Głośność początkowa</string>
-    <string name="increasing_ring_ramp_up_time_title">Wydłużenie odstępu</string>
+    <string name="increasing_ring_ramp_up_time_title">Czas narastania</string>
     <string name="lockscreen_media_art_title">Wyświetlanie okładki albumu</string>
     <string name="lock_settings_picker_pattern_size_message">Wybierz rozmiar wzoru</string>
     <string name="lockpattern_settings_enable_error_path_title">Pokazuj błędny wzór</string>

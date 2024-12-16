@@ -107,5 +107,5 @@
     <string name="ambient_display_screen_off_udfps_title" product="device">Pressione e segure o sensor de impressão digital para desbloquear o dispositivo</string>
     <string name="ambient_display_screen_off_udfps_summary">Para ligar sua tela e desbloquear, pressione e segure o sensor de impressão digital sob a tela.</string>
     <string name="storage_warning_internal">Aviso: Esta opção pode não funcionar corretamente ou levar à perda de dados, portanto, não é recomendada!</string>
-    <string name="assisted_gps_summary">Baixar dados de assistência para satélite através da internet, o que pode melhorar consideravelmente o desempenho da inicialização do GPS. Nas chamadas de emergência, o GPS auxiliado é sempre permitido.</string>
+    <string name="assisted_gps_summary">Baixar dados de assistência de satélite da internet, que pode melhorar consideravelmente a velocidade do GPS. Em chamadas de emergência, o GPS assistido é sempre ativado.</string>
 </resources>
