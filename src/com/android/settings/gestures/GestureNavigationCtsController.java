@@ -21,43 +21,33 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.provider.Settings;
 
-import androidx.preference.Preference;
-import androidx.preference.PreferenceScreen;
-
 import com.android.settings.R;
 import com.android.settings.core.TogglePreferenceController;
 
-public class GestureNavigationLongPressController extends TogglePreferenceController {
+public class GestureNavigationCtsController extends TogglePreferenceController {
 
-    private static final String GSA_PACKAGE = "com.google.android.googlequicksearchbox";
-    private static final String LONGPRESS_KEY = "search_all_entrypoints_enabled";
+    private final boolean mDefaultEnabled;
+    private final String mCtsPackage;
 
-    private Preference mLongPressPref;
-
-    public GestureNavigationLongPressController(Context context, String key) {
+    public GestureNavigationCtsController(Context context, String key) {
         super(context, key);
-    }
 
-    @Override
-    public void displayPreference(PreferenceScreen screen) {
-        super.displayPreference(screen);
-
-        mLongPressPref = (Preference) screen.findPreference(LONGPRESS_KEY);
-	mLongPressPref.setEnabled(isChecked());
+        mDefaultEnabled = context.getResources().getBoolean(
+                com.android.internal.R.bool.config_searchAllEntrypointsEnabledDefault);
+        mCtsPackage = mContext.getResources().getString(
+                com.android.internal.R.string.config_defaultContextualSearchPackageName);
     }
 
     @Override
     public boolean isChecked() {
-        return Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.NAVBAR_LONG_PRESS_GESTURE, 1) == 1;
+        return Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.SEARCH_ALL_ENTRYPOINTS_ENABLED, mDefaultEnabled ? 1 : 0) == 1;
     }
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        if (mLongPressPref != null)
-            mLongPressPref.setEnabled(isChecked);
-        return Settings.System.putInt(mContext.getContentResolver(),
-                Settings.System.NAVBAR_LONG_PRESS_GESTURE, isChecked ? 1 : 0);
+        return Settings.Secure.putInt(mContext.getContentResolver(),
+                Settings.Secure.SEARCH_ALL_ENTRYPOINTS_ENABLED, isChecked ? 1 : 0);
     }
 
     @Override
@@ -67,7 +57,7 @@ public class GestureNavigationLongPressController extends TogglePreferenceContro
             return UNSUPPORTED_ON_DEVICE;
         }
         try {
-            ApplicationInfo ai = pm.getApplicationInfo(GSA_PACKAGE, 0);
+            ApplicationInfo ai = pm.getApplicationInfo(mCtsPackage, 0);
             if (ai.enabled && ai.isProduct()) {
                 return AVAILABLE;
             }
