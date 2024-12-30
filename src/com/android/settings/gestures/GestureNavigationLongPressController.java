@@ -16,8 +16,9 @@
 
 package com.android.settings.gestures;
 
+import android.content.ComponentName;
 import android.content.Context;
-import android.content.pm.ApplicationInfo;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.provider.Settings;
 
@@ -30,6 +31,7 @@ import com.android.settings.core.TogglePreferenceController;
 public class GestureNavigationLongPressController extends TogglePreferenceController {
 
     private static final String GSA_PACKAGE = "com.google.android.googlequicksearchbox";
+    private static final String LENS_SHARE_ACTIVITY = "com.google.android.apps.search.lens.LensShareEntryPointActivity";
     private static final String LONGPRESS_KEY = "search_all_entrypoints_enabled";
 
     private Preference mLongPressPref;
@@ -43,7 +45,7 @@ public class GestureNavigationLongPressController extends TogglePreferenceContro
         super.displayPreference(screen);
 
         mLongPressPref = (Preference) screen.findPreference(LONGPRESS_KEY);
-	mLongPressPref.setEnabled(isChecked());
+	    mLongPressPref.setEnabled(isChecked());
     }
 
     @Override
@@ -60,21 +62,27 @@ public class GestureNavigationLongPressController extends TogglePreferenceContro
                 Settings.System.NAVBAR_LONG_PRESS_GESTURE, isChecked ? 1 : 0);
     }
 
-    @Override
-    public int getAvailabilityStatus() {
-        PackageManager pm = mContext.getPackageManager();
+    public static boolean isAvailable(Context context) {
+        PackageManager pm = context.getPackageManager();
         if (pm == null) {
-            return UNSUPPORTED_ON_DEVICE;
+            return false;
         }
         try {
-            ApplicationInfo ai = pm.getApplicationInfo(GSA_PACKAGE, 0);
-            if (ai.enabled && ai.isProduct()) {
-                return AVAILABLE;
+            if (!pm.getApplicationInfo(GSA_PACKAGE, 0).enabled) {
+                return false;
             }
         } catch (PackageManager.NameNotFoundException e) {
-            return UNSUPPORTED_ON_DEVICE;
+            return false;
         }
-        return UNSUPPORTED_ON_DEVICE;
+        // telling real GSA apart from the google stub
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setComponent(new ComponentName(GSA_PACKAGE, LENS_SHARE_ACTIVITY));
+        return pm.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY).size() > 0;
+    }
+
+    @Override
+    public int getAvailabilityStatus() {
+        return isAvailable(mContext) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override

@@ -17,7 +17,6 @@
 package com.android.settings.gestures;
 
 import android.content.Context;
-import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.provider.Settings;
 
@@ -52,13 +51,15 @@ public class GestureNavigationCtsController extends TogglePreferenceController {
 
     @Override
     public int getAvailabilityStatus() {
+        if (!GestureNavigationLongPressController.isAvailable(mContext)) {
+            return UNSUPPORTED_ON_DEVICE;
+        }
         PackageManager pm = mContext.getPackageManager();
         if (pm == null) {
             return UNSUPPORTED_ON_DEVICE;
         }
         try {
-            ApplicationInfo ai = pm.getApplicationInfo(mCtsPackage, 0);
-            if (ai.enabled && ai.isProduct()) {
+            if (pm.getApplicationInfo(mCtsPackage, 0).enabled) {
                 return AVAILABLE;
             }
         } catch (PackageManager.NameNotFoundException e) {
