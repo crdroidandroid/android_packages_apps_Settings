@@ -26,13 +26,13 @@
         android:key="zen_mode_event_category">
 
         <!-- During events for -->
-        <DropDownPreference
+        <ListPreference
             android:key="calendar"
             android:title="@string/zen_mode_set_calendar_which_calendar"
             android:summary="%s" />
 
         <!-- Where reply is -->
-        <DropDownPreference
+        <ListPreference
             android:key="reply"
             android:title="@string/zen_mode_set_calendar_which_reply"
             android:summary="%s" />
