@@ -25,7 +25,7 @@ import android.provider.CalendarContract;
 import android.service.notification.ZenModeConfig;
 
 import androidx.annotation.NonNull;
-import androidx.preference.DropDownPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
@@ -48,8 +48,8 @@ class ZenModeSetCalendarPreferenceController extends AbstractZenModePreferenceCo
     @VisibleForTesting
     protected static final String KEY_REPLY = "reply";
 
-    private DropDownPreference mCalendar;
-    private DropDownPreference mReply;
+    private ListPreference mCalendar;
+    private ListPreference mReply;
 
     private ZenModeConfig.EventInfo mEvent;
 
