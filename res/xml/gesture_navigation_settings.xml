@@ -30,6 +30,14 @@
         android:defaultValue="true"
         settings:requiresPackage="org.lineageos.overlay.customization.navbar.nohint" />
 
+    <lineageos.preference.LineageSystemSettingListPreference
+        android:key="navigation_bar_ime_space"
+        android:title="@string/navigation_bar_ime_space_title"
+        android:summary="%s"
+        android:entries="@array/navigation_bar_ime_space_entries"
+        android:entryValues="@array/navigation_bar_ime_space_values"
+        android:defaultValue="0" />
+
     <com.android.settings.widget.LabeledSeekBarPreference
         android:key="gesture_navbar_length_preference"
         android:title="@string/gesture_navbar_length_title"
