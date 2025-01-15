@@ -22,28 +22,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <FrameLayout
         style="@style/SudContentFrame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:clipToPadding="false"
         android:clipChildren="false">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
             <com.google.android.setupdesign.view.FillContentLayout
-                android:layout_width="@dimen/fingerprint_progress_bar_max_size"
-                android:layout_height="@dimen/fingerprint_progress_bar_max_size"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_horizontal"
                 android:layout_marginVertical="24dp"
+                android:maxHeight="@dimen/fingerprint_progress_bar_max_size"
+                android:maxWidth="@dimen/fingerprint_progress_bar_max_size"
                 android:paddingTop="0dp"
-                android:paddingBottom="0dp"
-                android:gravity="center|center_horizontal">
+                android:paddingBottom="0dp">
 
                 <ImageView
                     android:id="@+id/fingerprint_in_app_indicator"
@@ -56,16 +50,6 @@
                     android:src="@drawable/fingerprint_enroll_finish" />
             </com.google.android.setupdesign.view.FillContentLayout>
 
-            <!-- Added to align elements with fingerprint_enroll_enrolling_base -->
-            <TextView
-                style="@style/TextAppearance.ErrorText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|bottom"
-                android:visibility="invisible" />
-
-        </LinearLayout>
-
-    </LinearLayout>
+    </FrameLayout>
 
 </com.google.android.setupdesign.GlifLayout>
