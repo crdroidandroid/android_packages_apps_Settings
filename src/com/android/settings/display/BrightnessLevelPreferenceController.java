@@ -36,6 +36,8 @@ import android.os.Process;
 import android.os.UserManager;
 import android.provider.Settings.System;
 import android.text.TextUtils;
+import android.view.Display;
+import android.view.DisplayInfo;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
@@ -175,12 +177,29 @@ public class BrightnessLevelPreferenceController extends BasePreferenceControlle
 
     private double getCurrentBrightness() {
         int value = 0;
-        final BrightnessInfo info = mContext.getDisplay().getBrightnessInfo();
+        final BrightnessInfo info = getDisplay().getBrightnessInfo();
         if (info != null) {
             value = convertLinearToGammaFloat(info.brightness, info.brightnessMinimum,
                     info.brightnessMaximum);
         }
         return getPercentage(value, GAMMA_SPACE_MIN, GAMMA_SPACE_MAX);
+    }
+
+    private Display getDisplay() {
+        final Display currentDisplay = mContext.getDisplay();
+        final DisplayInfo info = new DisplayInfo();
+        currentDisplay.getDisplayInfo(info);
+
+        if (info.type == Display.TYPE_OVERLAY) {
+            // try to get the default (internal) display if we are in an overlay display,
+            // otherwise the brightness is always zero.
+            final Display defaultDisplay = mDisplayManager.getDisplay(Display.DEFAULT_DISPLAY);
+            if (defaultDisplay != null) {
+                return defaultDisplay;
+            }
+        }
+
+        return currentDisplay;
     }
 
     private double getPercentage(double value, int min, int max) {
