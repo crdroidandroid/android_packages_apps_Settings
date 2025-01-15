@@ -22,15 +22,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/illustration_lottie"
+    <com.google.android.setupdesign.view.FillContentLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:importantForAccessibility="no"
-        android:scaleType="centerInside"
-        app:lottie_imageAssetsFolder="images"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/udfps_edu_lottie" />
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:maxHeight="400dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/illustration_lottie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            android:scaleType="centerInside"
+            app:lottie_imageAssetsFolder="images"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/udfps_edu_lottie" />
+    </com.google.android.setupdesign.view.FillContentLayout>
 
 </com.google.android.setupdesign.GlifLayout>
