@@ -93,11 +93,13 @@
         android:selectable="false"
         android:title="@string/my_device_info_device_details_category_title">
 
+        <!-- Radio info -->
         <Preference
-            android:title="@string/radio_info_title"
             android:key="radio_info_settings"
             android:order="6"
-            settings:controller="com.android.settings.deviceinfo.RadioInfoPreferenceController">
+            android:title="@string/radio_info_title"
+            android:summary="@string/summary_placeholder"
+            settings:isPreferenceVisible="@bool/config_show_sim_info">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.phone"
                     android:targetClass="com.android.phone.settings.RadioInfo" />
