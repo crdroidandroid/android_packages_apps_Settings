@@ -90,15 +90,13 @@
             android:key="navbar_long_press_gesture"
             android:title="@string/navbar_long_press_gesture_title"
             android:summary="@string/navbar_long_press_gesture_summary"
-            settings:controller="com.android.settings.gestures.GestureNavigationLongPressController"
-            android:dependency="navigation_bar_hint" />
+            settings:controller="com.android.settings.gestures.GestureNavigationLongPressController" />
 
         <SwitchPreferenceCompat
             android:key="search_all_entrypoints_enabled"
             android:title="@string/search_all_entrypoints_enabled_title"
             android:summary="@string/search_all_entrypoints_enabled_summary"
-            settings:controller="com.android.settings.gestures.GestureNavigationCtsController"
-            android:dependency="navbar_long_press_gesture" />
+            settings:controller="com.android.settings.gestures.GestureNavigationCtsController" />
 
     </PreferenceCategory>
 
