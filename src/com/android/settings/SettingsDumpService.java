@@ -31,14 +31,11 @@ import android.os.storage.VolumeInfo;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
-import android.util.IndentingPrintWriter;
-import android.util.Log;
 
 import androidx.annotation.VisibleForTesting;
 
 import com.android.settings.applications.ProcStatsData;
 import com.android.settings.datausage.lib.DataUsageLib;
-import com.android.settings.network.MobileNetworkRepository;
 import com.android.settingslib.net.DataUsageController;
 
 import org.json.JSONArray;
@@ -50,10 +47,6 @@ import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
 public class SettingsDumpService extends Service {
-
-    public static final String EXTRA_KEY_SHOW_NETWORK_DUMP = "show_network_dump";
-
-    private static final String TAG = "SettingsDumpService";
     @VisibleForTesting
     static final String KEY_SERVICE = "service";
     @VisibleForTesting
@@ -70,16 +63,6 @@ public class SettingsDumpService extends Service {
     static final Intent BROWSER_INTENT =
             new Intent("android.intent.action.VIEW", Uri.parse("http://"));
 
-    private boolean mShouldShowNetworkDump = false;
-
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        if (intent != null) {
-            mShouldShowNetworkDump = intent.getBooleanExtra(EXTRA_KEY_SHOW_NETWORK_DUMP, false);
-        }
-        return Service.START_REDELIVER_INTENT;
-    }
-
     @Override
     public IBinder onBind(Intent intent) {
         return null;
@@ -87,26 +70,18 @@ public class SettingsDumpService extends Service {
 
     @Override
     protected void dump(FileDescriptor fd, PrintWriter writer, String[] args) {
-        IndentingPrintWriter pw = new IndentingPrintWriter(writer, "  ");
-        if (!mShouldShowNetworkDump) {
-            JSONObject dump = new JSONObject();
-            pw.println(TAG + ": ");
-            pw.increaseIndent();
-            try {
-                dump.put(KEY_SERVICE, "Settings State");
-                dump.put(KEY_STORAGE, dumpStorage());
-                dump.put(KEY_DATAUSAGE, dumpDataUsage());
-                dump.put(KEY_MEMORY, dumpMemory());
-                dump.put(KEY_DEFAULT_BROWSER_APP, dumpDefaultBrowser());
-            } catch (Exception e) {
-                Log.w(TAG, "exception in dump: ", e);
-            }
-            pw.println(dump);
-            pw.flush();
-            pw.decreaseIndent();
-        } else {
-            dumpMobileNetworkSettings(pw);
+        JSONObject dump = new JSONObject();
+        try {
+            dump.put(KEY_SERVICE, "Settings State");
+            dump.put(KEY_STORAGE, dumpStorage());
+            dump.put(KEY_DATAUSAGE, dumpDataUsage());
+            dump.put(KEY_MEMORY, dumpMemory());
+            dump.put(KEY_DEFAULT_BROWSER_APP, dumpDefaultBrowser());
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
+        writer.println(dump);
     }
 
     private JSONObject dumpMemory() throws JSONException {
@@ -193,9 +168,5 @@ public class SettingsDumpService extends Service {
         } else {
             return resolveInfo.activityInfo.packageName;
         }
-    }
-
-    private void dumpMobileNetworkSettings(IndentingPrintWriter writer) {
-        MobileNetworkRepository.getInstance(this).dump(writer);
     }
 }

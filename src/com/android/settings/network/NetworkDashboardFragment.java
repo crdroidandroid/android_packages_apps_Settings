@@ -22,7 +22,6 @@ import android.content.Intent;
 import androidx.annotation.Nullable;
 
 import com.android.settings.R;
-import com.android.settings.SettingsDumpService;
 import com.android.settings.core.OnActivityResultListener;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -88,11 +87,6 @@ public class NetworkDashboardFragment extends DashboardFragment implements
 
         controllers.add(vpnPreferenceController);
         controllers.add(privateDnsPreferenceController);
-
-        // Start SettingsDumpService after the MobileNetworkRepository is created.
-        Intent intent = new Intent(context, SettingsDumpService.class);
-        intent.putExtra(SettingsDumpService.EXTRA_KEY_SHOW_NETWORK_DUMP, true);
-        context.startService(intent);
         return controllers;
     }
 
