@@ -358,6 +358,28 @@ public class IccLockSettings extends SettingsPreferenceFragment
                 mPinToggle.setChecked(isIccLockEnabled());
             }
         }
+
+        updateTabIndicatorViewTitle();
+    }
+
+    private void updateTabIndicatorViewTitle() {
+        if (mTabHost == null) {
+            Log.d(TAG, "updateTabIndicatorViewTitle: return for mTabHost is null");
+            return;
+        }
+        final int numSims = mProxySubscriptionMgr.getActiveSubscriptionInfoCountMax();
+        Log.d(TAG, "updateTabIndicatorViewTitle: numSims = " + numSims);
+        for (int slotId = 0; slotId < numSims; ++slotId) {
+            final SubscriptionInfo subInfo = getVisibleSubscriptionInfoForSimSlotIndex(slotId);
+            Log.d(TAG, "updateTabIndicatorViewTitle: subInfo = " + subInfo);
+            View indicatorView = mTabHost.getTabWidget().getChildTabViewAt(slotId);
+            TextView textView = indicatorView.findViewById(com.android.internal.R.id.title);
+            String title = String.valueOf(subInfo == null ?
+                    getContext().getString(R.string.sim_editor_title, slotId + 1) :
+                    SubscriptionUtil.getUniqueSubscriptionDisplayName(subInfo, getContext()));
+            textView.setText(title);
+            Log.d(TAG, "updateTabIndicatorViewTitle: title = " + title + " for slotId = " + slotId);
+        }
     }
 
     @Override
