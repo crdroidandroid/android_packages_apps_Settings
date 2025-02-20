@@ -240,27 +240,23 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
         if (preference == mRestrictBackground) {
             mDataSaverBackend.setIsDenylisted(mAppItem.key, mPackageName, !(Boolean) newValue);
             updatePrefs();
-            return true;
         } else if (preference == mRestrictAll) {
             setAppRestrictAll(!(Boolean) newValue);
             updatePrefs();
-            return true;
         } else if (preference == mRestrictCellular) {
             setAppRestrictCellular(!(Boolean) newValue);
             updatePrefs();
-            return true;
         } else if (preference == mRestrictVpn) {
             setAppRestrictVpn(!(Boolean) newValue);
             updatePrefs();
-            return true;
         } else if (preference == mRestrictWifi) {
             setAppRestrictWifi(!(Boolean) newValue);
             updatePrefs();
-            return true;
         } else if (preference == mUnrestrictedData) {
             mDataSaverBackend.setIsAllowlisted(mAppItem.key, mPackageName, (Boolean) newValue);
-            return true;
+            updatePrefs();
         }
+        // updatePrefs() will alter toggle states based on the actual underlying value.
         return false;
     }
 
