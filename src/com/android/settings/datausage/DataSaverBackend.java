@@ -122,57 +122,62 @@ public class DataSaverBackend {
         mPolicyManager.removeUidPolicy(uid, POLICY_ALLOW_METERED_BACKGROUND);
     }
 
-    private void loadUidPolicies(int policy) {
-        final int[] uidsWithPolicyArray = mPolicyManager.getUidsWithPolicy(policy);
-        final ArrayList<Integer> uidsWithPolicy = new ArrayList<>(uidsWithPolicyArray.length);
+    private void loadUidPolicies(int policyFlag) {
+        final int[] uidsWithPolicyArray = mPolicyManager.getUidsWithPolicy(policyFlag);
+        final ArrayList<Integer> uidsWithPolicyFlag = new ArrayList<>(uidsWithPolicyArray.length);
+        // Convert from int[] to a list of Integer.
         for (final int uid : uidsWithPolicyArray) {
-            uidsWithPolicy.add(uid);
+            uidsWithPolicyFlag.add(uid);
         }
         // Update existing cached UID policies.
         for (int i = 0; i < mUidPolicies.size(); i++) {
             final Integer cachedEntryUid = mUidPolicies.keyAt(i);
-            if (uidsWithPolicy.remove(cachedEntryUid)) {
+            if (uidsWithPolicyFlag.remove(cachedEntryUid)) {
                 // UID had the policy. It was removed so we don't have to process it twice.
-                setCachedUidPolicyFlagAt(i, policy, true);
+                setCachedUidPolicyFlagAt(i, policyFlag, true);
             } else {
                 // UID does not have the policy.
-                setCachedUidPolicyFlagAt(i, policy, false);
+                setCachedUidPolicyFlagAt(i, policyFlag, false);
             }
         }
         // Add policies for remaining UIDs, which did not have cached policies, so we're it.
-        for (final int uid : uidsWithPolicy) {
-            mUidPolicies.put(uid, policy);
+        for (final int uid : uidsWithPolicyFlag) {
+            mUidPolicies.put(uid, policyFlag);
         }
     }
 
-    private void setCachedUidPolicyFlag(int uid, int policy, boolean add) {
+    private void setCachedUidPolicyFlag(int uid, int policyFlag, boolean add) {
         final int index = mUidPolicies.indexOfKey(uid);
         if (index < 0) {
             if (add) {
-                mUidPolicies.put(uid, policy);
+                mUidPolicies.put(uid, policyFlag);
             }
             return;
         }
-        setCachedUidPolicyFlagAt(index, policy, add);
+        setCachedUidPolicyFlagAt(index, policyFlag, add);
     }
 
-    private void setCachedUidPolicyFlagAt(int index, int policy, boolean add) {
+    private void setCachedUidPolicyFlagAt(int index, int policyFlag, boolean add) {
         final int currentPolicy = mUidPolicies.valueAt(index);
-        final int newPolicy = add ? (currentPolicy | policy) : (currentPolicy & ~policy);
+        final int newPolicy = add ? (currentPolicy | policyFlag) : (currentPolicy & ~policyFlag);
         mUidPolicies.setValueAt(index, newPolicy);
     }
 
-    private void setUidPolicyFlag(int uid, int policy, boolean add) {
+    private void setUidPolicyFlag(int uid, int policyFlag, boolean add) {
         if (add) {
-            mPolicyManager.addUidPolicy(uid, policy);
+            mPolicyManager.addUidPolicy(uid, policyFlag);
         } else {
-            mPolicyManager.removeUidPolicy(uid, policy);
+            mPolicyManager.removeUidPolicy(uid, policyFlag);
         }
-        setCachedUidPolicyFlag(uid, policy, add);
+        setCachedUidPolicyFlag(uid, policyFlag, add);
     }
 
-    private boolean isUidPolicyFlagSet(int uid, int policy) {
-        return (mUidPolicies.get(uid, POLICY_NONE) & policy) == policy;
+    private boolean isUidPolicyFlagSet(int uid, int policyFlag) {
+        return isFlagSet(mUidPolicies.get(uid, POLICY_NONE), policyFlag);
+    }
+
+    private static boolean isFlagSet(int overallPolicy, int policyFlag) {
+        return (overallPolicy & policyFlag) == policyFlag;
     }
 
     public boolean isDenylisted(int uid) {
@@ -220,10 +225,10 @@ public class DataSaverBackend {
             mUidPolicies.put(uid, newPolicy);
         }
 
-        final boolean wasAllowlisted = oldPolicy == POLICY_ALLOW_METERED_BACKGROUND;
-        final boolean wasDenylisted = oldPolicy == POLICY_REJECT_METERED_BACKGROUND;
-        final boolean isAllowlisted = newPolicy == POLICY_ALLOW_METERED_BACKGROUND;
-        final boolean isDenylisted = newPolicy == POLICY_REJECT_METERED_BACKGROUND;
+        final boolean wasAllowlisted = isFlagSet(oldPolicy, POLICY_ALLOW_METERED_BACKGROUND);
+        final boolean wasDenylisted = isFlagSet(oldPolicy, POLICY_REJECT_METERED_BACKGROUND);
+        final boolean isAllowlisted = isFlagSet(newPolicy, POLICY_ALLOW_METERED_BACKGROUND);
+        final boolean isDenylisted = isFlagSet(newPolicy, POLICY_REJECT_METERED_BACKGROUND);
 
         if (wasAllowlisted != isAllowlisted) {
             handleAllowlistChanged(uid, isAllowlisted);
