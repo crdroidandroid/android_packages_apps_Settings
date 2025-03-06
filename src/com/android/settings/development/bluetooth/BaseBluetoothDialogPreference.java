@@ -130,7 +130,7 @@ public abstract class BaseBluetoothDialogPreference extends CustomDialogPreferen
      * Method to get summary strings by index.
      */
     protected String generateSummary(int index) {
-        if (index > mSummaryStrings.size()) {
+        if (index >= mSummaryStrings.size()) {
             Log.e(TAG, "Unable to get summary of " + index + ". Size is " + mSummaryStrings.size());
             return null;
         }
