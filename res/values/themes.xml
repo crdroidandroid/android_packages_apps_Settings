@@ -197,7 +197,7 @@
         <!-- Homepage should follow device default design, the values is same as device default theme.-->
         <item name="android:navigationBarColor">?android:attr/colorBackground</item>
         <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
-        <item name="android:colorBackground">@android:color/system_surface_container_light</item>
+        <item name="android:colorBackground">@color/legacy_settingslib_materialColorSurfaceContainer</item>
     </style>
 
     <style name="Theme.Settings.Home.NoAnimation">
