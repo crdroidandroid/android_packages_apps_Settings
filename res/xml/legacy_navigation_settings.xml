@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016-2026 crDroid Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:key="legacy_navigation_settings_page"
+    android:title="@string/legacy_navigation_title">
+
+    <PreferenceCategory
+        android:key="navbar_layout_category"
+        android:title="@string/navbar_layout_category_title">
+
+        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+            android:key="navbar_inverse_layout"
+            android:title="@string/navbar_invert_layout_title"
+            android:summary="@string/navbar_invert_layout_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="navbar_actions_category"
+        android:title="@string/navbar_actions_category_title">
+
+         <ListPreference
+            android:key="navigation_back_long_press"
+            android:dialogTitle="@string/navbar_back_long_press_title"
+            android:title="@string/navbar_back_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
+
+         <!--<ListPreference
+            android:key="navigation_back_double_tap"
+            android:dialogTitle="@string/navbar_back_double_tap_title"
+            android:title="@string/navbar_back_double_tap_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />-->
+
+        <ListPreference
+            android:key="navigation_home_long_press"
+            android:dialogTitle="@string/navbar_home_long_press_title"
+            android:title="@string/navbar_home_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
+
+         <ListPreference
+            android:key="navigation_home_double_tap"
+            android:dialogTitle="@string/navbar_home_double_tap_title"
+            android:title="@string/navbar_home_double_tap_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
+
+         <ListPreference
+            android:key="navigation_app_switch_long_press"
+            android:dialogTitle="@string/navbar_app_switch_long_press_title"
+            android:title="@string/navbar_app_switch_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
+
+         <ListPreference
+            android:key="navigation_app_switch_double_tap"
+            android:dialogTitle="@string/navbar_app_switch_double_tap_title"
+            android:title="@string/navbar_app_switch_double_tap_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
+
+         <ListPreference
+            android:key="navigation_bar_corner_long_swipe"
+            android:dialogTitle="@string/navbar_corner_long_swipe_title"
+            android:title="@string/navbar_corner_long_swipe_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
+
+         <ListPreference
+            android:key="navigation_bar_edge_long_swipe"
+            android:dialogTitle="@string/navbar_edge_long_swipe_title"
+            android:title="@string/navbar_edge_long_swipe_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

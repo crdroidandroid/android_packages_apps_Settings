@@ -5561,6 +5561,27 @@
         </activity>
 
         <activity
+            android:name="Settings$LegacyNavigationSettingsActivity"
+            android:label="@string/legacy_navigation_title"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter android:priority="32">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="1">
+                <action android:name="com.android.settings.LEGACY_NAVIGATION_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.android.settings.gestures.LegacyNavigationSettingsFragment" />
+            <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                       android:value="@string/menu_key_system"/>
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                       android:value="true" />
+        </activity>
+
+        <activity
             android:name="Settings$ButtonNavigationSettingsActivity"
             android:label="@string/button_navigation_settings_activity_title"
             android:exported="true"

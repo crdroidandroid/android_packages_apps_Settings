@@ -155,8 +155,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
                 || !PreferenceControllerListHelper.areAllPreferencesUnavailable(
                         getContext(), getPreferenceManager(), R.xml.button_navigation_settings);
 
-        if ((KEY_SYSTEM_NAV_2BUTTONS.equals(info.getKey())
-                || KEY_SYSTEM_NAV_3BUTTONS.equals(info.getKey()))
+        if (KEY_SYSTEM_NAV_2BUTTONS.equals(info.getKey())
                 // Don't add the settings button if that page will be blank.
                 && navbarAvailable) {
             pref.setExtraWidgetOnClickListener((v) ->
@@ -164,6 +163,12 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
                             .setDestination(ButtonNavigationSettingsFragment.class.getName())
                             .setSourceMetricsCategory(SettingsEnums.SETTINGS_GESTURE_SWIPE_UP)
                             .launch());
+        }
+
+        if (KEY_SYSTEM_NAV_3BUTTONS.equals(info.getKey())) {
+            pref.setExtraWidgetOnClickListener((v) -> startActivity(new Intent(
+                    LegacyNavigationSettingsFragment.LEGACY_NAVIGATION_SETTINGS)
+                    .setPackage(getContext().getPackageName())));
         }
     }
 

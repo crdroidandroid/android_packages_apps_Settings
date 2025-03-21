@@ -427,6 +427,7 @@ public class Settings extends SettingsActivity {
     public static class GestureNavigationSettingsActivity extends SettingsActivity { /* empty */ }
     /** Activity to manage 2-/3-button navigation configuration. */
     public static class ButtonNavigationSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class LegacyNavigationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class InteractAcrossProfilesSettingsActivity extends SettingsActivity {
         /* empty */
     }
