@@ -160,8 +160,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
             addClickHintForExtra(pref, R.string.gesture_settings_extra_button_hint);
         }
 
-        if ((KEY_SYSTEM_NAV_2BUTTONS.equals(info.getKey())
-                || KEY_SYSTEM_NAV_3BUTTONS.equals(info.getKey()))) {
+        if (KEY_SYSTEM_NAV_2BUTTONS.equals(info.getKey())) {
             pref.setExtraWidgetOnClickListener((v) ->
                     new SubSettingLauncher(getContext())
                             .setDestination(ButtonNavigationSettingsFragment.class.getName())
@@ -170,6 +169,13 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
 
             pref.setExtraWidgetContentDescription(getContext().getString(
                     R.string.button_navigation_settings_button_description));
+            addClickHintForExtra(pref, R.string.button_navigation_settings_extra_button_hint);
+        }
+
+        if (KEY_SYSTEM_NAV_3BUTTONS.equals(info.getKey())) {
+            pref.setExtraWidgetOnClickListener((v) -> startActivity(new Intent(
+                    LegacyNavigationSettingsFragment.LEGACY_NAVIGATION_SETTINGS)
+                    .setPackage(getContext().getPackageName())));
             addClickHintForExtra(pref, R.string.button_navigation_settings_extra_button_hint);
         }
     }
