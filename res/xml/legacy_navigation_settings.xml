@@ -21,6 +21,11 @@
     android:key="legacy_navigation_settings_page"
     android:title="@string/legacy_navigation_title">
 
+    <lineageos.preference.LineageSystemSettingSwitchPreference
+        android:key="enable_taskbar"
+        android:title="@string/navigation_bar_enable_taskbar_title"
+        android:summary="@string/navigation_bar_enable_taskbar_summary" />
+
     <PreferenceCategory
         android:key="navbar_layout_category"
         android:title="@string/navbar_layout_category_title">
