@@ -43,6 +43,8 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import lineageos.providers.LineageSettings;
 
+import static com.android.systemui.shared.recents.utilities.Utilities.isLargeScreen;
+
 import static org.lineageos.internal.util.DeviceKeysConstants.*;
 
 /**
@@ -57,6 +59,7 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
     public static final String LEGACY_NAVIGATION_SETTINGS =
             "com.android.settings.LEGACY_NAVIGATION_SETTINGS";
 
+    private static final String KEY_ENABLE_TASKBAR = "enable_taskbar";
     private static final String KEY_NAVIGATION_BACK_LONG_PRESS =
             "navigation_back_long_press";
     private static final String KEY_NAVIGATION_HOME_LONG_PRESS = "navigation_home_long_press";
@@ -85,7 +88,12 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
         super.onCreate(savedInstanceState);
 
         final Resources res = getResources();
-        final ContentResolver resolver = getActivity().getContentResolver();
+        final ContentResolver resolver = getContext().getContentResolver();
+
+        if (!isLargeScreen(getContext())) {
+            getPreferenceScreen().removePreference(
+                    getPreferenceScreen().findPreference(KEY_ENABLE_TASKBAR));
+        }
 
         Action defaultBackLongPressAction = Action.fromIntSafe(res.getInteger(
                 org.lineageos.platform.internal.R.integer.config_longPressOnBackBehavior));
