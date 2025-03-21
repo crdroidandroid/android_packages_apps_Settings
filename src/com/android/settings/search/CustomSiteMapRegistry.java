@@ -25,6 +25,7 @@ import com.android.settings.connecteddevice.usb.UsbDetailsFragment;
 import com.android.settings.fuelgauge.batteryusage.PowerUsageAdvanced;
 import com.android.settings.fuelgauge.batteryusage.PowerUsageSummary;
 import com.android.settings.gestures.GestureNavigationSettingsFragment;
+import com.android.settings.gestures.LegacyNavigationSettingsFragment;
 import com.android.settings.gestures.SystemNavigationGestureSettings;
 import com.android.settings.location.LocationSettings;
 import com.android.settings.location.RecentLocationAccessSeeAllFragment;
@@ -61,6 +62,8 @@ public class CustomSiteMapRegistry {
                     ZenModeRestrictNotificationsSettings.class.getName());
         }
         CUSTOM_SITE_MAP.put(GestureNavigationSettingsFragment.class.getName(),
+                SystemNavigationGestureSettings.class.getName());
+        CUSTOM_SITE_MAP.put(LegacyNavigationSettingsFragment.class.getName(),
                 SystemNavigationGestureSettings.class.getName());
     }
 }
