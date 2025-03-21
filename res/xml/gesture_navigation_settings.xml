@@ -23,6 +23,11 @@
     android:title="@string/gesture_settings_activity_title"
     settings:keywords="@string/keywords_gesture_navigation_settings">
 
+    <lineageos.preference.LineageSystemSettingSwitchPreference
+        android:key="enable_taskbar"
+        android:title="@string/navigation_bar_enable_taskbar_title"
+        android:summary="@string/navigation_bar_enable_taskbar_summary" />
+
     <PreferenceCategory
         android:persistent="false">
 
