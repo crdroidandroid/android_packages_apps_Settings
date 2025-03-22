@@ -30,6 +30,12 @@
         android:key="navbar_layout_category"
         android:title="@string/navbar_layout_category_title">
 
+        <Preference
+            android:key="android.theme.customization.navbar"
+            android:title="@string/theme_customization_navbar_title"
+            android:summary="@string/theme_customization_navbar_summary"
+            android:fragment="com.crdroid.settings.fragments.ui.NavbarStyles"/>
+
         <com.crdroid.settings.preferences.SecureSettingSwitchPreference
             android:key="navbar_inverse_layout"
             android:title="@string/navbar_invert_layout_title"
