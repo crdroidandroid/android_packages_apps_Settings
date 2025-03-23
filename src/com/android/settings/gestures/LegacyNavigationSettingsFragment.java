@@ -28,9 +28,6 @@ import android.view.WindowManager;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
-import androidx.preference.PreferenceScreen;
-import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
@@ -68,16 +65,12 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
             "navigation_app_switch_long_press";
     private static final String KEY_NAVIGATION_APP_SWITCH_DOUBLE_TAP =
             "navigation_app_switch_double_tap";
-    private static final String KEY_CORNER_LONG_SWIPE = "navigation_bar_corner_long_swipe";
-    private static final String KEY_EDGE_LONG_SWIPE = "navigation_bar_edge_long_swipe";
 
     private ListPreference mNavigationBackLongPressAction;
     private ListPreference mNavigationHomeLongPressAction;
     private ListPreference mNavigationHomeDoubleTapAction;
     private ListPreference mNavigationAppSwitchLongPressAction;
     private ListPreference mNavigationAppSwitchDoubleTapAction;
-    private ListPreference mCornerLongSwipeAction;
-    private ListPreference mEdgeLongSwipeAction;
 
     public LegacyNavigationSettingsFragment() {
         super();
@@ -118,12 +111,6 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
         Action appSwitchDoubleTapAction = Action.fromSettings(resolver,
                 LineageSettings.System.KEY_APP_SWITCH_DOUBLE_TAP_ACTION,
                 Action.LAST_APP);
-        Action cornerLongSwipeAction = Action.fromSettings(resolver,
-                LineageSettings.System.KEY_CORNER_LONG_SWIPE_ACTION,
-                Action.SEARCH);
-        Action edgeLongSwipeAction = Action.fromSettings(resolver,
-                LineageSettings.System.KEY_EDGE_LONG_SWIPE_ACTION,
-                Action.NOTHING);
 
         // Navigation bar back long press
         mNavigationBackLongPressAction = initList(KEY_NAVIGATION_BACK_LONG_PRESS,
@@ -144,12 +131,6 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
         // Navigation bar app switch double tap
         mNavigationAppSwitchDoubleTapAction = initList(KEY_NAVIGATION_APP_SWITCH_DOUBLE_TAP,
                 appSwitchDoubleTapAction);
-
-        // Corner swipe up gesture
-        mCornerLongSwipeAction = initList(KEY_CORNER_LONG_SWIPE, cornerLongSwipeAction);
-
-        // Edge long swipe gesture
-        mEdgeLongSwipeAction = initList(KEY_EDGE_LONG_SWIPE, edgeLongSwipeAction);
     }
 
     @Override
@@ -195,14 +176,6 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
         } else if (preference == mNavigationAppSwitchDoubleTapAction) {
             handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_APP_SWITCH_DOUBLE_TAP_ACTION);
-            return true;
-        } else if (preference == mCornerLongSwipeAction) {
-            handleListChange((ListPreference) preference, newValue,
-                    LineageSettings.System.KEY_CORNER_LONG_SWIPE_ACTION);
-            return true;
-        } else if (preference == mEdgeLongSwipeAction) {
-            handleListChange((ListPreference) preference, newValue,
-                    LineageSettings.System.KEY_EDGE_LONG_SWIPE_ACTION);
             return true;
         }
         return false;

@@ -27,6 +27,9 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.view.WindowManager;
 
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
+
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -38,11 +41,16 @@ import com.android.settingslib.widget.SliderPreference;
 import java.text.NumberFormat;
 import java.util.Locale;
 
+import lineageos.providers.LineageSettings;
+
+import static org.lineageos.internal.util.DeviceKeysConstants.*;
+
 /**
  * A fragment to include all the settings related to Gesture Navigation mode.
  */
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
-public class GestureNavigationSettingsFragment extends DashboardFragment {
+public class GestureNavigationSettingsFragment extends DashboardFragment implements
+        Preference.OnPreferenceChangeListener {
 
     public static final String TAG = "GestureNavigationSettingsFragment";
 
@@ -56,6 +64,8 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
     private static final String GESTURE_NAVBAR_LENGTH_KEY = "gesture_navbar_length_preference";
     private static final String GESTURE_BACK_HEIGHT_KEY = "gesture_back_height";
     private static final String GESTURE_NAVBAR_HEIGHT_MODE_KEY = "gesture_navbar_height_preference";
+    private static final String KEY_CORNER_LONG_SWIPE = "navigation_bar_corner_long_swipe";
+    private static final String KEY_EDGE_LONG_SWIPE = "navigation_bar_edge_long_swipe";
 
     final Intent mLaunchTutorialIntent =  new Intent(ACTION_GESTURE_SANDBOX)
             .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -66,6 +76,9 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
 
     private float[] mBackGestureInsetScales;
     private float mDefaultBackGestureInset;
+
+    private ListPreference mCornerLongSwipeAction;
+    private ListPreference mEdgeLongSwipeAction;
 
     private float[] mBackGestureHeightScales = { 0f, 1f, 2f, 3f };
     private int mCurrentRightWidth;
@@ -87,7 +100,9 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
 
-        final Resources res = getActivity().getResources();
+        final Resources res = getResources();
+        final ContentResolver resolver = getContext().getContentResolver();
+
         mDefaultBackGestureInset = res.getDimensionPixelSize(
                 com.android.internal.R.dimen.config_backGestureInset);
         mBackGestureInsetScales = getFloatArray(res.obtainTypedArray(
@@ -100,6 +115,19 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
 
         initGestureNavbarLengthPreference();
         initGestureNavbarHeightPreference();
+
+        Action cornerLongSwipeAction = Action.fromSettings(resolver,
+                LineageSettings.System.KEY_CORNER_LONG_SWIPE_ACTION,
+                Action.SEARCH);
+        Action edgeLongSwipeAction = Action.fromSettings(resolver,
+                LineageSettings.System.KEY_EDGE_LONG_SWIPE_ACTION,
+                Action.NOTHING);
+
+        // Corner swipe up gesture
+        mCornerLongSwipeAction = initList(KEY_CORNER_LONG_SWIPE, cornerLongSwipeAction);
+
+        // Edge long swipe gesture
+        mEdgeLongSwipeAction = initList(KEY_EDGE_LONG_SWIPE, edgeLongSwipeAction);
     }
 
     @Override
@@ -134,8 +162,44 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
     }
 
     @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        if (preference == mCornerLongSwipeAction) {
+            handleListChange((ListPreference) preference, newValue,
+                    LineageSettings.System.KEY_CORNER_LONG_SWIPE_ACTION);
+            return true;
+        } else if (preference == mEdgeLongSwipeAction) {
+            handleListChange((ListPreference) preference, newValue,
+                    LineageSettings.System.KEY_EDGE_LONG_SWIPE_ACTION);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
     public int getMetricsCategory() {
         return SettingsEnums.SETTINGS_GESTURE_NAV_BACK_SENSITIVITY_DLG;
+    }
+
+    private ListPreference initList(String key, Action value) {
+        return initList(key, value.ordinal());
+    }
+
+    private ListPreference initList(String key, int value) {
+        ListPreference list = (ListPreference) getPreferenceScreen().findPreference(key);
+        if (list == null) return null;
+        list.setValue(Integer.toString(value));
+        list.setSummary(list.getEntry());
+        list.setOnPreferenceChangeListener(this);
+        return list;
+    }
+
+    private void handleListChange(ListPreference pref, Object newValue, String setting) {
+        String value = (String) newValue;
+        int index = pref.findIndexOfValue(value);
+        pref.setSummary(pref.getEntries()[index]);
+        LineageSettings.System.putIntForUser(getContentResolver(), setting, Integer.valueOf(value), UserHandle.USER_CURRENT);
     }
 
     private void initTutorialButton() {
