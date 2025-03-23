@@ -19,6 +19,7 @@ package com.android.settings.gestures;
 import static android.app.contextualsearch.ContextualSearchManager.FEATURE_CONTEXTUAL_SEARCH;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.provider.Settings;
 
 import androidx.annotation.NonNull;
@@ -30,17 +31,23 @@ import com.android.settings.core.TogglePreferenceController;
  */
 public class NavigationSettingsContextualSearchController extends TogglePreferenceController {
 
+    private final boolean mDefaultEnabled;
+    private final String mCtsPackage;
+
     public NavigationSettingsContextualSearchController(@NonNull Context context,
             @NonNull String preferenceKey) {
         super(context, preferenceKey);
+
+        mDefaultEnabled = context.getResources().getBoolean(
+                com.android.internal.R.bool.config_searchAllEntrypointsEnabledDefault);
+        mCtsPackage = context.getResources().getString(
+                com.android.internal.R.string.config_defaultContextualSearchPackageName);
     }
 
     @Override
     public boolean isChecked() {
-        boolean onByDefault = mContext.getResources().getBoolean(
-                com.android.internal.R.bool.config_searchAllEntrypointsEnabledDefault);
         return Settings.Secure.getInt(mContext.getContentResolver(),
-                Settings.Secure.SEARCH_ALL_ENTRYPOINTS_ENABLED, onByDefault ? 1 : 0)
+                Settings.Secure.SEARCH_ALL_ENTRYPOINTS_ENABLED, mDefaultEnabled ? 1 : 0)
                 == 1;
     }
 
@@ -52,8 +59,17 @@ public class NavigationSettingsContextualSearchController extends TogglePreferen
 
     @Override
     public int getAvailabilityStatus() {
-        if (mContext.getPackageManager().hasSystemFeature(FEATURE_CONTEXTUAL_SEARCH)) {
-            return AVAILABLE;
+        PackageManager pm = mContext.getPackageManager();
+        if (pm == null) {
+            return UNSUPPORTED_ON_DEVICE;
+        }
+        try {
+            if (pm.hasSystemFeature(FEATURE_CONTEXTUAL_SEARCH) &&
+                    pm.getApplicationInfo(mCtsPackage, 0).enabled) {
+                return AVAILABLE;
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            return UNSUPPORTED_ON_DEVICE;
         }
         return UNSUPPORTED_ON_DEVICE;
     }
