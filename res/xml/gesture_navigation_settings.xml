@@ -99,6 +99,29 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="navbar_actions_category"
+        android:title="@string/navbar_actions_category_title">
+
+         <ListPreference
+            android:key="navigation_bar_corner_long_swipe"
+            android:dialogTitle="@string/navbar_corner_long_swipe_title"
+            android:title="@string/navbar_corner_long_swipe_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false"
+            android:dependency="assistant_gesture_corner_swipe" />
+
+         <ListPreference
+            android:key="navigation_bar_edge_long_swipe"
+            android:dialogTitle="@string/navbar_edge_long_swipe_title"
+            android:title="@string/navbar_edge_long_swipe_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="back_sensitivity_category"
         android:persistent="false"
         android:title="@string/back_sensitivity_dialog_title">
