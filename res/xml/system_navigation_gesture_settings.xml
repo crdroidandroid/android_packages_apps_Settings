@@ -21,4 +21,9 @@
     android:title="@string/system_navigation_title"
     settings:keywords="@string/keywords_system_navigation">
 
+    <lineageos.preference.LineageSystemSettingSwitchPreference
+        android:key="force_show_navbar"
+        android:title="@string/navbar_visibility_title"
+        android:summary="@string/navbar_visibility_summary"
+        android:defaultValue="@*android:bool/config_showNavigationBar" />
 </PreferenceScreen>
