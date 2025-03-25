@@ -21,11 +21,18 @@
     android:title="@string/system_navigation_title"
     settings:keywords="@string/keywords_system_navigation">
 
+    <lineageos.preference.LineageSystemSettingSwitchPreference
+        android:key="force_show_navbar"
+        android:title="@string/navbar_visibility_title"
+        android:summary="@string/navbar_visibility_summary"
+        android:defaultValue="@*android:bool/config_showNavigationBar" />
+
     <SwitchPreferenceCompat
         android:key="search_gesture_press_hold"
         android:title="@string/search_gesture_feature_title"
         android:summary="@string/search_gesture_feature_summary"
         android:order="100"
+        android:dependency="force_show_navbar"
         settings:allowDividerAbove="true"
         settings:controller="com.android.settings.gestures.NavigationSettingsContextualSearchController"
         settings:highlightableMenuKey="@string/menu_key_system" />
