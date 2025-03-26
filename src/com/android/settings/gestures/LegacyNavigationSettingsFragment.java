@@ -207,12 +207,5 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.legacy_navigation_settings) {
-
-                @Override
-                protected boolean isPageSearchEnabled(Context context) {
-                    return SystemNavigationPreferenceController.is3ButtonNavigationEnabled(context);
-                }
-            };
-
+            new BaseSearchIndexProvider(R.xml.legacy_navigation_settings);
 }
