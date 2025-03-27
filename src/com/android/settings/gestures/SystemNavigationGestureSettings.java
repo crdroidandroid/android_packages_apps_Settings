@@ -36,8 +36,11 @@ import android.provider.Settings;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
+import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreferenceCompat;
 
+import com.android.internal.util.crdroid.Utils;
 import com.android.settings.R;
 import com.android.settings.accessibility.actionbar.FeedbackMenuController;
 import com.android.settings.core.BasePreferenceController;
@@ -58,9 +61,11 @@ import com.android.settingslib.widget.SelectorWithWidgetPreference;
 import java.util.ArrayList;
 import java.util.List;
 
+import lineageos.providers.LineageSettings;
+
 @SearchIndexable
 public class SystemNavigationGestureSettings extends RadioButtonPickerFragment implements
-        HelpResourceProvider {
+        HelpResourceProvider, Preference.OnPreferenceChangeListener {
 
     @VisibleForTesting
     static final String KEY_SYSTEM_NAV_3BUTTONS = "system_nav_3buttons";
@@ -68,6 +73,8 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
     static final String KEY_SYSTEM_NAV_2BUTTONS = "system_nav_2buttons";
     @VisibleForTesting
     static final String KEY_SYSTEM_NAV_GESTURAL = "system_nav_gestural";
+
+    static final String NAVBAR_VISIBILITY = "force_show_navbar";
 
     public static final String PREF_KEY_SUGGESTION_COMPLETE =
             "pref_system_navigation_suggestion_complete";
@@ -77,6 +84,11 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
     private IOverlayManager mOverlayManager;
 
     private IllustrationPreference mVideoPreference;
+
+    private SwitchPreferenceCompat mNavbarVisibility;
+    private SelectorWithWidgetPreference threeButtonNav;
+    private SelectorWithWidgetPreference twoButtonNav;
+    private SelectorWithWidgetPreference gesturalNav;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -139,6 +151,22 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
             screen.addPreference(pref);
         }
         mayCheckOnlyRadioButton();
+
+        boolean showing = LineageSettings.System.getIntForUser(getContext().getContentResolver(),
+                LineageSettings.System.FORCE_SHOW_NAVBAR,
+                Utils.hasNavbarByDefault(getContext()) ? 1 : 0, USER_CURRENT) != 0;
+
+        mNavbarVisibility = (SwitchPreferenceCompat) screen.findPreference(NAVBAR_VISIBILITY);
+        mNavbarVisibility.setChecked(showing);
+        mNavbarVisibility.setOnPreferenceChangeListener(this);
+
+        threeButtonNav = (SelectorWithWidgetPreference) screen.findPreference(KEY_SYSTEM_NAV_3BUTTONS);
+        twoButtonNav = (SelectorWithWidgetPreference) screen.findPreference(KEY_SYSTEM_NAV_2BUTTONS);
+        gesturalNav = (SelectorWithWidgetPreference) screen.findPreference(KEY_SYSTEM_NAV_GESTURAL);
+
+        if (threeButtonNav != null) threeButtonNav.setEnabled(showing);
+        if (twoButtonNav != null) twoButtonNav.setEnabled(showing);
+        if (gesturalNav != null) gesturalNav.setEnabled(showing);
     }
 
     @Override
@@ -172,6 +200,18 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
                     LegacyNavigationSettingsFragment.LEGACY_NAVIGATION_SETTINGS)
                     .setPackage(getContext().getPackageName())));
         }
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mNavbarVisibility) {
+            boolean showing = ((Boolean)newValue);
+            if (threeButtonNav != null) threeButtonNav.setEnabled(showing);
+            if (twoButtonNav != null) twoButtonNav.setEnabled(showing);
+            if (gesturalNav != null) gesturalNav.setEnabled(showing);
+            return true;
+        }
+        return false;
     }
 
     @Override
