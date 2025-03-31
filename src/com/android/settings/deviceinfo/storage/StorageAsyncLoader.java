@@ -149,6 +149,9 @@ public class StorageAsyncLoader
                 return 0L;
             }
             return cursor.moveToFirst() ? cursor.getLong(0) : 0L;
+        } catch (IllegalArgumentException e) {
+            Log.e(TAG, "Exception while querying storage: " + e.getMessage());
+            return 0L;
         }
     }
 
