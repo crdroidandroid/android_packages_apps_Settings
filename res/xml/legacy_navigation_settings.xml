@@ -42,6 +42,13 @@
             android:summary="@string/navbar_invert_layout_summary"
             android:defaultValue="false" />
 
+        <com.crdroid.settings.preferences.SecureSettingListPreference
+            android:key="navbar_layout_mode"
+            android:title="@string/navbar_layout_title"
+            android:summary="%s"
+            android:entries="@array/navbar_layout_entries"
+            android:entryValues="@array/navbar_layout_values"
+            android:defaultValue="0" />
     </PreferenceCategory>
 
     <PreferenceCategory
