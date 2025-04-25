@@ -72,6 +72,7 @@ public class PrivateDnsPreferenceController extends BasePreferenceController
     private static final int PRIVATE_DNS_MODE_OPEN_DNS = 6;
     private static final int PRIVATE_DNS_MODE_CLEANBROWSING = 7;
     private static final int PRIVATE_DNS_MODE_QUAD9 = 8;
+    private static final int PRIVATE_DNS_MODE_COMSS = 9;
 
     private final Handler mHandler;
     private final ContentObserver mSettingsObserver;
@@ -144,6 +145,7 @@ public class PrivateDnsPreferenceController extends BasePreferenceController
             case PRIVATE_DNS_MODE_OPEN_DNS:
             case PRIVATE_DNS_MODE_CLEANBROWSING:
             case PRIVATE_DNS_MODE_QUAD9:
+            case PRIVATE_DNS_MODE_COMSS:
             case PRIVATE_DNS_MODE_OPPORTUNISTIC:
                 return dnsesResolved ? res.getString(R.string.private_dns_mode_on)
                         : res.getString(
@@ -165,6 +167,8 @@ public class PrivateDnsPreferenceController extends BasePreferenceController
                         res.getString(R.string.private_dns_hostname_cleanbrowsing);
                 final String quad9Hostname =
                         res.getString(R.string.private_dns_hostname_quad9);
+                final String comssHostname =
+                        res.getString(R.string.private_dns_hostname_comss);
                 if (privateDnsHostname.equals(cloudflareHostname)) {
                     return res.getString(R.string.private_dns_mode_cloudflare);
                 } else if (privateDnsHostname.equals(adguardHostname)) {
@@ -175,6 +179,8 @@ public class PrivateDnsPreferenceController extends BasePreferenceController
                     return res.getString(R.string.private_dns_mode_cleanbrowsing);
                 } else if (privateDnsHostname.equals(quad9Hostname)) {
                     return res.getString(R.string.private_dns_mode_quad9);
+                } else if (privateDnsHostname.equals(comssHostname)) {
+                    return res.getString(R.string.private_dns_mode_comss);
                 }
                 return PrivateDnsModeDialogPreference.getHostnameFromSettings(cr);
         }
