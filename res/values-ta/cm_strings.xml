@@ -25,18 +25,24 @@
     <string name="berry_black_theme_summary">இருள் தோற்றத்திற்கு மாசற்ற கருமை பின்னணி</string>
     <string name="lineagelicense_title">LineageOS சட்டம்</string>
     <string name="show_dev_countdown_cm">{count, plural,
-      =1      {நீங்கள் வளர்ச்சி அமைப்புகளை இயக்குவதற்கு # படி தொலைவில் உள்ளீர்.}
-      other   {நீங்கள் வளர்ச்சி அமைப்புகளை இயக்குவதற்கு # படி தொலைவில் உள்ளீர்.}
+      =1      {நீர் # படி தொலைவில் உள்ளீர்  வளர்ச்சி அமைப்புகளை இயக்குவதற்கு.}
+      other   {நீர் # படி தொலைவில் உள்ளீர் வளர்ச்சி அமைப்புகளை இயக்குவதற்கு.}
     }</string>
     <string name="show_dev_on_cm">வளர்ச்சி அமைப்புகளைச் செயற்படுத்தினீர்!</string>
     <string name="show_dev_already_cm">தேவையன்று, நீர் ஏற்கெனவே வளர்ச்சி அமைப்புகளைச் செயற்படுத்திவிட்டீர்.</string>
     <string name="status_bar_double_tap_to_sleep_title">உறங்கத் தட்டுக</string>
-    <string name="status_bar_double_tap_to_sleep_summary">காட்சியை அணைக்க, நிலைமப்பட்டையிலோ பூட்டுத் திரையிலோ இருமுறை தட்டுக</string>
+    <string name="status_bar_double_tap_to_sleep_summary">திரையை அணைக்க, நிலைமப்பட்டையிலோ பூட்டுத் திரையிலோ இருமுறை தட்டுக</string>
+    <string name="high_touch_polling_rate_title">உயர்ந்த தொடல் நுண்ணாய்வு மதிப்பு</string>
+    <string name="high_touch_polling_rate_summary">தொடுதிரை நுண்ணாய்வு மதிப்பை உயர்த்துக</string>
+    <string name="heads_up_notifications_enabled_title">விழியறிவிப்பு</string>
+    <string name="heads_up_notifications_enabled_summary">முன்னுரிமை அறிவிப்புகளை மிதக்கும் ஒரு சிறிய சாளரத்தில் காண்பிக்க</string>
     <string name="high_touch_sensitivity_title">உயர்ந்த தொடல் உணர்திறன்</string>
-    <string name="high_touch_sensitivity_summary">கையுறை அணிந்தும் அதை பயன்படுத்தும்படி தொடல்திறை உணர்திறனை அதிகரிக்கவும்</string>
-    <string name="lock_settings_picker_pattern_size_message">தோரண அளவு ஒன்றைத் தேர்க</string>
-    <string name="lockpattern_settings_enable_error_path_title">தோரணப் பிழையைக் காட்டுக</string>
-    <string name="lockpattern_settings_enable_dots_title">தோரணப் புள்ளிகளைக் காட்டுக</string>
+    <string name="high_touch_sensitivity_summary">கையுறைகளை அணிந்திருக்கும்போது, பயன்படுத்தக்கூடிய வகையில் தொடுதிரை உணர்திறனை உயர்த்துக</string>
+    <string name="tethering_allow_vpn_upstreams_title">நுகர்விகள் VPN களைப் பயன்படுத்த அனுமதிக்க</string>
+    <string name="tethering_allow_vpn_upstreams_summary">எதிரோட்ட இணைப்புமைக்காக இக்கருவியின் \u2019 VPN இணைப்புகளைப் பகிரலை நுகர்விகள் பயன்படுத்த இசைவளிக்க</string>
+    <string name="lock_settings_picker_pattern_size_message">பூட்டுவடிவ அளவு ஒன்றைத் தேர்க</string>
+    <string name="lockpattern_settings_enable_error_path_title">பூட்டுவடிவப் பிழையைக் காட்டுக</string>
+    <string name="lockpattern_settings_enable_dots_title">பூட்டுவடிவப் புள்ளிகளைக் காட்டுக</string>
     <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">உமது தத்தல் கணினி முன்புறத்தில் கைரேகை உணரியைக் கண்டறிக.</string>
     <string name="fingerprint_enroll_find_sensor_message_front" product="device">உமது கருவி முன்புறத்தில் கைரேகை உணரியைக் கண்டறிக.</string>
     <string name="fingerprint_enroll_find_sensor_message_front" product="default">உமது செல்பேசி முன்புறத்தில் கைரேகை உணரியைக் கண்டறிக.</string>
@@ -57,17 +63,33 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">உமது செல்பேசி ஓரத்தில் உணரியைத் தொடுக.</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 நொடி</string>
     <string name="app_notification_sound_timeout_value_30_seconds">30 நொடி</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 நுணுத்தம்</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 நுணுத்தம்</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 நுணுத்தம்</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 நிமிடம்</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 நிமிடம்</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">15 நிமிடம்</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 நிமிடம்</string>
     <string name="unlock_scramble_pin_layout_title">கலரீடு தளவமைப்பு</string>
     <string name="unlock_scramble_pin_layout_summary">கருவியைத் திறக்கும்போது PIN தளவமைப்பைக் கலரீடுக</string>
     <string name="proximity_wake_title">தற்செயலான விழித்தலை தடு</string>
+    <string name="touchscreen_gesture_settings_title">தொடுதிரை மெய்ப்பாடுகள்</string>
+    <string name="touchscreen_gesture_settings_summary">விரைவான செயல்களுக்காகப் பல்வேறு தொடுதிரை மெய்ப்பாடுகளை இயற்றுக</string>
     <string name="touchscreen_hovering_title">தொடல்திறைக்கு மேல் நகர்தல்</string>
     <string name="touchscreen_hovering_summary">வலைதள உலாவிகள், ரிமோட்-டெஸ்க்டாப்புகள் உள்ளிட்டவற்றில் மவுஸ் போன்று நீங்கள் திரையின் மீது உலாவ உங்களை அனுமதிக்கிறது</string>
     <string name="wake_when_plugged_or_unplugged_title">பிளக் செய்தால் விழி</string>
     <string name="wake_when_plugged_or_unplugged_summary">ஒரு மின் வளத்தை இணைத்தல் அல்லது துண்டித்தலின் போது திரையை ஆன் செய்க</string>
-    <string name="battery_design_capacity">வடிவமைப்பு கொள்திறன்</string>
+    <string name="battery_technology">தொழினுட்பம்</string>
+    <string name="battery_health">நலம்</string>
+    <string name="battery_health_good">நல்லது</string>
+    <string name="battery_health_overheat">மிகைவெப்பம்</string>
+    <string name="battery_health_dead">செயலற்றது</string>
+    <string name="battery_health_over_voltage">மிகைமின்னழுத்தம்</string>
+    <string name="battery_health_unspecified_failure">குறிப்பிடப்படாத செயலிழப்பு</string>
+    <string name="battery_health_cold">குளிர்ச்சி</string>
+    <string name="battery_health_unknown">அறியப்படா</string>
+    <string name="battery_temperature">வெப்பநிலை</string>
+    <string name="battery_voltage">மின்னழுத்தம்</string>
+    <string name="battery_charge_counter_summary">%1$d mAh</string>
+    <string name="battery_design_capacity">வடிவமைப்புக் கொள்ளளவு</string>
     <string name="battery_design_capacity_summary">%1$d mAh</string>
+    <string name="battery_maximum_capacity">உச்ச கொள்ளளவு</string>
     <string name="battery_maximum_capacity_summary">%1$d mAh (%2$d%%)</string>
 </resources>

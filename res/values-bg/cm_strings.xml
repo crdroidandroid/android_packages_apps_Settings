@@ -24,6 +24,10 @@
     <string name="berry_black_theme_title">Натурално черно</string>
     <string name="berry_black_theme_summary">Натурален черен фон за тъмна тема</string>
     <string name="lineagelicense_title">LineageOS правна информация</string>
+    <string name="show_dev_countdown_cm">{count, plural,
+      =1      {Остава # стъпка до активиране настройките за разработчици.}
+      other   {Остават # стъпки до активиране настройките за разработчици.}
+    }</string>
     <string name="show_dev_on_cm">Включихте менюто \"Опции на програмиста\"!</string>
     <string name="show_dev_already_cm">Няма нужда, вече сте включили менюто Опции на програмиста.</string>
     <string name="status_bar_double_tap_to_sleep_title">Натиснете, за заспиване</string>
@@ -69,6 +73,7 @@
     <string name="app_notification_sound_timeout_value_30_seconds">30 секунди</string>
     <string name="app_notification_sound_timeout_value_1_minute">1 минута</string>
     <string name="app_notification_sound_timeout_value_5_minutes">5 минути</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">15 минути</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 минути</string>
     <string name="auto_brightness_one_shot_title">Автоматична яркост на един кадър</string>
     <string name="auto_brightness_one_shot_summary">Регулирането на яркостта ще се извършва само в момента на включване на екрана</string>
@@ -97,4 +102,22 @@
     <string name="ambient_display_screen_off_udfps_title" product="device">Задръжте върху сензора за пръстови отпечатъци, за да отключите устройството</string>
     <string name="ambient_display_screen_off_udfps_summary">За да включите екрана и да го отключите, задръжте върху сензора за пръстови отпечатъци в екрана.</string>
     <string name="storage_warning_internal">Предупреждение: Тази опция може да не работи правилно или доведе до загуба на данни и затова не се препоръчва!</string>
+    <string name="assisted_gps">Използване на асистиран GPS</string>
+    <string name="assisted_gps_summary">Изтегли помощна сателитна информация от интернет, за да повиши продуктивността на GPS при стартиране. За спешни обаждания, асистираният GPS е винаги позволен.</string>
+    <string name="battery_technology">Технология</string>
+    <string name="battery_health">Състояние</string>
+    <string name="battery_health_good">Добро</string>
+    <string name="battery_health_overheat">Прегряване</string>
+    <string name="battery_health_dead">Дефектна</string>
+    <string name="battery_health_over_voltage">Пренапрежение</string>
+    <string name="battery_health_unspecified_failure">Неопределен проблем</string>
+    <string name="battery_health_cold">Студена</string>
+    <string name="battery_health_unknown">Неизвестно</string>
+    <string name="battery_temperature">Температура</string>
+    <string name="battery_voltage">Напрежение</string>
+    <string name="battery_charge_counter_summary">%1$d mAh</string>
+    <string name="battery_design_capacity">Фабричен капацитет</string>
+    <string name="battery_design_capacity_summary">%1$d mAh</string>
+    <string name="battery_maximum_capacity">Максимален капацитет</string>
+    <string name="battery_maximum_capacity_summary">%1$d mAh (%2$d%%)</string>
 </resources>

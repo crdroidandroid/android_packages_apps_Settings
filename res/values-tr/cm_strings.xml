@@ -24,6 +24,10 @@
     <string name="berry_black_theme_title">Saf siyah</string>
     <string name="berry_black_theme_summary">Karanlık tema için saf siyah arka plan</string>
     <string name="lineagelicense_title">LineageOS yasal</string>
+    <string name="show_dev_countdown_cm">{count, plural,
+      =1      {Geliştirici seçeneklerini açmanıza # adım kaldı.}
+      other   {Geliştirici seçeneklerini açmanıza # adım kaldı.}
+    }</string>
     <string name="show_dev_on_cm">Geliştirici ayarlarını etkinleştirdiniz!</string>
     <string name="show_dev_already_cm">Gerek yok, zaten geliştirme ayarlarını etkinleştirdiniz.</string>
     <string name="status_bar_double_tap_to_sleep_title">Uyutmak için dokunun</string>
@@ -59,6 +63,7 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Tabletinizin yan tarafındaki sensöre dokunun.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Cihazınızın yan tarafındaki sensöre dokunun.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Telefonunuzun yan tarafındaki sensöre dokunun.</string>
+    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Ekran kapalı olsa bile kilidi açmak için sensöre dokun. Yakınlık sensörü kilidin yanlışlıkla açılmasını önler.</string>
     <string name="show_navbar_hint_title">Gezinme ipucu</string>
     <string name="show_navbar_hint_summary">Ekranın altında gezinme ipucu çubuğunu göster</string>
     <string name="app_notification_sound_timeout_title">Bildirim sesleri arasında en az zaman</string>
@@ -68,6 +73,7 @@
     <string name="app_notification_sound_timeout_value_30_seconds">30 Saniye</string>
     <string name="app_notification_sound_timeout_value_1_minute">1 dakika</string>
     <string name="app_notification_sound_timeout_value_5_minutes">5 dakika</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">15 dakika</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 dakika</string>
     <string name="auto_brightness_one_shot_title">Tek seferlik otomatik parlaklık</string>
     <string name="auto_brightness_one_shot_summary">Parlaklık ayarı yalnızca ekran açıldığında gerçekleşir</string>
@@ -96,5 +102,22 @@
     <string name="ambient_display_screen_off_udfps_title" product="device">Cihazın kilidini açmak için parmak izi sensörüne uzun basın</string>
     <string name="ambient_display_screen_off_udfps_summary">Ekranınızı uyandırmak ve kilidini açmak için ekranın altındaki parmak izi sensörünüze uzun basın.</string>
     <string name="storage_warning_internal">Uyarı: Bu özellik düzgün çalışmayabileceğinden veya veri kaybına neden olabileceğinden önerilmez!</string>
+    <string name="assisted_gps">Yardımlı GPS kullan</string>
     <string name="assisted_gps_summary">GPS\'inizin başlama süresini büyük ölçüde hızlandırmak için internetten uydu yardım verilerini indirin. Acil durum çağrıları için A-GPS (Yardımlı GPS) her zaman kullanılabilir.</string>
+    <string name="battery_technology">Teknoloji</string>
+    <string name="battery_health">Sağlık</string>
+    <string name="battery_health_good">İyi</string>
+    <string name="battery_health_overheat">Aşırı Isınma</string>
+    <string name="battery_health_dead">Ölü</string>
+    <string name="battery_health_over_voltage">Aşırı voltaj</string>
+    <string name="battery_health_unspecified_failure">Belirtilmeyen hata</string>
+    <string name="battery_health_cold">Soğuk</string>
+    <string name="battery_health_unknown">Bilinmeyen</string>
+    <string name="battery_temperature">Sıcaklık</string>
+    <string name="battery_voltage">Voltaj</string>
+    <string name="battery_charge_counter_summary">%1$d mAh</string>
+    <string name="battery_design_capacity">Tasarım kapasitesi</string>
+    <string name="battery_design_capacity_summary">%1$d mAh</string>
+    <string name="battery_maximum_capacity">Maksimum kapasite</string>
+    <string name="battery_maximum_capacity_summary">%1$d mAh (%2$d%%)</string>
 </resources>

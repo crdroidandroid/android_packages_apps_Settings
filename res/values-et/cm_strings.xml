@@ -55,5 +55,4 @@
     <string name="touchscreen_hovering_summary">Lubab hõljuda ekraani kohal nagu hiirega veebilehitsejas, kaugtöölaual jne</string>
     <string name="wake_when_plugged_or_unplugged_title">Ärka laadija ühendamisel</string>
     <string name="wake_when_plugged_or_unplugged_summary">Lülita ekraan sisse kui ühendatakse või eemaldatakse toite allikas</string>
-    <string name="fast_charging_title">Kiirlaadimine</string>
 </resources>
