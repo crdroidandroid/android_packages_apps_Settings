@@ -67,8 +67,9 @@ public final class EnableBlursPreferenceController extends AbstractPreferenceCon
 
     @Override
     public void updateState(Preference preference) {
+        boolean blurDisabledByDefault = android.os.SystemProperties.getBoolean("ro.surface_flinger.blur_disabled_by_default", false);
         boolean isEnabled = Settings.Global.getInt(mContext.getContentResolver(),
-                    Settings.Global.DISABLE_WINDOW_BLURS, 0) == 0;
+                    Settings.Global.DISABLE_WINDOW_BLURS, blurDisabledByDefault ? 1 : 0) == 0;
         ((TwoStatePreference) preference).setChecked(isEnabled);
     }
 }
