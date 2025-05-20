@@ -84,6 +84,13 @@
         android:summary="@string/back_gesture_haptic_summary"
         android:defaultValue="true" />
 
+    <!-- Show IME Space -->
+    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        android:key="navbar_ime_space"
+        android:title="@string/show_ime_space_title"
+        android:summary="@string/show_ime_space_summary"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="assistant_gesture_category"
         android:persistent="false"
