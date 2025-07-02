@@ -34,10 +34,9 @@ import androidx.preference.SwitchPreferenceCompat;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.widget.LabeledSeekBarPreference;
-import com.android.settings.widget.SeekBarPreference;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.ButtonPreference;
+import com.android.settingslib.widget.SliderPreference;
 
 import com.crdroid.settings.utils.SystemUtils;
 
@@ -77,8 +76,6 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
 
     private float[] mBackGestureInsetScales;
     private float mDefaultBackGestureInset;
-
-    private LabeledSeekBarPreference mGestureNavbarLengthPreference;
 
     private ListPreference mCornerLongSwipeAction;
     private ListPreference mEdgeLongSwipeAction;
@@ -234,9 +231,11 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
     }
 
     private void initSeekBarPreference(final String key) {
-        final LabeledSeekBarPreference pref = getPreferenceScreen().findPreference(key);
-        pref.setContinuousUpdates(true);
-        pref.setHapticFeedbackMode(SeekBarPreference.HAPTIC_FEEDBACK_MODE_ON_TICKS);
+        final SliderPreference pref = getPreferenceScreen().findPreference(key);
+        pref.setUpdatesContinuously(true);
+        pref.setHapticFeedbackMode(SliderPreference.HAPTIC_FEEDBACK_MODE_ON_TICKS);
+        pref.setSliderIncrement(1);
+        pref.setTickVisible(true);
 
         String settingsKey;
         float initScale = 0;
@@ -285,7 +284,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
                 minDistanceIndex = i;
             }
         }
-        pref.setProgress(minDistanceIndex);
+        pref.setValue(minDistanceIndex);
 
         pref.setOnPreferenceChangeListener((p, v) -> {
             if (key != GESTURE_BACK_HEIGHT_KEY) {
@@ -307,10 +306,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
                 mIndicatorView.setIndicatorWidth(mCurrentRightWidth, false);
                 mIndicatorView.setIndicatorWidth(mCurrentLefttWidth, true);
             }
-            return true;
-        });
 
-        pref.setOnPreferenceChangeStopListener((p, v) -> {
             final float scale = mBackGestureInsetScales[(int) v];
             if (key == GESTURE_BACK_HEIGHT_KEY) {
                 mIndicatorView.setIndicatorWidth(0, false);
@@ -326,24 +322,32 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
 
     private void initGestureNavbarLengthPreference() {
         final ContentResolver resolver = getContext().getContentResolver();
-        mGestureNavbarLengthPreference = getPreferenceScreen().findPreference(GESTURE_NAVBAR_LENGTH_KEY);
-        mGestureNavbarLengthPreference.setContinuousUpdates(true);
-        mGestureNavbarLengthPreference.setProgress(Settings.System.getIntForUser(
+        final SliderPreference pref =
+            getPreferenceScreen().findPreference(GESTURE_NAVBAR_LENGTH_KEY);
+        pref.setUpdatesContinuously(true);
+        pref.setHapticFeedbackMode(SliderPreference.HAPTIC_FEEDBACK_MODE_ON_TICKS);
+        pref.setSliderIncrement(1);
+        pref.setTickVisible(true);
+        pref.setValue(Settings.System.getIntForUser(
             resolver, Settings.System.GESTURE_NAVBAR_LENGTH_MODE,
             1, UserHandle.USER_CURRENT));
-        mGestureNavbarLengthPreference.setOnPreferenceChangeListener((p, v) ->
+        pref.setOnPreferenceChangeListener((p, v) ->
             Settings.System.putIntForUser(resolver, Settings.System.GESTURE_NAVBAR_LENGTH_MODE,
                 (Integer) v, UserHandle.USER_CURRENT));
     }
 
     private void initGestureNavbarHeightPreference() {
-        final LabeledSeekBarPreference pref = getPreferenceScreen().
-            findPreference(GESTURE_NAVBAR_HEIGHT_MODE_KEY);
-        pref.setContinuousUpdates(true);
-        pref.setProgress(Settings.System.getIntForUser(getContext().getContentResolver(),
+        final ContentResolver resolver = getContext().getContentResolver();
+        final SliderPreference pref =
+            getPreferenceScreen().findPreference(GESTURE_NAVBAR_HEIGHT_MODE_KEY);
+        pref.setUpdatesContinuously(true);
+        pref.setHapticFeedbackMode(SliderPreference.HAPTIC_FEEDBACK_MODE_ON_TICKS);
+        pref.setSliderIncrement(1);
+        pref.setTickVisible(true);
+        pref.setValue(Settings.System.getIntForUser(resolver,
             Settings.System.GESTURE_NAVBAR_HEIGHT_MODE, 3, UserHandle.USER_CURRENT));
         pref.setOnPreferenceChangeListener((p, v) ->
-            Settings.System.putIntForUser(getContext().getContentResolver(),
+            Settings.System.putIntForUser(resolver,
                 Settings.System.GESTURE_NAVBAR_HEIGHT_MODE, (Integer) v, UserHandle.USER_CURRENT));
     }
 
