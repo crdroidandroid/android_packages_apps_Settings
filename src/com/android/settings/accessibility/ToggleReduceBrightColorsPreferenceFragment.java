@@ -38,10 +38,10 @@ import androidx.preference.TwoStatePreference;
 
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.widget.SeekBarPreference;
 import com.android.settings.widget.SettingsMainSwitchPreference;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.search.SearchIndexableRaw;
+import com.android.settingslib.widget.SliderPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -103,7 +103,7 @@ public class ToggleReduceBrightColorsPreferenceFragment extends ToggleFeaturePre
 
     private void updateGeneralCategoryOrder() {
         final PreferenceCategory generalCategory = findPreference(KEY_GENERAL_CATEGORY);
-        final SeekBarPreference intensity = findPreference(KEY_INTENSITY);
+        final SliderPreference intensity = findPreference(KEY_INTENSITY);
         getPreferenceScreen().removePreference(intensity);
         intensity.setOrder(mShortcutPreference.getOrder() - 2);
         generalCategory.addPreference(intensity);

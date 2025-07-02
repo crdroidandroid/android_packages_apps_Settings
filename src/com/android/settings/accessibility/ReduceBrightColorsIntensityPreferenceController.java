@@ -24,7 +24,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
 import com.android.settings.core.SliderPreferenceController;
-import com.android.settings.widget.SeekBarPreference;
+import com.android.settingslib.widget.SliderPreference;
 
 /** PreferenceController for feature intensity. */
 public class ReduceBrightColorsIntensityPreferenceController extends SliderPreferenceController {
@@ -50,11 +50,13 @@ public class ReduceBrightColorsIntensityPreferenceController extends SliderPrefe
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
-        final SeekBarPreference preference = screen.findPreference(getPreferenceKey());
-        preference.setContinuousUpdates(true);
+        SliderPreference preference = screen.findPreference(getPreferenceKey());
+        preference.setUpdatesContinuously(true);
         preference.setMax(getMax());
         preference.setMin(getMin());
-        preference.setHapticFeedbackMode(SeekBarPreference.HAPTIC_FEEDBACK_MODE_ON_ENDS);
+        preference.setHapticFeedbackMode(SliderPreference.HAPTIC_FEEDBACK_MODE_ON_ENDS);
+        preference.setSliderIncrement(1);
+        preference.setTickVisible(true);
         updateState(preference);
     }
 
