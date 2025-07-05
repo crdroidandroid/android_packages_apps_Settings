@@ -5712,7 +5712,8 @@
                 android:exported="true"
                 android:taskAffinity="com.android.settings"
                 android:parentActivityName="Settings">
-            <intent-filter android:priority="1">
+            <intent-filter android:priority="1"
+                           android:featureFlag="!android.app.modes_ui">
                 <action android:name="com.android.settings.action.SETTINGS"/>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
