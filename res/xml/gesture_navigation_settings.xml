@@ -113,8 +113,8 @@
             android:key="navigation_bar_corner_long_swipe"
             android:dialogTitle="@string/navbar_corner_long_swipe_title"
             android:title="@string/navbar_corner_long_swipe_title"
-            android:entries="@array/hardware_keys_action_entries"
-            android:entryValues="@array/hardware_keys_action_values"
+            android:entries="@array/gesture_actions_entries"
+            android:entryValues="@array/gesture_actions_values"
             android:persistent="false"
             android:dependency="assistant_gesture_corner_swipe" />
 
@@ -122,8 +122,8 @@
             android:key="navigation_bar_edge_long_swipe"
             android:dialogTitle="@string/navbar_edge_long_swipe_title"
             android:title="@string/navbar_edge_long_swipe_title"
-            android:entries="@array/hardware_keys_action_entries"
-            android:entryValues="@array/hardware_keys_action_values"
+            android:entries="@array/gesture_actions_entries"
+            android:entryValues="@array/gesture_actions_values"
             android:persistent="false" />
 
     </PreferenceCategory>
