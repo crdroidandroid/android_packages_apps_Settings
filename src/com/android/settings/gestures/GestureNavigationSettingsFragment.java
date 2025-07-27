@@ -30,6 +30,7 @@ import android.view.WindowManager;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
@@ -38,6 +39,8 @@ import com.android.settings.widget.SeekBarPreference;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.ButtonPreference;
 import com.android.settingslib.widget.SliderPreference;
+
+import com.crdroid.settings.utils.SystemUtils;
 
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -67,6 +70,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
     private static final String GESTURE_NAVBAR_HEIGHT_MODE_KEY = "gesture_navbar_height_preference";
     private static final String KEY_CORNER_LONG_SWIPE = "navigation_bar_corner_long_swipe";
     private static final String KEY_EDGE_LONG_SWIPE = "navigation_bar_edge_long_swipe";
+    private static final String KEY_ENABLE_TASKBAR = "enable_taskbar";
 
     final Intent mLaunchTutorialIntent =  new Intent(ACTION_GESTURE_SANDBOX)
             .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -80,6 +84,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
 
     private ListPreference mCornerLongSwipeAction;
     private ListPreference mEdgeLongSwipeAction;
+    private SwitchPreferenceCompat mEnableTaskbar;
 
     private float[] mBackGestureHeightScales = { 0f, 1f, 2f, 3f };
     private int mCurrentRightWidth;
@@ -129,6 +134,10 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
 
         // Edge long swipe gesture
         mEdgeLongSwipeAction = initList(KEY_EDGE_LONG_SWIPE, edgeLongSwipeAction);
+
+        // Taskbar
+        mEnableTaskbar = (SwitchPreferenceCompat) getPreferenceScreen().findPreference(KEY_ENABLE_TASKBAR);
+        mEnableTaskbar.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -173,6 +182,9 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
         } else if (preference == mEdgeLongSwipeAction) {
             handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_EDGE_LONG_SWIPE_ACTION);
+            return true;
+        } else if (preference == mEnableTaskbar) {
+            SystemUtils.showSystemUiRestartDialog(getContext());
             return true;
         }
         return false;
