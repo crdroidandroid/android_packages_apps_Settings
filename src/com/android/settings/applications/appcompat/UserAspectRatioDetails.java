@@ -158,9 +158,9 @@ public class UserAspectRatioDetails extends AppInfoBase implements
     }
 
     private void launchApplication() {
-        Intent launchIntent = mPm.getLaunchIntentForPackage(mPackageName)
-                .addFlags(FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_CLEAR_TOP);
+        Intent launchIntent = mPm.getLaunchIntentForPackage(mPackageName);
         if (launchIntent != null) {
+            launchIntent.addFlags(FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_CLEAR_TOP);
             getContext().startActivityAsUser(launchIntent, new UserHandle(mUserId));
         }
     }
