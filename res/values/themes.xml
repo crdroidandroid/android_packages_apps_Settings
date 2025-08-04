@@ -204,7 +204,7 @@
         <!-- Homepage should follow device default design, the values is same as device default theme.-->
         <item name="android:navigationBarColor">@android:color/white</item>
         <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
-        <item name="android:colorBackground">@color/settingslib_materialColorSurfaceContainerLow</item>
+        <item name="android:colorBackground">@color/legacy_settingslib_materialColorSurfaceContainer</item>
     </style>
 
     <style name="Theme.Settings.Home.NoAnimation">
@@ -251,7 +251,7 @@
     </style>
 
     <style name="SettingsSudThemeGlif.Light" parent="@style/SudThemeGlif.Light">
-        <item name="android:background">@color/settingslib_materialColorSurfaceContainerLowest</item>
+        <item name="android:background">@color/legacy_settingslib_materialColorSurfaceContainer</item>
     </style>
 
     <style name="IdentityCheckPromoCardActivityTheme" parent="@style/Theme.MaterialComponents.DayNight">
