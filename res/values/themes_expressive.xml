@@ -90,7 +90,7 @@
     </style>
 
     <style name="Theme.Settings.Home.Expressive" parent="Theme.Settings.Expressive.NoActionBar">
-        <item name="android:colorBackground">@color/settingslib_materialColorSurfaceContainer</item>
+        <item name="android:colorBackground">@color/legacy_settingslib_materialColorSurfaceContainer</item>
     </style>
 
     <style name="Theme.LockSettings.Expressive" parent="Theme.SubSettings.Expressive">
