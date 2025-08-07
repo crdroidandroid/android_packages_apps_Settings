@@ -36,6 +36,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.OutcomeReceiver;
 import android.os.UserHandle;
 import android.os.UserManager;
@@ -106,7 +107,7 @@ public class CredentialManagerPreferenceController extends BasePreferenceControl
     private final Executor mExecutor;
     private final Map<String, CombiPreference> mPrefs = new HashMap<>(); // key is package name
     private final List<ServiceInfo> mPendingServiceInfos = new ArrayList<>();
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
     private final SettingContentObserver mSettingsContentObserver;
     private final ImageUtils.IconResizer mIconResizer;
 
