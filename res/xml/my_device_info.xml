@@ -98,7 +98,6 @@
             android:key="radio_info_settings"
             android:order="6"
             android:title="@string/radio_info_title"
-            android:summary="@string/summary_placeholder"
             settings:isPreferenceVisible="@bool/config_show_sim_info">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.phone"
