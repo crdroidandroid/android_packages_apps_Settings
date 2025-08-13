@@ -55,4 +55,7 @@
 
     <!-- Face enroll finish text -->
     <string name="security_settings_face_enroll_finish_description_with_bp">Now you can use your face to unlock your phone or verify it’s you, like when you sign in to apps or approve a purchase</string>
+
+    <!-- Show Now Playing -->
+    <bool name="config_show_now_playing">false</bool>
 </resources>
