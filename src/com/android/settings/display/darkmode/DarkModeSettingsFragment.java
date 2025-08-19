@@ -86,6 +86,7 @@ public class DarkModeSettingsFragment extends BaseSupportFragment {
                 DARK_THEME_END_TIME, this);
         controllers.add(mCustomStartController);
         controllers.add(mCustomEndController);
+        controllers.add(new ForceDarkPreferenceController(context));
         return controllers;
     }
 
