@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.development;
+package com.android.settings.display.darkmode;
 
 import android.content.Context;
 import android.os.SystemProperties;
