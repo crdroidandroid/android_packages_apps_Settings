@@ -49,6 +49,12 @@
             android:key="expanded_dark_theme"
             android:summary="@string/accessibility_expanded_dark_theme_summary"
             settings:searchable="true"/>
+
+        <SwitchPreferenceCompat
+            android:key="hwui_force_dark"
+            android:title="@string/hwui_force_dark_title"
+            android:summary="@string/hwui_force_dark_summary"
+            settings:searchable="true"/>
     </PreferenceCategory>
 
     <PreferenceCategory
