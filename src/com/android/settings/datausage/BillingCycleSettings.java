@@ -34,10 +34,12 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.NumberPicker;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.TwoStatePreference;
 
@@ -68,10 +70,15 @@ public class BillingCycleSettings extends DataUsageBaseFragment implements
 
     private static final long MAX_DATA_LIMIT_BYTES = 50000 * GIB_IN_BYTES;
 
+    public static final int CYCLE_TYPE_MONTHLY = 0;
+    public static final int CYCLE_TYPE_WEEKLY = 1;
+    public static final int CYCLE_TYPE_DAILY = 2;
+
     private static final String TAG_CONFIRM_LIMIT = "confirmLimit";
     private static final String TAG_CYCLE_EDITOR = "cycleEditor";
     private static final String TAG_WARNING_EDITOR = "warningEditor";
 
+    private static final String KEY_BILLING_CYCLE_TYPE = "billing_cycle_type";
     private static final String KEY_BILLING_CYCLE = "billing_cycle";
     private static final String KEY_SET_DATA_WARNING = "set_data_warning";
     private static final String KEY_DATA_WARNING = "data_warning";
@@ -81,6 +88,7 @@ public class BillingCycleSettings extends DataUsageBaseFragment implements
 
     @VisibleForTesting
     NetworkTemplate mNetworkTemplate;
+    private ListPreference mBillingCycleType;
     private Preference mBillingCycle;
     private Preference mDataWarning;
     private TwoStatePreference mEnableDataWarning;
@@ -101,6 +109,18 @@ public class BillingCycleSettings extends DataUsageBaseFragment implements
         mDataWarning = dataWarning;
         mEnableDataLimit = enableLimit;
         mEnableDataWarning = enableWarning;
+    }
+
+    int getBillingCycleType() {
+        if (services.mPolicyEditor.getPolicyCycleDay(mNetworkTemplate)
+                != NetworkPolicy.CYCLE_NONE) {
+            return CYCLE_TYPE_MONTHLY;
+        }
+        if (services.mPolicyEditor.getPolicyCycleDayOfWeek(mNetworkTemplate)
+                != NetworkPolicy.CYCLE_NONE) {
+            return CYCLE_TYPE_WEEKLY;
+        }
+        return CYCLE_TYPE_DAILY;
     }
 
     @Override
@@ -132,6 +152,8 @@ public class BillingCycleSettings extends DataUsageBaseFragment implements
             mNetworkTemplate = NetworkTemplates.INSTANCE.getDefaultTemplate(context);
         }
 
+        mBillingCycleType = (ListPreference) findPreference(KEY_BILLING_CYCLE_TYPE);
+        mBillingCycleType.setOnPreferenceChangeListener(this);
         mBillingCycle = findPreference(KEY_BILLING_CYCLE);
         mEnableDataWarning = (TwoStatePreference) findPreference(KEY_SET_DATA_WARNING);
         mEnableDataWarning.setOnPreferenceChangeListener(this);
@@ -149,6 +171,7 @@ public class BillingCycleSettings extends DataUsageBaseFragment implements
 
     @VisibleForTesting
     void updatePrefs() {
+        mBillingCycleType.setValue(String.valueOf(getBillingCycleType()));
         mBillingCycle.setSummary(null);
         final long warningBytes = services.mPolicyEditor.getPolicyWarningBytes(mNetworkTemplate);
         DataUsageFormatter dataUsageFormatter = new DataUsageFormatter(requireContext());
@@ -210,6 +233,10 @@ public class BillingCycleSettings extends DataUsageBaseFragment implements
                 setPolicyWarningBytes(WARNING_DISABLED);
             }
             return true;
+        } else if (mBillingCycleType == preference) {
+            int value = Integer.parseInt((String) newValue);
+            handleBillingCycleChanged(value);
+            return true;
         }
         return false;
     }
@@ -240,6 +267,28 @@ public class BillingCycleSettings extends DataUsageBaseFragment implements
         if (LOGD) Log.d(TAG, "setPolicyWarningBytes()");
         services.mPolicyEditor.setPolicyWarningBytes(mNetworkTemplate, warningBytes);
         updatePrefs();
+    }
+
+    private void handleBillingCycleChanged(int cycleType) {
+        if (getBillingCycleType() == cycleType) {
+            // nothing changed
+            return;
+        }
+        final String cycleTimezone = TimeZone.getDefault().getID();
+        final NetworkPolicyEditor editor = services.mPolicyEditor;
+
+        switch (cycleType) {
+            default:
+            case CYCLE_TYPE_MONTHLY:
+                editor.setPolicyCycleDay(mNetworkTemplate, 1, cycleTimezone);
+                break;
+            case CYCLE_TYPE_WEEKLY:
+                editor.setPolicyCycleDayOfWeek(mNetworkTemplate, 1, cycleTimezone);
+                break;
+            case CYCLE_TYPE_DAILY:
+                editor.setPolicyCycleHour(mNetworkTemplate, 0, cycleTimezone);
+                break;
+        }
     }
 
     @Override
@@ -395,13 +444,16 @@ public class BillingCycleSettings extends DataUsageBaseFragment implements
     public static class CycleEditorFragment extends InstrumentedDialogFragment implements
             DialogInterface.OnClickListener {
         private static final String EXTRA_TEMPLATE = "template";
+        private static final String EXTRA_CYCLE_TYPE = "cycle_type";
         private NumberPicker mCycleDayPicker;
+        private int mCycleType = CYCLE_TYPE_MONTHLY;
 
         public static void show(BillingCycleSettings parent) {
             if (!parent.isAdded()) return;
 
             final Bundle args = new Bundle();
             args.putParcelable(EXTRA_TEMPLATE, parent.mNetworkTemplate);
+            args.putInt(EXTRA_CYCLE_TYPE, parent.getBillingCycleType());
 
             final CycleEditorFragment dialog = new CycleEditorFragment();
             dialog.setArguments(args);
@@ -419,22 +471,39 @@ public class BillingCycleSettings extends DataUsageBaseFragment implements
             final Context context = getActivity();
             final DataUsageEditController target = (DataUsageEditController) getTargetFragment();
             final NetworkPolicyEditor editor = target.getNetworkPolicyEditor();
+            final int cycleType = getArguments().getInt(EXTRA_CYCLE_TYPE);
 
             final AlertDialog.Builder builder = new AlertDialog.Builder(context);
             final LayoutInflater dialogInflater = LayoutInflater.from(builder.getContext());
 
             final View view = dialogInflater.inflate(R.layout.data_usage_cycle_editor, null, false);
             mCycleDayPicker = (NumberPicker) view.findViewById(R.id.cycle_day);
+            final TextView textView = (TextView) view.findViewById(R.id.cycle_subtitle);
 
             final NetworkTemplate template = getArguments().getParcelable(EXTRA_TEMPLATE);
-            final int cycleDay = editor.getPolicyCycleDay(template);
+            int cycleDay = editor.getPolicyCycleDay(template);
+            int titleRedId = R.string.data_usage_cycle_editor_title;
+            int minValue = 1;
+            int maxValue = 31;
+            if (cycleType == CYCLE_TYPE_WEEKLY) {
+                cycleDay = editor.getPolicyCycleDayOfWeek(template);
+                textView.setText(R.string.cycle_type_weekly_sub);
+                titleRedId = R.string.cycle_type_weekly_title;
+                maxValue = 7;
+            } else if (cycleType == CYCLE_TYPE_DAILY) {
+                cycleDay = editor.getPolicyCycleHour(template);
+                textView.setText(R.string.cycle_type_daily_sub);
+                titleRedId = R.string.cycle_type_daily_title;
+                minValue = 0;
+                maxValue = 23;
+            }
 
-            mCycleDayPicker.setMinValue(1);
-            mCycleDayPicker.setMaxValue(31);
+            mCycleDayPicker.setMinValue(minValue);
+            mCycleDayPicker.setMaxValue(maxValue);
             mCycleDayPicker.setValue(cycleDay);
             mCycleDayPicker.setWrapSelectorWheel(true);
 
-            Dialog dialog = builder.setTitle(R.string.data_usage_cycle_editor_title)
+            Dialog dialog = builder.setTitle(titleRedId)
                     .setView(view)
                     .setPositiveButton(R.string.data_usage_cycle_editor_positive, this)
                     .create();
@@ -447,13 +516,20 @@ public class BillingCycleSettings extends DataUsageBaseFragment implements
             final NetworkTemplate template = getArguments().getParcelable(EXTRA_TEMPLATE);
             final DataUsageEditController target = (DataUsageEditController) getTargetFragment();
             final NetworkPolicyEditor editor = target.getNetworkPolicyEditor();
+            final int cycleType = getArguments().getInt(EXTRA_CYCLE_TYPE);
 
             // clear focus to finish pending text edits
             mCycleDayPicker.clearFocus();
 
             final int cycleDay = mCycleDayPicker.getValue();
             final String cycleTimezone = TimeZone.getDefault().getID();
-            editor.setPolicyCycleDay(template, cycleDay, cycleTimezone);
+            if (cycleType == CYCLE_TYPE_WEEKLY) {
+                editor.setPolicyCycleDayOfWeek(template, cycleDay, cycleTimezone);
+            } else if (cycleType == CYCLE_TYPE_DAILY) {
+                editor.setPolicyCycleHour(template, cycleDay, cycleTimezone);
+            } else {
+                editor.setPolicyCycleDay(template, cycleDay, cycleTimezone);
+            }
             target.updateDataUsage();
         }
     }

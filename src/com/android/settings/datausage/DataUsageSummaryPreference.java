@@ -56,6 +56,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class DataUsageSummaryPreference extends Preference implements GroupSectionDividerMixin {
     private static final long MILLIS_IN_A_DAY = TimeUnit.DAYS.toMillis(1);
+    private static final long MILLIS_IN_A_HOUR = TimeUnit.HOURS.toMillis(1);
     private static final long WARNING_AGE = TimeUnit.HOURS.toMillis(6L);
     @VisibleForTesting
     static final Typeface SANS_SERIF_MEDIUM =
@@ -240,14 +241,24 @@ public class DataUsageSummaryPreference extends Preference implements GroupSecti
             cycleTime.setText(getContext().getString(R.string.billing_cycle_none_left));
         } else {
             int daysLeft = (int) (millisLeft / MILLIS_IN_A_DAY);
-            MessageFormat msgFormat = new MessageFormat(
-                    getContext().getResources().getString(R.string.billing_cycle_days_left),
-                    Locale.getDefault());
-            Map<String, Object> arguments = new HashMap<>();
-            arguments.put("count", daysLeft);
-            cycleTime.setText(daysLeft < 1
-                    ? getContext().getString(R.string.billing_cycle_less_than_one_day_left)
-                    : msgFormat.format(arguments));
+            if (daysLeft >= 1) {
+                MessageFormat msgFormat = new MessageFormat(
+                        getContext().getResources().getString(R.string.billing_cycle_days_left),
+                        Locale.getDefault());
+                Map<String, Object> arguments = new HashMap<>();
+                arguments.put("count", daysLeft);
+                cycleTime.setText(msgFormat.format(arguments));
+            } else {
+                int hoursLeft = (int) (millisLeft / MILLIS_IN_A_HOUR);
+                MessageFormat msgFormat = new MessageFormat(
+                        getContext().getResources().getString(R.string.billing_cycle_hours_left),
+                        Locale.getDefault());
+                Map<String, Object> arguments = new HashMap<>();
+                arguments.put("count", hoursLeft);
+                cycleTime.setText(hoursLeft < 1
+                        ? getContext().getString(R.string.billing_cycle_less_than_one_hour_left)
+                        : msgFormat.format(arguments));
+            }
         }
     }
 
