@@ -70,7 +70,7 @@ public class StorageSelectionPreferenceController extends BasePreferenceControll
         if (storageEntries == null || storageEntries.isEmpty()) {
             return;
         }
-        Collections.sort(mStorageEntries);
+        Collections.sort(storageEntries);
         mStorageEntries.addAll(storageEntries);
         mStorageAdapter.addAll(storageEntries);
 
