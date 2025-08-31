@@ -42,9 +42,19 @@ import com.android.settingslib.spaprivileged.template.preference.RestrictedPrefe
 class DeveloperOptionsController(context: Context, preferenceKey: String) :
     ComposePreferenceController(context, preferenceKey) {
 
-    override fun getAvailabilityStatus() =
-        if (mContext.userManager.isAdminUser) AVAILABLE
-        else DISABLED_FOR_USER
+    override fun getAvailabilityStatus(): Int {
+        if (!isDevelopmentSettingsEnabled()) return CONDITIONALLY_UNAVAILABLE
+        return if (mContext.userManager.isAdminUser) AVAILABLE else DISABLED_FOR_USER
+    }
+
+    private fun isDevelopmentSettingsEnabled(): Boolean {
+        val def = if (Build.IS_ENG) 1 else 0
+        return Settings.Global.getInt(
+            mContext.contentResolver,
+            Settings.Global.DEVELOPMENT_SETTINGS_ENABLED,
+            def
+        ) != 0
+    }
 
     private val isDevelopmentSettingsEnabledFlow = context.settingsGlobalBooleanFlow(
         name = Settings.Global.DEVELOPMENT_SETTINGS_ENABLED,
