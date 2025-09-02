@@ -76,6 +76,7 @@ public abstract class VibrationIntensityPreferenceController extends SliderPrefe
         preference.setMin(getMin());
         preference.setMax(getMax());
         preference.setSliderIncrement(1); // Discrete slider
+        preference.setTickVisible(true);
         // Haptics previews played by the Settings app don't bypass user settings to be played.
         // The sliders continuously updates the intensity value so the previews can apply them.
         preference.setUpdatesContinuously(true);
