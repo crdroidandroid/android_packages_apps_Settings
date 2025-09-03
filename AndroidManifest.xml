@@ -843,7 +843,7 @@
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true"
                 android:clearTaskOnLaunch="true"
-                android:theme="@style/Theme.SubSettingsBase">
+                android:theme="@style/Theme.SubSettingsBase.Expressive">
             <intent-filter>
                 <action android:name="android.bluetooth.devicepicker.action.LAUNCH" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -5750,6 +5750,7 @@
         <!-- Begin crDroid Settings -->
         <activity android:name="Settings$crDroidSettingsLayoutActivity"
                 android:label="@string/crdroid_settings_title"
+                android:theme="@style/Theme.SubSettingsBase.Expressive"
                 android:icon="@drawable/ic_homepage_crdroid"
                 android:exported="true"
                 android:taskAffinity="com.android.settings"
@@ -5770,7 +5771,7 @@
         </activity>
         <activity android:name="com.crdroid.settings.fragments.about.ChangelogActivity"
                 android:label="@string/changelog_crdroid_title"
-                android:theme="@style/Theme.SubSettingsBase"
+                android:theme="@style/Theme.SubSettingsBase.Expressive"
                 android:enabled="true"
                 android:exported="true"
                 android:taskAffinity="com.android.settings"
@@ -5830,7 +5831,7 @@
         <!-- Provide direct entry into Dev settings - Running Services -->
         <activity android:name="Settings$DevRunningServicesActivity"
                 android:label="@string/runningservices_settings_title"
-                android:theme="@style/Theme.SubSettingsBase"
+                android:theme="@style/Theme.SubSettingsBase.Expressive"
                 android:enabled="true"
                 android:exported="true"
                 android:excludeFromRecents="true"
@@ -5849,6 +5850,7 @@
         </activity>
         <activity android:name=".Settings$SmartPixelsActivity"
             android:label="@string/smart_pixels_title"
+            android:theme="@style/Theme.SubSettingsBase.Expressive"
             android:taskAffinity="com.android.settings"
             android:exported="true"
             android:parentActivityName="Settings">
@@ -5861,7 +5863,7 @@
         </activity>
         <activity android:name="com.crdroid.settings.fragments.ui.DisplayCutoutForceFullscreenActivity"
                 android:label="@string/display_cutout_force_fullscreen_title"
-                android:theme="@style/Theme.SubSettingsBase"
+                android:theme="@style/Theme.SubSettingsBase.Expressive"
                 android:enabled="true"
                 android:exported="true"
                 android:taskAffinity="com.android.settings"
