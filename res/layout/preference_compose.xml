@@ -23,7 +23,7 @@
     android:minHeight="?android:attr/listPreferredItemHeightSmall"
     android:gravity="center_vertical"
     android:paddingStart="?android:attr/listPreferredItemPaddingStart"
-    android:background="?android:attr/activatedBackgroundIndicator"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
     android:clipToPadding="false">
 
     <LinearLayout
@@ -46,7 +46,6 @@
 
     <androidx.compose.ui.platform.ComposeView
         android:id="@+id/compose_view"
-        android:paddingStart="-24dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>
