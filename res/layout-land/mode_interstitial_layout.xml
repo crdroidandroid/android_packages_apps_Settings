@@ -119,8 +119,6 @@
 
         </FrameLayout>
 
- />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
