@@ -70,8 +70,8 @@ public class RunningState {
     static final int MSG_REFRESH_UI = 3;
     static final int MSG_UPDATE_TIME = 4;
 
-    static final long TIME_UPDATE_DELAY = 1000;
-    static final long CONTENTS_UPDATE_DELAY = 2000;
+    static final long TIME_UPDATE_DELAY = 2000;
+    static final long CONTENTS_UPDATE_DELAY = 3000;
 
     static final int MAX_SERVICES = 100;
 
@@ -843,6 +843,7 @@ public class RunningState {
         synchronized (mLock) {
             mResumed = false;
             mRefreshUiListener = null;
+            mBackgroundHandler.removeMessages(MSG_UPDATE_CONTENTS);
             mHandler.removeMessages(MSG_UPDATE_TIME);
         }
     }
@@ -898,6 +899,9 @@ public class RunningState {
         }
         userItem.mChildren.add(newItem);
     }
+
+    private int[] mPidBuf;
+    private int mPidBufSize;
 
     private boolean update(Context context, ActivityManager am) {
         final PackageManager pm = context.getPackageManager();
@@ -1320,14 +1324,17 @@ public class RunningState {
         boolean diffUsers = false;
         try {
             final int numProc = mAllProcessItems.size();
-            int[] pids = new int[numProc];
+            if (mPidBuf == null || mPidBufSize != numProc) {
+                mPidBuf = new int[numProc];
+                mPidBufSize = numProc;
+            }
             for (int i = 0; i < numProc; i++) {
-                pids[i] = mAllProcessItems.get(i).mPid;
+                mPidBuf[i] = mAllProcessItems.get(i).mPid;
             }
             long[] pss = ActivityManager.getService()
-                    .getProcessPss(pids);
+                    .getProcessPss(mPidBuf);
             int bgIndex = 0;
-            for (int i = 0; i < pids.length; i++) {
+            for (int i = 0; i < mPidBuf.length; i++) {
                 ProcessItem proc = mAllProcessItems.get(i);
                 changed |= proc.updateSize(context, pss[i], mSequence);
                 if (proc.mCurSeq == mSequence) {
