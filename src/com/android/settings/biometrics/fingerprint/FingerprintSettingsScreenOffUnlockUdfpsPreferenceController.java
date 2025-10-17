@@ -16,8 +16,6 @@
 
 package com.android.settings.biometrics.fingerprint;
 
-import static android.hardware.biometrics.Flags.screenOffUnlockUdfps;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.hardware.fingerprint.FingerprintManager;
@@ -48,11 +46,15 @@ public class FingerprintSettingsScreenOffUnlockUdfpsPreferenceController
 
     private UserManager mUserManager;
 
+    private boolean mScreenOffUdfpsAvailable;
+
     public FingerprintSettingsScreenOffUnlockUdfpsPreferenceController(
             @NonNull Context context, @NonNull String prefKey) {
         super(context, prefKey);
         mFingerprintManager = Utils.getFingerprintManagerOrNull(context);
         mUserManager = context.getSystemService(UserManager.class);
+        mScreenOffUdfpsAvailable = context.getResources().getBoolean(
+                com.android.internal.R.bool.config_screen_off_udfps_enabled);
     }
 
     @Override
@@ -103,8 +105,8 @@ public class FingerprintSettingsScreenOffUnlockUdfpsPreferenceController
         if (mUserManager.isProfile(getUserId())) {
             return DISABLED_FOR_USER;
         } else if (mFingerprintManager != null
+                && mScreenOffUdfpsAvailable
                 && mFingerprintManager.isHardwareDetected()
-                && screenOffUnlockUdfps()
                 && !mFingerprintManager.isPowerbuttonFps()) {
             return mFingerprintManager.hasEnrolledTemplates(getUserId())
                     ? AVAILABLE : CONDITIONALLY_UNAVAILABLE;
