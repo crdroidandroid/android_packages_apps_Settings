@@ -42,6 +42,8 @@ import com.crdroid.settings.utils.SystemUtils;
 
 import lineageos.providers.LineageSettings;
 
+import static com.android.systemui.shared.recents.utilities.Utilities.isLargeScreen;
+
 import static org.lineageos.internal.util.DeviceKeysConstants.*;
 
 /**
@@ -130,8 +132,16 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
         // Edge long swipe gesture
         mEdgeLongSwipeAction = initList(KEY_EDGE_LONG_SWIPE, edgeLongSwipeAction);
 
+        boolean enableTaskbar = LineageSettings.System.getIntForUser(
+                resolver,
+                LineageSettings.System.ENABLE_TASKBAR,
+                isLargeScreen(getContext()) ? 1 : 0,
+                UserHandle.USER_CURRENT
+        ) != 0;
+
         // Taskbar
         mEnableTaskbar = (SwitchPreferenceCompat) getPreferenceScreen().findPreference(KEY_ENABLE_TASKBAR);
+        mEnableTaskbar.setChecked(enableTaskbar);
         mEnableTaskbar.setOnPreferenceChangeListener(this);
     }
 
