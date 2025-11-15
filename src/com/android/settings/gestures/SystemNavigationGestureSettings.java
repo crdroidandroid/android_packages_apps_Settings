@@ -32,6 +32,8 @@ import android.content.res.Resources;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.provider.Settings;
+import android.text.TextUtils;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -169,6 +171,71 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
         if (threeButtonNav != null) threeButtonNav.setEnabled(showing);
         if (twoButtonNav != null) twoButtonNav.setEnabled(showing);
         if (gesturalNav != null) gesturalNav.setEnabled(showing);
+
+        if (!TextUtils.isEmpty(defaultKey)) {
+            updateExtraWidgetForSelection(defaultKey);
+        }
+    }
+
+    private void updateExtraWidgetForSelection(String selectedKey) {
+        PreferenceScreen screen = getPreferenceScreen();
+        if (screen == null || TextUtils.isEmpty(selectedKey)) {
+            return;
+        }
+
+        final int count = screen.getPreferenceCount();
+        for (int i = 0; i < count; i++) {
+            Preference p = screen.getPreference(i);
+            if (!(p instanceof SelectorWithWidgetPreference)) {
+                continue;
+            }
+
+            SelectorWithWidgetPreference swp = (SelectorWithWidgetPreference) p;
+            configureExtraWidget(swp, swp.getKey(), selectedKey);
+        }
+    }
+
+    private void configureExtraWidget(SelectorWithWidgetPreference pref,
+            String key, String selectedKey) {
+        final boolean isSelected = TextUtils.equals(key, selectedKey);
+
+        pref.setExtraWidgetOnClickListener(null);
+
+        if (!isSelected) {
+            return;
+        }
+
+        if (KEY_SYSTEM_NAV_GESTURAL.equals(key)) {
+            pref.setExtraWidgetOnClickListener((v) -> startActivity(new Intent(
+                    GestureNavigationSettingsFragment.GESTURE_NAVIGATION_SETTINGS)
+                    .setPackage(getContext().getPackageName())));
+
+            pref.setExtraWidgetContentDescription(getContext().getString(
+                    R.string.gesture_settings_button_description));
+            addClickHintForExtra(pref, R.string.gesture_settings_extra_button_hint);
+            return;
+        }
+
+        if (KEY_SYSTEM_NAV_2BUTTONS.equals(key)) {
+            pref.setExtraWidgetOnClickListener((v) ->
+                    new SubSettingLauncher(getContext())
+                            .setDestination(ButtonNavigationSettingsFragment.class.getName())
+                            .setSourceMetricsCategory(SettingsEnums.SETTINGS_GESTURE_SWIPE_UP)
+                            .launch());
+
+            pref.setExtraWidgetContentDescription(getContext().getString(
+                    R.string.button_navigation_settings_button_description));
+            addClickHintForExtra(pref, R.string.button_navigation_settings_extra_button_hint);
+            return;
+        }
+
+        if (KEY_SYSTEM_NAV_3BUTTONS.equals(key)) {
+            pref.setExtraWidgetOnClickListener((v) -> startActivity(new Intent(
+                    LegacyNavigationSettingsFragment.LEGACY_NAVIGATION_SETTINGS)
+                    .setPackage(getContext().getPackageName())));
+            addClickHintForExtra(pref, R.string.button_navigation_settings_extra_button_hint);
+            return;
+        }
     }
 
     @Override
@@ -180,34 +247,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
 
         pref.setSummary(((CandidateInfoExtra) info).loadSummary());
 
-        if (KEY_SYSTEM_NAV_GESTURAL.equals(info.getKey())) {
-            pref.setExtraWidgetOnClickListener((v) -> startActivity(new Intent(
-                    GestureNavigationSettingsFragment.GESTURE_NAVIGATION_SETTINGS)
-                    .setPackage(getContext().getPackageName())));
-
-            pref.setExtraWidgetContentDescription(getContext().getString(
-                    R.string.gesture_settings_button_description));
-            addClickHintForExtra(pref, R.string.gesture_settings_extra_button_hint);
-        }
-
-        if (KEY_SYSTEM_NAV_2BUTTONS.equals(info.getKey())) {
-            pref.setExtraWidgetOnClickListener((v) ->
-                    new SubSettingLauncher(getContext())
-                            .setDestination(ButtonNavigationSettingsFragment.class.getName())
-                            .setSourceMetricsCategory(SettingsEnums.SETTINGS_GESTURE_SWIPE_UP)
-                            .launch());
-
-            pref.setExtraWidgetContentDescription(getContext().getString(
-                    R.string.button_navigation_settings_button_description));
-            addClickHintForExtra(pref, R.string.button_navigation_settings_extra_button_hint);
-        }
-
-        if (KEY_SYSTEM_NAV_3BUTTONS.equals(info.getKey())) {
-            pref.setExtraWidgetOnClickListener((v) -> startActivity(new Intent(
-                    LegacyNavigationSettingsFragment.LEGACY_NAVIGATION_SETTINGS)
-                    .setPackage(getContext().getPackageName())));
-            addClickHintForExtra(pref, R.string.button_navigation_settings_extra_button_hint);
-        }
+        configureExtraWidget(pref, key, defaultKey);
     }
 
     private void addClickHintForExtra(SelectorWithWidgetPreference pref, int hint) {
@@ -278,6 +318,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
     protected boolean setDefaultKey(String key) {
         setCurrentSystemNavigationMode(mOverlayManager, key);
         setIllustrationVideo(mVideoPreference, key);
+        updateExtraWidgetForSelection(key);
         return true;
     }
 

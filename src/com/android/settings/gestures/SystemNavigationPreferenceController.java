@@ -17,7 +17,9 @@
 package com.android.settings.gestures;
 
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON;
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON_OVERLAY;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON;
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON_OVERLAY;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL;
 
 import android.content.ComponentName;
@@ -91,17 +93,20 @@ public class SystemNavigationPreferenceController extends BasePreferenceControll
 
     static boolean is3ButtonNavigationEnabled(Context context) {
         return NAV_BAR_MODE_3BUTTON == context.getResources().getInteger(
-                com.android.internal.R.integer.config_navBarInteractionMode);
+                com.android.internal.R.integer.config_navBarInteractionMode) &&
+                isOverlayPackageAvailable(context, NAV_BAR_MODE_3BUTTON_OVERLAY);
     }
 
     static boolean is2ButtonNavigationEnabled(Context context) {
         return NAV_BAR_MODE_2BUTTON == context.getResources().getInteger(
-                com.android.internal.R.integer.config_navBarInteractionMode);
+                com.android.internal.R.integer.config_navBarInteractionMode) &&
+                isOverlayPackageAvailable(context, NAV_BAR_MODE_2BUTTON_OVERLAY);
     }
 
     static boolean isGestureNavigationEnabled(Context context) {
         return NAV_BAR_MODE_GESTURAL == context.getResources().getInteger(
-                com.android.internal.R.integer.config_navBarInteractionMode);
+                com.android.internal.R.integer.config_navBarInteractionMode) &&
+                isGestureAvailable(context);
     }
 }
 // LINT.ThenChange(SystemNavigationGestureScreen.kt)
