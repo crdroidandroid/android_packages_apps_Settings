@@ -39,9 +39,11 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.ButtonPreference;
 import com.android.settingslib.widget.SliderPreference;
 
+import com.crdroid.settings.utils.DeviceUtils;
 import com.crdroid.settings.utils.SystemUtils;
 
 import java.text.NumberFormat;
+import java.util.List;
 import java.util.Locale;
 
 import lineageos.providers.LineageSettings;
@@ -72,6 +74,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
     private static final String KEY_CORNER_LONG_SWIPE = "navigation_bar_corner_long_swipe";
     private static final String KEY_EDGE_LONG_SWIPE = "navigation_bar_edge_long_swipe";
     private static final String KEY_ENABLE_TASKBAR = "enable_taskbar";
+    private static final String KEY_GESTURE_HAPTIC = "back_gesture_haptic";
 
     final Intent mLaunchTutorialIntent =  new Intent(ACTION_GESTURE_SANDBOX)
             .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -147,6 +150,13 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
         mEnableTaskbar = (SwitchPreferenceCompat) getPreferenceScreen().findPreference(KEY_ENABLE_TASKBAR);
         mEnableTaskbar.setChecked(enableTaskbar);
         mEnableTaskbar.setOnPreferenceChangeListener(this);
+
+        boolean hapticAvailable = DeviceUtils.hasVibrator(getContext());
+        if (!hapticAvailable) {
+            SwitchPreferenceCompat gestureHaptic =
+                (SwitchPreferenceCompat) getPreferenceScreen().findPreference(KEY_GESTURE_HAPTIC);
+            getPreferenceScreen().removePreference(gestureHaptic);
+        }
     }
 
     @Override
@@ -388,6 +398,17 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider(R.xml.gesture_navigation_settings) {
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+
+                    boolean hapticAvailable = DeviceUtils.hasVibrator(context);
+                    if (!hapticAvailable) {
+                        keys.add(KEY_GESTURE_HAPTIC);
+                    }
+                    return keys;
+                }
 
                 @Override
                 protected boolean isPageSearchEnabled(Context context) {
