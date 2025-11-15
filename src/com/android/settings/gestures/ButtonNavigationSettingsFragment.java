@@ -62,5 +62,11 @@ public class ButtonNavigationSettingsFragment extends DashboardFragment {
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider(com.android.settings.flags.Flags.catalystSettingsSearch()
-                    ? 0 : R.xml.button_navigation_settings);
+                    ? 0 : R.xml.button_navigation_settings) {
+
+                @Override
+                protected boolean isPageSearchEnabled(Context context) {
+                    return SystemNavigationPreferenceController.is2ButtonNavigationEnabled(context);
+                }
+            };
 }
