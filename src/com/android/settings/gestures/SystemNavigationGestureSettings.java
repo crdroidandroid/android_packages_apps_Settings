@@ -32,6 +32,8 @@ import android.content.res.Resources;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.provider.Settings;
+import android.text.TextUtils;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -163,6 +165,68 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
         if (threeButtonNav != null) threeButtonNav.setEnabled(showing);
         if (twoButtonNav != null) twoButtonNav.setEnabled(showing);
         if (gesturalNav != null) gesturalNav.setEnabled(showing);
+
+        if (!TextUtils.isEmpty(defaultKey)) {
+            updateExtraWidgetForSelection(defaultKey);
+        }
+    }
+
+    private void updateExtraWidgetForSelection(String selectedKey) {
+        PreferenceScreen screen = getPreferenceScreen();
+        if (screen == null || TextUtils.isEmpty(selectedKey)) {
+            return;
+        }
+
+        final int count = screen.getPreferenceCount();
+        for (int i = 0; i < count; i++) {
+            Preference p = screen.getPreference(i);
+            if (!(p instanceof SelectorWithWidgetPreference)) {
+                continue;
+            }
+
+            SelectorWithWidgetPreference swp = (SelectorWithWidgetPreference) p;
+            configureExtraWidget(swp, swp.getKey(), selectedKey);
+        }
+    }
+
+    private void configureExtraWidget(SelectorWithWidgetPreference pref,
+            String key, String selectedKey) {
+        final boolean isSelected = TextUtils.equals(key, selectedKey);
+
+        pref.setExtraWidgetOnClickListener(null);
+
+        if (!isSelected) {
+            return;
+        }
+
+        if (KEY_SYSTEM_NAV_GESTURAL.equals(key)) {
+            pref.setExtraWidgetOnClickListener(v -> startActivity(new Intent(
+                    GestureNavigationSettingsFragment.GESTURE_NAVIGATION_SETTINGS)
+                    .setPackage(getContext().getPackageName())));
+            return;
+        }
+
+        // With flag enabled, the button order preference will always be available
+        boolean navbarAvailable = android.view.accessibility.Flags.navbarFlipOrderOption()
+                || !PreferenceControllerListHelper.areAllPreferencesUnavailable(
+                        getContext(), getPreferenceManager(), R.xml.button_navigation_settings);
+
+        if (KEY_SYSTEM_NAV_2BUTTONS.equals(key)
+                && navbarAvailable) {
+            pref.setExtraWidgetOnClickListener(v ->
+                    new SubSettingLauncher(getContext())
+                            .setDestination(ButtonNavigationSettingsFragment.class.getName())
+                            .setSourceMetricsCategory(
+                                    SettingsEnums.SETTINGS_GESTURE_SWIPE_UP)
+                            .launch());
+            return;
+        }
+
+        if (KEY_SYSTEM_NAV_3BUTTONS.equals(key)) {
+            pref.setExtraWidgetOnClickListener(v -> startActivity(new Intent(
+                    LegacyNavigationSettingsFragment.LEGACY_NAVIGATION_SETTINGS)
+                    .setPackage(getContext().getPackageName())));
+        }
     }
 
     @Override
@@ -174,32 +238,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
 
         pref.setSummary(((CandidateInfoExtra) info).loadSummary());
 
-        if (KEY_SYSTEM_NAV_GESTURAL.equals(info.getKey())) {
-            pref.setExtraWidgetOnClickListener((v) -> startActivity(new Intent(
-                    GestureNavigationSettingsFragment.GESTURE_NAVIGATION_SETTINGS)
-                    .setPackage(getContext().getPackageName())));
-        }
-
-        // With flag enabled, the button order preference will always be available
-        boolean navbarAvailable = android.view.accessibility.Flags.navbarFlipOrderOption()
-                || !PreferenceControllerListHelper.areAllPreferencesUnavailable(
-                        getContext(), getPreferenceManager(), R.xml.button_navigation_settings);
-
-        if (KEY_SYSTEM_NAV_2BUTTONS.equals(info.getKey())
-                // Don't add the settings button if that page will be blank.
-                && navbarAvailable) {
-            pref.setExtraWidgetOnClickListener((v) ->
-                    new SubSettingLauncher(getContext())
-                            .setDestination(ButtonNavigationSettingsFragment.class.getName())
-                            .setSourceMetricsCategory(SettingsEnums.SETTINGS_GESTURE_SWIPE_UP)
-                            .launch());
-        }
-
-        if (KEY_SYSTEM_NAV_3BUTTONS.equals(info.getKey())) {
-            pref.setExtraWidgetOnClickListener((v) -> startActivity(new Intent(
-                    LegacyNavigationSettingsFragment.LEGACY_NAVIGATION_SETTINGS)
-                    .setPackage(getContext().getPackageName())));
-        }
+        configureExtraWidget(pref, key, defaultKey);
     }
 
     @Override
@@ -260,6 +299,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
     protected boolean setDefaultKey(String key) {
         setCurrentSystemNavigationMode(mOverlayManager, key);
         setIllustrationVideo(mVideoPreference, key);
+        updateExtraWidgetForSelection(key);
         return true;
     }
 

@@ -391,8 +391,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
 
                 @Override
                 protected boolean isPageSearchEnabled(Context context) {
-                    return SystemNavigationPreferenceController.isGestureAvailable(context);
+                    return SystemNavigationPreferenceController.isGestureNavigationEnabled(context);
                 }
             };
-
 }
