@@ -28,6 +28,7 @@ import android.view.WindowManager;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
@@ -37,6 +38,10 @@ import com.android.settings.widget.SeekBarPreference;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.logging.nano.MetricsProto;
+
+import com.crdroid.settings.utils.SystemUtils;
+
+import java.util.List;
 
 import lineageos.providers.LineageSettings;
 
@@ -72,6 +77,8 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
     private ListPreference mNavigationAppSwitchLongPressAction;
     private ListPreference mNavigationAppSwitchDoubleTapAction;
 
+    private SwitchPreferenceCompat mEnableTaskbar;
+
     public LegacyNavigationSettingsFragment() {
         super();
     }
@@ -83,9 +90,20 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
         final Resources res = getResources();
         final ContentResolver resolver = getContext().getContentResolver();
 
+        // Taskbar
+        mEnableTaskbar = (SwitchPreferenceCompat) getPreferenceScreen().findPreference(KEY_ENABLE_TASKBAR);
+
         if (!isLargeScreen(getContext())) {
-            getPreferenceScreen().removePreference(
-                    getPreferenceScreen().findPreference(KEY_ENABLE_TASKBAR));
+            getPreferenceScreen().removePreference(mEnableTaskbar);
+        } else {
+            boolean enableTaskbar = LineageSettings.System.getIntForUser(
+                    resolver,
+                    LineageSettings.System.ENABLE_TASKBAR,
+                    1,
+                    UserHandle.USER_CURRENT
+            ) != 0;
+            mEnableTaskbar.setChecked(enableTaskbar);
+            mEnableTaskbar.setOnPreferenceChangeListener(this);
         }
 
         Action defaultBackLongPressAction = Action.fromIntSafe(res.getInteger(
@@ -177,6 +195,9 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
             handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_APP_SWITCH_DOUBLE_TAP_ACTION);
             return true;
+        } else if (preference == mEnableTaskbar) {
+            SystemUtils.showSystemUiRestartDialog(getContext());
+            return true;
         }
         return false;
     }
@@ -207,5 +228,16 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.legacy_navigation_settings);
+            new BaseSearchIndexProvider(R.xml.legacy_navigation_settings) {
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+
+                    if (!isLargeScreen(context)) {
+                        keys.add(KEY_ENABLE_TASKBAR);
+                    }
+                    return keys;
+                }
+            };
 }
