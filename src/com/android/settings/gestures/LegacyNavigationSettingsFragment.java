@@ -239,5 +239,10 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
                     }
                     return keys;
                 }
+
+                @Override
+                protected boolean isPageSearchEnabled(Context context) {
+                    return SystemNavigationPreferenceController.is3ButtonNavigationEnabled(context);
+                }
             };
 }
