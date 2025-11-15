@@ -16,9 +16,6 @@
 
 package com.android.settings.gestures;
 
-import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON_OVERLAY;
-import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON_OVERLAY;
-
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 
@@ -59,11 +56,7 @@ public class ButtonNavigationSettingsFragment extends DashboardFragment {
 
                 @Override
                 protected boolean isPageSearchEnabled(Context context) {
-                    return SystemNavigationPreferenceController.isOverlayPackageAvailable(context,
-                            NAV_BAR_MODE_2BUTTON_OVERLAY)
-                            || SystemNavigationPreferenceController.isOverlayPackageAvailable(
-                            context,
-                            NAV_BAR_MODE_3BUTTON_OVERLAY);
+                    return SystemNavigationPreferenceController.is2ButtonNavigationEnabled(context);
                 }
             };
 }
