@@ -43,6 +43,7 @@ import androidx.annotation.VisibleForTesting;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.preference.Preference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.settings.R;
 import com.android.settings.Settings.MobileNetworkActivity;
@@ -96,6 +97,9 @@ public class MobileNetworkSettings extends AbstractMobileNetworkSettings impleme
     //String keys for preference lookup
     private static final String BUTTON_CDMA_SYSTEM_SELECT_KEY = "cdma_system_select_key";
     private static final String BUTTON_CDMA_SUBSCRIPTION_KEY = "cdma_subscription_key";
+
+    private static final String KEY_FORCE_LTE_CA = "force_lte_ca";
+    private SwitchPreferenceCompat mForceLteCAPreference;
 
     private final ExecutorService mExecutor = Executors.newSingleThreadExecutor();
 
@@ -355,6 +359,19 @@ public class MobileNetworkSettings extends AbstractMobileNetworkSettings impleme
                 setTelephonyAvailabilityStatus(getPreferenceControllersAsList());
 
         super.onCreate(icicle);
+
+        mForceLteCAPreference = findPreference(KEY_FORCE_LTE_CA);
+        mForceLteCAPreference.setOnPreferenceChangeListener((preference, newValue) -> {
+            boolean enabled = (Boolean) newValue;
+            int phoneId = SubscriptionManager.getPhoneId(mSubId);
+            Settings.Global.putInt(
+                getContext().getContentResolver(),
+                Settings.Global.FORCE_LTE_CA + "_" + phoneId,
+                enabled ? 1 : 0
+            );
+            return true;
+        });
+
         if (isUiRestricted()) {
             Log.d(LOG_TAG, "Mobile network page is disallowed.");
             finish();
@@ -395,12 +412,26 @@ public class MobileNetworkSettings extends AbstractMobileNetworkSettings impleme
         super.onResume();
         mMobileNetworkRepository.addRegister(this, this, mSubId);
         mMobileNetworkRepository.updateEntity();
+
+        updateForceLteCAState();
+
         // TODO: remove log after fixing b/182326102
         Log.d(LOG_TAG, "onResume() subId=" + mSubId);
 
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(CarrierConfigManager.ACTION_CARRIER_CONFIG_CHANGED);
         getContext().registerReceiver(mBrocastReceiver, intentFilter, Context.RECEIVER_EXPORTED);
+    }
+
+    private void updateForceLteCAState() {
+        if (mForceLteCAPreference != null) {
+            int phoneId = SubscriptionManager.getPhoneId(mSubId);
+            boolean enabled = Settings.Global.getInt(
+                    getContext().getContentResolver(),
+                    Settings.Global.FORCE_LTE_CA + "_" + phoneId,
+                    0) == 1;
+            mForceLteCAPreference.setChecked(enabled);
+        }
     }
 
     private void onSubscriptionDetailChanged() {
