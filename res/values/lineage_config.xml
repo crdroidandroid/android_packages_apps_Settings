@@ -58,4 +58,8 @@
 
     <!-- Show Now Playing -->
     <bool name="config_show_now_playing">false</bool>
+
+    <!-- Force LTE_CA -->
+    <string name="force_lte_ca_title">Carrier Aggregation</string>
+    <string name="force_lte_ca_summary">Enhances LTE bandwidth by aggregating supported bands.</string>
 </resources>
