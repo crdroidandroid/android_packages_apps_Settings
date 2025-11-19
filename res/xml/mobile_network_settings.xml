@@ -284,6 +284,11 @@
                 android:key="choose_network_key"
                 android:title="@string/choose_network_title"
                 settings:controller="com.android.settings.network.telephony.gsm.OpenNetworkSelectPagePreferenceController"/>
+
+            <SwitchPreferenceCompat
+                android:key="force_lte_ca"
+                android:title="@string/force_lte_ca_title"
+                android:summary="@string/force_lte_ca_summary" />
         </PreferenceCategory>
 
         <!--We want separate APN setting from reset of settings because we want user to change it with caution-->
