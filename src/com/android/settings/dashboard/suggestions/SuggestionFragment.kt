@@ -43,7 +43,6 @@ import kotlinx.coroutines.withContext
 
 private const val SUGGESTIONS = "suggestions"
 private const val TAG = "ContextualSuggestFrag"
-private const val FLAG_IS_DISMISSIBLE = 1 shl 2
 
 /**
  * Fragment to control display and interaction logic for [Suggestion]s
@@ -184,7 +183,7 @@ class SuggestionFragment : InstrumentedFragment(),
             summary?.visibility = View.VISIBLE
             summary?.text = suggestionSummary
         }
-        if (suggestion.flags and FLAG_IS_DISMISSIBLE != 0) {
+        if (suggestions.size > 0) {
             dismiss?.let { dismissView ->
                 dismissView.visibility = View.VISIBLE
                 dismissView.setOnClickListener {
