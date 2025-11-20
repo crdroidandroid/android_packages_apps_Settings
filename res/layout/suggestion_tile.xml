@@ -84,7 +84,6 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:padding="8dp"
-            android:visibility="gone"
             android:layout_gravity="center"
             android:contentDescription="@string/suggestion_button_close"
             android:src="@drawable/ic_suggestion_close_button"
