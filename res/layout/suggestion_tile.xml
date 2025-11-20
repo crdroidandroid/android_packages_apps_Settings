@@ -82,7 +82,6 @@
             android:layout_width="@dimen/settingslib_expressive_space_medium4"
             android:layout_height="@dimen/settingslib_expressive_space_medium4"
             android:padding="@dimen/settingslib_expressive_space_extrasmall4"
-            android:visibility="gone"
             android:layout_gravity="center"
             android:contentDescription="@string/suggestion_button_close"
             android:src="@drawable/ic_suggestion_close_button"
