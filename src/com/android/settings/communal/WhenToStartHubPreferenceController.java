@@ -51,7 +51,7 @@ public class WhenToStartHubPreferenceController extends BasePreferenceController
 
     @Override
     public int getAvailabilityStatus() {
-        return UNSUPPORTED_ON_DEVICE;
+        return AVAILABLE;
     }
 
     @Override
