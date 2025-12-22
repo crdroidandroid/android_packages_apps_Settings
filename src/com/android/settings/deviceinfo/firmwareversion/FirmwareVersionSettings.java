@@ -19,6 +19,11 @@ package com.android.settings.deviceinfo.firmwareversion;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -49,6 +54,18 @@ public class FirmwareVersionSettings extends DashboardFragment {
     @Override
     public int getMetricsCategory() {
         return SettingsEnums.DIALOG_FIRMWARE_VERSION;
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.crdroid_logo, container, false);
+        ViewGroup listContainer = view.findViewById(android.R.id.list_container);
+        View settingsView = super.onCreateView(inflater, listContainer, savedInstanceState);
+        if (settingsView != null) {
+            listContainer.addView(settingsView);
+        }
+
+        return view;
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
