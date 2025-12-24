@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="?android:listPreferredItemPaddingStart" android:layout_marginEnd="?android:listPreferredItemPaddingEnd">
+    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SearchBarStyle_v2">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/search_action_bar" android:background="@drawable/search_bar_selected_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="72.0dip" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" android:focusedByDefault="true">
+            <ImageView android:id="@+id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_homepage_search" android:importantForAccessibility="no"/>
+            <TextView android:id="@+id/search_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_region" android:paddingEnd="8.0dip" android:layout_marginStart="8.0dip" style="@style/TextAppearance.SearchBar"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ItemGroup xmlns:android="http://schemas.android.com/apk/res/android">
+    <SectionItem android:id="@+id/setup_search_bar_section">
+        <com.google.android.settings.localepicker.SearchBarItem android:id="@+id/setup_search_bar_item"/>
+    </SectionItem>
+    <SectionItem android:id="@+id/suggested_list"/>
+    <SectionItem android:id="@+id/all_list"/>
+</ItemGroup>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifRecyclerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:icon="@drawable/ic_suw_region_picker" android:entries="@xml/region_and_numbering_system_items" android:id="@+id/setup_wizard_region_and_numbering_system_picker_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"/>

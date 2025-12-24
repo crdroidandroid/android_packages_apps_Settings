@@ -73,3 +73,6 @@
 
 # Keep the device state AppFunction schema
 -keep class com.google.android.appfunctions.schema.common.v1.devicestate.** { *; }
+
+# Locale Picker
+-keep class com.google.android.settings.**

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" android:key="key_system_language_picker_page">
+    <com.google.android.settings.localepicker.SearchBarPreference
+        android:key="search_bar_button"
+        settings:controller="com.google.android.settings.localepicker.SearchBarPreferenceController"/>
+    <com.google.android.settings.localepicker.ExpressivePreferenceCategory
+        android:title="@string/suggested_locales_title"
+        android:key="system_language_suggested_category"/>
+    <com.google.android.settings.localepicker.DividerPreference android:key="category_divider"/>
+    <com.google.android.settings.localepicker.ExpressivePreferenceCategory
+        android:title="@string/all_supported_locales_title"
+        android:key="system_language_all_supported_category"/>
+</PreferenceScreen>

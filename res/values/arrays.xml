@@ -946,6 +946,38 @@
         <item>Always allow</item>
     </string-array>
 
+    <!-- Locale Picker -->
+    <array name="global_locales">
+        <item>en</item>
+        <item>de</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>it</item>
+        <item>pt</item>
+        <item>hi</item>
+        <item>ja</item>
+        <item>zh-Hans</item>
+        <item>zh-Hant</item>
+    </array>
+
+    <array name="japan_locales">
+        <item>ja</item>
+    </array>
+
+    <array name="tts_locales">
+        <item>en</item>
+        <item>de</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>it</item>
+        <item>ja</item>
+    </array>
+
+    <array name="united_states_locales">
+        <item>en-US</item>
+        <item>es-US</item>
+    </array>
+
     <!-- [CHAR LIMIT=40] Labels for memory states -->
     <string-array name="ram_states">
         <!-- Normal desired memory state. -->

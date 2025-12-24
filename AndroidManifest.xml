@@ -2105,6 +2105,59 @@
             </intent-filter>
         </activity>
 
+        <!-- Locale Picker -->
+        <activity
+            android:name="com.google.android.settings.localepicker.SetupSystemLocalePickerActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask">
+            <intent-filter android:priority="1">
+                <action android:name="com.google.android.settings.localepicker.LOCALE_REGION_PICKER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.google.android.settings.localepicker.SetupRegionAndNumberingSystemActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.settings.localepicker.REGIONAND_PICKER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.google.android.settings.localepicker.SetupRegionSearchActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.settings.localepicker.SETUP_REGION_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.google.android.settings.localepicker.RegionSearchActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter android:priority="1">
+                <action android:name="com.google.android.settings.localepicker.REGION_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.google.android.settings.localepicker.RegionSearchFragment"/>
+        </activity>
+
+        <receiver
+            android:name="com.google.android.settings.localepicker.LocalePickerSetupWizardEventsReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.setupwizard.SETUP_WIZARD_FINISHED"/>
+            </intent-filter>
+        </receiver>
+
         <!-- Provide direct entry into manage apps showing running services.
              This is for compatibility with old shortcuts. -->
         <activity-alias android:name=".RunningServices"

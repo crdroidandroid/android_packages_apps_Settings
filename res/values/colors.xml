@@ -296,4 +296,6 @@
 
     <color name="gm_grey_900">#202124</color>
 
+   <color name="primary_text_disable_only_material_light">@*android:color/primary_text_disable_only_material_light</color>
+
 </resources>

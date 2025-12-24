@@ -1187,4 +1187,9 @@
     <style name="Widget.App.BottomSheet.Modal" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/identity_check_promo_card_background</item>
     </style>
+    <style name="Theme.Settings.LocalePicker" parent="@style/Theme.Settings">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:clipChildren">true</item>
+        <item name="android:clipToPadding">true</item>
+    </style>
 </resources>
