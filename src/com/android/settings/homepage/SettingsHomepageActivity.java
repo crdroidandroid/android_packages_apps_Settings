@@ -121,6 +121,9 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     private SplitInfoCallback mCallback;
     private boolean mAllowUpdateSuggestion = true;
 
+    private AxionHomepageController mAxionController;
+    private final boolean useAxHomepage = AxionHomepageController.getUseAxHomepage();
+
     /** A listener receiving homepage loaded events. */
     public interface HomepageLoadedListener {
         /** Called when the homepage is loaded. */
@@ -248,54 +251,71 @@ public class SettingsHomepageActivity extends FragmentActivity implements
             return;
         }
 
-        setupEdgeToEdge();
-        setContentView(R.layout.settings_homepage_container);
+        if (useAxHomepage) {
+            mAxionController = new AxionHomepageController(this);
+            mAxionController.onCreate();
 
-        mIsTwoPane = ActivityEmbeddingUtils.isAlreadyEmbedded(this);
-
-        initHomepageContainer();
-        updateHomepageBackground();
-        mLoadedListeners = new ArraySet<>();
-
-        initSearchBarView();
-
-        getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
-        mCategoryMixin = new CategoryMixin(this);
-        getLifecycle().addObserver(mCategoryMixin);
-
-        final String highlightMenuKey = getHighlightMenuKey();
-        // Only allow features on high ram devices.
-        if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
-            final boolean scrollNeeded = mIsEmbeddingActivityEnabled
-                    && !TextUtils.equals(getString(DEFAULT_HIGHLIGHT_MENU_KEY), highlightMenuKey);
-            showSuggestionFragment(scrollNeeded);
-            if (!Flags.updatedSuggestionCardAosp()
-                    && FeatureFlagUtils.isEnabled(this, FeatureFlags.CONTEXTUAL_HOME)) {
-                showFragment(() -> new ContextualCardsFragment(), R.id.contextual_cards_content);
-                ((FrameLayout) findViewById(R.id.main_content))
-                        .getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
+            // Launch the intent from deep link for large screen devices.
+            if (shouldLaunchDeepLinkIntentToRight()) {
+                launchDeepLinkIntentToRight();
             }
-        }
-        mMainFragment = showFragment(() -> {
-            final TopLevelSettings fragment = new TopLevelSettings();
-            fragment.getArguments().putString(SettingsActivity.EXTRA_FRAGMENT_ARG_KEY,
-                    highlightMenuKey);
-            return fragment;
-        }, R.id.main_content);
 
-        // Launch the intent from deep link for large screen devices.
-        if (shouldLaunchDeepLinkIntentToRight()) {
-            launchDeepLinkIntentToRight();
-        }
+            // Settings app may be launched on an existing task. Reset SplitPairRule of SubSettings here
+            // to prevent SplitPairRule of an existing task applied on a new started Settings app.
+            if (mIsEmbeddingActivityEnabled
+                    && (getIntent().getFlags() & Intent.FLAG_ACTIVITY_CLEAR_TOP) != 0) {
+                initSplitPairRules();
+            }
+        } else {
+            setupEdgeToEdge();
+            setContentView(R.layout.settings_homepage_container);
 
-        // Settings app may be launched on an existing task. Reset SplitPairRule of SubSettings here
-        // to prevent SplitPairRule of an existing task applied on a new started Settings app.
-        if (mIsEmbeddingActivityEnabled
-                && (getIntent().getFlags() & Intent.FLAG_ACTIVITY_CLEAR_TOP) != 0) {
-            initSplitPairRules();
-        }
+            mIsTwoPane = ActivityEmbeddingUtils.isAlreadyEmbedded(this);
 
-        updateSplitLayout();
+            initHomepageContainer();
+            updateHomepageBackground();
+            mLoadedListeners = new ArraySet<>();
+
+            initSearchBarView();
+
+            getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
+            mCategoryMixin = new CategoryMixin(this);
+            getLifecycle().addObserver(mCategoryMixin);
+
+            final String highlightMenuKey = getHighlightMenuKey();
+            // Only allow features on high ram devices.
+            if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
+                final boolean scrollNeeded = mIsEmbeddingActivityEnabled
+                        && !TextUtils.equals(getString(DEFAULT_HIGHLIGHT_MENU_KEY), highlightMenuKey);
+                showSuggestionFragment(scrollNeeded);
+                if (!Flags.updatedSuggestionCardAosp()
+                        && FeatureFlagUtils.isEnabled(this, FeatureFlags.CONTEXTUAL_HOME)) {
+                    showFragment(() -> new ContextualCardsFragment(), R.id.contextual_cards_content);
+                    ((FrameLayout) findViewById(R.id.main_content))
+                            .getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
+                }
+            }
+            mMainFragment = showFragment(() -> {
+                final TopLevelSettings fragment = new TopLevelSettings();
+                fragment.getArguments().putString(SettingsActivity.EXTRA_FRAGMENT_ARG_KEY,
+                        highlightMenuKey);
+                return fragment;
+            }, R.id.main_content);
+
+            // Launch the intent from deep link for large screen devices.
+            if (shouldLaunchDeepLinkIntentToRight()) {
+                launchDeepLinkIntentToRight();
+            }
+
+            // Settings app may be launched on an existing task. Reset SplitPairRule of SubSettings here
+            // to prevent SplitPairRule of an existing task applied on a new started Settings app.
+            if (mIsEmbeddingActivityEnabled
+                    && (getIntent().getFlags() & Intent.FLAG_ACTIVITY_CLEAR_TOP) != 0) {
+                initSplitPairRules();
+            }
+
+            updateSplitLayout();
+        }
 
         enableTaskLocaleOverride();
     }
@@ -309,11 +329,27 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     protected void onStart() {
         ((SettingsApplication) getApplication()).setHomeActivity(this);
         super.onStart();
-        if (mIsEmbeddingActivityEnabled) {
-            final SplitController splitController = SplitController.getInstance(this);
-            mSplitControllerAdapter = new SplitControllerCallbackAdapter(splitController);
-            mCallback = new SplitInfoCallback(this);
-            mSplitControllerAdapter.addSplitListener(this, Runnable::run, mCallback);
+        if (useAxHomepage) {
+            if (mAxionController != null) {
+                mAxionController.onStart();
+            }
+        } else {
+            if (mIsEmbeddingActivityEnabled) {
+                final SplitController splitController = SplitController.getInstance(this);
+                mSplitControllerAdapter = new SplitControllerCallbackAdapter(splitController);
+                mCallback = new SplitInfoCallback(this);
+                mSplitControllerAdapter.addSplitListener(this, Runnable::run, mCallback);
+            }
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (useAxHomepage) {
+            if (mAxionController != null) {
+                mAxionController.onResume();
+            }
         }
     }
 
@@ -321,10 +357,16 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     protected void onStop() {
         super.onStop();
         mAllowUpdateSuggestion = true;
-        if (mSplitControllerAdapter != null && mCallback != null) {
-            mSplitControllerAdapter.removeSplitListener(mCallback);
-            mCallback = null;
-            mSplitControllerAdapter = null;
+        if (useAxHomepage) {
+            if (mAxionController != null) {
+                mAxionController.onStop();
+            }
+        } else {
+            if (mSplitControllerAdapter != null && mCallback != null) {
+                mSplitControllerAdapter.removeSplitListener(mCallback);
+                mCallback = null;
+                mSplitControllerAdapter = null;
+            }
         }
     }
 
@@ -434,10 +476,14 @@ public class SettingsHomepageActivity extends FragmentActivity implements
 
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
 
-        // Update content background.
-        findViewById(android.R.id.content).setBackgroundColor(color);
-        //Update search bar background
-        findViewById(R.id.app_bar_container).setBackgroundColor(color);
+        final View contentView = findViewById(android.R.id.content);
+        if (contentView != null) {
+            contentView.setBackgroundColor(color);
+        }
+        final View appBarContainer = findViewById(R.id.app_bar_container);
+        if (appBarContainer != null) {
+            appBarContainer.setBackgroundColor(color);
+        }
     }
 
     private void showSuggestionFragment(boolean scrollNeeded) {
