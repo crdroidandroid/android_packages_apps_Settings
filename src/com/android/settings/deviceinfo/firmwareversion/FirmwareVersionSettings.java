@@ -58,14 +58,7 @@ public class FirmwareVersionSettings extends DashboardFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.crdroid_logo, container, false);
-        ViewGroup listContainer = view.findViewById(android.R.id.list_container);
-        View settingsView = super.onCreateView(inflater, listContainer, savedInstanceState);
-        if (settingsView != null) {
-            listContainer.addView(settingsView);
-        }
-
-        return view;
+        return super.onCreateView(inflater, container, savedInstanceState);
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
