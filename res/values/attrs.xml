@@ -202,4 +202,12 @@
     <attr name="colorScIconRecommend" format="color" />
     <attr name="colorScIconWarn" format="color" />
     <attr name="colorScShieldAccent" format="color" />
+
+    <!-- Interval seekbar -->
+    <declare-styleable name="IntervalSeekBar">
+        <attr name="minI" format="float" />
+        <attr name="maxI" format="float" />
+        <attr name="defaultValue" format="float" />
+        <attr name="digits" format="integer" />
+    </declare-styleable>
 </resources>
