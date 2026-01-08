@@ -296,6 +296,14 @@
             android:title="@string/emergency_tone_title"
             android:summary="%s"
             android:order="-10"/>
+
+        <!-- Multi Audio Focus -->
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="multi_audio_focus_enabled"
+            android:title="@string/multi_audio_focus_title"
+            android:summary="@string/multi_audio_focus_summary"
+            android:defaultValue="false"
+            android:order="-4"/>
     </PreferenceCategory>
 
     <!-- Work profile sound category -->
