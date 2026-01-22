@@ -37,7 +37,7 @@
             android:fragment="com.crdroid.settings.fragments.ui.NavbarStyles"/>
 
         <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-            android:key="navbar_inverse_layout"
+            android:key="navigationbar_key_order"
             android:title="@string/navbar_invert_layout_title"
             android:summary="@string/navbar_invert_layout_summary"
             android:defaultValue="false" />
