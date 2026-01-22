@@ -206,13 +206,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
             return;
         }
 
-        // With flag enabled, the button order preference will always be available
-        boolean navbarAvailable = android.view.accessibility.Flags.navbarFlipOrderOption()
-                || !PreferenceControllerListHelper.areAllPreferencesUnavailable(
-                        getContext(), getPreferenceManager(), R.xml.button_navigation_settings);
-
-        if (KEY_SYSTEM_NAV_2BUTTONS.equals(key)
-                && navbarAvailable) {
+        if (KEY_SYSTEM_NAV_2BUTTONS.equals(key)) {
             pref.setExtraWidgetOnClickListener(v ->
                     new SubSettingLauncher(getContext())
                             .setDestination(ButtonNavigationSettingsFragment.class.getName())
