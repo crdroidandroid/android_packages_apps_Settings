@@ -102,7 +102,6 @@ open class WifiHotspotScreen(context: Context) :
         preferenceHierarchy(context) {
             +WifiHotspotMainSwitchPreference(wifiHotspotStore)
             +WifiHotspotNamePreference(context, coroutineScope, wifiHotspotStore)
-            +WifiHotspotAutoOffSwitchPreference()
         }
 
     override val preferenceActionMetrics: Int
