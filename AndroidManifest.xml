@@ -5109,6 +5109,7 @@
         <activity android:name=".backup.UserBackupSettingsActivity"
                   android:label="@string/privacy_settings_title"
                   android:exported="true"
+                  android:launchMode="singleTop"
                   android:icon="@drawable/ic_settings_backup">
             <intent-filter android:priority="1">
                 <action android:name="com.android.settings.BACKUP_SETTINGS" />
