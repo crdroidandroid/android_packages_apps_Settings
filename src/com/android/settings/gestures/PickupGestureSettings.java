@@ -69,6 +69,12 @@ public class PickupGestureSettings extends DashboardFragment {
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.pick_up_gesture_settings);
-
+            new BaseSearchIndexProvider(R.xml.pick_up_gesture_settings) {
+                @Override
+                protected boolean isPageSearchEnabled(Context context) {
+                    PickupGesturePreferenceController controller =
+                            new PickupGesturePreferenceController(context, "gesture_pick_up");
+                    return controller.isAvailable();
+                }
+            };
 }
