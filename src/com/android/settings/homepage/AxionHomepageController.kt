@@ -20,7 +20,7 @@ import com.android.settings.R
 import com.android.settings.communal.CommunalPreferenceController
 import com.android.settings.overlay.FeatureFactory
 import com.android.settings.safetycenter.SafetyCenterManagerWrapper
-import com.android.settingslib.appfunctions.SettingsEnums
+import android.app.settings.SettingsEnums
 
 class AxionHomepageController(private val activity: SettingsHomepageActivity) {
 
@@ -39,7 +39,7 @@ class AxionHomepageController(private val activity: SettingsHomepageActivity) {
         AxionSettingsInterop.setContent(
             composeView,
             onSearchClick = {
-                val intent = FeatureFactory.getFeatureFactory().searchFeatureProvider
+                val intent = FeatureFactory.featureFactory.searchFeatureProvider
                     .buildSearchIntent(activity, SettingsEnums.SETTINGS_HOMEPAGE)
                 activity.startActivity(intent)
             },
@@ -163,6 +163,6 @@ class AxionHomepageController(private val activity: SettingsHomepageActivity) {
     }
 
     private fun isSupportAvailable(): Boolean {
-        return FeatureFactory.getFeatureFactory().supportFeatureProvider != null
+        return FeatureFactory.featureFactory.supportFeatureProvider != null
     }
 }
