@@ -213,6 +213,15 @@ public class SimSelectNotification extends BroadcastReceiver {
             return;
         }
 
+        final SubscriptionManager subscriptionManager =
+                context.getSystemService(SubscriptionManager.class);
+        if (dialogType == EXTRA_DEFAULT_SUBSCRIPTION_SELECT_TYPE_DATA
+                && DefaultDataSubscriptionSelectionUtils.restoreSelectionIfNeeded(
+                        context, subscriptionManager)) {
+            cancelSimSelectNotification(context);
+            return;
+        }
+
         // Cancel any previous notifications
         cancelSimSelectNotification(context);
 

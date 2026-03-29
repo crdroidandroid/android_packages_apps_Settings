@@ -37,6 +37,7 @@ import com.android.settings.network.MobileDataEnabledListener;
 import com.android.settings.network.ProxySubscriptionManager;
 import com.android.settings.network.SubscriptionUtil;
 import com.android.settings.overlay.FeatureFactory;
+import com.android.settings.sim.DefaultDataSubscriptionSelectionUtils;
 import com.android.settingslib.CustomDialogPreferenceCompat;
 
 /**
@@ -224,7 +225,10 @@ public class CellDataPreference extends CustomDialogPreferenceCompat
             return;
         }
         if (mMultiSimDialog) {
-            getProxySubscriptionManager().get().setDefaultDataSubId(mSubId);
+            final SubscriptionManager subscriptionManager = getProxySubscriptionManager().get();
+            subscriptionManager.setDefaultDataSubId(mSubId);
+            DefaultDataSubscriptionSelectionUtils.rememberSelection(
+                    getContext(), subscriptionManager, mSubId);
             setMobileDataEnabled(true);
             disableDataForOtherSubscriptions(mSubId);
         } else {

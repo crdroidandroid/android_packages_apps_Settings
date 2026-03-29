@@ -51,6 +51,7 @@ import com.android.settings.network.telephony.DataSubscriptionRepository
 import com.android.settings.network.telephony.MobileDataRepository
 import com.android.settings.network.telephony.SimRepository
 import com.android.settings.network.telephony.requireSubscriptionManager
+import com.android.settings.sim.DefaultDataSubscriptionSelectionUtils
 import com.android.settings.spa.network.PrimarySimRepository.PrimarySimInfo
 import com.android.settings.wifi.WifiPickerTrackerHelper
 import com.android.settingslib.spa.framework.common.SettingsEntryBuilder
@@ -368,6 +369,11 @@ suspend fun setMobileData(
         if (enabled) {
             Log.d(NetworkCellularGroupProvider.fileName, "setDefaultData: [$targetSubId]")
             subscriptionManager?.setDefaultDataSubId(targetSubId)
+            DefaultDataSubscriptionSelectionUtils.rememberSelection(
+                context,
+                subscriptionManager,
+                targetSubId,
+            )
         }
         MobileDataRepository(context)
             .setMobileDataEnabled(targetSubId, enabled, wifiPickerTrackerHelper)

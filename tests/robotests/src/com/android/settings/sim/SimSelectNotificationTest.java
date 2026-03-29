@@ -125,6 +125,7 @@ public class SimSelectNotificationTest {
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
+        DefaultDataSubscriptionSelectionUtils.clearSelection(mContext);
         when(mContext.getSystemService(Context.NOTIFICATION_SERVICE))
                 .thenReturn(mNotificationManager);
         when(mContext.getSystemService(NotificationManager.class))
@@ -277,6 +278,39 @@ public class SimSelectNotificationTest {
                 .isNotEqualTo(0);
         assertThat(capturedIntent.getIntExtra(SimDialogActivity.DIALOG_TYPE_KEY, INVALID_PICK))
                 .isEqualTo(DATA_PICK);
+    }
+
+    @Test
+    public void onReceivePrimarySubListChange_WithStoredDataSelection_shouldRestoreSelection() {
+        final int oldSubId = 1;
+        final int restoredSubId = 2;
+        final String iccId = "test-icc-id";
+        SubscriptionInfo rememberedSubInfo = org.mockito.Mockito.mock(SubscriptionInfo.class);
+        SubscriptionInfo restoredSubInfo = org.mockito.Mockito.mock(SubscriptionInfo.class);
+        when(rememberedSubInfo.getSubscriptionId()).thenReturn(oldSubId);
+        when(rememberedSubInfo.getIccId()).thenReturn(iccId);
+        when(rememberedSubInfo.getSimSlotIndex()).thenReturn(1);
+        when(restoredSubInfo.getSubscriptionId()).thenReturn(restoredSubId);
+        when(restoredSubInfo.getIccId()).thenReturn(iccId);
+        when(restoredSubInfo.getSimSlotIndex()).thenReturn(1);
+        when(mSubscriptionManager.getActiveSubscriptionInfo(oldSubId))
+                .thenReturn(rememberedSubInfo);
+        when(mSubscriptionManager.getDefaultDataSubscriptionId())
+                .thenReturn(SubscriptionManager.INVALID_SUBSCRIPTION_ID);
+        when(mSubscriptionManager.isActiveSubscriptionId(restoredSubId)).thenReturn(true);
+        SubscriptionUtil.setActiveSubscriptionsForTesting(Arrays.asList(restoredSubInfo));
+        DefaultDataSubscriptionSelectionUtils.rememberSelection(
+                mContext, mSubscriptionManager, oldSubId);
+
+        Intent intent = new Intent(TelephonyManager.ACTION_PRIMARY_SUBSCRIPTION_LIST_CHANGED);
+        intent.putExtra(EXTRA_DEFAULT_SUBSCRIPTION_SELECT_TYPE,
+                EXTRA_DEFAULT_SUBSCRIPTION_SELECT_TYPE_DATA);
+
+        SimSelectNotification.onPrimarySubscriptionListChanged(mContext, intent);
+
+        verify(mSubscriptionManager).setDefaultDataSubId(restoredSubId);
+        verify(mContext, never()).startActivity(any());
+        verify(mNotificationManager, never()).createNotificationChannel(any());
     }
 
     @Test

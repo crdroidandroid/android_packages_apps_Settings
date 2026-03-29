@@ -30,6 +30,7 @@ import androidx.appcompat.app.AlertDialog;
 import com.android.settings.R;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
 import com.android.settings.network.SubscriptionUtil;
+import com.android.settings.sim.DefaultDataSubscriptionSelectionUtils;
 import com.android.settings.wifi.WifiPickerTrackerHelper;
 
 /**
@@ -141,6 +142,8 @@ public class MobileDataDialogFragment extends InstrumentedDialogFragment impleme
                 break;
             case TYPE_MULTI_SIM_DIALOG:
                 mSubscriptionManager.setDefaultDataSubId(mSubId);
+                DefaultDataSubscriptionSelectionUtils.rememberSelection(
+                        getContext(), mSubscriptionManager, mSubId);
                 Log.d(TAG, "setMobileDataEnabled: true");
                 MobileNetworkUtils.setMobileDataEnabled(getContext(), mSubId, true /* enabled */,
                         true /* disableOtherSubscriptions */);

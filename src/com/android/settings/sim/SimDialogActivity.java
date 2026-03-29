@@ -365,6 +365,8 @@ public class SimDialogActivity extends FragmentActivity {
         final TelephonyManager telephonyManager = getSystemService(
                 TelephonyManager.class).createForSubscriptionId(subId);
         subscriptionManager.setDefaultDataSubId(subId);
+        DefaultDataSubscriptionSelectionUtils.rememberSelection(
+                this, subscriptionManager, subId);
         if (subId != SubscriptionManager.INVALID_SUBSCRIPTION_ID) {
             Log.d(TAG, "setDataEnabledForReason true");
             telephonyManager.setDataEnabledForReason(TelephonyManager.DATA_ENABLED_REASON_USER,
