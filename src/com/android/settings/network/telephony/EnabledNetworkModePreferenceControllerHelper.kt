@@ -29,14 +29,44 @@ import com.android.settings.network.telephony.MobileNetworkSettingsSearchIndex.M
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
+private val BITMASK_2G =
+    TelephonyManager.NETWORK_TYPE_BITMASK_GSM or
+        TelephonyManager.NETWORK_TYPE_BITMASK_GPRS or
+        TelephonyManager.NETWORK_TYPE_BITMASK_EDGE or
+        TelephonyManager.NETWORK_TYPE_BITMASK_CDMA or
+        TelephonyManager.NETWORK_TYPE_BITMASK_1xRTT
+
 fun TelephonyManager.setAllowedNetworkTypes(
     viewLifecycleOwner: LifecycleOwner,
     newPreferredNetworkMode: Int,
 ) {
+    enable2gForGsmOnlyIfNeeded(newPreferredNetworkMode)
     viewLifecycleOwner.lifecycleScope.launch(Dispatchers.Default) {
         setAllowedNetworkTypesForReason(
             TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_USER,
             RadioAccessFamily.getRafFromNetworkType(newPreferredNetworkMode).toLong(),
+        )
+    }
+}
+
+fun TelephonyManager.setPreferredNetworkMode(newPreferredNetworkMode: Int) {
+    enable2gForGsmOnlyIfNeeded(newPreferredNetworkMode)
+    setAllowedNetworkTypesForReason(
+        TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_USER,
+        RadioAccessFamily.getRafFromNetworkType(newPreferredNetworkMode).toLong(),
+    )
+}
+
+private fun TelephonyManager.enable2gForGsmOnlyIfNeeded(newPreferredNetworkMode: Int) {
+    // GSM-only cannot take effect while the separate 2G restriction bitmask is still disabled.
+    if (newPreferredNetworkMode != TelephonyManager.NETWORK_MODE_GSM_ONLY) return
+    val allowedNetworkTypes =
+        getAllowedNetworkTypesForReason(TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_ENABLE_2G)
+    val enabled2gNetworkTypes = allowedNetworkTypes or BITMASK_2G
+    if (enabled2gNetworkTypes != allowedNetworkTypes) {
+        setAllowedNetworkTypesForReason(
+            TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_ENABLE_2G,
+            enabled2gNetworkTypes,
         )
     }
 }

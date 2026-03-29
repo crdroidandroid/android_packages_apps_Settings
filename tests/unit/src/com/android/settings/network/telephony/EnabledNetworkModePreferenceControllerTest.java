@@ -149,7 +149,7 @@ public class EnabledNetworkModePreferenceControllerTest {
 
     @UiThreadTest
     @Test
-    public void updateState_Without2gCarrierConfig_WithNetworkTypeEnable2g() {
+    public void updateState_Without2gCarrierConfig_With3gVisible_shows2gOption() {
         mockAllowedNetworkTypes(ALLOWED_ALL_NETWORK_TYPE);
         mockEnabledNetworkMode(TelephonyManager.NETWORK_MODE_NR_LTE_TDSCDMA_GSM_WCDMA);
         mockAccessFamily(TelephonyManager.NETWORK_MODE_NR_LTE_TDSCDMA_GSM_WCDMA);
@@ -159,20 +159,21 @@ public class EnabledNetworkModePreferenceControllerTest {
 
         mController.updateState(mPreference);
 
-        assertThat(mPreference.getEntries()).asList().doesNotContain(NETWORK_TYPE_2G);
+        assertThat(mPreference.getEntries()).asList().contains(NETWORK_TYPE_2G);
     }
 
     @UiThreadTest
     @Test
-    public void updateState_With2gCarrierConfig_WithoutNetworkTypeEnable2g() {
+    public void updateState_With2gCarrierConfig_WithoutNetworkTypeEnable2g_shows2gOption() {
+        when(mContext.getSystemService(Context.DEVICE_POLICY_SERVICE)).thenReturn(null);
         mockAllowedNetworkTypes(ALLOWED_ALL_NETWORK_TYPE);
-        mockEnabledNetworkMode(TelephonyManager.NETWORK_MODE_NR_LTE_TDSCDMA_GSM_WCDMA);
-        mockAccessFamily(TelephonyManager.NETWORK_MODE_NR_LTE_TDSCDMA_GSM_WCDMA);
+        mockEnabledNetworkMode(TelephonyManager.NETWORK_MODE_LTE_GSM_WCDMA);
+        mockAccessFamily(TelephonyManager.NETWORK_MODE_LTE_GSM_WCDMA);
         mController.init(SUB_ID, mFragmentManager);
 
         mController.updateState(mPreference);
 
-        assertThat(mPreference.getEntries()).asList().doesNotContain(NETWORK_TYPE_2G);
+        assertThat(mPreference.getEntries()).asList().contains(NETWORK_TYPE_2G);
     }
 
     @UiThreadTest
@@ -189,6 +190,23 @@ public class EnabledNetworkModePreferenceControllerTest {
         mController.updateState(mPreference);
 
         assertThat(mPreference.getEntries()).asList().contains(NETWORK_TYPE_2G);
+    }
+
+    @UiThreadTest
+    @Test
+    public void updateState_when3gOptionHidden_keeps2gOptionVisible() throws Exception {
+        when(mContext.getSystemService(Context.DEVICE_POLICY_SERVICE)).thenReturn(null);
+        mockAllowedNetworkTypes(ALLOWED_ALL_NETWORK_TYPE);
+        mockEnabledNetworkMode(TelephonyManager.NETWORK_MODE_LTE_GSM_WCDMA);
+        mockAccessFamily(TelephonyManager.NETWORK_MODE_LTE_GSM_WCDMA);
+        mController.init(SUB_ID, mFragmentManager);
+
+        setBuilderBooleanField("mDisplay2gOptions", true);
+        setBuilderBooleanField("mDisplay3gOptions", false);
+        mController.mBuilder.updateListPreference(mPreference);
+
+        assertThat(mPreference.getEntries()).asList().contains(NETWORK_TYPE_2G);
+        assertThat(mPreference.getEntries()).asList().doesNotContain("3G");
     }
 
     @UiThreadTest
@@ -583,5 +601,12 @@ public class EnabledNetworkModePreferenceControllerTest {
 
     private void mockPhoneType(int phoneType) {
         doReturn(phoneType).when(mTelephonyManager).getPhoneType();
+    }
+
+    private void setBuilderBooleanField(String fieldName, boolean value) throws Exception {
+        final java.lang.reflect.Field field =
+                mController.mBuilder.getClass().getDeclaredField(fieldName);
+        field.setAccessible(true);
+        field.setBoolean(mController.mBuilder, value);
     }
 }

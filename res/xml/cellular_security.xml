@@ -48,13 +48,4 @@
             settings:controller=
                 "com.android.settings.network.telephony.NullAlgorithmsPreferenceController"/>
     </PreferenceCategory>
-    <PreferenceCategory
-        android:order="7"
-        android:key="network_generations"
-        android:title="@string/cellular_security_2G_network_generation_header"
-        settings:controller="com.android.settings.network.telephony.Enable2gToggleListController">
-        <com.android.settingslib.widget.TopIntroPreference
-            settings:searchable="false"
-            android:title="@string/cellular_security_2G_network_generation_summary"/>
-    </PreferenceCategory>
 </PreferenceScreen>

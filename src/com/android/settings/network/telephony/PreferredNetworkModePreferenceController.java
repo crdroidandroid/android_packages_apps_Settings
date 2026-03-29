@@ -17,6 +17,7 @@
 package com.android.settings.network.telephony;
 
 import static com.android.settings.network.telephony.EnabledNetworkModePreferenceControllerHelperKt.getNetworkModePreferenceType;
+import static com.android.settings.network.telephony.EnabledNetworkModePreferenceControllerHelperKt.setPreferredNetworkMode;
 
 import android.content.Context;
 import android.os.PersistableBundle;
@@ -131,9 +132,7 @@ public class PreferredNetworkModePreferenceController extends BasePreferenceCont
     public boolean onPreferenceChange(Preference preference, Object object) {
         final int newPreferredNetworkMode = Integer.parseInt((String) object);
 
-        mTelephonyManager.setAllowedNetworkTypesForReason(
-                TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_USER,
-                RadioAccessFamily.getRafFromNetworkType(newPreferredNetworkMode));
+        setPreferredNetworkMode(mTelephonyManager, newPreferredNetworkMode);
 
         final ListPreference listPreference = (ListPreference) preference;
         listPreference.setSummary(getPreferredNetworkModeSummaryResId(newPreferredNetworkMode));

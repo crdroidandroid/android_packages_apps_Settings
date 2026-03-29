@@ -323,6 +323,8 @@ public class EnabledNetworkModePreferenceController extends
             mSupported5gRadioAccessFamily = checkSupportedRadioBitmask(
                     mTelephonyManager.getSupportedRadioAccessFamily(),
                     TelephonyManager.NETWORK_TYPE_BITMASK_NR);
+            final boolean supported2gRadioAccessFamily = checkSupportedRadioBitmask(
+                    mTelephonyManager.getSupportedRadioAccessFamily(), BITMASK_2G);
             if (carrierConfig != null) {
                 mIsGlobalCdma = mTelephonyManager.isLteCdmaEvdoGsmWcdmaEnabled()
                         && carrierConfig.getBoolean(
@@ -330,13 +332,7 @@ public class EnabledNetworkModePreferenceController extends
                 mShow4gForLTE = carrierConfig.getBoolean(
                         CarrierConfigManager.KEY_SHOW_4G_FOR_LTE_DATA_ICON_BOOL);
 
-                long currentlyAllowedNetworkTypes =
-                        mTelephonyManager.getAllowedNetworkTypesForReason(
-                                TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_ENABLE_2G);
-                boolean networkType2gEnable = (currentlyAllowedNetworkTypes & BITMASK_2G) != 0;
-                mDisplay2gOptions =
-                        carrierConfig.getBoolean(CarrierConfigManager.KEY_PREFER_2G_BOOL)
-                                && networkType2gEnable && !isDisabledByAdmin();
+                mDisplay2gOptions = supported2gRadioAccessFamily && !isDisabledByAdmin();
                 if (flagHidePrefer3gItem) {
                     mDisplay3gOptions = carrierConfig.getBoolean(
                             CarrierConfigManager.KEY_PREFER_3G_VISIBILITY_BOOL);

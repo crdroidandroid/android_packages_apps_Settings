@@ -57,6 +57,11 @@ import org.mockito.MockitoAnnotations;
 @RunWith(AndroidJUnit4.class)
 public class PreferredNetworkModePreferenceControllerTest {
     private static final int SUB_ID = 2;
+    private static final long BITMASK_2G = TelephonyManager.NETWORK_TYPE_BITMASK_GSM
+            | TelephonyManager.NETWORK_TYPE_BITMASK_GPRS
+            | TelephonyManager.NETWORK_TYPE_BITMASK_EDGE
+            | TelephonyManager.NETWORK_TYPE_BITMASK_CDMA
+            | TelephonyManager.NETWORK_TYPE_BITMASK_1xRTT;
 
     @Mock
     private TelephonyManager mTelephonyManager;
@@ -171,5 +176,22 @@ public class PreferredNetworkModePreferenceControllerTest {
         verify(mTelephonyManager, times(1)).setAllowedNetworkTypesForReason(
                 TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_USER,
                 RadioAccessFamily.getRafFromNetworkType(TelephonyManager.NETWORK_MODE_LTE_TDSCDMA));
+    }
+
+    @Test
+    public void onPreferenceChange_gsmOnly_enables2gBeforeUpdatingNetworkMode() {
+        when(mTelephonyManager.getAllowedNetworkTypesForReason(
+                TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_ENABLE_2G)).thenReturn(
+                TelephonyManager.NETWORK_TYPE_BITMASK_LTE);
+
+        mController.onPreferenceChange(mPreference,
+                String.valueOf(TelephonyManager.NETWORK_MODE_GSM_ONLY));
+
+        verify(mTelephonyManager, times(1)).setAllowedNetworkTypesForReason(
+                TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_ENABLE_2G,
+                TelephonyManager.NETWORK_TYPE_BITMASK_LTE | BITMASK_2G);
+        verify(mTelephonyManager, times(1)).setAllowedNetworkTypesForReason(
+                TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_USER,
+                RadioAccessFamily.getRafFromNetworkType(TelephonyManager.NETWORK_MODE_GSM_ONLY));
     }
 }

@@ -312,12 +312,6 @@
               settings:controller="com.android.settings.network.telephony.CarrierPreferenceController">
           </Preference>
 
-          <com.android.settingslib.RestrictedSwitchPreference
-              android:key="enable_2g"
-              android:title="@string/enable_2g_title"
-              android:summary="@string/enable_2g_summary"
-              settings:controller="com.android.settings.network.telephony.Enable2gPreferenceController"/>
-
           <SwitchPreferenceCompat
               android:key="require_cellular_encryption"
               android:title="@string/require_cellular_encryption_title"
