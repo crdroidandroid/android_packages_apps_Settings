@@ -29,6 +29,7 @@ import android.graphics.SurfaceTexture;
 import android.net.wifi.EasyConnectStatusCallback;
 import android.net.wifi.UriParserResults;
 import android.net.wifi.WifiConfiguration;
+import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Handler;
@@ -64,6 +65,7 @@ import com.android.settingslib.wifi.WifiPermissionChecker;
 import com.android.wifitrackerlib.WifiEntry;
 import com.android.wifitrackerlib.WifiPickerTracker;
 
+import java.lang.reflect.Method;
 import java.time.Clock;
 import java.time.ZoneOffset;
 import java.util.List;
@@ -124,6 +126,8 @@ public class WifiDppQrCodeScannerFragment extends WifiDppQrCodeBaseFragment impl
     private WifiPickerTracker mWifiPickerTracker;
     private HandlerThread mWorkerThread;
     private WifiPermissionChecker mWifiPermissionChecker;
+
+    private boolean isSecurityTypeEnabledFailed;
 
     private final Handler mHandler = new Handler() {
         @Override
@@ -258,10 +262,12 @@ public class WifiDppQrCodeScannerFragment extends WifiDppQrCodeBaseFragment impl
                 continue;
             }
             canFindNetwork = true;
-            int security = WifiDppUtils.getSecurityTypeFromWifiConfiguration(wifiConfiguration);
-            if (isSecurityMatched(security, wifiEntry.getSecurity())) {
-                Log.d(TAG, "WiFi DPP detects connection security for a matching WiFi network.");
-                return REACHABLE_WIFI_NETWORK;
+            final List<Integer> entrySecurityTypes = wifiEntry.getSecurityTypes();
+            for (Integer entrySecurityType : entrySecurityTypes) {
+                if (isSecurityMatched(wifiConfiguration, entrySecurityType)) {
+                    Log.d(TAG, "WiFi DPP detects connection security for a matching WiFi network.");
+                    return REACHABLE_WIFI_NETWORK;
+                }
             }
         }
         if (canFindNetwork) {
@@ -273,17 +279,60 @@ public class WifiDppQrCodeScannerFragment extends WifiDppQrCodeBaseFragment impl
     }
 
     @VisibleForTesting
-    boolean isSecurityMatched(int qrSecurity, int entrySecurity) {
-        if (qrSecurity == entrySecurity) {
+    boolean isSecurityMatched(WifiConfiguration wifiConfiguration, int entrySecurity) {
+        if (wifiConfiguration == null) {
+            return false;
+        }
+        if (WifiInfo.SECURITY_TYPE_UNKNOWN == entrySecurity) {
+            return false;
+        }
+        // WifiEntry and WifiConfiguration should have the same security numbers.
+        if (isSecurityTypeEnabled(wifiConfiguration, entrySecurity)) {
             return true;
         }
-        // Default security type of PSK/SAE transition mode WifiEntry is SECURITY_PSK and
-        // there is no way to know if a WifiEntry is of transition mode. Give it a chance.
-        if (qrSecurity == WifiEntry.SECURITY_SAE && entrySecurity == WifiEntry.SECURITY_PSK) {
+        // PSK config would be upgraded to SAE.
+        if (entrySecurity == WifiEntry.SECURITY_SAE &&
+                isSecurityTypeEnabled(wifiConfiguration, WifiConfiguration.SECURITY_TYPE_PSK)) {
             return true;
         }
-        // If configured is no password, the Wi-Fi framework will attempt OPEN and OWE security.
-        return isNoPasswordSecurity(qrSecurity) && isNoPasswordSecurity(entrySecurity);
+        // OPEN config would be upgraded to OWE.
+        if (entrySecurity == WifiEntry.SECURITY_OWE &&
+                isSecurityTypeEnabled(wifiConfiguration, WifiConfiguration.SECURITY_TYPE_OPEN)) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean isSecurityTypeEnabled(WifiConfiguration wifiConfiguration, int securityType) {
+        // The API is hidden and not available previously. Use reflection for now.
+        // return wifiConfiguration.isSecurityTypeEnabled(securityType);
+        if (!isSecurityTypeEnabledFailed) {
+            try {
+                final Method isSecurityTypeEnabled = wifiConfiguration.getClass().getMethod(
+                        "isSecurityTypeEnabled", int.class);
+                return (Boolean) isSecurityTypeEnabled.invoke(wifiConfiguration, securityType);
+            } catch (Exception e) {
+                Log.e(TAG, "WifiConfiguration.isSecurityTypeEnabled(int) failed", e);
+                isSecurityTypeEnabledFailed = true;
+            }
+        }
+
+        // Try getSecurityParams(int) and check enabled as a backup.
+        try {
+            final Method getSecurityParams = wifiConfiguration.getClass().getMethod(
+                    "getSecurityParams", int.class);
+            final /*SecurityParams*/ Object securityParams = getSecurityParams.invoke(wifiConfiguration, securityType);
+            if (securityParams == null) {
+                return false;
+            }
+            final Method isEnabled = securityParams.getClass().getMethod("isEnabled");
+            return (Boolean) isEnabled.invoke(securityParams);
+        } catch (Exception e) {
+            Log.e(TAG, "WifiConfiguration.getSecurityParams(int) or SecurityParams.isEnabled() failed", e);
+        }
+
+        // Check one security type as a last resort.
+        return WifiDppUtils.getSecurityTypeFromWifiConfiguration(wifiConfiguration) == securityType;
     }
 
     private boolean isNoPasswordSecurity(int security) {

@@ -23,6 +23,8 @@ import static com.android.wifitrackerlib.WifiEntry.SECURITY_SAE;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import static org.junit.Assert.fail;
+
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.any;
@@ -33,6 +35,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import android.app.Activity;
+import android.net.wifi.WifiConfiguration;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -59,6 +62,10 @@ import java.util.Arrays;
 public class WifiDppQrCodeScannerFragmentTest {
 
     static final String WIFI_SSID = "wifi-ssid";
+    static final String QR_WIFI_OPEN = "WIFI:S:wifi-ssid;T:nopass;P:;H:false;;";
+    static final String QR_WIFI_OWE = "WIFI:S:wifi-ssid;T:nopass;P:;H:false;R:8;;";
+    static final String QR_WIFI_PSK = "WIFI:S:wifi-ssid;T:WPA;P:1234567890;H:false;;";
+    static final String QR_WIFI_SAE = "WIFI:S:wifi-ssid;T:WPA;P:1234567890;H:false;R:1;";
 
     @Rule
     public final MockitoRule mMockitoRule = MockitoJUnit.rule();
@@ -156,21 +163,95 @@ public class WifiDppQrCodeScannerFragmentTest {
 
     @Test
     public void isSecurityMatched_securityNotMatch_returnFalse() {
-        assertThat(mFragment.isSecurityMatched(SECURITY_NONE, SECURITY_PSK)).isFalse();
+        final WifiConfiguration config = createWifiConfiguration(SECURITY_NONE);
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_PSK)).isFalse();
     }
 
     @Test
     public void isSecurityMatched_securityMatch_returnTrue() {
-        assertThat(mFragment.isSecurityMatched(SECURITY_PSK, SECURITY_PSK)).isTrue();
+        final WifiConfiguration config = createWifiConfiguration(SECURITY_PSK);
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_PSK)).isTrue();
     }
 
     @Test
-    public void isSecurityMatched_tryPskSaeTransition_returnTrue() {
-        assertThat(mFragment.isSecurityMatched(SECURITY_SAE, SECURITY_PSK)).isTrue();
+    public void isSecurityMatched_tryOpenUpgradeToOwe_returnTrue() {
+        final WifiConfiguration config = createWifiConfiguration(SECURITY_NONE);
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_NONE)).isTrue();
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_OWE)).isTrue();
     }
 
     @Test
-    public void isSecurityMatched_noPasswordSecurity_returnTrue() {
-        assertThat(mFragment.isSecurityMatched(SECURITY_NONE, SECURITY_OWE)).isTrue();
+    public void isSecurityMatched_tryPskUpgradeToSae_returnTrue() {
+        final WifiConfiguration config = createWifiConfiguration(SECURITY_PSK);
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_PSK)).isTrue();
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_SAE)).isTrue();
+    }
+
+    @Test
+    public void isSecurityMatched_tryOweOnlyAgainstOpen_returnFalse() {
+        final WifiConfiguration config = createWifiConfiguration(SECURITY_OWE);
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_NONE)).isFalse();
+    }
+
+    @Test
+    public void isSecurityMatched_trySaeOnlyAgainstPsk_returnFalse() {
+        final WifiConfiguration config = createWifiConfiguration(SECURITY_SAE);
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_PSK)).isFalse();
+    }
+
+    @Test
+    public void isSecurityMatched_tryOpenOweTransitionQrcode_returnTrue() {
+        final WifiConfiguration config = createWifiConfigurationQrcode(QR_WIFI_OPEN);
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_NONE)).isTrue();
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_OWE)).isTrue();
+    }
+
+    @Test
+    public void isSecurityMatched_tryPskSaeTransitionQrcode_returnTrue() {
+        final WifiConfiguration config = createWifiConfigurationQrcode(QR_WIFI_PSK);
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_PSK)).isTrue();
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_SAE)).isTrue();
+    }
+
+    @Test
+    public void isSecurityMatched_tryOweOnlyQrcodeAgainstOpen_returnFalse() {
+        final WifiConfiguration config = createWifiConfigurationQrcode(QR_WIFI_OWE);
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_NONE)).isFalse();
+    }
+
+    @Test
+    public void isSecurityMatched_trySaeOnlyQrcodeAgainstPsk_returnFalse() {
+        final WifiConfiguration config = createWifiConfigurationQrcode(QR_WIFI_SAE);
+        assertThat(mFragment.isSecurityMatched(config, SECURITY_PSK)).isFalse();
+    }
+
+    private static WifiConfiguration createWifiConfiguration(int securityType) {
+        WifiConfiguration config = new WifiConfiguration();
+        config.SSID = "\"dummy-test-ssid\"";
+        switch (securityType) {
+            case WifiEntry.SECURITY_NONE:
+            case WifiEntry.SECURITY_OWE:
+                break;
+
+            case WifiEntry.SECURITY_WEP:
+                config.wepKeys[0] = "0123456789"; // WEP-40 requires 10 hex
+                break;
+
+            case WifiEntry.SECURITY_PSK:
+            case WifiEntry.SECURITY_SAE:
+                config.preSharedKey = "\"1234567890\""; // 8 to 63 ascii chars or 64 hex
+                break;
+
+            default:
+                fail("Not supported security type:" + securityType);
+                break;
+        }
+        config.setSecurityParams(securityType);
+        return config;
+    }
+
+    private static WifiConfiguration createWifiConfigurationQrcode(String qrcode) {
+        final WifiQrCode wifiQrCode = new WifiQrCode(qrcode);
+        return wifiQrCode.getWifiConfiguration();
     }
 }
