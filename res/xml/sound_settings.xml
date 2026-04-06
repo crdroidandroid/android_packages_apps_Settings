@@ -214,6 +214,12 @@
             android:defaultValue="false"
             android:order="-112"/>
 
+        <!-- Dolby Atmos -->
+        <Preference
+            android:key="dolby_settings"
+            android:order="-108"
+            settings:controller="com.android.settings.notification.DolbySoundPreferenceController"/>
+
         <!-- Spatial audio -->
         <Preference
             android:key="spatial_audio_summary"
