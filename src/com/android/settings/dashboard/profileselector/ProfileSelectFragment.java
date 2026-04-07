@@ -59,6 +59,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Base fragment class for profile settings.
@@ -149,7 +150,7 @@ public abstract class ProfileSelectFragment extends DashboardFragment {
                 }
         );
         tabContainer.setVisibility(View.VISIBLE);
-        final int selectedTab = getTabId(activity, getArguments());
+        final int selectedTab = getStartingTabIndex(activity, getArguments());
         final TabLayout.Tab tab = tabs.getTabAt(selectedTab);
         tab.select();
 
@@ -224,13 +225,16 @@ public abstract class ProfileSelectFragment extends DashboardFragment {
         return TAG;
     }
 
+    /**
+     * Returns the index of the tab in the {@link TabLayout} given by {@link R.id.tabs}.
+     */
     @VisibleForTesting
-    int getTabId(Activity activity, Bundle bundle) {
+    int getStartingTabIndex(Activity activity, Bundle bundle) {
+        var adapter = (ViewPagerAdapter) Objects.requireNonNull(mViewPager.getAdapter());
         if (bundle != null) {
             final int extraTab = bundle.getInt(SettingsActivity.EXTRA_SHOW_FRAGMENT_TAB, -1);
             if (extraTab != -1) {
-                return ((ViewPagerAdapter) mViewPager.getAdapter())
-                        .getPositionForProfileTab(extraTab);
+                return adapter.getPositionForProfileTab(extraTab);
             }
             final UserManager userManager = getSystemService(UserManager.class);
             UserHandle mainUser = userManager.getMainUser();
@@ -240,24 +244,24 @@ public abstract class ProfileSelectFragment extends DashboardFragment {
             final int userId = bundle.getInt(EXTRA_USER_ID, mainUser.getIdentifier());
             final boolean isWorkProfile = UserManager.get(activity).isManagedProfile(userId);
             if (isWorkProfile) {
-                return WORK_TAB;
+                return adapter.getPositionForProfileTab(WORK_TAB);
             }
             UserInfo userInfo = UserManager.get(activity).getUserInfo(userId);
             if (userInfo != null && userInfo.isPrivateProfile()) {
-                return PRIVATE_TAB;
+                return adapter.getPositionForProfileTab(PRIVATE_TAB);
             }
         }
         // Start intent from a specific user eg: adb shell --user 10
         final int intentUser = activity.getIntent().getContentUserHint();
         if (UserManager.get(activity).isManagedProfile(intentUser)) {
-            return WORK_TAB;
+            return adapter.getPositionForProfileTab(WORK_TAB);
         }
         UserInfo userInfo = UserManager.get(activity).getUserInfo(intentUser);
         if (userInfo != null && userInfo.isPrivateProfile()) {
-            return PRIVATE_TAB;
+            return adapter.getPositionForProfileTab(PRIVATE_TAB);
         }
 
-        return PERSONAL_TAB;
+        return adapter.getPositionForProfileTab(PERSONAL_TAB);
     }
 
     private CharSequence getPageTitle(int position) {
