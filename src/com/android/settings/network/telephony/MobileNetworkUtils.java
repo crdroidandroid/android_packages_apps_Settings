@@ -436,6 +436,22 @@ public class MobileNetworkUtils {
     }
 
     /**
+     * Return {@code true} if the user-selected allowed network types include LTE or NR.
+     */
+    public static boolean isLteOrAboveAllowedNetworkTypes(
+            @Nullable TelephonyManager telephonyManager) {
+        if (telephonyManager == null) {
+            return false;
+        }
+        final long allowedNetworkTypes = telephonyManager.getAllowedNetworkTypesForReason(
+                TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_USER);
+        final long lteOrAboveBitmask = TelephonyManager.NETWORK_TYPE_BITMASK_LTE
+                | TelephonyManager.NETWORK_TYPE_BITMASK_LTE_CA
+                | TelephonyManager.NETWORK_TYPE_BITMASK_NR;
+        return (allowedNetworkTypes & lteOrAboveBitmask) != 0;
+    }
+
+    /**
      * Return {@code true} if Tdscdma is supported in current subscription
      */
     public static boolean isTdscdmaSupported(Context context, int subId) {
