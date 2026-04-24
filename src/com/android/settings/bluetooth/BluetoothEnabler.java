@@ -260,13 +260,8 @@ public final class BluetoothEnabler implements SwitchWidgetController.OnSwitchCh
 
     public static EnforcedAdmin getEnforcedAdmin(RestrictionUtils mRestrictionUtils,
             Context mContext) {
-        EnforcedAdmin admin = mRestrictionUtils.checkIfRestrictionEnforced(
+        return mRestrictionUtils.checkIfRestrictionEnforced(
                 mContext, UserManager.DISALLOW_BLUETOOTH);
-        if (admin == null) {
-            admin = mRestrictionUtils.checkIfRestrictionEnforced(
-                    mContext, UserManager.DISALLOW_CONFIG_BLUETOOTH);
-        }
-        return admin;
     }
 
     // This triggers the callback which was manually set for this enabler since the enabler will

@@ -170,21 +170,20 @@ public class BluetoothEnablerTest {
 
     @Test
     public void maybeEnforceRestrictions_disallowConfigBluetoothRestrictionSet() {
-        // GIVEN configuring Bluetooth has been disallowed...
-        when(mRestrictionUtils.checkIfRestrictionEnforced(
-                mContext, UserManager.DISALLOW_BLUETOOTH)).thenReturn(null);
+        // GIVEN only DISALLOW_CONFIG_BLUETOOTH is set (pairing/renaming/scanning is restricted),
+        // but DISALLOW_BLUETOOTH is not (the user is still allowed to toggle Bluetooth)...
         when(mRestrictionUtils.checkIfRestrictionEnforced(
                 mContext, UserManager.DISALLOW_CONFIG_BLUETOOTH)).thenReturn(sFakeEnforcedAdmin);
 
         // WHEN the maybeEnforceRestrictions is called...
-        // THEN true is returned to indicate there was a restriction to enforce.
-        assertThat(mBluetoothEnabler.maybeEnforceRestrictions()).isTrue();
+        // THEN false is returned because DISALLOW_CONFIG_BLUETOOTH does not restrict the toggle.
+        assertThat(mBluetoothEnabler.maybeEnforceRestrictions()).isFalse();
 
-        // THEN the expected EnfoceAdmin is set.
-        verify(mSwitchController).setDisabledByAdmin(sFakeEnforcedAdmin);
+        // THEN a null EnforcedAdmin is set so the toggle is not marked as admin-disabled.
+        verify(mSwitchController).setDisabledByAdmin((EnforcedAdmin) null);
 
-        // THEN the switch is unchecked.
-        verify(mSwitchController).setChecked(false);
+        // THEN the state of the switch isn't changed.
+        verify(mSwitchController, never()).setChecked(anyBoolean());
     }
 
     @Test
