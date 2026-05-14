@@ -65,6 +65,8 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.preference.Preference;
 import androidx.preference.TwoStatePreference;
 
+import com.android.crdroid.utils.IconTinterUtils;
+
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
@@ -531,25 +533,15 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
             }
             // Handle homepage icons
             if (TextUtils.equals(tile.getCategory(), CategoryKey.CATEGORY_HOMEPAGE)) {
-                if (SettingsThemeHelper.isExpressiveTheme(mContext)) {
-                    preference.setIcon(getExpressiveHomepageIcon(tile, iconDrawable, iconPackage));
-                    return;
-                }
                 // Skip tinting and Adaptive Icon transformation for homepage account type raw icons
                 if (TextUtils.equals(tile.getGroupKey(), TOP_LEVEL_ACCOUNT_CATEGORY)
                         && iconPackage == null) {
                     preference.setIcon(iconDrawable);
                     return;
                 }
-                iconDrawable.setTint(Utils.getHomepageIconColor(preference.getContext()));
-            }
-
-            if (forceRoundedIcon && !TextUtils.equals(mContext.getPackageName(), iconPackage)) {
-                iconDrawable = new AdaptiveIcon(mContext, iconDrawable,
-                        R.dimen.dashboard_tile_foreground_image_inset);
-                ((AdaptiveIcon) iconDrawable).setBackgroundColor(mContext, tile);
             }
             preference.setIcon(iconDrawable);
+            IconTinterUtils.tintSinglePreferenceIcon(preference, preference.getContext());
         }, new Handler(Looper.getMainLooper()));
     }
 

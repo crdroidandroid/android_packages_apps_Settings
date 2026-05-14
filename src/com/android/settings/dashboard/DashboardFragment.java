@@ -40,6 +40,8 @@ import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreferenceCompat;
 
+import com.android.crdroid.utils.IconTinterUtils;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.core.BasePreferenceController;
@@ -645,6 +647,7 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
             Log.d(tag, "Stop waiting observers");
             pendingObservers.forEach(DynamicDataObserver::updateUi);
         }
+        IconTinterUtils.tintIcons(getPreferenceScreen(), getContext());
     }
 
     @Override
