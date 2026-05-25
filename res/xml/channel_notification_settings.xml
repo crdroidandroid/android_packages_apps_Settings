@@ -107,7 +107,7 @@
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="bypass_dnd"
         android:order="17"
-        android:icon="@drawable/ic_do_not_disturb_on_24dp"
+        android:icon="@drawable/ic_suggestion_dnd"
         android:title="@string/app_notification_override_dnd_title"
         android:summary="@string/app_notification_override_dnd_summary" />
 
