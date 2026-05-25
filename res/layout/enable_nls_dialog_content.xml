@@ -119,7 +119,7 @@
 
                 <ImageView
                     android:id="@+id/settings_icon"
-                    android:src="@drawable/ic_do_not_disturb_on_24dp"
+                    android:src="@drawable/ic_suggestion_dnd"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     style="@style/AccessibilityDialogIcon" />
