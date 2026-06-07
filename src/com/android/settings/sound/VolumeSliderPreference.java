@@ -20,6 +20,7 @@ import static com.android.internal.jank.InteractionJankMonitor.CUJ_SETTINGS_SLID
 
 import android.content.ContentResolver;
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.net.Uri;
 import android.text.TextUtils;
@@ -31,6 +32,8 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.PreferenceViewHolder;
+
+import com.android.crdroid.utils.IconTinterUtils;
 
 import com.android.internal.jank.InteractionJankMonitor;
 import com.android.settings.R;
@@ -208,13 +211,16 @@ public class VolumeSliderPreference extends RestrictedSliderPreference {
 
     protected void updateIconView() {
         if (mIconView == null) return;
+        final Drawable base;
         if (mIconResId != 0) {
-            mIconView.setImageResource(mIconResId);
+            base = getContext().getDrawable(mIconResId);
         } else if (mMuteIconResId != 0 && isMuted()) {
-            mIconView.setImageResource(mMuteIconResId);
+            base = getContext().getDrawable(mMuteIconResId);
         } else {
-            mIconView.setImageDrawable(getIcon());
+            base = getIcon();
         }
+        final Drawable tinted = IconTinterUtils.tintDrawable(base, getKey(), getContext());
+        mIconView.setImageDrawable(tinted != null ? tinted : base);
     }
 
     public void showIcon(int resId) {
