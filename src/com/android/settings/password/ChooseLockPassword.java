@@ -626,7 +626,6 @@ public class ChooseLockPassword extends SettingsActivity {
             setOnAutoConfirmOptionClickListener();
             if (mAutoPinConfirmOption != null) {
                 mAutoPinConfirmOption.setAccessibilityLiveRegion(ACCESSIBILITY_LIVE_REGION_POLITE);
-                mAutoPinConfirmOption.setVisibility(View.GONE);
                 mAutoPinConfirmOption.setChecked(false);
             }
 
