@@ -110,6 +110,7 @@ abstract class BaseDarkModeScreen(context: Context) :
                     val modeStorage = DarkThemeModeStorage(context)
                     +StandardDarkModeSelectorPreference(modeStorage)
                     +ExpandedDarkModeSelectorPreference(modeStorage)
+                    +DarkThemePerAppPreference(modeStorage)
                 }
             }
             +DarkModeBlackThemePreference(context, darkModeStorage)
