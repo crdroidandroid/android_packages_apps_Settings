@@ -71,6 +71,11 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
     private static final String GESTURE_NAVBAR_LENGTH_KEY = "gesture_navbar_length_preference";
     private static final String GESTURE_BACK_HEIGHT_KEY = "gesture_back_height";
     private static final String GESTURE_NAVBAR_HEIGHT_MODE_KEY = "gesture_navbar_height_preference";
+    private static final String GESTURE_NAVBAR_SPACE_PREFERENCE_KEY =
+            "gesture_navbar_space_preference";
+    private static final int GESTURE_NAVBAR_SPACE_DEFAULT = 0;
+    private static final int GESTURE_NAVBAR_SPACE_COMPACT = 1;
+    private static final int GESTURE_NAVBAR_SPACE_MINIMAL = 2;
     private static final String KEY_CORNER_LONG_SWIPE = "navigation_bar_corner_long_swipe";
     private static final String KEY_EDGE_LONG_SWIPE = "navigation_bar_edge_long_swipe";
     private static final String KEY_ENABLE_TASKBAR = "enable_taskbar";
@@ -125,6 +130,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
 
         initGestureNavbarLengthPreference();
         initGestureNavbarHeightPreference();
+        initGestureNavbarSpacePreference();
 
         Action cornerLongSwipeAction = Action.fromSettings(resolver,
                 LineageSettings.System.KEY_CORNER_LONG_SWIPE_ACTION,
@@ -369,6 +375,43 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
         pref.setOnPreferenceChangeListener((p, v) ->
             Settings.System.putIntForUser(getContext().getContentResolver(),
             Settings.System.GESTURE_NAVBAR_HEIGHT_MODE, (int) v, UserHandle.USER_CURRENT));
+    }
+
+
+    private void initGestureNavbarSpacePreference() {
+        final ListPreference pref = getPreferenceScreen().findPreference(
+                GESTURE_NAVBAR_SPACE_PREFERENCE_KEY);
+        if (pref == null) {
+            return;
+        }
+
+        final ContentResolver resolver = getContext().getContentResolver();
+        final int mode = Settings.System.getIntForUser(
+                resolver,
+                Settings.System.GESTURE_NAVBAR_SPACE_MODE,
+                GESTURE_NAVBAR_SPACE_DEFAULT,
+                UserHandle.USER_CURRENT);
+
+        pref.setValue(Integer.toString(mode));
+        pref.setOnPreferenceChangeListener((preference, newValue) -> {
+            final int newMode;
+            try {
+                newMode = Integer.parseInt((String) newValue);
+            } catch (NumberFormatException e) {
+                return false;
+            }
+
+            if (newMode < GESTURE_NAVBAR_SPACE_DEFAULT
+                    || newMode > GESTURE_NAVBAR_SPACE_MINIMAL) {
+                return false;
+            }
+
+            return Settings.System.putIntForUser(
+                    resolver,
+                    Settings.System.GESTURE_NAVBAR_SPACE_MODE,
+                    newMode,
+                    UserHandle.USER_CURRENT);
+        });
     }
 
     private CharSequence formatStateDescription(SliderPreference pref, int progress) {

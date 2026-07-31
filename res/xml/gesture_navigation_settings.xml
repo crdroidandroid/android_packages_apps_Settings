@@ -63,7 +63,19 @@
         settings:textEnd="@string/thick_label"
         android:dependency="navigation_bar_hint" />
 
-    <com.android.settingslib.widget.SliderPreference
+
+
+    <ListPreference
+        android:key="gesture_navbar_space_preference"
+        android:title="@string/gesture_navbar_space_title"
+        android:summary="@string/gesture_navbar_space_summary"
+        android:entries="@array/gesture_navbar_space_entries"
+        android:entryValues="@array/gesture_navbar_space_values"
+        android:defaultValue="0"
+        android:persistent="false"
+        settings:useSimpleSummaryProvider="true" />
+
+<com.android.settingslib.widget.SliderPreference
         android:key="gesture_back_height"
         android:title="@string/back_height_title"
         android:summary="@string/back_height_summary"
