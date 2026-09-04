@@ -70,7 +70,8 @@
     <string name="data_usage_app_restrict_all">Permet l\'accés a la xarxa</string>
     <string name="data_usage_app_restrict_all_summary">Activa l\'ús de la xarxa</string>
     <string name="data_usage_app_restrict_mobile">Dades mòbils</string>
-    <string name="data_usage_app_restrict_mobile_summary">Activa l\'ús de dades mòbils</string>
+    <string name="data_usage_app_restrict_mobile_summary">Activa l\'ús de dades mòbils
+</string>
     <string name="data_usage_app_restrict_vpn">Dades VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Habilita l\'ús de dades via VPN</string>
     <string name="data_usage_app_restrict_wifi">Dades Wi\u2011Fi</string>

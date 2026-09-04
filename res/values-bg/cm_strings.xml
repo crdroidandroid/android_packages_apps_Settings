@@ -60,8 +60,10 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Докоснете сензора на гърба на таблета ви.</string>
     <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Докоснете сензора на гърба на устройството ви.</string>
     <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Докоснете сензора на гърба на телефона ви.</string>
-    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Докоснете сензора отстрани на таблета ви.</string>
-    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Докоснете сензора отсрани на устройството ви.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Докоснете сензора отстрани на таблета ви.
+</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Докоснете сензора отсрани на устройството ви.
+</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Докоснета сензора отстрани на телефона ви.</string>
     <string name="show_navbar_hint_title">Подсказки за навигация</string>
     <string name="show_navbar_hint_summary">Показване на подсказки за навигация в долната част на екрана</string>

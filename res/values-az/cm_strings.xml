@@ -74,7 +74,7 @@
     <string name="data_usage_app_restrict_vpn">VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">VPN istifadəsini fəallaşdır</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi</string>
-    <string name="data_usage_app_restrict_wifi_summary">Wi\u2011Fi istifadəsini fəallaşdır</string>
+    <string name="data_usage_app_restrict_wifi_summary">Wi\u2011Fi veri istifadəsini fəallaşdır</string>
     <string name="unlock_scramble_pin_layout_title">Düzümü qarışdır</string>
     <string name="unlock_scramble_pin_layout_summary">Cihaz kilidini açarkən PIN düzümünü qarışdır</string>
     <string name="proximity_wake_title">Təsadüfi oyanmaların qarşısını al</string>
