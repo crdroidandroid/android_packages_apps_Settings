@@ -32,6 +32,7 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreferenceCompat;
 
+import com.android.internal.util.crdroid.Utils;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -40,6 +41,7 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.ButtonPreference;
 import com.android.settingslib.widget.SliderPreference;
 
+import com.crdroid.settings.preferences.SecureSettingSwitchPreference;
 import com.crdroid.settings.utils.DeviceUtils;
 import com.crdroid.settings.utils.SystemUtils;
 
@@ -76,6 +78,13 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
     private static final String KEY_EDGE_LONG_SWIPE = "navigation_bar_edge_long_swipe";
     private static final String KEY_ENABLE_TASKBAR = "enable_taskbar";
     private static final String KEY_GESTURE_HAPTIC = "back_gesture_haptic";
+    private static final String KEY_IME_SPACE = "navbar_ime_space";
+
+    private static final String IME_NAV_BAR_SPACE_OVERLAY =
+            "com.android.systemui.overlay.imenavbarspace";
+    private static final String LAUNCHER3_PACKAGE_NAME = "com.android.launcher3";
+    private static final String NEXUSLAUNCHER_PACKAGE_NAME =
+            "com.google.android.apps.nexuslauncher";
 
     final Intent mLaunchTutorialIntent =  new Intent(ACTION_GESTURE_SANDBOX)
             .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -90,6 +99,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
     private ListPreference mCornerLongSwipeAction;
     private ListPreference mEdgeLongSwipeAction;
     private SwitchPreferenceCompat mEnableTaskbar;
+    private SecureSettingSwitchPreference mImeSpace;
 
     private float[] mBackGestureHeightScales = { 0f, 1f, 2f, 3f };
     private int mCurrentRightWidth;
@@ -152,6 +162,12 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
         mEnableTaskbar.setChecked(enableTaskbar);
         mEnableTaskbar.setOnPreferenceChangeListener(this);
 
+        // IME space
+        mImeSpace = getPreferenceScreen().findPreference(KEY_IME_SPACE);
+        if (mImeSpace != null) {
+            mImeSpace.setOnPreferenceChangeListener(this);
+        }
+
         boolean hapticAvailable = DeviceUtils.hasVibrator(getContext());
         if (!hapticAvailable) {
             SwitchPreferenceCompat gestureHaptic =
@@ -206,8 +222,21 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
         } else if (preference == mEnableTaskbar) {
             SystemUtils.showSystemUiRestartDialog(getContext());
             return true;
+        } else if (preference == mImeSpace) {
+            final Context context = getContext();
+            Utils.toggleOverlay(context, IME_NAV_BAR_SPACE_OVERLAY, !(Boolean) newValue,
+                true);
+            restartLauncherIfInstalled(context, LAUNCHER3_PACKAGE_NAME);
+            restartLauncherIfInstalled(context, NEXUSLAUNCHER_PACKAGE_NAME);
+            return true;
         }
         return false;
+    }
+
+    private static void restartLauncherIfInstalled(Context context, String packageName) {
+        if (Utils.isPackageInstalled(context, packageName, false)) {
+            Utils.restartApp(packageName, context);
+        }
     }
 
     @Override
