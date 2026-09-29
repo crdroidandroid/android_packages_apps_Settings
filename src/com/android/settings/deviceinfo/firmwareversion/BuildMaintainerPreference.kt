@@ -234,6 +234,6 @@ class BuildMaintainerPreference :
         private const val TAG = "BuildMaintainerPreference"
         private const val OTA_JSON_URL =
             "https://raw.githubusercontent.com/crdroidandroid/" +
-                "android_vendor_crDroidOTA/refs/heads/16.0/%s.json"
+                "android_vendor_crDroidOTA/refs/heads/17.0/%s.json"
     }
 }
