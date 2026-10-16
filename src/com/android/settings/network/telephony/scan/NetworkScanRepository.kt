@@ -37,6 +37,8 @@ import com.android.settings.network.telephony.CellInfoUtil.getOperatorNumeric
 import com.android.settings.network.telephony.CellInfoUtil.toCellInfo
 import com.android.settings.network.telephony.telephonyManager
 import com.android.settingslib.spa.framework.util.collectLatestWithLifecycle
+import java.util.concurrent.CompletableFuture
+import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.Executors
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.channels.awaitClose
@@ -102,8 +104,13 @@ class NetworkScanRepository(private val context: Context, subId: Int) {
             }
 
             private fun queryAvailableNetworks() {
-                val result = telephonyManager.getAvailableNetworks()
-                if (result.status == CellNetworkScanResult.STATUS_SUCCESS) {
+                val result = try {
+                    legacyQuery().get()
+                } catch (e: Exception) {
+                    Log.w(TAG, "legacy network query failed", e)
+                    null
+                }
+                if (result != null && result.status == CellNetworkScanResult.STATUS_SUCCESS) {
                     // The legacy query lists every PLMN once per RAT,
                     // keep the registered or best one
                     cellInfos = result.operators.orEmpty()
@@ -142,6 +149,23 @@ class NetworkScanRepository(private val context: Context, subId: Int) {
             Log.d(TAG, "network scan stopped")
         }
     }.conflate().onEach { Log.d(TAG, "networkScanFlow: $it") }.flowOn(Dispatchers.Default)
+
+    /**
+     * Returns the pending legacy query for this subscription, or starts one. The RIL can't
+     * handle overlapping QUERY_AVAILABLE_NETWORKS requests (NO_MEMORY / MODEM_ERR), and closing
+     * the scan flow doesn't cancel the query in the modem, so callers share a single request.
+     */
+    private fun legacyQuery(): CompletableFuture<CellNetworkScanResult> =
+        legacyQueries.compute(telephonyManager.subscriptionId) { _, pending ->
+            if (pending != null && !pending.isDone) {
+                pending
+            } else {
+                CompletableFuture.supplyAsync(
+                    { telephonyManager.getAvailableNetworks() },
+                    legacyQueryExecutor,
+                )
+            }
+        }!!
 
     /** Create network scan for allowed network types. */
     private fun createNetworkScan(): NetworkScanRequest {
@@ -214,5 +238,10 @@ class NetworkScanRepository(private val context: Context, subId: Int) {
             CellInfoWcdma::class.java,
             CellInfoLte::class.java,
         )
+
+        private val legacyQueryExecutor = Executors.newCachedThreadPool()
+
+        private val legacyQueries =
+            ConcurrentHashMap<Int, CompletableFuture<CellNetworkScanResult>>()
     }
 }
