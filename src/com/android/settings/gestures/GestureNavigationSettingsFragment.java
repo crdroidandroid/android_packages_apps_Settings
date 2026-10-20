@@ -17,14 +17,18 @@
 package com.android.settings.gestures;
 
 import android.app.settings.SettingsEnums;
+import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.os.UserHandle;
 import android.provider.Settings;
+import android.text.TextUtils;
 import android.view.Display;
 import android.view.WindowManager;
 
@@ -85,6 +89,8 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
     private static final String LAUNCHER3_PACKAGE_NAME = "com.android.launcher3";
     private static final String NEXUSLAUNCHER_PACKAGE_NAME =
             "com.google.android.apps.nexuslauncher";
+    private static final String AOSP_IME_PACKAGE_NAME = "com.android.inputmethod.latin";
+    private static final String GBOARD_PACKAGE_NAME = "com.google.android.inputmethod.latin";
 
     final Intent mLaunchTutorialIntent =  new Intent(ACTION_GESTURE_SANDBOX)
             .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -228,6 +234,8 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
                 true);
             restartLauncherIfInstalled(context, LAUNCHER3_PACKAGE_NAME);
             restartLauncherIfInstalled(context, NEXUSLAUNCHER_PACKAGE_NAME);
+            restartImeIfInstalled(context, AOSP_IME_PACKAGE_NAME);
+            restartImeIfInstalled(context, GBOARD_PACKAGE_NAME);
             return true;
         }
         return false;
@@ -237,6 +245,44 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
         if (Utils.isPackageInstalled(context, packageName, false)) {
             Utils.restartApp(packageName, context);
         }
+    }
+
+    private static void restartImeIfInstalled(Context context, String packageName) {
+        if (!Utils.isPackageInstalled(context, packageName, false)) {
+            return;
+        }
+
+        final Context appContext = context.getApplicationContext();
+        final ContentResolver resolver = appContext.getContentResolver();
+        final String currentIme = Settings.Secure.getStringForUser(resolver,
+                Settings.Secure.DEFAULT_INPUT_METHOD, UserHandle.USER_CURRENT);
+        final String currentSubtype = Settings.Secure.getStringForUser(resolver,
+                Settings.Secure.SELECTED_INPUT_METHOD_SUBTYPE, UserHandle.USER_CURRENT);
+        final ComponentName imeComponent = currentIme != null
+                ? ComponentName.unflattenFromString(currentIme) : null;
+        final boolean isCurrentIme = imeComponent != null
+                && packageName.equals(imeComponent.getPackageName());
+
+        Utils.restartApp(packageName, appContext);
+
+        if (!isCurrentIme) {
+            return;
+        }
+
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            final String nowIme = Settings.Secure.getStringForUser(resolver,
+                    Settings.Secure.DEFAULT_INPUT_METHOD, UserHandle.USER_CURRENT);
+            if (!TextUtils.equals(nowIme, currentIme)) {
+                Settings.Secure.putStringForUser(resolver,
+                        Settings.Secure.DEFAULT_INPUT_METHOD, currentIme,
+                        UserHandle.USER_CURRENT);
+                if (currentSubtype != null) {
+                    Settings.Secure.putStringForUser(resolver,
+                            Settings.Secure.SELECTED_INPUT_METHOD_SUBTYPE, currentSubtype,
+                            UserHandle.USER_CURRENT);
+                }
+            }
+        }, 1000);
     }
 
     @Override
