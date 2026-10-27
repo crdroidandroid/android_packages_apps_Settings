@@ -21,10 +21,10 @@ import android.media.RingtoneManager;
 import android.media.audio.Flags;
 import android.telephony.TelephonyManager;
 
+import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
 import com.android.settings.DefaultRingtonePreference;
-import com.android.settings.R;
 import com.android.settings.Utils;
 
 public class PhoneRingtone2PreferenceController extends RingtonePreferenceControllerBase {
@@ -40,21 +40,20 @@ public class PhoneRingtone2PreferenceController extends RingtonePreferenceContro
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
 
-        DefaultRingtonePreference ringtonePreference =
-                (DefaultRingtonePreference) screen.findPreference(KEY_PHONE_RINGTONE2);
-        if (ringtonePreference == null) {
+        final Preference preference = screen.findPreference(KEY_PHONE_RINGTONE2);
+        if (preference == null) {
             return;
         }
-        ringtonePreference.setSlotId(SLOT_ID);
-
-        if (isBuiltInEuiccSlot(SLOT_ID)) {
-            ringtonePreference.setTitle(mContext.getString(R.string.ringtone_title) + " (e-SIM)");
-        } else {
-            ringtonePreference.setTitle(mContext.getString(R.string.ringtone_title) + " - " +
-                String.format(mContext.getString(R.string.sim_card_number_title), 2));
+        if (preference instanceof DefaultRingtonePreference) {
+            ((DefaultRingtonePreference) preference).setSlotId(SLOT_ID);
         }
+        updateSimSlotPreference(preference, SLOT_ID);
+    }
 
-        ringtonePreference.setEnabled(hasCard());
+    @Override
+    public void updateState(Preference preference) {
+        updateSimSlotPreference(preference, SLOT_ID);
+        super.updateState(preference);
     }
 
     @Override
@@ -67,20 +66,15 @@ public class PhoneRingtone2PreferenceController extends RingtonePreferenceContro
         if (isRingtoneVibrationEnabled()) {
             return false;
         }
-        TelephonyManager telephonyManager =
+        final TelephonyManager telephonyManager =
                 (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-        return Utils.isVoiceCapable(mContext) && telephonyManager.isMultiSimEnabled();
+        return Utils.isVoiceCapable(mContext) && telephonyManager != null
+                && telephonyManager.isMultiSimEnabled();
     }
 
     @Override
     public int getRingtoneType() {
         return RingtoneManager.TYPE_RINGTONE;
-    }
-
-    private boolean hasCard() {
-        TelephonyManager telephonyManager =
-                (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-        return telephonyManager.hasIccCard(SLOT_ID);
     }
 
     private boolean isRingtoneVibrationEnabled() {

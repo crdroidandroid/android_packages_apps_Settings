@@ -21,10 +21,10 @@ import android.media.RingtoneManager;
 import android.media.audio.Flags;
 import android.telephony.TelephonyManager;
 
+import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
 import com.android.settings.DefaultRingtonePreference;
-import com.android.settings.R;
 import com.android.settings.Utils;
 
 public class PhoneRingtonePreferenceController extends RingtonePreferenceControllerBase {
@@ -40,18 +40,22 @@ public class PhoneRingtonePreferenceController extends RingtonePreferenceControl
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
 
-        TelephonyManager telephonyManager =
-                (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-        if (telephonyManager.isMultiSimEnabled()) {
-            DefaultRingtonePreference ringtonePreference =
-                    (DefaultRingtonePreference) screen.findPreference(KEY_PHONE_RINGTONE);
-            if (ringtonePreference == null) {
-                return;
-            }
-            ringtonePreference.setTitle(mContext.getString(R.string.ringtone_title) + " - " +
-                String.format(mContext.getString(R.string.sim_card_number_title), 1));
-            ringtonePreference.setEnabled(hasCard());
+        final Preference preference = screen.findPreference(KEY_PHONE_RINGTONE);
+        if (preference instanceof DefaultRingtonePreference) {
+            ((DefaultRingtonePreference) preference).setSlotId(SLOT_ID);
         }
+        if (preference != null && isMultiSimEnabled()) {
+            updateSimSlotPreference(preference, SLOT_ID);
+        }
+    }
+
+    @Override
+    public void updateState(Preference preference) {
+        // Re-evaluated on every resume so SIM / eSIM profile changes are picked up.
+        if (isMultiSimEnabled()) {
+            updateSimSlotPreference(preference, SLOT_ID);
+        }
+        super.updateState(preference);
     }
 
     @Override
@@ -72,10 +76,10 @@ public class PhoneRingtonePreferenceController extends RingtonePreferenceControl
         return RingtoneManager.TYPE_RINGTONE;
     }
 
-    private boolean hasCard() {
-        TelephonyManager telephonyManager =
+    private boolean isMultiSimEnabled() {
+        final TelephonyManager telephonyManager =
                 (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-        return telephonyManager.hasIccCard(SLOT_ID);
+        return telephonyManager != null && telephonyManager.isMultiSimEnabled();
     }
 
     private boolean isRingtoneVibrationEnabled() {
