@@ -20,10 +20,13 @@ import android.content.Context;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.telephony.SubscriptionInfo;
+import android.telephony.SubscriptionManager;
 import android.util.Log;
 
 import androidx.preference.Preference;
 
+import com.android.settings.R;
 import com.android.settings.RingtonePreference;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
@@ -70,20 +73,38 @@ public abstract class RingtonePreferenceControllerBase extends AbstractPreferenc
 
     public abstract int getRingtoneType();
 
-    public boolean isBuiltInEuiccSlot(int slotIndex) {
-        int[] euiccSlots = mContext.getResources()
-                .getIntArray(com.android.internal.R.array.non_removable_euicc_slots);
-        for (int slot : euiccSlots) {
-            if (slot == slotIndex) {
-                return true;
-            }
+    /**
+     * Returns the active subscription on the given logical SIM slot, or null.
+     * This covers physical SIMs and enabled eSIM profiles alike, and returns null for an
+     * empty slot, a slot holding a memory card (hybrid tray) or a disabled SIM.
+     */
+    protected SubscriptionInfo getActiveSubscriptionInfo(int slotIndex) {
+        final SubscriptionManager sm = (SubscriptionManager) mContext.getSystemService(
+                Context.TELEPHONY_SUBSCRIPTION_SERVICE);
+        if (sm == null) {
+            return null;
         }
-        return false;
+        try {
+            return sm.getActiveSubscriptionInfoForSimSlotIndex(slotIndex);
+        } catch (SecurityException e) {
+            Log.w(TAG, "Unable to query subscription for slot " + slotIndex, e);
+            return null;
+        }
     }
 
-    public boolean isDeviceSupportsESIM() {
-        return mContext.getResources()
-                .getIntArray(com.android.internal.R.array.non_removable_euicc_slots).length > 0;
+    /**
+     * Updates title and enabled state of a per-SIM ringtone preference.
+     */
+    protected void updateSimSlotPreference(Preference preference, int slotIndex) {
+        final SubscriptionInfo info = getActiveSubscriptionInfo(slotIndex);
+        String title = mContext.getString(R.string.ringtone_title) + " - "
+                + String.format(mContext.getString(R.string.sim_card_number_title),
+                        slotIndex + 1);
+        if (info != null && info.isEmbedded()) {
+            title += " (e-SIM)";
+        }
+        preference.setTitle(title);
+        preference.setEnabled(info != null);
     }
 
 }
