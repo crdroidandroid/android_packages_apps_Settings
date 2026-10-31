@@ -19,7 +19,6 @@ package com.android.settings.display.darkmode
 import android.content.Context
 import com.android.settings.R
 import com.android.settings.accessibility.Flags
-import com.android.settings.accessibility.extensions.isPowerSaveMode
 import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.metadata.BooleanValuePreference
 import com.android.settingslib.metadata.MUSTPASS_SET
@@ -60,7 +59,8 @@ class DarkModeMainSwitchPreference(private val dataStore: DarkModeStorage, val i
     override fun getEnabledStability() = PreconditionStability.UNSTABLE
 
     override fun isEnabled(context: Context): Boolean =
-        if (!Flags.allowToEnterDarkThemeSettingsWhenBatterySaver()) !context.isPowerSaveMode()
+        if (!Flags.allowToEnterDarkThemeSettingsWhenBatterySaver())
+            !DarkThemeBatterySaver.isLocked(context)
         else true
 
     override fun storage(context: Context): KeyValueStore = dataStore
