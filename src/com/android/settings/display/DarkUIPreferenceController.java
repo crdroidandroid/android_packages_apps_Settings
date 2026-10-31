@@ -30,6 +30,7 @@ import androidx.preference.PreferenceScreen;
 
 import com.android.settings.R;
 import com.android.settings.core.TogglePreferenceController;
+import com.android.settings.display.darkmode.DarkThemeBatterySaver;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnStart;
 import com.android.settingslib.core.lifecycle.events.OnStop;
@@ -45,7 +46,6 @@ public class DarkUIPreferenceController extends TogglePreferenceController imple
     Preference mPreference;
 
     private UiModeManager mUiModeManager;
-    private PowerManager mPowerManager;
 
     private BroadcastReceiver mReceiver = new BroadcastReceiver() {
         @Override
@@ -57,7 +57,6 @@ public class DarkUIPreferenceController extends TogglePreferenceController imple
     public DarkUIPreferenceController(Context context, String key) {
         super(context, key);
         mUiModeManager = context.getSystemService(UiModeManager.class);
-        mPowerManager = context.getSystemService(PowerManager.class);
     }
 
     @Override
@@ -103,9 +102,10 @@ public class DarkUIPreferenceController extends TogglePreferenceController imple
         }
     }
 
+    /** Whether battery saver is on and forcing the dark theme. */
     @VisibleForTesting
     boolean isPowerSaveMode() {
-        return mPowerManager.isPowerSaveMode();
+        return DarkThemeBatterySaver.isLocked(mContext);
     }
 
     @Override

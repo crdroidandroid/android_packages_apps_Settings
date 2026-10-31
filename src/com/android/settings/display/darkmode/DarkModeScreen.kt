@@ -21,7 +21,6 @@ import android.app.settings.SettingsEnums
 import android.app.settings.SettingsEnums.ACTION_DARK_THEME
 import android.content.Context
 import android.content.Intent
-import android.os.PowerManager
 import androidx.fragment.app.Fragment
 import androidx.preference.Preference
 import com.android.settings.R
@@ -153,7 +152,7 @@ abstract class BaseDarkModeScreen(context: Context, val isUiOnly: Boolean) :
             (preference as? PrimarySwitchPreference)?.apply {
                 // Disable the switch during power save mode, but allow users to enter the Settings
                 // page for the Dark theme option selection.
-                isSwitchEnabled = !context.isPowerSaveMode()
+                isSwitchEnabled = !DarkThemeBatterySaver.isLocked(context)
             }
         }
     }
@@ -177,7 +176,7 @@ abstract class BaseDarkModeScreen(context: Context, val isUiOnly: Boolean) :
 
     override fun isEnabled(context: Context) =
         if (Flags.allowToEnterDarkThemeSettingsWhenBatterySaver()) true
-        else !context.isPowerSaveMode()
+        else !DarkThemeBatterySaver.isLocked(context)
 
     override fun getEnabledDescription() = if (Flags.allowToEnterDarkThemeSettingsWhenBatterySaver()) "Always enabled." else "Battery saver must be turned off."
 
@@ -185,20 +184,16 @@ abstract class BaseDarkModeScreen(context: Context, val isUiOnly: Boolean) :
 
     override fun isIndexable(context: Context) =
         Flags.catalystDarkUiMode() &&
-            (Flags.allowToEnterDarkThemeSettingsWhenBatterySaver() || !context.isPowerSaveMode())
+            (Flags.allowToEnterDarkThemeSettingsWhenBatterySaver() ||
+                !DarkThemeBatterySaver.isLocked(context))
 
     override fun getSummary(context: Context): CharSequence? {
         val active = darkModeStorage.getBoolean(key) == true
         return when {
-            !context.isPowerSaveMode() -> AutoDarkTheme.getStatus(context, active)
+            !DarkThemeBatterySaver.isLocked(context) -> AutoDarkTheme.getStatus(context, active)
             active -> context.getString(R.string.dark_ui_mode_disabled_summary_dark_theme_on)
             else -> context.getString(R.string.dark_ui_mode_disabled_summary_dark_theme_off)
         }
-    }
-
-    companion object {
-        private fun Context.isPowerSaveMode() =
-            getSystemService(PowerManager::class.java)?.isPowerSaveMode == true
     }
 }
 

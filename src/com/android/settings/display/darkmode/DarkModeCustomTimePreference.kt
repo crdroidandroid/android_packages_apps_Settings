@@ -23,7 +23,6 @@ import android.provider.Settings
 import androidx.preference.Preference
 import com.android.settings.R
 import com.android.settings.accessibility.Flags
-import com.android.settings.accessibility.extensions.isPowerSaveMode
 import com.android.settingslib.datastore.HandlerExecutor
 import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.datastore.KeyedObserver
@@ -57,7 +56,8 @@ sealed class DarkModeCustomTimePreference(protected val uiModeManager: UiModeMan
         get() = false
 
     override fun isEnabled(context: Context): Boolean =
-        if (Flags.allowToEnterDarkThemeSettingsWhenBatterySaver()) !context.isPowerSaveMode()
+        if (Flags.allowToEnterDarkThemeSettingsWhenBatterySaver())
+            !DarkThemeBatterySaver.isLocked(context)
         else true
 
     override fun bind(preference: Preference, metadata: PreferenceMetadata) {

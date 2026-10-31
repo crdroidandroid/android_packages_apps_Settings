@@ -22,7 +22,6 @@ import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PowerManager;
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
@@ -199,7 +198,7 @@ public class DarkModeSettingsFragment extends DashboardFragment {
                     : new BaseSearchIndexProvider(R.xml.dark_mode_settings) {
                         @Override
                         protected boolean isPageSearchEnabled(Context context) {
-                            return !context.getSystemService(PowerManager.class).isPowerSaveMode();
+                            return !DarkThemeBatterySaver.isLocked(context);
                         }
                     };
 
