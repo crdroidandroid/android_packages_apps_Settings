@@ -30,6 +30,7 @@ import androidx.preference.PreferenceScreen;
 
 import com.android.settings.R;
 import com.android.settings.core.TogglePreferenceController;
+import com.android.settings.display.darkmode.DarkThemeBatterySaver;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnStart;
 import com.android.settingslib.core.lifecycle.events.OnStop;
@@ -93,7 +94,7 @@ public class DarkUIPreferenceController extends TogglePreferenceController imple
         if (mPreference == null) {
             return;
         }
-        boolean isBatterySaver = isPowerSaveMode();
+        boolean isBatterySaver = DarkThemeBatterySaver.isLocked(mContext);
         mPreference.setEnabled(!isBatterySaver);
         if (isBatterySaver) {
             int stringId = isChecked()

@@ -18,12 +18,9 @@ package com.android.settings.display.darkmode
 
 import android.content.Context
 import android.location.LocationManager
-import android.os.PowerManager
 import androidx.preference.DropDownPreference
 import androidx.preference.Preference
 import com.android.settings.R
-import com.android.settings.accessibility.Flags
-import com.android.settings.accessibility.extensions.isPowerSaveMode
 import com.android.settings.display.TwilightLocationDialog
 import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.metadata.DiscreteStringValue
@@ -113,8 +110,7 @@ class DarkModeSchedulePreference(
     }
 
     override fun isEnabled(context: Context): Boolean =
-        if (Flags.allowToEnterDarkThemeSettingsWhenBatterySaver()) !context.isPowerSaveMode()
-        else context.getSystemService(PowerManager::class.java)?.isPowerSaveMode == false
+        !DarkThemeBatterySaver.isLocked(context)
 
     override fun onPreferenceChange(preference: Preference, newValue: Any?): Boolean {
         if (newValue == (preference as DropDownPreference).value) {
