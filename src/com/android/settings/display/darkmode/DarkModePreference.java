@@ -16,7 +16,6 @@ package com.android.settings.display.darkmode;
 
 import android.content.Context;
 import android.content.res.Configuration;
-import android.os.PowerManager;
 import android.util.AttributeSet;
 
 import com.android.settings.R;
@@ -48,8 +47,8 @@ public class DarkModePreference extends PrimarySwitchPreference {
             Context context = getContext();
             mDarkModeObserver = new DarkModeObserver(context);
             Runnable callback = () -> {
-                PowerManager powerManager = context.getSystemService(PowerManager.class);
-                final boolean batterySaver = powerManager.isPowerSaveMode();
+                final boolean batterySaver =
+                        DarkThemeBatterySaver.isLocked(context);
                 final boolean active = (context.getResources().getConfiguration().uiMode
                         & Configuration.UI_MODE_NIGHT_YES) != 0;
                 setSwitchEnabled(!batterySaver);

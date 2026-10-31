@@ -30,7 +30,6 @@ import android.os.BatteryManager;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
-import android.os.PowerManager;
 import android.provider.Settings;
 import android.util.Log;
 
@@ -41,6 +40,7 @@ import androidx.slice.builders.ListBuilder;
 import androidx.slice.builders.SliceAction;
 
 import com.android.settings.R;
+import com.android.settings.display.darkmode.DarkThemeBatterySaver;
 import com.android.settings.Utils;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.slices.CustomSliceRegistry;
@@ -64,12 +64,10 @@ public class DarkThemeSlice implements CustomSliceable {
 
     private final Context mContext;
     private final UiModeManager mUiModeManager;
-    private final PowerManager mPowerManager;
 
     public DarkThemeSlice(Context context) {
         mContext = context;
         mUiModeManager = context.getSystemService(UiModeManager.class);
-        mPowerManager = context.getSystemService(PowerManager.class);
     }
 
     @Override
@@ -93,7 +91,7 @@ public class DarkThemeSlice implements CustomSliceable {
                     "sKeepSliceShow = " + sKeepSliceShow + ", sSliceClicked = " + sSliceClicked
                             + ", isAvailable = " + isAvailable(mContext));
         }
-        if (mPowerManager.isPowerSaveMode()
+        if (DarkThemeBatterySaver.isLocked(mContext)
                 || ((!sKeepSliceShow || !sSliceClicked) && !isAvailable(mContext))) {
             return new ListBuilder(mContext, CustomSliceRegistry.DARK_THEME_SLICE_URI,
                     ListBuilder.INFINITY)
@@ -194,7 +192,7 @@ public class DarkThemeSlice implements CustomSliceable {
                 new ContentObserver(new Handler(Looper.getMainLooper())) {
                     @Override
                     public void onChange(boolean bChanged) {
-                        if (mContext.getSystemService(PowerManager.class).isPowerSaveMode()) {
+                        if (DarkThemeBatterySaver.isLocked(mContext)) {
                             notifySliceChange();
                         }
                     }

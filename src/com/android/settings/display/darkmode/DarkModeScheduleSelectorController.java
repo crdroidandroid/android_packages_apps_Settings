@@ -18,7 +18,6 @@ import android.app.UiModeManager;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.location.LocationManager;
-import android.os.PowerManager;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -37,7 +36,6 @@ public class DarkModeScheduleSelectorController extends BasePreferenceController
     private static final String TAG = DarkModeScheduleSelectorController.class.getSimpleName();
 
     private final UiModeManager mUiModeManager;
-    private final PowerManager mPowerManager;
     private final LocationManager mLocationManager;
     private final BedtimeSettings mBedtimeSettings;
 
@@ -47,7 +45,6 @@ public class DarkModeScheduleSelectorController extends BasePreferenceController
     public DarkModeScheduleSelectorController(Context context, String key) {
         super(context, key);
         mUiModeManager = context.getSystemService(UiModeManager.class);
-        mPowerManager = context.getSystemService(PowerManager.class);
         mLocationManager = context.getSystemService(LocationManager.class);
         mBedtimeSettings = new BedtimeSettings(context);
     }
@@ -71,7 +68,7 @@ public class DarkModeScheduleSelectorController extends BasePreferenceController
 
     @Override
     public final void updateState(Preference preference) {
-        final boolean batterySaver = mPowerManager.isPowerSaveMode();
+        final boolean batterySaver = DarkThemeBatterySaver.isLocked(mContext);
         mPreference.setEnabled(!batterySaver);
         mCurrentMode = getCurrentMode();
         mPreference.setValueIndex(mCurrentMode);

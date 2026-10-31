@@ -20,7 +20,6 @@ import android.Manifest
 import android.Manifest.permission.WRITE_SECURE_SETTINGS
 import android.app.UiModeManager
 import android.content.Context
-import android.os.PowerManager
 import android.provider.Settings
 import com.android.settings.R
 import com.android.settings.accessibility.Flags as AccFlags
@@ -54,7 +53,7 @@ class DarkModeApiFirstScreen :
         preconditions(R.string.api_dark_theme_screen_preconditions) {
             val isScreenPrecondition =
                 if (AccFlags.allowToEnterDarkThemeSettingsWhenBatterySaver()) true
-                else !context.isPowerSaveMode()
+                else !DarkThemeBatterySaver.isLocked(context)
             if (isScreenPrecondition) {
                 Allowed
             } else {
@@ -144,7 +143,7 @@ class DarkModeApiFirstScreen :
 
             set {
                 preconditions(R.string.dark_theme_power_saver_precondition) {
-                    if (!context.isPowerSaveMode()) {
+                    if (!DarkThemeBatterySaver.isLocked(context)) {
                         Allowed
                     } else {
                         InvalidPreference(
@@ -195,7 +194,7 @@ class DarkModeApiFirstScreen :
 
             set {
                 preconditions(R.string.dark_theme_power_saver_precondition) {
-                    if (!context.isPowerSaveMode()) {
+                    if (!DarkThemeBatterySaver.isLocked(context)) {
                         Allowed
                     } else {
                         InvalidPreference(
@@ -221,9 +220,6 @@ class DarkModeApiFirstScreen :
         internal const val EXPANDED_DARK_THEME = 1
         internal const val DARK_THEME_START_TIME = "dark_theme_start_time"
         internal const val DARK_THEME_END_TIME = "dark_theme_end_time"
-
-        private fun Context.isPowerSaveMode() =
-            getSystemService(PowerManager::class.java)?.isPowerSaveMode == true
     }
 }
 
