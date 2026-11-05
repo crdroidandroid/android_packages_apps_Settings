@@ -125,6 +125,7 @@ abstract class BaseDarkModeScreen(context: Context, val isUiOnly: Boolean) :
                     }
             }
             +DarkModeBlackThemePreference(context, darkModeStorage)
+            +BatterySaverDarkThemePreference(context, isUiOnly)
             +PreferenceCategory(
                 key = "display_category",
                 purpose = R.string.display_category_purpose,
