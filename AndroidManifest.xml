@@ -6337,5 +6337,10 @@
             android:permission="android.permission.BIND_JOB_SERVICE"
             android:exported="false" />
 
+        <service
+            android:name="com.crdroid.settings.fragments.misc.PifRefreshJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
     </application>
 </manifest>
