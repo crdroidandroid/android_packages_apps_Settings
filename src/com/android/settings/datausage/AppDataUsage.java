@@ -406,6 +406,12 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     }
 
     private boolean hasInternetPermission() {
+        // mPackageName is null when the uid has no resolvable packages (e.g. the app was
+        // uninstalled) or getApplicationInfoAsUser() failed. Passing null to
+        // PackageManager#checkPermission() crashes Settings with an NPE.
+        if (mPackageName == null) {
+            return false;
+        }
         return mPackageManager.checkPermission(Manifest.permission.INTERNET, mPackageName)
                 == PackageManager.PERMISSION_GRANTED;
     }
