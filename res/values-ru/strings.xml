@@ -107,7 +107,7 @@
     <string name="bluetooth_screen_related" msgid="7976543255501825536">"Похожие"</string>
     <string name="bluetooth_try_nearby_share_title" msgid="2228393576097141630">"Попробуйте приложение \"<xliff:g id="NEARBY_SHARING_APP_LABEL">%s</xliff:g>\""</string>
     <string name="bluetooth_try_nearby_share_summary" msgid="4026595293154711379">"Используйте приложение \"<xliff:g id="NEARBY_SHARING_APP_LABEL">%s</xliff:g>\" для Windows, чтобы быстро передавать файлы между устройствами Android и ПК."</string>
-    <string name="bluetooth_ringtone_title" msgid="3177308461256892085">"Рингтон и будильники"</string>
+    <string name="bluetooth_ringtone_title" msgid="3177308461256892085">"Звук вызова и будильники"</string>
     <string name="bluetooth_call_title" msgid="6851464952021874072">"Звук во время звонков"</string>
     <string name="bluetooth_media_title" msgid="2878373577382067290">"Медиа и системные звуки"</string>
     <string name="bluetooth_notification_title" msgid="8708962394926222039">"Уведомления"</string>
@@ -2772,7 +2772,7 @@
     <string name="accessibility_list_all_devices_title" msgid="161495343959211216">"Другие устройства"</string>
     <string name="accessibility_audio_adjustment_title" msgid="1332113739136802997">"Дополнительные настройки аудио"</string>
     <string name="accessibility_audio_adjustment_subtext" msgid="2190523175597700025">"Монофонический звук, баланс звука"</string>
-    <string name="accessibility_toggle_audio_description_preference_title" msgid="8916473886256061220">"Аудиодескрипция"</string>
+    <string name="accessibility_toggle_audio_description_preference_title" msgid="8916473886256061220">"Звуковое описание"</string>
     <string name="accessibility_audio_description_summary" msgid="2554789094873781056">"Аудиосопровождение в поддерживаемых фильмах и сериалах поможет вам понять, что происходит на экране"</string>
     <string name="keywords_audio_description" msgid="6202816411593281252">"аудиосопровождение, аудио, дескрипция, слабое зрение,"</string>
     <string name="accessibility_summary_shortcut_enabled" msgid="4030427268146752644">"Быстрое включение активно"</string>
@@ -3250,7 +3250,7 @@
     <string name="notification_history_snooze" msgid="3980568893290512257">"Отложенные"</string>
     <string name="notification_history_dismiss" msgid="6180321217375722918">"Недавно закрытые"</string>
     <string name="notification_history_count" msgid="885305572972482838">"{count,plural, =1{# уведомление}one{# уведомление}few{# уведомления}many{# уведомлений}other{# уведомления}}"</string>
-    <string name="sound_category_call_ringtone_vibrate_title" msgid="9090693401915654528">"Вибросигнал и рингтон"</string>
+    <string name="sound_category_call_ringtone_vibrate_title" msgid="9090693401915654528">"Вибросигнал и звук вызова"</string>
     <string name="wifi_setup_detail" msgid="2012898800571616422">"Сведения о сети"</string>
     <string name="accessibility_sync_enabled" msgid="5308864640407050209">"Синхронизация включена"</string>
     <string name="accessibility_sync_disabled" msgid="5507600126380593611">"Синхронизация отключена"</string>
@@ -3787,9 +3787,9 @@
     <string name="notification_volume_content_description_vibrate_mode" msgid="6097212000507408288">"Вместо звука для уведомлений будет включена вибрация"</string>
     <string name="volume_content_description_silent_mode" msgid="377680514551405754">"Отключено: <xliff:g id="VOLUME_TYPE">%1$s</xliff:g>"</string>
     <string name="notification_volume_disabled_summary" msgid="8679988555852056079">"Недоступно, потому что звук звонка отключен"</string>
-    <string name="keywords_sim_ringtone" msgid="8759812211069047968">"Рингтон, сигнал звонка, SIM-карта, рингтон для SIM-карты"</string>
-    <string name="sim_ringtone_title" msgid="5253365736568657674">"Рингтон"</string>
-    <string name="ringtone_title" msgid="3271453110387368088">"Рингтон"</string>
+    <string name="keywords_sim_ringtone" msgid="8759812211069047968">"Звук вызова, оповещение, SIM, звук вызова для SIM-карты"</string>
+    <string name="sim_ringtone_title" msgid="5253365736568657674">"Звук вызова"</string>
+    <string name="ringtone_title" msgid="3271453110387368088">"Звук вызова"</string>
     <string name="notification_ringtone_title" msgid="6924501621312095512">"Звук уведомления по умолчанию"</string>
     <string name="notification_unknown_sound_title" msgid="1319708450698738980">"Звук приложения по умолчанию"</string>
     <string name="notification_sound_default" msgid="8630353701915294299">"Звук уведомления по умолчанию"</string>
@@ -3920,7 +3920,7 @@
     <string name="sound_work_settings" msgid="752627453846309092">"Звуки в рабочем профиле"</string>
     <string name="work_use_personal_sounds_title" msgid="7729428677919173609">"Использовать звуки из личного профиля"</string>
     <string name="work_use_personal_sounds_summary" msgid="608061627969077231">"Использовать те же звуки, что и в личном профиле"</string>
-    <string name="work_ringtone_title" msgid="4810802758746102589">"Рингтон рабочего телефона"</string>
+    <string name="work_ringtone_title" msgid="4810802758746102589">"Звук рабочего телефона"</string>
     <string name="work_notification_ringtone_title" msgid="2955312017013255515">"Звук уведомления по умолчанию"</string>
     <string name="work_alarm_ringtone_title" msgid="3369293796769537392">"Звук будильника по умолчанию"</string>
     <string name="work_sound_same_as_personal" msgid="1836913235401642334">"Как в личном профиле"</string>
@@ -4562,10 +4562,10 @@
     <string name="background_check_pref" msgid="5304564658578987535">"Проверка разрешений для фонового режима"</string>
     <string name="assist_access_context_title" msgid="5201495523514096201">"Использовать текст с экрана"</string>
     <string name="assist_access_context_summary" msgid="6951814413185646275">"Разрешить приложению-помощнику доступ к содержимому экрана в виде текста"</string>
-    <string name="assist_access_screenshot_title" msgid="4395902231753643633">"Использовать скриншот"</string>
+    <string name="assist_access_screenshot_title" msgid="4395902231753643633">"Использовать снимок экрана"</string>
     <string name="assist_access_screenshot_summary" msgid="5276593070956201863">"Разрешить приложению-помощнику доступ к изображению экрана"</string>
     <string name="assist_flash_title" msgid="5449512572885550108">"Подсвечивать экран"</string>
-    <string name="assist_flash_summary" msgid="3032289860177784594">"Подсвечивать края экрана, когда приложение-помощник получает доступ к тексту или скриншоту"</string>
+    <string name="assist_flash_summary" msgid="3032289860177784594">"Подсвечивать края экрана, когда приложение-помощник получает доступ к тексту или снимку экрана"</string>
     <string name="assist_footer" msgid="8248015363806299068">"Приложения-помощники могут оказывать вам содействие, учитывая информацию на экране, который вы просматриваете. Чтобы вам было ещё удобнее, некоторые из них поддерживают запуск других приложений и голосовой ввод."</string>
     <string name="average_memory_use" msgid="717313706368825388">"Средний объем исп. памяти"</string>
     <string name="maximum_memory_use" msgid="2171779724001152933">"Макс. объем исп. памяти"</string>
@@ -4687,7 +4687,7 @@
     <string name="disabled_by_policy_title_outgoing_calls" msgid="400089720689494562">"Звонки недоступны"</string>
     <string name="disabled_by_policy_title_sms" msgid="8951840850778406831">"Нельзя отправить SMS"</string>
     <string name="disabled_by_policy_title_camera" msgid="6616508876399613773">"Нельзя использовать камеру"</string>
-    <string name="disabled_by_policy_title_screen_capture" msgid="6085100101044105811">"Нельзя сделать скриншот"</string>
+    <string name="disabled_by_policy_title_screen_capture" msgid="6085100101044105811">"Нельзя сделать снимок экрана"</string>
     <string name="disabled_by_policy_title_suspend_packages" msgid="4223983156635729793">"Невозможно открыть приложение"</string>
     <string name="disabled_by_policy_title_financed_device" msgid="2328740314082888228">"Заблокировано организацией, предоставившей кредит"</string>
     <string name="disabled_by_policy_title_biometric_parental_consent" msgid="2463673997797134678">"Нужна помощь родителя"</string>

@@ -505,7 +505,7 @@
     <string name="accessibility_daltonizer_about_intro_text" product="default" msgid="5234458848997942613">"Настройте цветопередачу на экране телефона."</string>
     <string name="accessibility_daltonizer_about_intro_text" product="tablet" msgid="5300401841391736534">"Настройте цветопередачу на экране планшета."</string>
     <string name="accessibility_daltonizer_about_intro_text" product="desktop" msgid="8908526728447739478">"Настройте цветопередачу на экране устройства."</string>
-    <string name="accessibility_hearing_device_ringtone_alarm_routing_title" product="default" msgid="6245455325032243921">"Рингтоны и будильники"</string>
+    <string name="accessibility_hearing_device_ringtone_alarm_routing_title" product="default" msgid="6245455325032243921">"Вызовы и будильники"</string>
     <string name="accessibility_hearing_device_ringtone_alarm_routing_title" product="desktop" msgid="1096901437012239116">"Будильники"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="default" msgid="9162440023310121356">"Функция полезна, если: &lt;ol&gt; &lt;li&gt; На телефоне установлена минимальная яркость, но экран все равно недостаточно темный.&lt;/li&gt; &lt;li&gt; Вы используете телефон в темноте, например ночью или в темной комнате перед сном.&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="tablet" msgid="5747242697890472822">"Функция полезна, если: &lt;ol&gt; &lt;li&gt; На планшете установлена минимальная яркость, но экран все равно недостаточно темный.&lt;/li&gt; &lt;li&gt; Вы используете планшет в темноте, например ночью или в темной комнате перед сном.&lt;/li&gt; &lt;/ol&gt;"</string>
