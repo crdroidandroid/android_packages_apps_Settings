@@ -37,22 +37,22 @@
                 android:textDirection="locale"
                 android:text="@string/reset_mobile_network_settings_desc" />
             <include layout="@layout/reset_esim_checkbox"/>
+            <Spinner android:id="@+id/reset_network_subscription"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/initiate_reset_network"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/reset_button_margin_end"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_network_button_text"
+                android:gravity="center"
+                style="@style/ActionPrimaryButton"/>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-    <Spinner android:id="@+id/reset_network_subscription"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/initiate_reset_network"
-        android:layout_gravity="end"
-        android:layout_marginEnd="@dimen/reset_button_margin_end"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="12dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/reset_network_button_text"
-        android:gravity="center"
-        style="@style/ActionPrimaryButton"/>
 </LinearLayout>
