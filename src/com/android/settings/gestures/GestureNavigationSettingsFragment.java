@@ -29,6 +29,7 @@ import android.os.Looper;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.TextUtils;
+import android.util.ArrayMap;
 import android.view.Display;
 import android.view.WindowManager;
 
@@ -45,12 +46,14 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.ButtonPreference;
 import com.android.settingslib.widget.SliderPreference;
 
+import com.crdroid.settings.fragments.buttons.LaunchAppAction;
 import com.crdroid.settings.preferences.SecureSettingSwitchPreference;
 import com.crdroid.settings.utils.DeviceUtils;
 import com.crdroid.settings.utils.SystemUtils;
 
 import java.text.NumberFormat;
 import java.util.List;
+import java.util.Map;
 import java.util.Locale;
 
 import lineageos.providers.LineageSettings;
@@ -104,6 +107,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
 
     private ListPreference mCornerLongSwipeAction;
     private ListPreference mEdgeLongSwipeAction;
+    private final Map<ListPreference, String> mActionLists = new ArrayMap<>();
     private SwitchPreferenceCompat mEnableTaskbar;
     private SecureSettingSwitchPreference mImeSpace;
 
@@ -156,6 +160,9 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
         // Edge long swipe gesture
         mEdgeLongSwipeAction = initList(KEY_EDGE_LONG_SWIPE, edgeLongSwipeAction);
 
+        trackActionList(mCornerLongSwipeAction, LineageSettings.System.KEY_CORNER_LONG_SWIPE_ACTION);
+        trackActionList(mEdgeLongSwipeAction, LineageSettings.System.KEY_EDGE_LONG_SWIPE_ACTION);
+
         boolean enableTaskbar = LineageSettings.System.getIntForUser(
                 resolver,
                 LineageSettings.System.ENABLE_TASKBAR,
@@ -185,6 +192,8 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
     @Override
     public void onResume() {
         super.onResume();
+
+        refreshActionLists();
 
         mWindowManager.addView(mIndicatorView, mIndicatorView.getLayoutParams(
                 getActivity().getWindow().getAttributes()));
@@ -218,13 +227,11 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
         ContentResolver resolver = getActivity().getContentResolver();
 
         if (preference == mCornerLongSwipeAction) {
-            handleListChange((ListPreference) preference, newValue,
+            return handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_CORNER_LONG_SWIPE_ACTION);
-            return true;
         } else if (preference == mEdgeLongSwipeAction) {
-            handleListChange((ListPreference) preference, newValue,
+            return handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_EDGE_LONG_SWIPE_ACTION);
-            return true;
         } else if (preference == mEnableTaskbar) {
             SystemUtils.showSystemUiRestartDialog(getContext());
             return true;
@@ -303,11 +310,38 @@ public class GestureNavigationSettingsFragment extends DashboardFragment impleme
         return list;
     }
 
-    private void handleListChange(ListPreference pref, Object newValue, String setting) {
+    private boolean handleListChange(ListPreference pref, Object newValue, String setting) {
+        if (LaunchAppAction.isLaunchApp(newValue)) {
+            LaunchAppAction.openPicker(getContext(), setting, pref.getTitle(),
+                    getMetricsCategory());
+            return false;
+        }
         String value = (String) newValue;
         int index = pref.findIndexOfValue(value);
         pref.setSummary(pref.getEntries()[index]);
         LineageSettings.System.putIntForUser(getContentResolver(), setting, Integer.valueOf(value), UserHandle.USER_CURRENT);
+        return true;
+    }
+
+    private void trackActionList(ListPreference pref, String setting) {
+        if (pref != null) {
+            mActionLists.put(pref, setting);
+        }
+    }
+
+    private void refreshActionLists() {
+        for (Map.Entry<ListPreference, String> entry : mActionLists.entrySet()) {
+            final ListPreference pref = entry.getKey();
+            final String setting = entry.getValue();
+            final Action current = Action.fromIntSafe(Integer.parseInt(pref.getValue()));
+            pref.setValue(Integer.toString(
+                    Action.fromSettings(getContentResolver(), setting, current).ordinal()));
+            if (LaunchAppAction.isLaunchApp(pref.getValue())) {
+                pref.setSummary(LaunchAppAction.getSummary(getContext(), setting));
+            } else {
+                pref.setSummary(pref.getEntry());
+            }
+        }
     }
 
     private void initTutorialButton() {

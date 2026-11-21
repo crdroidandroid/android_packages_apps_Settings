@@ -24,6 +24,7 @@ import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
+import android.util.ArrayMap;
 import android.view.WindowManager;
 
 import androidx.preference.ListPreference;
@@ -39,9 +40,11 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.logging.nano.MetricsProto;
 
+import com.crdroid.settings.fragments.buttons.LaunchAppAction;
 import com.crdroid.settings.utils.SystemUtils;
 
 import java.util.List;
+import java.util.Map;
 
 import lineageos.providers.LineageSettings;
 
@@ -76,6 +79,7 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
     private ListPreference mNavigationHomeDoubleTapAction;
     private ListPreference mNavigationAppSwitchLongPressAction;
     private ListPreference mNavigationAppSwitchDoubleTapAction;
+    private final Map<ListPreference, String> mActionLists = new ArrayMap<>();
 
     private SwitchPreferenceCompat mEnableTaskbar;
 
@@ -149,6 +153,23 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
         // Navigation bar app switch double tap
         mNavigationAppSwitchDoubleTapAction = initList(KEY_NAVIGATION_APP_SWITCH_DOUBLE_TAP,
                 appSwitchDoubleTapAction);
+
+        trackActionList(mNavigationBackLongPressAction,
+                LineageSettings.System.KEY_BACK_LONG_PRESS_ACTION);
+        trackActionList(mNavigationHomeLongPressAction,
+                LineageSettings.System.KEY_HOME_LONG_PRESS_ACTION);
+        trackActionList(mNavigationHomeDoubleTapAction,
+                LineageSettings.System.KEY_HOME_DOUBLE_TAP_ACTION);
+        trackActionList(mNavigationAppSwitchLongPressAction,
+                LineageSettings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION);
+        trackActionList(mNavigationAppSwitchDoubleTapAction,
+                LineageSettings.System.KEY_APP_SWITCH_DOUBLE_TAP_ACTION);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        refreshActionLists();
     }
 
     @Override
@@ -176,25 +197,20 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
         ContentResolver resolver = getActivity().getContentResolver();
 
         if (preference == mNavigationBackLongPressAction) {
-            handleListChange((ListPreference) preference, newValue,
+            return handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_BACK_LONG_PRESS_ACTION);
-            return true;
         } else if (preference == mNavigationHomeLongPressAction) {
-            handleListChange((ListPreference) preference, newValue,
+            return handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_HOME_LONG_PRESS_ACTION);
-            return true;
         } else if (preference == mNavigationHomeDoubleTapAction) {
-            handleListChange((ListPreference) preference, newValue,
+            return handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_HOME_DOUBLE_TAP_ACTION);
-            return true;
         } else if (preference == mNavigationAppSwitchLongPressAction) {
-            handleListChange((ListPreference) preference, newValue,
+            return handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION);
-            return true;
         } else if (preference == mNavigationAppSwitchDoubleTapAction) {
-            handleListChange((ListPreference) preference, newValue,
+            return handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_APP_SWITCH_DOUBLE_TAP_ACTION);
-            return true;
         } else if (preference == mEnableTaskbar) {
             SystemUtils.showSystemUiRestartDialog(getContext());
             return true;
@@ -220,11 +236,38 @@ public class LegacyNavigationSettingsFragment extends DashboardFragment implemen
         return list;
     }
 
-    private void handleListChange(ListPreference pref, Object newValue, String setting) {
+    private boolean handleListChange(ListPreference pref, Object newValue, String setting) {
+        if (LaunchAppAction.isLaunchApp(newValue)) {
+            LaunchAppAction.openPicker(getContext(), setting, pref.getTitle(),
+                    getMetricsCategory());
+            return false;
+        }
         String value = (String) newValue;
         int index = pref.findIndexOfValue(value);
         pref.setSummary(pref.getEntries()[index]);
         LineageSettings.System.putIntForUser(getContentResolver(), setting, Integer.valueOf(value), UserHandle.USER_CURRENT);
+        return true;
+    }
+
+    private void trackActionList(ListPreference pref, String setting) {
+        if (pref != null) {
+            mActionLists.put(pref, setting);
+        }
+    }
+
+    private void refreshActionLists() {
+        for (Map.Entry<ListPreference, String> entry : mActionLists.entrySet()) {
+            final ListPreference pref = entry.getKey();
+            final String setting = entry.getValue();
+            final Action current = Action.fromIntSafe(Integer.parseInt(pref.getValue()));
+            pref.setValue(Integer.toString(
+                    Action.fromSettings(getContentResolver(), setting, current).ordinal()));
+            if (LaunchAppAction.isLaunchApp(pref.getValue())) {
+                pref.setSummary(LaunchAppAction.getSummary(getContext(), setting));
+            } else {
+                pref.setSummary(pref.getEntry());
+            }
+        }
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
