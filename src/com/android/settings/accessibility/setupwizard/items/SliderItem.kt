@@ -300,9 +300,11 @@ class SliderItem : Item {
                 setStateDescription(null)
             }
 
+            val hasRange = max > min
             valueFrom = min.toFloat()
-            valueTo = max.toFloat()
-            value = sliderValue.toFloat()
+            valueTo = if (hasRange) max.toFloat() else (min + 1).toFloat()
+            value = sliderValue.toFloat().coerceIn(valueFrom, valueTo)
+            if (!hasRange) isEnabled = false
             clearOnSliderTouchListeners()
             addOnSliderTouchListener(sliderTouchListener)
             clearOnChangeListeners()

@@ -279,7 +279,8 @@ public class SliderVolumizer implements OnSliderTouchListener, OnChangeListener,
         }
         mSlider = slider;
         mSlider.clearOnChangeListeners();
-        mSlider.setValueTo(mMaxStreamVolume);
+        final float valueFrom = mSlider.getValueFrom();
+        mSlider.setValueTo(hasVolumeRange() ? mMaxStreamVolume : valueFrom + 1.0f);
         mSlider.setStepSize(1.0f);
         mSlider.setTickVisibilityMode(TICK_VISIBILITY_HIDDEN);
         updateSliderState();
@@ -298,23 +299,33 @@ public class SliderVolumizer implements OnSliderTouchListener, OnChangeListener,
 
     protected void updateSliderState() {
         final boolean zenMuted = isZenMuted();
-        mSlider.setEnabled(!zenMuted);
+        mSlider.setEnabled(!zenMuted && hasVolumeRange());
         if (zenMuted) {
-            mSlider.setValue(mLastAudibleStreamVolume);
+            setSliderValue(mLastAudibleStreamVolume);
         } else if (mNotificationOrRing && (mRingerMode == AudioManager.RINGER_MODE_VIBRATE
                 || mRingerMode == AudioManager.RINGER_MODE_SILENT)) {
             // For ringer-mode affected streams, show volume as zero when ringermode is vibrate
             if (mStreamType == AudioManager.STREAM_RING) {
-                mSlider.setValue(0.0f);
+                setSliderValue(0.0f);
             } else if (mStreamType == AudioManager.STREAM_NOTIFICATION && mMuted) {
-                mSlider.setValue(0.0f);
+                setSliderValue(0.0f);
                 mSlider.setEnabled(false);
             }
         } else if (mMuted) {
-            mSlider.setValue(0.0f);
+            setSliderValue(0.0f);
         } else {
-            mSlider.setValue(mLastProgress > -1 ? mLastProgress : mOriginalStreamVolume);
+            setSliderValue(mLastProgress > -1 ? mLastProgress : mOriginalStreamVolume);
         }
+    }
+
+    private boolean hasVolumeRange() {
+        return mSlider != null && mMaxStreamVolume > mSlider.getValueFrom();
+    }
+
+    private void setSliderValue(float value) {
+        final float from = mSlider.getValueFrom();
+        final float to = mSlider.getValueTo();
+        mSlider.setValue(Math.max(from, Math.min(to, value)));
     }
 
     @Override
