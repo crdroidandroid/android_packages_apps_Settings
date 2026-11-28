@@ -91,6 +91,7 @@ android_library {
 
         // Android internal dependencies
         "BiometricsSharedLib",
+        "OmniJawsClient",
         "SystemUIUnfoldLib",
         "WifiTrackerLib",
         "android.companion.flags-aconfig-java",
